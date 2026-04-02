@@ -8,8 +8,9 @@ The **First Principles Framework (FPF)** specification (~59,000 lines) plus a **
 
 - `FPF-Spec.md` — upstream monolith (source of truth, do not edit directly)
 - `sections/` — decomposed spec (~240 files), generated from the monolith
-- `.claude/skills/fpf/SKILL.md` — skill entry point (burden-based routing)
-- `.claude/agents/fpf-*.md` — agent team (Classifier → Retriever → Reasoner → Reviewer → Sync)
+- `skills/fpf/SKILL.md` — skill entry point (burden-based routing)
+- `agents/fpf-*.md` — agent team (Classifier → Retriever → Reasoner → Reviewer → Sync)
+- `.claude-plugin/` — plugin manifest (plugin.json + marketplace.json)
 - `scripts/` — Python rebuild pipeline (no external deps)
 
 ## Plain Language Contract (non-negotiable)
@@ -32,6 +33,7 @@ python3 scripts/enrich_metadata.py     # enrich metadata with user-facing querie
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)
 python3 scripts/build_routes.py        # → sections/routes/route-{1..6}.md
+python3 scripts/build_xrefs.py         # → sections/*/_xref.md (cross-references)
 
 # Semantic search (requires sentence-transformers, faiss-cpu via uv)
 uv run scripts/build_embeddings.py     # → sections/embeddings/ (FAISS index)

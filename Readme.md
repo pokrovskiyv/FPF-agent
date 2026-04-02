@@ -374,6 +374,29 @@ Typical follow-ups:
 > We are searching for the state of the art in [discipline].  
 > Using G.2 and G.4, extract: (a) TraditionCards for competing schools of thought; (b) OperatorCards for their main operators / update rules; (c) a first draft of a state-of-the-art pack and selector-ready portfolio. This is expected to be a long text, therefore start with only TraditionCards.
 
+## Installation (Claude Code Plugin)
+
+Install the FPF skill as a Claude Code plugin to get coordination analysis powered by the full specification.
+
+**Step 1 — Add the marketplace (once):**
+```
+/plugin marketplace add pokrovskiyv/FPF-agent
+```
+
+**Step 2 — Install the plugin:**
+```
+/plugin install fpf@fpf-agent
+```
+
+**Step 3 — Enable auto-updates (recommended):**
+```
+/plugin → Marketplaces tab → fpf-agent → Enable auto-update
+```
+Without this, third-party plugins don't update automatically. You can always update manually with `/plugin update fpf`.
+
+**Step 4 — Use it:**
+Just describe your coordination problem — FPF activates automatically when it detects relevant patterns (team misalignment, terminology confusion, trade-off analysis, etc.). Or invoke explicitly with `/fpf`.
+
 ## Citation
 
 If you use FPF, please cite:

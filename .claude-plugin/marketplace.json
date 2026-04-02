@@ -1,0 +1,22 @@
+{
+  "name": "fpf-agent",
+  "owner": {
+    "name": "Vitaly Pokrovskiy"
+  },
+  "metadata": {
+    "description": "First Principles Framework plugin for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "fpf",
+      "source": "./",
+      "description": "Coordination patterns for specialists, teams, and AI agents",
+      "author": { "name": "Vitaly Pokrovskiy" },
+      "repository": "https://github.com/pokrovskiyv/FPF-agent",
+      "license": "MIT",
+      "keywords": ["fpf", "coordination", "teams", "framework"],
+      "category": "workflow",
+      "tags": ["coordination", "specification", "patterns"]
+    }
+  ]
+}

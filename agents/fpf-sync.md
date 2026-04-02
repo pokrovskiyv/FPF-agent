@@ -88,7 +88,7 @@ git push
 
 - Do NOT modify FPF-Spec.md — it's upstream source of truth
 - Do NOT modify scripts/ — they're maintained manually
-- Do NOT modify .claude/agents/ or .claude/skills/ — maintained manually
+- Do NOT modify agents/ or skills/ — maintained manually
 - Do NOT force-push or rebase — always merge
 - Do NOT use FPF terminology in enhanced summaries
 - Do NOT run if there are no upstream changes (save compute)

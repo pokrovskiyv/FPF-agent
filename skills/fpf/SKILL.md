@@ -20,6 +20,11 @@ Structured coordination analysis powered by the First Principles Framework.
 FPF is invisible infrastructure — output is ALWAYS in plain language.
 NEVER use FPF terminology in responses to the user.
 
+## Base Path
+
+All file paths in this skill and its agents are relative to `${CLAUDE_PLUGIN_ROOT}`.
+When reading files, always prefix paths with `${CLAUDE_PLUGIN_ROOT}/`.
+
 ## How It Works
 
 1. Classify the user's problem into a burden type (see table below)
@@ -66,7 +71,8 @@ Detect from user's natural language — no FPF terms needed.
 
 ## Agents
 
-- `.claude/agents/fpf-classifier.md` — burden detection + strategy
-- `.claude/agents/fpf-retriever.md` — section loading + stagnation detection + semantic search
-- `.claude/agents/fpf-reasoner.md` — applies structure, outputs plain language
-- `.claude/agents/fpf-reviewer.md` — grounding + jargon guard
+- `agents/fpf-classifier.md` — burden detection + strategy
+- `agents/fpf-retriever.md` — section loading + stagnation detection + semantic search
+- `agents/fpf-reasoner.md` — applies structure, outputs plain language
+- `agents/fpf-reviewer.md` — grounding + jargon guard
+- `agents/fpf-sync.md` — scheduled upstream sync + rebuild pipeline

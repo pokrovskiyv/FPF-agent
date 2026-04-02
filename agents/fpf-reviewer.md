@@ -41,6 +41,8 @@ For each substantive claim in the output:
 **Acceptable**: Claims that are reasonable inferences from source material
 **Unacceptable**: Claims that introduce concepts not present in any loaded section
 
+**Semantic search results (Tier 5)**: Sections loaded via semantic search may be less precisely targeted than route-based sections. If the Retriever notes that sections came from Tier 5 with scores below 0.5, treat claims based solely on those sections as lower-confidence and verify more carefully.
+
 ### Check 3: Actionability
 
 Verify the output is:
