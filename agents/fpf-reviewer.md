@@ -1,8 +1,9 @@
 ---
 description: >
-  FPF reviewer. Use after the reasoner generates output for complex
-  or cross-cutting queries. Validates grounding (claims traceable to
-  source sections) and plain language compliance (no FPF jargon leak).
+  FPF reviewer v2. Validates reasoner output for Tier 2 (semantic)
+  and Tier 3 (combined) queries. Checks grounding (claims traceable
+  to source sections), plain language compliance (no FPF jargon),
+  and actionability. Also validates Tier 1 cross_cutting queries.
   Input: reasoner output + source sections. Output: validated or
   corrected response.
 ---
@@ -42,6 +43,13 @@ For each substantive claim in the output:
 **Unacceptable**: Claims that introduce concepts not present in any loaded section
 
 **Semantic search results (Tier 5)**: Sections loaded via semantic search may be less precisely targeted than route-based sections. If the Retriever notes that sections came from Tier 5 with scores below 0.5, treat claims based solely on those sections as lower-confidence and verify more carefully.
+
+**Tier 2 (semantic) queries**: The section chain was assembled dynamically, not curated. Apply stricter grounding validation:
+- Every substantive claim must cite content from at least one loaded section
+- If the reasoner makes claims that go beyond the loaded sections, flag and remove
+- Pay extra attention to "bridging" claims that connect sections — verify the connection is justified
+
+**Tier 3 (combined) queries**: The section chain mixes curated (route) and dynamic (semantic) sections. Claims based on route sections get normal validation. Claims based on semantic sections get stricter Tier 2 validation.
 
 ### Check 3: Actionability
 
