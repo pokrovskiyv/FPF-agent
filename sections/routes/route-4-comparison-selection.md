@@ -12,8 +12,8 @@
 | 2 | A.18 | A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale | sections/06-cluster-av-constitutional-principles-of-the-kernel/18-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md |  |
 | 3 | A.19 | A.CHR-SPACE — CharacteristicSpace & Dynamics hook | sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md | YES |
 | 4 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/14-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
-| 5 | A.19.CPM | (not found) |  | YES |
-| 6 | A.19.SelectorMechanism | (not found) |  |  |
+| 5 | A.19.CPM | Unified Comparison Mechanism (CPM) | sections/06-cluster-av-constitutional-principles-of-the-kernel/26-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md | YES |
+| 6 | A.19.SelectorMechanism | Unified Selection Kernel (SelectorMechanism) | sections/06-cluster-av-constitutional-principles-of-the-kernel/27-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md |  |
 | 7 | G.5 | Multi-Method Dispatcher & MethodFamily Registry | sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
 
 ## Loading Strategy

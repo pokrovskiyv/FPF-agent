@@ -1,6 +1,6 @@
 # Cross-References into 13-cluster-fi-context-of-meaning-raw-material
 
-Patterns in other Parts that reference patterns in this directory (68 refs).
+Patterns in other Parts that reference patterns in this directory (75 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -41,6 +41,11 @@ Patterns in other Parts that reference patterns in this directory (68 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.19.CN | coordinates_with | F.9 |
+| A.19.CPM | coordinates_with | F.18 |
+| A.19.UINDM | coordinates_with | F.18 |
+| A.19.ULSAM | coordinates_with | F.18 |
+| A.19.UNM | builds_on | F.18 |
+| A.19.USCM | coordinates_with | F.18 |
 
 ## From 08-part-c-kernel-extensions-specifications
 
@@ -98,4 +103,6 @@ Patterns in other Parts that reference patterns in this directory (68 refs).
 | G.7 | builds_on | F.9 |
 | G.7 | builds_on | F.3 |
 | G.7 | builds_on | F.7 |
+| G.8 | coordinates_with | F.8 |
+| G.8 | coordinates_with | F.9 |
 | G.9 | builds_on | F.15 |

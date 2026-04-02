@@ -28,7 +28,7 @@ FPF is **invisible infrastructure**. When the skill is active:
 
 # Individual scripts
 python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~240 files)
-python3 scripts/build_metadata.py      # ToC → sections/metadata.json (235 entries)
+python3 scripts/build_metadata.py      # ToC → sections/metadata.json (242 entries)
 python3 scripts/enrich_metadata.py     # enrich metadata with user-facing queries (RU+EN)
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)

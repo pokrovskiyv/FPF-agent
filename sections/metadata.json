@@ -372,25 +372,11 @@
       "RSG",
       "role state",
       "enactability",
-      "lifecycle",
-      "readiness check",
-      "eligibility tracking",
-      "role lifecycle",
-      "definition of done",
-      "completion criteria",
-      "task readiness"
+      "lifecycle"
     ],
     "queries": [
       "How to model the state of a role?",
-      "What is a Role State Graph?",
-      "How to track whether someone is ready and authorized to perform a task?",
-      "How to define when a role is active, suspended, or expired?",
-      "How to separate 'has the credential' from 'is fit to act right now'?",
-      "What does 'done' mean for a task or role?",
-      "Как отслеживать готовность и допуск человека к выполнению задачи?",
-      "Как определить когда роль активна, приостановлена или истекла?",
-      "Как разделить 'имеет допуск' и 'готов действовать прямо сейчас'?",
-      "Что значит 'готово' для задачи или роли?"
+      "What is a Role State Graph?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1878,20 +1864,11 @@
       "CharacteristicSpace",
       "dynamics",
       "state model",
-      "RSG",
-      "multi-dimensional tracking",
-      "system condition",
-      "measurable properties"
+      "RSG"
     ],
     "queries": [
       "How to define a system's state space?",
-      "How does FPF model change over time?",
-      "How to define all the measurable properties of a system in one place?",
-      "How to track a system's condition across multiple dimensions consistently?",
-      "How to avoid mixing incompatible units or scales when comparing system states?",
-      "Как определить все измеримые свойства системы в одном месте?",
-      "Как отслеживать состояние системы по нескольким параметрам одновременно?",
-      "Как избежать смешения несовместимых единиц или шкал при сравнении состояний?"
+      "How does FPF model change over time?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1922,22 +1899,13 @@
       "WLNK discipline",
       "conformance checklist",
       "SCR/RSCR harness",
-      "RSG admission hooks",
-      "measurement governance",
-      "dashboard consistency",
-      "cross-team reporting"
+      "RSG admission hooks"
     ],
     "queries": [
       "What is a CN-frame in FPF?",
       "How does CN-Spec govern comparability and normalization by reference?",
       "How do CN-frames use bridges and CL for cross-context reuse?",
-      "What are the conformance and regression checks for CN-frames?",
-      "How to make sure different teams measure things the same way?",
-      "How to govern metrics so dashboards across departments are comparable?",
-      "How to prevent hidden changes in how numbers are calculated?",
-      "Как убедиться что разные команды измеряют показатели одинаково?",
-      "Как управлять метриками чтобы дашборды разных отделов были сравнимы?",
-      "Как предотвратить скрытые изменения в способе расчёта показателей?"
+      "What are the conformance and regression checks for CN-frames?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2003,6 +1971,281 @@
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/21-a19chr-a19chr-chrmechanismsuite.md"
+  },
+  "A.19.UNM": {
+    "title": "Unified Normalization Mechanism (UNM)",
+    "status": "Stable",
+    "keywords": [
+      "normalization",
+      "`CV→NCV`",
+      "`≡_UNM`",
+      "`NormalizationMethodId`",
+      "`NormalizationMethodInstanceId`",
+      "`NormalizationInvariant[*]`",
+      "`NormalizationFixSpec`",
+      "validity window (no implicit “latest”)",
+      "fail-closed tri-state guard (`pass|degrade|abstain`)",
+      "`CN-Spec.normalization`",
+      "`CN-Spec.comparability.mode`",
+      "Bridge-only transport + ReferencePlane/CL pins",
+      "penalties→`R`/`R_eff` only"
+    ],
+    "queries": [
+      "What is UNM in FPF?",
+      "How does FPF normalize coordinate values (CV→NCV)?",
+      "What is ≡_UNM and why quotients/fix matter?",
+      "How does CN-Spec.comparability.mode route normalization-based comparability?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.CN",
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR",
+        "A.17–A.18",
+        "C.16",
+        "G.0",
+        "E.18",
+        "E.20",
+        "F.18"
+      ],
+      "coordinates_with": [
+        "G.2",
+        "B.3"
+      ],
+      "used_by": [
+        "A.19.CHR",
+        "A.19.USCM",
+        "A.19.CPM",
+        "A.19.SelectorMechanism"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/22-a19unm-a19unm-unified-normalization-mechanism-unm.md"
+  },
+  "A.19.UINDM": {
+    "title": "Unified Indicatorization Mechanism (UINDM)",
+    "status": "Stable",
+    "keywords": [
+      "indicatorization",
+      "indicator set",
+      "`IndicatorChoicePolicy`",
+      "`CN-Spec.indicator_policy`",
+      "CHR suite stage `indicatorize`",
+      "tri-state admissibility (`pass|degrade|abstain`)",
+      "evidence-gated indicator choice",
+      "Bridge+CL transport visibility",
+      "“no NCV⇒indicator”"
+    ],
+    "queries": [
+      "What is UINDM in FPF?",
+      "How does FPF choose indicators?",
+      "Difference between measurable characteristic and indicator",
+      "How to make indicator choice auditable?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.CN",
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR"
+      ],
+      "coordinates_with": [
+        "G.0",
+        "G.2",
+        "E.20",
+        "F.18"
+      ],
+      "used_by": [
+        "A.19.CHR"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/23-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md"
+  },
+  "A.19.USCM": {
+    "title": "Unified Scoring Mechanism (USCM)",
+    "status": "Stable",
+    "keywords": [
+      "scoring",
+      "score profile",
+      "`ScoringMethodDescription`",
+      "ScaleComplianceProfile (SCP)",
+      "CSLC-lawful transforms",
+      "`CG-Spec.MinimalEvidence`",
+      "tri-state admissibility (`pass|degrade|abstain`)",
+      "“no implicit UNM”",
+      "vector scores by default",
+      "CHR suite stage `score`"
+    ],
+    "queries": [
+      "What is USCM in FPF?",
+      "How does FPF do lawful scoring (SCP-first)?",
+      "How are scoring methods pinned and audited in CHR?",
+      "How does USCM handle unknowns and evidence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.CN",
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR",
+        "G.0",
+        "A.18",
+        "C.16"
+      ],
+      "coordinates_with": [
+        "UNM",
+        "ULSAM",
+        "CPM",
+        "SelectorMechanism",
+        "G.2",
+        "E.20",
+        "F.18"
+      ],
+      "used_by": [
+        "A.19.CHR"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/24-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
+  },
+  "A.19.ULSAM": {
+    "title": "Unified Lawful Scale Aggregation Mechanism (ULSAM)",
+    "status": "Stable",
+    "keywords": [
+      "lawful aggregation",
+      "scale-lawful fold",
+      "`fold_Γ?`",
+      "`ΓFoldRef`",
+      "`CG-Spec.Γ_fold`",
+      "`CG-Spec.SCP`",
+      "`MinimalEvidence`",
+      "tri-state guard (`pass|degrade|abstain`)",
+      "contributor set",
+      "no hidden aggregation",
+      "penalties→`R_eff` only"
+    ],
+    "queries": [
+      "What is ULSAM in FPF?",
+      "How does FPF do lawful aggregation / Γ-fold?",
+      "Why is fold_Γ a separate CHR stage?",
+      "How to avoid ordinal averaging in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.CN",
+        "G.0",
+        "A.18",
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR",
+        "B.3"
+      ],
+      "coordinates_with": [
+        "G.2",
+        "E.20",
+        "F.18"
+      ],
+      "used_by": [
+        "A.19.CHR"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/25-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
+  },
+  "A.19.CPM": {
+    "title": "Unified Comparison Mechanism (CPM)",
+    "status": "Stable",
+    "keywords": [
+      "comparison",
+      "comparator",
+      "`ComparatorSpecRef`",
+      "`ComparatorSet`",
+      "set-valued comparison outcome",
+      "partial order",
+      "tri-state admissibility (`pass|degrade|abstain`)",
+      "`MinimalEvidence`",
+      "“no hidden scalarization/totalization”",
+      "Bridge+CL transport",
+      "penalties→`R_eff` only"
+    ],
+    "queries": [
+      "What is CPM in FPF?",
+      "How does FPF compare two profiles lawfully?",
+      "Why comparison outputs are set-valued?",
+      "How does CPM handle unknown evidence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.CN",
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR",
+        "G.0",
+        "A.18"
+      ],
+      "coordinates_with": [
+        "UNM",
+        "USCM",
+        "ULSAM",
+        "SelectorMechanism",
+        "G.2",
+        "G.5",
+        "G.9",
+        "E.20",
+        "F.18"
+      ],
+      "used_by": [
+        "A.19.CHR"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/26-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md"
+  },
+  "A.19.SelectorMechanism": {
+    "title": "Unified Selection Kernel (SelectorMechanism)",
+    "status": "Stable",
+    "keywords": [
+      "selection kernel",
+      "set-returning selection",
+      "portfolio set",
+      "`SelectEligibility`",
+      "tri-state guard (`pass|degrade|abstain`)",
+      "no hidden thresholds",
+      "no hidden scalarization",
+      "`CriteriaSlot`",
+      "`ComparisonResultSlot`",
+      "`TaskSignatureSlot`",
+      "evidence gating",
+      "`CG-Spec.MinimalEvidence`",
+      "CHR suite stage `select`",
+      "Bridge+CL/ReferencePlane transport",
+      "penalties→`R_eff` only"
+    ],
+    "queries": [
+      "What is SelectorMechanism in FPF?",
+      "Why does selection return a portfolio set by default?",
+      "How does SelectEligibility handle unknown or insufficient evidence?",
+      "How does FPF prevent hidden thresholds and scalarization in selection?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.6.1",
+        "A.6.5",
+        "A.19.CHR",
+        "A.19.CN",
+        "G.0",
+        "G.5",
+        "C.22"
+      ],
+      "coordinates_with": [
+        "A.19.USCM",
+        "A.19.ULSAM",
+        "CPM (comparison stage)"
+      ],
+      "used_by": [
+        "A.19.CHR",
+        "G.5",
+        "E.18 (E.TGA)"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/27-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md"
   },
   "A.20": {
     "title": "U.Flow.ConstraintValidity — Eulerian",
@@ -5179,19 +5422,8 @@
   "F.1": {
     "title": "Domain‑Family Landscape Survey",
     "status": "Stable",
-    "keywords": [
-      "domain survey",
-      "field mapping",
-      "landscape analysis"
-    ],
-    "queries": [
-      "How to map out all the disciplines relevant to my project?",
-      "How do I avoid tunnel vision when different teams use different terminology?",
-      "What fields should I survey before unifying concepts across teams?",
-      "Как составить карту предметных областей для проекта?",
-      "Как избежать зацикленности на одном стандарте при анализе домена?",
-      "Какие области знаний нужно охватить перед объединением терминологии?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "E.10.D1",
@@ -5215,21 +5447,12 @@
       "lexical unit",
       "normalization",
       "provenance",
-      "surface terms",
-      "glossary building",
-      "vocabulary extraction",
-      "naming conventions"
+      "surface terms"
     ],
     "queries": [
       "How to extract terminology from a standard?",
       "What is a local lexical unit?",
-      "How to handle synonyms within one domain?",
-      "How do I collect and standardize terms from a technical document?",
-      "How to create a consistent glossary for one team or domain?",
-      "How to stop people using the same word to mean different things?",
-      "Как собрать и упорядочить термины из технического стандарта?",
-      "Как создать глоссарий для одной команды или домена?",
-      "Как бороться с тем что одно слово значит разное в разных отделах?"
+      "How to handle synonyms within one domain?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5377,21 +5600,12 @@
       "type explosion",
       "reuse",
       "minting new types",
-      "parsimony",
-      "concept reuse",
-      "new vs existing",
-      "type creation decision"
+      "parsimony"
     ],
     "queries": [
       "When should I create a new U.Type?",
       "How to avoid creating too many roles?",
-      "Decision guide for new concepts.",
-      "When should I create a new concept instead of reusing an existing one?",
-      "How to avoid creating too many overlapping terms?",
-      "Decision guide: new term or reuse?",
-      "Когда создавать новое понятие, а когда переиспользовать существующее?",
-      "Как избежать создания слишком многих перекрывающихся терминов?",
-      "Руководство: новый термин или переиспользование?"
+      "Decision guide for new concepts."
     ],
     "dependencies": {
       "builds_on": [
@@ -5698,23 +5912,12 @@
       "CL-routing",
       "ReferencePlane",
       "edition pins",
-      "RSCRTriggerKindId",
-      "comparison",
-      "choose between alternatives",
-      "evaluate options",
-      "framework selection",
-      "decision making"
+      "RSCRTriggerKindId"
     ],
     "queries": [
       "What is CG-Spec in FPF?",
       "How does CG-Spec constrain lawful comparison and aggregation?",
-      "What must be pinned for CG-Spec reproducibility?",
-      "How to compare two or more approaches fairly?",
-      "How to choose between competing alternatives for a project?",
-      "How to evaluate frameworks or tools against each other?",
-      "Как честно сравнить два или более подхода?",
-      "Как выбрать между конкурирующими вариантами для проекта?",
-      "Как оценить фреймворки или инструменты относительно друг друга?"
+      "What must be pinned for CG-Spec reproducibility?"
     ],
     "dependencies": {
       "builds_on": [
@@ -6040,6 +6243,48 @@
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md"
+  },
+  "G.8": {
+    "title": "SoS-LOG Bundles & Maturity Ladders",
+    "status": "Stable",
+    "keywords": [
+      "SoS-LOG",
+      "rule ids",
+      "admissibility ledger",
+      "tri-state `{pass|degrade|abstain}`",
+      "maturity ladder (poset/ordinal)",
+      "selector-facing bundle",
+      "evidence path pins (`PathId/PathSliceId`)",
+      "Bridge/CL/Φ policy pins",
+      "portfolio/archive telemetry",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How to package SoS-LOG rules for the selector?",
+      "How to publish a maturity ladder as a citable card?",
+      "How to keep thresholds out of LOG and pin evidence paths?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G.Core",
+        "C.23",
+        "G.4",
+        "G.6",
+        "G.5",
+        "C.22"
+      ],
+      "coordinates_with": [
+        "G.7",
+        "G.10",
+        "G.11",
+        "F.8",
+        "F.9",
+        "E.18",
+        "E.10",
+        "E.5.2"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/10-g8-g8-soslog-bundles-maturity-ladders.md"
   },
   "G.9": {
     "title": "Parity / Benchmark Harness",

@@ -6,10 +6,10 @@ Auto-generated from metadata.json. Maps core terms to their primary pattern.
 |------|----------------|---------------|
 | evidence | A.2.4 | U.EvidenceRole: The Evidential Stance |
 | edition pins | A.15.3 | SlotFillingsPlanItem — Planned Slot-Fillings Baseline (WorkP |
+| RSCRTriggerKindId | G.0 | CG-Spec — Frame Standard & Comparability Governance |
 | context | A.1.1 | U.BoundedContext: The Semantic Frame |
 | provenance | A.2.9 | U.SpeechAct: Communicative Work Object |
 | composition | A.9 | Cross-Scale Consistency (C-3) |
-| RSCRTriggerKindId | G.0 | CG-Spec — Frame Standard & Comparability Governance |
 | invariants | A.1.1 | U.BoundedContext: The Semantic Frame |
 | scope | A.2.6 | Unified Scope Mechanism (USM): Context Slices & Scopes |
 | assurance | **B.3** | Trust & Assurance Calculus (F–G–R with Congruence) |
@@ -45,6 +45,8 @@ Auto-generated from metadata.json. Maps core terms to their primary pattern.
 | autonomy | A.13 | The Agential Role & Agency Spectrum |
 | P2W seam | A.15.3 | SlotFillingsPlanItem — Planned Slot-Fillings Baseline (WorkP |
 | reopen | A.16 | Language-State Transduction Coordination |
+| tri-state admissibility (`pass|degrade|abstain`) | A.19.UINDM | Unified Indicatorization Mechanism (UINDM) |
+| penalties→`R_eff` only | A.19.ULSAM | Unified Lawful Scale Aggregation Mechanism (ULSAM) |
 | energy | B.1.2 | System-specific Aggregation Γ_sys |
 | trust | B.1.3 | Γ_epist — Knowledge-Specific Aggregation |
 | formality | **B.3** | Trust & Assurance Calculus (F–G–R with Congruence) |
@@ -52,5 +54,3 @@ Auto-generated from metadata.json. Maps core terms to their primary pattern.
 | proof | B.3.2 | Evidence & Validation Logic (LOG-use) |
 | grounding | B.3.5 | CT2R-LOG — Working-Model Relations & Grounding |
 | quality | B.5.2.1 | Creative Abduction with NQD |
-| intension | C.3 | Kind‑CAL — Kinds, Intent/Extent, and Typed Reasoning |
-| agent | C.9 | Agency‑CHR |

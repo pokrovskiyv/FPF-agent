@@ -74,6 +74,25 @@ def parse_dependencies(text: str) -> dict:
     return deps
 
 
+def _split_table_row(line: str) -> list[str]:
+    """Split a markdown table row on | delimiters, ignoring | inside backticks."""
+    placeholder = '\x00PIPE\x00'
+    result = []
+    in_backtick = False
+    chars = list(line)
+    for i, ch in enumerate(chars):
+        if ch == '`':
+            in_backtick = not in_backtick
+            result.append(ch)
+        elif ch == '|' and in_backtick:
+            result.append(placeholder)
+        else:
+            result.append(ch)
+    protected = ''.join(result)
+    cells = [c.strip().replace(placeholder, '|') for c in protected.split('|')[1:-1]]
+    return cells
+
+
 def parse_toc(spec_path: Path) -> list[dict]:
     """Parse the Table of Contents tables from the spec."""
     lines = spec_path.read_text(encoding='utf-8').splitlines()
@@ -97,7 +116,7 @@ def parse_toc(spec_path: Path) -> list[dict]:
         if line.startswith('| :---') or line.startswith('| §') or line.startswith('| ---'):
             continue
 
-        cells = [c.strip() for c in line.split('|')[1:-1]]
+        cells = _split_table_row(line)
         if len(cells) < 3:
             continue
 

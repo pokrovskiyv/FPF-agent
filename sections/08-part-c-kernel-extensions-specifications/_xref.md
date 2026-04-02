@@ -1,6 +1,6 @@
 # Cross-References into 08-part-c-kernel-extensions-specifications
 
-Patterns in other Parts that reference patterns in this directory (52 refs).
+Patterns in other Parts that reference patterns in this directory (57 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -41,6 +41,9 @@ Patterns in other Parts that reference patterns in this directory (52 refs).
 | A.17 | prerequisite_for | C.16 |
 | A.19.CHR | coordinates_with | C.23 |
 | A.19.CN | coordinates_with | C.16 |
+| A.19.SelectorMechanism | builds_on | C.22 |
+| A.19.UNM | builds_on | C.16 |
+| A.19.USCM | builds_on | C.16 |
 
 ## From 07-part-b-transdisciplinary-reasoning-cluster
 
@@ -88,3 +91,5 @@ Patterns in other Parts that reference patterns in this directory (52 refs).
 | G.5 | coordinates_with | C.19 |
 | G.5 | coordinates_with | C.23 |
 | G.7 | builds_on | C.21 |
+| G.8 | builds_on | C.23 |
+| G.8 | builds_on | C.22 |

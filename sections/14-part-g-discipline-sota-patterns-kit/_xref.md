@@ -1,6 +1,6 @@
 # Cross-References into 14-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (26 refs).
+Patterns in other Parts that reference patterns in this directory (42 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -17,6 +17,21 @@ Patterns in other Parts that reference patterns in this directory (26 refs).
 | A.19.CHR | coordinates_with | G.5 |
 | A.19.CHR | coordinates_with | G.10 |
 | A.19.CN | coordinates_with | G.0 |
+| A.19.CPM | builds_on | G.0 |
+| A.19.CPM | coordinates_with | G.2 |
+| A.19.CPM | coordinates_with | G.5 |
+| A.19.CPM | coordinates_with | G.9 |
+| A.19.SelectorMechanism | builds_on | G.0 |
+| A.19.SelectorMechanism | builds_on | G.5 |
+| A.19.SelectorMechanism | used_by | G.5 |
+| A.19.UINDM | coordinates_with | G.0 |
+| A.19.UINDM | coordinates_with | G.2 |
+| A.19.ULSAM | builds_on | G.0 |
+| A.19.ULSAM | coordinates_with | G.2 |
+| A.19.UNM | builds_on | G.0 |
+| A.19.UNM | coordinates_with | G.2 |
+| A.19.USCM | builds_on | G.0 |
+| A.19.USCM | coordinates_with | G.2 |
 
 ## From 08-part-c-kernel-extensions-specifications
 
@@ -26,6 +41,7 @@ Patterns in other Parts that reference patterns in this directory (26 refs).
 | C.18.1 | coordinates_with | G.9 |
 | C.18.1 | coordinates_with | G.10 |
 | C.19.1 | coordinates_with | G.5 |
+| C.19.1 | coordinates_with | G.8 |
 | C.19.1 | coordinates_with | G.9 |
 | C.2.2 | coordinates_with | G.6 |
 | C.2.2 | coordinates_with | G.7 |

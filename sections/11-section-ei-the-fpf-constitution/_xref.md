@@ -1,6 +1,6 @@
 # Cross-References into 11-section-ei-the-fpf-constitution
 
-Patterns in other Parts that reference patterns in this directory (93 refs).
+Patterns in other Parts that reference patterns in this directory (103 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -76,6 +76,13 @@ Patterns in other Parts that reference patterns in this directory (93 refs).
 | A.19.CHR | builds_on | E.18 |
 | A.19.CHR | builds_on | E.10 |
 | A.19.CHR | builds_on | E.19 |
+| A.19.CPM | coordinates_with | E.20 |
+| A.19.SelectorMechanism | used_by | E.18 |
+| A.19.UINDM | coordinates_with | E.20 |
+| A.19.ULSAM | coordinates_with | E.20 |
+| A.19.UNM | builds_on | E.18 |
+| A.19.UNM | builds_on | E.20 |
+| A.19.USCM | coordinates_with | E.20 |
 | A.20 | builds_on | E.18 |
 
 ## From 07-part-b-transdisciplinary-reasoning-cluster
@@ -125,6 +132,9 @@ Patterns in other Parts that reference patterns in this directory (93 refs).
 | G.6 | builds_on | E.5.2 |
 | G.7 | builds_on | E.18 |
 | G.7 | builds_on | E.10 |
+| G.8 | coordinates_with | E.18 |
+| G.8 | coordinates_with | E.10 |
+| G.8 | coordinates_with | E.5.2 |
 | G.9 | builds_on | E.18 |
 | G.9 | builds_on | E.5.2 |
 | G.9 | builds_on | E.10 |

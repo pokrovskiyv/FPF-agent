@@ -1,6 +1,6 @@
 # Cross-References into 05-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (47 refs).
+Patterns in other Parts that reference patterns in this directory (59 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -23,6 +23,18 @@ Patterns in other Parts that reference patterns in this directory (47 refs).
 | A.19.CHR | builds_on | A.6.1 |
 | A.19.CHR | builds_on | A.6.5 |
 | A.19.CN | coordinates_with | A.6.1 |
+| A.19.CPM | builds_on | A.6.1 |
+| A.19.CPM | builds_on | A.6.5 |
+| A.19.SelectorMechanism | builds_on | A.6.1 |
+| A.19.SelectorMechanism | builds_on | A.6.5 |
+| A.19.UINDM | builds_on | A.6.1 |
+| A.19.UINDM | builds_on | A.6.5 |
+| A.19.ULSAM | builds_on | A.6.1 |
+| A.19.ULSAM | builds_on | A.6.5 |
+| A.19.UNM | builds_on | A.6.1 |
+| A.19.UNM | builds_on | A.6.5 |
+| A.19.USCM | builds_on | A.6.1 |
+| A.19.USCM | builds_on | A.6.5 |
 
 ## From 07-part-b-transdisciplinary-reasoning-cluster
 
