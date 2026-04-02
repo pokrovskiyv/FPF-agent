@@ -32,7 +32,7 @@ python3 scripts/build_metadata.py      # ToC → sections/metadata.json (242 ent
 python3 scripts/enrich_metadata.py     # enrich metadata with user-facing queries (RU+EN)
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)
-python3 scripts/build_routes.py        # → sections/routes/route-{1..6}.md
+python3 scripts/build_routes.py        # → sections/routes/route-{1..10}.md
 python3 scripts/build_xrefs.py         # → sections/*/_xref.md (cross-references)
 
 # Semantic search (requires sentence-transformers, faiss-cpu via uv)
@@ -53,7 +53,7 @@ python3 scripts/test_smoke.py --all    # + semantic search (requires uv)
 **Do not read FPF-Spec.md directly** — it's 59K lines. Instead:
 
 1. **By pattern ID** (e.g., A.6, E.17): look up in `sections/metadata.json` → `file` field → read that file
-2. **By burden/route**: read `sections/routes/route-{1..6}.md` → follow the section chain
+2. **By burden/route**: read `sections/routes/route-{1..10}.md` → follow the section chain
 3. **By keyword**: search `sections/metadata.json` `keywords` and `queries` fields
 4. **By Part**: read `sections/{directory}/_index.md` for a listing of all sections in that Part
 5. **By semantic similarity**: `uv run scripts/semantic_search.py "natural language query" --top-k 5` — uses FAISS + BAAI/bge-m3 multilingual embeddings (1024-dim), works with Russian and English
@@ -70,7 +70,7 @@ Pattern IDs are hierarchical: `A.6.P` is a child of `A.6`, which belongs to Part
 | **fpf-reviewer** | Validates grounding (claims traceable to sections) + jargon guard (catches FPF terminology leaking into output) |
 | **fpf-sync** | Scheduled remote agent: syncs upstream fork, rebuilds sections, AI-enhances _index.md summaries |
 
-Pipeline depth is adaptive: simple term lookups use Retriever → Reasoner (~800 tokens), route-based queries use Retriever → Reasoner (~1200), cross-cutting queries add Reviewer (~2000).
+Pipeline depth is adaptive: simple term lookups use Retriever → Reasoner (~800 tokens), route-based queries use Retriever → Reasoner (~1200-1500), semantic fallback and cross-cutting queries add Reviewer (~2000-2500). Three-tier architecture: routes as cache (Tier 1), semantic search as fallback (Tier 2), combined for cross-cutting (Tier 3).
 
 ## Sync & Rebuild
 
@@ -91,7 +91,7 @@ Two-layer automatic update:
 - **NEVER** "applicability" / "envelope" / "generality" as scope names → `U.ClaimScope`, `U.WorkScope`
 - Full rules: `sections/lexical-rules.md`
 
-## Six Entry Routes (burden-based)
+## Ten Entry Routes + Semantic Fallback
 
 | # | User's burden | Route file |
 |---|--------------|------------|
@@ -101,6 +101,11 @@ Two-layer automatic update:
 | 4 | Choosing between alternatives / opaque decisions | `sections/routes/route-4-comparison-selection.md` |
 | 5 | State-of-the-art survey / portfolio scaffold needed | `sections/routes/route-5-generator-portfolio.md` |
 | 6 | Rewrite for different audience / compare text versions | `sections/routes/route-6-rewrite-explanation.md` |
+| 7 | Hidden bias / ethical audit / value conflicts | `sections/routes/route-7-ethical-assurance.md` |
+| 8 | Trust metrics / overclaim / evidence aggregation | `sections/routes/route-8-trust-assurance.md` |
+| 9 | KPIs lie / aggregation mismatch / sum != whole | `sections/routes/route-9-composition-aggregation.md` |
+| 10 | Design drift / lessons learned / feedback loops | `sections/routes/route-10-evolution-learning.md` |
+| — | Any other FPF-relevant query | Semantic fallback (FAISS + keyword search) |
 
 ## Spec Structure (Parts A-K)
 
