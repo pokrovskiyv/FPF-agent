@@ -12,7 +12,7 @@
 | 2 | A.6.3.RT | RepresentationTransduction — same-described-entity represent | sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63rt-a63rt-representationtransduction-same-described-entity-repre.md | YES |
 | 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation classification  | sections/11-section-ei-the-fpf-constitution/27-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md | YES |
 | 4 | E.17.ID.CR | InterpretationDiscipline / ComparativeReading — bounded comp | sections/11-section-ei-the-fpf-constitution/28-e17id-e17idcr-interpretationdiscipline-comparativereading-bounded-.md |  |
-| 5 | E.17.AUD.LHR | AuthoredUnitDiscipline / Local Head Restoration — repair the | sections/11-section-ei-the-fpf-constitution/30-e17aud-e17audlhr-authoredunitdiscipline-local-head-restoration-repa.md |  |
+| 5 | E.17.AUD.LHR | AuthoredUnitDiscipline / Local Head Restoration — repair the | sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md |  |
 
 ## Loading Strategy
 

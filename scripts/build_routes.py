@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build route chain files for each of the 6 practical FPF entry routes.
+"""Build route chain files for each of the 10 practical FPF entry routes.
 
 Each route file lists the ordered chain of sections to load, with a
 plain-language description of what the user will get.
@@ -60,6 +60,38 @@ ROUTES = [
         "user_gets": "Rewritten text with notes on what was preserved and what changed, faithfulness profile",
         "chain": ["A.6.3.CR", "A.6.3.RT", "E.17.EFP", "E.17.ID.CR", "E.17.AUD.LHR"],
         "core": ["A.6.3.CR", "A.6.3.RT", "E.17.EFP"],
+    },
+    {
+        "id": 7,
+        "slug": "ethical-assurance",
+        "user_says": "How to audit for hidden bias? / ethical assumptions / value conflicts across teams at different scales",
+        "user_gets": "Bias register, conflict map by scale, ethical audit checklist",
+        "chain": ["D.1", "D.2", "D.3", "D.4", "D.5"],
+        "core": ["D.2", "D.3", "D.5"],
+    },
+    {
+        "id": 8,
+        "slug": "trust-assurance",
+        "user_says": "Can we trust this metric? / how to aggregate confidence without overclaim / evidence grounding",
+        "user_gets": "Assurance profile (formality/scope/reliability per component), dependency map, evidence gaps",
+        "chain": ["B.3", "B.3.5", "B.1", "B.1.1", "A.6.B"],
+        "core": ["B.3", "B.3.5", "B.1"],
+    },
+    {
+        "id": 9,
+        "slug": "composition-aggregation",
+        "user_says": "Why do KPI dashboards lie? / sum of parts != whole / Tool A aggregates differently from Tool B",
+        "user_gets": "Violated invariant diagnosis, aggregation dependency map, fix recommendations",
+        "chain": ["B.1", "B.1.1", "B.1.2", "B.1.3", "B.1.4", "B.1.5"],
+        "core": ["B.1", "B.1.1", "B.1.4"],
+    },
+    {
+        "id": 10,
+        "slug": "evolution-learning",
+        "user_says": "Design is outdated and nobody noticed / how to close the loop between operations and design / lessons learned",
+        "user_gets": "Current cycle map (where the break is), loop closure plan, cycle health metrics",
+        "chain": ["B.4", "B.4.1", "B.5.1", "A.4", "G.11"],
+        "core": ["B.4", "B.4.1", "B.5.1"],
     },
 ]
 
