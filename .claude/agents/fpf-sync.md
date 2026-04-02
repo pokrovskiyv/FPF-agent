@@ -41,7 +41,10 @@ If merge conflicts — stop and report. Do NOT force-resolve.
 bash scripts/rebuild_all.sh
 ```
 
-This regenerates all sections/, metadata.json, glossary, lexical rules, routes.
+This regenerates all sections/, metadata.json, glossary, lexical rules, routes,
+and the FAISS embeddings index (local semantic search). The embeddings step
+requires `uv` to be available on the machine — it uses sentence-transformers
+and faiss-cpu via inline script dependencies.
 
 ### Step 4: AI-enhance _index.md files
 

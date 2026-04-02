@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ============================================================
+# DEPRECATED — this script is LEGACY.
+# Replaced by:
+#   scripts/build_embeddings.py  (build FAISS index)
+#   scripts/semantic_search.py   (query FAISS index)
+#
+# Local FAISS-based search with BAAI/bge-m3 provides better
+# results without cloud dependencies. Kept for reference only.
+# ============================================================
 """Prepare FPF sections for Pinecone upsert.
 
 Reads all section files and metadata.json, produces a JSONL file

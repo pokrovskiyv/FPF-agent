@@ -14,29 +14,39 @@ cd "$PROJECT_DIR"
 echo "=== FPF Skill-Agent: Full Rebuild ==="
 echo ""
 
-echo "[1/5] Splitting FPF-Spec.md into sections..."
+echo "[1/8] Splitting FPF-Spec.md into sections..."
 rm -rf sections/
 python3 scripts/split_spec.py
 echo ""
 
-echo "[2/5] Building metadata.json..."
+echo "[2/8] Building metadata.json..."
 python3 scripts/build_metadata.py
 echo ""
 
-echo "[3/5] Building glossary-quick.md..."
+echo "[3/8] Enriching metadata with user-facing queries..."
+python3 scripts/enrich_metadata.py
+echo ""
+
+echo "[4/8] Building glossary-quick.md..."
 python3 scripts/build_glossary.py
 echo ""
 
-echo "[4/5] Building lexical-rules.md..."
+echo "[5/8] Building lexical-rules.md..."
 python3 scripts/build_lexical.py
 echo ""
 
-echo "[5/6] Building route chain files..."
+echo "[6/8] Building route chain files..."
 python3 scripts/build_routes.py
 echo ""
 
-echo "[6/6] Building cross-reference indexes..."
+echo "[7/8] Building cross-reference indexes..."
 python3 scripts/build_xrefs.py
+echo ""
+
+# Requires `uv` (https://docs.astral.sh/uv/).
+# Will auto-download the BAAI/bge-m3 model on first run.
+echo "[8/8] Building FAISS embeddings index..."
+uv run scripts/build_embeddings.py
 echo ""
 
 echo "=== Rebuild Complete ==="

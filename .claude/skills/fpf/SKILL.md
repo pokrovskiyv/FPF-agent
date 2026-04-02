@@ -62,10 +62,11 @@ Detect from user's natural language — no FPF terms needed.
 - `sections/routes/route-*.md` — ordered section chains per burden
 - `sections/glossary-quick.md` — 50 core terms mapped to patterns
 - `sections/lexical-rules.md` — mandatory terminology rules (internal only)
+- `sections/embeddings/` — FAISS index for semantic search (rebuilt locally)
 
 ## Agents
 
 - `.claude/agents/fpf-classifier.md` — burden detection + strategy
-- `.claude/agents/fpf-retriever.md` — section loading + stagnation detection
+- `.claude/agents/fpf-retriever.md` — section loading + stagnation detection + semantic search
 - `.claude/agents/fpf-reasoner.md` — applies structure, outputs plain language
 - `.claude/agents/fpf-reviewer.md` — grounding + jargon guard

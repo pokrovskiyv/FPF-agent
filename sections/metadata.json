@@ -372,11 +372,25 @@
       "RSG",
       "role state",
       "enactability",
-      "lifecycle"
+      "lifecycle",
+      "readiness check",
+      "eligibility tracking",
+      "role lifecycle",
+      "definition of done",
+      "completion criteria",
+      "task readiness"
     ],
     "queries": [
       "How to model the state of a role?",
-      "What is a Role State Graph?"
+      "What is a Role State Graph?",
+      "How to track whether someone is ready and authorized to perform a task?",
+      "How to define when a role is active, suspended, or expired?",
+      "How to separate 'has the credential' from 'is fit to act right now'?",
+      "What does 'done' mean for a task or role?",
+      "Как отслеживать готовность и допуск человека к выполнению задачи?",
+      "Как определить когда роль активна, приостановлена или истекла?",
+      "Как разделить 'имеет допуск' и 'готов действовать прямо сейчас'?",
+      "Что значит 'готово' для задачи или роли?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1864,11 +1878,20 @@
       "CharacteristicSpace",
       "dynamics",
       "state model",
-      "RSG"
+      "RSG",
+      "multi-dimensional tracking",
+      "system condition",
+      "measurable properties"
     ],
     "queries": [
       "How to define a system's state space?",
-      "How does FPF model change over time?"
+      "How does FPF model change over time?",
+      "How to define all the measurable properties of a system in one place?",
+      "How to track a system's condition across multiple dimensions consistently?",
+      "How to avoid mixing incompatible units or scales when comparing system states?",
+      "Как определить все измеримые свойства системы в одном месте?",
+      "Как отслеживать состояние системы по нескольким параметрам одновременно?",
+      "Как избежать смешения несовместимых единиц или шкал при сравнении состояний?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1899,13 +1922,22 @@
       "WLNK discipline",
       "conformance checklist",
       "SCR/RSCR harness",
-      "RSG admission hooks"
+      "RSG admission hooks",
+      "measurement governance",
+      "dashboard consistency",
+      "cross-team reporting"
     ],
     "queries": [
       "What is a CN-frame in FPF?",
       "How does CN-Spec govern comparability and normalization by reference?",
       "How do CN-frames use bridges and CL for cross-context reuse?",
-      "What are the conformance and regression checks for CN-frames?"
+      "What are the conformance and regression checks for CN-frames?",
+      "How to make sure different teams measure things the same way?",
+      "How to govern metrics so dashboards across departments are comparable?",
+      "How to prevent hidden changes in how numbers are calculated?",
+      "Как убедиться что разные команды измеряют показатели одинаково?",
+      "Как управлять метриками чтобы дашборды разных отделов были сравнимы?",
+      "Как предотвратить скрытые изменения в способе расчёта показателей?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5147,8 +5179,19 @@
   "F.1": {
     "title": "Domain‑Family Landscape Survey",
     "status": "Stable",
-    "keywords": [],
-    "queries": [],
+    "keywords": [
+      "domain survey",
+      "field mapping",
+      "landscape analysis"
+    ],
+    "queries": [
+      "How to map out all the disciplines relevant to my project?",
+      "How do I avoid tunnel vision when different teams use different terminology?",
+      "What fields should I survey before unifying concepts across teams?",
+      "Как составить карту предметных областей для проекта?",
+      "Как избежать зацикленности на одном стандарте при анализе домена?",
+      "Какие области знаний нужно охватить перед объединением терминологии?"
+    ],
     "dependencies": {
       "builds_on": [
         "E.10.D1",
@@ -5172,12 +5215,21 @@
       "lexical unit",
       "normalization",
       "provenance",
-      "surface terms"
+      "surface terms",
+      "glossary building",
+      "vocabulary extraction",
+      "naming conventions"
     ],
     "queries": [
       "How to extract terminology from a standard?",
       "What is a local lexical unit?",
-      "How to handle synonyms within one domain?"
+      "How to handle synonyms within one domain?",
+      "How do I collect and standardize terms from a technical document?",
+      "How to create a consistent glossary for one team or domain?",
+      "How to stop people using the same word to mean different things?",
+      "Как собрать и упорядочить термины из технического стандарта?",
+      "Как создать глоссарий для одной команды или домена?",
+      "Как бороться с тем что одно слово значит разное в разных отделах?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5325,12 +5377,21 @@
       "type explosion",
       "reuse",
       "minting new types",
-      "parsimony"
+      "parsimony",
+      "concept reuse",
+      "new vs existing",
+      "type creation decision"
     ],
     "queries": [
       "When should I create a new U.Type?",
       "How to avoid creating too many roles?",
-      "Decision guide for new concepts."
+      "Decision guide for new concepts.",
+      "When should I create a new concept instead of reusing an existing one?",
+      "How to avoid creating too many overlapping terms?",
+      "Decision guide: new term or reuse?",
+      "Когда создавать новое понятие, а когда переиспользовать существующее?",
+      "Как избежать создания слишком многих перекрывающихся терминов?",
+      "Руководство: новый термин или переиспользование?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5637,12 +5698,23 @@
       "CL-routing",
       "ReferencePlane",
       "edition pins",
-      "RSCRTriggerKindId"
+      "RSCRTriggerKindId",
+      "comparison",
+      "choose between alternatives",
+      "evaluate options",
+      "framework selection",
+      "decision making"
     ],
     "queries": [
       "What is CG-Spec in FPF?",
       "How does CG-Spec constrain lawful comparison and aggregation?",
-      "What must be pinned for CG-Spec reproducibility?"
+      "What must be pinned for CG-Spec reproducibility?",
+      "How to compare two or more approaches fairly?",
+      "How to choose between competing alternatives for a project?",
+      "How to evaluate frameworks or tools against each other?",
+      "Как честно сравнить два или более подхода?",
+      "Как выбрать между конкурирующими вариантами для проекта?",
+      "Как оценить фреймворки или инструменты относительно друг друга?"
     ],
     "dependencies": {
       "builds_on": [

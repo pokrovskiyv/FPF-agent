@@ -28,12 +28,17 @@ FPF is **invisible infrastructure**. When the skill is active:
 # Individual scripts
 python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~240 files)
 python3 scripts/build_metadata.py      # ToC → sections/metadata.json (235 entries)
+python3 scripts/enrich_metadata.py     # enrich metadata with user-facing queries (RU+EN)
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)
 python3 scripts/build_routes.py        # → sections/routes/route-{1..6}.md
+
+# Semantic search (requires sentence-transformers, faiss-cpu via uv)
+uv run scripts/build_embeddings.py     # → sections/embeddings/ (FAISS index)
+uv run scripts/semantic_search.py "query text" --top-k 5  # search sections
 ```
 
-No external Python dependencies. All scripts use stdlib only.
+Rebuild scripts use stdlib only. Embedding scripts use `uv run` (auto-installs deps).
 
 ## Navigating the Spec
 
@@ -43,6 +48,7 @@ No external Python dependencies. All scripts use stdlib only.
 2. **By burden/route**: read `sections/routes/route-{1..6}.md` → follow the section chain
 3. **By keyword**: search `sections/metadata.json` `keywords` and `queries` fields
 4. **By Part**: read `sections/{directory}/_index.md` for a listing of all sections in that Part
+5. **By semantic similarity**: `uv run scripts/semantic_search.py "natural language query" --top-k 5` — uses FAISS + BAAI/bge-m3 multilingual embeddings (1024-dim), works with Russian and English
 
 Pattern IDs are hierarchical: `A.6.P` is a child of `A.6`, which belongs to Part A (dir `04-part-a-kernel-architecture-cluster`).
 
@@ -51,7 +57,7 @@ Pattern IDs are hierarchical: `A.6.P` is a child of `A.6`, which belongs to Part
 | Agent | Role |
 |-------|------|
 | **fpf-classifier** | Detects coordination burden from user's natural language, selects route and pipeline depth via strategy table |
-| **fpf-retriever** | Loads narrowest relevant sections using tiered retrieval (pattern ID → route chain → cross-refs → keyword fallback) |
+| **fpf-retriever** | Loads narrowest relevant sections using tiered retrieval (pattern ID → route chain → cross-refs → keywords → semantic search) |
 | **fpf-reasoner** | Applies FPF structure to user's problem, outputs plain language. "Apply, don't explain." Generates structured artifacts (comparison tables, responsibility maps, term sheets, structured breakdowns) |
 | **fpf-reviewer** | Validates grounding (claims traceable to sections) + jargon guard (catches FPF terminology leaking into output) |
 | **fpf-sync** | Scheduled remote agent: syncs upstream fork, rebuilds sections, AI-enhances _index.md summaries |
