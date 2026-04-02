@@ -72,9 +72,9 @@ Two-layer automatic update:
 
 **GitHub Action** (`.github/workflows/rebuild-sections.yml`):
 - Hook: push to main with FPF-Spec.md change → Python rebuild
-- Cron: 1st and 15th, 7:00 UTC → auto-sync fork + rebuild
+- Cron: 1st of each month, 7:00 UTC → auto-sync fork + rebuild
 
-**Claude Code Remote Trigger** (bi-weekly):
+**Claude Code Remote Trigger** (monthly):
 - Same schedule → syncs upstream → Python rebuild → AI-enhances `_index.md` and `glossary-quick.md` with plain-language summaries
 - Manage at: https://claude.ai/code/scheduled
 
