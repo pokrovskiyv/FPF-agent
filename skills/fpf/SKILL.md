@@ -1,17 +1,17 @@
 ---
 name: fpf
 description: >
-  Use when work involves multiple specialists, teams, or AI agents
-  that need coordination. Triggers on: teams misunderstanding each
-  other, terminology disagreements, choosing between alternatives
-  with explicit trade-offs, unpacking mixed contract/spec/SLA
-  language, structuring decision-making, handing off work between
-  teams, needing different reports for different audiences from
-  the same work, organizing state-of-the-art knowledge, or when
-  someone has a forming idea they cannot yet articulate clearly.
+  Use when work involves coordination, systems engineering, or
+  transdisciplinary problems. Triggers on: teams misunderstanding
+  each other, terminology disagreements, choosing between alternatives,
+  unpacking mixed contract/spec/SLA language, structuring decisions,
+  handing off work, ethical audits, trust/assurance questions,
+  aggregation/composition problems, design evolution and learning
+  loops, or any systems engineering coordination challenge.
   Also triggers on explicit FPF terms (holon, UTS, DRR, bounded
-  context). Do NOT trigger for standard coding, simple bug fixes,
-  or single-person tasks.
+  context). Supports semantic fallback for queries that don't match
+  any predefined route. Do NOT trigger for standard coding, simple
+  bug fixes, or single-person tasks.
 ---
 
 # FPF Thinking Amplifier
@@ -27,33 +27,43 @@ When reading files, always prefix paths with `${CLAUDE_PLUGIN_ROOT}/`.
 
 ## How It Works
 
-1. Classify the user's problem into a burden type (see table below)
-2. Dispatch the fpf-classifier agent to determine route and pipeline depth
-3. Load only the sections needed (not the full 59K-line spec)
-4. Apply FPF structure internally, deliver results in plain language
+Three-tier architecture: routes as cache, semantic search as foundation.
+
+1. Detect FPF signal in user's message (broader than burden matching)
+2. Dispatch fpf-classifier to determine tier and route
+3. **Tier 1 (route match):** Load curated section chain — fast, cheap, high quality
+4. **Tier 2 (semantic fallback):** No route matches — retriever uses keyword + FAISS search to assemble dynamic chain
+5. **Tier 3 (combined):** Multiple concerns — route core + semantic supplement
+6. Apply FPF structure internally, deliver results in plain language
 
 ## Burden Classification
 
 Detect from user's natural language — no FPF terms needed.
 
-| Burden | User signals | Action |
-|--------|-------------|--------|
-| project_alignment | teams confused, responsibilities unclear, work handoff | Route 1 → sections/routes/route-1-project-alignment.md |
-| language_discovery | terminology disagreement, vague idea, can't articulate | Route 2 → sections/routes/route-2-language-discovery.md |
-| boundary_unpacking | contract/SLA/API mixes rules and obligations | Route 3 → sections/routes/route-3-boundary-unpacking.md |
-| comparison_selection | choosing between options, opaque decision-making | Route 4 → sections/routes/route-4-comparison-selection.md |
-| generator_portfolio | state-of-the-art survey, reusable scaffold needed | Route 5 → sections/routes/route-5-generator-portfolio.md |
-| rewrite_explanation | rewrite preserving meaning, different audience | Route 6 → sections/routes/route-6-rewrite-explanation.md |
-| term_lookup | explicit FPF term question | sections/metadata.json → direct file load |
-| cross_cutting | multiple burdens match | Load multiple routes + sections/glossary-quick.md |
+| Burden | User signals | Tier | Action |
+|--------|-------------|------|--------|
+| project_alignment | teams confused, responsibilities unclear | 1 | Route 1 → route-1-project-alignment.md |
+| language_discovery | terminology disagreement, vague idea | 1 | Route 2 → route-2-language-discovery.md |
+| boundary_unpacking | contract/SLA/API mixes rules and obligations | 1 | Route 3 → route-3-boundary-unpacking.md |
+| comparison_selection | choosing between options, opaque decisions | 1 | Route 4 → route-4-comparison-selection.md |
+| generator_portfolio | state-of-the-art survey, reusable scaffold | 1 | Route 5 → route-5-generator-portfolio.md |
+| rewrite_explanation | rewrite preserving meaning, different audience | 1 | Route 6 → route-6-rewrite-explanation.md |
+| ethical_assurance | bias audit, ethical assumptions, value conflicts | 1 | Route 7 → route-7-ethical-assurance.md |
+| trust_assurance | trust metrics, overclaim, evidence aggregation | 1 | Route 8 → route-8-trust-assurance.md |
+| composition_aggregation | KPIs lie, aggregation mismatch, sum != whole | 1 | Route 9 → route-9-composition-aggregation.md |
+| evolution_learning | design drift, lessons learned, feedback loops | 1 | Route 10 → route-10-evolution-learning.md |
+| term_lookup | explicit FPF term question | 1 | metadata.json → direct file load |
+| semantic | FPF signal but no route match | 2 | Keyword + FAISS → dynamic chain |
+| cross_cutting | multiple burdens match | 3 | Primary route + semantic supplement |
 
 ## Pipeline Depth (adaptive compute)
 
-| Burden | Agents | Budget |
-|--------|--------|--------|
-| term_lookup | Retriever → Reasoner | ~800 tokens |
-| route-based | Retriever → Reasoner | ~1200 tokens |
-| cross_cutting | Retriever → Reasoner → Reviewer | ~2000 tokens |
+| Tier | Agents | Budget |
+|------|--------|--------|
+| 1: term_lookup | Retriever → Reasoner | ~800 tokens |
+| 1: route-based | Retriever → Reasoner | ~1200-1500 tokens |
+| 2: semantic | Retriever → Reasoner → Reviewer | ~2000 tokens |
+| 3: combined | Retriever → Reasoner → Reviewer | ~2500 tokens |
 
 ## Confidence Gate
 
@@ -64,7 +74,7 @@ Detect from user's natural language — no FPF terms needed.
 ## Key Files
 
 - `sections/metadata.json` — instant pattern lookup (235 entries)
-- `sections/routes/route-*.md` — ordered section chains per burden
+- `sections/routes/route-{1..10}.md` — ordered section chains per burden (10 routes)
 - `sections/glossary-quick.md` — 50 core terms mapped to patterns
 - `sections/lexical-rules.md` — mandatory terminology rules (internal only)
 - `sections/embeddings/` — FAISS index for semantic search (rebuilt locally)
