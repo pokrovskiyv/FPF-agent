@@ -1,0 +1,5484 @@
+{
+  "preface_1": {
+    "title": "ID & Title",
+    "status": "Status",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_2": {
+    "title": "What this specification is (and how to use it)",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_3": {
+    "title": "Creativity in Open-Ended Evolution and Assurance*",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_4": {
+    "title": "Navigating Uncertainty: Building Closed Worlds within an Open World",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_5": {
+    "title": "FPF as an Evolutionary Architecture for Thought",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_6": {
+    "title": "Architectural Characteristic of Thought",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_7": {
+    "title": "Beyond Cognitive Biases: FPF as a Generative Architecture for Thought",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_8": {
+    "title": "Thinking Through Writing: The FPF Discipline of Conceptual Work",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_9": {
+    "title": "Descriptive Ontologies vs. A Thinking-Oriented Architecture",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_10": {
+    "title": "The \"Bitter Lesson\" trajectory — compute, data, and freedom over hand‑tuned rules (FPF stance)",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_11": {
+    "title": "From Flat Documents to High-Dimensional Truth: The Multi-View Architecture",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_12": {
+    "title": "Boundary Statements: Where Language Becomes a System Boundary",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_13": {
+    "title": "Raising Semantic Precision: From Triggers to Math‑Backed Ontics",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_14": {
+    "title": "The “big storylines” unique to FPF (load‑bearing commitments)",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_15": {
+    "title": "Transdisciplinarity as a Meta‑Theory of Thinking",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_16": {
+    "title": "FPF as a Culinary Architecture for Collective Thought: Why We Formalize “Obvious” Ideas",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_17": {
+    "title": "Intellect Stack (informative Overview)",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_18": {
+    "title": "Purpose, Scope, and Explicit Non‑Goals",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "A.0": {
+    "title": "Onboarding Glossary (NQD & E/E‑LOG)",
+    "status": "Stable",
+    "keywords": [
+      "novelty",
+      "quality‑diversity (NQD)",
+      "explore/exploit (E/E‑LOG)",
+      "portfolio (set)",
+      "illumination map (report‑only telemetry)",
+      "parity run",
+      "comparability",
+      "ReferencePlane",
+      "CL^plane",
+      "ParetoOnly default"
+    ],
+    "queries": [
+      "What is NQD in FPF?",
+      "How does FPF handle creative generation?",
+      "What is an explore-exploit policy in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "E"
+      ],
+      "constrains": [
+        "Any pattern/UTS row that describes a generator",
+        "selector",
+        "or portfolio"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/01-a0-a0-onboarding-glossary-nqd-eelog.md"
+  },
+  "A.1": {
+    "title": "Holonic Foundation: Entity → Holon",
+    "status": "Stable",
+    "keywords": [
+      "part-whole composition",
+      "system boundary",
+      "entity",
+      "holon",
+      "U.System",
+      "U.Episteme"
+    ],
+    "queries": [
+      "How does FPF model a system and its parts?",
+      "What is a holon?",
+      "Difference between entity and system."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "P-8 Cross-Scale Consistency"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/02-a1-a1-holonic-foundation-entity-holon.md"
+  },
+  "A.1.1": {
+    "title": "U.BoundedContext: The Semantic Frame",
+    "status": "Stable",
+    "keywords": [
+      "local meaning",
+      "context",
+      "semantic boundary",
+      "domain",
+      "invariants",
+      "glossary",
+      "DDD"
+    ],
+    "queries": [
+      "How does FPF handle ambiguity?",
+      "What is a Bounded Context in FPF?",
+      "How to define rules for a specific project?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-the-semantic-frame.md"
+  },
+  "A.2": {
+    "title": "Role Taxonomy",
+    "status": "Stable",
+    "keywords": [
+      "role",
+      "assignment",
+      "holder",
+      "context",
+      "function vs identity",
+      "responsibility",
+      "U.RoleAssignment"
+    ],
+    "queries": [
+      "How to model responsibilities?",
+      "What is the difference between what a thing *is* and what it *does*?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/04-a2-a2-role-taxonomy.md"
+  },
+  "A.2.1": {
+    "title": "U.RoleAssignment: Contextual Role Assignment",
+    "status": "Stable",
+    "keywords": [
+      "Standard",
+      "holder",
+      "role",
+      "context",
+      "RoleEnactment",
+      "RCS/RSG"
+    ],
+    "queries": [
+      "How to formally assign a role in FPF?",
+      "What is the Holder#Role:Context Standard?"
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
+  },
+  "A.2.2": {
+    "title": "U.Capability: System Ability (dispositional property)",
+    "status": "Stable",
+    "keywords": [
+      "ability",
+      "skill",
+      "performance",
+      "action",
+      "work scope",
+      "measures"
+    ],
+    "queries": [
+      "How to separate ability from permission?",
+      "What is a capability in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "informs": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/06-a22-a22-ucapability.md"
+  },
+  "A.2.3": {
+    "title": "U.PromiseContent: Consumer‑facing Promise Clause",
+    "status": "Stable",
+    "keywords": [
+      "promise content",
+      "promise content",
+      "accessSpec",
+      "acceptanceSpec",
+      "SLO",
+      "SLA",
+      "claim scope (G)",
+      "Work evidence",
+      "provider/consumer roles"
+    ],
+    "queries": [
+      "What is a promise content in FPF?",
+      "Promise content vs Work vs MethodDescription",
+      "How do access and acceptance differ?",
+      "How is SLO/SLA adjudicated from Work evidence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "F"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/07-a23-a23-upromisecontent-promise-content.md"
+  },
+  "A.2.4": {
+    "title": "U.EvidenceRole: The Evidential Stance",
+    "status": "Stable",
+    "keywords": [
+      "evidence",
+      "claim",
+      "support",
+      "justification",
+      "episteme"
+    ],
+    "queries": [
+      "How does an episteme serve as evidence?",
+      "Modeling evidence roles."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "informs": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/08-a24-a24-uevidencerole.md"
+  },
+  "A.2.5": {
+    "title": "U.RoleStateGraph: The Named State Space of a Role",
+    "status": "Stable",
+    "keywords": [
+      "state machine",
+      "RSG",
+      "role state",
+      "enactability",
+      "lifecycle"
+    ],
+    "queries": [
+      "How to model the state of a role?",
+      "What is a Role State Graph?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md"
+  },
+  "A.2.6": {
+    "title": "Unified Scope Mechanism (USM): Context Slices & Scopes",
+    "status": "Stable",
+    "keywords": [
+      "scope",
+      "applicability",
+      "ClaimScope (G)",
+      "WorkScope",
+      "set-valued"
+    ],
+    "queries": [
+      "How to define the scope of a claim or capability?",
+      "What is G in F-G-R?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "constrains": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md"
+  },
+  "A.2.7": {
+    "title": "U.RoleAlgebra: In-Context Role Relations (≤, ⊥, ⊗)",
+    "status": "Stable",
+    "keywords": [
+      "role algebra",
+      "specialization (`≤`)",
+      "incompatibility (`⊥`)",
+      "bundles (`⊗`)",
+      "separation of duties (SoD)",
+      "requiredRoles substitution"
+    ],
+    "queries": [
+      "What does `RoleS ≤ RoleG` mean in FPF?",
+      "How do I encode Separation of Duties with `⊥`?",
+      "How do role bundles (`⊗`) work?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/11-a27-a27-urolealgebra-incontext-role-relations.md"
+  },
+  "A.2.8": {
+    "title": "U.Commitment: Deontic Commitment Object",
+    "status": "Stable",
+    "keywords": [
+      "commitment",
+      "deontics",
+      "obligation/permission/prohibition",
+      "modality normalization",
+      "scope+validity window",
+      "adjudication hooks",
+      "evidenceRefs",
+      "BCP‑14 (RFC 2119/8174)"
+    ],
+    "queries": [
+      "How to represent MUST/SHALL as a lintable object?",
+      "How to keep deontics separate from admissibility gates?",
+      "How to make commitments auditable via evidence hooks?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "refines": [
+        "A"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/12-a28-a28-ucommitment-deontic-commitment-object.md"
+  },
+  "A.2.9": {
+    "title": "U.SpeechAct: Communicative Work Object",
+    "status": "Stable",
+    "keywords": [
+      "speech act",
+      "communicative work",
+      "approval/authorization/publication/revocation",
+      "provenance",
+      "act≠utterance≠carrier",
+      "judgement context",
+      "window/freshness",
+      "institutes.*"
+    ],
+    "queries": [
+      "How to model approvals/authorizations as Work?",
+      "How to separate act vs utterance vs carrier?",
+      "How to link commitments to instituting acts without commitment-by-publication?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "refines": [
+        "A"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/13-a29-a29-uspeechact-communicative-work-object.md"
+  },
+  "A.3": {
+    "title": "Transformer Constitution (Quartet)",
+    "status": "Stable",
+    "keywords": [
+      "action",
+      "causality",
+      "change",
+      "System-in-Role",
+      "MethodDescription",
+      "Method",
+      "Work"
+    ],
+    "queries": [
+      "How does FPF model an action or a change?",
+      "What is the transformer quartet?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/14-a3-a3-transformer-constitution-quartet.md"
+  },
+  "A.3.1": {
+    "title": "U.Method: The Abstract Way of Doing",
+    "status": "Stable",
+    "keywords": [
+      "recipe",
+      "how-to",
+      "procedure",
+      "abstract process"
+    ],
+    "queries": [
+      "What is a Method in FPF?",
+      "Difference between Method and Work."
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/15-a31-a31-umethod.md"
+  },
+  "A.3.2": {
+    "title": "U.MethodDescription: The Recipe for Action",
+    "status": "Stable",
+    "keywords": [
+      "specification",
+      "recipe",
+      "SOP",
+      "code",
+      "model",
+      "epistemic artifact"
+    ],
+    "queries": [
+      "How to document a procedure?",
+      "What is a MethodDescription?"
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "informs": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/16-a32-a32-umethoddescription.md"
+  },
+  "A.3.3": {
+    "title": "U.Dynamics: The Law of Change",
+    "status": "Stable",
+    "keywords": [
+      "state evolution",
+      "model",
+      "simulation",
+      "state space"
+    ],
+    "queries": [
+      "How to model state transitions or system dynamics?",
+      "Difference between a Method and Dynamics."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "informs": [
+        "B"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/17-a33-a33-udynamics.md"
+  },
+  "A.4": {
+    "title": "Temporal Duality & Open-Ended Evolution Principle",
+    "status": "Stable",
+    "keywords": [
+      "design-time",
+      "run-time",
+      "evolution",
+      "versioning",
+      "lifecycle",
+      "continuous improvement"
+    ],
+    "queries": [
+      "How does FPF handle plan vs. reality?",
+      "How are systems updated?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "P-10 Open-Ended Evolution"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/18-a4-a4-temporal-duality-openended-evolution-principle.md"
+  },
+  "A.5": {
+    "title": "Open-Ended Kernel & Extension Layering",
+    "status": "Transitional stub",
+    "keywords": [
+      "FPF architecture",
+      "specialization vs dependancy hierarhies",
+      "modularity",
+      "extensibility"
+    ],
+    "queries": [
+      "What is the architecture of FPF?",
+      "How are new domains added?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "P-4",
+        "P-5"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/19-a5-a5-openended-kernel-extension-layering.md"
+  },
+  "A.6": {
+    "title": "Signature Stack & Boundary Discipline",
+    "status": "Stable",
+    "keywords": [
+      "boundary",
+      "signature stack",
+      "routing",
+      "laws",
+      "admissibility",
+      "deontics",
+      "evidence",
+      "claim register",
+      "MVPK",
+      "view/viewpoint",
+      "surface"
+    ],
+    "queries": [
+      "What is the Signature Stack in FPF?",
+      "How do I route boundary statements (laws vs gates vs duties vs evidence)?",
+      "How to avoid contract-soup drift in boundary descriptions?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
+  },
+  "A.6.B": {
+    "title": "Boundary Norm Square (Laws / Admissibility / Deontics / Work-Effects)",
+    "status": "Stable",
+    "keywords": [
+      "boundary norm square",
+      "atomic claims",
+      "L/A/D/E routing",
+      "laws vs gates",
+      "commitments",
+      "evidence carriers",
+      "no upward dependencies",
+      "claim IDs",
+      "triangle decomposition"
+    ],
+    "queries": [
+      "What is the Boundary Norm Square in FPF?",
+      "How to decompose a mixed sentence into gate/duty/evidence claims?",
+      "Where do RFC keywords belong in FPF patterns?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/02-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md"
+  },
+  "A.6.C": {
+    "title": "Contract Unpacking for Boundaries",
+    "status": "Stable",
+    "keywords": [
+      "contract bundle unpacking",
+      "SLA/guarantee routing",
+      "promise content (promise content) ≠ work",
+      "promise-act/utterance/commitment separation",
+      "Boundary Norm Square (L/A/D/E)",
+      "MVPK faces “no new semantics”"
+    ],
+    "queries": [
+      "How to unpack contract language into promise content / utterance / commitment / work+evidence?",
+      "How to prevent interface-as-agent / contract soup mistakes?",
+      "How to stop MVPK faces becoming ‘second contracts’?",
+      "When contract talk includes service-cluster tokens, what gets unpacked first?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "F"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6c-a6c-contract-unpacking-for-boundaries.md"
+  },
+  "A.6.0": {
+    "title": "U.Signature — Universal, law‑governed declaration",
+    "status": "Stable",
+    "keywords": [
+      "signature",
+      "vocabulary",
+      "laws",
+      "applicability",
+      "bounded context"
+    ],
+    "queries": [
+      "What is the universal signature block?",
+      "Where do laws vs. implementations live?"
+    ],
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/04-a60-a60-usignature-universal-lawgoverned-declaration-for-a-subje.md"
+  },
+  "A.6.1": {
+    "title": "U.Mechanism - Law‑governed application to a SubjectKind over a BaseType",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/05-a61-a61-umechanism-lawgoverned-application-to-a-subjectkind-over.md"
+  },
+  "A.6.2": {
+    "title": "U.EffectFreeEpistemicMorphing — Effect-Free Morphisms of Epistemes",
+    "status": "Stable",
+    "keywords": [
+      "episteme",
+      "effect-free",
+      "morphism",
+      "functoriality",
+      "describedEntity",
+      "lenses",
+      "reproducibility"
+    ],
+    "queries": [
+      "How to transform descriptions/specs without mechanisms?",
+      "What are conservative episteme-to-episteme transforms in FPF?",
+      "How do Describe_ID / Specify_DS fit into a general morphism class?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/06-a62-a62-ueffectfreeepistemicmorphing-effectfree-morphisms-of-epi.md"
+  },
+  "A.6.3": {
+    "title": "U.EpistemicViewing — describedEntity-Preserving Morphism",
+    "status": "Stable",
+    "keywords": [
+      "episteme",
+      "view",
+      "EpistemicViewing",
+      "describedEntity preservation",
+      "ClaimGraph",
+      "Viewpoint",
+      "RepresentationScheme",
+      "CorrespondenceModel",
+      "Direct vs Correspondence Viewing",
+      "optics",
+      "displayed fibration"
+    ],
+    "queries": [
+      "How to define a view of an artefact without adding new claims?",
+      "What is an EpistemicViewing in FPF terms?",
+      "How do ISO 42010 views and SysML v2 views-as-queries sit in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/07-a63-a63-uepistemicviewing-describedentitypreserving-morphism.md"
+  },
+  "A.6.3.CR": {
+    "title": "ConservativeRetextualization — same-described-entity textual re-expression",
+    "status": "Stable",
+    "keywords": [
+      "retextualization",
+      "summary",
+      "report rewrite",
+      "translation",
+      "filtering",
+      "same-described-entity textual re-expression",
+      "direct vs correspondence-mediated rewrite"
+    ],
+    "queries": [
+      "When is a summary still a conservative same-entity view?",
+      "How does FPF treat same-entity translation or report rewriting?",
+      "What is ConservativeRetextualization?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "ExplanationFaithfulnessProfile",
+        "RepresentationTransduction",
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/08-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md"
+  },
+  "A.6.3.RT": {
+    "title": "RepresentationTransduction — same-described-entity representation-scheme transition",
+    "status": "Stable",
+    "keywords": [
+      "representation transduction",
+      "table",
+      "diagram",
+      "notation shift",
+      "reasoning medium",
+      "recoverability",
+      "non-latent",
+      "same-described-entity representation change"
+    ],
+    "queries": [
+      "When is a table or diagram still a same-entity view?",
+      "What is RepresentationTransduction in FPF?",
+      "How does FPF handle same-entity representation-scheme shifts?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "ConservativeRetextualization",
+        "ExplanationFaithfulnessProfile",
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63rt-a63rt-representationtransduction-same-described-entity-repre.md"
+  },
+  "A.6.4": {
+    "title": "U.EpistemicRetargeting — describedEntity-Retargeting Morphism",
+    "status": "Stable",
+    "keywords": [
+      "retargeting",
+      "subject retargeting",
+      "describedEntity shift",
+      "KindBridge",
+      "SquareLaw-retargeting",
+      "StructuralReinterpretation"
+    ],
+    "queries": [
+      "How to change the object-of-talk without losing truth?",
+      "What is StructuralReinterpretation in FPF terms?",
+      "When is a Fourier-like transform a retargeting rather than a new Γ-construction?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a64-a64-uepistemicretargeting-describedentityretargeting-morphis.md"
+  },
+  "A.6.P": {
+    "title": "U.RelationalPrecisionRestorationSuite — Relational Precision Restoration (RPR) — Kind-Explicit Qualified Relation Discipline",
+    "status": "Stable",
+    "keywords": [
+      "relation precision restoration",
+      "under-specified relations",
+      "RelationKind",
+      "QualifiedRelationRecord",
+      "lexical guardrails",
+      "endpoint restoration",
+      "language-state seam"
+    ],
+    "queries": [
+      "What is A.6.P in FPF?",
+      "How do I repair under-specified relation language?",
+      "How do A.6.Q and A.6.A relate to the RPR family?",
+      "When does a trigger word justify its own A.6.P specialization?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ],
+      "specialised_by": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a6p-a6p-urelationalprecisionrestorationsuite-relational-precisio.md"
+  },
+  "A.6.Q": {
+    "title": "U.QualityTermPrecisionRestoration — Quality Term Precision Restoration (Q-TERM)",
+    "status": "Stable",
+    "keywords": [
+      "quality-term precision restoration",
+      "evaluative ascription",
+      "quality senses",
+      "endpoint routing",
+      "bridge reading",
+      "language-state seam"
+    ],
+    "queries": [
+      "How do I repair overloaded quality language in FPF?",
+      "When does quality talk become an evaluative ascription?",
+      "How does A.6.Q hand off to C.25 or later owners?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/12-a6q-a6q-uqualitytermprecisionrestoration-quality-term-precision-.md"
+  },
+  "A.6.A": {
+    "title": "U.ActionInvitationPrecisionRestoration — Affordance / Action-Invitation Precision Restoration (ACT-INV)",
+    "status": "Stable",
+    "keywords": [
+      "affordance",
+      "action invitation",
+      "action-first language",
+      "post-threshold routing",
+      "A.15 docking",
+      "language-state seam"
+    ],
+    "queries": [
+      "How do I repair overloaded affordance language in FPF?",
+      "When does action-guiding language become an action invitation?",
+      "How does A.6.A differ from early cue routing?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
+  },
+  "A.6.5": {
+    "title": "U.RelationSlotDiscipline - SlotKind / ValueKind / RefKind discipline for n‑ary relations (with slot‑operation lexicon)",
+    "status": "Stable",
+    "keywords": [
+      "slot",
+      "argument position",
+      "value",
+      "reference",
+      "signature",
+      "substitution",
+      "pass-by-value",
+      "pass-by-reference"
+    ],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "C"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/14-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-disci.md"
+  },
+  "A.6.6": {
+    "title": "U.BaseDeclarationDiscipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)",
+    "status": "Stable",
+    "keywords": [
+      "base declaration",
+      "basedness",
+      "baseRelation",
+      "SWBD",
+      "witnesses",
+      "scope",
+      "Γ_time",
+      "anchoring",
+      "rebase",
+      "retime",
+      "rescope"
+    ],
+    "queries": [
+      "What is U.BaseDeclarationDiscipline?",
+      "How to model base-dependence without anchoring?",
+      "What is a ScopedWitnessedBaseDeclaration (SWBD)?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ],
+      "used_by": [
+        "base-relative admissibility/calibration/attribution patterns",
+        "anchor"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/15-a66-a66-ubasedeclarationdiscipline-kind-explicit-scoped-witnesse.md"
+  },
+  "A.6.7": {
+    "title": "MechSuiteDescription — Description of a set of distinct mechanisms",
+    "status": "Stable",
+    "keywords": [
+      "mechanism suite",
+      "distinct mechanisms",
+      "suite obligations",
+      "contract pins",
+      "CN-Spec",
+      "CG-Spec",
+      "P2W",
+      "planned baseline",
+      "crossing visibility"
+    ],
+    "queries": [
+      "What is a MechSuiteDescription?",
+      "How to describe a bundle of distinct mechanisms without using MechFamilyDescription?",
+      "How do suite obligations differ from gate decisions?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "E"
+      ],
+      "used_by": [
+        "Part G universalization",
+        "CHR mechanism stacks"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/16-a67-a67-mechsuitedescription-description-of-a-set-of-distinct-me.md"
+  },
+  "A.6.8": {
+    "title": "Service Polysemy Unpacking (RPR-SERV)",
+    "status": "Stable",
+    "keywords": [
+      "service polysemy",
+      "facet unpacking",
+      "serviceSituation QRR",
+      "promise content vs access point",
+      "provider principal",
+      "SLA/SLO",
+      "server/service provider rewrite"
+    ],
+    "queries": [
+      "How to unpack service talk in FPF?",
+      "serviceSituation lens",
+      "promise content vs service access point",
+      "RPR-SERV rules"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/17-a68-a68-service-polysemy-unpacking-rprserv.md"
+  },
+  "A.6.9": {
+    "title": "U.CrossContextSamenessDisambiguation — Repairing cross-context “same / equivalent / align” via explicit Bridges (RPR-XCTX)",
+    "status": "Stable",
+    "keywords": [
+      "cross-context sameness",
+      "bridge",
+      "alignment",
+      "mapping",
+      "direction",
+      "substitution licence",
+      "loss notes",
+      "CL",
+      "SenseCells",
+      "weakest-link"
+    ],
+    "queries": [
+      "How to disambiguate 'same' across contexts?",
+      "How to avoid silent inversion in mappings?",
+      "Naming-only vs substitution bridge"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/18-a69-a69-ucrosscontextsamenessdisambiguation-repairing-cross-cont.md"
+  },
+  "A.6.S": {
+    "title": "U.SignatureEngineeringPair — Constructive signature engineering (ConstructorSignature + TargetSignature)",
+    "status": "Stable",
+    "keywords": [
+      "signature engineering",
+      "TargetSignature",
+      "ConstructorSignature",
+      "two-signature arrangement",
+      "EFEM",
+      "editioning",
+      "retargeting",
+      "slot/base change lexicon",
+      "MVPK views (no new semantics)",
+      "claim register",
+      "no epistemic agency"
+    ],
+    "queries": [
+      "What is U.SignatureEngineeringPair in FPF?",
+      "How do I model TargetSignature vs ConstructorSignature (and keep Work out of edits)?",
+      "How do slot/base change verbs compose into a reproducible signature evolution workflow?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
+  },
+  "A.6.H": {
+    "title": "Wholeness Language Unpacking (RPR-WHOLE)",
+    "status": "Stable",
+    "keywords": [
+      "wholeness",
+      "integrity",
+      "part-of",
+      "boundary",
+      "environment",
+      "mereology",
+      "completeness",
+      "order/time",
+      "artefact–referent level",
+      "role–method–work"
+    ],
+    "queries": [
+      "How to unpack 'whole/part/integrity' in FPF?",
+      "RPR-WHOLE trigger words",
+      "ComponentOf vs ConstituentOf vs PortionOf vs MemberOf vs PhaseOf",
+      "How to route order/time vs mereology?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/20-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
+  },
+  "A.7": {
+    "title": "Strict Distinction (Clarity Lattice)",
+    "status": "Stable",
+    "keywords": [
+      "category error",
+      "Object ≠ Description",
+      "Role ≠ Work",
+      "ontology"
+    ],
+    "queries": [
+      "How to avoid common modeling mistakes?",
+      "What are FPF's core distinctions?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "constrains": [
+        "all patterns"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/01-a7-a7-strict-distinction-clarity-lattice.md"
+  },
+  "A.8": {
+    "title": "Universal Core (C-1)",
+    "status": "Stable",
+    "keywords": [
+      "universality",
+      "transdisciplinary",
+      "domain-agnostic",
+      "generalization"
+    ],
+    "queries": [
+      "How does FPF ensure its concepts are universal?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "P-8"
+      ],
+      "constrains": [
+        "Kernel-level `U"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle-c1.md"
+  },
+  "A.9": {
+    "title": "Cross-Scale Consistency (C-3)",
+    "status": "Stable",
+    "keywords": [
+      "composition",
+      "aggregation",
+      "holarchy",
+      "invariants",
+      "roll-up"
+    ],
+    "queries": [
+      "How do rules compose across different scales?",
+      "How to aggregate metrics safely?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/03-a9-a9-crossscale-consistency-c3.md"
+  },
+  "A.10": {
+    "title": "Evidence Graph Referring (C-4)",
+    "status": "Stable",
+    "keywords": [
+      "evidence",
+      "traceability",
+      "audit",
+      "provenance",
+      "SCR/RSCR"
+    ],
+    "queries": [
+      "How are claims supported by evidence?",
+      "How to ensure auditability?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
+  },
+  "A.11": {
+    "title": "Ontological Parsimony (C-5)",
+    "status": "Stable",
+    "keywords": [
+      "minimalism",
+      "simplicity",
+      "Occam's razor",
+      "essential concepts"
+    ],
+    "queries": [
+      "How does FPF avoid becoming too complex?",
+      "Rule for adding new concepts."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "P-1 Cognitive Elegance"
+      ],
+      "constrains": [
+        "all new `U"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-the-semantic-frame.md"
+  },
+  "A.12": {
+    "title": "External Transformer & Reflexive Split (C-2)",
+    "status": "Stable",
+    "keywords": [
+      "causality",
+      "agency",
+      "self-modification",
+      "external agent",
+      "control loop"
+    ],
+    "queries": [
+      "How to model a self-healing or self-calibrating system?",
+      "What is the external transformer principle?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/06-a12-a12-external-transformer-reflexive-split.md"
+  },
+  "A.13": {
+    "title": "The Agential Role & Agency Spectrum",
+    "status": "Stable",
+    "keywords": [
+      "agency",
+      "autonomy",
+      "AgentialRole",
+      "Agency-CHR",
+      "decision-making"
+    ],
+    "queries": [
+      "How is agency modeled in FPF?",
+      "What is the agency spectrum?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/07-a13-a13-the-agential-role-agency-spectrum.md"
+  },
+  "A.14": {
+    "title": "Advanced Mereology: Components, Portions, Aspects & Phases",
+    "status": "Stable",
+    "keywords": [
+      "mereology",
+      "part-of",
+      "ComponentOf",
+      "PortionOf",
+      "PhaseOf",
+      "composition"
+    ],
+    "queries": [
+      "How to model different kinds of 'part-of' relationships?"
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/08-a14-a14-advanced-mereology-components-portions-aspects-phases.md"
+  },
+  "A.15": {
+    "title": "Role–Method–Work Alignment (Contextual Enactment)",
+    "status": "Stable",
+    "keywords": [
+      "enactment",
+      "alignment",
+      "plan vs reality",
+      "design vs run",
+      "MIC",
+      "WorkPlan"
+    ],
+    "queries": [
+      "How do roles, methods, and work connect?",
+      "How does an intention become an action in FPF?"
+    ],
+    "dependencies": {
+      "prerequisite_for": [
+        "all operational models"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/09-a15-a15-rolemethodwork-alignment-contextual-enactment.md"
+  },
+  "A.15.1": {
+    "title": "U.Work: The Record of Occurrence",
+    "status": "Stable",
+    "keywords": [
+      "execution",
+      "event",
+      "run",
+      "actuals",
+      "log",
+      "occurrence"
+    ],
+    "queries": [
+      "What is a Work record?",
+      "Where are actual resource costs stored?"
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "used_by": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/10-a151-a151-uwork.md"
+  },
+  "A.15.2": {
+    "title": "U.WorkPlan: The Schedule of Intent",
+    "status": "Stable",
+    "keywords": [
+      "plan",
+      "schedule",
+      "intent",
+      "forecast"
+    ],
+    "queries": [
+      "How to model a plan or schedule?",
+      "Difference between a WorkPlan and a MethodDescription."
+    ],
+    "dependencies": {
+      "refines": [
+        "A"
+      ],
+      "informs": [
+        "`U"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/11-a152-a152-uworkplan.md"
+  },
+  "A.15.3": {
+    "title": "SlotFillingsPlanItem — Planned Slot-Fillings Baseline (WorkPlanning PlanItem)",
+    "status": "Stable",
+    "keywords": [
+      "planned baseline",
+      "slot owner",
+      "planned filler",
+      "edition pins",
+      "`Γ_time` selector",
+      "guard pins",
+      "WorkPlanning",
+      "P2W seam",
+      "variance trail"
+    ],
+    "queries": [
+      "What is SlotFillingsPlanItem in FPF?",
+      "How to keep planned slot filling separate from FinalizeLaunchValues?",
+      "How to pin editions and time in WorkPlanning baselines?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/12-a153-a153-slotfillingsplanitem.md"
+  },
+  "A.16": {
+    "title": "Language-State Transduction Coordination",
+    "status": "Stable",
+    "keywords": [
+      "language-state",
+      "transduction",
+      "lawful moves",
+      "reopen",
+      "sketch-backoff",
+      "respecify",
+      "retire",
+      "handoff"
+    ],
+    "queries": [
+      "How do governed epistemes move across the language-state chart?",
+      "What are the lawful move kinds in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/13-a16-a16-language-state-transduction-coordination.md"
+  },
+  "A.16.0": {
+    "title": "U.LanguageStateTransductionTrajectory — Optional trajectory-account normal form",
+    "status": "Stable",
+    "keywords": [
+      "trajectory account",
+      "lineage",
+      "fork",
+      "merge",
+      "supersedes",
+      "handoff",
+      "heavy history"
+    ],
+    "queries": [
+      "When do I publish a language-state trajectory account?",
+      "How does FPF record lineage and branch history?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/14-a160-a160-ulanguagestatetransductiontrajectory-optional-trajector.md"
+  },
+  "A.16.1": {
+    "title": "U.PreArticulationCuePack",
+    "status": "Stable",
+    "keywords": [
+      "cue pack",
+      "pre-articulation",
+      "early publication",
+      "cue nucleus",
+      "primary witness",
+      "route pressure"
+    ],
+    "queries": [
+      "What is a PreArticulationCuePack?",
+      "How do I preserve early cues before route publication?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/15-a161-a161-uprearticulationcuepack.md"
+  },
+  "A.16.2": {
+    "title": "Reopen / SketchBackoff / Respecify",
+    "status": "Stable",
+    "keywords": [
+      "reopen",
+      "backoff",
+      "respecify",
+      "retire",
+      "retreat",
+      "branch withdrawal",
+      "authority withdrawal"
+    ],
+    "queries": [
+      "How do I lawfully reopen or back off a language-state publication?",
+      "How do I retire a branch without silent deletion?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/16-a162-a162-reopen-sketchbackoff-respecify.md"
+  },
+  "A.17": {
+    "title": "A.CHR-NORM — Canonical “Characteristic” & rename (Dimension/Axis → Characteristic)",
+    "status": "Stable",
+    "keywords": [
+      "characteristic",
+      "measurement",
+      "property",
+      "attribute",
+      "dimension",
+      "axis"
+    ],
+    "queries": [
+      "What is the correct term for a measurable property?",
+      "How to define a metric?"
+    ],
+    "dependencies": {
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/17-a17-a17-canonical-characteristic-achrnorm.md"
+  },
+  "A.18": {
+    "title": "A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale/Level/Coordinate)",
+    "status": "Stable",
+    "keywords": [
+      "CSLC",
+      "scale",
+      "level",
+      "coordinate",
+      "measurement Standard"
+    ],
+    "queries": [
+      "What is the CSLC Standard?",
+      "How to ensure measurements are comparable?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "all metric-based patterns"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/18-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
+  },
+  "A.19": {
+    "title": "A.CHR-SPACE — CharacteristicSpace & Dynamics hook",
+    "status": "Stable",
+    "keywords": [
+      "state space",
+      "CharacteristicSpace",
+      "dynamics",
+      "state model",
+      "RSG"
+    ],
+    "queries": [
+      "How to define a system's state space?",
+      "How does FPF model change over time?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+  },
+  "A.19.CN": {
+    "title": "CN-frame (comparability & normalization)",
+    "status": "Stable",
+    "keywords": [
+      "CN-frame",
+      "CN-Spec",
+      "chart",
+      "comparability modes",
+      "normalization refs",
+      "indicator policy refs",
+      "Γ-fold governance",
+      "registry",
+      "bridges",
+      "CL/loss notes",
+      "WLNK discipline",
+      "conformance checklist",
+      "SCR/RSCR harness",
+      "RSG admission hooks"
+    ],
+    "queries": [
+      "What is a CN-frame in FPF?",
+      "How does CN-Spec govern comparability and normalization by reference?",
+      "How do CN-frames use bridges and CL for cross-context reuse?",
+      "What are the conformance and regression checks for CN-frames?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/20-a19cn-a19cn-cnframe-comparability-normalization.md"
+  },
+  "A.19.CHR": {
+    "title": "CHRMechanismSuite — CHR mechanism-suite anchor (suite obligations + P2W planned baseline)",
+    "status": "Stable",
+    "keywords": [
+      "CHR suite",
+      "characterization core",
+      "CN-Spec",
+      "CG-Spec",
+      "legality gate",
+      "suite obligations",
+      "set-return selection",
+      "tri-state guard decision",
+      "crossing visibility",
+      "Bridge-only transport",
+      "penalties→R_eff",
+      "planned baseline",
+      "`SlotFillingsPlanItem`",
+      "P2W seam",
+      "no hidden scalarization",
+      "no hidden thresholds"
+    ],
+    "queries": [
+      "What is CHRMechanismSuite in FPF?",
+      "How do CHR mechanisms cite CN-Spec/CG-Spec?",
+      "How to enforce planned slot filling in WorkPlanning only?",
+      "How to keep UNM/UINDM/ULSAM explicit (no hidden tails)?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ],
+      "used_by": [
+        "Part G universalization",
+        "CHR mechanism stacks"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/21-a19chr-a19chr-chrmechanismsuite.md"
+  },
+  "A.20": {
+    "title": "U.Flow.ConstraintValidity — Eulerian",
+    "status": "Stable",
+    "keywords": [
+      "flow",
+      "ConstraintValidity",
+      "Eulerian",
+      "TransductionFlow",
+      "GateFit",
+      "MVPK",
+      "SquareLaw",
+      "Sentinel",
+      "PathSlice"
+    ],
+    "queries": [
+      "What is ConstraintValidity in FPF?",
+      "What is the Eulerian stance in FPF flows?",
+      "How does E.TGA relate to flows?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/28-a20-a20-uflowconstraintvalidity-eulerian.md"
+  },
+  "A.21": {
+    "title": "GateProfilization: OperationalGate(profile) (GateFit core)",
+    "status": "Stable",
+    "keywords": [
+      "OperationalGate",
+      "GateFit",
+      "GateProfile",
+      "GateChecks",
+      "join-semilattice",
+      "`GateDecision`",
+      "`DecisionLog`",
+      "EquivalenceWitness",
+      "LaunchGate",
+      "CV⇒GF"
+    ],
+    "queries": [
+      "What is GateProfilization in FPF?",
+      "How does OperationalGate aggregate GateChecks?",
+      "What is the CV⇒GF activation predicate?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/04-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
+  },
+  "**B.1**": {
+    "title": "Universal Algebra of Aggregation (Γ)",
+    "status": "Stable",
+    "keywords": [
+      "aggregation",
+      "composition",
+      "holon",
+      "invariants",
+      "IDEM",
+      "COMM",
+      "LOC",
+      "WLNK",
+      "MONO",
+      "gamma operator"
+    ],
+    "queries": [
+      "How does FPF combine parts into a whole?",
+      "What are the rules for aggregation?",
+      "What is the Gamma (Γ) operator?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "All B"
+      ]
+    },
+    "file": ""
+  },
+  "B.1.1": {
+    "title": "Dependency Graph & Proofs",
+    "status": "Stable",
+    "keywords": [
+      "dependency graph",
+      "proofs",
+      "structural aggregators",
+      "sum",
+      "set",
+      "slice"
+    ],
+    "queries": [
+      "What is the input for the Gamma operator?",
+      "How are aggregation invariants proven in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/02-b11-b11-dependency-graph-proofs.md"
+  },
+  "B.1.2": {
+    "title": "System-specific Aggregation Γ_sys",
+    "status": "Stable",
+    "keywords": [
+      "system aggregation",
+      "physical systems",
+      "mass",
+      "energy",
+      "boundary rules",
+      "Sys-CAL"
+    ],
+    "queries": [
+      "How to aggregate physical systems?",
+      "Conservation laws in FPF aggregation?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/03-b12-b12-systemspecific-aggregation-_sys.md"
+  },
+  "B.1.3": {
+    "title": "Γ_epist — Knowledge-Specific Aggregation",
+    "status": "Stable",
+    "keywords": [
+      "knowledge aggregation",
+      "epistemic",
+      "provenance",
+      "trust",
+      "KD-CAL"
+    ],
+    "queries": [
+      "How to combine knowledge artifacts?",
+      "How does trust propagate in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/04-b13-b13-_epist-knowledgespecific-aggregation.md"
+  },
+  "B.1.4": {
+    "title": "Contextual & Temporal Aggregation (Γ_ctx & Γ_time)",
+    "status": "Stable",
+    "keywords": [
+      "temporal aggregation",
+      "time-series",
+      "order-sensitive",
+      "composition"
+    ],
+    "queries": [
+      "How does FPF handle time-series data?",
+      "How to model processes where order matters?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/05-b14-b14-contextual-temporal-aggregation-_ctx-_time.md"
+  },
+  "B.1.5": {
+    "title": "Γ_method — Order-Sensitive Method Composition & Work Enactment",
+    "status": "Stable",
+    "keywords": [
+      "method composition",
+      "workflow",
+      "sequential",
+      "concurrent",
+      "plan vs run"
+    ],
+    "queries": [
+      "How to combine methods or workflows?",
+      "How does FPF model complex procedures?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md"
+  },
+  "B.1.6": {
+    "title": "Γ_work — Work as Spent Resource",
+    "status": "Stable",
+    "keywords": [
+      "work",
+      "resource aggregation",
+      "cost",
+      "energy consumption",
+      "Resrc-CAL"
+    ],
+    "queries": [
+      "How to calculate the total cost of a process?",
+      "How are resources aggregated in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/07-b16-b16-_work-work-as-spent-resource.md"
+  },
+  "**B.2**": {
+    "title": "Meta-Holon Transition (MHT): Recognizing Emergence and Re-identifying Wholes",
+    "status": "Stable",
+    "keywords": [
+      "emergence",
+      "MHT",
+      "meta-system",
+      "new whole",
+      "synergy",
+      "system of systems"
+    ],
+    "queries": [
+      "How does FPF model emergence?",
+      "What is a Meta-Holon Transition?",
+      "When does a collection become more than the sum of its parts?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ],
+      "prerequisite_for": [
+        "All B"
+      ]
+    },
+    "file": ""
+  },
+  "B.2.1": {
+    "title": "BOSC Triggers",
+    "status": "Draft",
+    "keywords": [
+      "BOSC",
+      "triggers for emergence",
+      "boundary",
+      "objective",
+      "supervisor",
+      "complexity"
+    ],
+    "queries": [
+      "What triggers an MHT?",
+      "What are the BOSC criteria for emergence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "B.2.2": {
+    "title": "MST (Sys) — Meta-System Transition",
+    "status": "Stable",
+    "keywords": [
+      "system emergence",
+      "super-system",
+      "physical emergence"
+    ],
+    "queries": [
+      "How do new systems emerge from parts?",
+      "What is a Meta-System Transition?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/09-b22-b22-meta-system-transition-mst.md"
+  },
+  "B.2.3": {
+    "title": "MET (KD) — Meta-Epistemic Transition",
+    "status": "Stable",
+    "keywords": [
+      "knowledge emergence",
+      "meta-theory",
+      "paradigm shift",
+      "scientific revolution"
+    ],
+    "queries": [
+      "How do new theories emerge?",
+      "What is a Meta-Epistemic Transition?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/10-b23-b23-meta-epistemic-transition-met.md"
+  },
+  "B.2.4": {
+    "title": "MFT (Meta-Functional Transition)",
+    "status": "Stable",
+    "keywords": [
+      "functional emergence",
+      "capability emergence",
+      "adaptive workflow",
+      "new process"
+    ],
+    "queries": [
+      "How do new capabilities or workflows emerge?",
+      "What is a Meta-Functional Transition?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/11-b24-b24-meta-functional-transition-mft.md"
+  },
+  "B.2.5": {
+    "title": "Supervisor–Subholon Feedback Loop",
+    "status": "Stable",
+    "keywords": [
+      "control architecture",
+      "feedback loop",
+      "supervisor",
+      "stability",
+      "layered control"
+    ],
+    "queries": [
+      "How does FPF model control systems?",
+      "What is the supervisor-subholon pattern?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/12-b25-b25-supervisorsubholon-feedback-loop.md"
+  },
+  "**B.3**": {
+    "title": "Trust & Assurance Calculus (F–G–R with Congruence)",
+    "status": "Stable",
+    "keywords": [
+      "trust",
+      "assurance",
+      "reliability",
+      "F-G-R",
+      "formality",
+      "scope",
+      "congruence",
+      "evidence"
+    ],
+    "queries": [
+      "How is trust calculated in FPF?",
+      "What is the F-G-R model?",
+      "How does FPF handle evidence and confidence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "All B"
+      ]
+    },
+    "file": ""
+  },
+  "B.3.1": {
+    "title": "Components & Epistemic Spaces",
+    "status": "Draft",
+    "keywords": [
+      "F-G-R components",
+      "measurement templates",
+      "epistemic space"
+    ],
+    "queries": [
+      "How are F, G, and R measured?",
+      "What are epistemic spaces?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "B.3.2": {
+    "title": "Evidence & Validation Logic (LOG-use)",
+    "status": "Draft",
+    "keywords": [
+      "verification",
+      "validation",
+      "confidence",
+      "logic",
+      "proof"
+    ],
+    "queries": [
+      "What is the logic for validating claims in FPF?",
+      "Difference between verification and validation."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "B.3.3": {
+    "title": "Assurance Subtypes & Levels",
+    "status": "Stable",
+    "keywords": [
+      "assurance levels",
+      "L0-L2",
+      "TA",
+      "VA",
+      "LA",
+      "typing",
+      "verification",
+      "validation"
+    ],
+    "queries": [
+      "What are the assurance levels in FPF?",
+      "How does an artifact mature in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/14-b33-b33-assurance-subtypes-levels.md"
+  },
+  "B.3.4": {
+    "title": "Evidence Decay & Epistemic Debt",
+    "status": "Stable",
+    "keywords": [
+      "evidence aging",
+      "decay",
+      "freshness",
+      "epistemic debt",
+      "stale data"
+    ],
+    "queries": [
+      "How does FPF handle outdated evidence?",
+      "What is epistemic debt?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/15-b34-b34-evidence-decay-epistemic-debt.md"
+  },
+  "B.3.5": {
+    "title": "CT2R-LOG — Working-Model Relations & Grounding",
+    "status": "Stable",
+    "keywords": [
+      "grounding",
+      "constructive trace",
+      "working model",
+      "assurance layer",
+      "CT2R",
+      "Compose-CAL"
+    ],
+    "queries": [
+      "How are FPF models grounded in evidence?",
+      "What is the CT2R-LOG?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/16-b35-b35-working-model-relations-grounding-ct2r-log.md"
+  },
+  "**B.4**": {
+    "title": "Canonical Evolution Loop",
+    "status": "Stable",
+    "keywords": [
+      "evolution",
+      "run-observe-refine-deploy",
+      "continuous improvement",
+      "temporal duality",
+      "transformer"
+    ],
+    "queries": [
+      "How do systems or epistemes evolve in FPF?",
+      "What is the canonical evolution loop?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "B.4.1": {
+    "title": "Observe -> Notice -> Stabilize -> Route",
+    "status": "Draft",
+    "keywords": [
+      "observe",
+      "notice",
+      "stabilize",
+      "route",
+      "routed cue set",
+      "route plurality",
+      "pre-abductive seam"
+    ],
+    "queries": [
+      "How do early cues become routed before abduction?",
+      "What is the observe-to-route seam in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/18-b41-b41-observe-notice-stabilize-route.md"
+  },
+  "B.4.2": {
+    "title": "Knowledge Instantiation",
+    "status": "Stub",
+    "keywords": [
+      "theory refinement",
+      "knowledge evolution",
+      "scientific method"
+    ],
+    "queries": [
+      "How are scientific theories refined in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "B.4.3": {
+    "title": "Method Instantiation",
+    "status": "Stub",
+    "keywords": [
+      "adaptive workflow",
+      "process improvement",
+      "operational evolution"
+    ],
+    "queries": [
+      "How do workflows or methods evolve in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "**B.5**": {
+    "title": "Canonical Reasoning Cycle",
+    "status": "Stable",
+    "keywords": [
+      "reasoning",
+      "problem-solving",
+      "Abduction-Deduction-Induction",
+      "scientific method"
+    ],
+    "queries": [
+      "How does FPF model problem-solving?",
+      "What is the canonical reasoning cycle?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "All B"
+      ]
+    },
+    "file": ""
+  },
+  "B.5.1": {
+    "title": "Explore → Shape → Evidence → Operate",
+    "status": "Stable",
+    "keywords": [
+      "development cycle",
+      "lifecycle",
+      "state machine",
+      "Explore",
+      "Shape",
+      "Evidence",
+      "Operate"
+    ],
+    "queries": [
+      "What are the development stages of an artifact in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/20-b51-b51-explore-shape-evidence-operate.md"
+  },
+  "B.5.2": {
+    "title": "Abductive Loop",
+    "status": "Stable",
+    "keywords": [
+      "abduction",
+      "explanatory prompt",
+      "candidate hypotheses",
+      "plausibility filters",
+      "origin trace",
+      "route-to-hypothesis"
+    ],
+    "queries": [
+      "How does FPF model abductive hypothesis generation?",
+      "What is the abductive loop?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ],
+      "coordinates_with": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/21-b52-b52-abductive-loop.md"
+  },
+  "B.5.2.0": {
+    "title": "U.AbductivePrompt",
+    "status": "Draft",
+    "keywords": [
+      "abductive prompt",
+      "prompt readiness",
+      "anomaly",
+      "opportunity cue",
+      "rival-set",
+      "explanatory probe"
+    ],
+    "queries": [
+      "What is an AbductivePrompt in FPF?",
+      "When is a routed cue ready to enter abduction?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ],
+      "used_by": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/22-b520-b520-uabductiveprompt.md"
+  },
+  "B.5.2.1": {
+    "title": "Creative Abduction with NQD",
+    "status": "Stable",
+    "keywords": [
+      "NQD",
+      "novelty",
+      "quality",
+      "diversity",
+      "open-ended search",
+      "Pareto front",
+      "E/E-LOG"
+    ],
+    "queries": [
+      "How to systematically generate creative ideas?",
+      "What is NQD in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "B"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md"
+  },
+  "B.5.3": {
+    "title": "Role-Projection Bridge",
+    "status": "Stable",
+    "keywords": [
+      "domain-specific vocabulary",
+      "concept bridge",
+      "mapping",
+      "terminology"
+    ],
+    "queries": [
+      "How does FPF integrate domain-specific language?",
+      "What is a Role-Projection Bridge?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/24-b53-b53-role-projection-bridge.md"
+  },
+  "**B.6**": {
+    "title": "Characterisation Families (CHR-use)",
+    "status": "Draft",
+    "keywords": [
+      "characterization",
+      "templates",
+      "CHR patterns",
+      "measurement"
+    ],
+    "queries": [
+      "How to use CHR patterns?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Part C (CHR)"
+      ]
+    },
+    "file": ""
+  },
+  "**B.7**": {
+    "title": "Common Logic Suite (LOG-use)",
+    "status": "Draft",
+    "keywords": [
+      "logic",
+      "inference",
+      "trust propagation",
+      "LOG-CAL"
+    ],
+    "queries": [
+      "How to apply formal logic in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Part C (LOG-CAL)"
+      ]
+    },
+    "file": ""
+  },
+  "C.1": {
+    "title": "Sys‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "physical system",
+      "composition",
+      "conservation laws",
+      "energy",
+      "mass",
+      "resources",
+      "U.System"
+    ],
+    "queries": [
+      "How to model physical systems in FPF?",
+      "What are conservation laws in FPF?",
+      "Modeling a pump or engine."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "M-Sys-CAL"
+      ],
+      "coordinates_with": [
+        "Resrc-CAL"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle-c1.md"
+  },
+  "C.2": {
+    "title": "KD‑CAL",
+    "status": "Stable",
+    "keywords": [
+      "knowledge",
+      "epistemic",
+      "evidence",
+      "trust",
+      "assurance",
+      "F-G-R",
+      "Formality",
+      "ClaimScope",
+      "Reliability",
+      "provenance"
+    ],
+    "queries": [
+      "What is F-G-R?",
+      "How does FPF handle evidence and trust?",
+      "How to model a scientific theory?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "All patterns using F-G-R",
+        "M-KD-CAL"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/01-c2-c2-epistemic-holon-composition-kd-cal.md"
+  },
+  "C.2.1": {
+    "title": "U.Episteme — Epistemes and their slot graph",
+    "status": "Stable",
+    "keywords": [
+      "episteme",
+      "EpistemeSlotGraph",
+      "DescribedEntitySlot",
+      "GroundingHolonSlot",
+      "ClaimGraphSlot",
+      "ViewpointSlot",
+      "ReferenceScheme",
+      "RepresentationScheme",
+      "View/Viewpoint"
+    ],
+    "queries": [
+      "What is an episteme in FPF?",
+      "How are DescribedEntity, ClaimGraph, GroundingHolon and Viewpoint organised as slots?",
+      "How do KD-CAL epistemes connect to views/viewpoints and multi-view descriptions?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "used_by": [
+        "A"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-graph.md"
+  },
+  "C.2.2": {
+    "title": "Reliability R in the F–G–R triad",
+    "status": "Stable",
+    "keywords": [
+      "Reliability (R)",
+      "warrant",
+      "evidence-bound",
+      "F–G–R",
+      "ClaimScope (G)",
+      "Bridge-only reuse",
+      "Congruence Level (CL / CL^k / CL^plane)",
+      "weakest-link",
+      "pathwise justification (PathId)",
+      "TA/VA/LA lanes",
+      "no implicit averaging"
+    ],
+    "queries": [
+      "What is R in F–G–R?",
+      "How does FPF propagate reliability?",
+      "How do CL penalties route under transport?",
+      "Bridge-only reuse of claims in FPF"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "G"
+      ],
+      "constrains": [
+        "any cross-context claim reuse and any publication of `R_eff`"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/03-c22-c22-reliability-r-in-the-fgr-triad.md"
+  },
+  "C.2.2a": {
+    "title": "U.LanguageStateSpace — Language-state chart over U.CharacteristicSpace",
+    "status": "Stable",
+    "keywords": [
+      "language-state chart",
+      "characteristic space",
+      "position claim",
+      "partial coordinates",
+      "thresholds",
+      "governed episteme publication"
+    ],
+    "queries": [
+      "What is the language-state space in FPF?",
+      "How do I publish a position claim before endpoint ownership?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "used_by": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/04-c22-c22a-ulanguagestatespace-language-state-chart-over-ucharacte.md"
+  },
+  "C.2.3": {
+    "title": "Unified Formality Characteristic F",
+    "status": "Stable",
+    "keywords": [
+      "Formality",
+      "F-scale",
+      "F0-F9",
+      "rigor",
+      "proof",
+      "specification",
+      "language-state separation"
+    ],
+    "queries": [
+      "What is Formality F in FPF?",
+      "How does F differ from articulation, closure, or anchoring?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "constrains": [
+        "all patterns referencing F-G-R or language-state facets"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/05-c23-c23-unified-formality-characteristic-f.md"
+  },
+  "C.2.LS": {
+    "title": "U.LanguageStateFacetProfile — Thin owner for language-state facets",
+    "status": "Stable",
+    "keywords": [
+      "facet profile",
+      "articulation",
+      "closure",
+      "anchoring",
+      "representation factors",
+      "threshold package"
+    ],
+    "queries": [
+      "How are language-state facets named together in FPF?",
+      "What is a LanguageStateFacetProfile?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/06-c2ls-c2ls-ulanguagestatefacetprofile-thin-owner-for-language-stat.md"
+  },
+  "C.2.4": {
+    "title": "U.ArticulationExplicitness",
+    "status": "Draft",
+    "keywords": [
+      "articulation explicitness",
+      "semantic shape",
+      "weak cue",
+      "explicitness",
+      "early repair readiness"
+    ],
+    "queries": [
+      "How explicit is a governed episteme already?",
+      "What is ArticulationExplicitness in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/07-c24-c24-uarticulationexplicitness.md"
+  },
+  "C.2.5": {
+    "title": "U.LanguageStateClosureDegree",
+    "status": "Draft",
+    "keywords": [
+      "closure degree",
+      "candidate-space closure",
+      "reopen",
+      "rival routes",
+      "settledness"
+    ],
+    "queries": [
+      "How closed is the current candidate space?",
+      "What is LanguageStateClosureDegree in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
+  },
+  "C.2.6": {
+    "title": "U.LanguageStateAnchoringMode",
+    "status": "Draft",
+    "keywords": [
+      "anchoring mode",
+      "embodiment",
+      "trace",
+      "model state",
+      "document",
+      "operator loop"
+    ],
+    "queries": [
+      "How is a language-state claim anchored in FPF?",
+      "What is LanguageStateAnchoringMode?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/09-c26-c26-ulanguagestateanchoringmode.md"
+  },
+  "C.2.7": {
+    "title": "U.LanguageStateRepresentationFactorBundle",
+    "status": "Draft",
+    "keywords": [
+      "representation factors",
+      "locality",
+      "sparsity",
+      "symbolicity",
+      "factor bundle",
+      "representation organization"
+    ],
+    "queries": [
+      "How does FPF describe representation factors in language-state work?",
+      "What is the representation-factor bundle?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/10-c27-c27-ulanguagestaterepresentationfactorbundle.md"
+  },
+  "C.3": {
+    "title": "Kind‑CAL — Kinds, Intent/Extent, and Typed Reasoning",
+    "status": "Stable",
+    "keywords": [
+      "kind",
+      "type",
+      "intension",
+      "extension",
+      "subkind",
+      "typed reasoning",
+      "classification",
+      "vocabulary"
+    ],
+    "queries": [
+      "How does FPF handle types?",
+      "What is a 'Kind'?",
+      "Difference between 'scope' and 'type'?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "LOG-CAL",
+        "ADR-Kind-CAL",
+        "and any pattern needing typed guards"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/03-a9-a9-crossscale-consistency-c3.md"
+  },
+  "C.3.1": {
+    "title": "U.Kind & U.SubkindOf (Core)",
+    "status": "Stable",
+    "keywords": [
+      "kind",
+      "subkind",
+      "partial order",
+      "type hierarchy"
+    ],
+    "queries": [
+      "What is U.Kind in FPF?",
+      "How to model 'is-a' relationships?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/12-c31-c31-ukind-subkindof-core.md"
+  },
+  "C.3.2": {
+    "title": "KindSignature (+F) & Extension/MemberOf",
+    "status": "Stable",
+    "keywords": [
+      "KindSignature",
+      "intension",
+      "extension",
+      "MemberOf",
+      "Formality F",
+      "determinism"
+    ],
+    "queries": [
+      "How to define the meaning of a Kind?",
+      "What is the difference between intent and extent in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "prerequisite_for": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/13-c32-c32-kindsignature-f-extensionmemberof.md"
+  },
+  "C.3.3": {
+    "title": "KindBridge & CL^k — Cross‑context Mapping of Kinds",
+    "status": "Stable",
+    "keywords": [
+      "KindBridge",
+      "type-congruence",
+      "CL^k",
+      "cross-context mapping",
+      "R penalty"
+    ],
+    "queries": [
+      "How to map types between domains?",
+      "What is a KindBridge?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/14-c33-c33-kindbridge-clk-crosscontext-mapping-of-kinds.md"
+  },
+  "C.3.4": {
+    "title": "RoleMask — Contextual Adaptation of Kinds (without cloning)",
+    "status": "Stable",
+    "keywords": [
+      "RoleMask",
+      "context-local adaptation",
+      "constraints",
+      "subkind promotion"
+    ],
+    "queries": [
+      "How to adapt a Kind for a local context?",
+      "What is a RoleMask in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/15-c34-c34-rolemask-contextual-adaptation-of-kinds-without-cloning.md"
+  },
+  "C.3.5": {
+    "title": "KindAT — Intentional Abstraction Facet for Kinds (K0…K3)",
+    "status": "Stable",
+    "keywords": [
+      "KindAT",
+      "abstraction tier",
+      "K0-K3",
+      "informative facet",
+      "planning"
+    ],
+    "queries": [
+      "What are the abstraction tiers for Kinds?",
+      "How to plan formalization effort?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/16-c35-c35-kindat-intentional-abstraction-facet-for-kinds-k0k3.md"
+  },
+  "C.3.A": {
+    "title": "Typed Guard Macros for Kinds + USM (Annex)",
+    "status": "Stable",
+    "keywords": [
+      "Typed guard",
+      "ESG",
+      "Method-Work",
+      "USM",
+      "Kind-CAL",
+      "regulatory profile"
+    ],
+    "queries": [
+      "How to write a typed guard?",
+      "How do Kinds and USM interact in gates?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "All C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/17-c3a-c3a-typed-guard-macros-for-kinds-usm-annex.md"
+  },
+  "C.4": {
+    "title": "Method‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "method",
+      "recipe",
+      "procedure",
+      "workflow",
+      "SOP",
+      "MethodDescription",
+      "operator"
+    ],
+    "queries": [
+      "How to model a process or workflow?",
+      "What is a MethodDescription in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "Γ_method (B"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
+  },
+  "C.5": {
+    "title": "Resrc‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "resource",
+      "energy",
+      "material",
+      "information",
+      "cost",
+      "budget",
+      "consumption",
+      "Γ_work"
+    ],
+    "queries": [
+      "How does FPF model resource usage?",
+      "How to track costs of a process?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "Sys-CAL"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/05-a11-a11-ontological-parsimony-c5.md"
+  },
+  "C.6": {
+    "title": "LOG‑CAL – Core Logic Calculus",
+    "status": "Draft",
+    "keywords": [
+      "logic",
+      "inference",
+      "proof",
+      "modal logic",
+      "trust operators",
+      "reasoning"
+    ],
+    "queries": [
+      "What is the base logic of FPF?",
+      "How does FPF handle formal proofs?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Kind-CAL"
+      ]
+    },
+    "file": ""
+  },
+  "C.7": {
+    "title": "CHR‑CAL – Characterisation Kit",
+    "status": "Draft",
+    "keywords": [
+      "characteristic",
+      "property",
+      "measurement",
+      "metric",
+      "quality"
+    ],
+    "queries": [
+      "How to define a new measurable property in FPF?",
+      "What is a CHR pattern?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "Agency-CHR",
+        "Creativity-CHR"
+      ]
+    },
+    "file": ""
+  },
+  "C.9": {
+    "title": "Agency‑CHR",
+    "status": "Draft",
+    "keywords": [
+      "agency",
+      "agent",
+      "autonomy",
+      "decision-making",
+      "active inference"
+    ],
+    "queries": [
+      "How to measure autonomy?",
+      "What defines an agent in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "CHR-CAL",
+        "A"
+      ]
+    },
+    "file": ""
+  },
+  "C.10": {
+    "title": "Norm‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "norm",
+      "constraint",
+      "ethics",
+      "obligation",
+      "permission",
+      "deontics"
+    ],
+    "queries": [
+      "How to model rules and constraints?",
+      "Where are ethical principles defined in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": ""
+  },
+  "C.11": {
+    "title": "Decsn‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "decision",
+      "choice",
+      "preference",
+      "utility",
+      "options"
+    ],
+    "queries": [
+      "How does FPF model decision-making?",
+      "How to represent preferences and utility?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": ""
+  },
+  "C.12": {
+    "title": "ADR‑Kind-CAL",
+    "status": "Draft",
+    "keywords": [
+      "versioning",
+      "rationale",
+      "DRR",
+      "architecture decision record"
+    ],
+    "queries": [
+      "How are changes to kinds managed?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Kind-CAL",
+        "E"
+      ]
+    },
+    "file": ""
+  },
+  "C.13": {
+    "title": "Compose‑CAL — Constructional Mereology",
+    "status": "Stable",
+    "keywords": [
+      "mereology",
+      "part-whole",
+      "composition",
+      "sum",
+      "set",
+      "slice",
+      "extensional identity"
+    ],
+    "queries": [
+      "How does FPF formally construct parts and wholes?",
+      "What is Compose-CAL?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/18-c13-c13-constructional-mereology-composecal.md"
+  },
+  "C.14": {
+    "title": "M‑Sys‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "system-of-systems",
+      "infrastructure",
+      "large-scale systems",
+      "orchestration"
+    ],
+    "queries": [
+      "How to model a complex infrastructure like a power grid?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Sys-CAL",
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "C.15": {
+    "title": "M‑KD‑CAL",
+    "status": "Draft",
+    "keywords": [
+      "paradigm",
+      "scientific discipline",
+      "meta-analysis",
+      "knowledge ecosystem"
+    ],
+    "queries": [
+      "How to model an entire field of science?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "KD-CAL",
+        "B"
+      ]
+    },
+    "file": ""
+  },
+  "C.16": {
+    "title": "MM-CHR — Measurement & Metrics Characterization",
+    "status": "Stable",
+    "keywords": [
+      "measurement",
+      "measurement template",
+      "`U.DHCMethod(Ref)`",
+      "`U.Measure`",
+      "`U.Unit`",
+      "`U.EvidenceStub`",
+      "polarity",
+      "direct comparability (same-template)",
+      "scoring method (𝒢) disclosure",
+      "CSLC"
+    ],
+    "queries": [
+      "How do I define a measurement template in FPF?",
+      "What is direct comparability in MM-CHR?",
+      "How do EvidenceStubs support measurement claims?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/19-c16-c16-measurement-metrics-characterization-mmchr.md"
+  },
+  "C.17": {
+    "title": "Creativity‑CHR — Characterising Generative Novelty & Value",
+    "status": "Stable",
+    "keywords": [
+      "creativity",
+      "novelty",
+      "value",
+      "surprise",
+      "innovation",
+      "ideation"
+    ],
+    "queries": [
+      "How does FPF measure creativity?",
+      "What defines a novel idea?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "CHR-CAL",
+        "MM-CHR"
+      ],
+      "coordinates_with": [
+        "NQD-CAL",
+        "E/E-LOG"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/20-c17-c17-characterising-generative-novelty-value-creativitychr.md"
+  },
+  "C.18": {
+    "title": "NQD‑CAL — Open‑Ended Search Calculus",
+    "status": "Stable",
+    "keywords": [
+      "search",
+      "exploration",
+      "hypothesis generation",
+      "novelty",
+      "quality",
+      "diversity (NQD)"
+    ],
+    "queries": [
+      "How does FPF support structured brainstorming?",
+      "What is NQD search?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "KD-CAL"
+      ],
+      "coordinates_with": [
+        "B"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/21-c18-c18-openended-search-calculus-nqdcal.md"
+  },
+  "C.18.1": {
+    "title": "SLL — Scaling‑Law Lens (binding)",
+    "status": "Stable",
+    "keywords": [
+      "scaling law",
+      "scale variables (S)",
+      "compute‑elasticity",
+      "data‑elasticity",
+      "resolution‑elasticity",
+      "exponent class",
+      "knee",
+      "diminishing returns"
+    ],
+    "queries": [
+      "How to make search scale‑savvy?",
+      "Where to declare scale variables and expected elasticities?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/22-c181-c181-scalinglaw-lens-binding-sll.md"
+  },
+  "C.19": {
+    "title": "E/E‑LOG — Explore–Exploit Governor",
+    "status": "Stable",
+    "keywords": [
+      "explore-exploit",
+      "policy",
+      "strategy",
+      "decision lens",
+      "portfolio management"
+    ],
+    "queries": [
+      "How to balance exploration and exploitation?",
+      "What is an EmitterPolicy?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "Decsn-CAL"
+      ],
+      "coordinates_with": [
+        "NQD-CAL"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/23-c19-c19-exploreexploit-governor-eelog.md"
+  },
+  "C.19.1": {
+    "title": "BLP — Bitter‑Lesson Preference (policy)",
+    "status": "Stable",
+    "keywords": [
+      "general‑method preference",
+      "iso‑scale parity",
+      "scale‑probe",
+      "deontic override"
+    ],
+    "queries": [
+      "What is the default policy when a domain‑specific trick competes with a scalable general method?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "G"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/24-c191-c191-bitterlesson-preference-blp.md"
+  },
+  "C.20": {
+    "title": "Discipline‑CAL — Composition of U.Discipline",
+    "status": "Stable",
+    "keywords": [
+      "discipline",
+      "**U.AppliedDiscipline**",
+      "**U.Transdiscipline**",
+      "episteme corpus",
+      "standards",
+      "institutions",
+      "**Γ_disc**"
+    ],
+    "queries": [
+      "How to compose and assess a discipline in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/25-c20-c20-composition-of-udiscipline-disciplinecal.md"
+  },
+  "C.21": {
+    "title": "Discipline‑CHR - Field Health & Structure",
+    "status": "Stable",
+    "keywords": [
+      "discipline",
+      "field health",
+      "reproducibility",
+      "standardisation",
+      "alignment",
+      "disruption"
+    ],
+    "queries": [
+      "How to measure the health of a scientific field?",
+      "What is reproducibility rate?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "C"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-graph.md"
+  },
+  "C.22": {
+    "title": "Problem‑CHR - Problem Typing & TaskSignature Binding",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "G"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/03-c22-c22-reliability-r-in-the-fgr-triad.md"
+  },
+  "C.23": {
+    "title": "Method‑SoS‑LOG — MethodFamily Evidence & Maturity",
+    "status": "Stable",
+    "keywords": [
+      "MethodFamily",
+      "evidence",
+      "maturity",
+      "SoS-LOG",
+      "admit",
+      "degrade",
+      "abstain",
+      "selector"
+    ],
+    "queries": [
+      "How is method family maturity assessed?",
+      "What is the SoS-LOG for selection?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/05-c23-c23-unified-formality-characteristic-f.md"
+  },
+  "C.24": {
+    "title": "C.Agent-Tools-CAL — Agentic Tool-Use & Call-Planning",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "G"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/07-c24-c24-uarticulationexplicitness.md"
+  },
+  "C.25": {
+    "title": "Q-Bundle — Structured Treatment of \"-ilities\" (Quality Families)",
+    "status": "Stable",
+    "keywords": [
+      "quality bundle",
+      "-ility",
+      "quality family",
+      "characteristic plus scope",
+      "mechanism/status slots",
+      "endpoint routing"
+    ],
+    "queries": [
+      "What is a Q-Bundle in FPF?",
+      "When is an -ility one characteristic and when is it a bundle?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
+  },
+  "**D.1**": {
+    "title": "Axiological Neutrality Principle",
+    "status": "Stub",
+    "keywords": [
+      "axiology",
+      "values",
+      "ethics",
+      "neutrality",
+      "morals",
+      "preference lattice",
+      "objective function"
+    ],
+    "queries": [
+      "Does FPF have built-in ethics?",
+      "How to model different value systems in FPF?",
+      "What is axiological neutrality?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": ""
+  },
+  "**D.2**": {
+    "title": "Multi-Scale Ethics Framework",
+    "status": "Stub",
+    "keywords": [
+      "ethics",
+      "scale",
+      "levels",
+      "scope",
+      "responsibility",
+      "agent",
+      "team",
+      "ecosystem",
+      "planet"
+    ],
+    "queries": [
+      "How to apply ethics at different scales?",
+      "FPF model for team ethics vs. individual ethics."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ],
+      "constrains": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.2.1": {
+    "title": "Local-Agent Ethics",
+    "status": "Stub",
+    "keywords": [
+      "individual ethics",
+      "duties",
+      "permissions",
+      "agent",
+      "system"
+    ],
+    "queries": [
+      "Modeling duties for a single agent."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.2.2": {
+    "title": "Group-Ethics Standards",
+    "status": "Stub",
+    "keywords": [
+      "collective norms",
+      "team ethics",
+      "veto",
+      "subsidiarity"
+    ],
+    "queries": [
+      "How to define rules for a team in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.2.3": {
+    "title": "Ecosystem Stewardship",
+    "status": "Stub",
+    "keywords": [
+      "externalities",
+      "tragedy of the commons"
+    ],
+    "queries": [
+      "Modeling ethical impact on an ecosystem."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.2.4": {
+    "title": "Planetary-Scale Precaution",
+    "status": "Stub",
+    "keywords": [
+      "catastrophic risk",
+      "long-termism",
+      "precautionary principle"
+    ],
+    "queries": [
+      "How does FPF handle long-term ethical risks?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "**D.3**": {
+    "title": "Holonic Conflict Topology",
+    "status": "Stub",
+    "keywords": [
+      "conflict",
+      "clash",
+      "disagreement",
+      "resolution",
+      "resource conflict",
+      "goal conflict",
+      "epistemic conflict"
+    ],
+    "queries": [
+      "How to model conflicts between systems in FPF?",
+      "Types of conflicts in FPF."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ]
+    },
+    "file": ""
+  },
+  "D.3.1": {
+    "title": "Conflict Detection Logic (LOG-use)",
+    "status": "Stub",
+    "keywords": [
+      "conflict detection",
+      "logic",
+      "predicates",
+      "`conflictsWith`"
+    ],
+    "queries": [
+      "Formal logic for detecting conflicts."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.3.2": {
+    "title": "Conflict Routing Protocol",
+    "status": "Stub",
+    "keywords": [
+      "routing",
+      "mediation",
+      "negotiation",
+      "DRR",
+      "appeals"
+    ],
+    "queries": [
+      "How does FPF route unresolved conflicts?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "**D.4**": {
+    "title": "Trust-Aware Mediation Calculus",
+    "status": "Stub",
+    "keywords": [
+      "mediation",
+      "negotiation",
+      "conflict resolution",
+      "trust score",
+      "assurance",
+      "algorithm"
+    ],
+    "queries": [
+      "How does FPF resolve conflicts using trust?",
+      "What is the algorithm for mediation?",
+      "Using B.3 scores for decision making."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.4.1": {
+    "title": "Fair-Share Negotiation Operator",
+    "status": "Stub",
+    "keywords": [
+      "fair division",
+      "negotiation",
+      "Nash bargaining",
+      "bias correction"
+    ],
+    "queries": [
+      "Modeling fair negotiation between agents."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.4.2": {
+    "title": "Assurance-Driven Override",
+    "status": "Stub",
+    "keywords": [
+      "safety override",
+      "assurance",
+      "utility",
+      "risk management"
+    ],
+    "queries": [
+      "When does safety override performance in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "**D.5**": {
+    "title": "Bias-Audit & Ethical Assurance",
+    "status": "Stable",
+    "keywords": [
+      "bias",
+      "audit",
+      "ethics",
+      "assurance",
+      "fairness",
+      "review cycle",
+      "taxonomy",
+      "AI ethics",
+      "responsible AI"
+    ],
+    "queries": [
+      "How does FPF handle bias?",
+      "What is the Bias-Audit Cycle?",
+      "How to ensure a model is fair?",
+      "Ethical review process in FPF."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": ""
+  },
+  "D.5.1": {
+    "title": "Taxonomy-Guided Audit Templates",
+    "status": "Stub",
+    "keywords": [
+      "bias taxonomy",
+      "audit checklist",
+      "template"
+    ],
+    "queries": [
+      "Templates for conducting a bias audit."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "D.5.2": {
+    "title": "Assurance Metrics Roll-up",
+    "status": "Stub",
+    "keywords": [
+      "ethical risk index",
+      "metrics",
+      "evidence",
+      "roll-up"
+    ],
+    "queries": [
+      "How to calculate an overall ethical risk score in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "D"
+      ]
+    },
+    "file": ""
+  },
+  "E.1": {
+    "title": "Vision & Mission",
+    "status": "Stable",
+    "keywords": [
+      "vision",
+      "mission",
+      "operating system for thought",
+      "purpose",
+      "scope",
+      "goals",
+      "non-goals"
+    ],
+    "queries": [
+      "What is FPF?",
+      "What is the purpose of the First Principles Framework?",
+      "What problem does FPF solve?"
+    ],
+    "dependencies": {
+      "prerequisite_for": [
+        "All other patterns",
+        "especially E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/01-e1-e1-vision-mission-operating-system-for-thought.md"
+  },
+  "E.2": {
+    "title": "The Eleven Pillars",
+    "status": "Stable",
+    "keywords": [
+      "principles",
+      "constitution",
+      "pillars",
+      "invariants",
+      "core values",
+      "rules",
+      "P-1 to P-11"
+    ],
+    "queries": [
+      "What are the core principles of FPF?",
+      "What are the eleven pillars?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "prerequisite_for": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/02-e2-e2-the-eleven-pillars.md"
+  },
+  "E.3": {
+    "title": "Principle Taxonomy & Precedence Model",
+    "status": "Stable",
+    "keywords": [
+      "taxonomy",
+      "precedence",
+      "conflict resolution",
+      "hierarchy",
+      "principles",
+      "classification",
+      "Gov",
+      "Arch",
+      "Epist",
+      "Prag",
+      "Did"
+    ],
+    "queries": [
+      "How does FPF resolve conflicting principles?",
+      "What is the hierarchy of FPF rules?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "constrains": [
+        "All patterns and DRRs"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/03-e3-e3-principle-taxonomy-precedence-model.md"
+  },
+  "E.4": {
+    "title": "FPF Artefact Architecture",
+    "status": "Stable",
+    "keywords": [
+      "artifact",
+      "families",
+      "architecture",
+      "conceptual core",
+      "tooling",
+      "pedagogy",
+      "canon",
+      "tutorial",
+      "linter"
+    ],
+    "queries": [
+      "How are FPF documents structured?",
+      "What is the difference between the core spec and tooling?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/04-e4-e4-fpf-artefact-architecture.md"
+  },
+  "E.5": {
+    "title": "Four Guard-Rails of FPF",
+    "status": "Stable",
+    "keywords": [
+      "guardrails",
+      "constraints",
+      "architecture",
+      "rules",
+      "safety",
+      "GR-1 to GR-4"
+    ],
+    "queries": [
+      "What are the main architectural constraints in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "prerequisite_for": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/05-e5-e5-four-guardrails-of-fpf.md"
+  },
+  "E.5.1": {
+    "title": "DevOps Lexical Firewall",
+    "status": "Stable",
+    "keywords": [
+      "lexical firewall",
+      "jargon",
+      "tool-agnostic",
+      "conceptual purity",
+      "DevOps",
+      "CI/CD",
+      "yaml"
+    ],
+    "queries": [
+      "Can I use terms like 'CI/CD' in FPF core patterns?"
+    ],
+    "dependencies": {
+      "refines": [
+        "E"
+      ],
+      "constrains": [
+        "All Core patterns"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/06-e51-e51-devops-lexical-firewall.md"
+  },
+  "E.5.2": {
+    "title": "Notational Independence",
+    "status": "Stable",
+    "keywords": [
+      "notation",
+      "syntax",
+      "semantics",
+      "tool-agnostic",
+      "diagram",
+      "UML",
+      "BPMN"
+    ],
+    "queries": [
+      "Does FPF require a specific diagram style?",
+      "How is meaning defined in FPF?"
+    ],
+    "dependencies": {
+      "refines": [
+        "E"
+      ],
+      "constrains": [
+        "All Core patterns"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/07-e52-e52-notational-independence.md"
+  },
+  "E.5.3": {
+    "title": "Unidirectional Dependency",
+    "status": "Stable",
+    "keywords": [
+      "dependency",
+      "layers",
+      "architecture",
+      "modularity",
+      "acyclic",
+      "Core",
+      "Tooling",
+      "Pedagogy"
+    ],
+    "queries": [
+      "What are the dependency rules between FPF artifact families?"
+    ],
+    "dependencies": {
+      "refines": [
+        "E"
+      ],
+      "constrains": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/08-e53-e53-unidirectional-dependency.md"
+  },
+  "E.5.4": {
+    "title": "Cross-Disciplinary Bias Audit",
+    "status": "Stable",
+    "keywords": [
+      "bias",
+      "audit",
+      "ethics",
+      "fairness",
+      "trans-disciplinary",
+      "neutrality",
+      "review"
+    ],
+    "queries": [
+      "How does FPF handle bias?",
+      "Is there an ethics review process in FPF?"
+    ],
+    "dependencies": {
+      "refines": [
+        "E"
+      ],
+      "constrains": [
+        "All Core patterns"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/09-e54-e54-crossdisciplinary-bias-audit.md"
+  },
+  "E.6": {
+    "title": "Didactic Architecture of the Spec",
+    "status": "Stable",
+    "keywords": [
+      "didactic",
+      "pedagogy",
+      "structure",
+      "narrative flow",
+      "on-ramp",
+      "learning"
+    ],
+    "queries": [
+      "How is the FPF specification structured for learning?",
+      "What is the 'On-Ramp first' principle?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/10-e6-e6-didactic-architecture-of-the-specification.md"
+  },
+  "E.7": {
+    "title": "Archetypal Grounding Principle",
+    "status": "Stable",
+    "keywords": [
+      "grounding",
+      "examples",
+      "archetypes",
+      "U.System",
+      "U.Episteme",
+      "Tell-Show-Show"
+    ],
+    "queries": [
+      "How are FPF patterns explained?",
+      "What are the standard examples in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "constrains": [
+        "All architectural patterns"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/11-e7-e7-archetypal-grounding-principle.md"
+  },
+  "E.8": {
+    "title": "FPF Authoring Conventions & Style Guide",
+    "status": "Stable",
+    "keywords": [
+      "authoring",
+      "style guide",
+      "conventions",
+      "template",
+      "S-rules",
+      "narrative flow"
+    ],
+    "queries": [
+      "How to write a new FPF pattern?",
+      "What is the FPF style guide?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "constrains": [
+        "All new patterns"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/12-e8-e8-fpf-authoring-conventions-style-guide.md"
+  },
+  "E.9": {
+    "title": "Design-Rationale Record (DRR) Method",
+    "status": "Stable",
+    "keywords": [
+      "DRR",
+      "design rationale",
+      "change management",
+      "decision record",
+      "context",
+      "consequences"
+    ],
+    "queries": [
+      "How are changes to FPF managed?",
+      "What is a DRR?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "constrains": [
+        "All normative changes"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/13-e9-e9-designrationale-record-drr-method.md"
+  },
+  "E.10": {
+    "title": "LEX-BUNDLE: Unified Lexical Rules for FPF",
+    "status": "Stable",
+    "keywords": [
+      "lexical rules",
+      "naming",
+      "registers",
+      "rewrite rules",
+      "process",
+      "function",
+      "service"
+    ],
+    "queries": [
+      "What is the complete set of FPF naming rules?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md"
+  },
+  "E.10.P": {
+    "title": "Conceptual Prefixes (policy & registry)",
+    "status": "Stable",
+    "keywords": [
+      "prefixes",
+      "U",
+      "Γ_",
+      "ut:",
+      "tv:",
+      "namespace",
+      "registry"
+    ],
+    "queries": [
+      "What do the prefixes like 'U.' mean in FPF?"
+    ],
+    "dependencies": {
+      "constrains": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/15-e10p-e10p-conceptual-prefixes-policy-registry.md"
+  },
+  "E.10.D1": {
+    "title": "Lexical Discipline for “Context” (D.CTX)",
+    "status": "Stable",
+    "keywords": [
+      "context",
+      "U.BoundedContext",
+      "anchor",
+      "domain",
+      "frame"
+    ],
+    "queries": [
+      "What is the formal meaning of 'Context' in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "F"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/16-e10d-e10d1-lexical-discipline-for-context-dctx.md"
+  },
+  "E.10.D2": {
+    "title": "Intension–Description–Specification Discipline (I/D/S)",
+    "status": "Stable",
+    "keywords": [
+      "intension",
+      "description",
+      "specification",
+      "I/D/S",
+      "testable",
+      "verifiable"
+    ],
+    "queries": [
+      "Difference between a description and a specification in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "constrains": [
+        "F"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
+  },
+  "E.12": {
+    "title": "Didactic Primacy & Cognitive Ergonomics",
+    "status": "Stable",
+    "keywords": [
+      "didactic",
+      "cognitive load",
+      "ergonomics",
+      "usability",
+      "Rationale Mandate",
+      "HF-Loop"
+    ],
+    "queries": [
+      "How does FPF ensure it's understandable?",
+      "What is the 'So What?' test in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/18-e12-e12-didactic-primacy-cognitive-ergonomics.md"
+  },
+  "E.13": {
+    "title": "Pragmatic Utility & Value Alignment",
+    "status": "Stable",
+    "keywords": [
+      "pragmatic",
+      "utility",
+      "value",
+      "Goodhart's Law",
+      "Proxy-Audit Loop",
+      "MVE"
+    ],
+    "queries": [
+      "How does FPF ensure solutions are useful, not just correct?",
+      "What is a Minimally Viable Example (MVE)?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/19-e13-e13-pragmatic-utility-value-alignment.md"
+  },
+  "E.14": {
+    "title": "Human-Centric Working-Model",
+    "status": "Stable",
+    "keywords": [
+      "working model",
+      "human-centric",
+      "publication surface",
+      "grounding",
+      "assurance layers"
+    ],
+    "queries": [
+      "What is the main interface for FPF users?",
+      "How does FPF separate human-readable models from formal assurance?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "B"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/20-e14-e14-humancentric-workingmodel.md"
+  },
+  "E.15": {
+    "title": "Lexical Authoring & Evolution Protocol (LEX-AUTH)",
+    "status": "stable",
+    "keywords": [
+      "lexical authoring",
+      "evolution protocol",
+      "LAT",
+      "delta-classes"
+    ],
+    "queries": [
+      "How are FPF patterns authored and evolved?",
+      "What is a Lexical Authoring Trace (LAT)?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/21-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
+  },
+  "E.16": {
+    "title": "RoC-Autonomy: Budget & Enforcement",
+    "status": "Stable",
+    "keywords": [
+      "autonomy",
+      "budget",
+      "guarded enactment",
+      "ledger",
+      "SoD",
+      "override",
+      "UTS"
+    ],
+    "queries": [
+      "How is autonomy bounded and tested?",
+      "How are overrides enforced under SoD?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/22-e16-e16-rocautonomy-budget-enforcement.md"
+  },
+  "E.17.0": {
+    "title": "U.MultiViewDescribing — Viewpoints, Views & Correspondences",
+    "status": "New",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-section-ei-the-fpf-constitution/23-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+  },
+  "E.17.1": {
+    "title": "U.ViewpointBundleLibrary — Reusable Viewpoint Bundles",
+    "status": "Stable",
+    "keywords": [
+      "viewpoint bundle",
+      "reusable viewpoint family",
+      "import discipline",
+      "alias discipline",
+      "governance",
+      "engineering/management/research bundles"
+    ],
+    "queries": [
+      "How do I define reusable viewpoint bundles in FPF?",
+      "What is a ViewpointBundleLibrary?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "used_by": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/24-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
+  },
+  "E.17.2": {
+    "title": "TEVB — Typical Engineering Viewpoints Bundle",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-section-ei-the-fpf-constitution/25-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
+  },
+  "E.17": {
+    "title": "Multi‑View Publication Kit (for Morphisms)",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-section-ei-the-fpf-constitution/23-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+  },
+  "E.17.EFP": {
+    "title": "ExplanationFaithfulnessProfile — explanation classification over existing MVPK faces",
+    "status": "Stable",
+    "keywords": [
+      "explanation",
+      "rendering",
+      "source-pinned",
+      "reconstruction",
+      "didactic retelling",
+      "speculative retelling",
+      "evidence binding",
+      "admissible faces"
+    ],
+    "queries": [
+      "How does FPF classify explanation-facing renderings?",
+      "What is ExplanationFaithfulnessProfile?",
+      "How do explanation renderings stay on existing MVPK faces without becoming a second semantic rule track?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "ConservativeRetextualization",
+        "RepresentationTransduction",
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/27-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md"
+  },
+  "E.17.ID.CR": {
+    "title": "InterpretationDiscipline / ComparativeReading — bounded comparative reading over comparative review units",
+    "status": "Stable",
+    "keywords": [
+      "comparative reading",
+      "comparative review unit",
+      "bounded comparison",
+      "source-pinned material",
+      "same object of talk",
+      "bounded lift",
+      "forbidden stronger uptake"
+    ],
+    "queries": [
+      "What is ComparativeReading in FPF?",
+      "How does FPF govern a comparative review unit?",
+      "When does a comparative review note stay bounded rather than becoming bridge, explanation, prompt, ontology, or gate work?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/28-e17id-e17idcr-interpretationdiscipline-comparativereading-bounded-.md"
+  },
+  "E.17.AUD": {
+    "title": "AuthoredUnitDiscipline — umbrella routing for one authored unit that is starting to drift",
+    "status": "Stable",
+    "keywords": [
+      "authored unit",
+      "primary object of talk",
+      "carried move",
+      "outside-work boundary",
+      "umbrella routing",
+      "authored-unit stability"
+    ],
+    "queries": [
+      "How do I keep one note or memo honest as one readable unit?",
+      "What is AuthoredUnitDiscipline in FPF?",
+      "When is the real burden local head repair, whole-unit stabilization, bounded comparison, or another neighboring pattern?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
+  },
+  "E.17.AUD.LHR": {
+    "title": "AuthoredUnitDiscipline / Local Head Restoration — repair the pressured local head before the authored unit inherits it",
+    "status": "Stable",
+    "keywords": [
+      "pressured head",
+      "head kind",
+      "active lane",
+      "local repair",
+      "governed object",
+      "outside-work boundary",
+      "local wording repair"
+    ],
+    "queries": [
+      "How do I repair one vague local head before the whole note drifts?",
+      "What is Local Head Restoration in FPF?",
+      "When do I need local head repair rather than authored-unit stabilization?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17audlhr-authoredunitdiscipline-local-head-restoration-repa.md"
+  },
+  "E.17.AUD.OOTD": {
+    "title": "AuthoredUnitDiscipline / AuthoredUnit Object-of-Talk Discipline — authored-unit stability over one primary object of talk",
+    "status": "Stable",
+    "keywords": [
+      "authored unit",
+      "object of talk",
+      "authored-unit drift",
+      "carried move",
+      "outside-work boundary",
+      "explicit transition"
+    ],
+    "queries": [
+      "How do I keep one note about one thing at a time?",
+      "What is AuthoredUnit Object-of-Talk Discipline in FPF?",
+      "When do I need authored-unit stabilization rather than only local wording repair?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/31-e17aud-e17audootd-authoredunitdiscipline-authoredunit-object-of-tal.md"
+  },
+  "E.18": {
+    "title": "Transduction Graph Architecture (E.TGA)",
+    "status": "Stable",
+    "keywords": [
+      "transduction graph",
+      "**nodes=morphisms**",
+      "**edge=U.Transfer** (single-edge kind)",
+      "**OperationalGate(profile)**",
+      "**CV⇒GF** (ConstraintValidity → GateFit)",
+      "**MVPK** faces",
+      "**SquareLaw**",
+      "**UNM single-writer**",
+      "**CSLC normalize-then-compare**",
+      "**Set-return selection**",
+      "**PathSlice/Sentinel refresh**",
+      "**DesignRunTag**"
+    ],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/32-e18-e18-transduction-graph-architecture-etga.md"
+  },
+  "E.19": {
+    "title": "Pattern Quality Gates: Review & Refresh Profiles",
+    "status": "Stable",
+    "keywords": [
+      "pattern review",
+      "quality gates",
+      "admission",
+      "refresh",
+      "staleness",
+      "profile-based checks",
+      "PQG",
+      "PCP",
+      "suite-level review (PCP‑SUITE)",
+      "planned baseline & P2W seam (PCP‑P2W)",
+      "`SlotFillingsPlanItem`",
+      "MVPK projections",
+      "guard vs gate separation"
+    ],
+    "queries": [
+      "How to review a new FPF pattern before admitting it?",
+      "How to refresh stale patterns in FPF?",
+      "What are PQG/PCP in FPF?",
+      "How to review a MechSuiteDescription (suite obligations, contract pins, protocols)?",
+      "How to review SlotFillingsPlanItem / planned slot filling and its MVPK projections?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "F"
+      ],
+      "constrains": [
+        "Admission/refresh decisions for patterns intended for the canonical corpus"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/33-e19-e19-pattern-quality-gates-review-refresh-profiles.md"
+  },
+  "E.20": {
+    "title": "Mechanism Introduction Protocol (MIP)",
+    "status": "Draft",
+    "keywords": [
+      "mechanism introduction",
+      "authoring protocol",
+      "owner routing",
+      "MIP-run manifest",
+      "canonical card-first",
+      "no dangling `…IntensionRef`",
+      "suite boundary hygiene",
+      "P2W seam",
+      "SlotKind lexicon discipline",
+      "alias docking",
+      "typed RSCR triggers",
+      "regression envelope",
+      "PQG profiles"
+    ],
+    "queries": [
+      "How to introduce a new mechanism in FPF?",
+      "How to avoid dangling IntensionRefs in suites?",
+      "How to route mechanism changes by semantic owner?",
+      "How to evolve mechanism suites without drift?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "coordinates_with": [
+        "A"
+      ],
+      "constrains": [
+        "Any change-set that introduces or revises mechanisms",
+        "suites",
+        "planned baselines",
+        "wiring modules",
+        "or citeable tokens"
+      ]
+    },
+    "file": "sections/11-section-ei-the-fpf-constitution/34-e20-e20-mechanism-introduction-protocol.md"
+  },
+  "F.0.1": {
+    "title": "Contextual Lexicon Principles",
+    "status": "Stable",
+    "keywords": [
+      "local meaning",
+      "context",
+      "semantic boundary",
+      "bridge",
+      "congruence",
+      "lexicon",
+      "U.BoundedContext"
+    ],
+    "queries": [
+      "How does FPF handle ambiguity?",
+      "What is the principle of local meaning?",
+      "How do different contexts communicate?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A"
+      ],
+      "prerequisite_for": [
+        "All patterns in Part F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/01-f01-f01-contextual-lexicon-principles.md"
+  },
+  "F.1": {
+    "title": "Domain‑Family Landscape Survey",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ],
+      "prerequisite_for": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/02-f1-f1-domainfamily-landscape-survey.md"
+  },
+  "F.2": {
+    "title": "Term Harvesting & Normalisation",
+    "status": "Stable",
+    "keywords": [
+      "term harvesting",
+      "lexical unit",
+      "normalization",
+      "provenance",
+      "surface terms"
+    ],
+    "queries": [
+      "How to extract terminology from a standard?",
+      "What is a local lexical unit?",
+      "How to handle synonyms within one domain?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "prerequisite_for": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/03-f2-f2-term-harvesting-normalisation.md"
+  },
+  "F.3": {
+    "title": "Intra‑Context Sense Clustering",
+    "status": "Stable",
+    "keywords": [
+      "sense clustering",
+      "disambiguation",
+      "Local-Sense",
+      "SenseCell",
+      "counter-examples"
+    ],
+    "queries": [
+      "How to group similar terms within a single domain?",
+      "What is a SenseCell?",
+      "How to handle words with multiple meanings in one context?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "prerequisite_for": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/04-f3-f3-intracontext-sense-clustering.md"
+  },
+  "F.4": {
+    "title": "Role Description (RCS + RoleStateGraph + Checklists)",
+    "status": "Stable",
+    "keywords": [
+      "role template",
+      "status template",
+      "invariants",
+      "RoleStateGraph (RSG)",
+      "Role Characterisation Space (RCS)"
+    ],
+    "queries": [
+      "How to define a role in FPF?",
+      "What is a Role Description?",
+      "How to specify the states of a role?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "prerequisite_for": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/05-f4-f4-role-description-rcs-rolestategraph-checklists.md"
+  },
+  "F.5": {
+    "title": "Naming Discipline for U.Types & Roles",
+    "status": "Stable",
+    "keywords": [
+      "naming conventions",
+      "lexical rules",
+      "morphology",
+      "twin registers",
+      "U.Type naming"
+    ],
+    "queries": [
+      "What are the rules for naming roles in FPF?",
+      "How to create clear and consistent names for concepts?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/06-f5-f5-naming-discipline-for-utypes-roles.md"
+  },
+  "F.6": {
+    "title": "Role Assignment & Enactment Cycle (Six-Step)",
+    "status": "Stable",
+    "keywords": [
+      "role assignment",
+      "enactment",
+      "conceptual moves",
+      "asserting status"
+    ],
+    "queries": [
+      "What is the process for assigning a role?",
+      "How is a role enacted in FPF?",
+      "What are the six steps of role assignment?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/07-f6-f6-role-assignment-enactment-cycle-six-step.md"
+  },
+  "F.7": {
+    "title": "Concept‑Set Table Construction",
+    "status": "Stable",
+    "keywords": [
+      "concept-set",
+      "table",
+      "row",
+      "columns",
+      "differences",
+      "comparisons"
+    ],
+    "queries": [
+      "How do I create a concept-set table?",
+      "How do I compare concepts across contexts?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "prerequisite_for": [
+        "F"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/08-f7-f7-conceptset-table.md"
+  },
+  "F.8": {
+    "title": "Mint or Reuse? (U.Type vs Concept-Set vs Role Description vs Alias)",
+    "status": "Stable",
+    "keywords": [
+      "decision lattice",
+      "type explosion",
+      "reuse",
+      "minting new types",
+      "parsimony"
+    ],
+    "queries": [
+      "When should I create a new U.Type?",
+      "How to avoid creating too many roles?",
+      "Decision guide for new concepts."
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/09-f8-f8-mint-or-reuse-utype-vs-concept-set-vs-role-description-vs.md"
+  },
+  "F.9": {
+    "title": "Alignment & Bridge across Contexts",
+    "status": "Stable",
+    "keywords": [
+      "bridge",
+      "cross-context alignment",
+      "CL",
+      "direction",
+      "loss notes",
+      "substitution licence",
+      "bridge reading"
+    ],
+    "queries": [
+      "How do I bridge concepts across contexts?",
+      "How do I express alignment safely in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "prerequisite_for": [
+        "F"
+      ],
+      "coordinates_with": [
+        "A"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/10-f9-f9-alignment-bridge-across-contexts.md"
+  },
+  "F.9.1": {
+    "title": "Bridge Stance Overlay",
+    "status": "Draft",
+    "keywords": [
+      "bridge stance",
+      "stance overlay",
+      "interpretive gloss",
+      "projection note",
+      "rename note",
+      "language-state comparisons"
+    ],
+    "queries": [
+      "How do I add a stance gloss to a bridge card without changing bridge semantics?",
+      "What is the Bridge Stance Overlay?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ],
+      "coordinates_with": [
+        "E"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/11-f91-f91-bridge-stance-overlay.md"
+  },
+  "F.10": {
+    "title": "Status Families Mapping (Evidence • Standard • Requirement)",
+    "status": "Stable",
+    "keywords": [
+      "status",
+      "evidence",
+      "standard",
+      "requirement",
+      "polarity",
+      "applicability windows"
+    ],
+    "queries": [
+      "How to map different types of status like 'evidence' and 'requirement'?",
+      "How does FPF handle compliance?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/12-f10-f10-status-families-mapping-evidence-standard-requirement.md"
+  },
+  "F.11": {
+    "title": "Method Quartet Harmonisation",
+    "status": "Stable",
+    "keywords": [
+      "Method",
+      "MethodDescription",
+      "Work",
+      "Actuation",
+      "Role–Method–Work alignment"
+    ],
+    "queries": [
+      "How to align the concepts of 'method' and 'work' across domains?",
+      "What is the method quartet?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/13-f11-f11-method-quartet-harmonisation.md"
+  },
+  "F.12": {
+    "title": "Service Acceptance Binding",
+    "status": "Stable",
+    "keywords": [
+      "Service Level Objective (SLO)",
+      "Service Level Agreement (SLA)",
+      "acceptance criteria",
+      "binding",
+      "observation"
+    ],
+    "queries": [
+      "How to bind an SLO to actual work?",
+      "How is service acceptance modeled in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/14-f12-f12-service-acceptancework-evidence-link.md"
+  },
+  "F.13": {
+    "title": "Lexical Continuity & Deprecation",
+    "status": "Stable",
+    "keywords": [
+      "evolution",
+      "deprecation",
+      "renaming",
+      "splitting terms",
+      "merging terms"
+    ],
+    "queries": [
+      "How to manage changes to terminology over time?",
+      "What is the process for renaming a concept?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/15-f13-f13-lexical-continuity-deprecation.md"
+  },
+  "F.14": {
+    "title": "Anti‑Explosion Control (Roles & Statuses)",
+    "status": "Stable",
+    "keywords": [
+      "vocabulary growth",
+      "guard-rails",
+      "separation-of-duties",
+      "bundles",
+      "reuse"
+    ],
+    "queries": [
+      "How to prevent having too many roles and statuses?",
+      "What are the strategies for controlling vocabulary size?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/16-f14-f14-antiexplosion-control-roles-statuses.md"
+  },
+  "F.15": {
+    "title": "SCR/RSCR Harness for Unification",
+    "status": "Stable",
+    "keywords": [
+      "static checks",
+      "regression tests",
+      "acceptance tests",
+      "validation",
+      "SenseCell testing"
+    ],
+    "queries": [
+      "How is the unification process validated?",
+      "What are SCR/RSCR tests in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "All of F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/17-f15-f15-scrrscr-harness-for-unification.md"
+  },
+  "F.16": {
+    "title": "Worked‑Example Template (Cross‑Domain)",
+    "status": "Stable",
+    "keywords": [
+      "didactic template",
+      "example",
+      "pedagogy",
+      "cross-domain illustration"
+    ],
+    "queries": [
+      "What is the standard format for a worked example in FPF?",
+      "How to show a concept applied across different fields?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "All of F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/18-f16-f16-workedexample-template-crossdomain.md"
+  },
+  "F.17": {
+    "title": "Unified Term Sheet (UTS)",
+    "status": "Stable",
+    "keywords": [
+      "Unified Term Sheet",
+      "UTS",
+      "summary table",
+      "glossary",
+      "publication",
+      "human-readable output"
+    ],
+    "queries": [
+      "What is the final output of the FPF unification process?",
+      "Where can I find a summary of all unified terms?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/19-f17-f17-unified-term-sheet-uts.md"
+  },
+  "F.18": {
+    "title": "Local-First Unification Naming Protocol",
+    "status": "Stable",
+    "keywords": [
+      "naming protocol",
+      "Name Card",
+      "local meaning",
+      "context-anchored naming"
+    ],
+    "queries": [
+      "What is the formal protocol for naming concepts?",
+      "What is a Name Card in FPF?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "F"
+      ]
+    },
+    "file": "sections/13-cluster-fi-context-of-meaning-raw-material/20-f18-f18-localfirst-unification-naming-protocol.md"
+  },
+  "G.Core": {
+    "title": "Part G Core Invariants",
+    "status": "Draft",
+    "keywords": [
+      "Part‑G invariants",
+      "delegation-first core",
+      "RSCR trigger kinds",
+      "default ownership index",
+      "ID continuity",
+      "core linkage"
+    ],
+    "queries": [
+      "How to universalize Part G without drift?",
+      "How to make RSCR triggers id-based?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/01-gcore-part-g-core-invariants.md"
+  },
+  "G.0": {
+    "title": "CG-Spec — Frame Standard & Comparability Governance",
+    "status": "Stable",
+    "keywords": [
+      "CG-Spec",
+      "CG-Frame",
+      "legality gate",
+      "ComparatorSet",
+      "ScaleComplianceProfile (SCP)",
+      "MinimalEvidence",
+      "Γ-fold",
+      "Φ(CL)",
+      "Φ_plane",
+      "CL-routing",
+      "ReferencePlane",
+      "edition pins",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "What is CG-Spec in FPF?",
+      "How does CG-Spec constrain lawful comparison and aggregation?",
+      "What must be pinned for CG-Spec reproducibility?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "prerequisite_for": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md"
+  },
+  "G.1": {
+    "title": "CG-Frame-Ready Generator",
+    "status": "Stable",
+    "keywords": [
+      "generator chassis",
+      "six-card kit (M1–M6)",
+      "`CGKitId` manifest",
+      "`SoTA_SetId`",
+      "`VariantPoolId`",
+      "`ShortlistId`",
+      "`CGFrameLibraryId`",
+      "`RefreshReadinessCardId`",
+      "UTS/Name Cards",
+      "RSCR wiring (typed trigger ids)",
+      "edition pins",
+      "set-return portfolios",
+      "shipping/refresh boundaries"
+    ],
+    "queries": [
+      "How to author a CG-Frame generator kit?",
+      "What is the six-card chassis M1–M6 in Part G?",
+      "How to wire harvesting (G.2), selection (G.5), and refresh (G.11) without shadow specs?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/03-g1-g1-cgframeready-generator.md"
+  },
+  "G.2": {
+    "title": "SoTA Harvester & Synthesis",
+    "status": "Stable",
+    "keywords": [
+      "SoTA harvest",
+      "synthesis",
+      "`SoTA Synthesis Pack@CG-Frame`",
+      "`SoTA_Set@CG-Frame`",
+      "`SoTAPaletteDescription`",
+      "`Tradition`",
+      "ClaimSheets",
+      "CorpusLedger",
+      "PRISMA Flow Record",
+      "BridgeMatrix",
+      "describedEntity",
+      "micro-examples",
+      "hand-off manifests",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How does FPF harvest and synthesize SoTA for a CG-Frame?",
+      "What is a SoTA Synthesis Pack@CG-Frame?",
+      "How to keep competing Traditions plural but comparable via bridges?",
+      "How to make SoTA harvest refreshable with pinned editions and typed RSCR causes?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/04-g2-g2-sota-harvester-synthesis.md"
+  },
+  "G.3": {
+    "title": "CHR Authoring: Characteristics - Scales - Levels - Coordinates",
+    "status": "Stable",
+    "keywords": [
+      "CHR authoring",
+      "characteristics",
+      "scales",
+      "levels",
+      "coordinates",
+      "CSLC legality",
+      "typed measurement",
+      "CHR Pack@CG-Frame",
+      "ReferencePlane",
+      "Φ/CL policy pins",
+      "edition pins",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How do I author CHR packs (typed characteristics and scales) for a CG-Frame?",
+      "How to keep measurement lawful (CSLC) and refreshable (RSCR)?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "prerequisite_for": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md"
+  },
+  "G.4": {
+    "title": "CAL Authoring: Calculi - Acceptance - Evidence",
+    "status": "Stable",
+    "keywords": [
+      "CAL authoring",
+      "operators",
+      "acceptance clauses",
+      "evidence profiles",
+      "tri-state admissibility",
+      "Γ-fold hooks",
+      "Φ/Ψ/Φ_plane policy pins",
+      "legality gates",
+      "edition pins",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How to author CAL operators and acceptance clauses for CG-Frames?",
+      "How to keep acceptance/evidence wiring auditable and refreshable?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "prerequisite_for": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md"
+  },
+  "G.5": {
+    "title": "Multi-Method Dispatcher & MethodFamily Registry",
+    "status": "Stable",
+    "keywords": [
+      "dispatcher",
+      "selector",
+      "MethodFamily registry",
+      "GeneratorFamily registry",
+      "TaskSignature",
+      "set-return selection",
+      "portfolio (`Archive`/`Pareto`)",
+      "dominance regime",
+      "parity harness",
+      "UTS publication",
+      "evidence pins (PathId/PathSliceId)",
+      "typed RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How does FPF dispatch among competing MethodFamilies without scalarising?",
+      "How are portfolios and parity runs made auditable and refreshable?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "coordinates_with": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md"
+  },
+  "G.6": {
+    "title": "Evidence Graph & Provenance Ledger",
+    "status": "Stable",
+    "keywords": [
+      "EvidenceGraph",
+      "provenance",
+      "PathId",
+      "PathSliceId",
+      "lane tags (TA/VA/LA)",
+      "SCR/RSCR",
+      "GateCrossing",
+      "CrossingBundle",
+      "UTS PathCard",
+      "TriggerAliasMap",
+      "Γ-fold pinning"
+    ],
+    "queries": [
+      "How does FPF trace claims to evidence?",
+      "What is an EvidenceGraph?",
+      "How do PathId/PathSliceId support audit and refresh?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/08-g6-g6-evidence-graph-provenance-ledger.md"
+  },
+  "G.7": {
+    "title": "Cross-Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels)",
+    "status": "Stable",
+    "keywords": [
+      "bridge calibration",
+      "BridgeCard",
+      "BridgeCalibrationTable (BCT)",
+      "RegressionSet",
+      "SentinelSet",
+      "BridgeSentinel",
+      "Congruence Level (CL/CL^k/CL^plane)",
+      "loss notes",
+      "waivers",
+      "ReferencePlane",
+      "Φ(CL)/Ψ(CL^k)/Φ_plane policy pins",
+      "PathSliceId",
+      "GateCrossing",
+      "UTS",
+      "RSCRTriggerKindId"
+    ],
+    "queries": [
+      "How to calibrate cross-Tradition bridges in Part G?",
+      "What is BCT and how is it used?",
+      "How do Bridge Sentinels trigger RSCR?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "prerequisite_for": [
+        "G"
+      ],
+      "used_by": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md"
+  },
+  "G.9": {
+    "title": "Parity / Benchmark Harness",
+    "status": "Stable",
+    "keywords": [
+      "parity",
+      "benchmark",
+      "harness",
+      "`ParityPlan@Context`",
+      "`ParityReport@Context`",
+      "pinned editions",
+      "freshness windows",
+      "`ComparatorSpecRef.edition`",
+      "baseline binding (`BaselineBindingRef`)",
+      "EvidenceTrace (`EvidenceGraphId`",
+      "`PathId`",
+      "`PathSliceId`)",
+      "GateCrossing visibility",
+      "set-return outcomes (portfolio/archive)",
+      "RSCR parity tests",
+      "cross-tradition parity via Bridge/CL/Φ pins"
+    ],
+    "queries": [
+      "What is a parity run in FPF?",
+      "How to run a reproducible parity benchmark (pins, windows, editions)?",
+      "How to publish parity outcomes without hidden scalarisation?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/11-g9-g9-parity-benchmark-harness.md"
+  },
+  "G.10": {
+    "title": "SoTA Pack Shipping (pack-boundary owner; SoTA-Pack(Core))",
+    "status": "Stable",
+    "keywords": [
+      "shipping",
+      "SoTA-Pack(Core)",
+      "pack boundary",
+      "publication surface",
+      "`AuditPins`",
+      "`MOOManifest`",
+      "`UTS` publication",
+      "`PathId`/`PathSliceId`",
+      "`CrossingBundle`",
+      "edition pins",
+      "telemetry pins",
+      "RSCR wiring",
+      "parity pins",
+      "notation-independent pack"
+    ],
+    "queries": [
+      "How does FPF ship a SoTA pack?",
+      "What is SoTA-Pack(Core) in Part G?",
+      "How do AuditPins and MOOManifest support replay and audit?",
+      "How are crossing bundles exposed during shipping?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "used_by": [
+        "selector-facing consumers (via G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/12-g10-g10-sota-pack-shipping.md"
+  },
+  "G.11": {
+    "title": "Telemetry-Driven Refresh & Decay Orchestrator",
+    "status": "Stable",
+    "keywords": [
+      "telemetry",
+      "refresh",
+      "decay",
+      "RSCR",
+      "PathSlice",
+      "Bridge Sentinels",
+      "edition-aware",
+      "epistemic debt",
+      "deprecation",
+      "edition bumps",
+      "re-shipping"
+    ],
+    "queries": [
+      "How does FPF keep SoTA packs up-to-date?",
+      "What triggers refresh / RSCR reruns?",
+      "How are deprecations and edition bumps governed?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "coordinates_with": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/13-g11-g11-telemetry-driven-refresh-decay-orchestrator.md"
+  },
+  "G.12": {
+    "title": "DHC Dashboards — Discipline-Health Time-Series (lawful telemetry, generation-first)",
+    "status": "Stable",
+    "keywords": [
+      "dashboard",
+      "DHC",
+      "discipline health",
+      "time-series",
+      "lawful telemetry",
+      "view-only slices",
+      "PathId/PathSliceId",
+      "edition pins",
+      "UTS twins",
+      "RSCR/refresh wiring"
+    ],
+    "queries": [
+      "How to build DHC dashboards in FPF?",
+      "How to publish lawful DHC time-series with evidence and edition pins?",
+      "How to wire dashboard telemetry into RSCR refresh?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ],
+      "coordinates_with": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/14-g12-g12-dhc-dashboards-disciplinehealth-timeseries-lawful-teleme.md"
+  },
+  "G.13": {
+    "title": "External Interop Hooks for SoTA Discipline Packs (conceptual; normative when used)",
+    "status": "Draft",
+    "keywords": [
+      "interop",
+      "external index",
+      "claim mapper",
+      "mapping policy",
+      "plane map",
+      "embedding spec",
+      "`ExternalIndexCard@Context`",
+      "`ClaimMapperCard@Context`",
+      "`InteropSurface@Context`",
+      "CHR-typed SoS features",
+      "edition pins",
+      "UTS twins",
+      "RSCRTriggerKindId",
+      "telemetry pin"
+    ],
+    "queries": [
+      "How does FPF integrate external scholarly indexes into Part G?",
+      "What is an ExternalIndexCard / ClaimMapperCard / InteropSurface in FPF?",
+      "How to make interop refreshable with RSCR trigger kinds and edition pins?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "G"
+      ]
+    },
+    "file": "sections/14-part-g-discipline-sota-patterns-kit/15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md"
+  }
+}

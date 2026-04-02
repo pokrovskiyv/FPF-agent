@@ -1,0 +1,87 @@
+name: Rebuild Sections
+
+on:
+  # Hook: triggers when FPF-Spec.md changes (e.g., after Sync Fork)
+  push:
+    branches: [main]
+    paths: [FPF-Spec.md]
+
+  # Cron: auto-sync fork with upstream every 2 weeks (1st and 15th at 09:00 UTC)
+  schedule:
+    - cron: '0 9 1,15 * *'
+
+  # Manual trigger for testing
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Sync fork with upstream (only on schedule or manual trigger) ---
+      - name: Sync fork with upstream
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add upstream remote
+          UPSTREAM_URL="${{ vars.UPSTREAM_URL || 'https://github.com/ailev/FPF.git' }}"
+          git remote add upstream "$UPSTREAM_URL" || git remote set-url upstream "$UPSTREAM_URL"
+          git fetch upstream main
+
+          # Check if FPF-Spec.md actually changed
+          UPSTREAM_HASH=$(git rev-parse upstream/main:FPF-Spec.md 2>/dev/null || echo "none")
+          LOCAL_HASH=$(git rev-parse HEAD:FPF-Spec.md 2>/dev/null || echo "none")
+
+          if [ "$UPSTREAM_HASH" = "$LOCAL_HASH" ]; then
+            echo "FPF-Spec.md unchanged — skipping rebuild"
+            echo "SKIP_REBUILD=true" >> "$GITHUB_ENV"
+          else
+            echo "FPF-Spec.md changed — merging upstream"
+            git merge upstream/main --no-edit --allow-unrelated-histories || {
+              echo "Merge conflict — manual resolution needed"
+              exit 1
+            }
+            echo "SKIP_REBUILD=false" >> "$GITHUB_ENV"
+          fi
+
+      # --- On push trigger, always rebuild ---
+      - name: Set rebuild flag for push trigger
+        if: github.event_name == 'push'
+        run: echo "SKIP_REBUILD=false" >> "$GITHUB_ENV"
+
+      # --- Rebuild sections ---
+      - name: Set up Python
+        if: env.SKIP_REBUILD != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run rebuild pipeline
+        if: env.SKIP_REBUILD != 'true'
+        run: bash scripts/rebuild_all.sh
+
+      - name: Commit and push updated sections
+        if: env.SKIP_REBUILD != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add sections/ metadata.json 2>/dev/null || true
+          git add sections/
+
+          if git diff --cached --quiet; then
+            echo "No changes to sections — skipping commit"
+          else
+            git commit -m "chore: rebuild sections from updated FPF-Spec.md"
+            git push
+          fi
