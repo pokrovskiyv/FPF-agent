@@ -147,10 +147,17 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2",
+        "A.5",
+        "C.17–C.19"
       ],
       "coordinates_with": [
-        "E"
+        "E.7",
+        "E.8",
+        "E.10",
+        "F.17",
+        "G.5",
+        "G.9–G.12"
       ],
       "constrains": [
         "Any pattern/UTS row that describes a generator",
@@ -181,7 +188,10 @@
         "P-8 Cross-Scale Consistency"
       ],
       "prerequisite_for": [
-        "A"
+        "A.1.1",
+        "A.2",
+        "A.14",
+        "B.1"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/02-a1-a1-holonic-foundation-entity-holon.md"
@@ -205,10 +215,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1"
       ],
       "prerequisite_for": [
-        "A"
+        "A.2.1",
+        "F.0.1"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-the-semantic-frame.md"
@@ -231,10 +242,13 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.1.1"
       ],
       "prerequisite_for": [
-        "A"
+        "A.2.1-A.2.6",
+        "A.13",
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/04-a2-a2-role-taxonomy.md"
@@ -256,10 +270,10 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.2"
       ],
       "prerequisite_for": [
-        "A"
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
@@ -281,10 +295,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2"
       ],
       "informs": [
-        "A"
+        "A.15",
+        "A.2.3"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/06-a22-a22-ucapability.md"
@@ -311,13 +326,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2.2"
       ],
       "prerequisite_for": [
-        "F"
+        "F.12"
       ],
       "used_by": [
-        "A"
+        "A.2.8",
+        "A.6.C",
+        "A.6.8"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/07-a23-a23-upromisecontent-promise-content.md"
@@ -338,10 +355,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2"
       ],
       "informs": [
-        "A"
+        "A.10",
+        "B.3"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/08-a24-a24-uevidencerole.md"
@@ -362,10 +380,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2.1"
       ],
       "prerequisite_for": [
-        "A"
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md"
@@ -386,10 +404,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1.1"
       ],
       "constrains": [
-        "A"
+        "A.2.2",
+        "A.2.3",
+        "B.3"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md"
@@ -412,10 +432,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2"
       ],
       "prerequisite_for": [
-        "A"
+        "A.15",
+        "A.2.5"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/11-a27-a27-urolealgebra-incontext-role-relations.md"
@@ -440,13 +461,18 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2.1",
+        "A.2.3",
+        "A.2.6",
+        "A.7",
+        "A.15.1"
       ],
       "refines": [
-        "A"
+        "A.2"
       ],
       "used_by": [
-        "A"
+        "A.6.B (Quadrant D)",
+        "A.6.C"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/12-a28-a28-ucommitment-deontic-commitment-object.md"
@@ -471,13 +497,18 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2.1",
+        "A.2.6",
+        "A.7",
+        "A.10",
+        "A.15.1"
       ],
       "refines": [
-        "A"
+        "A.2"
       ],
       "used_by": [
-        "A"
+        "A.2.8",
+        "A.6.C (utterance/instituting-act hook)"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/13-a29-a29-uspeechact-communicative-work-object.md"
@@ -500,10 +531,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2"
       ],
       "prerequisite_for": [
-        "A"
+        "A.3.1",
+        "A.3.2",
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/14-a3-a3-transformer-constitution-quartet.md"
@@ -523,10 +556,10 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.3"
       ],
       "prerequisite_for": [
-        "A"
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/15-a31-a31-umethod.md"
@@ -548,10 +581,10 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.3"
       ],
       "informs": [
-        "A"
+        "A.15"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/16-a32-a32-umethoddescription.md"
@@ -571,10 +604,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.19"
       ],
       "informs": [
-        "B"
+        "B.4"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/17-a33-a33-udynamics.md"
@@ -599,7 +632,7 @@
         "P-10 Open-Ended Evolution"
       ],
       "prerequisite_for": [
-        "B"
+        "B.4"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/18-a4-a4-temporal-duality-openended-evolution-principle.md"
@@ -648,10 +681,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "A.6.0",
+        "A.6.1",
+        "A.6.3",
+        "E.17.0",
+        "E.17",
+        "A.7",
+        "F.18",
+        "E.10.D2",
+        "E.10/L-SURF"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.5",
+        "A.6.6",
+        "A.6.7",
+        "E.19"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
@@ -677,10 +722,19 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "A.6.0",
+        "A.6.1",
+        "A.6.3",
+        "E.17.0",
+        "E.17",
+        "A.7",
+        "F.18",
+        "E.10.D2",
+        "E.10/L-SURF"
       ],
       "used_by": [
-        "A"
+        "A.6 (cluster overview)"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/02-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md"
@@ -704,10 +758,19 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6",
+        "A.6.B",
+        "A.6.8",
+        "A.7",
+        "A.2.3",
+        "A.2.8",
+        "A.2.9",
+        "E.10",
+        "E.17"
       ],
       "coordinates_with": [
-        "F"
+        "F.12",
+        "F.18"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6c-a6c-contract-unpacking-for-boundaries.md"
@@ -735,7 +798,8 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.0",
+        "E.10.D1"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/05-a61-a61-umechanism-lawgoverned-application-to-a-subjectkind-over.md"
@@ -759,10 +823,21 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1 (Holon)",
+        "A.7 (Strict Distinction",
+        "Object≠Description≠Carrier)",
+        "A.6.0 (U.Signature)",
+        "A.6.5 (U.RelationSlotDiscipline)",
+        "E.10.D2 (I/D/S discipline)",
+        "C.2.1 (U.EpistemeSlotGraph)"
       ],
       "used_by": [
-        "A"
+        "A.6.3 (U.EpistemicViewing)",
+        "A.6.4 (U.EpistemicRetargeting)",
+        "E.17.0 (U.MultiViewDescribing)",
+        "E.17 (MVPK)",
+        "E.18 (E.TGA StructuralReinterpretation)",
+        "KD-CAL mapping rules"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/06-a62-a62-ueffectfreeepistemicmorphing-effectfree-morphisms-of-epi.md"
@@ -790,10 +865,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.0 (U.Signature)",
+        "A.6.2 (U.EffectFreeEpistemicMorphing)",
+        "A.6.5 (U.RelationSlotDiscipline)",
+        "A.7 (Strict Distinction",
+        "I/D/S vs Surface)",
+        "E.10.D2 (I/D/S discipline)",
+        "C.2.1 (U.EpistemeSlotGraph)",
+        "C.2 (KD-CAL: describedEntity & ReferencePlane)"
       ],
       "used_by": [
-        "E"
+        "E.17.0 (U.MultiViewDescribing)",
+        "E.17 (MVPK)",
+        "E.17.1/E.17.2 (ViewpointBundleLibrary & TEVB)",
+        "E.18 (E.TGA viewpoint families)",
+        "B.5.3 (Role-Projection Bridge)",
+        "KD-CAL view operators"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/07-a63-a63-uepistemicviewing-describedentitypreserving-morphism.md"
@@ -817,12 +904,23 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.3",
+        "A.6.2",
+        "A.7",
+        "E.10.D2",
+        "E.17.0",
+        "E.17",
+        "F.9",
+        "F.18",
+        "E.10"
       ],
       "coordinates_with": [
         "ExplanationFaithfulnessProfile",
         "RepresentationTransduction",
-        "E"
+        "E.17.ID.CR ComparativeReading",
+        "A.6.4",
+        "B.5.2",
+        "A.15"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/08-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md"
@@ -847,12 +945,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.3",
+        "A.6.2",
+        "A.7",
+        "E.10.D2",
+        "C.2.7",
+        "E.17.0",
+        "E.17",
+        "F.9",
+        "F.18"
       ],
       "coordinates_with": [
         "ConservativeRetextualization",
         "ExplanationFaithfulnessProfile",
-        "E"
+        "E.17.ID.CR ComparativeReading",
+        "A.6.4",
+        "A.15",
+        "A.20",
+        "A.21",
+        "DecodingAccessProfile"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63rt-a63rt-representationtransduction-same-described-entity-repre.md"
@@ -875,10 +986,19 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.2 (effect-free episteme morphisms)",
+        "A.1 (Holon: System/Episteme split)",
+        "F.9 (Bridges & CL",
+        "including CL^plane and KindBridge)",
+        "C.2.1 (U.EpistemeSlotGraph",
+        "DescribedEntity/GroundingHolon)",
+        "C.2 (KD-CAL: ReferencePlane & CL propagation)",
+        "E.18:5.9/E.18:5.12 (E.TGA crossings & StructuralReinterpretation rules)"
       ],
       "used_by": [
-        "E"
+        "E.18 (StructuralReinterpretation node in E.TGA as species of U.EpistemicRetargeting)",
+        "KD-CAL/LOG-CAL retargeting rules",
+        "Fourier-style transforms and data↔model re-targetings in discipline packs"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a64-a64-uepistemicretargeting-describedentityretargeting-morphis.md"
@@ -903,13 +1023,30 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6",
+        "A.6.B",
+        "A.6.S",
+        "A.6.0",
+        "A.6.5",
+        "E.8",
+        "E.10",
+        "F.18"
       ],
       "coordinates_with": [
-        "A"
+        "A.2.6",
+        "A.10",
+        "C.3.3",
+        "E.17",
+        "F.9"
       ],
       "specialised_by": [
-        "A"
+        "A.6.Q",
+        "A.6.A",
+        "A.6.5",
+        "A.6.6",
+        "A.6.8",
+        "A.6.9",
+        "A.6.H"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a6p-a6p-urelationalprecisionrestorationsuite-relational-precisio.md"
@@ -932,10 +1069,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "C.25",
+        "C.2.2a",
+        "A.16",
+        "B.4.1",
+        "F.9"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.A",
+        "B.5.2.0"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/12-a6q-a6q-uqualitytermprecisionrestoration-quality-term-precision-.md"
@@ -958,10 +1101,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "A.15",
+        "C.2.2a",
+        "A.16",
+        "B.4.1",
+        "F.9"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.Q",
+        "B.5.2.0"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
@@ -982,10 +1131,20 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.0 (U.Signature)",
+        "A.1 (Holon)",
+        "A.7 (Strict Distinction)",
+        "E.8 (pattern authoring discipline)",
+        "E.10 (LEX-BUNDLE",
+        "Tech/Plain registers)"
       ],
       "used_by": [
-        "C"
+        "C.2.1 (U.EpistemeSlotGraph)",
+        "A.6.2–A.6.4 (episteme morphisms)",
+        "B.5.* (RoleEnactment)",
+        "C.3.* (Kinds & KindSignature)",
+        "E.17.0 (U.MultiViewDescribing)",
+        "discipline-packs for methods/services"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/14-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-disci.md"
@@ -1013,14 +1172,29 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.0",
+        "A.6.5",
+        "A.2.6",
+        "A.2.4",
+        "A.7",
+        "E.8",
+        "E.10"
       ],
       "coordinates_with": [
-        "A"
+        "A.10",
+        "A.14",
+        "C.2.1",
+        "A.6.3–A.6.4",
+        "C.3.3",
+        "E.18",
+        "F.9",
+        "F.15",
+        "F.18"
       ],
       "used_by": [
         "base-relative admissibility/calibration/attribution patterns",
-        "anchor"
+        "anchor* rewrites into explicit `baseRelation(dependent",
+        "base)`"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/15-a66-a66-ubasedeclarationdiscipline-kind-explicit-scoped-witnesse.md"
@@ -1046,10 +1220,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "A.6.1",
+        "A.6.5",
+        "E.10",
+        "E.19"
       ],
       "coordinates_with": [
-        "E"
+        "E.18",
+        "A.21"
       ],
       "used_by": [
         "Part G universalization",
@@ -1078,10 +1257,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "A.6.B",
+        "A.6.5",
+        "A.2.3",
+        "A.2.8",
+        "A.2.9",
+        "A.15",
+        "E.10",
+        "F.17",
+        "F.18"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.C",
+        "A.7",
+        "F.8",
+        "E.15"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/17-a68-a68-service-polysemy-unpacking-rprserv.md"
@@ -1108,10 +1299,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "F.9",
+        "E.10.D1",
+        "A.7"
       ],
       "coordinates_with": [
-        "E"
+        "E.17",
+        "C.3.3",
+        "A.6.6",
+        "F.7/F.8"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/18-a69-a69-ucrosscontextsamenessdisambiguation-repairing-cross-cont.md"
@@ -1139,10 +1336,23 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.0",
+        "A.6.2",
+        "A.6.3",
+        "A.6.4",
+        "A.6.5",
+        "A.6.6",
+        "A.6.B",
+        "A.3",
+        "A.7",
+        "A.12",
+        "C.2.1",
+        "E.17",
+        "E.10"
       ],
       "coordinates_with": [
-        "E"
+        "E.18",
+        "E.19"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
@@ -1170,10 +1380,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "A.6.5",
+        "A.7"
       ],
       "coordinates_with": [
-        "A"
+        "A.14",
+        "B.1.1",
+        "B.1.4",
+        "A.15"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/20-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
@@ -1193,7 +1408,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.2",
+        "A.3"
       ],
       "constrains": [
         "all patterns"
@@ -1218,7 +1435,7 @@
         "P-8"
       ],
       "constrains": [
-        "Kernel-level `U"
+        "Kernel-level `U.Type`s"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle-c1.md"
@@ -1239,10 +1456,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.8"
       ],
       "prerequisite_for": [
-        "B"
+        "B.1"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/03-a9-a9-crossscale-consistency-c3.md"
@@ -1263,10 +1481,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1"
       ],
       "prerequisite_for": [
-        "B"
+        "B.3"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
@@ -1289,7 +1507,7 @@
         "P-1 Cognitive Elegance"
       ],
       "constrains": [
-        "all new `U"
+        "all new `U.Type` proposals"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-the-semantic-frame.md"
@@ -1310,10 +1528,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.3"
       ],
       "prerequisite_for": [
-        "B"
+        "B.2.5"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/06-a12-a12-external-transformer-reflexive-split.md"
@@ -1334,7 +1552,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/07-a13-a13-the-agential-role-agency-spectrum.md"
@@ -1355,10 +1573,10 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.1"
       ],
       "prerequisite_for": [
-        "B"
+        "B.1.1"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/08-a14-a14-advanced-mereology-components-portions-aspects-phases.md"
@@ -1402,10 +1620,11 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.15"
       ],
       "used_by": [
-        "B"
+        "B.1.6",
+        "all Part D"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/10-a151-a151-uwork.md"
@@ -1425,10 +1644,10 @@
     ],
     "dependencies": {
       "refines": [
-        "A"
+        "A.15"
       ],
       "informs": [
-        "`U"
+        "`U.Work`"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/11-a152-a152-uworkplan.md"
@@ -1454,10 +1673,17 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.15.2",
+        "A.6.5",
+        "E.10.D1",
+        "E.17",
+        "E.18",
+        "E.19"
       ],
       "used_by": [
-        "A"
+        "A.6.7 (suite contract pins)",
+        "Part G universalization",
+        "suite-specific and kit-specific planned baselines"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/12-a153-a153-slotfillingsplanitem.md"
@@ -1481,10 +1707,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a",
+        "C.2.LS",
+        "A.19"
       ],
       "coordinates_with": [
-        "A"
+        "A.16.0-A.16.2",
+        "B.4.1",
+        "E.18"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/13-a16-a16-language-state-transduction-coordination.md"
@@ -1507,10 +1737,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.16",
+        "C.2.2a",
+        "E.17",
+        "E.18"
       ],
       "used_by": [
-        "A"
+        "A.16.1",
+        "A.16.2",
+        "B.4.1",
+        "B.5.2.0"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/14-a160-a160-ulanguagestatetransductiontrajectory-optional-trajector.md"
@@ -1532,10 +1768,13 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.16",
+        "C.2.2a",
+        "C.2.LS"
       ],
       "coordinates_with": [
-        "B"
+        "B.4.1",
+        "A.16.2"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/15-a161-a161-uprearticulationcuepack.md"
@@ -1558,10 +1797,13 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.16",
+        "A.16.0",
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.P",
+        "B.4.1"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/16-a162-a162-reopen-sketchbackoff-respecify.md"
@@ -1583,7 +1825,9 @@
     ],
     "dependencies": {
       "prerequisite_for": [
-        "A"
+        "A.18",
+        "A.19",
+        "C.16"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/17-a17-a17-canonical-characteristic-achrnorm.md"
@@ -1604,7 +1848,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.17"
       ],
       "prerequisite_for": [
         "all metric-based patterns"
@@ -1628,10 +1872,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.17",
+        "A.18",
+        "A.2.5"
       ],
       "prerequisite_for": [
-        "A"
+        "A.3.3"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
@@ -1663,10 +1909,13 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.19"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.1 (mechanism intension cards)",
+        "C.16 (evidence/backing)",
+        "F.9 (Bridges & CL)",
+        "G.0 (CG-Spec legality gate)"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/20-a19cn-a19cn-cnframe-comparability-normalization.md"
@@ -1700,10 +1949,21 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.7",
+        "A.15.3",
+        "A.6.1",
+        "A.6.5",
+        "A.19",
+        "G.0",
+        "E.18",
+        "E.10",
+        "E.19"
       ],
       "coordinates_with": [
-        "A"
+        "A.21",
+        "G.5",
+        "G.10",
+        "C.23"
       ],
       "used_by": [
         "Part G universalization",
@@ -1733,10 +1993,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.18 (E.TGA)"
       ],
       "coordinates_with": [
-        "A"
+        "A.21",
+        "A.22",
+        "A.25",
+        "A.27",
+        "A.28",
+        "A.31",
+        "A.45"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/28-a20-a20-uflowconstraintvalidity-eulerian.md"
@@ -1763,10 +2029,18 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.18 (E.TGA)",
+        "E.17 (MVPK)",
+        "A.7"
       ],
       "coordinates_with": [
-        "A"
+        "A.20",
+        "A.23",
+        "A.24",
+        "A.25",
+        "A.26",
+        "A.27",
+        "A.41"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
@@ -1793,10 +2067,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.9"
       ],
       "prerequisite_for": [
-        "All B"
+        "All B.1.x",
+        "B.2"
       ]
     },
     "file": ""
@@ -1818,7 +2094,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/02-b11-b11-dependency-graph-proofs.md"
@@ -1840,7 +2116,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1",
+        "A.1",
+        "C.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/03-b12-b12-systemspecific-aggregation-_sys.md"
@@ -1861,7 +2139,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1",
+        "A.1",
+        "C.2"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/04-b13-b13-_epist-knowledgespecific-aggregation.md"
@@ -1881,7 +2161,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/05-b14-b14-contextual-temporal-aggregation-_ctx-_time.md"
@@ -1902,7 +2182,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1",
+        "B.1.4",
+        "A.3.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md"
@@ -1923,7 +2205,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1",
+        "A.15.1",
+        "C.5"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/07-b16-b16-_work-work-as-spent-resource.md"
@@ -1946,10 +2230,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.1",
+        "A.1"
       ],
       "prerequisite_for": [
-        "All B"
+        "All B.2.x"
       ]
     },
     "file": ""
@@ -1971,7 +2256,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.2"
       ]
     },
     "file": ""
@@ -1990,7 +2275,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.2",
+        "B.2.1",
+        "A.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/09-b22-b22-meta-system-transition-mst.md"
@@ -2010,7 +2297,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.2",
+        "B.2.1",
+        "A.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/10-b23-b23-meta-epistemic-transition-met.md"
@@ -2030,7 +2319,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.2",
+        "B.2.1",
+        "A.3.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/11-b24-b24-meta-functional-transition-mft.md"
@@ -2051,7 +2342,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.2",
+        "A.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/12-b25-b25-supervisorsubholon-feedback-loop.md"
@@ -2076,10 +2368,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.10"
       ],
       "prerequisite_for": [
-        "All B"
+        "All B.3.x",
+        "D.4"
       ]
     },
     "file": ""
@@ -2098,7 +2391,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.3"
       ]
     },
     "file": ""
@@ -2119,7 +2412,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.3",
+        "C.6"
       ]
     },
     "file": ""
@@ -2143,7 +2437,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.3"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/14-b33-b33-assurance-subtypes-levels.md"
@@ -2164,7 +2458,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.3"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/15-b34-b34-evidence-decay-epistemic-debt.md"
@@ -2186,7 +2480,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.3",
+        "E.14",
+        "C.13"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/16-b35-b35-working-model-relations-grounding-ct2r-log.md"
@@ -2207,10 +2503,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.4",
+        "A.12"
       ],
       "prerequisite_for": [
-        "B"
+        "B.4.1-B.4.3"
       ]
     },
     "file": ""
@@ -2233,10 +2530,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.16",
+        "A.16.1",
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "B"
+        "B.5.2.0",
+        "A.6.Q",
+        "A.6.A"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/18-b41-b41-observe-notice-stabilize-route.md"
@@ -2254,7 +2555,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.4",
+        "A.1"
       ]
     },
     "file": ""
@@ -2272,7 +2574,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.4",
+        "A.3.1"
       ]
     },
     "file": ""
@@ -2292,10 +2595,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.10"
       ],
       "prerequisite_for": [
-        "All B"
+        "All B.5.x"
       ]
     },
     "file": ""
@@ -2317,7 +2620,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.5"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/20-b51-b51-explore-shape-evidence-operate.md"
@@ -2339,10 +2642,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.5",
+        "B.5.2.0",
+        "A.10",
+        "B.3.3"
       ],
       "coordinates_with": [
-        "B"
+        "B.4.1",
+        "A.16",
+        "A.6.P"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/21-b52-b52-abductive-loop.md"
@@ -2364,10 +2672,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.4.1",
+        "A.16",
+        "C.2.2a"
       ],
       "used_by": [
-        "B"
+        "B.5.2"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/22-b520-b520-uabductiveprompt.md"
@@ -2390,7 +2700,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "B"
+        "B.5.2",
+        "C.17",
+        "C.18",
+        "C.19"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md"
@@ -2410,7 +2723,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2",
+        "C.3"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/24-b53-b53-role-projection-bridge.md"
@@ -2472,7 +2786,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1 Holonic Foundation",
+        "A.14"
       ],
       "prerequisite_for": [
         "M-Sys-CAL"
@@ -2505,7 +2820,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.10",
+        "B.3"
       ],
       "prerequisite_for": [
         "All patterns using F-G-R",
@@ -2535,10 +2852,19 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2 (KD-CAL)",
+        "A.1 (Holonic Foundation)",
+        "A.6.5 (U.RelationSlotDiscipline)",
+        "E.10.D2 (I/D/S discipline)"
       ],
       "used_by": [
-        "A"
+        "A.6.2–A.6.4 (U.EffectFreeEpistemicMorphing / U.EpistemicViewing / U.EpistemicRetargeting)",
+        "E.17.0–E.17.2 (U.MultiViewDescribing",
+        "Viewpoint bundles",
+        "TEVB)",
+        "E.17 (MVPK)",
+        "B.1.3 (Γ_epist)",
+        "discipline-packs that define or consume epistemes"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-graph.md"
@@ -2567,10 +2893,19 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2",
+        "A.2.6",
+        "C.2.3",
+        "B.3",
+        "B.1.3",
+        "C.3",
+        "F.9"
       ],
       "coordinates_with": [
-        "G"
+        "G.6",
+        "G.7",
+        "E.14",
+        "E.18"
       ],
       "constrains": [
         "any cross-context claim reuse and any publication of `R_eff`"
@@ -2595,10 +2930,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.19",
+        "E.10",
+        "F.18"
       ],
       "used_by": [
-        "C"
+        "C.2.LS",
+        "A.16",
+        "B.4.1",
+        "A.6.Q",
+        "A.6.A"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/04-c22-c22a-ulanguagestatespace-language-state-chart-over-ucharacte.md"
@@ -2621,7 +2962,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2"
       ],
       "constrains": [
         "all patterns referencing F-G-R or language-state facets"
@@ -2646,10 +2987,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a",
+        "C.2.4-C.2.7"
       ],
       "coordinates_with": [
-        "A"
+        "A.16"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/06-c2ls-c2ls-ulanguagestatefacetprofile-thin-owner-for-language-stat.md"
@@ -2670,10 +3012,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "C"
+        "C.2.LS",
+        "A.16"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/07-c24-c24-uarticulationexplicitness.md"
@@ -2694,10 +3037,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "C"
+        "C.2.LS",
+        "A.16"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
@@ -2719,10 +3063,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "C"
+        "C.2.LS",
+        "F.9.1"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/09-c26-c26-ulanguagestateanchoringmode.md"
@@ -2744,10 +3089,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a"
       ],
       "coordinates_with": [
-        "C"
+        "C.2.LS",
+        "C.2.6"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/10-c27-c27-ulanguagestaterepresentationfactorbundle.md"
@@ -2772,7 +3118,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.2.6 (USM)"
       ],
       "prerequisite_for": [
         "LOG-CAL",
@@ -2797,10 +3144,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1",
+        "A.2.6 (USM)"
       ],
       "prerequisite_for": [
-        "C"
+        "C.3.2",
+        "C.3.3"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/12-c31-c31-ukind-subkindof-core.md"
@@ -2822,10 +3171,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.3.1"
       ],
       "prerequisite_for": [
-        "C"
+        "C.3.3",
+        "C.3.4"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/13-c32-c32-kindsignature-f-extensionmemberof.md"
@@ -2846,7 +3196,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.3.1",
+        "C.3.2",
+        "A.2.6",
+        "C.2.2"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/14-c33-c33-kindbridge-clk-crosscontext-mapping-of-kinds.md"
@@ -2866,7 +3219,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.3.1",
+        "C.3.2"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/15-c34-c34-rolemask-contextual-adaptation-of-kinds-without-cloning.md"
@@ -2887,7 +3241,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.3.1"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/16-c35-c35-kindat-intentional-abstraction-facet-for-kinds-k0k3.md"
@@ -2909,7 +3263,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "All C"
+        "All C.3.x",
+        "A.2.6"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/17-c3a-c3a-typed-guard-macros-for-kinds-usm-annex.md"
@@ -2932,10 +3287,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.3",
+        "A.15"
       ],
       "coordinates_with": [
-        "Γ_method (B"
+        "Γ_method (B.1.5)"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
@@ -2959,7 +3315,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.15.1 (Work)"
       ],
       "coordinates_with": [
         "Sys-CAL"
@@ -3005,7 +3361,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.17",
+        "A.18"
       ],
       "prerequisite_for": [
         "Agency-CHR",
@@ -3031,7 +3388,7 @@
     "dependencies": {
       "builds_on": [
         "CHR-CAL",
-        "A"
+        "A.13"
       ]
     },
     "file": ""
@@ -3053,7 +3410,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.10"
       ]
     },
     "file": ""
@@ -3074,7 +3431,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.13"
       ]
     },
     "file": ""
@@ -3094,7 +3451,7 @@
     "dependencies": {
       "builds_on": [
         "Kind-CAL",
-        "E"
+        "E.9"
       ]
     },
     "file": ""
@@ -3117,7 +3474,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.14"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/18-c13-c13-constructional-mereology-composecal.md"
@@ -3137,7 +3494,7 @@
     "dependencies": {
       "builds_on": [
         "Sys-CAL",
-        "B"
+        "B.2.2"
       ]
     },
     "file": ""
@@ -3157,7 +3514,7 @@
     "dependencies": {
       "builds_on": [
         "KD-CAL",
-        "B"
+        "B.2.3"
       ]
     },
     "file": ""
@@ -3184,7 +3541,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.17",
+        "A.18"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/19-c16-c16-measurement-metrics-characterization-mmchr.md"
@@ -3236,7 +3594,9 @@
         "KD-CAL"
       ],
       "coordinates_with": [
-        "B"
+        "B.5.2.1",
+        "Creativity-CHR",
+        "E/E-LOG"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/21-c18-c18-openended-search-calculus-nqdcal.md"
@@ -3260,10 +3620,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.16",
+        "C.17",
+        "C.18"
       ],
       "coordinates_with": [
-        "C"
+        "C.19",
+        "G.5",
+        "G.9",
+        "G.10"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/22-c181-c181-scalinglaw-lens-binding-sll.md"
@@ -3306,10 +3671,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.19",
+        "C.24"
       ],
       "coordinates_with": [
-        "G"
+        "G.5",
+        "G.8",
+        "G.9",
+        "A.0"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/24-c191-c191-bitterlesson-preference-blp.md"
@@ -3331,10 +3700,13 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2 KD‑CAL",
+        "G.0",
+        "Part F (Bridges/UTS)"
       ],
       "coordinates_with": [
-        "C"
+        "C.21",
+        "C.23"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/25-c20-c20-composition-of-udiscipline-disciplinecal.md"
@@ -3356,10 +3728,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.16",
+        "C.2",
+        "A.2.6",
+        "B.3"
       ],
       "coordinates_with": [
-        "C"
+        "C.20",
+        "G.2"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-graph.md"
@@ -3371,10 +3747,13 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.16",
+        "G.5",
+        "G.0"
       ],
       "coordinates_with": [
-        "G"
+        "G.4",
+        "C.23"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/03-c22-c22-reliability-r-in-the-fgr-triad.md"
@@ -3398,7 +3777,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.5",
+        "G.4",
+        "C.22",
+        "B.3"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/05-c23-c23-unified-formality-characteristic-f.md"
@@ -3410,10 +3792,14 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.5",
+        "C.18",
+        "C.19",
+        "B.3"
       ],
       "coordinates_with": [
-        "G"
+        "G.5",
+        "G.9"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/07-c24-c24-uarticulationexplicitness.md"
@@ -3435,10 +3821,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.2.6",
+        "A.6.1",
+        "C.16",
+        "B.3"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.Q",
+        "A.15"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
@@ -3462,7 +3852,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2 (Pillars)"
       ]
     },
     "file": ""
@@ -3487,10 +3877,11 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.1",
+        "A.9 (Cross-Scale Consistency)"
       ],
       "constrains": [
-        "D"
+        "D.2.1-D.2.4"
       ]
     },
     "file": ""
@@ -3510,7 +3901,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.2"
       ]
     },
     "file": ""
@@ -3529,7 +3920,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.2"
       ]
     },
     "file": ""
@@ -3546,7 +3937,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.2"
       ]
     },
     "file": ""
@@ -3564,7 +3955,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.2"
       ]
     },
     "file": ""
@@ -3587,7 +3978,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1 (Holon)",
+        "B.1 (Aggregation)"
       ]
     },
     "file": ""
@@ -3606,7 +3998,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.3"
       ]
     },
     "file": ""
@@ -3626,7 +4018,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.3"
       ]
     },
     "file": ""
@@ -3649,7 +4041,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.3",
+        "B.3 (Trust & Assurance Calculus)"
       ]
     },
     "file": ""
@@ -3668,7 +4061,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.4"
       ]
     },
     "file": ""
@@ -3687,7 +4080,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.4"
       ]
     },
     "file": ""
@@ -3714,7 +4107,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.5.4 (Cross-Disciplinary Bias Audit)"
       ]
     },
     "file": ""
@@ -3732,7 +4125,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.5"
       ]
     },
     "file": ""
@@ -3751,7 +4144,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "D"
+        "D.5",
+        "B.3"
       ]
     },
     "file": ""
@@ -3776,7 +4170,7 @@
     "dependencies": {
       "prerequisite_for": [
         "All other patterns",
-        "especially E"
+        "especially E.2"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/01-e1-e1-vision-mission-operating-system-for-thought.md"
@@ -3799,10 +4193,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.1"
       ],
       "prerequisite_for": [
-        "E"
+        "E.3 and all normative patterns"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/02-e2-e2-the-eleven-pillars.md"
@@ -3829,7 +4223,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2"
       ],
       "constrains": [
         "All patterns and DRRs"
@@ -3857,7 +4251,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.1"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/04-e4-e4-fpf-artefact-architecture.md"
@@ -3878,10 +4272,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2",
+        "E.3"
       ],
       "prerequisite_for": [
-        "E"
+        "E.5.1",
+        "E.5.2",
+        "E.5.3",
+        "E.5.4"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/05-e5-e5-four-guardrails-of-fpf.md"
@@ -3903,7 +4301,7 @@
     ],
     "dependencies": {
       "refines": [
-        "E"
+        "E.5"
       ],
       "constrains": [
         "All Core patterns"
@@ -3929,7 +4327,7 @@
     ],
     "dependencies": {
       "refines": [
-        "E"
+        "E.5"
       ],
       "constrains": [
         "All Core patterns"
@@ -3955,10 +4353,10 @@
     ],
     "dependencies": {
       "refines": [
-        "E"
+        "E.5"
       ],
       "constrains": [
-        "E"
+        "E.4"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/08-e53-e53-unidirectional-dependency.md"
@@ -3981,7 +4379,7 @@
     ],
     "dependencies": {
       "refines": [
-        "E"
+        "E.5"
       ],
       "constrains": [
         "All Core patterns"
@@ -4006,7 +4404,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2 (P-2 Didactic Primacy)"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/10-e6-e6-didactic-architecture-of-the-specification.md"
@@ -4028,7 +4426,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.6"
       ],
       "constrains": [
         "All architectural patterns"
@@ -4053,7 +4451,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.6",
+        "E.7"
       ],
       "constrains": [
         "All new patterns"
@@ -4078,7 +4477,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2 (P-10 Open-Ended Evolution)"
       ],
       "constrains": [
         "All normative changes"
@@ -4103,10 +4502,17 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.7",
+        "E.5",
+        "F.5"
       ],
       "coordinates_with": [
-        "A"
+        "A.2",
+        "A.10",
+        "A.15",
+        "B.1",
+        "B.3",
+        "Part F"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md"
@@ -4128,7 +4534,8 @@
     ],
     "dependencies": {
       "constrains": [
-        "E"
+        "E.5.1",
+        "E.5.2"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/15-e10p-e10p-conceptual-prefixes-policy-registry.md"
@@ -4148,10 +4555,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.7",
+        "A.4"
       ],
       "coordinates_with": [
-        "F"
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.7",
+        "F.9"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/16-e10d-e10d1-lexical-discipline-for-context-dctx.md"
@@ -4172,10 +4584,17 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.7",
+        "E.10.D1",
+        "C.2.1",
+        "C.2.3"
       ],
       "constrains": [
-        "F"
+        "F.4",
+        "F.5",
+        "F.8",
+        "F.9",
+        "F.15"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
@@ -4197,7 +4616,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2 (P-2)"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/18-e12-e12-didactic-primacy-cognitive-ergonomics.md"
@@ -4219,7 +4638,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.2 (P-7)"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/19-e13-e13-pragmatic-utility-value-alignment.md"
@@ -4240,10 +4659,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.7",
+        "E.8",
+        "C.2.3"
       ],
       "coordinates_with": [
-        "B"
+        "B.3.5",
+        "C.13",
+        "E.10"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/20-e14-e14-humancentric-workingmodel.md"
@@ -4263,7 +4686,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.9",
+        "E.10",
+        "B.4",
+        "C.18",
+        "C.19",
+        "A.10",
+        "B.3",
+        "F.15"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/21-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
@@ -4286,7 +4716,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "E.10",
+        "**C.16 (MM‑CHR)**",
+        "**F.8 (Mint/Reuse)**",
+        "**E.18 (OperationalGate/GateCrossing)**",
+        "**A.21 (OperationalGate(profile)",
+        "GateFit)**",
+        "ties F.4/F.6/F.15/F.17",
+        "G.4/G.5/G.9"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/22-e16-e16-rocautonomy-budget-enforcement.md"
@@ -4315,10 +4753,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.17.0",
+        "A.6.2-A.6.4",
+        "A.7",
+        "E.7",
+        "E.10"
       ],
       "used_by": [
-        "E"
+        "E.17.2",
+        "E.18",
+        "domain-specific viewpoint-bundle libraries"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/24-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
@@ -4357,12 +4801,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.17.0",
+        "E.17",
+        "A.7",
+        "E.10.D2",
+        "A.6.B",
+        "F.9",
+        "F.18"
       ],
       "coordinates_with": [
         "ConservativeRetextualization",
         "RepresentationTransduction",
-        "E"
+        "E.17.ID.CR ComparativeReading",
+        "A.6.4",
+        "A.15",
+        "A.20",
+        "A.21"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/27-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md"
@@ -4386,10 +4840,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a",
+        "A.16.0",
+        "F.9",
+        "E.14"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.3",
+        "A.6.3.CR",
+        "A.6.3.RT",
+        "F.9.1",
+        "E.17.EFP",
+        "E.17.AUD.LHR",
+        "E.17.AUD.OOTD",
+        "B.5.2.0",
+        "B.5.2",
+        "A.6.4",
+        "A.15",
+        "A.20",
+        "A.21"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/28-e17id-e17idcr-interpretationdiscipline-comparativereading-bounded-.md"
@@ -4412,10 +4881,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "C"
+        "C.2.2a",
+        "A.16.0",
+        "A.7",
+        "E.10",
+        "F.18",
+        "E.14",
+        "E.19"
       ],
       "coordinates_with": [
-        "E"
+        "E.17.AUD.LHR",
+        "E.17.AUD.OOTD",
+        "E.17.ID.CR",
+        "E.17.EFP",
+        "A.6.3",
+        "A.6.3.CR",
+        "A.6.3.RT",
+        "A.15",
+        "A.20",
+        "A.21"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
@@ -4439,10 +4923,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "A.7",
+        "E.10",
+        "F.18",
+        "E.14"
       ],
       "coordinates_with": [
-        "E"
+        "E.17.ID.CR",
+        "E.17.AUD.OOTD",
+        "E.17.EFP",
+        "A.6.3",
+        "A.6.3.CR",
+        "A.6.3.RT",
+        "A.15",
+        "A.20",
+        "A.21"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17audlhr-authoredunitdiscipline-local-head-restoration-repa.md"
@@ -4465,10 +4961,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.6.P",
+        "A.7",
+        "E.10",
+        "F.18",
+        "E.14",
+        "E.19",
+        "C.2.2a",
+        "A.16.0"
       ],
       "coordinates_with": [
-        "E"
+        "E.17.AUD.LHR",
+        "E.17.ID.CR",
+        "E.17.EFP",
+        "A.6.3",
+        "A.6.3.CR",
+        "A.6.3.RT",
+        "A.15",
+        "A.20",
+        "A.21"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/31-e17aud-e17audootd-authoredunitdiscipline-authoredunit-object-of-tal.md"
@@ -4493,10 +5004,15 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.17 (MVPK)",
+        "E.8",
+        "E.10",
+        "A.7"
       ],
       "coordinates_with": [
-        "A"
+        "A.20–A.26 (Flow/GateProfilization/Profiles/Sentinels)",
+        "F.9 (Bridges & CL)",
+        "G.11 (Refresh)"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/32-e18-e18-transduction-graph-architecture-etga.md"
@@ -4528,10 +5044,20 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "E.10",
+        "E.9",
+        "E.15"
       ],
       "coordinates_with": [
-        "F"
+        "F.8 (Mint/Reuse)",
+        "F.18 (Naming protocol)",
+        "F.9 (Bridges & CL)",
+        "F.15 (Harness)",
+        "E.17 (MVPK)",
+        "A.6.7 (MechSuiteDescription)",
+        "A.15.3 (SlotFillingsPlanItem)",
+        "G.11 (Refresh)"
       ],
       "constrains": [
         "Admission/refresh decisions for patterns intended for the canonical corpus"
@@ -4565,10 +5091,21 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8",
+        "E.9",
+        "E.10",
+        "E.15",
+        "E.19"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.1",
+        "A.6.7",
+        "A.15.3",
+        "F.18",
+        "E.18",
+        "G.Core",
+        "G.2",
+        "`G.x:Ext.*`"
       ],
       "constrains": [
         "Any change-set that introduces or revises mechanisms",
@@ -4599,7 +5136,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "A"
+        "A.1.1"
       ],
       "prerequisite_for": [
         "All patterns in Part F"
@@ -4614,10 +5151,15 @@
     "queries": [],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.10.D1",
+        "F.0.1",
+        "A.7"
       ],
       "prerequisite_for": [
-        "F"
+        "F.2",
+        "F.3",
+        "F.4",
+        "F.9"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/02-f1-f1-domainfamily-landscape-survey.md"
@@ -4639,10 +5181,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.1"
       ],
       "prerequisite_for": [
-        "F"
+        "F.3"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/03-f2-f2-term-harvesting-normalisation.md"
@@ -4664,10 +5206,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.2"
       ],
       "prerequisite_for": [
-        "F"
+        "F.4",
+        "F.7",
+        "F.9"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/04-f3-f3-intracontext-sense-clustering.md"
@@ -4689,10 +5233,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.3",
+        "A.2.1"
       ],
       "prerequisite_for": [
-        "F"
+        "F.6",
+        "F.8"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/05-f4-f4-role-description-rcs-rolestategraph-checklists.md"
@@ -4713,7 +5259,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.4",
+        "E.10"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/06-f5-f5-naming-discipline-for-utypes-roles.md"
@@ -4734,7 +5281,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.4",
+        "A.2.1",
+        "A.15"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/07-f6-f6-role-assignment-enactment-cycle-six-step.md"
@@ -4756,13 +5305,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.3",
+        "F.9"
       ],
       "prerequisite_for": [
-        "F"
+        "F.8"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.9"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/08-f7-f7-conceptset-table.md"
@@ -4784,7 +5334,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.4",
+        "F.7"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/09-f8-f8-mint-or-reuse-utype-vs-concept-set-vs-role-description-vs.md"
@@ -4807,13 +5358,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.3"
       ],
       "prerequisite_for": [
-        "F"
+        "F.7",
+        "F.10"
       ],
       "coordinates_with": [
-        "A"
+        "A.6.9",
+        "F.9.1"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/10-f9-f9-alignment-bridge-across-contexts.md"
@@ -4835,10 +5388,14 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.9",
+        "C.2.2a",
+        "A.16.0"
       ],
       "coordinates_with": [
-        "E"
+        "E.17.1",
+        "A.6.Q",
+        "A.6.A"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/11-f91-f91-bridge-stance-overlay.md"
@@ -4860,7 +5417,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.9",
+        "B.3"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/12-f10-f10-status-families-mapping-evidence-standard-requirement.md"
@@ -4881,7 +5439,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.9",
+        "A.15"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/13-f11-f11-method-quartet-harmonisation.md"
@@ -4902,7 +5461,9 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.9",
+        "A.2.3",
+        "KD-CAL"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/14-f12-f12-service-acceptancework-evidence-link.md"
@@ -4923,7 +5484,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.5"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/15-f13-f13-lexical-continuity-deprecation.md"
@@ -4944,7 +5505,8 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.4",
+        "F.8"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/16-f14-f14-antiexplosion-control-roles-statuses.md"
@@ -4965,7 +5527,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "All of F"
+        "All of F.1-F.14"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/17-f15-f15-scrrscr-harness-for-unification.md"
@@ -4985,7 +5547,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "All of F"
+        "All of F.1-F.12"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/18-f16-f16-workedexample-template-crossdomain.md"
@@ -5007,7 +5569,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.1-F.12"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/19-f17-f17-unified-term-sheet-uts.md"
@@ -5027,7 +5589,7 @@
     ],
     "dependencies": {
       "builds_on": [
-        "F"
+        "F.1-F.5"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/20-f18-f18-localfirst-unification-naming-protocol.md"
@@ -5049,7 +5611,12 @@
     ],
     "dependencies": {
       "builds_on": [
-        "E"
+        "E.8/E.10/E.19",
+        "A.6.7",
+        "A.15.3",
+        "A.19",
+        "G.0",
+        "A.19.CHR. Used by: all `G.0…G.13`"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/01-gcore-part-g-core-invariants.md"
@@ -5079,10 +5646,18 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "A.19 (CN-Spec)",
+        "A.10",
+        "A.17–A.19 / C.16 (MM-CHR legality)",
+        "A.18 (CSLC)",
+        "B.3",
+        "Part F (Bridges/UTS)",
+        "E.10",
+        "E.5.2"
       ],
       "prerequisite_for": [
-        "G"
+        "G.1–G.6"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md"
@@ -5112,7 +5687,10 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "E.8",
+        "E.10",
+        "E.19"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/03-g1-g1-cgframeready-generator.md"
@@ -5144,10 +5722,22 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "E.8",
+        "E.10",
+        "E.19",
+        "A.10",
+        "B.3",
+        "F.9",
+        "F.17",
+        "G.0",
+        "G.6"
       ],
       "used_by": [
-        "G"
+        "G.1",
+        "G.3–G.5",
+        "G.10",
+        "G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/04-g2-g2-sota-harvester-synthesis.md"
@@ -5175,13 +5765,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.2",
+        "G.0",
+        "A.17–A.19",
+        "A.18 (CSLC)",
+        "C.16 (MM-CHR)",
+        "A.19.CHR",
+        "A.15.3",
+        "G.6",
+        "F.17"
       ],
       "prerequisite_for": [
-        "G"
+        "G.4"
       ],
       "used_by": [
-        "G"
+        "G.4",
+        "G.5",
+        "G.10",
+        "G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md"
@@ -5207,13 +5809,20 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.3",
+        "G.0",
+        "B.3 (Trust)",
+        "A.18 (CSLC)",
+        "G.6"
       ],
       "prerequisite_for": [
-        "G"
+        "G.5"
       ],
       "used_by": [
-        "G"
+        "G.5",
+        "G.8–G.10",
+        "G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md"
@@ -5241,13 +5850,26 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.0",
+        "A.19 (CN-Spec)",
+        "G.2",
+        "G.3",
+        "G.4",
+        "G.6"
       ],
       "coordinates_with": [
-        "G"
+        "G.7–G.11",
+        "C.18 (NQD-CAL)",
+        "C.19 (E/E-LOG)",
+        "C.23 (Method-SoS-LOG)",
+        "A.15.3"
       ],
       "used_by": [
-        "G"
+        "G.1",
+        "G.8–G.12",
+        "G.10",
+        "G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md"
@@ -5275,10 +5897,24 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "A.10",
+        "B.3",
+        "G.4",
+        "F.9",
+        "F.15",
+        "F.17",
+        "E.18",
+        "A.21",
+        "E.10",
+        "E.5.2"
       ],
       "used_by": [
-        "G"
+        "G.5",
+        "G.8",
+        "G.9",
+        "G.10",
+        "G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/08-g6-g6-evidence-graph-provenance-ledger.md"
@@ -5310,13 +5946,25 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.2",
+        "F.9",
+        "F.3",
+        "F.7",
+        "B.3",
+        "G.6",
+        "E.18",
+        "A.21",
+        "E.10",
+        "C.21"
       ],
       "prerequisite_for": [
-        "G"
+        "G.5"
       ],
       "used_by": [
-        "G"
+        "G.9–G.11",
+        "G.10",
+        "G.12"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md"
@@ -5349,7 +5997,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.5",
+        "G.6",
+        "G.4",
+        "F.15",
+        "E.18",
+        "A.21",
+        "A.27",
+        "E.5.2",
+        "E.10"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/11-g9-g9-parity-benchmark-harness.md"
@@ -5381,10 +6038,16 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "F.17–F.18",
+        "E.5.2",
+        "E.18",
+        "A.10",
+        "A.15.3"
       ],
       "used_by": [
-        "selector-facing consumers (via G"
+        "selector-facing consumers (via G.5)",
+        "refresh orchestration (G.11)"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/12-g10-g10-sota-pack-shipping.md"
@@ -5412,10 +6075,21 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.6",
+        "G.7",
+        "G.5",
+        "G.8",
+        "G.9",
+        "G.10",
+        "B.3.4",
+        "E.18"
       ],
       "coordinates_with": [
-        "G"
+        "G.12",
+        "C.18/C.19",
+        "C.23",
+        "F.15"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/13-g11-g11-telemetry-driven-refresh-decay-orchestrator.md"
@@ -5442,10 +6116,23 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "C.21",
+        "G.6",
+        "G.11",
+        "A.19",
+        "G.0",
+        "F.17/F.18",
+        "E.5.2",
+        "E.10"
       ],
       "coordinates_with": [
-        "G"
+        "G.5 (portfolio/set outputs)",
+        "G.7 (crossings/CL/Φ_plane pins)",
+        "G.8 (maturity ladder panel)",
+        "G.10 (shipping inclusion)",
+        "C.18/C.19 (QD/OEE telemetry)",
+        "G.2 (SoTA palette hooks)"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/14-g12-g12-dhc-dashboards-disciplinehealth-timeseries-lawful-teleme.md"
@@ -5476,7 +6163,15 @@
     ],
     "dependencies": {
       "builds_on": [
-        "G"
+        "G.Core",
+        "G.2–G.7",
+        "G.9–G.12",
+        "A.19",
+        "A.18",
+        "G.0",
+        "F.17",
+        "E.5.2",
+        "E.18"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md"

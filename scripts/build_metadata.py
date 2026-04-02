@@ -55,14 +55,14 @@ def parse_dependencies(text: str) -> dict:
     """Parse dependency text into structured dict."""
     deps = {}
     patterns = [
-        ('builds_on', r'\*\*Builds on:\*\*\s*([^.*]+)'),
-        ('refines', r'\*\*Refines:\*\*\s*([^.*]+)'),
-        ('prerequisite_for', r'\*\*Prerequisite for:\*\*\s*([^.*]+)'),
-        ('coordinates_with', r'\*\*Coordinates with:\*\*\s*([^.*]+)'),
-        ('constrains', r'\*\*Constrains:\*\*\s*([^.*]+)'),
-        ('informs', r'\*\*Informs:\*\*\s*([^.*]+)'),
-        ('used_by', r'\*\*Used by:\*\*\s*([^.*]+)'),
-        ('specialised_by', r'\*\*Specialised by:\*\*\s*([^.*]+)'),
+        ('builds_on', r'\*\*Builds on:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('refines', r'\*\*Refines:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('prerequisite_for', r'\*\*Prerequisite for:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('coordinates_with', r'\*\*Coordinates with:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('constrains', r'\*\*Constrains:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('informs', r'\*\*Informs:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('used_by', r'\*\*Used by:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
+        ('specialised_by', r'\*\*Specialised by:\*\*\s*(.+?)(?:\.\s*\*\*|\.\s*$|\|)'),
     ]
     for key, pattern in patterns:
         match = re.search(pattern, text)

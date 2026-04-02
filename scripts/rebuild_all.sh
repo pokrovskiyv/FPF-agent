@@ -31,8 +31,12 @@ echo "[4/5] Building lexical-rules.md..."
 python3 scripts/build_lexical.py
 echo ""
 
-echo "[5/5] Building route chain files..."
+echo "[5/6] Building route chain files..."
 python3 scripts/build_routes.py
+echo ""
+
+echo "[6/6] Building cross-reference indexes..."
+python3 scripts/build_xrefs.py
 echo ""
 
 echo "=== Rebuild Complete ==="
