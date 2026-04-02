@@ -129,6 +129,103 @@ Here's the rewritten version:
 **What was changed**: [list of changes with rationale]
 ```
 
+### ethical_assurance
+```
+Here's an ethical audit of your system/process:
+
+1. **Conflict map** (where values clash across scales):
+   - [Scale/Level]: [Value A] vs [Value B] — [impact]
+   ...
+
+2. **Bias register** (identified biases):
+   | Bias type | Where it appears | Risk level | Mitigation |
+   |-----------|-----------------|------------|------------|
+   ...
+
+3. **Audit checklist**:
+   - [ ] [Check item and who should perform it]
+   ...
+```
+
+### trust_assurance
+```
+Here's the assurance profile for [system/component]:
+
+1. **Confidence assessment per component**:
+   | Component | Formality | Scope | Reliability | Evidence |
+   |-----------|-----------|-------|-------------|----------|
+   ...
+
+2. **Evidence gaps** (where confidence is weakest):
+   - [ ] [Gap description — what evidence is missing]
+   ...
+
+3. **Recommendations**:
+   - [action to strengthen weakest link]
+   ...
+```
+
+### composition_aggregation
+```
+Here's why your aggregation is producing unexpected results:
+
+1. **Diagnosis** (which composition rules are violated):
+   - [Rule]: [how it's violated] — [observable symptom]
+   ...
+
+2. **Dependency map** (what depends on what):
+   [Component A] → [aggregation method] → [Component B]
+   ...
+
+3. **Fix recommendations**:
+   - [ ] [specific fix and expected result]
+   ...
+```
+
+### evolution_learning
+```
+Here's your current improvement cycle and where it breaks:
+
+1. **Current cycle map**:
+   Operate → [status] → Observe → [status] → Refine → [status] → Deploy → [status]
+
+2. **Break point**: [where the loop is broken and why]
+
+3. **Loop closure plan**:
+   - [ ] [step to close the gap]
+   ...
+
+4. **Cycle health indicators**:
+   | Indicator | Current state | Target |
+   |-----------|--------------|--------|
+   ...
+```
+
+### semantic (universal — for Tier 2 queries with no route)
+```
+Here's a structured analysis of your problem:
+
+## Situation
+[Reformulation of the user's problem in their own language]
+
+## Key Patterns Found
+[What patterns apply — described in plain language, no FPF terms.
+ Each pattern as a numbered insight with practical implication.]
+
+1. **[Insight name]**: [what it means for the user's situation]
+   ...
+
+## Recommendations
+[Concrete, actionable steps]
+- [ ] [step]
+...
+
+## Watch Points
+[Risks, edge cases, things to monitor]
+- [risk and why it matters]
+...
+```
+
 ## Always Load
 
 Before generating output, always read:
