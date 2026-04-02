@@ -51,7 +51,7 @@ Detect from user's natural language — no FPF terms needed.
 
 | Burden | Agents | Budget |
 |--------|--------|--------|
-| term_lookup | Retriever only | ~400 tokens |
+| term_lookup | Retriever → Reasoner | ~800 tokens |
 | route-based | Retriever → Reasoner | ~1200 tokens |
 | cross_cutting | Retriever → Reasoner → Reviewer | ~2000 tokens |
 

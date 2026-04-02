@@ -4,126 +4,126 @@
     "status": "Status",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_2": {
     "title": "What this specification is (and how to use it)",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_3": {
     "title": "Creativity in Open-Ended Evolution and Assurance*",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_4": {
     "title": "Navigating Uncertainty: Building Closed Worlds within an Open World",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_5": {
     "title": "FPF as an Evolutionary Architecture for Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_6": {
     "title": "Architectural Characteristic of Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_7": {
     "title": "Beyond Cognitive Biases: FPF as a Generative Architecture for Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_8": {
     "title": "Thinking Through Writing: The FPF Discipline of Conceptual Work",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_9": {
     "title": "Descriptive Ontologies vs. A Thinking-Oriented Architecture",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_10": {
     "title": "The \"Bitter Lesson\" trajectory — compute, data, and freedom over hand‑tuned rules (FPF stance)",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_11": {
     "title": "From Flat Documents to High-Dimensional Truth: The Multi-View Architecture",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_12": {
     "title": "Boundary Statements: Where Language Becomes a System Boundary",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_13": {
     "title": "Raising Semantic Precision: From Triggers to Math‑Backed Ontics",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_14": {
     "title": "The “big storylines” unique to FPF (load‑bearing commitments)",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_15": {
     "title": "Transdisciplinarity as a Meta‑Theory of Thinking",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_16": {
     "title": "FPF as a Culinary Architecture for Collective Thought: Why We Formalize “Obvious” Ideas",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_17": {
     "title": "Intellect Stack (informative Overview)",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "preface_18": {
     "title": "Purpose, Scope, and Explicit Non‑Goals",
     "status": "full text",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/03-preface-non-normative/_index.md"
   },
   "A.0": {
     "title": "Onboarding Glossary (NQD & E/E‑LOG)",
@@ -2245,7 +2245,7 @@
         "E.18 (E.TGA)"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/27-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
   },
   "A.20": {
     "title": "U.Flow.ConstraintValidity — Eulerian",
@@ -2320,7 +2320,7 @@
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
   },
-  "**B.1**": {
+  "B.1": {
     "title": "Universal Algebra of Aggregation (Γ)",
     "status": "Stable",
     "keywords": [
@@ -2350,7 +2350,7 @@
         "B.2"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/01-b1-b1-universal-algebra-of-aggregation.md"
   },
   "B.1.1": {
     "title": "Dependency Graph & Proofs",
@@ -2487,7 +2487,7 @@
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/07-b16-b16-_work-work-as-spent-resource.md"
   },
-  "**B.2**": {
+  "B.2": {
     "title": "Meta-Holon Transition (MHT): Recognizing Emergence and Re-identifying Wholes",
     "status": "Stable",
     "keywords": [
@@ -2512,7 +2512,7 @@
         "All B.2.x"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md"
   },
   "B.2.1": {
     "title": "BOSC Triggers",
@@ -2534,7 +2534,7 @@
         "B.2"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md"
   },
   "B.2.2": {
     "title": "MST (Sys) — Meta-System Transition",
@@ -2623,7 +2623,7 @@
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/12-b25-b25-supervisorsubholon-feedback-loop.md"
   },
-  "**B.3**": {
+  "B.3": {
     "title": "Trust & Assurance Calculus (F–G–R with Congruence)",
     "status": "Stable",
     "keywords": [
@@ -2650,7 +2650,7 @@
         "D.4"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/13-b3-b3-trust-assurance-calculus-fgr-with-congruence.md"
   },
   "B.3.1": {
     "title": "Components & Epistemic Spaces",
@@ -2669,7 +2669,7 @@
         "B.3"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/13-b3-b3-trust-assurance-calculus-fgr-with-congruence.md"
   },
   "B.3.2": {
     "title": "Evidence & Validation Logic (LOG-use)",
@@ -2691,7 +2691,7 @@
         "C.6"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/13-b3-b3-trust-assurance-calculus-fgr-with-congruence.md"
   },
   "B.3.3": {
     "title": "Assurance Subtypes & Levels",
@@ -2762,7 +2762,7 @@
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/16-b35-b35-working-model-relations-grounding-ct2r-log.md"
   },
-  "**B.4**": {
+  "B.4": {
     "title": "Canonical Evolution Loop",
     "status": "Stable",
     "keywords": [
@@ -2785,7 +2785,7 @@
         "B.4.1-B.4.3"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
   },
   "B.4.1": {
     "title": "Observe -> Notice -> Stabilize -> Route",
@@ -2834,7 +2834,7 @@
         "A.1"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
   },
   "B.4.3": {
     "title": "Method Instantiation",
@@ -2853,9 +2853,9 @@
         "A.3.1"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
   },
-  "**B.5**": {
+  "B.5": {
     "title": "Canonical Reasoning Cycle",
     "status": "Stable",
     "keywords": [
@@ -2876,7 +2876,7 @@
         "All B.5.x"
       ]
     },
-    "file": ""
+    "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/19-b5-b5-canonical-reasoning-cycle.md"
   },
   "B.5.1": {
     "title": "Explore → Shape → Evidence → Operate",
@@ -3004,7 +3004,7 @@
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/24-b53-b53-role-projection-bridge.md"
   },
-  "**B.6**": {
+  "B.6": {
     "title": "Characterisation Families (CHR-use)",
     "status": "Draft",
     "keywords": [
@@ -3023,7 +3023,7 @@
     },
     "file": ""
   },
-  "**B.7**": {
+  "B.7": {
     "title": "Common Logic Suite (LOG-use)",
     "status": "Draft",
     "keywords": [
@@ -3071,7 +3071,7 @@
         "Resrc-CAL"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle-c1.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/18-c13-c13-constructional-mereology-composecal.md"
   },
   "C.2": {
     "title": "KD‑CAL",
@@ -3402,7 +3402,7 @@
         "and any pattern needing typed guards"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/03-a9-a9-crossscale-consistency-c3.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/11-c3-c3-kinds-intentextent-and-typed-reasoning-kindcal.md"
   },
   "C.3.1": {
     "title": "U.Kind & U.SubkindOf (Core)",
@@ -3569,7 +3569,7 @@
         "Γ_method (B.1.5)"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
+    "file": ""
   },
   "C.5": {
     "title": "Resrc‑CAL",
@@ -3596,7 +3596,7 @@
         "Sys-CAL"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/05-a11-a11-ontological-parsimony-c5.md"
+    "file": ""
   },
   "C.6": {
     "title": "LOG‑CAL – Core Logic Calculus",
@@ -4108,7 +4108,7 @@
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
   },
-  "**D.1**": {
+  "D.1": {
     "title": "Axiological Neutrality Principle",
     "status": "Stub",
     "keywords": [
@@ -4130,9 +4130,9 @@
         "E.2 (Pillars)"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/16-e10d-e10d1-lexical-discipline-for-context-dctx.md"
   },
-  "**D.2**": {
+  "D.2": {
     "title": "Multi-Scale Ethics Framework",
     "status": "Stub",
     "keywords": [
@@ -4159,7 +4159,7 @@
         "D.2.1-D.2.4"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
   },
   "D.2.1": {
     "title": "Local-Agent Ethics",
@@ -4179,7 +4179,7 @@
         "D.2"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
   },
   "D.2.2": {
     "title": "Group-Ethics Standards",
@@ -4198,7 +4198,7 @@
         "D.2"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
   },
   "D.2.3": {
     "title": "Ecosystem Stewardship",
@@ -4215,7 +4215,7 @@
         "D.2"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
   },
   "D.2.4": {
     "title": "Planetary-Scale Precaution",
@@ -4233,9 +4233,9 @@
         "D.2"
       ]
     },
-    "file": ""
+    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
   },
-  "**D.3**": {
+  "D.3": {
     "title": "Holonic Conflict Topology",
     "status": "Stub",
     "keywords": [
@@ -4298,7 +4298,7 @@
     },
     "file": ""
   },
-  "**D.4**": {
+  "D.4": {
     "title": "Trust-Aware Mediation Calculus",
     "status": "Stub",
     "keywords": [
@@ -4360,7 +4360,7 @@
     },
     "file": ""
   },
-  "**D.5**": {
+  "D.5": {
     "title": "Bias-Audit & Ethical Assurance",
     "status": "Stable",
     "keywords": [
@@ -4385,7 +4385,7 @@
         "E.5.4 (Cross-Disciplinary Bias Audit)"
       ]
     },
-    "file": ""
+    "file": "sections/09-part-d-multi-scale-ethics-conflictoptimisation/01-d5-d5-bias-audit-ethical-assurance.md"
   },
   "D.5.1": {
     "title": "Taxonomy-Guided Audit Templates",
@@ -4403,7 +4403,7 @@
         "D.5"
       ]
     },
-    "file": ""
+    "file": "sections/09-part-d-multi-scale-ethics-conflictoptimisation/01-d5-d5-bias-audit-ethical-assurance.md"
   },
   "D.5.2": {
     "title": "Assurance Metrics Roll-up",
@@ -4423,7 +4423,7 @@
         "B.3"
       ]
     },
-    "file": ""
+    "file": "sections/09-part-d-multi-scale-ethics-conflictoptimisation/01-d5-d5-bias-audit-ethical-assurance.md"
   },
   "E.1": {
     "title": "Vision & Mission",
@@ -4841,7 +4841,7 @@
         "F.9"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/16-e10d-e10d1-lexical-discipline-for-context-dctx.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md"
   },
   "E.10.D2": {
     "title": "Intension–Description–Specification Discipline (I/D/S)",
@@ -4872,7 +4872,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md"
   },
   "E.12": {
     "title": "Didactic Primacy & Cognitive Ergonomics",
@@ -5216,7 +5216,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17audlhr-authoredunitdiscipline-local-head-restoration-repa.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
   },
   "E.17.AUD.OOTD": {
     "title": "AuthoredUnitDiscipline / AuthoredUnit Object-of-Talk Discipline — authored-unit stability over one primary object of talk",
@@ -5257,7 +5257,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/31-e17aud-e17audootd-authoredunitdiscipline-authoredunit-object-of-tal.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
   },
   "E.18": {
     "title": "Transduction Graph Architecture (E.TGA)",

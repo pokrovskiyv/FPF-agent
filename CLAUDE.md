@@ -42,6 +42,12 @@ uv run scripts/semantic_search.py "query text" --top-k 5  # search sections
 
 Rebuild scripts use stdlib only. Embedding scripts use `uv run` (auto-installs deps).
 
+```bash
+# Smoke tests
+python3 scripts/test_smoke.py          # metadata, routes, glossary, xrefs
+python3 scripts/test_smoke.py --all    # + semantic search (requires uv)
+```
+
 ## Navigating the Spec
 
 **Do not read FPF-Spec.md directly** — it's 59K lines. Instead:
@@ -64,7 +70,7 @@ Pattern IDs are hierarchical: `A.6.P` is a child of `A.6`, which belongs to Part
 | **fpf-reviewer** | Validates grounding (claims traceable to sections) + jargon guard (catches FPF terminology leaking into output) |
 | **fpf-sync** | Scheduled remote agent: syncs upstream fork, rebuilds sections, AI-enhances _index.md summaries |
 
-Pipeline depth is adaptive: simple term lookups use Retriever only (~400 tokens), route-based queries add Reasoner (~1200), cross-cutting queries add Reviewer (~2000).
+Pipeline depth is adaptive: simple term lookups use Retriever → Reasoner (~800 tokens), route-based queries use Retriever → Reasoner (~1200), cross-cutting queries add Reviewer (~2000).
 
 ## Sync & Rebuild
 

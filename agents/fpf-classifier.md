@@ -48,7 +48,7 @@ Based on burden type, determine pipeline depth and token budget:
 
 | Burden | Agents | Budget | Route file | Output type |
 |--------|--------|--------|------------|-------------|
-| `term_lookup` | retriever | 400 | metadata.json lookup | section content |
+| `term_lookup` | retriever → reasoner | 800 | metadata.json lookup | plain-language explanation |
 | `project_alignment` | retriever → reasoner | 1200 | route-1-project-alignment.md | responsibility map, handoff contracts |
 | `language_discovery` | retriever → reasoner | 1200 | route-2-language-discovery.md | term table per team, danger zones |
 | `boundary_unpacking` | retriever → reasoner | 1500 | route-3-boundary-unpacking.md | structured breakdown (rules/conditions/obligations/evidence) |

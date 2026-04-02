@@ -18,16 +18,42 @@ from pathlib import Path
 
 
 def find_section_file(pattern_id: str, sections_dir: Path) -> str:
-    """Find the file path for a given pattern ID by scanning _index.md files."""
-    pid_lower = pattern_id.lower().replace('.', '')
+    """Find the file path for a given pattern ID by scanning _index.md files.
+
+    Strategy:
+    1. Exact match on PID extracted from link text, e.g. [Title (A.6.P)](file.md)
+    2. Substring match with word-boundary check to avoid false positives
+       (e.g. D.1 must not match E.10.D1 filename)
+    3. Parent fallback: B.2.1 -> B.2's file
+    """
+    pid = pattern_id.replace('*', '').strip()
+    if not pid:
+        return ''
+
+    pid_lower = pid.lower().replace('.', '')
+
     for index_file in sorted(sections_dir.rglob('_index.md')):
         content = index_file.read_text(encoding='utf-8')
         for line in content.splitlines():
-            match = re.search(r'\[.*?\]\((.+?\.md)\)', line)
-            if match:
-                filename = match.group(1)
-                if pid_lower in filename.lower().replace('-', '').replace('.', ''):
-                    return str(index_file.parent / filename)
+            link_match = re.search(r'\[.*?\]\((.+?\.md)\)', line)
+            if not link_match:
+                continue
+            filename = link_match.group(1)
+            fn_norm = filename.lower().replace('-', '').replace('.', '')
+
+            idx = fn_norm.find(pid_lower)
+            if idx < 0:
+                continue
+            # Word-boundary check: character before match must not be a letter
+            if idx > 0 and fn_norm[idx - 1].isalpha():
+                continue
+            return str(index_file.parent / filename)
+
+    # Parent fallback: B.2.1 -> B.2, D.2.1 -> D.2
+    parts = pid.rsplit('.', 1)
+    if len(parts) == 2 and len(parts[0]) > 1:
+        return find_section_file(parts[0], sections_dir)
+
     return ''
 
 
@@ -148,7 +174,7 @@ def parse_toc(spec_path: Path) -> list[dict]:
         if not entry_id:
             pattern_id = ''
         else:
-            pattern_id = entry_id.strip()
+            pattern_id = re.sub(r'\*\*', '', entry_id).strip()
 
         entry = {
             'pattern_id': pattern_id,
@@ -170,12 +196,14 @@ def parse_toc(spec_path: Path) -> list[dict]:
 
 def resolve_files(entries: list[dict], sections_dir: Path) -> list[dict]:
     """Add file paths to entries by matching against _index.md files."""
+    preface_index = str(sections_dir / '03-preface-non-normative' / '_index.md')
+    preface_exists = Path(preface_index).exists()
+
     for entry in entries:
         if entry['pattern_id']:
-            file_path = find_section_file(entry['pattern_id'], sections_dir)
-            entry['file'] = file_path
+            entry['file'] = find_section_file(entry['pattern_id'], sections_dir)
         else:
-            entry['file'] = ''
+            entry['file'] = preface_index if preface_exists else ''
     return entries
 
 

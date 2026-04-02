@@ -49,7 +49,7 @@ If Tiers 1-3 don't resolve the query:
 If Tiers 1-4 produce no confident results, or the query uses vocabulary distant from FPF terminology:
 1. Run: `uv run scripts/semantic_search.py "<user_query>" --top-k 5 --json`
 2. The script returns ranked sections with cosine similarity scores
-3. Use results with score ≥ 0.83 as high-confidence matches
+3. Use results with score ≥ 0.45 as high-confidence matches
 4. Load the top-scoring section files
 
 **When to prefer Tier 5 over Tier 4:**
@@ -84,7 +84,7 @@ TOTAL_LINES: [approximate]
 ## Loading Budget
 
 Respect the budget from the classifier's strategy table:
-- term_lookup: ~400 tokens (1 section)
+- term_lookup: ~800 tokens (1 section)
 - route-based: ~1200 tokens (2-4 core sections)
 - cross_cutting: ~2000 tokens (5-8 sections across Parts)
 - semantic_fallback: ~800 tokens (1-3 top-scoring sections from Tier 5)
