@@ -82,6 +82,10 @@ class TestRouteFiles(unittest.TestCase):
         'route-4-comparison-selection.md',
         'route-5-generator-portfolio.md',
         'route-6-rewrite-explanation.md',
+        'route-7-ethical-assurance.md',
+        'route-8-trust-assurance.md',
+        'route-9-composition-aggregation.md',
+        'route-10-evolution-learning.md',
     ]
 
     def test_all_routes_exist(self):
