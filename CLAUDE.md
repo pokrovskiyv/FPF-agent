@@ -84,6 +84,20 @@ Two-layer automatic update:
 - Same schedule → syncs upstream → Python rebuild → AI-enhances `_index.md` and `glossary-quick.md` with plain-language summaries
 - Manage at: https://claude.ai/code/scheduled
 
+## Changelog & Versioning
+
+A PreToolUse hook runs `scripts/update_changelog.py` before every `git commit`.
+
+**Automatic (hook-driven):**
+- Parses conventional commit → appends entry to `CHANGELOG.md` under "### All Changes"
+- Bumps version in `.claude-plugin/plugin.json`: `feat` → minor, `fix` → patch, `feat!` → major
+- `docs`, `test`, `chore`, `perf`, `ci`, `style`, `refactor` → changelog entry but no version bump
+
+**Manual (Claude's responsibility):**
+- For `feat:` or `fix:` commits, also update the "### What's New" section in `CHANGELOG.md`
+- Write in plain language from the user's perspective, not commit messages
+- Group related changes into one bullet point
+
 ## Lexical Rules (enforce when editing the spec)
 
 - **NEVER** "axis" / "dimension" for measurable aspects → **Characteristic**
