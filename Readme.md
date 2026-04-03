@@ -608,9 +608,9 @@ uv run scripts/semantic_search.py "запрос" --top-k 5
 
 **GitHub Action** (`.github/workflows/rebuild-sections.yml`):
 - При push в main с изменением FPF-Spec.md — автоматическая пересборка
-- 1-го числа каждого месяца — синхронизация с upstream-форком + пересборка
+- 1-го и 15-го числа каждого месяца — синхронизация с upstream-форком + пересборка
 
-**Claude Code Remote Trigger** (раз в месяц):
+**Claude Code Remote Trigger** (раз в 2 недели):
 - Синхронизация с upstream
 - Python-пересборка
 - AI-обогащение `_index.md` и `glossary-quick.md` читаемыми описаниями

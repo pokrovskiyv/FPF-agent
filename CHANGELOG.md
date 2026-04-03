@@ -4,6 +4,7 @@
 
 ### All Changes
 - **feat**: automated changelog + auto-versioning via PreToolUse hook
+- **chore**: sync schedule monthly → every 2 weeks (1st and 15th)
 
 ## 2026-04-02
 

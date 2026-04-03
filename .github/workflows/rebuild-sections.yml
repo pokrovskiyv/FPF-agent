@@ -6,9 +6,9 @@ on:
     branches: [main]
     paths: [FPF-Spec.md]
 
-  # Cron: auto-sync fork with upstream monthly (1st at 09:00 UTC)
+  # Cron: auto-sync fork with upstream every ~2 weeks (1st and 15th at 09:00 UTC)
   schedule:
-    - cron: '0 9 1 * *'
+    - cron: '0 9 1,15 * *'
 
   # Manual trigger for testing
   workflow_dispatch:
