@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-04-04
+
+### All Changes
+- **docs**: rewrite README intro for clarity — explain what FPF is and why it matters
+
 ## 2026-04-03
 
 ### All Changes
