@@ -1,17 +1,13 @@
 ---
 name: fpf
 description: >
-  Use when work involves coordination, systems engineering, or
-  transdisciplinary problems. Triggers on: teams misunderstanding
-  each other, terminology disagreements, choosing between alternatives,
-  unpacking mixed contract/spec/SLA language, structuring decisions,
-  handing off work, ethical audits, trust/assurance questions,
-  aggregation/composition problems, design evolution and learning
-  loops, or any systems engineering coordination challenge.
-  Also triggers on explicit FPF terms (holon, UTS, DRR, bounded
-  context). Supports semantic fallback for queries that don't match
-  any predefined route. Do NOT trigger for standard coding, simple
-  bug fixes, or single-person tasks.
+  Structure complex thinking: compare options, analyze specs/contracts,
+  resolve team misunderstandings, audit trust/bias/ethics, debug misleading
+  metrics, survey approaches in a field, structure handoffs, or make sense
+  of messy multi-stakeholder situations. Triggers on any problem needing
+  structured decomposition — not just teams, also solo analysis of complex
+  systems. Also on explicit FPF terms (holon, UTS, DRR). Do NOT trigger
+  for standard coding, simple bug fixes, or syntax questions.
 ---
 
 # FPF Thinking Amplifier

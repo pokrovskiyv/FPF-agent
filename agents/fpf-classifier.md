@@ -38,11 +38,20 @@ Detect ANY coordination, systems engineering, or transdisciplinary signal. This 
 - Cross-disciplinary methodology questions
 - Systems engineering, holistic system analysis
 
+**Additional soft triggers** (suggest FPF, don't auto-dispatch):
+- "help me structure this" / "how to think about this"
+- "this is a mess" / "everything is mixed together"
+- "what am I missing?" / "what should I consider?"
+- "how do I approach this?" (complex, multi-aspect problem)
+- "make sense of this" (complex document/situation)
+- "I need to compare" / "which one should I choose"
+
 **NOT FPF signals** (do NOT trigger):
 - Standard coding tasks (bug fixes, feature implementation)
 - Simple questions about tools, libraries, syntax
 - File management, git operations
-- Single-person tasks with no coordination aspect
+- Pure execution tasks with no structuring aspect (e.g., "write this
+  function" — no; "how should I structure this system" — yes)
 
 If no FPF signal detected → return `SIGNAL: no` and stop.
 

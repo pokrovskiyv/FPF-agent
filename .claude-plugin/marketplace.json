@@ -14,7 +14,7 @@
       "author": { "name": "Vitaly Pokrovskiy" },
       "repository": "https://github.com/pokrovskiyv/FPF-agent",
       "license": "MIT",
-      "keywords": ["fpf", "coordination", "teams", "framework"],
+      "keywords": ["fpf", "coordination", "teams", "framework", "structured-thinking", "analysis", "decision-making", "comparison", "audit", "systems"],
       "category": "workflow",
       "tags": ["coordination", "specification", "patterns"]
     }

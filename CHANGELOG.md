@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-04-15
+
+### All Changes
+- **chore**: broaden skill triggers to solo analysis + expand marketplace keywords
+
 ## 2026-04-04
 
 ### All Changes
