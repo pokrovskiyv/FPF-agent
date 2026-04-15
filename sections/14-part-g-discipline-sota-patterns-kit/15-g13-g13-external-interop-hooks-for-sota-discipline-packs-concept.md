@@ -19,7 +19,7 @@ Without an explicit **conceptual interop kit**, authors tend to build one‑off 
 
 ### G.13:2 - Problem
 
-External sources publish **claim‑adjacent signals** (citations, concept graphs, “task/method” tags, replication links, dataset usage, disruption‑style indicators, benchmark metadata). These are useful for *generation* (palette building, portfolio exploration, candidate bridge discovery), not only for audit. But typical interop practices create predictable failure modes:
+External sources publish **claim‑adjacent signals** (citations, concept graphs, “task/method” tags, replication links, dataset usage, disruption‑style indicators, benchmark metadata). These are useful for *generation* (palette building, declared set-surface exploration, candidate bridge discovery), not only for audit. But typical interop practices create predictable failure modes:
 
 * **Contract‑surface leakage.** External numeric signals get treated as if they were lawful “scores” without explicit binding to CHR/CAL/CG surfaces.
 * **Implicit crossings.** Cross‑context and cross‑plane reuse happens through opaque transformations, without explicit exposure of the crossing bundle pins needed downstream.
@@ -262,7 +262,7 @@ Register external environment/task taxonomies as index cards. Align them into ge
 5. **CC‑G13‑SetReturnPreserved.** *(delegated)* Interop **MUST NOT** introduce hidden scalarisation or forced single‑winner selection.
    → delegate to `CC‑GCORE‑SET‑1`.
 
-6. **CC‑G13‑DefaultClaimsAreCitationsOnly.** *(delegated)* Any mention of defaults (e.g., dominance regime, portfolio mode) is a **citation** to the single owner in `G.Core.DefaultOwnershipIndex`, not a local default statement.
+6. **CC‑G13‑DefaultClaimsAreCitationsOnly.** *(delegated)* Any mention of defaults (e.g., dominance regime, `PortfolioMode`) is a **citation** to the single owner in `G.Core.DefaultOwnershipIndex`, not a local default statement.
    → delegate to `CC‑GCORE‑DEF‑1`.
 
 7. **CC‑G13‑EditionDisciplineForInteropCards.** *(local)* `ExternalIndexCard@Context` and `ClaimMapperCard@Context` **MUST** expose edition pins (`ExternalIndexRef.edition`, `ClaimMapperRef.edition`). Any interop surface published to UTS **MUST** cite the relevant `…Ref.edition` values (incl. `PlaneMapRef.edition?`, `ScaleEmbeddingSpecRef.edition?`) when present.
@@ -294,13 +294,13 @@ Register external environment/task taxonomies as index cards. Align them into ge
 * **Anti‑pattern: Edition‑free dashboards.** Feeding externally derived rows into dashboards without pinned editions/policies.
   **Remedy:** Pin `ExternalIndexRef.edition` and `ClaimMapperRef.edition`; emit RSCR triggers on changes.
 
-* **Anti‑pattern: Interop asserts defaults.** “Interop decides dominance regime / portfolio mode.”
+* **Anti‑pattern: Interop asserts defaults.** “Interop decides dominance regime / `PortfolioMode`.”
   **Remedy:** Treat defaults as citations only (single owner in `G.Core.DefaultOwnershipIndex`).
 
 ### G.13:10 - Consequences
 
 * **Interop becomes refresh‑ready.** External source drift produces typed RSCR causes with scopes/payload pins; refresh becomes slice‑scoped rather than global guesswork.
-* **Generation‑first authoring becomes cheaper.** External sources become controlled inputs into SoTA synthesis and portfolio exploration, not ad‑hoc audit decoration.
+* **Generation‑first authoring becomes cheaper.** External sources become controlled inputs into SoTA synthesis and declared set-surface exploration, not ad‑hoc audit decoration.
 * **Conceptual hygiene improves.** Explicit cards + edition pins reduce semantic leakage from tools/formats/providers.
 * **Cross‑tradition reuse becomes auditable.** Plane/context reuse is surfaced as crossings rather than embedded assumptions.
 
@@ -320,7 +320,7 @@ FPF is a conceptual framework for disciplined creative work, not a data governan
 
 * **Systematic review process modernisation.** PRISMA‑2020‑class workflow records (post‑2015 practice) are valuable as evidence anchors and coverage telemetry; treat them as evidenced inputs (EvidenceGraph anchors + pinned editions/windows), not as legality gates.
 
-* **QD / Illumination and OEE portfolios.** Post‑2015 QD (MAP‑Elites successors, CMA‑ME line, differentiable QD toolkits) and OEE (POET‑class and related environment/method co‑evolution lines) often rely on external taxonomies and environment corpora. Interop should expose those as pinned external editions and keep coverage/regret as telemetry inputs—never as implicit dominance.
+* **QD / Illumination and OEE declared set surfaces.** Post‑2015 QD (MAP‑Elites successors, CMA‑ME line, differentiable QD toolkits) and OEE (POET‑class and related environment/method co‑evolution lines) often rely on external taxonomies and environment corpora. Interop should expose those as pinned external editions and keep coverage/regret as telemetry inputs—never as implicit dominance.
 
 ### G.13:13 - Relations
 

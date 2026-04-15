@@ -1,22 +1,22 @@
 # Cluster F.I — context of meaning & Raw Material
 
-- [F.0.1 - Contextual Lexicon Principles (F.0.1)](01-f01-f01-contextual-lexicon-principles.md)
-- [F.1 - Domain‑Family Landscape Survey (F.1)](02-f1-f1-domainfamily-landscape-survey.md)
-- [F.2 — Term Harvesting & Normalisation (F.2)](03-f2-f2-term-harvesting-normalisation.md)
-- [F.3 - Intra‑Context Sense Clustering (F.3)](04-f3-f3-intracontext-sense-clustering.md)
-- [F.4 - Role Description (RCS + RoleStateGraph + Checklists) (F.4)](05-f4-f4-role-description-rcs-rolestategraph-checklists.md)
-- [F.5 - Naming Discipline for U.Types & Roles (F.5)](06-f5-f5-naming-discipline-for-utypes-roles.md)
-- [F.6 - Role Assignment & Enactment Cycle (Six-Step) (F.6)](07-f6-f6-role-assignment-enactment-cycle-six-step.md)
-- [F.7 - Concept‑Set Table (F.7)](08-f7-f7-conceptset-table.md)
-- [F.8 - Mint or Reuse? (U.Type vs Concept-Set vs Role Description vs Alias) (F.8)](09-f8-f8-mint-or-reuse-utype-vs-concept-set-vs-role-description-vs.md)
-- [F.9 - Alignment & Bridge across Contexts (F.9)](10-f9-f9-alignment-bridge-across-contexts.md)
-- [F.9.1 - Bridge Stance Overlay (F.9.1)](11-f91-f91-bridge-stance-overlay.md)
-- [F.10 - Status Families Mapping (Evidence • Standard • Requirement) (F.10)](12-f10-f10-status-families-mapping-evidence-standard-requirement.md)
-- [F.11 - Method Quartet Harmonisation (F.11)](13-f11-f11-method-quartet-harmonisation.md)
-- [F.12 — Service Acceptance–Work Evidence Link (F.12)](14-f12-f12-service-acceptancework-evidence-link.md)
-- [F.13 - Lexical Continuity & Deprecation (F.13)](15-f13-f13-lexical-continuity-deprecation.md)
-- [F.14 - Anti‑Explosion Control (Roles & Statuses) (F.14)](16-f14-f14-antiexplosion-control-roles-statuses.md)
-- [F.15 - SCR/RSCR Harness for Unification (F.15)](17-f15-f15-scrrscr-harness-for-unification.md)
-- [F.16 - Worked‑Example Template (Cross‑Domain) (F.16)](18-f16-f16-workedexample-template-crossdomain.md)
-- [F.17 - Unified Term Sheet (UTS) (F.17)](19-f17-f17-unified-term-sheet-uts.md)
-- [F.18 - Local‑First Unification Naming Protocol (F.18)](20-f18-f18-localfirst-unification-naming-protocol.md)
+- [F.0.1 - Contextual Lexicon Principles (F.0.1)](01-f01-f01-contextual-lexicon-principles.md) — Fix meaning locally to one team or domain first, and only cross over with explicit translation and stated losses.
+- [F.1 - Domain‑Family Landscape Survey (F.1)](02-f1-f1-domainfamily-landscape-survey.md) — Map which source disciplines and canons matter before naming anything, so words don't drift between domains.
+- [F.2 — Term Harvesting & Normalisation (F.2)](03-f2-f2-term-harvesting-normalisation.md) — Collect terms inside each domain's own idiom and record them faithfully, without forcing one global spelling.
+- [F.3 - Intra‑Context Sense Clustering (F.3)](04-f3-f3-intracontext-sense-clustering.md) — Within one domain, decide which uses of a term really mean the same thing before comparing across teams.
+- [F.4 - Role Description (RCS + RoleStateGraph + Checklists) (F.4)](05-f4-f4-role-description-rcs-rolestategraph-checklists.md) — Describe a role or status as a clear mask or badge with its commitments, grounded in one local meaning.
+- [F.5 - Naming Discipline for U.Types & Roles (F.5)](06-f5-f5-naming-discipline-for-utypes-roles.md) — Rules for picking names that are locally faithful, globally stable, and don't quietly hide their domain of origin.
+- [F.6 - Role Assignment & Enactment Cycle (Six-Step) (F.6)](07-f6-f6-role-assignment-enactment-cycle-six-step.md) — Six mental steps for assigning a role or status to something in a way you can later back up with evidence.
+- [F.7 - Concept‑Set Table (F.7)](08-f7-f7-conceptset-table.md) — One table showing the same concept across several domains, only where explicit translations permit it.
+- [F.8 - Mint or Reuse? (U.Type vs Concept-Set vs Role Description vs Alias) (F.8)](09-f8-f8-mint-or-reuse-utype-vs-concept-set-vs-role-description-vs.md) — A decision lattice for when to coin a new term versus reuse, alias, or point at an existing row.
+- [F.9 - Alignment & Bridge across Contexts (F.9)](10-f9-f9-alignment-bridge-across-contexts.md) — Translate a term from one team's world to another with a stated fit and what gets lost, instead of silent equivalence.
+- [F.9.1 - Bridge Stance Overlay (F.9.1)](11-f91-f91-bridge-stance-overlay.md) — Add an interpretive gloss on top of a translation card without inventing a rival taxonomy of translation types.
+- [F.10 - Status Families Mapping (Evidence • Standard • Requirement) (F.10)](12-f10-f10-status-families-mapping-evidence-standard-requirement.md) — Keep observational, standards, and obligation statuses in their own modality rather than collapsing them together.
+- [F.11 - Method Quartet Harmonisation (F.11)](13-f11-f11-method-quartet-harmonisation.md) — Keep the method, the written recipe, the actual run, and the control signal as four distinct things that connect explicitly.
+- [F.12 — Service Acceptance–Work Evidence Link (F.12)](14-f12-f12-service-acceptancework-evidence-link.md) — Decide whether a service promise was kept by judging what actually happened in a clear time window, not the plan.
+- [F.13 - Lexical Continuity & Deprecation (F.13)](15-f13-f13-lexical-continuity-deprecation.md) — Evolve names over time so new labels clarify meaning without erasing what earlier texts meant.
+- [F.14 - Anti‑Explosion Control (Roles & Statuses) (F.14)](16-f14-f14-antiexplosion-control-roles-statuses.md) — Stop vocabularies from ballooning: prefer reusing, bundling, and time-windowing names over minting new ones.
+- [F.15 - SCR/RSCR Harness for Unification (F.15)](17-f15-f15-scrrscr-harness-for-unification.md) — A minimal checklist of conceptual tests to tell whether a unification effort is actually sound before composing further.
+- [F.16 - Worked‑Example Template (Cross‑Domain) (F.16)](18-f16-f16-workedexample-template-crossdomain.md) — A one-page template for cross-domain examples that keeps every claim local and every jump across domains explicit.
+- [F.17 - Unified Term Sheet (UTS) (F.17)](19-f17-f17-unified-term-sheet-uts.md) — One readable table that unifies the domain-by-domain terminology work into the front-door reference authors actually use.
+- [F.18 - Local‑First Unification Naming Protocol (F.18)](20-f18-f18-localfirst-unification-naming-protocol.md) — A naming protocol that keeps names locally anchored, shows what kind of thing is named, and leaves an auditable paper trail.

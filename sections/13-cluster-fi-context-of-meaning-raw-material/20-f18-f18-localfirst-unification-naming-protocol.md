@@ -729,6 +729,27 @@ Example 2 (§F.18:18.2) shows one naming instantiation of this unpacking.
 
 > **“Name on a row, never on a whim.”** In FPF we **speak on rows, not on vibes**: a **Name Card** ties each Tech/Plain pair to a concrete Context, Concept‑Set row, and SenseCells, with a small **NQD‑front** of rejected alternatives. This gives you **bridged precision** without losing **local comfort**. **Your UTS is the one page a careful mind can hold.**
 
+### F.18:24a - Name-card guardrails for set-surface language
+
+- Keep `Palette`, `Front`, `Archive`, and `Shortlist` as distinct head families rather than as aliases of one generic `portfolio`.
+- Prefer this head family when the local burden matches it:
+  - `TraditionPalette` when `SubjectKind=Tradition`
+  - `Q-Front`
+  - `ExplorationArchive`
+  - `Shortlist`
+- The shortlisted family stays internally coherent:
+  - `RankedShortlist ⊑ Shortlist`
+  - `ShortlistId` is one `Id` specialized to an emitted shortlist
+  - `ChoiceSet` may appear only as one mathematical gloss for the shortlist's set object, not as one rival public head
+- Reserve `Pareto` for actual non-domination under a declared `DominanceSet`; do not use it for weighted ranking, popularity ordering, or one post-lens shortlist.
+- Treat bare `portfolio` as a guarded reject here because current `FPF` already uses `portfolio` as one broader selector/set-return family. When the local set surface is recoverable, do not reuse that broader head as the local winner.
+- Treat bare `shortlist` as lawful only when the selected-set family is intended and the declared `SourceSurfaceKind` plus the named lens are already recoverable nearby.
+- When one surface is tied to traditions, methods, hypotheses, or environment-method pairs, say the `SubjectKind` explicitly instead of letting the head noun do the work by implication.
+- When one shortlist is emitted from one front or one archive, say the declared `SourceSurfaceKind` and the named lens instead of letting `Shortlist` drift into one generic selector result.
+- If one local explanation still needs `ChoiceSet`, say that it is the mathematical set gloss for the shortlist rather than letting it read like one second public set family.
+- Good examples include `TraditionPalette` for a tradition-member palette, `Palette + SubjectKind=MethodFamily`, `Q-Front`, `ExplorationArchive`, `ShortlistFromQFront`, `RankedShortlistFromShortlist`, and `ShortlistId`.
+- Bad examples include bare `portfolio`, `SoTA portfolio`, `Pareto shortlist`, `Pareto archive`, and `frontier set` when the declared dominance basis is still missing.
+
 ### F.18:25 - SoTA‑Echoing (post‑2015 practice alignment)
 
 * **Neural WSD & sense evaluation (2015→).** P2’s sense‑seed read‑through is a human‑scale analogue of modern **word‑sense disambiguation** evaluation, where models are scored by the fraction of examples assigned the correct sense and by error profiles across sense inventories. Post‑2015 neural WSD benchmarks (e.g., multi‑domain evaluations reported in ACL venues) motivate the explicit `{too‑narrow, on‑target, too‑wide, wrong‑prototype}` labelling and the `θ_P` threshold for **SemanticFidelity**.
@@ -749,3 +770,4 @@ All patterns that propose or consume unified names and rows in Part F; any Part 
 
 ### F.18:End
 
+---

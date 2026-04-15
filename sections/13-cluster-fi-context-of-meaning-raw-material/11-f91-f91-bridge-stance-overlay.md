@@ -85,7 +85,7 @@ A bridge card may relate two near-coextensive operational labels inside one decl
 A high-level capability cue may be bridged to a more procedural checklist or control ritual. The bridge card may carry the stance `operationalizes` to show that the target gives a lawful enactment surface for the source. The relation can still be high-loss: the procedural target need not preserve the source's broader theoretical framing, and the stance does not claim type-structure sameness.
 
 #### F.9.1:13.3 - `projection`
-A rich construct may be mapped into a narrower reporting or measurement surface. The bridge card may declare the stance `projection` when the target intentionally keeps only one aspect. The required loss notes should name the dropped dimensions, because the stance is informative only when the omitted structure is made explicit.
+A rich construct may be mapped into a narrower reporting view or measurement projection. The bridge card may declare the stance `projection` when the target intentionally keeps only one aspect. The required loss notes should name the dropped dimensions, because the stance is informative only when the omitted structure is made explicit.
 
 #### F.9.1:13.4 - `partialAnalogy` and `nonEquivalent`
 A comparative bundle may need to mention an explanatory resemblance across traditions without claiming substitution. In such cases `partialAnalogy` may guide reading when the shared pattern is local and declared. If review concludes that even this local resemblance is too weak for safe reuse, `nonEquivalent` should be preferred so that apparent similarity does not drift into silent replacement.

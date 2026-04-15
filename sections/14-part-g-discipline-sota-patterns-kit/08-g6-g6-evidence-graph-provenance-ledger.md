@@ -214,7 +214,7 @@ Claim: “Method family M attains parity on ImageNet‑style tasks under a decla
 ### G.6:6 - Bias‑Annotation
 
 Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
-Scope: Universal for the EvidenceGraph kit; any method‑specific telemetry/portfolio wiring is modularized as Extensions and cited to its semantic owners.
+Scope: Universal for the EvidenceGraph kit; any method‑specific telemetry / `PortfolioMode` wiring is modularized as Extensions and cited to its semantic owners.
 
 ### G.6:7 - Conformance Checklist (normative) — **CC‑G6**
 

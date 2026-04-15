@@ -1,6 +1,6 @@
 # Cross-References into 11-section-ei-the-fpf-constitution
 
-Patterns in other Parts that reference patterns in this directory (103 refs).
+Patterns in other Parts that reference patterns in this directory (107 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -67,12 +67,15 @@ Patterns in other Parts that reference patterns in this directory (103 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.13 | informs | E.16 |
+| A.15 | prerequisite_for | E.16 |
 | A.15.3 | builds_on | E.17 |
 | A.15.3 | builds_on | E.18 |
 | A.15.3 | builds_on | E.19 |
 | A.16 | coordinates_with | E.18 |
 | A.16.0 | builds_on | E.17 |
 | A.16.0 | builds_on | E.18 |
+| A.19 | coordinates_with | E.18 |
 | A.19.CHR | builds_on | E.18 |
 | A.19.CHR | builds_on | E.10 |
 | A.19.CHR | builds_on | E.19 |
@@ -100,11 +103,20 @@ Patterns in other Parts that reference patterns in this directory (103 refs).
 | C.2.2 | coordinates_with | E.14 |
 | C.2.2 | coordinates_with | E.18 |
 | C.2.2a | builds_on | E.10 |
+| C.24 | builds_on | E.3 |
+| C.24 | builds_on | E.5 |
+
+## From 09-part-d-multi-scale-ethics-conflictoptimisation
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| D.5 | builds_on | E.5.4 |
 
 ## From 13-cluster-fi-context-of-meaning-raw-material
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.18 | coordinates_with | E.10 |
 | F.5 | builds_on | E.10 |
 | F.9.1 | coordinates_with | E.17.1 |
 
@@ -135,7 +147,4 @@ Patterns in other Parts that reference patterns in this directory (103 refs).
 | G.8 | coordinates_with | E.18 |
 | G.8 | coordinates_with | E.10 |
 | G.8 | coordinates_with | E.5.2 |
-| G.9 | builds_on | E.18 |
-| G.9 | builds_on | E.5.2 |
-| G.9 | builds_on | E.10 |
 | G.Core | builds_on | E.8 |

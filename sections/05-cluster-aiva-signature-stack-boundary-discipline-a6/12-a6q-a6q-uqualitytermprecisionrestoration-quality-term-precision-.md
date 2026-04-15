@@ -1,7 +1,7 @@
 ## A.6.Q - `U.QualityTermPrecisionRestoration` — Quality Term Precision Restoration (Q-TERM)
 
 > **Type:** Architectural (A)
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative (Core / Draft)
 
 **Plain-name.** Quality-term precision restoration.
@@ -47,7 +47,7 @@ authors say:
 4. **Explanatory merit** of a theory, problem frame, or conjecture.
 5. **Architectural-description fitness / compression merit** of an architecture description or architecture model under a declared viewpoint.
 6. **Engineering quality families** such as reliability, maintainability, security, evolvability.
-7. **Usefulness / selection value** in open-ended search, novelty–quality–diversity, or portfolio selection.
+7. **Usefulness / selection value** in open-ended search, novelty–quality–diversity, or selected-set selection.
 8. **Control adequacy** of a policy/model/controller in a closed loop.
 
 The failure modes are recurrent:

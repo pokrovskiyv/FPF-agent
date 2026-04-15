@@ -10,7 +10,7 @@
 
 ### G.8:1 - Problem frame
 
-Method families compete within a `CG‑Frame`, but dispatch is only lawful if (i) admissibility decisions remain **tri‑state** and auditable, (ii) evidence and crossings are **explicitly citable** (by ids, not prose), and (iii) selection preserves **set/portfolio semantics** under partial orders. In practice, SoS‑LOG rules (`C.23`) and “maturity stories” are often distributed across prose, dashboards, and ad‑hoc checklists, with thresholds embedded where they do not belong and with missing pins for evidence paths, crossings, and editions.
+Method families compete within a `CG‑Frame`, but dispatch is only lawful if (i) admissibility decisions remain **tri‑state** and auditable, (ii) evidence and crossings are **explicitly citable** (by ids, not prose), and (iii) selection preserves **set-return semantics** under partial orders. In practice, SoS‑LOG rules (`C.23`) and “maturity stories” are often distributed across prose, dashboards, and ad‑hoc checklists, with thresholds embedded where they do not belong and with missing pins for evidence paths, crossings, and editions.
 
 This pattern provides the missing packaging kit: a **selector‑facing, UTS‑citable bundle** that binds **(a)** rule ids (semantics owned by `C.23`), **(b)** an ordinal/poset maturity ladder (published as a citable card), and **(c)** explicit wiring to Acceptance (`G.4`), EvidenceGraph (`G.6`), selection/registry (`G.5`), and refresh (`G.11`)—without creating any shadow contract surfaces.
 
@@ -196,7 +196,7 @@ SoS-LOGBundle@Context :=
 
 * **B1 — Evidence wiring.** At packaging time the bundle SHOULD provide resolvable evidence refs (typically `A10EvidenceGraphRef?[]` and/or `EvidenceGraphId?`). At run time, admissibility outcomes SHOULD cite `PathId/PathSliceId` when available (`G.6`), so rung transitions and `degrade/abstain` traces are audit‑stable.
 * **B2 — CL/plane routing pins.** When reuse across Context/plane is asserted, the bundle/ledger MUST pin the relevant Bridge/CL/Φ/Ψ/Φ_plane policy ids (reference‑only; resolvable per `F.8:8.1`) and MUST respect the core penalty routing (penalties affect `R_eff` only; `F/G` invariance via `G.Core`).
-* **B3 — Portfolio/QD fields.** If the bundle/ledger exposes QD/portfolio fields (e.g., `PortfolioMode=Archive`), it MUST pin the descriptor/distance/insertion/emitter artefacts (editions/policies as applicable). Illumination remains **report‑only** unless explicitly promoted by a `G.4` owner policy id that is pinned and recorded in the run‑time trace.
+* **B3 — `PortfolioMode`/QD fields.** If the bundle/ledger exposes `PortfolioMode`/QD fields (e.g., `PortfolioMode=Archive`), it MUST pin the descriptor/distance/insertion/emitter artefacts (editions/policies as applicable). Illumination remains **report‑only** unless explicitly promoted by a `G.4` owner policy id that is pinned and recorded in the run‑time trace.
 * **B4 — Open‑ended fields.** If the bundle binds an open‑ended generator family, it MUST pin `GeneratorFamilyId` and `TransferRulesRef.edition` (and any validity region/coupler policy ids when used). Unknown transfer validity MUST route to `degrade`/branching, not to an ad‑hoc fourth status.
 * **B5 — Telemetry hooks.** On any material telemetry event (illumination increase, archive insertion, probe accounting update, open‑ended coverage/regret proxy update), the emitted telemetry pins SHOULD include the controlling policy ids plus the relevant edition pins (e.g., `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `TransferRulesRef.edition`) and, when available, `PathSliceId` to keep RSCR planning auditable.
 
@@ -346,9 +346,9 @@ This card is a **description** suitable for dispatch/audit and refresh; it is no
 ### G.8:6 - Archetypal Grounding (System / Episteme)
 
 **Show‑A — Tri‑state admissibility with set‑valued selection (multi‑criteria).**
-A CG‑Frame hosts multiple offline/robust decision families (e.g., conservative offline RL and transformer‑based policy models post‑2020). The bundle publishes `RuleId[]` (SoS‑LOG semantics in `C.23`), cites `AcceptanceClauseId[]` for any floors (owned by `G.4`), and emits an `AdmissibilityLedger` whose rows cite `PathSliceId` (when available) for each `pass/degrade/abstain`. `G.5` consumes the ledger and returns a **portfolio set** under the declared partial order—no scalar “winner”.
+A CG‑Frame hosts multiple offline/robust decision families (e.g., conservative offline RL and transformer‑based policy models post‑2020). The bundle publishes `RuleId[]` (SoS‑LOG semantics in `C.23`), cites `AcceptanceClauseId[]` for any floors (owned by `G.4`), and emits an `AdmissibilityLedger` whose rows cite `PathSliceId` (when available) for each `pass/degrade/abstain`. `G.5` consumes the ledger and returns a **selected set** under the declared partial order—no scalar “winner”.
 **Show‑A — Tri‑state admissibility with set‑valued selection (multi‑criteria).**
-A CG‑Frame hosts multiple offline/robust decision families (e.g., conservative offline RL and transformer‑based policy models post‑2020). The bundle publishes `SoSLogRuleId[]` (SoS‑LOG semantics in `C.23`), cites `AcceptanceClauseId[]` for any floors (owned by `G.4`), and emits an `AdmissibilityLedger` whose rows cite `PathSliceId` (when available) for each `pass/degrade/abstain`. `G.5` consumes the ledger and returns a **portfolio set** under the declared partial order—no scalar “winner”.
+A CG‑Frame hosts multiple offline/robust decision families (e.g., conservative offline RL and transformer‑based policy models post‑2020). The bundle publishes `SoSLogRuleId[]` (SoS‑LOG semantics in `C.23`), cites `AcceptanceClauseId[]` for any floors (owned by `G.4`), and emits an `AdmissibilityLedger` whose rows cite `PathSliceId` (when available) for each `pass/degrade/abstain`. `G.5` consumes the ledger and returns a **selected set** under the declared partial order—no scalar “winner”.
 
 **Show‑B — QD archive dispatch with edition‑pinned descriptors (post‑2015 QD families).**
 A method family uses a modern QD line (e.g., CMA‑ES‑driven archives, differentiable QD variants, and large‑scale JAX‑style QD toolchains). The bundle pins `DescriptorMapRef.edition` and `DistanceDefRef.edition`, plus insertion/emitter policies. Illumination metrics are logged as telemetry; any promotion into dominance is only via explicit CAL policy pins (recorded in the admissibility trace).
@@ -379,8 +379,8 @@ Scope: packaging kit only. Rule semantics remain owned by `C.23`; thresholds rem
 * **CC‑G8‑4 (Crossing visibility and penalty routing; delegated).**
   Any cross‑Context/plane reuse asserted by the bundle/ledger SHALL satisfy the core crossing visibility and penalty routing invariants (delegation to `CC‑GCORE‑CROSS‑1` and `CC‑GCORE‑PEN‑1`).
 
-* **CC‑G8‑5 (Portfolio/dominance hygiene; delegated).**
-  The bundle/ledger SHALL treat portfolio/dominance fields as pinned inputs and SHALL route any omitted defaults via the single‑owner Default Ownership Index (delegation to `CC‑GCORE‑DEF‑1` and `CC‑GCORE‑SET‑1`; owners include `CC‑G5.23` for `DefaultId.PortfolioMode` and `CC‑G5.28` for `DefaultId.DominanceRegime`). It MUST NOT restate default values locally.  
+* **CC‑G8‑5 (PortfolioMode/dominance hygiene; delegated).**
+  The bundle/ledger SHALL treat `PortfolioMode`/dominance fields as pinned inputs and SHALL route any omitted defaults via the single‑owner Default Ownership Index (delegation to `CC‑GCORE‑DEF‑1` and `CC‑GCORE‑SET‑1`; owners include `CC‑G5.23` for `DefaultId.PortfolioMode` and `CC‑G5.28` for `DefaultId.DominanceRegime`). It MUST NOT restate default values locally.  
   If the bundle/ledger records telemetry that could influence dispatch (e.g., illumination/QD/OEE/open‑ended proxies), such telemetry SHALL remain report‑only unless explicitly promoted by a `G.4` owner policy id that is pinned and recorded in the run‑time trace.
 
 * **CC‑G8‑6 (QD/OEE edition discipline).**
@@ -398,7 +398,7 @@ Scope: packaging kit only. Rule semantics remain owned by `C.23`; thresholds rem
   The bundle, ledger, and maturity card SHALL remain notation‑independent (per `E.5.2`); any serialization choice is non‑normative and belongs outside Part‑G core.
 
 * **CC‑G8‑10 (MOO cross‑reference).**
-  When a LOG bundle is used to drive or justify a produced portfolio outcome, the producing Work/Audit artefact SHOULD cite the controlling mechanism ids (e.g., parity/shipping/refresh artefact ids) and relevant policy pins; no “black box” provenance.
+  When a LOG bundle is used to drive or justify a produced selected-set outcome, the producing Work/Audit artefact SHOULD cite the controlling mechanism ids (e.g., parity/shipping/refresh artefact ids) and relevant policy pins; no “black box” provenance.
 
 * **CC‑G8‑11 (SoTA‑of‑description trace).**
   If authoring methods (e.g., discovery, clustering, summarisation) materially shaped rule text or rung definitions, the bundle/card SHOULD cite their method description refs (edition‑pinned) to support cross‑stance traceability.
@@ -436,7 +436,7 @@ Scope: packaging kit only. Rule semantics remain owned by `C.23`; thresholds rem
 
 This pattern’s separation of **decision rules**, **acceptance thresholds**, **provenance paths**, and **set‑valued outputs** echoes post‑2015 practice in:
 
-* **Set‑valued / portfolio‑first selection** (multi‑objective and uncertainty‑aware regimes; avoiding forced scalar winners).
+* **Set‑valued / set-returning selection** (multi‑objective and uncertainty‑aware regimes; avoiding forced scalar winners).
 * **Quality‑Diversity and archive‑based evaluation** (post‑2015 QD variants emphasize edition‑pinned descriptors/distances and telemetry‑driven refresh).
 * **Open‑endedness / curriculum generation** (post‑2018 lines emphasize explicit transfer rules, safe degrade branches, and telemetry‑driven orchestration rather than hidden gates).
 * **Reproducibility‑aware publishing** (explicit identifiers, pinned editions/policies, citable traces rather than prose‑only decision rationales).
@@ -457,7 +457,7 @@ This pattern’s separation of **decision rules**, **acceptance thresholds**, **
 * [ ] Any numeric gates/thresholds are `G.4` Acceptance artefacts cited by id (no thresholds embedded in LOG or rungs).
 * [ ] Evidence is citable: at run time use `PathId/PathSliceId` when available; at packaging time provide resolvable `A10EvidenceGraphRef?[]` / `EvidenceGraphId?`.
 * [ ] Any cross‑Context/plane reuse is explicit: `BridgeId/BridgeCardId`, `CL/CL^k/CL^plane`, and `Φ/Ψ/Φ_plane` policy ids are pinned (policy ids resolvable per `F.8:8.1`).
-* [ ] Portfolio/dominance defaults are not restated: route via `G.Core.DefaultOwnershipIndex` (owners live outside `G.8`, typically `G.5`).
+* [ ] `PortfolioMode`/dominance defaults are not restated: route via `G.Core.DefaultOwnershipIndex` (owners live outside `G.8`, typically `G.5`).
 * [ ] QD pins are edition/policy pinned (`DescriptorMapRef.edition`, `DistanceDefRef.edition`, insertion/emitter policies); `CharacteristicSpaceRef.edition` is pinned iff cell boundaries/de‑dup/parity depend on it; **Spaces ≠ Maps**.
 * [ ] If open‑ended surfaces are declared, pin `GeneratorFamilyId`, `TransferRulesRef.edition`, and any validity/coupler policy ids; unknown transfer validity routes to `degrade`/branching (no “fourth status”).
 * [ ] `MaturityRungs` is a closed, UTS‑registered set; the maturity ladder is ordinal/poset with a declared `ReferencePlane`; rung transitions cite evidence.

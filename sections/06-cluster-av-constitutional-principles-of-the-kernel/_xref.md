@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (119 refs).
+Patterns in other Parts that reference patterns in this directory (131 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -52,6 +52,7 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | A.6.H | builds_on | A.7 |
 | A.6.H | coordinates_with | A.14 |
 | A.6.H | coordinates_with | A.15 |
+| A.6.P | coordinates_with | A.7 |
 | A.6.P | coordinates_with | A.10 |
 | A.6.Q | builds_on | A.16 |
 | A.6.S | builds_on | A.7 |
@@ -61,43 +62,56 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| B.1.2 | builds_on | C.1 |
+| B.1 | builds_on | A.9 |
 | B.1.6 | builds_on | A.15.1 |
-| B.1.6 | builds_on | C.5 |
+| B.3 | builds_on | A.10 |
+| B.4 | builds_on | A.12 |
 | B.4.1 | builds_on | A.16 |
 | B.4.1 | builds_on | A.16.1 |
+| B.5 | builds_on | A.10 |
 | B.5.2 | builds_on | A.10 |
 | B.5.2 | coordinates_with | A.16 |
 | B.5.2.0 | builds_on | A.16 |
-| B.5.3 | builds_on | C.3 |
+| B.5.2.1 | builds_on | A.17 |
+| B.5.2.1 | builds_on | A.18 |
 
 ## From 08-part-c-kernel-extensions-specifications
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.1 | builds_on | A.14 |
+| C.11 | builds_on | A.13 |
+| C.11 | builds_on | A.18 |
+| C.11 | builds_on | A.19 |
 | C.13 | builds_on | A.14 |
 | C.16 | builds_on | A.17 |
 | C.16 | builds_on | A.18 |
+| C.17 | builds_on | A.17 |
+| C.17 | builds_on | A.18 |
+| C.17 | builds_on | A.19 |
+| C.18 | builds_on | A.17 |
 | C.2 | builds_on | A.10 |
-| C.2.2 | builds_on | C.3 |
 | C.2.2a | builds_on | A.19 |
 | C.2.2a | used_by | A.16 |
 | C.2.4 | coordinates_with | A.16 |
 | C.2.5 | coordinates_with | A.16 |
 | C.2.LS | coordinates_with | A.16 |
-| C.24 | builds_on | C.5 |
+| C.24 | builds_on | A.15 |
 | C.25 | coordinates_with | A.15 |
 
 ## From 11-section-ei-the-fpf-constitution
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| D.2 | builds_on | A.9 |
 | E.10 | builds_on | A.7 |
 | E.10 | coordinates_with | A.10 |
 | E.10 | coordinates_with | A.15 |
 | E.10.D1 | builds_on | A.7 |
 | E.10.D2 | builds_on | A.7 |
 | E.15 | builds_on | A.10 |
+| E.16 | builds_on | A.13 |
+| E.16 | builds_on | A.15 |
 | E.17.1 | builds_on | A.7 |
 | E.17.AUD | builds_on | A.16.0 |
 | E.17.AUD | builds_on | A.7 |
@@ -149,8 +163,6 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | G.3 | builds_on | A.19.CHR |
 | G.3 | builds_on | A.15.3 |
 | G.4 | builds_on | A.18 |
-| G.5 | builds_on | A.19 |
-| G.5 | coordinates_with | A.15.3 |
 | G.6 | builds_on | A.10 |
 | G.Core | builds_on | A.15.3 |
 | G.Core | builds_on | A.19 |

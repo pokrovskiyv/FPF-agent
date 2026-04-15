@@ -1,19 +1,19 @@
 # Preface** (non-normative)
 
-- [What this specification is (and how to use it)](01-what-this-specification-is-and-how-to-use-it.md)
-- [Creativity in Open-Ended Evolution and Assurance](02-creativity-in-open-ended-evolution-and-assurance.md)
-- [Navigating Uncertainty: Building Closed Worlds within an Open World (non-normative)](03-navigating-uncertainty-building-closed-worlds-within-an-open.md)
-- [FPF as an Evolutionary Architecture for Thought](04-fpf-as-an-evolutionary-architecture-for-thought.md)
-- [Architectural Characteristic of Thought](05-architectural-characteristic-of-thought.md)
-- [Beyond Cognitive Biases: FPF as a Generative Architecture for Thought](06-beyond-cognitive-biases-fpf-as-a-generative-architecture-for.md)
-- [Thinking Through Writing: The FPF Discipline of Conceptual Work](07-thinking-through-writing-the-fpf-discipline-of-conceptual-wo.md)
-- [Descriptive Ontologies vs. A Thinking-Oriented Architecture](08-descriptive-ontologies-vs-a-thinking-oriented-architecture.md)
-- [The "Bitter Lesson" trajectory — compute, data, and freedom over hand‑tuned rules (FPF stance)](09-the-bitter-lesson-trajectory-compute-data-and-freedom-over-h.md)
-- [From Flat Documents to High-Dimensional Truth: The Multi-View Architecture](10-from-flat-documents-to-high-dimensional-truth-the-multi-view.md)
-- [Boundary Statements: Where Language Becomes a System Boundary](11-boundary-statements-where-language-becomes-a-system-boundary.md)
-- [Raising Semantic Precision: From Triggers to Math‑Backed Ontics](12-raising-semantic-precision-from-triggers-to-mathbacked-ontic.md)
-- [The “big storylines” unique to FPF (load‑bearing commitments)](13-the-big-storylines-unique-to-fpf-loadbearing-commitments.md)
-- [Transdisciplinarity as a Meta‑Theory of Thinking](14-transdisciplinarity-as-a-metatheory-of-thinking.md)
-- [FPF as a Culinary Architecture for Collective Thought: Why We Formalize “Obvious” Ideas](15-fpf-as-a-culinary-architecture-for-collective-thought-why-we.md)
-- [Intellect Stack](16-intellect-stack.md)
-- [Purpose, Scope, and Explicit Non‑Goals](17-purpose-scope-and-explicit-nongoals.md)
+- [What this specification is (and how to use it)](01-what-this-specification-is-and-how-to-use-it.md) — Orientation to what this spec contains and how to navigate it for your thinking work.
+- [Creativity in Open-Ended Evolution and Assurance](02-creativity-in-open-ended-evolution-and-assurance.md) — How to be genuinely inventive without losing your audit trail, and rigorous without killing new ideas.
+- [Navigating Uncertainty: Building Closed Worlds within an Open World (non-normative)](03-navigating-uncertainty-building-closed-worlds-within-an-open.md) — When to act as if you know everything that matters versus when to admit new facts can still appear.
+- [FPF as an Evolutionary Architecture for Thought](04-fpf-as-an-evolutionary-architecture-for-thought.md) — Treating a way of thinking like a system that should be able to evolve gracefully instead of being rewritten.
+- [Architectural Characteristic of Thought](05-architectural-characteristic-of-thought.md) — Qualities good reasoning needs (traceability, evolvability, reproducibility) and which tools sustain each one.
+- [Beyond Cognitive Biases: FPF as a Generative Architecture for Thought](06-beyond-cognitive-biases-fpf-as-a-generative-architecture-for.md) — Preventing whole classes of thinking errors by structure, instead of hunting biases one at a time.
+- [Thinking Through Writing: The FPF Discipline of Conceptual Work](07-thinking-through-writing-the-fpf-discipline-of-conceptual-wo.md) — Why writing reasoning down in structured forms is the actual thinking, not documentation of it.
+- [Descriptive Ontologies vs. A Thinking-Oriented Architecture](08-descriptive-ontologies-vs-a-thinking-oriented-architecture.md) — Why this is a compass for reasoning about a problem, not a fixed inventory of what exists in the world.
+- [The "Bitter Lesson" trajectory — compute, data, and freedom over hand‑tuned rules (FPF stance)](09-the-bitter-lesson-trajectory-compute-data-and-freedom-over-h.md) — Why to specify goals, constraints, and budgets rather than fixed step-by-step procedures for agents.
+- [From Flat Documents to High-Dimensional Truth: The Multi-View Architecture](10-from-flat-documents-to-high-dimensional-truth-the-multi-view.md) — Why one system needs many coordinated views (safety case, architecture, dashboard) that all stay consistent.
+- [Boundary Statements: Where Language Becomes a System Boundary](11-boundary-statements-where-language-becomes-a-system-boundary.md) — Why contract, API, and SLA wording behaves like a mechanism and must not mix rules, duties, and evidence in one sentence.
+- [Raising Semantic Precision: From Triggers to Math‑Backed Ontics](12-raising-semantic-precision-from-triggers-to-mathbacked-ontic.md) — A repeatable path from fast loose speech to auditable, reusable statements when a phrase starts carrying real weight.
+- [The “big storylines” unique to FPF (load‑bearing commitments)](13-the-big-storylines-unique-to-fpf-loadbearing-commitments.md) — Summary of the major distinctive commitments this framework makes, at a glance.
+- [Transdisciplinarity as a Meta‑Theory of Thinking](14-transdisciplinarity-as-a-metatheory-of-thinking.md) — Shared reasoning scaffolds that work across engineering, science, management, and policy instead of locking into one field.
+- [FPF as a Culinary Architecture for Collective Thought: Why We Formalize “Obvious” Ideas](15-fpf-as-a-culinary-architecture-for-collective-thought-why-we.md) — Why familiar ideas (MVP, explore/exploit, evolution) gain power when plugged into one coherent reasoning system.
+- [Intellect Stack](16-intellect-stack.md) — A layered map of thinking skills — structure, reasoning, action, strategy, governance — and how they reinforce each other.
+- [Purpose, Scope, and Explicit Non‑Goals](17-purpose-scope-and-explicit-nongoals.md) — What this framework is for, what it deliberately refuses to cover, and why that boundary matters.

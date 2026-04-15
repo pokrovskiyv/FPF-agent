@@ -410,7 +410,7 @@ Although FPF is conceptual (not a data governance framework), `G.Core` aligns Pa
 
 * **Selective prediction / abstention** informs tri‑state guard discipline: abstaining or degrading is a first-class outcome, not an error coerced into a scalar.
 * **Set-valued / conformal methods** motivate set-return semantics: when comparability is partial or uncertainty is structural, returning sets/regions is often the SoTA-friendly representation.
-* **Multiobjective optimization and quality-diversity** reinforce portfolio/Archive semantics instead of forced “best single scalar”.
+* **Multiobjective optimization and quality-diversity** reinforce declared set-surface and `Archive` semantics instead of forced “best single scalar”.
 * **Monotone constrained modelling** (where used) supports “legality-first” scoring/aggregation: constraints and admissibility precede optimization, mirroring CG‑Spec gate discipline.
 * **Schema evolution and contract testing** motivate id-stable conformance points and typed trigger catalogues: stable identifiers + regression hooks are the practical mechanism for safe refactoring.
 

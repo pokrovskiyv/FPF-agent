@@ -1,6 +1,6 @@
 # Cross-References into 13-cluster-fi-context-of-meaning-raw-material
 
-Patterns in other Parts that reference patterns in this directory (75 refs).
+Patterns in other Parts that reference patterns in this directory (76 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -34,6 +34,7 @@ Patterns in other Parts that reference patterns in this directory (75 refs).
 | A.6.C | coordinates_with | F.18 |
 | A.6.P | builds_on | F.18 |
 | A.6.P | coordinates_with | F.9 |
+| A.6.P | coordinates_with | F.17 |
 | A.6.Q | builds_on | F.9 |
 
 ## From 06-cluster-av-constitutional-principles-of-the-kernel
@@ -51,6 +52,7 @@ Patterns in other Parts that reference patterns in this directory (75 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.17 | coordinates_with | F.5 |
 | C.2.2 | builds_on | F.9 |
 | C.2.2a | builds_on | F.18 |
 | C.2.6 | coordinates_with | F.9.1 |
@@ -71,7 +73,6 @@ Patterns in other Parts that reference patterns in this directory (75 refs).
 | E.10.D2 | constrains | F.9 |
 | E.10.D2 | constrains | F.15 |
 | E.15 | builds_on | F.15 |
-| E.16 | builds_on | F.8 |
 | E.17.AUD | builds_on | F.18 |
 | E.17.AUD.LHR | builds_on | F.18 |
 | E.17.AUD.OOTD | builds_on | F.18 |

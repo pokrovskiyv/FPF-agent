@@ -7,7 +7,7 @@
 
 **What this pattern provides (exports):**
 
-This pattern exports **Characteristics** and measurement templates **only**. It **does not** export any Γ\_\* operators, portfolio composition rules, or selection/scalarization policies; those live in **C.18 NQD-CAL** and **C.19 E/E-LOG** (or **Decsn-CAL** for decision lenses). A Context _publishes_ the measurement space and admissible policies; a decision is taken by an _agent in role_ using a _named lens_ within that space.
+This pattern exports **Characteristics** and measurement templates **only**. It **does not** export any Γ\_\* operators, retained-set composition rules, `Front`/`Archive`/`Shortlist` heads, or selection/scalarization policies; those live in **C.18 NQD-CAL**, **C.19 E/E-LOG**, and **G.5** (or **Decsn-CAL** for decision lenses). A Context _publishes_ the measurement space and admissible policies; later choice using that space is attributed to a declared `DecisionSubject` at explicit `DecisionSubjectGranularity` under a named lens.
 
 * **`U.CreativitySpace`** — a **CharacteristicSpace** (CHR) with named **Characteristics** and scale metadata for evaluating creative work/outcomes **inside a `U.BoundedContext`**.
 * **`U.CreativityProfile`** — a vector of coordinates in `U.CreativitySpace` attached by a **`U.Evaluation`** to a specific **Outcome** (usually an `U.Episteme` produced by `U.Work`).
@@ -16,10 +16,10 @@ This pattern exports **Characteristics** and measurement templates **only**. It 
 2. **`Use‑Value`** *(alias: `ValueGain`)* — measured or predicted improvement against a **declared objective**; interval/ratio scale per Context.
 3. **`Surprise`** — negative log‑likelihood under a **GenerativePrior**; bits or nats.
 4. **`ConstraintFit`** — degree of **must‑constraint** satisfaction (Norm‑CAL / Service acceptance); ∈ \[0, 1].
-5. **Diversity_P (portfolio-level)** — coverage/dispersion (set-level). **Illumination** is a **report-metric over Diversity_P** (coverage/QD-score summaries). It is **report-only** and **never** part of the primary dominance test.
+5. **Diversity_P (declared retained-set / portfolio-level)** — coverage/dispersion (set-level). **Illumination** is a **report-metric over Diversity_P** (coverage/QD-score summaries). It is **report-only** and **never** part of the primary dominance test.
 6. **`AttributionIntegrity`** — provenance/licensing discipline for lawful, transparent recombination; ∈ \[0, 1].
-7. **`FamilyCoverage`** — (count, polarity ↑, scope=portfolio, unit=families, provenance: F1‑Card)
-8. **`MinInterFamilyDistance`** — (ratio [0,1] or metric units, polarity ↑, scope=portfolio, DistanceDef@F1‑Card)
+7. **`FamilyCoverage`** — (count, polarity ↑, scope=declared retained set or portfolio, unit=families, provenance: F1‑Card)
+8. **`MinInterFamilyDistance`** — (ratio [0,1] or metric units, polarity ↑, scope=declared retained set or portfolio, DistanceDef@F1‑Card)
 9. **`AliasRisk`** —  (ratio [0,1], polarity ↓, diagnostic; drop if dSig ≥3/5 characteristics collide)
 10. **`U.DomainDiversitySignature (dSig)`** — 5‑tuple over discrete characteristics **[Sector, Function, Archetype, Regime, MetricFamily]**  attached to each `U.BoundedContext`. Used for **Near‑Duplicate** diagnostics and `AliasRisk`. Policy: flag as Near‑Duplicate when ≥3 characteristics match; see F.1 invariants and SCR‑F1‑S08..S09. 
 11. **Note (AliasRisk binding).** `AliasRisk` MAY be computed using `dSig` collision diagnostics; a Context MUST declare the collision rule and policy id in DescriptorMap provenance when AliasRisk is reported.
@@ -32,10 +32,10 @@ This pattern exports **Characteristics** and measurement templates **only**. It 
   * **`U.CreativeEvaluation`** — a specialisation of `U.Evaluation` that yields a `U.CreativityProfile` and the Evidence Graph Ref.
   * **`EffortCost`** *(advisory)* — resource outlay to achieve the outcome; from WorkLedger (Resrc‑CAL). *(For normalization and planning; not itself “creativity.”)*
 
-* **Operators (first tranche):** `composeProfiles` (set → portfolio), `dominates` (partial order in space), `frontier` (Pareto set), `normaliseByEffort`. *(Formal laws introduced in Quarter 2.)*
-* **Relations (informative; not exported):** dominance relation (partial order in the space), frontier predicate (Pareto set), portfolio composition view. *C.17 exports no operators; these are mathematical relations only.*
+* **Operators (first tranche):** `composeProfiles` (set → declared retained-set profile), `dominates` (partial order in space), `frontier` (Pareto set), `normaliseByEffort`. *(Formal laws introduced in Quarter 2.)*
+* **Relations (informative; not exported):** dominance relation (partial order in the space), frontier predicate (Pareto set), retained-set composition view. *C.17 exports no operators and does not mint public set-surface heads; these are mathematical relations only.*
 * 
-> **Scope note.** This pattern **does not** define who is “a creative person.” It characterises **creative outcomes and episodes** as **observed in Work** and **expressed as Epistemes**. Agency (capacity to originate) is measured in **Agency‑CHR (C.9)**; here we measure **what came out** and **how it scores** against stated goals and references.  A **Context publishes** the measurement space and admissible policies; a **decision is made by an agentic system in role**, using a named lens within that space. CHR exports **no Γ‑operators** and **no team workflow rules**.
+> **Scope note.** This pattern **does not** define who is “a creative person.” It characterises **creative outcomes and episodes** as **observed in Work** and **expressed as Epistemes**. Agency (capacity to originate) is measured in **Agency‑CHR (C.9)**; here we measure **what came out** and **how it scores** against stated goals and references.  A **Context publishes** the measurement space and admissible policies; later choice is attributed to a declared `DecisionSubject` at explicit `DecisionSubjectGranularity`, using a named lens within that space. CHR exports **no Γ‑operators** and **no team workflow rules**.
 
 ### C.17:1 - Motivation & Intent (manager’s read‑first)
 
@@ -48,7 +48,7 @@ This pattern exports **Characteristics** and measurement templates **only**. It 
 1. **Score** a design/code/theory change on **Novelty–Value–Surprise–ConstraintFit** with declared references and models.
 2. **Compare** options in a **Pareto sense** (no single magic score forced).
 3. **Consider** constraints as a **coordinate** in the space; compare options on **frontiers** while keeping Context for high‑novelty options
-4. **Track** a portfolio’s **Diversity** to avoid local maxima and groupthink.
+4. **Track** the declared retained set’s **Diversity_P** to avoid local maxima and groupthink.
 5. **Defend** decisions with an auditable **CreativeEvaluation** that cites **what was new relative to which base**, **how value was measured**, and **why this counts here**.
 
 
@@ -175,7 +175,7 @@ Each characteristic is specified per **MM‑CHR (C.16)** with: **name**, **inten
 * **Scope.** Constraints are **context‑local**; Cross‑context requires **Bridge**; waivers are **SpeechAct Work** with RSG gates (A.2.5).
 * **Interpretation note.** Low `ConstraintFit` signals tension with declared **must‑constraints** and warrants reframing or redesign; **this pattern does not prescribe go/no‑go rules**.
 
-#### C.17:5.5 - `Diversity_P` *(portfolio‑level)* — “Are we exploring the space?”
+#### C.17:5.5 - `Diversity_P` *(declared retained-set / portfolio-level)* — “Are we exploring the space?”
 
 * **Intent.** At the **set** level, avoid myopic exploitation; promote **coverage**.
 * **Carrier.** A **set** of outcomes.
@@ -188,8 +188,8 @@ Each characteristic is specified per **MM‑CHR (C.16)** with: **name**, **inten
 * **Marginal gain (for generators)** — normative. For a candidate h and current set S, ΔDiversity_P(h | S) := Diversity_P(S ∪ {h}) − Diversity_P(S). Contexts using NQD SHALL compute D as this marginal and publish the Diversity_P definition alongside the CharacteristicSpace/kernel and TimeWindow.
 
 **Heterogeneity Characterisation**
-* FamilyCoverage  (polarity ↑) — count of distinct domain‑families covered by a portfolio/triad; unit: families; window: declared.
-* MinInterFamilyDistance (polarity ↑) — min distance between selected families in DescriptorMap; unit: per DistanceDef; window: declared.
+* FamilyCoverage  (polarity ↑) — count of distinct domain‑families covered by a declared retained set, portfolio, or triad; unit: families; window: declared.
+* MinInterFamilyDistance (polarity ↑) — min distance between selected families in DescriptorMap for that declared retained set, portfolio, or triad; unit: per DistanceDef; window: declared.
 * AliasRisk (polarity ↓) — collinearity/near‑duplicate risk indicator for contextual signatures; unit: score (0–1) with policy id.
 
 
@@ -239,7 +239,7 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 1. **Name the Context** *(context + edition)*.
 2. **Pick measurement defaults** *(kernel, prior, objective, constraints)* from the Context’s handbook.
 3. **Score outcome** → `Novelty@context`, `Use‑Value`, `Surprise`, `ConstraintFit`.
-4. **Decide by frontier**: shortlist **non‑dominated** options; use **ConstraintFit** as a gate; apply **policy** if a scalar is approved.
+4. **Decide by declared set surface**: identify the non-dominated `Front`; emit a `Shortlist` only through one named lens or policy when selector-facing publication is needed; use **ConstraintFit** as a gate; apply **policy** if a scalar is approved.
 5. **Record a CreativeEvaluation** with evidence; if crossing Contexts, attach the **Bridge id**.
 
 > **Mental check.** *New to our base? Helpful to our objective? Unexpected under our model? Safe & licenced?*
@@ -255,7 +255,7 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 *ValueGain.* +6.8% flow @ same power (bench Work).
 *Surprise.* 1.3 bits (within evolutionary trend prior).
 *ConstraintFit.* 1.0 (materials, safety, noise).
-*Decision.* **Frontier winner**: modest novelty, clear value, safe. Portfolio keeps **Diversity\_P** by also funding one high‑surprise concept for exploration.
+*Decision.* **Frontier-based choice**: modest novelty, clear value, safe. The retained exploration set keeps **Diversity\_P** by also funding one high‑surprise concept for exploration.
 
 **(b) Software architecture refactor)**
 *Outcome.* New concurrency model for ETL.
@@ -303,7 +303,7 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 * **State the objective.** Value without a KPI is a story.
 * **Publish priors.** Surprise needs a trained model with cards.
 * **Gate by musts.** `ConstraintFit` < 1 blocks enactment unless waived.
-* **Prefer frontiers.** Shortlist non‑dominated options; let governance decide trade‑offs.
+* **Prefer frontiers.** Identify non-dominated options on the declared `Front`; emit a `Shortlist` only through one named lens or policy when publication needs that head.
 * **Bridge explicitly.** Cross‑context talk needs CL and loss notes.
 
 ### C.17:12 - CSLC recap and the Creativity CharacteristicSpace
@@ -325,7 +325,7 @@ The core **characteristics** below are **kernel‑portable** names; Contexts **s
 | **Use‑Value**            | Benefit vs a **declared objective**                          | Artifact / Evaluation | Ordinal (Fail/Partial/Pass) or scalar KPI          | `B.3` Evidence & `U.Evaluation`      |
 | **Surprise**             | Unexpectedness under the Context’s **GenerativePrior**          | Artifact              | bits or nats (−log‑likelihood)                     | Prior cards & calibration            |
 | **ConstraintFit**        | Degree of **must‑constraints** satisfied while exploring     | Work / Artifact       | % satisfied (0–100)                                | `Norm‑CAL` + step guards             |
-| **Diversity_P**          | Portfolio **coverage/dispersion** (incl. coverage map view)  | Set of artifacts      | Set‑functional; coverage index                     | `Γ_ctx` fold + USM ClaimScopes       |
+| **Diversity_P**          | Declared retained-set **coverage/dispersion** (incl. coverage map view)  | Set of artifacts      | Set‑functional; coverage index                     | `Γ_ctx` fold + USM ClaimScopes       |
 | **AttributionIntegrity** | Lawful & transparent **provenance/licensing**                | Artifact + provenance | \[0,1]                                              | PROV + Norm‑CAL                      |
 
 > **Locality.** **Every characteristic is context‑local** (e.g., **Novelty\@context**). Cross‑context claims **must** use a **Bridge** and record **CL** penalties (B.3). No global novelty.
@@ -341,7 +341,7 @@ The following **context‑local** characteristics remain available but are **not
 * **Time‑to‑First‑Viable** — elapsed time to first **Use‑Value = Pass** (work; duration).
 * **Risk‑BudgetedExperimentation** — planned vs realized exploration share (workplan vs work; ratio; policy gate).
 
-> **Compatibility note.** This split removes duplicate “core lists” and aligns C.17 with **B.5.2.1 NQD** and **C.16/A.17–A.18**: the **kernel nucleus** captures creativity *qualities*; the items above instrument **process/policy** or **portfolio shaping**.
+> **Compatibility note.** This split removes duplicate “core lists” and aligns C.17 with **B.5.2.1 NQD** and **C.16/A.17–A.18**: the **kernel nucleus** captures creativity *qualities*; the items above instrument Work, policy, or declared retained-set shaping without renaming `Front`, `Archive`, or `Shortlist`.
 
 #### C.17:12.3 - Scale choices (CSLC discipline)
 
@@ -451,7 +451,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 #### C.17:14.1 - Guard‑rails (normative)
 
 * **G‑1 Paired appraisal.** **Never** assess **Novelty** in isolation; pair it with **Use‑Value** or **ConstraintFit** to avoid proxy myopia
-* **G‑2 Frozen references.** Novelty requires **frozen corpus + encoder**; changes create a **new edition** and **RSCR** rerun. Portfolio/selection heuristics are **policy-level** (see **C.19**); do not “reward” Illumination beyond its role as a report-metric.
+* **G‑2 Frozen references.** Novelty requires **frozen corpus + encoder**; changes create a **new edition** and **RSCR** rerun. Portfolio-publication / selection heuristics are **policy-level** (see **C.19**); do not “reward” Illumination beyond its role as a report-metric.
 * **G‑3 Time‑lag sanity.** Include a **post‑fact check** (e.g., 30–90‑day retention or cost‑to‑serve delta) before celebrating “creative wins.”
 * **G‑4 Exploration budget.** Tie **DiversityOfSearch** to **Risk‑BudgetedExperimentation**; flag overspend.
 * **G‑5 No ordinal averaging.** Do not average **ordinal** scales; use distributions/medians or convert only under declared models.
@@ -524,7 +524,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 #### C.17:16.1 - Software (algorithmic/architectural ideation)
 
 **Kernel characteristics (↑/↓/gate).**
-Novelty↑ (algorithmic / compositional), Use‑Value↑ (targeted user/job metric), ConstraintFit=gate (resource/latency envelope), Cost‑to‑Probe↓ (hours to runnable spike), Evidence‑Level↑ (tests/benchmarks confidence), Option‑Value↑ (paths unlocked), RegretRisk↓ (blast radius if wrong).
+Novelty↑ (algorithmic / compositional), Use‑Value↑ (targeted user/job metric), ConstraintFit=gate (resource/latency envelope), Cost‑to‑Probe↓ (hours to runnable spike), Evidence‑Level↑ (tests/benchmarks confidence), Option‑Value↑ (paths unlocked), RegretRisk↓ (scope of adverse impact if wrong).
 
 **Priors.**
 
@@ -565,17 +565,33 @@ Novelty↑ (institutional), Use‑Value↑ (measurable social/operational effect
 * Changes to the space (**scales, eligibility conditions, operators**) are handled by **RSCR**, so decisions are **explainable over time**.
 * The **Context handbooks** are a **thinking OS**: one screen to start ideating without importing tool stacks or management playbooks.
 
+### C.17:17.1 - Cross-level characteristics need one visible distortion account
+
+- Cross-level talk should state what characteristics are being preserved, aggregated, projected, or lost when the line moves between levels such as organism, species, population, or ecosystem.
+- `BridgeDistortionNote` is the explicit warning that one bridge, aggregation, or projection changes what can be compared directly.
+- A distortion note does not cancel the declared `Front`, `Archive`, or `Shortlist`; it says how far one cross-level reading can be trusted without further qualification.
+- When one retained set, frontier view, or transition path is projected into one atlas-like reading, keep the distortion note near that projection instead of leaving the loss to implication.
+- If that projection also depends on one declared `OutcomeMapRef` or `TransitionSupportRef`, cite that support next to the distortion note so the reader can see both why the projection is useful and where it stops being faithful.
+- Different atlas-like projections over the same retained set or frontier may preserve different characteristics; keep those differences visible instead of treating one cross-level view as information-preserving by default.
+- This lets the line say both `the bridge is useful` and `the bridge is not information-preserving in every respect`.
+
+### C.17:17.2 - `Use-Value` is not the whole `Q-set` by default
+
+- `Use-Value` may be one member of a declared `Q-set`, but it is not the whole `Q-set` by default.
+- When creativity or novelty characteristics stay outside the declared `Q-set`, keep that placement visible as tie-breaker, telemetry, archive-retention reason, or explicitly promoted criterion under policy.
+- Do not let `Use-Value` language silently promote `Novelty@context`, `DeltaDiversity_P`, `Surprise`, or `IlluminationSummary` into current dominance.
+
 ### C.17:18 - Relations
 
 * **Builds on**: B.1 Γ‑algebra (WLNK/COMM/IDEM/MONO), B.3 Trust & Assurance (F–G–R, CL), A.2.6 USM (Claim/Work scopes), A.10 Evidence Graph Referring.
-* **Coordinates with**: A.2 Role suite (Observer/Evidence roles for probes), A.15 (Work & plans for probes), C.16 MM‑CHR (scale polarity & units). **C.18 NQD-CAL** (generation/illumination operators Γ_nqd.\*) and **C.19 E/E-LOG** (policies, selection, and portfolio rules). This CHR remains measurement-only.
+* **Coordinates with**: A.2 Role suite (Observer/Evidence roles for probes), A.15 (Work & plans for probes), C.16 MM‑CHR (scale polarity & units). **C.18 NQD-CAL** (generation/illumination operators Γ_nqd.\*) and **C.19 E/E-LOG** (policies, selection, and declared retained-set rules). This CHR remains measurement-only.
 * **Defers to**: F.9 Bridges for Cross‑context transfers; D‑cluster for ethical/speech‑act gates.
 
 ### C.17:19 - Quick reference cards (tear‑out)
 
 * **Dominance test**: apply **signs** + **eligibility conditions** + **trust**; then partial order.
 * **Frontier use**: **show frontier** + **name the lens** that picked your choice.
-* **Portfolio policy**: keep `ExploreShare` and `WildBetQuota`; set `BackstopConfidence`; rebalance on cadence.
+* **Retained-set policy**: keep `ExploreShare` and `WildBetQuota`; set `BackstopConfidence`; rebalance on cadence.
 
 ### C.17:20 - Conformance Checklist (pattern‑level, normative)
 
@@ -590,8 +606,8 @@ Each CS dimension **SHALL** be a named **Characteristic** per **MM‑CHR**, with
 **CC‑C17‑3 (Profile ≠ plan).**
 A **Profile** is a *state description over characteristics* (what the option *is* in CS); a **Plan** or **Method** is *how you will act*. Never encode choices or schedules into the profile.
 
-**CC‑C17‑4 (Portfolio = set + rule).**
-A **Portfolio** is a set of candidate profiles **plus** a selection rule (objective + constraints) declared *in the same Context*. Presenting only a scatterplot is non‑conformant.
+**CC‑C17‑4 (Portfolio / retained-set view = set + rule).**
+A **Portfolio** or retained-set view is a declared set of candidate profiles **plus** a selection or retention rule (objective + constraints) declared *in the same Context*. It is not a synonym for `Palette`, `Front`, `Archive`, `Shortlist`, or `RankedShortlist`; use the specific set-surface head when that head is recoverable. Presenting only a scatterplot is non‑conformant.
 
 **CC‑C17‑5 (Dominance operator well‑typed).**
 A dominance claim **MUST** name the **characteristic subset and polarity** under which it is evaluated. Dominance on incomparable scales (or mixed polarities without explicit transformation) is invalid.
@@ -600,7 +616,7 @@ A dominance claim **MUST** name the **characteristic subset and polarity** under
 A **Frontier** (Pareto or constraint‑bound) **SHALL** be computed from the declared selection rule; drawing a “nice hull” by eye fails conformance.
 
 **CC‑C17‑7 (Search–Exploit as **dynamics**, not policy dogma).**
-Exploration/exploitation **MUST** be expressed as a **dynamics on the portfolio measure(s)** (e.g., exploration share as a function of marginal value of information), *not* as a prescriptive budget recipe. (Design‑time statements belong to Decsn‑CAL; see §C.17.16.)
+Exploration/exploitation **MUST** be expressed as a **dynamics on the declared retained-set measure(s)** (e.g., exploration share as a function of marginal value of information), *not* as a prescriptive budget recipe. Objective, constraint, and decision-policy statements belong to Decsn‑CAL / C.19; C.17 may cite them, but does not own or restate them.
 
 **CC‑C17‑8 (Evidence Graph Referring for scores).**
 Any numeric score in a profile **MUST** cite its **MeasurementTemplate** (MM‑CHR) and the **observation/evaluation** that yielded it. No anonymous numbers.
@@ -615,7 +631,7 @@ Comparisons across iterations **MUST** state `TimeWindow` (snapshot window) and 
 If a composite “creativity index” is used, its **aggregation algebra** (weights, monotone transforms) **MUST** be declared; the primitive characteristics remain queryable.
 
 **CC‑C17‑12 (Work stays on Work).**
-Resource/time actuals and run logs live on `U.Work`; CS never carries actuals. We reason **about** profiles/portfolios; we do not audit operations here.
+Resource/time actuals and run logs live on `U.Work`; CS never carries actuals. We reason **about** profiles / retained sets; we do not audit operations here.
 
 
 ### C.17:21 - Worked‑Context Handbooks (concept cards, not runbooks)
@@ -652,10 +668,10 @@ These cards are *conceptual fixtures*; **Tooling** may implement them, **Pedagog
 ### C.17:22 - Placement sanity‑check across the pattern language *(avoid scope creep)*
 
 * **MM‑CHR (C.16):** defines **Characteristic/Scale/Unit/Measure** and the *characterisation discipline*. **All** CS dimensions live there; C.17 **uses** them, never re‑defines scales.
-* **A.CHR‑SPACE (A.19):** exports **CharacteristicSpace & Dynamics hooks**; C.17 is a **Contexted specialisation** for creative reasoning (profiles/portfolios/selection).
+* **A.CHR‑SPACE (A.19):** exports **CharacteristicSpace & Dynamics hooks**; C.17 is a **Contexted specialisation** for creative reasoning (profiles / retained sets / selection).
 * **Decsn‑CAL (C.11):** hosts **objective functions, constraints, preference orders, utility proofs**, and the **search–exploit dynamics** as decision policies. C.17 only **names** the hooks (objective, rule), keeps policy math out.
 * **KD‑CAL (C.2) & B.3 (Trust):** carry **evidence provenance**, **assurance** and **congruence penalties (CL)** for Cross‑context reuse. C.17 requires anchors; it does not invent confidence calculus.
-* **Compose‑CAL (C.13):** governs **set/union/slice** aggregation; the portfolio set is a **Γ\_m.set** over profiles; frontier is derived **without** ad‑hoc geometry.
+* **Compose‑CAL (C.13):** governs **set/union/slice** aggregation; a declared retained set is a **Γ\_m.set** over profiles; frontier is derived **without** ad‑hoc geometry.
 * **B.4 Canonical Evolution Loop:** where *Run→Observe→Refine→Deploy* sits. C.17 supplies the **view** in which refinement is judged.
 
 **Out of scope here:** team staffing, budgeting workflows, data‑governance procedures, ticket states, any “how to manage people”. This pattern organises **thought**, not **teams**.
@@ -679,7 +695,7 @@ These cards are *conceptual fixtures*; **Tooling** may implement them, **Pedagog
 * **Evidence Graph Ref** (Observation/Evaluation ids)
 * **Notes** (bridges used, CL penalties)
 
-**(2) Portfolio‑with‑Rule Card**
+**(2) Declared Set-with-Rule Card**
 
 * **Set of candidate profiles (refs)**
 * **Objective & constraints** (Decsn‑CAL pointer)
@@ -719,3 +735,5 @@ These cards are **thinking scaffolds**; they do not prescribe org process.
 * **Learning‑to‑rank vs measurement:** what minimal evidence suffices to treat an ordinal characteristic as interval for the purpose of frontier estimation?
 
 ### C.17:End
+
+---

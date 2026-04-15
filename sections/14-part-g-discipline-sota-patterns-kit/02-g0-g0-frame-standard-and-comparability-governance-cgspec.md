@@ -8,7 +8,7 @@
 
 ### G.0:1 - Problem frame
 
-A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measurement, decision quality, architecture trade‑offs, or portfolio selection). Downstream mechanisms (G.1–G.5 and beyond) must compare, aggregate, and publish CHR‑typed observations in ways that are:
+A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measurement, decision quality, architecture trade‑offs, or selected-set publication). Downstream mechanisms (G.1–G.5 and beyond) must compare, aggregate, and publish CHR‑typed observations in ways that are:
 
 * lawful with respect to measurement legality (scale/unit/polarity constraints),
 * auditable with explicit evidence minima and provenance,
@@ -257,15 +257,15 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 * exposes crossing pins (bridge ids + CL/policy ids) when reuse across rigs is attempted,
 * publishes the pinned editions so parity/refresh can detect drift.
 
-#### G.0:5.2 - Archetype 2: Epistemic comparability for portfolio selection across traditions
+#### G.0:5.2 - Archetype 2: Epistemic comparability for selected-set publication across traditions
 
-**Tell.** A team selects an R&D portfolio using multiple evaluation traditions: safety assurance, cost models, and readiness heuristics.
+**Tell.** A team selects an R&D set using multiple evaluation traditions: safety assurance, cost models, and readiness heuristics.
 
 **Show (failure without CG‑Spec).** The team collapses partial orders into a single score, hides the threshold policy in code, and cannot explain why cross-tradition penalties changed between runs.
 
 **Show (repair with CG‑Spec).** A conformant `CG‑Spec`:
 
-* defines a comparator portfolio (e.g., Pareto dominance + explicit lexicographic tiebreaks where lawful),
+* defines a comparator bundle (e.g., Pareto dominance + explicit lexicographic tiebreaks where lawful),
 * pins `CNSpecRef.edition` and the editioned segments (`ComparatorSetRef.edition`, `SCPRef.edition`, `MinimalEvidenceRef.edition`),
 * makes `AcceptanceStubs` explicit as templates while locating thresholds in CAL (G.4),
 * ensures RSCR triggers are emitted when comparator or policy pins change.

@@ -51,7 +51,7 @@ Without this formal framework, models suffer from a cascade of category errors:
 ### A.15:4 - Solution
 The solution is a stratified alignment that cleanly separates the `design-time` and `run-time` for contextual **enactment**. The bridge between these worlds is the **`U.RoleAssignment`**.
 
-### A.15:4.1 - The Core Entities: A Strict Distinction
+#### A.15:4.1 - The Core Entities: A Strict Distinction
 
 FPF mandates the use of the following distinct, non-overlapping entities to model action. Using them interchangeably is a conformance violation.
 
@@ -64,7 +64,7 @@ FPF mandates the use of the following distinct, non-overlapping entities to mode
 *   **`U.WorkPlan`:** An **`U.Episteme`** declaring **intended `U.Work` occurrences** (windows, dependencies, intended performers as role kinds, budgets) - see **A.15.2**.
 
 **B) The Bridge Entity:**
-*   **`U.RoleAssignment`:** The formal assertion `Holder#Role:Context` that links a specific `U.Holon` to a `U.Role` within a `U.BoundedContext`. This binding is what "activates" the requirements associated with a role.
+*   **`U.RoleAssignment`:** The formal assertion `Holder#Role:Context` that links a specific `U.Holon` to a `U.Role` within a `U.BoundedContext`. This holder-to-role assignment link is what "activates" the requirements associated with a role.
 
 **C) Run-Time Entity (The World of Actuality):**
 
@@ -90,7 +90,7 @@ This model can be easily understood using the analogy of a chef in a restaurant.
 
 Confusing these is like mistaking the cookbook for the souffle. FPF's framework simply makes these common-sense distinctions formal and mandatory.
 
-### A.15:4.2 - The Canonical Relations: Connecting the Layers
+#### A.15:4.2 - The Canonical Relations: Connecting the Layers
 
 The entities are connected by a set of precise, normative relations that form an unbreakable causal chain. The following diagram illustrates this flow from the abstract context down to the concrete execution.
 
@@ -132,6 +132,21 @@ _At run time, capability thresholds declared by the context/spec are **checked**
 
 This chain provides complete traceability: a specific instance of `U.Work` can be traced back to the `U.MethodDescription` that governed it, the `U.Method` it describes, and the `Agent` (`Holder` + `Role` + `Context`) that was authorized and responsible for its execution.
 
+#### A.15:4.3 - Bounded specialization scouting and `CheckpointReturn`
+
+When one human-plus-AI pair faces a new task family or candidate solution corridor, the governed work system may temporarily compose four distinct local roles inside the same dyad: a human-side `UtilityOwnerRole`, an `AIScoutRole`, an `AISpecialistProbeRole`, and a human-side `CommitAuthorityRole`. The payoff of the dyad is faster lawful specialization of the next move, not disappearance of the human decision surface.
+
+For this bounded burden, the pair should declare one utility target first, enumerate heterogeneous candidate approaches that may satisfy that target, spend a bounded scout or probe budget before any committed route is chosen, and return one `CheckpointReturn` that compares the tested approaches rather than silently treating one successful probe as a committed rollout. `A.15` owns this dyadic move and local role split only; it does not re-own the checkpoint-record semantics of `C.24` or the budget/guard enforcement of `E.16`.
+
+Every `CheckpointReturn` should carry:
+- the declared utility target and current `TaskFamily`
+- the candidate approaches actually tested
+- the evidence observed on each tested approach, including progress toward the named work-measure threshold and important failure signals
+- the budget already burned and the residual budget still available
+- the recommended next action: continue probing, commit, narrow, hand off, or stop
+- the exact commit trigger that would justify leaving the probe state
+
+Low-human-overlap approaches remain admissible here only while they stay tied to the declared utility target, budget guard rails, and evidence basis by value.
 ### A.15:5 - Archetypal Grounding
 
 The Contextual Action Framework is universal. It applies identically to the modeling of physical engineering processes, knowledge work, and socio-technical systems.
@@ -228,6 +243,9 @@ By creating this clean, stratified alignment for enactment, FPF provides a stabl
 
 **Local stance.** The load-bearing SoTA claim for this pattern is practical and narrow: contextual enactment remains reviewable only when role, method, plan, and work stay distinct enough that audits can tell whether the problem was in the assignment, the recipe, the schedule, the capability, or the run itself.
 
+**Claim 4.** Best-known current agentic work practice treats fast bounded specialization as a checkpointed scout/probe discipline rather than as a naked winner claim.
+
+**Practice / source / alignment / adoption.** Contemporary agentic tool-use, adaptive workflow, and human-in-the-loop governance practice separates bounded exploration from committed rollout because a successful probe is not yet a lawful route choice. In the working moment above, that is why the pair returns one `CheckpointReturn` with candidate approaches, evidence, burned and residual budget, and a commit trigger rather than only a winner label. This pattern **adopts** checkpointed scout/probe discipline, **adapts** it through the dyad-local roles and `CheckpointReturn`, and **rejects** the shortcut where an early probe silently becomes a committed rollout.
 ### A.15:12 - Relations
 
 *   **Directly Implements:** `A.7 Strict Distinction`.

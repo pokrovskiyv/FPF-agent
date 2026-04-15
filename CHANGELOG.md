@@ -2,8 +2,16 @@
 
 ## 2026-04-15
 
+### What's New
+- New analysis path for choosing between options under uncertainty: expected utility, value of information, and robustness to bad-case outcomes (Decision Theory)
+- Cleaner terminology for process-effectiveness questions — how to notice and close "non-quality-driven" gaps in how work actually happens
+- Broader skill triggers: `/fpf` now also fires for solo analysis work (spec review, trade-offs, survey of approaches), not just team-coordination problems
+- Specification preamble rewritten for clarity about what FPF is and why it matters
+- Refreshed search index: +37 indexed sections (226 vs. 189), coverage 93% vs. 78%, new dependency edges connect Decision Theory to comparison/selection routes
+
 ### All Changes
 - **chore**: broaden skill triggers to solo analysis + expand marketplace keywords
+- **chore**: sync upstream FPF-Spec (C.11 Decision Theory + NQD cleanup) and rebuild sections
 
 ## 2026-04-04
 

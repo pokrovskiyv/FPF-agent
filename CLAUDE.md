@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-The **First Principles Framework (FPF)** specification (~59,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
+The **First Principles Framework (FPF)** specification (~61,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
 
 - `FPF-Spec.md` — upstream monolith (source of truth, do not edit directly)
 - `sections/` — decomposed spec (~240 files), generated from the monolith

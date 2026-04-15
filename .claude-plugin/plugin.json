@@ -1,7 +1,7 @@
 {
   "name": "fpf",
   "description": "First Principles Framework — coordination patterns for specialists, teams, and AI agents. Invisible infrastructure: output is always plain language.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Vitaly Pokrovskiy"
   },

@@ -43,7 +43,7 @@ Each mechanism below owns its `U.Mechanism.Intension` card and assumes the measu
 3. **A.19.USCM** — scoring (SCP-first; no implicit UNM).
 4. **A.19.ULSAM** — lawful aggregation (explicit `Γ_fold`; ordinals are not averaged).
 5. **A.19.CPM** — comparison (set-valued outcomes; no silent scalarisation/totalisation).
-6. **A.19.SelectorMechanism** — selection kernel (set-returning; dominance/portfolio defaults are policy-bound).
+6. **A.19.SelectorMechanism** — selection kernel (set-returning; dominance/`PortfolioMode` defaults are policy-bound).
 
 **Step 6 — Specialization and reuse.**
 
@@ -63,7 +63,7 @@ This pattern is intentionally **not** a second semantic owner for CHR mechanisms
 - **Indicatorization vocabulary + admissibility** (UINDM artifacts: `IndicatorChoicePolicy`, `Indicator`, `IndicatorSet`, indicatorization as a policy step; “NCV ⇒ indicator” prohibition) are owned normatively by **A.19.UINDM**.
 - **Other CHR mechanism vocabulary referenced here** (e.g., scoring / aggregation / comparison / selection terms) is owned normatively by the corresponding mechanism‑owner pattern in the `A.19.<MechId>` family (e.g., `A.19.USCM`, `A.19.ULSAM`, `A.19.CPM`, `A.19.SelectorMechanism`).
 - **Evidence/calibration backing** for normalization is owned by **C.16 (MM‑CHR)**.
-- **CN‑frame surface wiring** (how CN‑Spec references normalization/comparability by fields/refs) is owned by **A.19.CN (CN‑Spec)**.
+- **CN‑Spec field/ref bindings** (`CN_Spec.normalization`, `CN_Spec.comparability.*`) are owned by **A.19.CN (CN‑Spec)**.
 - **Vocabulary extension rule.** If this pattern needs a new normalization / indicatorization / scoring / aggregation / comparison / selection term, it SHALL be introduced in the corresponding mechanism‑owner pattern first, then cited here (*Tell + Cite*). A.19 SHALL NOT mint new CHR‑mechanism vocabulary.
 
 **Terminology pointer (informative; do not duplicate).** When A.19 uses normalization or indicatorization terms below, it uses them *by reference* to **A.19.UNM** / **A.19.UINDM** and **C.16**. This pattern only constrains how such artifacts are **cited** when doing state‑space comparability, embeddings, and certification.
@@ -71,7 +71,7 @@ This pattern is intentionally **not** a second semantic owner for CHR mechanisms
 **Reader map (informative).**
 * If you need the **meaning** of `UNM`, `NCV`, `≡_UNM`, or `NormalizationFix` / `NormalizationFixSpec`: see **A.19.UNM**.  
 * If you need the **meaning** of `IndicatorChoicePolicy` / indicatorization: see **A.19.UINDM**.  
-* If you need the **CN‑Spec field/Ref wiring** (`CN_Spec.normalization`, `CN_Spec.comparability.*`): see **A.19.CN**.  
+* If you need the **CN‑Spec field/ref bindings** (`CN_Spec.normalization`, `CN_Spec.comparability.*`): see **A.19.CN**.  
 * If you need **evidence/calibration backing** for normalization or scoring legality: see **C.16 (MM‑CHR)**.  
 * If you need **cross‑context alignment mechanics**: see **F.9 (Alignment Bridge)** and the `Transport` discipline (A.6.1).
 
@@ -155,8 +155,7 @@ To ensure consistency and comparability, a CharacteristicSpace must obey the fol
 
 -   **A19-CS-1 (Exactly one per slot).** Each slot **binds exactly one** Characteristic to **exactly one** Scale (including a specific Unit or kind, if applicable). This mirrors the CSLC clause of “one aspect – one scale”: there are no ambiguous or compound mappings in a single slot. (If a Characteristic can be measured on multiple scales, only one is chosen for a given space; others would require separate slots or a different space.)
     
--   **A19-CS-2 (Named basis).** A CharacteristicSpace **SHALL** publish an ordered list of its slots as its **basis**. Each slot in the basis has a stable identifier (or key) that can be used in data structures or APIs. These basis names should be treated as technical identifiers (machine-readable tokens); any human-friendly alias or description for a slot should be provided only in the Plain register as a non-normative aid (per E.10). In short, the identity and order of slots in the space are explicit and stable.
- -   **A19-CS-2 (Named basis).** A CharacteristicSpace **SHALL** publish an ordered list of its slots as its **basis**. Each slot in the basis has a stable identifier (or key) that can be used in technical notations and interfaces. These basis names should be treated as stable technical tokens (identifier‑like); any human-friendly alias or description for a slot should be provided only in the Plain register as a non-normative aid (per E.10). In short, the identity and order of slots in the space are explicit and stable.
+-   **A19-CS-2 (Named basis).** A CharacteristicSpace **SHALL** publish an ordered list of its slots as its **basis**. Each slot in the basis has a stable identifier (or key) that can be used in technical notations, interfaces, data structures, or APIs. These basis names should be treated as stable technical tokens (identifier-like); any human-friendly alias or description for a slot should be provided only in the Plain register as a non-normative aid (per E.10). In short, the identity and order of slots in the space are explicit and stable.
     
 -   **A19-CS-3 (Immutability of meaning).** Once a space is in use, the meaning of each slot is fixed. A slot’s `(Characteristic, Scale)` pair **MUST NOT** be retroactively altered. If requirements change (e.g. a different scale or a revised definition of the Characteristic), one **MUST** define a new version of the space (or a new slot) rather than silently changing the existing one. When a space is versioned or a slot replaced, an explicit **embedding** (mapping from the old space to the new space) should be published to relate historical states to the new coordinates. This ensures past data remains interpretable and prevents semantic drift.
     
@@ -332,6 +331,18 @@ Canonical evaluation chain (notation‑neutral):
 
 **OP‑1 (Normative).** If `Align_B` is used in **gating**, the **Bridge used** and its **CL** **MUST** be declared in the assurance argument; the corresponding Φ(CL) penalty is applied per B.3. Silent cross‑context reuse is forbidden. (A.19 does not mandate any storage/ID scheme.)
 
+#### A.19:5.4 - Typed set views and optional neighboring transition-sensitive selection support
+
+- `TypedSetViews` name declared views over already declared set surfaces such as one palette, one front, one archive, or one shortlist.
+- A typed set view is one optional neighboring support for interpretation or shipping; it does not become a new public head for the set and it does not redefine the current minimal core burden by itself.
+- `SelectionSlot` still returns one selected set surface, and `Shortlist` remains the public head when a selected surface is emitted.
+- If one atlas-like reading uses several typed set views over the same source surface, each view should keep its active source surface and typed burden recoverable instead of speaking as though one default view already settles the whole family.
+- Use one `SpaceMetricRef` only when a comparison, neighborhood, spread, or crowding claim truly depends on one declared space metric or comparison rule.
+- Use one `TransitionSupportRef` only when the text must say how transition or trajectory relations behave across one declared level shift, normalization choice, or aggregation step. One covariance-style model is one admissible subtype of `TransitionSupportRef`, not the only one.
+- If one typed set view also cites `SpaceRef` or `OutcomeMapRef`, keep those refs as declared support for that view rather than as one new public set head.
+- If one selector or comparison reads one derived tradition view through one typed set view, keep the underlying declared source surface recoverable at the same time.
+- Different typed set views may coexist for the same source surface; keep that plurality visible rather than pretending one metric or transition formalism already settles every neighboring comparison.
+
 ### A.19:6 - Conformance Checklist (normative) — **CC‑A19**
 
 **Formality anchors & operational segregation (normative).** A.19 aligns with **C.2.3 Unified Formality Characteristic (F)**. The legacy tier labels **T0/T1/T2 are deprecated**; speak **F** directly and treat operations separately (see **E.10** for registers).
@@ -405,3 +416,5 @@ _The following are common modeling mistakes (“anti-patterns”) related to mea
     ✓ **Never alter historical assertions:** **Leave history as‑is.** If criteria change, issue new assertions under the new criteria going forward, and if needed, explicitly **version** the **NormalizationMethod/UNM** or checklist. Past assertions remain valid for the old version and their time; new ones apply henceforth. This ensures auditability and avoids erasing or rewriting what was true under earlier standards.
 
 ### A.19:End
+
+---

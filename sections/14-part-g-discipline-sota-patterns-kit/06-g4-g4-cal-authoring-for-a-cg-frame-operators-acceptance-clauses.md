@@ -20,9 +20,9 @@ A CG‑Frame has:
 
 * a declared `CG-FrameContext` (scope, described entity, plane),
 * a plurality of method traditions and claims (SoTA inputs), and
-* CHR‑typed measurement surfaces (`Characteristic/Scale/Coordinate` + legality guard macros).
+* CHR‑typed measurement constructs (`Characteristic/Scale/Coordinate` + legality guard macros).
 
-Before any run‑time selection, comparison, aggregation, or portfolio formation is executed downstream, the CG‑Frame needs an explicit, auditable **calculus layer (CAL)** that:
+Before any run‑time selection, comparison, aggregation, or selected-set formation is executed downstream, the CG‑Frame needs an explicit, auditable **calculus layer (CAL)** that:
 
 1. defines *what operators exist* and what they are allowed to do over CHR types,
 2. externalizes *fit‑for‑purpose acceptance* as typed predicates (with Context‑local thresholds), and
@@ -44,7 +44,7 @@ Teams repeatedly face drift and ambiguity in the calculus layer that sits betwee
 
 * **Expressiveness vs legality.** CAL must allow useful comparisons/aggregations while staying lawful under CHR typing and legality gates.
 * **Pluralism vs comparability.** Multiple method traditions must coexist without forcing premature unification, yet remain cross‑citable and auditable.
-* **Decision support vs auditability.** CAL must support selection and portfolio formation while preserving explicit, reviewable assumptions and proofs.
+* **Decision support vs auditability.** CAL must support selection and selected-set formation while preserving explicit, reviewable assumptions and proofs.
 * **Exploration vs assurance.** CAL must support exploratory regimes (probing, novelty, open‑ended search) without letting un‑assured outputs silently become dominance claims.
 * **Locality vs portability.** CAL must be Context‑local by default but prepared for explicit reuse via Bridges and published crossing bundles.
 
@@ -114,7 +114,7 @@ Notes (normative intent, routed semantics):
   * exposes unknown handling and failure behavior via policy pins.
 * `CAL.Flow[]` — legality‑checked compositions of operator cards:
 
-  * declares result kind (scalar only when lawful; set/portfolio when partial orders remain partial orders),
+  * declares result kind (scalar only when lawful; selected-set / set-surface when partial orders remain partial orders),
   * records which acceptance clauses gate which flows.
 * `CAL.EvidenceProfiles` — evidence wiring surface:
 
@@ -210,7 +210,7 @@ Each `CAL.Acceptance` is a UTS‑published predicate with:
 
 * which acceptance clauses gate the flow,
 * which operator outputs are decision‑relevant vs report‑only,
-* what the **result kind** is (scalar only where lawful; otherwise set/portfolio).
+* what the **result kind** is (scalar only where lawful; otherwise selected-set / set-surface).
 * any thinning/decision‑aid policy (e.g., ε‑front selection) as an explicit policy pin that **does not** silently replace the declared result kind.
 
 **C5 — Evidence wiring surface.**
@@ -350,17 +350,17 @@ CAL pack versions:
 
 ### G.4:5 - Archetypal Grounding
 
-**Tell.** A CG‑Frame must choose and justify a set of candidate methods (possibly a portfolio) under explicit legality, evidence, and scope constraints. CHR provides the typed measurement surface; CAL turns it into executable, auditable predicates and flows.
+**Tell.** A CG‑Frame must choose and justify a set of candidate methods (possibly a selected set or archive) under explicit legality, evidence, and scope constraints. CHR provides the typed measurement basis; CAL turns it into executable, auditable predicates and flows.
 
 **Show 1 (in‑context CAL pack skeleton).**
-Context: R&D portfolio choice. CHR defines `SafetyClass(ord↑)`, `CostUSD_2026(ratio↓)`, `Readiness(nominal)`.
+Context: R&D selected-set choice. CHR defines `SafetyClass(ord↑)`, `CostUSD_2026(ratio↓)`, `Readiness(nominal)`.
 
 * `CAL.Operator: DominatesPareto`
   Signature over CHR types, precondition references CHR guard macros.
 * `CAL.AcceptanceClause: AC_SafetyGate`
   Typed predicate binding `SafetyClass` (and its levels) with Context‑local thresholds; unknown handling uses tri‑state pins.
 * `CAL.Flow: Flow_ParetoPortfolio`
-  Produces a set/portfolio result kind; gates by `AC_SafetyGate` and `AC_Budget`.
+  Produces a selected-set result kind; gates by `AC_SafetyGate` and `AC_Budget`.
 * `CAL.EvidenceProfile: EP_SafetyEvidence`
   Declares anchor ids and freshness policy pins required for `SCR`.
 
@@ -448,7 +448,7 @@ CAL authoring is compatible with post‑2015 best practice families without conf
 
 * **Risk‑controlled acceptance**: modern conformal / selective / set‑valued prediction families where “abstain” is a first‑class, audited outcome (fits tri‑state gating + explicit calibration pins).
 * **Robust acceptance envelopes**: distribution‑shift‑aware and distributionally‑robust acceptance styles, expressed as policy‑pinned predicates rather than hidden heuristics.
-* **Modern multi‑objective practice**: preference‑aware, interactive, and set‑returning multi‑objective decision families that preserve partial orders and portfolios.
+* **Modern multi‑objective practice**: preference‑aware, interactive, and set‑returning multi‑objective decision families that preserve partial orders and selected sets.
 * **Quality‑Diversity after 2015**: archive‑based search families (e.g., CMA‑ME‑class) attach as wiring via edition‑pinned descriptor/distance/insertion artifacts.
 * **Open‑ended exploration after 2015**: environment‑method co‑evolution families (e.g., POET‑class) attach through explicit generator family wiring and policy‑bound acceptance branches.
 

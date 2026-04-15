@@ -130,10 +130,11 @@
     "status": "Stable",
     "keywords": [
       "novelty",
-      "quality‑diversity (NQD)",
-      "explore/exploit (E/E‑LOG)",
-      "portfolio (set)",
-      "illumination map (report‑only telemetry)",
+      "quality-diversity (NQD)",
+      "explore/exploit (E/E-LOG)",
+      "declared set surface",
+      "typed portfolio publication",
+      "illumination map as report-only telemetry",
       "parity run",
       "comparability",
       "ReferencePlane",
@@ -141,15 +142,15 @@
       "ParetoOnly default"
     ],
     "queries": [
+      "What terms must I publish when generating, selecting, or shipping a set surface?",
       "What is NQD in FPF?",
-      "How does FPF handle creative generation?",
-      "What is an explore-exploit policy in FPF?"
+      "How does FPF avoid single-winner bias in creative search?"
     ],
     "dependencies": {
       "builds_on": [
         "E.2",
         "A.5",
-        "C.17–C.19"
+        "C.17-C.19"
       ],
       "coordinates_with": [
         "E.7",
@@ -157,12 +158,13 @@
         "E.10",
         "F.17",
         "G.5",
-        "G.9–G.12"
+        "G.9-G.12"
       ],
       "constrains": [
-        "Any pattern/UTS row that describes a generator",
+        "any pattern/UTS row that describes a generator",
         "selector",
-        "or portfolio"
+        "declared set surface",
+        "or typed portfolio-publication / set-return publication"
       ]
     },
     "file": "sections/04-part-a-kernel-architecture-cluster/01-a0-a0-onboarding-glossary-nqd-eelog.md"
@@ -372,11 +374,25 @@
       "RSG",
       "role state",
       "enactability",
-      "lifecycle"
+      "lifecycle",
+      "readiness check",
+      "eligibility tracking",
+      "role lifecycle",
+      "definition of done",
+      "completion criteria",
+      "task readiness"
     ],
     "queries": [
       "How to model the state of a role?",
-      "What is a Role State Graph?"
+      "What is a Role State Graph?",
+      "How to track whether someone is ready and authorized to perform a task?",
+      "How to define when a role is active, suspended, or expired?",
+      "How to separate 'has the credential' from 'is fit to act right now'?",
+      "What does 'done' mean for a task or role?",
+      "Как отслеживать готовность и допуск человека к выполнению задачи?",
+      "Как определить когда роль активна, приостановлена или истекла?",
+      "Как разделить 'имеет допуск' и 'готов действовать прямо сейчас'?",
+      "Что значит 'готово' для задачи или роли?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1008,18 +1024,20 @@
     "status": "Stable",
     "keywords": [
       "relation precision restoration",
-      "under-specified relations",
+      "under-specified relational language",
       "RelationKind",
       "QualifiedRelationRecord",
+      "SlotSpec",
+      "change-class lexicon",
+      "A.6.B L/A/D/E routing",
+      "endpoint referential compression",
       "lexical guardrails",
-      "endpoint restoration",
       "language-state seam"
     ],
     "queries": [
-      "What is A.6.P in FPF?",
-      "How do I repair under-specified relation language?",
-      "How do A.6.Q and A.6.A relate to the RPR family?",
-      "When does a trigger word justify its own A.6.P specialization?"
+      "How do I repair an overloaded relation word without doing lexicon-only cleanup?",
+      "What makes a relation repair slot-explicit and boundary-routed?",
+      "When should a quality/action/sameness/wholeness trigger reroute to an RPR specialization?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1033,11 +1051,16 @@
         "F.18"
       ],
       "coordinates_with": [
+        "A.2.4",
         "A.2.6",
+        "A.7",
         "A.10",
+        "C.2.1",
+        "C.2.2a",
         "C.3.3",
         "E.17",
-        "F.9"
+        "F.9",
+        "F.17"
       ],
       "specialised_by": [
         "A.6.Q",
@@ -1540,19 +1563,25 @@
     "title": "The Agential Role & Agency Spectrum",
     "status": "Stable",
     "keywords": [
-      "agency",
-      "autonomy",
-      "AgentialRole",
-      "Agency-CHR",
-      "decision-making"
+      "agency as role",
+      "agency spectrum",
+      "contextual role assignment",
+      "autonomy grading",
+      "substrate-neutral autonomy"
     ],
     "queries": [
-      "How is agency modeled in FPF?",
-      "What is the agency spectrum?"
+      "How does FPF model agency without minting a `U.Agent` type?",
+      "How do I grade autonomy on an evidence-backed spectrum?"
     ],
     "dependencies": {
       "builds_on": [
-        "A.2"
+        "A.2",
+        "A.2.1",
+        "A.12"
+      ],
+      "informs": [
+        "C.9 Agency-CHR",
+        "E.16"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/07-a13-a13-the-agential-role-agency-spectrum.md"
@@ -1585,20 +1614,21 @@
     "title": "Role–Method–Work Alignment (Contextual Enactment)",
     "status": "Stable",
     "keywords": [
-      "enactment",
-      "alignment",
-      "plan vs reality",
-      "design vs run",
-      "MIC",
-      "WorkPlan"
+      "role-method-work split",
+      "`U.WorkPlan` vs `U.Work`",
+      "contextual enactment",
+      "checkpoint return",
+      "bounded specialization scouting"
     ],
     "queries": [
-      "How do roles, methods, and work connect?",
-      "How does an intention become an action in FPF?"
+      "How do role, method, plan, and work stay distinct in FPF?",
+      "How does bounded specialization scouting return a checkpoint instead of a silent rollout?"
     ],
     "dependencies": {
       "prerequisite_for": [
-        "all operational models"
+        "A.15.1-A.15.3",
+        "C.24",
+        "E.16"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/09-a15-a15-rolemethodwork-alignment-contextual-enactment.md"
@@ -1837,38 +1867,70 @@
     "status": "Stable",
     "keywords": [
       "CSLC",
-      "scale",
-      "level",
-      "coordinate",
-      "measurement Standard"
+      "Characteristic",
+      "Scale",
+      "Level",
+      "Coordinate",
+      "polarity",
+      "ordinal vs cardinal scale",
+      "one-characteristic-one-scale rule",
+      "lawful comparability",
+      "no illegal averaging",
+      "measurement interpretability"
     ],
     "queries": [
-      "What is the CSLC Standard?",
-      "How to ensure measurements are comparable?"
+      "What must be declared before a value is interpretable?",
+      "When can two measurements be compared?",
+      "Why can ordinal labels not be averaged?"
     ],
     "dependencies": {
       "builds_on": [
         "A.17"
       ],
       "prerequisite_for": [
-        "all metric-based patterns"
+        "measurement",
+        "scoring",
+        "comparison",
+        "aggregation",
+        "and CHR mechanism patterns"
+      ],
+      "coordinates_with": [
+        "C.16",
+        "A.19",
+        "A.19.CN",
+        "G.0",
+        "B.3"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/18-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
   },
   "A.19": {
-    "title": "A.CHR-SPACE — CharacteristicSpace & Dynamics hook",
+    "title": "A.CHR-SPACE — CharacteristicSpace & Dynamics Hook",
     "status": "Stable",
     "keywords": [
-      "state space",
       "CharacteristicSpace",
-      "dynamics",
-      "state model",
-      "RSG"
+      "U.Dynamics.stateSpace",
+      "state trajectories",
+      "declared Characteristics and Scales",
+      "CSLC bundle",
+      "CN-Spec reading path",
+      "structural overlays",
+      "no lifecycle-stage drift",
+      "dynamics hook",
+      "multi-dimensional tracking",
+      "system condition",
+      "measurable properties"
     ],
     "queries": [
-      "How to define a system's state space?",
-      "How does FPF model change over time?"
+      "How do I declare the state space a dynamics model moves through?",
+      "How do Characteristics become a multi-coordinate state space?",
+      "How do I review CHR-enabled plans without reading every CHR mechanism first?",
+      "How to define all the measurable properties of a system in one place?",
+      "How to track a system's condition across multiple dimensions consistently?",
+      "How to avoid mixing incompatible units or scales when comparing system states?",
+      "Как определить все измеримые свойства системы в одном месте?",
+      "Как отслеживать состояние системы по нескольким параметрам одновременно?",
+      "Как избежать смешения несовместимых единиц или шкал при сравнении состояний?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1877,6 +1939,14 @@
         "A.2.5"
       ],
       "prerequisite_for": [
+        "CHR mechanisms and dynamics models that quantify over trajectories"
+      ],
+      "coordinates_with": [
+        "C.16",
+        "A.19.CN",
+        "A.19.CHR",
+        "G.0",
+        "E.18",
         "A.3.3"
       ]
     },
@@ -1899,13 +1969,22 @@
       "WLNK discipline",
       "conformance checklist",
       "SCR/RSCR harness",
-      "RSG admission hooks"
+      "RSG admission hooks",
+      "measurement governance",
+      "dashboard consistency",
+      "cross-team reporting"
     ],
     "queries": [
       "What is a CN-frame in FPF?",
       "How does CN-Spec govern comparability and normalization by reference?",
       "How do CN-frames use bridges and CL for cross-context reuse?",
-      "What are the conformance and regression checks for CN-frames?"
+      "What are the conformance and regression checks for CN-frames?",
+      "How to make sure different teams measure things the same way?",
+      "How to govern metrics so dashboards across departments are comparable?",
+      "How to prevent hidden changes in how numbers are calculated?",
+      "Как убедиться что разные команды измеряют показатели одинаково?",
+      "Как управлять метриками чтобы дашборды разных отделов были сравнимы?",
+      "Как предотвратить скрытые изменения в способе расчёта показателей?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2164,13 +2243,23 @@
       "`MinimalEvidence`",
       "“no hidden scalarization/totalization”",
       "Bridge+CL transport",
-      "penalties→`R_eff` only"
+      "penalties→`R_eff` only",
+      "choose between alternatives",
+      "evaluate options",
+      "framework selection",
+      "decision making"
     ],
     "queries": [
       "What is CPM in FPF?",
       "How does FPF compare two profiles lawfully?",
       "Why comparison outputs are set-valued?",
-      "How does CPM handle unknown evidence?"
+      "How does CPM handle unknown evidence?",
+      "How to compare two or more approaches fairly?",
+      "How to choose between competing alternatives for a project?",
+      "How to evaluate frameworks or tools against each other?",
+      "Как честно сравнить два или более подхода?",
+      "Как выбрать между конкурирующими вариантами для проекта?",
+      "Как оценить фреймворки или инструменты относительно друг друга?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2204,7 +2293,7 @@
     "keywords": [
       "selection kernel",
       "set-returning selection",
-      "portfolio set",
+      "selected set",
       "`SelectEligibility`",
       "tri-state guard (`pass|degrade|abstain`)",
       "no hidden thresholds",
@@ -2220,7 +2309,7 @@
     ],
     "queries": [
       "What is SelectorMechanism in FPF?",
-      "Why does selection return a portfolio set by default?",
+      "Why does selection return a selected set by default?",
       "How does SelectEligibility handle unknown or insufficient evidence?",
       "How does FPF prevent hidden thresholds and scalarization in selection?"
     ],
@@ -2766,15 +2855,15 @@
     "title": "Canonical Evolution Loop",
     "status": "Stable",
     "keywords": [
-      "evolution",
-      "run-observe-refine-deploy",
-      "continuous improvement",
-      "temporal duality",
-      "transformer"
+      "evolution loop",
+      "design/run feedback",
+      "observe-notice-stabilize-route",
+      "drift repair",
+      "open-ended evolution"
     ],
     "queries": [
-      "How do systems or epistemes evolve in FPF?",
-      "What is the canonical evolution loop?"
+      "How does FPF evolve a system or episteme without design-reality drift?",
+      "Where does pre-abductive routing sit in the canonical loop?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2791,17 +2880,15 @@
     "title": "Observe -> Notice -> Stabilize -> Route",
     "status": "Draft",
     "keywords": [
-      "observe",
-      "notice",
-      "stabilize",
-      "route",
       "routed cue set",
       "route plurality",
-      "pre-abductive seam"
+      "route selection",
+      "pre-abductive seam",
+      "task-family specialization route"
     ],
     "queries": [
-      "How do early cues become routed before abduction?",
-      "What is the observe-to-route seam in FPF?"
+      "How do weak cues become routed before endpoint ownership?",
+      "When should a cue become a routed cue set instead of an abductive prompt?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2812,7 +2899,8 @@
       "coordinates_with": [
         "B.5.2.0",
         "A.6.Q",
-        "A.6.A"
+        "A.6.A",
+        "C.22.1"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/18-b41-b41-observe-notice-stabilize-route.md"
@@ -2935,21 +3023,25 @@
     "status": "Draft",
     "keywords": [
       "abductive prompt",
-      "prompt readiness",
-      "anomaly",
-      "opportunity cue",
-      "rival-set",
-      "explanatory probe"
+      "prompt species",
+      "rival-set discipline",
+      "threshold crossing",
+      "explanation-ready cue"
     ],
     "queries": [
-      "What is an AbductivePrompt in FPF?",
-      "When is a routed cue ready to enter abduction?"
+      "When is a routed cue ready to enter abduction?",
+      "What prompt species does FPF distinguish before hypothesis work begins?"
     ],
     "dependencies": {
       "builds_on": [
         "B.4.1",
         "A.16",
         "C.2.2a"
+      ],
+      "coordinates_with": [
+        "A.6.P",
+        "A.6.A",
+        "A.6.Q"
       ],
       "used_by": [
         "B.5.2"
@@ -2961,24 +3053,36 @@
     "title": "Creative Abduction with NQD",
     "status": "Stable",
     "keywords": [
-      "NQD",
-      "novelty",
-      "quality",
-      "diversity",
-      "open-ended search",
-      "Pareto front",
-      "E/E-LOG"
+      "creative abduction",
+      "NQD binding",
+      "Γ_nqd.generate",
+      "Creativity-CHR",
+      "Q-front",
+      "declared Q components",
+      "retained exploration/archive evidence",
+      "Novelty@context",
+      "ΔDiversity_P",
+      "E/E-LOG",
+      "DecisionSubject note"
     ],
     "queries": [
-      "How to systematically generate creative ideas?",
-      "What is NQD in FPF?"
+      "How do I make abductive idea generation instrumented instead of ad-hoc?",
+      "How does B.5.2 delegate generation to C.18 and pool policy to C.19?",
+      "Why does creative abduction return a front/evidence set rather than one bundled winner?"
     ],
     "dependencies": {
       "builds_on": [
         "B.5.2",
+        "A.17",
+        "A.18",
         "C.17",
         "C.18",
         "C.19"
+      ],
+      "coordinates_with": [
+        "B.4",
+        "C.11",
+        "G.5"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md"
@@ -3071,7 +3175,7 @@
         "Resrc-CAL"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/18-c13-c13-constructional-mereology-composecal.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/18-c11-c11-decision-theory-decsn-cal.md"
   },
   "C.2": {
     "title": "KD‑CAL",
@@ -3691,25 +3795,46 @@
     "file": ""
   },
   "C.11": {
-    "title": "Decsn‑CAL",
-    "status": "Draft",
+    "title": "Decision Theory (Decsn‑CAL)",
+    "status": "Stable",
     "keywords": [
-      "decision",
-      "choice",
-      "preference",
-      "utility",
-      "options"
+      "decision theory",
+      "DecisionSubject",
+      "DecisionSubjectGranularity",
+      "OptionSet",
+      "comparison basis",
+      "ChoiceRule",
+      "ChoiceResult",
+      "PreferenceOrder",
+      "ValueOfInformation",
+      "ValueOfComputation",
+      "choose now",
+      "reject current set",
+      "probe again",
+      "reroute"
     ],
     "queries": [
-      "How does FPF model decision-making?",
-      "How to represent preferences and utility?"
+      "When should one choose now versus probe again?",
+      "What must be explicit before a choice among already-available options is lawful?",
+      "When is this really candidate generation, pool policy, execution planning, or selected-set publication instead?"
     ],
     "dependencies": {
       "builds_on": [
-        "A.13"
+        "A.6.P",
+        "A.6.5",
+        "A.13",
+        "C.9",
+        "A.18",
+        "A.19"
+      ],
+      "coordinates_with": [
+        "C.18",
+        "C.19",
+        "C.24",
+        "G.5"
       ]
     },
-    "file": ""
+    "file": "sections/08-part-c-kernel-extensions-specifications/18-c11-c11-decision-theory-decsn-cal.md"
   },
   "C.12": {
     "title": "ADR‑Kind-CAL",
@@ -3752,7 +3877,7 @@
         "A.14"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/18-c13-c13-constructional-mereology-composecal.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/19-c13-c13-constructional-mereology-composecal.md"
   },
   "C.14": {
     "title": "M‑Sys‑CAL",
@@ -3820,61 +3945,89 @@
         "A.18"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/19-c16-c16-measurement-metrics-characterization-mmchr.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/20-c16-c16-measurement-metrics-characterization-mmchr.md"
   },
   "C.17": {
     "title": "Creativity‑CHR — Characterising Generative Novelty & Value",
     "status": "Stable",
     "keywords": [
-      "creativity",
-      "novelty",
-      "value",
-      "surprise",
-      "innovation",
-      "ideation"
+      "Creativity-CHR",
+      "Novelty@context",
+      "Use-Value / ValueGain",
+      "Surprise",
+      "ConstraintFit",
+      "Diversity_P",
+      "Originality",
+      "ResourceEfficiency",
+      "MM-CHR measurement templates",
+      "ReferenceBase",
+      "evidence",
+      "portfolio composition"
     ],
     "queries": [
-      "How does FPF measure creativity?",
-      "What defines a novel idea?"
+      "How do I make a creativity claim measurable and evidence-bound?",
+      "Which characteristics distinguish novelty, value, surprise, constraint fit, diversity, originality, and resource efficiency?",
+      "How do creative outputs compose from individuals to portfolios?"
     ],
     "dependencies": {
       "builds_on": [
-        "CHR-CAL",
-        "MM-CHR"
+        "C.16",
+        "A.17",
+        "A.18",
+        "A.19"
       ],
       "coordinates_with": [
-        "NQD-CAL",
-        "E/E-LOG"
+        "B.5.2.1",
+        "C.18",
+        "C.19",
+        "C.9",
+        "B.3",
+        "B.4",
+        "F.5/F.18"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/20-c17-c17-characterising-generative-novelty-value-creativitychr.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/21-c17-c17-characterising-generative-novelty-value-creativitychr.md"
   },
   "C.18": {
     "title": "NQD‑CAL — Open‑Ended Search Calculus",
     "status": "Stable",
     "keywords": [
-      "search",
-      "exploration",
-      "hypothesis generation",
-      "novelty",
-      "quality",
-      "diversity (NQD)"
+      "NQD-CAL",
+      "Γ_nqd.generate",
+      "Γ_nqd.updateArchive",
+      "Γ_nqd.illuminate",
+      "Γ_nqd.selectFront",
+      "DescriptorMapRef",
+      "DistanceDefRef",
+      "NQDArchive",
+      "CandidateSet",
+      "Front vs ExplorationArchive",
+      "IlluminationSummary report-only telemetry",
+      "EmitterPolicyRef",
+      "InsertionPolicyRef",
+      "provenance editions"
     ],
     "queries": [
-      "How does FPF support structured brainstorming?",
-      "What is NQD search?"
+      "How does FPF run open-ended search without illegal scalarization?",
+      "What is the difference between a front and an exploration archive?",
+      "What provenance must an NQD generation call publish?"
     ],
     "dependencies": {
       "builds_on": [
-        "KD-CAL"
+        "C.16",
+        "C.2",
+        "A.17-A.19"
       ],
       "coordinates_with": [
         "B.5.2.1",
-        "Creativity-CHR",
-        "E/E-LOG"
+        "C.17",
+        "C.19",
+        "G.5",
+        "G.6",
+        "G.11"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/21-c18-c18-openended-search-calculus-nqdcal.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/22-c18-c18-openended-search-calculus-nqdcal.md"
   },
   "C.18.1": {
     "title": "SLL — Scaling‑Law Lens (binding)",
@@ -3906,57 +4059,76 @@
         "G.10"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/22-c181-c181-scalinglaw-lens-binding-sll.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/23-c181-c181-scalinglaw-lens-binding-sll.md"
   },
   "C.19": {
-    "title": "E/E‑LOG — Explore–Exploit Governor",
+    "title": "Explore–Exploit Governor (E/E‑LOG)",
     "status": "Stable",
     "keywords": [
       "explore-exploit",
-      "policy",
-      "strategy",
-      "decision lens",
-      "portfolio management"
+      "live candidate pool",
+      "pool-policy result",
+      "widen",
+      "keep frontier",
+      "narrow to subset",
+      "sunset line",
+      "reroute",
+      "EmitterPolicy",
+      "InsertionPolicy",
+      "lens id",
+      "dominance default routing",
+      "DecisionSubject clarification"
     ],
     "queries": [
-      "How to balance exploration and exploitation?",
-      "What is an EmitterPolicy?"
+      "How should one govern a still-live candidate pool?",
+      "When do I widen, keep frontier, narrow, sunset, or reroute?",
+      "How does pool policy stay separate from C.11 choice, C.24 planning, and G.5 publication?"
     ],
     "dependencies": {
       "builds_on": [
-        "Decsn-CAL"
+        "C.18",
+        "C.17",
+        "C.11",
+        "B.3",
+        "Compose-CAL"
       ],
       "coordinates_with": [
-        "NQD-CAL"
+        "C.24",
+        "G.5",
+        "G.9"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/23-c19-c19-exploreexploit-governor-eelog.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/24-c19-c19-exploreexploit-governor-eelog.md"
   },
   "C.19.1": {
-    "title": "BLP — Bitter‑Lesson Preference (policy)",
+    "title": "Bitter‑Lesson Preference (BLP)",
     "status": "Stable",
     "keywords": [
-      "general‑method preference",
-      "iso‑scale parity",
-      "scale‑probe",
-      "deontic override"
+      "Bitter Lesson",
+      "scale-audit",
+      "BLP-waiver",
+      "α/δ tolerances",
+      "task-family specialization"
     ],
     "queries": [
-      "What is the default policy when a domain‑specific trick competes with a scalable general method?"
+      "When may a narrower method beat a scalable one in FPF?",
+      "How does BLP stay compatible with bounded task-family specialization?"
     ],
     "dependencies": {
       "builds_on": [
         "C.19",
-        "C.24"
+        "C.24",
+        "B.3"
       ],
       "coordinates_with": [
         "G.5",
         "G.8",
         "G.9",
+        "G.11",
         "A.0"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/24-c191-c191-bitterlesson-preference-blp.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/25-c191-c191-bitterlesson-preference-blp.md"
   },
   "C.20": {
     "title": "Discipline‑CAL — Composition of U.Discipline",
@@ -3984,7 +4156,7 @@
         "C.23"
       ]
     },
-    "file": "sections/08-part-c-kernel-extensions-specifications/25-c20-c20-composition-of-udiscipline-disciplinecal.md"
+    "file": "sections/08-part-c-kernel-extensions-specifications/26-c20-c20-composition-of-udiscipline-disciplinecal.md"
   },
   "C.21": {
     "title": "Discipline‑CHR - Field Health & Structure",
@@ -4016,22 +4188,60 @@
     "file": "sections/08-part-c-kernel-extensions-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-graph.md"
   },
   "C.22": {
-    "title": "Problem‑CHR - Problem Typing & TaskSignature Binding",
+    "title": "Problem Typing & TaskSignature Assignment (Problem‑CHR)",
     "status": "Stable",
-    "keywords": [],
-    "queries": [],
+    "keywords": [
+      "Problem‑CHR",
+      "TaskSignature",
+      "TaskKind",
+      "ScopeSlice(G)",
+      "unknown handling",
+      "specialization anchor"
+    ],
+    "queries": [
+      "How does FPF bind a typed `TaskSignature` for lawful selection?",
+      "How does TaskSignature stay separate from method choice and specialization claims?"
+    ],
     "dependencies": {
       "builds_on": [
         "C.16",
-        "G.5",
-        "G.0"
+        "G.0",
+        "G.5"
       ],
       "coordinates_with": [
         "G.4",
+        "C.22.1",
         "C.23"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/03-c22-c22-reliability-r-in-the-fgr-triad.md"
+  },
+  "C.22.1": {
+    "title": "Task-family adaptation signature",
+    "status": "Stable",
+    "keywords": [
+      "adaptation signature",
+      "time-to-threshold",
+      "budget-to-threshold",
+      "prior exposure",
+      "corridor entry",
+      "stepping stone"
+    ],
+    "queries": [
+      "How do I publish a specialization claim on one task family honestly?",
+      "What fields make task-family adaptation comparable in `G.5` and `G.9`?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.22"
+      ],
+      "coordinates_with": [
+        "C.19.1",
+        "G.5",
+        "G.9"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/29-c221-c221-task-family-adaptation-signature.md"
   },
   "C.23": {
     "title": "Method‑SoS‑LOG — MethodFamily Evidence & Maturity",
@@ -4061,19 +4271,40 @@
     "file": "sections/08-part-c-kernel-extensions-specifications/05-c23-c23-unified-formality-characteristic-f.md"
   },
   "C.24": {
-    "title": "C.Agent-Tools-CAL — Agentic Tool-Use & Call-Planning",
+    "title": "Agentic Tool‑Use & Call‑Planning (C.Agent‑Tools‑CAL)",
     "status": "Stable",
-    "keywords": [],
-    "queries": [],
+    "keywords": [
+      "agential tool use",
+      "CallRouteDescription",
+      "CallPlan",
+      "CallGraph",
+      "CheckpointReturn",
+      "enactment budget",
+      "tool-call budget",
+      "stop/replan condition",
+      "budget and harm gates",
+      "BLP tolerances",
+      "route-vs-plan-vs-work distinction"
+    ],
+    "queries": [
+      "How do I plan lawful tool calls under budget and assurance?",
+      "When is the first output a CallPlan versus a CheckpointReturn?",
+      "How do I keep C.24 planning separate from C.11 choice, C.19 pool policy, and G.5 publication?"
+    ],
     "dependencies": {
       "builds_on": [
+        "A.15",
+        "B.3",
+        "E.3",
+        "E.5",
         "C.5",
         "C.18",
-        "C.19",
-        "B.3"
+        "C.19"
       ],
       "coordinates_with": [
+        "C.11",
         "G.5",
+        "G.6",
         "G.9"
       ]
     },
@@ -4974,32 +5205,31 @@
     "file": "sections/11-section-ei-the-fpf-constitution/21-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
   },
   "E.16": {
-    "title": "RoC-Autonomy: Budget & Enforcement",
+    "title": "RoC‑Autonomy Budget & Enforcement",
     "status": "Stable",
     "keywords": [
-      "autonomy",
-      "budget",
+      "autonomy budget",
       "guarded enactment",
-      "ledger",
-      "SoD",
-      "override",
-      "UTS"
+      "autonomy ledger",
+      "override speech act",
+      "scout/probe/commit checkpoint"
     ],
     "queries": [
-      "How is autonomy bounded and tested?",
-      "How are overrides enforced under SoD?"
+      "How does FPF make autonomy enforceable and auditable?",
+      "How do bounded specialization budgets stay separate from committed rollout?"
     ],
     "dependencies": {
       "builds_on": [
-        "E.8",
-        "E.10",
-        "**C.16 (MM‑CHR)**",
-        "**F.8 (Mint/Reuse)**",
-        "**E.18 (OperationalGate/GateCrossing)**",
-        "**A.21 (OperationalGate(profile)",
-        "GateFit)**",
-        "ties F.4/F.6/F.15/F.17",
-        "G.4/G.5/G.9"
+        "A.13",
+        "A.15",
+        "A.21",
+        "B.3"
+      ],
+      "coordinates_with": [
+        "C.24",
+        "G.4",
+        "G.5",
+        "G.9"
       ]
     },
     "file": "sections/11-section-ei-the-fpf-constitution/22-e16-e16-rocautonomy-budget-enforcement.md"
@@ -5422,8 +5652,19 @@
   "F.1": {
     "title": "Domain‑Family Landscape Survey",
     "status": "Stable",
-    "keywords": [],
-    "queries": [],
+    "keywords": [
+      "domain survey",
+      "field mapping",
+      "landscape analysis"
+    ],
+    "queries": [
+      "How to map out all the disciplines relevant to my project?",
+      "How do I avoid tunnel vision when different teams use different terminology?",
+      "What fields should I survey before unifying concepts across teams?",
+      "Как составить карту предметных областей для проекта?",
+      "Как избежать зацикленности на одном стандарте при анализе домена?",
+      "Какие области знаний нужно охватить перед объединением терминологии?"
+    ],
     "dependencies": {
       "builds_on": [
         "E.10.D1",
@@ -5447,12 +5688,21 @@
       "lexical unit",
       "normalization",
       "provenance",
-      "surface terms"
+      "surface terms",
+      "glossary building",
+      "vocabulary extraction",
+      "naming conventions"
     ],
     "queries": [
       "How to extract terminology from a standard?",
       "What is a local lexical unit?",
-      "How to handle synonyms within one domain?"
+      "How to handle synonyms within one domain?",
+      "How do I collect and standardize terms from a technical document?",
+      "How to create a consistent glossary for one team or domain?",
+      "How to stop people using the same word to mean different things?",
+      "Как собрать и упорядочить термины из технического стандарта?",
+      "Как создать глоссарий для одной команды или домена?",
+      "Как бороться с тем что одно слово значит разное в разных отделах?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5600,12 +5850,21 @@
       "type explosion",
       "reuse",
       "minting new types",
-      "parsimony"
+      "parsimony",
+      "concept reuse",
+      "new vs existing",
+      "type creation decision"
     ],
     "queries": [
       "When should I create a new U.Type?",
       "How to avoid creating too many roles?",
-      "Decision guide for new concepts."
+      "Decision guide for new concepts.",
+      "When should I create a new concept instead of reusing an existing one?",
+      "How to avoid creating too many overlapping terms?",
+      "Decision guide: new term or reuse?",
+      "Когда создавать новое понятие, а когда переиспользовать существующее?",
+      "Как избежать создания слишком многих перекрывающихся терминов?",
+      "Руководство: новый термин или переиспользование?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5853,18 +6112,36 @@
     "title": "Local-First Unification Naming Protocol",
     "status": "Stable",
     "keywords": [
-      "naming protocol",
+      "local-first naming",
       "Name Card",
-      "local meaning",
-      "context-anchored naming"
+      "Context",
+      "Kind",
+      "Purpose/use-domain",
+      "Sense anchor",
+      "CandidateSet",
+      "NQD-front label candidates",
+      "head-term families",
+      "sense-seeds",
+      "UTS publication",
+      "lifecycle actions",
+      "Bridge talk"
     ],
     "queries": [
-      "What is the formal protocol for naming concepts?",
-      "What is a Name Card in FPF?"
+      "How do I name a concept without pretending the label is globally identical?",
+      "What fields belong on a Name Card?",
+      "How do NQD-front label candidates and sense-seeds discipline naming?"
     ],
     "dependencies": {
       "builds_on": [
-        "F.1-F.5"
+        "F.1-F.17"
+      ],
+      "coordinates_with": [
+        "F.17",
+        "F.9",
+        "E.10",
+        "A.6.P",
+        "G.6",
+        "G.10"
       ]
     },
     "file": "sections/13-cluster-fi-context-of-meaning-raw-material/20-f18-f18-localfirst-unification-naming-protocol.md"
@@ -5942,23 +6219,25 @@
     "status": "Stable",
     "keywords": [
       "generator chassis",
-      "six-card kit (M1–M6)",
+      "generator / selector / set-surface scaffold",
+      "six-card kit (M1-M6)",
       "`CGKitId` manifest",
       "`SoTA_SetId`",
       "`VariantPoolId`",
       "`ShortlistId`",
       "`CGFrameLibraryId`",
       "`RefreshReadinessCardId`",
+      "set-return selection",
+      "set-surface outcome",
       "UTS/Name Cards",
-      "RSCR wiring (typed trigger ids)",
+      "RSCR linkage surfaces",
       "edition pins",
-      "set-return portfolios",
       "shipping/refresh boundaries"
     ],
     "queries": [
-      "How to author a CG-Frame generator kit?",
-      "What is the six-card chassis M1–M6 in Part G?",
-      "How to wire harvesting (G.2), selection (G.5), and refresh (G.11) without shadow specs?"
+      "How do I author a reusable CG-Frame generator kit?",
+      "What belongs in the six-card chassis M1-M6?",
+      "How do G.2 harvesting, G.5 set-return selection, G.10 shipping, and G.11 refresh connect without becoming one method spec?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5980,20 +6259,22 @@
       "`SoTA_Set@CG-Frame`",
       "`SoTAPaletteDescription`",
       "`Tradition`",
-      "ClaimSheets",
       "CorpusLedger",
-      "PRISMA Flow Record",
+      "ClaimSheets",
+      "OperatorAndObjectInventory",
       "BridgeMatrix",
-      "describedEntity",
+      "`GammaEpistSynthId`",
+      "UTSProposals",
+      "FlowRecord",
+      "FamilyCoverageFloorK",
+      "RSCR harvest triggers",
       "micro-examples",
-      "hand-off manifests",
-      "RSCRTriggerKindId"
+      "hand-off manifests"
     ],
     "queries": [
       "How does FPF harvest and synthesize SoTA for a CG-Frame?",
-      "What is a SoTA Synthesis Pack@CG-Frame?",
-      "How to keep competing Traditions plural but comparable via bridges?",
-      "How to make SoTA harvest refreshable with pinned editions and typed RSCR causes?"
+      "What is the consumable SoTA Synthesis Pack@CG-Frame?",
+      "How do competing Traditions stay plural while bridgeable and refreshable?"
     ],
     "dependencies": {
       "builds_on": [
@@ -6010,7 +6291,7 @@
       ],
       "used_by": [
         "G.1",
-        "G.3–G.5",
+        "G.3-G.5",
         "G.10",
         "G.11"
       ]
@@ -6103,48 +6384,40 @@
     "file": "sections/14-part-g-discipline-sota-patterns-kit/06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md"
   },
   "G.5": {
-    "title": "Multi-Method Dispatcher & MethodFamily Registry",
+    "title": "Multi‑Method Dispatcher & MethodFamily Registry",
     "status": "Stable",
     "keywords": [
+      "method-family registry",
+      "generator-family registry",
       "dispatcher",
-      "selector",
-      "MethodFamily registry",
-      "GeneratorFamily registry",
-      "TaskSignature",
-      "set-return selection",
-      "portfolio (`Archive`/`Pareto`)",
-      "dominance regime",
-      "parity harness",
-      "UTS publication",
-      "evidence pins (PathId/PathSliceId)",
-      "typed RSCRTriggerKindId"
+      "SelectorOutcomeKind",
+      "selected-set publication",
+      "set-surface outcome",
+      "`Shortlist`",
+      "`RankedShortlist`",
+      "`ShortlistId`",
+      "`SpecialistHandoff`",
+      "abstain/escalation result",
+      "basis pins",
+      "no hidden scalar winner"
     ],
     "queries": [
-      "How does FPF dispatch among competing MethodFamilies without scalarising?",
-      "How are portfolios and parity runs made auditable and refreshable?"
+      "How does FPF dispatch among rival method families without hidden scalarization?",
+      "How do I publish a Shortlist or RankedShortlist honestly?",
+      "When does G.5 begin after C.11 choice, C.19 pool policy, or C.24 planning?"
     ],
     "dependencies": {
       "builds_on": [
         "G.Core",
         "G.0",
-        "A.19 (CN-Spec)",
-        "G.2",
-        "G.3",
-        "G.4",
+        "G.2-G.4",
         "G.6"
       ],
       "coordinates_with": [
-        "G.7–G.11",
-        "C.18 (NQD-CAL)",
-        "C.19 (E/E-LOG)",
-        "C.23 (Method-SoS-LOG)",
-        "A.15.3"
-      ],
-      "used_by": [
-        "G.1",
-        "G.8–G.12",
-        "G.10",
-        "G.11"
+        "C.11",
+        "C.19",
+        "C.24",
+        "G.9-G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md"
@@ -6256,7 +6529,7 @@
       "selector-facing bundle",
       "evidence path pins (`PathId/PathSliceId`)",
       "Bridge/CL/Φ policy pins",
-      "portfolio/archive telemetry",
+      "set-surface/archive telemetry",
       "RSCRTriggerKindId"
     ],
     "queries": [
@@ -6290,27 +6563,16 @@
     "title": "Parity / Benchmark Harness",
     "status": "Stable",
     "keywords": [
-      "parity",
-      "benchmark",
-      "harness",
-      "`ParityPlan@Context`",
-      "`ParityReport@Context`",
-      "pinned editions",
+      "parity harness",
+      "benchmark plan",
+      "adaptation parity",
       "freshness windows",
-      "`ComparatorSpecRef.edition`",
-      "baseline binding (`BaselineBindingRef`)",
-      "EvidenceTrace (`EvidenceGraphId`",
-      "`PathId`",
-      "`PathSliceId`)",
-      "GateCrossing visibility",
-      "set-return outcomes (portfolio/archive)",
-      "RSCR parity tests",
-      "cross-tradition parity via Bridge/CL/Φ pins"
+      "comparator pins",
+      "selected-set outcomes"
     ],
     "queries": [
-      "What is a parity run in FPF?",
-      "How to run a reproducible parity benchmark (pins, windows, editions)?",
-      "How to publish parity outcomes without hidden scalarisation?"
+      "How does FPF run reproducible parity with explicit pins and windows?",
+      "How do adaptation-speed and specialization claims become lawful parity burden?"
     ],
     "dependencies": {
       "builds_on": [
@@ -6318,12 +6580,7 @@
         "G.5",
         "G.6",
         "G.4",
-        "F.15",
-        "E.18",
-        "A.21",
-        "A.27",
-        "E.5.2",
-        "E.10"
+        "F.15"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/11-g9-g9-parity-benchmark-harness.md"
@@ -6333,38 +6590,38 @@
     "status": "Stable",
     "keywords": [
       "shipping",
-      "SoTA-Pack(Core)",
-      "pack boundary",
-      "publication surface",
+      "`SoTA-Pack(Core)`",
+      "pack-boundary owner",
+      "selector-ready publication surface",
       "`AuditPins`",
       "`MOOManifest`",
-      "`UTS` publication",
+      "`PortfolioRosterId`",
+      "UTS publication",
       "`PathId`/`PathSliceId`",
       "`CrossingBundle`",
       "edition pins",
       "telemetry pins",
       "RSCR wiring",
       "parity pins",
-      "notation-independent pack"
+      "notation-independent pack",
+      "no semantic respecification"
     ],
     "queries": [
-      "How does FPF ship a SoTA pack?",
-      "What is SoTA-Pack(Core) in Part G?",
-      "How do AuditPins and MOOManifest support replay and audit?",
-      "How are crossing bundles exposed during shipping?"
+      "How does FPF ship a SoTA pack without smuggling semantics?",
+      "What is SoTA-Pack(Core) as a pack rather than a kit or suite?",
+      "How do AuditPins, MOOManifest, path citations, and crossing bundles support replay and refresh?"
     ],
     "dependencies": {
       "builds_on": [
         "G.Core",
-        "F.17–F.18",
+        "F.17-F.18",
         "E.5.2",
         "E.18",
         "A.10",
         "A.15.3"
       ],
       "used_by": [
-        "selector-facing consumers (via G.5)",
-        "refresh orchestration (G.11)"
+        "selector-facing consumers via G.5 and refresh orchestration via G.11"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/12-g10-g10-sota-pack-shipping.md"
@@ -6444,7 +6701,7 @@
         "E.10"
       ],
       "coordinates_with": [
-        "G.5 (portfolio/set outputs)",
+        "G.5 (selector set-surface outputs)",
         "G.7 (crossings/CL/Φ_plane pins)",
         "G.8 (maturity ladder panel)",
         "G.10 (shipping inclusion)",

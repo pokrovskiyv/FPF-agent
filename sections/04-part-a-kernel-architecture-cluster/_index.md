@@ -1,21 +1,21 @@
 # Part A – Kernel Architecture Cluster
 
-- [A.0 - Onboarding Glossary (NQD & E/E‑LOG) (A.0)](01-a0-a0-onboarding-glossary-nqd-eelog.md)
-- [A.1 - Holonic Foundation: Entity → Holon (A.1)](02-a1-a1-holonic-foundation-entity-holon.md)
-- [A.1.1 - U.BoundedContext: The Semantic Frame (A.1.1)](03-a11-a11-uboundedcontext-the-semantic-frame.md)
-- [A.2 - Role Taxonomy (A.2)](04-a2-a2-role-taxonomy.md)
-- [A.2.1 - U.RoleAssignment: Contextual Role Assignment (A.2.1)](05-a21-a21-uroleassignment-contextual-role-assignment.md)
-- [A.2.2 — U.Capability (A.2.2)](06-a22-a22-ucapability.md)
-- [A.2.3 - U.PromiseContent (Promise Content) (A.2.3)](07-a23-a23-upromisecontent-promise-content.md)
-- [A.2.4 - U.EvidenceRole (A.2.4)](08-a24-a24-uevidencerole.md)
-- [A.2.5 - U.RoleStateGraph: The Named State Space of a Role (A.2.5)](09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md)
-- [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes (A.2.6)](10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md)
-- [A.2.7 - U.RoleAlgebra: In‑Context Role Relations (A.2.7)](11-a27-a27-urolealgebra-incontext-role-relations.md)
-- [A.2.8 - U.Commitment (Deontic Commitment Object) (A.2.8)](12-a28-a28-ucommitment-deontic-commitment-object.md)
-- [A.2.9 — U.SpeechAct (Communicative Work Object) (A.2.9)](13-a29-a29-uspeechact-communicative-work-object.md)
-- [A.3 - Transformer Constitution (Quartet) (A.3)](14-a3-a3-transformer-constitution-quartet.md)
-- [A.3.1 - U.Method (A.3.1)](15-a31-a31-umethod.md)
-- [A.3.2 - U.MethodDescription (A.3.2)](16-a32-a32-umethoddescription.md)
-- [A.3.3 - U.Dynamics (A.3.3)](17-a33-a33-udynamics.md)
-- [A.4 - Temporal Duality & Open‑Ended Evolution Principle (A.4)](18-a4-a4-temporal-duality-openended-evolution-principle.md)
-- [A.5 - Open‑Ended Kernel & Extension Layering (A.5)](19-a5-a5-openended-kernel-extension-layering.md)
+- [A.0 - Onboarding Glossary (NQD & E/E‑LOG) (A.0)](01-a0-a0-onboarding-glossary-nqd-eelog.md) — Day-one starter vocabulary for running a generate-and-select loop that returns a set of options, not a single “winner”.
+- [A.1 - Holonic Foundation: Entity → Holon (A.1)](02-a1-a1-holonic-foundation-entity-holon.md) — How to name the thing you’re reasoning about so part/whole relations don’t collapse across different fields.
+- [A.1.1 - U.BoundedContext: The Semantic Frame (A.1.1)](03-a11-a11-uboundedcontext-the-semantic-frame.md) — Keeping the same word from silently meaning different things in different teams, standards, or eras.
+- [A.2 - Role Taxonomy (A.2)](04-a2-a2-role-taxonomy.md) — Separating what something is from what it is currently doing or being used for in a given situation.
+- [A.2.1 - U.RoleAssignment: Contextual Role Assignment (A.2.1)](05-a21-a21-uroleassignment-contextual-role-assignment.md) — A uniform way to say who is being what, where, and when, without changing what the thing fundamentally is.
+- [A.2.2 — U.Capability (A.2.2)](06-a22-a22-ucapability.md) — Telling “can they do it” apart from “are they authorised to do it” and “did they do it before”.
+- [A.2.3 - U.PromiseContent (Promise Content) (A.2.3)](07-a23-a23-upromisecontent-promise-content.md) — Keeping what you advertise to customers separate from how you deliver it and what actually happened.
+- [A.2.4 - U.EvidenceRole (A.2.4)](08-a24-a24-uevidencerole.md) — Declaring that a document counts as evidence for a specific claim, in a specific scope, for a specific time window.
+- [A.2.5 - U.RoleStateGraph: The Named State Space of a Role (A.2.5)](09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md) — Distinguishing “has the badge” from “is ready to act right now” using explicit states like Ready, Calibrated, Suspended.
+- [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes (A.2.6)](10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md) — One mechanism for saying where a claim holds, where a capability applies, and where a publication is valid.
+- [A.2.7 - U.RoleAlgebra: In‑Context Role Relations (A.2.7)](11-a27-a27-urolealgebra-incontext-role-relations.md) — Rules for when one role can stand in for another, when two roles conflict, and when they must be held together.
+- [A.2.8 - U.Commitment (Deontic Commitment Object) (A.2.8)](12-a28-a28-ucommitment-deontic-commitment-object.md) — Making obligations and accountability explicit: who owes what, under which conditions, in which scope, with what adjudication.
+- [A.2.9 — U.SpeechAct (Communicative Work Object) (A.2.9)](13-a29-a29-uspeechact-communicative-work-object.md) — Treating approvals, authorizations, revocations, and notices as auditable acts, not attributes of documents.
+- [A.3 - Transformer Constitution (Quartet) (A.3)](14-a3-a3-transformer-constitution-quartet.md) — Fixing who acts, by what role, following which description, with which ability, producing what actual outcome.
+- [A.3.1 - U.Method (A.3.1)](15-a31-a31-umethod.md) — Describing how a transformation is done — as steps, functions, or constraints — without tying it to a specific person or run.
+- [A.3.2 - U.MethodDescription (A.3.2)](16-a32-a32-umethoddescription.md) — Treating code, SOPs, flowcharts, playbooks, and proofs as one thing: recorded instructions that can be swapped between notations.
+- [A.3.3 - U.Dynamics (A.3.3)](17-a33-a33-udynamics.md) — Describing how a system evolves over time, with or without intervention — separate from recipes and from what actually ran.
+- [A.4 - Temporal Duality & Open‑Ended Evolution Principle (A.4)](18-a4-a4-temporal-duality-openended-evolution-principle.md) — Keeping the plan separate from what actually happened, and making change a first-class, auditable event.
+- [A.5 - Open‑Ended Kernel & Extension Layering (A.5)](19-a5-a5-openended-kernel-extension-layering.md) — Why the core stays small and stable while new fields extend it through layered additions instead of rewrites.

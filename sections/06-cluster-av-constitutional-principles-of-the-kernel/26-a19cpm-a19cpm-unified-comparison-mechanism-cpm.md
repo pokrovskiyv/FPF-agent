@@ -39,7 +39,7 @@ CPM is the CHR comparison kernel: it compares two admitted profiles under an exp
   * does **not** select (“pick best”) — that is `SelectorMechanism`.
 * **Core safety commitments:** legality gate via `CG‑Spec.ComparatorSet` + `CG‑Spec.SCP` + CSLC; tri‑state admissibility (`pass|degrade|abstain`); unknown never coerces to “pass” or to a fabricated outcome; no silent scalarization/totalization.
 * **Where method details live:** in editions of `ComparatorSpec` and their SoTA wiring (Part G packs/extensions), not inside CPM’s kernel semantics.
-* **Quick rule of thumb:** if you need **numbers**, that’s `USCM`; if you need a **decision/portfolio**, that’s `SelectorMechanism`. CPM’s job is only: **compare → relation tokens**.
+* **Quick rule of thumb:** if you need **numbers**, that’s `USCM`; if you need a **selection / selected-set result**, that’s `SelectorMechanism`. CPM’s job is only: **compare → relation tokens**.
 
 ### A.19.CPM:1 - Problem frame
 
@@ -195,7 +195,7 @@ A program manager compares Supplier‑A vs Supplier‑B for a safety‑critical 
 
   * If Supplier‑A is better in cost but worse in defect rate and incomparable on assurance due to missing evidence, CPM does **not** invent “A wins” or “A loses”.
   * The guard returns `degrade` or `abstain` (per evidence policy), and the `ComparisonResultSlot` preserves the partial nature of the relation.
-* The downstream `SelectorMechanism` can then return a portfolio (e.g., keep both suppliers in the candidate set) rather than forcing a single winner by hidden tie‑break rules.
+* The downstream `SelectorMechanism` can then return a selected set (e.g., keep both suppliers in the candidate set) rather than forcing a single winner by hidden tie‑break rules.
 
 #### A.19.CPM:5.3 - Show (U.Episteme) — uncertainty‑aware comparison with set‑valued outcomes
 
@@ -245,7 +245,7 @@ A CPM publication / usage is conformant if it satisfies the checks below (these 
   *Avoid:* keep numeric scoring in `USCM`; CPM returns relation tokens (set‑valued). If a numeric comparator is desired, it must be an explicit `ComparatorSpec` and still yields relation tokens as the kernel output.
 
 * **Anti‑pattern: “CPM picks the winner.”**
-  *Symptom:* comparison logic embeds winner selection or portfolio truncation.
+  *Symptom:* comparison logic embeds winner selection or selected-set truncation.
   *Avoid:* CPM only compares; selection is `SelectorMechanism`, which consumes comparison outcomes and remains policy‑bound.
 
 * **Anti‑pattern: “Comparator by prose / by code default.”**

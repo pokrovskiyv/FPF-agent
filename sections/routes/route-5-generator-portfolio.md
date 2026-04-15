@@ -12,9 +12,9 @@
 | 2 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/14-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
 | 3 | G.1 | CG-Frame-Ready Generator | sections/14-part-g-discipline-sota-patterns-kit/03-g1-g1-cgframeready-generator.md | YES |
 | 4 | G.2 | SoTA Harvester & Synthesis | sections/14-part-g-discipline-sota-patterns-kit/04-g2-g2-sota-harvester-synthesis.md |  |
-| 5 | G.5 | Multi-Method Dispatcher & MethodFamily Registry | sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
+| 5 | G.5 | Multi‑Method Dispatcher & MethodFamily Registry | sections/14-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
 | 6 | B.5.2.1 | Creative Abduction with NQD | sections/07-part-b-transdisciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md |  |
-| 7 | C.17 | Creativity‑CHR — Characterising Generative Novelty & Value | sections/08-part-c-kernel-extensions-specifications/20-c17-c17-characterising-generative-novelty-value-creativitychr.md |  |
+| 7 | C.17 | Creativity‑CHR — Characterising Generative Novelty & Value | sections/08-part-c-kernel-extensions-specifications/21-c17-c17-characterising-generative-novelty-value-creativitychr.md |  |
 
 ## Loading Strategy
 

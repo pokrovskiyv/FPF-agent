@@ -20,18 +20,18 @@
 
 ### A.19.SelectorMechanism:0 - At a glance — didactic, informative
 
-* **What it is:** a universal **set‑returning** selection kernel: it takes candidates, lawful comparison outcomes, and explicit criteria, and returns a **portfolio set**, not a forced single winner.
+* **What it is:** a universal **set‑returning** selection kernel: it takes candidates, lawful comparison outcomes, and explicit criteria, and returns a **selected set**, not a forced single winner.
 * **What it is not:** it is not a hidden scoring model, not a comparator, not a gate, and not a telemetry or publishing step.
 * **Why it exists:** to prevent three recurring failure modes: **hidden thresholds**, **silent scalarization**, and **winner‑take‑all defaults** under partial orders and uncertain evidence.
 * **How it evolves:** method semantics and SoTA algorithm families connect via `G.2` packs and wiring modules; the kernel signature stays stable and teachable.
 * **Suite stage:** `select` (ordering lives only in `A.19.CHR:4.5` / `suite_protocols`; suite membership is a set in `A.19.CHR:4.2`).
 * **Inputs (conceptual):** `CandidateSetSlot` + `ComparisonResultSlot` (lawful relation/poset tokens, typically produced by `CPM`) + `CriteriaSlot` + `CNSpecSlot` + `CGSpecSlot` + `ContextSlot` (+ `TaskSignatureSlot?`, + `MinimalEvidenceSlot?` override).
-* **Output (conceptual):** `SelectionSlot` = portfolio set (a singleton is allowed **only** when explicitly demanded by criteria or by an explicitly declared upstream total order).
+* **Output (conceptual):** `SelectionSlot` = selected set (a singleton is allowed **only** when explicitly demanded by criteria or by an explicitly declared upstream total order).
 * **Non‑goals:** does **not** normalize (UNM), indicatorize (UINDM), score (USCM), fold (ULSAM), compare (CPM), define acceptance thresholds, publish, or emit telemetry; it is a selection step over already‑lawful inputs.
 * **P2W seam:** concrete edition/policy pin bindings (e.g., `TaskSignatureRef@edition(…)`, `CGSpecRef@edition(…)`, evidence overrides) are chosen in planned baseline artefacts (`A.15.3` + `A.19.CHR:4.7.2`); executions only record effective refs/pins in `Audit`.
 * **TGA use:** when used as a node type in `E.18 (E.TGA)`, selector instances are chosen in planned baseline artefacts (P2W); this pattern owns the intension that those instances cite.
 * **Failure mode:** tri‑state guard (`pass|degrade|abstain`); missing/unknown evidence never coerces to `pass`.
-* **Mental model:** `SelectEligibility` gates the step; `Select` applies explicit criteria to set‑valued comparison outcomes; the result is a portfolio set whose “single winner” behavior must be explicit.
+* **Mental model:** `SelectEligibility` gates the step; `Select` applies explicit criteria to set‑valued comparison outcomes; the result is a selected set whose “single winner” behavior must be explicit.
 
 ---
 
@@ -44,7 +44,7 @@ Within the suite‑closed protocol, `SelectorMechanism` appears as the `select` 
 
 * consume **lawful** comparison outcomes without collapsing them into a hidden scalar,
 * apply **explicit** criteria and policy routing, and
-* return a **set/portfolio** result whose defaults are policy‑bound and auditable.
+* return a **selected-set** result whose defaults are policy‑bound and auditable.
 
 The kernel uses the CHR suite SlotKind lexicon (`A.19.CHR:4.2.1`) to prevent SlotKind drift across specializations and across SoTA wiring layers.
 
@@ -61,7 +61,7 @@ Engineering teams regularly need to make “a selection decision” under condit
 If selection is not a first‑class mechanism boundary with stable semantics, the same high‑risk drift happens repeatedly:
 
 * **Silent winner forcing:** partial orders get collapsed to a single winner by ad‑hoc tie‑breakers or hidden weights.
-* **Hidden thresholds and constants:** thresholds, weights, dominance regimes, and “default portfolio modes” get smuggled into implementations and become invisible in discussion and audit.
+* **Hidden thresholds and constants:** thresholds, weights, dominance regimes, and default `PortfolioMode` fields get smuggled into implementations and become invisible in discussion and audit.
 * **Scalarization by convenience:** set‑valued comparison outcomes get replaced by a scalar “score summary” that is treated as decision‑relevant without being declared as such.
 * **Evidence coercion:** missing or unknown evidence gets treated as “good enough” (implicit pass) rather than routing to explicit `degrade` or `abstain`.
 * **Boundary erosion:** selection quietly performs comparison, scoring, aggregation, or publishing, making the CHR pipeline opaque and hard to reason about.
@@ -84,7 +84,7 @@ If selection is not a first‑class mechanism boundary with stable semantics, th
 
 7. **P2W separation and gate/guard separation.** Planned binding of fillers and pins lives in WorkPlanning (P2W). Selection must not mutate into a gate pattern: no `GateDecision` or decision logs inside the mechanism boundary.
 
-8. **No competing defaults.** If defaults exist (for portfolio mode, dominance regime, archive policies), they must be cited from their declared single sources, not replicated or re‑declared inside the kernel (`A.19.CHR:4.3.5`).
+8. **No competing defaults.** If defaults exist (for `PortfolioMode`, dominance regime, archive policies), they must be cited from their declared single sources, not replicated or re‑declared inside the kernel (`A.19.CHR:4.3.5`).
 
 ---
 
@@ -115,7 +115,7 @@ Archetypal Grounding — **Mechanism.Intension** (normative).
 
 * **Purpose:** universal set‑returning selection kernel over candidates and criteria; defaults remain policy‑bound; **no hidden thresholds**.
 
-* **Imports:** `A.6.1:4.2.1 (multi-level specialisation ladders)`, `A.6.5 (slot discipline; SlotIndex as projection)`, `A.19.CN (CN‑Spec governance card)`, `C.22 (TaskSignature as a policy routing surface when used)`, `G.5 (selector conformance and default routing)`, `G.0 (CG‑Spec legality and evidence gates)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
+* **Imports:** `A.6.1:4.2.1 (multi-level specialisation ladders)`, `A.6.5 (slot discipline; SlotIndex as projection)`, `A.19.CN (CN‑Spec governance card)`, `C.22 (TaskSignature as a policy-routing artifact when used)`, `G.5 (selector conformance and default routing)`, `G.0 (CG‑Spec legality and evidence gates)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
 
 * **SubjectBlock:**
 
@@ -130,12 +130,12 @@ Archetypal Grounding — **Mechanism.Intension** (normative).
   * `CandidateSetSlot : ⟨ValueKind = U.Set (candidates), refMode = ByValue⟩`.
   * `ComparisonResultSlot : ⟨ValueKind = U.Set (relation/poset tokens), refMode = ByValue⟩`.
   * `CriteriaSlot : ⟨ValueKind = U.Set (selection criteria / clauses, incl. explicit tie‑breakers; **acceptance thresholds are not criteria** and remain owned by the cited acceptance surfaces and applied only via `SelectEligibility`), refMode = ByValue⟩`.
-  * `TaskSignatureSlot? : ⟨ValueKind = TaskSignature, refMode = TaskSignatureRef⟩` optional; when present, SHOULD be the single routing surface for selector defaults (e.g., portfolio mode / dominance regime), but it does not replace `CNSpecSlot` / `CGSpecSlot` contract surfaces.
+  * `TaskSignatureSlot? : ⟨ValueKind = TaskSignature, refMode = TaskSignatureRef⟩` optional; when present, SHOULD be the single routing slot/ref for selector defaults (e.g., `PortfolioMode` / dominance regime), but it does not replace `CNSpecSlot` / `CGSpecSlot` contract surfaces.
   * `CNSpecSlot : ⟨ValueKind = CN‑Spec, refMode = CNSpecRef⟩`.
   * `CGSpecSlot : ⟨ValueKind = CG‑Spec, refMode = CGSpecRef⟩`.
   * `ContextSlot : ⟨ValueKind = U.BoundedContext, refMode = U.BoundedContextRef⟩`.
   * `MinimalEvidenceSlot? : ⟨ValueKind = MinimalEvidence, refMode = MinimalEvidenceRef⟩` optional override; otherwise the effective evidence policy is `CGSpecSlot.MinimalEvidence`.
-  * `SelectionSlot : ⟨ValueKind = U.Set (portfolio), refMode = ByValue⟩`.
+  * `SelectionSlot : ⟨ValueKind = U.Set (selected set), refMode = ByValue⟩`.
 
 * **OperationAlgebra** suite stage = `select`, per `A.19.CHR:4.5`; canonical stage op = `Select`
 
@@ -143,11 +143,11 @@ Archetypal Grounding — **Mechanism.Intension** (normative).
 
 * **LawSet** (minimum): the selection kernel is set‑returning and policy‑bound
 
-  1. **Set‑returning by default:** a conformant `Select` MUST return a set/portfolio by default. It MUST NOT silently collapse partial orders or incomparabilities to a single winner; if a singleton outcome is required, it MUST be an explicit criterion (or a declared upstream total order).
-  2. **No hidden thresholds/constants:** a conformant publication MUST NOT smuggle thresholds, weights, dominance rules, or tie‑breakers. Selection‑level commitments MUST be explicit in `CriteriaSlot` and/or in explicit policy routing surfaced by `TaskSignatureSlot`. Admissibility/acceptance thresholds are applied only via `SelectEligibility` using `CNSpecSlot.acceptance` and the effective evidence policy (`MinimalEvidenceSlot?` or `CGSpecSlot.MinimalEvidence`).
+  1. **Set‑returning by default:** a conformant `Select` MUST return a declared selected set by default. It MUST NOT silently collapse partial orders or incomparabilities to a single winner; if a singleton outcome is required, it MUST be an explicit criterion (or a declared upstream total order).
+  2. **No hidden thresholds/constants:** a conformant publication MUST NOT smuggle thresholds, weights, dominance rules, or tie‑breakers. Selection‑level commitments MUST be explicit in `CriteriaSlot` and/or in explicit policy routing exposed through `TaskSignatureSlot`. Admissibility/acceptance thresholds are applied only via `SelectEligibility` using `CNSpecSlot.acceptance` and the effective evidence policy (`MinimalEvidenceSlot?` or `CGSpecSlot.MinimalEvidence`).
   3. **No hidden scalarization:** a conformant publication MUST consume `ComparisonResultSlot` as set‑valued/partial when it is set‑valued/partial. Scalar summaries (if produced at all) are report‑only unless explicitly promoted by policy outside suite closure.
   4. **Evidence gating is explicit:** when selection depends on evidence, it MUST cite either `MinimalEvidenceSlot` (override) or the effective policy `CGSpecSlot.MinimalEvidence`, and it MUST route the operation through tri‑state guards (no unknown coercion). Any candidate‑level ineligibility handling MUST be explicit (criteria and/or upstream outputs) and auditable (no silent dropping); the kernel MUST NOT invent new evidence thresholds.
-  5. **No competing defaults:** portfolio/dominance defaults (when relevant) MUST be sourced from their declared single owners (typically via `TaskSignatureSlot` routing and/or the selector conformance/default surfaces in `G.5`), and MUST NOT be re‑declared inside the kernel.
+  5. **No competing defaults:** `PortfolioMode`/dominance defaults (when relevant) MUST be sourced from their declared single owners (typically via `TaskSignatureSlot` routing and/or the selector conformance/default rules in `G.5`), and MUST NOT be re‑declared inside the kernel.
 
 * **AdmissibilityConditions** (tri‑state guard; fail‑closed on missing legality or evidence)
 
@@ -158,7 +158,7 @@ Archetypal Grounding — **Mechanism.Intension** (normative).
 
 * **Applicability:**
 
-  * Intended as the last stage of CHR selection after lawful comparison, producing a portfolio‑valued result.
+  * Intended as the last stage of CHR selection after lawful comparison, producing a selected-set-valued result.
   * Cross‑context selection is allowed only via explicit Transport (Bridge+CL/ReferencePlane) and cannot bypass CG‑Spec legality.
 
 * **Transport:** declarative‑only: no embedded CL/Φ/Ψ tables and no new transport edges; crossings are via cited Bridge+CL/ReferencePlane surfaces; penalties route to **`R_eff` only**.
@@ -175,15 +175,15 @@ Archetypal Grounding — **Mechanism.Intension** (normative).
   * SHOULD record: the realized `GuardDecision` (`pass|degrade|abstain`) and, when non‑`pass`, the policy‑bound failure behavior reference that justified it.
   * SHOULD record: a stable identity for `CandidateSetSlot` and `ComparisonResultSlot` **or** a citable upstream `Audit` anchor that already fixes these identities; the goal is traceability without duplicating upstream semantics.
   * MUST record: a stable identity for `SelectionSlot`.
-  * SHOULD record: a stable description (or citable reference) for the effective selection criteria surface (e.g., criteria artefact ids when criteria are reference‑backed; `TaskSignatureRef` when used).
-  * SHOULD record: the realized routing‑relevant selector defaults (e.g., portfolio mode / dominance regime) **when** they are not fully determined by a referenced `TaskSignatureRef` or an explicit CAL policy surface; the point is auditability, not re‑declaring defaults.
+  * SHOULD record: a stable description (or citable reference) for the effective selection criteria artifact or reference (e.g., criteria artefact ids when criteria are reference‑backed; `TaskSignatureRef` when used).
+  * SHOULD record: the realized routing‑relevant selector defaults (e.g., `PortfolioMode` / dominance regime) **when** they are not fully determined by a referenced `TaskSignatureRef` or an explicit CAL policy surface; the point is auditability, not re‑declaring defaults.
   * SHOULD record: any Bridge/CL/ReferencePlane ids when `Transport` was invoked.
 
 #### A.19.SelectorMechanism:4.2 - Boundary and layering rules
 
 1. **Selection consumes upstream CHR products, it does not invent them.** `ComparisonResultSlot` is an input: the kernel MUST NOT perform normalization (UNM), indicatorization (UINDM), scoring (USCM), folding (ULSAM), or comparison (CPM) inside `Select`. If a scalar “overall score” is desired, it must be declared upstream as a lawful scoring and/or comparator choice, not invented inside selection.
 
-2. **Threshold discipline (acceptance ≠ selection).** Acceptance/admission thresholds are not selection criteria: they live in `AcceptanceClauses` / `TaskSignature` / `GateProfile` surfaces per `A.19.CHR:4.3.5` and are applied only via `SelectEligibility`. Selection‑level tie‑breakers and portfolio constraints MAY exist, but MUST be explicit and auditable (typically as criteria artefacts or explicit policy routing), never as unnamed constants.
+2. **Threshold discipline (acceptance ≠ selection).** Acceptance/admission thresholds are not selection criteria: they live in `AcceptanceClauses` / `TaskSignature` / `GateProfile` artifacts per `A.19.CHR:4.3.5` and are applied only via `SelectEligibility`. Selection‑level tie‑breakers, `PortfolioMode`, or selected-set constraints MAY exist, but MUST be explicit and auditable (typically as criteria artefacts or explicit policy routing), never as unnamed constants.
 
 3. **Report‑only summaries inside suite closure.** Any scalar summaries, illumination metrics, or auxiliary “why not chosen” telemetry are report‑only unless explicitly promoted by policy, and MUST NOT be used as hidden dominance rules (`A.19.CHR:4.3.3`).
    Publishing and telemetry remain outside suite closure and are routed via established publication surfaces (e.g., `G.10` and/or `PTM`), not as hidden tails inside selection.
@@ -223,24 +223,24 @@ When comparisons are partial or set‑valued, selection must not pretend there i
 **Outcome.**
 
 * `SelectEligibility` returns `degrade` (or `abstain`, depending on the declared failure behavior) **because** `OptionC` fails evidence gating; selection excludes `OptionC` under an explicit policy route rather than coercing unknowns.
-* `SelectionSlot` returns `{OptionA, OptionB}` as a portfolio set, rather than forcing a single winner.
-* `Audit` records `CGSpecRef.edition`, the effective evidence policy, and the stable identity of the selected portfolio.
+* `SelectionSlot` returns `{OptionA, OptionB}` as a selected set, rather than forcing a single winner.
+* `Audit` records `CGSpecRef.edition`, the effective evidence policy, and the stable identity of the selected set surface.
 
 #### A.19.SelectorMechanism:5.3 - Show, U.Episteme example
 
-**Scenario.** A methods group selects a portfolio of analysis methods for a task. Candidates are method family refs. The group wants diversity in the portfolio, but does not want diversity metrics to silently become dominance criteria.
+**Scenario.** A methods group selects a declared set of analysis methods for a task. Candidates are method family refs. The group wants diversity in the selected set, but does not want diversity metrics to silently become dominance criteria.
 
 * `CandidateSetSlot` = `{Family1, Family2, Family3, Family4}`
 * `ComparisonResultSlot` is produced by lawful comparison on declared indicators and evidence gates.
-* `TaskSignatureSlot` is present and is the single routing surface for policy defaults:
+* `TaskSignatureSlot` is present and is the single routing slot/ref for policy defaults:
 
-  * portfolio mode and dominance regime,
+  * `PortfolioMode` and dominance regime,
   * budgeting/telemetry hooks (when used).
 * `CriteriaSlot` declares that diversity signals are telemetry unless explicitly promoted by policy.
 
 **Outcome.**
 
-* `SelectionSlot` returns a portfolio set; any archive‑style behavior is a specialization and policy choice, not a hidden kernel default.
+* `SelectionSlot` returns a selected set; any archive‑style behavior is a specialization and policy choice, not a hidden kernel default.
 * `Audit` records `TaskSignatureRef.edition`, enabling reproducibility and post‑hoc explanation without embedding tool tokens into the kernel.
 
 ---
@@ -249,7 +249,7 @@ When comparisons are partial or set‑valued, selection must not pretend there i
 
 This pattern intentionally biases selection authoring toward explicitness and legality.
 
-* **Governance bias.** Bias toward explicit criteria and policy routing surfaces rather than implicit constants. Risk: perceived overhead. Mitigation: keep criteria artifacts minimal, and centralize defaults via `TaskSignatureSlot` when used.
+* **Governance bias.** Bias toward explicit criteria and policy routing artifacts rather than implicit constants. Risk: perceived overhead. Mitigation: keep criteria artifacts minimal, and centralize defaults via `TaskSignatureSlot` when used.
 * **Architecture bias.** Bias toward set‑return semantics and against forced total orders. Risk: consumers may expect a single winner. Mitigation: make single‑winner selection an explicit criterion or a declared comparator outcome, not an implicit kernel behavior.
 * **Epistemic bias.** Bias toward fail‑closed evidence handling and against unknown coercion. Risk: more `degrade/abstain` early. Mitigation: improve evidence pins and policy clarity; do not relax the kernel.
 * **Practice bias.** Bias against embedding telemetry and publishing into selection. Risk: teams want a one‑stop “select and report.” Mitigation: keep reporting in post‑suite routing patterns and record only minimal audit pins here.
@@ -264,7 +264,7 @@ This pattern intentionally biases selection authoring toward explicitness and le
 | **CC‑A19SelectorMechanism‑0** | **MechAuthoring discipline:** the canonical SelectorMechanism `Mechanism.Intension` in `A.19.SelectorMechanism:4.1` MUST satisfy `A.6.1` `U.MechAuthoring` and the relevant `CC‑UM.*` checks; this pattern does not override the `U.Mechanism.Intension` shape. |
 | **CC‑A19SelectorMechanism‑1** | **Single owner:** the canonical SelectorMechanism `U.Mechanism.Intension` MUST be owned by `A.19.SelectorMechanism:4.1`. Any other SelectorMechanism “card” text MUST be reduced to Tell+Cite referencing this owner section. |
 | **CC‑A19SelectorMechanism‑2** | **Set‑return default:** a conformant `Select` MUST be set‑returning by default; it MUST NOT silently collapse partial orders or incomparabilities to a single winner. |
-| **CC‑A19SelectorMechanism‑3** | **No hidden thresholds/constants:** a conformant SelectorMechanism publication MUST NOT smuggle thresholds, weights, dominance rules, tie‑breakers, or default portfolio modes. Selection‑level commitments MUST be explicit in `CriteriaSlot` and/or explicit policy routing (e.g., via `TaskSignatureSlot`). Acceptance thresholds remain owned by `AcceptanceClauses` / `TaskSignature` / `GateProfile` surfaces and MUST be applied only via `SelectEligibility`. |
+| **CC‑A19SelectorMechanism‑3** | **No hidden thresholds/constants:** a conformant SelectorMechanism publication MUST NOT smuggle thresholds, weights, dominance rules, tie‑breakers, or default `PortfolioMode` fields. Selection‑level commitments MUST be explicit in `CriteriaSlot` and/or explicit policy routing (e.g., via `TaskSignatureSlot`). Acceptance thresholds remain owned by `AcceptanceClauses` / `TaskSignature` / `GateProfile` artifacts and MUST be applied only via `SelectEligibility`. |
 | **CC‑A19SelectorMechanism‑4** | **No hidden scalarization:** if `ComparisonResultSlot` is set‑valued or partial, a conformant publication MUST consume it as such; scalar summaries are report‑only unless explicitly promoted by policy outside suite closure. |
 | **CC‑A19SelectorMechanism‑5** | **Evidence gating:** a conformant publication MUST guard selection via `SelectEligibility` with `GuardDecision ∈ {pass|degrade|abstain}`; missing/unknown evidence MUST NOT yield `pass`. If `MinimalEvidenceSlot?` is absent, the guard MUST evaluate against `CGSpecSlot.MinimalEvidence`. Any candidate‑level filtering triggered by evidence MUST be explicit and auditable, not silent. |
 | **CC‑A19SelectorMechanism‑6** | **SlotKind discipline:** SlotKind tokens used in the SelectorMechanism intension MUST come from the CHR SlotKind lexicon (`A.19.CHR:4.2.1`). New SlotKinds require lexicon extension first. |
@@ -281,7 +281,7 @@ This pattern intentionally biases selection authoring toward explicitness and le
 
 | Anti-pattern                 | What it looks like                                                              | Remedy                                                                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Forced single winner         | `Select` always returns exactly one candidate even under incomparability        | Return a portfolio by default; if single winner is required, make it explicit in `CriteriaSlot` and ensure the induced order is lawful and declared |
+| Forced single winner         | `Select` always returns exactly one candidate even under incomparability        | Return a declared selected set by default; if single winner is required, make it explicit in `CriteriaSlot` and ensure the induced order is lawful and declared |
 | Hidden tie-breakers          | “If incomparable, pick lower cost” without declaring that as policy             | Move tie-breakers into explicit criteria or into declared comparator policies; never embed inside the kernel                                        |
 | Scalarization by convenience | Replace set-valued comparison with a scalar “summary score” treated as decisive | Keep summaries report-only unless explicitly declared as lawful comparator outputs                                                                  |
 | Unknown coerced to pass      | Missing evidence treated as acceptable                                          | Use tri-state `SelectEligibility`; unknown maps to `degrade` or `abstain`                                                                           |
@@ -301,7 +301,7 @@ This pattern intentionally biases selection authoring toward explicitness and le
 
 **Costs / trade-offs**
 
-* Portfolio results can require explicit downstream handling when a single decision is needed.
+* Selected-set results can require explicit downstream handling when a single decision is needed.
 * Strict evidence discipline increases early `degrade/abstain` until criteria and evidence policies are explicit.
 * Teams must invest in explicit criteria artifacts instead of relying on implicit conventions.
 
@@ -314,7 +314,7 @@ Selection is where many systems accidentally convert lawful but nuanced informat
 1. **Technical integrity:** it enforces legality and evidence discipline at the decision boundary without smuggling heuristics.
 2. **Organizational clarity:** it makes defaults and thresholds discussable, reviewable, and maintainable as explicit policy surfaces.
 
-The set‑returning default is not a “preference for portfolios”; it is a correctness safeguard when the order is not total. Single‑winner outcomes remain possible, but only by explicit criteria or declared lawful comparators.
+The set‑returning default is not a preference for large retained sets; it is a correctness safeguard when the order is not total. Single‑winner outcomes remain possible, but only by explicit criteria or declared lawful comparators.
 
 ---
 
@@ -328,15 +328,15 @@ The set‑returning default is not a “preference for portfolios”; it is a co
 
 | SoTA practice pointer, post‑2015+                                                                               | Primary source examples, post‑2015+                                                                           | Where it connects to SelectorMechanism                                                                             | Adoption status |
 | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------- |
-| Treat the Pareto set or portfolio as a first-class output under multi-criteria partial orders                   | Quality Diversity as a decision framing, e.g., Pugh et al. 2016; Vassiliades et al. 2018                      | Expressed as set‑return default and explicit portfolio criteria; method details live in specializations and wiring | Adapt           |
-| Use archive-based portfolios where diversity is part of the result, but do not silently promote it to dominance | Modern QD and archive practices post‑2015, including map-elites descendants and archive insertion policies    | Expressed as policy‑bound criteria and report‑only telemetry unless explicitly promoted                            | Adapt           |
+| Treat the Pareto set or declared selected set as a first-class output under multi-criteria partial orders       | Quality Diversity as a decision framing, e.g., Pugh et al. 2016; Vassiliades et al. 2018                      | Expressed as set‑return default and explicit set-return criteria; method details live in specializations and wiring | Adapt           |
+| Use archive-based retained sets where diversity is part of the result, but do not silently promote it to dominance | Modern QD and archive practices post‑2015, including map-elites descendants and archive insertion policies | Expressed as policy‑bound criteria and report‑only telemetry unless explicitly promoted                            | Adapt           |
 | Pair environments and methods in open-ended or co-evolutionary settings without breaking kernel semantics       | Open-ended environment-method pairing, e.g., Wang et al. 2019 and successors                                  | Expressed as candidate and criteria structuring plus lawful specializations; kernel unchanged                      | Adapt           |
 | Include an explicit abstain or reject option under uncertainty rather than forcing a decision                   | Selective prediction and rejection-option practice, e.g., Geifman and El‑Yaniv 2017; follow-on selective nets | Expressed as tri-state `SelectEligibility` with fail-closed discipline                                             | Adopt           |
 | Keep architecture commitments traceable and single-owner                                                        | ISO/IEC/IEEE 42010:2022 architecture description discipline                                                   | Expressed as explicit semantic ownership and Tell+Cite stubs elsewhere                                             | Adopt           |
 
 **Notes per row** (1–2 sentences; *why* adopt/adapt/reject):
-* **Portfolio-as-output (QD framing):** adopt the *decision framing* (portfolio as a first-class result) while keeping concrete QD/portfolio algorithms out of the kernel; they belong in `G.2` packs and wiring modules, preserving evolvability.
-* **Archive portfolios (diversity as result):** adapt archive thinking by keeping diversity/illumination signals report‑only unless an explicit CAL/policy promotes them to dominance; this prevents silent scalarization and preserves single‑owner defaults (typically `G.5`/CAL).
+* **Selected-set-as-output (QD framing):** adopt the *decision framing* (declared selected set as a first-class result) while keeping concrete QD/retained-set algorithms out of the kernel; they belong in `G.2` packs and wiring modules, preserving evolvability.
+* **Archive retained sets (diversity as result):** adapt archive thinking by keeping diversity/illumination signals report‑only unless an explicit CAL/policy promotes them to dominance; this prevents silent scalarization and preserves single‑owner defaults (typically `G.5`/CAL).
 * **Open‑ended environment–method pairing:** keep the kernel unchanged; open‑ended pairing is expressed by shaping candidates/criteria (and, when needed, lawful specializations `⊑/⊑⁺`) with explicit edition pins and transfer/validity rules in planned baseline, not by mutating `Select`.
 * **Reject/abstain under uncertainty:** adopt the rejection‑option stance as a tri‑state guard with fail‑closed semantics; explicit abstain is preferable to forced choice under missing legality/evidence.
 * **Single‑owner architecture discipline:** adopt single‑owner + Tell‑and‑Cite to keep the spec teachable and reviewable; this directly reduces drift and “second centers of gravity”.
@@ -351,13 +351,13 @@ The set‑returning default is not a “preference for portfolios”; it is a co
   * `A.19.CHR` for suite membership, suite protocol closure, SlotKind lexicon, and threshold and default discipline.
   * `G.0` for `CG‑Spec` legality and evidence surfaces.
   * `A.19.CN` for `CN‑Spec` governance card used as an explicit input.
-  * `C.22` for `TaskSignature` as a policy routing surface when used.
+  * `C.22` for `TaskSignature` as a policy-routing artifact when used.
   * `A.6.5` for slot discipline (SlotIndex as projection; SlotKind invariance).
   * `A.15.3` + `A.19.CHR:4.7.2` for the P2W planned baseline seam for edition/policy pin bindings (cited as seam, not duplicated in Intension).
 * **Used by**
 
   * `A.19.CHR` as the canonical `select` stage in CHR pipelines.
-  * `G.5` as the primary conformance and specialization context for selector-based method dispatch and portfolio policies.
+  * `G.5` as the primary conformance and specialization context for selector-based method dispatch and `PortfolioMode` policies.
   * `E.18 (E.TGA)` when selector instances are used as transduction graph nodes; planned pins live in P2W, effective pins surface via `Audit`.
 * **Coordinates with**
 

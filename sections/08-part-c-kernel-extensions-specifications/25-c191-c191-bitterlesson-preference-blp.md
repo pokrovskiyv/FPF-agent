@@ -15,7 +15,7 @@ Bespoke heuristics can win locally but **do not scale**; general methods (search
 
 **BLP‑1 — Scale‑Audit requirement.**
 Any DRR that selects a **narrower/hand‑engineered** method over a **general/scalable** alternative **MUST** include a **Scale‑Audit**:
-(a) **Parity harness**: equal **FreshnessWindows**, a common **ComparatorSet**, **replicates/seeds**, **portfolio‑first** evaluation; **Dominance = ParetoOnly** unless a CAL policy says otherwise (policy‑id cited).  
+(a) **Parity harness**: equal **FreshnessWindows**, a common **ComparatorSet**, **replicates/seeds**, **set-returning** evaluation; **Dominance = ParetoOnly** unless a CAL policy says otherwise (policy‑id cited).  
 (b) **Budget sweeps**: vary **compute**, **data**, and **FoA** within a fixed safety envelope; **pin** any unsweepable knob and record the invariant. 
 (c) **Slopes & uncertainty**: report ∂quality/∂compute, ∂quality/∂data, and (where applicable) ∂coverage/∂FoA, with **CI/error bars** and **edition/policy pins** in telemetry. Use **bootstrapped CIs** or repeated‑seed estimates; disclose heteroscedasticity handling.
 (d) **Resources**: publish **Resrc‑CAL** accounts (time/energy/FLOPs) and assurance deltas (B.3). 
@@ -33,6 +33,10 @@ Among admissible options with comparable assurance (within **δ**) and budget (w
 > • **Complementary bias:** the heuristic is an **inductive bias** that **improves** the general method **without blocking scale** (graceful degradation as `S` grows).
 > All overrides record a **BLP‑waiver** with rationale, owner, and expiry/review in the DRR. 
 
+**BLP‑2.2 — Task-family specialization compatibility.**
+A bounded task-family specialization remains **BLP-compatible** when it is produced by a **general, scale-amenable substrate**, when it acts as a complementary bias that does not block scale, or when it survives the ordinary **BLP** comparison discipline on the same declared task family and work target. `BLP` therefore governs whether the narrower current method was generated, compared, audited, waived, and overridden lawfully; it does **not** require the final local behavior at every moment to look maximally generic.
+
+Low-human-overlap or newly discovered approaches remain admissible when the task family, budget guard rails, and evidence basis are explicit by value and the same `Scale‑Audit`, `α/δ`, waiver, and override discipline is preserved.
 **BLP‑3 — Minimal‑prescription default.**
 Author **rules‑as‑prohibitions** (negative constraints) instead of stepwise scripts; encode limits in **Φ policy tables** (and **Φ_plane**) and allow agents to **sequence autonomously** within those constraints. Scripts are permissible only when mandated by safety/regulation or with compelling DRR evidence reviewed under E.3/E.5. 
 
@@ -59,13 +63,15 @@ Scale‑Audit artefacts **SHALL** be exported to **G.11** with edition pins, CI 
 7. **Replicate counts/seeds** and **confidence intervals** recorded for slope estimates; heteroscedasticity handling disclosed.
 8. Audit artefacts exported to **G.11** with **BLP.Policy@Context** id.
 
+9. When a narrower specialist method is selected or returned for one declared task family, the record names the task family/work target and the Scale‑Audit, waiver, or override ground that keeps the choice BLP‑compatible.
+
 ### C.19.1:4 - Anti‑patterns & remedies
 
 Single‑winner leaderboards; hidden budget mixing; promoting illumination into dominance **without policy**; missing edition pins; heuristics without expiry; slope estimates without CI or with aliased designs → **remedy** with G.9 parity + edition pins, explicit **policy‑ids**, DRR publication, **Heuristic‑Debt** entries, and BLP‑1f DoE discipline. 
 
 ### C.19.1:5 - Archetypal grounding (post‑2015; informative)
 
-* **LLMs:** prompt‑programs, **retrieval‑augmented** and **MoE** policies vs narrow task‑specific pipelines; portfolio‑first selection across editions/budgets.
+* **LLMs:** prompt‑programs, **retrieval‑augmented** and **MoE** policies vs narrow task‑specific pipelines; set-returning selection across editions/budgets.
 * **RL & planning:** model‑based optimization/general agents vs hand‑coded controllers (subject to α/δ and safety).
 * **Preference learning:** **RLHF ↔ DPO** families.
 * **QD/OEE:** MAP‑Elites/**CMA‑ME**/**DQD**/**QDax**; **POET/Enhanced‑POET**; illumination remains **report‑only telemetry** unless policy promotes it. 

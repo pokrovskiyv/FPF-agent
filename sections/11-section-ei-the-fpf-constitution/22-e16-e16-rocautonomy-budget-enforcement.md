@@ -26,7 +26,7 @@ Autonomy‑claiming **performers** (*RoleAssignments* over services/robots/teams
 | **Simplicity vs Auditability** | Lightweight authoring vs ledger‑grade evidence                           |
 | **Autonomy vs SoD**            | Helpful self‑action vs separation‑of‑duties and human‑in‑the‑loop points |
 
-### E.16:3.1 - Bias-Annotation
+#### E.16:3.1 - Bias-Annotation
 
 **Lenses tested:** `Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`. **Scope:** Universal for any Role/Method/Service that claims autonomous operation (unsupervised decision or actuation) and is admitted via `AutonomyBudgetDecl` + Green‑Gate. It is **not** aimed at purely assistive “suggestion‑only” tools where each action is confirmed by a human at the point of execution.
 
@@ -61,6 +61,8 @@ AutonomyBudgetDecl {
 }
 ```
 
+**E.16‑S1.A (Scout / probe / commit partition for bounded specialization).**
+When an autonomy-bearing method uses bounded specialization scouting, the budget declaration **MUST** keep scout budget, probe budget, and commit checkpoint as distinct control surfaces rather than collapsing them into one undifferentiated burn envelope. A successful probe does not by itself authorize a committed route, wider burn, or scope widening. Leaving probe state requires one explicit checkpoint decision through the declared guard or override path, with budget burn and residual budget recorded in the `AutonomyLedger`. `E.16` owns this budget partition plus guard and ledger enforcement; it does not replace the dyadic move of `A.15` or the `CheckpointReturn` plan semantics of `C.24`.
 **E.16‑S2 (Guarded enactment — Green‑Gate).**
 A **Method step** that *requires* autonomy **MUST** list `requires: [RoleX]` **and** `requiresAutonomyBudget: AutonomyBudgetDecl.id`. A **Work** instance is admissible *iff* at enactment time:
 
@@ -140,13 +142,15 @@ If no **ScaleLensPolicy** is declared, selection remains **neutral** with respec
 | **E.16‑CC‑5** | **Depletion** **MUST** block autonomy‑gated steps until a **ResumeAutonomy** SpeechAct passes SoD and guard checks.                                                         |
 | **E.16‑CC‑6** | **UTS rows** for autonomy‑bearing Roles/Methods/Services **MUST** include `AutonomyBudgetDeclRef`, `Aut-Guard policy-id (PolicyIdRef)`, `OverrideProtocolRef`, `Scope (G)`, and `Γ_time`. |
 
+| **E.16‑CC‑7** | When bounded specialization scouting is in scope, scout budget, probe budget, and commit checkpoint **MUST** stay explicit, and a successful probe **SHALL NOT** count as automatic committed rollout. |
+
 ### E.16:7 - Consequences
 
 * **Testability.** Autonomy is measurable (tokens/envelopes), audit‑ready (ledger), and stoppable (SpeechActs).
 * **Comparability.** UTS surfaces autonomy metadata for fair selection & parity.
 * **Safety.** Guards are hard gates; depletion halts further autonomy‑gated Work.
 
-### E.16:7.1 - SoTA‑Echoing (post‑2015 practice alignment)
+#### E.16:7.1 - SoTA‑Echoing (post‑2015 practice alignment)
 
 > Each item states **Adopt / Adapt / Reject**, and why. Vendor/tool tokens are kept as *informative*, not normative.
 
@@ -168,7 +172,9 @@ If no **ScaleLensPolicy** is declared, selection remains **neutral** with respec
 6. **Scaling laws & the Bitter Lesson (2019→).**  
    **Adapt/Reject.** Empirical scaling work and the Bitter Lesson motivate considering compute‑heavy search when returns are monotonic (Sutton, 2019; Kaplan et al., 2020). E.16 adapts this into an **optional** ScaleLensPolicy (E.16‑S7) constrained by the *same* budgets and guards, and **rejects** any interpretation that lets “scale” bypass safety gates.
 
-### E.16:7.2 - Common Anti-Patterns and How to Avoid Them
+7. **Budgeted specialist acquisition and checkpointed exploitation (2024→).**
+   **Adopt/Adapt.** Recent agentic tool-use, self-play, and open-ended search lines reinforce that the competition variable is time or budget to threshold plus fast exploitation after a viable route is found. E.16 adapts this into distinct scout/probe/commit control surfaces and rejects any reading where early probe success authorizes rollout without an explicit checkpoint.
+#### E.16:7.2 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Symptom | Why it fails | Repair |
 | --- | --- | --- | --- |
