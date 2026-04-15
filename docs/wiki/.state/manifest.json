@@ -1,0 +1,676 @@
+{
+  "version": 1,
+  "last_compiled": "2026-04-15T09:23:09Z",
+  "sources": {
+    ".claude-plugin/marketplace.json": {
+      "hash": "a73bb8b208397bcced1df7c65ebefd5c",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    ".claude-plugin/plugin.json": {
+      "hash": "65a07bf607933d0f1d97f0ed6aa4b559",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "CHANGELOG.md": {
+      "hash": "674f05223f5b110820a8c9a37d3cfc1b",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "CLAUDE.md": {
+      "hash": "10392b8f9b7abae72fd181e87c31cca5",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "Readme.md": {
+      "hash": "df302e7e8435a7174d25f09c773836b2",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "agents/fpf-classifier.md": {
+      "hash": "f4033efa958b0f1dad09376b7fc9e2ca",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "agents/fpf-reasoner.md": {
+      "hash": "db6cd8d84c761d27f18ffb59b0ef8645",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "agents/fpf-retriever.md": {
+      "hash": "a8599d536c03d3707dbea9572eafa502",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "agents/fpf-reviewer.md": {
+      "hash": "83f4fcef88a92e976844b06bcb6b39c0",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "agents/fpf-sync.md": {
+      "hash": "41da59cd5be190d825261540241a93b8",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_embeddings.py": {
+      "hash": "c2a8fec54247fb28af9937a89d19687c",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_glossary.py": {
+      "hash": "d85f9febce540e1b37089259581f2e4c",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_lexical.py": {
+      "hash": "ad0cbc6b91176d6aafa06128db0cdb51",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_metadata.py": {
+      "hash": "2e55fc3c6cd2f99596bf3264ce812938",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_routes.py": {
+      "hash": "20b9a5ca287bcde97fb84dc76d9493a0",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/build_xrefs.py": {
+      "hash": "859c8a285a079fee20df8e5099750687",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/enrich_metadata.py": {
+      "hash": "d5ba8c0a26aa7ed5709acc0b412ea222",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/semantic_search.py": {
+      "hash": "32525fecd8c8144093a41d8db1d0471c",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/smoke_codex.py": {
+      "hash": "791e25281e51edcbfe88bc1f841dbf71",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/split_spec.py": {
+      "hash": "23a95183db1532086df23ccd38faa14b",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/test_smoke.py": {
+      "hash": "ca0e4144925c205baa120d1cc74ad2a0",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "scripts/update_changelog.py": {
+      "hash": "dae1136631af9ab159502e7ed0772325",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-1-project-alignment.md": {
+      "hash": "52aa83e1bfa5632535fcef45e27ef52e",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-10-evolution-learning.md": {
+      "hash": "82b408bf4c30020d4c2a5b48b89cb482",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-2-language-discovery.md": {
+      "hash": "8310f54d8ccad30affd343ce8e3382ce",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-3-boundary-unpacking.md": {
+      "hash": "2ad3a8598b772d949c60eb1c2b04f1b7",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-4-comparison-selection.md": {
+      "hash": "7c49b2046c84ae818e61fadda878fa85",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-5-generator-portfolio.md": {
+      "hash": "3830a3069b486b4bb9373b02b21685ad",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-6-rewrite-explanation.md": {
+      "hash": "794203d9a184b2b58688a80335720d79",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-7-ethical-assurance.md": {
+      "hash": "62b28fca0b5529c029be883f790d8dab",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-8-trust-assurance.md": {
+      "hash": "abeabdd1ca7544f526117f1b692bb757",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "sections/routes/route-9-composition-aggregation.md": {
+      "hash": "a8ca9d13a6c11b9008e948c2aa889df6",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    },
+    "skills/fpf/SKILL.md": {
+      "hash": "18832b5a259b14731c91be11d5886890",
+      "last_compiled": "2026-04-15T09:23:09Z"
+    }
+  },
+  "articles": {
+    "en/agents/fpf-classifier.md": {
+      "sources": [
+        "agents/fpf-classifier.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/agents/fpf-reasoner.md": {
+      "sources": [
+        "agents/fpf-reasoner.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/agents/fpf-retriever.md": {
+      "sources": [
+        "agents/fpf-retriever.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/agents/fpf-reviewer.md": {
+      "sources": [
+        "agents/fpf-reviewer.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/agents/fpf-sync.md": {
+      "sources": [
+        "agents/fpf-sync.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/agent-team.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "agents/fpf-reasoner.md",
+        "agents/fpf-retriever.md",
+        "agents/fpf-reviewer.md",
+        "agents/fpf-sync.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/build-pipeline.md": {
+      "sources": [
+        "scripts/build_embeddings.py",
+        "scripts/build_glossary.py",
+        "scripts/build_lexical.py",
+        "scripts/build_metadata.py",
+        "scripts/build_routes.py",
+        "scripts/build_xrefs.py",
+        "scripts/enrich_metadata.py",
+        "scripts/split_spec.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/overview.md": {
+      "sources": [
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        "CLAUDE.md",
+        "Readme.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/plain-language-contract.md": {
+      "sources": [
+        "CLAUDE.md",
+        "agents/fpf-reasoner.md",
+        "agents/fpf-reviewer.md",
+        "scripts/build_lexical.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/skill-entry-point.md": {
+      "sources": [
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/sync-and-rebuild.md": {
+      "sources": [
+        "CLAUDE.md",
+        "agents/fpf-sync.md",
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/architecture/three-tier-retrieval.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "agents/fpf-retriever.md",
+        "scripts/build_embeddings.py",
+        "scripts/semantic_search.py",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/concepts/burden.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "scripts/build_routes.py",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/concepts/changelog-workflow.md": {
+      "sources": [
+        ".claude-plugin/plugin.json",
+        "CHANGELOG.md",
+        "CLAUDE.md",
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/concepts/pipeline-depth.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/concepts/route-chain.md": {
+      "sources": [
+        "scripts/build_routes.py",
+        "sections/routes/route-1-project-alignment.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/concepts/tier.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_embeddings.md": {
+      "sources": [
+        "scripts/build_embeddings.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_glossary.md": {
+      "sources": [
+        "scripts/build_glossary.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_lexical.md": {
+      "sources": [
+        "scripts/build_lexical.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_metadata.md": {
+      "sources": [
+        "scripts/build_metadata.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_routes.md": {
+      "sources": [
+        "scripts/build_routes.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/build_xrefs.md": {
+      "sources": [
+        "scripts/build_xrefs.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/enrich_metadata.md": {
+      "sources": [
+        "scripts/enrich_metadata.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/semantic_search.md": {
+      "sources": [
+        "scripts/semantic_search.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/smoke_codex.md": {
+      "sources": [
+        "scripts/smoke_codex.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/split_spec.md": {
+      "sources": [
+        "scripts/split_spec.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/test_smoke.md": {
+      "sources": [
+        "scripts/test_smoke.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/modules/update_changelog.md": {
+      "sources": [
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-1-project-alignment.md": {
+      "sources": [
+        "sections/routes/route-1-project-alignment.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-10-evolution-learning.md": {
+      "sources": [
+        "sections/routes/route-10-evolution-learning.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-2-language-discovery.md": {
+      "sources": [
+        "sections/routes/route-2-language-discovery.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-3-boundary-unpacking.md": {
+      "sources": [
+        "sections/routes/route-3-boundary-unpacking.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-4-comparison-selection.md": {
+      "sources": [
+        "sections/routes/route-4-comparison-selection.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-5-generator-portfolio.md": {
+      "sources": [
+        "sections/routes/route-5-generator-portfolio.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-6-rewrite-explanation.md": {
+      "sources": [
+        "sections/routes/route-6-rewrite-explanation.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-7-ethical-assurance.md": {
+      "sources": [
+        "sections/routes/route-7-ethical-assurance.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-8-trust-assurance.md": {
+      "sources": [
+        "sections/routes/route-8-trust-assurance.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "en/routes/route-9-composition-aggregation.md": {
+      "sources": [
+        "sections/routes/route-9-composition-aggregation.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/agents/fpf-classifier.md": {
+      "sources": [
+        "agents/fpf-classifier.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/agents/fpf-reasoner.md": {
+      "sources": [
+        "agents/fpf-reasoner.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/agents/fpf-retriever.md": {
+      "sources": [
+        "agents/fpf-retriever.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/agents/fpf-reviewer.md": {
+      "sources": [
+        "agents/fpf-reviewer.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/agents/fpf-sync.md": {
+      "sources": [
+        "agents/fpf-sync.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/agent-team.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "agents/fpf-reasoner.md",
+        "agents/fpf-retriever.md",
+        "agents/fpf-reviewer.md",
+        "agents/fpf-sync.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/build-pipeline.md": {
+      "sources": [
+        "scripts/build_embeddings.py",
+        "scripts/build_glossary.py",
+        "scripts/build_lexical.py",
+        "scripts/build_metadata.py",
+        "scripts/build_routes.py",
+        "scripts/build_xrefs.py",
+        "scripts/enrich_metadata.py",
+        "scripts/split_spec.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/overview.md": {
+      "sources": [
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        "CLAUDE.md",
+        "Readme.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/plain-language-contract.md": {
+      "sources": [
+        "CLAUDE.md",
+        "agents/fpf-reasoner.md",
+        "agents/fpf-reviewer.md",
+        "scripts/build_lexical.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/skill-entry-point.md": {
+      "sources": [
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/sync-and-rebuild.md": {
+      "sources": [
+        "CLAUDE.md",
+        "agents/fpf-sync.md",
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/architecture/three-tier-retrieval.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "agents/fpf-retriever.md",
+        "scripts/build_embeddings.py",
+        "scripts/semantic_search.py",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/concepts/burden.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "scripts/build_routes.py",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/concepts/changelog-workflow.md": {
+      "sources": [
+        ".claude-plugin/plugin.json",
+        "CHANGELOG.md",
+        "CLAUDE.md",
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/concepts/pipeline-depth.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/concepts/route-chain.md": {
+      "sources": [
+        "scripts/build_routes.py",
+        "sections/routes/route-1-project-alignment.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/concepts/tier.md": {
+      "sources": [
+        "agents/fpf-classifier.md",
+        "skills/fpf/SKILL.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_embeddings.md": {
+      "sources": [
+        "scripts/build_embeddings.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_glossary.md": {
+      "sources": [
+        "scripts/build_glossary.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_lexical.md": {
+      "sources": [
+        "scripts/build_lexical.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_metadata.md": {
+      "sources": [
+        "scripts/build_metadata.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_routes.md": {
+      "sources": [
+        "scripts/build_routes.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/build_xrefs.md": {
+      "sources": [
+        "scripts/build_xrefs.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/enrich_metadata.md": {
+      "sources": [
+        "scripts/enrich_metadata.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/semantic_search.md": {
+      "sources": [
+        "scripts/semantic_search.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/smoke_codex.md": {
+      "sources": [
+        "scripts/smoke_codex.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/split_spec.md": {
+      "sources": [
+        "scripts/split_spec.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/test_smoke.md": {
+      "sources": [
+        "scripts/test_smoke.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/modules/update_changelog.md": {
+      "sources": [
+        "scripts/update_changelog.py"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-1-project-alignment.md": {
+      "sources": [
+        "sections/routes/route-1-project-alignment.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-10-evolution-learning.md": {
+      "sources": [
+        "sections/routes/route-10-evolution-learning.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-2-language-discovery.md": {
+      "sources": [
+        "sections/routes/route-2-language-discovery.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-3-boundary-unpacking.md": {
+      "sources": [
+        "sections/routes/route-3-boundary-unpacking.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-4-comparison-selection.md": {
+      "sources": [
+        "sections/routes/route-4-comparison-selection.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-5-generator-portfolio.md": {
+      "sources": [
+        "sections/routes/route-5-generator-portfolio.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-6-rewrite-explanation.md": {
+      "sources": [
+        "sections/routes/route-6-rewrite-explanation.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-7-ethical-assurance.md": {
+      "sources": [
+        "sections/routes/route-7-ethical-assurance.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-8-trust-assurance.md": {
+      "sources": [
+        "sections/routes/route-8-trust-assurance.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    },
+    "ru/routes/route-9-composition-aggregation.md": {
+      "sources": [
+        "sections/routes/route-9-composition-aggregation.md"
+      ],
+      "last_updated": "2026-04-15T09:23:09Z"
+    }
+  }
+}

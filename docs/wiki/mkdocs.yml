@@ -1,0 +1,178 @@
+site_name: "FPF-agent — Wiki"
+site_description: "Auto-generated documentation for the FPF-agent Claude Code plugin (bilingual RU/EN)"
+site_url: "https://pokrovskiyv.github.io/FPF-agent/"
+repo_url: "https://github.com/pokrovskiyv/FPF-agent"
+repo_name: "pokrovskiyv/FPF-agent"
+
+docs_dir: "."
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - English:
+      - Overview: en/index.md
+      - Architecture:
+          - Overview: en/architecture/overview.md
+          - Skill Entry Point: en/architecture/skill-entry-point.md
+          - Build Pipeline: en/architecture/build-pipeline.md
+          - Agent Team: en/architecture/agent-team.md
+          - Three-Tier Retrieval: en/architecture/three-tier-retrieval.md
+          - Plain Language Contract: en/architecture/plain-language-contract.md
+          - Sync and Rebuild: en/architecture/sync-and-rebuild.md
+      - Agents:
+          - fpf-classifier: en/agents/fpf-classifier.md
+          - fpf-retriever: en/agents/fpf-retriever.md
+          - fpf-reasoner: en/agents/fpf-reasoner.md
+          - fpf-reviewer: en/agents/fpf-reviewer.md
+          - fpf-sync: en/agents/fpf-sync.md
+      - Modules:
+          - split_spec: en/modules/split_spec.md
+          - build_metadata: en/modules/build_metadata.md
+          - enrich_metadata: en/modules/enrich_metadata.md
+          - build_glossary: en/modules/build_glossary.md
+          - build_lexical: en/modules/build_lexical.md
+          - build_routes: en/modules/build_routes.md
+          - build_xrefs: en/modules/build_xrefs.md
+          - build_embeddings: en/modules/build_embeddings.md
+          - semantic_search: en/modules/semantic_search.md
+          - test_smoke: en/modules/test_smoke.md
+          - smoke_codex: en/modules/smoke_codex.md
+          - update_changelog: en/modules/update_changelog.md
+      - Routes:
+          - "1. Project Alignment": en/routes/route-1-project-alignment.md
+          - "2. Language Discovery": en/routes/route-2-language-discovery.md
+          - "3. Boundary Unpacking": en/routes/route-3-boundary-unpacking.md
+          - "4. Comparison Selection": en/routes/route-4-comparison-selection.md
+          - "5. Generator Portfolio": en/routes/route-5-generator-portfolio.md
+          - "6. Rewrite Explanation": en/routes/route-6-rewrite-explanation.md
+          - "7. Ethical Assurance": en/routes/route-7-ethical-assurance.md
+          - "8. Trust Assurance": en/routes/route-8-trust-assurance.md
+          - "9. Composition Aggregation": en/routes/route-9-composition-aggregation.md
+          - "10. Evolution Learning": en/routes/route-10-evolution-learning.md
+      - Concepts:
+          - Burden: en/concepts/burden.md
+          - Route Chain: en/concepts/route-chain.md
+          - Tier: en/concepts/tier.md
+          - Pipeline Depth: en/concepts/pipeline-depth.md
+          - Changelog Workflow: en/concepts/changelog-workflow.md
+      - Glossary: en/glossary.md
+  - Русский:
+      - Обзор: ru/index.md
+      - Архитектура:
+          - Обзор: ru/architecture/overview.md
+          - Точка входа в Skill: ru/architecture/skill-entry-point.md
+          - Конвейер пересборки: ru/architecture/build-pipeline.md
+          - Команда агентов: ru/architecture/agent-team.md
+          - Трёхъярусная загрузка: ru/architecture/three-tier-retrieval.md
+          - Контракт обычного языка: ru/architecture/plain-language-contract.md
+          - Синхронизация и пересборка: ru/architecture/sync-and-rebuild.md
+      - Агенты:
+          - fpf-classifier: ru/agents/fpf-classifier.md
+          - fpf-retriever: ru/agents/fpf-retriever.md
+          - fpf-reasoner: ru/agents/fpf-reasoner.md
+          - fpf-reviewer: ru/agents/fpf-reviewer.md
+          - fpf-sync: ru/agents/fpf-sync.md
+      - Модули:
+          - split_spec: ru/modules/split_spec.md
+          - build_metadata: ru/modules/build_metadata.md
+          - enrich_metadata: ru/modules/enrich_metadata.md
+          - build_glossary: ru/modules/build_glossary.md
+          - build_lexical: ru/modules/build_lexical.md
+          - build_routes: ru/modules/build_routes.md
+          - build_xrefs: ru/modules/build_xrefs.md
+          - build_embeddings: ru/modules/build_embeddings.md
+          - semantic_search: ru/modules/semantic_search.md
+          - test_smoke: ru/modules/test_smoke.md
+          - smoke_codex: ru/modules/smoke_codex.md
+          - update_changelog: ru/modules/update_changelog.md
+      - Маршруты:
+          - "1. Зоны ответственности": ru/routes/route-1-project-alignment.md
+          - "2. Язык и терминология": ru/routes/route-2-language-discovery.md
+          - "3. Разбор контракта": ru/routes/route-3-boundary-unpacking.md
+          - "4. Сравнение альтернатив": ru/routes/route-4-comparison-selection.md
+          - "5. Портфель подходов": ru/routes/route-5-generator-portfolio.md
+          - "6. Пересказ для аудитории": ru/routes/route-6-rewrite-explanation.md
+          - "7. Этический аудит": ru/routes/route-7-ethical-assurance.md
+          - "8. Доверие и обоснование": ru/routes/route-8-trust-assurance.md
+          - "9. Композиция и агрегация": ru/routes/route-9-composition-aggregation.md
+          - "10. Эволюция и обучение": ru/routes/route-10-evolution-learning.md
+      - Концепции:
+          - Burden: ru/concepts/burden.md
+          - Цепочка маршрута: ru/concepts/route-chain.md
+          - Tier (ярус): ru/concepts/tier.md
+          - Глубина конвейера: ru/concepts/pipeline-depth.md
+          - Рабочий процесс changelog: ru/concepts/changelog-workflow.md
+      - Глоссарий: ru/glossary.md
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          nav_translations:
+            Home: Home
+            Glossary: Glossary
+            Overview: Overview
+            Architecture: Architecture
+            Agents: Agents
+            Modules: Modules
+            Routes: Routes
+            Concepts: Concepts
+        - locale: ru
+          name: Русский
+          build: true
+          nav_translations:
+            Home: Главная
+            Glossary: Глоссарий
+            Overview: Обзор
+            Architecture: Архитектура
+            Agents: Агенты
+            Modules: Модули
+            Routes: Маршруты
+            Concepts: Концепции
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - attr_list
+  - def_list

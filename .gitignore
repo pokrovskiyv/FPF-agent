@@ -1,3 +1,4 @@
 .env
 .env.*
 sections/embeddings/
+docs/wiki/.state/pending

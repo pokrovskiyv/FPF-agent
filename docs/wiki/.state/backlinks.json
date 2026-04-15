@@ -1,0 +1,685 @@
+{
+  "../../CLAUDE.md": [
+    "index.md"
+  ],
+  "en/agents/fpf-classifier.md": [
+    "en/agents/fpf-retriever.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/skill-entry-point.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/concepts/burden.md",
+    "en/concepts/pipeline-depth.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_routes.md",
+    "en/routes/route-1-project-alignment.md",
+    "en/routes/route-10-evolution-learning.md",
+    "en/routes/route-2-language-discovery.md",
+    "en/routes/route-3-boundary-unpacking.md",
+    "en/routes/route-4-comparison-selection.md",
+    "en/routes/route-5-generator-portfolio.md",
+    "en/routes/route-6-rewrite-explanation.md",
+    "en/routes/route-7-ethical-assurance.md",
+    "en/routes/route-8-trust-assurance.md",
+    "en/routes/route-9-composition-aggregation.md"
+  ],
+  "en/agents/fpf-reasoner.md": [
+    "en/agents/fpf-classifier.md",
+    "en/agents/fpf-retriever.md",
+    "en/agents/fpf-reviewer.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/plain-language-contract.md",
+    "en/architecture/skill-entry-point.md",
+    "en/concepts/burden.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_lexical.md",
+    "en/routes/route-1-project-alignment.md",
+    "en/routes/route-10-evolution-learning.md",
+    "en/routes/route-2-language-discovery.md",
+    "en/routes/route-3-boundary-unpacking.md",
+    "en/routes/route-4-comparison-selection.md",
+    "en/routes/route-5-generator-portfolio.md",
+    "en/routes/route-6-rewrite-explanation.md",
+    "en/routes/route-7-ethical-assurance.md",
+    "en/routes/route-8-trust-assurance.md",
+    "en/routes/route-9-composition-aggregation.md"
+  ],
+  "en/agents/fpf-retriever.md": [
+    "en/agents/fpf-classifier.md",
+    "en/agents/fpf-reasoner.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/skill-entry-point.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/concepts/route-chain.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_embeddings.md",
+    "en/modules/build_routes.md",
+    "en/modules/build_xrefs.md",
+    "en/modules/semantic_search.md",
+    "en/routes/route-1-project-alignment.md",
+    "en/routes/route-10-evolution-learning.md",
+    "en/routes/route-2-language-discovery.md",
+    "en/routes/route-3-boundary-unpacking.md",
+    "en/routes/route-4-comparison-selection.md",
+    "en/routes/route-5-generator-portfolio.md",
+    "en/routes/route-6-rewrite-explanation.md",
+    "en/routes/route-7-ethical-assurance.md",
+    "en/routes/route-8-trust-assurance.md",
+    "en/routes/route-9-composition-aggregation.md"
+  ],
+  "en/agents/fpf-reviewer.md": [
+    "en/agents/fpf-reasoner.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/plain-language-contract.md",
+    "en/architecture/skill-entry-point.md",
+    "en/concepts/pipeline-depth.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/agents/fpf-sync.md": [
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/sync-and-rebuild.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_glossary.md"
+  ],
+  "en/architecture/agent-team.md": [
+    "en/agents/fpf-classifier.md",
+    "en/agents/fpf-reviewer.md",
+    "en/agents/fpf-sync.md",
+    "en/architecture/overview.md",
+    "en/architecture/plain-language-contract.md",
+    "en/architecture/skill-entry-point.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/concepts/pipeline-depth.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/architecture/build-pipeline.md": [
+    "en/agents/fpf-sync.md",
+    "en/architecture/overview.md",
+    "en/architecture/sync-and-rebuild.md",
+    "en/index.md",
+    "en/modules/build_glossary.md",
+    "en/modules/build_lexical.md",
+    "en/modules/build_metadata.md",
+    "en/modules/enrich_metadata.md",
+    "en/modules/split_spec.md",
+    "en/modules/test_smoke.md"
+  ],
+  "en/architecture/overview.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/index.md"
+  ],
+  "en/architecture/plain-language-contract.md": [
+    "en/agents/fpf-reasoner.md",
+    "en/agents/fpf-reviewer.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/skill-entry-point.md",
+    "en/concepts/burden.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_lexical.md"
+  ],
+  "en/architecture/skill-entry-point.md": [
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/smoke_codex.md"
+  ],
+  "en/architecture/sync-and-rebuild.md": [
+    "en/agents/fpf-sync.md",
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/concepts/changelog-workflow.md",
+    "en/index.md",
+    "en/modules/update_changelog.md"
+  ],
+  "en/architecture/three-tier-retrieval.md": [
+    "en/agents/fpf-classifier.md",
+    "en/agents/fpf-retriever.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/skill-entry-point.md",
+    "en/concepts/route-chain.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_embeddings.md",
+    "en/modules/build_routes.md",
+    "en/modules/build_xrefs.md",
+    "en/modules/semantic_search.md"
+  ],
+  "en/concepts/burden.md": [
+    "en/agents/fpf-classifier.md",
+    "en/architecture/agent-team.md",
+    "en/concepts/route-chain.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/concepts/changelog-workflow.md": [
+    "en/architecture/sync-and-rebuild.md",
+    "en/index.md",
+    "en/modules/update_changelog.md"
+  ],
+  "en/concepts/pipeline-depth.md": [
+    "en/architecture/agent-team.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/concepts/route-chain.md": [
+    "en/agents/fpf-retriever.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/concepts/burden.md",
+    "en/concepts/tier.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_routes.md",
+    "en/routes/route-1-project-alignment.md",
+    "en/routes/route-10-evolution-learning.md",
+    "en/routes/route-2-language-discovery.md",
+    "en/routes/route-3-boundary-unpacking.md",
+    "en/routes/route-4-comparison-selection.md",
+    "en/routes/route-5-generator-portfolio.md",
+    "en/routes/route-6-rewrite-explanation.md",
+    "en/routes/route-7-ethical-assurance.md",
+    "en/routes/route-8-trust-assurance.md",
+    "en/routes/route-9-composition-aggregation.md"
+  ],
+  "en/concepts/tier.md": [
+    "en/agents/fpf-classifier.md",
+    "en/architecture/agent-team.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/concepts/burden.md",
+    "en/concepts/pipeline-depth.md",
+    "en/concepts/route-chain.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/glossary.md": [
+    "en/index.md"
+  ],
+  "en/index.md": [
+    "index.md",
+    "ru/index.md"
+  ],
+  "en/modules/build_embeddings.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_metadata.md",
+    "en/modules/enrich_metadata.md",
+    "en/modules/semantic_search.md"
+  ],
+  "en/modules/build_glossary.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/index.md",
+    "en/modules/build_metadata.md"
+  ],
+  "en/modules/build_lexical.md": [
+    "en/agents/fpf-reasoner.md",
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/architecture/plain-language-contract.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
+  "en/modules/build_metadata.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/index.md",
+    "en/modules/build_embeddings.md",
+    "en/modules/build_glossary.md",
+    "en/modules/build_routes.md",
+    "en/modules/build_xrefs.md",
+    "en/modules/enrich_metadata.md",
+    "en/modules/split_spec.md"
+  ],
+  "en/modules/build_routes.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/concepts/burden.md",
+    "en/concepts/route-chain.md",
+    "en/index.md",
+    "en/modules/build_metadata.md"
+  ],
+  "en/modules/build_xrefs.md": [
+    "en/agents/fpf-retriever.md",
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_metadata.md"
+  ],
+  "en/modules/enrich_metadata.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/index.md",
+    "en/modules/build_embeddings.md",
+    "en/modules/build_glossary.md",
+    "en/modules/build_metadata.md"
+  ],
+  "en/modules/semantic_search.md": [
+    "en/agents/fpf-retriever.md",
+    "en/architecture/overview.md",
+    "en/architecture/three-tier-retrieval.md",
+    "en/index.md",
+    "en/modules/build_embeddings.md",
+    "en/modules/smoke_codex.md",
+    "en/modules/test_smoke.md"
+  ],
+  "en/modules/smoke_codex.md": [
+    "en/architecture/skill-entry-point.md",
+    "en/index.md",
+    "en/modules/semantic_search.md",
+    "en/modules/test_smoke.md"
+  ],
+  "en/modules/split_spec.md": [
+    "en/architecture/build-pipeline.md",
+    "en/architecture/overview.md",
+    "en/glossary.md",
+    "en/index.md",
+    "en/modules/build_lexical.md",
+    "en/modules/build_metadata.md"
+  ],
+  "en/modules/test_smoke.md": [
+    "en/architecture/three-tier-retrieval.md",
+    "en/index.md",
+    "en/modules/semantic_search.md",
+    "en/modules/smoke_codex.md"
+  ],
+  "en/modules/update_changelog.md": [
+    "en/architecture/agent-team.md",
+    "en/architecture/overview.md",
+    "en/architecture/sync-and-rebuild.md",
+    "en/concepts/changelog-workflow.md",
+    "en/index.md"
+  ],
+  "en/routes/route-1-project-alignment.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-10-evolution-learning.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-2-language-discovery.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-3-boundary-unpacking.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-4-comparison-selection.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-5-generator-portfolio.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-6-rewrite-explanation.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-7-ethical-assurance.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-8-trust-assurance.md": [
+    "en/index.md"
+  ],
+  "en/routes/route-9-composition-aggregation.md": [
+    "en/index.md"
+  ],
+  "ru/agents/fpf-classifier.md": [
+    "ru/agents/fpf-retriever.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/concepts/burden.md",
+    "ru/concepts/pipeline-depth.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_routes.md",
+    "ru/routes/route-1-project-alignment.md",
+    "ru/routes/route-10-evolution-learning.md",
+    "ru/routes/route-2-language-discovery.md",
+    "ru/routes/route-3-boundary-unpacking.md",
+    "ru/routes/route-4-comparison-selection.md",
+    "ru/routes/route-5-generator-portfolio.md",
+    "ru/routes/route-6-rewrite-explanation.md",
+    "ru/routes/route-7-ethical-assurance.md",
+    "ru/routes/route-8-trust-assurance.md",
+    "ru/routes/route-9-composition-aggregation.md"
+  ],
+  "ru/agents/fpf-reasoner.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/agents/fpf-retriever.md",
+    "ru/agents/fpf-reviewer.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/plain-language-contract.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/concepts/burden.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_lexical.md",
+    "ru/routes/route-1-project-alignment.md",
+    "ru/routes/route-10-evolution-learning.md",
+    "ru/routes/route-2-language-discovery.md",
+    "ru/routes/route-3-boundary-unpacking.md",
+    "ru/routes/route-4-comparison-selection.md",
+    "ru/routes/route-5-generator-portfolio.md",
+    "ru/routes/route-6-rewrite-explanation.md",
+    "ru/routes/route-7-ethical-assurance.md",
+    "ru/routes/route-8-trust-assurance.md",
+    "ru/routes/route-9-composition-aggregation.md"
+  ],
+  "ru/agents/fpf-retriever.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/agents/fpf-reasoner.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/concepts/route-chain.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_embeddings.md",
+    "ru/modules/build_routes.md",
+    "ru/modules/build_xrefs.md",
+    "ru/modules/semantic_search.md",
+    "ru/routes/route-1-project-alignment.md",
+    "ru/routes/route-10-evolution-learning.md",
+    "ru/routes/route-2-language-discovery.md",
+    "ru/routes/route-3-boundary-unpacking.md",
+    "ru/routes/route-4-comparison-selection.md",
+    "ru/routes/route-5-generator-portfolio.md",
+    "ru/routes/route-6-rewrite-explanation.md",
+    "ru/routes/route-7-ethical-assurance.md",
+    "ru/routes/route-8-trust-assurance.md",
+    "ru/routes/route-9-composition-aggregation.md"
+  ],
+  "ru/agents/fpf-reviewer.md": [
+    "ru/agents/fpf-reasoner.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/plain-language-contract.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/concepts/pipeline-depth.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/agents/fpf-sync.md": [
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/sync-and-rebuild.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_glossary.md"
+  ],
+  "ru/architecture/agent-team.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/agents/fpf-reviewer.md",
+    "ru/agents/fpf-sync.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/plain-language-contract.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/concepts/pipeline-depth.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/architecture/build-pipeline.md": [
+    "ru/agents/fpf-sync.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/sync-and-rebuild.md",
+    "ru/index.md",
+    "ru/modules/build_glossary.md",
+    "ru/modules/build_lexical.md",
+    "ru/modules/build_metadata.md",
+    "ru/modules/enrich_metadata.md",
+    "ru/modules/split_spec.md",
+    "ru/modules/test_smoke.md"
+  ],
+  "ru/architecture/overview.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/index.md"
+  ],
+  "ru/architecture/plain-language-contract.md": [
+    "ru/agents/fpf-reasoner.md",
+    "ru/agents/fpf-reviewer.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/concepts/burden.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_lexical.md"
+  ],
+  "ru/architecture/skill-entry-point.md": [
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/smoke_codex.md"
+  ],
+  "ru/architecture/sync-and-rebuild.md": [
+    "ru/agents/fpf-sync.md",
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/concepts/changelog-workflow.md",
+    "ru/index.md",
+    "ru/modules/update_changelog.md"
+  ],
+  "ru/architecture/three-tier-retrieval.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/agents/fpf-retriever.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/skill-entry-point.md",
+    "ru/concepts/route-chain.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_embeddings.md",
+    "ru/modules/build_routes.md",
+    "ru/modules/build_xrefs.md",
+    "ru/modules/semantic_search.md"
+  ],
+  "ru/concepts/burden.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/architecture/agent-team.md",
+    "ru/concepts/route-chain.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/concepts/changelog-workflow.md": [
+    "ru/architecture/sync-and-rebuild.md",
+    "ru/index.md",
+    "ru/modules/update_changelog.md"
+  ],
+  "ru/concepts/pipeline-depth.md": [
+    "ru/architecture/agent-team.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/concepts/route-chain.md": [
+    "ru/agents/fpf-retriever.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/concepts/burden.md",
+    "ru/concepts/tier.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_routes.md",
+    "ru/routes/route-1-project-alignment.md",
+    "ru/routes/route-10-evolution-learning.md",
+    "ru/routes/route-2-language-discovery.md",
+    "ru/routes/route-3-boundary-unpacking.md",
+    "ru/routes/route-4-comparison-selection.md",
+    "ru/routes/route-5-generator-portfolio.md",
+    "ru/routes/route-6-rewrite-explanation.md",
+    "ru/routes/route-7-ethical-assurance.md",
+    "ru/routes/route-8-trust-assurance.md",
+    "ru/routes/route-9-composition-aggregation.md"
+  ],
+  "ru/concepts/tier.md": [
+    "ru/agents/fpf-classifier.md",
+    "ru/architecture/agent-team.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/concepts/burden.md",
+    "ru/concepts/pipeline-depth.md",
+    "ru/concepts/route-chain.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/glossary.md": [
+    "ru/index.md"
+  ],
+  "ru/index.md": [
+    "en/index.md",
+    "index.md"
+  ],
+  "ru/modules/build_embeddings.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_metadata.md",
+    "ru/modules/enrich_metadata.md",
+    "ru/modules/semantic_search.md"
+  ],
+  "ru/modules/build_glossary.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/index.md",
+    "ru/modules/build_metadata.md"
+  ],
+  "ru/modules/build_lexical.md": [
+    "ru/agents/fpf-reasoner.md",
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/plain-language-contract.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
+  "ru/modules/build_metadata.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/index.md",
+    "ru/modules/build_embeddings.md",
+    "ru/modules/build_glossary.md",
+    "ru/modules/build_routes.md",
+    "ru/modules/build_xrefs.md",
+    "ru/modules/enrich_metadata.md",
+    "ru/modules/split_spec.md"
+  ],
+  "ru/modules/build_routes.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/concepts/burden.md",
+    "ru/concepts/route-chain.md",
+    "ru/index.md",
+    "ru/modules/build_metadata.md"
+  ],
+  "ru/modules/build_xrefs.md": [
+    "ru/agents/fpf-retriever.md",
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_metadata.md"
+  ],
+  "ru/modules/enrich_metadata.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/index.md",
+    "ru/modules/build_embeddings.md",
+    "ru/modules/build_glossary.md",
+    "ru/modules/build_metadata.md"
+  ],
+  "ru/modules/semantic_search.md": [
+    "ru/agents/fpf-retriever.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/index.md",
+    "ru/modules/build_embeddings.md",
+    "ru/modules/smoke_codex.md",
+    "ru/modules/test_smoke.md"
+  ],
+  "ru/modules/smoke_codex.md": [
+    "ru/architecture/skill-entry-point.md",
+    "ru/index.md",
+    "ru/modules/semantic_search.md",
+    "ru/modules/test_smoke.md"
+  ],
+  "ru/modules/split_spec.md": [
+    "ru/architecture/build-pipeline.md",
+    "ru/architecture/overview.md",
+    "ru/glossary.md",
+    "ru/index.md",
+    "ru/modules/build_lexical.md",
+    "ru/modules/build_metadata.md"
+  ],
+  "ru/modules/test_smoke.md": [
+    "ru/architecture/three-tier-retrieval.md",
+    "ru/index.md",
+    "ru/modules/semantic_search.md",
+    "ru/modules/smoke_codex.md"
+  ],
+  "ru/modules/update_changelog.md": [
+    "ru/architecture/agent-team.md",
+    "ru/architecture/overview.md",
+    "ru/architecture/sync-and-rebuild.md",
+    "ru/concepts/changelog-workflow.md",
+    "ru/index.md"
+  ],
+  "ru/routes/route-1-project-alignment.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-10-evolution-learning.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-2-language-discovery.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-3-boundary-unpacking.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-4-comparison-selection.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-5-generator-portfolio.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-6-rewrite-explanation.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-7-ethical-assurance.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-8-trust-assurance.md": [
+    "ru/index.md"
+  ],
+  "ru/routes/route-9-composition-aggregation.md": [
+    "ru/index.md"
+  ]
+}

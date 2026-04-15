@@ -133,3 +133,14 @@ A PreToolUse hook runs `scripts/update_changelog.py` before every `git commit`.
 | **F** | Unification suite: concept-sets, SenseCells, bridges, UTS |
 | **G** | SoTA patterns kit: harvesting, selector/dispatcher, portfolio governance |
 | **H-K** | Glossary, annexes, indexes, lexical debt |
+
+## Wiki
+
+Auto-generated bilingual (RU + EN) documentation at `docs/wiki/`. Maintained by LLM — never edit manually.
+
+- **Structure:** `docs/wiki/ru/` (primary user-facing) and `docs/wiki/en/` (code contributors). Both mirror the same section layout: `modules/`, `agents/`, `routes/`, `architecture/`, `concepts/`.
+- **Scope:** Documents the plugin code (scripts, agents, routes, skill). Does NOT document the generated `sections/**` content — those are derived from `FPF-Spec.md` and would duplicate the spec.
+- **Update:** `/wiki compile` (incremental) or `/wiki rebuild` (full). When regenerating, always produce BOTH language variants.
+- **Check:** `/wiki` or `python3 ~/.claude/skills/wiki/scanner.py check .` (runs automatically before every `git commit` as a non-blocking hook).
+- **Q&A:** `/wiki query <question>`.
+- **External sources:** add to `docs/wiki/raw/`.

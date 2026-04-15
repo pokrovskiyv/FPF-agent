@@ -10,6 +10,13 @@
             "command": "python3 scripts/update_changelog.py",
             "timeout": 10,
             "statusMessage": "Updating changelog..."
+          },
+          {
+            "type": "command",
+            "if": "Bash(git commit*)",
+            "command": "python3 ~/.claude/skills/wiki/scanner.py check \"$(pwd)\" || true",
+            "timeout": 10,
+            "statusMessage": "Checking wiki freshness..."
           }
         ]
       }

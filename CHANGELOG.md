@@ -14,6 +14,7 @@
 - **chore**: broaden skill triggers to solo analysis + expand marketplace keywords
 - **chore**: sync upstream FPF-Spec (C.11 Decision Theory + NQD cleanup) and rebuild sections
 - **feat**: add Codex CLI edition of FPF skill
+- **docs**: initialize bilingual (RU+EN) wiki for FPF-agent
 
 ## 2026-04-04
 

@@ -1,0 +1,90 @@
+{
+  "language": "bilingual",
+  "languages": ["ru", "en"],
+  "scan_patterns": [
+    "scripts/**/*.py",
+    "agents/**/*.md",
+    "sections/routes/**/*.md",
+    "skills/**/*.md",
+    ".claude-plugin/**/*.json"
+  ],
+  "scan_docs": [
+    "CLAUDE.md",
+    "Readme.md",
+    "CHANGELOG.md"
+  ],
+  "scan_raw": [
+    "docs/wiki/raw/**/*.md",
+    "docs/wiki/raw/**/*.pdf",
+    "docs/wiki/raw/**/*.png",
+    "docs/wiki/raw/**/*.jpg"
+  ],
+  "exclude": [
+    "docs/wiki/**",
+    "**/__pycache__/**",
+    ".venv/**",
+    "venv/**",
+    "node_modules/**",
+    ".git/**",
+    "*.egg-info/**",
+    "sections/embeddings/**",
+    "FPF-Spec.md",
+    "post-forum.md",
+    "post-telegram.md"
+  ],
+  "wiki_dir": "docs/wiki",
+  "sections": {
+    "modules": {
+      "source_dir": "scripts/",
+      "pattern": "*.py",
+      "label_en": "Modules",
+      "label_ru": "Модули",
+      "article_type": "module",
+      "description": "Python rebuild pipeline scripts"
+    },
+    "agents": {
+      "source_dir": "agents/",
+      "pattern": "*.md",
+      "label_en": "Agents",
+      "label_ru": "Агенты",
+      "article_type": "module",
+      "description": "Agent team definitions (classifier, retriever, reasoner, reviewer, sync)"
+    },
+    "routes": {
+      "source_dir": "sections/routes/",
+      "pattern": "route-*.md",
+      "label_en": "Routes",
+      "label_ru": "Маршруты",
+      "article_type": "spec",
+      "description": "Ten user-facing burden-to-pattern routes"
+    },
+    "architecture": {
+      "label_en": "Architecture",
+      "label_ru": "Архитектура",
+      "article_type": "architecture",
+      "description": "System-level views of the FPF-agent plugin",
+      "articles": [
+        "overview",
+        "skill-entry-point",
+        "build-pipeline",
+        "agent-team",
+        "three-tier-retrieval",
+        "plain-language-contract",
+        "sync-and-rebuild"
+      ]
+    },
+    "concepts": {
+      "label_en": "Concepts",
+      "label_ru": "Концепции",
+      "article_type": "concept",
+      "description": "Project-internal vocabulary (not FPF domain terms)",
+      "articles": [
+        "burden",
+        "route-chain",
+        "tier",
+        "pipeline-depth",
+        "changelog-workflow"
+      ]
+    }
+  }
+}
