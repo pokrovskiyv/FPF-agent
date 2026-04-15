@@ -26,6 +26,17 @@
 
 Система добавит marketplace и предложит установить плагин `fpf`. После установки навык доступен в любом проекте. Обновления подтягиваются автоматически при пушах в main.
 
+В Codex CLI:
+
+```bash
+git clone https://github.com/pokrovskiyv/FPF-agent
+cd FPF-agent
+uv sync                              # один раз, ставит зависимости semantic_search
+codex                                # запускать из корня репо
+```
+
+Skill обнаружится автоматически через `$REPO_ROOT/.agents/skills/fpf/`. Триггер тот же самый — опиши задачу своими словами. Требуется [uv](https://docs.astral.sh/uv/) для локального FAISS-поиска. Для обновлений — `git pull`.
+
 ---
 
 ## Что это делает
