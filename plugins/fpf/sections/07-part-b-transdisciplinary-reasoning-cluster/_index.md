@@ -1,0 +1,26 @@
+# Part B – Trans‑disciplinary Reasoning Cluster
+
+- [B.1 - Universal Algebra of Aggregation (Γ) (B.1)](01-b1-b1-universal-algebra-of-aggregation.md) — One shared law of composition so different teams' roll-ups agree and KPIs stop hiding the weakest part.
+- [B.1.1 - Dependency Graph & Proofs (B.1.1)](02-b11-b11-dependency-graph-proofs.md) — The disciplined graph input that makes aggregation predictable and provable across domains.
+- [B.1.2 - System‑specific Aggregation Γ_sys (B.1.2)](03-b12-b12-systemspecific-aggregation-_sys.md) — Rolling up physical systems with conservation laws and clean interfaces so safety audits pass without patching.
+- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation (B.1.3)](04-b13-b13-_epist-knowledgespecific-aggregation.md) — Combine claims, models and datasets while preserving sources and avoiding fake "averaged" truth.
+- [B.1.4 - Contextual & Temporal Aggregation (Γ_ctx & Γ_time) (B.1.4)](05-b14-b14-contextual-temporal-aggregation-_ctx-_time.md) — Use when step order changes meaning or when you are aggregating the same thing across a timeline.
+- [B.1.5 - Γ_method — Order‑Sensitive Method Composition & Work Enactment (B.1.5)](06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md) — Compose ordered recipes into one, keeping planning, capability and execution cleanly separated.
+- [B.1.6 - Γ_work — Work as Spent Resource (B.1.6)](07-b16-b16-_work-work-as-spent-resource.md) — Account for what a run actually spent, across boundaries and phases, without double-counting or free resources.
+- [B.2 - Meta‑Holon Transition (MHT): Recognizing Emergence and Re‑identifying Wholes (B.2)](08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md) — Declare when parts have become a genuinely new whole with its own boundary, goal and behaviour.
+- [B.2.2 - Meta-System Transition (MST) (B.2.2)](09-b22-b22-meta-system-transition-mst.md) — When a collection of systems starts coordinating as one — swarm, platform, fleet — and needs its own owner and safety case.
+- [B.2.3 - Meta-Epistemic Transition (MET) (B.2.3)](10-b23-b23-meta-epistemic-transition-met.md) — The moment a pile of papers and models is deliberately synthesized into a single coherent theory.
+- [B.2.4 - Meta-Functional Transition (MFT) (B.2.4)](11-b24-b24-meta-functional-transition-mft.md) — Recognize when a team's scattered skills have crystallized into one integrated capability worth managing as a whole.
+- [B.2.5 — Supervisor–Subholon Feedback Loop (B.2.5)](12-b25-b25-supervisorsubholon-feedback-loop.md) — How layered supervision works, keeping structural, functional and dataflow hierarchies from being confused.
+- [B.3 - Trust & Assurance Calculus (F–G–R with Congruence) (B.3)](13-b3-b3-trust-assurance-calculus-fgr-with-congruence.md) — How to compute and combine trust in claims and systems so assurance stays comparable across domains.
+- [B.3.3 — Assurance Subtypes & Levels (B.3.3)](14-b33-b33-assurance-subtypes-levels.md) — Three pillars of trust — typing, verification, validation — combined into a simple maturity level per artifact.
+- [B.3.4 - Evidence Decay & Epistemic Debt (B.3.4)](15-b34-b34-evidence-decay-epistemic-debt.md) — How to flag ageing evidence so last year's test does not silently prop up today's decision.
+- [B.3.5 - Working-Model Relations & Grounding (CT2R-LOG) (B.3.5)](16-b35-b35-working-model-relations-grounding-ct2r-log.md) — Keep ordinary part-of / member-of relations on the public surface, with a hidden trace for auditors.
+- [B.4 - Canonical Evolution Loop (B.4)](17-b4-b4-canonical-evolution-loop.md) — A shared cycle for how anything — system, theory, method — keeps improving instead of drifting from its spec.
+- [B.4.1 - Observe -> Notice -> Stabilize -> Route (B.4.1)](18-b41-b41-observe-notice-stabilize-route.md) — The seam between noticing a weak cue and routing it to the right owner without forcing premature labels.
+- [B.5 - Canonical Reasoning Cycle (B.5)](19-b5-b5-canonical-reasoning-cycle.md) — A repeatable reasoning engine that breaks analysis paralysis and blind trial-and-error.
+- [B.5.1 - Explore → Shape → Evidence → Operate (B.5.1)](20-b51-b51-explore-shape-evidence-operate.md) — Four lifecycle states every idea passes through — from fuzzy possibility to live operation.
+- [B.5.2 - Abductive Loop (B.5.2)](21-b52-b52-abductive-loop.md) — A disciplined way to propose a candidate explanation for a puzzle without losing trace of where it came from.
+- [B.5.2.0 - U.AbductivePrompt (B.5.2.0)](22-b520-b520-uabductiveprompt.md) — The typed starting prompt for abduction — broader than an anomaly, narrower than "anything goes".
+- [B.5.2.1 - Creative Abduction with NQD (B.5.2.1)](23-b521-b521-creative-abduction-with-nqd.md) — Replace ad-hoc brainstorming with a generator that balances newness, quality and variety of hypotheses.
+- [B.5.3 - Role-Projection Bridge (B.5.3)](24-b53-b53-role-projection-bridge.md) — A rich bridge between core concepts and a domain's own vocabulary — richer than a simple alias dictionary.

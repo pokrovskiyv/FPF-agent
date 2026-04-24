@@ -31,11 +31,25 @@
 ```bash
 git clone https://github.com/pokrovskiyv/FPF-agent
 cd FPF-agent
-uv sync                              # один раз, ставит зависимости semantic_search
-codex                                # запускать из корня репо
+python3 scripts/install_codex_plugin.py
 ```
 
-Skill обнаружится автоматически через `$REPO_ROOT/.agents/skills/fpf/`. Триггер тот же самый — опиши задачу своими словами. Требуется [uv](https://docs.astral.sh/uv/) для локального FAISS-поиска. Для обновлений — `git pull`.
+Скрипт скопирует пакет в `~/plugins/fpf` и добавит запись в
+`~/.agents/plugins/marketplace.json`. После этого навык доступен в Codex CLI
+из любых рабочих директорий, а не только из корня этого репозитория. Для
+обновлений: `git pull`, затем снова `python3 scripts/install_codex_plugin.py`.
+
+Семантический fallback использует локальный FAISS-индекс. Если он ещё не
+построен, выполните один раз:
+
+```bash
+cd ~/plugins/fpf
+uv run scripts/build_embeddings.py
+```
+
+Маршрутные сценарии работают без индекса. Для семантического поиска требуется
+[uv](https://docs.astral.sh/uv/), который установит зависимости
+`sentence-transformers` и `faiss-cpu` при первом запуске.
 
 ---
 
