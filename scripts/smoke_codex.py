@@ -14,12 +14,17 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CODEX_SKILL = PROJECT_ROOT / '.agents' / 'skills' / 'fpf' / 'SKILL.md'
 CC_SKILL = PROJECT_ROOT / 'skills' / 'fpf' / 'SKILL.md'
+PLUGIN_ROOT = PROJECT_ROOT / 'plugins' / 'fpf'
+PLUGIN_SKILL = PLUGIN_ROOT / 'skills' / 'fpf' / 'SKILL.md'
+PLUGIN_MANIFEST = PLUGIN_ROOT / '.codex-plugin' / 'plugin.json'
+REPO_MARKETPLACE = PROJECT_ROOT / '.agents' / 'plugins' / 'marketplace.json'
 
 RUN_ALL = '--all' in sys.argv
 
@@ -160,6 +165,121 @@ class TestSemanticSearchCLI(unittest.TestCase):
             missing = required_keys - set(item.keys())
             self.assertFalse(missing,
                              f'Result missing keys {missing}: {item}')
+
+
+class TestPackagedCodexPlugin(unittest.TestCase):
+    """Source-controlled Codex plugin package is self-contained."""
+
+    def test_manifest_exists_and_declares_skills(self):
+        self.assertTrue(PLUGIN_MANIFEST.exists(),
+                        f'Plugin manifest not found at {PLUGIN_MANIFEST}')
+        manifest = json.loads(PLUGIN_MANIFEST.read_text(encoding='utf-8'))
+        self.assertEqual(manifest.get('name'), 'fpf')
+        self.assertEqual(manifest.get('skills'), './skills/')
+        self.assertEqual(manifest.get('license'), 'MIT')
+        interface = manifest.get('interface', {})
+        self.assertEqual(interface.get('displayName'), 'FPF')
+        self.assertIn('defaultPrompt', interface)
+
+    def test_runtime_files_exist_in_plugin(self):
+        required = [
+            'skills/fpf/SKILL.md',
+            'agents/fpf-classifier.md',
+            'agents/fpf-retriever.md',
+            'agents/fpf-reasoner.md',
+            'agents/fpf-reviewer.md',
+            'sections/metadata.json',
+            'sections/glossary-quick.md',
+            'sections/lexical-rules.md',
+            'sections/routes/route-1-project-alignment.md',
+            'scripts/semantic_search.py',
+            'scripts/build_embeddings.py',
+        ]
+        missing = [path for path in required if not (PLUGIN_ROOT / path).exists()]
+        self.assertEqual(missing, [],
+                         f'Packaged plugin is missing runtime files: {missing}')
+
+    def test_packaged_skill_uses_plugin_root_contract(self):
+        self.assertTrue(PLUGIN_SKILL.exists(),
+                        f'Packaged skill not found at {PLUGIN_SKILL}')
+        text = PLUGIN_SKILL.read_text(encoding='utf-8')
+        self.assertIn('plugin root', text.lower())
+        self.assertNotIn('launched from the FPF-agent repo root', text)
+
+    def test_packaged_skill_references_resolve_inside_plugin(self):
+        self.assertTrue(PLUGIN_SKILL.exists(),
+                        f'Packaged skill not found at {PLUGIN_SKILL}')
+        text = PLUGIN_SKILL.read_text(encoding='utf-8')
+        _, body = split_frontmatter(text)
+        patterns = [
+            r'`?(agents/fpf-[a-z]+\.md)`?',
+            r'`(sections/[a-zA-Z0-9_./\-]+\.(?:md|json))`',
+            r'`?(scripts/[a-zA-Z0-9_\-]+\.py)`?',
+        ]
+        paths = []
+        for pattern in patterns:
+            paths.extend(re.findall(pattern, body))
+        concrete = sorted({
+            path for path in paths
+            if '{' not in path and '*' not in path and 'route-' not in path
+        })
+        missing = [path for path in concrete if not (PLUGIN_ROOT / path).exists()]
+        self.assertEqual(missing, [],
+                         f'Packaged skill references missing files: {missing}')
+
+
+class TestCodexPluginInstaller(unittest.TestCase):
+    """Installer syncs packaged plugin into a home-local Codex marketplace."""
+
+    def test_installer_syncs_plugin_and_marketplace_to_temp_home(self):
+        installer = PROJECT_ROOT / 'scripts' / 'install_codex_plugin.py'
+        self.assertTrue(installer.exists(), f'Installer not found: {installer}')
+
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            result = subprocess.run(
+                [sys.executable, str(installer), '--home', str(home)],
+                cwd=PROJECT_ROOT,
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+            installed_manifest = home / 'plugins' / 'fpf' / '.codex-plugin' / 'plugin.json'
+            self.assertTrue(installed_manifest.exists(),
+                            f'Installed manifest missing: {installed_manifest}')
+            manifest = json.loads(installed_manifest.read_text(encoding='utf-8'))
+            self.assertEqual(manifest.get('name'), 'fpf')
+
+            marketplace_path = home / '.agents' / 'plugins' / 'marketplace.json'
+            self.assertTrue(marketplace_path.exists(),
+                            f'Marketplace missing: {marketplace_path}')
+            marketplace = json.loads(marketplace_path.read_text(encoding='utf-8'))
+            entries = marketplace.get('plugins', [])
+            matching = [entry for entry in entries if entry.get('name') == 'fpf']
+            self.assertEqual(len(matching), 1)
+            self.assertEqual(matching[0]['source']['path'], './plugins/fpf')
+            self.assertEqual(matching[0]['policy']['installation'], 'AVAILABLE')
+            self.assertEqual(matching[0]['policy']['authentication'], 'ON_INSTALL')
+            self.assertEqual(matching[0]['category'], 'Productivity')
+
+
+class TestRepoLocalMarketplace(unittest.TestCase):
+    """Repo exposes the packaged plugin through Codex marketplace metadata."""
+
+    def test_repo_marketplace_points_to_packaged_plugin(self):
+        self.assertTrue(REPO_MARKETPLACE.exists(),
+                        f'Repo marketplace not found: {REPO_MARKETPLACE}')
+        marketplace = json.loads(REPO_MARKETPLACE.read_text(encoding='utf-8'))
+        entries = marketplace.get('plugins', [])
+        matching = [entry for entry in entries if entry.get('name') == 'fpf']
+        self.assertEqual(len(matching), 1)
+        self.assertEqual(matching[0]['source']['source'], 'local')
+        self.assertEqual(matching[0]['source']['path'], './plugins/fpf')
+        self.assertEqual(matching[0]['policy']['installation'], 'AVAILABLE')
+        self.assertEqual(matching[0]['policy']['authentication'], 'ON_INSTALL')
+        self.assertEqual(matching[0]['category'], 'Productivity')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,36 @@
+# Section E‑I - The FPF Constitution
+
+- [E.1 - Vision & Mission: “Operating System for Thought” (E.1)](01-e1-e1-vision-mission-operating-system-for-thought.md) — Why a shared scaffold for reasoning is needed to carry ideas from sketch to delivery across disciplines.
+- [E.2 - The Eleven Pillars (E.2)](02-e2-e2-the-eleven-pillars.md) — The eleven non-negotiable rules every artefact built on this framework must honour.
+- [E.3 - Principle Taxonomy & Precedence Model (E.3)](03-e3-e3-principle-taxonomy-precedence-model.md) — When two rules pull against each other, which one wins and why.
+- [E.4 - FPF Artefact Architecture (E.4)](04-e4-e4-fpf-artefact-architecture.md) — How to separate binding rules, working tools, and teaching materials so each can evolve at its own pace.
+- [E.5 - Four Guard‑Rails of FPF (E.5)](05-e5-e5-four-guardrails-of-fpf.md) — Four protections that stop the core from slowly decaying into tool jargon, monoculture, and tangled dependencies.
+- [E.5.1 - DevOps Lexical Firewall (E.5.1)](06-e51-e51-devops-lexical-firewall.md) — Keep tool and technology words out of core rules so they do not age as fast as the tools do.
+- [E.5.2 - Notational Independence (E.5.2)](07-e52-e52-notational-independence.md) — Never let one diagram style or syntax become the sole definition of a concept.
+- [E.5.3 - Unidirectional Dependency (E.5.3)](08-e53-e53-unidirectional-dependency.md) — Fast-changing layers may depend on slow-changing ones, but never the other way around.
+- [E.5.4 - Cross‑Disciplinary Bias Audit (E.5.4)](09-e54-e54-crossdisciplinary-bias-audit.md) — How to catch unconscious biases from one field leaking into rules meant to be universal.
+- [E.6 - Didactic Architecture of the Specification (E.6)](10-e6-e6-didactic-architecture-of-the-specification.md) — How the spec is ordered so newcomers and experts can both find what they need.
+- [E.7 - Archetypal Grounding Principle (E.7)](11-e7-e7-archetypal-grounding-principle.md) — Every abstract rule must be illustrated in familiar matter so readers can actually grasp it.
+- [E.8 - FPF Authoring Conventions & Style Guide (E.8)](12-e8-e8-fpf-authoring-conventions-style-guide.md) — How to write new entries so they read consistently and can be reviewed without friction.
+- [E.9 - Design‑Rationale Record (DRR) Method (E.9)](13-e9-e9-designrationale-record-drr-method.md) — Before changing a rule, record why you want to change it so future readers can see the reasoning.
+- [E.10 - Unified Lexical Rules for FPF (LEX‑BUNDLE) (E.10)](14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md) — The single place where all word-use rules live so authors and reviewers cite one source of truth.
+- [E.10.P - Conceptual Prefixes policy & registry (E.10.P)](15-e10p-e10p-conceptual-prefixes-policy-registry.md) — Which short-form prefixes are reserved and how to mint a new one without clashes.
+- [E.10.D1 - Lexical Discipline for “Context” (D.CTX) (E.10.D)](16-e10d-e10d1-lexical-discipline-for-context-dctx.md) — How to stop the word “context” from meaning different things in different places.
+- [E.10.D2 - Intension–Description–Specification Discipline (I/D/S) (E.10.D)](17-e10d-e10d2-intensiondescriptionspecification-discipline-ids.md) — Keep the thing itself, its plain description, and its testable specification clearly separate.
+- [E.12 - Didactic Primacy & Cognitive Ergonomics (E.12)](18-e12-e12-didactic-primacy-cognitive-ergonomics.md) — Human understandability beats theoretical purity when they conflict.
+- [E.13 - Pragmatic Utility & Value Alignment (E.13)](19-e13-e13-pragmatic-utility-value-alignment.md) — Stop teams from building formally perfect solutions to the wrong problem.
+- [E.14 - Human‑Centric Working‑Model (E.14)](20-e14-e14-humancentric-workingmodel.md) — One shared working model everyone can read and discuss without exposure to formal machinery.
+- [E.15 - Lexical Authoring & Evolution Protocol  (LEX‑AUTH) (E.15)](21-e15-e15-lexical-authoring-evolution-protocol-lexauth.md) — How to evolve the spec’s vocabulary through governed search rather than ad-hoc edits.
+- [E.16 - RoC‑Autonomy Budget & Enforcement (E.16)](22-e16-e16-rocautonomy-budget-enforcement.md) — How to make claims of “autonomous” behavior testable, bounded, and override-able when needed.
+- [E.17.0 - U.MultiViewDescribing — Viewpoints, Views & Correspondences (E.17.0)](23-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md) — How to describe one complex thing from multiple viewpoints while keeping them reconcilable.
+- [E.17.1 - U.ViewpointBundleLibrary - Reusable Viewpoint Bundles (E.17.1)](24-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md) — A library of ready-made viewpoint sets so teams do not reinvent them for every project.
+- [E.17.2 - TEVB — Typical Engineering Viewpoints Bundle (E.17.2)](25-e172-e172-tevb-typical-engineering-viewpoints-bundle.md) — A starter bundle of the viewpoints engineering teams most commonly need.
+- [E.17 - Multi‑View Publication Kit (for Morphisms) (E.17)](26-e17-e17-multiview-publication-kit-for-morphisms.md) — How to publish the same result as a plain-view, tech card, interop card, and assurance lane at once.
+- [E.17.EFP - ExplanationFaithfulnessProfile — explanation classification over existing MVPK faces (E.17.EFP)](27-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md) — Tell readers whether an explanation is source-pinned, reconstruction, teaching material, or speculation.
+- [E.17.ID.CR - InterpretationDiscipline / ComparativeReading — bounded comparative reading over comparative review units (E.17.ID)](28-e17id-e17idcr-interpretationdiscipline-comparativereading-bounded-.md) — How to write a careful side-by-side reading of two notes without it becoming a decision in disguise.
+- [E.17.AUD - AuthoredUnitDiscipline - keep one authored unit stable enough to read honestly (E.17.AUD)](29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md) — How to keep a single note or memo about one stable thing instead of letting it quietly drift.
+- [E.17.AUD.LHR - AuthoredUnitDiscipline / Local Head Restoration - repair the pressured local head before the authored unit inherits it (E.17.AUD)](30-e17aud-e17audlhr-authoredunitdiscipline-local-head-restoration-repa.md) — Fix one overloaded word in a sentence before the ambiguity spreads to the whole note.
+- [E.17.AUD.OOTD - AuthoredUnitDiscipline / AuthoredUnit Object-of-Talk Discipline - authored-unit stability over one primary object of talk (E.17.AUD)](31-e17aud-e17audootd-authoredunitdiscipline-authoredunit-object-of-tal.md) — Keep a note about one main thing, one move over it, and one explicit outside-work boundary.
+- [E.18 - Transduction Graph Architecture (E.TGA) (E.18)](32-e18-e18-transduction-graph-architecture-etga.md) — How to architect flows where each step transforms and passes along typed results across a whole pipeline.
+- [E.19 - Pattern Quality Gates: Review & Refresh Profiles (E.19)](33-e19-e19-pattern-quality-gates-review-refresh-profiles.md) — How to review new entries and periodically refresh old ones so nothing quietly decays.
+- [E.20 - Mechanism Introduction Protocol (E.20)](34-e20-e20-mechanism-introduction-protocol.md) — Safe steps for adding a new mechanism to the spec without creating drift across multiple owners.
