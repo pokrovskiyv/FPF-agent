@@ -17,7 +17,7 @@
     "decision-making",
     "analysis"
   ],
-  "skills": "./skills/",
+  "skills": "./.agents/skills/",
   "interface": {
     "displayName": "FPF",
     "shortDescription": "Structured coordination analysis in plain language.",

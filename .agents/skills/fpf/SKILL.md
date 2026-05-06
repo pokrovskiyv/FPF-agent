@@ -18,12 +18,22 @@ NEVER use FPF terminology in responses to the user.
 
 ## Path convention
 
-This skill assumes Codex is launched from the FPF-agent repo root. All file
-paths below are relative to that root. When reading referenced agent files
-under `agents/`, you will encounter the token `${CLAUDE_PLUGIN_ROOT}/` — treat
-it as an empty string. A path like `${CLAUDE_PLUGIN_ROOT}/sections/metadata.json`
-means exactly `sections/metadata.json` from the repo root. Never try to
-resolve the env var.
+All runtime paths below are relative to the FPF plugin root, not the user's
+current project directory. Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor
+of this `SKILL.md` that contains `.codex-plugin/plugin.json`. In source
+checkout development this is the FPF-agent repo root; in an installed plugin
+cache or home-local install, this is the installed plugin root.
+
+When reading referenced files, always prefix paths with `<FPF_PLUGIN_ROOT>`.
+For example, `agents/fpf-classifier.md` means
+`<FPF_PLUGIN_ROOT>/agents/fpf-classifier.md`, and `sections/metadata.json`
+means `<FPF_PLUGIN_ROOT>/sections/metadata.json`. Never resolve these paths
+against the user's current project.
+
+When reading referenced agent files under `agents/`, you will encounter the
+token `${CLAUDE_PLUGIN_ROOT}/` — treat it as the resolved plugin root. A path
+like `${CLAUDE_PLUGIN_ROOT}/sections/metadata.json` means exactly
+`<FPF_PLUGIN_ROOT>/sections/metadata.json`. Never try to resolve the env var.
 
 ## Pipeline (single context, four roles sequential)
 
@@ -62,10 +72,11 @@ Read `agents/fpf-retriever.md` in full. Using the Step 1 structured block:
   lists. Also consult `sections/metadata.json` for any pattern ID references.
 - **Tier 2 (semantic fallback):** Run:
   ```
-  uv run scripts/semantic_search.py "<SEARCH_QUERY>" --top-k 5 --json
+  uv run <FPF_PLUGIN_ROOT>/scripts/semantic_search.py "<SEARCH_QUERY>" --top-k 5 --json --index-dir <FPF_PLUGIN_ROOT>/sections/embeddings
   ```
   Parse the returned JSON array. Read each result's `file` field — those are
-  your sections. Expect objects of shape:
+  your sections. The script returns plugin-root-relative section paths. Expect
+  objects of shape:
   `{rank, score, pattern_id, title, file, keywords}`.
 - **Tier 3 (combined):** Do Tier 1 first (primary route), then supplement
   with Tier 2 semantic search to cover the second burden.
@@ -161,8 +172,8 @@ Detect from user's natural language — no FPF terms needed.
 
 These files contain the full instructions for each pipeline role. They are
 shared with the Claude Code edition of this skill, so you will see the token
-`${CLAUDE_PLUGIN_ROOT}/` inside them — ignore that token (see Path convention
-section above).
+`${CLAUDE_PLUGIN_ROOT}/` inside them — treat that token as `<FPF_PLUGIN_ROOT>`
+(see Path convention section above).
 
 - `agents/fpf-classifier.md` — Step 1 instructions
 - `agents/fpf-retriever.md` — Step 2 instructions

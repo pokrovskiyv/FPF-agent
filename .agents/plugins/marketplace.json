@@ -8,7 +8,7 @@
       "name": "fpf",
       "source": {
         "source": "local",
-        "path": "./plugins/fpf"
+        "path": "./."
       },
       "policy": {
         "installation": "AVAILABLE",

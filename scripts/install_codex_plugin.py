@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Install the packaged FPF Codex plugin into a home-local marketplace.
+"""Install the FPF Codex plugin into a home-local marketplace.
 
 Default install location:
   ~/plugins/fpf
   ~/.agents/plugins/marketplace.json
+
+The source plugin is the FPF-agent repository root. The installer assembles a
+minimal home-local plugin from the root manifest and runtime files instead of
+copying a source-controlled duplicate package.
 
 Use --home in tests or when installing into an alternate home directory.
 """
@@ -18,8 +22,18 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_PLUGIN_SOURCE = PROJECT_ROOT / "plugins" / "fpf"
+DEFAULT_PLUGIN_SOURCE = PROJECT_ROOT
 PLUGIN_NAME = "fpf"
+COPY_DIRECTORIES = (
+    (".codex-plugin", ".codex-plugin"),
+    (".agents/skills/fpf", ".agents/skills/fpf"),
+    ("agents", "agents"),
+    ("sections", "sections"),
+)
+COPY_FILES = (
+    ("scripts/semantic_search.py", "scripts/semantic_search.py"),
+    ("scripts/build_embeddings.py", "scripts/build_embeddings.py"),
+)
 
 
 def plugin_entry() -> dict:
@@ -86,16 +100,33 @@ def sync_plugin(source: Path, target: Path) -> None:
     manifest = source / ".codex-plugin" / "plugin.json"
     if not manifest.exists():
         raise FileNotFoundError(f"Plugin manifest does not exist: {manifest}")
+    if source == target:
+        raise ValueError(f"Plugin source and target are the same directory: {source}")
+
+    required = [
+        *(source / src for src, _ in COPY_DIRECTORIES),
+        *(source / src for src, _ in COPY_FILES),
+    ]
+    missing = [str(path) for path in required if not path.exists()]
+    if missing:
+        raise FileNotFoundError(
+            "Plugin source is missing required runtime paths: "
+            + ", ".join(missing)
+        )
 
     if target.exists():
         shutil.rmtree(target)
 
     target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(
-        source,
-        target,
-        ignore=shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store"),
-    )
+    target.mkdir()
+
+    ignore = shutil.ignore_patterns("__pycache__", "*.pyc", ".DS_Store")
+    for src, dst in COPY_DIRECTORIES:
+        shutil.copytree(source / src, target / dst, ignore=ignore)
+    for src, dst in COPY_FILES:
+        destination = target / dst
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source / src, destination)
 
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
@@ -112,7 +143,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         "--source",
         type=Path,
         default=DEFAULT_PLUGIN_SOURCE,
-        help="Packaged plugin source directory (default: plugins/fpf)",
+        help="Plugin root source directory (default: project root)",
     )
     return parser.parse_args(argv)
 
