@@ -1,8 +1,10 @@
 ## B.1.6 - Γ\_work — Work as Spent Resource
 
+> **Status:** Stable
+
 > **► decided‑by: A.14 Advanced Mereology**
 **A.14 compliance —** Only **Work** carries resource deltas; quantitative splits/consumption use **PortionOf** against pre‑consumption stocks; run histories use **PhaseOf** on Work; `MemberOf` MUST NOT be used for resource mereology; SCR/RSCR stay outside (use EPV‑DAG anchors).
- 
+
 ### B.1.6:1 - Problem frame
 
 FPF distinguishes **what is done** from **what it costs** to do it.
@@ -256,6 +258,13 @@ is invariant to any topological sort consistent with Γ\_method’s order (Γ\_m
 
 
 ### B.1.6:13 - Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: an authored claim that planned effort, actual effort trace, resource burn, effort window, resistance, or cost changes a temporal outcome.
+- This pattern keeps: `Gamma_work` actual work/resource aggregation; `Gamma_time` declared temporal slices and phase composition remain separate.
+- Unsupported use: work logs, resource aggregation, or phase names do not by themselves infer acceleration, transition law, causal proof, or benchmark result.
+- Exit: use C.27 only for the temporal-claim adequacy question; use work/resource patterns for actual work evidence and cite dynamics, causal/evaluation, or benchmark patterns when those stronger questions are live.
 
 * **Builds on:** A.12 **Transformer Principle**; A.14 **Mereology Extension** (PortionOf, PhaseOf); A.15 **Strict Distinction** (MethodDescription / Method / Work).
 * **Coordinates with:** B.1.5 **Γ\_method** (order and concurrency), B.1.4 **Γ\_time** (temporal coverage), B.1.2 **Γ\_sys** (system assembly).

@@ -1,6 +1,6 @@
 # Cross-References into 07-part-b-transdisciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (57 refs).
+Patterns in other Parts that reference patterns in this directory (66 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -16,10 +16,12 @@ Patterns in other Parts that reference patterns in this directory (57 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.6 | coordinates_with | B.3 |
 | A.6.3 | used_by | B.5.3 |
 | A.6.3.CR | coordinates_with | B.5.2 |
 | A.6.A | builds_on | B.4.1 |
 | A.6.A | coordinates_with | B.5.2.0 |
+| A.6.B | coordinates_with | B.3 |
 | A.6.H | coordinates_with | B.1.1 |
 | A.6.H | coordinates_with | B.1.4 |
 | A.6.Q | builds_on | B.4.1 |
@@ -29,7 +31,7 @@ Patterns in other Parts that reference patterns in this directory (57 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| A.10 | prerequisite_for | B.3 |
+| A.10 | coordinates_with | B.3 |
 | A.12 | prerequisite_for | B.2.5 |
 | A.14 | prerequisite_for | B.1.1 |
 | A.15.1 | used_by | B.1.6 |
@@ -47,6 +49,7 @@ Patterns in other Parts that reference patterns in this directory (57 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.16 | coordinates_with | B.3 |
 | C.17 | coordinates_with | B.5.2.1 |
 | C.17 | coordinates_with | B.3 |
 | C.17 | coordinates_with | B.4 |
@@ -62,6 +65,12 @@ Patterns in other Parts that reference patterns in this directory (57 refs).
 | C.23 | builds_on | B.3 |
 | C.24 | builds_on | B.3 |
 | C.25 | builds_on | B.3 |
+| C.26 | builds_on | B.3 |
+| C.26.1 | builds_on | B.3 |
+| C.26.2 | builds_on | B.3 |
+| C.26.3 | builds_on | B.3 |
+| C.27 | builds_on | B.1.4 |
+| C.27 | builds_on | B.1.6 |
 
 ## From 09-part-d-multi-scale-ethics-conflictoptimisation
 

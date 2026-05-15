@@ -1,12 +1,26 @@
 ## A.6.3.CR - ConservativeRetextualization — same-described-entity textual re-expression
+> **Status:** Stable
 
 **Placement.** Specialization under `A.6.3 U.EpistemicViewing` for same-described-entity textual re-expression.  
 **Builds on.** `A.6.3 U.EpistemicViewing`; `A.6.2 U.EffectFreeEpistemicMorphing`; `A.7`; `E.10.D2`; `E.17.0`; `E.17`; `F.9`; `F.18`; `E.10`.  
 **Coordinates with.** `ExplanationFaithfulnessProfile`; `RepresentationTransduction`; `E.17.ID.CR ComparativeReading`; `A.6.4 U.EpistemicRetargeting`; `B.5.2`; `A.15`.
 
 **One-line summary.** `ConservativeRetextualization` is a same-described-entity textual re-expression of an episteme that stays inside `A.6.3 U.EpistemicViewing`: it may shorten, reorder, filter, translate, or restate claims, but it does **not** silently change `describedEntityRef`, add new claims about that entity, or hide bridge work.
+**Governed object in plain terms.** One published textual rendering over the same described entity; not the whole source corpus, not an explanation face, and not a downstream decision or authority-bearing publication.
+**Governing move in plain terms.** Restate already available content textually while preserving `describedEntityRef`, keeping source tether visible, and making loss or omission inspectable.
+
+**Use this when.** Use this pattern when one already available source line about the same described entity needs a second textual form such as a report rewrite, summary, translation, or declared filtered restatement, and the real job is still same-entity textual re-expression rather than explanation, representation change, or retargeting.
+
+**Start here when.** Your first honest artefact is still a text over the same object-of-talk, and the main review question is whether omissions, softening, or foregrounding remain conservative and source-tethered.
+
+**What goes wrong if missed.** A summary, translation, or manager-readable rewrite gets treated as harmless editing even after it has started hiding explanation work, bridge work, changed authority posture, or a separate weaker-use contract.
+
+**What this buys.** One honest same-entity textual rewrite with visible source tether, visible omission or loss notes, and an explicit reroute when the case stops being only conservative retextualization.
+
+**Not this pattern when.** Not this pattern when the case is primarily explanatory rendering (`ExplanationFaithfulnessProfile`), representation-scheme change (`RepresentationTransduction`), changed object-of-talk (`A.6.4`), or a deliberately weakened rendering whose narrower-use, forbidden-heavier-use, and stronger-source reopen contract has become primary. In that last case, route to `A.6.3.CSC Controlled Semantic Coarsening` instead of resolving it as ordinary `ConservativeRetextualization`.
 
 ### A.6.3.CR:1 - Problem frame
+
 
 Teams constantly need a second textual form of the same episteme:
 - an internal technical statement rewritten as an engineer-manager-readable report;
@@ -54,10 +68,11 @@ This distinction matters because the pattern governs **how** a rewrite is recogn
 This pattern repeatedly uses a small working vocabulary.
 - **Source slice** = the already available pinned or otherwise reviewable textual material being restated.
 - **Published slice** = the resulting textual rendering that remains under same-described-entity discipline.
+- **slice** here is a local prose label for the reviewed material or rendering; it is not a new `U.ContextSliceSet`, publication face, or surface kind.
 - **Ordinary case** = a reviewable same-entity rewrite where source tether, omission notes, and reroute conditions stay readable without a heavyweight review record.
-- **Load-bearing case** = a case where dispute, policy, assurance, correspondence burden, or cross-context reliance makes a fuller record worth publishing.
+- **Load-bearing case** = a case where dispute, policy, assurance, correspondence work, or cross-context reliance makes a fuller record worth publishing. In such cases, publish only the pressure-specific support that matters: claim-support posture, uncertainty or abstention posture, independent-verification question, audience-over-read risk, and any anti-drift or recoverability evidence needed for the use.
 
-These terms are only local reading aids. They do not create new owners, new publication faces, or a second semantic layer.
+These terms are only local reading aids. They do not create new patterns, new publication faces, or a second semantic layer.
 
 #### A.6.3.CR:4.2 - Scope and exclusions
 
@@ -80,6 +95,7 @@ Use this pattern when the object-of-talk stays fixed and the published result st
 - If the main change is explanatory, move to `ExplanationFaithfulnessProfile`.
 - If the main change is a representation-scheme shift, move to `RepresentationTransduction`.
 - If the described entity changes, move to `A.6.4`.
+- If the published result stays honest only by carrying its own weaker-use contract because distinctions or source authority were deliberately weakened, route to `A.6.3.CSC Controlled Semantic Coarsening`; do not keep the case here as ordinary same-entity rewrite.
 
 #### A.6.3.CR:4.2.b - What a reviewer checks first
 
@@ -87,8 +103,13 @@ A reviewer usually does not begin by filling every field name. The first useful 
 1. Is the published result still about the same described entity?
 2. Is the result still textual, or has it become explanation or representation change?
 3. Can the reader see what was omitted, softened, or foregrounded?
-4. If correspondence is doing work, is that burden visible rather than hidden in fluent prose?
-5. If any answer is doubtful, is the reroute path explicit?
+4. If correspondence is doing work, is that correspondence support visible rather than hidden in fluent prose?
+5. Is the source merely pointed at, actually used, faithful to the source material, and admissible for the intended use?
+6. If any answer is doubtful, is the reroute path explicit?
+
+If omissions, softening, or filtering are lawful only because the published result is weaker, narrower-use, forbidden for heavier uptake, and tied to reopen, the case has crossed out of ordinary conservative retextualization even if the prose still looks like a summary. Use `A.6.3.CSC Controlled Semantic Coarsening` for that source/rendering relation.
+
+Here, **reopen** means return to the stronger source-bearing material, while **reroute** means the governing pattern has changed. A coarsened textual slice may need both.
 
 Only after these questions are answered does a fuller load-bearing review record usually become worth writing.
 
@@ -101,15 +122,15 @@ Most same-described-entity textual rewrites should stay human-usable. This patte
 - that `describedEntityRef` remains preserved;
 - whether the case is direct or correspondence-mediated when that is not obvious;
 - what omissions or attenuation matter for the reader;
-- where the case exits if it has turned into explanation, representation shift, retargeting, or world/gate-bearing material.
+- where the case exits if it has turned into explanation, representation shift, retargeting, world/gate-bearing material, or a separate weaker-use / forbidden-use / reopen contract that can no longer be treated as ordinary conservative rewrite.
 
-**Explicit review record (only for load-bearing cases).** A fuller record is warranted when the case is assurance-facing, gate-adjacent, cross-context, correspondence-heavy, policy-bearing, or likely to be disputed. The record may inherit host ids and already-pinned metadata instead of restating them inline. When published, that record normally captures:
-- transform placement (`landingForm = specialization under A.6.3`, `hostOwner`, `sourceForm`, `targetForm`, `changeLocus`);
-- preservation context (`describedEntityPolicy = preserve`, `boundedContextPolicy`, `viewpointPolicy`, `referenceSchemePolicy`, `representationSchemePolicy`, `groundingPolicy`, `referencePlanePolicy`);
-- claim and publication discipline (`claimPolicy`, `claimScopePolicy`, `publicationScopePolicy`, `reliabilityTransportPolicy`, `pinningPolicy`, `provenancePolicy`, `lossProfile`);
-- continuity and bridge discipline (`claimContinuityClass`, `microtheoryContinuityClass`, `onticContinuityClass`, `bridgeRequirement`, `conservativityWitness`);
-- downstream and admissibility discipline (`worldContactPolicy`, `evidencePolicy`, `gatePolicy`, `workCrossing`, `upstreamOwner`, `downstreamOwner`, `admissibleFaces`, `admissibleSurfaces`, `compositionLaw`, `reopenCondition`);
-- naming and presentation discipline (`publicNamePolicy`).
+**Explicit review record (only for load-bearing cases).** A fuller record is warranted when the case is assurance-facing, gate-adjacent, cross-context, correspondence-heavy, policy-bearing, or likely to be disputed. The record may inherit nearby ids and already-pinned metadata instead of restating them inline. When published, that record normally captures:
+- what source material is being restated and what rendering now stands before the reader;
+- what same described entity, context, viewpoint, and reference choices stay preserved;
+- what claim scope, publication scope, source tether, provenance, and loss profile apply;
+- what continuity witness or bridge caution keeps the conservative reading reviewable;
+- what stronger world, evidence, gate, or work use stays outside, where the rendering remains admissible, and what reopen condition would end this pattern;
+- what public naming keeps the case from sounding stronger than it is.
 
 The point of this record is not bureaucratic completion for every paragraph. It is to make **load-bearing** cases reviewable without hiding meaning in style, topic familiarity, or editor intuition.
 
@@ -117,16 +138,16 @@ The point of this record is not bureaucratic completion for every paragraph. It 
 
 Default admissibility for ordinary same-described-entity textual cases:
 - primary admissible faces are `Plain` and `Tech`;
-- bounded report-only use is lawful when source pins, provenance, loss notes, and same-described-entity conservativity remain visible;
-- `Interop` use is lawful only when the host explicitly permits source-pinned, text-preserving export without added semantics;
-- `Assurance` or gate-bearing use is not default and requires host-explicit policy plus source-pinned conservativity without hidden strengthening.
+- bounded report-only use is lawful when source pins, provenance, loss notes, and same-described-entity conservativity remain visible, and when the case does not depend on one separate weaker-use contract to stay honest;
+- `Interop` use is lawful only when the governing face explicitly permits source-pinned, text-preserving export without added semantics;
+- `Assurance` or gate-bearing use is not default and requires explicit face policy plus source-pinned conservativity without hidden strengthening.
 
 #### A.6.3.CR:4.4 - Direct and correspondence-mediated profiles
 
 **Direct ConservativeRetextualization**
 - source and target are textual re-expressions of one source episteme;
 - no `CorrespondenceModelRef` is needed;
-- the main burden is explicit loss/provenance discipline.
+- the main review question is explicit loss/provenance discipline.
 
 **CorrespondenceConservativeRetextualization**
 - the target text is derived from a declared correspondence between epistemes or views of the same described entity;
@@ -141,11 +162,11 @@ The pattern covers a small family of recurring textual moves as long as the same
 - **Register shift** — a technical statement is rewritten into plainer engineer-manager prose without changing what is being said about the same entity.
 - **Summary or filtered restatement** — a source note is shortened or focused on one declared slice, with omissions stated rather than hidden.
 - **Cross-language restatement** — the same source claim is restated in another natural language while the same source tether and same-entity line remain explicit.
-- **Correspondence-supported textual synthesis** — one textual rendering is produced from declared same-entity correspondences without importing extra bridge or substitution burden.
+- **Correspondence-supported textual synthesis** — one textual rendering is produced from declared same-entity correspondences without importing extra bridge or substitution claims.
 
-These are recurring move shapes, not separate owners. The host relation remains the same: same-described-entity textual re-expression under `A.6.3`.
+These are recurring move shapes, not separate patterns. The governing relation remains the same: same-described-entity textual re-expression under `A.6.3`.
 
-#### A.6.3.CR:4.5 - Shared conservative retextualization law packet
+#### A.6.3.CR:4.5 - Governing law
 
 ##### A.6.3.CR:4.5.a. Preservation law
 A case under `ConservativeRetextualization` preserves the same described-entity line, the declared bounded context, and the already available claim-bearing source while changing wording, register, language, ordering, or density. It states what remains preserved about claim scope, publication scope, pins, provenance, grounding, and ontic scaffold, and it says whether the case is `Direct` or `Correspondence`.
@@ -153,21 +174,21 @@ A case under `ConservativeRetextualization` preserves the same described-entity 
 ##### A.6.3.CR:4.5.b. Loss and reliability law
 A reviewed case makes explicit what is omitted, shortened, foregrounded, or attenuated by the rewrite. Reliability transport may remain source-bounded or be explicitly downgraded, but it must never be silently strengthened by cleaner prose, stronger rhetoric, or management-facing polish.
 
-##### A.6.3.CR:4.5.c. Authority and handoff law
-A case reviewed under this pattern stays same-entity and episteme-level. It does not own explanation governance, bridge stance, retargeting, gate authority, or work enactment. If the rewrite becomes explanatory, bridge-bearing, gate-bearing, or world-facing, the case must hand off to the appropriate downstream owner and say so explicitly.
+##### A.6.3.CR:4.5.c. Authority and exit law
+A case reviewed under this pattern stays same-entity and episteme-level. It does not own explanation governance, bridge stance, retargeting, gate authority, or work enactment. If the rewrite becomes explanatory, bridge-bearing, gate-bearing, or world-facing, the case must exit to the appropriate downstream pattern and say so explicitly.
 
 ##### A.6.3.CR:4.5.d. Composition and reopen law
 Repeated direct rewrite over the same source line may be idempotent, but heterogeneous rewrites and correspondence-mediated rewrites are generally order-sensitive. A reviewed case must reopen whenever correspondence support, source pins, provenance, admissible-face assumptions, or same-described-entity conservativity stop being explicit.
 
 ##### A.6.3.CR:4.5.e. Non-collapse note for correspondence
-Correspondence-mediated retextualization does **not** by itself grant bridge licence, substitution licence, or comparative-reading licence. If the case needs those burdens, they must be declared separately rather than being smuggled in through correspondence language.
+Correspondence-mediated retextualization does **not** by itself grant bridge licence, substitution licence, or comparative-reading licence. If the case needs those claims, they must be declared separately rather than being smuggled in through correspondence language.
 
 ##### A.6.3.CR:4.5.f. Local conservativity witness for borderline textual cases
 For borderline textual rewrites, a reviewer treats the case as no longer conservative under this pattern unless each point below remains visibly preserved or is explicitly loss-declared with the reroute path stated.
 - **Modality and force.** A rewrite may not silently turn possibility, uncertainty, bounded scope, or hypothesis language into stronger commitment.
 - **Caveats and qualifications.** A rewrite may not quietly remove conditions, exception notes, uncertainty markers, or temporal qualifiers that still matter for reading the same source.
 - **Reliability posture.** Cleaner prose, better ordering, or manager-facing polish may not silently raise confidence, warrant strength, or readiness for action.
-- **Bridge and substitution burden.** Same-entity textual fluency may not import cross-context equivalence, substitution, or comparative-reading licence unless that burden is declared elsewhere.
+- **Bridge and substitution claims.** Same-entity textual fluency may not import cross-context equivalence, substitution, or comparative-reading licence unless those claims are declared elsewhere.
 - **Alternative preservation.** A rewrite may not collapse open alternatives, rival hypotheses, or declared plurality into one apparently settled reading unless the loss is stated and still lawful under this pattern.
 
 This witness is local to `ConservativeRetextualization`. It does not replace the broader conservativity laws of `A.6.3`; it makes them inspectable for textual rewrites where fluent prose can otherwise hide strengthening.
@@ -188,6 +209,13 @@ This is a lawful direct `ConservativeRetextualization` because the described ent
 
 This is still a lawful ordinary case even though the short stand-up slice does not restate every pin and qualifier inline. The didactic point is that lightweight use may inherit already-published pins and provenance when the tether stays visible to the reader.
 
+#### A.6.3.CR:5.1.b - Benign omission that stays ordinary
+**Source note slice.** `Service S exceeded the latency threshold in the evening batch window. Trace T-44 and dashboard pin D-17 show the spike. The note also lists two low-confidence hypotheses for later investigation.`
+
+**Published stand-up slice.** `Evening-batch latency for Service S exceeded the threshold. Source pins: T-44, D-17. Low-confidence hypotheses are omitted from this stand-up note and remain in the pinned source.`
+
+This stays ordinary `ConservativeRetextualization` because the omission is declared, the same described entity remains visible, and no separate narrower-use / forbidden-use / reopen contract is doing the real work. Ordinary omission alone is not controlled semantic coarsening.
+
 #### A.6.3.CR:5.2 - Same-described-entity rewrite via declared correspondence
 **Source design slice.** `Cooling loop CL-2 preserves safe temperature margins during standard load.`
 
@@ -202,7 +230,14 @@ The synthesis may stay in this pattern only if the source relation remains expli
 
 **Published slice.** `Резервный контроллер остаётся в режиме пассивного наблюдения, пока основной контур не пропустит две последовательные проверки heartbeat.`
 
-This remains in `ConservativeRetextualization` only if the translation is still tethered to the same source claim, preserves the same described entity, and does not quietly add cross-tradition bridge claims such as "equivalent architecture role" or "same operational guarantee" beyond what the source actually states.
+This remains in `ConservativeRetextualization` only if the translation is still tethered to the same source claim, preserves the same described entity, and does not quietly add cross-tradition bridge claims such as "equivalent architecture role" or "same operational guarantee" beyond what the source actually states. If a legal, regulatory, cross-language, or domain-specific equivalence is now doing work, declare the correspondence or bridge owner explicitly instead of hiding equivalence pressure inside fluent translation.
+
+#### A.6.3.CR:5.2.c - Boundary to weaker-use / coarsened rewrite
+**Source slice.** `Vendor bulletin VB-7 requires rollback when pressure drift exceeds 2.5%, and it keeps two equipment-specific exceptions in the pinned annex.`
+
+**Published lighter slice.** `Pressure drift above 2.5% is a warning condition in the bulletin. Check the pinned bulletin and annex before treating the note as rollback guidance.`
+
+This does **not** remain ordinary `ConservativeRetextualization`. The lighter slice drops equipment-specific exceptions and remains only an orientation warning: it is not an executable rollback command. It can stay honest only through narrower use, forbidden heavier uptake, and stronger-source return to the fuller bulletin. Once that weaker-use contract becomes primary, the case leaves ordinary same-entity rewrite and must use `A.6.3.CSC Controlled Semantic Coarsening` rather than being treated as a harmless summary.
 
 #### A.6.3.CR:5.3 - Boundary to explanation surfaces
 A text is rewritten not mainly to restate the same source, but to explain why it matters, simplify reasoning for a learner, or narrate a mechanism. That move should leave `ConservativeRetextualization` and be reviewed under `ExplanationFaithfulnessProfile`.
@@ -212,8 +247,8 @@ A prose note is rewritten as a table, matrix, diagram, or latent/distributed rep
 
 ### A.6.3.CR:6 - Bias-Annotation
 
-Lenses tested: **Arch**, **Onto/Epist**, **Prag**, **Did**.
-This pattern intentionally biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is explicit reroute discipline to `ExplanationFaithfulnessProfile`, `RepresentationTransduction`, `A.6.4`, and later downstream owners when the same-entity textual reading stops being honest.
+Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal** for same-described-entity textual re-expression cases that claim `ConservativeRetextualization` inside FPF.
+This pattern intentionally biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is explicit reroute discipline to `ExplanationFaithfulnessProfile`, `RepresentationTransduction`, `A.6.3.CSC`, `A.6.4`, and later downstream patterns when the same-entity textual reading stops being honest or weaker-use authority becomes primary.
 
 ### A.6.3.CR:7 - Conformance Checklist
 
@@ -222,7 +257,7 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 2. **CC-CR-2 — Textual re-expression remains the right family.**
    The result stays a textual re-expression rather than explanation or representation shift.
 3. **CC-CR-3 — Loss / provenance / pinning / reliability are explicit or inherited by pinned reference.**
-   The case states these explicitly or inherits them through already-pinned host material that remains visible to review.
+   The case states these explicitly or inherits them through already-pinned source material that remains visible to review.
 4. **CC-CR-4 — Direct vs correspondence split is explicit.**
    The `Direct / Correspondence` split is explicit and justified.
 5. **CC-CR-5 — Correspondence support is named where needed.**
@@ -230,8 +265,10 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 6. **CC-CR-6 — Local conservativity witness remains satisfied.**
    The reviewed case does not silently strengthen modality, remove caveats, raise reliability posture, import bridge or substitution licence, or collapse declared alternatives beyond stated loss notes.
 7. **CC-CR-7 — Reroute path is explicit on failure.**
-   If the case fails any of the checks above, the reroute path is explicit (`ExplanationFaithfulnessProfile`, `RepresentationTransduction`, `A.6.4`, `B.5.2`, or another owner).
-8. **CC-CR-8 — Working-model first remains intact.**
+   If the case fails any of the checks above, the reroute path is explicit (`ExplanationFaithfulnessProfile`, `RepresentationTransduction`, `A.6.4`, `B.5.2`, `A.6.3.CSC Controlled Semantic Coarsening`, or another pattern).
+8. **CC-CR-8 — Reopen and reroute are not collapsed.**
+   Reopen means return to the stronger source-bearing material; reroute means the governing pattern has changed.
+9. **CC-CR-9 — Working-model first remains intact.**
    Ordinary same-entity rewrites stay lightweight; fuller explicit review records are reserved for load-bearing cases.
 
 ### A.6.3.CR:8 - Common Anti-Patterns and How to Avoid Them
@@ -239,13 +276,13 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 | Anti-pattern | Why it is wrong | How to avoid it |
 |---|---|---|
 | Treating every summary as automatically conservative | summary pressure hides omission and claim drift | publish loss/provenance discipline explicitly |
-| Hiding correspondence in plain paraphrase | correspondence burden disappears into prose | declare `CorrespondenceModelRef` when needed |
+| Hiding correspondence in plain paraphrase | correspondence support disappears into prose | declare `CorrespondenceModelRef` when needed |
 | Letting a rewrite become explanation | explanation work quietly becomes a textual “rewrite” | reroute to explanation governance once didactic/explanatory work dominates |
 | Letting object-of-talk drift by topic similarity | same topic is not the same described entity | exit to `A.6.4` if `DescribedEntityRef` changes |
 
 ### A.6.3.CR:9 - Consequences
 
-- Textual same-entity rewrites get a lawful place without inventing a new heavy owner.
+- Textual same-entity rewrites get a lawful place without inventing a new heavy pattern.
 - Direct and correspondence-mediated variants stay visibly separated.
 - Loss, provenance, and reliability transport become explicit instead of implicit editorial judgement.
 - Ordinary working-model use stays lightweight, while load-bearing cases get a fuller explicit review record when risk warrants it.
@@ -253,17 +290,18 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 
 ### A.6.3.CR:10 - Rationale
 
-This pattern is worth splitting out because same-entity textual re-expression is common, useful, and safer than many neighboring transform families when it stays explicitly conservative. Keeping it under `A.6.3` as a named specialization preserves owner integrity while making a recurring authoring move easier to review, while still respecting E.14’s working-model-first discipline for ordinary cases.
+Teams repeatedly need one second text over the same described entity, but the nearest failure mode is to treat summary, translation, or filtered rewrite as harmless even after it starts carrying explanation pressure, bridge pressure, or a weaker-use contract. `A.6.3.CR` gives the reader one narrower and more useful promise than those neighboring moves: you may rewrite for readability, brevity, or declared filtering while the same object-of-talk, visible source tether, and inspectable loss line still hold, and you must reroute as soon as the move stops being only conservative retextualization.
 
 ### A.6.3.CR:11 - SoTA-Echoing
 
-**SoTA note.** This section does not mint an independent second rule layer. It is a load-bearing alignment surface: the Solution, Conformance Checklist, boundary rules, and Relations of this pattern must match the stance stated here or explicitly justify any divergence.
+
+**SoTA note.** This section does not mint an independent second rule layer. It stays truthful only when the Solution, Conformance Checklist, boundary rules, and Relations of this pattern still tell the same story about the governed move and its limits.
 
 **Traditions covered.** This pattern binds itself to architecture-description governance, summarization factuality, translation-quality governance, and plain-language rewrite practice.
 
 | Claim need | SoTA practice (post-2015) | Primary source (post-2015) | Alignment with `A.6.3.CR` | Adoption status |
 |---|---|---|---|---|
-| Conservative rewrite must stay visibly tied to the same described content rather than drifting through presentation fluency. | Architecture-description practice separates source artefact, view, viewpoint, and correspondence burden instead of letting rendered prose silently change the object being described. | ISO/IEC/IEEE 42010:2022 | `A.6.3.CR` keeps same-described-entity textual restatement under `A.6.3`, requires explicit reroute when object-of-talk changes, and keeps bridge burden out of fluent rewrite. | **Adopt.** |
+| Conservative rewrite must stay visibly tied to the same described content rather than drifting through presentation fluency. | Architecture-description practice separates source artefact, view, viewpoint, and correspondence work instead of letting rendered prose silently change the object being described. | ISO/IEC/IEEE 42010:2022 | `A.6.3.CR` keeps same-described-entity textual restatement under `A.6.3`, requires explicit reroute when object-of-talk changes, and keeps bridge claims out of fluent rewrite. | **Adopt.** |
 | Summary-like rewriting is not automatically harmless; factuality and faithfulness need source-sensitive checking. | Modern summarization work treats unsupported compression, strengthening, and hallucinated linkage as core failure modes rather than editorial noise. | Maynez et al. (2020), *On Faithfulness and Factuality in Abstractive Summarization* | `A.6.3.CR` adopts that stance and adapts it to FPF by making omission, reliability posture, and same-entity bounds explicit review concerns. | **Adopt/Adapt.** |
 | Translation quality is governed through declared dimensions such as accuracy, omission, and addition rather than by fluency alone. | Translation-quality governance separates adequacy from surface smoothness and requires explicit treatment of omission/addition error classes. | Lommel et al. (2018), *MQM: A Framework for Declaring Translation Quality Metrics* | `A.6.3.CR` adapts this by treating correspondence-mediated and cross-language rewrites as lawful only when loss, provenance, and same-entity bounds stay explicit. | **Adapt.** |
 | Plain-language rewrite may improve readability, but it must not silently change obligations, scope, or force. | Plain-language standards favour reader-oriented rewriting while preserving the original commitments and conditions that matter for use. | ISO 24495-1:2023 | `A.6.3.CR` adopts reader-oriented simplification for ordinary cases and rejects the popular shortcut that “plainer text” alone proves conservativity. | **Adopt/Reject-popular-shortcut.** |
@@ -274,16 +312,13 @@ This pattern is worth splitting out because same-entity textual re-expression is
 
 **Translation and plain-language traditions.** `A.6.3.CR` adopts the reader-oriented value of translation and plain rewrite, but rejects the still-popular habit of treating cross-language or plain-language textual fluency as automatic proof that no new claim has been introduced.
 
-**Local stance.** Best-known current practice supports a narrow rule: same-described-entity textual restatement is lawful only when source tether, loss, provenance, and same-entity bounds remain explicit enough that the reader can still tell what was preserved, what was omitted, and when the case must exit to another owner.
+**Local stance.** Best-known current practice supports a narrow rule: same-described-entity textual restatement is lawful only when source tether, loss, provenance, and same-entity bounds remain explicit enough that the reader can still tell what was preserved, what was omitted, and when the case must exit to another pattern.
 
 ### A.6.3.CR:12 - Relations
 
 - **Builds on:** `A.6.3`, `A.6.2`, `A.7`, `E.10.D2`, `E.17.0`, `E.17`, `F.9`, `F.18`, `E.10`
 - **Coordinates with:** `ExplanationFaithfulnessProfile`, `RepresentationTransduction`, `E.17.ID.CR ComparativeReading`, `A.6.4`, `B.5.2`, `A.15`
-- **Impact radius:** primary touch `A.6.3`; secondary review surfaces `E.17.0`, `E.17`, `F.9`; failed conservativity exits to `A.6.4`, `B.5.2`, or `A.15`
-- **Boundary notes:** explanation-facing cases exit to `ExplanationFaithfulnessProfile`; representation-regime shifts exit to `RepresentationTransduction`; bounded comparative review units exit to `E.17.ID.CR ComparativeReading`; described-entity changes exit to `A.6.4`.
+- **Primary host relation and main exits:** this specialization stays under `A.6.3`; failed conservativity exits to `A.6.4`, `B.5.2`, or `A.15`
+- **Boundary notes:** explanation-facing cases exit to `ExplanationFaithfulnessProfile`; representation-regime shifts exit to `RepresentationTransduction`; bounded comparative review units exit to `E.17.ID.CR ComparativeReading`; described-entity changes exit to `A.6.4`; deliberately weaker textual renderings whose narrower-use, forbidden-use, and reopen contract is primary route to `A.6.3.CSC Controlled Semantic Coarsening`.
 
 ### A.6.3.CR:End
-
-
-

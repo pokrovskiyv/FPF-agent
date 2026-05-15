@@ -1,6 +1,6 @@
 # Cross-References into 05-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (65 refs).
+Patterns in other Parts that reference patterns in this directory (79 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -25,6 +25,9 @@ Patterns in other Parts that reference patterns in this directory (65 refs).
 | A.19.CN | coordinates_with | A.6.1 |
 | A.19.CPM | builds_on | A.6.1 |
 | A.19.CPM | builds_on | A.6.5 |
+| A.19.SUPPORT-VIEW | builds_on | A.6.3 |
+| A.19.SUPPORT-VIEW | coordinates_with | A.6.P |
+| A.19.SURF-SPACE | coordinates_with | A.6.P |
 | A.19.SelectorMechanism | builds_on | A.6.1 |
 | A.19.SelectorMechanism | builds_on | A.6.5 |
 | A.19.UINDM | builds_on | A.6.1 |
@@ -59,6 +62,13 @@ Patterns in other Parts that reference patterns in this directory (65 refs).
 | C.2.2a | used_by | A.6.A |
 | C.25 | builds_on | A.6.1 |
 | C.25 | coordinates_with | A.6.Q |
+| C.26 | builds_on | A.6 |
+| C.26 | builds_on | A.6.3.CSC |
+| C.26 | builds_on | A.6.3.RT |
+| C.26.1 | builds_on | A.6 |
+| C.26.1 | builds_on | A.6.B |
+| C.26.1 | coordinates_with | A.6.8 |
+| C.26.3 | builds_on | A.6 |
 
 ## From 11-section-ei-the-fpf-constitution
 
@@ -77,12 +87,13 @@ Patterns in other Parts that reference patterns in this directory (65 refs).
 | E.17.AUD.OOTD | coordinates_with | A.6.3.CR |
 | E.17.AUD.OOTD | coordinates_with | A.6.3.RT |
 | E.17.EFP | builds_on | A.6.B |
+| E.17.EFP | coordinates_with | A.6.3.CSC |
 | E.17.EFP | coordinates_with | A.6.4 |
 | E.17.ID.CR | coordinates_with | A.6.3 |
+| E.17.ID.CR | coordinates_with | A.6.3.CSC |
 | E.17.ID.CR | coordinates_with | A.6.3.CR |
 | E.17.ID.CR | coordinates_with | A.6.3.RT |
 | E.17.ID.CR | coordinates_with | A.6.4 |
-| E.19 | coordinates_with | A.6.7 |
 | E.20 | coordinates_with | A.6.1 |
 | E.20 | coordinates_with | A.6.7 |
 
@@ -92,7 +103,9 @@ Patterns in other Parts that reference patterns in this directory (65 refs).
 |--------|----------|--------|
 | F.18 | coordinates_with | A.6.P |
 | F.7 | coordinates_with | A.6.9 |
+| F.9 | coordinates_with | A.6.3.CSC |
 | F.9 | coordinates_with | A.6.9 |
+| F.9.1 | coordinates_with | A.6.3.CSC |
 | F.9.1 | coordinates_with | A.6.Q |
 | F.9.1 | coordinates_with | A.6.A |
 
@@ -100,4 +113,5 @@ Patterns in other Parts that reference patterns in this directory (65 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| G.2 | coordinates_with | A.6.P |
 | G.Core | builds_on | A.6.7 |

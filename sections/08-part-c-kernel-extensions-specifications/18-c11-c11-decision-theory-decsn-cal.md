@@ -129,7 +129,7 @@ The comparison is still unfinished, not yet wrong but not yet closeable, when an
 
 #### C.11:4.2.1a - Minimal admissible decision semantics
 
-This minimal choice doctrine does not settle every decision-theory dispute, but it does already permit and forbid some semantic moves by value.
+This minimal choice doctrine does not settle every decision-theory dispute, but it already supports some semantic moves by value and rules out others.
 
 The following are lawful in this `C.11` body when they are stated explicitly:
 
@@ -146,7 +146,7 @@ The following are not lawful in this `C.11` body:
 - pretending that unresolved cross-level or collective conflict is already one settled local ranking when the aggregation burden has not actually been discharged;
 - using one polished record shape as a substitute for one stated comparison doctrine.
 
-This is why `C.11` is more than one note-taking protocol. The body already permits local incompleteness, partial order, explicit trade-off measures, and widened chooser surfaces, but it requires those semantic facts to change the lawful result rather than remain hidden beneath one elegant summary line.
+This is why `C.11` is more than one note-taking protocol. The body already supports local incompleteness, partial order, explicit trade-off measures, and widened chooser surfaces, but it requires those semantic facts to change the lawful result rather than remain hidden beneath one elegant summary line.
 
 #### C.11:4.2.2 - Probe-worthiness rule
 
@@ -168,7 +168,7 @@ If the next probe would no longer change which option survives but would only ch
 
 `ChoiceRule` and `ChoiceResult` are not the same kind of thing.
 
-- `ChoiceRule` is the doctrine or operator that says how the current comparison basis, dependence layer, and probe-worthiness posture license one next move.
+- `ChoiceRule` is the doctrine or operator that says how the current comparison basis, dependence layer, and probe-worthiness posture support one next move.
 - `ChoiceResult` is the emitted record stating which next move is lawful now under that rule.
 
 The operational answer of this pattern is therefore one emitted `ChoiceResult` under one explicit `ChoiceRule`. The result is complete only when it states the next move and the condition that makes that move lawful.
@@ -615,12 +615,16 @@ At the same time, this pattern should not pretend that one full quantum-like or 
 | Decision under bounds cannot leave probing and deliberation cost as one slogan. | Current metareasoning and optimal-experimental-design lines treat information acquisition, probing, and computation allocation as first-class theoretical burdens rather than free background steps. | [Metareasoning: Theoretical and Methodological Developments](https://pmc.ncbi.nlm.nih.gov/articles/PMC11765846/) | `C.11` therefore keeps `ProbeActionSet`, `ProbeBudget`, `CostToProbe`, `ValueOfInformation`, and `ValueOfComputation` inside the doctrine rather than hiding them in planning-only prose; the current closure law is intentionally local or myopic over the next feasible probe, with richer sequential or non-myopic `OED` left as later strengthening. | **Adapt.** |
 | Decision and update can be embodied, online, and socially coupled. | Active-inference work treats decision as tightly coupled to action, inference, and expectation regimes rather than one disembodied one-shot selection. | [Embodied decisions as active inference](https://pmc.ncbi.nlm.nih.gov/articles/PMC12201680/) | `C.11` carries this as one neighboring repair of the chooser picture, makes social-expectation pressure explicit enough for use-time reroute or probe logic, and states honestly that full `ROE` or social-expectation object modeling remains outside this local choice body. | **Adapt.** |
 | Some decision cases exhibit context effects, order effects, response-replicability tension, and incompatible-question structure. | Current quantum-like decision and cognition work treats those cases as one measurement-sensitive research program rather than one discarded curiosity or one automatic physics transfer. | [Measurement-theory decision/cognition anchor (2025)](https://arxiv.org/abs/2503.05859) | `C.11` carries this as one named neighboring branch where those repaired limitations are real, while leaving heavier branch-specific formalism outside this body. | **Adapt.** |
+| Incompatible question/context structures need a cleaner cue than "context matters." | [Contextuality-by-Default](https://www.sciencedirect.com/science/article/abs/pii/S0022249616300207) treats same-content-looking measurements in different contexts as distinct random variables unless a lawful joint treatment is supplied. | Use CbD as the clean formal cue when question/context structure changes variable identity, joint availability, or lawful comparison inside the current option set. | **Adopt/Adapt.** |
+
 | Some quantum-like lines also claim one practical representational gain from linear state dynamics over harder nonlinear underlying processes. | Quantum-like modeling in biology presents linear Hilbert-space dynamics as one simplifying and potentially faster information-processing lens over nonlinear classical biophysical dynamics, while treating this as representational modeling rather than proof that the modeled system is physically quantum. | [Quantum-like modeling in biology with open quantum systems and instruments](https://www.sciencedirect.com/science/article/pii/S0303264720301994) | `C.11` takes this only as one possible practical reason to keep the quantum-like branch available when measurement-sensitive effects are real; it does not treat quantum-like choice as one claim of physical quantumness. | **Adapt cautiously.** |
 | Broader contextual and multilevel lines pressure decision texts to keep one typed substrate rather than pure verbal drift. | Current multilevel-learning and evolution-as-inference work argues for one shared formal lens across levels even when the heavier final geometry is still unsettled. | [Multilevel selection as Bayesian inference, major transitions in individuality as structure learning](https://royalsocietypublishing.org/doi/10.1098/rsos.190202) | `C.11` therefore keeps one minimal typed floor and one widened chooser surface while stating by value that full aggregation law, cross-level conflict doctrine, and heavier multilevel mathematics remain outside this local choice body. | **Adapt.** |
 
 Practical reading of this alignment:
 
 - In ordinary current-option cases, start with the classical evidential baseline and use it to emit one explicit `choose now`, `probe again`, or `reroute` result under one shared `BeliefState` and `OutcomeModel`.
+- Failure of a simple Bayesian or passive-read-like model is not yet evidence that QL is necessary. Try richer classical, causal, performative, instrument, active-sensing, or representation-abstraction rivals before keeping the QL branch as load-bearing.
+
 - If intervention structure changes the survivor relation, state that explicitly and switch to causal comparison rather than leaving the comparison at the level of correlation talk.
 - If predictor-coupling or structurally linked choice procedures remain load-bearing, keep the subjunctive layer visible and say what linked structure could still reverse the current result.
 - If another measurement, comparison pass, or search pass is being considered, treat its value and cost as part of the current decision doctrine rather than as one later planning afterthought.
@@ -641,6 +645,37 @@ Worked-slice discipline from these rows:
 - **Keeps outside:** candidate generation, pool-wide exploration or exploitation policy, selected-set publication semantics, and execution sequencing
 - **Aligns with:** classical evidential decision theory, causal decision theory, success-first or subjunctive repair, bounded-resource metareasoning and probe-cost doctrine, active-inference-adjacent decision work, quantum-like contextual repair where context or order effects are real, and multilevel mathematical-lens pressure at the minimal-floor level only
 
-### C.11:End
+### C.11:12a - Quantum-like choice-route note
 
----
+Use C.11 first when the burden is local choice, belief, preference, comparison, question order, option-menu framing, or an incompatible-question effect inside one decision situation. Quantum-like wording is retained only when it adds a concrete residual order/probe/frame/comparison reading that ordinary decision or probability language would hide.
+
+Action path:
+
+1. State the current `DecisionSubject`, `OptionSet`, comparison basis, and `ChoiceRule`.
+2. Ask whether the apparent QL issue changes the local choice result: choose now, reject current set, probe again, or reroute.
+3. If the issue is question order, incompatible questions, response-replicability tension, non-shared comparison frames, or CbD-style variable identity / joint-availability trouble inside the current option set, keep the QL repair inside C.11.
+4. If the current option set itself is suspect, incomplete, generated by the wrong frame, or still needs expansion/reframing/search, leave C.11 and route to `C.18`, `C.19`, `A.19`, or `B.5.2` as appropriate.
+5. If the issue changes boundary state, bridge/export faithfulness, coordinated-work evidence, measurement legality, or viability envelope, route out.
+6. Emit one `ChoiceResult` and one next burden; do not leave the QL branch as a theory label.
+
+When the burden leaves local choice, route it out instead of stretching C.11:
+
+| Burden that appears in the decision case | First pattern |
+| --- | --- |
+| Boundary interaction, API read, workshop, dashboard, or message changes the represented state | `C.26.1` only for the remaining state/probe burden, with `A.6`, `A.6.B`, and `A.6.P` still active |
+| Cross-context export, translation, or same-label comparison loses state or comparability | `F.9` |
+| Coordinated work evidences a state no report faithfully carries | `A.15` plus evidence patterns, with `C.26.2` only for the remaining weak distributed-state reading |
+| Measurement, metric, survey, or score frame changes the represented state | `C.16` plus evidence patterns |
+| Viability envelope, adaptation cost, or boundary-maintenance decision is load-bearing | `C.25` first, with `C.26.3` only for the remaining probe/export/frame/coarsening viability burden |
+| Current option set is suspect, incomplete, frame-generated, or still being expanded/reframed/searched | `C.18`, `C.19`, `A.19`, or `B.5.2` before returning to C.11 |
+
+Useful outputs:
+
+- `choose now` under a declared order/frame;
+- `probe again` because another question order, response-replicability check, or frame test could still change the survivor relation;
+- `reroute` because the live problem is no longer local choice;
+- no QL wording when ordinary uncertainty, preference conflict, or option-generation work is enough.
+
+C.11 may cite `C.26` as the common quantum-like modeling lens only for residual burden after the local-choice route acts. It is not the whole-cluster pattern for boundary, bridge/export, distributed-evidence, viability, or state-representation coarsening claims.
+
+### C.11:End

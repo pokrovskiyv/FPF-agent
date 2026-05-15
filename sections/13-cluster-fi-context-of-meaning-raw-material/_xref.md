@@ -1,6 +1,6 @@
 # Cross-References into 13-cluster-fi-context-of-meaning-raw-material
 
-Patterns in other Parts that reference patterns in this directory (76 refs).
+Patterns in other Parts that reference patterns in this directory (81 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -15,8 +15,12 @@ Patterns in other Parts that reference patterns in this directory (76 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.6 | builds_on | F.18 |
+| A.6 | coordinates_with | F.9 |
 | A.6.3.CR | builds_on | F.9 |
 | A.6.3.CR | builds_on | F.18 |
+| A.6.3.CSC | builds_on | F.18 |
+| A.6.3.CSC | coordinates_with | F.9 |
+| A.6.3.CSC | coordinates_with | F.9.1 |
 | A.6.3.RT | builds_on | F.9 |
 | A.6.3.RT | builds_on | F.18 |
 | A.6.4 | builds_on | F.9 |
@@ -41,12 +45,19 @@ Patterns in other Parts that reference patterns in this directory (76 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.10 | coordinates_with | F.9 |
 | A.19.CN | coordinates_with | F.9 |
 | A.19.CPM | coordinates_with | F.18 |
 | A.19.UINDM | coordinates_with | F.18 |
 | A.19.ULSAM | coordinates_with | F.18 |
 | A.19.UNM | builds_on | F.18 |
 | A.19.USCM | coordinates_with | F.18 |
+
+## From 07-part-b-transdisciplinary-reasoning-cluster
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| B.3 | coordinates_with | F.9 |
 
 ## From 08-part-c-kernel-extensions-specifications
 
@@ -56,6 +67,9 @@ Patterns in other Parts that reference patterns in this directory (76 refs).
 | C.2.2 | builds_on | F.9 |
 | C.2.2a | builds_on | F.18 |
 | C.2.6 | coordinates_with | F.9.1 |
+| C.26 | builds_on | F.9 |
+| C.26.1 | builds_on | F.9 |
+| C.26.2 | builds_on | F.9 |
 
 ## From 11-section-ei-the-fpf-constitution
 
@@ -81,10 +95,6 @@ Patterns in other Parts that reference patterns in this directory (76 refs).
 | E.17.ID.CR | builds_on | F.9 |
 | E.17.ID.CR | coordinates_with | F.9.1 |
 | E.18 | coordinates_with | F.9 |
-| E.19 | coordinates_with | F.8 |
-| E.19 | coordinates_with | F.18 |
-| E.19 | coordinates_with | F.9 |
-| E.19 | coordinates_with | F.15 |
 | E.20 | coordinates_with | F.18 |
 
 ## From 14-part-g-discipline-sota-patterns-kit

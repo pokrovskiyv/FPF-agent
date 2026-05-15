@@ -9,7 +9,7 @@
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
 | 1 | A.1.1 | U.BoundedContext: The Semantic Frame | sections/04-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-the-semantic-frame.md | YES |
-| 2 | A.15 | Role–Method–Work Alignment (Contextual Enactment) | sections/06-cluster-av-constitutional-principles-of-the-kernel/09-a15-a15-rolemethodwork-alignment-contextual-enactment.md | YES |
+| 2 | A.15 | Role-Method-Work Alignment (Contextual Enactment) | sections/06-cluster-av-constitutional-principles-of-the-kernel/09-a15-a15-rolemethodwork-alignment-contextual-enactment.md | YES |
 | 3 | A.15.2 | U.WorkPlan: The Schedule of Intent | sections/06-cluster-av-constitutional-principles-of-the-kernel/11-a152-a152-uworkplan.md |  |
 | 4 | A.15.3 | SlotFillingsPlanItem — Planned Slot-Fillings Baseline (WorkP | sections/06-cluster-av-constitutional-principles-of-the-kernel/12-a153-a153-slotfillingsplanitem.md |  |
 | 5 | B.5.1 | Explore → Shape → Evidence → Operate | sections/07-part-b-transdisciplinary-reasoning-cluster/20-b51-b51-explore-shape-evidence-operate.md | YES |

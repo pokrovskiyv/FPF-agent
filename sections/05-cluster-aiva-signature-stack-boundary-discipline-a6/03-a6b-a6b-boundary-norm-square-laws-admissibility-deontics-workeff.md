@@ -1,6 +1,7 @@
 ## A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)
 
 
+
 > **Type:** Architectural (A)
 > **Status:** Stable
 > **Normativity:** Normative (unless explicitly marked informative)
@@ -37,7 +38,7 @@ These labels are **routing labels for statements**, not MVPK face kinds and not 
 **Modality family.** A claim is either:
 
 * **Truth‑conditional**: definitions, invariants, typing rules (“is”, “iff”, “∀”).
-* **Governance**: permissions, prohibitions, obligations, commitments (“MUST/SHOULD/MAY”, “is permitted”, “is forbidden”, “commits to”).
+* **Governance**: governance conditions, obligations, commitments, and exclusions (“MUST/SHOULD/MAY”, “is admissible”, “is blocked”, “commits to”).
 
 ### A.6.B:1 — Problem frame
 
@@ -81,26 +82,26 @@ The square yields four quadrants that are *mutually exclusive for atomic claims*
 
 #### A.6.B:4.2 — The square
 
-|                                | **Truth‑conditional** (definitions & invariants) | **Governance** (permissions & obligations) |
+|                                | **Truth‑conditional** (definitions & invariants) | **Governance** (governance conditions & obligations) |
 | ------------------------------ | ------------------------------------------------ | ------------------------------------------ |
 | **In‑description / in‑theory** | **L — Laws & Definitions**                       | **D — Deontics & Commitments**             |
 | **In‑work / in‑execution**     | **E — Work‑Effects & Evidence**                  | **A — Admissibility & Gates**              |
 
 **Clarification (do not conflate).** The Governance column includes two different “normative” roles:
 * **D** is **agent/role governance** (duties, commitments, prohibitions).
-* **A** is **mechanism governance** (permission/admission predicates: what the mechanism admits at application time).
+* **A** is **mechanism governance** (admissibility predicates: what the mechanism admits at application time).
 `A-*` is not an obligation on an actor; obligations belong in `D-*` and may reference `A-*`.
 
 **Normative rule (single quadrant).** Each **atomic** claim **MUST** be routable to exactly one quadrant **L/A/D/E**.
 
 **Normative rule (no mixed sentences).** A conforming boundary text **SHALL** decompose any sentence that bundles multiple quadrants (typical form: “MUST … if … then … and it is logged …”) into multiple atomic claims before those claims are treated as normative.
 
-#### A.6.B:4.3 — Canonical landing zones in the Signature Stack
+#### A.6.B:4.3 — Canonical homes in the Signature Stack
 
 The quadrants have canonical “homes” in the boundary stack:
 
 * **L → Signature layer:** `U.Signature.Laws` (and mechanism‑local semantic laws if present).
-* **A → Mechanism layer:** `U.Mechanism.AdmissibilityConditions` (entry gates / runtime permission predicates).
+* **A → Mechanism layer:** `U.Mechanism.AdmissibilityConditions` (entry gates / runtime admissibility predicates).
 * **D → Norms & commitments layer:** role‑anchored duties, commitments, publication/accountability duties (often rendered inside MVPK `TechCard`).
 * **E → Evidence bindings layer:** work‑adjudicated effects tied to carriers and measurement conditions (authored canonically in an Evidence/Carriers section; commonly rendered inside MVPK `AssuranceLane` as a projection).
 
@@ -130,9 +131,9 @@ This section is the normative “API” of the square: what each quadrant is for
 
 #### A.6.B:5.2 — Quadrant A: Admissibility & Gates
 
-**Intent.** Specify when a mechanism application is permitted/admissible: runtime entry predicates, authorization gates, validity gates, applicability checks that require context or execution environment.
+**Intent.** Specify when a mechanism application is admissible: runtime entry predicates, authorization gates, validity gates, applicability checks that require context or execution environment.
 
-**Common mistake #0 — Applicability ≠ Admissibility (informative).** Signature `Applicability` scopes *intended use/bounded context*; it is not a runtime entry gate. Runtime entry checks and permission predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If your prose reads like “clients must satisfy the applicability”, you almost certainly want a `D-*` duty + an `A-*` gate (linked by ID) instead.
+**Common mistake #0 — Applicability ≠ Admissibility (informative).** Signature `Applicability` scopes *intended use/bounded context*; it is not a runtime entry gate. Runtime entry checks and admissibility predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If your prose reads like “clients must satisfy the applicability”, you almost certainly want a `D-*` duty + an `A-*` gate (linked by ID) instead.
 
 **Adjudication.** In‑work: evaluated at mechanism entry (or operationally at the point the mechanism is applied).
 
@@ -153,7 +154,7 @@ This section is the normative “API” of the square: what each quadrant is for
 
 #### A.6.B:5.3 — Quadrant D: Deontics & Commitments
 
-**Intent.** State governance: obligations, permissions, prohibitions, commitments, publication duties, operational duties, contractual commitments—always with accountable agents/roles.
+**Intent.** State governance: obligations, governance conditions, exclusions, commitments, publication duties, operational duties, contractual commitments—always with accountable agents/roles.
 
 **Adjudication.** In‑description (governance is stated in the spec); compliance may be audited via `E-*`.
 
@@ -222,7 +223,7 @@ If a claim’s meaning materially depends on another routed claim, that dependen
 
 #### A.6.B:6.2 — Canonical cross‑quadrant dependency patterns
 
-These patterns are allowed (and common). The square becomes operational when these links are used systematically.
+These patterns are valid (and common). The square becomes operational when these links are used systematically.
 
 ##### A.6.B:6.2.1 - (D → A) Duty-to-gate linkage
 
@@ -325,11 +326,11 @@ The square prevents accidentally writing handler obligations as laws or treating
 A published “evaluation protocol” boundary (common in modern ML governance) benefits from strict routing:
 
 * **L:** metric definitions and invariants (e.g., what counts as AUROC; data partition invariants).
-* **A:** admissibility gates (dataset license constraints; pinned environment constraints; seed policy).
-* **D:** reviewer and author duties (publish required faces; use declared dataset version; retention duties for run artifacts).
+* **A:** admissibility gates (dataset usage-term constraints; pinned environment constraints; seed policy).
+* **D:** checker and author duties (publish required faces; use declared dataset version; retention duties for run artifacts).
 * **E:** evidence carriers (run logs, hashes, reports, trace IDs) and adjudication conditions (which viewpoint measures, what windows).
 
-The square keeps “must use dataset vX” (D) separate from “evaluation is admissible iff dataset license matches” (A), and both separate from “a run produced report carrier R with hash h” (E).
+The square keeps “must use dataset vX” (D) separate from “evaluation is admissible iff dataset usage terms match” (A), and both separate from “a run produced report carrier R with hash h” (E).
 
 #### A.6.B:8.4 — Worked Rewrite Kit (informative, recommended)
 
@@ -342,7 +343,7 @@ Convert a boundary-ish sentence that mixes “laws / gates / duties / evidence�
 1. **atomic routed claims** (L/A/D/E),
 2. **explicit references by claim ID** (no paraphrase duplication),
 3. **a readable recomposition** (Tech + Plain),
-4. **a minimal anti-pattern lint** (things we forbid / flag).
+4. **a minimal anti-pattern lint** (things we reject / flag).
 
 ##### A.6.B:8.4.1 - Micro-procedure (Atomize → Route → Triangle → Link → Anchor → Recompose)
 
@@ -350,16 +351,16 @@ Convert a boundary-ish sentence that mixes “laws / gates / duties / evidence�
 
 **Step 2 — Route (L/A/D/E).**
 
-* **L** if the claim is **truth‑conditional** and adjudicable *in‑description* (inspection, proof/type validation, or model reasoning **over declared assumptions**): definitions, invariants, typing/well‑formedness constraints.  
+* **L** if the claim is **truth‑conditional** and adjudicable *in‑description* (inspection, proof/type validation, or model reasoning **over declared assumptions**): definitions, invariants, typing/well‑formedness constraints.
   **Guardrails:** `L-*` MUST NOT (i) use RFC deontic keywords as operators, (ii) encode runtime entry predicates (those are `A-*`), or (iii) assert evidence existence/measurement outcomes (those are `E-*`).
-* **A** if it is an *in‑work* **gate predicate**: what the mechanism admits/permits at application time (“admissible iff …”). It is not a duty and MUST NOT be phrased as one.  
-  **Guardrails:** `A-*` SHOULD be written in predicate form and MUST NOT (i) use RFC deontic keywords as if it were an agent obligation, (ii) claim that evidence/carriers exist (that is `E-*`), or (iii) assign responsibility/enforcement (that is `D-*`).  
+* **A** if it is an *in‑work* **gate predicate**: what the mechanism admits at application time (“admissible iff …”). It is not a duty and MUST NOT be phrased as one.
+  **Guardrails:** `A-*` SHOULD be written in predicate form and MUST NOT (i) use RFC deontic keywords as if it were an agent obligation, (ii) claim that evidence/carriers exist (that is `E-*`), or (iii) assign responsibility/enforcement (that is `D-*`).
   *(Do not confuse this with `Signature.Applicability`: applicability scopes intended meaning/use; it is not a runtime entry gate.)*
-* **D** if it assigns **duties/commitments** to an accountable role/agent (RFC keywords belong here; “the interface/system promises” does not).  
+* **D** if it assigns **duties/commitments** to an accountable role/agent (RFC keywords belong here; “the interface/system promises” does not).
   **Guardrails:** `D-*` MUST name an accountable subject and SHOULD reference `L-*`/`A-*`/`E-*` by ID rather than restating them in new words (to prevent paraphrase drift).
-* **E** if it is an *in‑work* truth‑conditional claim about adjudicable effects/evidence: what carriers exist, under what observation conditions, and/or what was observed.  
-  **Minimum fields (recommended):** (1) observation/measurement conditions, (2) carrier class/schema reference, and (3) viewpoint/consumer.  
-  **Guardrails:** `E-*` SHOULD NOT use RFC deontic keywords, MUST NOT hide a gate predicate (that is `A-*`), and MUST NOT cite `D-*`.  
+* **E** if it is an *in‑work* truth‑conditional claim about adjudicable effects/evidence: what carriers exist, under what observation conditions, and/or what was observed.
+  **Minimum fields (recommended):** (1) observation/measurement conditions, (2) carrier class/schema reference, and (3) viewpoint/consumer.
+  **Guardrails:** `E-*` SHOULD NOT use RFC deontic keywords, MUST NOT hide a gate predicate (that is `A-*`), and MUST NOT cite `D-*`.
   *(If the sentence is “Role SHALL measure/retain/expose …”, route that obligation to **D**, even if it is about evidence.)*
 
 **Step 3 — Triangle decomposition.** If the original sentence mixes (i) an entry condition, (ii) an obligation/commitment, and (iii) an observability expectation (a common failure mode with “guarantee/ensure/approved/aligned”), decompose it into:
@@ -372,12 +373,12 @@ Convert a boundary-ish sentence that mixes “laws / gates / duties / evidence�
 
 **Guideline.** Keep gate semantics independent of specific evidence carriers: write the gate predicate in `A-*`, then bind observability in `E-*` that references the gate (`E → A`). `A-*` claims MUST NOT reference `E-*` (no upward dependencies), even though `E-*` is used to adjudicate gate satisfaction.
 
-**Step 4 — Link by ID, not by paraphrase.** Allowed directions (no upward deps):
+**Step 4 — Link by ID, not by paraphrase.** Supported directions (no upward deps):
 
 * `A-*` may cite `L-*`
 * `E-*` may cite `L-*` and `A-*`
 * `D-*` may cite `L-*`, `A-*`, `E-*`
-* Forbidden: `L-*` citing anything; `A-*` or `E-*` citing `D-*`.
+* Unsupported: `L-*` citing anything; `A-*` or `E-*` citing `D-*`.
 
 **Common link motifs (informative).** The most reusable boundary rewrites use the canonical motifs: `D→A`, `E→A`, `D→E`, `A/E→L`, and `D→L`.
 
@@ -437,9 +438,9 @@ The claim “p95 < 200ms” is admissible **only under** declared load/profile +
 *(References D-API-01 and A-API-01 by ID.)*
 
 **E-API-01 (Evidence / carriers).**
-For decisions under `A-API-01`, the following carrier **classes** are produced/observable under the declared observation conditions: trace/span IDs, raw histogram artefacts (schema reference), percentile dashboard snapshots, and pinned sampling configuration for window `W`.  
-**Observation conditions (minimum):** workload/profile selector, sampling method/config pins, and computation method reference (`L-API-01`).  
-**Viewpoint/consumer (minimum):** the role/view that uses the carriers to adjudicate the gate and/or audit commitments (e.g., SRE/PerfReview).  
+For decisions under `A-API-01`, the following carrier **classes** are produced/observable under the declared observation conditions: trace/span IDs, raw histogram artefacts (schema reference), percentile dashboard snapshots, and pinned sampling configuration for window `W`.
+**Observation conditions (minimum):** workload/profile selector, sampling method/config pins, and computation method reference (`L-API-01`).
+**Viewpoint/consumer (minimum):** the role/view that uses the carriers to adjudicate the gate and/or audit commitments (e.g., SRE/PerfReview).
 *(References `A-API-01` and `L-API-01`; avoids RFC deontics; does not smuggle gates. Note: `E-*` MUST NOT cite `D-*`.)*
 
 **D-API-03 (Duty-to-evidence linkage).**
@@ -459,7 +460,7 @@ For interval `Γ_time = [t1..t2]` under conditions pinned to `A-API-01` and usin
 
 ###### A.6.B:8.4.3.4 - Readable recomposition
 
-**Tech recomposition (contract bundle, short):**
+**Tech recomposition (routed claim bundle, short):**
 
 * `L-API-01` defines p95 latency computation.
 * `A-API-01` specifies when the latency claim is admissible.
@@ -546,7 +547,7 @@ Evidence carriers used to adjudicate `A-PRJ-01` include: signed decision record 
 *(References A-PRJ-01; avoids RFC deontics.)*
 
 **E-PRJ-02 (Observed state).**
-As of `Γ_time=snapshot(t)`, a resolvable gate-status carrier (e.g., `GateChecklistSnapshot#…`) indicates `A-PRJ-01` holds, with the referenced evidence set pinned as `{DecisionRecord#…, BudgetLine#…, StaffingAssignments#…}` (carrier classes as per `E-PRJ-01`).  
+As of `Γ_time=snapshot(t)`, a resolvable gate-status carrier (e.g., `GateChecklistSnapshot#…`) indicates `A-PRJ-01` holds, with the referenced evidence set pinned as `{DecisionRecord#…, BudgetLine#…, StaffingAssignments#…}` (carrier classes as per `E-PRJ-01`).
 *(Observed / pinned state; references `A-PRJ-01` and `E-PRJ-01`; includes carrier instance(s), not just carrier classes.)*
 
 ###### A.6.B:8.4.5.3 - Readable recomposition
@@ -584,7 +585,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Un
 | ID                                       | Requirement                                                                                                                                                                                                      | Purpose                                                  |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **CC‑A.6.B.1 (Atomicity).**              | A conforming boundary text **SHALL** decompose mixed sentences into **atomic claims** such that each atomic claim routes to exactly one quadrant **L/A/D/E**.                                                    | Makes routing unambiguous; prevents contract soup.       |
-| **CC‑A.6.B.2 (Quadrant routing).**       | Each atomic claim **MUST** be classified by the Boundary Norm Square and placed in its canonical landing zone (L→Signature.Laws; A→Mechanism.AdmissibilityConditions; D→Norms/Commitments; E→Evidence/Carriers). | Preserves stack modularity and evolvability.             |
+| **CC‑A.6.B.2 (Quadrant routing).**       | Each atomic claim **MUST** be classified by the Boundary Norm Square and placed in its canonical home (L→Signature.Laws; A→Mechanism.AdmissibilityConditions; D→Norms/Commitments; E→Evidence/Carriers). | Preserves stack modularity and evolvability.             |
 | **CC‑A.6.B.3 (Form constraints).**       | `L-*` and `A-*` claims **MUST NOT** contain RFC deontic keywords as operators; `D-*` claims **MUST** name an accountable agent/role; `E-*` claims **SHOULD NOT** use RFC deontic keywords.                       | Keeps modalities separated and audit‑ready.              |
 | **CC‑A.6.B.4 (Explicit references).**    | Where a claim depends on another routed claim, that dependency **MUST** be expressed by explicit ID reference rather than restating the other claim in new words.                                                | Prevents paraphrase drift across layers/faces.           |
 | **CC‑A.6.B.5 (E‑claim adjudicability).** | Each `E-*` claim **SHOULD** include (a) observation conditions, (b) carrier class/schema reference, and (c) viewpoint/consumer.                                                                                  | Makes work‑effects adjudicable rather than aspirational. |
@@ -639,5 +640,37 @@ By requiring atomicity and explicit cross‑quadrant references, the square conv
 * **Constrains A.6.1 (`U.Mechanism`):** enforces that admissibility lives in `AdmissibilityConditions` (`A-*`) and that evidence semantics are routed as `E-*` with carrier anchors.
 * **Requires A.7:** anchors quadrants to Object/Description/Carrier so agency and evidence are not misattributed.
 * **Interacts with MVPK/E.17:** faces are projections that cite routed claims; faces must not mint new semantic commitments.
+
+### A.6.B:15a - Probe-coupled boundary claim routing
+
+Probe-coupled boundary language does not create a fifth quadrant. A boundary sentence that says a question, metric, dashboard, workshop, bridge, or API read changes the represented state must still be atomized through the same L/A/D/E square.
+
+Action path:
+
+1. Copy the boundary sentence being used for a decision.
+2. Split it into atomic claims before judging it: definition/law, admissibility/use condition, role commitment, and work/evidence effect.
+3. Give each atomic claim its quadrant and identifier.
+4. Put the state/probe/update/export part in the quadrant where it belongs rather than treating "quantum-like boundary" as one claim.
+5. Route reusable relation words through `A.6.P` / `F.18`; route evidence through `A.10`; route assurance through `B.3`; route measurement through `C.16`; route the remaining probe-coupled burden through `C.26.1`.
+6. Emit a Claim Register row set or equivalent routed claim set only when the sentence is decision-bearing, reusable, contested, assurance-facing, or likely to be cited across faces.
+
+For a local working note, the lighter action is enough: atomize the sentence mentally, write one clean routed sentence, and avoid the phrase "quantum-like boundary" as a single claim. Use the Claim Register when the routed claim set must survive reuse or dispute.
+
+| Quantum-like boundary phrase hides | Route through | What the user writes |
+| --- | --- | --- |
+| The term, variable, state, frame, or relation being defined | `L-*` law/definition claim | Definition or invariant, without agent obligation language |
+| When a probe, metric, question, or bridge use is usable for the intended decision | `A-*` admissibility/use claim | Use condition, supported use, unsupported use, and reroute |
+| Who is responsible for applying, retaining, exposing, or not overusing the probe result | `D-*` role/commitment claim | Accountable role and referenced L/A/E claim IDs |
+| What work effect, carrier, trace, report, metric, or observed before/after state supports the claim | `E-*` work-effect/evidence claim | Carrier, observation condition, time window, and evidence route |
+
+Useful outputs:
+
+- a Claim Register row set when the boundary sentence mixes claim kinds;
+- one rewritten routed sentence when the case is only a local working note;
+- an ordinary A.6.B routed claim set when no QL burden remains;
+- a C.26.1 route only for the remaining probe-coupled state-reading part;
+- an A.10/B.3/C.16/F.9 route when evidence, assurance, measurement, or bridge work is the real burden.
+
+Do not write "the boundary is quantum-like" as one unrouted claim. The action is: split the claim, route the pieces, then decide whether `C.26.1` still has a remaining job.
 
 ### A.6.B:End

@@ -31,23 +31,70 @@ The navigation clusters below are **reading clusters**. They are not new owner f
 
 **Where to start**
 
-The order of Parts in this document follows the didactic architecture of the Core. A first practical entry route does **not** have to follow that macro-order.
+The order of Parts in this document follows the didactic architecture of the
+Core. A first practical entry does not have to follow that macro-order.
 
-The routes below are **informative navigation only**. They introduce no new norms and do not change semantic ownership.
+This guidance is coarse entry orientation only. It introduces no new norms and
+does not change authoritative pattern meaning.
 
-Choose the route by the **first governed object, publication burden, or stabilization burden** you honestly need to handle, not by chapter order.
+> **Preface is high-recall, low-detail.**
+> `J.4` is the compact canonical entry index.
+> `I.2` is the worked-reading depth role.
+> The pattern's own `Problem frame` is the local high-precision first-reading
+> role.
 
-Reach a **human-facing working surface** early - typically **F.17 (UTS)** or another route-native publication form - before escalating into heavier assurance or evolution-governance patterns.
+Choose the first entry by what you are really trying to decide, publish, or
+stabilize, not by chapter order.
 
-Use **B.3** when assurance / trust / evidence transport is already part of the present burden. Use **E.9 (DRR)** when a change to normative content, semantic ownership, or durable canon rationale must be published; do **not** treat it as a universal day-one gate.
+Consider a human-facing stabilizing result early when vocabulary, decision
+criteria, or publication need to stay shareable. A typical lawful stabilizing
+result is `F.17 (UTS)` when vocabulary alignment is live; other burdens have
+their own publication or review forms.
 
-- For the **"why"**: **E.1-E.2** (Vision/Mission + Pillars).
-- For **writing or reviewing patterns**: start with **E.8** and **E.19**.
-- For **project alignment** - contexts, actors, plan vs run, and a first shared work surface: start with **A.1.1**, then **A.15**, then **A.15.2 / A.15.3**, then **B.5.1**. When method/work vocabulary itself must be aligned across contexts, add **F.11** (and **F.9** where bridge discipline matters). Land on **F.17 (UTS)**.
-- When the real situation is **"we know something is there, but it is still only partly said"**: start with **C.2.2a** for the shared language-state chart, then **C.2.LS / C.2.4-C.2.7** for the facet owners, then **A.16 / A.16.1 / A.16.2** for lawful moves and early preservation, then **B.4.1 / B.5.2.0** for route publication and abductive handoff, and only then move into endpoint owners such as **A.6.Q**, **A.6.A**, or **C.25**.
-- For **boundary burden** - API, contract, protocol, SLO/SLA, acceptance clause, compliance text, or interface language: start with **A.6**, then **A.6.B**, then **A.6.C**. When the boundary text hides overloaded quality or action language, continue with **A.6.P**, then **A.6.Q** or **A.6.A**. Use the **Claim Register** when mixed statements must be decomposed and tracked by ID.
-- For **lawful comparison or selected-set publication** rather than one-off judgement: start with **A.19:0** for the reading path, then **A.17-A.19**, then **G.0**, then **A.19.CPM** and **A.19.SelectorMechanism**, and then **G.5**. Publish the result as a governed **selected set / shortlist** surface rather than forcing a single winner.
-- For a **reusable generator / SoTA / selector / set-surface scaffold** as the first deliverable: start with **A.0**, then **G.0**, then **G.1**, then **G.2** and **G.5**. When creative search, novelty, or explore/exploit policy is already central, add **B.5.2.1** and **C.17-C.19** early rather than retrofitting them later. Land on **UTS** plus the declared set, selector, and publication surfaces before discussing tooling.
-- For **same-entity rewrite, representation change, explanation-facing rendering, local authored-unit repair, authored-unit stabilization, or bounded comparative reading** without minting a new object of talk: choose the nearest owner. Use **A.6.3.CR** for same-entity retextualization, **A.6.3.RT** for representation-scheme transition, **E.17.EFP** for explanation-facing rendering, **E.17.ID.CR** for bounded comparative reading, **E.17.AUD.LHR** for pressured-head local repair, and **E.17.AUD.OOTD** for authored-unit stability. Use **A.16.0** only when branch, loss, handoff, or lineage history itself must be published as an explicit trajectory account.
+Use `B.3` when assurance / trust / evidence transport is already part of the
+present burden. Use `E.9 (DRR)` when a change to normative content,
+authoritative pattern meaning, or durable canon rationale must actually be
+published; do not treat it as a universal day-one gate.
 
-Everything in the Core is intentionally **tool-agnostic**; implementation details belong to Tooling and worked examples belong to the Pedagogical Companion. The rest of this Preface provides non-normative motivation and reading heuristics for the patterns that follow.
+- For the **why**: inspect `E.1-E.2`.
+- For **writing or reviewing patterns**: inspect `E.8` and `E.19`.
+- For **project alignment** - contexts, roles, method, plan, run, and a first
+  shared work or vocabulary stabilizer: inspect `A.1.1`, `A.15`,
+  `A.15.2 / A.15.3`, and `B.5.1`. Consider `F.11` when method/work vocabulary
+  must be aligned across contexts, `F.9` when bridge discipline matters, and
+  `F.17` when term stabilization is the live burden.
+- When the real situation is **partly-said / language-state discovery**:
+  inspect `C.2.2a`, `C.2.LS / C.2.4-C.2.7`,
+  `A.16 / A.16.1 / A.16.2`, and `B.4.1 / B.5.2.0`. Consider endpoint patterns
+  such as `A.6.Q`, `A.6.A`, or `C.25` only when the burden is actually
+  endpoint-owned.
+- For **boundary unpacking** - API, contract, protocol, `SLO/SLA`, acceptance
+  clause, compliance text, or interface language: inspect `A.6`, `A.6.B`, and
+  `A.6.C`. If the first question is only "what description is this?", inspect
+  `A.6.RSIG` before routed claim structure. Add `A.6.P`, `A.6.Q`, or `A.6.A`
+  only when relation, quality, or action wording is the live burden.
+- For **lawful comparison / pool / selection / selected-set publication**:
+  inspect `A.19:0`, `A.17-A.19`, `A.19.CN`, `G.0`, `C.18`, `C.19`, and `G.5`.
+  Consider `C.11` only when the burden has narrowed to one local decision
+  doctrine, and `C.24` only when the next honest artifact is a call plan or
+  checkpoint return.
+- For a **reusable generator / SoTA / portfolio kit** as the first deliverable:
+  inspect `A.0`, `G.0`, `G.1`, `G.2`, and `G.5`. Consider `B.5.2.1` and
+  `C.17-C.19` when creative search, novelty, or explore/exploit policy is
+  already central. Consider `G.10` / `G.11` when shipping or refresh is live.
+- For **same-entity rewrite, explanation, representation change, repair, or
+  bounded comparative reading** without minting a new object of talk: inspect
+  `A.6.3.CR`, `A.6.3.RT`, `E.17.EFP`, and `E.17.ID.CR`. Consider
+  `E.17.AUD.LHR` for pressured-head local repair and `E.17.AUD.OOTD` for
+  authored-unit stability.
+
+`Preface` helps the reader begin entry; it does not become one second `J.4`.
+Update `Preface` when the global entry map changes or the center of gravity of
+`FPF` shifts materially. If only one local nearby-pattern cue or one
+worked-reading branch changes, that is not automatically one reason to rewrite
+`Preface`.
+
+Everything in the Core is intentionally tool-agnostic. Implementation details
+belong to Tooling and worked examples belong to the Pedagogical Companion. The
+rest of this `Preface` provides non-normative motivation and reading heuristics
+for the patterns that follow.

@@ -1,12 +1,13 @@
 # Cross-References into 04-part-a-kernel-architecture-cluster
 
-Patterns in other Parts that reference patterns in this directory (69 refs).
+Patterns in other Parts that reference patterns in this directory (74 refs).
 
 ## From 05-cluster-aiva-signature-stack-boundary-discipline-a6
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.6.2 | builds_on | A.1 |
+| A.6.3.CSC | coordinates_with | A.21 |
 | A.6.3.RT | coordinates_with | A.21 |
 | A.6.4 | builds_on | A.1 |
 | A.6.5 | builds_on | A.1 |
@@ -35,6 +36,8 @@ Patterns in other Parts that reference patterns in this directory (69 refs).
 | A.19 | builds_on | A.2.5 |
 | A.19 | coordinates_with | A.3.3 |
 | A.19.CHR | coordinates_with | A.21 |
+| A.19.SUPPORT-VIEW | coordinates_with | A.0 |
+| A.19.SURF-SPACE | coordinates_with | A.0 |
 | A.20 | coordinates_with | A.21 |
 | A.7 | builds_on | A.1 |
 | A.7 | builds_on | A.2 |
@@ -70,6 +73,8 @@ Patterns in other Parts that reference patterns in this directory (69 refs).
 | C.2.2 | builds_on | A.2.6 |
 | C.21 | builds_on | A.2.6 |
 | C.25 | builds_on | A.2.6 |
+| C.26.3 | builds_on | A.3 |
+| C.27 | builds_on | A.3.3 |
 | C.3 | builds_on | A.1 |
 | C.3 | builds_on | A.2.6 |
 | C.3.1 | builds_on | A.1 |

@@ -28,7 +28,7 @@ document order with one universal first-practical workflow.
 
 #### E.6:4.0 - Document order is not the same thing as first-practical entry
 
-The macro-order of the document is a didactic scaffold, not a universal practical workflow. Route-bearing navigation surfaces such as the `Preface`, `J.4`, route-bearing owner patterns, and route-indexed walkthroughs are informative navigation only: they may cross Parts when that is the first honest entry for the burden at hand, and they do not create a second normative lifecycle.
+The macro-order of the document is a didactic scaffold, not a universal practical workflow. Entry navigation surfaces such as the `Preface`, `J.4`, entry-neighborhood owner patterns, and worked entry readings are informative navigation only: they may cross Parts when that is the first honest entry for the burden at hand, and they do not create a second normative lifecycle.
 
 The "On-Ramp First" Macro-Structure: The specification is ordered to create a smooth cognitive ramp:
 * It begins with an informal, non-normative Preface (The On-Ramp), which uses storytelling and concrete examples (System and Episteme) to build intuition.
@@ -75,7 +75,7 @@ The "On-Ramp First" Macro-Structure: The specification is ordered to create a sm
 | **CC‑DA.1** | Each Part **SHALL** open with a one‑paragraph situational “hook” before formal text. |
 | **CC‑DA.2** | Every architectural pattern **MUST** implement Tell‑Show‑Show: universal rule plus System & Episteme illustrations. |
 | **CC‑DA.3** | Governance patterns (**Part E**) **SHALL NOT** appear before the Kernel in the main document flow. |
-| **CC‑DA.4** | Navigation aids **SHALL** distinguish document order from first-practical entry routes; entry routes are informative and MAY cross Parts without implying a universal lifecycle. |
+| **CC‑DA.4** | Navigation aids **SHALL** distinguish document order from first-practical entry guidance; entry-neighborhood and worked-reading guidance are informative and MAY cross Parts without implying a universal lifecycle. |
 
 ### E.6:7 - Consequences
 

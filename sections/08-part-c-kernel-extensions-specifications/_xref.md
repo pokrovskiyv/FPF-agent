@@ -1,6 +1,6 @@
 # Cross-References into 08-part-c-kernel-extensions-specifications
 
-Patterns in other Parts that reference patterns in this directory (66 refs).
+Patterns in other Parts that reference patterns in this directory (91 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -12,20 +12,29 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.6 | coordinates_with | C.26 |
+| A.6 | coordinates_with | C.26.1 |
 | A.6.2 | builds_on | C.2.1 |
 | A.6.3 | builds_on | C.2.1 |
 | A.6.3 | builds_on | C.2 |
+| A.6.3.CSC | coordinates_with | C.26 |
+| A.6.3.CSC | coordinates_with | C.26.1 |
 | A.6.3.RT | builds_on | C.2.7 |
+| A.6.3.RT | coordinates_with | C.26 |
 | A.6.4 | builds_on | C.2.1 |
 | A.6.4 | builds_on | C.2 |
 | A.6.5 | used_by | C.2.1 |
 | A.6.6 | coordinates_with | C.2.1 |
 | A.6.6 | coordinates_with | C.3.3 |
+| A.6.8 | coordinates_with | C.26.1 |
+| A.6.8 | coordinates_with | C.26.3 |
 | A.6.9 | coordinates_with | C.3.3 |
 | A.6.A | builds_on | C.2.2 |
+| A.6.B | coordinates_with | C.26.1 |
 | A.6.P | coordinates_with | C.2.1 |
 | A.6.P | coordinates_with | C.2.2 |
 | A.6.P | coordinates_with | C.3.3 |
+| A.6.P | coordinates_with | C.26 |
 | A.6.Q | builds_on | C.25 |
 | A.6.Q | builds_on | C.2.2 |
 | A.6.S | builds_on | C.2.1 |
@@ -34,6 +43,10 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.10 | coordinates_with | C.16 |
+| A.10 | coordinates_with | C.26.1 |
+| A.10 | coordinates_with | C.26.2 |
+| A.10 | coordinates_with | C.26.3 |
 | A.15 | prerequisite_for | C.24 |
 | A.16 | builds_on | C.2.2 |
 | A.16 | builds_on | C.2.LS |
@@ -46,6 +59,10 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 | A.19 | coordinates_with | C.16 |
 | A.19.CHR | coordinates_with | C.23 |
 | A.19.CN | coordinates_with | C.16 |
+| A.19.SUPPORT-VIEW | coordinates_with | C.19 |
+| A.19.SUPPORT-VIEW | coordinates_with | C.24 |
+| A.19.SURF-SPACE | coordinates_with | C.18 |
+| A.19.SURF-SPACE | coordinates_with | C.19 |
 | A.19.SelectorMechanism | builds_on | C.22 |
 | A.19.UNM | builds_on | C.16 |
 | A.19.USCM | builds_on | C.16 |
@@ -56,6 +73,11 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 |--------|----------|--------|
 | B.1.2 | builds_on | C.1 |
 | B.1.3 | builds_on | C.2 |
+| B.3 | coordinates_with | C.26 |
+| B.3 | coordinates_with | C.26.1 |
+| B.3 | coordinates_with | C.26.2 |
+| B.3 | coordinates_with | C.26.3 |
+| B.3 | coordinates_with | C.16 |
 | B.3.5 | builds_on | C.13 |
 | B.4.1 | builds_on | C.2.2 |
 | B.4.1 | coordinates_with | C.22.1 |
@@ -85,6 +107,8 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.9 | coordinates_with | C.26 |
+| F.9 | coordinates_with | C.26.1 |
 | F.9.1 | builds_on | C.2.2 |
 
 ## From 14-part-g-discipline-sota-patterns-kit
@@ -102,3 +126,4 @@ Patterns in other Parts that reference patterns in this directory (66 refs).
 | G.7 | builds_on | C.21 |
 | G.8 | builds_on | C.23 |
 | G.8 | builds_on | C.22 |
+| G.9 | coordinates_with | C.27 |

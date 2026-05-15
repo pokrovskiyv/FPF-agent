@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-05-01
+
+### What's New
+- New analysis lens for situations where the act of asking changes the answer: Quantum-Like Modeling (C.26) — covers probe-coupled boundary interaction, enacted distributed-state evidence, and viability-envelope regulation. Useful when answers depend on who is measuring or what they are optimizing for
+- Explicit handling of "is this claim still true?" — Temporal Claim Adequacy (C.27) distinguishes state readings, temporal trends, and intervention-sensitive change, so stale or context-shifted statements can be detected instead of silently propagating
+- New technique for reaching consensus by deliberately reducing precision: Controlled Semantic Coarsening (A.6.3.CSC) — vs. accidentally vague language nobody noticed got loose
+- New patterns for "can the people who need this find it, and recognize it as itself across contexts": Recognition Signatures (A.6.RSIG) + First-Practical Entry & Discoverability Discipline (E.11)
+- Major rework of how the spec records its own design rationale: Design-Rationale Record method (E.9 DRR) overhaul — improves how decisions, alternatives, and constraints are captured for future review
+- Formal math substrate for the Characteristic concept (A.19.SURF-SPACE, A.19.SUPPORT-VIEW) — the term that replaced "axis"/"dimension" everywhere now has an explicit cross-surface layer
+- New navigation aids: Detailed Walk-throughs (I.2) and First-Practical Entry Neighborhood Index (J.4)
+- Refreshed search index: +10 indexed sections (236 vs. 226), 267 section files (+27), 253 metadata entries (+11)
+
+### All Changes
+- **chore**: sync upstream FPF-Spec (temporal claim adequacy + quantum-like cluster + E.9 DRR + A.19.* + recognizability)
+- **chore**: rebuild sections after upstream sync
+- **docs**: add 'What's New' for upstream sync — describe user-facing additions
+- **fix**: complete truncated changelog entry from previous commit
+
 ## 2026-04-15
 
 ### What's New

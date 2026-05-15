@@ -1,6 +1,6 @@
 # Cross-References into 11-section-ei-the-fpf-constitution
 
-Patterns in other Parts that reference patterns in this directory (107 refs).
+Patterns in other Parts that reference patterns in this directory (112 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -32,6 +32,10 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | A.6.3.CR | builds_on | E.17.0 |
 | A.6.3.CR | builds_on | E.17 |
 | A.6.3.CR | builds_on | E.10 |
+| A.6.3.CSC | builds_on | E.17.EFP |
+| A.6.3.CSC | builds_on | E.8 |
+| A.6.3.CSC | builds_on | E.10 |
+| A.6.3.CSC | builds_on | E.19 |
 | A.6.3.RT | builds_on | E.17.0 |
 | A.6.3.RT | builds_on | E.17 |
 | A.6.4 | builds_on | E.18 |
@@ -80,6 +84,8 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | A.19.CHR | builds_on | E.10 |
 | A.19.CHR | builds_on | E.19 |
 | A.19.CPM | coordinates_with | E.20 |
+| A.19.SUPPORT-VIEW | builds_on | E.17.0 |
+| A.19.SUPPORT-VIEW | builds_on | E.17 |
 | A.19.SelectorMechanism | used_by | E.18 |
 | A.19.UINDM | coordinates_with | E.20 |
 | A.19.ULSAM | coordinates_with | E.20 |
@@ -116,7 +122,6 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| F.18 | coordinates_with | E.10 |
 | F.5 | builds_on | E.10 |
 | F.9.1 | coordinates_with | E.17.1 |
 

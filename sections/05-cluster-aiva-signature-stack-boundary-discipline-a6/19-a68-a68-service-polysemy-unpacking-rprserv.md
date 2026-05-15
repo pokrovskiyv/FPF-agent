@@ -8,15 +8,15 @@
 > **Normativity:** Normative
 > **Placement:** Part A → A.6 (Precision restoration / stack discipline)
 > **Builds on:** A.6.P (RPR recipe), A.6.5 (slot discipline), A.6.B (routing), A.2.3 (`U.PromiseContent`), A.2.8 (`U.Commitment`), A.2.9 (`U.SpeechAct`), A.15 (`U.Work`), E.10 (LEX, incl. L‑SERV, LEX‑BUNDLE & PTG stances), F.17 (UTS — Unified Term Sheet), F.18 (Name Cards / NQD‑front; promise ≠ utterance ≠ commitment).
-> **Coordinates with:** A.6.C (contract bundle unpacking), A.7 (Object≠Description≠Carrier), G.* evidence discipline (EvidenceGraph / SCR), Context/Bridge policy for cross‑Context reuse, F.8 (Mint/Reuse), E.15 (LEX‑AUTH when refactoring existing prose at scale).
-> **Delta-Class:** Δ‑3 (new normative pattern; corpus‑wide lexical refactor expected when adopted in Core)
-> **Impact radius:** Any normative prose that uses the “service” cluster (`service`, `service provider`, `server`); LEX rules (L‑SERV / LEX‑BUNDLE); UTS blocks (F.17); contract/boundary patterns that already talk about services (esp. A.6.C); any automated repair/lint pipeline used for bulk refactors (E.15 / LEX‑AUTH).
+> **Coordinates with:** A.6.C (agreement/specification/contract shorthand unpacking into promise content, commitment, work/evidence, and interface/boundary claims), A.7 (Object≠Description≠Carrier), G.* evidence discipline (EvidenceGraph / SCR), Context/Bridge policy for cross‑Context reuse, F.8 (Mint/Reuse), E.15 (LEX‑AUTH when refactoring existing prose at scale).
+> **Delta-Class:** Δ‑3 (normative service-cluster unpacking pattern; corpus-wide lexical refactor applies where the service cluster is load-bearing)
+> **Impact radius:** Any normative prose that uses the “service” cluster (`service`, `service provider`, `server`); LEX rules (L‑SERV / LEX‑BUNDLE); UTS blocks (F.17); boundary/agreement/specification patterns that already talk about services (esp. A.6.C); any automated repair/lint pipeline used for bulk refactors (E.15 / LEX‑AUTH).
  **Mint vs reuse:** Mints the `serviceSituation(…)` QRR lens id and the facet headphrase set defined in §4.3. Reuses `U.PromiseContent`, `U.Commitment`, `U.SpeechAct`, `U.System`, `U.Work`, `U.MethodDescription`, and the A.6.P/QRR recipe.
- **DRR pointer:** **REQUIRED before Core admission.** `DRR‑SERV‑POLYSEMY‑<id>` (TBD in draft; must cite the PQG run + refactor/harness plan).
+
 
 **Intent.** Prevent category errors and metonymic drift caused by the borderline word “service” by forcing every normative mention to name the **facet** (promise content vs promised work‑kind/effect vs accountable principal vs realization system vs access object vs interface vs binding vs act vs run‑time work/evidence) and by providing a stable “service situation” lens that keeps those facets related without collapsing them.
 
-**Non‑goal (modularity guard).** This pattern does **not** redefine the semantics or field structure of the promise‑content object (the **promise content**). That kernel meaning is defined in **A.2.3 (`U.PromiseContent`)**. A.6.8 is a precision‑restoration + lexicon discipline that (i) forces facet‑typed head phrases and (ii) provides an optional QRR lens to bind already‑defined kinds without collapsing them. Contract‑talk unpacking is handled by **A.6.C**, which invokes this pattern when contract language contains the service cluster.
+**Non‑goal (modularity guard).** This pattern does **not** redefine the semantics or field structure of the promise‑content object (the **promise content**). That kernel meaning is defined in **A.2.3 (`U.PromiseContent`)**. A.6.8 is a precision‑restoration + lexicon discipline that (i) forces facet‑typed head phrases and (ii) provides an optional QRR lens to bind already‑defined kinds without collapsing them. Agreement/specification/contract shorthand unpacking is handled by **A.6.C**, which invokes this pattern when that shorthand contains the service cluster.
 
 ### A.6.8:1 - Problem frame
 
@@ -58,7 +58,7 @@ Unqualified “service” in normative prose causes **referent ambiguity** that 
 4. **Speech‑act mismatch:** “promise/offer/accept” are **events/acts**, not the promise content itself.
 5. **Evolution mismatch:** changing an API endpoint or deployment is not “changing the service” unless you declare which facet changed and narrate that change with stable change classes.
 
-Result: reviewers can’t apply A.6.B routing, and engineers are incentivized to preserve ambiguity (“service” as a convenient metonym) because it avoids committing to a model.
+Result: readers can’t apply A.6.B routing, and engineers are incentivized to preserve ambiguity (“service” as a convenient metonym) because it avoids committing to a model.
 
 ### A.6.8:3 - Forces
 
@@ -90,8 +90,8 @@ Result: reviewers can’t apply A.6.B routing, and engineers are incentivized to
 **Headphrase governance (no ad‑hoc synonyms).**
 
 * Each facet head phrase used by this pattern (e.g., “promise content”, “service access point”) SHALL appear as a **UTS twin** (Tech/Plain) in the local UTS block, not as an author‑invented one‑off.
-* Both the **Tech** and **Plain** twin for a facet head phrase SHALL carry an explicit **head kind word** that signals the facet category (**clause / role / principal / system / access point / spec / method / commitment / act / work**). Plain synonyms are permitted only if they preserve the head kind (e.g., “endpoint” as an access‑point head kind; “API spec” as an access‑spec head kind). This is the readability guard that prevents “mathematician renamings”.
-* A conforming **normative Tech** text SHALL treat the bare word **service** (unqualified) as **PTG=Guarded** (E.10): it is allowed only under this pattern’s rewrite rules and only as part of a qualified head phrase.
+* Both the **Tech** and **Plain** twin for a facet head phrase SHALL carry an explicit **head kind word** that signals the facet category (**clause / role / principal / system / access point / spec / method / commitment / act / work**). Plain synonyms are valid only if they preserve the head kind (e.g., “endpoint” as an access‑point head kind; “API spec” as an access‑spec head kind). This is the readability guard that prevents “mathematician renamings”.
+* A conforming **normative Tech** text SHALL treat the bare word **service** (unqualified) as **PTG=Guarded** (E.10): it is valid only under this pattern’s rewrite rules and only as part of a qualified head phrase.
 * If a new facet head phrase must be introduced, it SHALL be treated as a **LexicalAct** with an explicit **Mint/Reuse** decision (F.8), and its **CandidateSet + rationale** SHOULD be recorded via a Name Card (F.18 / NQD‑front) to avoid “clever” but unstable vocabulary.
 
 This preparation step is intentionally “linguistic”: it binds the pattern to how engineers actually write (service/provider/server), rather than to an isolated kernel token.
@@ -143,7 +143,7 @@ Participant slots (principal facets). The slot names are intentionally *prose-fa
 * `consumerAssignmentRef? : RoleAssignmentRef`
   The concrete **role enactor** of `consumerRoleRef` (when needed for accountability/evidence narratives).
 * `accessSpecRef? : MethodDescriptionRef`
-  The **service access spec** / request‑facing interface description (API signature, OpenAPI, endpoint contract, intake SOP, desk procedure). This is typically `promiseContentRef.accessSpec` (A.2.3) and is a `U.MethodDescription`.
+  The **service access spec** / request‑facing interface description (API signature, OpenAPI, endpoint interface description, intake SOP, desk procedure). This is typically `promiseContentRef.accessSpec` (A.2.3) and is a `U.MethodDescription`.
 * `accessPointRef? : SystemRef`
   The **service access point** — an addressable system/facility/desk/endpoint host through which requests arrive. In lived language this is often called “the service” or “the server”.
 * `deliverySystemRef? : SystemRef`
@@ -166,7 +166,7 @@ Participant slots (principal facets). The slot names are intentionally *prose-fa
   (ii) provide sufficient I/O/Δ evidence anchors for that relation to be derived in the Context.
 
   **Invariant: SERV‑INV‑4 (Unit-of-delivery measurability).**
-  If `promiseContentRef.unitOfDelivery` is present, then its `countingRule` is stated (per A.7:5.10.3, with defaults allowed) and the cited Work carries the measurements required by that rule (duration, quantity, cases, kWh, etc).
+  If `promiseContentRef.unitOfDelivery` is present, then its `countingRule` is stated (per A.7:5.10.3, with A.7 defaults available) and the cited Work carries the measurements required by that rule (duration, quantity, cases, kWh, etc).
 * `adjudication? : AdjudicationHooks`
   Evidence anchors (e.g., `evidenceRefs`, `carrierRefs`) used for acceptance/breach evaluation when the passage asserts actuals.
 
@@ -274,7 +274,7 @@ If the sentence asserts actuals (**down/slow/99.9% last week/latency is X/incide
 
 If an actual is used in a conformance block, KPI, or acceptance argument, it MUST cite the underlying `U.Characteristic` and measurement procedure/evidence carrier (C.16/C.25), with pinned `{UnitType, ScaleKind, ReferencePlane, EditionId}`; otherwise it is prose only and MUST NOT be treated as a verified SLO/SLA measurement.
 
-When needed, also name whether the actual is about the **access point** (entrypoint symptoms) or the **delivery system** (realizer symptoms). “Down” can be about the gateway even when the backend is fine; the pattern forbids collapsing those.
+When needed, also name whether the actual is about the **access point** (entrypoint symptoms) or the **delivery system** (realizer symptoms). “Down” can be about the gateway even when the backend is fine; the pattern treats that collapse as an unsupported reading.
 
 #### A.6.8:4.8 — Change‑class lexicon (service‑specific narrations)
 
@@ -318,7 +318,7 @@ If the draft says:
 
 * “The **Payments service access point** (the Payments API ingress/endpoint host) is down.”
 * “The **Payments service delivery system** (the Payments backend realizer) is degraded (symptom attribution is explicit).”
-* “The **Payments service access spec** (e.g., OpenAPI/endpoint contract) defines the request/response interface.”
+* “The **Payments service access spec** (e.g., OpenAPI/endpoint interface description) defines the request/response interface.”
 * “The **Payments promise content** states target availability `SLO=99.9%` over `Γ_time=30d` (promise content).”
 * “The **service commitment** held by the **service provider principal** binds them to that clause.”
 * “The **service delivery work** `Incident#2025‑…` records outage evidence and the restart action; the runbook used is the **service delivery method**.”
@@ -362,10 +362,10 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
    Each SenseCell SHALL cite ContextName@Edition; cited contexts SHOULD not be “FPF only”.
    Any newly introduced facet head phrase SHALL have an explicit Mint/Reuse decision (F.8) and SHOULD have a Name Card rationale (F.18).
 
-1. **CC‑A.6.8‑1 — Unqualified “service” (and cluster stand‑ins) is forbidden in normative prose.**
+1. **CC‑A.6.8‑1 — Unqualified “service” (and cluster stand-ins) is unsupported in normative prose.**
    A conforming boundary/spec text SHALL NOT use **service** as an unqualified head noun, and SHALL NOT use **server** or bare **service provider** as untyped stand‑ins for the same collapsed bundle.
    Every such occurrence SHALL be rewritten to a facet head phrase (promise content / promised work‑kind / service provider role or principal / service delivery system / service access point / service access spec / service commitment / service promise act / service delivery work) or replaced with the correct underlying FPF object (team, ticket, workflow, system, etc.).
-   The facet head phrases in §4.3 are **canonical**; using **service** as the family‑name modifier inside those phrases is permitted and does not itself trigger further unpacking. Any local shorthand that drops the modifier is allowed only under SERV‑LEX‑3.
+   The facet head phrases in §4.3 are **canonical**; using **service** as the family-name modifier inside those phrases is valid and does not itself trigger further unpacking. Any local shorthand that drops the modifier is valid only under SERV-LEX-3.
    *Exception:* direct quotations may retain the original surface form, but the surrounding normative prose SHALL immediately provide an unpacking rewrite.
 
 2. **CC‑A.6.8‑2 — `U.PromiseContent` is referred to as a “promise content” in prose.**
@@ -415,8 +415,8 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
 * **Anti‑pattern:** “We promised the service.”
   **Fix:** “We performed a **service promise act** that published the **promise content** (and instituted a commitment if binding).”
 
-* **Anti‑pattern:** “Service is down (therefore contract violated).”
-  **Fix:** “The **service access point** is down (actual). Contract breach evaluation is a separate claim comparing actuals (work/evidence) to the clause + commitment.”
+* **Anti‑pattern:** “Service is down (therefore the obligation is breached).”
+  **Fix:** “The **service access point** is down (actual). Breach or non-compliance evaluation is a separate claim comparing actuals (work/evidence) to promise content, criteria, and commitment.”
 
 * **Anti‑pattern:** “Service and API are used interchangeably.”
   **Fix:** Use **service access spec** for the API description; use **service access point** for the addressable system; use **promise content** for promise content.
@@ -465,13 +465,58 @@ This aligns with A.6.P’s requirement to replace umbrella tokens with explicit 
 | SRE / modern operations practice | Keeps interface specs, SLO targets, deployments/endpoints, and incident evidence as separate artefact families; motivates the “actuals → work+evidence” rule and the “access point vs delivery system” split. | Adopt/Adapt | *Site Reliability Engineering* (Beyer et al., 2016); *The Site Reliability Workbook* (Beyer et al., 2018) | FPF adapts SRE practice by routing deontics to commitments (D) and keeping telemetry/incidents as evidence (E), rather than letting “SLO/SLA” prose collapse into the word “service”. |
 
 
-**Pack binding (status).** No dedicated SoTA Synthesis Pack is cited here yet for the “service polysemy” cluster; if/when such a pack is published, this section SHOULD be updated to cite the relevant ClaimSheet IDs / CorpusLedger entries (and Bridge ids where reuse is asserted) as the auditable anchors for the alignment statements above.
+**Source posture.** The service-polysemy cluster uses cited practice anchors only to support facet unpacking. Source citations do not replace the live owner routing: promise content, commitment, access point/system, work/evidence, and interface/boundary claims must still be separated by value.
 
 ### A.6.8:12 - Relations
 
 * **Specialises:** A.6.P (RPR) for the lexical/semantic ambiguity cluster around “service”.
 * **Operationalises + extends:** the lexical disambiguation intent of L‑SERV by making “service” **always‑unpack** in normative prose (and by expanding the cluster to include *service provider* and *server* as co‑moving stand‑ins).
 * **Requires (authoring discipline):** a local UTS block (F.17) and published Tech/Plain twins (E.10) for the service/provider/server cluster; this is the “anti‑FPF‑only loop” guard.
-* **Coordinates with:** A.6.C (contract bundle unpacking). When contract-language includes *service* tokens, apply RPR‑SERV first to select **promise content** vs **commitment** vs **access point/system** vs **work/evidence**, then route the resulting atomic statements through A.6.C → A.6.B (L/A/D/E).
+* **Coordinates with:** A.6.C (agreement/specification/contract shorthand unpacking). When that shorthand includes *service* tokens, apply RPR‑SERV first to select **promise content** vs **commitment** vs **access point/system** vs **work/evidence**, then route the resulting atomic statements through A.6.C → A.6.B (L/A/D/E).
+
+### A.6.8:12a - Service/cell analogy correction and quantum-like route
+
+This subsection corrects an invalid reading, not a word-choice preference. A service, microservice, provider, server, access point, delivery system, agreement, specification, or legacy contract shorthand does not become a `cell-like` architecture object, obligation-bearing source, or quantum-like model by vocabulary alone.
+
+#### A.6.8:12a.1 - Service/cell analogy correction
+
+Keep a cell-like analogy only when it changes one of the working decisions: boundary design, exchange control, protected invariant, lifecycle/repair, resource regulation, viability envelope, or coupling protocol. In that case the analogy is a practical comparison to unpack, not a new kind of service object.
+
+Before cell-like analogy is admitted, unpack the service facets into facet head phrases:
+
+| Facet | Ask |
+| --- | --- |
+| Promise content | What is promised or expected by the recipient? |
+| Provider / consumer roles | Who provides and who uses the service in this claim? |
+| Access specification / access point | What interface, endpoint, protocol, or path is being used? |
+| Delivery system / delivery work | What actually performs the work? |
+| Commitment | Which role or agent carries commitment, if any? |
+| Evidence carriers | Which logs, traces, reports, observations, or work results support the claim? |
+| Viability / quality claim | Which envelope, quality bundle, or supported use is being asserted? |
+
+Cell-analogy action path:
+
+1. Stop at the service word and unpack the service facets before using analogy wording.
+2. Name which facet carries the claim: promise content, provider principal, consumer role, access specification, access point, delivery system, delivery method, delivery work, commitment, evidence carrier, time window, viability claim, or quality claim.
+3. Ask what action the analogy would change: boundary design, access design, routing, staffing, evidence, viability envelope, bridge note, or work alignment.
+4. If no action changes, drop the analogy and use the ordinary service facet.
+
+#### A.6.8:12a.2 - QL route after service-facet unpacking
+
+Use QL wording only after the service facets have been unpacked and an ordinary A.6/A.6.B/F.9/A.15/C.16/C.25 route still leaves a residual probe, export, coarsening, or viability-envelope burden.
+
+QL route action path:
+
+1. If an API read/export is later used as passive state reading while it changes or thins the state, route that remainder through `C.26.1`.
+2. If a service situation is being kept viable by boundary/exchange/adaptation work, route that remainder through `C.26.3`.
+3. If a weakened representation of the service state is used, route supported/unsupported use through CSC/RT and the `C.26` coarsening support section only when a QL cue remains.
+
+Useful outputs:
+
+- a service-facet rewrite when ordinary service language was overloaded;
+- a retained cell-like analogy when it changes boundary design, exchange control, protected invariants, lifecycle/repair, resource regulation, viability envelope, or coupling protocol;
+- an A.6/A.6.B/F.9/A.15 route when the issue is boundary, bridge, commitment, or work;
+- a C.26.1 note only for passive-read or export mistakes caused by the service interaction;
+- a C.26.3 note only when service viability is the actual envelope-regulation problem.
 
 ### A.6.8:End

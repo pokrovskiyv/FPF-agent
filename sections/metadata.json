@@ -134,16 +134,17 @@
       "explore/exploit (E/E-LOG)",
       "declared set surface",
       "typed portfolio publication",
-      "illumination map as report-only telemetry",
-      "parity run",
-      "comparability",
-      "ReferencePlane",
-      "CL^plane",
-      "ParetoOnly default"
+      "SearchSpaceRef",
+      "OutcomeSpaceRef",
+      "CrossSurfaceSupportView",
+      "TypedSetViews",
+      "ParetoOnly default",
+      "scale-probe",
+      "BLP"
     ],
     "queries": [
       "What terms must I publish when generating, selecting, or shipping a set surface?",
-      "What is NQD in FPF?",
+      "How do I explain search-side vs outcome-side spaces and support views on first use?",
       "How does FPF avoid single-winner bias in creative search?"
     ],
     "dependencies": {
@@ -157,6 +158,8 @@
         "E.8",
         "E.10",
         "F.17",
+        "A.19.SURF-SPACE",
+        "A.19.SUPPORT-VIEW",
         "G.5",
         "G.9-G.12"
       ],
@@ -680,19 +683,17 @@
     "keywords": [
       "boundary",
       "signature stack",
-      "routing",
+      "boundary route fields",
       "laws",
       "admissibility",
       "deontics",
       "evidence",
-      "claim register",
-      "MVPK",
-      "view/viewpoint",
-      "surface"
+      "probe/order/frame/export claims",
+      "state-reading claims"
     ],
     "queries": [
-      "What is the Signature Stack in FPF?",
-      "How do I route boundary statements (laws vs gates vs duties vs evidence)?",
+      "How do I route boundary statements?",
+      "Where do probe, frame, export, and state-reading claims belong?",
       "How to avoid contract-soup drift in boundary descriptions?"
     ],
     "dependencies": {
@@ -709,13 +710,24 @@
         "E.10/L-SURF"
       ],
       "coordinates_with": [
-        "A.6.5",
-        "A.6.6",
-        "A.6.7",
+        "A.6.B",
+        "A.6.P",
+        "C.26",
+        "C.26.1",
+        "F.9",
+        "A.10",
+        "B.3",
         "E.19"
       ]
     },
     "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md"
+  },
+  "A.6.RSIG": {
+    "title": "Recognition Signatures for Descriptions",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/02-a6rsig-a6rsig-recognition-signatures-for-descriptions.md"
   },
   "A.6.B": {
     "title": "Boundary Norm Square (Laws / Admissibility / Deontics / Work-Effects)",
@@ -724,17 +736,16 @@
       "boundary norm square",
       "atomic claims",
       "L/A/D/E routing",
-      "laws vs gates",
-      "commitments",
-      "evidence carriers",
-      "no upward dependencies",
+      "laws vs gates vs commitments vs evidence",
+      "supported use",
+      "unsupported use",
       "claim IDs",
       "triangle decomposition"
     ],
     "queries": [
       "What is the Boundary Norm Square in FPF?",
-      "How to decompose a mixed sentence into gate/duty/evidence claims?",
-      "Where do RFC keywords belong in FPF patterns?"
+      "How do I decompose probe-coupled or mixed boundary statements?",
+      "Where do RFC keywords and use conditions belong in FPF patterns?"
     ],
     "dependencies": {
       "builds_on": [
@@ -749,11 +760,15 @@
         "E.10.D2",
         "E.10/L-SURF"
       ],
-      "used_by": [
-        "A.6 (cluster overview)"
+      "coordinates_with": [
+        "A.6",
+        "A.6.P",
+        "C.26.1",
+        "A.10",
+        "B.3"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/02-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md"
   },
   "A.6.C": {
     "title": "Contract Unpacking for Boundaries",
@@ -789,7 +804,7 @@
         "F.18"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6c-a6c-contract-unpacking-for-boundaries.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/04-a6c-a6c-contract-unpacking-for-boundaries.md"
   },
   "A.6.0": {
     "title": "U.Signature — Universal, law‑governed declaration",
@@ -805,7 +820,7 @@
       "What is the universal signature block?",
       "Where do laws vs. implementations live?"
     ],
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/04-a60-a60-usignature-universal-lawgoverned-declaration-for-a-subje.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/05-a60-a60-usignature-universal-lawgoverned-declaration-for-a-subje.md"
   },
   "A.6.1": {
     "title": "U.Mechanism - Law‑governed application to a SubjectKind over a BaseType",
@@ -818,7 +833,7 @@
         "E.10.D1"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/05-a61-a61-umechanism-lawgoverned-application-to-a-subjectkind-over.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/06-a61-a61-umechanism-lawgoverned-application-to-a-subjectkind-over.md"
   },
   "A.6.2": {
     "title": "U.EffectFreeEpistemicMorphing — Effect-Free Morphisms of Epistemes",
@@ -856,7 +871,7 @@
         "KD-CAL mapping rules"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/06-a62-a62-ueffectfreeepistemicmorphing-effectfree-morphisms-of-epi.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/07-a62-a62-ueffectfreeepistemicmorphing-effectfree-morphisms-of-epi.md"
   },
   "A.6.3": {
     "title": "U.EpistemicViewing — describedEntity-Preserving Morphism",
@@ -899,10 +914,56 @@
         "KD-CAL view operators"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/07-a63-a63-uepistemicviewing-describedentitypreserving-morphism.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/08-a63-a63-uepistemicviewing-describedentitypreserving-morphism.md"
+  },
+  "A.6.3.CSC": {
+    "title": "Controlled Semantic Coarsening",
+    "status": "Stable",
+    "keywords": [
+      "controlled semantic coarsening",
+      "stronger source",
+      "weaker rendering",
+      "narrower supported use",
+      "unsupported heavier use",
+      "reopen trigger",
+      "redaction",
+      "dashboard tile",
+      "lookup handle",
+      "state-representation shortcut"
+    ],
+    "queries": [
+      "When may a summary or redaction stand in only for narrow use?",
+      "What is Controlled Semantic Coarsening in FPF?",
+      "When must a weakened rendering reopen the stronger source?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.6.3",
+        "A.6.3.CR",
+        "A.6.3.RT",
+        "E.17.EFP",
+        "A.6.P",
+        "E.8",
+        "E.10",
+        "E.19",
+        "F.18"
+      ],
+      "coordinates_with": [
+        "C.26",
+        "C.26.1",
+        "E.17.ID.CR",
+        "F.9",
+        "F.9.1",
+        "A.15",
+        "A.6.4",
+        "A.20",
+        "A.21"
+      ]
+    },
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63csc-a63csc-controlled-semantic-coarsening.md"
   },
   "A.6.3.CR": {
-    "title": "ConservativeRetextualization — same-described-entity textual re-expression",
+    "title": "ConservativeRetextualization - same-described-entity textual re-expression",
     "status": "Stable",
     "keywords": [
       "retextualization",
@@ -911,12 +972,13 @@
       "translation",
       "filtering",
       "same-described-entity textual re-expression",
-      "direct vs correspondence-mediated rewrite"
+      "direct vs correspondence-mediated rewrite",
+      "source tether"
     ],
     "queries": [
       "When is a summary still a conservative same-entity view?",
       "How does FPF treat same-entity translation or report rewriting?",
-      "What is ConservativeRetextualization?"
+      "When does a softened rewrite need Controlled Semantic Coarsening instead?"
     ],
     "dependencies": {
       "builds_on": [
@@ -931,6 +993,7 @@
         "E.10"
       ],
       "coordinates_with": [
+        "A.6.3.CSC",
         "ExplanationFaithfulnessProfile",
         "RepresentationTransduction",
         "E.17.ID.CR ComparativeReading",
@@ -939,10 +1002,10 @@
         "A.15"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/08-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md"
   },
   "A.6.3.RT": {
-    "title": "RepresentationTransduction — same-described-entity representation-scheme transition",
+    "title": "RepresentationTransduction - same-described-entity representation-scheme transition",
     "status": "Stable",
     "keywords": [
       "representation transduction",
@@ -951,13 +1014,14 @@
       "notation shift",
       "reasoning medium",
       "recoverability",
-      "non-latent",
-      "same-described-entity representation change"
+      "same-described-entity representation change",
+      "source tether",
+      "state-representation shortcut"
     ],
     "queries": [
       "When is a table or diagram still a same-entity view?",
       "What is RepresentationTransduction in FPF?",
-      "How does FPF handle same-entity representation-scheme shifts?"
+      "When does a state-representation shortcut need CSC or C.26 support?"
     ],
     "dependencies": {
       "builds_on": [
@@ -972,6 +1036,8 @@
         "F.18"
       ],
       "coordinates_with": [
+        "A.6.3.CSC",
+        "C.26",
         "ConservativeRetextualization",
         "ExplanationFaithfulnessProfile",
         "E.17.ID.CR ComparativeReading",
@@ -982,7 +1048,7 @@
         "DecodingAccessProfile"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63rt-a63rt-representationtransduction-same-described-entity-repre.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63rt-a63rt-representationtransduction-same-described-entity-repre.md"
   },
   "A.6.4": {
     "title": "U.EpistemicRetargeting — describedEntity-Retargeting Morphism",
@@ -1017,7 +1083,7 @@
         "Fourier-style transforms and data↔model re-targetings in discipline packs"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a64-a64-uepistemicretargeting-describedentityretargeting-morphis.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/12-a64-a64-uepistemicretargeting-describedentityretargeting-morphis.md"
   },
   "A.6.P": {
     "title": "U.RelationalPrecisionRestorationSuite — Relational Precision Restoration (RPR) — Kind-Explicit Qualified Relation Discipline",
@@ -1027,17 +1093,18 @@
       "under-specified relational language",
       "RelationKind",
       "QualifiedRelationRecord",
-      "SlotSpec",
-      "change-class lexicon",
-      "A.6.B L/A/D/E routing",
+      "coupling",
+      "probe",
+      "measurement",
+      "export",
       "endpoint referential compression",
       "lexical guardrails",
       "language-state seam"
     ],
     "queries": [
-      "How do I repair an overloaded relation word without doing lexicon-only cleanup?",
-      "What makes a relation repair slot-explicit and boundary-routed?",
-      "When should a quality/action/sameness/wholeness trigger reroute to an RPR specialization?"
+      "How do I repair an overloaded relation word without lexicon-only cleanup?",
+      "How do I keep probe/coupling/export wording kind-explicit?",
+      "When should quality/action/sameness/wholeness/QL wording reroute to another owner?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1058,6 +1125,7 @@
         "C.2.1",
         "C.2.2a",
         "C.3.3",
+        "C.26",
         "E.17",
         "F.9",
         "F.17"
@@ -1072,7 +1140,7 @@
         "A.6.H"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a6p-a6p-urelationalprecisionrestorationsuite-relational-precisio.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/13-a6p-a6p-urelationalprecisionrestorationsuite-relational-precisio.md"
   },
   "A.6.Q": {
     "title": "U.QualityTermPrecisionRestoration — Quality Term Precision Restoration (Q-TERM)",
@@ -1104,7 +1172,7 @@
         "B.5.2.0"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/12-a6q-a6q-uqualitytermprecisionrestoration-quality-term-precision-.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/14-a6q-a6q-uqualitytermprecisionrestoration-quality-term-precision-.md"
   },
   "A.6.A": {
     "title": "U.ActionInvitationPrecisionRestoration — Affordance / Action-Invitation Precision Restoration (ACT-INV)",
@@ -1170,7 +1238,7 @@
         "discipline-packs for methods/services"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/14-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-disci.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/16-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-disci.md"
   },
   "A.6.6": {
     "title": "U.BaseDeclarationDiscipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)",
@@ -1220,7 +1288,7 @@
         "base)`"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/15-a66-a66-ubasedeclarationdiscipline-kind-explicit-scoped-witnesse.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/17-a66-a66-ubasedeclarationdiscipline-kind-explicit-scoped-witnesse.md"
   },
   "A.6.7": {
     "title": "MechSuiteDescription — Description of a set of distinct mechanisms",
@@ -1258,25 +1326,26 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/16-a67-a67-mechsuitedescription-description-of-a-set-of-distinct-me.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/18-a67-a67-mechsuitedescription-description-of-a-set-of-distinct-me.md"
   },
   "A.6.8": {
     "title": "Service Polysemy Unpacking (RPR-SERV)",
     "status": "Stable",
     "keywords": [
       "service polysemy",
-      "facet unpacking",
-      "serviceSituation QRR",
-      "promise content vs access point",
+      "service situation",
+      "interface semantics",
+      "promise content",
       "provider principal",
-      "SLA/SLO",
-      "server/service provider rewrite"
+      "service/cell analogy",
+      "boundary exchange",
+      "viability envelope",
+      "API read/export"
     ],
     "queries": [
-      "How to unpack service talk in FPF?",
-      "serviceSituation lens",
-      "promise content vs service access point",
-      "RPR-SERV rules"
+      "How do I unpack service talk in FPF?",
+      "When is an API read interface semantics rather than state evidence?",
+      "When does service viability route to C.26.3?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1294,11 +1363,13 @@
       "coordinates_with": [
         "A.6.C",
         "A.7",
+        "C.26.1",
+        "C.26.3",
         "F.8",
         "E.15"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/17-a68-a68-service-polysemy-unpacking-rprserv.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/19-a68-a68-service-polysemy-unpacking-rprserv.md"
   },
   "A.6.9": {
     "title": "U.CrossContextSamenessDisambiguation — Repairing cross-context “same / equivalent / align” via explicit Bridges (RPR-XCTX)",
@@ -1334,7 +1405,7 @@
         "F.7/F.8"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/18-a69-a69-ucrosscontextsamenessdisambiguation-repairing-cross-cont.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/20-a69-a69-ucrosscontextsamenessdisambiguation-repairing-cross-cont.md"
   },
   "A.6.S": {
     "title": "U.SignatureEngineeringPair — Constructive signature engineering (ConstructorSignature + TargetSignature)",
@@ -1414,7 +1485,7 @@
         "A.15"
       ]
     },
-    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/20-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
+    "file": "sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/22-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
   },
   "A.7": {
     "title": "Strict Distinction (Clarity Lattice)",
@@ -1496,18 +1567,30 @@
       "traceability",
       "audit",
       "provenance",
+      "evidence carrier",
+      "claim support",
+      "probe evidence",
+      "distributed-state evidence",
+      "export evidence",
+      "viability evidence",
       "SCR/RSCR"
     ],
     "queries": [
       "How are claims supported by evidence?",
-      "How to ensure auditability?"
+      "What evidence is needed for probe-coupled or distributed-state readings?",
+      "How do I keep evidence carriers separate from the state they report?"
     ],
     "dependencies": {
       "builds_on": [
         "A.1"
       ],
-      "prerequisite_for": [
-        "B.3"
+      "coordinates_with": [
+        "B.3",
+        "C.16",
+        "F.9",
+        "C.26.1",
+        "C.26.2",
+        "C.26.3"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-c4.md"
@@ -1611,18 +1694,22 @@
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/08-a14-a14-advanced-mereology-components-portions-aspects-phases.md"
   },
   "A.15": {
-    "title": "Role–Method–Work Alignment (Contextual Enactment)",
+    "title": "Role-Method-Work Alignment (Contextual Enactment)",
     "status": "Stable",
     "keywords": [
       "role-method-work split",
       "`U.WorkPlan` vs `U.Work`",
       "contextual enactment",
+      "coordinated-work evidence",
+      "distributed-state reading",
       "checkpoint return",
-      "bounded specialization scouting"
+      "weakened briefing",
+      "work authority"
     ],
     "queries": [
       "How do role, method, plan, and work stay distinct in FPF?",
-      "How does bounded specialization scouting return a checkpoint instead of a silent rollout?"
+      "When can coordinated work evidence a state that no one report carries?",
+      "When is a briefing not work authority?"
     ],
     "dependencies": {
       "prerequisite_for": [
@@ -1905,18 +1992,19 @@
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/18-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
   },
   "A.19": {
-    "title": "A.CHR-SPACE — CharacteristicSpace & Dynamics Hook",
+    "title": "CharacteristicSpace & Dynamics Hook (A.CHR-SPACE)",
     "status": "Stable",
     "keywords": [
       "CharacteristicSpace",
       "U.Dynamics.stateSpace",
       "state trajectories",
       "declared Characteristics and Scales",
-      "CSLC bundle",
-      "CN-Spec reading path",
+      "subspace",
+      "embedding",
+      "product",
       "structural overlays",
-      "no lifecycle-stage drift",
-      "dynamics hook",
+      "coordinatewise comparability",
+      "role-specific space refs stay outside A.19",
       "multi-dimensional tracking",
       "system condition",
       "measurable properties"
@@ -1924,7 +2012,7 @@
     "queries": [
       "How do I declare the state space a dynamics model moves through?",
       "How do Characteristics become a multi-coordinate state space?",
-      "How do I review CHR-enabled plans without reading every CHR mechanism first?",
+      "What stays inside A.19 and what routes to cross-surface substrate or support patterns?",
       "How to define all the measurable properties of a system in one place?",
       "How to track a system's condition across multiple dimensions consistently?",
       "How to avoid mixing incompatible units or scales when comparing system states?",
@@ -1944,10 +2032,89 @@
       "coordinates_with": [
         "C.16",
         "A.19.CN",
+        "A.19.SURF-SPACE",
+        "A.19.SUPPORT-VIEW",
         "A.19.CHR",
         "G.0",
         "E.18",
         "A.3.3"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+  },
+  "A.19.SURF-SPACE": {
+    "title": "Cross-Surface / Cross-Space Substrate",
+    "status": "Stable",
+    "keywords": [
+      "source surface",
+      "search-side space ref",
+      "outcome-side space ref",
+      "cross-surface substrate",
+      "SpaceRefRelationKind",
+      "SourceToOutcomeRelation",
+      "DistortionPosture",
+      "SourceSurfaceId",
+      "sameDeclaredSpaceAs",
+      "distinctDeclaredSpaceFrom"
+    ],
+    "queries": [
+      "How do I declare one source surface plus search-side and outcome-side refs?",
+      "How do I keep source-to-outcome relation and distortion posture explicit?",
+      "When do search and outcome refs resolve to the same declared CharacteristicSpace?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19",
+        "A.17",
+        "A.18"
+      ],
+      "coordinates_with": [
+        "C.18",
+        "C.19",
+        "G.5",
+        "G.10",
+        "A.19.SUPPORT-VIEW",
+        "A.6.P",
+        "A.0"
+      ]
+    },
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+  },
+  "A.19.SUPPORT-VIEW": {
+    "title": "Cross-Surface Support View",
+    "status": "Stable",
+    "keywords": [
+      "support view",
+      "thin support",
+      "atlas support",
+      "CrossSurfaceSupportView",
+      "CrossSurfaceAtlasView",
+      "TraditionAtlasView",
+      "TypedSetViews",
+      "support qualifiers",
+      "support-only reading"
+    ],
+    "queries": [
+      "When do I use a support view over an already-declared substrate?",
+      "When is thin support enough and when do I need atlas form?",
+      "How does TraditionAtlasView stay a local specialization instead of the generic head?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.19.SURF-SPACE",
+        "A.19",
+        "A.6.3",
+        "E.17.0",
+        "E.17"
+      ],
+      "coordinates_with": [
+        "G.2",
+        "G.5",
+        "G.10",
+        "C.19",
+        "C.24",
+        "A.6.P",
+        "A.0"
       ]
     },
     "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
@@ -1997,7 +2164,7 @@
         "G.0 (CG-Spec legality gate)"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/20-a19cn-a19cn-cnframe-comparability-normalization.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/22-a19cn-a19cn-cnframe-comparability-normalization.md"
   },
   "A.19.CHR": {
     "title": "CHRMechanismSuite — CHR mechanism-suite anchor (suite obligations + P2W planned baseline)",
@@ -2049,7 +2216,7 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/21-a19chr-a19chr-chrmechanismsuite.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/23-a19chr-a19chr-chrmechanismsuite.md"
   },
   "A.19.UNM": {
     "title": "Unified Normalization Mechanism (UNM)",
@@ -2099,7 +2266,7 @@
         "A.19.SelectorMechanism"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/22-a19unm-a19unm-unified-normalization-mechanism-unm.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/24-a19unm-a19unm-unified-normalization-mechanism-unm.md"
   },
   "A.19.UINDM": {
     "title": "Unified Indicatorization Mechanism (UINDM)",
@@ -2138,7 +2305,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/23-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/25-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md"
   },
   "A.19.USCM": {
     "title": "Unified Scoring Mechanism (USCM)",
@@ -2184,7 +2351,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/24-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/26-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
   },
   "A.19.ULSAM": {
     "title": "Unified Lawful Scale Aggregation Mechanism (ULSAM)",
@@ -2227,7 +2394,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/25-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/27-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
   },
   "A.19.CPM": {
     "title": "Unified Comparison Mechanism (CPM)",
@@ -2285,7 +2452,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/26-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/28-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md"
   },
   "A.19.SelectorMechanism": {
     "title": "Unified Selection Kernel (SelectorMechanism)",
@@ -2369,7 +2536,7 @@
         "A.45"
       ]
     },
-    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/28-a20-a20-uflowconstraintvalidity-eulerian.md"
+    "file": "sections/06-cluster-av-constitutional-principles-of-the-kernel/30-a20-a20-uflowconstraintvalidity-eulerian.md"
   },
   "A.21": {
     "title": "GateProfilization: OperationalGate(profile) (GateFit core)",
@@ -2723,11 +2890,13 @@
       "formality",
       "scope",
       "congruence",
-      "evidence"
+      "evidence",
+      "claim-strength posture",
+      "probe/distributed/export assurance"
     ],
     "queries": [
       "How is trust calculated in FPF?",
-      "What is the F-G-R model?",
+      "What assurance burden fits a QL-lite or decision-bearing claim?",
       "How does FPF handle evidence and confidence?"
     ],
     "dependencies": {
@@ -2737,6 +2906,14 @@
       "prerequisite_for": [
         "All B.3.x",
         "D.4"
+      ],
+      "coordinates_with": [
+        "C.26",
+        "C.26.1",
+        "C.26.2",
+        "C.26.3",
+        "C.16",
+        "F.9"
       ]
     },
     "file": "sections/07-part-b-transdisciplinary-reasoning-cluster/13-b3-b3-trust-assurance-calculus-fgr-with-congruence.md"
@@ -3795,17 +3972,18 @@
     "file": ""
   },
   "C.11": {
-    "title": "Decision Theory (Decsn‑CAL)",
+    "title": "Decision Theory (Decsn-CAL)",
     "status": "Stable",
     "keywords": [
       "decision theory",
       "DecisionSubject",
-      "DecisionSubjectGranularity",
       "OptionSet",
       "comparison basis",
       "ChoiceRule",
       "ChoiceResult",
-      "PreferenceOrder",
+      "question order",
+      "probe-worthiness",
+      "non-shared comparison frame",
       "ValueOfInformation",
       "ValueOfComputation",
       "choose now",
@@ -3816,7 +3994,7 @@
     "queries": [
       "When should one choose now versus probe again?",
       "What must be explicit before a choice among already-available options is lawful?",
-      "When is this really candidate generation, pool policy, execution planning, or selected-set publication instead?"
+      "When do question order or incompatible frames require C.26 rather than ordinary choice?"
     ],
     "dependencies": {
       "builds_on": [
@@ -3828,6 +4006,7 @@
         "A.19"
       ],
       "coordinates_with": [
+        "C.26",
         "C.18",
         "C.19",
         "C.24",
@@ -3930,19 +4109,27 @@
       "`U.Unit`",
       "`U.EvidenceStub`",
       "polarity",
-      "direct comparability (same-template)",
-      "scoring method (𝒢) disclosure",
+      "direct comparability",
+      "scoring method disclosure",
+      "probe-changing-state",
+      "shared-frame check",
       "CSLC"
     ],
     "queries": [
       "How do I define a measurement template in FPF?",
-      "What is direct comparability in MM-CHR?",
+      "When is a metric a passive read and when does it change the state?",
       "How do EvidenceStubs support measurement claims?"
     ],
     "dependencies": {
       "builds_on": [
         "A.17",
         "A.18"
+      ],
+      "coordinates_with": [
+        "A.10",
+        "B.3",
+        "C.26",
+        "C.26.1"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/20-c16-c16-measurement-metrics-characterization-mmchr.md"
@@ -4311,7 +4498,7 @@
     "file": "sections/08-part-c-kernel-extensions-specifications/07-c24-c24-uarticulationexplicitness.md"
   },
   "C.25": {
-    "title": "Q-Bundle — Structured Treatment of \"-ilities\" (Quality Families)",
+    "title": "Q-Bundle: Authoring \"-ilities\" as Structured Quality Bundles",
     "status": "Stable",
     "keywords": [
       "quality bundle",
@@ -4319,11 +4506,16 @@
       "quality family",
       "characteristic plus scope",
       "mechanism/status slots",
-      "endpoint routing"
+      "endpoint routing",
+      "viability envelope",
+      "proxy metric",
+      "supported use",
+      "failure mode"
     ],
     "queries": [
       "What is a Q-Bundle in FPF?",
-      "When is an -ility one characteristic and when is it a bundle?"
+      "When is an -ility one characteristic and when is it a bundle?",
+      "When does a viability claim need C.26.3 rather than one metric?"
     ],
     "dependencies": {
       "builds_on": [
@@ -4334,10 +4526,214 @@
       ],
       "coordinates_with": [
         "A.6.Q",
-        "A.15"
+        "A.15",
+        "C.26.3"
       ]
     },
     "file": "sections/08-part-c-kernel-extensions-specifications/08-c25-c25-ulanguagestateclosuredegree.md"
+  },
+  "C.26": {
+    "title": "Quantum-Like Modeling Lens",
+    "status": "Stable",
+    "keywords": [
+      "quantum-like",
+      "QL-lite",
+      "QL-NQ",
+      "probe frame",
+      "order effect",
+      "incompatible probes",
+      "instrument update",
+      "state export",
+      "supported coarsening",
+      "weakest supported output"
+    ],
+    "queries": [
+      "When is quantum-like useful as a mathematical lens in FPF?",
+      "What representational mistake does QL-lite prevent?",
+      "How do I use QL without making a physical quantum claim?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.11",
+        "C.16",
+        "A.6",
+        "A.10",
+        "B.3",
+        "F.9",
+        "A.6.3.CSC",
+        "A.6.3.RT"
+      ],
+      "coordinates_with": [
+        "A.15",
+        "C.25",
+        "C.18",
+        "C.19"
+      ],
+      "constrains": [
+        "C.26.1-C.26.3"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/09-c26-c26-ulanguagestateanchoringmode.md"
+  },
+  "C.26.1": {
+    "title": "Probe-Coupled Boundary Interaction",
+    "status": "Stable",
+    "keywords": [
+      "probe-coupled boundary",
+      "passive read",
+      "dashboard as instrument",
+      "workshop as state-changing interaction",
+      "API read",
+      "survey",
+      "bridge result",
+      "export loss",
+      "evidence window"
+    ],
+    "queries": [
+      "When does a dashboard, workshop, metric, or API read change what it reports?",
+      "How do I stop treating a boundary interaction as a passive read?",
+      "When should a probe-coupled case reroute to evidence or assurance owners?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.26",
+        "A.6",
+        "A.6.B",
+        "A.10",
+        "B.3",
+        "C.16",
+        "F.9",
+        "A.15"
+      ],
+      "coordinates_with": [
+        "C.26.2",
+        "C.26.3",
+        "A.6.8"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/34-c261-c261-probe-coupled-boundary-interaction.md"
+  },
+  "C.26.2": {
+    "title": "Enacted Distributed State Evidence",
+    "status": "Stable",
+    "keywords": [
+      "distributed-state evidence",
+      "coordinated work",
+      "enacted state",
+      "weak state reading",
+      "evidence carrier",
+      "window",
+      "rival explanation",
+      "no group mind",
+      "report/export loss"
+    ],
+    "queries": [
+      "When does coordinated work evidence a state no participant report carries?",
+      "How do I bound a distributed-state reading?",
+      "When is a survey or dashboard thinner than the enacted state?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.26",
+        "A.15",
+        "A.10",
+        "B.3",
+        "F.9",
+        "C.16"
+      ],
+      "coordinates_with": [
+        "C.26.1",
+        "C.26.3"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/35-c262-c262-enacted-distributed-state-evidence.md"
+  },
+  "C.26.3": {
+    "title": "Viability-Envelope Boundary Regulation",
+    "status": "Stable",
+    "keywords": [
+      "viability envelope",
+      "homeostasis",
+      "allostasis",
+      "boundary regulation",
+      "sensor/probe/actuator split",
+      "metric-induced distortion",
+      "service viability",
+      "quality bundle",
+      "failure mode"
+    ],
+    "queries": [
+      "When is viability more than one green metric?",
+      "How do boundary probes or metrics change a viability envelope?",
+      "When does a service split or support load need envelope regulation?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.26",
+        "C.25",
+        "U.Dynamics",
+        "A.6",
+        "A.15",
+        "C.16",
+        "A.10",
+        "B.3",
+        "A.3",
+        "A.19",
+        "C.18",
+        "C.19"
+      ],
+      "coordinates_with": [
+        "C.26.1",
+        "C.26.2"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/36-c263-c263-viability-envelope-boundary-regulation.md"
+  },
+  "C.27": {
+    "title": "Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Temporal Change",
+    "status": "Stable",
+    "keywords": [
+      "temporal claim adequacy",
+      "temporal claim",
+      "state reading",
+      "rate reading",
+      "temporal trend",
+      "rate-change",
+      "intervention-sensitive temporal change",
+      "effort window",
+      "resistance/inertia",
+      "rhythm/cadence",
+      "throughput",
+      "recovery",
+      "braking",
+      "coasting",
+      "stabilization",
+      "dynamic benchmark"
+    ],
+    "queries": [
+      "When does a speed, rhythm, throughput, or recovery claim need temporal adequacy?",
+      "How do I separate state, rate, and intervention-sensitive rate-change?",
+      "When is faster improvement not enough for benchmark, quality, viability, or QL claims?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.16",
+        "A.3.3",
+        "B.1.4",
+        "B.1.6"
+      ],
+      "coordinates_with": [
+        "C.18.1",
+        "C.19",
+        "C.22.1",
+        "C.24",
+        "C.25",
+        "C.26",
+        "C.26.3",
+        "G.9"
+      ]
+    },
+    "file": "sections/08-part-c-kernel-extensions-specifications/10-c27-c27-ulanguagestaterepresentationfactorbundle.md"
   },
   "D.1": {
     "title": "Axiological Neutrality Principle",
@@ -4941,29 +5337,10 @@
     "file": "sections/11-section-ei-the-fpf-constitution/11-e7-e7-archetypal-grounding-principle.md"
   },
   "E.8": {
-    "title": "FPF Authoring Conventions & Style Guide",
+    "title": "FPF Authoring Conventions and Style Guide",
     "status": "Stable",
-    "keywords": [
-      "authoring",
-      "style guide",
-      "conventions",
-      "template",
-      "S-rules",
-      "narrative flow"
-    ],
-    "queries": [
-      "How to write a new FPF pattern?",
-      "What is the FPF style guide?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "E.6",
-        "E.7"
-      ],
-      "constrains": [
-        "All new patterns"
-      ]
-    },
+    "keywords": [],
+    "queries": [],
     "file": "sections/11-section-ei-the-fpf-constitution/12-e8-e8-fpf-authoring-conventions-style-guide.md"
   },
   "E.9": {
@@ -4972,13 +5349,13 @@
     "keywords": [
       "DRR",
       "design rationale",
-      "change management",
       "decision record",
       "context",
-      "consequences"
+      "consequences",
+      "conceptual auditability"
     ],
     "queries": [
-      "How are changes to FPF managed?",
+      "How are FPF design decisions justified?",
       "What is a DRR?"
     ],
     "dependencies": {
@@ -5105,6 +5482,13 @@
     },
     "file": "sections/11-section-ei-the-fpf-constitution/14-e10-e10-unified-lexical-rules-for-fpf-lexbundle.md"
   },
+  "E.11": {
+    "title": "First-Practical Entry and Pattern-Use Discoverability Discipline",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-section-ei-the-fpf-constitution/18-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
+  },
   "E.12": {
     "title": "Didactic Primacy & Cognitive Ergonomics",
     "status": "Stable",
@@ -5125,7 +5509,7 @@
         "E.2 (P-2)"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/18-e12-e12-didactic-primacy-cognitive-ergonomics.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/19-e12-e12-didactic-primacy-cognitive-ergonomics.md"
   },
   "E.13": {
     "title": "Pragmatic Utility & Value Alignment",
@@ -5147,7 +5531,7 @@
         "E.2 (P-7)"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/19-e13-e13-pragmatic-utility-value-alignment.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/20-e13-e13-pragmatic-utility-value-alignment.md"
   },
   "E.14": {
     "title": "Human-Centric Working-Model",
@@ -5175,7 +5559,7 @@
         "E.10"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/20-e14-e14-humancentric-workingmodel.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/21-e14-e14-humancentric-workingmodel.md"
   },
   "E.15": {
     "title": "Lexical Authoring & Evolution Protocol (LEX-AUTH)",
@@ -5202,7 +5586,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/21-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/22-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
   },
   "E.16": {
     "title": "RoC‑Autonomy Budget & Enforcement",
@@ -5232,14 +5616,14 @@
         "G.9"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/22-e16-e16-rocautonomy-budget-enforcement.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/23-e16-e16-rocautonomy-budget-enforcement.md"
   },
   "E.17.0": {
     "title": "U.MultiViewDescribing — Viewpoints, Views & Correspondences",
     "status": "New",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-section-ei-the-fpf-constitution/23-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/24-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.1": {
     "title": "U.ViewpointBundleLibrary — Reusable Viewpoint Bundles",
@@ -5270,24 +5654,24 @@
         "domain-specific viewpoint-bundle libraries"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/24-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/25-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
   },
   "E.17.2": {
     "title": "TEVB — Typical Engineering Viewpoints Bundle",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-section-ei-the-fpf-constitution/25-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/26-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
   },
   "E.17": {
     "title": "Multi‑View Publication Kit (for Morphisms)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-section-ei-the-fpf-constitution/23-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/24-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.EFP": {
-    "title": "ExplanationFaithfulnessProfile — explanation classification over existing MVPK faces",
+    "title": "ExplanationFaithfulnessProfile - explanation classification over existing MVPK faces",
     "status": "Stable",
     "keywords": [
       "explanation",
@@ -5297,12 +5681,13 @@
       "didactic retelling",
       "speculative retelling",
       "evidence binding",
-      "admissible faces"
+      "admissible faces",
+      "source anchors"
     ],
     "queries": [
       "How does FPF classify explanation-facing renderings?",
       "What is ExplanationFaithfulnessProfile?",
-      "How do explanation renderings stay on existing MVPK faces without becoming a second semantic rule track?"
+      "When does explanation help become controlled coarsening or stronger downstream guidance?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5315,6 +5700,7 @@
         "F.18"
       ],
       "coordinates_with": [
+        "A.6.3.CSC",
         "ConservativeRetextualization",
         "RepresentationTransduction",
         "E.17.ID.CR ComparativeReading",
@@ -5324,10 +5710,10 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/27-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/28-e17efp-e17efp-explanationfaithfulnessprofile-explanation-classifica.md"
   },
   "E.17.ID.CR": {
-    "title": "InterpretationDiscipline / ComparativeReading — bounded comparative reading over comparative review units",
+    "title": "ComparativeReading - bounded comparative reading over comparative review units",
     "status": "Stable",
     "keywords": [
       "comparative reading",
@@ -5336,12 +5722,13 @@
       "source-pinned material",
       "same object of talk",
       "bounded lift",
-      "forbidden stronger uptake"
+      "forbidden stronger uptake",
+      "InterpretationDiscipline branch"
     ],
     "queries": [
       "What is ComparativeReading in FPF?",
       "How does FPF govern a comparative review unit?",
-      "When does a comparative review note stay bounded rather than becoming bridge, explanation, prompt, ontology, or gate work?"
+      "When does a comparison note stay bounded rather than becoming bridge, coarsening, explanation, prompt, ontology, or gate work?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5352,6 +5739,7 @@
       ],
       "coordinates_with": [
         "A.6.3",
+        "A.6.3.CSC",
         "A.6.3.CR",
         "A.6.3.RT",
         "F.9.1",
@@ -5366,7 +5754,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/28-e17id-e17idcr-interpretationdiscipline-comparativereading-bounded-.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/29-e17id-e17idcr-comparativereading-bounded-comparative-reading-over-.md"
   },
   "E.17.AUD": {
     "title": "AuthoredUnitDiscipline — umbrella routing for one authored unit that is starting to drift",
@@ -5407,7 +5795,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
   },
   "E.17.AUD.LHR": {
     "title": "AuthoredUnitDiscipline / Local Head Restoration — repair the pressured local head before the authored unit inherits it",
@@ -5446,7 +5834,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
   },
   "E.17.AUD.OOTD": {
     "title": "AuthoredUnitDiscipline / AuthoredUnit Object-of-Talk Discipline — authored-unit stability over one primary object of talk",
@@ -5487,7 +5875,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/29-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/30-e17aud-e17aud-authoredunitdiscipline-keep-one-authored-unit-stable-.md"
   },
   "E.18": {
     "title": "Transduction Graph Architecture (E.TGA)",
@@ -5520,55 +5908,14 @@
         "G.11 (Refresh)"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/32-e18-e18-transduction-graph-architecture-etga.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/33-e18-e18-transduction-graph-architecture-etga.md"
   },
   "E.19": {
-    "title": "Pattern Quality Gates: Review & Refresh Profiles",
+    "title": "Pattern Quality Gates: Review and Refresh Profiles",
     "status": "Stable",
-    "keywords": [
-      "pattern review",
-      "quality gates",
-      "admission",
-      "refresh",
-      "staleness",
-      "profile-based checks",
-      "PQG",
-      "PCP",
-      "suite-level review (PCP‑SUITE)",
-      "planned baseline & P2W seam (PCP‑P2W)",
-      "`SlotFillingsPlanItem`",
-      "MVPK projections",
-      "guard vs gate separation"
-    ],
-    "queries": [
-      "How to review a new FPF pattern before admitting it?",
-      "How to refresh stale patterns in FPF?",
-      "What are PQG/PCP in FPF?",
-      "How to review a MechSuiteDescription (suite obligations, contract pins, protocols)?",
-      "How to review SlotFillingsPlanItem / planned slot filling and its MVPK projections?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "E.8",
-        "E.10",
-        "E.9",
-        "E.15"
-      ],
-      "coordinates_with": [
-        "F.8 (Mint/Reuse)",
-        "F.18 (Naming protocol)",
-        "F.9 (Bridges & CL)",
-        "F.15 (Harness)",
-        "E.17 (MVPK)",
-        "A.6.7 (MechSuiteDescription)",
-        "A.15.3 (SlotFillingsPlanItem)",
-        "G.11 (Refresh)"
-      ],
-      "constrains": [
-        "Admission/refresh decisions for patterns intended for the canonical corpus"
-      ]
-    },
-    "file": "sections/11-section-ei-the-fpf-constitution/33-e19-e19-pattern-quality-gates-review-refresh-profiles.md"
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-section-ei-the-fpf-constitution/34-e19-e19-pattern-quality-gates-review-refresh-profiles.md"
   },
   "E.20": {
     "title": "Mechanism Introduction Protocol (MIP)",
@@ -5620,7 +5967,7 @@
         "or citeable tokens"
       ]
     },
-    "file": "sections/11-section-ei-the-fpf-constitution/34-e20-e20-mechanism-introduction-protocol.md"
+    "file": "sections/11-section-ei-the-fpf-constitution/35-e20-e20-mechanism-introduction-protocol.md"
   },
   "F.0.1": {
     "title": "Contextual Lexicon Principles",
@@ -5883,23 +6230,35 @@
       "CL",
       "direction",
       "loss notes",
-      "substitution licence",
-      "bridge reading"
+      "supported use",
+      "bridge reading",
+      "weakest-link scope",
+      "state export"
     ],
     "queries": [
       "How do I bridge concepts across contexts?",
-      "How do I express alignment safely in FPF?"
+      "How do I express alignment safely in FPF?",
+      "When is an orientation note not enough for a bridge card?"
     ],
     "dependencies": {
       "builds_on": [
-        "F.3"
+        "E.10.D1",
+        "F.0.1",
+        "F.1",
+        "F.2/F.3",
+        "F.7",
+        "F.8"
       ],
       "prerequisite_for": [
         "F.7",
         "F.10"
       ],
       "coordinates_with": [
+        "C.26",
+        "C.26.1",
+        "A.6.3.CSC",
         "A.6.9",
+        "E.17.ID.CR",
         "F.9.1"
       ]
     },
@@ -5907,18 +6266,20 @@
   },
   "F.9.1": {
     "title": "Bridge Stance Overlay",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [
       "bridge stance",
       "stance overlay",
       "interpretive gloss",
       "projection note",
       "rename note",
-      "language-state comparisons"
+      "language-state comparisons",
+      "overlay annotation"
     ],
     "queries": [
       "How do I add a stance gloss to a bridge card without changing bridge semantics?",
-      "What is the Bridge Stance Overlay?"
+      "What is the Bridge Stance Overlay?",
+      "When does a stance label still depend on the underlying F.9 bridge card?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5927,6 +6288,8 @@
         "A.16.0"
       ],
       "coordinates_with": [
+        "A.6.3.CSC",
+        "E.17.ID.CR",
         "E.17.1",
         "A.6.Q",
         "A.6.A"
@@ -6118,28 +6481,29 @@
       "Kind",
       "Purpose/use-domain",
       "Sense anchor",
-      "CandidateSet",
+      "guarded-head note",
       "NQD-front label candidates",
-      "head-term families",
-      "sense-seeds",
-      "UTS publication",
+      "support-view wording",
+      "atlas alias docking",
       "lifecycle actions",
       "Bridge talk"
     ],
     "queries": [
       "How do I name a concept without pretending the label is globally identical?",
-      "What fields belong on a Name Card?",
-      "How do NQD-front label candidates and sense-seeds discipline naming?"
+      "When does naming stay thin and when must it dock to support-view or atlas discipline?",
+      "What fields belong on a Name Card?"
     ],
     "dependencies": {
       "builds_on": [
+        "F.0.1",
         "F.1-F.17"
       ],
       "coordinates_with": [
-        "F.17",
-        "F.9",
-        "E.10",
+        "A.17",
+        "A.18",
+        "A.19.SUPPORT-VIEW",
         "A.6.P",
+        "G.2",
         "G.6",
         "G.10"
       ]
@@ -6148,7 +6512,7 @@
   },
   "G.Core": {
     "title": "Part G Core Invariants",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [
       "Part‑G invariants",
       "delegation-first core",
@@ -6255,25 +6619,20 @@
     "keywords": [
       "SoTA harvest",
       "synthesis",
-      "`SoTA Synthesis Pack@CG-Frame`",
-      "`SoTA_Set@CG-Frame`",
-      "`SoTAPaletteDescription`",
-      "`Tradition`",
-      "CorpusLedger",
-      "ClaimSheets",
-      "OperatorAndObjectInventory",
+      "SoTA Synthesis Pack@CG-Frame",
+      "SoTAPaletteDescription",
+      "Tradition",
+      "TraditionAtlasView",
+      "CrossSurfaceAtlasView",
+      "TypedSetViews",
       "BridgeMatrix",
-      "`GammaEpistSynthId`",
-      "UTSProposals",
+      "GammaEpistSynthId",
       "FlowRecord",
-      "FamilyCoverageFloorK",
-      "RSCR harvest triggers",
-      "micro-examples",
-      "hand-off manifests"
+      "palette-first"
     ],
     "queries": [
       "How does FPF harvest and synthesize SoTA for a CG-Frame?",
-      "What is the consumable SoTA Synthesis Pack@CG-Frame?",
+      "When is TraditionAtlasView lawful and when is palette-first or thinner support enough?",
       "How do competing Traditions stay plural while bridgeable and refreshable?"
     ],
     "dependencies": {
@@ -6286,8 +6645,12 @@
         "B.3",
         "F.9",
         "F.17",
-        "G.0",
-        "G.6"
+        "G.0"
+      ],
+      "coordinates_with": [
+        "A.19.SUPPORT-VIEW",
+        "A.6.P",
+        "G.13"
       ],
       "used_by": [
         "G.1",
@@ -6572,7 +6935,7 @@
     ],
     "queries": [
       "How does FPF run reproducible parity with explicit pins and windows?",
-      "How do adaptation-speed and specialization claims become lawful parity burden?"
+      "How do adaptation-speed and specialization claims become lawful parity questions?"
     ],
     "dependencies": {
       "builds_on": [
@@ -6581,6 +6944,14 @@
         "G.6",
         "G.4",
         "F.15"
+      ],
+      "coordinates_with": [
+        "C.27 when parity compares rate-change",
+        "rhythm change",
+        "recovery speed",
+        "intervention effect",
+        "effort budget",
+        "or dynamic outcome"
       ]
     },
     "file": "sections/14-part-g-discipline-sota-patterns-kit/11-g9-g9-parity-benchmark-harness.md"
@@ -6713,7 +7084,7 @@
   },
   "G.13": {
     "title": "External Interop Hooks for SoTA Discipline Packs (conceptual; normative when used)",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [
       "interop",
       "external index",

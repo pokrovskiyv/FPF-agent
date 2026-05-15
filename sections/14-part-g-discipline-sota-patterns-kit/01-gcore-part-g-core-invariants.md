@@ -4,7 +4,7 @@
 **Stage.** *design‑time* (authoring discipline + ID‑stable routing; no run‑time mechanism)
 **Primary hooks.** E.8 (pattern template), E.10 (lexical/ontological rules), E.19 (conformance discipline), A.6.7 (SuiteObligations + suite protocol pins), A.15.3 (planned baseline), A.19 (CN‑Spec), G.0 (CG‑Spec), A.19.CHR (CHR suite boundary), C.23 (SoS‑LOG), F.17 (UTS), F.15 (RSCR).
 
-**Status.** Draft (Phase‑2 deliverable)  
+**Status.** Stable (Phase‑2 deliverable)  
 **Placement.** Part G → immediately after `G.0` (without renumbering `G.0…G.13`)  
 **Normativity.** Normative unless explicitly marked informative  
 

@@ -187,6 +187,61 @@ This pattern is an **on‑ramp**: it **does not replace** C.17–C.19. It binds 
 - Use `choice set underlying that shortlist` only when the mathematical set object itself is the point of the sentence.
 - A reader should be able to recover on first pass what source surface was acted on, what shortlist came out, and whether the text is naming the surface, the token, or the mathematical set object.
 
+### A.0:QF.2a - Support-stack reading glosses
+
+The current support-stack terms should read plainly as follows:
+
+- `SearchSpaceRef`
+  - one declared reference to the `CharacteristicSpace` currently used to search, compare, or navigate candidate possibilities
+  - it is one role-named ref field over the existing `CharacteristicSpaceRef` / `SpaceRef` idiom, not one brand-new space kind
+- `OutcomeSpaceRef`
+  - one declared reference to the `CharacteristicSpace` currently used to judge outcomes, effects, or realized value
+  - it is one role-named ref field over that same idiom, not one synonym for `SearchSpaceRef`
+- `CrossSurfaceSupportView`
+  - the ordinary/common head of one optional support-view family laid over one already-declared substrate-bearing line or one source/set surface whose substrate remains recoverable
+  - it helps the reader see the current support question; it does not replace the base source surface or silently invent one new substrate
+- `CrossSurfaceAtlasView`
+  - one stronger optional support view that keeps several declared views, spaces, mappings, or qualifiers visible together
+  - use it only when the current reading truly needs that composite support, and say why thinner support is not enough; it is not the default meaning of palette, front, archive, shortlist, or candidate surface
+- `TypedSetViews`
+  - one explicit list of which declared set-view heads the current atlas/support reading is holding together
+  - use it when several declared views must stay visible together; it does not create one new surface and should not hide the active source/set surface
+- `OutcomeMapRef`
+  - one explicit support ref that shows how one declared source or set surface maps into one outcome or effect surface when that map materially matters
+  - it supports the reading; it does not rename the source surface into the outcome surface
+- `SpaceMetricRef`
+  - one explicit support ref to the metric, neighborhood, distance, density, or reachability discipline being used inside one declared space
+  - it qualifies how the reader is comparing positions in that space; it is not the space itself and not one substitute for `SearchSpaceRef` or `OutcomeSpaceRef`
+- `TransitionSupportRef`
+  - one explicit support ref to the transition, level-shift, dynamic-coupling, or phase-change basis that the reading depends on
+  - it explains why motion or cross-level change is being read a certain way; it does not by itself decide policy, planning, or publication
+- `BridgeDistortionNote`
+  - one explicit note that a bridge, projection, aggregation, or derived reading is useful but not perfectly faithful
+  - it tells the reader where comparability bends or information is lost, so the stronger reading does not over-claim
+
+### A.0:QF.2b - Practitioner-facing reading cue
+
+- If the question is “Which space are we searching or navigating?”, look for `SearchSpaceRef`.
+- If the question is “Which space are we judging outcomes in?”, look for `OutcomeSpaceRef`.
+- If the question is “What optional overlay helps me read several declared surfaces together?”, look for `CrossSurfaceSupportView`.
+- If that overlay also keeps several declared views, spaces, mappings, or qualifiers together, it is the stronger `CrossSurfaceAtlasView`.
+- If the atlas/support reading must keep several declared set views visible at once, look for `TypedSetViews`.
+- If the overlay depends on one explicit source-to-outcome mapping, look for `OutcomeMapRef`.
+- If the overlay depends on one metric, neighborhood, or reachability discipline inside one declared space, look for `SpaceMetricRef`.
+- If the overlay depends on one transition, level-shift, or dynamic-coupling basis, look for `TransitionSupportRef`.
+- If the overlay depends on one bridge or projection that may lose fidelity, look for `BridgeDistortionNote`.
+
+### A.0:QF.2c - First-use routing check
+
+- Start with `CrossSurfaceSupportView` when the NQD/OEE burden is simply to keep one declared palette, front, shortlist, or archive readable while comparing candidate material.
+- Start with it only when any cited `SearchSpaceRef`, `OutcomeSpaceRef`, mappings, or qualifiers are already declared elsewhere and remain recoverable through the base substrate or source/set surface.
+- Escalate to `CrossSurfaceAtlasView` only when the reading must hold several declared views, spaces, mappings, or qualifiers together to explain why one specialization, evaluation, or boundary call stays lawful, and state why thinner support is insufficient.
+- If the reading keeps several declared set views together, name `TypedSetViews` explicitly instead of letting atlas wording hide that view-set choice.
+- If the reading depends on one source-to-outcome map, name `OutcomeMapRef` explicitly instead of letting the overlay silently stand in for that map.
+- If the reading depends on one metric or neighborhood discipline, name `SpaceMetricRef` explicitly instead of letting the space name stand in for that metric.
+- If the reading depends on one transition, level-shift, or dynamic-coupling basis, name `TransitionSupportRef` explicitly instead of letting the overlay silently absorb that transition burden.
+- Not this glossary-side support stack when the real move is to invent one new search doctrine, one new outcome metric family, or one new publication surface. Those burdens stay with the owner patterns that govern the object itself.
+
 ### A.0:End
 
 ---

@@ -1,5 +1,6 @@
 ## Creativity in Open-Ended Evolution and Assurance*
 
+
 Most engineering and management standards, methodologies and frameworks pick a side. They either optimise for **assurance** — audits, evidence, safety gates — or they celebrate open-ended evolution/agility based on **creativity** — ideas, leaps, pivots. **First Principles Framework (FPF)** is built to do both at once. It gives you a disciplined way to collectiverly generate and mature novel ideas with trust.
 
 **On the imagination rail,** FPF is equally deliberate. It does not treat creativity as a black box or a personality trait. It provides a **named choreography for creative work**:

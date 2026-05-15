@@ -1,5 +1,6 @@
 ## E.20 - Mechanism Introduction Protocol
 
+
 > **Type:** Architectural pattern  
 > **Status:** Draft  
 > **Normativity:** Normative  

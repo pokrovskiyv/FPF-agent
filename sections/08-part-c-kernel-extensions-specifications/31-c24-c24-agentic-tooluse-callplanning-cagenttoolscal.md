@@ -23,7 +23,7 @@
 ### C.24:0.1 - What goes wrong if missed
 
 - calls get scheduled by ad-hoc heuristics, so the plan cannot say which budget is being burned or what event should stop or replan execution
-- planning quietly collapses into execution, or execution quietly inherits unresolved upstream choice and pool-policy burdens
+- planning quietly collapses into execution, or execution quietly inherits unresolved upstream choice and pool-policy questions
 - a successful probe is mistaken for committed rollout even though the commit trigger was never made explicit
 
 ### C.24:0.2 - What this buys
@@ -63,7 +63,7 @@ Immediate failure signs for this pattern:
 * the budget being burned is still only probing-before-choice budget rather than enactment or tool-call budget, or
 * the next lawful artifact is still undefined as one enactment-facing plan, one `CheckpointReturn`, or one reroute.
 
-If the real burden is still which fixed option should survive now, reroute to `C.11`. If it is still pool policy over several still-live candidate lines, reroute to `C.19`. If it is already public selected-set publication, reroute to `G.5`.
+If the live question is still which fixed option should survive now, reroute to `C.11`. If it is still pool policy over several still-live candidate lines, reroute to `C.19`. If it is already public selected-set publication, reroute to `G.5`.
 
 ### C.24:2 - Problem
 We need a **tool-agnostic** way to (i) identify **admissible route descriptions**, (ii) compose one **call work plan** that cites them, (iii) allocate an **explore/exploit** share, (iv) enforce **budget & harm** gates, and (v) **replan** on signals—**without** baking domain-specific heuristics into the core and **without** collapsing `U.MethodDescription`, `U.WorkPlan`, and `U.Work` into one object.
@@ -112,13 +112,13 @@ A **System in AgentialRole** prepares or revises one **CallPlan** that cites one
 
 When the choice posture is already fixed enough that enactment planning is lawful, but the route across heterogeneous or unfamiliar callable approaches is still uncertain, the system may spend a bounded scout/probe budget before committed rollout and return one checkpoint package that compares the tested routes.
 
-If additional probing could still change which option survives the current `OptionSet`, the budget is still `C.11`-side epistemic budget and the burden reroutes upstream. If choice posture is already fixed and the uncertainty is only about route or rollout shape, the budget is now enactment budget and `C.24` owns the checkpoint.
+If additional probing could still change which option survives the current `OptionSet`, the budget is still `C.11`-side epistemic budget and the question reroutes upstream. If choice posture is already fixed and the uncertainty is only about route or rollout shape, the budget is now enactment budget and the checkpoint belongs in `C.24`.
 
 That `CheckpointReturn` should state the declared utility target and current `TaskFamily`, the route descriptions or candidate approaches tested, the evidence on each route, the burned and residual actual budget, the recommended next action, and the exact commit trigger that would justify leaving probe state.
 
-A successful probe does not by itself authorize a larger burn or a committed rollout. `C.24` owns the `CheckpointReturn` record and call-plan semantics for this probe loop; `A.15` owns the design/run split and `E.16` owns the budget partition plus guard and ledger enforcement. Low-human-overlap approaches remain admissible only while they stay tied to the declared utility target, budget guard rails, and evidence basis explicitly.
+A successful probe does not by itself support a larger burn or a committed rollout. `C.24` carries the `CheckpointReturn` record and call-plan semantics for this probe loop; `A.15` carries the design/run split and `E.16` carries the budget partition plus guard and ledger enforcement. Low-human-overlap approaches remain sound only while they stay tied to the declared utility target, budget boundaries, and evidence basis explicitly.
 
-**Bridge to neighboring owners.** `ProbeBudget` belongs to `C.11` while it means epistemic budget for further probing before choice. `C.24` owns budgets once they are enactment, tool-call, or rollout budgets. If the question is still which option survives now, reroute to `C.11`; if it is now pool policy over several still-live candidate lines, reroute to `C.19`; if it is selector-facing publication of the selected result, reroute to `G.5`.
+**Bridge to neighboring patterns.** `ProbeBudget` belongs to `C.11` while it means epistemic budget for further probing before choice. `C.24` carries budgets once they are enactment, tool-call, or rollout budgets. If the question is still which option survives now, reroute to `C.11`; if it is now pool policy over several still-live candidate lines, reroute to `C.19`; if it is selector-facing publication of the selected result, reroute to `G.5`.
 
 **Explicit enactment result.** A conformant `C.24` pass should therefore leave either one enactment-facing `CallPlan` that states the current objective, the cited route descriptions or planned call order, the planned budget envelope, the stop or replan condition, and the next move, or one `CheckpointReturn` that states the current objective or task family, the burned and residual actual budget, the evidence basis, the commit trigger, and the recommended next action.
 
@@ -138,10 +138,10 @@ A successful probe does not by itself authorize a larger burn or a committed rol
 
 - Planning should reuse the declared source surface, decision lens, probe budget, and stopping posture rather than creating one planning-only choice semantics.
 - Budgeted sequencing may mix exploitation and exploration, but the declared source surface and the declared reason for the next probe must stay recoverable.
-- Use planning language such as `probe next`, `hold as archive`, `handoff to G.5 for shortlist publication`, or `stop for now` only when the relevant lens-side reason is stated directly.
+- Use planning language such as `probe next`, `hold as archive`, `reroute to G.5 for shortlist publication`, or `stop for now` only when the relevant lens-side reason is stated directly.
 - `explore_share`, `backstop_confidence`, probe budgets, and replan triggers are planning harmonization terms for that same declared choice doctrine.
 - They may regulate sequence and stopping; they do not redefine `Front`, `Archive`, `Shortlist`, or `SelectionSlot`.
-- If the next planned move is one public `Shortlist` or `RankedShortlist`, `C.24` should name that as one handoff target to `G.5`, not emit the selector artifact itself.
+- If the next planned move is one public `Shortlist` or `RankedShortlist`, `C.24` should name that as a reroute target to `G.5`, not emit the selector artifact itself.
 
 #### C.24:4.2 - Policy profile and BLP precedence
 
@@ -208,7 +208,7 @@ CheckpointReturn(
 )
 ```
 
-Close as one enactment-facing `CallPlan` when the choice posture is already fixed enough that execution order, gating, and replanning are now the governed burden. Close as one `CheckpointReturn` when bounded scout/probe work is still lawful inside enactment planning. Reroute when the result has actually fallen back into local choice, pool policy, or selector-facing publication.
+Close as one enactment-facing `CallPlan` when the choice posture is already fixed enough that execution order, gating, and replanning are now the governed question. Close as one `CheckpointReturn` when bounded scout/probe work is still lawful inside enactment planning. Reroute when the result has actually fallen back into local choice, pool policy, or selector-facing publication.
 
 If the result still does not state what should execute now, what budget is planned or already burned, and what event stops or replans the route, it is still unfinished `C.24` work.
 
@@ -243,7 +243,7 @@ CheckpointReturn(
 )
 ```
 
-The practical distinction is simple: if route order and budgeted execution are already the governed burden, emit one `CallPlan`; if bounded scout work is still the governed burden inside planning, emit one `CheckpointReturn`.
+The practical distinction is simple: if route order and budgeted execution are already the governed question, emit one `CallPlan`; if bounded scout work is still the governed question inside planning, emit one `CheckpointReturn`.
 
 1. **Research-assistance system in agential role.**
    Task: answer a novel technical question. Candidate tools: retrieval, structured web search, code runner, table or plot generator.
@@ -274,14 +274,14 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 8. **CC-ATC-8 - BLP tolerances declared.** `alpha/delta` tolerances are present in `ATC.Policy` or referenced via the active `E/E-LOG` profile.
 9. **CC-ATC-9 - `CheckpointReturn` for bounded specialization.** When one route still uses scout/probe discipline on a new task family, it SHALL publish one `CheckpointReturn` with candidate routes, evidence, burned/residual actual budget, next action, and commit trigger; a successful probe alone never counts as committed rollout.
 10. **CC-ATC-10 - Recoverable enactment closure.** When `C.24` returns one enactment-facing call plan or one `CheckpointReturn`, the `CallPlan` SHALL state current objective, route refs in order, planned budget envelope, stop or replan condition, and next move, while `CheckpointReturn` SHALL state burned/residual actual budget plus next action and commit trigger.
-11. **CC-ATC-11 - Neighboring-pattern reroutes.** If the burden is still fixed-option choice, pool policy over several live lines, or selector-facing publication, `C.24` SHALL reroute to `C.11`, `C.19`, or `G.5` rather than restating those patterns.
+11. **CC-ATC-11 - Neighboring-pattern reroutes.** If the live question is still fixed-option choice, pool policy over several live lines, or selector-facing publication, `C.24` SHALL reroute to `C.11`, `C.19`, or `G.5` rather than restating those patterns.
 12. **CC-ATC-12 - Role discipline.** User-facing prose and emitted artifacts SHALL speak about systems in agential roles or equivalent typed performers, not one generic `agent` head, when that generic head would blur the holder kind.
 
 ### C.24:8 - Common Anti-Patterns and How to Avoid Them
 
 - **Treating route description as plan.** Avoid by keeping callable logic in `ATC.CallRouteDescription` and keeping `ATC.CallPlan` as one `U.WorkPlan` that cites it.
 - **Treating planning as execution.** Avoid by publishing actual burn only through `CheckpointReturn`, `Work`, and `CallGraph`, not inside the plan surface.
-- **Burning enactment budget while the burden is still upstream choice or pool policy.** Avoid by rerouting unresolved fixed-option choice to `C.11` and unresolved live-pool governance to `C.19` before building one call plan.
+- **Burning enactment budget while the live question is still upstream choice or pool policy.** Avoid by rerouting unresolved fixed-option choice to `C.11` and unresolved live-pool governance to `C.19` before building one call plan.
 - **Counting a successful probe as committed rollout.** Avoid by publishing one `CheckpointReturn` with a visible commit trigger instead of smuggling rollout through a positive scout result.
 - **Hiding stop conditions or replan triggers.** Avoid by making them part of the public plan surface rather than one private implementer intuition.
 
@@ -301,8 +301,14 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 
 ### C.24:12 - Relations
 
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: a tool-use plan claiming that tool use changes debugging, learning, search, repair, rollout, narrowing, uncertainty reduction, stabilization, or stop/replan rate.
+- This pattern keeps: call planning, tool-use sequence, budget, stop/replan, and work trace.
+- Unsupported use: tool-call count, more context, or faster narrowing is effort/input evidence at most; it is not task-success, reasoning-quality, evidence-quality, repair-success, cost, or validity-window evidence by itself.
+
+- Exit: a speed-up claim names task outcome, evaluation harness, repair-success basis when claimed, cost/budget posture, validity window, stop/replan condition, and unsupported stronger benchmark use; C.24 remains the tool-use pattern.
+
 Builds on: `A.15` Role-Method-Work alignment (planning vs execution vs service), `B.3` Trust & Assurance (`F-G-R/CL`), `C.5 Resrc-CAL`, `C.18 NQD-CAL` (candidate generation and declared set surfaces), and `C.19 E/E-LOG` (policies). Constrains: any `U.PromiseContent` used as a tool MUST expose acceptance conditions and observation hooks sufficient for `B.3` reporting. Enables: human-facing Working-Model surfaces with policy and assurance disclosures while keeping design/run separated.
 
 ### C.24:End
-
----

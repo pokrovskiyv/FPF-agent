@@ -1,5 +1,7 @@
 ## B.1.4 - Contextual & Temporal Aggregation (Γ\_ctx & Γ\_time)
 
+> **Status:** Stable
+
 > **► decided‑by: A.14 Advanced Mereology**
 **A.14 compliance —** **Γ\_ctx** relies on **SerialStepOf/ParallelFactorOf** (order semantics); **Γ\_time** composes **PhaseOf** slices of the *same* carrier with coverage/no‑overlap; **PortionOf** is orthogonal (quantities within steps), mappings are not parthood.
 
@@ -275,6 +277,13 @@ This pattern implements **A.15’s ordered relations** (`SerialStepOf`, `Paralle
 
 
 ### B.1.4:11 - Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: an authored temporal claim that turns a temporal slice, phase name, aggregate membership, or temporal ordering into a rate-change adequacy claim.
+- This pattern keeps: contextual and temporal aggregation, declared temporal slices, and phase composition.
+- Unsupported use: temporal slices, phase names, aggregate membership, or temporal ordering do not infer acceleration or create a dynamics law.
+- Exit: if only slice composition is live, stay in B.1.4; if rate-change adequacy changes supported use, use C.27 for that claim and cite the stronger pattern for any law, work, causal, or benchmark question.
 
 * **Builds on:** B.1 (Universal Γ), B.1.1 (Dependency Graph & Proofs), A.12 (Transformer), A.14 (Mereology Extension), A.15 (Strict Distinction).
 * **Specialises into:** **B.1.5 Γ\_method** (adds duration, capability typing, join soundness rules).

@@ -1,5 +1,7 @@
 ## G.9 — Parity / Benchmark Harness
 
+> **Status:** Stable
+
 ### G.9:0 — Use this when
 
 - rival method families, method sets, or adaptation paths must be compared under one declared baseline set and freshness window
@@ -57,7 +59,7 @@ G.9’s role is to force these to be **pinned and publishable** as a *method of 
 
 This pattern is **core‑invariant‑bearing** and therefore binds to **G.Core** by declaration (not by restating invariants here).
 
-**GCoreLinkageManifest (G.9)** *(normative; expands per `G.Core:4.2`)*  
+**GCoreLinkageManifest (G.9)** *(normative; expands per `G.Core:4.2`)*
 Effective obligations/pins/triggers are computed as **union(expand(sets), explicit deltas)** under `Nil‑elision`.
 
 * `CoreConformanceProfileIds` := {
@@ -115,8 +117,8 @@ A plan that fixes *what is being compared* and *under what pinned conditions*.
 
 Minimal fields (conceptual; ids/pins only):
 
-`ParityPlan@Context := ⟨  
-  ParityPlanId(UTS),  
+`ParityPlan@Context := ⟨
+  ParityPlanId(UTS),
   CGFrameId?,                              // or CG-FrameContext id/scope anchor cited by the referenced frame surfaces
   describedEntity := ⟨GroundingHolon, ReferencePlane⟩,
   UNM_id?, NormalizationMethodId[]?, NormalizationMethodInstanceId[]?, // when “normalize, then compare” is required (ids only; semantics come from CN‑Spec / UNM)
@@ -129,9 +131,9 @@ Minimal fields (conceptual; ids/pins only):
   CNSpecRef.edition, CGSpecRef.edition, ComparatorSpecRef.edition, // edition-pinned refs
   SCPRef.edition?,                         // optional (when a specific SCP profile must be pinned/cited)
   MinimalEvidenceRef.edition?,             // optional (when CG-Spec exposes minima profiles by ref)
-  Budgeting?,  
-  ParityPinSet,  
-  PlanItemRefs[]?                          // references to A.15.3 SlotFillingsPlanItem (planned baseline), when parity depends on planned slot fillings  
+  Budgeting?,
+  ParityPinSet,
+  PlanItemRefs[]?                          // references to A.15.3 SlotFillingsPlanItem (planned baseline), when parity depends on planned slot fillings
 ⟩`
 
 **(2) `ParityPinSet`** *(surface)*
@@ -141,23 +143,23 @@ The concrete contents are *pattern-local* (G.9 carries the surface), but must sa
 **(3) `ParityReport@Context`** *(Work / Audit surface)*
 A publication object produced by executing a ParityPlan.
 
-`ParityReport@Context := ⟨  
-  ParityReportId(UTS),  
-  ParityPlanId,  
-  BaselineSet, FreshnessWindows,  
-  CNSpecRef.edition, CGSpecRef.edition, ComparatorSpecRef.edition,  
+`ParityReport@Context := ⟨
+  ParityReportId(UTS),
+  ParityPlanId,
+  BaselineSet, FreshnessWindows,
+  CNSpecRef.edition, CGSpecRef.edition, ComparatorSpecRef.edition,
   SCPRef.edition?, MinimalEvidenceRef.edition?,             // echoed iff used/pinned in the plan
   UNM_id?, NormalizationMethodId[]?, NormalizationMethodInstanceId[]?, // echoed iff used in the plan
-  OutcomeRefs,                              // selected-set / archive outcomes (as refs to selector outputs)  
+  OutcomeRefs,                              // selected-set / archive outcomes (as refs to selector outputs)
   EpsilonDominance?,                        // echoed when used
   AbstainReasons[]?,                        // ids/labels (policy-bound) for abstain/degrade; refusal paths included
   TelemetrySummary? := ⟨IlluminationSummary?, coverage?, regret?⟩,  // report-only by default; promotion requires CAL policy-id pins
-  GuardOutcomeTraceRef?,                    // pass/degrade/abstain trace + cited reasons (policy-bound)  
-  EvidenceTrace := ⟨EvidenceGraphId, PathId[], PathSliceId?⟩,  
-  CrossingPins?,                            // Bridge/CL/Φ/Ψ/Φ_plane pins, when crossings are invoked  
-  EditionPinsDelta?,                        // explicit list of edition pins actually active during the run  
-  PolicyPinsDelta?,                         // explicit list of policy-ids actually active during the run  
-  RSCRRefs[]                                // parity RSCR test ids / trigger emissions  
+  GuardOutcomeTraceRef?,                    // pass/degrade/abstain trace + cited reasons (policy-bound)
+  EvidenceTrace := ⟨EvidenceGraphId, PathId[], PathSliceId?⟩,
+  CrossingPins?,                            // Bridge/CL/Φ/Ψ/Φ_plane pins, when crossings are invoked
+  EditionPinsDelta?,                        // explicit list of edition pins actually active during the run
+  PolicyPinsDelta?,                         // explicit list of policy-ids actually active during the run
+  RSCRRefs[]                                // parity RSCR test ids / trigger emissions
 ⟩`
 
 **Naming discipline.**
@@ -174,7 +176,7 @@ Planning is the act of making the parity run *reproducible by construction*:
 3. **Define baseline-set reference.** Declare what counts as “baseline set” and how it is cited (e.g., `BaselineBindingRef`, the evidence-backed baseline-set reference, pointing to an EvidenceGraph path slice or an upstream shipped artefact id).
 4. **Equalise window (and budget, if pinned).** Declare a single `FreshnessWindows` and apply it across all baselines; if `Budgeting` is used/pinned, it MUST be shared/pinned across baselines as well.
 
-When specialization is the live burden, the same plan should also hold constant the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and freshness window; if transfer, retention, downstream exploitation efficiency, downside burden, or corridor entry are part of the claim, those pins should be explicit as well, including the baseline relative to which corridor entry is being claimed.
+When specialization is part of the parity claim, the same plan should also hold constant the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and freshness window; if transfer, retention, downstream exploitation efficiency, downside field, or corridor entry are part of the claim, those pins should be explicit as well, including the baseline relative to which corridor entry is being claimed.
 
 5. **Pin governance, legality, and comparator references.** `CNSpecRef`, `CGSpecRef`, and `ComparatorSpecRef` are referenced with explicit edition pins.
 6. **Pin measurement/comparator definitions (conditional).** Where parity depends on mode‑specific artefacts (e.g., DHC/QD/OEE), pin the relevant definition ids/editions/policies. The minimum required pins are declared by the applicable `Extensions` blocks (e.g., `G.9:Ext.DHCParityPins`, `G.9:Ext.QDArchiveParity`, `G.9:Ext.OEEParity`) and the referenced surfaces they cite.
@@ -190,7 +192,7 @@ Execution is **one run** under the pinned plan:
 1. **Gate on legality & pins.** Validate pins and legality‑gate availability; run eligibility/acceptance checks under the plan’s `TaskSignature (S2)` and refuse/abstain on illegal ops (record trace; no “fourth status”).
 2. **Invoke selection/dispatch.** Call **G.5** under the plan’s pinned refs and emit selector outputs in a form consistent with G.5’s `PortfolioMode` / selected-set semantics.
 
-When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so reviewers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside burden, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
+When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so readers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside field, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
 
 3. **Record comparability mapping (when used).** If `UNM_id?` / `NormalizationMethodId[]?` / `NormalizationMethodInstanceId[]?` were declared, **echo them** in `ParityReport@Context` (or in its explicit pins deltas) and record their ids (and any scoped notes required by the cited contract surface) in audit pins/SCR; cite the applicable `PathId`s.
 4. **Publish trace.** Emit `ParityReport@Context` with EvidenceGraph citations and all active pins (editions/policy‑ids), so the run can be re‑checked and re‑run.
@@ -199,7 +201,7 @@ When parity is comparing bounded specialization, the report should echo the acti
 #### G.9:4.3a — Worked parity slice
 
 - Two agentic search setups both claim bounded specialization on the same declared task family.
-- The `ParityPlan` pins the same freshness window, threshold target, adaptation budget, prior-exposure declaration, comparator editions, and corridor-entry baseline. One setup reaches threshold sooner but shows weak retention and no transfer. The other reaches threshold later, but carries reusable transfer and lower downside burden.
+- The `ParityPlan` pins the same freshness window, threshold target, adaptation budget, prior-exposure declaration, comparator editions, and corridor-entry baseline. One setup reaches threshold sooner but shows weak retention and no transfer. The other reaches threshold later, but carries reusable transfer and lower downside field.
 - A lawful `ParityReport@Context` therefore states what was held constant, which signals remained telemetry, and why the outcome stays a governed selected set or partial order rather than collapsing into a scalar winner. The reader can recover the practical comparison from the parity slice itself before reading any optional wiring blocks.
 
 #### G.9:4.9 — Extensions (pattern‑scoped; non‑core)
@@ -224,7 +226,7 @@ The following blocks store **wiring only** (pins/refs/policy‑ids, relevant tri
   * `CL/CL^k/CL^plane`
   * `Φ(CL) policy-id`, `Φ_plane policy-id`, `Ψ(CL^k) policy-id?`
   * `CrossingBundleId?`
-* **RSCRTriggerSetIds:** `{GCoreTriggerSetId.BridgeCalibrationKit}` *(preferred; expands in `G.Core`)*  
+* **RSCRTriggerSetIds:** `{GCoreTriggerSetId.BridgeCalibrationKit}` *(preferred; expands in `G.Core`)*
 * **RSCRTriggerKindIds (delta, if any):** `∅`
 * **Notes (wiring-only):** This block does not define CL/Φ/Ψ semantics; it only requires the pins needed to cite calibration artefacts and crossing visibility bundles.
 
@@ -305,7 +307,7 @@ The following blocks store **wiring only** (pins/refs/policy‑ids, relevant tri
 ### G.9:6 — Conformance Checklist (CC‑G9)
 
 **CC‑G9‑CoreRef (normative; mandatory).**
-G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` declared in **G.9:4.0 GCoreLinkageManifest** (including trigger typing, default-routing links, and P2W split).
+G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` declared in **G.9:4.0 GCoreLinkageManifest** (including trigger typing, default-routing links, and P2h split).
 
 1. **CC‑G9.1 — Equal windows (and budgets) & pinned contract editions (local).**
    A ParityPlan **SHALL** declare a single `FreshnessWindows` shared across baselines. If `Budgeting` is used/pinned, it **SHALL** be shared across baselines as well. `ParityPinSet` **SHALL** include the edition pins required by the referenced contract/comparator surfaces (at minimum `CNSpecRef.edition`, `CGSpecRef.edition`, `ComparatorSpecRef.edition`).
@@ -321,8 +323,8 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
    Delegated to `CC‑GCORE‑SET‑1` (and the relevant G.5 `PortfolioMode` / selected-set semantics). Additionally: any numeric comparison/aggregation invoked by parity **SHALL** be CSLC‑lawful and cite the corresponding CG‑Spec entry; illegal operations (e.g., ordinal means / mixed‑scale weighted sums) **SHALL** be refused or abstained with path‑cited trace (routing only; arithmetic legality comes from `CG‑Spec`/`MM‑CHR`).
 
 4. **CC‑G9.4 — Normalization discipline (local, routing only).**
-   If Characteristics differ by unit/scale/space, the ParityPlan **SHALL** cite the lawful comparability mapping by id (`UNM_id?`, `NormalizationMethodId[]?`, `NormalizationMethodInstanceId[]?`) and compare only after that mapping is applied (“normalize, then compare”).  
-   If such mapping ids are used, the ParityReport **SHALL** echo the same ids (directly or via explicit pins deltas) so the run is reproducible/auditable without out‑of‑band context.  
+   If Characteristics differ by unit/scale/space, the ParityPlan **SHALL** cite the lawful comparability mapping by id (`UNM_id?`, `NormalizationMethodId[]?`, `NormalizationMethodInstanceId[]?`) and compare only after that mapping is applied (“normalize, then compare”).
+   If such mapping ids are used, the ParityReport **SHALL** echo the same ids (directly or via explicit pins deltas) so the run is reproducible/auditable without out‑of‑band context.
    The harness **SHALL NOT** define a local mapping.
 
 5. **CC‑G9.5 — Dominance/PortfolioMode interpretation & telemetry separation (local).**
@@ -330,7 +332,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
    IlluminationSummary/coverage/regret **SHALL** be treated as telemetry (report‑only by default); any promotion into dominance is an explicitly pinned CAL policy and MUST be recorded in audit pins/SCR.
 
 5a. **CC‑G9.5a — Adaptation parity disclosure (local; conditional).**
-   When the parity claim concerns bounded specialization, the ParityPlan and ParityReport **SHALL** pin the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and any transfer, retention, downstream exploitation efficiency, downside burden, or corridor-entry baseline/evidence note that materially affects comparison.
+   When the parity claim concerns bounded specialization, the ParityPlan and ParityReport **SHALL** pin the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and any transfer, retention, downstream exploitation efficiency, downside field, or corridor-entry baseline/evidence note that materially affects comparison.
 
 6. **CC‑G9.6 — Epsilon‑front thinning (local; conditional).**
    If ε‑front thinning is used, `EpsilonDominance (ε≥0)` **SHALL** be explicit in the plan/report and pinned (param/id) such that the same ε is reproducible.
@@ -353,7 +355,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
     Delegated to `CC‑GCORE‑CROSS‑1` and the applicable GateCrossing/CrossingBundle harness checks (E.18/A.21/A.27). This remains a stable delegation point.
 
 12. **CC‑G9.12 — Tech‑register lexical discipline (local).**
-    Tech prose and heads **SHALL** follow E.10: do not introduce drift‑prone primitives (e.g., “metric” as a Tech primitive); reference the owner’s canonical terms and pinned refs.
+    Tech prose and heads **SHALL** follow E.10: do not introduce drift‑prone primitives (e.g., “metric” as a Tech primitive); reference the source pattern's canonical terms and pinned refs.
 
 13. **CC‑G9.13 — MOO disclosure for parity (local).**
     `Run_Parity` / `Publish_ParityReport` **SHALL** record the ParityHarness identity (UTS ids) and the active pins required to interpret the outcome (editions + policy‑ids), so parity remains auditable without relying on “decision logs”.
@@ -364,7 +366,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
 * **AP‑2 Baseline set is informal prose.** Remedy: require `BaselineBindingRef` and EvidenceTrace pins.
 * **AP‑3 Comparator semantics are “whatever the code did”.** Remedy: `ComparatorSpecRef.edition` (and any normalization/comparability refs) must be cited and pinned.
 * **AP‑4 Cross‑Context reuse without visible routing.** Remedy: cite bridge/plane routing artefacts and crossing visibility surfaces (delegated to G.Core).
-* **AP‑5 Parity report becomes a hidden scoring sheet.** Remedy: preserve lawful outcome shape and keep telemetry as telemetry unless explicitly policy‑promoted by owner patterns.
+* **AP‑5 Parity report becomes a hidden scoring sheet.** Remedy: preserve lawful outcome shape and keep telemetry as telemetry unless explicitly policy‑promoted by the governing policy pattern.
 * **AP‑6 “Metric” as a primitive in Tech.** Remedy: use `DHCMethodRef`/`U.Measure`/`DistanceDefRef` with editions; “metric” may appear only in Plain with an explicit pointer to canonical terms.
 * **AP‑7 Hidden spec drift (spec‑level pins missing).** Remedy: pin `DHCMethodSpecRef.edition` and register RSCR tests that fail on spec edition changes; refuse parity reuse on unpinned spec editions.
 
@@ -389,6 +391,13 @@ ParityPlan pins transfer rule editions and exploration policy refs. ParityReport
 * Telemetry pins/events (by id), for refresh wiring (`G.11`) and RSCR harnesses (`F.15`).
 
 ### G.9:10 — Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: dynamic parity when a benchmark actually compares rate-change, rhythm change, recovery speed, intervention effect, effort budget, or dynamic outcome.
+- This pattern keeps: baseline, freshness, comparator edition, effort/budget parity, bridge discipline, parity plan, parity report, and reproducible benchmark publication.
+- Unsupported use: faster improvement is not benchmark superiority, and `dyn2BenchmarkParityBlock?` is a benchmark input declaration, not a benchmark harness.
+- Exit: when live, recover `dynOrderCompared`, baseline window, adaptation/intervention window, effort or budget parity reference, rate/rate-change measure, `G9ParityPlanRef`, and optional `G9ParityReportRef`; G.5 is relevant only if selector publication consumes such a benchmark result.
 
 **Builds on:** `G.Core`, `G.5`, `G.6`, `G.4`, `F.15`, `E.18`, `A.21`, `A.27`, `E.5.2`, `E.10`.
 **Publishes to:** **UTS** (plan/report ids), **G.11** (refresh wiring), **G.10** (shipping surface; parity artefacts are cited payloads).

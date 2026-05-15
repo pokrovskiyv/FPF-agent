@@ -42,7 +42,7 @@ Without a normal form for engineering quality families:
 
 ### C.25:4 - Solution - Q-Bundle normal form
 
-`C.25` defines a lightweight authoring normal form for engineering quality families. A publisher facing a quality term shall first decide whether the intended endpoint is:
+`C.25` defines a lightweight authoring normal form for engineering quality families. A publisher facing a quality term first decides whether the intended endpoint is:
 
 - **one lawful CHR characteristic**, or
 - **one structured quality bundle** whose measurable slots, scope slots, mechanisms, statuses, and evidence remain explicit.
@@ -63,7 +63,7 @@ Use a **Q-Bundle** when the quality family depends on more than one of the follo
 
 `Q-Bundle := <Name, Carrier, ClaimScope?, WorkScope?, Measures[CHR], QualificationWindow?, Mechanisms?, Status?, Evidence?>`
 
-The pattern adds no new kernel owner for these slots. It reuses existing kinds and keeps them in one disciplined authoring surface.
+The pattern adds no new Kernel kind for these slots. It reuses existing kinds and keeps them in one disciplined authoring surface.
 
 #### C.25:4.3 - Field roles
 
@@ -102,7 +102,7 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 - `CC-C.25-3` `ClaimScope` and `WorkScope` **SHALL** remain USM set-valued scope objects; they **MUST NOT** be treated as ordinal or numeric quality levels.
 - `CC-C.25-4` Mechanism or status slots **MUST NOT** be conflated with `Measures[CHR]`.
 - `CC-C.25-5` Any scalar comparison or thresholding inside a Q-Bundle **SHALL** apply only to declared CHR measures, not to scope slots.
-- `CC-C.25-6` Cross-context penalties and bridge losses **SHALL** route to `R` per `B.3` / `F.9`; they **MUST NOT** silently alter the type of the bundle's `F`, scope, or CHR ownership.
+- `CC-C.25-6` Cross-context penalties and bridge losses **SHALL** route to `R` per `B.3` / `F.9`; they **MUST NOT** silently alter the type of the bundle's `F`, scope, or CHR type authority.
 
 ### C.25:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -120,7 +120,7 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 | **Category hygiene.** Scope, measurement, mechanism, and status no longer collapse into one term. | Slightly heavier authoring surface; mitigation: only composite cases need the full bundle. |
 | **Portable comparison.** CHR measures compare legally, while scope remains governed by USM set algebra. | Authors must declare scales and scope explicitly. |
 | **Cleaner gating.** Method/work guards can read the same structure without hidden semantics. | Requires discipline in separating guard factors. |
-| **Better endpoint routing.** `A.6.Q` can terminate in either one characteristic or one Q-Bundle with clear ownership. | Requires a first-pass endpoint decision during authoring. |
+| **Better endpoint routing.** `A.6.Q` can terminate in either one characteristic or one Q-Bundle with a clear endpoint pattern. | Requires a first-pass endpoint decision during authoring. |
 
 ### C.25:10 - Rationale
 
@@ -131,12 +131,19 @@ Engineering quality language is useful precisely because it groups recurring con
 Contemporary engineering quality practice routinely mixes service-level measures, capability windows, scenario envelopes, mechanism presence, certification state, and evidence traces. `C.25` adopts that practical richness but refuses the common shortcut of compressing the whole family into one undefined score.
 
 ### C.25:12 - Relations
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: a quality-family statement where agility, resilience, adaptability, recovery, or robustness depends on braking, redirection, stabilization, recovery rate, or rhythm under effort.
+- This pattern keeps: quality-family bundle structure, scope, mechanism/status slots, evidence, qualification window, and failure mode.
+- Unsupported use: temporal adequacy is not quality adequacy; speed, recovery, or rhythm becomes quality content only when C.25 declares the quality family, scope, mechanism/status slots, evidence, and failure mode.
+- Exit: use C.27 to state the dynamic slot only when it changes supported use; do not make every quality bundle carry dynamic slots.
+
 - **Builds on:** `A.2.6` for scope algebra, `A.6.1` for mechanism references, and `C.16 / A.18` for CHR legality.
 - **Coordinates with:** `C.2.2a`, `A.16.0`, `B.3` for assurance penalties, `A.15` for gate use, `A.6.Q` for evaluative routing, `C.17/C.18/C.19` for adjacent quality-family measures, and `F.9 / F.9.1` when cross-context bundle comparison or bridge stance annotation is required.
 - **Constrains:** engineering quality authoring whenever a quality term would otherwise drift between single-CHR and composite-bundle readings.
 #### C.25:12.1 - Endpoint role in evaluative routing
 
-Within language-state trajectories and their endpoint docks, `C.25` is the system-side endpoint owner for engineering quality families after evaluative routing from `A.6.Q`. `evaluativeAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the lawful endpoint is a single `Characteristic`, a `Q-Bundle`, or an explicit objective-oriented quality bundle.
+Within language-state trajectories and their endpoint docks, `C.25` is the system-side endpoint pattern for engineering quality families after evaluative routing from `A.6.Q`. `evaluativeAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the lawful endpoint is a single `Characteristic`, a `Q-Bundle`, or an explicit objective-oriented quality bundle.
 
 
 ### C.25:13 - Decision Test: Single Characteristic or Bundle?
@@ -192,7 +199,7 @@ This matters because many quality arguments fail by turning mechanism presence i
 
 #### C.25:14.3 - Qualification windows are not decorative
 
-A quality claim that depends on rolling windows, observation periods, maintenance intervals, or disruption horizons must publish that temporal qualifier explicitly. If the truth of the quality claim changes when the window changes, then the window is part of the bundle contract rather than optional commentary.
+A quality claim that depends on rolling windows, observation periods, maintenance intervals, or disruption horizons must publish that temporal qualifier explicitly. If the truth of the quality claim changes when the window changes, then the window is part of the declared bundle record rather than optional commentary.
 
 #### C.25:14.4 - Report-only summary proxies
 
@@ -244,7 +251,7 @@ Security claims routinely combine:
 Maintainability or evolvability claims often drift into pure rhetoric. In `C.25`, they become usable only when the publisher separates:
 
 - the declared scope of systems or change classes,
-- the measurable slots (for example change lead time, defect reintroduction rate, restoration interval, review burden),
+- the measurable slots (for example change lead time, defect reintroduction rate, restoration interval, review load),
 - the enabling mechanisms (modularity rules, test harnesses, interface discipline),
 - and the window or evidence conditions under which those measures were observed.
 
@@ -267,9 +274,9 @@ A useful authoring order is:
 7. bind evidence,
 8. and only then consider whether a report-only summary proxy is needed.
 
-#### C.25:16.2 - For reviewers
+#### C.25:16.2 - For assessors
 
-Reviewers should ask:
+A checking reader should ask:
 
 - whether the chosen endpoint shape is lawful,
 - whether any scope slot has been smuggled into scalar language,
@@ -277,7 +284,7 @@ Reviewers should ask:
 - whether the window is truly optional or actually load-bearing,
 - and whether any summary proxy is trying to replace the underlying bundle.
 
-In practice, most defects are visible as soon as the reviewer asks what exactly one reported number stands for.
+In practice, most defects are visible as soon as the checking reader asks what exactly one reported number stands for.
 
 #### C.25:16.3 - For gate designers and assurance leads
 
@@ -307,7 +314,7 @@ Cross-context transport, bridge loss, or plane mismatch do not change whether th
 
 #### C.25:17.3 - Boundary to publication convenience
 
-A report, summary surface, or executive summary may expose only one slice of a Q-Bundle, but the underlying authoring contract remains the bundle. Publication convenience is not a reason to collapse the ontology at the source.
+A report, summary surface, or executive summary may expose only one slice of a Q-Bundle, but the underlying authoring structure remains the bundle. Publication convenience is not a reason to collapse the ontology at the source.
 
 #### C.25:15.5 - Serviceability and supportability
 
@@ -322,7 +329,7 @@ The lesson is the same as elsewhere in `C.25`: once the truth of the family clai
 
 #### C.25:17.4 - Boundary to description-side and selector-side evaluation
 
-`C.25` owns engineering quality families whose bearer is a system-side, promise-side, or explicit quality-bearing artifact. It does **not** automatically own:
+`C.25` is for engineering quality families whose bearer is a system-side, promise-side, or explicit quality-bearing artifact. It does **not** automatically cover:
 
 - viewpoint-fit or architecture-description adequacy claims, which may belong in viewpoint or evaluative-ascription patterns,
 - or selector/objective heads where *quality* means use-value under a search or portfolio frame.
@@ -337,7 +344,7 @@ A family label may remain stable while its internal slots differ materially acro
 A context may lawfully extract one narrow slice from a broader Q-Bundle and publish that slice as a single CHR characteristic, but the publication should say that the slice is only one member of the broader family. What is not lawful is to report the slice as though it exhausted the entire family claim.
 
 #### C.25:18.3 - Cross-context family comparison
-Cross-context comparison of quality families should proceed through explicit bundle alignment and, where needed, `F.9` bridge discipline on the relevant heads or slots. `C.25` owns the bundle ontology; bridge loss, translation strength, and cross-context penalties remain outside the bundle itself.
+Cross-context comparison of quality families should proceed through explicit bundle alignment and, where needed, `F.9` bridge discipline on the relevant heads or slots. The bundle ontology stays in `C.25`; bridge loss, translation strength, and cross-context penalties remain outside the bundle itself.
 
 ### C.25:19 - Gate, Proxy, and Reporting Discipline
 
@@ -352,7 +359,7 @@ A higher-level summary surface or review may aggregate several bundle instances,
 
 ### C.25:20 - Review Matrix and Migration Tests
 
-A reviewer can test a Q-Bundle with five questions:
+A checking reader can test a Q-Bundle with five questions:
 
 1. **Is the endpoint shape lawful?** One characteristic where one axis is real, one bundle where several typed contributors are load-bearing.
 2. **Are scope and mechanism slots kept distinct from measures?**
@@ -361,4 +368,41 @@ A reviewer can test a Q-Bundle with five questions:
 5. **If the claim crosses contexts, is bridge work kept in `F.9` rather than hidden inside the family bundle?**
 
 Migration from legacy family prose should therefore recover bundle shape first, then choose whether any narrow slice deserves a separate CHR publication.
+
+### C.25:20a - Viability-envelope, quantum-like, and temporal-claim relation note
+
+Use `C.25` when the live question is a quality bundle, "-ility" decomposition, proxy metric, trade-off, gate, or report. A viability claim should not become quantum-like merely because it involves uncertainty, feedback, several qualities, or changing operating conditions; a temporal claim should not become a Q-Bundle merely because the working phrase mentions speed, cadence, rhythm, or recovery.
+
+Practical reading:
+
+1. Decide whether the quality claim is one lawful Characteristic or a Q-Bundle.
+2. If it is a bundle, name bearer, scope, measures, qualification window, mechanisms/status, and evidence.
+3. Ask whether the claim is really viability-envelope work: protected promise/function, viable region/bounds, several variables, disturbance, sensors/probes, actuators, boundary conditions, adaptation cost, and failure mode.
+4. If one proxy or bundle is enough, stay in `C.25`.
+5. If the envelope reading depends on a probe, sensor, frame, export, action, coarsening, or boundary interaction that changes what can be said lawfully, the remaining viability-envelope question belongs with `C.26.3`.
+6. If the sentence is an intervention-sensitive temporal claim about rate-change under effort, window, resistance, or cadence, inspect `C.27` for the smallest honest temporal-claim adequacy card before using the quality label for action.
+7. State viable region/bounds, trade-off, supported use, unsupported use, and failure mode before viability language is used for action.
+
+Minimum viability-envelope note:
+
+| Field | Required content |
+| --- | --- |
+| Bearer | System, service, organization, team, model, process, or role configuration whose viability is at stake |
+| Protected promise / function | The promise, function, use, operating regime, or stakeholder value the envelope protects |
+| Variables | Which qualities, constraints, resources, risks, or state descriptors define the envelope |
+| Viable region / bounds | What counts as inside, near edge, degraded, or outside the envelope for this use |
+| Disturbance class | What perturbation, demand shift, environment change, probe, or boundary condition stresses the envelope |
+| Actuators | What work, design move, policy, boundary change, sensor change, or resource change can move the bearer |
+| Trade-off / loss | What gets worse, hidden, coarsened, delayed, or made more expensive |
+| Supported use | Which action, decision, relation, or triage use the envelope reading supports |
+| Unsupported use | Which stronger release, audit, assurance, or universal quality claim it does not support |
+| Failure mode | What it means to leave the envelope or to mistake one proxy for the envelope |
+
+Useful outputs:
+
+- a Q-Bundle when the issue is quality decomposition;
+- a `C.26.3` envelope-regulation note when probes/actuators/boundary conditions change the lawful viability reading;
+- a `C.27` temporal-claim adequacy card when rate-change, effort, window, resistance, or cadence changes the supported use;
+- no QL wording when ordinary quality-bundle, proxy, feedback, or control tuning carries the work.
+
 ### C.25:End

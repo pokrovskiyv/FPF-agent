@@ -52,7 +52,8 @@ LEX‑AUTH defines **how** a pattern is **proposed, varied, selected, validated,
 12. **Merge** the winner; version pattern **SemVer** by Delta‑Class.
 
 **Stage E — Publish & Monitor**
-13. Publish the **LEX‑AUTH Trace (LAT)** (§4.2) with the pattern.
+13. Publish the **LEX‑AUTH Trace (LAT)** (§4.2) as the separate authoring/evidence artefact for the change.
+
 14. Schedule **evidence refresh** windows and an **evolution watchpoint** (B.4 loop): when metrics or SoTA inputs decay, reopen Stage B.
 
 #### E.15:4.2 - The **LEX‑AUTH Trace (LAT)** — what it is and why it matters
@@ -74,7 +75,8 @@ A LAT is **not** “we ran a script.” It is a **structured episteme** that let
 
 **Uses of the LAT:**
 *Reproducibility* (re‑run B‑stages as SoTA changes), *assurance* (explicit impact on F/G/R), *portfolio health* (diversity/coverage), *teaching* (didactic before/after), and *cross‑context safety* (no silent imports).
-Publish the pattern with a DRR that carries a LAT pointer (id/URI). The LAT itself is a U.Work evidence pack (non‑normative), archived with edition and Γ_time.
+Publish the pattern with its **DRR**, and publish the **LAT** as the separate authoring/evidence artefact for the change. The LAT carries the reproducible authoring trace and cites the DRR as the governing decision record. The DRR remains complete without LAT citations; it may summarize already-available decisive evidence by value when that evidence materially shaped the content choice. If later LAT or refresh evidence motivates a reopened or revised choice, route that evidence into a later DRR or other lawful successor owner rather than retrofitting the accepted DRR.
+
 
 **Example of a LAT‑stub**
 ```
@@ -93,7 +95,8 @@ LAT:
 
 #### E.15:4.3 - What counts as “changed the pattern as a whole” — **Delta‑Classes & versioning**
 
-Classify the intended change **before** work starts (declared in DRR & LAT):
+Classify the intended change **before** work starts (declare it in the DRR framing; echo it in the LAT/evidence owner when one is used):
+
 
 * **Δ‑0 Lexical polish** — wording/ordering only; **no** change to CC or semantics. → *Patch* (x.y.**z**+1).
 * **Δ‑1 Didactic restructure** — narrative/layout; **unchanged** Conformance Checklist (CC). → *Minor* (**x.y**+1.0).

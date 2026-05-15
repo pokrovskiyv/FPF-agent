@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (131 refs).
+Patterns in other Parts that reference patterns in this directory (146 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -31,10 +31,13 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.6 | builds_on | A.7 |
+| A.6 | coordinates_with | A.10 |
 | A.6.2 | builds_on | A.7 |
 | A.6.3 | builds_on | A.7 |
 | A.6.3.CR | builds_on | A.7 |
 | A.6.3.CR | coordinates_with | A.15 |
+| A.6.3.CSC | coordinates_with | A.15 |
+| A.6.3.CSC | coordinates_with | A.20 |
 | A.6.3.RT | builds_on | A.7 |
 | A.6.3.RT | coordinates_with | A.15 |
 | A.6.3.RT | coordinates_with | A.20 |
@@ -48,6 +51,7 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 | A.6.A | builds_on | A.15 |
 | A.6.A | builds_on | A.16 |
 | A.6.B | builds_on | A.7 |
+| A.6.B | coordinates_with | A.10 |
 | A.6.C | builds_on | A.7 |
 | A.6.H | builds_on | A.7 |
 | A.6.H | coordinates_with | A.14 |
@@ -86,6 +90,7 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 | C.13 | builds_on | A.14 |
 | C.16 | builds_on | A.17 |
 | C.16 | builds_on | A.18 |
+| C.16 | coordinates_with | A.10 |
 | C.17 | builds_on | A.17 |
 | C.17 | builds_on | A.18 |
 | C.17 | builds_on | A.19 |
@@ -98,6 +103,15 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 | C.2.LS | coordinates_with | A.16 |
 | C.24 | builds_on | A.15 |
 | C.25 | coordinates_with | A.15 |
+| C.26 | builds_on | A.10 |
+| C.26 | coordinates_with | A.15 |
+| C.26.1 | builds_on | A.10 |
+| C.26.1 | builds_on | A.15 |
+| C.26.2 | builds_on | A.15 |
+| C.26.2 | builds_on | A.10 |
+| C.26.3 | builds_on | A.15 |
+| C.26.3 | builds_on | A.10 |
+| C.26.3 | builds_on | A.19 |
 
 ## From 11-section-ei-the-fpf-constitution
 
@@ -132,7 +146,6 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 | E.17.ID.CR | coordinates_with | A.20 |
 | E.18 | builds_on | A.7 |
 | E.18 | coordinates_with | A.20 |
-| E.19 | coordinates_with | A.15.3 |
 | E.20 | coordinates_with | A.15.3 |
 
 ## From 13-cluster-fi-context-of-meaning-raw-material
@@ -141,6 +154,8 @@ Patterns in other Parts that reference patterns in this directory (131 refs).
 |--------|----------|--------|
 | F.1 | builds_on | A.7 |
 | F.11 | builds_on | A.15 |
+| F.18 | coordinates_with | A.17 |
+| F.18 | coordinates_with | A.18 |
 | F.6 | builds_on | A.15 |
 | F.9.1 | builds_on | A.16.0 |
 

@@ -1,6 +1,6 @@
 # Cross-References into 14-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (59 refs).
+Patterns in other Parts that reference patterns in this directory (65 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -23,6 +23,11 @@ Patterns in other Parts that reference patterns in this directory (59 refs).
 | A.19.CPM | coordinates_with | G.2 |
 | A.19.CPM | coordinates_with | G.5 |
 | A.19.CPM | coordinates_with | G.9 |
+| A.19.SUPPORT-VIEW | coordinates_with | G.2 |
+| A.19.SUPPORT-VIEW | coordinates_with | G.5 |
+| A.19.SUPPORT-VIEW | coordinates_with | G.10 |
+| A.19.SURF-SPACE | coordinates_with | G.5 |
+| A.19.SURF-SPACE | coordinates_with | G.10 |
 | A.19.SelectorMechanism | builds_on | G.0 |
 | A.19.SelectorMechanism | builds_on | G.5 |
 | A.19.SelectorMechanism | used_by | G.5 |
@@ -72,6 +77,7 @@ Patterns in other Parts that reference patterns in this directory (59 refs).
 | C.24 | coordinates_with | G.5 |
 | C.24 | coordinates_with | G.6 |
 | C.24 | coordinates_with | G.9 |
+| C.27 | coordinates_with | G.9 |
 
 ## From 11-section-ei-the-fpf-constitution
 
@@ -81,12 +87,12 @@ Patterns in other Parts that reference patterns in this directory (59 refs).
 | E.16 | coordinates_with | G.5 |
 | E.16 | coordinates_with | G.9 |
 | E.18 | coordinates_with | G.11 |
-| E.19 | coordinates_with | G.11 |
 | E.20 | coordinates_with | G.2 |
 
 ## From 13-cluster-fi-context-of-meaning-raw-material
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.18 | coordinates_with | G.2 |
 | F.18 | coordinates_with | G.6 |
 | F.18 | coordinates_with | G.10 |

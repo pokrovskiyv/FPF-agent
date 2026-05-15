@@ -4,7 +4,7 @@
 **Stage.** *design‑time registration & alignment* → *run‑time ingestion, telemetry, refresh*
 **Primary hooks.** `G.Core` (Part‑G core invariants + trigger catalogue + default ownership), `G.2` (SoTA Synthesis Pack), `G.3` (CHR Pack), `G.4` (CAL Pack), `G.5` (selector & registries), `G.6` (EvidenceGraph + PathId/PathSliceId), `G.7` (BridgeMatrix + CL/planes), `G.8` (SoS‑LOG bundle surfaces), `G.9` (parity harness), `G.10` (shipping), `G.11` (refresh orchestration), `G.12` (dashboards), `A.19` (CN‑Spec), `A.18` (CSLC legality), `G.0` (CG‑Spec), `F.17` (UTS), `E.5.2` (notation independence), `E.18/A.21/A.27` (GateCrossing/CrossingBundle checks).
 
-**Status.** Draft (Phase‑2 universalized; `G.Core` linkage explicit)
+**Status.** Stable (Phase‑2 universalized; `G.Core` linkage explicit)
 **Normativity.** Normative when used (when any `G.13` surface is authored/emitted/consumed); informative otherwise.
 
 **Non‑duplication note (Phase‑2 universalization).** This pattern **does not restate** Part‑G‑wide invariants (contract‑surface single‑ownership, crossing visibility, penalty routing, set‑return discipline, typed RSCR triggers, default ownership, Δ‑discipline). Those are **single‑owned** in `G.Core` and referenced here via the linkage manifest and CC delegations (*cite, don’t duplicate*).

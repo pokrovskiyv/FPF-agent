@@ -1,5 +1,7 @@
 ## A.3.3 - `U.Dynamics`
 
+> **Status:** Stable
+
 ### A.3.3:1 - Context
 
 Teams need one place to say **how a thing changes**. Physicists call this “dynamics” (equations of motion, state‑transition maps). In IT and enterprise change, we often talk about **evolution of characteristics** (latency, cost, reliability, compliance, architectural fitness) across time. In knowledge work, **KD‑CAL** (knowledge dynamics) reasons about how the **status of claims** shifts as evidence arrives. All these are *the same modeling need*: a context‑local description of **state space** and **allowed transitions**.
@@ -228,6 +230,13 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 
 
 ### A.3.3:12 - Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: an authored claim whose stronger use depends on a reusable transition law, prediction, simulation, calibrated control, or formal model.
+- This pattern keeps: state space, transition law, observation/model constraints, simulation, prediction, calibrated control, and validity discipline.
+- Unsupported use: a `Dyn2TemporalClaimAdequacyCard` or Dyn2 classification is not a law of change, and `dynOrder` is not a property of the state space or transition law.
+- Exit: if the answer requires a reusable law, prediction, simulation, or calibrated control model, the claim belongs with `U.Dynamics`; C.27 only cites that pattern relation and keeps the temporal-claim adequacy question.
 
 * **Builds on:**
   `A.1.1 U.BoundedContext` (local meaning/units),

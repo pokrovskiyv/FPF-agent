@@ -1,11 +1,13 @@
 ## C.22.1 - Task-family adaptation signature
 
+> **Status:** Stable
+
 **One-screen purpose (manager-first).**
-Make a specialization claim publishable as one typed adaptation record over a declared `TaskFamilyRef` or `TaskSignature`, so later selector and parity work compares the same threshold target, budget burn, prior exposure, transfer, durability, downside, and corridor-entry burden rather than reconstructing that story from narrative prose.
+Make a specialization claim publishable as one typed adaptation record over a declared `TaskFamilyRef` or `TaskSignature`, so later selector and parity work compares the same threshold target, budget burn, prior exposure, transfer, durability, downside, and corridor-entry field rather than reconstructing that story from narrative prose.
 
 **Builds on.** `C.22` (TaskSignature attachment and task-family anchoring), `C.19.1` (`BLP` compatibility), `A.15` (role/method/work split for scout/probe work), `C.24` (`CheckpointReturn` planning semantics), `E.16` (budget enforcement).
 **Coordinates with.** `G.5` (selector specialization profiles), `G.9` (adaptation parity), `G.11` (later telemetry / refresh reuse).
-**Keywords.** adaptation signature; task-family specialization; time-to-threshold; budget-to-threshold; prior exposure; corridor entry; stepping stone; transfer; retention; downside burden.
+**Keywords.** adaptation signature; task-family specialization; time-to-threshold; budget-to-threshold; prior exposure; corridor entry; stepping stone; transfer; retention; downside field.
 
 ### C.22.1:1 - Problem frame
 
@@ -13,13 +15,13 @@ Final task score alone does not tell whether a holder, dyad, or bounded speciali
 
 ### C.22.1:2 - Problem
 
-FPF needs one compact way to publish a bounded specialization claim on the same declared task family and work target without retyping the task anchor from `C.22` or silently pushing the adaptation burden into selector/parity prose.
+FPF needs one compact way to publish a bounded specialization claim on the same declared task family and work target without retyping the task anchor from `C.22` or silently pushing the adaptation-signature question into selector/parity prose.
 
 ### C.22.1:3 - Use this when
 
 - the governed claim is not only that a holder or dyad solved a task, but how fast it acquired usable specialization on a declared task family
-- comparison must stay honest about the work-measure threshold target, prior exposure, adaptation budget, transfer burden, and reuse window
-- movement into a new solution corridor or stepping-stone family is part of the real novelty burden
+- comparison must stay honest about the work-measure threshold target, prior exposure, adaptation budget, transfer field, and reuse window
+- movement into a new solution corridor or stepping-stone family is part of the real novelty claim
 
 ### C.22.1:4 - What goes wrong if missed
 
@@ -39,13 +41,13 @@ FPF needs one compact way to publish a bounded specialization claim on the same 
 | :--- | :--- |
 | Threshold crossing vs final score | A static outcome can look similar even when one system specialized much faster or more cheaply than another. |
 | Local novelty vs reproducible evidence | Corridor-entry claims matter, but they are easy to over-romanticize when no baseline or entry evidence is published. |
-| Task anchor vs adaptation burden | The section must keep the adaptation-signature burden readable without retyping task anchoring from `C.22` or turning selector/parity law into the same pattern. |
+| Task anchor vs adaptation-signature question | The section must keep the adaptation-signature question readable without retyping task anchoring from `C.22` or turning selector/parity law into the same pattern. |
 | Reuse upside vs specialization cost | Transfer, retention, and downside matter to the same claim even when the first threshold crossing looks impressive. |
 
 ### C.22.1:7 - Solution — one adaptation signature over the `C.22` anchor
 
-- Use one shared adaptation-signature field set for this burden. `G.5`, `G.9`, and later notes may cite or consume it, but they should not silently rename threshold, prior-exposure, transfer, downside, or corridor-entry terms.
-- When specialization is the governed burden, publish one adaptation signature bound to the declared `TaskFamilyRef` or `TaskSignature`, not one generic improvement claim.
+- Use one shared adaptation-signature field set for this question. `G.5`, `G.9`, and later notes may cite or consume it, but they should not silently rename threshold, prior-exposure, transfer, downside, or corridor-entry terms.
+- When specialization is the governed question, publish one adaptation signature bound to the declared `TaskFamilyRef` or `TaskSignature`, not one generic improvement claim.
 - The signature should expose at least:
   - `thresholdTarget`
   - `timeToThreshold`
@@ -55,12 +57,12 @@ FPF needs one compact way to publish a bounded specialization claim on the same 
   - `transferTarget?`
   - `transferGain?`
   - `retentionWindow?`
-  - `downsideBurden?`
+  - `downsideEffect?`
   - `corridorEntryBaseline?`
   - `corridorEntryEvidence?`
   - `steppingStoneEvidence?`
 - These fields stay anchored to the same work target and work-measure threshold semantics already declared by `C.22`, so adaptation is typed as movement toward usable specialization rather than as an ungrounded growth story.
-- `C.22` continues to carry the declared task-family anchor, task typing, and baseline `TaskSignature`. `C.22.1` narrows the adaptation burden to threshold timing, reuse, downside, and corridor-entry disclosure over that existing anchor.
+- `C.22` continues to carry the declared task-family anchor, task typing, and baseline `TaskSignature`. `C.22.1` narrows the adaptation-signature question to threshold timing, reuse, downside, and corridor-entry disclosure over that existing anchor.
 
 ### C.22.1:8 - Corridor, transfer, and durability discipline
 
@@ -71,7 +73,7 @@ FPF needs one compact way to publish a bounded specialization claim on the same 
 - A fast threshold result is not yet enough to claim durable specialization.
 - If transfer to a neighboring task family is claimed, name the transfer target and the observed gain explicitly.
 - If retention is claimed, name the reuse or retention window rather than letting durability hide inside one isolated run.
-- If specialization harms neighboring task families, narrows reusable competence, or creates de-specialization cost, publish that in `downsideBurden?` rather than telling only the upside story.
+- If specialization harms neighboring task families, narrows reusable competence, or creates de-specialization cost, publish that in `downsideEffect?` rather than telling only the upside story.
 - If post-threshold performance matters to later exploitation, publish `postThresholdEfficiency?` so the claim is not trapped at the threshold-crossing moment only.
 
 ### C.22.1:9 - Worked moment
@@ -85,17 +87,17 @@ FPF needs one compact way to publish a bounded specialization claim on the same 
 
 - Threshold speed, budget burn, prior exposure, and post-threshold efficiency become part of the same reviewable object instead of one after-the-fact prose explanation.
 - Selector and parity surfaces can consume a stable upstream specialization object without minting shadow vocabularies.
-- Corridor-entry and downside burdens stay visible in the same claim that celebrates the specialization gain, reducing romanticized novelty talk.
+- Corridor-entry and downside fields stay visible in the same claim that celebrates the specialization gain, reducing romanticized novelty talk.
 
 ### C.22.1:11 - Rationale
 
-The reader needs one place where the adaptation claim stays whole. `C.22` keeps the task family and work target explicit. `A.15`, `C.24`, and `E.16` may generate the probe, checkpoint, and budget evidence. `G.5` and `G.9` later compare several candidates or parity runs. `C.22.1` keeps the specialization story readable across those surfaces by making threshold timing, reuse, downside, and corridor-entry burden recoverable in one short read instead of forcing the reader to reconstruct it from scattered notes.
+The reader needs one place where the adaptation claim stays whole. `C.22` keeps the task family and work target explicit. `A.15`, `C.24`, and `E.16` may generate the probe, checkpoint, and budget evidence. `G.5` and `G.9` later compare several candidates or parity runs. `C.22.1` keeps the specialization story readable across those surfaces by making threshold timing, reuse, downside, and corridor-entry field recoverable in one short read instead of forcing the reader to reconstruct it from scattered notes.
 
 ### C.22.1:12 - SoTA-Echoing
 
 **Claim 1.** Current frontier adaptation work judges usable specialization by threshold-crossing under bounded resources, not by terminal score alone.
 
-**Practice / source / alignment / adoption.** Contemporary frontier lines in refinement-heavy `QD`, self-play/task-discovery, and agentic adaptation repeatedly separate threshold target, budget burn, transfer, and reuse burden from one final benchmark score. This pattern **adopts** that practical burden, **adapts** it through one `TaskFamilyRef` or `TaskSignature`-bound adaptation signature, and **rejects** generic `got better` narratives that leave threshold and budget semantics implicit.
+**Practice / source / alignment / adoption.** Contemporary frontier lines in refinement-heavy `QD`, self-play/task-discovery, and agentic adaptation repeatedly separate threshold target, budget burn, transfer evidence, and reuse evidence from one final benchmark score. This pattern **adopts** that practical field set, **adapts** it through one `TaskFamilyRef` or `TaskSignature`-bound adaptation signature, and **rejects** generic `got better` narratives that leave threshold and budget semantics implicit.
 
 **Claim 2.** Current open-ended exploration work treats corridor entry and stepping stones as evidence-bearing novelty signals rather than decorative commentary.
 
@@ -103,11 +105,25 @@ The reader needs one place where the adaptation claim stays whole. `C.22` keeps 
 
 **Claim 3.** Current selector and parity practice needs one stable shared field set for specialization claims.
 
-**Practice / source / alignment / adoption.** Current selector and parity surfaces stay reviewable only when compared candidates reuse the same published field set for threshold, prior exposure, transfer, retention, downside, and corridor-entry burden. This pattern **adopts** that reuse discipline, **adapts** it by publishing one stable adaptation-signature field set here, and **rejects** silent downstream field redefinition in `G.5` or `G.9`.
+**Practice / source / alignment / adoption.** Current selector and parity surfaces stay reviewable only when compared candidates reuse the same published field set for threshold, prior exposure, transfer, retention, downside, and corridor-entry field. This pattern **adopts** that reuse discipline, **adapts** it by publishing one stable adaptation-signature field set here, and **rejects** silent downstream field redefinition in `G.5` or `G.9`.
 
-**Evidence-tier note.** Peer-reviewed frontier anchors carry the strongest support for threshold/budget/parity burdens, while fast-moving frontier lines remain explicit support for corridor-entry and open-ended exploration pressure rather than a flattened single evidence tier.
+**Evidence-tier note.** Peer-reviewed frontier anchors carry the strongest support for threshold, budget, and parity claims, while fast-moving frontier lines remain explicit support for corridor-entry and open-ended exploration pressure rather than a flattened single evidence tier.
+
+| Source-bound anchor family | What it disciplines in this pattern |
+| --- | --- |
+| `QD` / `OEE` corridor-entry work | Corridor baseline, descriptor shift, stepping-stone evidence, and whether novelty is reproducible rather than one exotic sample. |
+| Agentic adaptation benchmarks | Threshold target, time-to-threshold, budget-to-threshold, prior exposure, and post-threshold efficiency under a declared task-family anchor. |
+| Transfer / retention evaluation | Transfer target, retention window, downside, and reuse evidence so specialization speed is not confused with one isolated threshold crossing. |
 
 ### C.22.1:13 - Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: a claim that a holder, dyad, team, specialist portfolio, method, or agent acquires usable specialization faster on one declared `TaskFamilyRef` or `TaskSignature`.
+- This pattern keeps: threshold target, time-to-threshold, budget-to-threshold, prior exposure, transfer, retention, downside, corridor-entry evidence, and adaptation-signature fields.
+- Unsupported use: generic "learns faster" wording without task-family anchors does not create a C.27 profile or a complete adaptation signature; faster threshold crossing is not durable specialization unless transfer, retention, downside, and corridor-entry evidence are stated when claimed.
+
+- Exit: downgrade to Dyn1 trend when only a trend is live; use C.24 when the question is only tool-use planning; use C.22.1 when specialization is the governed question.
 
 **Builds on:** `C.22` TaskSignature anchoring, `C.19.1` `BLP` compatibility, `A.15` role/method/work separation, `C.24` scout/probe and `CheckpointReturn` semantics, `E.16` budget enforcement.
 **Coordinates with:** `G.5` selector specialization profiles, `G.9` adaptation parity, `G.11` later telemetry/refresh reuse.
@@ -115,7 +131,7 @@ The reader needs one place where the adaptation claim stays whole. `C.22` keeps 
 
 ### C.22.1:14 - Not this pattern when
 
-- the burden is only to name the task family and work-measure threshold target, with no adaptation-speed or transfer claim at all; ordinary `C.22` anchoring is enough
+- the claim only needs to name the task family and work-measure threshold target, with no adaptation-speed or transfer claim at all; ordinary `C.22` anchoring is enough
 - the live question is already selector or parity law across candidate selected sets; that belongs to `G.5 / G.9`
 - the text cannot yet declare one work-measure threshold target, one prior-exposure stance, or one evidence basis for corridor entry
 

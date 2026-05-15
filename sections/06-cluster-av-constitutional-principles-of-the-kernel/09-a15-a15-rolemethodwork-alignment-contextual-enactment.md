@@ -4,15 +4,24 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**At a glance.** This pattern is the entry-bearing alignment surface for engineer-managers when the real confusion is not "what component is this" but `who is responsible`, `how the work is supposed to happen`, `when the plan lives`, and `what actually happened`.
+**At a glance.** This pattern is the entry-bearing alignment pattern for engineer-managers when the real confusion is not "what component is this" but `who is responsible`, `how the work is supposed to happen`, `when the plan lives`, and `what actually happened`.
 
+**Use this when.** Use this pattern when the real job is to separate role, method, plan, capability, and actual work before a team treats one cue, one schedule, or one document as if it already counted as execution or authority.
 **Start here when.** The dominant ambiguity is role vs method vs schedule vs actual run, and the team keeps arguing about a "process" without separating recipe, plan, capability, and executed work.
 
-**First output.** One explicit Role / Method / MethodDescription / WorkPlan / Work separation, plus one traceable chain from `U.RoleAssignment` through the governing method description to the actual or intended work surface.
+**First output.** One explicit Role / Method / MethodDescription / WorkPlan / Work separation, plus one traceable chain from `U.RoleAssignment` through the governing method description to the actual or intended work record.
+**Governed object in plain terms.** One alignment frame linking `U.Role`, `U.Method`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work` through `U.RoleAssignment`; not a single work occurrence, not a checklist, and not a mere cue note.
+**Governing move in plain terms.** Keep design-time role/method/plan distinct from run-time work while making the chain between them inspectable enough for enactment, audit, and reroute.
+**What goes wrong if missed.** Teams collapse role, recipe, plan, capability, and actual run into one fuzzy "process" story, then mistake documentation for execution, capability for evidence, or a weaker briefing for executable authority.
+**What this buys.** One inspectable enactment frame that lets a team ask who held what role, which method governed, what plan existed, and what work actually occurred before taking action, blame, or approval as if those layers were the same.
+**Not this pattern when.** Not this pattern when the honest need is only one dated work occurrence (`A.15.1`), only planning or schedule baseline (`A.15.2`), or only a cue note that has not yet become an enactment-alignment question (`A.16` / `A.16.1`).
 
-**Typical next owners.** `A.15.1` for dated execution, `A.15.2` for schedule/baseline planning, `A.15.3` for slot-filling plan items, `B.5.1` for the simple lifecycle reading, `F.11` when method/work vocabulary itself must be aligned across contexts, and `F.17` when the result should land on a human-facing work sheet.
+**Typical next patterns.** `A.15.1` for dated execution, `A.15.2` for schedule/baseline planning, `A.15.3` for slot-filling plan items, `B.5.1` for the simple lifecycle reading, `F.11` when method/work vocabulary itself must be aligned across contexts, and `F.17` when the result should land on a human-facing work sheet.
 
-**Common wrong escalations / reroutes.** If the first honest artefact is still only a cue, reroute to `A.16` / `A.16.1`; if the burden is boundary language or contract soup, reroute to `A.6`; if you only need one executed occurrence rather than the alignment frame, continue straight to `A.15.1`.
+**Common wrong escalations / reroutes.** If the first honest artefact is still only a cue, reroute to `A.16` / `A.16.1`; if the problem is boundary language or contract soup, reroute to `A.6`; if you only need one executed occurrence rather than the alignment frame, continue straight to `A.15.1`.
+
+**Boundary to weakened renderings.** A lighter briefing, summary, redacted note, or coarsened rendering may help orient work or cue attention, but it does not become a sufficient action cue, implementation checklist, work plan, work occurrence, approval, gate, or execution authority by convenience alone. If a weaker rendering needs return to a stronger source before work can lawfully proceed, keep that boundary explicit here and use `A.6.3.CSC Controlled Semantic Coarsening` for the weaker-source relation rather than treating the weakened rendering as executable.
+**Recognition vs assurance note.** Read **At a glance**, **Start here when**, **First output**, the reroutes, and the weakened-rendering boundary above as the ordinary recognition block. Read the entity distinctions, canonical relations, checklist, and relations below as assurance blocks that tighten that same alignment-frame claim; they do not widen the pattern into one single work occurrence, one cue note, or one undifferentiated "process" object.
 
 ### A.15:1 - Problem frame
 
@@ -49,7 +58,7 @@ Without this formal framework, models suffer from a cascade of category errors:
 | **Accountability vs. Complexity** | The need for a complete, end-to-end audit trail for every action vs. the desire to keep models simple and avoid excessive documentation. |
 
 ### A.15:4 - Solution
-The solution is a stratified alignment that cleanly separates the `design-time` and `run-time` for contextual **enactment**. The bridge between these worlds is the **`U.RoleAssignment`**.
+The solution is a stratified alignment that cleanly separates the `design-time` and `run-time` for contextual **enactment**. The linking relation between these worlds is the **`U.RoleAssignment`**.
 
 #### A.15:4.1 - The Core Entities: A Strict Distinction
 
@@ -71,10 +80,12 @@ FPF mandates the use of the following distinct, non-overlapping entities to mode
 *   **`U.Work`:** An **occurrence** or **event**. It is the concrete, dated, resource-consuming **execution of a `U.MethodDescription`** by a `Holder` acting under a `U.RoleAssignment`; capability checks are evaluated at run time against the holder. This is the only entity that has a start and end time and consumes resources.
 
 **Kinds of Work and the primary target**
-Every `U.Work` SHALL declare a `primaryTarget: U.Holon` and a `kind`.
-Kinds:
+
+**Well-formedness constraint A15-WF-1 (work target and kind).** A `U.Work` occurrence has `primaryTarget: U.Holon` with cardinality `1..1 (total)` and `kind` with cardinality `1..1 (total)`.
+
+Local `kind` values used here:
 * Operational - transforms a `U.System` or its environment.
-* Communicative (SpeechAct) - transforms a deontic/organizational frame (e.g., commitments, permissions, approvals).
+* Communicative (SpeechAct) - transforms a deontic/organizational frame (e.g., commitments, authority states, approvals).
 * Epistemic - transforms a `U.Episteme` (e.g., curating a dataset).
 The `primaryTarget` disambiguates enactment: what is being acted upon. Example: an approval is `kind=Communicative`, `primaryTarget = Commitment(change=4711)`. A deployment is `kind=Operational`, `primaryTarget = ServiceInstance(prod-us-eu-1)`.
 
@@ -134,9 +145,9 @@ This chain provides complete traceability: a specific instance of `U.Work` can b
 
 #### A.15:4.3 - Bounded specialization scouting and `CheckpointReturn`
 
-When one human-plus-AI pair faces a new task family or candidate solution corridor, the governed work system may temporarily compose four distinct local roles inside the same dyad: a human-side `UtilityOwnerRole`, an `AIScoutRole`, an `AISpecialistProbeRole`, and a human-side `CommitAuthorityRole`. The payoff of the dyad is faster lawful specialization of the next move, not disappearance of the human decision surface.
+When a human-guided agentic work system faces a new task family or candidate solution corridor, the governed work may temporarily separate utility ownership, exploratory scouting, bounded specialist probing, and commit authority into distinct enactment roles. The payoff is faster lawful specialization of the next move, not disappearance of the human decision point.
 
-For this bounded burden, the pair should declare one utility target first, enumerate heterogeneous candidate approaches that may satisfy that target, spend a bounded scout or probe budget before any committed route is chosen, and return one `CheckpointReturn` that compares the tested approaches rather than silently treating one successful probe as a committed rollout. `A.15` owns this dyadic move and local role split only; it does not re-own the checkpoint-record semantics of `C.24` or the budget/guard enforcement of `E.16`.
+For this bounded scouting case, the work system should declare one utility target first, enumerate heterogeneous candidate approaches that may satisfy that target, spend a bounded scout or probe budget before any committed route is chosen, and return one `CheckpointReturn` that compares the tested approaches rather than silently treating one successful probe as a committed rollout. `A.15` owns this enactment-role split only; it does not re-own the checkpoint-record semantics of `C.24` or the budget/guard enforcement of `E.16`. This scouting subsection is not a controlled semantic coarsening case unless a returned briefing or summary is itself being treated as weaker-source authority.
 
 Every `CheckpointReturn` should carry:
 - the declared utility target and current `TaskFamily`
@@ -162,15 +173,23 @@ The Contextual Action Framework is universal. It applies identically to the mode
 | **`Work` (`Occurrence`)** | Manufacturing Work: `Weld_Job_#78345` (15:32-15:34 UTC, consumed 1.2 kWh, 5g Argon) - **isExecutionOf** `Welding_Procedure_WP-28A.pdf` | Peer-review Work: `Review_of_Manuscript_#PL-2025-018` (Completed 2025-08-15, took 4 hours) - **isExecutionOf** `Peer_Review_Guidelines_v3.docx` |
 
 **Key takeaway from grounding:**
-This side-by-side comparison reveals the power of the framework. A seemingly different activity like welding a car chassis and reviewing a scientific paper are shown to have the **exact same underlying causal structure**. Both involve a `Holder` (a system) acting in a `Role` within a `Context`, using a `Capability` described by a `MethodDescription` to produce a specific, auditable instance of `Work`. This universality is what allows FPF to bridge disparate domains.
+This side-by-side comparison reveals the power of the framework. A seemingly different activity like welding a car chassis and reviewing a scientific paper are shown to have the **exact same underlying causal structure**. Both involve a `Holder` (a system) acting in a `Role` within a `Context`, using a `Capability` described by a `MethodDescription` to produce a specific, auditable instance of `Work`. This universality is what allows FPF to compare and align disparate domains without collapsing their local structure.
+
+#### A.15:5.1.a - Briefing is not execution authority
+**Source set.** A release team has one governing deployment method description, one current work plan, one approval work item, and the evidence-bearing materials used to decide whether the rollout may proceed. A short rollout briefing is prepared for the daily stand-up.
+
+**Briefing slice.** `Status briefing only: rollback path appears verified in the current source bundle. Deployment authority remains with the governing approval record and work plan.`
+
+This briefing may orient the team and cue attention, but it is not the governing execution authority by itself. Lawful work still depends on the underlying method description, current work plan, and any required approval records or evidence-bearing materials staying explicit and reopenable. If the team wants to treat the briefing as sufficient to execute, the case leaves simple orientation and must reopen the stronger governing materials rather than treating the shortened note as the work-enactment authority.
 
 ### A.15:6 - Bias-Annotation
+
 
 Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal** for contextual enactment across engineering, operational, and knowledge-work settings.
 
 Bias risks and mitigations:
 
-* **Governance bias (Gov):** teams may over-treat role or approval surfaces as enough evidence that work happened.
+* **Governance bias (Gov):** teams may over-treat role or approval records as enough evidence that work happened.
   *Mitigation:* keep `U.RoleAssignment`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work` distinct, and let only `U.Work` carry actuals and resource use.
 * **Architectural bias (Arch):** modelers may pull roles or capabilities into structural part hierarchies because those diagrams are already present.
   *Mitigation:* preserve role and capability as contextual-functional entities, not parts.
@@ -188,6 +207,7 @@ To ensure the integrity of action modeling, all FPF-compliant models must adhere
 | ID | Requirement (Normative Predicate) | Purpose / Rationale |
 | :--- | :--- | :--- |
 | **CC-A15-1 (Entity Distinction)** | The entities `U.Role`, **`U.Method`**, **`U.MethodDescription`**, `U.Capability`, **`U.WorkPlan`**, and `U.Work` **MUST** be modeled as distinct, non-overlapping types. | This is the core enforcement of **Strict Distinction (A.7)**. It prevents the category errors outlined in the "Problem" section. |
+| **CC-A15-1a (Work target/kind predicate)** | A conforming `U.Work` record SHALL satisfy `A15-WF-1`; validators SHOULD report missing `primaryTarget` or missing `kind` as an invalid work record. | Keeps target and work kind enforceable as artifact validity without stating modeled-world admissibility through a free RFC sentence. |
 | **CC-A15-2 (Temporal Scope)** | `U.Method`/`U.MethodDescription`/`U.WorkPlan` exist in **design-time**; `U.Work` exists in **run-time**. Design artifacts are not mutated by operational events. | Enforces **Temporal Duality (A.4)**. Blueprints cannot be mutated by operational events. |
 | **CC-A15-3 (RoleAssignment Mandate)** | Every `U.Work` **MUST** be linked via `performedBy` to a valid `U.RoleAssignment`. | Guarantees that every action has a clearly identified, context-bound actor, ensuring accountability. |
 | **CC-A15-4 (Traceability Chain)** | For every `U.Work`, an unbroken chain **MUST** exist: `Work -performedBy-> RoleAssignment` and `Work -isExecutionOf-> MethodDescription -describes-> Method`. Capability checks are evaluated against the holder at run time. | Ensures end-to-end auditability from a specific action back to the recipe that governed it. |
@@ -198,6 +218,7 @@ To ensure the integrity of action modeling, all FPF-compliant models must adhere
 | **CC-A15-9 (Realisation)** | A valid `U.Work` realizes a `U.MethodDescription` under a `U.RoleAssignment`. Spontaneous physical evolution without a `MethodDescription` is modeled as `U.Dynamics`, not as `U.Work`. | Prevents background dynamics from being miscast as governed work. |
 | **CC-A15-10 (GateSplit)** | A SpeechAct that changes a Role's state (e.g., "Approve", "Authorize") MUST be modeled as a distinct `U.Work` step (`kind=Communicative`). It may open the Green-Gate for a subsequent operational step, but it SHALL NOT be conflated with that step. | Preserves authority-state changes as distinct communicative acts. |
 | **CC-A15-11 (KindFit)** | The `U.Role` named in the `performedBy` assignment SHALL be appropriate for the `U.Work` kind (e.g., `ApproverRole` for communicative approvals; `DeployerRole` for operational deployments). | Prevents kind-mismatched role attribution. |
+| **CC-A15-12 (Weakened Rendering Non-Authority)** | A lighter briefing, summary, redacted note, or coarsened rendering **SHALL NOT** be treated as sufficient action cue, implementation checklist, work plan, work occurrence, approval, gate, execution authority, or executable work authority by convenience alone. If lawful work still depends on stronger method or evidence-bearing material, that stronger source **MUST** be reopened or explicitly linked before work proceeds. | Prevents orientation notes or disclosure renderings from silently becoming implementation cues, action checklists, approvals, gates, or authority substitutes. |
 
 ### A.15:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -207,6 +228,7 @@ To ensure the integrity of action modeling, all FPF-compliant models must adhere
 - **Capability-as-work.** Do not treat possession of a capability as if the task has already been performed; capability supports execution but is not execution.
 - **Approval collapse.** Do not merge approval or authorization speech acts into the operational step they open; model them as distinct communicative `U.Work` when they change authority state.
 - **Process soup.** Do not leave "process / workflow / activity" uninterpreted in load-bearing passages; resolve the word to method, plan, or work.
+- **Briefing-as-execution-cue.** Do not treat a lighter review note, rollout summary, or redacted operations note as if it already authorized execution, approval, gate passage, or a work plan. Reopen the stronger governing method or evidence-bearing material before work proceeds.
 
 ### A.15:9 - Consequences
 
@@ -229,23 +251,16 @@ By creating this clean, stratified alignment for enactment, FPF provides a stabl
 
 ### A.15:11 - SoTA-Echoing
 
-**Claim 1.** Best-known current workflow, digital-thread, and service-operations practice keeps recipe, plan, and execution separate.
+**SoTA note.** This section does not mint an independent work-management layer. It stays truthful only when the Solution, Conformance Checklist, briefing non-authority slice, and Relations still keep role, method, plan, approval, and executed work distinct.
 
-**Practice / source / alignment / adoption.** Contemporary process modeling, service operations, and auditability practice after 2015 separates procedure, schedule, and executed occurrence because otherwise paper compliance becomes indistinguishable from completed work. In the manufacturing and peer-review slices above, this means a procedure or calendar never counts as the weld or the review itself. This pattern **adopts** that separation, **adapts** it through `U.Method`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work`, and **rejects** the shortcut where one undifferentiated "process" object carries all three loads.
+| Claim need | SoTA practice (post-2015) | Primary source (post-2015) | Alignment with `A.15` | Adoption status |
+| --- | --- | --- | --- | --- |
+| Recipe, plan, case, decision, and executed occurrence must stay separable. | Case-management, decision-modeling, and service-change practice distinguish discretionary case work, decision logic, planned change support, and the realized service/product change. | OMG CMMN 1.1 (2016); OMG DMN 1.5 (2024); ITIL 4 Practitioner: Change Enablement (2023). | The manufacturing, peer-review, and rollout slices keep `U.MethodDescription`, `U.WorkPlan`, approval work, and `U.Work` separate so a calendar or procedure never counts as the weld, review, deployment, or actual run. | **Adopt/Adapt.** Adopt the separation of case, decision, plan, and occurrence; adapt it to FPF's `U.Method`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work`; reject an undifferentiated "process" object. |
+| Architecture and digital-thread practice need traceable views without confusing description, authority, and occurrence. | Architecture-description and model-based systems practice treat descriptions, viewpoints, requirements, behavior, verification, and traceability as explicit review objects. | ISO/IEC/IEEE 42010:2022; OMG SysML v2.0 Language Specification (2025). | `A.15` uses actor-in-context, role assignment, method description, and work occurrence so post-hoc review can ask whether the problem was assignment, capability, recipe, plan, approval, or run. | **Adopt/Adapt.** Adopt explicit trace and viewpoint discipline; adapt it to role/method/work alignment; reject attributing work to a role label or document alone. |
+| Approval and execution are distinct practical acts. | Change-enablement and decision-modeling practice separates risk assessment, authorization, scheduling, decision logic, and the work that realizes change. | ITIL 4 Practitioner: Change Enablement (2023); OMG DMN 1.5 (2024). | In the release and gate examples, an approval or authorization changes authorization state; it is not the same work as deployment, welding, or other operational occurrence. | **Adopt.** Adopt the communicative/operational split and reject collapse of approval into the thing approved. |
+| Fast bounded exploration must not become committed rollout by convenience. | Contemporary service and modeling practice supports adaptive work while preserving explicit authorization, traceability, and reviewable transition from option exploration to committed change. | ITIL 4 Practitioner: Change Enablement (2023); ISO/IEC/IEEE 42010:2022; OMG SysML v2.0 Language Specification (2025). | The scout/probe moment returns evidence, budget posture, and a commit trigger rather than only a winner label. The practical safeguard is that successful exploration still needs explicit commit authority before it becomes work enactment. | **Adapt/Reject.** Adapt adaptive-change and traceability practice to FPF role/method/work splits; reject the shortcut where an early probe silently becomes a committed rollout. |
 
-**Claim 2.** Best-known current accountability practice keeps actor-in-context explicit rather than attributing work to a role label or a document.
-
-**Practice / source / alignment / adoption.** Contemporary governance, service delivery, and incident practice distinguishes accountable assignee, governing procedure, and actual run record because post-hoc review depends on knowing who acted, under what role, and under which method. In the slices above, that is why the robot or reviewer acts under `U.RoleAssignment` rather than the role or guideline acting on its own. This pattern **adopts** explicit actor-in-context attribution through `U.RoleAssignment`, **adapts** it to bounded-context semantics, and **rejects** anonymous work logs and role-as-part modeling.
-
-**Claim 3.** Best-known current approval and execution practice treats communicative gate acts and operational acts as distinct kinds of work.
-
-**Practice / source / alignment / adoption.** Contemporary release, compliance, and safety-critical practice separates approval, authorization, and review acts from the operational steps they permit because authority change and world change are not the same event. In the examples above, that means an approval is not the same work as a deployment or a weld. This pattern **adopts** that split, **adapts** it through communicative versus operational `U.Work` kinds, and **rejects** the collapse of approval into the thing being approved.
-
-**Local stance.** The load-bearing SoTA claim for this pattern is practical and narrow: contextual enactment remains reviewable only when role, method, plan, and work stay distinct enough that audits can tell whether the problem was in the assignment, the recipe, the schedule, the capability, or the run itself.
-
-**Claim 4.** Best-known current agentic work practice treats fast bounded specialization as a checkpointed scout/probe discipline rather than as a naked winner claim.
-
-**Practice / source / alignment / adoption.** Contemporary agentic tool-use, adaptive workflow, and human-in-the-loop governance practice separates bounded exploration from committed rollout because a successful probe is not yet a lawful route choice. In the working moment above, that is why the pair returns one `CheckpointReturn` with candidate approaches, evidence, burned and residual budget, and a commit trigger rather than only a winner label. This pattern **adopts** checkpointed scout/probe discipline, **adapts** it through the dyad-local roles and `CheckpointReturn`, and **rejects** the shortcut where an early probe silently becomes a committed rollout.
+The nearest recovery anchors are the manufacturing, peer-review, and rollout briefing slices above, plus `CC-A15-7`, `CC-A15-10`, and `CC-A15-12`. If a SoTA row cannot be recovered through those local checks, do not let the source citation stand in for live `A.15` law.
 ### A.15:12 - Relations
 
 *   **Directly Implements:** `A.7 Strict Distinction`.
@@ -257,9 +272,37 @@ By creating this clean, stratified alignment for enactment, FPF provides a stabl
     *   `B.4 Canonical Evolution Loop`: The entire loop is a sequence of `U.Work` instances that modify `MethodDescription`s.
     *   `A.15.2 U.WorkPlan`: plan-run split, baselines and variance against `U.Work`.
 *   **Constrains:** Any FPF pattern that models actions or processes must use this framework to be conformant. It serves as the canonical alignment for **contextual enactment** in the FPF ecosystem.
-*   **Coordinates with:** `L-PROC / L-FUNC / L-SCHED` (E-cluster) for lexical disambiguation of _process / workflow / schedule_.
+*   **Coordinates with:** `L-PROC / L-FUNC / L-SCHED` (E-cluster) for lexical disambiguation of _process / workflow / schedule_; `A.6.3.CSC Controlled Semantic Coarsening` when a briefing or summary is primarily a weaker-source rendering rather than an enactment authority-bearing publication.
+
+### A.15:12a - Coordinated-work evidence and quantum-like route note
+
+Use A.15 first when the claim is about who acts, by which method, under which role, producing which work result. Coordinated work, routine skill, team alignment, tacit knowledge, and role-method fit are not quantum-like by default.
+
+Action path:
+
+1. Name the role, method, and work result before naming any distributed state.
+2. State which work traces, artifacts, events, observations, reports, metrics, or role enactments make the coordination visible.
+3. Ask whether role-method-work alignment alone explains the case. If yes, stay in A.15.
+4. If no participant statement, local component report, single carrier, dashboard, or exported representation carries the inferred state faithfully enough for the intended use, add a `C.26.2` distributed-state reading.
+5. State the weakest claim, time window, rival explanations, and export loss.
+6. Route evidence strength through `A.10` and assurance strength through `B.3` when the claim supports action, audit, readiness, release, or compliance.
+
+Add a `C.26.2` distributed-state reading only when coordinated work is being used as evidence for a state that no participant statement, local component report, single carrier, dashboard, or exported representation carries faithfully enough for the intended use. That evidence-bound claim states:
+
+| Field | Required content |
+| --- | --- |
+| Carrier | Work trace, artifact, event, observation, report, metric, or role enactment that bears the evidence |
+| Time window | When the reading holds and when it decays or must be refreshed |
+| Probe or occasion | What question, task, workshop, incident, handover, dashboard, or coordination situation made the state readable |
+| Weakest claim | The minimal distributed-state reading supported by the carriers |
+| Rival explanations | Routine compliance, policy, command, coincidence, incentive, documentation artifact, or local skill that could explain the same work |
+| Export loss | What is lost when the state is summarized into one report, score, or statement |
+
+Useful outputs:
+
+- an A.15 work-alignment claim when work roles explain the case;
+- a C.26.2 weak distributed-state reading when coordination evidence survives ordinary rivals;
+- an A.10/B.3 evidence or assurance route when the reading will support stronger use;
+- no distributed-state claim when carriers, rivals, or time window cannot be named.
 
 ### A.15:End
-
-
----
