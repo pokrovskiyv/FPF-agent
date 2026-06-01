@@ -2,7 +2,7 @@
 title: "Маршрут 9: Композиция и агрегация"
 sources:
   - sections/routes/route-9-composition-aggregation.md
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-01T00:00:00Z
 tags:
   - route
   - tier-1

@@ -10,12 +10,12 @@
 `C.2.2a`, `A.16`, `A.19`, `E.17`, `E.18`, `E.10`, `F.18`.
 
 **Used by.**
-`A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `A.6.P`, `A.6.Q`, `A.6.A`, `F.9.1`, `E.17.1`.
+`A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `A.6.P`, `C.16.Q`, `A.6.A`, `F.9.1`, `E.17.1`.
 
 ### A.16.0:1 - Problem frame
 In engineering, inquiry, operator, and management practice, teams sometimes need more than a local move note. When branch structure, supersession, retirement, handoff, bridge-sensitive loss, or multi-step governing pattern change matters, readers need one place where the history of successive governed `U.Episteme` publications is made explicit.
 
-Cue packs, routed cue sets, abductive prompts, typed route-bounded projection publications, partial normal forms, and later endpoint-bound records are publication forms that may appear in that history. They are not the raw disturbances, telemetry traces, model outputs, bodily tensions, or carrier documents that ground it.
+Cue packs, routed cue sets, abductive prompts, typed route-bounded projection publications, partial normal forms, and endpoint-bound records are publication forms that may appear in that history. They are not the raw disturbances, telemetry traces, model outputs, bodily tensions, or carrier documents that ground it.
 
 What must remain intelligible is therefore not a myth that one unchanged `U.Episteme` publication literally `moves`. What must remain intelligible is a lineage of successive governed `U.Episteme` publications, together with the load-bearing links among them, when that history itself has governance value.
 
@@ -111,9 +111,9 @@ Typical docking governing patterns include:
 
 - `A.6.P` for relation repair forms;
 - `A.6.A` for invitation forms;
-- `A.6.Q` for evaluative repair forms;
+- `C.16.Q` for evaluative repair forms;
 - `B.5.2` for later abductive work;
-- `A.15` for method / work-facing forms;
+- `A.15` for method-facing or work-facing forms;
 - `C.25` for endpoint bundle structures.
 
 A trajectory account should therefore name not only the docking governing pattern but also the pattern-governed publication or record that now carries the next pattern-governed declaration. Naming only the governing pattern under-publishes the handoff.
@@ -121,7 +121,7 @@ A trajectory account should therefore name not only the docking governing patter
 After such a handoff, monitoring, maintenance, revisit, or later re-entry may continue through new lineage members or later trajectories. The pattern therefore distinguishes `lineage continuity` from `current governing pattern responsibility`.
 
 #### A.16.0:4.7 - Effect-free moves versus work-requiring crossings
-Some `formalize` and `operationalize` steps are effect-free epistemic transformations: rewriting, slot-explicit articulation, route-bounded partialization, view retargeting, or normal-form strengthening over already available grounds.
+Some `formalize` and `operationalize` steps are effect-free epistemic transformations: rewriting, slot-explicit articulation, route-bounded partialization, view retargeting, or normal-form repair over already available grounds.
 
 Other steps require new measurements, experiments, instrumentation, execution, or other `U.Work`. When that happens, the trajectory account shall publish the crossing or handoff explicitly rather than pretending that world-facing work occurred inside the language layer. `A.16.0` records that the crossing was required; the relevant work, gate, or endpoint governing pattern records the world step itself.
 
@@ -168,7 +168,7 @@ The pattern biases authors toward lineage-aware history accounts rather than sta
 ### A.16.0:8 - Common Anti-Patterns and How to Avoid Them
 - **Meta-wrapper inflation.** Treat `A.16.0` as obligatory around every move. Repair by publishing a local `A.16` move note unless history itself has governance value.
 - **One-publication myth.** Treat one frozen episteme as literally moving unchanged. Repair by publishing lineage members and their links.
-- **Governing-pattern/form collapse.** Treat later governing patterns as if they were publication forms. Repair by naming the pattern-governed form and the governing pattern separately.
+- **Governing-pattern/form collapse.** Treat receiving governing patterns as if they were publication forms. Repair by naming the pattern-governed form and the governing pattern separately.
 - **Form/face collapse.** Treat seam publications as if they minted a second MVPK face family. Repair by naming form and face separately.
 - **Multi-route/fork collapse.** Treat several live routes in one governed member as if they were already several successor members.
 - **Hidden work crossing.** Describe operationalization as purely linguistic when it actually required new world-facing work. Repair by publishing the crossing explicitly.
@@ -184,7 +184,7 @@ The pattern matches contemporary practice in exploratory inquiry, operator-cente
 
 ### A.16.0:12 - Relations
 - Builds on: `C.2.2a`, `A.16`, `A.19`, `E.17`, `E.18`.
-- Coordinates with: `C.2.LS`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `B.5.2`, `A.6.P`, `A.6.Q`, `A.6.A`, `F.9`, `F.9.1`, `E.17.1`.
+- Coordinates with: `C.2.LS`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `B.5.2`, `A.6.P`, `C.16.Q`, `A.6.A`, `F.9`, `F.9.1`, `E.17.1`.
 - Constrains: trajectory-account publication, branch visibility, seam publication reading, docking visibility, and anti-pipeline language across the cluster.
 
 ### A.16.0:13 - Worked trajectories

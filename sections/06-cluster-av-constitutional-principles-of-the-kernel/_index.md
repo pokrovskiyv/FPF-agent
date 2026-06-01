@@ -1,34 +1,35 @@
 # Cluster A.V - Constitutional Principles of the Kernel
 
-- [A.7 - Strict Distinction (Clarity Lattice) (A.7)](01-a7-a7-strict-distinction-clarity-lattice.md)
-- [A.8 - Universal Core Principle (C‑1) (A.8)](02-a8-a8-universal-core-principle-c1.md)
-- [A.9 - Cross‑Scale Consistency (C‑3) (A.9)](03-a9-a9-crossscale-consistency-c3.md)
-- [A.10 - Evidence Graph Referring (C‑4) (A.10)](04-a10-a10-evidence-graph-referring-c4.md)
-- [A.11 - Ontological Parsimony (C‑5) (A.11)](05-a11-a11-ontological-parsimony-c5.md)
-- [A.12 - External Transformer & Reflexive Split (A.12)](06-a12-a12-external-transformer-reflexive-split.md)
-- [A.13 - The Agential Role & Agency Spectrum (A.13)](07-a13-a13-the-agential-role-agency-spectrum.md)
-- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases (A.14)](08-a14-a14-advanced-mereology-components-portions-aspects-phases.md)
-- [A.15 - Role–Method–Work Alignment (Contextual Enactment) (A.15)](09-a15-a15-rolemethodwork-alignment-contextual-enactment.md)
-- [A.15.1 - U.Work (A.15.1)](10-a151-a151-uwork.md)
-- [A.15.2 - U.WorkPlan (A.15.2)](11-a152-a152-uworkplan.md)
-- [A.15.3 - SlotFillingsPlanItem (A.15.3)](12-a153-a153-slotfillingsplanitem.md)
-- [A.15.4 - Work-Relevant Source Restoration (A.15.4)](13-a154-a154-work-relevant-source-restoration.md)
-- [A.16 - Language-State Transduction Coordination (A.16)](14-a16-a16-language-state-transduction-coordination.md)
-- [A.16.0 - U.LanguageStateTransductionTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace (A.16.0)](15-a160-a160-ulanguagestatetransductiontrajectory-optional-trajector.md)
-- [A.16.1 - U.PreArticulationCuePack (A.16.1)](16-a161-a161-uprearticulationcuepack.md)
-- [A.16.2 - Reopen / SketchBackoff / Respecify (A.16.2)](17-a162-a162-reopen-sketchbackoff-respecify.md)
-- [A.17 - Canonical “Characteristic” (A.CHR‑NORM) (A.17)](18-a17-a17-canonical-characteristic-achrnorm.md)
-- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL) (A.18)](19-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md)
-- [A.19 - CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE) (A.19)](20-a19-a19-characteristicspace-dynamics-hook-achrspace.md)
-- [A.19.SURF-SPACE - Cross-Surface / Cross-Space Substrate (A.19.SURF)](21-a19surf-a19surf-space-cross-surface-cross-space-substrate.md)
-- [A.19.SUPPORT-VIEW - Cross-Surface Support View (A.19.SUPPORT)](22-a19support-a19support-view-cross-surface-support-view.md)
-- [A.19.CN - CN‑frame (comparability & normalization) (A.19.CN)](23-a19cn-a19cn-cnframe-comparability-normalization.md)
-- [A.19.CHR - CHRMechanismSuite (A.19.CHR)](24-a19chr-a19chr-chrmechanismsuite.md)
-- [A.19.UNM - Unified Normalization Mechanism (UNM) (A.19.UNM)](25-a19unm-a19unm-unified-normalization-mechanism-unm.md)
-- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM) (A.19.UINDM)](26-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md)
-- [A.19.USCM - Unified Scoring Mechanism, USCM (A.19.USCM)](27-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md)
-- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM) (A.19.ULSAM)](28-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md)
-- [A.19.CPM - Unified Comparison Mechanism (CPM) (A.19.CPM)](29-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md)
-- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism (A.19.S)](30-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md)
-- [A.20 - U.Flow.ConstraintValidity — Eulerian (A.20)](31-a20-a20-uflowconstraintvalidity-eulerian.md)
-- [A.21 — GateProfilization: OperationalGate(profile) (GateFit core) (A.21)](32-a21-a21-gateprofilization-operationalgateprofile-gatefit-core.md)
+- [A.7 - Strict Distinction (Clarity Lattice) (A.7)](01-a7-a7-strict-distinction-clarity-lattice.md) — Four rules that prevent the most common category confusions between roles, descriptions, capabilities, and actual work.
+- [A.8 - Universal Core Principle (C‑1) (A.8)](02-a8-a8-universal-core-principle-c1.md) — How to test whether a concept is truly universal by verifying it holds in at least three unrelated fields.
+- [A.9 - Cross‑Scale Consistency (C‑3) (A.9)](03-a9-a9-crossscale-consistency-c3.md) — The rule that the same logic must hold whether you are zooming in to a bolt or out to the whole bridge.
+- [A.10 - Evidence Graph Referring (C‑4) (A.10)](04-a10-a10-evidence-graph-referring-c4.md) — Why every published claim must be traceable back to concrete evidence through a typed, auditable chain.
+- [A.11 - Ontological Parsimony (C‑5) (A.11)](05-a11-a11-ontological-parsimony-c5.md) — The discipline of adding a new concept only when no combination of existing ones can do the job.
+- [A.12 - External Transformer & Reflexive Split (A.12)](06-a12-a12-external-transformer-reflexive-split.md) — The rule that every change must have an explicit external cause—nothing transforms itself.
+- [A.13 - The Agential Role & Agency Spectrum (A.13)](07-a13-a13-the-agential-role-agency-spectrum.md) — How to characterize different levels of purposeful action, from fully automated to fully human.
+- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases (A.14)](08-a14-a14-advanced-mereology-components-portions-aspects-phases.md) — Four precise ways something can be part of a whole, so "part of" never goes unexamined.
+- [A.15 - Role–Method–Work Alignment (Contextual Enactment) (A.15)](09-a15-a15-rolemethodwork-alignment-contextual-enactment.md) — How to keep responsibility, process, and actual results clearly separated so audits stay honest.
+- [A.15.1 - U.Work (A.15.1)](10-a151-a151-uwork.md) — How to record what actually happened—with time, performer, resources, and outcomes—rather than what was planned.
+- [A.15.2 - U.WorkPlan (A.15.2)](11-a152-a152-uworkplan.md) — How to represent a schedule or plan as a typed object that is explicitly distinct from the work itself.
+- [A.15.3 - SlotFillingsPlanItem (A.15.3)](12-a153-a153-slotfillingsplanitem.md) — How to record a single planned baseline item with all required slot fillings for traceability.
+- [A.15.4 - Work-Relevant Source Restoration (A.15.4)](13-a154-a154-work-relevant-source-restoration.md) — How to trace any displayed result or generated explanation back to the specific work record it came from.
+- [A.16 - Language-State Transduction Coordination (A.16)](14-a16-a16-language-state-transduction-coordination.md) — How to govern the moves that take a statement from a vague sketch toward a formally auditable claim.
+- [A.16.0 - U.LanguageStateTransductionTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace (A.16.0)](15-a160-a160-ulanguagestatetransductiontrajectory-optional-trajector.md) — How to record the full history of how a statement matured from rough idea to finished specification.
+- [A.16.1 - U.PreArticulationCuePack (A.16.1)](16-a161-a161-uprearticulationcuepack.md) — How to package early, half-formed signals so they can be routed to the right pattern without being lost.
+- [A.16.2 - Reopen / SketchBackoff / Respecify (A.16.2)](17-a162-a162-reopen-sketchbackoff-respecify.md) — When and how to legitimately step a claim back to a rougher state rather than forcing premature precision.
+- [A.17 - Canonical "Characteristic" (A.CHR‑NORM) (A.17)](18-a17-a17-canonical-characteristic-achrnorm.md) — The rule that every measurable aspect must be called a Characteristic, never "axis," "dimension," or "metric."
+- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL) (A.18)](19-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md) — The four mandatory parts of any measurement: what is measured, on what scale, at what level, giving what value.
+- [A.19 - CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE) (A.19)](20-a19-a19-characteristicspace-dynamics-hook-achrspace.md) — How to define a multi-dimensional space of measurable aspects for evaluating and comparing options.
+- [A.19.ECS - Evaluation CharacteristicSpace Construction (A.19.ECS)](21-a19ecs-a19ecs-evaluation-characteristicspace-construction.md) — Step-by-step method for building a well-formed set of evaluation criteria for a comparison or decision.
+- [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate (A.19.SOURCE)](22-a19source-a19source-set-space-substrate-source-set-and-searchoutcome-s.md) — How to declare what pool of options is being searched and what space their outcomes live in.
+- [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Declared-Substrate Interpretive View (A.19.DECLARED)](23-a19declared-a19declared-substrate-interpretive-view-declared-substrate-i.md) — How to attach an explicit interpretive lens to a declared measurement substrate so comparisons stay auditable.
+- [A.19.CN - CN‑frame (comparability & normalization) (A.19.CN)](24-a19cn-a19cn-cnframe-comparability-normalization.md) — Governance rules that ensure numbers from different sources can be legally compared and aggregated.
+- [A.19.CHR - CHRMechanismSuite (A.19.CHR)](25-a19chr-a19chr-chrmechanismsuite.md) — The coordinated set of measurement mechanisms (normalize, score, aggregate, compare, select) as a single governed suite.
+- [A.19.UNM - Unified Normalization Mechanism (UNM) (A.19.UNM)](26-a19unm-a19unm-unified-normalization-mechanism-unm.md) — One standard way to convert raw values from different scales into a common, comparable form.
+- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM) (A.19.UINDM)](27-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md) — How to derive a typed indicator from raw observations in a way that is reproducible and auditable.
+- [A.19.USCM - Unified Scoring Mechanism, USCM (A.19.USCM)](28-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md) — One standard way to convert indicator values into scores that can be fairly compared across options.
+- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM) (A.19.ULSAM)](29-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md) — How to combine scores or measurements across different scales without introducing illegal comparisons.
+- [A.19.CPM - Unified Comparison Mechanism (CPM) (A.19.CPM)](30-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md) — One standard way to compare two or more options across a declared set of criteria with an auditable result.
+- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism (A.19.S)](31-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md) — How to pick from a set of options based on scored criteria, policies, and eligibility guards.
+- [A.20 - U.Flow.ConstraintValidity — Eulerian (A.20)](32-a20-a20-uflowconstraintvalidity-eulerian.md) — How to check that a flow of resources or control respects conservation constraints at every node.
+- [A.21 — GateProfilization: OperationalGate(profile) (GateFit core) (A.21)](33-a21-a21-gateprofilization-operationalgateprofile-gatefit-core.md) — How to define a typed go/no-go gate that aggregates multiple checks into a single, traceable decision.

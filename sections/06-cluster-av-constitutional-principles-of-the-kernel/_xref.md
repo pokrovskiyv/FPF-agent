@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (130 refs).
+Patterns in other Parts that reference patterns in this directory (179 refs).
 
 ## From 04-part-a-kernel-architecture-cluster
 
@@ -21,6 +21,10 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | A.2.9 | builds_on | A.15.1 |
 | A.21 | builds_on | A.7 |
 | A.21 | coordinates_with | A.20 |
+| A.21 | coordinates_with | A.19 |
+| A.22 | builds_on | A.7 |
+| A.22 | coordinates_with | A.10 |
+| A.22 | coordinates_with | A.20 |
 | A.3 | prerequisite_for | A.15 |
 | A.3.1 | prerequisite_for | A.15 |
 | A.3.2 | informs | A.15 |
@@ -55,12 +59,13 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | A.6.B | builds_on | A.7 |
 | A.6.B | coordinates_with | A.10 |
 | A.6.C | builds_on | A.7 |
+| A.6.F | builds_on | A.7 |
+| A.6.F | coordinates_with | A.15 |
 | A.6.H | builds_on | A.7 |
 | A.6.H | coordinates_with | A.14 |
 | A.6.H | coordinates_with | A.15 |
 | A.6.P | coordinates_with | A.7 |
 | A.6.P | coordinates_with | A.10 |
-| A.6.Q | builds_on | A.16 |
 | A.6.S | builds_on | A.7 |
 | A.6.S | builds_on | A.12 |
 
@@ -95,6 +100,16 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | C.16 | builds_on | A.17 |
 | C.16 | builds_on | A.18 |
 | C.16 | coordinates_with | A.10 |
+| C.16.P | builds_on | A.17 |
+| C.16.P | builds_on | A.18 |
+| C.16.P | builds_on | A.19 |
+| C.16.P | coordinates_with | A.19.ECS |
+| C.16.Q | builds_on | A.17 |
+| C.16.Q | builds_on | A.18 |
+| C.16.Q | builds_on | A.19 |
+| C.16.Q | builds_on | A.7 |
+| C.16.Q | coordinates_with | A.16 |
+| C.16.Q | coordinates_with | A.10 |
 | C.17 | builds_on | A.17 |
 | C.17 | builds_on | A.18 |
 | C.17 | builds_on | A.19 |
@@ -105,6 +120,14 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | C.2.4 | coordinates_with | A.16 |
 | C.2.5 | coordinates_with | A.16 |
 | C.2.LS | coordinates_with | A.16 |
+| C.2.P | builds_on | A.7 |
+| C.2.P | coordinates_with | A.10 |
+| C.2.P | coordinates_with | A.15 |
+| C.2.P | coordinates_with | A.20 |
+| C.22.1 | builds_on | A.15 |
+| C.22.2 | builds_on | A.19 |
+| C.22.2 | coordinates_with | A.15 |
+| C.22.2 | coordinates_with | A.10 |
 | C.24 | builds_on | A.15 |
 | C.25 | coordinates_with | A.15 |
 | C.26 | builds_on | A.10 |
@@ -118,7 +141,26 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | C.26.3 | builds_on | A.19 |
 | C.28 | builds_on | A.10 |
 | C.28 | coordinates_with | A.15 |
+| C.29 | builds_on | A.19 |
+| C.29 | builds_on | A.10 |
+| C.29 | builds_on | A.15 |
+| C.29 | coordinates_with | A.15.1 |
+| C.29 | coordinates_with | A.15.4 |
+| C.30 | builds_on | A.7 |
+| C.30 | coordinates_with | A.10 |
+| C.30 | coordinates_with | A.20 |
+| C.30 | coordinates_with | A.15 |
+| C.30.ILC | coordinates_with | A.10 |
+| C.30.LCA | coordinates_with | A.10 |
+| C.30.LCA | coordinates_with | A.20 |
+| C.30.P | coordinates_with | A.10 |
+| C.30.P | coordinates_with | A.20 |
+| C.30.P | coordinates_with | A.15 |
+| C.30.TGA-FLOW-REL | coordinates_with | A.10 |
+| C.30.TGA-FLOW-REL | coordinates_with | A.20 |
+| C.30.TGA-FLOW-REL | coordinates_with | A.15 |
 | D.2 | builds_on | A.9 |
+| E.10.ARCH | coordinates_with | A.19 |
 | E.10.D1 | builds_on | A.7 |
 | E.10.D2 | builds_on | A.7 |
 | E.15 | builds_on | A.10 |
@@ -127,21 +169,18 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | E.17.1 | builds_on | A.7 |
 | E.18 | builds_on | A.7 |
 | E.18 | coordinates_with | A.20 |
+| E.2.DA | builds_on | A.19.ECS |
 | E.20 | coordinates_with | A.15.3 |
-
-## From 10-cluster-fi-context-of-meaning-raw-material
-
-| Source | Relation | Target |
-|--------|----------|--------|
+| E.21 | builds_on | A.17 |
+| E.21 | builds_on | A.19.ECS |
+| E.22 | builds_on | A.19.ECS |
+| E.23 | builds_on | A.19.ECS |
+| E.8.ECSPF | builds_on | A.19.ECS |
+| E.9.DA | builds_on | A.19.ECS |
 | F.1 | builds_on | A.7 |
 | F.11 | builds_on | A.15 |
 | F.6 | builds_on | A.15 |
 | F.9.1 | builds_on | A.16.0 |
-
-## From 11-part-g-discipline-sota-patterns-kit
-
-| Source | Relation | Target |
-|--------|----------|--------|
 | G.0 | builds_on | A.19 |
 | G.0 | builds_on | A.10 |
 | G.0 | builds_on | A.17 |

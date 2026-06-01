@@ -204,7 +204,7 @@ EpistemicViewing **inherits EFEM functoriality** and specialises it:
    When viewing relies on a `CorrespondenceModel` between epistemes or representation schemes:
    * the viewing morphism MUST reference that `CorrespondenceModel`,
    * compositions involving such viewings **MUST** publish witnesses (epistemes or proof epistemes or proof records) that squares commute **up to declared isomorphism** (oplax naturality is allowed, but corrections are deterministic and reproducible),
-   * `describedEntityRef` and `groundingHolonRef` remain as in EV‑1; any transfer across contexts/planes goes via Bridges, not via hidden behaviour of the viewing.
+   * `describedEntityRef` and `groundingHolonRef` remain as in EV‑1; any transfer across contexts or planes goes via Bridges, not via hidden behaviour of the viewing.
 
 **EV‑5 - Idempotency & determinism on fixed configuration.**
 
@@ -275,7 +275,7 @@ Two recurring same-described-entity families can be read as specializations gove
    Use this when the target remains textual and the main change is wording, density, ordering, language, or bounded filtering of already available content. It stays in `A.6.3` only if `describedEntityRef` is preserved, no new claims about that entity are minted, and correspondence use does not collapse into bridge or substitution licence.
 
 2. **`RepresentationTransduction`.**
-   Use this when the target changes representation scheme or reasoning medium while still preserving the same described entity. It stays in `A.6.3` only if representation-factor delta, recoverability, loss, and preserve-vs-retarget boundaries remain explicit. Purely textual rewrites belong with `ConservativeRetextualization`; any change of `DescribedEntityRef` exits to `A.6.4`.
+   Use this when the target changes representation scheme or reasoning medium while still preserving the same described entity. It stays in `A.6.3` only if representation-factor delta, recoverability, loss, and preserve-vs-retarget boundaries remain explicit. Purely textual rewrites belong with `ConservativeRetextualization`; any change of `DescribedEntityRef` belongs with `A.6.4`.
 
 These notes do not create new governing patterns. They mark recurring same-entity specialization boundaries that remain subordinate to `U.DirectEpistemicViewing` / `U.CorrespondenceEpistemicViewing` and to the general `A.6.3` invariants.
 

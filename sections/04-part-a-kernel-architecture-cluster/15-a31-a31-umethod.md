@@ -38,25 +38,25 @@ In FPF, a **system** bearing a **TransformerRole** *enacts* a `U.Method` (produc
 
 #### A.3.1:4.1 - Definition
 
-**`U.Method`** is a **context‑defined abstract transformation type**—the **semantic “way of doing”** a kind of work.  
+**`U.Method`** is a **context‑defined abstract transformation type**—the **semantic “way of doing”** a kind of work.
 It is:
-**Described** (never *identical*) by one or more **`U.MethodDescription`** epistemes (code/SOP/diagram/rules),  
-**Enacted** by a `U.System` bearing an appropriate **Role** (usually a **TransformerRole**) to produce **`U.Work`**, and  
+**Described** (never *identical*) by one or more **`U.MethodDescription`** epistemes (code/SOP/diagram/rules),
+**Enacted** by a `U.System` bearing an appropriate **Role** (usually a **TransformerRole**) to produce **`U.Work`**, and
 **Independent** of who is assigned, what instance ran, or which notation was used.
 
-**Strict Distinction (didactic):**  
-* **Method** = *how in principle* (semantic Standard).  
-* **MethodDescription** = *how it is written* (artifact on a carrier).  
+**Strict Distinction (didactic):**
+* **Method** = *how in principle* (semantic Standard).
+* **MethodDescription** = *how it is described* (`U.Episteme` carried by a publication form or carrier).
 * **Work** = *how it actually went this time* (dated execution).
 
 #### A.3.1:4.2 - Representation‑agnostic stance (specs may be imperative/functional/logical)
 
-A `U.Method` does **not** require an imperative step structure. **Representations live in `U.MethodDescription`, not in the Method itself.**  
+A `U.Method` does **not** require an imperative step structure. **Representations live in `U.MethodDescription`, not in the Method itself.**
 Typical **MethodDescription forms** include:
 
-* **Imperative MethodDescription:** step‑graph/flow (serial/parallel/branch).  
-* **Functional MethodDescription:** a composition `f ∘ g ∘ h` with typed interfaces/constraints, no “steps”.  
-* **Logical/constraint MethodDescription:** a goal/constraint set with admissible solutions and search/optimization semantics.  
+* **Imperative MethodDescription:** step‑graph/flow (serial/parallel/branch).
+* **Functional MethodDescription:** a composition `f ∘ g ∘ h` with typed interfaces/constraints, no “steps”.
+* **Logical/constraint MethodDescription:** a goal/constraint set with admissible solutions and search/optimization semantics.
 * **Hybrid MethodDescription:** imperative scaffolding with functional kernels and/or solver calls.
 
 **Semantic identity criterion (context‑local).** Two MethodDescriptions **describe the same `U.Method`** in a given `U.BoundedContext` iff, for all admissible inputs and conditions recognized by that context, they entail the **same preconditions**, **guarantee the same postconditions/effects**, and satisfy the **same non‑functional bounds** (allowing permitted non‑determinism). Internal control‑flow/search details may differ.
@@ -77,7 +77,7 @@ Typical **MethodDescription forms** include:
 
 When presenting a `U.Method` in a review, anchor it with these paradigm‑neutral elements (not a data schema):
 
-1. **Interface** — what is required/provided in general (inputs/outputs/types or resources/roles/ports).
+1. **Interface** — what is required and provided in general (inputs and outputs, types, resources, roles, or ports).
 2. **Preconditions** — what must already hold (guards, invariants, Standard “requires”).
 3. **Postconditions / Effects** — what is guaranteed after successful enactment (Standard “ensures”).
 4. **Non‑functional constraints** — latency, accuracy, cost, safety envelope (ties to **Capability** thresholds).
@@ -90,15 +90,15 @@ Methods compose into bigger methods; executions compose into bigger executions�
 
 **Method composition (design‑time):** serial (`-`), parallel (`‖`), choice (`|`), iteration (`*`), refinement/substitution—yield **new `U.Method`s**.
 **Work composition (run‑time):** the corresponding **Work** may split/merge/overlap differently due to scheduling, failures, or environment, yet it is still **execution of the same Method**.
-**Mapping advice:** avoid naming run‑time artifacts inside the method definition (no “this thread”, “this person”); keep those in **Role**/**Work**.
+**Mapping advice:** avoid naming run-time records or carriers inside the method definition (no “this thread”, “this person”); keep those in **Role**/**Work**.
 
 #### A.3.1:4.6 - Constructor‑theoretic reading (why Method ≠ algorithm ≠ spec)
 
 Constructor Theory views a **constructor** as a physical entity that **effects transformations**. In FPF:
 
-* A `U.System` with **TransformerRole** is the constructor (the performer).  
-* A **`U.Method`** is the abstract **transformation type** it enacts (semantic Standard).  
-* An **algorithm artifact** is a **`U.MethodDescription`** for an **information‑transformation Method**.  
+* A `U.System` with **TransformerRole** is the constructor (the performer).
+* A **`U.Method`** is the abstract **transformation type** it enacts (semantic Standard).
+* An **algorithm description** is a **`U.MethodDescription`** for an **information-transformation Method**.
 * A **universal transformer** generalizes the **Turing machine** by **executing any `U.Method` described by a physically admissible `U.MethodDescription`** (not only informational ones).
 
 Thus, welding, milling, reagent mixing, and proof construction are all **Methods**; textbooks/code/derivations are their **MethodDescriptions**; **Work** are the concrete runs.
@@ -151,7 +151,7 @@ Thus, welding, milling, reagent mixing, and proof construction are all **Methods
 ### A.3.1:8 - Conformance Checklist (normative)
 
 **CC‑A3.1‑1 (Strict Distinction).**
-`U.Method` is the **semantic “way of doing”**. It is **not** a `U.MethodDescription` (artifact on a carrier), **not** a `U.Work` (dated execution), **not** a `U.Role`/assignment, and **not** a `U.PromiseContent`/promise.
+`U.Method` is the **semantic “way of doing”**. It is **not** a `U.MethodDescription` (an episteme carried by a publication form or carrier), **not** a `U.Work` (dated execution), **not** a `U.Role`/assignment, and **not** a `U.PromiseContent`/promise.
 
 **CC‑A3.1‑2 (Context anchoring).**
 Every `U.Method` **MUST** be defined **within** a `U.BoundedContext`. Identity, admissible pre/postconditions, and non‑functional bounds are interpreted **in that context**.
@@ -166,25 +166,25 @@ A `U.Method` **SHALL NOT** hard‑code holders or assignments. If a step “need
 A `U.Method` **SHALL NOT** contain schedule, calendar slots, or run IDs; those belong to `U.WorkPlan` (plans) and `U.Work` (executions). Methods are timeless.
 
 **CC‑A3.1‑6 (Interface & effects).**
-A `U.Method` **MUST** admit a context‑local statement of interface (inputs/outputs or ports/resources), **preconditions**, **postconditions/effects**, and (when relevant) **non‑functional bounds**. These anchor semantic identity beyond a particular notation.
+A `U.Method` **MUST** admit a context‑local statement of interface (inputs and outputs, or ports and resources), **preconditions**, **postconditions/effects**, and (when relevant) **non‑functional bounds**. These anchor semantic identity beyond a particular notation.
 
 **CC‑A3.1‑7 (Multi‑spec semantic identity).**
-Two or more `U.MethodDescription` **describe the same `U.Method`** in a given context **iff** they entail the **same admissible preconditions**, **guarantee the same effects**, and satisfy the **same non‑functional bounds** for all inputs/conditions recognized by that context (allowing permitted non‑determinism). Internal control‑flow/search differences are irrelevant.
+Two or more `U.MethodDescription` **describe the same `U.Method`** in a given context **iff** they entail the **same admissible preconditions**, **guarantee the same effects**, and satisfy the **same non-functional bounds** for all inputs and conditions recognized by that context (allowing permitted non-determinism). Internal control-flow and search differences are irrelevant.
 
 **CC‑A3.1‑8 (Composition vs execution).**
 Composition of Methods (design‑time) and composition of Work (run‑time) **MUST** be kept distinct. Method composition yields **new Methods**; Work composition yields **composed executions**. They may correspond but are not identical.
 
 **CC‑A3.1‑9 (Parameterization).**
-If a Method is parameterized, parameters are **declared** at the Method/MethodDescription level; **concrete values** are bound **at `U.Work` creation**. Avoid freezing parameter values inside the Method definition.
+If a Method is parameterized, parameters are **declared** at the Method or MethodDescription level; **concrete values** are bound **at `U.Work` creation**. Avoid freezing parameter values inside the Method definition.
 
 **CC‑A3.1‑10 (Dynamics ≠ Method).**
-Laws/trajectories (`U.Dynamics`) are models of state evolution and **SHALL NOT** be labeled as Methods. A Method **may** rely on a Dynamics model (e.g., for control), but they remain distinct artifacts/concepts.
+Laws/trajectories (`U.Dynamics`) are models of state evolution and **SHALL NOT** be labeled as Methods. A Method **may** rely on a Dynamics model (e.g., for control), but a dynamics model is not a Method.
 
 **CC‑A3.1‑11 (Capability checks are orthogonal).**
 A step may impose capability thresholds; those thresholds are checked **against the holder’s `U.Capability`** independently of assignment and independently of the Method’s description.
 
 **CC‑A3.1‑12 (Constructor‑theoretic alignment).**
-Algorithm artifacts are `U.MethodDescription` for information‑transforming Methods. Physical Methods are equally valid (matter/energy transformations). A “universal transformer” is a system that can enact **any physically admissible MethodDescription**; this does **not** collapse Method into “algorithm.”
+Algorithm descriptions are `U.MethodDescription` for information-transforming Methods. Physical Methods are equally valid (matter/energy transformations). A “universal transformer” is a system that can enact **any physically admissible MethodDescription**; this does **not** collapse Method into “algorithm.”
 
 
 ### A.3.1:9 - Method mereology (composition) — design‑time only
@@ -222,7 +222,7 @@ Algorithm artifacts are `U.MethodDescription` for information‑transforming Met
 * **Run = Method.** “Yesterday’s process is our Method.” → Yesterday’s run is **Work**.
 * **Role leakage.** “Step 3 is done by Alice.” → Step 3 **requires** `SurgeonRole`; Alice may be assigned via **RoleAssigning**.
 * **Schedule leakage.** “Run at 02:00 daily” inside the Method. → This belongs to **WorkPlan**; Methods are timeless.
-* **BoM entanglement.** Putting parts/assemblies inside Method definition. → Structure stays in PBS/SBS; Method references **interfaces/resources**, not a BoM.
+* **BoM entanglement.** Putting parts and assemblies inside Method definition. -> Structure stays in PBS and SBS; Method references **interfaces and resources**, not a BoM.
 * **Algorithm‑only bias.** Declaring that only code counts as a Method. → Physical transformations (welding, mixing) are Methods too; their SOPs/parameters are MethodDescriptions.
 * **Hard‑coding capability.** Baking “≤ 0.2 mm” into a role name or Method name. → Keep thresholds on **steps**; **capability** lives on the **holder**.
 
@@ -232,7 +232,7 @@ Algorithm artifacts are `U.MethodDescription` for information‑transforming Met
 1. **Rename wisely.** Where texts say “process/method” but mean a diagram or code repo, label it **MethodDescription**; where they mean the abstract “how,” label it **Method**.
 2. **Extract assignments.** Replace named people/units in specs with **role kinds**; enforce assignments via **RoleAssigning** at run time.
 3. **Pull time out.** Move calendars/schedules from specs into **WorkPlan**.
-4. **Parameter hygiene.** Declare parameters at Method/MethodDescription; bind values in **Work**.
+4. **Parameter hygiene.** Declare parameters at Method or MethodDescription; bind values in **Work**.
 5. **Equivalence notes.** When two specs are intended as the same Method, write an **equivalence note** in the context (pre/post/bounds parity).
 
 
@@ -255,10 +255,10 @@ Algorithm artifacts are `U.MethodDescription` for information‑transforming Met
 
 ### A.3.1:15 - Didactic quick cards (reuse in specs and onboarding)
 
-* **Method / MethodDescription / Work** = *how in principle* / *how it is written* / *how it went this time*.
+* **Method, MethodDescription, and Work** = *how in principle*, *how it is written*, and *how it went this time*.
 * **Four‑slot grammar:** Who? → **RoleAssigning**. Can? → **Capability**. How? → **Method** (via **MethodDescription**). Did? → **Work**.
 * **Design‑time vs run‑time:** Composition of Methods ≠ composition of Work.
 * **No steps required:** Functional, logical, and hybrid MethodDescriptions are first‑class.
 * **Keep time and people out:** Schedules → **WorkPlan**; assignees → **RoleAssigning**.
-  
+
 ### A.3.1:End

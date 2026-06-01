@@ -10,6 +10,18 @@ A.6.0 `U.Signature`; A.6.2 `U.EffectFreeEpistemicMorphing`; A.6.3 `U.EpistemicVi
 **Used by.**
 E.18 (E.TGA StructuralReinterpretation and other reinterpretation nodes); discipline packs for signal/spectrum transforms, data↔model retargetings, abstraction/refinement under kind‑invariants; KD‑CAL/LOG‑CAL retargeting rules; additional species for architecture and governance reinterpretations.
 
+**Governed object in plain terms.** One effect-free episteme-to-episteme retargeting where the source episteme and receiving episteme intentionally describe different but bridge-related entities.
+
+**Governing move in plain terms.** Change the occupant of `DescribedEntitySlot` under a declared `KindBridge` and invariant, while making preserved commitments, withdrawn commitments, admissible predicate changes, and source-bearing reopen conditions visible.
+
+**Use this when.** Use this pattern when a representation, view, functional description, model, diagram, `StructuralReinterpretation`, or other episteme-facing item no longer describes the same entity, but a declared bridge and invariant make a controlled retargeting admissible.
+
+**What goes wrong if missed.** A changed target is treated as "the same thing in another form", so readers inherit claims, gates, evidence, work authority, or TGA-path currentness that the new described entity does not support.
+
+**What this buys.** One honest retargeting relation: the reader can see the source entity, receiving entity, bridge, invariant, preserved commitments, lost or new commitments, and the exact admissible use that remains.
+
+**Not this pattern when.** Not this pattern when the described entity is preserved and the main change is wording (`A.6.3.CR`), representation scheme or reasoning medium (`A.6.3.RT`), controlled coarsening (`A.6.3.CSC`), explanation mode (`E.17.EFP`), bridge-supported comparison without retargeting (`F.9` or `F.9.1`), work (`A.15`), evidence (`A.10`), assurance (`B.3`), gate decision (`A.21`), temporal adequacy (`C.27`), or dynamics/control law (`A.3.3`).
+
 ### A.6.4:1 - Problem frame
 
 Many important operations on descriptions **change the described entity** while preserving a structural or behavioural invariant:
@@ -64,13 +76,13 @@ Without a dedicated pattern for EpistemicRetargeting:
 ### A.6.4:3 - Forces
 
 * **Changing the described entity vs constructing something new.**
-  Retargeting should express **“describing a different but bridge-related entity through an explicit bridge”**, not arbitrary construction of a new Intension/episteme. The invariant lives **across** the pair of entities, not inside a single episteme.
+  Retargeting expresses **“describing a different but bridge-related entity through an explicit bridge”**, not arbitrary construction of a new Intension/episteme. The invariant lives **across** the pair of entities, not inside a single episteme.
 
 * **Invariants may be lossy but must be explicit.**
   A retargeting is often **lossy** (e.g. data→model, signal→spectrum, structural→functional view), but:
 
   * it must preserve an explicitly declared invariant (energy, behaviour, statistics),
-  * any additional strengthening must be modelled as a change of Intension plus new D/S, not as a hidden side‑effect.
+  * any additional commitment must be modelled as a change of Intension plus new D/S, not as a hidden side-effect.
 
 * **Bridges and CL‑penalties.**
   Retargeting often crosses:
@@ -91,17 +103,46 @@ Without a dedicated pattern for EpistemicRetargeting:
 #### A.6.4:4.1 - Informal definition
 
 > **Definition (informal).**
-> `U.EpistemicRetargeting` is the **describedEntity‑retargeting species** of `U.EffectFreeEpistemicMorphing`.
-> A `U.EpistemicRetargeting r : X→Y`:
+> `U.EpistemicRetargeting` is the **describedEntity-retargeting species** of `U.EffectFreeEpistemicMorphing`.
+> A `U.EpistemicRetargeting r : X->Y`:
 >
 > * takes an input episteme `X` and produces an output episteme `Y`,
-> * **changes** the occupant of `DescribedEntitySlot` (`describedEntityRef(Y) ≠ describedEntityRef(X)`),
-> * relates the kinds of the old and new described entities via an explicit `KindBridge` in the appropriate ReferencePlane,
+> * **changes** the occupant of `DescribedEntitySlot` (`describedEntityRef(Y) != describedEntityRef(X)`),
+> * relates the kinds of the source and receiving described entities via an explicit `KindBridge` in the appropriate ReferencePlane,
 > * preserves a declared **invariant** across the pair of entities (e.g. energy, behaviour, sufficient statistics),
-> * is **effect‑free** at the level of Work/Mechanism (EFEM discipline),
+> * is **effect-free** at the level of Work/Mechanism (EFEM discipline),
 > * and composes functorially with other retargetings and viewings.
 
-In C.2.1 terms, `U.EpistemicRetargeting` **re‑indexes** an episteme along a base‑level bridge: it moves the `DescribedEntitySlot` (and often the `<DescribedEntitySlot, GroundingHolonSlot>` bundle) along a `KindBridge`, while re‑expressing `content : U.ClaimGraph` and `referenceScheme` so that the declared invariant continues to hold at the new target.
+In C.2.1 terms, `U.EpistemicRetargeting` **re-indexes** an episteme along a base-level bridge: it moves the `DescribedEntitySlot` (and often the `<DescribedEntitySlot, GroundingHolonSlot>` bundle) along a `KindBridge`, while re-expressing `content : U.ClaimGraph` and `referenceScheme` so that the declared invariant continues to hold at the new target.
+
+#### A.6.4:4.1.a - Retargeting witness decision block
+
+When a retargeting claim is load-bearing, the receiving text makes these decision-block fields recoverable:
+
+| Field | Required reading |
+| --- | --- |
+| `sourceEpistemeOrPublication` | The source `U.Episteme`, `U.EpistemePublication`, episteme-lane `U.View`, or exact source publication being retargeted or cited. |
+| `receivingEpistemeOrPublication` | The receiving episteme, publication, view, diagram, table, functional description, explanation, `StructuralReinterpretation`, or TGA-facing publication item. |
+| `sourceDescribedEntity` | The described entity before retargeting. |
+| `receivingDescribedEntity` | The described entity after retargeting. |
+| `kindBridgeAndInvariant` | The `KindBridge`, reference-plane relation, and invariant that make the retargeting admissible. |
+| `groundingAndContext` | Grounding holon, bounded context, reference plane, reference scheme, viewpoint, and view as far as the intended use needs. |
+| `claimOrCommitmentUnderTest` | The claim, invariant, commitment, relation, or project-side use whose retargeted support is being judged. |
+| `preservedCommitments` | What the receiving item still carries from the source under the declared invariant. |
+| `withdrawnOrNewCommitments` | What the receiving item drops, narrows, adds, widens, or changes. |
+| `admissiblePredicateChanges` | Which predicates or claim forms become admissible or inadmissible after the target changes. |
+| `supportPosture` | The source-support, bridge-support, or invariant-support posture for the exact intended use. |
+| `retargetingWitness` | The reason the changed described-entity reading is supportable now. |
+| `counterWitness` | Any fact that weakens retargeting support, such as missing bridge, invariant failure, unsupported predicate transfer, source contradiction, or hidden work/evidence/gate reliance. |
+| `lossAndRecoverability` | Preserved distinctions, lost distinctions, recoverability target, recoverability evidence, and source-bearing reopen condition. |
+| `admissibleUse` | The exact use that remains admissible now. |
+| `nonAdmissibleUse` | The downstream work, evidence, gate, assurance, bridge, decision, abductive, TGA-path, temporal, or dynamics use that is not carried by the current item. |
+| `neighboringPatternHandoff` | The FPF pattern that carries the live neighboring claim, when one is live. |
+| `remainingAdmissibleReaderAction` | One short plain line saying what the reader may now do or which neighboring pattern now carries the live claim. |
+
+The decision block is not a new FPF kind, record, profile, publication form, or hidden support object. It is a recoverable field set for retargeting cases. Ordinary local retargeting can stay compact when the source entity, receiving entity, bridge, invariant, and remaining reader action are already explicit.
+
+If the bridge or invariant is insufficient for the intended use, the receiving item can still be useful, but the current disposition is source-bearing reopen, bridge support, controlled coarsening, report-only use, exploratory use, or named neighboring-pattern handoff. Do not keep an unnamed middle state where the retargeted item remains rhetorically useful but no FPF disposition is stated.
 
 #### A.6.4:4.2 - Signature (A.6.0 / A.6.5 alignment)
 
@@ -213,7 +254,7 @@ Then:
    * move to different abstraction planes or ReferencePlanes (with Bridges and CL penalties declared),
    but **MUST NOT** violate the declared invariant.
 
-3. Any intended change that **strengthens** commitments about `Inv` beyond what is derivable from `X` **is not a valid EpistemicRetargeting**. It must be modelled as:
+3. Any intended change that adds commitments about `Inv` beyond what is derivable from `X` **is not a valid EpistemicRetargeting**. It must be modelled as:
    * a change of Intension (new D/S pair under A.7/E.10.D2), or
    * a chain of retargetings and Intension updates explicitly recorded in KD‑CAL/LOG‑CAL.
 
@@ -296,10 +337,28 @@ Any attempt to apply a retargeting outside this Applicability profile is **ill�
 
 2. **Separation from Mechanisms.**
 
-   * Retargeting MAY depend on artefacts produced by `U.Mechanism` (e.g., computing a Fourier transform, fitting a model), but those are separate Work/Mechanism steps.
+   * Retargeting MAY depend on outputs produced by `U.Mechanism` (e.g., computing a Fourier transform, fitting a model), but those are separate Work/Mechanism steps.
    * `U.EpistemicRetargeting` itself remains **effect‑free**: it rearranges epistemes, slots and ClaimGraphs, but does not perform measurements or actuation.
 
-### A.6.4:5 - Archetypal grounding (Tell–Show–Show)
+#### A.6.4:4.4 - Boundary with representation, explanation, TGA, and neighboring claims
+
+`U.EpistemicRetargeting` is triggered by changed described entity, described-entity kind, ontology frame, admissible predicate set, or invariant-bearing target. It is not triggered by changed wording, changed representation scheme, changed explanation mode, or publication formatting alone.
+
+Boundary rules:
+- if the described entity is preserved and the main change is representation scheme or reasoning medium, use `A.6.3.RT`;
+- if the described entity is preserved and the main change is explanation mode, explanatory stance, or explanation-facing publication, use `E.17.EFP`;
+- if the source and receiving items are only bridge-supported comparison, analogy, equivalence, or substitution support, use `F.9` or `F.9.1` instead of reading the bridge as identity;
+- if the receiving item is useful only under narrower declared use with visible loss and source-bearing reopen, use `A.6.3.CSC`;
+- if decoded or latent output is readable but not tied to source claim, access route, recoverability evidence, use-support value, and remaining reader action, keep it report-only, exploratory, source-bearing reopen, or in the named neighboring pattern;
+- if a `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is present, use `E.18`, `A.20`, or `A.21` for graph, path, constraint, and gate relations. Those references do not prove semantic continuity or retargeting support by themselves;
+- if changed problem formulation changes abductive prompt, candidate generation, rival-set formation, selected prime hypothesis, plausibility filtering, or abductive reopen, use `B.5.2`;
+- if the receiving item is used as work, evidence, assurance, gate passage, temporal claim, dynamics law, or control relation, use `A.15`, `A.10`, `B.3`, `A.21`, `C.27`, `A.3.3`, or the exact neighboring governing pattern.
+
+`StructuralReinterpretation` in `E.18` receives retargeting semantics from this pattern. It is not a TGA-local retargeting kind and not proof that the source and receiving items describe the same entity.
+
+### A.6.4:5 - Archetypal grounding (Tell-Show-Show)
+
+
 
 **Tell.**
 EpistemicRetargeting captures **“same invariant, different described entity”** moves:
@@ -335,7 +394,7 @@ In each case, what remains stable is an **invariant** (behaviour, energy, likeli
   * **views**: same `DescribedEntityRef`, possible representation/viewpoint changes;
   * **retargetings**: different `DescribedEntityRef` under `KindBridge` and invariants.
 
-* **Canonical home for StructuralReinterpretation.**
+* **Canonical governing pattern for StructuralReinterpretation.**
   E.TGA StructuralReinterpretation becomes a **species of `U.EpistemicRetargeting`**, not an ad‑hoc special node. This reduces duplication and clarifies how CL penalties and Bridges are used.
 
 * **Invariants become first‑class.**
@@ -373,7 +432,7 @@ Any pattern that claims to define `U.EpistemicRetargeting` **SHALL**:
 * and state its Applicability profile (EoI‑pairs, contexts, viewpoints, representation schemes, invariants).
 
 **CC‑A.6.4‑2 - Slot‑level read/write discipline.**
-For each species of EpistemicRetargeting, authors **MUST**:
+Each species of EpistemicRetargeting **MUST**:
 * list the SlotKinds it **reads** (at least `DescribedEntitySlot`, `GroundingHolonSlot`, `ClaimGraphSlot`, `ViewpointSlot`, `ReferenceSchemeSlot`, plus any C.2.1+ slots used),
 * list the SlotKinds it **writes** (at least `DescribedEntitySlot`, typically also `ClaimGraphSlot`, `ReferenceSchemeSlot`, and `meta`),
 * state explicitly how `GroundingHolonSlot` and `ViewpointSlot` behave (preserved vs bridged),
@@ -386,7 +445,7 @@ Each species SHALL:
 * sketch how invariant preservation is checked or approximated (e.g. through proofs, tests, or statistical guarantees).
 
 **CC‑A.6.4‑4 - SquareLaw‑retargeting witnesses.**
-For retargetings that interact with E.TGA or other graph‑level transductions, authors **MUST**:
+Retargeting species that interact with E.TGA or other graph-level transductions **MUST**:
 * describe the commutative squares (or more general diagrams) that express “evaluate then retarget = retarget then evaluate” up to equivalence,
 * identify the corresponding SquareLaw‑retargeting witnesses and how they are represented as epistemes.
 
@@ -401,24 +460,36 @@ For retargetings over `…Description`/`…Spec` epistemes:
 * Any species that leaves `describedEntityRef` unchanged is **not** a conformant EpistemicRetargeting; it belongs to `U.EpistemicViewing` (A.6.3) or another EFEM species.
 * Any species that performs measurements, actuation, or other side‑effects MUST be declared as `U.Mechanism`/`U.WorkEnactment` and cannot be an EpistemicRetargeting.
 
-### A.6.4:9 - Mini‑checklist (for authors)
+**CC-A.6.4-7 - Retargeting witness and reopen discipline.**
+For every load-bearing retargeting use, the source described entity, receiving described entity, `KindBridge`, invariant, preserved commitments, withdrawn or new commitments, admissible predicate changes, support posture, retargeting witness, and source-bearing reopen condition are recoverable. If bridge or invariant support is insufficient for the intended use, the case records source-bearing reopen, bridge support, controlled coarsening, report-only use, exploratory use, or named neighboring-pattern handoff.
 
-When you think you need “retargeting” in FPF, ask:
+**CC-A.6.4-8 - Neighboring-pattern handoff.**
+Retargeting wording does not carry work authority, evidence force, assurance force, gate passage, abductive selection, temporal adequacy, dynamics law, control relation, bridge substitution, or TGA-path currentness unless the exact governing FPF pattern and exact project-side FPF kind or reference are named.
+
+**CC-A.6.4-9 - StructuralReinterpretation boundary.**
+When `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is used, the graph, path, constraint, and gate relations stay with `E.18`, `A.20`, or `A.21`. `StructuralReinterpretation` receives retargeting semantics from `A.6.4`; it is not proof of same-described-entity continuity and not a TGA-local retargeting kind.
+
+### A.6.4:9 - Mini-checklist (for use)
+
+When you think you need "retargeting" in FPF, ask:
 
 1. **Does `describedEntityRef` change?**
    If no, this is Viewing (A.6.3), not Retargeting.
 
-2. **Is there a `KindBridge` between old and new entities?**
-   If not, you probably need to introduce one in Part F or rethink the Intension, not fudge a retargeting.
+2. **Is there a `KindBridge` between source and receiving entities?**
+   If not, add or select the bridge in Part F, or revise the Intension instead of treating the relation as retargeting.
 
 3. **What invariant are you preserving?**
-   Write it down in KD‑CAL/LOG‑CAL terms. If you cannot, retargeting is underspecified.
+   Write it down in KD-CAL/LOG-CAL terms. If you cannot, retargeting is underspecified.
 
-4. **How do `GroundingHolonRef`, context and viewpoint behave?**
-   Explicitly state whether they stay the same, move along Bridges, or are out of scope.
+4. **How do `GroundingHolonRef`, context, and viewpoint behave?**
+   State whether they stay the same, move along Bridges, or are out of scope.
 
 5. **Can the operation be factored as Mechanism + pure retargeting?**
-   If the step needs computation (FFT, model fitting), separate the Mechanism from the EpistemicRetargeting.
+   If the step needs computation such as FFT or model fitting, separate the Mechanism from the EpistemicRetargeting.
+
+6. **What remains admissible for the reader?**
+   State the remaining reader action, and name source-bearing reopen or a neighboring pattern when the bridge, invariant, or source support is insufficient for the intended use.
 
 ### A.6.4:10 - Relations
 

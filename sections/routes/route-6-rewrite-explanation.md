@@ -10,9 +10,9 @@
 |---|---------|-------|------|-------|
 | 1 | A.6.3.CR | ConservativeRetextualization - same-described-entity textual | sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md | YES |
 | 2 | A.6.3.RT | RepresentationTransduction - same-described-entity represent | sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63rt-a63rt-representationtransduction-same-described-entity-repre.md | YES |
-| 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation-use discipline  | sections/08-part-c-kernel-extensions-specifications/68-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
-| 4 | E.17.ID.CR | ComparativeReading — bounded comparative reading over compar | sections/08-part-c-kernel-extensions-specifications/69-e17id-e17idcr-comparativereading-bounded-comparative-reading-over-.md |  |
-| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/08-part-c-kernel-extensions-specifications/70-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
+| 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation-use discipline  | sections/08-part-c-kernel-extensions-specifications/82-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
+| 4 | E.17.ID.CR | ComparativeReading — bounded comparative reading over compar | sections/08-part-c-kernel-extensions-specifications/83-e17id-e17idcr-comparativereading-bounded-comparative-reading-over-.md |  |
+| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/08-part-c-kernel-extensions-specifications/84-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
 
 ## Loading Strategy
 

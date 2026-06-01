@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-06-01
+
+### What's New
+- Major quality improvement campaign across 217 pattern sections: descriptions are cleaner, more precise, and easier to navigate — the same patterns you know, now significantly more readable
+- New tool for vague language: when a knowledge claim's source, interpretation, or precision level is unclear, the new precision-restoration pattern (C.2.P) tells you exactly how to repair it
+- New problem-framing record (C.22.2): before a messy situation is formal enough to type, you can now capture it in a structured first-framing card — useful when you know something is wrong but can't yet articulate what
+- New tool for mathematical adequacy (C.29): check whether a formal or mathematical model is actually appropriate to use here, not just technically available
+- New wording-repair architecture (E.10.ARCH): when a word is doing hidden work in a description, a routing system now tells you which precision-restoration tool applies — for relations, architecture terms, quality claims, functions, or general wording
+- Improved discipline-health assessment (C.21): more structured, typed ways to evaluate whether a field of practice is mature enough to be used as a source of evidence
+- Refreshed search index: 251 section files (+14 vs previous sync), 275 metadata entries (+17)
+
+### All Changes
+- **chore**: sync upstream FPF + rebuild sections (quality campaign + C.2.P + C.21 + C.22.2 + C.29 + E.10.ARCH)
+- **chore**: AI-enhance all _index.md files with plain-language summaries
+- **chore**: AI-enhance glossary-quick.md with plain-language definitions column
+- **chore**: refresh wiki route articles (timestamps updated)
+
 ## 2026-05-15
 
 ### What's New

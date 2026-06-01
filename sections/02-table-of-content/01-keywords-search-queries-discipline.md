@@ -8,12 +8,12 @@ metadata.
 
 They:
 
-- use lexical-query wording that helps recover one strongest applicable pattern body,
-  entry neighborhood, or strongest projection role under likely reader
+- use lexical-query wording that helps recover one applicable governing pattern body,
+  entry neighborhood, or applicable projection role under likely reader
   phrasing;
-- remain answerable to the `E.11` rule that one claim names one strongest applicable pattern body
-  or strongest projection role and leaves only thin echoes elsewhere;
-- route naming, twins, aliases, and lexical conflicts through `F.17 / F.18 /
+- remain answerable to the `E.11` rule that one claim names one applicable governing pattern body
+  or applicable projection role and leaves only thin echoes elsewhere;
+- handle naming, twins, aliases, and lexical conflicts through `F.17`, `F.18`, or
   E.10`;
 - do not mint aliases, semantic equivalences, or free `SEO` strings;
 - avoid becoming one second semantic summary of the pattern body.
@@ -21,9 +21,9 @@ They:
 Ordinary lexical-query support stays sparse:
 
 - ordinary `Table of Content` rows: prefer `2-5` high-signal query phrases;
-- ordinary `J.4` neighborhoods: keep only the strongest domain phrases and
+- ordinary `J.4` neighborhoods: keep only the most relevant domain phrases and
   false friends;
-- fuller lexical sets belong under `F.17 / F.18 / E.10` only when one real
+- fuller lexical sets belong under `F.17`, `F.18`, or `E.10` only when one real
   naming, alias, bridge, or collision question exists.
 
 Lexical support increases entry precision, not keyword recall volume.

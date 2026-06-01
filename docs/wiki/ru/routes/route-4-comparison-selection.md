@@ -2,7 +2,7 @@
 title: "Маршрут 4: Сравнение альтернатив"
 sources:
   - sections/routes/route-4-comparison-selection.md
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-01T00:00:00Z
 tags:
   - route
   - tier-1

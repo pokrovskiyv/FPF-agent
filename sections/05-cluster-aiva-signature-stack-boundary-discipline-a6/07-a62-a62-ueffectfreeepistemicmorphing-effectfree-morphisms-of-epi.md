@@ -12,7 +12,7 @@ A.6.3 `U.EpistemicViewing`; A.6.4 `U.EpistemicRetargeting`; E.17.0 `U.MultiViewD
 
 ### A.6.2:1 - Problem frame
 
-FPF has many operations that **transform knowledge artifacts** without directly doing work in the world:
+FPF has many operations that **transform knowledge epistemes or publications** without directly doing work in the world:
 
 * turning an informal method description into a more formal specification;
 * projecting a large system description into a smaller “for‑safety‑officer” view;
@@ -32,7 +32,7 @@ Without a universal pattern for such morphisms:
 Concretely, without EFEM:
 
 1. **No single place for “effect‑free” discipline.**
-   The distinction *“episteme‑only change”* vs *“Work in the world”* is already important (C.2.1 separates episteme components from Work and from presentation surfaces), but the laws for “episteme‑only” operations are scattered or implicit. 
+   The distinction *“episteme‑only change”* vs *“Work in the world”* is already important (C.2.1 separates episteme components from Work and from presentation surfaces), but the laws for “episteme‑only” operations are scattered or implicit.
 
 2. **Described entity behaviour is unclear.**
    Many transforms **intend** to keep “what this episteme is about” fixed (viewing), others **intend** to change it under an invariant (retargeting). Without a common *DescribedEntityChangeMode* discipline we get silent breaks in “describedEntity”: an operation that looks like a harmless format change may in fact surreptitiously change the entity‑of‑interest.
@@ -68,7 +68,7 @@ The result: engineers and tool builders can no longer tell **when they are allow
 
 > **Definition.** A `U.EffectFreeEpistemicMorphing` (EFEM) is a class of **episteme→episteme morphisms** that:
 >
-> * operate **only** on the components of an episteme as fixed in `C.2.1 U.EpistemeSlotGraph` (ClaimGraph, slots for described entity, grounding holon, viewpoint, representation/reference schemes, meta); 
+> * operate **only** on the components of an episteme as fixed in `C.2.1 U.EpistemeSlotGraph` (ClaimGraph, slots for described entity, grounding holon, viewpoint, representation/reference schemes, meta);
 > * are **effect‑free** (no Work, no Mechanism application, no mutation of systems or carriers);
 > * are **conservative** in what they claim about the described entity (no new intensional commitments beyond logical consequences under the declared ReferenceScheme);
 > * are **functorial** (identities and composition behave as expected on the category of epistemes);
@@ -91,7 +91,7 @@ As a `U.Signature`, EFEM publishes the following **SubjectBlock** and the standa
 SubjectBlock
   SubjectKind   = U.EffectFreeEpistemicMorphing
   BaseType      = ⟨X : U.Episteme, Y : U.Episteme⟩        // episteme pair (domain,codomain)
-  Quantification= SliceSet:=U.ContextSliceSet; 
+  Quantification= SliceSet:=U.ContextSliceSet;
   ExtentRule:=admissibleEpistemeMorphisms // Context slices & admissible EFEM per slice
   ResultKind?   = U.Morphism                               // typed morphism f : X→Y
 ```
@@ -186,7 +186,7 @@ We work in the category **Ep** whose objects are epistemes (species of `U.Episte
 α : Ep → Ref
 ```
 
-that maps each episteme to the object it describes (value of `DescribedEntitySlot`, i.e. `describedEntityRef(E)`) as in the mathematical layer for epistemes. EFEM instances with `describedEntityChangeMode(f) = preserve` are **vertical morphisms** for α (`α(f) = id`), while those with `describedEntityChangeMode(f) = retarget` reindex along a declared `KindBridge` in **Ref**.
+that maps each episteme to the entity it describes (value of `DescribedEntitySlot`, i.e. `describedEntityRef(E)`) as in the mathematical layer for epistemes. EFEM instances with `describedEntityChangeMode(f) = preserve` are **vertical morphisms** for α (`α(f) = id`), while those with `describedEntityChangeMode(f) = retarget` reindex along a declared `KindBridge` in **Ref**.
 
 1. **Identities.** For each episteme `X`, there exists `id_X : X→X` such that:
 
@@ -259,13 +259,13 @@ The examples below show how EFEM is intended to be used across I/D/S and Viewpoi
 
 * Domain: `X = U.MethodDescription` episteme with
   `describedEntityRef(X) : U.MethodRef`, `content(X) : U.ClaimGraph_D`, `viewpointRef(X)` an engineering viewpoint (TEVB), `ReferenceScheme_D`.
-* Codomain: `Y = U.MethodSpec` episteme with the **same** `describedEntityRef(Y) = describedEntityRef(X)`, `viewpointRef(Y) = viewpointRef(X)`, more structured `content(Y) : U.ClaimGraph_S`, stronger ReferenceScheme (explicit pre/post, obligations).
+* Codomain: `Y = U.MethodSpec` episteme with the **same** `describedEntityRef(Y) = describedEntityRef(X)`, `viewpointRef(Y) = viewpointRef(X)`, more structured `content(Y) : U.ClaimGraph_S`, more explicit ReferenceScheme (explicit pre/post, obligations).
 
 `Specify_DS` is a species of EFEM:
 
 * `describedEntityChangeMode(Specify_DS) = preserve`.
 * P1 — effect‑free: it transforms epistemes only.
-* P2 — conservative: any behavioural claims in the Spec must be logically entailed by the informal Description and the underlying Method Intension; if the spec makes stronger claims, that is modelled as creating a **new Intension with its own D/S pair**, not as a valid EFEM instance.
+* P2 — conservative: any behavioural claims in the Spec must be logically entailed by the informal Description and the underlying Method Intension; if the spec makes behavioural claims not entailed by that source pair, that is modelled as creating a **new Intension with its own D/S pair**, not as a valid EFEM instance.
 * P3–P5 — functorial and scoped: specs compose, applicability bound to the appropriate engineering context and Viewpoints.
 
 This matches A.7/E.10.D2 strict distinction: I→D (`Describe_ID`) is not itself an episteme→episteme morphism, but `Specify_DS` is; EFEM supplies its laws.
@@ -374,7 +374,7 @@ EFEM does *not* prescribe a specific calculus (deductive, probabilistic, latent�
 ### A.6.2:9 - Consequences
 
 * **Single place for episteme‑to‑episteme laws.**
-  All effect‑free transforms of knowledge artefacts, across KD‑CAL, MVPK, E.TGA, discipline packs, can now be defined as species of EFEM, instead of each family re‑inventing its own law set.
+  All effect‑free transforms of knowledge epistemes or publications, across KD‑CAL, MVPK, E.TGA, discipline packs, can now be defined as species of EFEM, instead of each family re‑inventing its own law set.
 
 * **Clear separation from mechanisms & work.**
   Anything that touches the world (measurements, execution, simulation) is forced into `U.Mechanism` / `U.WorkEnactment`, with CL‑penalised Bridges and Γ_time; EFEM remains pure and compositional.
@@ -395,7 +395,7 @@ EFEM does *not* prescribe a specific calculus (deductive, probabilistic, latent�
 * A.6.1 governs **Mechanisms** (operations with AdmissibilityConditions, Γ_time, transport and Bridges)—too operational for the pure episteme transforms we want here.
 * C.2.1 fixes the **ontology of epistemes** (slots, components, ReferencePlane), but does not talk about morphisms. EFEM is explicitly a **morphism‑level** pattern over that ontology.
 
-This split mirrors how Signature (A.6.0) separates “what is declared” from “how it is realised”: C.2.1 says what an episteme is; A.6.2 says what a legal episteme→episteme transform is.
+This split mirrors how Signature (A.6.0) separates “what is declared” from “how it is realised”: C.2.1 says what an episteme is; A.6.2 says what an admissible episteme-to-episteme transform is.
 
 **Why insist on DescribedEntityChangeMode?**
 

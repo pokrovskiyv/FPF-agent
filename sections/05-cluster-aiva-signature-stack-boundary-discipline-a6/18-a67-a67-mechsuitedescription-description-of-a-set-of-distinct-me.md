@@ -4,7 +4,7 @@
 > **Status:** Stable.
 > **Normativity:** Normative [A] (Core).
 
-**One-line summary.** A `MechSuiteDescription` is a Kernel **Description** token that names a **set of distinct** `U.Mechanism.Intension` (different mechanisms, not realizations of one mechanism) and declares **suite-level obligations**, **required contract pins**, and **allowed usage protocols**, without conflating this with `MechFamilyDescription` or with publication `Pack`s.
+**One-line summary.** A `MechSuiteDescription` is a Kernel **Description** token that names a **set of distinct** `U.Mechanism.Intension` (different mechanisms, not realizations of one mechanism) and declares **suite-level obligations**, **required spec pins**, and **allowed usage protocols**, without conflating this with `MechFamilyDescription` or with publication `Pack`s.
 
 **Plain-name.** mechanism suite description; mechanism suite passport.
 **Placement.** Part A → cluster A.IV (A.6), immediately after A.6.5.
@@ -15,14 +15,14 @@
 
 **Mint vs reuse.**
 
-* **Mints:** `MechSuiteDescription` (KernelToken, Description) and the record names used by its canonical form: `MechSuiteId`, `SuiteObligation`, `SuiteObligations`, `SuiteContractPins`, `SuiteProtocol`, `ProtocolStep`, `SuiteAuditObligations`.
+* **Mints:** `MechSuiteDescription` (KernelToken, Description) and the record names used by its canonical form: `MechSuiteId`, `SuiteObligation`, `SuiteObligations`, `SuiteSpecPins`, `SuiteProtocol`, `ProtocolStep`, `SuiteAuditObligations`.
 * **Reuses (by reference):** `U.Mechanism.Intension` (members), `MechFamilyDescription` / `MechInstanceDescription` (optional citations), existing pinned references such as `CN‑Spec` / `CG‑Spec` (as pins), and E.TGA/P2W notions (as obligations/pins), without introducing new `U.*` kernel types.
 
 **LEX.TokenClass.**
 * `LEX.TokenClass(MechSuiteDescription) = KernelToken.`
 * `LEX.TokenClass(MechSuiteId) = KernelToken.`
 * `LEX.TokenClass(SuiteObligations) = KernelToken.`
-* `LEX.TokenClass(SuiteContractPins) = KernelToken.`
+* `LEX.TokenClass(SuiteSpecPins) = KernelToken.`
 * `LEX.TokenClass(SuiteProtocol) = KernelToken.`
 * `LEX.TokenClass(SuiteAuditObligations) = KernelToken.`
 
@@ -43,7 +43,7 @@ We need a Kernel-level descriptor that can:
 
 1. represent a **set of distinct mechanisms** (distinct `U.Mechanism.Intension`),
 2. declare **shared obligations** that must hold across the set (e.g., crossing visibility, legality citation discipline, guard decision format, penalty routing),
-3. provide **shared contract pins** (e.g., “this suite is contract-bound by CN‑Spec + CG‑Spec”), without duplicating those contract contents,
+3. provide **shared spec pins** (e.g., “this suite is governed by CN-Spec and CG-Spec”), without duplicating those spec contents,
 4. constrain **allowed protocols** of use (allowed pipelines / permitted ordering), without turning the suite into a mechanism, and
 5. preserve strict distinction among:
 
@@ -61,8 +61,8 @@ We need a Kernel-level descriptor that can:
    The token name should encode only what is essential: it is a description, it is about mechanisms, it is a suite.
    It must not capture a particular domain (e.g., CHR) in the Kernel name.
 
-3. **Contract-surface centrality (CN‑Spec / CG‑Spec).**
-   Suites must cite contract surfaces as pins, not duplicate their internals, otherwise multiple competing “centers of legality” arise.
+3. **Governing spec ref centrality (CN‑Spec and CG‑Spec).**
+   Suites must cite governing spec refs as pins, not duplicate their internals, otherwise multiple competing “centers of legality” arise.
 
 4. **Transport and crossing visibility discipline.**
    Cross-context and cross-plane steps must be visible and bridge-only; penalties must route to `R/R_eff` only; suites must not embed CL/Φ/Ψ/Φ_plane tables. Visibility is mediated via E.TGA / P2W (crossing bundles + UTS/Path pins), not by “implicit semantics”.
@@ -84,7 +84,7 @@ Introduce a new Kernel description token:
 1. **Suite identifier:** a stable identifier for downstream citation.
 2. **Membership:** a finite set of distinct mechanism intensions.
 3. **Suite obligations:** shared invariants that every member (and any permitted composition of members) must respect.
-4. **Suite contract pins:** required citations/pins to contract surfaces and other “anchor” references.
+4. **Suite spec pins:** required citations/pins to governing spec refs and other “anchor” references.
 5. **Suite protocols:** allowed pipelines of use (permitted ordering and optional steps), expressed at the descriptive level.
 6. **Suite audit obligations:** required audit/pin visibility for downstream uses (UTS/Path pins, crossing pins, guard pins), expressed as required anchors (not run-time values).
 7. **Notes:** didactic boundaries and anti-pattern warnings.
@@ -119,7 +119,7 @@ MechSuiteDescription := ⟨
   mech_suite_id: MechSuiteId ,
   mechanisms: U.Mechanism.IntensionRef[+] ,     // distinct members; references preferred
   suite_obligations: SuiteObligations ,
-  suite_contract_pins: SuiteContractPins ,
+  suite_spec_pins: SuiteSpecPins ,
   suite_protocols?: SuiteProtocol[*] ,
   suite_audit_obligations?: SuiteAuditObligations ,
   suite_notes?: DidacticNotes
@@ -181,15 +181,15 @@ SuiteObligations := {
 **Obligation meanings (normative).**
 
 1. **`bridge_only_crossings`.**
-   Well-formedness constraint: cross-context / cross-plane reuse performed by any member mechanism is represented via that member’s published `Transport` as Bridge-only (no implicit crossings). A suite does not create transport exceptions.
+   Well-formedness constraint: cross-context and cross-plane reuse performed by any member mechanism is represented via that member’s published `Transport` as Bridge-only (no implicit crossings). A suite does not create transport exceptions.
 
 1.1. **`two_bridge_rule_for_described_entity_change`.**
 
- * If a suite member’s lawful use requires changing the described entity (kind/identity change, `CL^k`), the crossing MUST be explicit and MUST satisfy the two-bridge rule: plane/context transfer and kind transfer are distinct, both are Bridge-mediated, and both remain penalty-routed to `R/R_eff` only.
- 
+ * If a suite member's admissible use requires changing the described entity (kind or identity change, `CL^k`), the crossing MUST be explicit and MUST satisfy the two-bridge rule: plane transfer or context transfer and kind transfer are distinct, both are Bridge-mediated, and both remain penalty-routed to `R/R_eff` only.
+
 1.2. **`transport_declarative_only`.**
  * Well-formedness constraint: suite obligations do not add transfer edges or embed CL/Φ/Ψ/Φ_plane tables. Any transport-related obligation is expressed only as referenced pins/anchors whose realization is mediated by E.TGA / gate surfaces.
- 
+
 2. **`penalties_route_to_r_eff_only`.**
    Well-formedness constraint: CL/Φ/Ψ/Φ_plane penalties associated with crossing discipline route to `R/R_eff` only; suites do not define transport penalties that alter `F/G`.
 
@@ -203,7 +203,7 @@ SuiteObligations := {
    Well-formedness constraint: `USM.CompareGuard` and `USM.LaunchGuard` denote gate-owned guard events/pins; member mechanisms and suite protocols use `…Admissibility` / `…Eligibility` for guard predicates, not the reserved gate lexemes.
 
 6. **`cg_spec_cite_required_for_numeric_ops`.**
-   Well-formedness constraint: any member operation that performs numeric comparison/aggregation/legality-sensitive scoring cites the applicable `CG‑Spec` (and relevant subrefs) as contract pins, rather than embedding equivalent “local legality” content.
+   Well-formedness constraint: any member operation that performs numeric comparison/aggregation/legality-sensitive scoring cites the applicable `CG‑Spec` (and relevant subrefs) as spec pins, rather than embedding equivalent “local legality” content.
 
 7. **`no_silent_scalarisation_of_partial_orders` and `no_silent_totalisation`.**
    Well-formedness constraint: if a member mechanism induces a partial order, it preserves set-/relation-valued semantics; it does not silently reduce to a scalar/total order. Any totalization is explicit and policy-bound.
@@ -220,14 +220,14 @@ SuiteObligations := {
    Well-formedness constraint: any planned slot filling used as a baseline for suite use is authored in `WorkPlanning` as a planned baseline (no run-time slot instances; no launch values).
 
 11. **`finalize_launch_values_in_work_enactment_only`.**
-   Well-formedness constraint: `FinalizeLaunchValues` (and any witness of actual launch values) occurs only in `U.WorkEnactment`; neither the suite nor any planned-baseline artifact is a place for launch values.
+   Well-formedness constraint: `FinalizeLaunchValues` (and any witness of actual launch values) occurs only in `U.WorkEnactment`; neither the suite nor any planned-baseline WorkPlanning plan item is a place for launch values.
 
-#### A.6.7:4.3 SuiteContractPins
+#### A.6.7:4.3 SuiteSpecPins
 
-A `MechSuiteDescription` MUST be able to declare required contract pins as references, not as duplicated content. Canonically:
+A `MechSuiteDescription` MUST be able to declare required spec pins as references, not as duplicated content. Canonically:
 
 ```
-SuiteContractPins := ⟨
+SuiteSpecPins := ⟨
   required_spec_refs?: {CNSpecRef?, CGSpecRef?, ...},
   required_edition_pins?: EditionPin[*],
   required_policy_id_pins?: PolicyIdPin[*],
@@ -238,11 +238,11 @@ SuiteContractPins := ⟨
 **Norms.**
 
 * If the suite is legality-gated for characterization, `CNSpecRef` and `CGSpecRef` MUST be required (as references/pins).
-* Contract pins are citations and anchors. They do not replace the underlying `…Spec` objects.
-* A suite MAY require the presence of a planned-baseline artifact in P2W (e.g., a WorkPlanning plan item such as `…SlotFillingsPlanItem` that pins chosen refs/editions), but MUST treat it as a **reference/pin requirement**, not as a place to store launch values or gate decisions.
-  When required, the planned-baseline artifact is authored in `WorkPlanning` and is citeable by downstream `U.Work.Audit`; any `FinalizeLaunchValues` witness remains `U.WorkEnactment`-only.
-* A suite MAY serve as `TargetSlotOwnerRef` for a planned-baseline plan item (planned slot filling owner role), but this does not make the suite a mechanism and does not create run-time slot instances.
- 
+* Spec pins are citations and anchors. They do not replace the underlying `…Spec` objects.
+* A suite MAY require the presence of a planned-baseline WorkPlanning plan item in P2W (e.g., a WorkPlanning plan item such as `…SlotFillingsPlanItem` that pins chosen refs/editions), but MUST treat it as a **reference/pin requirement**, not as a place to store launch values or gate decisions.
+  When required, the planned-baseline WorkPlanning plan item is authored in `WorkPlanning` and is citeable by downstream `U.Work.Audit`; any `FinalizeLaunchValues` witness remains `U.WorkEnactment`-only.
+* A suite MAY be referenced by `TargetSlotOwnerRef` for a planned-baseline plan item: the Description-level ref names the description whose `SlotKind` set is being filled. This does not make the suite a mechanism and does not create run-time slot instances.
+
 #### A.6.7:4.4 SuiteProtocols
 
 A suite MAY describe allowed protocols (pipelines) as descriptive constraints on how suite members are intended to be composed. A protocol description:
@@ -301,12 +301,12 @@ CHRMechanismSuiteDescription : MechSuiteDescription :=
     crossing_visibility_required,
     planned_slot_filling_in_work_planning_only,
     finalize_launch_values_in_work_enactment_only
-  suite_contract_pins requires: {CNSpecRef, CGSpecRef}
+  suite_spec_pins requires: {CNSpecRef, CGSpecRef}
   suite_protocols includes:
     normalize → indicatorize → score → (fold_Γ?) → compare → select → publish/telemetry
 ```
 
-This description is not a `MechFamilyDescription` (because it contains multiple distinct mechanisms), and it is not a `Pack` (because it does not ship artifacts; it only declares membership and shared obligations/pins/protocols).
+This description is not a `MechFamilyDescription` (because it contains multiple distinct mechanisms), and it is not a `Pack` (because it does not ship publications; it only declares membership and shared obligations/pins/protocols).
 
 **Example 2 (non-conformant).** Misusing a family as a suite:
 
@@ -329,7 +329,7 @@ All violate the separation between mechanism/suite descriptions and gate-level o
 A suite is an archetypal “passport” or “capability bundle descriptor”:
 
 * It answers **what mechanisms exist in the bundle** and **what shared invariants** make their composition lawful.
-* It provides **shared contract anchors** (pins) that downstream planning and work must cite.
+* It provides **shared governing spec anchors** (pins) that downstream planning and work must cite.
 * It remains descriptive: it does not execute, it does not contain run-time outputs, and it does not replace the E.TGA subgraph that actually connects nodes by `Uses` and manages crossings.
 
 ### A.6.7:6 - Bias-Annotation
@@ -353,7 +353,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑4 (No gate decisions).** The suite MUST NOT define `GateDecision`, MUST NOT publish `DecisionLog`, and MUST preserve gate/mechanism separation.
 
-**CC‑A.6.7‑5 (Contract pins, not duplication).** If the suite is legality-gated for numeric comparison/aggregation/scoring, it MUST require `CG‑Spec` citation pins (and SHOULD require `CN‑Spec` pins where applicable). It MUST NOT duplicate contract content as “local CG‑Spec”.
+**CC‑A.6.7‑5 (Spec pins, not duplication).** If the suite is legality-gated for numeric comparison/aggregation/scoring, it MUST require `CG‑Spec` citation pins (and SHOULD require `CN‑Spec` pins where applicable). It MUST NOT duplicate spec content as “local CG‑Spec”.
 
 **CC‑A.6.7‑5a (CN+CG pins for legality-gated characterization).** If the suite is legality-gated for characterization, it MUST require both `CNSpecRef` and `CGSpecRef` as pins (references), consistent with A.6.7:4.3.
 
@@ -363,7 +363,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑8 (No thresholds in core).** The suite MUST NOT publish acceptance thresholds or “passing scores”. Thresholds must remain in acceptance clauses / task signatures / gate profiles.
 
-**CC‑A.6.7‑9 (Crossing visibility anchors).** If suite use depends on crossings (context/plane/kind, entry into `U.WorkEnactment` (LaunchGate), or edition-key changes), the suite MUST require crossing visibility anchors (BridgeId/channel, ReferencePlane, CL mode, policy-id pins, UTS/Path pins) as audit obligations, without embedding the tables.
+**CC‑A.6.7‑9 (Crossing visibility anchors).** If suite use depends on crossings (context or plane/kind, entry into `U.WorkEnactment` (LaunchGate), or edition-key changes), the suite MUST require crossing visibility anchors (BridgeId/channel, ReferencePlane, CL mode, policy-id pins, UTS/Path pins) as audit obligations, without embedding the tables.
 
 **CC‑A.6.7‑10 (Suite id present).** The suite MUST declare `mech_suite_id: MechSuiteId` so that downstream planning/audit can cite it stably.
 
@@ -375,7 +375,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑14 (Protocol closure & explicitness).** If `suite_protocols` is present, every `ProtocolStep.mechanism` MUST be a member of `mechanisms` (WF‑MS‑2) and the protocol MUST NOT rely on implicit mechanism steps or implicit crossings.
 
-**CC‑A.6.7‑15 (P2W split preserved when applicable).** If the suite requires a planned-baseline pin (e.g., a planned slot-fillings artifact), that baseline MUST be a `WorkPlanning` artifact and MUST NOT contain launch values or `FinalizeLaunchValues` witnesses; such witnesses remain `U.WorkEnactment`-only.
+**CC‑A.6.7‑15 (P2W split preserved when applicable).** If the suite requires a planned-baseline pin, that baseline MUST be a `WorkPlanning` plan item and MUST NOT contain launch values or `FinalizeLaunchValues` witnesses; such witnesses remain `U.WorkEnactment`-only.
 
 ### A.6.7:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -393,7 +393,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 4. **Anti-pattern: “Suite is a hidden gate”.**
    Introducing thresholds, `block`, or `DecisionLog` in the suite.
-   **Fix:** suite declares guard formats and required pins; the gate owns decisions.
+   **Fix:** suite declares guard formats and required pins; the gate issues decisions.
 
 5. **Anti-pattern: “Implicit calls”.**
    A protocol implies “normalize happens somewhere” without explicit member and pin visibility.
@@ -404,19 +404,19 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 **Benefits.**
 
 * Eliminates level confusion between “family of realizations” vs “bundle of mechanisms”.
-* Provides a Kernel home for universal obligations reused across multiple patterns (notably Part G universalization).
+* Provides a Kernel governing pattern for universal obligations reused across multiple patterns (notably Part G universalization).
 * Makes legality/transport/audit obligations shared and explicit, reducing semantic drift across member mechanisms.
 
 **Costs.**
 
-* Introduces an additional descriptive artifact that must be maintained as suites evolve.
+* Introduces an additional `MechSuiteDescription` publication that must be maintained as suites evolve.
 * Requires discipline: suites must remain descriptive and must not become “meta-mechanisms” or “hidden gates”.
 
 ### A.6.7:10 - Rationale
 
 Characterization and legality-gated selection pipelines are not unified by a single shared `BaseType`; they are unified by:
 
-* shared contract surfaces (e.g., CN‑Spec / CG‑Spec),
+* shared governing spec refs (e.g., CN‑Spec / CG‑Spec),
 * shared transport and crossing discipline (Bridge-only; penalties to `R_eff`),
 * shared guard semantics (tri-state, no coercion),
 * and explicit protocol constraints (allowed pipelines).
@@ -425,9 +425,9 @@ Encoding this unity as “one mechanism” or “one family” forces false comm
 
 ### A.6.7:11 - SoTA-Echoing
 
-This pattern echoes post‑2015 best practice in modular reasoning systems: separation of **contract surfaces** from **operators**, explicit composition protocols, and strong boundaries between **decision procedures** and **gating/acceptance control**.
+This pattern echoes post‑2015 best practice in modular reasoning systems: separation of **governing spec refs** from **operators**, explicit composition protocols, and strict boundaries between **decision procedures** and **gating/acceptance control**.
 
-In modern multi-step evaluation pipelines (e.g., calibrated scoring, uncertainty-aware comparison, Pareto / selected-set selection, and quality-diversity archives), correctness typically relies more on explicit contracts and lawful composition than on a single monolithic “universal metric”. `MechSuiteDescription` provides the Kernel representation that allows such pipelines to be described with stable obligations while keeping domain methods and FPF patterns generators outside the universal core.
+In modern multi-step evaluation pipelines (e.g., calibrated scoring, uncertainty-aware comparison, Pareto / selected-set selection, and quality-diversity archives), correctness typically relies more on explicit governing spec refs and admissible composition than on a single monolithic “universal metric”. `MechSuiteDescription` provides the Kernel representation that allows such pipelines to be described with stable obligations while keeping domain methods and FPF patterns generators outside the universal core.
 
 ### A.6.7:12 - Relations
 

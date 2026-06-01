@@ -2,7 +2,7 @@
 
 FPF does not assume people will speak in fully‑typed relational algebra on day one. Early thought is sketchy, and that is healthy. What matters is having a repeatable upgrade path—a way to go from “useful but ambiguous” to “auditable and reusable” when a statement starts carrying load.
 
-That upgrade is often called “formalization” in everyday speech, but in FPF it is a **semantic precision upgrade**: a small workflow that turns compressed language into structure you can reason about. “Formalization” is only one internal step: choosing a stable mathematical substrate so the reasoning cannot collapse back into vibes.
+That upgrade is often called “formalization” in everyday speech, but in FPF it is a **semantic precision upgrade**: a small semantic-repair method that turns compressed language into structure you can reason about. “Formalization” is only one internal step: choosing a stable mathematical substrate so the reasoning cannot collapse back into vibes.
 
 A good precision upgrade tends to follow five moves:
 
@@ -16,7 +16,7 @@ In the spec this precision‑upgrade move is captured as a family recipe (**A.6.
 
 A tiny example illustrates the intent:
 
-Before (fast speech): “We synced the model with production.”  
+Before (fast speech): “We synced the model with production.”
 After (precision‑restored): declare *which* relation kind holds between *which* endpoints, under *which* scope/time/viewpoint, with *which* admissible change classes—and publish a Plain gloss that maps back to the Tech token.
 
 Once the relation has a kind, slots, qualifiers, and a change lexicon, you can do what modern SoTA engineering expects: evolve it safely, compare editions, automate checks, and still keep the story readable for humans.

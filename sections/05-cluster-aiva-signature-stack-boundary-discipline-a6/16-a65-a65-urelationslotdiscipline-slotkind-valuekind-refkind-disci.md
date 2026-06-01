@@ -162,7 +162,7 @@ The result: **local convenience, global incoherence** — exactly what A.6.0 and
 
   * early/late **slot filling**,
   * early/late **reference resolution / dispatch**,
-  * and (where a language surface is in play) early/late **name binding**.
+  * and (where a language expression is in play) early/late **name binding**.
 
 ### A.6.5:4 - Solution — SlotKind / ValueKind / RefKind triple (plus a slot‑operation lexicon)
 
@@ -186,7 +186,7 @@ In **normative** text, the canonical word is **slot**, and the canonical carrier
 3. **RefKind (how we store / refer).**
    *What reference/identifier we actually store in episteme when we fill this slot.*
    – Examples: `U.EntityRef`, `U.HolonRef`, `U.MethodRef`, `U.EpistemeRef`, `U.ViewpointRef`, `U.SurfaceRef`, (optionally) `U.ClaimGraphRef` if a Context chooses to reference claim graphs rather than store them by value.
-   – RefKind is **about references, not values**; it usually points to an editioned artifact (A.7, F.15) and carries the `.edition` field when pinning a phase.
+   – RefKind is **about references, not values**; it usually points to an editioned referent (A.7, F.15) and carries the `.edition` field when pinning a phase.
 
 **Discipline:**
 
@@ -295,7 +295,7 @@ To avoid conflating “binding / assignment / passing / mutation”, FPF authors
 
 ```
 (1) Identifier/Name  ──binds-to──>  (2) SlotKind  ──in an instance──>  (2′) Slot‑instance  ──filled-with──>  (3) Slot‑content (Value | Ref)
-                                                              └─(if Ref) resolves-to──> (4) Referent value / artifact
+                                                              └─(if Ref) resolves-to──> (4) Referent value or editioned referent
 ```
 
 **Normative terms**:
@@ -307,7 +307,7 @@ To avoid conflating “binding / assignment / passing / mutation”, FPF authors
 
   * a **by‑value value** of ValueKind, or
   * a **reference handle** of RefKind.
-* **Referent**: the intensional thing the RefKind points to when resolved (often an editioned artifact).
+* **Referent**: the intensional thing the RefKind points to when resolved, often an editioned referent.
 
 This separation is the anchor for all “binding time” talk in A.6.5:4.6.
 
@@ -317,7 +317,7 @@ When a pattern, bridge, or operator description discusses a change or action “
 
 1. **bind / rebind** (Identifier → SlotKind/slot‑instance).
    *Use when the subject is an Identifier/Name and the effect is changing what that name designates.*
-   – **bind**: establish a new association of an Identifier to a SlotKind/slot‑instance (or to a value in a language surface).
+   – **bind**: establish a new association of an Identifier to a SlotKind/slot‑instance (or to a value in a language expression).
    – **rebind**: change an existing association of an Identifier to designate a different slot‑instance or different value.
    **Guard:** do not use “bind” to mean “write into a slot”. Binding is about *names*, not slots.
 
@@ -353,7 +353,7 @@ When a pattern, bridge, or operator description discusses a change or action “
 
 8. **mutate / modify** (Referent internal change; content unchanged).
    *Use only when the referent itself changes while the slot‑content (the reference handle) does not.*
-   **FPF note:** In edition‑disciplined contexts, prefer to describe intentional change as **revise / re‑edition** + **retarget**, rather than “mutate”, because the Core treats editioned artifacts as stable per edition (A.7, F.15).
+   **FPF note:** In edition-disciplined contexts, prefer to describe intentional change as **revise**, issue a **re-edition**, and **retarget**, rather than “mutate”, because the Core treats editioned referents as stable per edition (A.7, F.15).
 
 9. **pass** (parameter slot filling).
    *Use for method/service signatures when an argument fills a parameter slot at a call boundary.*
@@ -407,7 +407,7 @@ Any use of “early binding” / “late binding” in Core or extensions SHALL 
 
 * **early/late‑filled** (slot filling),
 * **eager/lazy‑resolved** (resolution),
-* **early/late name‑binding** (Identifier binding, if a language surface is being discussed).
+* **early/late name‑binding** (Identifier binding, if a language expression is being discussed).
 
 This preserves the A.6.5 stratification and prevents importing accidental semantics from a specific programming language.
 
@@ -501,7 +501,7 @@ Example names like `FurnitureSafetyDescriptionKind`, `AuthPipelineSpecKind`, `Mo
 
 * Episteme `E₁`: `describedEntityRef = S_1`, `groundingHolonRef = LabRig_A`.
 * Episteme `E₂`: `describedEntityRef = S_2`, `groundingHolonRef = LabRig_A` — **substitute another stool in the same `DescribedEntitySlot`** (different `U.EntityRef` slot‑content).
-* Episteme `E₃`: `describedEntityRef = S_1`, `groundingHolonRef = LabRig_B` — **substitute another test rig in `GroundingHolonSlot`** while keeping the same object‑of‑talk.
+* Episteme `E₃`: `describedEntityRef = S_1`, `groundingHolonRef = LabRig_B` — **substitute another test rig in `GroundingHolonSlot`** while keeping the same `DescribedEntitySlot` occupant.
 
 In all three cases the SlotKinds (and ValueKinds) are stable; only the **Refs that fill those slots** change. This matches the engineering idiom “drop another module into the same slot”.
 
@@ -724,7 +724,7 @@ The discipline must be cheap to apply. Reserving `*Slot` for SlotKinds and `*Ref
 
 ### A.6.5:11 - Relations (with other patterns)
 
-**Specialises A.6.P `U.RelationalPrecisionRestorationSuite`.**
+**Specialises A.6.P Relational Precision Restoration (RPR).**
 A.6.5 is the RPR specialisation for “n‑ary relation as slots”: it restores hidden arity by making participant positions explicit as SlotKinds, and stabilises change semantics via the slot‑operation lexicon + lexical guards.
 
 

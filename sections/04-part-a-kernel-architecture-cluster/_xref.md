@@ -1,6 +1,6 @@
 # Cross-References into 04-part-a-kernel-architecture-cluster
 
-Patterns in other Parts that reference patterns in this directory (77 refs).
+Patterns in other Parts that reference patterns in this directory (95 refs).
 
 ## From 05-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -42,8 +42,8 @@ Patterns in other Parts that reference patterns in this directory (77 refs).
 | A.19 | builds_on | A.2.5 |
 | A.19 | coordinates_with | A.3.3 |
 | A.19.CHR | coordinates_with | A.21 |
-| A.19.SUPPORT-VIEW | coordinates_with | A.0 |
-| A.19.SURF-SPACE | coordinates_with | A.0 |
+| A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | coordinates_with | A.0 |
+| A.19.SOURCE-SET-SPACE-SUBSTRATE | coordinates_with | A.0 |
 | A.20 | coordinates_with | A.21 |
 | A.7 | builds_on | A.1 |
 | A.7 | builds_on | A.2 |
@@ -78,33 +78,41 @@ Patterns in other Parts that reference patterns in this directory (77 refs).
 | C.2 | builds_on | A.1 |
 | C.2.1 | builds_on | A.1 |
 | C.2.2 | builds_on | A.2.6 |
+| C.2.P | coordinates_with | A.21 |
 | C.21 | builds_on | A.2.6 |
+| C.22.2 | coordinates_with | A.21 |
 | C.25 | builds_on | A.2.6 |
 | C.26.3 | builds_on | A.3 |
 | C.27 | builds_on | A.3.3 |
 | C.28 | coordinates_with | A.2.4 |
 | C.28 | coordinates_with | A.3.2 |
+| C.29 | builds_on | A.1.1 |
+| C.29 | builds_on | A.3.3 |
 | C.3 | builds_on | A.1 |
 | C.3 | builds_on | A.2.6 |
 | C.3.1 | builds_on | A.1 |
 | C.3.1 | builds_on | A.2.6 |
 | C.3.3 | builds_on | A.2.6 |
 | C.3.A | builds_on | A.2.6 |
+| C.30 | builds_on | A.22 |
+| C.30 | coordinates_with | A.21 |
+| C.30.ASV | builds_on | A.22 |
+| C.30.ILC | builds_on | A.22 |
+| C.30.LCA | builds_on | A.22 |
+| C.30.LCA | coordinates_with | A.3.3 |
+| C.30.LCA | coordinates_with | A.21 |
+| C.30.P | builds_on | A.22 |
+| C.30.P | coordinates_with | A.21 |
+| C.30.TGA-FLOW-REL | builds_on | A.22 |
+| C.30.TGA-FLOW-REL | coordinates_with | A.21 |
+| E.10.ARCH | coordinates_with | A.22 |
 | E.10.D1 | builds_on | A.4 |
 | E.16 | builds_on | A.21 |
-
-## From 10-cluster-fi-context-of-meaning-raw-material
-
-| Source | Relation | Target |
-|--------|----------|--------|
+| E.18 | coordinates_with | A.21 |
+| E.18 | coordinates_with | A.2.6 |
 | F.0.1 | builds_on | A.1.1 |
 | F.12 | builds_on | A.2.3 |
 | F.4 | builds_on | A.2.1 |
 | F.6 | builds_on | A.2.1 |
-
-## From 11-part-g-discipline-sota-patterns-kit
-
-| Source | Relation | Target |
-|--------|----------|--------|
 | G.6 | builds_on | A.21 |
 | G.7 | builds_on | A.21 |

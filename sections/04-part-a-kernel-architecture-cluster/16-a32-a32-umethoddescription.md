@@ -42,7 +42,7 @@ Projects need a **stable way to express “how it is written”**—the recipe, 
 
 > **Strict Distinction (memory aid):**
 > **Method** = *how in principle* (semantic Standard).
-> **MethodDescription** = *how it is written* (artifact/description).
+> **MethodDescription** = *how it is described* (`U.Episteme` carried by a publication form or carrier).
 > **Work** = *how it went this time* (dated execution).
 
 #### A.3.2:4.2 - Representation‑agnostic stance (independent of “algorithmic paradigm”)
@@ -63,7 +63,7 @@ Projects need a **stable way to express “how it is written”**—the recipe, 
 Not a schema—these are **content prompts** for reviewers:
 
 1. **Purpose & Name of the Method** it describes (link to `U.Method`).
-2. **Interface/ports** (inputs/outputs/resources/Standards) in the context’s vocabulary.
+2. **Interface or ports** (inputs, outputs, resources, or Standards) in the context’s vocabulary.
 3. **Preconditions** (guards, invariants, required states).
 4. **Postconditions / Effects** (what is guaranteed upon success).
 5. **Non‑functional constraints** (latency, precision, cost, safety envelope).
@@ -73,13 +73,13 @@ Not a schema—these are **content prompts** for reviewers:
 9. **Compositional hooks** (how this spec composes: serial/parallel/choice/iteration), without embedding calendars.
 10. **Parameter declarations** (what may vary per run; values bound at `U.Work` creation).
 
-> **Didactic guardrail:** A MethodDescription **does not** embed a schedule, assignees, or BoM. Calendars → `U.WorkPlan`; people/units → `U.RoleAssignment`; product structure → PBS/SBS.
+> **Didactic guardrail:** A MethodDescription **does not** embed a schedule, assignees, or BoM. Calendars -> `U.WorkPlan`; people and units -> `U.RoleAssignment`; product structure -> PBS and SBS.
 
 #### A.3.2:4.3a - Causal-use sampling and realized-counterfactual work boundary
 
 A `U.MethodDescription` may specify how to perform intervention assignment, counterfactual randomization, target-trial emulation, realized-counterfactual sampling, simulation, or causal-evidence collection. That specification is still a recipe for action: it declares role requirements, preconditions, postconditions/effects, parameters, failure semantics, and acceptance criteria for the work.
 
-It does not by itself make a causal-use claim admissible. If the resulting work is used to claim effect, intervention success, causal fairness, policy optimality, counterfactual comparison, causal method superiority, or support for a causal decision, route the causal-use question, causality-ladder rung, estimand, support basis, support verdict, supported use, and unsupported use to `C.28`.
+It does not by itself make a causal-use claim admissible. If the resulting work is used to claim effect, intervention success, causal fairness, policy optimality, counterfactual comparison, causal method superiority, or support for a causal decision, apply `C.28` to the causal-use question: causality-ladder rung, estimand, support basis, support verdict, supported use, and unsupported use.
 
 #### A.3.2:4.4 - Epistemic roles for MethodDescriptions (via `U.RoleAssignment`)
 
@@ -139,12 +139,12 @@ This keeps software and “wet lab” on equal footing.
 
 * **Lenses tested:** `Did`, `Prag`, `Arch`, `Epist`.
 * **Scope declaration:** Universal; semantics are **context‑local** via `U.BoundedContext`.
-* **Rationale:** Elevates **all** procedural artifacts—code, SOPs, proofs, models—to a single class, avoiding algorithm‑centrism and step‑only bias. Keeps the strict split among **Method / MethodDescription / Work / Role / Capability**.
+* **Rationale:** Elevates procedural descriptions such as code, SOPs, executable scripts, and recipe-like models to a single class, avoiding algorithm-centrism and step-only bias. Keeps the strict split among **Method**, **MethodDescription**, **Work**, **Role**, and **Capability**.
 
 ### A.3.2:8 - Conformance Checklist (normative)
 
 **CC‑A3.2‑1 (Episteme status).**
-`U.MethodDescription` **IS** an `U.Episteme` (knowledge on a carrier). It is **not** a `U.Method` (semantic way), **not** a `U.Work` (execution), **not** a `U.Role/RoleAssigning` (assignment), **not** a `U.WorkPlan` (schedule), and **not** PBS/SBS content.
+`U.MethodDescription` **IS** an `U.Episteme` (knowledge on a carrier). It is **not** a `U.Method` (semantic way), **not** a `U.Work` (execution), **not** a `U.Role` or `U.RoleAssignment` (assignment), **not** a `U.WorkPlan` (schedule), and **not** PBS or SBS content.
 
 **CC‑A3.2‑2 (Context anchoring).**
 Every `U.MethodDescription` **MUST** be interpreted **within** a `U.BoundedContext`. Names, Standards, and admissible non‑functional bounds are **local** to that context.
@@ -156,16 +156,16 @@ A `U.MethodDescription` **MUST** declare the `U.Method` it describes. Multiple M
 A MethodDescription **SHALL NOT** embed assignees, org units, or calendars. People/units are bound via **`U.RoleAssignment`** at run time; calendars belong to **`U.WorkPlan`**.
 
 **CC‑A3.2‑5 (Structure‑free).**
-BoM/PBS/SBS artifacts **SHALL NOT** be embedded in MethodDescriptions. Reference **interfaces/resources** and constraints instead of listing parts/assemblies.
+BoM, PBS, and SBS descriptions **SHALL NOT** be embedded in MethodDescriptions. Reference **interfaces and resources** and constraints instead of listing parts and assemblies.
 
 **CC‑A3.2‑6 (Role and capability requirements).**
 A MethodDescription **MAY** state **role kinds** and **capability thresholds** required for enactment. These are **requirements**, not bindings. They are checked at run time against `U.RoleAssignment` and `U.Capability`.
 
 **CC‑A3.2‑7 (Parameterization).**
-Parameters **MUST** be **declared** in the Method/MethodDescription; concrete values are **bound** when creating `U.Work`. Default values in a spec are allowed but **SHALL NOT** force a schedule or assignee.
+Parameters **MUST** be **declared** in the Method or MethodDescription; concrete values are **bound** when creating `U.Work`. Default values in a spec are allowed but **SHALL NOT** force a schedule or assignee.
 
 **CC‑A3.2‑8 (Semantic equivalence).**
-Two MethodDescriptions **describe the same `U.Method`** in a given context **iff** they entail the **same preconditions**, **guarantee the same postconditions/effects**, and satisfy the **same non‑functional bounds** for all admissible inputs/conditions of that context (per A.3.1 CC‑A3.1‑7). Differences in control flow, search, or notation do **not** break equivalence.
+Two MethodDescriptions **describe the same `U.Method`** in a given context **iff** they entail the **same preconditions**, **guarantee the same postconditions and effects**, and satisfy the **same non-functional bounds** for all admissible inputs and conditions of that context (per A.3.1 CC-A3.1-7). Differences in control flow, search, or notation do **not** break equivalence.
 
 **CC‑A3.2‑9 (Refinement).**
 `Spec₂` **refines** `Spec₁` for the same Method iff it **preserves interface**, **does not weaken** postconditions/effects, and **tightens** (or equal) non‑functional bounds under **equal or stronger** preconditions. Declare refinement explicitly in the context.
@@ -174,7 +174,7 @@ Two MethodDescriptions **describe the same `U.Method`** in a given context **iff
 Claims such as “sound but incomplete” or “complete but potentially unsound” relative to another MethodDescription **MUST** be stated explicitly and scoped to the context (e.g., solver approximations).
 
 **CC‑A3.2‑11 (Executable specs).**
-Executability does **not** change status: an executable artifact (program, script) is still a **MethodDescription**. Its runs are **Work**; its semantics are the **Method** it denotes.
+Executability does **not** change status: an executable description (program, script) is still a **MethodDescription**. Its runs are **Work**; its semantics are the **Method** it denotes.
 
 **CC‑A3.2‑12 (Epistemic roles via `U.RoleAssignment`).**
 A MethodDescription **MAY** play **epistemic roles** via `U.RoleAssignment` (e.g., `ApprovedProcedureRole`, `RegulatedProcedureRole`) that classify its status. Such bindings **do not** make the spec an actor.
@@ -186,7 +186,7 @@ If a MethodDescription permits non‑determinism (e.g., search/optimization), th
 If two contexts use different MethodDescriptions for “the same‑named way,” an explicit **Bridge (`U.Alignment`)** **SHOULD** be provided to map terms/assumptions. Do **not** assume cross‑context identity by name alone.
 
 **CC-A3.2-15 (Causal-use work boundary).**
-A MethodDescription **MAY** describe intervention assignment, target-trial emulation, realized-counterfactual sampling, simulation, or causal-evidence collection as method/work/work-plan structure. It **SHALL NOT** be treated as causal-use support, causal-use admissibility, or causal-use verdict by itself. When that work is used causally, the causal-use question, rung, estimand, support basis, support verdict, supported use, and unsupported use **SHALL** be carried by `C.28`.
+A MethodDescription **MAY** describe intervention assignment, target-trial emulation, realized-counterfactual sampling, simulation, or causal-evidence collection by naming `U.Method`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work` relations. It **SHALL NOT** be treated as causal-use support, causal-use admissibility, or causal-use verdict by itself. When that work is used causally, the causal-use question, rung, estimand, support basis, support verdict, supported use, and unsupported use **SHALL** be carried by `C.28`.
 
 
 ### A.3.2:9 - MethodDescription mereology (epistemic composition; not method composition)
@@ -194,7 +194,7 @@ A MethodDescription **MAY** describe intervention assignment, target-trial emula
 Keep two worlds separate:
 
 * **Method composition (design‑time semantic):** combines Methods into **new Methods** (A.3.1 §9).
-* **MethodDescription mereology (epistemic):** combines **documents/code/models** into larger **spec artifacts**. This is about **parts of the description**, not about the semantic method algebra.
+* **MethodDescription mereology (epistemic):** combines **documents/code/models** into larger specification descriptions. This is about **parts of the description**, not about the semantic method algebra.
 
 **Epistemic part relations (illustrative):**
 
@@ -248,7 +248,7 @@ Two specs are observationally equivalent for stakeholders **if**, under declared
 
 * **Spec = run.** “Yesterday’s process log is our spec.” → The log is **Work**; write a **MethodDescription** and link runs to it.
 * **Who/time in the spec.** “Step 3 by Alice at 02:00 daily.” → Use **RoleAssigning** at run time; schedule via **WorkPlan**.
-* **Stuffing BoM.** Listing parts/assemblies inside the spec. → Reference **interfaces/resources**; keep PBS/SBS separate.
+* **Stuffing BoM.** Listing parts and assemblies inside the spec. -> Reference **interfaces and resources**; keep PBS and SBS separate.
 * **Algorithm‑only bias.** Treating code as “real spec” and SOPs as “notes.” → Both are **MethodDescription**; judge by Standards, not by format.
 * **Hiding non‑determinism.** Solver model with no acceptance criteria. → Declare admissible outcome set and tests.
 * **Silent parameter capture.** Hard‑coding values without declaring parameters. → Declare parameters with ranges; bind at Work creation.
@@ -257,7 +257,7 @@ Two specs are observationally equivalent for stakeholders **if**, under declared
 
 ### A.3.2:13 - Migration notes (quick wins)
 
-1. **Label the artifacts.** Wherever a repo/diagram/document “is the process,” rename it **MethodDescription** and link it to a named **Method**.
+1. **Label the descriptions.** Wherever a repo/diagram/document “is the process,” rename it **MethodDescription** and link it to a named **Method**.
 2. **Extract people and calendars.** Move all assignees to **RoleAssigning** and all schedules to **WorkPlan**.
 3. **Introduce parameter blocks.** Add a small “Parameters” section with ranges/defaults and safety guards.
 4. **Write acceptance criteria.** Especially for search/optimization or ML specs.
