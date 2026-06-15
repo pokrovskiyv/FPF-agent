@@ -2,6 +2,9 @@
   "../../CLAUDE.md": [
     "index.md"
   ],
+  "en/agents/filename.md": [
+    "en/agents/fpf-sync.md"
+  ],
   "en/agents/fpf-classifier.md": [
     "en/agents/fpf-retriever.md",
     "en/architecture/agent-team.md",
@@ -87,7 +90,9 @@
   "en/agents/fpf-sync.md": [
     "en/architecture/agent-team.md",
     "en/architecture/overview.md",
+    "en/architecture/skill-entry-point.md",
     "en/architecture/sync-and-rebuild.md",
+    "en/concepts/changelog-workflow.md",
     "en/glossary.md",
     "en/index.md",
     "en/modules/build_glossary.md"
@@ -144,7 +149,9 @@
     "en/architecture/build-pipeline.md",
     "en/architecture/overview.md",
     "en/concepts/changelog-workflow.md",
+    "en/glossary.md",
     "en/index.md",
+    "en/modules/install_codex_plugin.md",
     "en/modules/update_changelog.md"
   ],
   "en/architecture/three-tier-retrieval.md": [
@@ -152,6 +159,7 @@
     "en/agents/fpf-retriever.md",
     "en/architecture/agent-team.md",
     "en/architecture/overview.md",
+    "en/architecture/plain-language-contract.md",
     "en/architecture/skill-entry-point.md",
     "en/concepts/route-chain.md",
     "en/concepts/tier.md",
@@ -173,6 +181,7 @@
   "en/concepts/changelog-workflow.md": [
     "en/architecture/sync-and-rebuild.md",
     "en/index.md",
+    "en/modules/install_codex_plugin.md",
     "en/modules/update_changelog.md"
   ],
   "en/concepts/pipeline-depth.md": [
@@ -208,7 +217,8 @@
     "en/concepts/pipeline-depth.md",
     "en/concepts/route-chain.md",
     "en/glossary.md",
-    "en/index.md"
+    "en/index.md",
+    "en/routes/route-8-trust-assurance.md"
   ],
   "en/glossary.md": [
     "en/index.md"
@@ -225,6 +235,7 @@
     "en/index.md",
     "en/modules/build_metadata.md",
     "en/modules/enrich_metadata.md",
+    "en/modules/install_codex_plugin.md",
     "en/modules/semantic_search.md"
   ],
   "en/modules/build_glossary.md": [
@@ -276,6 +287,11 @@
     "en/modules/build_glossary.md",
     "en/modules/build_metadata.md"
   ],
+  "en/modules/install_codex_plugin.md": [
+    "en/architecture/overview.md",
+    "en/glossary.md",
+    "en/index.md"
+  ],
   "en/modules/semantic_search.md": [
     "en/agents/fpf-retriever.md",
     "en/architecture/overview.md",
@@ -286,8 +302,8 @@
     "en/modules/test_smoke.md"
   ],
   "en/modules/smoke_codex.md": [
-    "en/architecture/skill-entry-point.md",
     "en/index.md",
+    "en/modules/install_codex_plugin.md",
     "en/modules/semantic_search.md",
     "en/modules/test_smoke.md"
   ],
@@ -306,13 +322,13 @@
     "en/modules/smoke_codex.md"
   ],
   "en/modules/update_changelog.md": [
-    "en/architecture/agent-team.md",
     "en/architecture/overview.md",
     "en/architecture/sync-and-rebuild.md",
     "en/concepts/changelog-workflow.md",
     "en/index.md"
   ],
   "en/routes/route-1-project-alignment.md": [
+    "en/concepts/route-chain.md",
     "en/index.md"
   ],
   "en/routes/route-10-evolution-learning.md": [
@@ -341,6 +357,9 @@
   ],
   "en/routes/route-9-composition-aggregation.md": [
     "en/index.md"
+  ],
+  "ru/agents/filename.md": [
+    "ru/agents/fpf-sync.md"
   ],
   "ru/agents/fpf-classifier.md": [
     "ru/agents/fpf-retriever.md",
@@ -427,7 +446,9 @@
   "ru/agents/fpf-sync.md": [
     "ru/architecture/agent-team.md",
     "ru/architecture/overview.md",
+    "ru/architecture/skill-entry-point.md",
     "ru/architecture/sync-and-rebuild.md",
+    "ru/concepts/changelog-workflow.md",
     "ru/glossary.md",
     "ru/index.md",
     "ru/modules/build_glossary.md"
@@ -484,7 +505,9 @@
     "ru/architecture/build-pipeline.md",
     "ru/architecture/overview.md",
     "ru/concepts/changelog-workflow.md",
+    "ru/glossary.md",
     "ru/index.md",
+    "ru/modules/install_codex_plugin.md",
     "ru/modules/update_changelog.md"
   ],
   "ru/architecture/three-tier-retrieval.md": [
@@ -492,6 +515,7 @@
     "ru/agents/fpf-retriever.md",
     "ru/architecture/agent-team.md",
     "ru/architecture/overview.md",
+    "ru/architecture/plain-language-contract.md",
     "ru/architecture/skill-entry-point.md",
     "ru/concepts/route-chain.md",
     "ru/concepts/tier.md",
@@ -513,6 +537,7 @@
   "ru/concepts/changelog-workflow.md": [
     "ru/architecture/sync-and-rebuild.md",
     "ru/index.md",
+    "ru/modules/install_codex_plugin.md",
     "ru/modules/update_changelog.md"
   ],
   "ru/concepts/pipeline-depth.md": [
@@ -548,7 +573,8 @@
     "ru/concepts/pipeline-depth.md",
     "ru/concepts/route-chain.md",
     "ru/glossary.md",
-    "ru/index.md"
+    "ru/index.md",
+    "ru/routes/route-8-trust-assurance.md"
   ],
   "ru/glossary.md": [
     "ru/index.md"
@@ -565,6 +591,7 @@
     "ru/index.md",
     "ru/modules/build_metadata.md",
     "ru/modules/enrich_metadata.md",
+    "ru/modules/install_codex_plugin.md",
     "ru/modules/semantic_search.md"
   ],
   "ru/modules/build_glossary.md": [
@@ -616,6 +643,11 @@
     "ru/modules/build_glossary.md",
     "ru/modules/build_metadata.md"
   ],
+  "ru/modules/install_codex_plugin.md": [
+    "ru/architecture/overview.md",
+    "ru/glossary.md",
+    "ru/index.md"
+  ],
   "ru/modules/semantic_search.md": [
     "ru/agents/fpf-retriever.md",
     "ru/architecture/overview.md",
@@ -626,8 +658,8 @@
     "ru/modules/test_smoke.md"
   ],
   "ru/modules/smoke_codex.md": [
-    "ru/architecture/skill-entry-point.md",
     "ru/index.md",
+    "ru/modules/install_codex_plugin.md",
     "ru/modules/semantic_search.md",
     "ru/modules/test_smoke.md"
   ],
@@ -646,13 +678,13 @@
     "ru/modules/smoke_codex.md"
   ],
   "ru/modules/update_changelog.md": [
-    "ru/architecture/agent-team.md",
     "ru/architecture/overview.md",
     "ru/architecture/sync-and-rebuild.md",
     "ru/concepts/changelog-workflow.md",
     "ru/index.md"
   ],
   "ru/routes/route-1-project-alignment.md": [
+    "ru/concepts/route-chain.md",
     "ru/index.md"
   ],
   "ru/routes/route-10-evolution-learning.md": [

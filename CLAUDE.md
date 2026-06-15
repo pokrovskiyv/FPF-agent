@@ -4,13 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-The **First Principles Framework (FPF)** specification (~61,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
+The **First Principles Framework (FPF)** specification (~86,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
 
 - `FPF-Spec.md` — upstream monolith (source of truth, do not edit directly)
-- `sections/` — decomposed spec (~240 files), generated from the monolith
+- `sections/` — decomposed spec (~280 files), generated from the monolith
 - `skills/fpf/SKILL.md` — skill entry point (burden-based routing)
 - `agents/fpf-*.md` — agent team (Classifier → Retriever → Reasoner → Reviewer → Sync)
-- `.claude-plugin/` — plugin manifest (plugin.json + marketplace.json)
+- `.claude-plugin/` — Claude Code plugin manifest (plugin.json + marketplace.json)
+- `.codex-plugin/` — Codex CLI plugin manifest (installed via `scripts/install_codex_plugin.py`)
 - `scripts/` — Python rebuild pipeline (no external deps)
 
 ## Plain Language Contract (non-negotiable)
@@ -27,8 +28,8 @@ FPF is **invisible infrastructure**. When the skill is active:
 ./scripts/rebuild_all.sh
 
 # Individual scripts
-python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~240 files)
-python3 scripts/build_metadata.py      # ToC → sections/metadata.json (242 entries)
+python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~280 files)
+python3 scripts/build_metadata.py      # ToC → sections/metadata.json (292 entries)
 python3 scripts/enrich_metadata.py     # enrich metadata with user-facing queries (RU+EN)
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)
@@ -46,11 +47,15 @@ Rebuild scripts use stdlib only. Embedding scripts use `uv run` (auto-installs d
 # Smoke tests
 python3 scripts/test_smoke.py          # metadata, routes, glossary, xrefs
 python3 scripts/test_smoke.py --all    # + semantic search (requires uv)
+
+# Codex CLI plugin
+python3 scripts/install_codex_plugin.py   # install/update FPF as a Codex CLI plugin (~/plugins/fpf)
+python3 scripts/smoke_codex.py            # smoke-test the Codex plugin packaging
 ```
 
 ## Navigating the Spec
 
-**Do not read FPF-Spec.md directly** — it's 59K lines. Instead:
+**Do not read FPF-Spec.md directly** — it's ~86K lines. Instead:
 
 1. **By pattern ID** (e.g., A.6, E.17): look up in `sections/metadata.json` → `file` field → read that file
 2. **By burden/route**: read `sections/routes/route-{1..10}.md` → follow the section chain

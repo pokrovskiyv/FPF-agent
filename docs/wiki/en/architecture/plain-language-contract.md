@@ -4,9 +4,8 @@ sources:
   - CLAUDE.md
   - agents/fpf-reasoner.md
   - agents/fpf-reviewer.md
-  - skills/fpf/SKILL.md
   - scripts/build_lexical.py
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - architecture
   - plain-language
@@ -16,15 +15,17 @@ tags:
 
 # Plain Language Contract
 
+The plain language contract is the project's non-negotiable rule: FPF is **invisible infrastructure**. Users speak their own language, and output comes back in their language — with no `holon`, `bounded context`, `episteme`, `transformer quartet`, `CharacteristicSpace`, pattern IDs, or any other FPF terminology. Patterns are applied internally by the Reasoner and never exposed.
+
 ## Components
 
-The plain language contract is enforced at three layers: the Reasoner's Principle #0, the Reviewer's Check 1 (jargon guard), and the lexical rules produced by `build_lexical`.
+The contract is enforced at three layers: the Reasoner's Principle #0, the Reviewer's Check 1 (jargon guard), and the lexical rules produced by `build_lexical`.
 
-| Layer | What it does |
-|-------|--------------|
-| Reasoner Principle #0 | Every response in the user's own words; zero FPF terminology by design |
-| Reviewer Check 1 | Scans the Reasoner's output for banned terms and rewrites any found |
-| `sections/lexical-rules.md` | Mandatory term substitutions (e.g., "axis" → Characteristic, "metric" as noun → Measure/Score) enforced internally by the Reasoner |
+| Component | Source | Role in this context |
+|-----------|--------|----------------------|
+| Reasoner Principle #0 | [fpf-reasoner](../agents/fpf-reasoner.md) | "You apply FPF. You never explain FPF." Every response is in the user's language with zero FPF terminology by design |
+| Reviewer Check 1 | [fpf-reviewer](../agents/fpf-reviewer.md) | Highest-priority check: scans the Reasoner's output for banned tokens and rewrites any offending passage in plain language |
+| `sections/lexical-rules.md` | [build_lexical](../modules/build_lexical.md) | Mandatory term substitutions (e.g., "axis"/"dimension" → Characteristic, "metric" as noun → Measure/Score) that the Reasoner enforces internally |
 
 ## Data Flow
 
@@ -35,40 +36,44 @@ user message (plain words)
 Classifier (internal FPF labels, not shown)
       │
       ▼
-Retriever loads FPF patterns (full terminology visible to agents)
+Retriever loads FPF sections (full terminology visible to agents)
       │
       ▼
 Reasoner:
-  - reads lexical-rules.md internally
-  - applies pattern structure to user's problem
-  - produces output in user's language
+  - reads glossary-quick.md + lexical-rules.md internally
+  - applies pattern structure to the user's problem
+  - produces output in the user's language
   - zero FPF terms in output
       │
-      ▼  (for Tier 2/3)
+      ▼  (for Tier 2 / Tier 3 queries)
 Reviewer:
-  - scans output for banned tokens
-  - rewrites offenders in plain language
+  - Check 1: scans output for banned tokens, rewrites offenders
+  - Check 2: grounding (claims traceable to loaded sections)
+  - Check 3: actionability
   - returns STATUS: PASS | CORRECTED
       │
       ▼
 user (plain words)
 ```
 
+The Reasoner always reads `sections/glossary-quick.md` (for internal orientation only) and `sections/lexical-rules.md` before generating output. The Reviewer only runs on the deeper pipeline tiers; for the lightest term-lookup queries the contract rests entirely on the Reasoner's Principle #0.
+
 ## Decisions
 
 - **Invisible infrastructure.** The Reasoner's analogy (in `agents/fpf-reasoner.md`): "You are a GPS. You use Dijkstra's algorithm internally. You tell the user 'turn right in 200 meters.' You never say 'applying shortest-path algorithm to weighted graph.'"
-- **Banned-term list is non-exhaustive.** The Reviewer is instructed to flag anything that *sounds* like framework jargon — not just tokens on the explicit list. This handles future extensions without requiring list updates.
-- **Example rewrites are written into the Reviewer prompt.** "Using U.Commitment deontic objects..." → "Here are the obligations this creates...". Calibration for what "plain language" means in this project.
-- **Lexical rules are Part K of the spec.** The substitution map is baked into `FPF-Spec.md` and extracted by `build_lexical.py` — no independent maintenance of the banned terms.
-- **Non-negotiable, per CLAUDE.md.** Every commit and code change in this project is expected to preserve the contract. Violations show up immediately in the Reviewer's output or in smoke tests.
+- **The banned-term list is non-exhaustive.** The Reviewer is instructed to flag anything that *sounds* like framework jargon — not just the tokens on the explicit list. This handles future spec extensions without requiring list updates.
+- **Example rewrites are baked into the Reviewer prompt.** "Using U.Commitment deontic objects..." → "Here are the obligations this creates...". These calibrate what "plain language" means in this project.
+- **Lexical rules come from Part K of the spec.** The substitution map is baked into `FPF-Spec.md` and extracted by `build_lexical.py` (function `parse_replacement_table`) into `sections/lexical-rules.md` — there is no separately maintained banned-terms list to drift.
+- **Non-negotiable, per CLAUDE.md.** Every commit and code change is expected to preserve the contract. Violations surface immediately in the Reviewer's output or in smoke tests.
 
-## Example (from CLAUDE.md)
+## Example (from CLAUDE.md and the agent prompts)
 
-Terms that must NEVER appear in user-facing output: `holon`, `bounded context`, `episteme`, `transformer quartet`, `CharacteristicSpace`, pattern IDs (`A.6`, `E.17`), `U.anything`, framework abbreviations (`F-G-R`, `NQD`, `DRR`, `UTS`, ...), meta-references ("according to FPF", "the framework"), and the lexical-debt terms `axis`/`dimension`/`metric` (as noun).
+Terms that must NEVER appear in user-facing output: `holon`, `bounded context`, `episteme`, `transformer quartet`, `CharacteristicSpace`, `SenseCells`, `MVPK`, `Claim Register`, pattern IDs (`A.6`, `E.17`, `F.17`, `B.3`), `U.anything` (`U.System`, `U.Method`, `U.Work`, ...), framework abbreviations (`F-G-R`, `NQD`, `E/E-LOG`, `DRR`, `UTS`, `CSLC`, `USM`, `USCM`), meta-references ("according to FPF", "the framework", "the specification"), and the lexical-debt terms `axis`/`dimension`/`metric` (as a noun).
 
 ## Related
 
 - [agent-team](agent-team.md)
+- [three-tier-retrieval](three-tier-retrieval.md)
 - [fpf-reasoner](../agents/fpf-reasoner.md)
 - [fpf-reviewer](../agents/fpf-reviewer.md)
 - [build_lexical](../modules/build_lexical.md)

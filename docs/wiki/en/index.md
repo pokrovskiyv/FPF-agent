@@ -1,33 +1,33 @@
 ---
 title: FPF-agent Wiki (English)
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - index
 ---
 
 # FPF-agent Wiki
 
-Auto-generated documentation for the **FPF-agent** Claude Code plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology.
+Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.0).
 
 ## Project shape
 
-The repo is a fork of `ailev/FPF` plus a Claude Code skill and five agents that turn the 5.5 MB FPF specification into something queryable by ordinary users. Four moving parts: the spec monolith, 240+ generated section files, the skill entry point, and the agent team.
+The repo is a fork of `ailev/FPF` plus a skill and five agents that turn the 8.3 MB FPF specification into something queryable by ordinary users. Four moving parts: the spec monolith, ~279 generated section files, the skill entry point, and the agent team.
 
 Key architectural reads:
 
 - [Overview](architecture/overview.md) — components, data flow, and decisions
-- [Skill Entry Point](architecture/skill-entry-point.md) — how Claude Code dispatches the agents
+- [Skill Entry Point](architecture/skill-entry-point.md) — how the host dispatches the agents
 - [Agent Team](architecture/agent-team.md) — the five agents and their contract
 - [Three-Tier Retrieval](architecture/three-tier-retrieval.md) — routes as cache, semantic as fallback
 - [Plain Language Contract](architecture/plain-language-contract.md) — the non-negotiable
-- [Build Pipeline](architecture/build-pipeline.md) — the 8-step rebuild
+- [Build Pipeline](architecture/build-pipeline.md) — the rebuild steps
 - [Sync and Rebuild](architecture/sync-and-rebuild.md) — scheduled upstream merge
 
 ## Sections
 
 | Section | Articles | Description |
 |---------|----------|-------------|
-| [Modules](modules/) | 12 | Python scripts that rebuild every generated artifact |
+| [Modules](modules/) | 13 | Python scripts that rebuild every generated artifact, plus the Codex plugin installer |
 | [Agents](agents/) | 5 | Agent prompts (classifier, retriever, reasoner, reviewer, sync) |
 | [Routes](routes/) | 10 | User-facing burden-to-pattern entry routes |
 | [Architecture](architecture/) | 7 | System-level views |
@@ -35,10 +35,10 @@ Key architectural reads:
 
 ## Modules
 
-Twelve Python scripts orchestrating the rebuild pipeline and runtime semantic search.
+Thirteen Python scripts orchestrating the rebuild pipeline, runtime semantic search, and the Codex plugin installer.
 
-- [split_spec](modules/split_spec.md) — decompose the 5.5 MB monolith into ~240 section files
-- [build_metadata](modules/build_metadata.md) — parse ToC into queryable `metadata.json`
+- [split_spec](modules/split_spec.md) — decompose the 8.3 MB monolith into ~279 section files
+- [build_metadata](modules/build_metadata.md) — parse ToC into queryable `metadata.json` (292 entries)
 - [enrich_metadata](modules/enrich_metadata.md) — add user-facing queries (EN+RU)
 - [build_glossary](modules/build_glossary.md) — extract top-50 terms for reasoner orientation
 - [build_lexical](modules/build_lexical.md) — Part K substitution rules
@@ -46,6 +46,7 @@ Twelve Python scripts orchestrating the rebuild pipeline and runtime semantic se
 - [build_xrefs](modules/build_xrefs.md) — inverted cross-reference graph per directory
 - [build_embeddings](modules/build_embeddings.md) — FAISS index with bge-m3
 - [semantic_search](modules/semantic_search.md) — runtime query CLI
+- [install_codex_plugin](modules/install_codex_plugin.md) — installs/updates FPF as a Codex CLI plugin into a home-local marketplace (`~/plugins/fpf`)
 - [test_smoke](modules/test_smoke.md) — pipeline integrity tests
 - [smoke_codex](modules/smoke_codex.md) — Codex skill edition tests
 - [update_changelog](modules/update_changelog.md) — PreToolUse commit hook

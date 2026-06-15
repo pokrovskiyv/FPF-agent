@@ -1,33 +1,33 @@
 ---
 title: FPF-agent Wiki (Русский)
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - index
 ---
 
 # FPF-agent Wiki
 
-Автоматически генерируемая документация по плагину **FPF-agent** для Claude Code — амплификатору мышления, применяющему паттерны First Principles Framework к координационным задачам пользователя так, чтобы терминология FPF никогда не попадала наружу.
+Автоматически генерируемая документация по плагину **FPF-agent** — амплификатору мышления, применяющему паттерны First Principles Framework к координационным задачам пользователя так, чтобы терминология FPF никогда не попадала наружу. Плагин упакован двояко (`.claude-plugin/` + `.codex-plugin/`) и устанавливается и в **Claude Code**, и в **Codex CLI** (версия 0.6.0).
 
 ## Устройство проекта
 
-Репозиторий — форк `ailev/FPF` плюс скилл Claude Code и пять агентов, превращающих спецификацию FPF объёмом 5.5 МБ в нечто, чем может пользоваться обычный пользователь. Четыре подвижных части: монолит спеки, 240+ генерируемых файлов секций, точка входа скилла и команда агентов.
+Репозиторий — форк `ailev/FPF` плюс скилл и пять агентов, превращающих спецификацию FPF объёмом 8.3 МБ в нечто, чем может пользоваться обычный пользователь. Четыре подвижных части: монолит спеки, ~279 генерируемых файлов секций, точка входа скилла и команда агентов.
 
 Ключевые архитектурные статьи:
 
 - [Обзор](architecture/overview.md) — компоненты, поток данных, решения
-- [Точка входа в Skill](architecture/skill-entry-point.md) — как Claude Code запускает агентов
+- [Точка входа в Skill](architecture/skill-entry-point.md) — как хост запускает агентов
 - [Команда агентов](architecture/agent-team.md) — пять агентов и их контракт
 - [Трёхъярусная загрузка](architecture/three-tier-retrieval.md) — маршруты как кэш, семантика как откат
 - [Контракт обычного языка](architecture/plain-language-contract.md) — не подлежит обсуждению
-- [Конвейер пересборки](architecture/build-pipeline.md) — 8 шагов
+- [Конвейер пересборки](architecture/build-pipeline.md) — шаги пересборки
 - [Синхронизация и пересборка](architecture/sync-and-rebuild.md) — merge upstream по расписанию
 
 ## Разделы
 
 | Раздел | Статей | Описание |
 |--------|--------|----------|
-| [Модули](modules/) | 12 | Python-скрипты пересборки всех генерируемых артефактов |
+| [Модули](modules/) | 13 | Python-скрипты пересборки всех генерируемых артефактов плюс установщик Codex-плагина |
 | [Агенты](agents/) | 5 | Промпты агентов (classifier, retriever, reasoner, reviewer, sync) |
 | [Маршруты](routes/) | 10 | Пользовательские маршруты burden → паттерны |
 | [Архитектура](architecture/) | 7 | Системные виды |
@@ -35,10 +35,10 @@ tags:
 
 ## Модули
 
-Двенадцать Python-скриптов, организующих конвейер пересборки и семантический поиск во время выполнения.
+Тринадцать Python-скриптов, организующих конвейер пересборки, семантический поиск во время выполнения и установку Codex-плагина.
 
-- [split_spec](modules/split_spec.md) — разбивает монолит 5.5 МБ на ~240 файлов секций
-- [build_metadata](modules/build_metadata.md) — парсит оглавление в `metadata.json`
+- [split_spec](modules/split_spec.md) — разбивает монолит 8.3 МБ на ~279 файлов секций
+- [build_metadata](modules/build_metadata.md) — парсит оглавление в `metadata.json` (292 записи)
 - [enrich_metadata](modules/enrich_metadata.md) — добавляет пользовательские запросы (EN+RU)
 - [build_glossary](modules/build_glossary.md) — извлекает топ-50 терминов для резонера
 - [build_lexical](modules/build_lexical.md) — правила замены из Part K
@@ -46,6 +46,7 @@ tags:
 - [build_xrefs](modules/build_xrefs.md) — инвертированный граф перекрёстных ссылок
 - [build_embeddings](modules/build_embeddings.md) — FAISS-индекс с bge-m3
 - [semantic_search](modules/semantic_search.md) — CLI запроса во время выполнения
+- [install_codex_plugin](modules/install_codex_plugin.md) — устанавливает/обновляет FPF как плагин Codex CLI в домашний локальный маркетплейс (`~/plugins/fpf`)
 - [test_smoke](modules/test_smoke.md) — тесты целостности конвейера
 - [smoke_codex](modules/smoke_codex.md) — тесты Codex-редакции скилла
 - [update_changelog](modules/update_changelog.md) — PreToolUse-хук на коммитах

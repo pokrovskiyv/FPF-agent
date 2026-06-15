@@ -1,6 +1,6 @@
 ---
 title: Глоссарий
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - glossary
 ---
@@ -13,6 +13,8 @@ tags:
 |--------|-------------|-----------|
 | **Burden** | Классификационная метка координационной задачи пользователя. Определяет маршрут и шаблон ответа | [burden](concepts/burden.md) |
 | **Classifier** | Первый агент. Читает сообщение пользователя, выдаёт решение маршрутизации (tier/burden/бюджет) | [fpf-classifier](agents/fpf-classifier.md) |
+| **Claude Code Remote Routine** | Облачный агент по расписанию, запускающий конвейер синхронизации и пересборки (merge upstream → пересборка → AI-обогащение → коммит) 1-го и 15-го числа каждого месяца | [sync-and-rebuild](architecture/sync-and-rebuild.md) |
+| **Codex CLI plugin** | Codex-редакция FPF-agent (`.codex-plugin/`), устанавливаемая в домашний локальный маркетплейс `~/plugins/fpf` | [install_codex_plugin](modules/install_codex_plugin.md) |
 | **Confidence gate** | Правило классификатора: высокая уверенность — авто-диспатч, низкая — сначала спрашивает пользователя | [skill-entry-point](architecture/skill-entry-point.md) |
 | **Core-секция** | Секция, отмеченная `YES` в колонке Core маршрута — грузится при минимальной загрузке | [route-chain](concepts/route-chain.md) |
 | **FAISS-индекс** | Бинарный индекс подобия по эмбеддингам; поиск ~1 мс | [build_embeddings](modules/build_embeddings.md) |

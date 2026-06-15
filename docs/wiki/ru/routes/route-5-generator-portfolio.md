@@ -2,7 +2,8 @@
 title: "Маршрут 5: Портфель подходов"
 sources:
   - sections/routes/route-5-generator-portfolio.md
-last_updated: 2026-06-15T07:00:00Z
+  - scripts/build_routes.py
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - route
   - tier-1
@@ -15,22 +16,30 @@ tags:
 
 ## Краткое описание
 
-Срабатывает на запросы "какое состояние дел в X?", "какие подходы существуют для Y?", "нужен переиспользуемый шаблон, чтобы обозреть область". На выходе — обзор школ/подходов, сравнительная таблица, шаблон для повторного применения и короткий список кандидатов.
+Маршрут 5 срабатывает на запросы «какое состояние дел в X?», «какие подходы существуют для Y?», «нужен переиспользуемый шаблон, чтобы обозреть область / портфель подходов». Он загружает упорядоченную цепочку секций FPF, чтобы резонер выдал обзор школ и подходов, сравнительную таблицу, переиспользуемый шаблон поиска и короткий список того, что стоит развивать. Как и все десять входных маршрутов, он генерируется скриптом `scripts/build_routes.py` из статической таблицы `ROUTES` и достраивается из `sections/metadata.json` (оттуда берутся заголовки и пути к файлам).
 
 ## Ключевые решения
 
-- **Длина цепочки:** 7 секций при полной загрузке, 3 core.
-- **Core-секции:** `A.0` (onboarding glossary), `G.0` (comparability governance), `G.1` (CG-frame-ready generator).
-- **Полная цепочка:** добавляет `G.2` (SoTA harvester & synthesis), `G.5` (multi-method dispatcher), `B.5.2.1` (creative abduction with NQD), `C.17` (creativity-CHR).
-- **Самый большой бюджет** вместе с маршрутом 3 (1500 токенов) — обзоры требуют широкого контекста.
+- **Сопоставление задачи:** slug маршрута `generator-portfolio` (id `5`); триггер user-says — «What's the state of the art in X? / need a reusable search scaffold / portfolio of approaches».
+- **Длина цепочки:** 7 секций при полной загрузке, 3 помечены как core.
+- **Core-секции** (минимальная загрузка для простых запросов):
+  - `A.0` — Onboarding Glossary (NQD & E/E-LOG)
+  - `G.0` — CG-Spec — Frame Standard & Comparability Governance
+  - `G.1` — CG-Frame-Ready Generator
+- **Полная цепочка** добавляет (для сложных запросов):
+  - `G.2` — SoTA Harvester & Synthesis
+  - `G.5` — Multi-Method Dispatcher & MethodFamily Registry
+  - `B.5.2.1` — Creative Abduction with NQD
+  - `C.17` — Creativity-CHR — Characterising Generative Novelty & Value
+- **Стратегия загрузки:** минимальная загрузка — первые 3 core-секции; полная загрузка — все 7 секций в порядке цепочки; при обнаружении застоя (stagnation) ретривер обращается к перекрёстным ссылкам в `_xref.md`.
 
 ## Статус
 
-Активен. Используется для задачи `generator_portfolio`. Шаблон резонера: "Список подходов → Сравнительная таблица → Переиспользуемый шаблон → Короткий список".
+Активен. Генерируется скриптом `scripts/build_routes.py` (запись с `id: 5`, `slug: generator-portfolio` в таблице `ROUTES`) и используется командой агентов для задачи координации `generator_portfolio`. Резонер выдаёт результат маршрута на обычном языке: список подходов → сравнительная таблица → переиспользуемый шаблон → короткий список. Идентификаторы секций в цепочке (`A.0`, `G.0`, `G.1`, `G.2`, `G.5`, `B.5.2.1`, `C.17`) синхронизируются со спецификацией через `sections/metadata.json`; повторная генерация маршрутов после синхронизации с upstream заново подставляет их заголовки и пути к файлам.
 
 ## Связанные статьи
 
-- [fpf-classifier](../agents/fpf-classifier.md)
-- [fpf-retriever](../agents/fpf-retriever.md)
-- [fpf-reasoner](../agents/fpf-reasoner.md)
-- [route-chain](../concepts/route-chain.md)
+- [fpf-classifier](../agents/fpf-classifier.md) — определяет задачу и выбирает этот маршрут
+- [fpf-retriever](../agents/fpf-retriever.md) — загружает цепочку секций (core или полную)
+- [fpf-reasoner](../agents/fpf-reasoner.md) — применяет секции, выдаёт обычный язык
+- [route-chain](../concepts/route-chain.md) — как устроены маршруты и цепочки секций

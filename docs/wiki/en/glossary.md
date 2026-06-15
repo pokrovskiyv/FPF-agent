@@ -1,6 +1,6 @@
 ---
 title: Glossary
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - glossary
 ---
@@ -14,6 +14,8 @@ Project-internal vocabulary — terms that appear across this wiki and describe 
 | **Agent team** | The five markdown-prompt agents under `agents/` that together form the pipeline | [agent-team](architecture/agent-team.md) |
 | **Burden** | The classification label for a user's coordination problem. Determines route and output template | [burden](concepts/burden.md) |
 | **Classifier** | First agent. Reads user message, emits routing decision with tier/burden/budget | [fpf-classifier](agents/fpf-classifier.md) |
+| **Claude Code Remote Routine** | Scheduled cloud agent that runs the sync-and-rebuild pipeline (upstream merge → rebuild → AI enhancement → commit) on the 1st and 15th of each month | [sync-and-rebuild](architecture/sync-and-rebuild.md) |
+| **Codex CLI plugin** | The Codex-packaged edition of FPF-agent (`.codex-plugin/`), installed into a home-local marketplace at `~/plugins/fpf` | [install_codex_plugin](modules/install_codex_plugin.md) |
 | **Confidence gate** | Classifier rule: high confidence auto-dispatch; low confidence asks the user first | [skill-entry-point](architecture/skill-entry-point.md) |
 | **Core section** | A section marked `YES` in a route's Core column — loaded for minimum-load queries | [route-chain](concepts/route-chain.md) |
 | **Cross-reference (`_xref.md`)** | Per-directory index of patterns in OTHER parts that reference this directory | [build_xrefs](modules/build_xrefs.md) |

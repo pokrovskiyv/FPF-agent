@@ -17,6 +17,7 @@
 - **chore**: AI-enhance glossary-quick.md plain-definition column
 - **chore**: wiki compile — update timestamps, fix sync-and-rebuild architecture article
 - **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
+- **docs**: refresh wiki, correct doc metrics, fix sync routine wiki-compile step
 
 ## 2026-06-01
 

@@ -2,9 +2,8 @@
 title: Route Chain
 sources:
   - scripts/build_routes.py
-  - agents/fpf-retriever.md
   - sections/routes/route-1-project-alignment.md
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - concept
   - retrieval
@@ -34,7 +33,12 @@ Chains are defined as Python dicts at the top of [build_routes](../modules/build
 }
 ```
 
-`build_routes.py` converts each dict into a `sections/routes/route-{id}-{slug}.md` file with a table linking pattern IDs to their resolved file paths, marking the core subset.
+`build_routes.py` converts each dict into a `sections/routes/route-{id}-{slug}.md` file via `build_route_file()`. The generated file holds a table (`| # | Pattern | Title | File | Core? |`) that resolves each pattern ID to its title and file path from `sections/metadata.json`, marking the core subset with `YES`. A trailing **Loading Strategy** block states the minimum load (the core sections) and the full load (all sections in the chain).
+
+For example, [Route 1: Project Alignment](../routes/route-1-project-alignment.md) resolves to:
+
+- **Core (minimum load):** `A.1.1` (U.BoundedContext Semantic Frame), `A.15` (Role-Method-Work Alignment), `B.5.1` (Explore → Shape → Evidence → Operate).
+- **Full chain (8 sections):** the three core sections plus `A.15.2` (U.WorkPlan), `A.15.3` (SlotFillingsPlanItem), `F.11` (Method Quartet Harmonisation), `F.9` (Alignment & Bridge across Contexts), and `F.17` (Unified Term Sheet).
 
 At runtime, the Retriever (Mode A, Tier 1):
 1. Reads the route file.

@@ -2,9 +2,8 @@
 title: Цепочка маршрута
 sources:
   - scripts/build_routes.py
-  - agents/fpf-retriever.md
   - sections/routes/route-1-project-alignment.md
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-15T00:00:00Z
 tags:
   - concept
   - retrieval
@@ -34,7 +33,12 @@ tags:
 }
 ```
 
-`build_routes.py` превращает каждый словарь в файл `sections/routes/route-{id}-{slug}.md` с таблицей, связывающей pattern ID с путями к файлам и отмечающей core-подмножество.
+`build_routes.py` превращает каждый словарь в файл `sections/routes/route-{id}-{slug}.md` функцией `build_route_file()`. В сгенерированном файле — таблица (`| # | Pattern | Title | File | Core? |`), которая разрешает каждый pattern ID в заголовок и путь к файлу из `sections/metadata.json` и помечает core-подмножество значением `YES`. Завершающий блок **Loading Strategy** указывает минимальную загрузку (core-секции) и полную (все секции цепочки).
+
+Например, [Маршрут 1: Project Alignment](../routes/route-1-project-alignment.md) разрешается так:
+
+- **Core (минимальная загрузка):** `A.1.1` (U.BoundedContext Semantic Frame), `A.15` (Role-Method-Work Alignment), `B.5.1` (Explore → Shape → Evidence → Operate).
+- **Полная цепочка (8 секций):** три core-секции плюс `A.15.2` (U.WorkPlan), `A.15.3` (SlotFillingsPlanItem), `F.11` (Method Quartet Harmonisation), `F.9` (Alignment & Bridge across Contexts) и `F.17` (Unified Term Sheet).
 
 Во время выполнения ретривер (Mode A, Tier 1):
 1. Читает файл маршрута.

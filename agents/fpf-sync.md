@@ -25,7 +25,11 @@ UPSTREAM=$(git rev-parse upstream/main:FPF-Spec.md 2>/dev/null)
 LOCAL=$(git rev-parse HEAD:FPF-Spec.md 2>/dev/null)
 ```
 
-If they match — log "No upstream changes" and stop.
+If they match — there are no upstream changes, so SKIP the merge and rebuild
+(Steps 2–5). Do **not** stop here: jump to Step 6 and check wiki freshness.
+Local edits to wiki sources (`CLAUDE.md`, `Readme.md`, `agents/*`,
+`sections/routes/*`, `skills/*`) can leave the wiki stale even when upstream is
+unchanged, and only Step 6 heals that.
 
 ### Step 2: Merge upstream
 
@@ -82,22 +86,35 @@ Update the table to:
 
 ### Step 6: Compile the bilingual wiki
 
-Run the wiki compile skill (incremental update):
+First check whether the wiki is stale — this catches staleness from local edits
+to `CLAUDE.md`, `Readme.md`, `agents/*`, `sections/routes/*`, `skills/*` even
+when upstream did not change:
+
+```bash
+python3 ~/.claude/skills/wiki/scanner.py check .
+```
+
+If it reports stale, run the wiki compile skill (LLM-driven, incremental):
 
 ```
 /wiki compile
 ```
 
 This regenerates `docs/wiki/ru/` (user-facing, primary) and `docs/wiki/en/`
-(code contributors) to reflect any module/agent/route changes pulled from
-upstream. The skill is idempotent — if nothing relevant changed, it produces
-no diff. Do NOT edit `docs/wiki/` manually.
+(code contributors). It MUST regenerate every affected article in BOTH languages
+AND update `docs/wiki/.state/manifest.json` (`last_compiled` + per-source
+hashes). An article rewrite without a manifest update leaves freshness tracking
+broken — the next run keeps seeing the same files as stale and redoes the work.
+Do NOT edit `docs/wiki/` by hand.
 
-If the slash command is not available, fall back to the wiki scanner:
+There is NO command-line fallback. `scanner.py` only supports
+`init | check | diff | reindex`; it has no `compile` subcommand (compilation is
+LLM work). If the `/wiki` skill is unavailable in this environment, STOP and
+report it loudly — do NOT commit a "wiki refresh" that changed nothing.
 
-```bash
-python3 ~/.claude/skills/wiki/scanner.py compile .
-```
+**Verify before continuing:** run `scanner.py check .` again — it must now exit 0
+(fresh). If it still reports stale, the compile did not finish: fix it or report,
+do not proceed to a commit whose message claims a wiki refresh.
 
 ### Step 7: Update the changelog
 
@@ -127,4 +144,6 @@ git push
 - Do NOT modify agents/ or skills/ — maintained manually
 - Do NOT force-push or rebase — always merge
 - Do NOT use FPF terminology in enhanced summaries
-- Do NOT run if there are no upstream changes (save compute)
+- If there are no upstream changes AND `scanner.py check` reports the wiki is
+  fresh, stop early to save compute — but if the wiki is stale from local edits,
+  still run Step 6 (`/wiki compile`) and commit the refresh

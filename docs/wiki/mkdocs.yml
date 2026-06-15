@@ -63,6 +63,7 @@ nav:
           - semantic_search: en/modules/semantic_search.md
           - test_smoke: en/modules/test_smoke.md
           - smoke_codex: en/modules/smoke_codex.md
+          - install_codex_plugin: en/modules/install_codex_plugin.md
           - update_changelog: en/modules/update_changelog.md
       - Routes:
           - "1. Project Alignment": en/routes/route-1-project-alignment.md
@@ -110,6 +111,7 @@ nav:
           - semantic_search: ru/modules/semantic_search.md
           - test_smoke: ru/modules/test_smoke.md
           - smoke_codex: ru/modules/smoke_codex.md
+          - install_codex_plugin: ru/modules/install_codex_plugin.md
           - update_changelog: ru/modules/update_changelog.md
       - Маршруты:
           - "1. Зоны ответственности": ru/routes/route-1-project-alignment.md
