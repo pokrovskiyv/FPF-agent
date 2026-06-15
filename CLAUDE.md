@@ -101,6 +101,15 @@ A PreToolUse hook runs `scripts/update_changelog.py` before every `git commit`.
 - Write in plain language from the user's perspective, not commit messages
 - Group related changes into one bullet point
 
+## Documentation Freshness Automation
+
+Two mechanisms keep the docs from silently drifting as the upstream spec grows:
+
+- **Auto-generated counts** — `scripts/sync_doc_stats.py` recomputes every hard-coded number in `CLAUDE.md` and `Readme.md` (spec lines, section/dir counts, metadata entries, keywords/queries/edges, FAISS vector count) from `FPF-Spec.md` + `sections/metadata.json` and rewrites them. It runs as step 8 of `rebuild_all.sh`, so a rebuild can never leave the numbers stale. The FAISS vector count is derived from metadata (entries with a `file`), so it needs no `uv`/index. `--check` exits 1 on drift (usable as a gate). It handles Russian plural agreement.
+- **Wiki-refresh gate** — `scripts/check_wiki_gate.py` is a PreToolUse hook on `git commit`: if the message claims a "wiki refresh/compile/rebuild" but `scanner.py check` reports the wiki is stale, the commit is **denied** (exit 2). This makes the old failure mode — committing "wiki refresh" while `/wiki compile` silently did nothing — impossible. Commits that don't claim a wiki refresh are unaffected.
+
+`CHANGELOG.md` is intentionally **not** a wiki source (the wiki documents the changelog *workflow*, not its entries), so routine changelog appends never make the wiki stale or trip the gate.
+
 ## Lexical Rules (enforce when editing the spec)
 
 - **NEVER** "axis" / "dimension" for measurable aspects → **Characteristic**

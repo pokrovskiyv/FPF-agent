@@ -10,8 +10,7 @@
   ],
   "scan_docs": [
     "CLAUDE.md",
-    "Readme.md",
-    "CHANGELOG.md"
+    "Readme.md"
   ],
   "scan_raw": [
     "docs/wiki/raw/**/*.md",

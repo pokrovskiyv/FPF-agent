@@ -27,7 +27,7 @@ Key architectural reads:
 
 | Section | Articles | Description |
 |---------|----------|-------------|
-| [Modules](modules/) | 13 | Python scripts that rebuild every generated artifact, plus the Codex plugin installer |
+| [Modules](modules/) | 15 | Python scripts that rebuild every generated artifact, plus the Codex installer, doc-stats sync, and the wiki-gate commit hook |
 | [Agents](agents/) | 5 | Agent prompts (classifier, retriever, reasoner, reviewer, sync) |
 | [Routes](routes/) | 10 | User-facing burden-to-pattern entry routes |
 | [Architecture](architecture/) | 7 | System-level views |
@@ -50,6 +50,8 @@ Thirteen Python scripts orchestrating the rebuild pipeline, runtime semantic sea
 - [test_smoke](modules/test_smoke.md) — pipeline integrity tests
 - [smoke_codex](modules/smoke_codex.md) — Codex skill edition tests
 - [update_changelog](modules/update_changelog.md) — PreToolUse commit hook
+- [sync_doc_stats](modules/sync_doc_stats.md) — keep hard-coded counts in CLAUDE.md / Readme in sync with reality
+- [check_wiki_gate](modules/check_wiki_gate.md) — block commits that claim a wiki refresh while the wiki is stale
 
 ## Agents
 

@@ -19,6 +19,7 @@
 - **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
 - **docs**: refresh wiki, correct doc metrics, fix sync routine wiki-compile step
 - **docs**: rebuild local FAISS index (239 → 251 vectors) and correct embeddings figures in Readme
+- **chore**: auto-generate doc metrics and add a commit gate for a stale wiki
 
 ## 2026-06-01
 

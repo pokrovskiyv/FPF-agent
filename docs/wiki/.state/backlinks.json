@@ -151,7 +151,9 @@
     "en/concepts/changelog-workflow.md",
     "en/glossary.md",
     "en/index.md",
+    "en/modules/check_wiki_gate.md",
     "en/modules/install_codex_plugin.md",
+    "en/modules/sync_doc_stats.md",
     "en/modules/update_changelog.md"
   ],
   "en/architecture/three-tier-retrieval.md": [
@@ -279,6 +281,9 @@
     "en/index.md",
     "en/modules/build_metadata.md"
   ],
+  "en/modules/check_wiki_gate.md": [
+    "en/index.md"
+  ],
   "en/modules/enrich_metadata.md": [
     "en/architecture/build-pipeline.md",
     "en/architecture/overview.md",
@@ -315,6 +320,9 @@
     "en/modules/build_lexical.md",
     "en/modules/build_metadata.md"
   ],
+  "en/modules/sync_doc_stats.md": [
+    "en/index.md"
+  ],
   "en/modules/test_smoke.md": [
     "en/architecture/three-tier-retrieval.md",
     "en/index.md",
@@ -325,7 +333,9 @@
     "en/architecture/overview.md",
     "en/architecture/sync-and-rebuild.md",
     "en/concepts/changelog-workflow.md",
-    "en/index.md"
+    "en/index.md",
+    "en/modules/check_wiki_gate.md",
+    "en/modules/sync_doc_stats.md"
   ],
   "en/routes/route-1-project-alignment.md": [
     "en/concepts/route-chain.md",
@@ -507,7 +517,9 @@
     "ru/concepts/changelog-workflow.md",
     "ru/glossary.md",
     "ru/index.md",
+    "ru/modules/check_wiki_gate.md",
     "ru/modules/install_codex_plugin.md",
+    "ru/modules/sync_doc_stats.md",
     "ru/modules/update_changelog.md"
   ],
   "ru/architecture/three-tier-retrieval.md": [
@@ -635,6 +647,9 @@
     "ru/index.md",
     "ru/modules/build_metadata.md"
   ],
+  "ru/modules/check_wiki_gate.md": [
+    "ru/index.md"
+  ],
   "ru/modules/enrich_metadata.md": [
     "ru/architecture/build-pipeline.md",
     "ru/architecture/overview.md",
@@ -671,6 +686,9 @@
     "ru/modules/build_lexical.md",
     "ru/modules/build_metadata.md"
   ],
+  "ru/modules/sync_doc_stats.md": [
+    "ru/index.md"
+  ],
   "ru/modules/test_smoke.md": [
     "ru/architecture/three-tier-retrieval.md",
     "ru/index.md",
@@ -681,7 +699,9 @@
     "ru/architecture/overview.md",
     "ru/architecture/sync-and-rebuild.md",
     "ru/concepts/changelog-workflow.md",
-    "ru/index.md"
+    "ru/index.md",
+    "ru/modules/check_wiki_gate.md",
+    "ru/modules/sync_doc_stats.md"
   ],
   "ru/routes/route-1-project-alignment.md": [
     "ru/concepts/route-chain.md",

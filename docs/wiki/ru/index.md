@@ -27,7 +27,7 @@ tags:
 
 | Раздел | Статей | Описание |
 |--------|--------|----------|
-| [Модули](modules/) | 13 | Python-скрипты пересборки всех генерируемых артефактов плюс установщик Codex-плагина |
+| [Модули](modules/) | 15 | Python-скрипты пересборки всех генерируемых артефактов плюс установщик Codex, синхронизация чисел в доках и хук-гейт вики |
 | [Агенты](agents/) | 5 | Промпты агентов (classifier, retriever, reasoner, reviewer, sync) |
 | [Маршруты](routes/) | 10 | Пользовательские маршруты burden → паттерны |
 | [Архитектура](architecture/) | 7 | Системные виды |
@@ -50,6 +50,8 @@ tags:
 - [test_smoke](modules/test_smoke.md) — тесты целостности конвейера
 - [smoke_codex](modules/smoke_codex.md) — тесты Codex-редакции скилла
 - [update_changelog](modules/update_changelog.md) — PreToolUse-хук на коммитах
+- [sync_doc_stats](modules/sync_doc_stats.md) — держит зашитые числа в CLAUDE.md / Readme в синхроне с реальностью
+- [check_wiki_gate](modules/check_wiki_gate.md) — блокирует коммиты, заявляющие пересборку вики, пока вики устарел
 
 ## Агенты
 

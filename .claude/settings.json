@@ -17,6 +17,13 @@
             "command": "python3 ~/.claude/skills/wiki/scanner.py check \"$(pwd)\" || true",
             "timeout": 10,
             "statusMessage": "Checking wiki freshness..."
+          },
+          {
+            "type": "command",
+            "if": "Bash(git commit*)",
+            "command": "python3 scripts/check_wiki_gate.py",
+            "timeout": 30,
+            "statusMessage": "Gating wiki-refresh commits..."
           }
         ]
       }

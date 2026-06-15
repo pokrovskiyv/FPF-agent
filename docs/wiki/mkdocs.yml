@@ -65,6 +65,8 @@ nav:
           - smoke_codex: en/modules/smoke_codex.md
           - install_codex_plugin: en/modules/install_codex_plugin.md
           - update_changelog: en/modules/update_changelog.md
+          - sync_doc_stats: en/modules/sync_doc_stats.md
+          - check_wiki_gate: en/modules/check_wiki_gate.md
       - Routes:
           - "1. Project Alignment": en/routes/route-1-project-alignment.md
           - "2. Language Discovery": en/routes/route-2-language-discovery.md
@@ -113,6 +115,8 @@ nav:
           - smoke_codex: ru/modules/smoke_codex.md
           - install_codex_plugin: ru/modules/install_codex_plugin.md
           - update_changelog: ru/modules/update_changelog.md
+          - sync_doc_stats: ru/modules/sync_doc_stats.md
+          - check_wiki_gate: ru/modules/check_wiki_gate.md
       - Маршруты:
           - "1. Зоны ответственности": ru/routes/route-1-project-alignment.md
           - "2. Язык и терминология": ru/routes/route-2-language-discovery.md
