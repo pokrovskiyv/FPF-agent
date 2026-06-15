@@ -225,7 +225,7 @@ graph TD
     MetaJSON --> Lex["build_lexical.py<br/>→ lexical-rules.md"]
     MetaJSON --> XRef["build_xrefs.py<br/>→ перекрёстные ссылки"]
     MetaJSON --> Emb["build_embeddings.py"]
-    Emb --> FAISS["FAISS индекс<br/><b>239 векторов × 1024 dim</b><br/><i>BAAI/bge-m3, мультиязычный</i>"]
+    Emb --> FAISS["FAISS индекс<br/><b>251 вектор × 1024 dim</b><br/><i>BAAI/bge-m3, мультиязычный</i>"]
 
     style Spec fill:#4a5568,color:#fff
     style Split fill:#805ad5,color:#fff
@@ -322,7 +322,7 @@ graph TD
 **Модель:** [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3), мультиязычная, 1024-dim. Выбрана потому что:
 - Поддерживает 100+ языков (критично для RU + EN запросов)
 - Специализируется на формальных и технических документах
-- 1024-dim вектор даёт достаточную выразительность для 239 секций
+- 1024-dim вектор даёт достаточную выразительность для 251 секции
 
 **Что входит в вектор каждой секции:**
 ```
@@ -338,7 +338,7 @@ Questions: How to unpack a contract? | What are boundary norms?
 |----------|---------|--------|
 | Размерность | 1024 | Выход модели bge-m3 |
 | Нормализация | L2 | Для cosine similarity через inner product |
-| Тип индекса | FAISS IndexFlatIP | Exact search — при 239 векторах compression не нужна |
+| Тип индекса | FAISS IndexFlatIP | Exact search — при 251 векторе compression не нужна |
 | Batch size | 8 | Баланс памяти и скорости на обычном железе |
 | Passage prefix | `""` (пустой) | Модельная конвенция bge-m3 |
 | Query prefix | `"query: "` | Модельная конвенция bge-m3 |
@@ -347,8 +347,8 @@ Questions: How to unpack a contract? | What are boundary norms?
 
 | Показатель | Значение |
 |-----------|---------|
-| Проиндексировано секций | 239 (из 292 записей; индекс ещё не пересобран после июньского синка) |
-| Размер файла | 956 KB = 239 × 1024 × 4 bytes (float32) |
+| Проиндексировано секций | 251 (из 292 записей; 41 preface/ToC-запись без файла секции не индексируется) |
+| Размер файла | 1004 KB = 251 × 1024 × 4 bytes (float32) |
 | Задержка запроса | <100 мс (CPU, exact search) |
 | Потребление памяти | ~3 MB (индекс + метаданные + модель в кеше) |
 

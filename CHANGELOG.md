@@ -18,6 +18,7 @@
 - **chore**: wiki compile — update timestamps, fix sync-and-rebuild architecture article
 - **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
 - **docs**: refresh wiki, correct doc metrics, fix sync routine wiki-compile step
+- **docs**: rebuild local FAISS index (239 → 251 vectors) and correct embeddings figures in Readme
 
 ## 2026-06-01
 
