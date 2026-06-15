@@ -2,3 +2,7 @@
 .env.*
 sections/embeddings/
 docs/wiki/.state/pending
+
+# Python bytecode
+__pycache__/
+*.py[cod]
