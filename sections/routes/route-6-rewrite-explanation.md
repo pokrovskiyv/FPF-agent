@@ -8,11 +8,11 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | A.6.3.CR | ConservativeRetextualization - same-described-entity textual | sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-same-described-entity-tex.md | YES |
-| 2 | A.6.3.RT | RepresentationTransduction - same-described-entity represent | sections/05-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63rt-a63rt-representationtransduction-same-described-entity-repre.md | YES |
-| 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation-use discipline  | sections/08-part-c-kernel-extensions-specifications/82-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
-| 4 | E.17.ID.CR | ComparativeReading — bounded comparative reading over compar | sections/08-part-c-kernel-extensions-specifications/83-e17id-e17idcr-comparativereading-bounded-comparative-reading-over-.md |  |
-| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/08-part-c-kernel-extensions-specifications/84-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
+| 1 | A.6.3.CR | (not found) |  | YES |
+| 2 | A.6.3.RT | Representation-Scheme Transition: EntityOfConcern-Preserving | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63rt-a63rt-representation-scheme-transition-entityofconcern-prese.md | YES |
+| 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation-use discipline  | sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
+| 4 | E.17.ID.CR | ComparativeReviewUnit - bounded comparison over comparative  | sections/11-part-e-the-fpf-constitution-and-authoring-guides/33-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md |  |
+| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
 
 ## Loading Strategy
 

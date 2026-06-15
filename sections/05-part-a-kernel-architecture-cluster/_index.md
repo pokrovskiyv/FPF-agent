@@ -1,0 +1,23 @@
+# Part A - Kernel Architecture Cluster
+
+- [A.0 - Onboarding Glossary (NQD & E/E‑LOG) (A.0)](01-a0-a0-onboarding-glossary-nqd-eelog.md) — Plain-language starter kit for generating, comparing, and publishing sets of options rather than single "winners"
+- [A.1 - U.Holon, U.System, and U.Episteme (A.1)](02-a1-a1-uholon-usystem-and-uepisteme.md) — How to decide what kind of thing is under concern before discussing parts, boundaries, roles, or architecture
+- [A.1.1 - U.BoundedContext Semantic Frame (A.1.1)](03-a11-a11-uboundedcontext-semantic-frame.md) — How to keep terms from meaning different things in different teams, standards, or product lines
+- [A.2 - Role Taxonomy (A.2)](04-a2-a2-role-taxonomy.md) — How to say what a thing is doing right now without baking its current purpose into its permanent type
+- [A.2.1 - U.RoleAssignment: Contextual Role Assignment (A.2.1)](05-a21-a21-uroleassignment-contextual-role-assignment.md) — How to formally record who is playing which role, where, and for how long without confusion with what they can do
+- [A.2.2 — U.Capability (A.2.2)](06-a22-a22-ucapability.md) — How to separate what a system can actually do from what it has been authorized or assigned to do
+- [A.2.3 - U.PromiseContent (Promise Content) (A.2.3)](07-a23-a23-upromisecontent-promise-content.md) — How to keep the consumer-facing promise separate from the method used to keep it and the work that was done
+- [A.2.4 - U.EvidenceRole (A.2.4)](08-a24-a24-uevidencerole.md) — How to formally assign a piece of knowledge as evidence for a specific claim without confusing it with an action
+- [A.2.5 - U.RoleStateGraph: The Named State Space of a Role (A.2.5)](09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md) — How to make "ready to act" an explicit, checkable state rather than an ad-hoc judgment
+- [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes (A.2.6)](10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md) — One unified way to declare the applicable range of any claim, capability, or publication without vague "applicability" labels
+- [A.2.7 - U.RoleAlgebra: In‑Context Role Relations (A.2.7)](11-a27-a27-urolealgebra-incontext-role-relations.md) — Compact rules for role substitution, separation of duties, and named role bundles within one context
+- [A.2.8 - U.Commitment (Deontic Commitment Object) (A.2.8)](12-a28-a28-ucommitment-deontic-commitment-object.md) — How to make accountability explicit: who is obligated, under what conditions, and with what adjudication hook
+- [A.2.9 — U.SpeechAct (Communicative Work Object) (A.2.9)](13-a29-a29-uspeechact-communicative-work-object.md) — How to treat approvals, authorizations, and declarations as observable work events rather than background noise
+- [A.3 - Transformer Constitution (Quartet) (A.3)](14-a3-a3-transformer-constitution-quartet.md) — One shared framework for saying who acts, under which role, following which description, producing what actual work
+- [A.3.1 - U.Method: Context-Defined Way of Doing (A.3.1)](15-a31-a31-umethod-context-defined-way-of-doing.md) — How to name how something is done in principle without confusing it with a document, a run log, or a program
+- [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing (A.3.2)](16-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md) — How to keep the text describing a method separate from the method itself so procedures can be reused and reviewed
+- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme (A.3.3)](17-a33-a33-udynamics-state-space-and-transition-law-episteme.md) — How to build a reusable model of how state changes so predictions, simulations, and conformance checks are grounded
+- [A.3.4 - U.Transformation: Bounded Change Under Conditions (A.3.4)](18-a34-a34-utransformation-bounded-change-under-conditions.md) — How to identify what changes, from what to what, under which conditions, before making stronger claims
+- [A.3.4.P - Transformation Ontic Precision Restoration (A.3.4.P)](19-a34p-a34p-transformation-ontic-precision-restoration.md) — How to repair language that hides whether "pipeline", "flow", or "process" means a method, work, or something else
+- [A.4 - Temporal Duality & Open‑Ended Evolution Principle (A.4)](20-a4-a4-temporal-duality-openended-evolution-principle.md) — How to keep design-time blueprints and run-time reality clearly separated while supporting ongoing improvement
+- [A.5 - Open‑Ended Kernel & Extension Layering (A.5)](21-a5-a5-openended-kernel-extension-layering.md) — How FPF stays stable over decades while still allowing new domain knowledge to be added without breaking the core

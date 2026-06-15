@@ -1,0 +1,23 @@
+# Preface** (non-normative)
+
+- [What This Specification Is And How To Use It](01-what-this-specification-is-and-how-to-use-it.md) — Overview of FPF as a pattern language for keeping hard project reasoning coherent across many kinds of things
+- [FPF As A Project, Not Only A Pattern List](02-fpf-as-a-project-not-only-a-pattern-list.md) — Why the spec is the normative center of a broader project that includes companions, tools, and examples
+- [Why FPF Exists](03-why-fpf-exists.md) — Projects fail when ideas change kind as they travel; FPF prevents drift while preserving useful movement
+- [Creativity And Assurance Mature Together](04-creativity-and-assurance-mature-together.md) — How to keep exploration and evidence-gathering alive at the same time instead of choosing one side
+- [Local Closure Inside An Open World](05-local-closure-inside-an-open-world.md) — How to make responsible local decisions without pretending the wider world is closed
+- [FPF As An Evolutionary Architecture For Thought](06-fpf-as-an-evolutionary-architecture-for-thought.md) — Why reasoning itself needs an architecture that can grow, change, and remain auditable
+- [Architectural Characteristics Of Thought](07-architectural-characteristics-of-thought.md) — The qualities FPF is designed to protect in reasoning: auditability, creativity, composability, trust calibration, and more
+- [Beyond Bias Hunting](08-beyond-bias-hunting.md) — FPF builds reasoning structures where whole classes of mistakes become harder, not just a warning list
+- [Thinking Through Writing](09-thinking-through-writing.md) — Why durable written forms (cards, tables, records) are the actual work of thinking, not documentation after the fact
+- [Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-thinking-oriented-architecture-not-a-descriptive-upper-ontol.md) — The difference between cataloguing what exists and giving practitioners their next responsible move
+- [The Bitter Lesson Stance](11-the-bitter-lesson-stance.md) — How to give agents and teams freedom to search while keeping safety, evidence, and gate conditions explicit
+- [From Flat Documents To Multi-View Truth](12-from-flat-documents-to-multi-view-truth.md) — Why a diagram is not the architecture, a dashboard is not evidence, and one file can't be "the truth"
+- [Architecture As Structure Of Holons](13-architecture-as-structure-of-holons.md) — Architecture is the structure that matters for a whole-with-parts, not diagrams or approvals about it
+- [Boundary Statements](14-boundary-statements.md) — How to unpack a single sentence that tries to define, commit, evidence, and assign responsibility all at once
+- [Raising Semantic Precision](15-raising-semantic-precision.md) — A six-step upgrade path from compressed metaphorical language to checkable, usable claims
+- [Big FPF Storylines](16-big-fpf-storylines.md) — The twelve interlocking commitments that make FPF more than a collection of patterns
+- [Transdisciplinarity As A Meta-Theory Of Thinking](17-transdisciplinarity-as-a-meta-theory-of-thinking.md) — How one framework can help across engineering, biology, AI, and management without flattening domain differences
+- [The Culinary Architecture Of Collective Thought](18-the-culinary-architecture-of-collective-thought.md) — FPF is the kitchen, not the recipe: places, instruments, roles, and checks so many dishes can be prepared at scale
+- [The Intellect Stack As A Pedagogical Map](19-the-intellect-stack-as-a-pedagogical-map.md) — A learning map showing which capability families (structure, knowledge, action, strategy, governance) a team may be missing
+- [Purpose, Scope, And Non-Goals](20-purpose-scope-and-non-goals.md) — FPF helps reasoning survive use; it does not replace domain expertise, evidence, or accountability
+- [How To Continue After The readme](21-how-to-continue-after-the-readme.md) — The right habit: when a project sentence starts to matter, ask what kind of claim it is before choosing a pattern

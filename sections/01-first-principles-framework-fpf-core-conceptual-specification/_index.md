@@ -1,3 +1,3 @@
-# First Principles Framework (FPF) — Core Conceptual Specification
+# First Principles Framework (FPF) - Core Conceptual Specification
 
-The root of the FPF specification: a universal, domain-agnostic scaffold for publishing, checking, and evolving structured thinking across engineering, science, and management.
+This is the top-level entry point for the FPF specification — a pattern language for keeping complex reasoning coherent across teams, tools, documents, and time.

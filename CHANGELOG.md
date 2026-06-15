@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-06-15
+
+### What's New
+- Across-the-board precision upgrade: the spec now explicitly distinguishes between what exists in a system and what is being claimed about it. This means fewer "description drift" errors — where a report or spec quietly shifts from describing reality to asserting interpretation without signaling the shift
+- New authoring rule (E.24): when writing about systems, transformations, or decisions, you are now required to be explicit about what's being claimed to exist vs. what's an observation or inference. Reduces hidden ambiguity in requirements and design docs
+- New transformation pattern (A.3.4): a dedicated section for describing how transformations work, with greater precision about what the transformation takes as input vs. what it produces vs. what it assumes
+- Anti-Goodhart protection extended to quality improvement loops (E.13 upgrade): now explicitly detects "teaching to the test" patterns in improvement initiatives, not just in metrics design. Helps teams notice when an improvement campaign is optimizing the measurement rather than the underlying thing
+- Promise-to-Work tracking improvements (E.18.1): cleaner structure for tracing how a commitment becomes actual work, with explicit handling of gaps between what was promised and what was planned
+- Refreshed search index: 279 section files (+12 vs. previous sync), 292 metadata entries (+17)
+
+### All Changes
+- **chore**: sync upstream FPF (ontic precision migration + E.24 + A.3.4 + E.13 anti-Goodhart upgrade + E.18.1 P2W + 51 upstream commits)
+- **chore**: rebuild sections after upstream sync
+- **chore**: AI-enhance all _index.md files with plain-language summaries
+- **chore**: AI-enhance glossary-quick.md plain-definition column
+- **chore**: wiki compile — update timestamps, fix sync-and-rebuild architecture article
+- **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
+
 ## 2026-06-01
 
 ### What's New

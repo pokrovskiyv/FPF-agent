@@ -2,7 +2,7 @@
 title: "Маршрут 3: Разбор контракта"
 sources:
   - sections/routes/route-3-boundary-unpacking.md
-last_updated: 2026-06-01T00:00:00Z
+last_updated: 2026-06-15T07:00:00Z
 tags:
   - route
   - tier-1

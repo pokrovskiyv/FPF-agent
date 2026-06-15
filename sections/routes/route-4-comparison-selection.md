@@ -8,13 +8,13 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | A.17 | A.CHR-NORM — Canonical “Characteristic” & rename (Dimension/ | sections/06-cluster-av-constitutional-principles-of-the-kernel/18-a17-a17-canonical-characteristic-achrnorm.md |  |
-| 2 | A.18 | A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale | sections/06-cluster-av-constitutional-principles-of-the-kernel/19-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md |  |
-| 3 | A.19 | CharacteristicSpace & Dynamics Hook (A.CHR-SPACE) | sections/06-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md | YES |
-| 4 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/08-part-c-kernel-extensions-specifications/114-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
-| 5 | A.19.CPM | Unified Comparison Mechanism (CPM) | sections/06-cluster-av-constitutional-principles-of-the-kernel/30-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md | YES |
-| 6 | A.19.SelectorMechanism | Unified Selection Kernel (SelectorMechanism) | sections/06-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md |  |
-| 7 | G.5 | Multi‑Method Dispatcher & MethodFamily Registry | sections/08-part-c-kernel-extensions-specifications/119-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
+| 1 | A.17 | A.CHR-NORM — Canonical “Characteristic” & rename (Dimension/ | sections/07-cluster-av-constitutional-principles-of-the-kernel/18-a17-a17-canonical-characteristic-achrnorm.md |  |
+| 2 | A.18 | A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale | sections/07-cluster-av-constitutional-principles-of-the-kernel/19-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md |  |
+| 3 | A.19 | CharacteristicSpace & Dynamics Hook (A.CHR-SPACE) | sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md | YES |
+| 4 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/13-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
+| 5 | A.19.CPM | Unified Comparison Mechanism (CPM) | sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md | YES |
+| 6 | A.19.SelectorMechanism | Unified Selection Kernel (SelectorMechanism) | sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md |  |
+| 7 | G.5 | Multi‑Method Dispatcher & MethodFamily Registry | sections/13-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
 
 ## Loading Strategy
 

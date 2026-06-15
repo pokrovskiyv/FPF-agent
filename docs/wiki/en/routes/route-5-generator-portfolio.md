@@ -2,7 +2,7 @@
 title: "Route 5: Generator Portfolio"
 sources:
   - sections/routes/route-5-generator-portfolio.md
-last_updated: 2026-06-01T00:00:00Z
+last_updated: 2026-06-15T07:00:00Z
 tags:
   - route
   - tier-1

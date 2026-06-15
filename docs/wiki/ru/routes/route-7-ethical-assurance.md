@@ -2,7 +2,7 @@
 title: "Маршрут 7: Этический аудит"
 sources:
   - sections/routes/route-7-ethical-assurance.md
-last_updated: 2026-06-01T00:00:00Z
+last_updated: 2026-06-15T07:00:00Z
 tags:
   - route
   - tier-1

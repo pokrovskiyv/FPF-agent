@@ -8,13 +8,13 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | A.0 | Onboarding Glossary (NQD & E/E‑LOG) | sections/04-part-a-kernel-architecture-cluster/01-a0-a0-onboarding-glossary-nqd-eelog.md | YES |
-| 2 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/08-part-c-kernel-extensions-specifications/114-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
-| 3 | G.1 | CG-Frame-Ready Generator | sections/08-part-c-kernel-extensions-specifications/115-g1-g1-cgframeready-generator.md | YES |
-| 4 | G.2 | SoTA Harvester & Synthesis | sections/08-part-c-kernel-extensions-specifications/116-g2-g2-sota-harvester-synthesis.md |  |
-| 5 | G.5 | Multi‑Method Dispatcher & MethodFamily Registry | sections/08-part-c-kernel-extensions-specifications/119-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
-| 6 | B.5.2.1 | Creative Abduction with NQD | sections/07-part-b-transdisciplinary-reasoning-cluster/24-b521-b521-creative-abduction-with-nqd.md |  |
-| 7 | C.17 | Creativity‑CHR — Characterising Generative Novelty & Value | sections/08-part-c-kernel-extensions-specifications/24-c17-c17-characterising-generative-novelty-value-creativitychr.md |  |
+| 1 | A.0 | Onboarding Glossary (NQD & E/E‑LOG) | sections/05-part-a-kernel-architecture-cluster/01-a0-a0-onboarding-glossary-nqd-eelog.md | YES |
+| 2 | G.0 | CG-Spec — Frame Standard & Comparability Governance | sections/13-part-g-discipline-sota-patterns-kit/02-g0-g0-frame-standard-and-comparability-governance-cgspec.md | YES |
+| 3 | G.1 | CG-Frame-Ready Generator | sections/13-part-g-discipline-sota-patterns-kit/03-g1-g1-cgframeready-generator.md | YES |
+| 4 | G.2 | SoTA Harvester & Synthesis | sections/13-part-g-discipline-sota-patterns-kit/04-g2-g2-sota-harvester-synthesis.md |  |
+| 5 | G.5 | Multi‑Method Dispatcher & MethodFamily Registry | sections/13-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md |  |
+| 6 | B.5.2.1 | Creative Abduction with NQD | sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md |  |
+| 7 | C.17 | Creativity‑CHR — Characterising Generative Novelty & Value | sections/09-part-c-kernel-extension-specifications/25-c17-c17-characterising-generative-novelty-value-creativitychr.md |  |
 
 ## Loading Strategy
 

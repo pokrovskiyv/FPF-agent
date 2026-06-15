@@ -1,3 +1,3 @@
 # Table of Content
 
-- [Keywords & Search Queries Discipline](01-keywords-search-queries-discipline.md) — Rules for writing concise, honest search phrases that point to the right pattern without doubling as a summary.
+Navigation index for the full FPF specification — use this when you already know which pattern family you need or want a search-oriented overview.

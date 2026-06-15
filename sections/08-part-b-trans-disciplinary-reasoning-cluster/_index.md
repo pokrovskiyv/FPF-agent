@@ -1,0 +1,26 @@
+# Part B — Trans-disciplinary Reasoning Cluster
+
+- [B.1 - Universal Algebra of Aggregation (Γ) (B.1)](01-b1-b1-universal-algebra-of-aggregation.md) — How to combine parts into wholes without the roll-up hiding the weakest component or breaking safety cases
+- [B.1.1 - Dependency Graph & Proofs (B.1.1)](02-b11-b11-dependency-graph-proofs.md) — How to record the explicit dependency graph that makes every aggregation act traceable and provable
+- [B.1.2 - System‑specific Aggregation Γ\_sys (B.1.2)](03-b12-b12-systemspecific-aggregation-_sys.md) — Aggregation rules for physical systems: additive stocks, boundary integration, and interface tidiness
+- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation (B.1.3)](04-b13-b13-_epist-knowledgespecific-aggregation.md) — How to combine knowledge claims while preserving provenance and applying conservative trust bounds
+- [B.1.4 - Contextual & Temporal Aggregation (Γ\_ctx & Γ\_time) (B.1.4)](05-b14-b14-contextual-temporal-aggregation-_ctx-_time.md) — How to aggregate steps where order changes meaning, or phases where time windows must not overlap
+- [B.1.5 - Γ_method — Order‑Sensitive Method Composition & Work Enactment (B.1.5)](06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md) — How to compose an ordered sequence of method steps into one reusable method description and govern its execution
+- [B.1.6 - Γ\_work — Work as Spent Resource (B.1.6)](07-b16-b16-_work-work-as-spent-resource.md) — How to account for what was consumed during work separately from what was done or how it was done
+- [B.2 - Meta‑Holon Transition (MHT): Recognizing Emergence and Re‑identifying Wholes (B.2)](08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md) — How to recognize when combining parts has created a genuinely new whole with its own identity and capabilities
+- [B.2.2 - Meta-System Transition (MST) (B.2.2)](09-b22-b22-meta-system-transition-mst.md) — How to declare that a group of physical systems has become a new coherent system in its own right
+- [B.2.3 - Meta-Epistemic Transition (MET) (B.2.3)](10-b23-b23-meta-epistemic-transition-met.md) — How to recognize that a collection of knowledge items has crystallized into a new theory or framework
+- [B.2.4 - Meta-Functional Transition (MFT) (B.2.4)](11-b24-b24-meta-functional-transition-mft.md) — How to recognize when separate skills or methods have merged into a single integrated operational capability
+- [B.2.5 - Supervisor-Subholon Feedback Loop (B.2.5)](12-b25-b25-supervisor-subholon-feedback-loop.md) — How to model a feedback loop between a supervisor role and subordinate systems: signal, influence, and objective
+- [B.3 - Trust and Assurance Calculus (F-G-R with Congruence) (B.3)](13-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md) — How to assign, aggregate, and reuse trust across claims so "trustworthy" is traceable rather than a feeling
+- [B.3.3 — Assurance Subtypes & Levels (B.3.3)](14-b33-b33-assurance-subtypes-levels.md) — How to assess maturity of an assurance claim across formal, conceptual, and empirical validation rather than just counting documents
+- [B.3.4 - Evidence Decay & Epistemic Debt (B.3.4)](15-b34-b34-evidence-decay-epistemic-debt.md) — How to track when evidence becomes stale so old certifications don't get treated as current proof
+- [B.3.5 - Working-Model Relations & Grounding (CT2R-LOG) (B.3.5)](16-b35-b35-working-model-relations-grounding-ct2r-log.md) — How to use everyday structural relationships while keeping explicit grounding traces for reviewers
+- [B.4 - Canonical Evolution Loop (B.4)](17-b4-b4-canonical-evolution-loop.md) — A repeatable cycle for keeping designs and real-world behavior aligned rather than drifting apart over time
+- [B.4.1 - Observe -> Notice -> Stabilize -> Route (B.4.1)](18-b41-b41-observe-notice-stabilize-route.md) — How to go from a raw observation to a routed anomaly or hypothesis without jumping straight to a conclusion
+- [B.5 - Canonical Reasoning Cycle (B.5)](19-b5-b5-canonical-reasoning-cycle.md) — The shared cognitive engine for producing knowledge: explore, shape, gather evidence, then operate
+- [B.5.1 - Explore → Shape → Evidence → Operate (B.5.1)](20-b51-b51-explore-shape-evidence-operate.md) — A four-state lifecycle that guides any idea or system from fuzzy concept to reliable operational use
+- [B.5.2 - Abductive Loop (B.5.2)](21-b52-b52-abductive-loop.md) — How to generate and test the best available explanation when existing knowledge is not sufficient
+- [B.5.2.0 - U.AbductivePrompt (B.5.2.0)](22-b520-b520-uabductiveprompt.md) — A lightweight entry form that accepts preserved cues and routes them into an abductive hypothesis-generation process
+- [B.5.2.1 - Creative Abduction with NQD (B.5.2.1)](23-b521-b521-creative-abduction-with-nqd.md) — How to drive creative hypothesis generation using novelty-diversity search operators governed by an exploration policy
+- [B.5.3 - Role-Projection Bridge (B.5.3)](24-b53-b53-role-projection-bridge.md) — How to map domain-specific vocabulary onto universal framework concepts without losing the domain's own precision

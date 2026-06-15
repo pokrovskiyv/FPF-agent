@@ -1,0 +1,257 @@
+# Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
+
+Patterns in other Parts that reference patterns in this directory (219 refs).
+
+## From 05-part-a-kernel-architecture-cluster
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| A.1 | coordinates_with | A.7 |
+| A.2 | prerequisite_for | A.13 |
+| A.2 | prerequisite_for | A.15 |
+| A.2.1 | prerequisite_for | A.15 |
+| A.2.2 | informs | A.15 |
+| A.2.4 | informs | A.10 |
+| A.2.5 | prerequisite_for | A.15 |
+| A.2.7 | prerequisite_for | A.15 |
+| A.2.8 | builds_on | A.7 |
+| A.2.8 | builds_on | A.15.1 |
+| A.2.9 | builds_on | A.7 |
+| A.2.9 | builds_on | A.10 |
+| A.2.9 | builds_on | A.15.1 |
+| A.21 | builds_on | A.7 |
+| A.21 | coordinates_with | A.20 |
+| A.21 | coordinates_with | A.19 |
+| A.22 | builds_on | A.7 |
+| A.22 | coordinates_with | A.10 |
+| A.22 | coordinates_with | A.20 |
+| A.3 | prerequisite_for | A.15 |
+| A.3.1 | prerequisite_for | A.15 |
+| A.3.2 | informs | A.15 |
+| A.3.3 | builds_on | A.19 |
+| A.3.3 | coordinates_with | A.15.1 |
+| A.3.3 | coordinates_with | A.15.2 |
+| A.3.3 | coordinates_with | A.10 |
+| A.3.3 | coordinates_with | A.20 |
+| A.3.4 | coordinates_with | A.15.1 |
+| A.3.4 | coordinates_with | A.15.2 |
+| A.3.4 | coordinates_with | A.10 |
+| A.3.4.P | coordinates_with | A.15 |
+| A.3.4.P | coordinates_with | A.10 |
+
+## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| A.6 | builds_on | A.7 |
+| A.6 | coordinates_with | A.10 |
+| A.6 | coordinates_with | A.15 |
+| A.6 | coordinates_with | A.20 |
+| A.6.3 | builds_on | A.7 |
+| A.6.3.CSC | coordinates_with | A.15 |
+| A.6.3.CSC | coordinates_with | A.20 |
+| A.6.3.RT | builds_on | A.7 |
+| A.6.3.RT | coordinates_with | A.15 |
+| A.6.3.RT | coordinates_with | A.20 |
+| A.6.4 | builds_on | A.7 |
+| A.6.5 | builds_on | A.7 |
+| A.6.6 | builds_on | A.7 |
+| A.6.6 | coordinates_with | A.10 |
+| A.6.6 | coordinates_with | A.14 |
+| A.6.8 | builds_on | A.15 |
+| A.6.8 | coordinates_with | A.7 |
+| A.6.9 | builds_on | A.7 |
+| A.6.A | builds_on | A.15 |
+| A.6.A | builds_on | A.16 |
+| A.6.B | builds_on | A.7 |
+| A.6.B | coordinates_with | A.10 |
+| A.6.C | builds_on | A.7 |
+| A.6.F | builds_on | A.7 |
+| A.6.F | coordinates_with | A.15 |
+| A.6.H | builds_on | A.7 |
+| A.6.H | coordinates_with | A.14 |
+| A.6.H | coordinates_with | A.15 |
+| A.6.P | coordinates_with | A.7 |
+| A.6.P | coordinates_with | A.10 |
+| A.6.S | builds_on | A.7 |
+| A.6.S | builds_on | A.12 |
+
+## From 08-part-b-trans-disciplinary-reasoning-cluster
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| B.1 | builds_on | A.9 |
+| B.1.6 | builds_on | A.15.1 |
+| B.3 | builds_on | A.10 |
+| B.3 | coordinates_with | A.15 |
+| B.3 | coordinates_with | A.20 |
+| B.4 | builds_on | A.12 |
+| B.4.1 | builds_on | A.16 |
+| B.4.1 | builds_on | A.16.1 |
+| B.5 | builds_on | A.10 |
+| B.5.2 | builds_on | A.10 |
+| B.5.2 | coordinates_with | A.16 |
+| B.5.2.0 | builds_on | A.16 |
+| B.5.2.1 | builds_on | A.17 |
+| B.5.2.1 | builds_on | A.18 |
+
+## From 09-part-c-kernel-extension-specifications
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| C.1 | builds_on | A.14 |
+| C.11 | builds_on | A.13 |
+| C.11 | builds_on | A.18 |
+| C.11 | builds_on | A.19 |
+| C.13 | builds_on | A.14 |
+| C.16 | builds_on | A.17 |
+| C.16 | builds_on | A.18 |
+| C.16 | coordinates_with | A.10 |
+| C.16.P | builds_on | A.17 |
+| C.16.P | builds_on | A.18 |
+| C.16.P | builds_on | A.19 |
+| C.16.P | coordinates_with | A.19.ECS |
+| C.16.Q | builds_on | A.17 |
+| C.16.Q | builds_on | A.18 |
+| C.16.Q | builds_on | A.19 |
+| C.16.Q | builds_on | A.7 |
+| C.16.Q | coordinates_with | A.16 |
+| C.16.Q | coordinates_with | A.10 |
+| C.17 | builds_on | A.17 |
+| C.17 | builds_on | A.18 |
+| C.17 | builds_on | A.19 |
+| C.18 | builds_on | A.17 |
+| C.2 | builds_on | A.10 |
+| C.2.1 | builds_on | A.7 |
+| C.2.2a | builds_on | A.19 |
+| C.2.2a | used_by | A.16 |
+| C.2.4 | coordinates_with | A.16 |
+| C.2.5 | coordinates_with | A.16 |
+| C.2.LS | coordinates_with | A.16 |
+| C.2.P | builds_on | A.7 |
+| C.2.P | coordinates_with | A.10 |
+| C.2.P | coordinates_with | A.15 |
+| C.2.P | coordinates_with | A.20 |
+| C.2.P.DR | coordinates_with | A.10 |
+| C.2.P.DR | coordinates_with | A.15.1 |
+| C.2.P.DR | coordinates_with | A.15.2 |
+| C.22.1 | builds_on | A.15 |
+| C.22.2 | builds_on | A.19 |
+| C.22.2 | coordinates_with | A.15 |
+| C.22.2 | coordinates_with | A.10 |
+| C.24 | builds_on | A.15 |
+| C.25 | coordinates_with | A.15 |
+| C.26 | builds_on | A.10 |
+| C.26 | coordinates_with | A.15 |
+| C.26.1 | builds_on | A.10 |
+| C.26.1 | builds_on | A.15 |
+| C.26.2 | builds_on | A.15 |
+| C.26.2 | builds_on | A.10 |
+| C.26.3 | builds_on | A.15 |
+| C.26.3 | builds_on | A.10 |
+| C.26.3 | builds_on | A.19 |
+| C.27 | coordinates_with | A.10 |
+| C.27.TA | coordinates_with | A.10 |
+| C.27.TA | coordinates_with | A.15.1 |
+| C.27.TA | coordinates_with | A.15.2 |
+| C.27.TA | coordinates_with | A.20 |
+| C.28 | builds_on | A.10 |
+| C.28 | coordinates_with | A.15 |
+| C.29 | builds_on | A.19 |
+| C.29 | builds_on | A.10 |
+| C.29 | builds_on | A.15 |
+| C.29 | coordinates_with | A.15.1 |
+| C.29 | coordinates_with | A.15.4 |
+| C.30 | builds_on | A.7 |
+| C.30 | coordinates_with | A.10 |
+| C.30 | coordinates_with | A.20 |
+| C.30 | coordinates_with | A.15 |
+| C.30.AD | builds_on | A.7 |
+| C.30.AD | coordinates_with | A.10 |
+| C.30.AD | coordinates_with | A.20 |
+| C.30.AD | coordinates_with | A.15 |
+| C.30.ILC | coordinates_with | A.10 |
+| C.30.LCA | coordinates_with | A.10 |
+| C.30.LCA | coordinates_with | A.20 |
+| C.30.STRAT | coordinates_with | A.19.SPR |
+| C.30.STRAT | coordinates_with | A.10 |
+| C.30.STRAT | coordinates_with | A.20 |
+| C.30.STRAT | coordinates_with | A.15 |
+| C.30.TFS-REL | coordinates_with | A.10 |
+| C.30.TFS-REL | coordinates_with | A.20 |
+| C.30.TFS-REL | coordinates_with | A.15 |
+| C.31.ASAP | builds_on | A.17 |
+| C.31.ASAP | builds_on | A.18 |
+| C.31.ASAP | builds_on | A.19 |
+| C.31.ASAP | coordinates_with | A.10 |
+
+## From 11-part-e-the-fpf-constitution-and-authoring-guides
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| D.2 | builds_on | A.9 |
+| E.10 | builds_on | A.7 |
+| E.10 | coordinates_with | A.19.SPR |
+| E.10.ARCH | coordinates_with | A.19 |
+| E.10.D1 | builds_on | A.7 |
+| E.10.D2 | builds_on | A.7 |
+| E.15 | builds_on | A.10 |
+| E.16 | builds_on | A.13 |
+| E.16 | builds_on | A.15 |
+| E.17.0 | builds_on | A.7 |
+| E.17.1 | builds_on | A.7 |
+| E.17.2 | builds_on | A.7 |
+| E.18 | builds_on | A.7 |
+| E.18 | coordinates_with | A.20 |
+| E.18.1 | coordinates_with | A.15 |
+| E.18.1 | coordinates_with | A.15.1 |
+| E.18.1 | coordinates_with | A.15.2 |
+| E.18.1 | coordinates_with | A.15.3 |
+| E.18.1 | coordinates_with | A.15.4 |
+| E.18.1 | coordinates_with | A.10 |
+| E.18.1 | coordinates_with | A.20 |
+| E.18.2 | coordinates_with | A.10 |
+| E.18.2 | coordinates_with | A.20 |
+| E.2.DA | builds_on | A.19.ECS |
+| E.20 | coordinates_with | A.15.3 |
+| E.21 | builds_on | A.17 |
+| E.21 | builds_on | A.19.ECS |
+| E.22 | builds_on | A.19.ECS |
+| E.23 | builds_on | A.19.ECS |
+| E.24 | coordinates_with | A.19.ECS |
+| E.24.CD | builds_on | A.19.ECS |
+| E.8.ECSPF | builds_on | A.19.ECS |
+| E.9.DA | builds_on | A.19.ECS |
+
+## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| F.1 | builds_on | A.7 |
+| F.11 | builds_on | A.15 |
+| F.6 | builds_on | A.15 |
+| F.9.1 | builds_on | A.16.0 |
+
+## From 13-part-g-discipline-sota-patterns-kit
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| G.0 | builds_on | A.19 |
+| G.0 | builds_on | A.10 |
+| G.0 | builds_on | A.17 |
+| G.0 | builds_on | A.18 |
+| G.10 | builds_on | A.10 |
+| G.10 | builds_on | A.15.3 |
+| G.12 | builds_on | A.19 |
+| G.13 | builds_on | A.19 |
+| G.13 | builds_on | A.18 |
+| G.2 | builds_on | A.10 |
+| G.3 | builds_on | A.17 |
+| G.3 | builds_on | A.18 |
+| G.3 | builds_on | A.19.CHR |
+| G.3 | builds_on | A.15.3 |
+| G.4 | builds_on | A.18 |
+| G.6 | builds_on | A.10 |
+| G.Core | builds_on | A.15.3 |
+| G.Core | builds_on | A.19 |
+| G.Core | builds_on | A.19.CHR |
