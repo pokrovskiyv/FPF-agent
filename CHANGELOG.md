@@ -11,7 +11,8 @@
 - **chore**: add trigger-eval harness + interactive fire-rate tool; harden sync routine
 - **docs**: refresh wiki after fpf description rewrite + sync-routine invariant
 - **fix**: force concreteness in fpf-reasoner output (Principle #1)
-- **docs**: What
+- **docs**: add What's New for concreteness fix + align codex manifest to 0.6.2
+- **chore**: fix truncated changelog entry
 
 ## 2026-06-15
 
