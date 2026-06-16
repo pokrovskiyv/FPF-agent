@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-16
+
+### All Changes
+- **fix**: rewrite fpf skill description for reliable Layer-1 triggering
+
 ## 2026-06-15
 
 ### What's New

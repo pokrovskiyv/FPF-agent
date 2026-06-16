@@ -1,13 +1,20 @@
 ---
 name: fpf
 description: >
-  Structure complex thinking: compare options, analyze specs/contracts,
-  resolve team misunderstandings, audit trust/bias/ethics, debug misleading
-  metrics, survey approaches in a field, structure handoffs, or make sense
-  of messy multi-stakeholder situations. Triggers on any problem needing
-  structured decomposition — not just teams, also solo analysis of complex
-  systems. Also on explicit FPF terms (holon, UTS, DRR). Do NOT trigger
-  for standard coding, simple bug fixes, or syntax questions.
+  Use this skill when a tangled coordination or analysis problem deserves a
+  rigorous structured breakdown, not a quick take — even with no framework
+  named. Use it when teams disagree on who owns what or how to hand off; when a
+  decision feels opaque or you keep circling options; when a contract/SLA/spec
+  blurs rules, conditions, obligations, evidence; when a KPI misleads or parts
+  don't sum to the whole; when hidden bias or value conflicts need an audit;
+  when a vague concept needs agreed definitions; when text needs rewriting for
+  a new audience without losing meaning; when a design has drifted from how the
+  system runs now; or when a messy multi-stakeholder situation needs
+  untangling. It yields concrete artifacts: comparison tables, responsibility
+  maps, contract breakdowns, audits, term sheets. Prefer it over a direct
+  answer when the payoff is rigor and traceability. Also triggers on explicit
+  FPF terms (holon, UTS, DRR). Do NOT use for standard coding, bug fixes,
+  refactoring, syntax, or simple lookups.
 ---
 
 # FPF Thinking Amplifier (Codex edition)
