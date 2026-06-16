@@ -9,6 +9,7 @@
 - **fix**: rewrite fpf skill description for reliable Layer-1 triggering
 - **chore**: add trigger-eval harness + interactive fire-rate tool; harden sync routine
 - **docs**: refresh wiki after fpf description rewrite + sync-routine invariant
+- **fix**: force concreteness in fpf-reasoner output (Principle #1)
 
 ## 2026-06-15
 
