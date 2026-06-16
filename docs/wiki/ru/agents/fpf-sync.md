@@ -2,7 +2,7 @@
 title: fpf-sync
 sources:
   - agents/fpf-sync.md
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - agent
   - sync
@@ -43,7 +43,7 @@ git add sections/ docs/wiki/ CHANGELOG.md .claude-plugin/plugin.json .codex-plug
 
 ## Почему оба plugin.json бампятся вручную
 
-Проект поставляется как плагин для двух хостов — Claude Code (`.claude-plugin/`) и Codex CLI (`.codex-plugin/`, ставится через `scripts/install_codex_plugin.py`). PreToolUse-хук changelog (`scripts/update_changelog.py`) поднимает версию **только** в `.claude-plugin/plugin.json`. Поэтому рутина fpf-sync вручную бампит **оба** манифеста, чтобы их версии оставались синхронными. Сейчас оба на `0.6.0`.
+Проект поставляется как плагин для двух хостов — Claude Code (`.claude-plugin/`) и Codex CLI (`.codex-plugin/`, ставится через `scripts/install_codex_plugin.py`). PreToolUse-хук changelog (`scripts/update_changelog.py`) поднимает версию **только** в `.claude-plugin/plugin.json`. Поэтому рутина fpf-sync вручную бампит **оба** манифеста, чтобы их версии оставались синхронными. Сейчас оба на `0.6.1`.
 
 ## Явный запрет
 
@@ -55,6 +55,7 @@ git add sections/ docs/wiki/ CHANGELOG.md .claude-plugin/plugin.json .codex-plug
 - Никаких force-push и rebase — только merge
 - Никакой FPF-терминологии в обогащённых описаниях
 - Не останавливаться рано, если вики устарела из-за локальных правок — шаг 6 всё равно выполняется, а обновление коммитится
+- Не полагаться на автотриггер скилла — вызывать скиллы явно по имени (шаг 6 зовёт `/wiki compile`); в headless / неинтерактивных прогонах скиллы доступны только через `/name`, а не по совпадению описания ([#32184](https://github.com/anthropics/claude-code/issues/32184))
 
 ## Триггеры
 

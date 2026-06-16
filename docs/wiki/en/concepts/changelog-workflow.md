@@ -5,7 +5,7 @@ sources:
   - CHANGELOG.md
   - CLAUDE.md
   - scripts/update_changelog.py
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - concept
   - workflow
@@ -19,7 +19,7 @@ tags:
 
 The **changelog workflow** is the automatic-plus-manual process that keeps `CHANGELOG.md` and the `version` field of `plugin.json` in sync with every commit. It parses Conventional Commits: `feat:` → minor bump, `fix:` → patch bump, `feat!:` (or any type with `!`) → major bump, and other types (`docs`, `test`, `chore`, `perf`, `ci`, `style`, `refactor`) → a changelog entry without a version bump.
 
-It has two halves: an automatic half (a PreToolUse hook that runs on every commit) and a manual half (a human-written "What's New" section). The current published version is **0.6.0**.
+It has two halves: an automatic half (a PreToolUse hook that runs on every commit) and a manual half (a human-written "What's New" section). The current published version is **0.6.1**.
 
 ## How it works in the system
 

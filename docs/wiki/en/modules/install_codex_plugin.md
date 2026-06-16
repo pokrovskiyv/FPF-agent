@@ -2,7 +2,7 @@
 title: install_codex_plugin
 sources:
   - scripts/install_codex_plugin.py
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - module
   - codex
@@ -63,7 +63,7 @@ After install, the semantic fallback needs its FAISS index built once from the i
 
 **Imports:** `argparse`, `json`, `shutil`, `sys`, `pathlib.Path` — standard library only.
 
-**Imported by:** invoked as a script. Referenced from `Readme.md` and `CLAUDE.md` as the local-install command, and listed in `CHANGELOG.md` as the Codex installer. The `.codex-plugin/` manifest it packages is the Codex twin of `.claude-plugin/` — both `plugin.json` files are kept in lockstep at version `0.6.0`.
+**Imported by:** invoked as a script. Referenced from `Readme.md` and `CLAUDE.md` as the local-install command, and listed in `CHANGELOG.md` as the Codex installer. The `.codex-plugin/` manifest it packages is the Codex twin of `.claude-plugin/` — both `plugin.json` files are kept in lockstep at version `0.6.1`.
 
 ## See also
 

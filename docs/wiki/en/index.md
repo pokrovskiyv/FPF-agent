@@ -1,13 +1,13 @@
 ---
 title: FPF-agent Wiki (English)
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - index
 ---
 
 # FPF-agent Wiki
 
-Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.0).
+Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.1).
 
 ## Project shape
 

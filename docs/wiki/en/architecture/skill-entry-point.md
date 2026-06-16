@@ -4,7 +4,7 @@ sources:
   - .claude-plugin/marketplace.json
   - .claude-plugin/plugin.json
   - skills/fpf/SKILL.md
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - architecture
   - skill
@@ -20,7 +20,7 @@ The FPF skill entry point is the handshake between the host (Claude Code or Code
 | Component | File | Role |
 |-----------|------|------|
 | Skill descriptor | `skills/fpf/SKILL.md` | YAML frontmatter with trigger description + body with routing logic |
-| Plugin manifest | `.claude-plugin/plugin.json` | Plugin name, `version` (`0.6.0`), keywords — consumed by Claude Code's plugin loader |
+| Plugin manifest | `.claude-plugin/plugin.json` | Plugin name, `version` (`0.6.1`), keywords — consumed by Claude Code's plugin loader |
 | Marketplace manifest | `.claude-plugin/marketplace.json` | Declares the `fpf` plugin (source `./`, repository `pokrovskiyv/FPF-agent`) so users can `/plugin marketplace add pokrovskiyv/FPF-agent` |
 | Codex plugin manifest | `.codex-plugin/plugin.json` | Mirror manifest for the Codex CLI edition; version kept in lockstep with `.claude-plugin/plugin.json` |
 | Codex installer | `scripts/install_codex_plugin.py` | Installs the FPF plugin into Codex CLI via a home-local marketplace |
@@ -43,7 +43,7 @@ The skill body contains the burden table, pipeline depth table, and confidence g
 
 - **Trigger description is broad.** The YAML frontmatter intentionally covers coordination, decision-making, audit, comparison, and solo analysis — not just team coordination. This avoids missing legitimate use-cases while a hard negative list (no standard coding, no simple bug fixes, no syntax questions) prevents false triggers.
 - **Confidence gate.** High confidence (≥70%) auto-dispatches; low confidence prompts *"This looks like a coordination problem. Want me to help structure it?"* before doing work. Explicit FPF term mentions (holon, UTS, DRR) bypass the gate.
-- **Dual-runtime packaging.** The project is packaged as a plugin for **both** Claude Code (`.claude-plugin/`) and Codex CLI (`.codex-plugin/` + `scripts/install_codex_plugin.py` + a home-local marketplace). It is not a Claude-Code-only artifact. Both manifests carry the same version (`0.6.0`); see [Versioning](#versioning) for how they stay in sync.
+- **Dual-runtime packaging.** The project is packaged as a plugin for **both** Claude Code (`.claude-plugin/`) and Codex CLI (`.codex-plugin/` + `scripts/install_codex_plugin.py` + a home-local marketplace). It is not a Claude-Code-only artifact. Both manifests carry the same version (`0.6.1`); see [Versioning](#versioning) for how they stay in sync.
 - **Plain-language contract.** FPF is invisible infrastructure: the skill body forbids any FPF terminology in output. Patterns are applied internally by the Reasoner and guarded by the Reviewer. See [plain-language-contract](plain-language-contract.md).
 
 ## Versioning

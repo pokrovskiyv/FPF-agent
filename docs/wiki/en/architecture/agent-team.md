@@ -7,7 +7,7 @@ sources:
   - agents/fpf-reviewer.md
   - agents/fpf-sync.md
   - skills/fpf/SKILL.md
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-06-16T03:34:37Z
 tags:
   - architecture
   - agents
@@ -132,7 +132,7 @@ its eight steps.
   `scripts/install_codex_plugin.py` and a home-local marketplace). The
   PreToolUse changelog hook (`scripts/update_changelog.py`) auto-bumps only
   `.claude-plugin/plugin.json`, so Sync Step 7 manually bumps both `plugin.json`
-  files to keep their versions aligned. Current version: 0.6.0.
+  files to keep their versions aligned. Current version: 0.6.1.
 
 ## Related
 
