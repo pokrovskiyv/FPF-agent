@@ -2,7 +2,7 @@
 title: fpf-sync
 sources:
   - agents/fpf-sync.md
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - agent
   - sync
@@ -43,7 +43,7 @@ git add sections/ docs/wiki/ CHANGELOG.md .claude-plugin/plugin.json .codex-plug
 
 ## Why both plugin.json files are bumped manually
 
-The project ships as a plugin for two hosts — Claude Code (`.claude-plugin/`) and Codex CLI (`.codex-plugin/`, installed via `scripts/install_codex_plugin.py`). The PreToolUse changelog hook (`scripts/update_changelog.py`) auto-bumps **only** `.claude-plugin/plugin.json`. So the fpf-sync routine bumps **both** manifests by hand to keep their versions in lockstep. Both are currently at `0.6.1`.
+The project ships as a plugin for two hosts — Claude Code (`.claude-plugin/`) and Codex CLI (`.codex-plugin/`, installed via `scripts/install_codex_plugin.py`). The PreToolUse changelog hook (`scripts/update_changelog.py`) auto-bumps **only** `.claude-plugin/plugin.json`. So the fpf-sync routine bumps **both** manifests by hand to keep their versions in lockstep. Both are currently at `0.6.3`.
 
 ## Explicit "do not"
 

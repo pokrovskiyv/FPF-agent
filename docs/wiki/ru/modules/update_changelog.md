@@ -2,7 +2,7 @@
 title: update_changelog
 sources:
   - scripts/update_changelog.py
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - module
   - hook
@@ -24,7 +24,7 @@ tags:
 
 | Функция | Сигнатура | Что делает |
 |---------|-----------|-----------|
-| `extract_commit_message` | `(bash_command: str) -> str \| None` | Возвращает первую строку темы; поддерживает heredoc (`<<EOF ...`) и форму `-m "..."` / `-m '...'` |
+| `extract_commit_message` | `(bash_command: str) -> str \| None` | Возвращает первую строку темы; поддерживает heredoc (`<<EOF ...`) и форму `-m "..."` / `-m '...'`. Безопасен к кавычкам: закрывающая кавычка обязана совпасть с открывающей, а экранирование поглощается, поэтому апостроф внутри двойных кавычек (`"What's New"`) не принимается за закрывающий разделитель |
 | `parse_conventional_commit` | `(message: str) -> dict \| None` | Regex-парсер `type(scope)!: description`; None при несовпадении |
 | `determine_bump` | `(parsed: dict) -> str` | Возвращает `major`, `minor`, `patch` или `none` по типу и флагу breaking |
 | `bump_version` | `(current: str, bump_type: str) -> str` | Инкремент semver-строки; `none` оставляет без изменений |
@@ -54,5 +54,6 @@ tags:
 ## Связанные статьи
 
 - [changelog-workflow](../concepts/changelog-workflow.md) — общая политика версионирования
+- [test_update_changelog](test_update_changelog.md) — регрессионные тесты экстрактора сообщений
 - [sync-and-rebuild](../architecture/sync-and-rebuild.md)
 - Раздел "Changelog & Versioning" в CLAUDE.md

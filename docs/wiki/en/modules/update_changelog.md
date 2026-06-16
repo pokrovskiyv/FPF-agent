@@ -2,7 +2,7 @@
 title: update_changelog
 sources:
   - scripts/update_changelog.py
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - module
   - hook
@@ -24,7 +24,7 @@ Silent skip when the commit message isn't a Conventional Commit or the hook JSON
 
 | Function | Signature | Description |
 |----------|-----------|-------------|
-| `extract_commit_message` | `(bash_command: str) -> str \| None` | Return the first subject line; handles both heredoc (`<<EOF ...`) and `-m "..."`/`-m '...'` forms |
+| `extract_commit_message` | `(bash_command: str) -> str \| None` | Return the first subject line; handles both heredoc (`<<EOF ...`) and `-m "..."`/`-m '...'` forms. Quote-safe: the closing quote must match the opening one and escapes are consumed, so an apostrophe inside a double-quoted message (`"What's New"`) is not mistaken for the closing delimiter |
 | `parse_conventional_commit` | `(message: str) -> dict \| None` | Regex-parse `type(scope)!: description`; return None on mismatch |
 | `determine_bump` | `(parsed: dict) -> str` | Return `major`, `minor`, `patch`, or `none` based on parsed type and breaking flag |
 | `bump_version` | `(current: str, bump_type: str) -> str` | Increment a semver string; `none` returns unchanged |
@@ -54,5 +54,6 @@ Idempotency is handled in `update_changelog`: if the exact entry line already ex
 ## See also
 
 - [changelog-workflow](../concepts/changelog-workflow.md) — the overall versioning policy
+- [test_update_changelog](test_update_changelog.md) — regression tests for the message extractor
 - [sync-and-rebuild](../architecture/sync-and-rebuild.md)
 - CLAUDE.md "Changelog & Versioning" section

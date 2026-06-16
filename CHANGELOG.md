@@ -15,6 +15,7 @@
 - **chore**: fix truncated changelog entry
 - **fix**: don't truncate changelog entries at apostrophes in update_changelog
 - **chore**: align codex manifest to 0.6.3
+- **docs**: refresh wiki — reasoner Principle #1, changelog-hook quote-safety, new test article, version 0.6.3
 
 ## 2026-06-15
 

@@ -65,6 +65,7 @@ nav:
           - smoke_codex: en/modules/smoke_codex.md
           - install_codex_plugin: en/modules/install_codex_plugin.md
           - update_changelog: en/modules/update_changelog.md
+          - test_update_changelog: en/modules/test_update_changelog.md
           - sync_doc_stats: en/modules/sync_doc_stats.md
           - check_wiki_gate: en/modules/check_wiki_gate.md
       - Routes:
@@ -115,6 +116,7 @@ nav:
           - smoke_codex: ru/modules/smoke_codex.md
           - install_codex_plugin: ru/modules/install_codex_plugin.md
           - update_changelog: ru/modules/update_changelog.md
+          - test_update_changelog: ru/modules/test_update_changelog.md
           - sync_doc_stats: ru/modules/sync_doc_stats.md
           - check_wiki_gate: ru/modules/check_wiki_gate.md
       - Маршруты:

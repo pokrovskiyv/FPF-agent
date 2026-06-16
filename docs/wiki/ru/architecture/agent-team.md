@@ -7,7 +7,7 @@ sources:
   - agents/fpf-reviewer.md
   - agents/fpf-sync.md
   - skills/fpf/SKILL.md
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - architecture
   - agents
@@ -136,7 +136,7 @@ Routine** (триггер `trig_01P7UzjrjgsgzLpMHn84bMoo`) по cron — 1-го 
   маркетплейс в домашней директории). PreToolUse-хук changelog
   (`scripts/update_changelog.py`) поднимает версию только в
   `.claude-plugin/plugin.json`, поэтому шаг 7 Sync вручную поднимает оба файла
-  `plugin.json`, чтобы версии оставались согласованными. Текущая версия: 0.6.1.
+  `plugin.json`, чтобы версии оставались согласованными. Текущая версия: 0.6.3.
 
 ## Связанные статьи
 

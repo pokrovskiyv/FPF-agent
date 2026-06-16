@@ -1,13 +1,13 @@
 ---
 title: FPF-agent Wiki (English)
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - index
 ---
 
 # FPF-agent Wiki
 
-Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.1).
+Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.3).
 
 ## Project shape
 
@@ -27,7 +27,7 @@ Key architectural reads:
 
 | Section | Articles | Description |
 |---------|----------|-------------|
-| [Modules](modules/) | 15 | Python scripts that rebuild every generated artifact, plus the Codex installer, doc-stats sync, and the wiki-gate commit hook |
+| [Modules](modules/) | 16 | Python scripts that rebuild every generated artifact, plus the Codex installer, doc-stats sync, and the wiki-gate commit hook |
 | [Agents](agents/) | 5 | Agent prompts (classifier, retriever, reasoner, reviewer, sync) |
 | [Routes](routes/) | 10 | User-facing burden-to-pattern entry routes |
 | [Architecture](architecture/) | 7 | System-level views |
@@ -35,7 +35,7 @@ Key architectural reads:
 
 ## Modules
 
-Thirteen Python scripts orchestrating the rebuild pipeline, runtime semantic search, and the Codex plugin installer.
+Sixteen Python scripts orchestrating the rebuild pipeline, runtime semantic search, and the Codex plugin installer.
 
 - [split_spec](modules/split_spec.md) — decompose the 8.3 MB monolith into ~279 section files
 - [build_metadata](modules/build_metadata.md) — parse ToC into queryable `metadata.json` (292 entries)
@@ -50,6 +50,7 @@ Thirteen Python scripts orchestrating the rebuild pipeline, runtime semantic sea
 - [test_smoke](modules/test_smoke.md) — pipeline integrity tests
 - [smoke_codex](modules/smoke_codex.md) — Codex skill edition tests
 - [update_changelog](modules/update_changelog.md) — PreToolUse commit hook
+- [test_update_changelog](modules/test_update_changelog.md) — regression tests for the changelog hook
 - [sync_doc_stats](modules/sync_doc_stats.md) — keep hard-coded counts in CLAUDE.md / Readme in sync with reality
 - [check_wiki_gate](modules/check_wiki_gate.md) — block commits that claim a wiki refresh while the wiki is stale
 

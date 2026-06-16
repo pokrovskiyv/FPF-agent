@@ -5,7 +5,7 @@ sources:
   - .claude-plugin/plugin.json
   - CLAUDE.md
   - Readme.md
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - architecture
   - overview
@@ -18,7 +18,7 @@ tags:
 
 The **First Principles Framework (FPF)** specification (~61 000 lines) plus a **skill** that applies FPF patterns to user coordination problems — while keeping all FPF terminology invisible.
 
-The project is **dual-packaged**: the same repository is a plugin for **Claude Code** (via `.claude-plugin/`) and for **Codex CLI** (via `.codex-plugin/` + a home-local marketplace). Current version: **0.6.1** (kept in lockstep across both manifests).
+The project is **dual-packaged**: the same repository is a plugin for **Claude Code** (via `.claude-plugin/`) and for **Codex CLI** (via `.codex-plugin/` + a home-local marketplace). Current version: **0.6.3** (kept in lockstep across both manifests).
 
 The moving parts on disk:
 

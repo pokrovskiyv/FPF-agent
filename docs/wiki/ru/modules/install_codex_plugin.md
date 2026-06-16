@@ -2,7 +2,7 @@
 title: install_codex_plugin
 sources:
   - scripts/install_codex_plugin.py
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - module
   - codex
@@ -63,7 +63,7 @@ python3 scripts/install_codex_plugin.py --home /tmp/codex-home
 
 **Импорты:** `argparse`, `json`, `shutil`, `sys`, `pathlib.Path` — только стандартная библиотека.
 
-**Где используется:** запускается как скрипт. Упоминается в `Readme.md` и `CLAUDE.md` как команда локальной установки и числится в `CHANGELOG.md` как установщик Codex. Манифест `.codex-plugin/`, который он упаковывает, — это Codex-близнец `.claude-plugin/`; оба файла `plugin.json` держатся синхронно на версии `0.6.1`.
+**Где используется:** запускается как скрипт. Упоминается в `Readme.md` и `CLAUDE.md` как команда локальной установки и числится в `CHANGELOG.md` как установщик Codex. Манифест `.codex-plugin/`, который он упаковывает, — это Codex-близнец `.claude-plugin/`; оба файла `plugin.json` держатся синхронно на версии `0.6.3`.
 
 ## Связанные статьи
 

@@ -184,6 +184,7 @@
     "en/architecture/sync-and-rebuild.md",
     "en/index.md",
     "en/modules/install_codex_plugin.md",
+    "en/modules/test_update_changelog.md",
     "en/modules/update_changelog.md"
   ],
   "en/concepts/pipeline-depth.md": [
@@ -327,7 +328,12 @@
     "en/architecture/three-tier-retrieval.md",
     "en/index.md",
     "en/modules/semantic_search.md",
-    "en/modules/smoke_codex.md"
+    "en/modules/smoke_codex.md",
+    "en/modules/test_update_changelog.md"
+  ],
+  "en/modules/test_update_changelog.md": [
+    "en/index.md",
+    "en/modules/update_changelog.md"
   ],
   "en/modules/update_changelog.md": [
     "en/architecture/overview.md",
@@ -335,7 +341,8 @@
     "en/concepts/changelog-workflow.md",
     "en/index.md",
     "en/modules/check_wiki_gate.md",
-    "en/modules/sync_doc_stats.md"
+    "en/modules/sync_doc_stats.md",
+    "en/modules/test_update_changelog.md"
   ],
   "en/routes/route-1-project-alignment.md": [
     "en/concepts/route-chain.md",
@@ -550,6 +557,7 @@
     "ru/architecture/sync-and-rebuild.md",
     "ru/index.md",
     "ru/modules/install_codex_plugin.md",
+    "ru/modules/test_update_changelog.md",
     "ru/modules/update_changelog.md"
   ],
   "ru/concepts/pipeline-depth.md": [
@@ -693,7 +701,12 @@
     "ru/architecture/three-tier-retrieval.md",
     "ru/index.md",
     "ru/modules/semantic_search.md",
-    "ru/modules/smoke_codex.md"
+    "ru/modules/smoke_codex.md",
+    "ru/modules/test_update_changelog.md"
+  ],
+  "ru/modules/test_update_changelog.md": [
+    "ru/index.md",
+    "ru/modules/update_changelog.md"
   ],
   "ru/modules/update_changelog.md": [
     "ru/architecture/overview.md",
@@ -701,7 +714,8 @@
     "ru/concepts/changelog-workflow.md",
     "ru/index.md",
     "ru/modules/check_wiki_gate.md",
-    "ru/modules/sync_doc_stats.md"
+    "ru/modules/sync_doc_stats.md",
+    "ru/modules/test_update_changelog.md"
   ],
   "ru/routes/route-1-project-alignment.md": [
     "ru/concepts/route-chain.md",

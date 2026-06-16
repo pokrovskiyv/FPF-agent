@@ -2,7 +2,7 @@
 title: fpf-sync
 sources:
   - agents/fpf-sync.md
-last_updated: 2026-06-16T03:34:37Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - agent
   - sync
@@ -43,7 +43,7 @@ git add sections/ docs/wiki/ CHANGELOG.md .claude-plugin/plugin.json .codex-plug
 
 ## Почему оба plugin.json бампятся вручную
 
-Проект поставляется как плагин для двух хостов — Claude Code (`.claude-plugin/`) и Codex CLI (`.codex-plugin/`, ставится через `scripts/install_codex_plugin.py`). PreToolUse-хук changelog (`scripts/update_changelog.py`) поднимает версию **только** в `.claude-plugin/plugin.json`. Поэтому рутина fpf-sync вручную бампит **оба** манифеста, чтобы их версии оставались синхронными. Сейчас оба на `0.6.1`.
+Проект поставляется как плагин для двух хостов — Claude Code (`.claude-plugin/`) и Codex CLI (`.codex-plugin/`, ставится через `scripts/install_codex_plugin.py`). PreToolUse-хук changelog (`scripts/update_changelog.py`) поднимает версию **только** в `.claude-plugin/plugin.json`. Поэтому рутина fpf-sync вручную бампит **оба** манифеста, чтобы их версии оставались синхронными. Сейчас оба на `0.6.3`.
 
 ## Явный запрет
 

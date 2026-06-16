@@ -2,7 +2,7 @@
 title: fpf-reasoner
 sources:
   - agents/fpf-reasoner.md
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-06-16T07:21:51Z
 tags:
   - agent
   - reasoner
@@ -18,6 +18,10 @@ tags:
 Third agent and the one that speaks to the user. Reads the FPF patterns loaded by the Retriever, applies their internal structure to the user's specific situation, and returns a practical, actionable result in the user's language. **The Reasoner never exposes FPF terminology** — no pattern IDs, no "holon", no "bounded context", no "U.anything". The source file calls this "Principle #0: Plain Language Contract".
 
 The analogy in the source: the Reasoner is a GPS. It uses Dijkstra's algorithm internally. It tells the user "turn right in 200 meters." It never says "applying shortest-path algorithm to weighted graph."
+
+## Concreteness (Principle #1)
+
+A second non-negotiable principle, added after blind benchmarking showed the earlier output lost to a plain expert answer mainly on *actionability*: every recommendation must be a specific, directly-executable step — who does what, with exact thresholds, names, or wording — never abstract framing. The chosen structure (separating responsibilities, unpacking a contract, mapping a cycle) is the scaffold, not the answer; each slot is filled with something the user could act on tomorrow.
 
 ## Interface
 
