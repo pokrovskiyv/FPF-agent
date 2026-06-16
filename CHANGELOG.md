@@ -4,12 +4,14 @@
 
 ### What's New
 - The structured-analysis assistant now decides when to engage from concrete real-world situations — ownership disputes between teams, opaque decisions, tangled contracts/SLAs, misleading KPIs, bias audits, terminology disagreements, audience rewrites, and design-vs-reality drift — rather than an abstract "structure your thinking" pitch, and is explicit about staying out of plain coding, refactors, and syntax. This makes it activate more reliably on the problems it's actually meant for.
+- When it does engage, its answers are now noticeably more concrete and directly actionable — specific steps with owners, thresholds, and exact wording instead of abstract framing. Blind testing showed the previous output lost to a plain expert answer mainly on actionability; this closes most of that gap and makes the structured breakdown something you can act on immediately.
 
 ### All Changes
 - **fix**: rewrite fpf skill description for reliable Layer-1 triggering
 - **chore**: add trigger-eval harness + interactive fire-rate tool; harden sync routine
 - **docs**: refresh wiki after fpf description rewrite + sync-routine invariant
 - **fix**: force concreteness in fpf-reasoner output (Principle #1)
+- **docs**: What
 
 ## 2026-06-15
 
