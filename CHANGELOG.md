@@ -13,6 +13,7 @@
 - **fix**: force concreteness in fpf-reasoner output (Principle #1)
 - **docs**: add What's New for concreteness fix + align codex manifest to 0.6.2
 - **chore**: fix truncated changelog entry
+- **fix**: don't truncate changelog entries at apostrophes in update_changelog
 
 ## 2026-06-15
 

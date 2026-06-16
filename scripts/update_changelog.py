@@ -49,10 +49,17 @@ def extract_commit_message(bash_command: str) -> str | None:
     if heredoc:
         return heredoc.group(1).strip().splitlines()[0].strip()
 
-    # Strategy 2: -m "..." or -m '...' (DOTALL for multiline messages)
-    m_flag = re.search(r"""-m\s+["'](.+?)["']""", bash_command, re.DOTALL)
+    # Strategy 2: -m "..." or -m '...'. The closing quote MUST match the
+    # opening quote (backreference \1), and backslash-escaped characters are
+    # consumed, so a `'` inside a "..." message (e.g. "What's New") no longer
+    # terminates the match early. The old `["'](.+?)["']` let the closing
+    # quote be either type and stopped at the first apostrophe, truncating
+    # the description.
+    m_flag = re.search(r"""-m\s+(["'])((?:\\.|(?!\1).)*)\1""", bash_command, re.DOTALL)
     if m_flag:
-        return m_flag.group(1).strip().splitlines()[0].strip()
+        # Unescape shell-escaped quotes/backslashes (\" -> ", \' -> ', \\ -> \).
+        raw = re.sub(r"""\\(['"\\])""", r"\1", m_flag.group(2))
+        return raw.strip().splitlines()[0].strip()
 
     return None
 
