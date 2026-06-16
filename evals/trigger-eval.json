@@ -1,0 +1,102 @@
+[
+  {
+    "query": "У нас две команды — бэкенд и ML — постоянно спорят, кто отвечает за фичестор и где именно проходит передача работы между ними. Помоги разобраться и развести зоны ответственности.",
+    "should_trigger": true,
+    "note": "project_alignment / route-1 — team responsibility + handoff ambiguity"
+  },
+  {
+    "query": "Here's our SLA draft — it mixes hard guarantees, best-effort clauses, the customer's obligations, and what counts as evidence of a breach, all in one blob. Help me untangle what is actually what.",
+    "should_trigger": true,
+    "note": "boundary_unpacking / route-3 — contract mixes rules, conditions, obligations, evidence"
+  },
+  {
+    "query": "Не могу выбрать между переходом на event-driven архитектуру и тем, чтобы остаться на синхронных вызовах. В голове каша из доводов за и против, хожу по кругу. Помоги структурно сравнить и принять решение.",
+    "should_trigger": true,
+    "note": "comparison_selection / route-4 — opaque decision, going in circles"
+  },
+  {
+    "query": "Our north-star metric is up 12% this quarter but revenue is flat and churn is up. Help me work out why the KPI is telling a different story than the business.",
+    "should_trigger": true,
+    "note": "composition_aggregation / route-9 — KPI lies, aggregation mismatch"
+  },
+  {
+    "query": "Before we ship this candidate-screening rubric, I want a careful audit of where hidden bias or unstated value assumptions could be baked into the criteria.",
+    "should_trigger": true,
+    "note": "ethical_assurance / route-7 — bias audit, value assumptions"
+  },
+  {
+    "query": "У меня есть смутная идея «самовосстанавливающейся платформы данных», но каждый стейкхолдер представляет под этим своё, и мы не можем договориться даже о терминах. Помоги нормально оформить и определить понятия.",
+    "should_trigger": true,
+    "note": "language_discovery / route-2 — vague concept, terminology disagreement"
+  },
+  {
+    "query": "We shipped this service two years ago, the original design assumptions no longer hold, and ops is constantly firefighting. How should I think about systematically closing the gap between the design and how it actually runs now?",
+    "should_trigger": true,
+    "note": "evolution_learning / route-10 — design drift, ops vs design"
+  },
+  {
+    "query": "A vendor claims 99.9% accuracy, but they aggregated that number across very different datasets. Help me reason about whether we can actually trust that claim and how to probe it.",
+    "should_trigger": true,
+    "note": "trust_assurance / route-8 — overclaim, evidence aggregation"
+  },
+  {
+    "query": "Ситуация — полный бардак: три вендора, две внутренние команды, перекрывающиеся контракты, и никто не понимает, кто за что отвечает и кто что решает. Помоги разложить это по полочкам.",
+    "should_trigger": true,
+    "note": "messy multi-stakeholder — verbatim-ish 'make sense of messy multi-stakeholder situations'"
+  },
+  {
+    "query": "Rewrite this dense internal RFC so a non-technical exec can follow it, without dropping or softening any of the technical commitments. I need meaning preserved exactly.",
+    "should_trigger": true,
+    "note": "rewrite_explanation / route-6 — rewrite for audience, preserve meaning"
+  },
+  {
+    "query": "Why is my React useEffect firing twice on mount? Here is the component code.",
+    "should_trigger": false,
+    "note": "near-miss: standard coding bug — explicitly excluded"
+  },
+  {
+    "query": "Refactor this 600-line auth module into smaller files following our coding-style rules — decompose it into logical units.",
+    "should_trigger": false,
+    "note": "near-miss: shares 'decompose/structure' but is pure code refactoring"
+  },
+  {
+    "query": "Как параметризовать pytest-фикстуру сразу по трём бэкендам базы данных?",
+    "should_trigger": false,
+    "note": "near-miss: syntax/tooling question"
+  },
+  {
+    "query": "Compare these two JSON config files and show me a diff of which keys changed.",
+    "should_trigger": false,
+    "note": "near-miss: shares 'compare' but is a literal file diff"
+  },
+  {
+    "query": "Помоги написать git-команду, чтобы откатить последний коммит, но сохранить изменения в рабочей директории.",
+    "should_trigger": false,
+    "note": "near-miss: git ops"
+  },
+  {
+    "query": "Add a Prometheus metric to track request latency in this Express handler and expose it on /metrics.",
+    "should_trigger": false,
+    "note": "near-miss: shares 'metric' but is an implementation task"
+  },
+  {
+    "query": "What's the difference between a self-signed certificate and a CA-signed one?",
+    "should_trigger": false,
+    "note": "near-miss: shares 'trust' concept but is a factual lookup"
+  },
+  {
+    "query": "Run npm audit and tell me which dependencies have known vulnerabilities I should bump.",
+    "should_trigger": false,
+    "note": "near-miss: shares 'audit' but is dependency scanning"
+  },
+  {
+    "query": "Преобразуй этот CSV в JSON, сгруппировав строки по полю country.",
+    "should_trigger": false,
+    "note": "near-miss: shares 'structure data' but is a mechanical transform"
+  },
+  {
+    "query": "Write a Python function that validates an email address with a regex.",
+    "should_trigger": false,
+    "note": "near-miss: pure execution, write-this-function"
+  }
+]

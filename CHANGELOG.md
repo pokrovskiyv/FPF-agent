@@ -2,8 +2,12 @@
 
 ## 2026-06-16
 
+### What's New
+- The structured-analysis assistant now decides when to engage from concrete real-world situations — ownership disputes between teams, opaque decisions, tangled contracts/SLAs, misleading KPIs, bias audits, terminology disagreements, audience rewrites, and design-vs-reality drift — rather than an abstract "structure your thinking" pitch, and is explicit about staying out of plain coding, refactors, and syntax. This makes it activate more reliably on the problems it's actually meant for.
+
 ### All Changes
 - **fix**: rewrite fpf skill description for reliable Layer-1 triggering
+- **chore**: add trigger-eval harness + interactive fire-rate tool; harden sync routine
 
 ## 2026-06-15
 

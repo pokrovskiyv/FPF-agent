@@ -144,6 +144,12 @@ git push
 - Do NOT modify agents/ or skills/ — maintained manually
 - Do NOT force-push or rebase — always merge
 - Do NOT use FPF terminology in enhanced summaries
+- Do NOT rely on any skill auto-triggering. Invoke skills explicitly — Step 6
+  calls `/wiki compile` by name. In non-interactive / headless execution
+  (`claude -p`, remote routines), skills resolve ONLY via an explicit `/name`,
+  never by description match (verified 2026-06-15, CLI 2.1.142; see
+  https://github.com/anthropics/claude-code/issues/32184). A future edit that
+  expects a skill to fire from context alone will silently no-op here.
 - If there are no upstream changes AND `scanner.py check` reports the wiki is
   fresh, stop early to save compute — but if the wiki is stale from local edits,
   still run Step 6 (`/wiki compile`) and commit the refresh
