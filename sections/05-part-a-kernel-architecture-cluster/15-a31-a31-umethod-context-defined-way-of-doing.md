@@ -59,11 +59,12 @@ It is not the text, code, diagram, model, plan, run, role, capability, or eviden
 * **run-independent**: one method may be enacted by many `U.Work` occurrences;
 * **assignment-independent**: method requirements may name role kinds or capability requirements, but named holders and dated assignments belong elsewhere.
 
-The primary repair move is not to replace the word "method" with one better word. Recover the current slot first:
+The primary repair action is not to replace the word "method" with one better word. Recover the current slot first:
 
 | If the text is really about... | Govern it as... |
 | --- | --- |
 | semantic way of doing | `A.3.1 U.Method` |
+| relation or composition among methods, method families, or local method expressions | `A.3.1` with `A.3.2`, `A.15`, `G.5`, or a direct method-composition pattern such as `B.1.5` when current; algebraic or graph notation is only `C.29` lens or method-description representation |
 | description of that way of doing: SOP, program, proof script, solver model, protocol, diagram, process model, recipe text | `A.3.2 U.MethodDescription` |
 | selected formal substrate or mathematical declaration | `A.6.0` and `C.29` when mathematical-lens use is current |
 | mechanism declaration or realization relation | `A.6.1` and `E.20` |
@@ -97,7 +98,7 @@ Do not decide the method and mechanism question by vocabulary. When a source exp
 
 For this host, keep the local question thin: does the current claim state a `U.Method`, the context-local way of doing a transformation or enactment? If the source label also raises mechanism, formal-substrate, work-plan, dated-work, evidence, source, gate, result, publication, or temporal claims, keep those values linked only by explicit relation positions and apply their own governing patterns.
 * In **method position**, the current claim is the context-local way of doing a transformation or enactment.
-* In **mechanism position**, the current claim is a law-governed declaration or revision of operations, laws, admissibility predicates, transport, audit surface, and monotone realizations under `A.6.1` and `E.20`.
+* In **mechanism position**, the current claim is a law-governed declaration or revision of operations, laws, admissibility predicates, transport, audit relation set, and monotone realizations under `A.6.1` and `E.20`.
 
 Do not assign the same typed value as both `U.Method` and `U.Mechanism` unless a governing pattern explicitly admits such dual typing. Slot-position labels do not create alternate ontology.
 
@@ -146,7 +147,7 @@ A useful `U.Method` statement can usually recover these fields in ordinary proje
 | Description relation | which `U.MethodDescription` epistemes currently describe it |
 | Work relation | what kind of `U.Work` may enact it and how runs cite the description used |
 
-This is not a data schema. It is the minimum recognition surface needed before method-like wording can guide work, evidence, assurance, gates, or planning.
+This is not a data schema. It is the minimum recognition field set needed before method-like wording can guide work, evidence, assurance, gates, or planning.
 
 #### A.3.1:4.5 - Representation and programming-paradigm discipline
 
@@ -171,7 +172,7 @@ This is why "algorithm" is not repaired to "method" automatically. An algorithm-
 
 FPF interprets method claims through transformation first, not software notation first.
 
-In the constructor-theory and process-theory line selected for this campaign, claims about computation, information, dynamics, and procedure are kept close to possible or impossible transformations and their compositional realization. That gives FPF the following settlement:
+In the constructor-theory and process-theory source line adopted here, claims about computation, information, dynamics, and procedure are kept close to possible or impossible transformations and their compositional realization. That gives FPF the following settlement:
 
 * a system in a transformer-like role can enact a method;
 * the method is the context-local way of doing the transformation;
@@ -197,19 +198,36 @@ Different internal control flow, search strategy, proof notation, programming pa
 
 When variants differ only by parameter ranges, equipment envelope, or local representation, keep one method with declared variation when the context accepts that identity. When variants change effects, bounds, accepted inputs, safety envelope, or work-facing acceptance criteria, declare a refinement, substitution, or distinct method.
 
-#### A.3.1:4.8 - Method composition and work enactment
+#### A.3.1:4.8 - Method relation structure, composition, and work enactment
 
 Methods may compose into larger methods. Work occurrences may compose into larger work histories. These are related but different claims.
 
-Method composition is design-side or definition-side: serial composition, parallel composition, guarded choice, iteration, refinement, substitution, or decomposition yields a method claim about a way of doing.
+When the current question is one semantic way of doing, the governed object is `U.Method`. When the current question is a relation among methods, method families, local method expressions, method-description links, or work-facing method-use relations, the governed object is `MethodRelationStructure@BoundedContext`: a context-local structure over method-side values.
 
-Work composition is occurrence-side: dated work may interleave, split, merge, retry, fail, recover, or be recorded in traces differently from the method description.
+A method relation structure may include:
 
-Do not infer method composition from document modules, graph layout, table order, or source-file structure alone. A two-module description is not automatically a two-step method. A path in a graph is not automatically an execution sequence. A pipeline-looking diagram is not automatically dated work.
+- serial composition;
+- parallel composition;
+- guarded choice;
+- iteration;
+- refinement;
+- substitution;
+- decomposition;
+- parameterization;
+- method-family membership, selection, fallback, or dispatch relation;
+- a relation from method requirement to accepted role assignment when work admission depends on it.
+
+Those relations are design-side or definition-side claims about ways of doing. They are not dated work merely because an implementation, graph, process model, or workflow-looking diagram can be executed or followed.
+
+Work composition is occurrence-side: dated work may interleave, split, merge, retry, fail, recover, or be recorded in traces differently from the method description or method relation structure.
+
+Algebraic, graph, categorical, process-calculus, effect-calculus, matrix, embedding, distributed, or neural notation may describe or analyze a selected `MethodRelationStructure@BoundedContext`. That notation is a mathematical or representation lens under `C.29` or a `U.MethodDescription` representation when the description itself is current. Do not name it `U.MethodAlgebra` or treat the lens as the method, method family, work plan, performed work, mechanism, role relation structure, or selector registry.
+
+Do not infer method composition from document modules, graph layout, table order, method-family registry rows, or source-file structure alone. A two-module description is not automatically a two-step method. A path in a graph is not automatically an execution sequence. A pipeline-looking diagram is not automatically dated work. A method-family registry may select among or compose families, but the registry entry is not the method relation structure unless the governing selector or method pattern states that relation by value.
 
 ### A.3.1:5 - Archetypal Grounding
 
-Across the slices below, a `U.Method` is not recognized by surface form. It is recognized by a stable project answer to this question:
+Across the slices below, a `U.Method` is not recognized by source wording, notation, or publication form. It is recognized by a stable project answer to this question:
 
 ```text
 In this bounded context, what way of doing changes, produces, derives, selects, controls, or preserves the EntityOfConcern under these conditions?
@@ -280,7 +298,7 @@ The repair is the same in each case: recover the `U.Method` slot when the semant
 
 **CC-A3.1-9 (Graph and representation guard).** A graph path, path slice, query, predicate, table, dashboard, publication face, or pattern relation is not a method or work sequence by layout. Use `C.2.P.DR` when representation wording is overread as imperative action.
 
-**CC-A3.1-10 (Composition distinction).** Method composition and work-occurrence composition must stay separate even when they correspond.
+**CC-A3.1-10 (Method relation structure and work composition distinction).** Method composition, method-family selection, fallback, refinement, substitution, iteration, decomposition, and work-occurrence composition must stay separate even when they correspond. When method-side relations are current, recover `MethodRelationStructure@BoundedContext`; algebraic, graph, categorical, process-calculus, effect-calculus, matrix, embedding, distributed, or neural notation is a lens or representation over that structure unless a governing pattern states a different object by value.
 
 **CC-A3.1-11 (Parameter and variant discipline).** Parameters may be declared at method or method-description level; concrete values are bound in work planning or work occurrence. Variant identity must be justified by effects, bounds, accepted inputs, and context.
 
@@ -321,7 +339,7 @@ The smallest useful repair is usually local: rewrite the method statement, split
 
 FPF needs `U.Method` because practical work often depends on a way of doing before there is one dated work occurrence, one accepted description, one final implementation, or one verified result. Treating the method as the document, code, mechanism, plan, or run makes reuse brittle: changing the publication looks like changing the method, a run error looks like method invalidation, and a mechanism claim starts authorizing work.
 
-The distinction between method and mechanism is especially important because the same source expression or project concern can need both linked values. The method says what way of doing is intended or enacted in context. The mechanism says what law-governed operation structure, admissibility predicate set, transport, audit surface, or realization relation is being declared. These values may be linked, but they should not be made two names for one untyped value.
+The distinction between method and mechanism is especially important because the same source expression or project concern can need both linked values. The method says what way of doing is intended or enacted in context. The mechanism says what law-governed operation structure, admissibility predicate set, transport, audit relation set, or realization relation is being declared. These values may be linked, but they should not be made two names for one untyped value.
 
 ### A.3.1:11 - SoTA-Echoing
 
@@ -337,7 +355,7 @@ Refresh this pattern when current work on constructor theory, process theory, ef
 ### A.3.1:12 - Relations
 
 * **Builds on:** `A.1` holonic foundation, `A.1.1 U.BoundedContext`, `A.2` role, `A.2.1 U.RoleAssignment`, `A.2.2 U.Capability`.
-* **Coordinates with:** `A.3.2` for method descriptions; `A.3.3` for dynamics; `A.6.0` for formal-substrate declarations; `A.6.1` and `E.20` for mechanism claims; `C.29` for mathematical-lens use; `A.15.2` for work plans; `A.15.1` for dated work; `A.10` for evidence relations or provenance relations; `C.2.P.DR` for declarative representations overread as imperative routes or work sequences.
+* **Coordinates with:** `A.3.2` for method descriptions and method-relation descriptions; `A.3.3` for dynamics; `A.6.0` for formal-substrate declarations; `A.6.1` and `E.20` for mechanism claims; `C.29` for mathematical-lens use; `G.5` for method-family registries and selector outcomes; direct method-composition patterns such as `B.1.5` when order-sensitive method composition is current; `A.15.2` for work plans; `A.15.1` for dated work; `A.10` for evidence relations or provenance relations; `C.2.P.DR` for declarative representations overread as imperative routes or work sequences.
 * **Informs:** `E.18` and `E.18.1` when transformation-flow-structure or P2W wording must keep flow-structure descriptions, graph/path mathematical expressions, method claims, and work claims separate.
 
 ### A.3.1:End

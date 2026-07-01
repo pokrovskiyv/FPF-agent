@@ -3,7 +3,7 @@ title: "Маршрут 7: Этический аудит"
 sources:
   - sections/routes/route-7-ethical-assurance.md
   - scripts/build_routes.py
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,8 +21,8 @@ tags:
 ## Ключевые решения
 
 - **Длина цепочки:** 5 секций при полной загрузке, из них 3 отмечены как core.
-- **Core-секции** (минимальная загрузка для простого запроса): `D.2` Multi-Scale Ethics Framework, `D.3` Holonic Conflict Topology, `D.5` Bias-Audit & Ethical Assurance.
-- **Полная цепочка** (сложный запрос) добавляет: `D.1` Axiological Neutrality Principle и `D.4` Trust-Aware Mediation Calculus.
+- **Core-секции** (минимальная загрузка для простого запроса): `D.2` (Multilevel Ethics For System-Holon Work), `D.3` (Interlevel Ethical Conflict Structure), `D.5` (Bias Audit and Ethical Assurance).
+- **Полная цепочка** (сложный запрос) добавляет: `D.1` (Ethical Value Plurality and FPF Boundary) и `D.4` (Ethical Mediation and Decision Use).
 - **Порядок загрузки** фиксирован последовательностью цепочки; при обнаружении стагнации Retriever обращается к перекрёстным ссылкам в `_xref.md`.
 
 ## Цепочка секций
@@ -31,11 +31,11 @@ tags:
 
 | # | Паттерн | Название | Core? |
 |---|---------|----------|-------|
-| 1 | D.1 | Axiological Neutrality Principle | |
-| 2 | D.2 | Multi-Scale Ethics Framework | YES |
-| 3 | D.3 | Holonic Conflict Topology | YES |
-| 4 | D.4 | Trust-Aware Mediation Calculus | |
-| 5 | D.5 | Bias-Audit & Ethical Assurance | YES |
+| 1 | D.1 | Ethical Value Plurality and FPF Boundary | |
+| 2 | D.2 | Multilevel Ethics For System-Holon Work | YES |
+| 3 | D.3 | Interlevel Ethical Conflict Structure | YES |
+| 4 | D.4 | Ethical Mediation and Decision Use | |
+| 5 | D.5 | Bias Audit and Ethical Assurance | YES |
 
 Соответствие паттерн → файл разрешается против `sections/metadata.json` на этапе сборки; секции, путь к файлу которых ещё отсутствует в metadata, рендерятся с пустой колонкой файла, пока спецификация не будет пересобрана.
 

@@ -57,10 +57,11 @@ A holon may repeat the cycle *ad infinitum*:
 ```
 
 *Observation itself is a transformation*:
-An **External Transformer** (`U.System` playing `transformerRole ⊑ TransformerRole`)
-executes a **measurement method** whose *output* is an epistemic holon
-containing observations.  Thus the traditional “External Observer Pattern” collapses into
-the universal external Transformer pattern.
+the observing side is a `U.RoleAssignment` whose `holderRef` names the acting `U.System`
+and whose `roleRef=TransformerRole@ObservationContext`. That holder executes a
+**measurement method** whose *output* is an epistemic holon containing observations.
+Thus the traditional “External Observer Pattern” collapses into the universal external
+Transformer pattern.
 
 ### A.4:5 - Archetypal Grounding
 
@@ -68,8 +69,8 @@ the universal external Transformer pattern.
 | --------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | **Design‑Time**       | 3‑D CAD + G‑code; stress‑sim config.                                                         | Lean/Coq script of theorem; dependency graph.                                           |
 | **Run‑Time**          | Pump circulates coolant under `OperatePump` method.                                          | Theorem cited & reused; runtime is “being relied on”.                                   |
-| **Run → Design loop** | Sensor data shows cavitation; anomaly report produced by monitoring server (`transformerRole`). | New experiment contradicts corollary; lab apparatus + scientists act as `transformerRole`. |
-| **Design → Run loop** | Engineers author Pump‑v3 spec, printer (`TransformerRole`) fabricates it.                    | Community revises proof, proof‑assistant (`TransformerRole`) verifies Proof‑v3.         |
+| **Run → Design loop** | Sensor data shows cavitation; anomaly report produced by the monitoring server under `roleRef=TransformerRole@MonitoringContext`. | New experiment contradicts corollary; lab apparatus and scientists hold `TransformerRole@ExperimentContext` assignments. |
+| **Design → Run loop** | Engineers author Pump‑v3 spec; the printer holds `TransformerRole@FabricationContext` while fabricating it.                    | Community revises proof; the proof assistant holds `TransformerRole@VerificationContext` while verifying Proof‑v3.         |
 
 *(Diagrammatic lineage table omitted for brevity but included in annex.)*
 

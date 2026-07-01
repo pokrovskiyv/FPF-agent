@@ -100,7 +100,7 @@ The values are ordinal content evaluations. They are not a scalar score, maturit
 
 | Pillar coordinate | Evaluation question | Good state |
 |---|---|---|
-| `P1CognitiveEleganceAdequacy` | Does the object expose decisive structure without ornamental formalism? | The reader sees the smallest structure that changes the move. |
+| `P1CognitiveEleganceAdequacy` | Does the object expose decisive structure without ornamental formalism? | The reader sees the smallest structure that changes the action. |
 | `P2DidacticPrimacyAdequacy` | Does human comprehension stay ahead of formal, tooling, or review purity? | Working situation, recognition reason, first move, and payoff stay visible. |
 | `P3ScalableFormalityAdequacy` | Can informality mature toward formal assurance without forks or rewrites? | Plain, Tech, Formal, and mathematical strengthening remain staged. |
 | `P4OpenEndedKernelAdequacy` | Do kernel concepts stay meta-level while domain knowledge stays in patterns? | New content extends FPF without smuggling domain doctrine into the kernel. |
@@ -187,7 +187,7 @@ When `E.22`, `E.23`, absorption, or exceptional-improvement framing asks for imp
 
 **Projection repair.** README scenarios, ToC rows, `E.11` entry-distribution loci, and `I.2` expanded entry-disambiguation cases improve search but can start carrying pattern semantics. `P5` and `P9` fall because projections become shadow authority. The repair moves durable semantics back to governing patterns and leaves thin echoes in projections.
 
-**Source absorption.** A new source family adds current methods, but pattern bodies only cite it. `P11` stays low until source rows change selected moves, examples, checks, or stop conditions. `P7` changes only when the source changes action.
+**Source absorption.** A new source family adds current methods, but pattern bodies only cite it. `P11` stays low until source rows change selected actions, examples, checks, or stop conditions. `P7` changes only when the source changes action.
 
 ### E.2.DA:6 - Bias annotation
 
@@ -211,7 +211,7 @@ The bias is bounded by the object-under-improvement declaration. `E.2.DA` does n
 | `CC-E2DA-10` | Use adjacent-value calibration when assigning `3`, `4`, or `5`; a rationale must distinguish the assigned value from its lower and higher neighbours. |
 | `CC-E2DA-11` | When the evaluated FPF object includes broad wording, naming, or precision cleanup, state `FPFKindRestorationEvidence` for changed FPF-governed phrases. If the cleanup changes, narrows, widens, flattens, or loses the governed kind, relation, claim kind, slot or use-position when that position is part of the changed FPF-governed claim, admissible use, or scope without accepted decision evidence and governing-pattern reference when another pattern governs the kind under repair, relation, claim, or position, lower the affected Pillar coordinates and keep the repair blocking. |
 | `CC-E2DA-11a` | When the evaluated FPF object includes ontic architecture, evaluate FPF-level effect, not ontic apparatus volume: reduced duplicate ontology or type explosion, clearer `EntityOfConcern` and SlotRelation boundaries, correct description-publication separation, thinner projections, and improved entry, authoring, review, or project use. Missing effect lowers the affected `P1`, `P2`, `P4`, `P5`, `P6`, `P7`, or `P8` coordinates. |
-| `CC-E2DA-12` | Keep Pillar values as measurement results, not repair targets. Below-floor values require FPF-level findings or repair. Above-floor improvement requires substantive non-dominated proposal rows when requested; it cannot close by adding projection proof, entry apparatus, source volume, review praise, monolith parity evidence, or all-`5` result framing that does not improve Pillar realization for the declared FPF use. A no-proposal or stay-at-current-value disposition must name loci and why no worthwhile Pillar-content move remains. |
+| `CC-E2DA-12` | Keep Pillar values as measurement results, not repair targets. Below-floor values require FPF-level findings or repair. Above-floor improvement requires substantive non-dominated proposal rows when requested; it cannot close by adding projection proof, entry apparatus, source volume, review praise, monolith parity evidence, or all-`5` result framing that does not improve Pillar realization for the declared FPF use. A no-proposal or stay-at-current-value disposition must name loci and why no worthwhile Pillar-content improvement remains. |
 
 ### E.2.DA:8 - Common anti-patterns and repairs
 
@@ -224,7 +224,7 @@ The bias is bounded by the object-under-improvement declaration. `E.2.DA` does n
 | **Projection authority.** A ToC, packet, or companion carries semantics. | Move semantics to the governing pattern and leave projection echo. |
 | **Citation shelf.** Source rows do not change FPF moves. | Lower `P11` and state the missing source contribution. |
 | **Pillar table without evidence loci.** Values are listed but not tied to corpus loci named by value. | Re-run with `Pillar coordinate | Value | ShortRationale | EvidenceLocus`; lower any Pillar whose evidence cannot be named. |
-| **Goodharted Pillar adequacy.** FPF-level values rise because more projection, source, review, or parity evidence was added, while entry recognition, layering, semantic authority, pragmatic utility, source use, or open-ended evolution becomes worse. | Reject apparatus-only improvement; apply `E.13` when Pillar values become targets replacing Pillar realization; repair the FPF-level content effect, delete or relocate proof material, and record checked no-proposal only when no non-dominated Pillar-content move remains. |
+| **Goodharted Pillar adequacy.** FPF-level values rise because more projection, source, review, or parity evidence was added, while entry recognition, layering, semantic authority, pragmatic utility, source use, or open-ended evolution becomes worse. | Reject apparatus-only improvement; apply `E.13` when Pillar values become targets replacing Pillar realization; repair the FPF-level content effect, delete or relocate proof material, and record checked no-proposal only when no non-dominated Pillar-content improvement remains. |
 
 ### E.2.DA:9 - Relations
 

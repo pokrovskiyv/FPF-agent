@@ -1,16 +1,43 @@
 ## A.2.9 — `U.SpeechAct` (Communicative Work Object)
 
-> **Type:** Definitional (D)
 > **Status:** Stable
+> **Type:** Definitional work-ontic pattern
+
+### A.2.9:0.1 - Kind Settlement
+
+`U.SpeechAct` is a dependent durable communicative-work value under `U.Work`; a speech act is work with communicative effect, not the utterance description, carrier, commitment, or evidence record.
+
+### A.2.9:0 - Use This When
+
+Use this pattern when a communicative event must be modeled as performed work: an approval, authorization, revocation, notice, declaration, publication, or similar act whose occurrence changes what a project can claim or do.
+
+**What goes wrong if missed.** A document, interface, ticket, message, or log is treated as if it performed the act; approval, utterance content, evidence carrier, commitment, and performed work collapse into one governance phrase.
+
+**What this buys.** Communicative acts become inspectable `U.Work` occurrences with performer, context, time window, affected referents, and evidence links while utterance descriptions and carriers stay separate.
+
+Typical moments:
+
+- a release, gate, or work step depends on whether a named approval or authorization was performed;
+- a publication, notice, or revocation changes status in a bounded context;
+- a commitment must cite the act that instituted it, rather than only pointing at a document;
+- a message, ticket, signed record, or API call log is being mistaken for the act itself.
+
+**Primary EntityOfConcern.** The EntityOfConcern is `U.SpeechAct`: a communicative work occurrence performed by an accountable role-assignment in a bounded context. The utterance content is a description episteme; the file, message, ticket, or log is a carrier or evidence record.
+
+**First useful move.** Name the performer, judgement context, time window, act type, affected referents, and any instituted effects by reference. Add utterance or carrier references only when they are needed for observation, audit, or source return.
+
+**Not this pattern when.** If the question is only what a document says, use A.7/C.2/E.17. If the question is who is accountable under a deontic relation, use A.2.8. If the question is evidence, use A.10/G.6. If the work has no communicative effect, use A.15.1 directly.
+
+> **Type:** Definitional (D)
 > **Normativity:** Normative (unless explicitly marked informative)
 > **Placement:** Part A → **A.2 Roles & Agency Kernel**
 > **Refines:** A.2 (Role Taxonomy)
-> **Builds on:** A.2.1 (RoleAssignment), A.2.6 (`Γ_time` / windows), A.7 (EntityOfConcern / Description episteme / carrier), A.10 (SCR/RSCR carrier discipline), A.15.1 (`U.Work`)
-> **Purpose (one line):** Provide a minimal, lintable kernel object for **communicative enactments** (approvals, authorizations, revocations, notices, declarations, publications) as **`U.Work`**, explicitly separating the **act** from its **utterance descriptions** and **evidence carriers**, so governance and gating can cite `SpeechActRef` without “contract soup” or episteme‑as‑agent mistakes.
+> **Builds on:** A.2.1 (RoleAssignment), A.2.6 (`Γ_time` and windows), A.7 (EntityOfConcern, Description episteme, and carrier), A.10 (SCR/RSCR carrier discipline), A.15.1 (`U.Work`)
+> **Purpose (one line):** Provide a minimal, lintable kernel object for **communicative enactments** (approvals, authorizations, revocations, notices, declarations, publications) as **`U.Work`**, explicitly separating the **act** from its **utterance descriptions** and **evidence carriers**, so governance and gate checks can cite `SpeechActRef` without deontic ambiguity or episteme-as-agent mistakes.
 
-> FPF already treats communicative acts as observable events used in role-state checklists and grounding (“presence of act: AuthorizationSpeechAct exists…”, and `U.SpeechAct` is listed as an observable basis for state assertions).
+> FPF already treats communicative acts as observable events used in role-state checklists and grounding (“presence of act: AuthorizationSpeechAct exists…”, and `U.SpeechAct` is listed as observable evidence for state assertions).
 > The spec’s micro-examples and conformance gates distinguish **communicative Work** (“performed a SpeechAct”) from **operational Work** (“executed Work”) while keeping both inside `U.Work` (cf. CC‑A15‑10 GateSplit).
-> F.18 currently frames `U.SpeechAct` as the “utterance” label in the promise/utterance/commitment triad; A.2.9 keeps that as **naming intuition** while putting the ontology and conformance discipline in Part A where it can be linted and reused.
+> F.18 can name `U.SpeechAct` in the promise/utterance/commitment triad; A.2.9 keeps the ontology and conformance discipline in Part A where communicative work, utterance description, and evidence carrier can be kept distinct.
 
 ### A.2.9:1 — Problem frame
 
@@ -27,18 +54,18 @@ Without a **first‑class kernel object** for such communicative events, authors
 * leave provenance dangling as “if modeled”,
 * encode gates as prose obligations, or treat obligations as gates.
 
-This pattern makes “speech act” an explicit, queryable **Work‑kind** with clear boundaries to `U.Commitment` and to utterance surfaces.
+This pattern makes “speech act” an explicit, queryable **Work‑kind** with clear boundaries to `U.Commitment`, utterance descriptions, and carriers.
 
 ### A.2.9:2 — Problem
 
 How can FPF represent communicative enactments so that:
 
-1. **Agency is explicit:** a concrete accountable subject performs the act (role/role‑enactor), not a document/spec/interface.
+1. **Agency is explicit:** a concrete accountable subject performs the act (role or role-enactor), not a document, spec, or interface.
 2. **The act is locatable in time:** the act has an explicit Window (and thus freshness can be evaluated).
 3. **The act is locatable in meaning:** the act is recognized inside a declared **bounded context** (the `U.Work` judgement context), not via `U.ClaimScope` (which expresses applicability of claims/commitments, not the judgement context for Work occurrences).
-4. **The act is auditable:** it has at least one declared utterance description and/or evidence carrier when used for gating or governance.
+4. **The act is auditable:** it has at least one declared utterance description, evidence carrier, or both when used for gate checks or governance.
 5. **Institutional effects are linkable:** the act can institute (or update/revoke) commitments, role assignments, statuses, etc., by reference.
-6. **Ambiguity is handled pragmatically:** the model supports multi‑function / multi‑party communication without requiring full linguistic pragmatics.
+6. **Ambiguity is handled pragmatically:** the model supports multi-function and multi-party communication without requiring full linguistic pragmatics.
 
 ### A.2.9:3 — Forces
 
@@ -49,11 +76,11 @@ How can FPF represent communicative enactments so that:
 | Context locality       | Meaning and “institutional force” are context-local; cross-context reuse must remain explicit (Bridge-only discipline). |
 | Multi-party reality    | Many real boundaries are multiparty (protocols, organizations); dyadic “speaker-hearer” is too narrow.                  |
 | Multi-function reality | One utterance can carry multiple recognizable functions; “one act = one force” is often false.                          |
-| Separation discipline  | Must preserve A.7 splits: **act object** ≠ **utterance description** ≠ **carrier/traces**.                              |
+| Separation discipline  | Must preserve A.7 splits: **act object** ≠ **utterance description** ≠ **carriers and traces**.                              |
 
 ### A.2.9:4 — Solution
 
-`U.SpeechAct` is a **kernel Work object**: a recorded communicative enactment performed by an accountable role‑enactor within a bounded context, optionally addressed to others, that is **recognized** (in that context) as updating an information and/or governance state. The act is **not** the utterance text; it points to utterance descriptions and evidence carriers.
+`U.SpeechAct` is a **kernel Work object**: a recorded communicative enactment performed by an accountable role-enactor within a bounded context, optionally addressed to others, that is **recognized** (in that context) as updating an information state, governance state, or both. The act is **not** the utterance text; it points to utterance descriptions and evidence carriers.
 
 #### A.2.9:4.1 — Normative definition
 
@@ -65,7 +92,7 @@ A **`U.SpeechAct`** is a **`U.Work`** occurrence whose primary (intended) effect
 * declaring/authorizing/revoking (status-changing acts),
 * notifying (event announcement relevant for downstream work).
 
-Per A.7, `U.SpeechAct` is an **object/event**; its **utterance descriptions** are descriptions (epistemes/spec clauses/messages‑as‑content), and its **carriers** are utterance carriers, publication carriers, or traces that support observation and audit. *(Note: “Surface” is reserved for MVPK publication/interoperability surfaces; do not use it here.)*
+Per A.7 and A.15.1, `U.SpeechAct` is a **communicative-work value under `U.Work`**; its **utterance descriptions** are descriptions (epistemes, spec clauses, or messages-as-content), and its **carriers** are utterance carriers, publication carriers, or traces that allow observation and audit. *(Note: “Surface” is reserved for MVPK publication/interoperability surfaces; do not use it here.)*
 
 Whether a given `actType` institutes commitments/permissions/status changes is **entirely context‑policy dependent**. Absent an explicit policy, treat a `U.SpeechAct` as a communicative Work occurrence with observable provenance only; do not infer deontic bindings from the act by default.
 
@@ -115,9 +142,9 @@ InstitutedEffects ::=
 * **(SA‑C1) PerformedBy must be an accountable actor.** `performedBy` **MUST** resolve to a `RoleAssignmentRef` whose holder is an accountable system or party in the named scope. It **MUST NOT** resolve to a specification episteme, interface-description episteme, or document-carried episteme.
 * **(SA‑C2) ActTypes are required and context-local.** `actTypes` **MUST** contain at least one `SpeechActTypeRef` recognized in the Work’s judgement context (local meaning). Free‑text verbs are nonconformant unless registered as a context token.
 * **(SA‑C3) Time honesty.** `window` **MUST** be explicit (or inherited from the parent `U.Work` record) so freshness rules can be evaluated.
-* **(SA‑C4) If used for gating/audit, it must be observable.** If a speech act is used as a checklist criterion, guard condition, or provenance hook for a `U.Commitment`, the model **SHALL** include at least one observable handle: `utteranceRefs` and/or `carrierRefs`. When the act is used as evidence, at least one carrier reference **SHOULD** be SCR/RSCR‑resolvable per A.10.
+* **(SA‑C4) If used for gate checks or audit, it must be observable.** If a speech act is used as a checklist criterion, guard condition, or provenance hook for a `U.Commitment`, the model **SHALL** include at least one observable handle: `utteranceRefs`, `carrierRefs`, or both. When the act is used as evidence, at least one carrier reference **SHOULD** be SCR/RSCR‑resolvable per A.10.
 * **(SA‑C5) Institutional effects are references, not paraphrases.** When the act is intended to institute/update commitments, role assignments, or statuses, `institutes.*` **SHOULD** reference the corresponding object IDs/claim IDs rather than restating content.
-* **(SA‑C6) Cross-context use is Bridge-only.** If a `SpeechActRef` is used for checking/gating/provenance in a **different bounded context** than the act’s judgement context, the referencing object **MUST** satisfy the spec’s cross-context discipline by citing an explicit Bridge/policy that licenses the interpretation (and surfacing congruence vs loss where applicable), rather than assuming equivalence by label.
+* **(SA‑C6) Cross-context use is Bridge-only.** If a `SpeechActRef` is used for checking, gate evidence, or provenance in a **different bounded context** than the act’s judgement context, the referencing object **MUST** satisfy the spec’s cross-context discipline by citing an explicit Bridge/policy that licenses the interpretation (and surfacing congruence vs loss where applicable), rather than assuming equivalence by label.
 
 #### A.2.9:4.3 — `SpeechActRef` discipline (normative)
 
@@ -133,7 +160,7 @@ A **`SpeechActRef`** is a reference to `U.SpeechAct.id`.
    A speech act may **institute** a `U.Commitment`, but the deontic relation itself is the `U.Commitment` object (A.2.8). Do not encode obligations/permissions inside `U.SpeechAct` as prose; instead, create/point to `U.Commitment` IDs in `institutes.commitments`.
 
 2. **Speech act is not the service promise clause.**
-   `U.PromiseContent` / promise contents are promise content; a speech act may be the act of offering/issuing that promise, but the promise content lives in the service/promise content objects and is referenced from the resulting commitments.
+   `U.PromiseContent` is the promised-outcome statement; a speech act may be the act of offering or issuing that promise, but the promise content lives in the promise-content object and is referenced from the resulting commitments.
 
 3. **Speech act is not the carrier.**
    A “signed approval PDF”, “ticket record”, “Slack message”, or “API call log” is a carrier (and may carry an episteme as utterance content); the speech act is the Work occurrence that produced/issued it.
@@ -212,7 +239,7 @@ This preserves:
   * `carrierRefs = {CarrierRef(GitTag:v12), CarrierRef(SignedReleaseArtifact:v12)}`
   * `institutes.statusClaims = {ClaimIdRef(D-StdStatus-APISpec_v12-Published)}` (if modeled)
 
-Norms live in the **published utterance surfaces** (spec clauses as L/A/D/E-classified claims), but the **act of publication** is a speech act performed by an accountable role. This avoids “the spec promises/commits” category errors while preserving auditability.
+Norms live in the **published utterance descriptions** (spec clauses as L/A/D/E-classified claims), but the **act of publication** is a speech act performed by an accountable role. This avoids “the spec promises/commits” category errors while preserving auditability.
 
 ### A.2.9:6 — Bias-Annotation
 
@@ -229,16 +256,16 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Ke
 1. **CC‑A.2.9‑1 (Accountable performer).** A normative `U.SpeechAct` record **MUST** identify `performedBy` as an accountable `RoleAssignmentRef` and **MUST NOT** use a specification episteme, interface-description episteme, or document-carried episteme as performer.
 2. **CC‑A.2.9‑2 (ActTypes declared).** A `U.SpeechAct` record **MUST** include at least one `SpeechActTypeRef` recognized in its judgement context.
 3. **CC‑A.2.9‑3 (Window explicit).** A `U.SpeechAct` record **MUST** have an explicit `window` (or inherit a window from its parent work record) so freshness and gating can be evaluated.
-4. **CC‑A.2.9‑4 (Observable when used for gating/provenance).** If a speech act is cited by a checklist/guard or by `U.Commitment.source.speechActRef`, it **SHALL** have at least one `utteranceRef` or `carrierRef` that supports observation/audit in the given context; evidence‑critical uses **SHOULD** anchor at least one carrier via SCR/RSCR per A.10.
+4. **CC‑A.2.9‑4 (Observable when used for gate checks or provenance).** If a speech act is cited by a checklist/guard or by `U.Commitment.source.speechActRef`, it **SHALL** have at least one `utteranceRef` or `carrierRef` that allows observation and audit in the given context; evidence-critical uses **SHOULD** cite at least one carrier via SCR/RSCR per A.10.
 5. **CC‑A.2.9‑5 (Effects by reference).** If the act is intended to institute/update commitments/roles or statuses, those effects **SHOULD** be referenced in `institutes.*` by stable IDs.
-6. **CC‑A.2.9‑6 (Bridge-only cross-context use).** If a `SpeechActRef` is interpreted for gating/provenance in a different bounded context than the act’s judgement context, the referencing object **MUST** cite the Bridge/policy that licenses that cross-context interpretation (no “same label implies same force”).
+6. **CC‑A.2.9‑6 (Bridge-only cross-context use).** If a `SpeechActRef` is interpreted for gate checks or provenance in a different bounded context than the act’s judgement context, the referencing object **MUST** cite the Bridge/policy that licenses that cross-context interpretation (no “same label implies same force”).
 
 ### A.2.9:8 — Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern                                                              | Why it fails                         | Repair                                                                                   |
 | ------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------- |
 | **Episteme-as-actor** (“the spec approves/declares”)                      | assigns agency to descriptions       | represent the publishing/approving act as `U.SpeechAct(performedBy=RoleAssignment)`      |
-| **Carrier-as-act** (“the signed PDF is the approval”)                     | conflates carrier with act           | model `U.SpeechAct` and point to PDF as `carrier`/`utteranceSurface`                     |
+| **Carrier-as-act** (“the signed PDF is the approval”)                     | conflates carrier with act           | model `U.SpeechAct` and point to the PDF as a carrier reference and, when needed, to a separate utterance-description reference                     |
 | **Free-text type** (“type=‘approved-ish’”)                                | not lintable; drifts across faces    | register `SpeechActTypeRef` in the context and use it                                    |
 | **Act carries obligations** (obligations embedded as prose in speech act) | collapses act and deontic binding    | model obligations as `U.Commitment` objects instituted by the act                        |
 | **Gating without window**                                                 | cannot evaluate freshness            | add explicit `window` and reference it in the guard/checklist                            |
@@ -259,20 +286,20 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Ke
 
 ### A.2.9:10 — Rationale
 
-FPF already relies on communicative acts (approvals, notices, overrides) as operationally meaningful events, but without a kernel object they blur into examples, naming choices, or prose. A.2.9 anchors speech acts where they belong: as a **Work-kind** with explicit performer, scope, and time, and with disciplined links to utterance surfaces, carriers, and deontic bindings (`U.Commitment`).
+FPF already relies on communicative acts (approvals, notices, overrides) as operationally meaningful events, but without a kernel object they blur into examples, naming choices, or prose. A.2.9 anchors speech acts where they belong: as a **Work-kind** with explicit performer, scope, and time, and with disciplined links to utterance descriptions, carriers, and deontic bindings (`U.Commitment`).
 
 This also improves modularity:
 
-* **F.18** can remain a **lexical anchor** for naming (why “SpeechAct/utterance” as a label family is useful),
+* **F.18** can remain a **lexical entry point** for naming (why “SpeechAct” and “utterance” are useful labels),
 * while **A.2.9** carries the ontology and conformance discipline for how speech acts behave as objects and how they connect to commitments and evidence.
 
-### A.2.9:11 — SoTA‑Echoing (informative; post‑2015 alignment)
+### A.2.9:11 — SoTA-Echoing (informative; post-2015 alignment)
 
 > **Informative.** Alignment notes; not normative requirements.
 
 * **Adopt — ISO 24617‑2:2020 / multi-dimensional communicative functions.** Modern dialogue‑act standards treat communicative behavior as potentially multi‑functional. A.2.9 mirrors this by allowing `actTypes` to be a **set** and by supporting shared carriers across multiple acts.
 * **Adapt — commitment-based semantics for communication (multi-agent/protocol practice, 2015+).** A pragmatic way to avoid mental-state modeling is to track communication by its **social/institutional effects**, especially on commitments and protocol states. A.2.9 reflects this via `institutes.commitments` and explicit links to `U.Commitment` without modeling sincerity or intention.
-* **Adopt (warning) — illocutionary pluralism in multiparty discourse (2015+).** One utterance commonly performs multiple recognizable functions. A.2.9 avoids the “single force” trap by permitting multi‑type acts and/or multiple acts sharing the same utterance and carriers.
+* **Adopt (warning) — illocutionary pluralism in multiparty discourse (2015+).** One utterance commonly performs multiple recognizable functions. A.2.9 avoids the “single force” trap by permitting multi-type acts, multiple acts sharing the same utterance and carriers, or both.
 
 ### A.2.9:12 — Relations
 

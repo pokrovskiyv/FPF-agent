@@ -154,7 +154,7 @@ Each box/arrow is **context‑local** (SPEM, PROV‑O, IEC…). **Cross‑contex
 | **A8**  | **Recipe-as-Role**             | “The Spec assigns responsibility” (mixes MethodDescription with Role constructs — `U.RoleDescription`/`U.RoleAssignment`).  | Conflates the `U.MethodDescription` episteme with behavioural masks.         | Use **F.4 Role Description**; let **MethodDescription** only **describe** a Method.                                                                            |
 | **A9**  | **One‑Context Scope**        | A single Context (e.g., BPMN) used as if it covered control/measurement. | Scope mirage; silent cross‑domain generalisation.                           | Re‑cut Contexts (F.1) to include control and sensing. Re‑express statements with the quartet across those Contexts.                                                                                                        |
 | **A10** | **Lossless Bridge Assumption** | Claiming “equivalent” across Contexts without Loss.                      | Hides mismatches; unsafe transfer of inferences.                            | In **F.7/F.9** declare Bridge **kind**, **CL**, and explicit **Loss** notes.                                                                                                                                         |
-| **A11** | **Recipe‑as‑Type**             | Treating a MethodDescription vocabulary as a type taxonomy.                  | Category error; misuses Kind-CAL.                                           | If a stable hierarchy of **kinds** of Methods is needed, mint **U.Type** nodes in Kind-CAL; keep MethodDescription as *description* only.                                                                                   |
+| **A11** | **Recipe-as-Kind**             | Treating a MethodDescription vocabulary as a method-kind taxonomy.                  | Category error; confuses description wording with method kindhood.                                           | If a stable hierarchy of **kinds** of Methods is needed, use admission under E.24.UK and C.3 with an ontic and bridge record; keep MethodDescription as *description* only.                                                                                   |
 | **A12** | **Actuation Outside Work**     | Commands modeled without enclosing Work.                              | Severs signal from enactment context; breaks traceability.                  | Embed **Actuation** **within** **Work** intervals; relate to the enacting Role and Method or MethodDescription references.                                                                                                     |
 
 ### F.11:11 - Worked examples (extended)
@@ -281,7 +281,7 @@ E.10.D1 **D.CTX** (Context ≡ `U.BoundedContext`); A.3/**A.3.1**/**A.3.2**/**A.
 * **F.7/F.9 Bridges:** All Cross‑context assertions among quartet terms **must** go through explicit Bridges with **kind/CL/Loss**.
 
 **Used by.**
-Part C patterns (Sys‑CAL, KD‑CAL, Method‑CAL, Kind-CAL, LCA‑CAL) when describing examples, proofs, and cross‑disciplinary mappings.
+Part C patterns (Sys‑CAL, KD‑CAL, Kind-CAL, LCA‑CAL) and the method/work stack (A.3/A.15/B.1.5) when describing examples, proofs, and cross‑disciplinary mappings.
 
 ### F.11:14 - Migration notes (conceptual)
 
@@ -316,6 +316,6 @@ Part C patterns (Sys‑CAL, KD‑CAL, Method‑CAL, Kind-CAL, LCA‑CAL) when de
 > Keep **design** and **run** as distinct **stances**. Plans and approvals live in the **design stance**; measurements and obligations live in the **run stance** within **Windows**.
 > Words like *process*, *task*, *activity*, *command* are **context‑local**—say *process (BPMN)*, *activity (PROV)*, *task (IEC)*. If you must relate them, draw a **Bridge** and declare its **kind**, **CL**, and **Loss**.
 > For compliance, don’t point at the plan—point at **Work**, show **Observations**, and judge clauses in **F.10**.
-> Hold this quartet in your head and you’ll stop mixing plans with facts, signals with outcomes, and names across Contexts. + Everything else—naming (F.5), `U.RoleDescription` (F.4) and `U.RoleAssignment`/`U.RoleEnactment` (A.2.1/F.6), Bridges (F.7/F.9)—falls into place.
+> Hold this quartet in your head and you’ll stop mixing plans with facts, signals with outcomes, and names across Contexts. Everything else—naming (F.5), `U.RoleDescription` (F.4), `U.RoleAssignment`, and performed-work attribution (A.2.1/F.6)—falls into place.
 
 ### F.11:End

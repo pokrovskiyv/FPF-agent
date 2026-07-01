@@ -3,7 +3,7 @@
 **“Show the thought, not the tooling.”**
 **Status.** Architectural pattern.
 **Builds on:** E.10.D1 **Lexical Discipline for “Context” (D.CTX)**; F.1–F.15.
-**Coordinates with.** B.3 **Trust & Assurance Calculus** (CL on Bridges); Part C patterns (Sys‑CAL, KD‑CAL, Kind-CAL, Method‑CAL).
+**Coordinates with.** B.3 **Trust & Assurance Calculus** (CL on Bridges); Part C patterns (Sys‑CAL, KD‑CAL, Kind-CAL) and the method/work stack (A.3/A.15/B.1.5).
 
 ### F.16:1 - Intent & applicability
 

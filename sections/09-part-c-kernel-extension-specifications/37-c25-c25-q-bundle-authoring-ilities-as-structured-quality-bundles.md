@@ -28,14 +28,14 @@ Without a normal form for engineering quality families:
    Presence of redundancy, certification, or audit controls is described as if it were itself a measurement value.
 4. **Guards become unstable.**
    Admission checks silently mix scope coverage, numerical thresholds, mechanism presence, and evidence freshness in one phrase.
-5. **Evaluative routing remains underspecified.**
+5. **Evaluative governing-pattern selection remains underspecified.**
    After `C.16.Q` repairs a bare quality term, or `C.16.P` repairs characteristic, scale, score, metric, or proxy wording inside that term, the admissible endpoint is unclear unless FPF distinguishes single-CHR cases from bundle-shaped quality families.
 
 ### C.25:3 - Forces
 
 | Force | Tension |
 |---|---|
-| **Simplicity vs category hygiene** | Authors want one convenient quality label; the framework must still keep CHR, USM, mechanism, and status roles distinct. |
+| **Simplicity vs category hygiene** | Authors want one convenient quality label; the framework must still keep CHR, USM, mechanism, status values, and status-use relations distinct. |
 | **Comparability vs local applicability** | Measures should compare legally across contexts, while scope remains context-local and set-valued. |
 | **Thin ontology vs practical authoring** | The pattern should regularize quality authoring without creating a new heavy kernel family for every `-ility`. |
 | **Endpoint clarity vs expressive breadth** | Some quality terms really are one characteristic; others are bundles. The endpoint rule must cover both without ambiguity. |
@@ -61,14 +61,14 @@ Use a **Q-Bundle** when the quality family depends on more than one of the follo
 
 #### C.25:4.2 - Q-Bundle shape
 
-`Q-Bundle := <Name, Carrier, ClaimScope?, WorkScope?, Measures[CHR], QualificationWindow?, Mechanisms?, Status?, Evidence?>`
+`Q-Bundle := <Name, QualityBearer, ClaimScope?, WorkScope?, Measures[CHR], QualificationWindow?, Mechanisms?, Status?, Evidence?>`
 
 The pattern adds no new Kernel kind for these slots. It reuses existing kinds and keeps them in one disciplined authoring structure.
 
-#### C.25:4.3 - Field roles
+#### C.25:4.3 - Field meanings
 
 - **Name.** The engineering quality family label, such as `Availability`, `Resilience`, or `Security`.
-- **Carrier.** The bearer of the quality claim: typically `U.System`, `U.PromiseContent`, or `U.Episteme`.
+- **QualityBearer.** The bearer of the quality claim: typically `U.System`, `U.PromiseContent`, or `U.Episteme`.
 - **ClaimScope / WorkScope.** USM sets over `U.ContextSlice` describing where the claim holds or where the capability can deliver. These are **set-valued scope objects**, not characteristics.
 - **Measures[CHR].** One or more admissible CHR characteristics, each bound to one declared scale.
 - **QualificationWindow.** The temporal policy under which the quality claim is judged.
@@ -102,7 +102,7 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 - `CC-C.25-3` `ClaimScope` and `WorkScope` **SHALL** remain USM set-valued scope objects; they **MUST NOT** be treated as ordinal or numeric quality levels.
 - `CC-C.25-4` Mechanism or status slots **MUST NOT** be conflated with `Measures[CHR]`.
 - `CC-C.25-5` Any scalar comparison or thresholding inside a Q-Bundle **SHALL** apply only to declared CHR measures, not to scope slots.
-- `CC-C.25-6` Cross-context penalties and bridge losses **SHALL** route to `R` per `B.3` / `F.9`; they **MUST NOT** silently alter the type of the bundle's `F`, scope, or CHR type authority.
+- `CC-C.25-6` Cross-context penalties and bridge losses **SHALL** apply to `R` per `B.3` / `F.9`; they **MUST NOT** silently alter the type of the bundle's `F`, scope, or CHR type authority.
 
 ### C.25:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -139,14 +139,15 @@ Contemporary engineering quality practice routinely mixes service-level measures
 - C.27 may flag: a quality-family statement where agility, resilience, adaptability, recovery, or robustness depends on braking, redirection, stabilization, recovery rate, or rhythm under effort.
 - This pattern keeps: quality-family bundle structure, scope, mechanism/status slots, evidence, qualification window, and failure mode.
 - Non-admissible use: temporal adequacy is not quality adequacy; speed, recovery, or rhythm becomes quality content only when C.25 declares the quality family, scope, mechanism/status slots, evidence, and failure mode.
-- Exit: use C.27 to state the dynamic slot only when it changes admissible use; do not make every quality bundle carry dynamic slots.
+- Coordinate with C.27 only when the temporal dynamic changes admissible use; do not make every quality bundle carry dynamic slots.
 
 - **Builds on:** `A.2.6` for scope algebra, `A.6.1` for mechanism references, and `C.16 / A.18` for CHR legality.
-- **Coordinates with:** `C.2.2a`, `A.16.0`, `B.3` for assurance penalties, `A.15` for gate use, `C.16.P` for unresolved characteristic, scale, score, metric, or proxy wording inside a quality-family statement, `C.16.Q` for overloaded quality or evaluative-characterization wording, `C.17, C.18, and C.19` for adjacent quality-family measures, and `F.9 / F.9.1` when cross-context bundle comparison or bridge stance annotation is required.
+- **Coordinates with:** `C.2.2a`, `A.16.0`, `B.3` for assurance penalties, `A.15` for gate use, `C.16.P` for unresolved characteristic, scale, score, metric, or proxy wording inside a quality-family statement, `C.16.Q` for overloaded quality or evaluative-characterization wording, `C.33`, `C.34`, and `C.35` when captured structure, lost structure, preservation, or generated-carrier adequacy becomes part of a composite architecture quality family, `C.17`, `C.18`, and `C.19` for adjacent quality-family measures, and `F.9` or `F.9.1` when cross-context bundle comparison or bridge stance annotation is required.
 - **Constrains:** engineering quality authoring whenever a quality term would otherwise drift between single-CHR and composite-bundle readings.
-#### C.25:12.1 - Endpoint role in evaluative classification
 
-Within language-state trajectories and their endpoint docks, `C.25` is the system-side endpoint pattern for engineering quality families after overloaded quality wording has been repaired by `C.16.Q` and any hidden characteristic, scale, score, metric, or proxy wording has been repaired by `C.16.P`. `qualityTermAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the admissible endpoint is a single `Characteristic`, a `Q-Bundle`, or an explicit objective-oriented quality bundle.
+#### C.25:12.1 - Endpoint function in evaluative classification
+
+In evaluative repair, `C.25` is the system-side endpoint pattern for engineering quality families after overloaded quality wording has been repaired by `C.16.Q` and any hidden characteristic, scale, score, metric, or proxy wording has been repaired by `C.16.P`. `qualityTermAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the admissible endpoint is a single `Characteristic`, a `Q-Bundle`, or an explicit objective-oriented quality bundle.
 
 ### C.25:13 - Decision Test: Single Characteristic or Bundle?
 
@@ -299,11 +300,11 @@ Gate designers should resist writing guards against vague family labels such as 
 
 This keeps the gate auditable and prevents later disputes about what the family label was supposed to mean.
 
-### C.25:17 - Migration and Boundary Notes
+### C.25:17 - Repair and Boundary Notes
 
-#### C.25:17.1 - Migration from bare quality requirements
+#### C.25:17.1 - Repair from bare quality requirement prose
 
-Legacy phrases such as *quality requirement*, *security requirement*, or *availability requirement* should not survive as bare heads when the underlying endpoint is actually a characteristic or bundle. The migration rule is:
+Bare phrases such as *quality requirement*, *security requirement*, or *availability requirement* should not survive as bare heads when the underlying endpoint is actually a characteristic or bundle. The repair rule is:
 
 - choose the endpoint shape first,
 - then bind the requirement or commitment to that explicit head.
@@ -312,13 +313,13 @@ Legacy phrases such as *quality requirement*, *security requirement*, or *availa
 
 #### C.25:17.2 - Boundary to assurance penalties
 
-Cross-context transport, bridge loss, or plane mismatch do not change whether the endpoint is one characteristic or one bundle. Those effects route to `R` and its penalties. `C.25` therefore should not be used to hide assurance degradation inside the quality-family ontology.
+Cross-context transport, bridge loss, or plane mismatch do not change whether the endpoint is one characteristic or one bundle. Those effects apply to `R` and its penalties. `C.25` therefore should not be used to hide assurance degradation inside the quality-family ontology.
 
 #### C.25:17.3 - Boundary to publication convenience
 
 A report, summary publication, or executive summary may expose only one slice of a Q-Bundle, but the underlying authoring structure remains the bundle. Publication convenience is not a reason to collapse the ontology at the source.
 
-#### C.25:15.5 - Serviceability and supportability
+#### C.25:17.4 - Serviceability and supportability
 
 Serviceability, supportability, and adjacent family labels often look simple in prose but become composite as soon as operational use is declared. An admissible bundle for this family may need:
 
@@ -329,7 +330,7 @@ Serviceability, supportability, and adjacent family labels often look simple in 
 
 The lesson is the same as elsewhere in `C.25`: once the truth of the family claim depends on several typed contributors, the bundle should stay explicit.
 
-#### C.25:17.4 - Boundary to description-side and selector-side evaluation
+#### C.25:17.5 - Boundary to description-side and selector-side evaluation
 
 `C.25` is for engineering quality families whose bearer is a system-side, promise-side, or explicit quality-bearing artifact. It does **not** automatically cover:
 
@@ -337,6 +338,7 @@ The lesson is the same as elsewhere in `C.25`: once the truth of the family clai
 - or selector/objective heads where *quality* means use-value under a search or portfolio frame.
 
 This boundary matters because the same word *quality* appears across those zones. `C.16.Q` repairs overloaded quality wording, `C.16.P` repairs characteristic, scale, score, metric, or proxy wording when that is the hidden object, and the resting endpoint depends on what is actually being evaluated.
+
 ### C.25:18 - Bundle Decomposition and Comparison Law
 
 #### C.25:18.1 - Local decomposition rule
@@ -357,9 +359,9 @@ A context may publish a summary proxy for reporting convenience, but the proxy r
 When a gate uses a quality family, the gate should bind to explicit bundle slots: declared scope, specific measures, qualification window, and any required mechanism or status slots. Gate authors should not rely on the family label alone, because labels invite different local decompositions.
 
 #### C.25:19.3 - Roll-up caution
-A summary publication or review may aggregate several bundle instances, but the roll-up must remain visibly downstream from the underlying bundle structure. If the roll-up begins to drive local engineering decisions directly, the governing bundle slots should be surfaced again rather than hiding them behind one summary score.
+A summary publication or review may aggregate several bundle instances, but the roll-up must remain visibly downstream from the underlying bundle structure. If the roll-up begins to drive local engineering decisions directly, the governing bundle slots should be made explicit again rather than hiding them behind one summary score.
 
-### C.25:20 - Review Matrix and Migration Tests
+### C.25:20 - Review Matrix and Repair Tests
 
 A checking reader can test a Q-Bundle with five questions:
 
@@ -369,7 +371,7 @@ A checking reader can test a Q-Bundle with five questions:
 4. **Would a gate still be auditable if the family label were removed?**
 5. **If the claim crosses contexts, is bridge work kept in `F.9` rather than hidden inside the family bundle?**
 
-Migration from legacy family prose should therefore recover bundle shape first, then choose whether any narrow slice deserves a separate CHR publication.
+Repair from bare family prose should therefore recover bundle shape first, then choose whether any narrow slice deserves a separate CHR publication.
 
 ### C.25:20a - Viability-envelope, quantum-like, and temporal-claim relation note
 
@@ -406,5 +408,9 @@ Useful outputs:
 - a `C.26.3` envelope-regulation note when probes/actuators/boundary conditions change the admissible viability reading;
 - a `C.27` temporal-claim adequacy card when rate-change, effort, window, resistance, or cadence changes the admissible use;
 - no QL wording when ordinary quality-bundle, proxy, feedback, or control tuning carries the work.
+
+#### C.25:20b - Architecture-decision Q-Bundle boundary
+
+`C.32.P2S`, `C.32.PAD`, and `C.32.ADA` may cite Q-Bundles as architecture-characteristic inputs, accepted-loss structure, guardrail rows, feedback concerns, or adequacy concerns. C.25 keeps composite quality-family slots, bearer, scope, measures, mechanisms, qualification window, and evidence distinct from the problem-to-structure architecturing flow, project architecture decision relation, and ADR-like publication projection.
 
 ### C.25:End

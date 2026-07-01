@@ -1,10 +1,20 @@
 ## C.21 - Field Health & Structure (Discipline-CHR)
+> **Status:** Stable
+> **Type:** Pattern
 
-> *Purpose.* Give FPF a **typed, reviewable** way to characterize the *health, maturity, and structure* of a scientific or engineering **discipline**, without collapsing into taste, anecdotes, dashboard views, audit labels, or single-number scores. The pattern defines a **portable set of Characteristics** and guards (legality, freshness, scope) that any Context can specialize.
+> *Purpose.* Give FPF a **typed, reviewable** way to characterize the *health, maturity, and structure* of a scientific or engineering **discipline**, without collapsing into taste, anecdotes, dashboard views, audit labels, or single-number scores. The pattern defines a **portable set of Characteristics** and guards (scale admissibility, freshness, scope) that any Context can specialize.
 
 *This pattern supplies the CHR vocabulary of health for disciplines. C.20 composes the discipline; C.21 declares discipline-health characteristics and admissible readings; Part G may publish SoTA palettes or time-series views; Bridges keep cross-context meaning honest; penalties touch **R** only.*
 
- **Status & placement.** Part C (Kernel Extention Specifications) → Cluster C.I (Core CHRs/CALs).
+### C.21:0 - Use This When
+
+Use this pattern when a team must characterize the health, maturity, or structure of a discipline without reducing the field to a dashboard score, popularity signal, or one preferred tradition. Typical cases include judging reproducibility, standards convergence, cross-tradition alignment, disruption balance, evidence granularity, or method-family diversity.
+
+**What goes wrong if missed.** Field-health claims become attractive labels: ordinals get averaged, stale evidence looks current, local scope disappears, and cross-context reuse hides meaning loss behind one score.
+
+**What this buys.** Discipline health becomes a vector of typed characteristics with scale, unit, polarity, freshness, scope, and bridge conditions visible before any comparison or publication view.
+
+**Placement.** Part C (Kernel Extension Specifications) -> Cluster C.I (Core CHRs/CALs).
   **Depends on:** **MM-CHR** (C.16), **KD-CAL** (C.2), **USM/Scope** (A.2.6), **Trust & Assurance** (B.3), **E.10 (LEX‑BUNDLE)**.
   **Coordinates with:** **C.20 Discipline‑CAL** (what a `U.Discipline` is), **G.2** (SoTA palette), **G.12** (dashboard), **G.0** (CG‑Spec registry).
 
@@ -16,7 +26,7 @@ FPF treats *disciplines* as first-class holons (see **C.20**): they aggregate ep
 
 Narrative health claims cause three recurrent failure modes:
 
-1. **Illegality.** Averaging ordinals, mixing units, or comparing incommensurate Contexts ⇒ nonsense roll-ups.
+1. **Scale inadmissibility.** Averaging ordinals, mixing units, or comparing incommensurate Contexts => nonsense roll-ups.
 2. **Staleness.** Health “scores” rarely declare **freshness windows** or evidence lanes (TA/VA/LA).
 3. **Scope slippage.** “The field” is left implicit; cross-Context reuse lacks **Bridges & CL**, leading to silent semantic loss. Any numeric comparison or aggregation cites a **CG-Spec** row (characteristics, **ScaleComplianceProfile (SCP)**, **Γ-fold**, MinimalEvidence) before computation.
 
@@ -25,7 +35,7 @@ Narrative health claims cause three recurrent failure modes:
 | Force                            | Tension                                                                                                                    |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **Comparability vs nuance**      | Need global pictures without erasing local meaning (Context, traditions, cohorts).                                         |
-| **Ordinal vs interval/ratio**    | Powerful stats tempt illegal ops on ranks and categories.                                                                  |
+| **Ordinal vs interval/ratio**    | Powerful stats tempt inadmissible operations on ranks and categories.                                                                  |
 | **Local evidence vs federation** | Health must be computed *in room* (Context slice) yet projectable across rooms via Bridges & CL (penalties to **R** only). |
 | **Recency vs stability**         | Health evolves; time-series or dashboard views need **freshness**, not just cumulative history.                           |
 
@@ -44,9 +54,9 @@ Narrative health claims cause three recurrent failure modes:
 **Publication.** Releases are **Work** on Carriers; **no** edition change unless content changes per `U.EditionSeries`.
 **Ref discipline.** All bindings to packs/methods/distances use `...Ref.edition` (dot on the Ref).
 
-Define a **portable minimal set** of CHR **slots**. Each slot is **CHR-typed** (Characteristic, Scale/Unit/Polarity per **A.17–A.18**), **Context-local**, and guarded by **USM** (Claim scope **G**), **freshness windows**, and **evidence lanes** (TA/VA/LA).  Contexts may extend the set; conforming extensions do not alter scale types illegally.
+Define a **portable minimal set** of CHR **slots**. Each slot is **CHR-typed** (Characteristic, Scale/Unit/Polarity per **A.17–A.18**), **Context-local**, and guarded by **USM** (Claim scope **G**), **freshness windows**, and **evidence lanes** (TA/VA/LA).  Contexts may extend the set; conforming extensions do not alter scale types inadmissibly.
 
-**“Health” is a vector** of CHR‑typed coordinates; **no single scalar** is implied. Lawful scalarization lives in **Acceptance** (G.4) under an explicit **CG‑Spec ScaleComplianceProfile (SCP)** and **Γ‑fold** rules, and is never embedded in CHR.
+**“Health” is a vector** of CHR‑typed coordinates; **no single scalar** is implied. Scale-admissible scalarization lives in **Acceptance** (G.4) under an explicit **CG‑Spec ScaleComplianceProfile (SCP)** and **Γ‑fold** rules, and is never embedded in CHR.
 
 #### C.21:4.1 - Core Characteristics (kernel-portable names)
 
@@ -54,7 +64,7 @@ Define a **portable minimal set** of CHR **slots**. Each slot is **CHR-typed** (
    Fraction of tested claims/benchmarks that independent teams **replicate** under a declared **ContextSlice** and **Γ\_time** window. **Lane tags:** LA (validation) with TA (typing) for protocols.
 
 2. **StandardisationLevel** *(ordinal; polarity ↑; ReferencePlane=episteme)*
-   {none, *emerging*, *de facto*, *de jure*}. **No mean.** Use medoid/mode; legal comparisons are ≤/=/> only. Tracks convergence on vocabularies, interfaces, or procedures.
+   {none, *emerging*, *de facto*, *de jure*}. **No mean.** Use medoid/mode; admissible comparisons are ≤/=/> only. Tracks convergence on vocabularies, interfaces, or procedures.
 
 3. **AlignmentDensity** *(ratio; polarity ↑; ReferencePlane=episteme; CG‑Spec‑bound)*
    Density of **Substitution Bridges** (same **senseFamily**, CL≥2) between major `U.Tradition`s **per 100 DHC‑SenseCells** (G.2 F‑hooks) in the SoTA palette.  Substitution rule:  free substitution permitted at **CL=3**; at **CL=2** substitute only with extra‑guard (count in reporting, but this is not «free substitution») Units: `bridges_per_100_cells`. Cross‑Context use requires Bridge+CL; penalties → **R_eff** only.
@@ -70,11 +80,11 @@ Define a **portable minimal set** of CHR **slots**. Each slot is **CHR-typed** (
   Use entropy/HHI **over MethodFamily/Tradition shares** (method edition id in UTS); publish **guard‑band** as **Acceptance** binding; cross‑ordinal scalarisation is forbidden.
   Entropy/Herfindahl-type dispersion across `U.Tradition`s, method families, or data regimes, bounded by a **Context-declared guard-band** (too low ⇒ monoculture; too high ⇒ incoherence).
 
-> **Typing & legality.** Each slot declares **Scale/Unit/Polarity**; illegal ops (e.g., mean on ordinals; unit mixing) are **fail-fast** per **A.18/MM-CHR**.
+> **Typing & admissibility.** Each slot declares **Scale/Unit/Polarity**; inadmissible operations (for example, means on ordinals or unit mixing) fail fast per **A.18/MM-CHR**.
 
 #### C.21:4.1a - Engineering-grade and semio-substitution extension slots
 
-Contexts MAY add these DHC slots when the discipline-health question includes engineering-grade reasoning, architecturing, optimization, prediction, comparison, assurance input, decision input, first-principles justification, mathematical-lens use, or source-publication overread. These slots remain discipline-health characteristics. They do not become evidence relations, assurance relations, gate decisions, mathematical-lens use, measurement legality, release permission, or project authority.
+Contexts MAY add these DHC slots when the discipline-health question includes engineering-grade reasoning, architecturing, optimization, prediction, comparison, assurance input, decision input, first-principles justification, mathematical-lens use, or source-publication overread. These slots remain discipline-health characteristics. They do not become evidence relations, assurance relations, gate decisions, mathematical-lens use, measurement admissibility, release permission, or project authority.
 
 7. **EngineeringClaimJustificationRecoverability** *(ordinal; polarity ↑; ReferencePlane=episteme|world by declared claim; CG-Spec-bound when aggregated)*
    Degree to which engineering-grade claims in the discipline or Context expose the exact justification that carries their force for the declared use. The justification may be a named construction, source, model, lens, evidence relation, characteristic relation, assurance relation, gate relation, method relation, or heuristic triage boundary, but it must cite the neighboring pattern governing the claiming FPF pattern when that force is live (`A.10`, `B.3`, `A.15`, `A.20`, `A.21`, `C.16`, `C.29`, or another governing pattern). Heuristic examples may carry recognition and triage only; prediction, comparison, optimization, falsification, assurance-input, decision-input, or architecture-readiness force requires the recoverable justification.
@@ -93,7 +103,7 @@ Contexts MAY add these DHC slots when the discipline-health question includes en
 * **PLANE_NOTE(x)** — record **ReferencePlane**; compute **CL^plane** on crossings; penalties → **R_eff** only.
 * **LANE\_TAGS(x; {TA|VA|LA})** — annotate contribution lanes.
 * **SCOPE\_COVERS(x; TargetSlice)** — enforce **USM** coverage of the computation.
-* **BRIDGE_CL(x; id, CL≥k)** — on cross‑Context roll‑ups, require **Bridge** with **CL**; penalties route to **R** only. If planes differ, apply **CL^plane** and cite **Φ_plane** policy id. **Hint:** for **AlignmentDensity** reporting, set **k=2** (CL≥2); **CL=3** counts as *free substitution*.
+* **BRIDGE_CL(x; id, CL≥k)** — on cross‑Context roll‑ups, require **Bridge** with **CL**; penalties affect **R** only. If planes differ, apply **CL^plane** and cite **Φ_plane** policy id. **Hint:** for **AlignmentDensity** reporting, set **k=2** (CL≥2); **CL=3** counts as *free substitution*.
 
 #### C.21:4.3 - Legality Matrix (extract)
 
@@ -106,7 +116,7 @@ Contexts MAY add these DHC slots when the discipline-health question includes en
 
 *Note:* For **MetaDiversity/EvidenceGranularity (ordinal)** use **median/mode**; forbid affine ops; unit mix always fails.
 
-### C.21:5 - Interfaces & Data Paths
+### C.21:5 - DHC Inputs, Outputs, and Cross-Context Reuse
 
 * **Inputs.** `U.Discipline` from **C.20** (composition), SoTA **Palette**/**BridgeMatrix** from **G.2** (**DHC‑SenseCells** included), EvidenceProfiles from **G.4/G.6**.
 * **Outputs.** Per‑Context **DHC rows** (these six slots), **UTS** Name Cards with twin labels (E.5/F.17–F.18), **Registry/RSCR hooks** on method edition changes; feeds **G.12** (time‑series).
@@ -145,7 +155,7 @@ Contexts MAY add these DHC slots when the discipline-health question includes en
 • AlignmentDensity — Bridges across ATAM/SAAM/ADR style guides (CL≥2) normalised per 100 DHC‑SenseCells.
 • MetaDiversity — portfolio dispersion across patterns (microservices, event‑driven, layered) with guard‑bands; no ordinal arithmetic.
 
-### C.21:7 - Characteristic reading and publication path
+### C.21:7 - Characteristic Reading and Publication Use
 
 1. **Declare Context & TargetSlice.** (USM) Name editions, Standards, env params, `Γ_time`.
 2. **Collect evidence.** Bind sources via **G.6 EvidenceGraph**; tag lanes and freshness.
@@ -167,31 +177,43 @@ This checklist verifies a DHC reading after the practitioner has selected the li
 
 | Check | Passing reading | Boundary preserved |
 | --- | --- | --- |
-| **CC-C.21-1 CHR typing.** | Every DHC slot declares Characteristic, Scale/Unit, and Polarity, with CSLC legality visible before aggregation. | Prevents health labels from becoming untyped opinion. |
-| **CC-C.21-2 Freshness.** | Published values carry a `Γ_time` selector and freshness window; stale rows route to `{degrade|abstain}` in G.4 Acceptance. | Prevents stale cumulative history from masquerading as current health. |
-| **CC-C.21-3 Plane.** | `ReferencePlane` is declared; cross-plane reuse publishes `CL^plane` policy id alongside CL, with penalties routed to `R_eff`. | Keeps world, concept, and episteme readings distinct. |
+| **CC-C.21-1 CHR typing.** | Every DHC slot declares Characteristic, Scale/Unit, and Polarity, with CSLC admissibility visible before aggregation. | Prevents health labels from becoming untyped opinion. |
+| **CC-C.21-2 Freshness.** | Published values carry a `Γ_time` selector and freshness window; stale rows produce `{degrade|abstain}` in G.4 Acceptance. | Prevents stale cumulative history from masquerading as current health. |
+| **CC-C.21-3 Plane.** | `ReferencePlane` is declared; cross-plane reuse publishes `CL^plane` policy id alongside CL, with penalties applied to `R_eff`. | Keeps world, concept, and episteme readings distinct. |
 | **CC-C.21-4 Design/run tag.** | Each DHC row declares `DesignRunTag ∈ {design, run}` and does not mix design- and run-characteristics in one value or aggregate. | Prevents design claims and run observations from collapsing. |
 | **CC-C.21-5 Lane tags.** | Each value tags TA/VA/LA lanes of contributing evidence. | Keeps typing, validation, and live-assurance lanes visible. |
 | **CC-C.21-6 Ordinal discipline.** | `StandardisationLevel` remains ordinal: comparisons only, no means or z-scores. | Blocks pseudo-quantification. |
 | **CC-C.21-7 Scope.** | All computations declare `TargetSlice`; USM membership is decidable for the declared use. | Prevents free-floating field-health claims. |
-| **CC-C.21-8 Bridges.** | Cross-context comparisons or publications cite Bridge id and CL; penalties route to `R_eff`, never to F/G. | Keeps local meaning loss visible. |
+| **CC-C.21-8 Bridges.** | Cross-context comparisons or publications cite Bridge id and CL; penalties apply to `R_eff`, never to F/G. | Keeps local meaning loss visible. |
 | **CC-C.21-9 UTS.** | DHC rows are publishable as UTS Name Cards with Tech/Plain twin labels. | Keeps names recoverable across contexts. |
 | **CC-C.21-10 Registry.** | DHC methods are table-backed; method changes bump `DHCMethodSpecRef.edition` and trigger RSCR. | Prevents silent method drift. |
 | **CC-C.21-11 Unknowns.** | Unknown inputs propagate tri-state `{pass|degrade|abstain}` to Acceptance; `unknown -> 0` coercion is excluded. | Preserves honest uncertainty. |
 | **CC-C.21-12 Lexical firewall.** | Core narrative follows E.5.1 and does not use tool/vendor tokens as discipline-health kinds. | Prevents vendor or tool labels from becoming characteristics. |
-| **CC-C.21-13 CG-Spec citation.** | Numeric comparison or aggregation in DHC cites CG-Spec: characteristics, `ScaleComplianceProfile`, `Γ-fold`, and MinimalEvidence. | Keeps operations scale-legal. |
+| **CC-C.21-13 CG-Spec citation.** | Numeric comparison or aggregation in DHC cites CG-Spec: characteristics, `ScaleComplianceProfile`, `Γ-fold`, and MinimalEvidence. | Keeps operations scale-admissible. |
 | **CC-C.21-14 Phi policies.** | `Phi(CL)` and `Phi_plane` are monotone, table-backed, and published by policy id. | Prevents hidden penalty functions. |
 | **CC-C.21-15 Ref discipline.** | Edition pinning appears as `...Ref.edition` on the relevant reference field; bare `...Edition` fields are repaired. | Keeps edition subject explicit. |
 | **CC-C.21-16 Role kit, informative.** | Standard roles from F.4 may be used: `DisciplineStewardRole`, `DHCMethodAuthorRole`, `DHCSeriesPublisherRole`; values still declare design/run stance and `ReferencePlane`. | Roles do not become evidence or authority. |
 | **CC-C.21-17 Engineering-grade and semio-substitution extensions.** | When `EngineeringClaimJustificationRecoverability` or `SemioSubstitutionPressure` is active, the DHC row names the neighboring pattern governing the claiming FPF pattern that carries live engineering claim kind or admissible-use boundary or semio-substitution repair, plus admissible use, non-admissible overread, and stop or reopen condition. | The extension note is not evidence, assurance, gate passage, mathematical-lens use, release permission, work authority, or project certification. |
 
-### C.21:10 - Consequences
+### C.21:10 - Common Anti-Patterns and How to Avoid Them
 
-**Benefits.** Scale-legal comparisons; freshness-aware governance; explicit cross-tradition alignment; dashboard views that do not lie by averaging ranks.
+* Treating discipline health as one scalar score before the typed characteristic vector is declared.
+* Averaging ordinal characteristics or mixing units because a dashboard wants one roll-up.
+* Reusing a discipline-health value outside its Context, TargetSlice, freshness window, or Bridge+CL condition.
+* Treating a standard, source publication, or dashboard view as proof that the discipline is healthy.
+* Using engineering-grade or semio-substitution extension slots as evidence, assurance, gate passage, or project authority.
+
+### C.21:11 - Consequences
+
+**Benefits.** Scale-admissible comparisons; freshness-aware governance; explicit cross-tradition alignment; dashboard views that do not lie by averaging ranks.
 **Costs.** Some ceremony (scales, windows, lanes, bridges), offset by template macros and UTS automation.
 **Risks avoided.** “Phlogiston disciplines” (charisma-driven fields) surface as unhealthy in DHC readings; **No-Free-Lunch** preserved by G.5 (selector returns sets, not universal scalars).
 
-### C.21:11 - SoTA-Echoing and rationale
+### C.21:12 - Rationale
+
+C.21 reads discipline health through typed characteristics rather than one global health score. This keeps reproducibility, freshness, disruption, standardization, bridge density, engineering-claim recoverability, and semio-substitution pressure inspectable without turning any dashboard or source tradition into authority by itself.
+
+### C.21:12.1 - SoTA-Echoing
 
 | SoTA/practice anchor | What it changes in C.21 | Adoption stance | Boundary of non-overread |
 |---|---|---|---|
@@ -203,13 +225,13 @@ This checklist verifies a DHC reading after the practitioner has selected the li
 
 The practical consequence is that C.21 reads discipline health through typed characteristics. It can feed dashboards or time-series publications, but the dashboard is only a publication view over DHC readings; it is not the discipline-health ontology and not project authority.
 
-### C.21:12 - Relations
+### C.21:13 - Relations
 
 * **Builds on:** **A.17–A.18** (Characteristic/CSLC), **A.2.6** (USM scopes), **B.3** (assurance lanes), **C.16** (MM-CHR templates).
 * **Coordinates with:** **C.20** (what a `U.Discipline` *is*), **G.2** (SoTA palette and BridgeMatrix), **G.12** (Dashboard operationalization), **G.9** (parity harness for fair comparisons).
 * **Constrains:** **G.10** (pack ships DHC rows + method ids), **G.11** (refresh windows/decay), **G.5** (selector may reference DHC only via admissible predicates; no cross‑ordinal scalarisation). **Coordinates:** **F.9** (Bridges for cross‑Tradition comparisons).
 
-### C.21:13 - Annex — Author’s quick template (copy-paste)
+### C.21:14 - Annex - Practitioner Quick Template
 
 ```
 C.21.DHC(Context: <name/edition>; TargetSlice: <tuple>; Γ_time: <policy>)

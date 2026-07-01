@@ -10,7 +10,7 @@ sources:
   - scripts/build_routes.py
   - scripts/build_xrefs.py
   - scripts/build_embeddings.py
-last_updated: 2026-06-15T07:00:00Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - architecture
   - pipeline
@@ -25,7 +25,7 @@ The build pipeline is orchestrated by `scripts/rebuild_all.sh` — an 8-step she
 
 | Step | Script | Produces |
 |------|--------|----------|
-| 1 | [split_spec](../modules/split_spec.md) | `sections/**/*.md` (~279 files + `_index.md` per directory) |
+| 1 | [split_spec](../modules/split_spec.md) | `sections/**/*.md` (~307 files + `_index.md` per directory) |
 | 2 | [build_metadata](../modules/build_metadata.md) | `sections/metadata.json` |
 | 3 | [enrich_metadata](../modules/enrich_metadata.md) | `sections/metadata.json` (in place) |
 | 4 | [build_glossary](../modules/build_glossary.md) | `sections/glossary-quick.md` |
@@ -43,7 +43,7 @@ FPF-Spec.md  (5.5 MB, ~1.3 M tokens)
 sections/**/*.md  +  sections/*/_index.md
      │
      ▼  step 2  python3 scripts/build_metadata.py
-sections/metadata.json           (≈292 entries, file paths resolved)
+sections/metadata.json           (≈299 entries, file paths resolved)
      │
      ▼  step 3  python3 scripts/enrich_metadata.py
 sections/metadata.json           (enriched with user-facing queries, idempotent)

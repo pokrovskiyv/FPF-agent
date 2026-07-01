@@ -174,7 +174,7 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/01-a0-a0-onboarding-glossary-nqd-eelog.md"
   },
   "A.1": {
-    "title": "U.Holon, U.System, and U.Episteme",
+    "title": "Holon Ontic Foundation (U.Holon and Admitted Holon Kinds)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -186,12 +186,16 @@
         "A.1.1",
         "A.2",
         "A.7",
+        "A.12",
+        "A.14",
+        "A.15.1",
         "A.22",
         "C.2.1",
+        "C.13",
         "C.30"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/02-a1-a1-uholon-usystem-and-uepisteme.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/02-a1-a1-holon-ontic-foundation-uholon-and-admitted-holon-kinds.md"
   },
   "A.1.1": {
     "title": "U.BoundedContext Semantic Frame",
@@ -249,11 +253,13 @@
       "holder",
       "role",
       "context",
-      "RoleEnactment",
+      "RoleEnactmentFact",
+      "performedBy",
       "RCS/RSG"
     ],
     "queries": [
       "How to formally assign a role in FPF?",
+      "How do I attribute performed work through a role assignment?",
       "What is the Holder#Role:Context Standard?"
     ],
     "dependencies": {
@@ -264,7 +270,7 @@
         "A.15"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-work-role-assignment.md"
   },
   "A.2.2": {
     "title": "U.Capability: System Ability (dispositional property)",
@@ -290,10 +296,10 @@
         "A.2.3"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/06-a22-a22-ucapability.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/06-a22-a22-ucapability-system-ability-envelope-and-measures.md"
   },
   "A.2.3": {
-    "title": "U.PromiseContent: Consumer‑facing Promise Clause",
+    "title": "U.PromiseContent (Promise Content)",
     "status": "Stable",
     "keywords": [
       "promise content",
@@ -328,18 +334,20 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/07-a23-a23-upromisecontent-promise-content.md"
   },
   "A.2.4": {
-    "title": "U.EvidenceRole: The Evidential Stance",
+    "title": "Episteme Evidence-Use and Status-Use Relations",
     "status": "Stable",
     "keywords": [
-      "evidence",
+      "evidence-use",
+      "status-use",
+      "source-use",
+      "episteme",
       "claim",
-      "support",
-      "justification",
-      "episteme"
+      "provenance"
     ],
     "queries": [
-      "How does an episteme serve as evidence?",
-      "Modeling evidence roles."
+      "How is an episteme used as evidence?",
+      "How do I keep evidence use from becoming a role?",
+      "How do I model status use around an episteme?"
     ],
     "dependencies": {
       "builds_on": [
@@ -350,10 +358,10 @@
         "B.3"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/08-a24-a24-uevidencerole.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/08-a24-a24-episteme-evidence-use-and-status-use-relations.md"
   },
   "A.2.5": {
-    "title": "U.RoleStateGraph: The Named State Space of a Role",
+    "title": "RoleStateRelation@BoundedContext - Role State Space and Enactable-State Admission",
     "status": "Stable",
     "keywords": [
       "state machine",
@@ -388,7 +396,7 @@
         "A.15"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/09-a25-a25-urolestategraph-the-named-state-space-of-a-role.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/09-a25-a25-rolestaterelationboundedcontext-role-state-space-and-ena.md"
   },
   "A.2.6": {
     "title": "Unified Scope Mechanism (USM): Context Slices & Scopes",
@@ -417,7 +425,7 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/10-a26-a26-unified-scope-mechanism-usm-context-slices-scopes.md"
   },
   "A.2.7": {
-    "title": "U.RoleAlgebra: In-Context Role Relations (≤, ⊥, ⊗)",
+    "title": "RoleRelationStructure@BoundedContext - Context-Local Role Relations and Representation-Lens Boundary",
     "status": "Stable",
     "keywords": [
       "role algebra",
@@ -441,10 +449,10 @@
         "A.2.5"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/11-a27-a27-urolealgebra-incontext-role-relations.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/11-a27-a27-rolerelationstructureboundedcontext-context-local-role-r.md"
   },
   "A.2.8": {
-    "title": "U.Commitment: Deontic Commitment Object",
+    "title": "U.Commitment (Deontic Commitment Object)",
     "status": "Stable",
     "keywords": [
       "commitment",
@@ -482,7 +490,7 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/12-a28-a28-ucommitment-deontic-commitment-object.md"
   },
   "A.2.9": {
-    "title": "U.SpeechAct: Communicative Work Object",
+    "title": "U.SpeechAct (Communicative Work Object)",
     "status": "Stable",
     "keywords": [
       "speech act",
@@ -895,7 +903,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/04-a6c-a6c-contract-unpacking-for-boundaries.md"
   },
   "A.6.0": {
-    "title": "U.Signature — Universal, law‑governed declaration",
+    "title": "U.Signature - Universal, law-governed declaration for a SubjectKind over a RangedValueKind",
     "status": "Stable",
     "keywords": [
       "signature",
@@ -908,10 +916,10 @@
       "What is the universal signature block?",
       "Where do laws vs. implementations live?"
     ],
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/05-a60-a60-usignature-universal-lawgoverned-declaration-for-a-subje.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/05-a60-a60-usignature-universal-law-governed-declaration-for-a-subj.md"
   },
   "A.6.1": {
-    "title": "U.Mechanism - Law‑governed application to a SubjectKind over a BaseType",
+    "title": "U.Mechanism - Law-governed application to a SubjectKind over a RangedValueKind",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -921,10 +929,10 @@
         "E.10.D1"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/06-a61-a61-umechanism-law-governed-operation-algebra-over-a-subject.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/06-a61-a61-umechanism-law-governed-application-to-a-subjectkind-ove.md"
   },
   "A.6.2": {
-    "title": "U.EffectFreeEpistemicMorphing - Effect-Free Morphisms of Epistemes",
+    "title": "U.EffectFreeEpistemicMorphing — Effect‑free morphisms of epistemes",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -950,7 +958,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/07-a62-a62-ueffectfreeepistemicmorphing-effectfree-morphisms-of-epi.md"
   },
   "A.6.3": {
-    "title": "U.EpistemicViewing - EntityOfConcern-Preserving Morphism",
+    "title": "U.EpistemicViewing — EntityOfConcern-preserving morphism",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -979,23 +987,8 @@
   "A.6.3.CSC": {
     "title": "Controlled Semantic Coarsening",
     "status": "Stable",
-    "keywords": [
-      "controlled semantic coarsening",
-      "source-bearing episteme or source publication",
-      "coarsened rendering",
-      "narrower admissible use",
-      "non-admissible downstream use",
-      "reopen trigger",
-      "redaction",
-      "dashboard tile",
-      "lookup handle",
-      "state-representation shortcut"
-    ],
-    "queries": [
-      "When may a summary or redaction stand in only for narrow use?",
-      "What is Controlled Semantic Coarsening in FPF?",
-      "When must a coarsened rendering reopen the source-bearing episteme or source publication?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "A.6.3",
@@ -1009,6 +1002,7 @@
         "F.18"
       ],
       "coordinates_with": [
+        "A.6.3.NAR",
         "C.26",
         "C.26.1",
         "E.17.ID.CR",
@@ -1017,17 +1011,40 @@
         "A.15",
         "A.6.4",
         "A.20",
-        "A.21"
+        "A.21",
+        "C.33"
       ]
     },
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/09-a63csc-a63csc-controlled-semantic-coarsening.md"
   },
-  "preface_19": {
-    "title": "A.6.3.CR",
-    "status": "**ConservativeRetextualization - entityOfConcernRef-preserving textual re-expression**",
+  "A.6.3.CR": {
+    "title": "ConservativeRetextualization - entityOfConcernRef-preserving textual re-expression",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "dependencies": {
+      "builds_on": [
+        "A.6.3",
+        "A.6.2",
+        "A.7",
+        "E.10.D2",
+        "E.17.0",
+        "E.17",
+        "F.9",
+        "F.18",
+        "E.10"
+      ],
+      "coordinates_with": [
+        "A.6.3.CSC",
+        "A.6.3.RT",
+        "E.17.EFP",
+        "E.17.ID.CR",
+        "A.6.4",
+        "B.5.2",
+        "A.15"
+      ]
+    },
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md"
   },
   "A.6.3.RT": {
     "title": "Representation-Scheme Transition: EntityOfConcern-Preserving Representation-Scheme Transition",
@@ -1048,6 +1065,7 @@
       ],
       "coordinates_with": [
         "A.6.3.CSC",
+        "A.6.3.NAR",
         "C.26",
         "A.6.3.CR",
         "E.17.EFP",
@@ -1060,8 +1078,37 @@
     },
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63rt-a63rt-representation-scheme-transition-entityofconcern-prese.md"
   },
+  "A.6.3.NAR": {
+    "title": "Structure-to-Narrative Rendering",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "A.6.3",
+        "A.6.3.CSC",
+        "A.6.3.RT",
+        "A.22",
+        "C.33",
+        "C.34",
+        "E.17",
+        "E.10"
+      ],
+      "coordinates_with": [
+        "C.35",
+        "A.16.1",
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "C.32.P2S",
+        "E.4.DPF",
+        "E.4.DPF.DA"
+      ]
+    },
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/12-a63nar-a63nar-structure-to-narrative-rendering.md"
+  },
   "A.6.4": {
-    "title": "U.EpistemicRetargeting - EntityOfConcern-Retargeting Morphism",
+    "title": "U.EpistemicRetargeting — EntityOfConcern retargeting morphism",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -1084,10 +1131,10 @@
         "Fourier-style and data-model retargetings"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/12-a64-a64-uepistemicretargeting-entityofconcern-retargeting-morphi.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/13-a64-a64-uepistemicretargeting-entityofconcern-retargeting-morphi.md"
   },
   "A.6.P": {
-    "title": "Relational Precision Restoration (RPR) — Kind-Explicit Qualified Relation Discipline",
+    "title": "Relational Precision Restoration (RPR) — Kind‑Explicit Qualified Relation Discipline",
     "status": "Stable",
     "keywords": [
       "relation precision restoration",
@@ -1144,10 +1191,64 @@
         "A.6.H"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/13-a6p-a6p-relational-precision-restoration-rpr-kindexplicit-qualif.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/14-a6p-a6p-relational-precision-restoration-rpr-kindexplicit-qualif.md"
+  },
+  "A.6.RSIR": {
+    "title": "Relation, Signature, Interface, Role, and Slot Precision Restoration",
+    "status": "Stable",
+    "keywords": [
+      "relation-signature-interface-role-slot recovery",
+      "interface wording",
+      "role wording",
+      "slot wording",
+      "field",
+      "parameter",
+      "endpoint",
+      "port",
+      "API",
+      "protocol",
+      "capability",
+      "affordance",
+      "method",
+      "function",
+      "concern",
+      "interest",
+      "shadow ontology"
+    ],
+    "queries": [
+      "How do I repair interface, role, slot, parameter, function, or concern wording before choosing the direct governing pattern?",
+      "When is interface wording a port, API, protocol, signature, module boundary, or publication view?",
+      "When is role wording U.Role, U.RoleAssignment, relation position, evidence use, status use, or source label?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "E.10",
+        "E.10.ARCH",
+        "A.6.P",
+        "A.6.5",
+        "A.6.0",
+        "A.2",
+        "A.2.1",
+        "A.15",
+        "F.18",
+        "F.19"
+      ],
+      "coordinates_with": [
+        "A.6.M",
+        "A.6.F",
+        "A.6.A",
+        "C.2.P",
+        "C.2.P.DR",
+        "E.17",
+        "A.10",
+        "F.10",
+        "G.6"
+      ]
+    },
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/15-a6rsir-a6rsir-relation-signature-interface-role-and-slot-precision-.md"
   },
   "A.6.A": {
-    "title": "U.ActionInvitationPrecisionRestoration — Affordance / Action-Invitation Precision Restoration (ACT-INV)",
+    "title": "Action-Invitation Precision Restoration (ACT-INV)",
     "status": "Stable",
     "keywords": [
       "affordance",
@@ -1218,17 +1319,56 @@
         "C.30.TFS-REL"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/15-a6f-a6f-function-and-functional-precision-restoration-rpr-functi.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/17-a6f-a6f-function-and-functional-precision-restoration-rpr-functi.md"
   },
-  "preface_20": {
-    "title": "A.6.M",
-    "status": "**Module Relation Repair**",
-    "keywords": [],
-    "queries": [],
-    "file": ""
+  "A.6.M": {
+    "title": "Module Relation Repair",
+    "status": "Stable",
+    "keywords": [
+      "module relation",
+      "component",
+      "interface",
+      "port",
+      "platform",
+      "layer",
+      "stack",
+      "open architecture",
+      "substitutability",
+      "interface specification"
+    ],
+    "queries": [
+      "When is a module relation being claimed?",
+      "How do I keep functional links, signatures, ports, and implemented interfaces distinct?",
+      "When does open architecture require module-interface repair?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.6.P",
+        "A.6.5",
+        "A.6.B",
+        "C.30",
+        "C.30.ASV",
+        "A.6.F"
+      ],
+      "coordinates_with": [
+        "C.31",
+        "C.31.RSA",
+        "E.18",
+        "C.30.TFS-REL",
+        "A.10",
+        "B.3",
+        "A.20",
+        "A.21",
+        "C.28",
+        "E.20",
+        "G.5",
+        "C.11"
+      ]
+    },
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/18-a6m-a6m-module-relation-repair.md"
   },
   "A.6.5": {
-    "title": "U.RelationSlotDiscipline - SlotKind / ValueKind / RefKind discipline for n‑ary relations (with slot‑operation lexicon)",
+    "title": "U.RelationSlotDiscipline - SlotKind, ValueKind, RefKind, and slot-operation discipline",
     "status": "Stable",
     "keywords": [
       "slot",
@@ -1253,16 +1393,16 @@
       "used_by": [
         "C.2.1 (U.EpistemeSlotRelation)",
         "A.6.2–A.6.4 (episteme morphisms)",
-        "B.5.* (RoleEnactment)",
+        "A.2.1 and F.6 (RoleEnactmentFact and performed-work attribution)",
         "C.3.* (Kinds & KindSignature)",
         "E.17.0 (U.MultiViewDescribing)",
         "discipline-packs for methods/services"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/17-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-disci.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/19-a65-a65-urelationslotdiscipline-slotkind-valuekind-refkind-and-s.md"
   },
   "A.6.6": {
-    "title": "U.BaseDeclarationDiscipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)",
+    "title": "Base Declaration Discipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)",
     "status": "Stable",
     "keywords": [
       "base declaration",
@@ -1279,7 +1419,7 @@
       "rescope"
     ],
     "queries": [
-      "What is U.BaseDeclarationDiscipline?",
+      "What is base-declaration discipline?",
       "How to model base-dependence without anchoring?",
       "When is support really base-dependence?",
       "What is a ScopedWitnessedBaseDeclaration (SWBD)?"
@@ -1311,7 +1451,7 @@
         "base)`"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/18-a66-a66-ubasedeclarationdiscipline-kind-explicit-scoped-witnesse.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/20-a66-a66-base-declaration-discipline-kind-explicit-scoped-witness.md"
   },
   "A.6.7": {
     "title": "MechSuiteDescription — Description of a set of distinct mechanisms",
@@ -1349,7 +1489,7 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/19-a67-a67-mechsuitedescription-description-of-a-set-of-distinct-me.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/21-a67-a67-mechsuitedescription-description-of-a-set-of-distinct-me.md"
   },
   "A.6.8": {
     "title": "Service Polysemy Unpacking (RPR-SERV)",
@@ -1392,10 +1532,10 @@
         "E.15"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/20-a68-a68-service-polysemy-unpacking-rprserv.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/22-a68-a68-service-polysemy-unpacking-rprserv.md"
   },
   "A.6.9": {
-    "title": "U.CrossContextSamenessDisambiguation — Repairing cross-context “same / equivalent / align” via explicit Bridges (RPR-XCTX)",
+    "title": "Cross-Context Sameness Disambiguation - Repairing cross-context \"same / equivalent / align\" via explicit Bridges (RPR-XCTX)",
     "status": "Stable",
     "keywords": [
       "cross-context sameness",
@@ -1428,10 +1568,10 @@
         "F.7/F.8"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/21-a69-a69-ucrosscontextsamenessdisambiguation-repairing-cross-cont.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/23-a69-a69-cross-context-sameness-disambiguation-repairing-cross-co.md"
   },
   "A.6.S": {
-    "title": "U.SignatureEngineeringPair — Constructive signature engineering (ConstructorSignature + TargetSignature)",
+    "title": "U.SignatureEngineeringPair - Signature engineering via a ConstructorSignature and a TargetSignature",
     "status": "Stable",
     "keywords": [
       "signature engineering",
@@ -1508,7 +1648,7 @@
         "A.15"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/23-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/25-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
   },
   "A.7": {
     "title": "Strict Distinction (Clarity Lattice)",
@@ -1536,26 +1676,30 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/01-a7-a7-strict-distinction-clarity-lattice.md"
   },
   "A.8": {
-    "title": "Universal Core (C-1)",
+    "title": "Universal Core Principle",
     "status": "Stable",
     "keywords": [
       "universality",
       "transdisciplinary",
       "domain-agnostic",
-      "generalization"
+      "kernel-level U-kind admission"
     ],
     "queries": [
-      "How does FPF ensure its concepts are universal?"
+      "How does FPF test whether a U-kind belongs in the universal core?"
     ],
     "dependencies": {
       "builds_on": [
-        "P-8"
+        "E.24.UK",
+        "A.11",
+        "C.3",
+        "F.8",
+        "F.18"
       ],
       "constrains": [
-        "Kernel-level `U.Type`s"
+        "kernel-level durable U-kind candidates"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle-c1.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/02-a8-a8-universal-core-principle.md"
   },
   "A.9": {
     "title": "Cross-Scale Consistency (C-3)",
@@ -1627,51 +1771,51 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/04-a10-a10-evidence-graph-referring-claim-bound-evidence-and-proven.md"
   },
   "A.11": {
-    "title": "Ontological Parsimony (C-5)",
+    "title": "Ontological Parsimony",
     "status": "Stable",
     "keywords": [
-      "minimalism",
-      "simplicity",
-      "Occam's razor",
-      "essential concepts"
+      "parsimony",
+      "composition",
+      "non-redundancy",
+      "kernel growth",
+      "U-kind admission"
     ],
     "queries": [
-      "How does FPF avoid becoming too complex?",
-      "Rule for adding new concepts."
+      "How does FPF avoid adding redundant core concepts?",
+      "When should a candidate be expressed by slots, relations, records, forms, lenses, or an existing root?"
     ],
     "dependencies": {
       "builds_on": [
-        "P-1 Cognitive Elegance"
+        "E.24.UK",
+        "A.8",
+        "F.8",
+        "F.18"
       ],
       "constrains": [
-        "all new `U.Type` proposals"
+        "new core-concept and durable U-kind proposals"
       ]
     },
     "file": "sections/05-part-a-kernel-architecture-cluster/03-a11-a11-uboundedcontext-semantic-frame.md"
   },
   "A.12": {
-    "title": "External Transformer & Reflexive Split (C-2)",
+    "title": "Acting-Side Externalization and Reflexive Split",
     "status": "Stable",
-    "keywords": [
-      "causality",
-      "agency",
-      "self-modification",
-      "external agent",
-      "control loop"
-    ],
-    "queries": [
-      "How to model a self-healing or self-calibrating system?",
-      "What is the external transformer principle?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
-        "A.3"
+        "A.1",
+        "A.3.4",
+        "A.15.1"
       ],
-      "prerequisite_for": [
-        "B.2.5"
+      "coordinates_with": [
+        "A.2.1",
+        "A.14",
+        "B.2",
+        "C.30"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/06-a12-a12-external-transformer-reflexive-split.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/06-a12-a12-acting-side-externalization-and-reflexive-split.md"
   },
   "A.13": {
     "title": "The Agential Role & Agency Spectrum",
@@ -1684,7 +1828,7 @@
       "substrate-neutral autonomy"
     ],
     "queries": [
-      "How does FPF model agency without minting a `U.Agent` type?",
+      "How does FPF model agency without minting a root agent kind?",
       "How do I grade autonomy on an evidence-backed spectrum?"
     ],
     "dependencies": {
@@ -1694,7 +1838,7 @@
         "A.12"
       ],
       "informs": [
-        "C.9 Agency-CHR",
+        "C.9 Agency Characteristic Profile",
         "E.16"
       ]
     },
@@ -1734,20 +1878,21 @@
       "`U.MethodDescription`",
       "`U.WorkPlan`",
       "actual `U.Work`",
+      "work-entry readiness",
       "contextual enactment",
       "coordinated-work evidence",
       "work admission display",
       "source-restoration boundary"
     ],
     "queries": [
-      "How do role, method, plan, and work stay distinct in FPF?",
+      "How do role, method, plan, readiness, and work stay distinct in FPF?",
       "When can coordinated work evidence a state that no one report carries?",
       "When is authorization-looking material a source-restoration problem rather than work enactment?",
       "When does something that looks like permission or prohibition to start work need the governing FPF pattern and project-side record behind it first?"
     ],
     "dependencies": {
       "prerequisite_for": [
-        "A.15.1-A.15.4",
+        "A.15.1-A.15.5",
         "C.24",
         "E.16"
       ]
@@ -1850,7 +1995,7 @@
       "copied statement",
       "provenance mark",
       "required project-side FPF kind and reference",
-      "admissible next project move",
+      "relation-governed current use",
       "blocked overread",
       "P2W load and position",
       "approval-looking display"
@@ -1858,7 +2003,7 @@
     "queries": [
       "Which project-side FPF kind and reference is needed before a dashboard or explanation can guide work?",
       "When is a visible item only source-finding before work support or reliance support?",
-      "How do I keep publication, display, or cue separate from work, evidence, gate passage, or engineering justification?"
+      "How do I keep publication, display, or cue separate from work, readiness, evidence, gate passage, or engineering justification?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1873,6 +2018,7 @@
         "A.2.1",
         "A.2.8",
         "A.2.9",
+        "A.15.5",
         "A.20",
         "A.21",
         "and E.17.EFP"
@@ -1880,22 +2026,61 @@
     },
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/13-a154-a154-work-relevant-source-restoration.md"
   },
+  "A.15.5": {
+    "title": "Work-Entry Readiness and Full-Kit Preparation",
+    "status": "Stable",
+    "keywords": [
+      "work-entry readiness",
+      "full-kit condition",
+      "readiness before work entry",
+      "commitment disposition",
+      "resource-readiness refs",
+      "launch gate",
+      "WIP and flow policy",
+      "planned slot fillings",
+      "blocked readiness overread"
+    ],
+    "queries": [
+      "Is this intended work ready to start?",
+      "What is missing before commitment to work entry is honest?",
+      "How do I keep full-kit readiness separate from performed work, work plans, gates, resources, and evidence?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.15",
+        "A.15.2",
+        "A.15.3",
+        "B.1.6",
+        "A.21"
+      ],
+      "coordinates_with": [
+        "A.15.1",
+        "A.15.4",
+        "A.10",
+        "B.3",
+        "A.20",
+        "E.18",
+        "and E.10.MOVE"
+      ]
+    },
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/14-a155-a155-work-entry-readiness-and-full-kit-preparation.md"
+  },
   "A.16": {
     "title": "Language-State Move Coordination",
     "status": "Stable",
     "keywords": [
       "language-state",
       "move",
-      "admissible move",
+      "admissible language-state move",
       "reopen",
       "sketch-backoff",
       "respecify",
       "retire",
-      "handoff"
+      "responsibility transfer"
     ],
     "queries": [
       "How do governed epistemes move across the language-state chart?",
-      "What are the admissible move kinds in FPF?"
+      "What are the admissible language-state move kinds in FPF?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1906,13 +2091,14 @@
       "coordinates_with": [
         "A.16.0-A.16.2",
         "B.4.1",
-        "E.18"
+        "E.18",
+        "and E.10.MOVE when move-like wording leaves the local language-state object"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/14-a16-a16-language-state-move-coordination.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/15-a16-a16-language-state-move-coordination.md"
   },
   "A.16.0": {
-    "title": "U.LanguageStateMoveTrajectory — Optional trajectory-account normal form",
+    "title": "U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace",
     "status": "Stable",
     "keywords": [
       "trajectory account",
@@ -1920,7 +2106,7 @@
       "fork",
       "merge",
       "supersedes",
-      "handoff",
+      "responsibility transfer",
       "heavy history"
     ],
     "queries": [
@@ -1934,6 +2120,9 @@
         "E.17",
         "E.18"
       ],
+      "coordinates_with": [
+        "E.10.MOVE when move-like wording is not a language-state trajectory-account claim"
+      ],
       "used_by": [
         "A.16.1",
         "A.16.2",
@@ -1941,7 +2130,7 @@
         "B.5.2.0"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/15-a160-a160-ulanguagestatemovetrajectory-optional-trajectory-accoun.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/16-a160-a160-ulanguagestatemovetrajectory-optional-trajectory-accoun.md"
   },
   "A.16.1": {
     "title": "U.PreArticulationCuePack",
@@ -1969,7 +2158,7 @@
         "A.16.2"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/16-a161-a161-uprearticulationcuepack.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/17-a161-a161-uprearticulationcuepack.md"
   },
   "A.16.2": {
     "title": "Reopen / SketchBackoff / Respecify",
@@ -1998,7 +2187,7 @@
         "B.4.1"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/17-a162-a162-reopen-sketchbackoff-respecify.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/18-a162-a162-reopen-sketchbackoff-respecify.md"
   },
   "A.17": {
     "title": "A.CHR-NORM — Canonical “Characteristic” & rename (Dimension/Axis → Characteristic)",
@@ -2022,7 +2211,7 @@
         "C.16"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/18-a17-a17-canonical-characteristic-achrnorm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/19-a17-a17-canonical-characteristic-achrnorm.md"
   },
   "A.18": {
     "title": "A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale/Level/Coordinate)",
@@ -2064,10 +2253,10 @@
         "B.3"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/19-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
   },
   "A.19": {
-    "title": "CharacteristicSpace & Dynamics Hook (A.CHR-SPACE)",
+    "title": "CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE)",
     "status": "Stable",
     "keywords": [
       "CharacteristicSpace",
@@ -2115,7 +2304,7 @@
         "A.3.3"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/21-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
   },
   "A.19.ECS": {
     "title": "Evaluation CharacteristicSpace Construction",
@@ -2139,7 +2328,7 @@
         "F.19"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/21-a19ecs-a19ecs-evaluation-characteristicspace-construction.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/22-a19ecs-a19ecs-evaluation-characteristicspace-construction.md"
   },
   "A.19.SPR": {
     "title": "State-Family Precision Restoration",
@@ -2179,7 +2368,7 @@
         "E.11"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/22-a19spr-a19spr-state-family-precision-restoration.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/23-a19spr-a19spr-state-family-precision-restoration.md"
   },
   "A.19.SOURCE-SET-SPACE-SUBSTRATE": {
     "title": "Source-Set and Search/Outcome-Space Substrate",
@@ -2217,7 +2406,7 @@
         "A.0"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/21-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
   },
   "A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW": {
     "title": "Declared-Substrate Interpretive View",
@@ -2256,7 +2445,7 @@
         "A.0"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/21-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
   },
   "A.19.CN": {
     "title": "CN-frame (comparability & normalization)",
@@ -2300,10 +2489,10 @@
         "A.6.1 (mechanism intension cards)",
         "C.16 (evidence/backing)",
         "F.9 (Bridges & CL)",
-        "G.0 (CG-Spec legality gate)"
+        "G.0 (CG-Spec admissibility gate)"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/25-a19cn-a19cn-cnframe-comparability-normalization.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a19cn-a19cn-cnframe-comparability-normalization.md"
   },
   "A.19.CHR": {
     "title": "CHRMechanismSuite — CHR mechanism-suite anchor (suite obligations + P2W planned baseline)",
@@ -2313,7 +2502,7 @@
       "characterization core",
       "CN-Spec",
       "CG-Spec",
-      "legality gate",
+      "admissibility gate",
       "suite obligations",
       "set-return selection",
       "tri-state guard decision",
@@ -2355,7 +2544,7 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a19chr-a19chr-chrmechanismsuite.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/27-a19chr-a19chr-chrmechanismsuite.md"
   },
   "A.19.UNM": {
     "title": "Unified Normalization Mechanism (UNM)",
@@ -2405,7 +2594,7 @@
         "A.19.SelectorMechanism"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/27-a19unm-a19unm-unified-normalization-mechanism-unm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a19unm-a19unm-unified-normalization-mechanism-unm.md"
   },
   "A.19.UINDM": {
     "title": "Unified Indicatorization Mechanism (UINDM)",
@@ -2444,7 +2633,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/29-a19uindm-a19uindm-unified-indicatorization-mechanism-uindm.md"
   },
   "A.19.USCM": {
     "title": "Unified Scoring Mechanism (USCM)",
@@ -2490,7 +2679,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/29-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/30-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
   },
   "A.19.ULSAM": {
     "title": "Unified Lawful Scale Aggregation Mechanism (ULSAM)",
@@ -2533,7 +2722,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/30-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
   },
   "A.19.CPM": {
     "title": "Unified Comparison Mechanism (CPM)",
@@ -2591,7 +2780,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/32-a19cpm-a19cpm-unified-comparison-mechanism-cpm.md"
   },
   "A.19.SelectorMechanism": {
     "title": "Unified Selection Kernel (SelectorMechanism)",
@@ -2640,10 +2829,10 @@
         "E.18"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/20-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/21-a19-a19-characteristicspace-dynamics-hook-achrspace.md"
   },
   "A.20": {
-    "title": "U.Flow.ConstraintValidity — Eulerian",
+    "title": "Flow Constraint Validity — Eulerian",
     "status": "Stable",
     "keywords": [
       "flow",
@@ -2678,7 +2867,7 @@
         "G.11"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a20-a20-uflowconstraintvalidity-eulerian.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a20-a20-flow-constraint-validity-eulerian.md"
   },
   "A.21": {
     "title": "GateProfilization: OperationalGate(profile) (GateFit core)",
@@ -2721,7 +2910,7 @@
         "G.9"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-role-assignment.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-work-role-assignment.md"
   },
   "A.22": {
     "title": "Structure and Structural Views (STRUCT-CAL)",
@@ -2761,85 +2950,68 @@
         "A.21"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/06-a22-a22-ucapability.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/06-a22-a22-ucapability-system-ability-envelope-and-measures.md"
   },
   "B.1": {
-    "title": "Universal Algebra of Aggregation (Γ)",
+    "title": "Holon Aggregation and Part-Whole Construction",
     "status": "Stable",
-    "keywords": [
-      "aggregation",
-      "composition",
-      "holon",
-      "invariants",
-      "IDEM",
-      "COMM",
-      "LOC",
-      "WLNK",
-      "MONO",
-      "gamma operator"
-    ],
-    "queries": [
-      "How does FPF combine parts into a whole?",
-      "What are the rules for aggregation?",
-      "What is the Gamma (Γ) operator?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "A.1",
-        "A.9"
+        "A.14",
+        "C.13"
       ],
-      "prerequisite_for": [
-        "All B.1.x",
-        "B.2"
+      "coordinates_with": [
+        "A.15.1",
+        "C.29",
+        "C.30.ASV",
+        "B.2",
+        "B.3.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/01-b1-b1-universal-algebra-of-aggregation.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/01-b1-b1-holon-aggregation-and-part-whole-construction.md"
   },
   "B.1.1": {
-    "title": "Dependency Graph & Proofs",
+    "title": "Dependency Structure and Relation Grounding",
     "status": "Stable",
-    "keywords": [
-      "dependency graph",
-      "proofs",
-      "structural aggregators",
-      "sum",
-      "set",
-      "slice"
-    ],
-    "queries": [
-      "What is the input for the Gamma operator?",
-      "How are aggregation invariants proven in FPF?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
-        "B.1"
+        "B.1",
+        "A.14",
+        "C.13"
+      ],
+      "coordinates_with": [
+        "C.29",
+        "A.10",
+        "B.3.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/02-b11-b11-dependency-graph-proofs.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/02-b11-b11-dependency-structure-and-relation-grounding.md"
   },
   "B.1.2": {
-    "title": "System-specific Aggregation Γ_sys",
+    "title": "System Aggregation and Holon Delimitation",
     "status": "Stable",
-    "keywords": [
-      "system aggregation",
-      "physical systems",
-      "mass",
-      "energy",
-      "boundary rules",
-      "Sys-CAL"
-    ],
-    "queries": [
-      "How to aggregate physical systems?",
-      "Conservation laws in FPF aggregation?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.1",
         "A.1",
-        "C.1"
+        "A.12",
+        "A.14",
+        "C.13"
+      ],
+      "coordinates_with": [
+        "A.3.4",
+        "A.15.1",
+        "C.30"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/03-b12-b12-systemspecific-aggregation-_sys.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/03-b12-b12-system-aggregation-and-holon-delimitation.md"
   },
   "B.1.3": {
     "title": "Γ_epist — Knowledge-Specific Aggregation",
@@ -2865,24 +3037,24 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/04-b13-b13-_epist-knowledgespecific-aggregation.md"
   },
   "B.1.4": {
-    "title": "Contextual & Temporal Aggregation (Γ_ctx & Γ_time)",
+    "title": "Contextual and Temporal Aggregation",
     "status": "Stable",
-    "keywords": [
-      "temporal aggregation",
-      "time-series",
-      "order-sensitive",
-      "composition"
-    ],
-    "queries": [
-      "How does FPF handle time-series data?",
-      "How to model processes where order matters?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
-        "B.1"
+        "B.1",
+        "A.1.1",
+        "A.14",
+        "C.27.TA"
+      ],
+      "coordinates_with": [
+        "A.15.1",
+        "A.3.4",
+        "C.29"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/05-b14-b14-contextual-temporal-aggregation-_ctx-_time.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/05-b14-b14-contextual-and-temporal-aggregation.md"
   },
   "B.1.5": {
     "title": "Γ_method — Order-Sensitive Method Composition & Work Enactment",
@@ -2908,163 +3080,159 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md"
   },
   "B.1.6": {
-    "title": "Γ_work — Work as Spent Resource",
+    "title": "Work-Resource Aggregation",
     "status": "Stable",
-    "keywords": [
-      "work",
-      "resource aggregation",
-      "cost",
-      "energy consumption",
-      "Resrc-CAL"
-    ],
-    "queries": [
-      "How to calculate the total cost of a process?",
-      "How are resources aggregated in FPF?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.1",
         "A.15.1",
-        "C.5"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/07-b16-b16-_work-work-as-spent-resource.md"
-  },
-  "B.2": {
-    "title": "Meta-Holon Transition (MHT): Recognizing Emergence and Re-identifying Wholes",
-    "status": "Stable",
-    "keywords": [
-      "emergence",
-      "MHT",
-      "meta-system",
-      "new whole",
-      "synergy",
-      "system of systems"
-    ],
-    "queries": [
-      "How does FPF model emergence?",
-      "What is a Meta-Holon Transition?",
-      "When does a collection become more than the sum of its parts?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "B.1",
-        "A.1"
+        "A.14"
       ],
-      "prerequisite_for": [
-        "All B.2.x"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md"
-  },
-  "B.2.1": {
-    "title": "BOSC Triggers",
-    "status": "Planned",
-    "keywords": [
-      "BOSC",
-      "triggers for emergence",
-      "boundary",
-      "objective",
-      "supervisor",
-      "complexity"
-    ],
-    "queries": [
-      "What triggers an MHT?",
-      "What are the BOSC criteria for emergence?"
-    ],
-    "dependencies": {
-      "builds_on": [
+      "coordinates_with": [
+        "A.3.4",
+        "A.15.2",
+        "C.29",
         "B.2"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b2-b2-metaholon-transition-mht-recognizing-emergence-and-reiden.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/07-b16-b16-work-resource-aggregation.md"
+  },
+  "B.2": {
+    "title": "Meta-Holon Transition - Whole Reidentification",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "A.1",
+        "A.14",
+        "B.1",
+        "C.13"
+      ],
+      "coordinates_with": [
+        "B.2.P",
+        "B.2.2",
+        "B.2.3",
+        "B.2.4",
+        "C.16",
+        "C.29",
+        "C.30.ILC"
+      ]
+    },
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b2-b2-meta-holon-transition-whole-reidentification.md"
+  },
+  "B.2.P": {
+    "title": "Emergence and MHT Precision Restoration",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.10",
+        "E.10.ARCH",
+        "B.2",
+        "A.14",
+        "C.13",
+        "B.3.5"
+      ],
+      "coordinates_with": [
+        "B.2.2",
+        "B.2.3",
+        "B.2.4",
+        "C.16",
+        "A.2.2",
+        "A.6.F",
+        "A.3.4",
+        "C.30.ILC"
+      ]
+    },
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/09-b2p-b2p-emergence-and-mht-precision-restoration.md"
   },
   "B.2.2": {
-    "title": "MST (Sys) — Meta-System Transition",
+    "title": "Meta-System Transition - System Specialization of MHT",
     "status": "Stable",
-    "keywords": [
-      "system emergence",
-      "super-system",
-      "physical emergence"
-    ],
-    "queries": [
-      "How do new systems emerge from parts?",
-      "What is a Meta-System Transition?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.2",
-        "B.2.1",
-        "A.1"
+        "A.1",
+        "A.12"
+      ],
+      "coordinates_with": [
+        "A.2.1",
+        "A.19",
+        "C.16",
+        "C.30"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/09-b22-b22-meta-system-transition-mst.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/10-b22-b22-meta-system-transition-system-specialization-of-mht.md"
   },
   "B.2.3": {
-    "title": "MET (KD) — Meta-Epistemic Transition",
+    "title": "Meta-Holon Transition With Episteme Result",
     "status": "Stable",
-    "keywords": [
-      "knowledge emergence",
-      "meta-theory",
-      "paradigm shift",
-      "scientific revolution"
-    ],
-    "queries": [
-      "How do new theories emerge?",
-      "What is a Meta-Epistemic Transition?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.2",
-        "B.2.1",
-        "A.1"
+        "A.1",
+        "C.2.1"
+      ],
+      "coordinates_with": [
+        "E.17",
+        "A.10",
+        "B.3",
+        "C.29"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/10-b23-b23-meta-epistemic-transition-met.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/11-b23-b23-meta-holon-transition-with-episteme-result.md"
   },
   "B.2.4": {
-    "title": "MFT (Meta-Functional Transition)",
+    "title": "Capability and Functioning Whole Reidentification",
     "status": "Stable",
-    "keywords": [
-      "functional emergence",
-      "capability emergence",
-      "adaptive workflow",
-      "new process"
-    ],
-    "queries": [
-      "How do new capabilities or workflows emerge?",
-      "What is a Meta-Functional Transition?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.2",
-        "B.2.1",
-        "A.3.1"
+        "A.2.2",
+        "C.16",
+        "A.6.F",
+        "A.3.4"
+      ],
+      "coordinates_with": [
+        "C.30.ASV",
+        "C.30.TFS-REL",
+        "A.6.M",
+        "A.15.1"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/11-b24-b24-meta-functional-transition-mft.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/12-b24-b24-capability-and-functioning-whole-reidentification.md"
   },
   "B.2.5": {
-    "title": "Supervisor–Subholon Feedback Loop",
+    "title": "Supervisor-Subholon Feedback Relation",
     "status": "Stable",
-    "keywords": [
-      "control architecture",
-      "feedback loop",
-      "supervisor",
-      "stability",
-      "layered control"
-    ],
-    "queries": [
-      "How does FPF model control systems?",
-      "What is the supervisor-subholon pattern?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "B.2",
-        "A.1"
+        "A.1",
+        "A.12"
+      ],
+      "coordinates_with": [
+        "A.2.1",
+        "A.3.4",
+        "C.30.LCA",
+        "C.29",
+        "A.10",
+        "B.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/12-b25-b25-supervisor-subholon-feedback-loop.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b25-b25-supervisor-subholon-feedback-relation.md"
   },
   "B.3": {
     "title": "Trust & Assurance Calculus (F–G–R with Congruence)",
@@ -3111,48 +3279,7 @@
         "F.9"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md"
-  },
-  "B.3.1": {
-    "title": "Components & Epistemic Spaces",
-    "status": "Planned",
-    "keywords": [
-      "F-G-R components",
-      "measurement templates",
-      "epistemic space"
-    ],
-    "queries": [
-      "How are F, G, and R measured?",
-      "What are epistemic spaces?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "B.3"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md"
-  },
-  "B.3.2": {
-    "title": "Evidence & Validation Logic (LOG-use)",
-    "status": "Planned",
-    "keywords": [
-      "verification",
-      "validation",
-      "confidence",
-      "logic",
-      "proof"
-    ],
-    "queries": [
-      "What is the logic for validating claims in FPF?",
-      "Difference between verification and validation."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "B.3",
-        "C.6"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md"
   },
   "B.3.3": {
     "title": "Assurance Subtypes & Levels",
@@ -3176,7 +3303,7 @@
         "B.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b33-b33-assurance-subtypes-levels.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/15-b33-b33-assurance-subtypes-levels.md"
   },
   "B.3.4": {
     "title": "Evidence Decay & Epistemic Debt",
@@ -3197,10 +3324,10 @@
         "B.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/15-b34-b34-evidence-decay-epistemic-debt.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/16-b34-b34-evidence-decay-epistemic-debt.md"
   },
   "B.3.5": {
-    "title": "CT2R-LOG — Working-Model Relations & Grounding",
+    "title": "Working-Model Relations & Grounding (CT2R-LOG)",
     "status": "Stable",
     "keywords": [
       "grounding",
@@ -3221,7 +3348,7 @@
         "C.13"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/16-b35-b35-working-model-relations-grounding-ct2r-log.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b35-b35-working-model-relations-grounding-ct2r-log.md"
   },
   "B.4": {
     "title": "Canonical Evolution Loop",
@@ -3231,22 +3358,22 @@
       "DesignRunTag feedback",
       "observe-notice-stabilize-route",
       "drift repair",
+      "knowledge refinement",
+      "method refinement",
       "open-ended evolution"
     ],
     "queries": [
       "How does FPF evolve a system or episteme without design-reality drift?",
-      "Where does pre-abductive routing sit in the canonical loop?"
+      "Where do knowledge and method instantiation sit in the canonical loop?",
+      "Where does pre-abductive routing sit?"
     ],
     "dependencies": {
       "builds_on": [
         "A.4",
         "A.12"
-      ],
-      "prerequisite_for": [
-        "B.4.1-B.4.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/18-b4-b4-canonical-evolution-loop.md"
   },
   "B.4.1": {
     "title": "Observe -> Notice -> Stabilize -> Route",
@@ -3275,45 +3402,7 @@
         "C.22.1"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/18-b41-b41-observe-notice-stabilize-route.md"
-  },
-  "B.4.2": {
-    "title": "Knowledge Instantiation",
-    "status": "Planned",
-    "keywords": [
-      "theory refinement",
-      "knowledge evolution",
-      "scientific method"
-    ],
-    "queries": [
-      "How are scientific theories refined in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "B.4",
-        "A.1"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
-  },
-  "B.4.3": {
-    "title": "Method Instantiation",
-    "status": "Planned",
-    "keywords": [
-      "adaptive workflow",
-      "process improvement",
-      "operational evolution"
-    ],
-    "queries": [
-      "How do workflows or methods evolve in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "B.4",
-        "A.3.1"
-      ]
-    },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b4-b4-canonical-evolution-loop.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/19-b41-b41-observe-notice-stabilize-route.md"
   },
   "B.5": {
     "title": "Canonical Reasoning Cycle",
@@ -3336,7 +3425,7 @@
         "All B.5.x"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/19-b5-b5-canonical-reasoning-cycle.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/20-b5-b5-canonical-reasoning-cycle.md"
   },
   "B.5.1": {
     "title": "Explore → Shape → Evidence → Operate",
@@ -3358,7 +3447,7 @@
         "B.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/20-b51-b51-explore-shape-evidence-operate.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/21-b51-b51-explore-shape-evidence-operate.md"
   },
   "B.5.2": {
     "title": "Abductive Loop",
@@ -3388,7 +3477,7 @@
         "A.6.P"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/21-b52-b52-abductive-loop.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/22-b52-b52-abductive-loop.md"
   },
   "B.5.2.0": {
     "title": "U.AbductivePrompt",
@@ -3419,7 +3508,7 @@
         "B.5.2"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/22-b520-b520-uabductiveprompt.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b520-b520-uabductiveprompt.md"
   },
   "B.5.2.1": {
     "title": "Creative Abduction with NQD",
@@ -3457,94 +3546,70 @@
         "G.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b521-b521-creative-abduction-with-nqd.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b521-b521-creative-abduction-with-nqd.md"
   },
   "B.5.3": {
-    "title": "Role-Projection Bridge",
+    "title": "Domain-Concept Bridge",
     "status": "Stable",
     "keywords": [
-      "domain-specific vocabulary",
+      "domain vocabulary",
       "concept bridge",
-      "mapping",
-      "terminology"
+      "local sense",
+      "bounded context",
+      "bridge scope",
+      "role assignment boundary"
     ],
     "queries": [
-      "How does FPF integrate domain-specific language?",
-      "What is a Role-Projection Bridge?"
+      "How does FPF integrate domain-specific language without minting false kinds?",
+      "When is a domain word a role, a kind, a characteristic, or a local sense?"
     ],
     "dependencies": {
       "builds_on": [
         "A.2",
-        "C.3"
+        "A.6.5",
+        "C.3",
+        "E.24.UK",
+        "F.1",
+        "F.2",
+        "F.3",
+        "F.5",
+        "F.8"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b53-b53-role-projection-bridge.md"
-  },
-  "B.6": {
-    "title": "Characterisation Families (CHR-use)",
-    "status": "Planned",
-    "keywords": [
-      "characterization",
-      "templates",
-      "CHR patterns",
-      "measurement"
-    ],
-    "queries": [
-      "How to use CHR patterns?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "Part C (CHR)"
-      ]
-    },
-    "file": ""
-  },
-  "B.7": {
-    "title": "Common Logic Suite (LOG-use)",
-    "status": "Planned",
-    "keywords": [
-      "logic",
-      "inference",
-      "trust propagation",
-      "LOG-CAL"
-    ],
-    "queries": [
-      "How to apply formal logic in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "Part C (LOG-CAL)"
-      ]
-    },
-    "file": ""
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/25-b53-b53-domain-concept-bridge.md"
   },
   "C.1": {
-    "title": "Sys‑CAL",
+    "title": "Physical System State, Conservation, and Resource-Flow Calculus (Sys-CAL)",
     "status": "Planned",
     "keywords": [
       "physical system",
       "composition",
-      "conservation laws",
+      "conservation law",
+      "stock-flow",
       "energy",
       "mass",
-      "resources",
+      "resource flow",
       "U.System"
     ],
     "queries": [
       "How to model physical systems in FPF?",
-      "What are conservation laws in FPF?",
-      "Modeling a pump or engine."
+      "What conservation or stock-flow claim is being made?",
+      "How do resources move through a system?"
     ],
     "dependencies": {
       "builds_on": [
-        "A.1 Holonic Foundation",
-        "A.14"
-      ],
-      "prerequisite_for": [
-        "M-Sys-CAL"
+        "A.1",
+        "A.14",
+        "A.22",
+        "A.3.4",
+        "A.19",
+        "C.16"
       ],
       "coordinates_with": [
-        "Resrc-CAL"
+        "B.1.6",
+        "C.5",
+        "C.14",
+        "C.30"
       ]
     },
     "file": "sections/09-part-c-kernel-extension-specifications/20-c11-c11-decision-theory-decsn-cal.md"
@@ -3576,8 +3641,7 @@
         "B.3"
       ],
       "prerequisite_for": [
-        "All patterns using F-G-R",
-        "M-KD-CAL"
+        "All patterns using F-G-R"
       ]
     },
     "file": "sections/09-part-c-kernel-extension-specifications/01-c2-c2-epistemic-holon-composition-kd-cal.md"
@@ -3682,7 +3746,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/04-c22-c22-reliability-r-in-the-fgr-triad.md"
   },
   "C.2.2a": {
-    "title": "U.LanguageStateSpace — Language-state chart over U.CharacteristicSpace",
+    "title": "U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace",
     "status": "Stable",
     "keywords": [
       "language-state chart",
@@ -3739,7 +3803,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/06-c23-c23-unified-formality-characteristic-f.md"
   },
   "C.2.LS": {
-    "title": "U.LanguageStateFacetProfile — Compact profile for language-state facets",
+    "title": "U.LanguageStateFacetProfile - Thin profile bundle for language-state facets",
     "status": "Stable",
     "keywords": [
       "facet profile",
@@ -3893,7 +3957,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/03-c2p-c2p-epistemic-precision-restoration.md"
   },
   "C.3": {
-    "title": "Kind‑CAL — Kinds, Intent/Extent, and Typed Reasoning",
+    "title": "Kinds, Intent and Extent, and Typed Reasoning",
     "status": "Stable",
     "keywords": [
       "kind",
@@ -3916,15 +3980,13 @@
         "A.2.6 (USM)"
       ],
       "prerequisite_for": [
-        "LOG-CAL",
-        "ADR-Kind-CAL",
-        "and any pattern needing typed guards"
+        "LOG-CAL and any pattern needing typed guards"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/13-c3-c3-kinds-intentextent-and-typed-reasoning-kindcal.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/13-c3-c3-kinds-intent-and-extent-and-typed-reasoning.md"
   },
   "C.3.1": {
-    "title": "U.Kind & U.SubkindOf (Core)",
+    "title": "U.Kind and U.SubkindOf Core",
     "status": "Stable",
     "keywords": [
       "kind",
@@ -3946,7 +4008,7 @@
         "C.3.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/14-c31-c31-ukind-subkindof-core.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/14-c31-c31-ukind-and-usubkindof-core.md"
   },
   "C.3.2": {
     "title": "KindSignature (+F) & Extension/MemberOf",
@@ -4063,148 +4125,102 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/19-c3a-c3a-typed-guard-macros-for-kinds-usm-annex.md"
   },
-  "C.4": {
-    "title": "Method‑CAL",
-    "status": "Planned",
-    "keywords": [
-      "method",
-      "recipe",
-      "procedure",
-      "workflow",
-      "SOP",
-      "MethodDescription",
-      "operator"
-    ],
-    "queries": [
-      "How to model a process or workflow?",
-      "What is a MethodDescription in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.3",
-        "A.15"
-      ],
-      "coordinates_with": [
-        "Γ_method (B.1.5)"
-      ]
-    },
-    "file": ""
-  },
   "C.5": {
-    "title": "Resrc‑CAL",
+    "title": "Resource Use and Work-Cost Calculus (Resrc-CAL)",
     "status": "Planned",
     "keywords": [
-      "resource",
-      "energy",
-      "material",
-      "information",
-      "cost",
+      "resource use",
+      "dated consumption",
+      "work cost",
       "budget",
-      "consumption",
-      "Γ_work"
+      "cost bearer",
+      "resource ledger",
+      "efficiency claim"
     ],
     "queries": [
-      "How does FPF model resource usage?",
-      "How to track costs of a process?"
+      "How does FPF model resource use by work?",
+      "How to keep resource cost separate from evidence or value?",
+      "What resource ledger supports a work-cost claim?"
     ],
     "dependencies": {
       "builds_on": [
-        "A.15.1 (Work)"
+        "A.15.1",
+        "A.15.2",
+        "B.1.6",
+        "C.16",
+        "A.10"
       ],
       "coordinates_with": [
-        "Sys-CAL"
+        "C.1",
+        "C.24",
+        "G.9",
+        "B.3"
       ]
     },
     "file": ""
   },
   "C.6": {
-    "title": "LOG‑CAL – Core Logic Calculus",
+    "title": "Proof and Inference Use Calculus (LOG-CAL)",
     "status": "Planned",
     "keywords": [
-      "logic",
-      "inference",
-      "proof",
-      "modal logic",
-      "trust operators",
-      "reasoning"
+      "proof use",
+      "inference rule",
+      "typed guard",
+      "claim entailment",
+      "proof obligation",
+      "reasoning support"
     ],
     "queries": [
-      "What is the base logic of FPF?",
-      "How does FPF handle formal proofs?"
+      "What inference is licensed here?",
+      "When is a proof claim separate from evidence?",
+      "Which typed rule supports this conclusion?"
     ],
     "dependencies": {
       "builds_on": [
-        "Kind-CAL"
-      ]
-    },
-    "file": ""
-  },
-  "C.7": {
-    "title": "CHR‑CAL – Characterisation Kit",
-    "status": "Planned",
-    "keywords": [
-      "characteristic",
-      "property",
-      "measurement",
-      "metric",
-      "quality"
-    ],
-    "queries": [
-      "How to define a new measurable property in FPF?",
-      "What is a CHR pattern?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.17",
-        "A.18"
+        "C.3",
+        "C.2.1",
+        "A.10",
+        "B.3"
       ],
-      "prerequisite_for": [
-        "Agency-CHR",
-        "Creativity-CHR"
+      "coordinates_with": [
+        "B.3.5",
+        "C.23",
+        "G.8",
+        "A.6.B"
       ]
     },
     "file": ""
   },
   "C.9": {
-    "title": "Agency‑CHR",
+    "title": "Agency Characteristic Profile",
     "status": "Planned",
     "keywords": [
       "agency",
-      "agent",
       "autonomy",
-      "decision-making",
-      "active inference"
+      "responsibility threshold",
+      "decision capacity",
+      "intervention capacity",
+      "agentive role"
     ],
     "queries": [
-      "How to measure autonomy?",
-      "What defines an agent in FPF?"
+      "What agency claim is being made?",
+      "When does a system or role holder count as agentive enough for this decision?",
+      "How should autonomy be characterized without minting a new agent kind?"
     ],
     "dependencies": {
       "builds_on": [
-        "CHR-CAL",
-        "A.13"
-      ]
-    },
-    "file": ""
-  },
-  "C.10": {
-    "title": "Norm‑CAL",
-    "status": "Planned",
-    "keywords": [
-      "norm",
-      "constraint",
-      "ethics",
-      "obligation",
-      "permission",
-      "deontics"
-    ],
-    "queries": [
-      "How to model rules and constraints?",
-      "Where are ethical principles defined in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
+        "A.13",
+        "A.17",
+        "A.18",
+        "A.19",
+        "C.16",
         "A.10"
+      ],
+      "coordinates_with": [
+        "B.3",
+        "C.11",
+        "C.24",
+        "D.2"
       ]
     },
     "file": ""
@@ -4253,28 +4269,8 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/20-c11-c11-decision-theory-decsn-cal.md"
   },
-  "C.12": {
-    "title": "ADR‑Kind-CAL",
-    "status": "Planned",
-    "keywords": [
-      "versioning",
-      "rationale",
-      "DRR",
-      "architecture decision record"
-    ],
-    "queries": [
-      "How are changes to kinds managed?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "Kind-CAL",
-        "E.9"
-      ]
-    },
-    "file": ""
-  },
   "C.13": {
-    "title": "Compose‑CAL — Constructional Mereology",
+    "title": "Constructional Mereology (Compose‑CAL)",
     "status": "Stable",
     "keywords": [
       "mereology",
@@ -4297,47 +4293,41 @@
     "file": "sections/09-part-c-kernel-extension-specifications/21-c13-c13-constructional-mereology-composecal.md"
   },
   "C.14": {
-    "title": "M‑Sys‑CAL",
+    "title": "System-of-Systems and Infrastructure Calculus (M-Sys-CAL)",
     "status": "Planned",
     "keywords": [
       "system-of-systems",
       "infrastructure",
-      "large-scale systems",
-      "orchestration"
+      "inter-system dependency",
+      "service network",
+      "infrastructure boundary",
+      "operational coupling"
     ],
     "queries": [
-      "How to model a complex infrastructure like a power grid?"
+      "How to model a complex infrastructure such as a power grid?",
+      "Which cross-system dependency changes the claim?",
+      "When is this a system-of-systems rather than one system?"
     ],
     "dependencies": {
       "builds_on": [
-        "Sys-CAL",
-        "B.2.2"
-      ]
-    },
-    "file": ""
-  },
-  "C.15": {
-    "title": "M‑KD‑CAL",
-    "status": "Planned",
-    "keywords": [
-      "paradigm",
-      "scientific discipline",
-      "meta-analysis",
-      "knowledge ecosystem"
-    ],
-    "queries": [
-      "How to model an entire field of science?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "KD-CAL",
-        "B.2.3"
+        "C.1",
+        "B.2.2",
+        "A.22",
+        "C.30",
+        "B.1.6"
+      ],
+      "coordinates_with": [
+        "C.30.ILC",
+        "C.5",
+        "D.2",
+        "G.6",
+        "B.3"
       ]
     },
     "file": ""
   },
   "C.16": {
-    "title": "MM-CHR — Measurement & Metrics Characterization",
+    "title": "Measurement & Metrics Characterization (MM‑CHR)",
     "status": "Stable",
     "keywords": [
       "measurement",
@@ -4520,10 +4510,10 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/26-c18-c18-openended-search-calculus-nqdcal.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/26-c18-c18-open-ended-search-archive-and-front-stewardship.md"
   },
   "C.18.1": {
-    "title": "SLL — Scaling‑Law Lens (binding)",
+    "title": "Scaling‑Law Lens Binding (SLL)",
     "status": "Stable",
     "keywords": [
       "scaling law",
@@ -4591,7 +4581,7 @@
         "G.9"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/28-c19-c19-exploreexploit-governor-eelog.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/28-c19-c19-explore-exploit-live-pool-governor.md"
   },
   "C.19.1": {
     "title": "Bitter‑Lesson Preference (BLP)",
@@ -4616,7 +4606,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/29-c191-c191-bitterlesson-preference-blp.md"
   },
   "C.20": {
-    "title": "Discipline‑CAL — Composition of U.Discipline",
+    "title": "Composition of U.Discipline (Discipline‑CAL)",
     "status": "Stable",
     "keywords": [
       "discipline",
@@ -4673,7 +4663,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/02-c21-c21-uepisteme-epistemes-and-their-slot-relation.md"
   },
   "C.22": {
-    "title": "Problem Typing & TaskSignature Assignment (Problem‑CHR)",
+    "title": "Problem Typing & TaskSignature Assignment (Problem-CHR)",
     "status": "Stable",
     "keywords": [
       "Problem‑CHR",
@@ -5239,13 +5229,14 @@
       "selected structure",
       "architecture claim",
       "architecture question card",
+      "candidate architecture use",
       "architecture-description boundary",
       "artifact-as-architecture guard"
     ],
     "queries": [
       "How do I recover a grounded architecture claim?",
       "Which selected structure changes the architecture move?",
-      "When is an architecture description only a conditional description use?"
+      "When does candidate synthesis go to C.32 rather than C.30?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5265,16 +5256,27 @@
         "C.30.TFS-REL",
         "C.30.LCA",
         "C.30.ILC",
+        "C.32",
+        "C.32.MLAO",
+        "C.32.CONWAY",
+        "C.32.PAD",
+        "C.32.ADR",
+        "C.32.ADA",
         "C.29",
         "C.16",
         "C.25",
         "C.28",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
         "A.10",
         "B.3",
         "A.20",
         "A.21",
-        "A.15",
-        "C.11"
+        "A.15"
       ]
     },
     "file": "sections/09-part-c-kernel-extension-specifications/46-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
@@ -5290,12 +5292,13 @@
       "viewpoint",
       "correspondence",
       "source return",
-      "specification-use boundary"
+      "specification-use boundary",
+      "candidate-description boundary"
     ],
     "queries": [
       "When is an architecture description the EntityOfConcern under repair?",
       "How do I keep views, viewpoints, selected structures, and publication boundaries distinct?",
-      "When does an architecture description need C.30.AD rather than C.30?"
+      "Where do described candidate palettes and residual frames go?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5317,6 +5320,14 @@
         "C.30.TFS-REL",
         "C.30.LCA",
         "C.30.ILC",
+        "C.32",
+        "C.32.MLAO",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
         "A.6.F",
         "A.6.M",
         "C.29",
@@ -5327,7 +5338,6 @@
         "A.20",
         "A.21",
         "A.15",
-        "C.11",
         "C.28",
         "E.8",
         "F.18"
@@ -5335,12 +5345,82 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/47-c30ad-c30ad-architecture-description-adequacy.md"
   },
-  "preface_21": {
-    "title": "C.30.P",
-    "status": "**Architecture and Structure Precision Restoration**",
+  "C.30.AD.BA": {
+    "title": "Built-Asset Architecture Description and Reference Designation",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "dependencies": {
+      "builds_on": [
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "A.22",
+        "E.17"
+      ],
+      "coordinates_with": [
+        "A.6.F",
+        "A.6.M",
+        "C.30.TFS-REL",
+        "C.30.LCA",
+        "C.30.ILC",
+        "A.10",
+        "B.3",
+        "A.20",
+        "A.21",
+        "C.11",
+        "C.28"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/47-c30ad-c30ad-architecture-description-adequacy.md"
+  },
+  "C.30.P": {
+    "title": "Architecture and Structure Precision Restoration",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.10",
+        "E.10.ARCH",
+        "A.22",
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "C.2.P",
+        "A.6.P",
+        "A.6.F",
+        "C.29",
+        "C.16.P",
+        "C.16",
+        "C.25",
+        "E.17",
+        "E.8"
+      ],
+      "coordinates_with": [
+        "C.30.TFS-REL",
+        "C.30.LCA",
+        "C.30.ILC",
+        "C.32",
+        "C.32.MLAO",
+        "C.32.CONWAY",
+        "C.32.FAIL",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "A.10",
+        "B.3",
+        "A.20",
+        "A.21",
+        "C.11",
+        "C.28",
+        "A.15",
+        "E.11"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/49-c30p-c30p-architecture-and-structure-precision-restoration.md"
   },
   "C.30.STRAT": {
     "title": "Stratification Wording Precision Restoration",
@@ -5385,7 +5465,7 @@
         "I.2"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/49-c30strat-c30strat-stratification-wording-precision-restoration.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/50-c30strat-c30strat-stratification-wording-precision-restoration.md"
   },
   "C.30.ASV": {
     "title": "Architecture Structural View Adequacy (ASV)",
@@ -5396,7 +5476,7 @@
       "VF.ARCH.STRUCTURE",
       "viewpoint bundle",
       "structure kind",
-      "hidden/lost structure",
+      "hidden or lost structure",
       "correspondence",
       "source return"
     ],
@@ -5425,7 +5505,7 @@
         "C.29"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/50-c30asv-c30asv-architecture-structural-view-adequacy-asv.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/51-c30asv-c30asv-architecture-structural-view-adequacy-asv.md"
   },
   "C.30.LCA": {
     "title": "Control Structure View Adequacy (LCA)",
@@ -5434,7 +5514,7 @@
       "control-structure view",
       "layered control architecture",
       "supervisor loop",
-      "controller/plant",
+      "controller and plant",
       "rate band",
       "control layer",
       "proof overread"
@@ -5463,7 +5543,7 @@
         "C.29"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/51-c30lca-c30lca-control-structure-view-adequacy-lca.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/52-c30lca-c30lca-control-structure-view-adequacy-lca.md"
   },
   "C.30.ILC": {
     "title": "Cross-Scope Architecture Residual Triage",
@@ -5475,12 +5555,13 @@
       "declared scope",
       "structure kind",
       "local repair",
-      "source return"
+      "residual-bearing locus",
+      "first architecture move"
     ],
     "queries": [
       "What is the first architecture move when a local fix creates a residual elsewhere?",
-      "How do level, layer, scope, scale, and frustration wording recover exact carriers?",
-      "When should the case exit to measurement, scale, evidence, decision, or synthesis patterns?"
+      "When does residual-reducing synthesis go to C.32.MLAO and C.32?",
+      "When should the case exit to measurement, scale, evidence, decision, or selected-set publication?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5489,6 +5570,10 @@
         "A.22"
       ],
       "coordinates_with": [
+        "C.32.MLAO",
+        "C.32",
+        "C.32.PAD",
+        "C.31.ASAP",
         "C.16",
         "C.29",
         "G.5",
@@ -5501,7 +5586,7 @@
         "D.4"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/52-c30ilc-c30ilc-cross-scope-architecture-residual-triage.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/53-c30ilc-c30ilc-cross-scope-architecture-residual-triage.md"
   },
   "C.30.TFS-REL": {
     "title": "Architecture Transformation-Flow Structure Relation",
@@ -5511,11 +5596,13 @@
       "transformation-flow structure",
       "functional behavior",
       "selected structure",
-      "architecture structural view"
+      "architecture structural view",
+      "candidate architecture input"
     ],
     "queries": [
       "When can a transformation-flow structure inform a grounded architecture or structural view?",
-      "How do architecture, function, and transformation flow stay distinct?"
+      "How do architecture, function, and transformation flow stay distinct?",
+      "When do transformation-flow variants become C.32 candidate inputs?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5525,6 +5612,7 @@
         "A.22"
       ],
       "coordinates_with": [
+        "C.32",
         "A.6.F",
         "E.18.2",
         "C.29",
@@ -5539,19 +5627,88 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/46-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
   },
-  "preface_22": {
-    "title": "C.31",
-    "status": "**Modularity and Reusable Structure Characteristics**",
-    "keywords": [],
-    "queries": [],
-    "file": ""
+  "C.31": {
+    "title": "Modularity and Reusable Structure Characteristics",
+    "status": "Stable",
+    "keywords": [
+      "modularity characteristics",
+      "reusable-structure characteristics",
+      "coupling",
+      "cohesion",
+      "substitutability",
+      "interface variation",
+      "evidence reuse",
+      "bespoke residue",
+      "ModularityVectorLite"
+    ],
+    "queries": [
+      "Which modularity characteristic is under evaluation?",
+      "When is a modularity score report-only?",
+      "How do I keep module, interface, reuse, and evidence-reuse claims distinct?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.16",
+        "A.17",
+        "A.18",
+        "A.19",
+        "C.25",
+        "C.30",
+        "C.30.ASV"
+      ],
+      "coordinates_with": [
+        "A.6.M",
+        "C.31.RSA",
+        "C.31.ASAP",
+        "C.32",
+        "C.29",
+        "A.10",
+        "B.3",
+        "G.5",
+        "C.11"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/14-c31-c31-ukind-and-usubkindof-core.md"
   },
-  "preface_23": {
-    "title": "C.31.RSA",
-    "status": "**Reusable Structure Accounting**",
-    "keywords": [],
-    "queries": [],
-    "file": ""
+  "C.31.RSA": {
+    "title": "Reusable Structure Accounting",
+    "status": "Stable",
+    "keywords": [
+      "reusable-structure accounting",
+      "reusable share",
+      "bespoke residue",
+      "accounting basis",
+      "report-only share",
+      "source return",
+      "refactoring opportunity"
+    ],
+    "queries": [
+      "Where is reusable structure located?",
+      "When is a reusable share only report-only?",
+      "What gets worse when we increase reuse?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.31",
+        "C.30",
+        "C.30.ASV",
+        "C.16",
+        "A.19"
+      ],
+      "coordinates_with": [
+        "A.6.M",
+        "C.31.ASAP",
+        "C.29",
+        "A.10",
+        "B.3",
+        "G.6",
+        "C.27",
+        "C.28",
+        "G.5",
+        "C.11"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/56-c31rsa-c31rsa-reusable-structure-accounting.md"
   },
   "C.31.ASAP": {
     "title": "Architecture Scale-Amenability Preference",
@@ -5571,7 +5728,7 @@
     ],
     "queries": [
       "When does modularity or platform wording carry an architecture scale-preference claim?",
-      "How do I compare architectures under a scale window?",
+      "How can scale preference inform C.32 candidate generation without selecting the architecture?",
       "When is coarse-graining or RG-like language only a mathematical lens?"
     ],
     "dependencies": {
@@ -5587,6 +5744,8 @@
         "C.29"
       ],
       "coordinates_with": [
+        "C.32",
+        "C.32.PAD",
         "A.6.M",
         "C.30",
         "C.30.ASV",
@@ -5600,324 +5759,815 @@
         "C.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/56-c31asap-c31asap-architecture-scale-amenability-preference.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/57-c31asap-c31asap-architecture-scale-amenability-preference.md"
   },
-  "D.1": {
-    "title": "Axiological Neutrality Principle",
-    "status": "Planned",
-    "keywords": [
-      "axiology",
-      "values",
-      "ethics",
-      "neutrality",
-      "morals",
-      "preference lattice",
-      "objective function"
-    ],
-    "queries": [
-      "Does FPF have built-in ethics?",
-      "How to model different value systems in FPF?",
-      "What is axiological neutrality?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "E.2 (Pillars)"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/20-e10d-e10d1-lexical-discipline-for-context-dctx.md"
-  },
-  "D.2": {
-    "title": "Multi-Scale Ethics Framework",
-    "status": "Planned",
-    "keywords": [
-      "ethics",
-      "scale",
-      "levels",
-      "scope",
-      "responsibility",
-      "agent",
-      "team",
-      "ecosystem",
-      "planet"
-    ],
-    "queries": [
-      "How to apply ethics at different scales?",
-      "FPF model for team ethics vs. individual ethics."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.1",
-        "A.9 (Cross-Scale Consistency)"
-      ],
-      "constrains": [
-        "D.2.1-D.2.4"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md"
-  },
-  "D.2.1": {
-    "title": "Local-Agent Ethics",
-    "status": "Planned",
-    "keywords": [
-      "individual ethics",
-      "duties",
-      "permissions",
-      "agent",
-      "system"
-    ],
-    "queries": [
-      "Modeling duties for a single agent."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.2"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md"
-  },
-  "D.2.2": {
-    "title": "Group-Ethics Standards",
-    "status": "Planned",
-    "keywords": [
-      "collective norms",
-      "team ethics",
-      "veto",
-      "subsidiarity"
-    ],
-    "queries": [
-      "How to define rules for a team in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.2"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md"
-  },
-  "D.2.3": {
-    "title": "Ecosystem Stewardship",
-    "status": "Planned",
-    "keywords": [
-      "externalities",
-      "tragedy of the commons"
-    ],
-    "queries": [
-      "Modeling ethical impact on an ecosystem."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.2"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md"
-  },
-  "D.2.4": {
-    "title": "Planetary-Scale Precaution",
-    "status": "Planned",
-    "keywords": [
-      "catastrophic risk",
-      "long-termism",
-      "precautionary principle"
-    ],
-    "queries": [
-      "How does FPF handle long-term ethical risks?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.2"
-      ]
-    },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md"
-  },
-  "D.3": {
-    "title": "Holonic Conflict Topology",
-    "status": "Planned",
-    "keywords": [
-      "conflict",
-      "clash",
-      "disagreement",
-      "resolution",
-      "resource conflict",
-      "goal conflict",
-      "epistemic conflict"
-    ],
-    "queries": [
-      "How to model conflicts between systems in FPF?",
-      "Types of conflicts in FPF."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.1 (Holon)",
-        "B.1 (Aggregation)"
-      ]
-    },
-    "file": ""
-  },
-  "D.3.1": {
-    "title": "Conflict Detection Logic (LOG-use)",
-    "status": "Planned",
-    "keywords": [
-      "conflict detection",
-      "logic",
-      "predicates",
-      "`conflictsWith`"
-    ],
-    "queries": [
-      "Formal logic for detecting conflicts."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.3"
-      ]
-    },
-    "file": ""
-  },
-  "D.3.2": {
-    "title": "Conflict Routing Protocol",
-    "status": "Planned",
-    "keywords": [
-      "routing",
-      "mediation",
-      "negotiation",
-      "DRR",
-      "appeals"
-    ],
-    "queries": [
-      "How does FPF route unresolved conflicts?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.3"
-      ]
-    },
-    "file": ""
-  },
-  "D.4": {
-    "title": "Trust-Aware Mediation Calculus",
-    "status": "Planned",
-    "keywords": [
-      "mediation",
-      "negotiation",
-      "conflict resolution",
-      "trust score",
-      "assurance",
-      "algorithm"
-    ],
-    "queries": [
-      "How does FPF resolve conflicts using trust?",
-      "What is the algorithm for mediation?",
-      "Using B.3 scores for decision making."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.3",
-        "B.3 (Trust & Assurance Calculus)"
-      ]
-    },
-    "file": ""
-  },
-  "D.4.1": {
-    "title": "Fair-Share Negotiation Operator",
-    "status": "Planned",
-    "keywords": [
-      "fair division",
-      "negotiation",
-      "Nash bargaining",
-      "bias correction"
-    ],
-    "queries": [
-      "Modeling fair negotiation between agents."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.4"
-      ]
-    },
-    "file": ""
-  },
-  "D.4.2": {
-    "title": "Assurance-Driven Override",
-    "status": "Planned",
-    "keywords": [
-      "safety override",
-      "assurance",
-      "utility",
-      "risk management"
-    ],
-    "queries": [
-      "When does safety override performance in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.4"
-      ]
-    },
-    "file": ""
-  },
-  "D.5": {
-    "title": "Bias-Audit & Ethical Assurance",
+  "C.32": {
+    "title": "Architecture Candidate Synthesis",
     "status": "Stable",
     "keywords": [
-      "bias",
-      "audit",
-      "ethics",
-      "assurance",
-      "fairness",
-      "review cycle",
-      "taxonomy",
-      "AI ethics",
-      "responsible AI"
+      "architecture candidate synthesis",
+      "CandidateArchitecturePalette@Project",
+      "selected structures",
+      "architecture characteristics",
+      "synthesis structure map",
+      "candidate configurations",
+      "trade-off front",
+      "retained alternatives"
     ],
     "queries": [
-      "How does FPF handle bias?",
-      "What is the Bias-Audit Cycle?",
-      "How to ensure a model is fair?",
-      "Ethical review process in FPF."
+      "How do I synthesize candidate architecture configurations before comparison?",
+      "Which selected structures and architecture characteristics change?",
+      "When does C.32 stop before comparison, selected-set publication, local choice, or project architecture decision?"
     ],
     "dependencies": {
       "builds_on": [
-        "E.5.4 (Cross-Disciplinary Bias Audit)"
-      ]
-    },
-    "file": "sections/10-part-d-multi-scale-ethics-conflict-optimisation/01-d5-d5-bias-audit-ethical-assurance.md"
-  },
-  "D.5.1": {
-    "title": "Taxonomy-Guided Audit Templates",
-    "status": "Planned",
-    "keywords": [
-      "bias taxonomy",
-      "audit checklist",
-      "template"
-    ],
-    "queries": [
-      "Templates for conducting a bias audit."
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.5"
-      ]
-    },
-    "file": "sections/10-part-d-multi-scale-ethics-conflict-optimisation/01-d5-d5-bias-audit-ethical-assurance.md"
-  },
-  "D.5.2": {
-    "title": "Assurance Metrics Roll-up",
-    "status": "Planned",
-    "keywords": [
-      "ethical risk index",
-      "metrics",
-      "evidence",
-      "roll-up"
-    ],
-    "queries": [
-      "How to calculate an overall ethical risk score in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "D.5",
+        "C.30",
+        "A.22",
+        "A.6.F",
+        "A.6.M",
+        "C.16",
+        "C.25",
+        "C.31",
+        "C.30.ILC"
+      ],
+      "coordinates_with": [
+        "C.32.P2S",
+        "C.32.HCS",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.32.CONWAY",
+        "C.32.MLAO",
+        "C.32.FAIL",
+        "C.32.PAD",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
+        "A.10",
         "B.3"
       ]
     },
-    "file": "sections/10-part-d-multi-scale-ethics-conflict-optimisation/01-d5-d5-bias-audit-ethical-assurance.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/15-c32-c32-kindsignature-f-extensionmemberof.md"
+  },
+  "C.32.P2S": {
+    "title": "Problem-to-Structure Architecturing Transformation Flow",
+    "status": "Stable",
+    "keywords": [
+      "problem-to-structure architecturing flow",
+      "ProblemToStructureArchitecturingFlowCard@Project",
+      "structural uncertainty",
+      "selected structures",
+      "actual-structure feedback",
+      "owner-specific return",
+      "architecture work flow"
+    ],
+    "queries": [
+      "How do I carry architecture pressure from problem to realized selected structures?",
+      "When does architecturing stop at C.30, C.32, C.32.PAD, C.32.ADR, A.15, C.16, C.29, E.23, G.11, or E.18?",
+      "How do descriptions, decisions, work, evals, and feedback stay with their owners?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.22.2",
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "C.32",
+        "C.32.HCS",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.25",
+        "C.31",
+        "C.29",
+        "E.17",
+        "E.24.PUB"
+      ],
+      "coordinates_with": [
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
+        "C.32.PAD",
+        "C.32.ADR",
+        "C.32.ADA",
+        "A.15",
+        "A.15.1",
+        "A.15.2",
+        "A.15.5",
+        "C.16",
+        "E.23",
+        "G.11",
+        "E.18",
+        "C.32.CONWAY",
+        "C.32.FAIL"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/15-c32-c32-kindsignature-f-extensionmemberof.md"
+  },
+  "C.32.HCS": {
+    "title": "Holon-Family Architecture Characteristic Starter Packs",
+    "status": "Stable",
+    "keywords": [
+      "holon-family architecture characteristic starter pack",
+      "architecture characteristic heads",
+      "source catalogue narrowing",
+      "first criteria questions",
+      "characteristic transfer"
+    ],
+    "queries": [
+      "Which few architecture-characteristic heads should we inspect first?",
+      "How do software-quality catalogues transfer to systems, methods, roles, cultures, AI workflows, or evidence practices?",
+      "When does starter work hand off to ACS?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32",
+        "C.25",
+        "C.16",
+        "E.13"
+      ],
+      "coordinates_with": [
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.30",
+        "C.31",
+        "A.19",
+        "G.5",
+        "C.11",
+        "C.32.PAD"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/60-c32hcs-c32hcs-holon-family-architecture-characteristic-starter-pack.md"
+  },
+  "C.32.ACS": {
+    "title": "Architecture Characteristic Criteria Set for Improvement Cycles",
+    "status": "Stable",
+    "keywords": [
+      "architecture characteristic criteria set",
+      "criteria row",
+      "Q-Bundle",
+      "improvement cycle",
+      "proxy risk",
+      "protected counter-characteristic",
+      "anti-Goodhart guard"
+    ],
+    "queries": [
+      "How do I turn broad -ility names into project criteria rows?",
+      "Which three to five characteristics enter optimization and which remain guardrails?",
+      "How does the criteria set feed eval and candidate synthesis?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32.HCS",
+        "C.25",
+        "C.16",
+        "E.13"
+      ],
+      "coordinates_with": [
+        "C.32",
+        "C.32.ACE",
+        "C.32.PAD",
+        "E.22",
+        "E.23",
+        "A.19.CPM",
+        "G.5",
+        "C.11",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/61-c32acs-c32acs-architecture-characteristic-criteria-set-for-improvem.md"
+  },
+  "C.32.ACE": {
+    "title": "Architecture Characteristic Eval Programs",
+    "status": "Stable",
+    "keywords": [
+      "architecture-characteristic eval program",
+      "eval result",
+      "measurement boundary",
+      "parity frame",
+      "missing-data policy",
+      "proxy risk",
+      "comparison input"
+    ],
+    "queries": [
+      "How do I evaluate architecture candidates against criteria rows?",
+      "Why is eval not the characteristic itself?",
+      "When does an eval result feed comparison, publication, or decision without replacing them?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32.ACS",
+        "C.16",
+        "C.25",
+        "E.13"
+      ],
+      "coordinates_with": [
+        "C.32",
+        "C.32.MLAO",
+        "C.32.PAD",
+        "A.19.CPM",
+        "G.5",
+        "C.11",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/62-c32ace-c32ace-architecture-characteristic-eval-programs.md"
+  },
+  "C.32.CONWAY": {
+    "title": "Transformer and Transformed Architecture Correspondence",
+    "status": "Stable",
+    "keywords": [
+      "Conway correspondence",
+      "inverse Conway maneuver",
+      "transformer holon",
+      "transformed holon",
+      "changing relation",
+      "selected-structure correspondence",
+      "coordination cost"
+    ],
+    "queries": [
+      "When must the architecture of the transforming holon and transformed holon be synthesized together?",
+      "Which selected structures correspond across the changing relation?",
+      "When is mirroring only a source cue rather than architecture adequacy?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32",
+        "A.3.4",
+        "E.18",
+        "A.15",
+        "C.29"
+      ],
+      "coordinates_with": [
+        "C.32.MLAO",
+        "C.32.FAIL",
+        "C.32.PAD",
+        "A.19.CPM",
+        "G.5",
+        "C.11",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/63-c32conway-c32conway-transformer-and-transformed-architecture-correspon.md"
+  },
+  "C.32.MLAO": {
+    "title": "Multilevel Architecture Residual Optimization",
+    "status": "Stable",
+    "keywords": [
+      "multilevel architecture residual optimization",
+      "residual-reducing candidate frame",
+      "declared level",
+      "declared scope",
+      "Pareto front",
+      "stepping stone",
+      "ideality pressure",
+      "scale amenability"
+    ],
+    "queries": [
+      "How do I prepare candidate architecture changes after cross-scope residual triage?",
+      "How do residuals, fronts, archives, and stepping stones inform synthesis without deciding?",
+      "When does the case return to C.30.ILC, C.29, C.31.ASAP, C.32, G.5, C.11, or C.32.PAD?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.30.ILC",
+        "C.32",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.29",
+        "C.31.ASAP"
+      ],
+      "coordinates_with": [
+        "C.32.CONWAY",
+        "C.32.FAIL",
+        "C.32.PAD",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/64-c32mlao-c32mlao-multilevel-architecture-residual-optimization.md"
+  },
+  "C.32.FAIL": {
+    "title": "Architecture Failure Recognition and Repair",
+    "status": "Stable",
+    "keywords": [
+      "architecture failure cue",
+      "architecture repair cue",
+      "stressed architecture object",
+      "selected-structure relation",
+      "candidate repair",
+      "repair-entry family",
+      "source overread"
+    ],
+    "queries": [
+      "How do I turn an architecture warning into the smallest repair action?",
+      "Which governing pattern owns the repair?",
+      "When should evidence, assurance, comparison, selection, publication, choice, or decision claims leave the repair cue?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32",
+        "C.30.P",
+        "A.6.F",
+        "A.6.M",
+        "C.31",
+        "C.29",
+        "E.10"
+      ],
+      "coordinates_with": [
+        "C.32.MLAO",
+        "C.32.CONWAY",
+        "C.32.PAD",
+        "C.30",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.18",
+        "C.19",
+        "G.5",
+        "C.11",
+        "E.17",
+        "E.24.PUB",
+        "A.10",
+        "B.3",
+        "A.20",
+        "A.21"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/65-c32fail-c32fail-architecture-failure-recognition-and-repair.md"
+  },
+  "C.32.PAD": {
+    "title": "Project Architecture Decision After Candidate Synthesis",
+    "status": "Stable",
+    "keywords": [
+      "project architecture decision",
+      "ArchitectureDecisionRelation@Project",
+      "selected architecture option",
+      "affected selected structure",
+      "architecture-characteristic trade-off",
+      "accepted loss",
+      "method-use instruction",
+      "architect-developer split",
+      "reopen condition"
+    ],
+    "queries": [
+      "How do I turn candidate architecture configurations into a project decision?",
+      "Which selected structures and accepted losses does the architecture decision commit?",
+      "How does an architecture decision guide developer methods without becoming an ADR or work plan?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32",
+        "C.32.MLAO",
+        "C.32.CONWAY",
+        "C.32.FAIL",
+        "A.19.CPM",
+        "A.19.SelectorMechanism",
+        "C.11",
+        "G.5",
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV"
+      ],
+      "coordinates_with": [
+        "C.32.ADR",
+        "C.32.ADA",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.16",
+        "C.25",
+        "C.29",
+        "A.15",
+        "E.8",
+        "E.11.PUR",
+        "E.17",
+        "E.24.PUB",
+        "A.10",
+        "B.3",
+        "A.21",
+        "B.2",
+        "B.2.P"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/66-c32pad-c32pad-project-architecture-decision-after-candidate-synthes.md"
+  },
+  "C.32.ADR": {
+    "title": "Architecture Decision Record Projection",
+    "status": "Stable",
+    "keywords": [
+      "architecture decision record",
+      "ADR projection",
+      "ArchitectureDecisionDescription@Project",
+      "ArchitectureDecisionRecordProjection@Project",
+      "section function",
+      "rationale",
+      "consequences",
+      "method-use instruction",
+      "supersession",
+      "publication boundary"
+    ],
+    "queries": [
+      "How do I write an ADR-like record from an architecture decision relation?",
+      "Which ADR sections are required by the decision use?",
+      "When is an ADR only a publication projection rather than the decision?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32.PAD",
+        "C.30.AD",
+        "C.30.ASV",
+        "E.17",
+        "E.24.PUB",
+        "A.15",
+        "E.8",
+        "E.11.PUR"
+      ],
+      "coordinates_with": [
+        "C.32.ADA",
+        "A.10",
+        "B.3",
+        "A.21",
+        "C.16",
+        "C.25",
+        "C.29"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/67-c32adr-c32adr-architecture-decision-record-projection.md"
+  },
+  "C.32.ADA": {
+    "title": "Architecture Decision Adequacy Scales",
+    "status": "Stable",
+    "keywords": [
+      "architecture decision adequacy",
+      "ArchitectureDecisionAdequacyEvaluation@Project",
+      "declared use",
+      "complete coordinate set",
+      "E.21 labels",
+      "method docking",
+      "publication projection",
+      "no average",
+      "repair target"
+    ],
+    "queries": [
+      "How do I evaluate whether an architecture decision is adequate for a declared use?",
+      "Which weak coordinate should be repaired before developer work?",
+      "Why does an ADR score not approve an architecture decision?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.32.PAD",
+        "C.32.ADR",
+        "E.21",
+        "E.22"
+      ],
+      "coordinates_with": [
+        "C.32",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.30.AD",
+        "A.15",
+        "C.16",
+        "C.25",
+        "C.29",
+        "E.13",
+        "E.17",
+        "E.24.PUB",
+        "A.10",
+        "B.3",
+        "A.21"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/68-c32ada-c32ada-architecture-decision-adequacy-scales.md"
+  },
+  "C.33": {
+    "title": "Structural Information Adequacy for Architecture Capture and Source Return",
+    "status": "Stable",
+    "keywords": [
+      "structural information adequacy",
+      "captured structure",
+      "lost structure",
+      "source return",
+      "carrier",
+      "observer boundary",
+      "selected structure"
+    ],
+    "queries": [
+      "What selected structure can I safely take from this carrier?",
+      "What did the view, ADR, graph, report, or observation lose?",
+      "When must architecture work return to the stronger source?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.22",
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "C.32.P2S",
+        "C.32"
+      ],
+      "coordinates_with": [
+        "C.29",
+        "C.16",
+        "C.25",
+        "C.32.ACE",
+        "C.30.STRAT",
+        "C.30.TFS-REL",
+        "A.6.M",
+        "C.31",
+        "C.31.ASAP",
+        "C.32.PAD",
+        "C.32.ADR",
+        "G.5",
+        "C.18",
+        "C.19",
+        "E.18",
+        "F.9",
+        "F.15"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/16-c33-c33-kindbridge-clk-crosscontext-mapping-of-kinds.md"
+  },
+  "C.34": {
+    "title": "Structural Correspondence, Equivalence, and Morphism Adequacy",
+    "status": "Stable",
+    "keywords": [
+      "structural correspondence",
+      "equivalence",
+      "morphism",
+      "mapping mode",
+      "preserved structure",
+      "lost structure",
+      "directionality",
+      "scope"
+    ],
+    "queries": [
+      "When are two structure-bearing objects same enough for architecture work?",
+      "Which selected structure is preserved and what is lost?",
+      "When is a graph match or morphism only a lens?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "A.22",
+        "C.30",
+        "C.30.ASV",
+        "C.30.AD",
+        "C.29",
+        "F.9"
+      ],
+      "coordinates_with": [
+        "C.16",
+        "C.25",
+        "C.32.ACE",
+        "C.32",
+        "C.32.PAD",
+        "C.32.ADR",
+        "C.30.TFS-REL",
+        "C.30.STRAT",
+        "A.6.M",
+        "C.31",
+        "C.31.ASAP",
+        "E.18",
+        "F.15"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/17-c34-c34-rolemask-contextual-adaptation-of-kinds-without-cloning.md"
+  },
+  "C.35": {
+    "title": "Structural Synthesis and Discovery Adequacy",
+    "status": "Stable",
+    "keywords": [
+      "structural synthesis",
+      "structural discovery",
+      "generated carrier",
+      "produced carrier",
+      "described structure",
+      "candidate admission",
+      "source return",
+      "DSM",
+      "NAS",
+      "LLM"
+    ],
+    "queries": [
+      "Can a generated architecture output seed synthesis?",
+      "When is a DSM cluster, NAS graph, LLM diagram, or model transformation ready for C.32?",
+      "What must be recovered before treating a discovered structure as architecture material?"
+    ],
+    "dependencies": {
+      "builds_on": [
+        "C.30",
+        "C.30.AD",
+        "C.30.ASV",
+        "A.22",
+        "C.32.P2S",
+        "C.32"
+      ],
+      "coordinates_with": [
+        "C.33",
+        "C.34",
+        "C.29",
+        "C.30.STRAT",
+        "C.30.TFS-REL",
+        "A.6.M",
+        "C.31",
+        "C.31.ASAP",
+        "C.32.ACS",
+        "C.32.ACE",
+        "C.16",
+        "C.25",
+        "G.5",
+        "C.18",
+        "C.19",
+        "E.18",
+        "C.32.PAD",
+        "C.32.ADR"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/18-c35-c35-kindat-intentional-abstraction-facet-for-kinds-k0k3.md"
+  },
+  "C.36": {
+    "title": "Cultural Evolution and Cultural-Evolution Engineering",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "A.1",
+        "A.2.1",
+        "A.3.1",
+        "A.15",
+        "C.18",
+        "C.19",
+        "C.20",
+        "C.23",
+        "E.18.1",
+        "F.9",
+        "F.17",
+        "F.18",
+        "G.5",
+        "G.11"
+      ],
+      "coordinates_with": [
+        "C.36.P",
+        "E.10",
+        "E.10.ARCH",
+        "C.30",
+        "C.16",
+        "C.11",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/72-c36-c36-cultural-evolution-and-cultural-evolution-engineering.md"
+  },
+  "C.36.P": {
+    "title": "Cultural-Evolution Wording-Use Precision Restoration",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.10",
+        "E.10.ARCH",
+        "C.36",
+        "F.17",
+        "F.18",
+        "F.9"
+      ],
+      "coordinates_with": [
+        "A.3.1",
+        "A.3.2",
+        "A.15",
+        "C.18",
+        "C.19",
+        "G.5",
+        "G.11"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/73-c36p-c36p-cultural-evolution-wording-use-precision-restoration.md"
+  },
+  "D.1": {
+    "title": "Ethical Value Plurality and FPF Boundary",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.2",
+        "A.1",
+        "A.7"
+      ],
+      "coordinates_with": [
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5",
+        "A.10",
+        "B.3",
+        "C.11"
+      ]
+    },
+    "file": "sections/10-part-d-multi-scale-ethics-and-conflict-optimization/01-d1-d1-ethical-value-plurality-and-fpf-boundary.md"
+  },
+  "D.2": {
+    "title": "Multilevel Ethics For System-Holon Work",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "D.1",
+        "A.1",
+        "B.1",
+        "C.30.ILC"
+      ],
+      "coordinates_with": [
+        "D.3",
+        "D.4",
+        "D.5",
+        "A.15",
+        "A.3.4",
+        "C.16"
+      ]
+    },
+    "file": "sections/10-part-d-multi-scale-ethics-and-conflict-optimization/02-d2-d2-multilevel-ethics-for-holon-work.md"
+  },
+  "D.3": {
+    "title": "Interlevel Ethical Conflict Structure",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "D.1",
+        "D.2",
+        "A.1",
+        "A.14",
+        "C.13"
+      ],
+      "coordinates_with": [
+        "D.4",
+        "C.2.1",
+        "E.17",
+        "C.30.ILC",
+        "C.16",
+        "A.10",
+        "B.3"
+      ]
+    },
+    "file": "sections/10-part-d-multi-scale-ethics-and-conflict-optimization/03-d3-d3-interlevel-ethical-conflict-structure.md"
+  },
+  "D.4": {
+    "title": "Ethical Mediation and Decision Use",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "D.3",
+        "C.11"
+      ],
+      "coordinates_with": [
+        "D.5",
+        "A.10",
+        "B.3",
+        "C.28",
+        "C.30.ILC",
+        "A.20",
+        "A.21"
+      ]
+    },
+    "file": "sections/10-part-d-multi-scale-ethics-and-conflict-optimization/04-d4-d4-ethical-mediation-and-decision-use.md"
+  },
+  "D.5": {
+    "title": "Bias Audit and Ethical Assurance",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "D.1",
+        "D.4",
+        "E.5.4"
+      ],
+      "coordinates_with": [
+        "A.10",
+        "B.3",
+        "C.16",
+        "C.28",
+        "E.13"
+      ]
+    },
+    "file": "sections/10-part-d-multi-scale-ethics-and-conflict-optimization/05-d5-d5-bias-audit-and-ethical-assurance.md"
   },
   "E.1": {
     "title": "Vision & Mission",
@@ -6026,25 +6676,174 @@
   "E.4": {
     "title": "FPF Ecosystem Family Architecture",
     "status": "Stable",
-    "keywords": [
-      "ecosystem families",
-      "Conceptual Core",
-      "Tooling Reference",
-      "Pedagogical Companion",
-      "canon",
-      "tutorial",
-      "linter"
-    ],
-    "queries": [
-      "How are FPF publications, tools, and learning companions structured?",
-      "What is the difference between the core spec and tooling?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
-        "E.1"
+        "E.1",
+        "E.2/P-5",
+        "E.5.3"
+      ],
+      "coordinates_with": [
+        "E.4.FPF",
+        "E.4.PFAD",
+        "E.4.DPF",
+        "E.4.DPF.DA",
+        "E.4.PFR",
+        "E.11",
+        "E.17",
+        "G.2",
+        "G.5",
+        "G.11",
+        "C.33",
+        "C.34",
+        "C.35",
+        "F.18",
+        "E.21",
+        "E.23",
+        "E.19"
       ]
     },
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/05-e4-e4-fpf-ecosystem-family-architecture.md"
+  },
+  "E.4.FPF": {
+    "title": "First Principles Framework Form and Publication-or-Access Carrier Assembly",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.4",
+        "E.2.DA",
+        "E.11",
+        "E.17",
+        "E.21"
+      ],
+      "coordinates_with": [
+        "E.4.PFAD",
+        "E.4.PFR",
+        "E.4.DPF",
+        "E.4.DPF.DA",
+        "G.11",
+        "F.18"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/05-e4-e4-fpf-ecosystem-family-architecture.md"
+  },
+  "E.4.PFAD": {
+    "title": "Principle-Framework Architecture Decision",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.4",
+        "E.9",
+        "C.32.PAD"
+      ],
+      "coordinates_with": [
+        "C.32.ADR",
+        "E.17",
+        "E.4.PFR",
+        "F.18",
+        "G.2",
+        "G.11",
+        "E.21",
+        "E.19"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/07-e4pfad-e4pfad-principle-framework-architecture-decision.md"
+  },
+  "E.4.DPF": {
+    "title": "Domain Principle Framework Authoring and Publication-or-Access Carrier Assembly",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.4",
+        "G.2",
+        "E.8",
+        "E.10",
+        "F.18"
+      ],
+      "coordinates_with": [
+        "E.4.FPF",
+        "E.4.PFAD",
+        "E.4.DPF.DA",
+        "E.4.PFR",
+        "C.33",
+        "C.34",
+        "C.35",
+        "E.11",
+        "E.17",
+        "E.21",
+        "E.22",
+        "E.23",
+        "E.19",
+        "G.11"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/08-e4dpf-e4dpf-domain-principle-framework-authoring-and-publication-o.md"
+  },
+  "E.4.DPF.DA": {
+    "title": "Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.4.DPF",
+        "E.4.PFAD",
+        "E.4.PFR",
+        "E.21",
+        "E.2.DA",
+        "E.22",
+        "E.23",
+        "A.19.ECS"
+      ],
+      "coordinates_with": [
+        "G.2",
+        "G.11",
+        "E.11",
+        "E.17",
+        "C.33",
+        "C.34",
+        "C.35"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/08-e4dpf-e4dpf-domain-principle-framework-authoring-and-publication-o.md"
+  },
+  "E.4.PFR": {
+    "title": "Pattern-Framework Relation and Edition Discipline",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.5.3",
+        "E.4"
+      ],
+      "coordinates_with": [
+        "E.4.PFAD",
+        "E.11.PUR",
+        "E.11",
+        "E.17",
+        "G.5",
+        "F.18",
+        "G.11",
+        "E.21",
+        "E.22",
+        "E.23",
+        "C.33",
+        "C.34",
+        "C.35",
+        "G.2",
+        "E.9",
+        "A.10"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/10-e4pfr-e4pfr-pattern-framework-relation-and-edition-discipline.md"
   },
   "E.5": {
     "title": "Four Guard-Rails of FPF",
@@ -6072,7 +6871,7 @@
         "E.5.4"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/06-e5-e5-four-guardrails-of-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/11-e5-e5-four-guardrails-of-fpf.md"
   },
   "E.5.1": {
     "title": "DevOps Lexical Firewall",
@@ -6097,7 +6896,7 @@
         "All Core patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/07-e51-e51-devops-lexical-firewall.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/12-e51-e51-devops-lexical-firewall.md"
   },
   "E.5.2": {
     "title": "Notational Independence",
@@ -6123,7 +6922,7 @@
         "All Core patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/08-e52-e52-notational-independence.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/13-e52-e52-notational-independence.md"
   },
   "E.5.3": {
     "title": "Unidirectional Dependency",
@@ -6149,7 +6948,7 @@
         "E.4"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/09-e53-e53-unidirectional-dependency.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/14-e53-e53-unidirectional-dependency.md"
   },
   "E.5.4": {
     "title": "Cross-Disciplinary Bias Audit",
@@ -6175,7 +6974,7 @@
         "All Core patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/10-e54-e54-crossdisciplinary-bias-audit.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/15-e54-e54-crossdisciplinary-bias-audit.md"
   },
   "E.6": {
     "title": "Didactic Architecture of the Spec",
@@ -6197,7 +6996,7 @@
         "E.2 (P-2 Didactic Primacy)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/11-e6-e6-didactic-architecture-of-the-specification.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/16-e6-e6-didactic-architecture-of-the-specification.md"
   },
   "E.7": {
     "title": "Archetypal Grounding Principle",
@@ -6222,14 +7021,14 @@
         "All architectural patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/12-e7-e7-archetypal-grounding-principle.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/17-e7-e7-archetypal-grounding-principle.md"
   },
   "E.8": {
-    "title": "FPF Authoring Conventions and Style Guide",
+    "title": "FPF Authoring Conventions & Style Guide",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/13-e8-e8-fpf-authoring-conventions-style-guide.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/18-e8-e8-fpf-authoring-conventions-style-guide.md"
   },
   "E.8.ECSPF": {
     "title": "Evaluation CharacteristicSpace FPF Pattern Publication Form",
@@ -6252,14 +7051,14 @@
         "C.25"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/14-e8ecspf-e8ecspf-evaluation-characteristicspace-fpf-pattern-publicati.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/19-e8ecspf-e8ecspf-evaluation-characteristicspace-fpf-pattern-publicati.md"
   },
   "E.9": {
     "title": "Design-Rationale Record (DRR) Method",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/15-e9-e9-designrationale-record-drr-method.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/20-e9-e9-designrationale-record-drr-method.md"
   },
   "E.9.DA": {
     "title": "DRR Decision-Adequacy Evaluation CharacteristicSpace",
@@ -6281,7 +7080,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/16-e9da-e9da-drr-decision-adequacy-evaluation-characteristicspace.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e9da-e9da-drr-decision-adequacy-evaluation-characteristicspace.md"
   },
   "E.10": {
     "title": "Unified Lexical Rules for FPF",
@@ -6297,6 +7096,7 @@
       ],
       "coordinates_with": [
         "E.10.ARCH",
+        "E.10.MOVE",
         "A.6.P",
         "C.2.P",
         "A.19.SPR",
@@ -6305,7 +7105,37 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/17-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e10-e10-unified-lexical-rules-for-fpf.md"
+  },
+  "E.10.MOVE": {
+    "title": "Move and Readiness Wording Precision Restoration",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.10",
+        "E.10.ARCH",
+        "E.11.PUR",
+        "A.15.5",
+        "A.3.4.P"
+      ],
+      "coordinates_with": [
+        "A.15",
+        "A.15.1",
+        "A.15.2",
+        "A.15.3",
+        "A.15.4",
+        "A.21",
+        "E.18.1",
+        "A.16",
+        "A.16.0",
+        "C.24",
+        "C.30",
+        "and C.30.AD"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/23-e10move-e10move-move-and-readiness-wording-precision-restoration.md"
   },
   "E.10.ARCH": {
     "title": "Wording-Use Ontological Precision Restoration Architecture",
@@ -6342,7 +7172,7 @@
         "I.2"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/18-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md"
   },
   "E.10.P": {
     "title": "Conceptual Prefixes (policy & registry)",
@@ -6365,7 +7195,7 @@
         "E.5.2"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/19-e10p-e10p-conceptual-prefixes-policy-registry.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10p-e10p-conceptual-prefixes-policy-registry.md"
   },
   "E.10.D1": {
     "title": "Lexical Discipline for “Context” (D.CTX)",
@@ -6393,7 +7223,7 @@
         "F.9"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/17-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.10.D2": {
     "title": "EntityOfConcern, Description Episteme, and Specification-Use Discipline",
@@ -6424,7 +7254,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/17-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.11": {
     "title": "First-Practical Entry and Pattern-Use Discoverability Discipline",
@@ -6442,10 +7272,37 @@
         "I.2",
         "E.10",
         "E.10.ARCH",
+        "E.10.MOVE",
+        "E.11.PUR",
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
+  },
+  "E.11.PUR": {
+    "title": "Pattern-Use Recommendation and Pattern-Use Sequence",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.11",
+        "E.10.MOVE",
+        "E.8"
+      ],
+      "coordinates_with": [
+        "E.18.1",
+        "A.15",
+        "A.15.5",
+        "A.21",
+        "A.16",
+        "C.24",
+        "C.30",
+        "C.30.AD",
+        "and E.17"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e11pur-e11pur-pattern-use-recommendation-and-pattern-use-sequence.md"
   },
   "E.12": {
     "title": "Didactic Primacy & Cognitive Ergonomics",
@@ -6467,7 +7324,7 @@
         "E.2 (P-2)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/23-e12-e12-didactic-primacy-cognitive-ergonomics.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e12-e12-didactic-primacy-cognitive-ergonomics.md"
   },
   "E.13": {
     "title": "Pragmatic Utility and Value Alignment",
@@ -6489,7 +7346,7 @@
         "E.2 (P-7)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e13-e13-pragmatic-utility-and-value-alignment.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e13-e13-pragmatic-utility-and-value-alignment.md"
   },
   "E.14": {
     "title": "Human-Centric Working-Model",
@@ -6517,7 +7374,7 @@
         "E.10"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e14-e14-humancentric-workingmodel.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e14-e14-humancentric-workingmodel.md"
   },
   "E.15": {
     "title": "Lexical Authoring & Evolution Protocol (LEX-AUTH)",
@@ -6544,7 +7401,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/26-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/33-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
   },
   "E.16": {
     "title": "RoC‑Autonomy Budget & Enforcement",
@@ -6574,7 +7431,7 @@
         "G.9"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/27-e16-e16-rocautonomy-budget-enforcement.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e16-e16-rocautonomy-budget-enforcement.md"
   },
   "E.17.0": {
     "title": "U.MultiViewDescribing - Viewpoints, Views & Correspondences",
@@ -6599,7 +7456,7 @@
         "domain-specific description schemes"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.1": {
     "title": "U.ViewpointBundleLibrary — Reusable Viewpoint Bundles",
@@ -6630,7 +7487,7 @@
         "domain-specific viewpoint-bundle libraries"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
   },
   "E.17.2": {
     "title": "TEVB - Typical Engineering Viewpoints Bundle",
@@ -6654,49 +7511,49 @@
         "ISO-aligned architecture-description bundles"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
   },
   "E.17": {
-    "title": "Multi-View Publication Kit",
+    "title": "Multi‑View Publication Kit",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.EFP": {
     "title": "ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/39-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
   },
   "E.17.ID.CR": {
     "title": "ComparativeReviewUnit - bounded comparison over comparative review units",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/33-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md"
   },
   "E.17.AUD": {
     "title": "PublicationUnit Stability Discipline",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.LHR": {
     "title": "PublicationUnit Stability Discipline and Local Head Restoration",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.OOTD": {
     "title": "PublicationUnit Stability Discipline and PublicationUnit Primary EntityOfConcern Discipline",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.18": {
     "title": "Transformation Flow Structure",
@@ -6737,7 +7594,7 @@
         "C.30.TFS-REL"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e18-e18-transformation-flow-structure.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/44-e18-e18-transformation-flow-structure.md"
   },
   "E.18.1": {
     "title": "Principles-to-Work Carry-Through",
@@ -6766,6 +7623,8 @@
         "E.19"
       ],
       "coordinates_with": [
+        "E.11.PUR",
+        "A.15.5",
         "C.29",
         "A.6.0",
         "A.6.1",
@@ -6781,7 +7640,7 @@
         "E.17"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/38-e181-e181-principles-to-work-carry-through.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e181-e181-principles-to-work-carry-through.md"
   },
   "E.18.2": {
     "title": "Transformation Flow Mathematical Description",
@@ -6815,14 +7674,14 @@
         "E.18.1"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/39-e182-e182-transformation-flow-mathematical-description.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e182-e182-transformation-flow-mathematical-description.md"
   },
-  "preface_24": {
-    "title": "E.19",
-    "status": "**Pattern Quality Gates: Review and Refresh Profiles**",
+  "E.19": {
+    "title": "Pattern Quality Gates: Review and Refresh Profiles",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": ""
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md"
   },
   "E.20": {
     "title": "Mechanism Introduction Protocol (MIP)",
@@ -6874,7 +7733,7 @@
         "or citeable tokens"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e20-e20-mechanism-introduction-protocol.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/48-e20-e20-mechanism-introduction-protocol.md"
   },
   "E.21": {
     "title": "FPF Pattern-Quality Evaluation CharacteristicSpace",
@@ -6904,7 +7763,7 @@
         "I.2"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/49-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
   },
   "E.22": {
     "title": "Improvement-Oriented Quality Evaluation Question Framing",
@@ -6930,7 +7789,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/43-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/50-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
   },
   "E.23": {
     "title": "Quality Improvement Loop Method",
@@ -6956,7 +7815,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/44-e23-e23-quality-improvement-loop-method.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e23-e23-quality-improvement-loop-method.md"
   },
   "E.24": {
     "title": "U.Ontic and Ontic Introduction Discipline",
@@ -6982,7 +7841,7 @@
         "E.2.DA"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e24-e24-uontic-and-ontic-introduction-discipline.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e24-e24-uontic-and-ontic-introduction-discipline.md"
   },
   "E.24.CD": {
     "title": "Ontic Candidate Detection",
@@ -7005,7 +7864,7 @@
         "F.18"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e24cd-e24cd-ontic-candidate-detection.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/53-e24cd-e24cd-ontic-candidate-detection.md"
   },
   "E.24.PUB": {
     "title": "Ontic Description and Publication Discipline",
@@ -7028,7 +7887,30 @@
         "E.9.DA"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e24pub-e24pub-ontic-description-and-publication-discipline.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/54-e24pub-e24pub-ontic-description-and-publication-discipline.md"
+  },
+  "E.24.UK": {
+    "title": "U-kind Governance and Ontic Settlement Coupling",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.24",
+        "E.24.CD",
+        "E.24.PUB",
+        "C.3",
+        "C.3.1",
+        "A.8",
+        "A.11",
+        "F.5",
+        "F.8",
+        "F.18",
+        "E.10",
+        "A.6.5"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/55-e24uk-e24uk-u-kind-governance-and-ontic-settlement-coupling.md"
   },
   "F.0.1": {
     "title": "Contextual Lexicon Principles",
@@ -7174,29 +8056,32 @@
         "F.8"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/05-f4-f4-role-description-rcs-rolestategraph-checklists.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/05-f4-f4-role-description-description-episteme-for-urole.md"
   },
   "F.5": {
-    "title": "Naming Discipline for U.Types & Roles",
+    "title": "Naming Discipline for U-kind Names and RoleDescription Labels",
     "status": "Stable",
     "keywords": [
       "naming conventions",
       "lexical rules",
       "morphology",
       "twin registers",
-      "U.Type naming"
+      "U-kind naming",
+      "role-description labels"
     ],
     "queries": [
-      "What are the rules for naming roles in FPF?",
-      "How to create clear and consistent names for concepts?"
+      "How do I name admitted U-kinds and role descriptions?",
+      "How do I avoid false kindhood from a useful label?"
     ],
     "dependencies": {
       "builds_on": [
         "F.4",
-        "E.10"
+        "E.10",
+        "E.24.UK",
+        "F.18"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/06-f5-f5-naming-discipline-for-utypes-roles.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/06-f5-f5-naming-discipline-for-u-kind-names-and-roledescription-la.md"
   },
   "F.6": {
     "title": "Role Assignment & Enactment Cycle (Six-Step)",
@@ -7219,7 +8104,7 @@
         "A.15"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/07-f6-f6-role-assignment-enactment-cycle-six-step.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/07-f6-f6-roleassignment-and-performed-work-attribution-check.md"
   },
   "F.7": {
     "title": "Concept‑Set Table Construction",
@@ -7251,21 +8136,21 @@
     "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/08-f7-f7-conceptset-table.md"
   },
   "F.8": {
-    "title": "Mint or Reuse? (U.Type vs Concept-Set vs Role Description vs Alias)",
+    "title": "Mint-or-Reuse Decision",
     "status": "Stable",
     "keywords": [
       "decision lattice",
       "type explosion",
       "reuse",
-      "minting new types",
+      "minting new U-kinds",
       "parsimony",
       "concept reuse",
       "new vs existing",
       "type creation decision"
     ],
     "queries": [
-      "When should I create a new U.Type?",
-      "How to avoid creating too many roles?",
+      "When should I create a new U-kind or reuse an existing governed value?",
+      "How do I avoid creating too many roles or kinds?",
       "Decision guide for new concepts.",
       "When should I create a new concept instead of reusing an existing one?",
       "How to avoid creating too many overlapping terms?",
@@ -7277,13 +8162,15 @@
     "dependencies": {
       "builds_on": [
         "F.4",
-        "F.7"
+        "F.7",
+        "E.24.UK",
+        "A.11"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/09-f8-f8-mint-or-reuse-utype-vs-concept-set-vs-role-description-vs.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/09-f8-f8-mint-or-reuse-decision.md"
   },
   "F.9": {
-    "title": "Alignment & Bridge across Contexts",
+    "title": "Alignment and Bridge across Contexts",
     "status": "Stable",
     "keywords": [
       "bridge",
@@ -7323,7 +8210,7 @@
         "F.9.1"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/10-f9-f9-alignment-bridge-across-contexts.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/10-f9-f9-alignment-and-bridge-across-contexts.md"
   },
   "F.9.1": {
     "title": "Bridge Stance Overlay",
@@ -7379,7 +8266,7 @@
         "B.3"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/12-f10-f10-status-families-mapping-evidence-standard-requirement.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/12-f10-f10-status-families-mapping-evidence-standard-and-requiremen.md"
   },
   "F.11": {
     "title": "Method Quartet Harmonisation",
@@ -7467,10 +8354,10 @@
         "F.8"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/16-f14-f14-antiexplosion-control-roles-statuses.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/16-f14-f14-anti-explosion-control-for-role-and-status-name-families.md"
   },
   "F.15": {
-    "title": "SCR/RSCR Harness for Unification",
+    "title": "Static and Regression Conformance Harness for Unification",
     "status": "Stable",
     "keywords": [
       "static checks",
@@ -7488,7 +8375,7 @@
         "All of F.1-F.14"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/17-f15-f15-scrrscr-harness-for-unification.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/17-f15-f15-static-and-regression-conformance-harness-for-unificatio.md"
   },
   "F.16": {
     "title": "Worked‑Example Template (Cross‑Domain)",
@@ -7511,7 +8398,7 @@
     "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/18-f16-f16-workedexample-template-crossdomain.md"
   },
   "F.17": {
-    "title": "Unified Term Sheet (UTS)",
+    "title": "Unified Term Sheet",
     "status": "Stable",
     "keywords": [
       "Unified Term Sheet",
@@ -7530,14 +8417,14 @@
         "F.1-F.12"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/19-f17-f17-unified-term-sheet-uts.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/19-f17-f17-unified-term-sheet.md"
   },
   "F.18": {
     "title": "Local-First Unification Naming Protocol",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/20-f18-f18-localfirst-unification-naming-protocol.md"
+    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/20-f18-f18-local-first-unification-naming-protocol.md"
   },
   "F.19": {
     "title": "Ontology-First Plain Technical Rewriting",
@@ -7602,7 +8489,7 @@
     "keywords": [
       "CG-Spec",
       "CG-Frame",
-      "legality gate",
+      "admissibility gate",
       "ComparatorSet",
       "ScaleComplianceProfile (SCP)",
       "MinimalEvidence",
@@ -7624,7 +8511,7 @@
         "G.Core",
         "A.19 (CN-Spec)",
         "A.10",
-        "A.17–A.19 / C.16 (MM-CHR legality)",
+        "A.17–A.19 / C.16 (MM-CHR admissibility)",
         "A.18 (CSLC)",
         "B.3",
         "Part F (Bridges/UTS)",
@@ -7731,7 +8618,7 @@
       "scales",
       "levels",
       "coordinates",
-      "CSLC legality",
+      "CSLC lawfulness",
       "typed measurement",
       "CHR Pack@CG-Frame",
       "ReferencePlane",
@@ -7779,7 +8666,7 @@
       "tri-state admissibility",
       "Γ-fold hooks",
       "Φ/Ψ/Φ_plane policy pins",
-      "legality gates",
+      "admissibility gates",
       "edition pins",
       "RSCRTriggerKindId"
     ],
@@ -7844,7 +8731,7 @@
         "G.9-G.11"
       ]
     },
-    "file": "sections/13-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-methodfamily-registry.md"
+    "file": "sections/13-part-g-discipline-sota-patterns-kit/07-g5-g5-multimethod-dispatcher-and-methodfamily-registry.md"
   },
   "G.6": {
     "title": "Evidence Graph & Provenance Ledger",
@@ -7889,7 +8776,7 @@
         "G.11"
       ]
     },
-    "file": "sections/13-part-g-discipline-sota-patterns-kit/08-g6-g6-evidence-graph-provenance-ledger.md"
+    "file": "sections/13-part-g-discipline-sota-patterns-kit/08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md"
   },
   "G.7": {
     "title": "Cross-Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels)",
@@ -8098,7 +8985,7 @@
         "F.15"
       ]
     },
-    "file": "sections/13-part-g-discipline-sota-patterns-kit/13-g11-g11-telemetry-driven-refresh-decay-orchestrator.md"
+    "file": "sections/13-part-g-discipline-sota-patterns-kit/13-g11-g11-telemetry-driven-refresh-and-decay-orchestrator.md"
   },
   "G.12": {
     "title": "DHC Dashboards — Discipline-Health Time-Series (admissible telemetry, generation-first)",

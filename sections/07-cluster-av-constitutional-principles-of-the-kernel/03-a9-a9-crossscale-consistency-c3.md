@@ -94,7 +94,7 @@ Packaging these insights as one memorisable quintet → **Cognitive Elegance** w
 | **Builds on**      | A 1 Holonic Foundation               | Supplies part/whole semantics.                            |
 | **Reinforces**     | A 7 Strict Distinction               | Prevents layer‑mixing during folds.                       |
 | **Enabled by**     | A 8 Universal Core                   | Guarantees operands share truly universal meaning.        |
-| **Foundation for** | B 1 Universal Algebra of Aggregation | B‑section implements operators that satisfy this pattern. |
+| **Foundation for** | B.1 Holon Aggregation and Part-Whole Construction | B-section part-whole construction uses this universal-core discipline. |
 | **Triggers**       | B 2 Meta‑Holon Transition            | When invariants fail through synergy, an MHT is invoked.  |
 
 ### A.9:10 - Known Uses (2018‑2025)

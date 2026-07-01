@@ -55,15 +55,15 @@ Use the universal assignment to state **who plays which role where and when**:
 
 ```
 U.RoleAssignment(
-  holder  : U.System,          -- the acting system (bearer)
-  role    : U.TransformerRole, -- behavioural role
-  context : U.BoundedContext,  -- semantic boundary
-  timespan?: Interval          -- optional validity window
+  holderRef         : U.System,                 -- the acting system (bearer)
+  roleRef           : TransformerRole@Context,  -- role value, not a U-kind
+  boundedContextRef : U.BoundedContext,         -- semantic boundary
+  validInterval?    : Interval                  -- optional validity window
 )
 ```
 
-* A role is **local to context** and **time‑indexed**.
-* The same system may bear multiple roles **if** the context allows compatibility.
+* A role assignment is **local to context** and **time-indexed**.
+* The same system may bear multiple role values **if** the context allows compatibility.
 * For epistemes, the target of change is their **symbol carriers**; the acting side is still a **system**.
 
 #### A.3:5.3 - Boundary & externality
@@ -101,13 +101,13 @@ Split into **Regulator** (calibration module, acting side) and **Regulated** (se
 
 ### A.3:7 - Conformance Checklist (normative)
 
-**CC‑A3‑0 - U.RoleAssgnment presence.**
+**CC‑A3‑0 - U.RoleAssignment presence.**
 Every claim that a holon “performs a transformation” MUST be backed by at least one **RoleAssignment** triple:
 `U.RoleAssignment(holder: U.Holon, role: U.Role=TransformerRole, context: U.BoundedContext, timespan?)`.
 This is the canonical way to say *who acts, in which role, where (semantically), and when*. See **A.2.1** for the universal **`U.RoleAssignment`** Standard and its invariants.
 
 **CC‑A3‑1 - External transformer discipline.**
-The **bearer** of `TransformerRole` MUST NOT be the same model instance as the **object‑under‑change** within the same assignment. Self-modification is modelled via two **`U.RoleAssignment`s** (same holder playing two roles) or via an explicit controller–plant split. This upholds **Agent Externalization** (A.12).
+The **bearer** of `TransformerRole` MUST NOT be the same model instance as the **object-under-change** within the same assignment. Self-modification is modelled via two **`U.RoleAssignment`s** (same holder playing two roles) or via an explicit controller-plant split. This upholds **acting-side externalization** (A.12).
 
 **CC‑A3‑2 - Design–Run separation.**
 `U.MethodDescription` (recipe, definition) is a design-time `U.Episteme`; `U.Method` (mask-of-work) and `U.Work` (executed work) are run-time kinds. It is non-conformant to mutate a `MethodDescription` inside a `Work` log or to treat a `Work` as a `MethodDescription`. This enforces the kernel’s **Temporal Duality** (A.4) and the A.15 alignment.
@@ -169,11 +169,11 @@ Together, these lines of work argue for **explicit role‑bearing transformers**
 A.3 operationalises A.7 by keeping **target EntityOfConcern ≠ MethodDescription ≠ observation/log Work**:
 *target EntityOfConcern* = target holon; *MethodDescription* = design description; *observation/log Work* = `Work` evidence or record. Violations (e.g., treating a recipe as a part) are non‑conformant and usually show up as Γ failures.
 
-**A.12 Agent Externalization & External Transformer.**
-A.3’s CC‑A3‑1 is the mechanical guard‑rail for A.12: even in self‑modification, the *modelling split* keeps the agent (transformer bearer) distinct from the object‑under‑change.
+**A.12 Acting-Side Externalization & External Transformer.**
+A.3's CC-A3-1 is the mechanical guard-rail for A.12: even in self-modification, the *modelling split* keeps the acting-side holder distinct from the object-under-change.
 
 **A.13 Agential Role.**
-When the bearer is an **Agent**, A.3 keeps identity and states management in Agent‑CAL (`U.Agent`, `U.Intent`, `U.Action`), while still requiring `RoleAssigning` + Γ compatibility. This is where policy/plan/action pipelines live.
+When the bearer is an acting system or collective system with an agential role assignment, A.3 keeps identity, role assignment, method, plan, work, and evidence separate while A.13 supplies the agency-characteristic profile. This is where policy, plan, and action pipelines remain tied to explicit role assignments and Γ compatibility.
 
 **A.15 Role–Method–Work Alignment.**
 A.3 relies on A.15’s vocabulary guard‑rails (roles are not parts; methods are masks of work; specs are recipes). CC‑A3‑2/‑4 are enforceable precisely because A.15 fixes the naming discipline.

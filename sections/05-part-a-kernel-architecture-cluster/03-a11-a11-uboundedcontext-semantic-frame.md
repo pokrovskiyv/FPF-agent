@@ -16,7 +16,7 @@ Typical moments:
 - two contexts need a bridge relation rather than an assumed global equivalence;
 - a "domain" label is too broad to decide local vocabulary or rules.
 
-**First useful move.** Name the `U.BoundedContext` that governs the current meaning, then state the local vocabulary, local invariants, role taxonomy, and bridge relations that matter for the claim.
+**First useful move.** Name the `U.BoundedContext` that governs the current meaning, then state the local vocabulary, local invariants, role taxonomy when role assignments are current, episteme-use/status relations when epistemic-use or status claims are current, and bridge relations that matter for the claim.
 
 **What goes wrong if missed.** "Owner", "ticket", "service", "evidence", "role", "done", and "valid" become global labels. Integration work then appears to be about matching words, while the real problem is unspoken semantic frames.
 
@@ -33,7 +33,7 @@ Typical moments:
 
 Meaning is local. The same expression can be coherent in one bounded context and misleading in another. "Service" in software, service operations, military organization, and contract law is not one global object by spelling. "Evidence" in a courtroom, a scientific review, a machine-learning benchmark, and a gate review is not one global role by spelling.
 
-`U.BoundedContext` is the FPF ontic for this locality of meaning. It is a `U.Holon` that holds one semantic frame: local vocabulary, local invariants, local role taxonomy, and bridge relations to other contexts.
+`U.BoundedContext` is the FPF ontic for this locality of meaning. It is a `U.Holon` that holds one semantic frame: local vocabulary, local invariants, local role taxonomy when role-assignment claims are current, local episteme-use/status relations when epistemic-use or status claims are current, and bridge relations to other contexts.
 
 A bounded context is not an enclosing object for all work in a domain. It is the semantic frame in which a term, rule, role assignment, or inference is interpreted.
 
@@ -67,7 +67,8 @@ BoundedContextSlotRelation:
   contextBoundary:
   localVocabulary:
   localInvariantSet:
-  localRoleTaxonomy:
+  localRoleTaxonomy?:
+  localEpistemeUseAndStatusRelationSet?:
   bridgeRelationSet?:
   stewardingSystemOrCommunityRef?:
   editionOrWindowRef?:
@@ -87,7 +88,7 @@ Good context names are specific enough to decide meaning:
 - `FactoryLineB.MaintenanceRules.2026`
 - `FPF.PatternQuality.E21`
 
-Broad labels such as "healthcare", "physics", "software", "workflow", or "architecture" are informative domain families unless they are narrowed into a bounded context with local vocabulary, invariants, role taxonomy, and bridge relations.
+Broad labels such as "healthcare", "physics", "software", "workflow", or "architecture" are informative domain families unless they are narrowed into a bounded context with local vocabulary, invariants, the relevant role taxonomy or episteme-use/status relation set, and bridge relations.
 
 #### A.1.1:4.2 - Context Boundary
 
@@ -117,7 +118,7 @@ An invariant does not become global because it is well written. Cross-context re
 
 #### A.1.1:4.5 - Local Role Taxonomy
 
-`localRoleTaxonomy` defines roles valid in the context. A role assignment uses one context:
+`localRoleTaxonomy` defines `U.Role` values valid in the context when system-role assignments are current. A `U.RoleAssignment` uses one context:
 
 ```text
 RoleAssignment:
@@ -128,6 +129,8 @@ RoleAssignment:
 ```
 
 The same holder may have different role assignments in different contexts. The same role name may denote different roles in different contexts. A "global role" is not a valid shortcut; it is either a role value defined in a selected context or a wording problem to repair.
+
+Do not put postulate, evidence, derived-claim, publication, or status distinctions into `localRoleTaxonomy` merely because ordinary language calls them "roles". When the context governs epistemic use or status, record those distinctions in `localEpistemeUseAndStatusRelationSet` and apply the direct evidence-use, source-use, status-use, claim, publication, or gate pattern.
 
 #### A.1.1:4.6 - Bridge Relation Set
 
@@ -184,7 +187,8 @@ BoundedContextSlotRelation:
   contextBoundary: selected postulates, vocabulary, reference schemes, and admissible derivations
   localVocabulary: inertial frame, proper time, Lorentz transformation
   localInvariantSet: constant light speed postulate; covariance constraints
-  localRoleTaxonomy: PostulateRole, EvidenceRole, DerivedClaimRole
+  localRoleTaxonomy: not current for theory claims
+  localEpistemeUseAndStatusRelationSet: postulate-status relation; evidence-use relation; derived-claim status relation
   bridgeRelationSet: bridge to Newtonian mechanics under low-speed approximation; bridge to general relativity under selected assumptions
 ```
 
@@ -213,7 +217,7 @@ This pattern intentionally resists:
 | Check | Requirement |
 | --- | --- |
 | `CC-A1.1-1` | A bounded-context claim names the `U.BoundedContext` by value; broad domain-family labels do not govern local meaning. |
-| `CC-A1.1-2` | The context has a boundary, local vocabulary, local invariant set, and local role taxonomy when those claims are current. |
+| `CC-A1.1-2` | The context has a boundary, local vocabulary, local invariant set, local role taxonomy when role-assignment claims are current, and local episteme-use/status relation set when epistemic-use/status claims are current. |
 | `CC-A1.1-3` | Role assignments name exactly one bounded context for interpretation. |
 | `CC-A1.1-4` | Cross-context use is expressed through bridge relations with direction, relation kind, fit, loss, and scope. |
 | `CC-A1.1-5` | No context-to-context containment or inheritance is inferred without an explicit bridge or governing relation. |
@@ -248,7 +252,7 @@ Costs:
 
 ### A.1.1:10 - Rationale
 
-`U.BoundedContext` is the semantic companion to `U.Holon`. A holon boundary says what counts as inside or outside the whole for a claim. A bounded-context boundary says where a vocabulary, invariant, role taxonomy, and inference rule are locally coherent.
+`U.BoundedContext` is the semantic companion to `U.Holon`. A holon boundary says what counts as inside or outside the whole for a claim. A bounded-context boundary says where vocabulary, invariant, role taxonomy, episteme-use/status relation set, and inference rule are locally coherent when those claims are current.
 
 The pattern is generalized from domain-driven design but is not software-only. Scientific theories, legal standards, hospital procedures, manufacturing cells, model cards, research programs, and FPF evaluation contexts all need local meaning. FPF makes that locality an ontic rather than leaving it as "it depends."
 
@@ -263,7 +267,7 @@ This also protects role and episteme ontology. A `U.Role` is not global; it is v
 | Data mesh and interoperability practice. | Cross-domain data products need explicit interoperability relations rather than one enterprise meaning. | Use bridge relations for cross-context fit and loss. |
 | FAIR, provenance, and research-object practice. | Reuse depends on explicit metadata, provenance, and interpretation context. | Keep local vocabulary and invariants explicit; publication forms do not become the context. |
 
-Source role and currentness: domain-driven bounded-context practice is the selected practice lineage generalized beyond software; team-topology and socio-technical boundary practice are current support for stewarding-system and cognitive-boundary caution; data-mesh and interoperability practice support explicit bridge relations; FAIR, provenance, and research-object practice support interpretation context and publication-boundary discipline. Reopen A.1.1 when current practice or accepted FPF work changes the criteria for semantic locality, cross-context bridge fit and loss, local role taxonomy, or context-publication separation; do not reopen it for a new domain label, team structure, metadata format, or data product style that leaves those criteria unchanged.
+Source use and currentness: domain-driven bounded-context practice is the selected practice lineage generalized beyond software; team-topology and socio-technical boundary practice are current context for stewarding-system and cognitive-boundary caution; data-mesh and interoperability practice motivate explicit bridge relations; FAIR, provenance, and research-object practice motivate interpretation context and publication-boundary discipline. Reopen A.1.1 when current practice or accepted FPF work changes the criteria for semantic locality, cross-context bridge fit and loss, local role taxonomy, local episteme-use/status relation set, or context-publication separation; do not reopen it for a new domain label, team structure, metadata format, or data product style that leaves those criteria unchanged.
 
 ### A.1.1:12 - Relations
 

@@ -318,7 +318,7 @@ Method Interface Standard (MIC)
 
 ### B.1.5:12 - Relations
 
-* **Builds on:** A.12 (Transformer Role), A.14 (Mereology Extension), A.15 (Strict Distinction); B.1.1 (Proof Kit), B.1.4 (Γ\_ctx/Γ\_time).
+* **Builds on:** A.12 (Transformer Role), A.14 (Mereology Extension), A.15 (Strict Distinction); B.1.1 dependency-structure and relation-grounding checks; B.1.4 (Γ\_ctx/Γ\_time).
 * **Coordinates with:** B.1.6 (Γ\_work) for resource accounting; B.3 (Assurance) for WLNK cutsets and CL penalties.
 * **Triggers/Complements:** B.2 (MHT) when new closure/supervision or context re‑base appears at method level.
 * **Used by:** Later domain patterns that define canonical methods in specific disciplines (without altering Γ\_method).

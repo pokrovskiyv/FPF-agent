@@ -1,10 +1,22 @@
 ## C.22 - Problem Typing & TaskSignature Assignment (Problem-CHR)
+> **Status:** Stable
+> **Type:** Pattern
 
 **Purpose.** Give FPF an **admissible, minimal, and portable** way to type a problem for downstream selector-facing use after the problem-side representation is stable enough for Principles-to-Work, eligibility, acceptance, or policy-governed choice. `C.22.2`-selector-facing use carries the first problem-framing record for a messy signal; `C.22`-selector-facing use attaches the stabilized problem to CHR-grounded traits and a minimal `TaskSignature (S2)` record for downstream selector-facing use. The `TaskSignature` attachment is **Context-local**, evidence-relation-traceable, tri-state-aware, and bridge-visible. TaskSignature is *minimal* but sufficient for **eligibility**, **acceptance**, and **policy-governed** choice.
 
-**Status & placement.** Part C (Kernel Extensions Specifications) → Cluster C.I (Core CHRs/CALs).
+**Body-level kind boundary.** `TaskSignature` is a context-bound typed attachment record governed by this pattern, not a durable root U-kind. `ProblemCard@Context` is the C.22.2 problem-side record used before selector-facing binding, not an ontic-context suffix and not a separate root kind. `KindSet` contains C.3 `U.Kind` values for selected entities. `DescriptorMap`, telemetry hooks, policy ids, and selector input/output fields are local record fields unless a direct governing pattern admits them. `PathSliceId` is an E.18 path-slice reference only when a transformation-flow path slice is current; otherwise it is a telemetry field id with no path ontology.
+
+**Placement.** Part C (Kernel Extensions Specifications) -> Cluster C.I (Core CHRs/CALs).
 **Depends on:** **C.16 MM‑CHR** (measurement admissibility), **G.5** (selector S2/S3), **G.0** (CG‑Spec invariants).
 **Coordinates with:** **G.4** (Acceptance and Evidence profiles), **C.23** (MethodFamily admissibility and maturity), **C.18 NQD‑CAL** (QD and illumination), **C.19 E/E‑LOG** (emitters and policies), **E.10** (LEX).
+
+### C.22:0 - Use This When
+
+Use this pattern when a stabilized problem-side representation must become a selector-facing typed attachment record for eligibility, acceptance, or policy-governed selection. Typical cases include solver choice, method-family eligibility, QD archive selection, open-ended generator selection, or specialization claims that need a declared task family or work target.
+
+**What goes wrong if missed.** A problem remains a paragraph: selector inputs drift, ordinals and units get mixed, unknowns are coerced, acceptance thresholds leak into CHR fields, and cross-context reuse happens by name instead of Bridge+CL.
+
+**What this buys.** The downstream selection question gets one minimal `TaskSignature` with typed fields, unknown handling, evidence relations, scope, freshness, and crossing conditions visible before any method family is admitted or compared.
 
 ### C.22:1 - Intent
 
@@ -20,9 +32,9 @@ Operationalise No-Free-Lunch discipline in selection by making every run-time de
   - the work-measure threshold target used in specialization claims is only the declared success mark for the current task family or work target
 #### C.22:1.2 - ProblemCard@Context relation
 
-`ProblemCard@Context` is the `C.22.2`-problem-side record-side record shape for stabilizing one context-bound problem representation before downstream Principles-to-Work (P2W).
+`ProblemCard@Context` is the `C.22.2` problem-side record shape for stabilizing one context-bound problem representation before downstream Principles-to-Work (P2W).
 
-A `ProblemCard@Context` record can be used to prepare `ProblemProfile`, `TaskKind`, or candidate `TaskSignature` material for later use. Binding to one `TaskSignature` is admissible only when the downstream selector-facing object is ready. If several downstream signatures remain plausible, keep them as candidate signatures rather than binding one chosen `TaskSignature`.
+A `ProblemCard@Context` record can be used to prepare `ProblemProfile`, `TaskKind`, or candidate `TaskSignature` material for downstream use. Binding to one `TaskSignature` is admissible only when the downstream selector-facing object is ready. If several downstream signatures remain plausible, keep them as candidate signatures rather than binding one chosen `TaskSignature`.
 
 This relation does not move problem-card fields into `TaskSignature`. `TaskSignature` remains the minimal `C.22` attachment record for eligibility, acceptance, and selection. `ProblemCard@Context` remains the reviewable problem-side record that carries the reason this problem, in this context, can proceed to P2W, characterization, comparison, search, refresh, retirement, or another governing pattern.
 
@@ -31,7 +43,7 @@ The corresponding claims are governed by their named governing patterns.
 ### C.22:2 - Problem Frame (DesignRunTag split; crossing-visible)
 
 **Selector-facing problem case**
-For selector-facing `C.22` use, a problem case applies when the problem-side representation is stable enough to attach or emit a minimal `TaskSignature` for eligibility, acceptance, and policy-governed selection. Method absence, method contestability, or method-family ambiguity is a common downstream reason for `C.22` use, but it is not the only reason a `ProblemCard@Context` may be needed upstream. `C.22` therefore does not define problemhood by method absence; it defines the downstream typed attachment record used once problem-side readiness is truthful. When the question under repair is still a symptom, contested framing, stale context, set-derived candidate, opportunity cue, or preselected work item, use `C.22.2` before binding one chosen `TaskSignature`. When selection or synthesis of a method becomes live, strategy or policy is governed by `G.5` and `E/E-LOG`; `C.22` use does not introduce a strategy or policy kernel type.
+For selector-facing `C.22` use, a problem case applies when the problem-side representation is stable enough to attach or emit a minimal `TaskSignature` for eligibility, acceptance, and policy-governed selection. Method absence, method contestability, or method-family ambiguity is a common downstream reason for `C.22` use, but it is not the only reason a `ProblemCard@Context` may be needed upstream. `C.22` therefore does not define problemhood by method absence; it defines the downstream typed attachment record used once problem-side readiness is truthful. When the live question is still a symptom, contested framing, stale context, set-derived candidate, opportunity cue, or preselected work item, use `C.22.2` before binding one chosen `TaskSignature`. When selection or synthesis of a method becomes live, strategy or policy is governed by `G.5` and `E/E-LOG`; `C.22` use does not introduce a strategy or policy U-kind.
 **Unknown‑first discipline.** Author S2 with `unknown` traits rather than coercions; **SoS‑LOG** branches MUST specify `{admit|degrade|abstain|sandbox}` handling for `unknown` via closed enums registered at UTS.
 
 Un‑typed "problems" collapse into **informal prose**; selectors cannot **filter or abstain** admissibly; acceptance-gate thresholds leak into scoring; cross‑Context reuse is by name, not Bridge. We need a Context‑local descriptor that (i) obeys **MM‑CHR admissibility** (Scale/Unit/Polarity proven before any aggregation), (ii) records **Assurance lanes (TA/VA/LA)** per **A.10** and **ReferencePlane**, (iii) carries **tri‑state unknowns** explicitly, and (iv) records crossing attestations (**BridgeCard + UTS row**) with **Φ(CL)/Φ_plane** policy‑ids.
@@ -67,7 +79,7 @@ Without typed descriptors, **Eligibility and Acceptance** degenerate into prose;
 * `Size/Scale` — size and condition proxies (**n, m, κ, sparsity**) with **declared units**; unit mismatch ⇒ {sandbox|refuse}.
 * **`Freshness`** — validity window for descriptors.
 * `Missingness` — **MCAR, MAR, or MNAR** (or mapped equivalents) per **CHR.Missingness**; MUST be honoured by Acceptance and Flows.
-* `KindSet` — **`U.Kind[]`** for the selected entities addressed by the TaskKind; separates **EntityOfConcern kind** from **Scope (USM)**.
+* `KindSet` — selected C.3 `U.Kind` values for the entities addressed by the TaskKind; separates **EntityOfConcern kind** from **Scope (USM)**.
 
 **QD and Illumination extensions (normative; ties to C.18 and C.19).**
 
@@ -79,16 +91,16 @@ Use this extension block only when QD, illumination archive, set-return, or OEE 
 * **`DominanceRegime`** — `{ParetoOnly | ParetoPlusIllumination}`. **Default = `ParetoOnly`** (illumination remains report‑only telemetry unless CAL explicitly authorises `ParetoPlusIllumination`, policy‑id cited).
 * **`IlluminationSummary`** — a **telemetry summary over `Diversity_P`**; reported by default; excluded from dominance unless a CAL enables `ParetoPlusIllumination` (policy‑id cited).
 * **`IlluminationMap`** *(parity‑run)* — required **IlluminationMap publication** (grid, CVT, or graph per `ArchiveConfig`) recording coverage per niche or cell with `DescriptorMapRef` and `DistanceDefRef.edition`. **Leaderboards as single‑score lists are forbidden**; comparisons **MUST** be under CG‑frames.
-* **`PortfolioMode`** — `{Pareto | Archive}`. **Default = `Archive`**: selectors preserve retained archive evidence (QD archives) rather than a single “best” set; ε‑fronts remain admissible for local decisions under CG‑Spec.
+* **`PortfolioMode`** — `{Pareto | Archive}`. **Default = `Archive`**: selectors preserve archive evidence (QD archives) rather than a single “best” set; ε‑fronts remain admissible for local decisions under CG‑Spec.
 * **`Budgeting`** — evaluation, time, and batch **budgets**, including **E/E‑LOG exploration budget** id; units declared (CG‑Spec).
-* **`TelemetryHooks`** — **PathSliceId**, **decay and refresh policy ids**, and **edition counters** to record **U.DescriptorMap** and **policy‑id** updates upon illumination gains.
+* **`TelemetryHooks`** — `PathSliceId` only when an E.18 path-slice reference is current, plus **decay and refresh policy ids**, **edition counters**, descriptor-map updates, and **policy-id** updates upon illumination gains.
 * **`GeneratorIntent`** (OEE) — optional intent to use a registered **`GeneratorFamily`** (G.5), with pointers to **`EnvironmentValidityRegion`**, **`TransferRulesRef`**, and **coverage and regret** reporting expectations.
 
 **Admissibility.** Before any numeric comparison or aggregation, **prove CSLC admissibility** (Scale, Unit, Polarity) and **cite CG‑Spec.Characteristics**; record **ReferencePlane**. **Unknowns** propagate as {degrade|abstain|sandbox}; **no `unknown→0/false` coercions**.
 
 #### C.22:5.2 - TaskSignature (S2) — attachment definition (design‑time + run‑time).
 A TaskSignature is the minimal typed record consumed by selector-facing use:
-`⟨Context, TaskKind, TaskFamilyRef?, KindSet:U.Kind[], DataShape, NoiseModel, ObjectiveProfile, Constraints{incl. Resource/Risk Envelopes}, ScopeSlice(G), EvidenceGraphRef, Size/Scale, Freshness, Missingness, ShiftClass?, BehaviorSpaceRef?, ArchiveConfig?, EmitterPolicyRef?, DominanceRegime?, PortfolioMode?, Budgeting?, TelemetryHooks?, GeneratorIntent?⟩`
+`<Context, TaskKind, TaskFamilyRef?, KindSet:C3KindValueSet, DataShape, NoiseModel, ObjectiveProfile, Constraints{incl. Resource/Risk Envelopes}, ScopeSlice(G), EvidenceGraphRef, Size/Scale, Freshness, Missingness, ShiftClass?, BehaviorSpaceRef?, ArchiveConfig?, EmitterPolicyRef?, DominanceRegime?, PortfolioMode?, Budgeting?, TelemetryHooks?, GeneratorIntent?>`
 
 **Minimality rule.** S2 carries only fields required for **Eligibility→Acceptance→admissible selection**; any additional traits derived at design‑time are recorded as provenance (UTS) but **do not expand S2**.
 
@@ -143,31 +155,20 @@ If the problem requires **open‑ended generation** of tasks or environments, S2
 *ProblemProfile.* `GeneratorIntent{GeneratorFamilyRef=…, EnvironmentValidityRegion=… (CHR‑typed), TransferRulesRef=…, CoverageMetric=…}`, `PortfolioMode=Archive`.
 *Binding.* Selector outputs **{environment, method}** pairs that pass Eligibility; **TransferRules** govern cross‑environment policy reuse; telemetry reports **coverage and regret** and **IlluminationSummary** with **edition and policy‑id** when improved.
 
-### C.22:7 - Bias‑Annotation (LEX/discipline guards)
+### C.22:7 - Bias-Annotation (LEX/discipline guards)
 
-* **No minted `U.Type` “Strategy”.** Strategy and policy remain roles inside `G.5`; keep “strategy” as Plain-register wording where it helps recognition, but do not introduce a new `U.Type` or strategy head.
+* **No minted durable `Strategy` kind.** Strategy and policy remain roles inside `G.5`; keep “strategy” as Plain-register wording where it helps recognition, but do not introduce a new durable U-kind or strategy head.
 * **Transdiscipline vs domain.** Comparability flows through **`U.Discipline` CG‑Spec**; “Domain” is a catalog mark stitched to D.CTX + UTS; do **not** attach norms to Domain labels.
 * **Plain twins and head selection.** Use Description and Spec morphology correctly (I, D, S; E.10.D2).
-
-### C.22:8 - Anti‑patterns (normative):
-* **AP‑1** Pre‑binding a Method into S2 (“problem as if task”); **Remedy:** keep S2 method‑agnostic; bind only admissible traits.
-* **AP‑2** Silent `unknown→false` or `unknown→0` in Eligibility and Acceptance.
-* **AP‑3** Cross‑ordinal averaging or ordinal–interval scalar mixes.
-* **AP‑4** **DesignRunTag chimera** signatures (mixing stances).
-* **AP‑5** **Domain** treated as governance (attach governance to **U.Discipline** and **CG‑Spec**, not Domain).
-* **AP‑6** Implicit handling of data‑shift (assume iid); **Remedy:** declare `ShiftClass` (or `unknown`) and gate via Acceptance.
-* **AP‑7** Tool or vendor tokens in normative text; **Remedy:** move to Plain‑register note; keep Tech references on CHR and CAL ids (LEX V‑4).
-
-**Remedies:** tri‑state predicates; admissible order relations (lexi, Pareto, median, or medoid); explicit **GateCrossing** visibility through **CrossingBundle** (BridgeCard + UTS row + `CL/Φ` policy‑ids; **E.18**, **F.9**, **F.17**, **E.17**, and **A.21** where live); Domain stitched to **D.CTX + UTS** only.
 
 ### C.22:9 - Conformance Checklist (normative)
 
 0. **Minimal S2.** S2 contains only fields necessary for Eligibility, Acceptance, and selection; any extra derived traits remain provenance.
-1. **TaskSignature present (S2).** Every exported TaskKind has a TaskSignature with all fields declared and **CHR‑typed**; `unknown` is an admissible value for each.
-2. **CHR admissibility proven.** Any numeric comparison or aggregation **cites CG‑Spec** by **Characteristic id** and proves **CSLC admissibility**; **no mean on ordinals; no unit mixing**.
+1. **TaskSignature present (S2).** Every exported TaskKind has a TaskSignature with all fields declared and **CHR-typed**; `unknown` is an admissible value for each.
+2. **CHR admissibility proven.** Any numeric comparison or aggregation **cites CG-Spec** by **Characteristic id** and proves **CSLC admissibility**; **no mean on ordinals; no unit mixing**.
 3. **Unknowns propagate.** Unknowns **must** map to {pass|degrade|abstain} in **Acceptance** and **Eligibility**; no implicit coercions; behavior recorded in **SCR**.
-4. **Evidence lanes.** **A.10 evidence relations** + **Assurance lanes (TA/VA/LA)** + **freshness windows** recorded; **Γ‑fold** default=weakest‑link unless proved otherwise.
-5. **ReferencePlane guarded.**  ReferencePlane noted **per value and per ObjectiveProfile head**; on crossings apply **CL** (and **CL^plane** if planes differ); **Φ(CL)/Φ_plane** are **monotone, bounded, table‑backed and documented in the `CG‑Spec`**; penalties → **R_eff only** (F/G invariant).
+4. **Evidence lanes.** **A.10 evidence relations** + **Assurance lanes (TA/VA/LA)** + **freshness windows** recorded; **Γ-fold** default=weakest-link unless proved otherwise.
+5. **ReferencePlane guarded.** ReferencePlane noted **per value and per ObjectiveProfile head**; on crossings apply **CL** (and **CL^plane** if planes differ); **Φ(CL)/Φ_plane** are **monotone, bounded, table-backed and documented in the `CG-Spec`**; penalties → **R_eff only** (F/G invariant).
 6. **Acceptance thresholds live in CAL.** No acceptance-gate thresholds in CHR or code paths; only in **G.4 AcceptanceClauses**.
 7. **Selector admissibility.** Selection uses **admissible (possibly partial) orders**; **weighted sums across mixed scale types are forbidden**; return a **Pareto set** when appropriate.
 8. **Crossings visible.** Any cross-stance/cross-Context reuse records **BridgeCard/BridgeDescription + UTS row** with CL notes and (if planes differ) CL^plane + Φ_plane.
@@ -179,35 +180,54 @@ If the problem requires **open‑ended generation** of tasks or environments, S2
 14. **GeneratorIntent (when OEE is in scope).** `GeneratorIntent` **SHALL** cite **`EnvironmentValidityRegion`** and **`TransferRulesRef`** (ids resolvable in G.5/C.23); absence => `Abstain` for OEE generator-family use.
 15. **Budgets.** `Budgeting` (evaluation, time, and batch) **SHALL** declare units and E/E-LOG exploration budget id when used.
 16. **Archive admissibility.** `DistanceDefRef.edition` and any novelty measures **SHALL** be CSLC-admissible and **editioned**; inadmissible operations => **Abstain**.
-17. **Planes.** **ReferencePlane** **SHALL** be declared for all QD heads or characteristics; plane crossings apply **Phi\_plane** (penalty to **R** only).
+17. **Planes.** **ReferencePlane** **SHALL** be declared for all QD heads or characteristics; plane crossings apply **Phi_plane** (penalty to **R** only).
 18. **Unknowns.** Unknown QD fields **map** to `{degrade|abstain|sandbox}`; no coercions.
 
 19. **Specialization claims referenced.** Any declared specialization on this TaskSignature **SHALL** name the task family/work target, named work-measure threshold target, adaptation budget, freshness or provenance basis for reuse, and enough attachment detail for the same claim to remain admissible in `C.22.1`, `G.5`, and `G.9` use.
 
-### C.22:10 - Interfaces & Data Paths
+### C.22:8 - Common Anti-Patterns and How to Avoid Them
+* **AP‑1** Pre‑binding a Method into S2 (“problem as if task”); **Remedy:** keep S2 method‑agnostic; bind only admissible traits.
+* **AP‑2** Silent `unknown→false` or `unknown→0` in Eligibility and Acceptance.
+* **AP‑3** Cross‑ordinal averaging or ordinal–interval scalar mixes.
+* **AP‑4** **DesignRunTag chimera** signatures (mixing stances).
+* **AP‑5** **Domain** treated as governance (attach governance to **U.Discipline** and **CG‑Spec**, not Domain).
+* **AP‑6** Implicit handling of data‑shift (assume iid); **Remedy:** declare `ShiftClass` (or `unknown`) and gate via Acceptance.
+* **AP‑7** Tool or vendor tokens in normative text; **Remedy:** move to Plain‑register note; keep Tech references on CHR and CAL ids (LEX V‑4).
+
+**Remedies:** tri‑state predicates; admissible order relations (lexi, Pareto, median, or medoid); explicit **GateCrossing** visibility through **CrossingBundle** (BridgeCard + UTS row + `CL/Φ` policy‑ids; **E.18**, **F.9**, **F.17**, **E.17**, and **A.21** where live); Domain stitched to **D.CTX + UTS** only.
+
+### C.22:10 - Selector Fields And Evidence Relations
 
 *Inputs.* `ProblemProfile` (...Description), CG-Spec ids, Evidence Graph Ref (A.10), D.CTX; CharacteristicSpaceRef, ArchiveConfig, and EmitterPolicyRef configs when QD is live; GeneratorIntent when OEE is live.
-*Produces.* `TaskSignature` under a declared `Context` field (S2) with provenance; **SCR-visible** fields; UTS Name Cards for any minted traits; archive, `PortfolioMode` semantics, and telemetry hooks declared when QD is live. Do not introduce `TaskSignature@Context` as a separate kind.
+*Produces.* `TaskSignature` under a declared `Context` field (S2) with provenance; **SCR-visible** fields; UTS Name Cards for any minted traits; archive, `PortfolioMode` semantics, and telemetry hooks declared when QD is current. Do not introduce `TaskSignature@Context` as a separate kind.
 *Used by.* **G.5** (Eligibility and Selection kernel), **G.4** (Acceptance and Evidence), **C.23** (admit, degrade, and abstain rules and method-family maturity checks).
 
 ### C.22:11 - Consequences (informative)
 
-* **Admissible selection.** Selection is **explainable** and **review-ready**; every reason in/out cites TaskSignature fields, CG-Spec rows, and Gamma-fold contributors.
-* **Local first, portable later.** Context-local semantics are primary; Bridges make portability **deliberate and costed** (penalties to **R** only).
+* **Admissible selection.** Selection is **explainable** and **inspectable**; every reason in/out cites TaskSignature fields, CG-Spec rows, and Gamma-fold contributors.
+* **Local first, Bridge-portable.** Context-local semantics are primary; Bridges make portability **deliberate and costed** (penalties to **R** only).
 * **Frictionless downstream.** G.1-G.5 use one **single, typed** TaskSignature; thresholds are cleanly separated into **Acceptance**; unknowns are not guessed.
 * **QD and OEE-ready.** Typed QD and GeneratorIntent fields make **declared returned-set structure** and **open-ended** generation contexts **explicit**, with admissible dominance, editioned distances, and policy-aware illumination.
 
-### C.22:12 - Relations
-**Builds on:** **C.16 MM-CHR**, **G.0 CG-Spec**. **Coordinates with:** **G.4 Acceptance**, **G.5 Selector**, **C.18 NQD-CAL**, **C.19 E/E-LOG**, **C.23 Method-SoS-LOG**. **Constrained by:** **E.10 (selected `EntityOfConcern`, Description-episteme, specification-use, and publication-lane wording)**, **E.18 (GateCrossing visibility and publication gating)**.
+### C.22:12 - Rationale
 
-### C.22:13 - Practical use checks
+C.22 exists because a task-shaped problem record must stay method-agnostic until eligibility, acceptance, evidence, unknown-handling, and admissible comparison rules are explicit.
+
+### C.22:12.1 - SoTA-Echoing
+
+C.22 follows contemporary selector and optimization practice by refusing one universal “best method” view: a typed problem attachment states the task family, admissible characteristics, constraints, evidence, and unknown-handling policy before a selector compares candidates. Modern multi-objective optimization, QD archive practice, open-ended generation, and solver-interface practice all support the same boundary: selection works over typed problem cases and admissible comparison rules, not over prose labels or popularity. The pattern therefore keeps the problem-side record separate from method choice, keeps scalarization in Acceptance or CAL policy, and keeps archive or generator telemetry out of dominance unless a governing policy admits it.
+
+### C.22:13 - Relations
+**Builds on:** **C.16 MM-CHR**, **G.0 CG-Spec**. **Coordinates with:** **G.4 Acceptance**, **G.5 Selector**, **C.18 NQD-CAL**, **C.19 E/E-LOG**, **C.23 Method-SoS-LOG**, and `C.32.P2S` when typed problem pressure must continue into architecture selected structures and synthesis. **Constrained by:** **E.10 (selected `EntityOfConcern`, Description-episteme, specification-use, and publication-lane wording)**, **E.18 (GateCrossing visibility and publication gating)**.
+
+### C.22:14 - Practical Use Checks
 
 - If two candidate approaches are answering different `TaskKind`s or different `ScopeSlice(G)` cuts, a direct comparison is not admissible yet.
 - If specialization is the live specialization question, the task-family reference, threshold target, adaptation budget, and provenance basis should already be recoverable from the attached `TaskSignature`.
-- If crossing, normalization, or missingness changes what comparison means, state that in the signature and its cited refs rather than hiding it in code, local memory, or later prose.
+- If crossing, normalization, or missingness changes what comparison means, state that in the signature and its cited refs rather than hiding it in code, local memory, or explanatory prose.
 - If `QD` or `OEE` heads are in scope, archive and generator fields belong in the same typed signature rather than in a detached explanatory appendix.
 
-### C.22:14 - Goldilocks hook (design‑time)
+### C.22:15 - Goldilocks Hook (design-time)
 
 When generating candidate solutions for a **TaskKind**, aim for **“goldilocks”** slots (feasible‑but‑hard) so that the TaskSignature is informative (neither trivial nor impossible); this aligns with **G.1** (goldilocks target, abductive provenance) and ensures the **TaskSignature is informative** (neither trivial nor impossible) for **G.5** selection.
 

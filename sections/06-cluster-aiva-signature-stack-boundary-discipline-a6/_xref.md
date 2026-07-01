@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (100 refs).
+Patterns in other Parts that reference patterns in this directory (121 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -54,11 +54,15 @@ Patterns in other Parts that reference patterns in this directory (100 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| B.2.4 | builds_on | A.6.F |
+| B.2.4 | coordinates_with | A.6.M |
+| B.2.P | coordinates_with | A.6.F |
 | B.3 | coordinates_with | A.6 |
 | B.4.1 | coordinates_with | A.6.A |
 | B.5.2 | coordinates_with | A.6.P |
 | B.5.2.0 | coordinates_with | A.6.P |
 | B.5.2.0 | coordinates_with | A.6.A |
+| B.5.3 | builds_on | A.6.5 |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -94,10 +98,26 @@ Patterns in other Parts that reference patterns in this directory (100 refs).
 | C.30 | coordinates_with | A.6.F |
 | C.30.AD | builds_on | A.6.3 |
 | C.30.AD | coordinates_with | A.6.F |
+| C.30.AD | coordinates_with | A.6.M |
+| C.30.AD.BA | coordinates_with | A.6.F |
+| C.30.AD.BA | coordinates_with | A.6.M |
 | C.30.ASV | builds_on | A.6.3 |
 | C.30.ASV | coordinates_with | A.6.F |
+| C.30.P | builds_on | A.6.P |
+| C.30.P | builds_on | A.6.F |
+| C.30.STRAT | coordinates_with | A.6.M |
 | C.30.STRAT | coordinates_with | A.6.F |
 | C.30.TFS-REL | coordinates_with | A.6.F |
+| C.31 | coordinates_with | A.6.M |
+| C.31.ASAP | coordinates_with | A.6.M |
+| C.31.RSA | coordinates_with | A.6.M |
+| C.32 | builds_on | A.6.F |
+| C.32 | builds_on | A.6.M |
+| C.32.FAIL | builds_on | A.6.F |
+| C.32.FAIL | builds_on | A.6.M |
+| C.33 | coordinates_with | A.6.M |
+| C.34 | coordinates_with | A.6.M |
+| C.35 | coordinates_with | A.6.M |
 
 ## From 11-part-e-the-fpf-constitution-and-authoring-guides
 
@@ -119,6 +139,7 @@ Patterns in other Parts that reference patterns in this directory (100 refs).
 | E.20 | coordinates_with | A.6.7 |
 | E.21 | coordinates_with | A.6.P |
 | E.24 | builds_on | A.6.5 |
+| E.24.UK | builds_on | A.6.5 |
 
 ## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
 

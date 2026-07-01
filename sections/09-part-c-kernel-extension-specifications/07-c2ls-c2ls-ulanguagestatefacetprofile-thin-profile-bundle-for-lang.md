@@ -6,6 +6,12 @@
 
 **Plain-name.** Language-state facet profile.
 
+**Use this pattern when.** Use C.2.LS when a governed `U.Episteme` publication needs one explicit profile that keeps formality, articulation, closure, anchoring, representation factors, and local thresholds visible together.
+
+**What goes wrong if missed.** Teams replace the facet profile with a maturity adjective such as `ready`, `raw`, or `stable`, then route, reopen, bridge, or govern the publication from a label that hides the actual facet values.
+
+**What this buys.** A thin, decomposable profile bundle: each facet stays governed by its own pattern, while the profile gives authors, assurance readers, and integrators one place to publish threshold-relevant language-state position.
+
 ### C.2.LS:1 - Problem frame
 Once position claims in the declared language-state chart over `U.CharacteristicSpace` must be published and compared, teams need one thin profile bundle that keeps the relevant facets visible as one explicit facet profile without turning that profile into a second characteristic calculus or a surrogate maturity progression.
 
@@ -16,7 +22,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 | Force | Tension |
 |---|---|
 | **Thin profile bundle vs practical coordination** | Keep the bundle small, but still give one stable place where the language-state facets are named together. |
-| **Reuse vs duplication** | Reuse `A.18/A.19` characteristic machinery and `E.18` path publication rather than building a rival calculus. |
+| **Reuse vs duplication** | Reuse `A.18/A.19` characteristic machinery and `E.18` transition-structure publication rather than building a rival calculus. |
 | **Local thresholds vs cross-context comparability** | Contexts need local thresholds, but the facet names must stay stable enough for bridge work and viewpoint bundles. |
 
 ### C.2.LS:4 - Solution
@@ -30,7 +36,11 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 - `thresholdRefs?` -> context-local threshold declarations over the governed facets
 - `routeNotes?` -> informative notes that help interpret routing or reopening decisions
 
-`C.2.LS` is therefore a **profile-bundle governing pattern**, not a characteristic governing pattern and not a trajectory governing pattern. Characteristic semantics remain with `A.18/A.19`; admissible moves remain with `A.16`; explicit path publication remains with `E.18`.
+`C.2.LS` is therefore a **profile-bundle governing pattern**, not a characteristic governing pattern and not a trajectory governing pattern. Characteristic semantics remain with `A.18/A.19`; admissible moves remain with `A.16`; explicit transition-structure publication remains with `E.18`.
+
+#### C.2.LS:4.0a - Kind and profile-bundle boundary
+
+`U.LanguageStateFacetProfile` is a dependent durable profile-bundle value under the declared `U.LanguageStateSpace` and `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the explicit bundle of language-state facet refs used for position reading and threshold publication. A local dashboard, table, route note, or maturity label is a publication or interpretation over the bundle, not the bundle itself.
 
 #### C.2.LS:4.1 - Governing boundary
 `C.2.LS` governs only the profile composition and the rule that the language-state facets must remain explicit and non-collapsed. It does **not**:
@@ -67,7 +77,7 @@ A conforming profile makes this decomposition visible rather than hiding it unde
 #### C.2.LS:4.4 - Corridor map note
 `C.2.LS` participates in the current `Language-State & Semantic Routing Corridor`, but only as the thin governing pattern of the facet-profile bundle. Readers who need one map of the full language-state governing-pattern set should read the corridor note in `C.2.2a`.
 
-That map does not change the governing boundary here: `C.2.LS` still does not govern cue preservation, route-bearing publication, prompt entry, or downstream endpoint handoff.
+That map does not change the governing boundary here: `C.2.LS` still does not govern cue preservation, route-bearing publication, prompt entry, or downstream endpoint use.
 
 ### C.2.LS:5 - Archetypal Grounding
 **Tell.** A team may say a draft is "still forming" for different reasons. `U.LanguageStateFacetProfile` forces the team to say whether the issue is low articulation, low candidate-space closure, an anchoring mismatch, or an unresolved representation-factor bundle.
@@ -83,7 +93,7 @@ The pattern biases authors toward explicit facet governance and away from master
 - `CC-C.2.LS-1` A language-state facet profile **SHALL** reference explicit facet governing patterns rather than invent local unnamed factors.
 - `CC-C.2.LS-2` `C.2.LS` **MUST NOT** redefine `F` or create a second formality progression.
 - `CC-C.2.LS-3` Thresholds that matter for routing, reopening, or lexical repair **SHALL** be published on explicit facets.
-- `CC-C.2.LS-4` Trajectory accounts that rely on facet profiles **SHOULD** reuse `A.16` move kinds and `E.18` path publication rules.
+- `CC-C.2.LS-4` Trajectory accounts that rely on facet profiles **SHOULD** reuse `A.16` move kinds and `E.18` transition-structure publication rules.
 - `CC-C.2.LS-5` Composite labels such as `early`, `settled`, or `ready` **SHALL NOT** stand in for the explicit facet bundle when those states matter operationally.
 - `CC-C.2.LS-6` Composite readings, overlays, and route notes **SHALL** remain decomposable into named facets and **MUST NOT** behave as hidden master factors.
 - `CC-C.2.LS-7` A profile bundle **MUST NOT** smuggle move rules, bridge rules, gate state, or downstream governing-pattern semantics into what should remain a thin facet-profile record.
@@ -123,7 +133,6 @@ The pattern gives the declared language-state chart over `U.CharacteristicSpace`
 - Builds on: `A.18`, `A.19`, `C.2.2a`, `C.2.3`.
 - Coordinates with: `C.2.4`, `C.2.5`, `C.2.6`, `C.2.7`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `E.18`, `F.9.1`.
 - Constrains: language-state threshold publication and profile composition.
-
 ### C.2.LS:13 - Worked Examples and Composition Notes
 
 #### C.2.LS:13.1 - Operator-facing early alert
@@ -163,8 +172,8 @@ When publishing a language-state facet profile:
 3. add threshold refs only when a threshold changes routing, repair, or governance;
 4. avoid global labels such as "mature", "raw", or "ready" unless the profile decomposition is already visible.
 
-#### C.2.LS:14.2 - For reviewers
-A reviewer should ask:
+#### C.2.LS:14.2 - For assurance readers
+An assurance reader should ask:
 
 - is any facet silently replaced by `F`?
 - is a threshold published on an explicit facet rather than on a poetic surrogate?
@@ -191,7 +200,6 @@ A conforming migration rewrites such statements into explicit facet talk: which 
 
 #### C.2.LS:15.3 - Boundary reminder
 `U.LanguageStateFacetProfile` is a coordination record. If authors find themselves putting move rules, bridge rules, scale rules, or bundle semantics into the profile itself, they are writing in the wrong governing pattern.
-
 ### C.2.LS:16 - Profile Publication Package Discipline
 
 #### C.2.LS:16.1 - Minimal publishable profile package
@@ -226,7 +234,7 @@ Read profile transitions facetwise. A note may become more explicit without beco
 ### C.2.LS:18 - Review Matrix and Migration Tests
 
 #### C.2.LS:18.1 - Review matrix
-A reviewer should ask:
+An assurance reader should ask:
 
 - is each published facet governed by its proper pattern rather than by surrogate prose;
 - does any overlay smuggle a hidden scalar or gate decision;
@@ -234,8 +242,8 @@ A reviewer should ask:
 - do cited moves in `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, or `B.5.2.0` actually match the facet bundle;
 - if the profile crosses a bridge or viewpoint boundary, are stance and loss notes kept in `F.9` or `F.9.1` rather than imported as fake facets.
 
-#### C.2.LS:18.2 - Migration test for old prose
-Legacy phrases such as "still immature", "not ready yet", or "already stable enough" should be unpacked into: which facet is claimed, which anchor or bundle member justifies it, which threshold or route consequence follows, and which `governingPatternRef` or `authoritySourceRef` carries that consequence.
+#### C.2.LS:18.2 - Migration test for source prose
+Source phrases such as "still immature", "not ready yet", or "already stable enough" should be unpacked into: which facet is claimed, which anchor or bundle member justifies it, which threshold or route consequence follows, and which `governingPatternRef` or `authoritySourceRef` carries that consequence.
 
 #### C.2.LS:18.3 - Comparative profile use
 Compare profiles facetwise unless a Context has published an explicit local aggregation for reporting. Such an aggregation remains secondary and must not replace the profile in norms, thresholds, or bridge claims.

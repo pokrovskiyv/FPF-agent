@@ -10,7 +10,7 @@
 
 A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measurement, decision quality, architecture trade‑offs, or selected-set publication). Downstream mechanisms (G.1–G.5 and beyond) must compare, aggregate, and publish CHR‑typed observations in ways that are:
 
-* lawful with respect to measurement legality (scale/unit/polarity constraints),
+* lawful with respect to measurement admissibility (scale/unit/polarity constraints),
 * auditable with explicit evidence minima and provenance,
 * reproducible via pinned editions and explicit policy ids,
 * portable only via explicit crossings (bridges and reference-plane moves), never via implicit semantic leakage.
@@ -31,7 +31,7 @@ Without a single, frame-level legality standard:
 ### G.0:3 - Forces
 
 * **Pluralism vs. comparability.** Multiple traditions must co-exist while allowing admissible comparison where justified.
-* **Expressiveness vs. safety.** Rich comparator sets and aggregators vs. measurement legality constraints.
+* **Expressiveness vs. safety.** Rich comparator sets and aggregators vs. measurement admissibility constraints.
 * **Locality vs. portability.** Context-local semantics first; portability only via explicit bridges and explicit losses.
 * **Assurance vs. agility.** Evidence minima must meet the claim threshold while staying light enough to adopt.
 * **Design-time vs. run-time.** Keep legality standards and templates design-time; run-time only cites and applies them.

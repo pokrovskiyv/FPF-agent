@@ -1,7 +1,7 @@
 ## A.3.4.P - Transformation Ontic Precision Restoration
 
 > **Type:** A.3.4 precision-restoration child pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless a section is explicitly informative
 
 **Plain-name.** Transformation wording repair.
@@ -10,11 +10,11 @@
 
 **Use this when.** Use `A.3.4.P` when source or FPF-governed wording such as "pipeline", "dataflow", "flow", "network", "circuit", "path", "slice", "workflow", "process", "operation", "transformation", or "change" seems to name the thing under concern, but the text has not yet recovered what kind of FPF value is actually current.
 
-**First useful move.** Fill a compact `TransformationWordingRepair` note: encountered wording, working concern, recovered transformation or non-transformation object, recovered slot or neighboring pattern, retained use, blocked overread, and remaining reader move. Then rewrite only the wording that depends on the recovered kind.
+**First useful restoration output.** Fill a compact `TransformationWordingRepair` note: encountered wording, working concern, recovered transformation or non-transformation object, recovered slot or neighboring pattern, retained use, blocked overread, and remaining reader use. Then rewrite only the wording that depends on the recovered kind.
 
-**What goes wrong if missed.** The text silently creates a local ontology from a convenient source label: "process" becomes method in one paragraph, dated work in another, and transformation-flow structure in a third; "path" becomes proof or permission; "function" becomes behavior, bearer, mathematical function, and software routine at once.
+**What goes wrong if missed.** The text silently creates a local ontology from a convenient source label: "process" becomes method in one paragraph, dated work in another, and transformation-flow structure in a third; "path" becomes evidence sufficiency, assurance, gate passage, deontic permission, work authorization, or release authorization; "function" becomes behavior, bearer, mathematical function, and software routine at once.
 
-**What this buys.** The reader gets one small repair move that keeps bounded transformations, compound transformation-flow structures, formal descriptions, methods, mechanisms, work, evidence, publications, and functional structures in their governing places before any wording is changed.
+**What this buys.** The reader gets one small restoration use that keeps bounded transformations, compound transformation-flow structures, formal descriptions, methods, mechanisms, work, evidence, publications, and functional structures in their governing places before any wording is changed.
 
 **Not this pattern when.**
 
@@ -62,7 +62,7 @@ Restore the change situation in this order.
 3. **Test for neighboring slots.** Decide whether the wording points to a transformer-side system or holon, method, method description, mechanism, work plan, dated work, functioning relation, transformation-flow structure, mathematical description, dynamics episteme, temporal aspect, evidence, source, publication, gate, decision, assurance, result, refresh, or reopen relation.
 4. **Use the governing pattern for each filled value.** The slot may belong to the transformation ontic; the filler keeps its own kind and governing pattern.
 5. **Rewrite only after kind recovery.** Keep ordinary wording when it is not FPF-governed, write quote-only source wording when no current use is admitted, or rewrite into the recovered FPF kind and relation named by value.
-6. **Leave one reader move.** The repaired text must say what the reader may do now: use `A.3.4`, use `E.18`, use `C.29`, use a method, work, or mechanism pattern, keep a quote-only cue, or block the stronger claim.
+6. **Leave one reader use.** The repaired text must say what the reader may do now: use `A.3.4`, use `E.18`, use `C.29`, use a method, work, or mechanism pattern, keep a quote-only cue, or block the stronger claim.
 
 #### A.3.4.P:4.1 - TransformationWordingRepair note
 
@@ -78,7 +78,7 @@ TransformationWordingRepair:
   GoverningPattern:
   RetainedUse:
   BlockedOverread:
-  RemainingReaderMove:
+  RemainingReaderUse:
 ```
 
 `TransformationCoreDisposition` is one of: bounded transformation recovered, not a transformation, not recovered, not current for this claim, quote-only source wording, or blocking missing value.
@@ -96,10 +96,11 @@ TransformationWordingRepair:
 | episteme describing a way of doing | `A.3.2` | Code, protocol, solver model, proof script, process model, or diagram may describe a method without being the method or the work. |
 | law-governed operation algebra, laws, admissibility predicates, transport, audit, or mechanism-governing-definition assignment | `A.6.1` and `E.20` | Mechanism is not selected by a prestigious "algorithm", "process", or "mechanism" word. |
 | planned or dated work | `A.15.2` or `A.15.1` | Plan and work occurrence are not method, method description, transformation-flow structure, or evidence by appearance. |
+| pattern-use recommendation, work-entry readiness, language-state move, architecture candidate use, or call-planning next action | `E.10.MOVE` first, then `E.11.PUR`, `A.15.5`, `A.16`, `C.30`, `C.24`, or the direct governing pattern | Move-like wording is not transformation wording unless a bounded `U.Transformation` or selected `TransformationFlowStructure` is actually current. |
 | function-like wording inside a change situation | `A.3.4.P` only to decide whether `U.Transformation`, `TransformationFlowStructure`, transformer-side filler, input boundary, output boundary, or `FunctioningRef?` is current; use `A.6.F` for detailed function-kind discrimination | A function word does not decide the transformation, bearer, mathematical function, software routine, module allocation, or architecture view by label. |
 | state-space and transition-law episteme | `A.3.3` | Dynamics can model possible or claimed change; it is not the transformation itself. |
 | time window, cadence, duration, latency, freshness, currentness, trajectory, inertia, or effort | `C.27.TA`; use `C.27` for temporal-claim adequacy | Temporal aspect is not the whole transformation and temporal-claim adequacy is not positive temporal subject matter. |
-| evidence, provenance, source, publication, dashboard, view, gate, decision, assurance, result, or release claim | the direct governing evidence, source, publication, gate, decision, assurance, result, or release pattern | A visible record or path does not prove, permit, enact, or accept the change by itself. |
+| evidence, provenance, source, publication, dashboard, view, gate, decision, assurance, result, or release claim | the direct governing evidence, source, publication, gate, decision, assurance, result, or release pattern | A visible record or path does not establish evidence sufficiency, assurance, gate passage, deontic permission, work authorization, release authorization, performed work, or acceptance by itself. |
 
 #### A.3.4.P:4.3 - Common source-label settlements
 
@@ -146,13 +147,13 @@ Repair: the block may be a system-like architecture locus or module allocation; 
 
 Source wording says: "The guide-selection workflow changes the target gene."
 
-Repair: the target-gene edit is the candidate `U.Transformation`; guide selection may be method, method description, work plan, evidence-facing table, or performed lab work according to the current claim. A table rank or workflow diagram does not approve the edit.
+Repair: the target-gene edit is the candidate `U.Transformation`; guide selection may be method, method description, work plan, evidence-facing table, or performed lab work according to the current claim. A table rank or workflow diagram does not establish gate passage, deontic permission, work authorization, release authorization, or performed lab work for the edit.
 
 #### A.3.4.P:5.4 - Evidence path near a plant change
 
 Source wording says: "The evidence path lets the valve-change flow proceed."
 
-Repair: an evidence path may be a legitimate `A.10` provenance relation for a named claim. The valve change still needs the transformation, work plan, dated work, gate, assurance, and result relations when those claims are current. The path does not authorize the change by shape or name.
+Repair: an evidence path may be a legitimate `A.10` provenance relation for a named claim. The valve change still needs the transformation, work plan, dated work, gate, assurance, and result relations when those claims are current. The path does not establish work authorization, release authorization, gate passage, or performed work by shape or name.
 
 #### A.3.4.P:5.5 - Filled minimal repair note
 
@@ -166,7 +167,7 @@ TransformationWordingRepair:
   GoverningPattern: `E.18` for selected transformation-flow structure; `A.3.4` for each bounded component transformation when named; `C.30.ASV` for functional architecture view; direct publication pattern when the schematic publication is current.
   RetainedUse: "circuit" may stay as ordinary domain wording after the selected structure is named.
   BlockedOverread: the circuit label is not proof of functioning, not a gate decision, not dated work, and not one atomic transformation.
-  RemainingReaderMove: name the selected transformation-flow structure and then open the direct governing pattern for the next claim being made.
+  RemainingReaderUse: name the selected transformation-flow structure and then open the direct governing pattern for the next claim being made.
 ```
 
 ### A.3.4.P:6 - Bias-Annotation
@@ -176,7 +177,7 @@ Lenses tested: **Onto**, **Arch**, **Prag**, **Epist**, **Gov**.
 This pattern intentionally biases toward kind recovery before wording repair. It resists:
 
 - **source-label ontology:** familiar labels such as pipeline, process, network, circuit, or workflow become FPF kinds;
-- **graph or path overread:** graph path, evidence path, and carrier path become action route, proof, permission, or work sequence;
+- **graph or path overread:** graph path, evidence path, and carrier path become action route, evidence sufficiency, assurance, deontic permission, work authorization, release authorization, or work sequence;
 - **function collapse:** functioning, functional element, module allocation, mathematical function, software routine, and everyday purpose collapse into one "function";
 - **semio displacement:** descriptions and publications of transformations replace the transformation under concern;
 - **slot-filler fusion:** a method, mechanism, work occurrence, system, or evidence record fills a transformation slot and is then treated as the whole transformation.
@@ -191,7 +192,7 @@ This pattern intentionally biases toward kind recovery before wording repair. It
 | `CC-A34P-4` | `TransformationFlowStructure`, graph mathematical description, path mathematical description, and subject-domain network or circuit wording are kept distinct. |
 | `CC-A34P-5` | Method, method description, mechanism, work plan, dated work, evidence, gate, decision, assurance, result, source, and publication claims remain with their governing patterns. |
 | `CC-A34P-6` | Function-like wording closes here only when the transformation-side value is recovered; detailed function-kind discrimination remains governed by `A.6.F`. |
-| `CC-A34P-7` | The repair leaves retained use, blocked overread, and remaining reader move by value. |
+| `CC-A34P-7` | The repair leaves retained use, blocked overread, and remaining reader use by value. |
 | `CC-A34P-8` | The repair order is explicit: `E.10` recognizes the wording, `A.3.4.P` restores the transformation ontic neighborhood, and neighboring patterns govern recovered fillers or facets. |
 
 ### A.3.4.P:8 - Common Anti-Patterns and How to Avoid Them
@@ -207,7 +208,7 @@ This pattern intentionally biases toward kind recovery before wording repair. It
 
 ### A.3.4.P:9 - Consequences
 
-- FPF gains one reusable repair move for language about change situations without making every subject pattern carry its own cue list.
+- FPF gains one reusable restoration pattern for language about change situations without making every subject pattern carry its own cue list.
 - `A.3.4` becomes easier to use because source labels are translated into transformation identity slots and neighboring values.
 - `E.18`, `E.18.2`, and `C.29` stay distinct: selected compound structure, mathematical expression, and mathematical-lens use do not collapse.
 - Architecture, method, work, mechanism, function, evidence, publication, and temporal patterns can point to the transformation ontic without becoming transformation patterns.
@@ -227,15 +228,16 @@ The current transformation ontology gives FPF one compact way to speak about bou
 | Current FPF `A.3.4` transformation ontic | Governing ontology source for bounded change under conditions. | This pattern restores wording by first testing `U.Transformation` identity and participation slots. |
 | Current FPF `E.18`, `E.18.2`, and `C.29` | Governing source line for compound transformation-flow structure and mathematical description. | Flow, path, network, circuit, graph, morphism, algebra, and category wording is separated into selected structure, mathematical expression, or lens use. |
 | Current FPF `E.10` and `E.10.ARCH` precision-restoration architecture | Governing source line for recognition and distribution. | `E.10` recognizes change-situation wording; `E.10.ARCH:2.2` chooses direct governing, ontic-level restoration, or facet-level restoration; `A.3.4.P` restores only the transformation ontic neighborhood. |
-| Current FPF `C.2.P.DR` and method, work, and mechanism patterns | Governing source line for declarative representation, method, mechanism, plan, work, and evidence separation. | Algorithm, workflow, process, proof, and path wording is recovered by current slot or use-position rather than by programming-paradigm slogans. |
+| Current FPF `C.2.P.DR` and method, work, and mechanism patterns | Governing source line for declarative representation, method, mechanism, plan, work, and evidence separation. | Algorithm, workflow, process, proof, and path wording is recovered by current ontic slot, relation position, use relation, or claim kind rather than by programming-paradigm slogans. |
 | Current FPF `A.6.F`, `A.6.M`, and architecture structural-view patterns | Governing source line for function-like, module, interface, and structural-view claims. | `A.3.4.P` recovers only the transformation-side value; `A.6.F`, `A.6.M`, `C.30.ASV`, or the direct governing pattern decides the recovered function, module, interface, or structural-view claim. |
 
-No new external SoTA claim is introduced here. The pattern inherits the current source decisions already carried by `A.3.4`, `C.2.P.DR`, and the governing neighboring patterns; it changes only the reusable restoration move for transformation-situation wording.
+SoTA use is conservative: this pattern relies on the current FPF settlements already carried by `A.3.4`, `C.2.P.DR`, and the governing neighboring patterns; it contributes the reusable restoration use for transformation-situation wording.
 
 ### A.3.4.P:12 - Relations
 
 - **Builds on:** `A.3.4`, `E.10`, `E.10.ARCH`, `E.24`, `A.6.5`, and `E.8`.
 - **Coordinates with:** `E.18`, `E.18.2`, `C.29`, `A.3.1`, `A.3.2`, `A.3.3`, `A.6.0`, `A.6.1`, `E.20`, `A.15.2`, `A.15.1`, `A.6.F`, `A.6.M`, `C.30.ASV`, `C.27.TA`, `C.27`, `A.10`, `C.2.P.DR`, `C.2.1`, `E.17`, and direct gate, decision, assurance, result, source, publication, and release patterns when those claims are current.
+- **Coordinates with:** `E.10.MOVE` when source wording about a move, next action, pattern-use recommendation, work-entry readiness, language-state transition, architecture candidate use, or call-planning next action is not actually transformation wording.
 - **Selected by:** `E.10` recognition row for change-situation wording when FPF wording repair needs transformation-ontic precision restoration.
 - **Specializes:** `A.3.4` for wording-use precision restoration around situations of change.
 

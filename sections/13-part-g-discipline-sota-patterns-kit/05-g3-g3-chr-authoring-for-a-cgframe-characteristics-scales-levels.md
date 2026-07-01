@@ -425,7 +425,7 @@ This pattern aligns with post‑2015 best practice by:
 * treating abstention/defer and set‑valued outcomes as first‑class design objects (consistent with modern selective prediction and set‑valued reporting practice),
 * keeping multiobjective and archive‑based reasoning set‑returning rather than silently scalarizing (consistent with QD/illumination and open‑ended evaluation practice after 2015),
 * making evaluation semantics reproducible through explicit edition/policy pinning (aligned with the modern emphasis on reproducibility and “specifying the evaluation surface” rather than only reporting metrics),
-* modularizing method‑family specifics (QD/OEE, explore‑exploit) via explicit wiring and governing-definition assignment rather than embedding method semantics into universal measurement legality.
+* modularizing method‑family specifics (QD/OEE, explore‑exploit) via explicit wiring and governing-definition assignment rather than embedding method semantics into universal measurement admissibility.
 
 ### G.3:12 - Relations
 

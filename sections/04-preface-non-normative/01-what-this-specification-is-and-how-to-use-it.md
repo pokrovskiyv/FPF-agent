@@ -22,6 +22,8 @@ The standard pattern form is governed by `E.8`. Review and refresh discipline is
 
 The FPF `readme` section at the beginning of the specification is the public first-practical-entry section. It starts from recognizable project questions: architecture review, method writing, problem shaping, comparison, evidence, naming, mathematical modeling, quality improvement, and portfolios of current best-known options. This Preface has a different job. It explains why those entries fit into one framework and how FPF can answer them without becoming a pile of disconnected tools.
 
+This Preface is also a reader-facing rendering of FPF's first-principles architecture. It is written for people who need the whole-framework picture before entering exact patterns. It foregrounds holons, descriptions, architecture, evidence, publication, choice, improvement, source currentness, and domain or local framework growth; it deliberately coarsens, omits, or defers individual pattern detail, source history, and many relation records. When a Preface claim becomes load-bearing, return to the governing pattern body.
+
 Use the `readme` when deciding where FPF may first help a project. Use this Preface when you need the whole-FPF picture. Use the Table of Content when you already know the pattern family or need a search-oriented overview. Use the pattern bodies after a project issue has proved important enough to need exact treatment.
 
 The large areas of the specification can be read as one conceptual architecture. You do not need every name in this list yet; it is a map for later lookup:

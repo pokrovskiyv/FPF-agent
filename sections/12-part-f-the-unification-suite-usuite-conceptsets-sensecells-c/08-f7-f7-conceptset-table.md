@@ -11,7 +11,7 @@
 
 **Intent.** Provide a **single, didactic page** where each **row** presents **one Concept‑Set**—a *set of SenseCells from different Contexts that we are licensed (by explicit Bridges) to treat as “the same for a stated scope”*. Columns are **Contexts**; cells carry **local labels**. The table **does not invent equivalences**: it **summarises** already declared **F.9 Bridges**, exposing *scope, losses, and counter‑examples* at a glance.
 
-**Applicability.** Use whenever cross-context reading is necessary (naming U.Types, teaching contrasts, assignment/enactment-adjacent terminology). It is a **reading lens**, not a data model: **notation-free**, **governance-free**, **Context-loyal**.
+**Applicability.** Use whenever cross-context reading is necessary (naming admitted U-kinds, roles, methods, characteristic terms, teaching contrasts, assignment/enactment-adjacent terminology). It is a **reading lens**, not a data model: **notation-free**, **governance-free**, **Context-loyal**.
 
 **Non‑goals.** No hidden merges. No “global terms”. No workflows or tool schemas. The table is a **conceptual display** of *licensed sameness* and *honest non‑sameness*.
 
@@ -21,7 +21,7 @@ Without a disciplined Cross‑context view:
 
 1. **Silent equivalence.** Readers assume sameness by name alone (e.g., *process*).
 2. **Loss denial.** Mappings hide what is dropped (DesignRunTag, units, agency).
-3. **Name inflation.** New U.Types are coined to avoid facing heterogeneity.
+3. **Name inflation.** Convenience root kind labels are coined to avoid facing heterogeneity.
 4. **Cognitive scatter.** Concepts drift across documents without one compact, teachable “where‑what‑how‑same” view.
 
 ### F.7:3 - Forces
@@ -154,9 +154,9 @@ FPF Label (Tech / Plain) | Row Scope | Row CL(min) | [Context A] local label | [
 
 | FPF Label                                       | Row Scope       | Row CL(min) | PROV‑O                                                           | IEC 61131‑3                                          | Rationale                                                                       | Counter‑examples                                                   |
 | ----------------------------------------------- | --------------- | ----------- | ---------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| **execution-occurrence** / *a run that happens* | assignment/enactment-eligibility | CL = 2      | **Activity** (time-bounded occurrence using/generating entities) | **Task execution** (cyclic/event-driven program run) | Both are **run-time** occurrences that can be referenced by `U.RoleEnactment` to ground **Work performed under an assignment**. | BPMN **Process** is a **design** graph; not an occurrence—exclude. |
+| **execution-occurrence** / *a run that happens* | assignment/enactment-eligibility | CL = 2      | **Activity** (time-bounded occurrence using/generating entities) | **Task execution** (cyclic/event-driven program run) | Both are **run-time** occurrences that can support `Work.performedBy = RoleAssignment` or a named `RoleEnactmentFact`. | BPMN **Process** is a **design** graph; not an occurrence—exclude. |
 
-**Reading.** Safe to use as the **run-time occurrence that `U.RoleEnactment` points to** when we say “this Work was performed under an assignment”. Not safe to equate **all** PROV Activities with **all** PLC task runs for analytics.
+**Reading.** Safe to use as the **run-time occurrence referenced by performed-work attribution** when we say “this Work was performed under an assignment”. Not safe to equate **all** PROV Activities with **all** PLC task runs for analytics.
 
 #### F.7:11.3 - Result value as KD‑metric (measurement)
 

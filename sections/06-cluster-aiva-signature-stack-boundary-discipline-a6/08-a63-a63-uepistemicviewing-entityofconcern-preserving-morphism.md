@@ -1,7 +1,15 @@
 ## A.6.3 - `U.EpistemicViewing` — EntityOfConcern-preserving morphism
+> **Status:** Stable
+> **Type:** Definitional ontic pattern
 
 **One‑line summary.** `U.EpistemicViewing` is the **EntityOfConcern-preserving** species of `U.EffectFreeEpistemicMorphing`: an effect‑free projection between epistemes that may change content and representation, but **never changes what the episteme is about** (the value filling `EntityOfConcernSlot` in C.2.1).
-**EntityOfConcern preservation discipline.** A.6.3 names the preserve branch of the C.2.1 EntityOfConcern preservation law: `entityOfConcernRef(Y) = entityOfConcernRef(X)` and `EntityOfConcernSlot` is read-only. Earlier source-side spellings are source-migration wording only; conformant text normalizes them to `EntityOfConcern*` before use.
+**Use this pattern when** a project needs a view, query, projection, normalization, or representation change over an episteme while preserving the same EntityOfConcern.
+
+**What goes wrong if missed.** A view becomes a retargeting, a publication rendering becomes the episteme relation, or a representation lens silently changes what the episteme is about.
+
+**What this buys.** A.6.3 gives the preserve branch of EFEM: `EntityOfConcernSlot` is read-only, slot changes are declared, and publication, retargeting, mechanism, and work claims stay outside viewing.
+
+**EntityOfConcern preservation discipline.** A.6.3 names the preserve branch of the C.2.1 EntityOfConcern preservation law: `entityOfConcernRef(Y) = entityOfConcernRef(X)` and `EntityOfConcernSlot` is read-only. Source-side spellings are source wording only; conformant text normalizes them to `EntityOfConcern*` before use.
 
 **Placement.** After **A.6.2 `U.EffectFreeEpistemicMorphing`**, before **A.6.4 `U.EpistemicRetargeting`**.
 
@@ -10,6 +18,8 @@ A.6.0 `U.Signature`; A.6.2 `U.EffectFreeEpistemicMorphing`; A.6.5 `U.RelationSlo
 
 **Used by.**
 E.17.0 `U.MultiViewDescribing`; E.17 (MVPK — Multi‑View Publication Kit); E.17.1/E.17.2 (Viewpoint bundle libraries, TEVB); B.5.3 (Role‑EpistemicViewing); discipline packs for architecture, safety, and ML/LLM‑based representations.
+
+**Body-level U-kind settlement.** `U.EpistemicViewing` is the governed durable value in this pattern. It reuses `U.EffectFreeEpistemicMorphing` and `U.Episteme`; episteme card, view, and publication names are dependent C.2.1/E.17 values when those patterns govern them. `ClaimGraph`, `Viewpoint`, `ReferenceScheme`, and `RepresentationScheme` are C.2.1/A.6.5 slot fillers or ValueKinds. `SubjectRef` is source wiring through `DescriptionContext`. `EpMorphism` is the local mathematical-lens arrow value for viewing, not a root U-kind.
 
 ### A.6.3:1 - Problem frame
 
@@ -95,25 +105,25 @@ In C.2.1 terms `U.EpistemicViewing` behaves like a **lens/optic over the epistem
 #### A.6.3:4.2 - Signature (A.6.0 / A.6.5 alignment)
 
 **Signature header.**
-`U.EpistemicViewing` is a **Morphism‑kind** under A.6.0:
+`U.EpistemicViewing` is a morphism profile under A.6.0:
 
 ```
 SubjectBlock
   SubjectKind    = U.EpistemicViewing
-  BaseType       = ⟨X:U.Episteme, Y:U.Episteme⟩      // domain/codomain episteme pair
-  Quantification = SliceSet := U.ContextSliceSet;
+  RangedValueKind = ⟨X:U.Episteme, Y:U.Episteme⟩      // domain/codomain episteme pair
+  Quantification = SliceSet := ContextSliceSet;
                    ExtentRule := admissible view morphisms
-  ResultKind     = U.Morphism                        // an instance v
+  ResultKind     = EpMorphism                        // local typed arrow v in the Ep category
 ```
 
 **Vocabulary (re‑uses A.6.2).**
-* **Types.** `U.Episteme`, `U.SubjectRef`, `U.Morphism`, `U.EpistemicViewing`.
+* **Types.** `U.Episteme`, `SubjectRef`, `EpMorphism`, `U.EpistemicViewing`.
 * **Operators.**
-  * `id    : U.Morphism(X→X)`
-  * `compose(g,f) : U.Morphism(X→Z)` where `f:X→Y`, `g:Y→Z`
+  * `id    : EpMorphism(X->X)`
+  * `compose(g,f) : EpMorphism(X->Z)` where `f:X->Y`, `g:Y->Z`
   * `apply(v, x:U.Episteme) : U.Episteme`
   * `dom(v), cod(v) : U.Episteme`
-  * `subjectRef(-) : U.SubjectRef`
+  * `subjectRef(-) : SubjectRef`
 **SlotKind-specific discipline.**
 Domain and codomain epistemes are instances of some `U.Episteme` species (typically `U.EpistemeCard`, `U.EpistemeView`, or `U.EpistemePublication`) whose episteme kinds each provide SlotSpecs (A.6.5) including at least:
   * `EntityOfConcernSlot` (ValueKind `U.Entity`, RefKind `U.EntityRef`),
@@ -168,8 +178,8 @@ EpistemicViewing remains **pure** in the EFEM sense:
   * `representationSchemeRef` and `ReferenceScheme` (within a fixed representation family or under a declared `CorrespondenceModel`),
   * meta‑components (edition, provenance, status flags).
 * It **MUST NOT**:
-  * invoke `U.Mechanism` or `U.WorkEnactment` (measure, execute, actuate),
-  * create or modify `U.PresentationCarrier` (no direct publication rendering or carrier writing),
+  * invoke `U.Mechanism` or perform `U.Work` (measure, execute, actuate),
+  * create or modify a presentation carrier, publication carrier, file, database, or rendered artifact,
   * cross ReferencePlanes implicitly (plane crossings go through Bridges with CL penalties in Part F).
 
 Any operational machinery (e.g. SAT/SMT solving, simulation, LLM tool‑use) MUST be modelled as a **separate `U.Mechanism`** that produces input epistemes or auxiliary epistemes or carriers consumed by the EpistemicViewing morphism.
@@ -280,7 +290,7 @@ Two recurring EntityOfConcern-preserving families can be read as specializations
 
 These notes do not create new governing patterns. They mark recurring same-entity specialization boundaries that remain subordinate to `U.DirectEpistemicViewing` / `U.CorrespondenceEpistemicViewing` and to the general `A.6.3` invariants.
 
-### A.6.3:5 - Archetypal grounding (Tell–Show–Show)
+### A.6.3:5 - Archetypal Grounding (Tell-Show-Show)
 
 #### A.6.3:5.1 - Engineering system description → safety officer view (DirectEpistemicViewing)
 
@@ -308,7 +318,7 @@ A system team maintains a rich `SystemDescription` episteme for a plant holon `S
 * KD‑CAL/LOG‑CAL checks show that every hazard/mitigation claim in `Y` is entailed by `X`,
 * view is idempotent and deterministic given `X` and the selected safety profile.
 
-This is the canonical “engineering view” archetype that later species in E.17.2/TEVB refer back to.
+This is the canonical “engineering view” archetype used by E.17.2/TEVB species.
 
 #### A.6.3:5.2 - MVPK publication view normalisation (DirectEpistemicViewing)
 
@@ -359,54 +369,11 @@ both with `entityOfConcernRef` pointing to the same system holon `S`, but living
 
 This archetype mirrors post‑2015 work on model synchronisation and bidirectional transformations, but anchored in the EpistemeSlotRelation.
 
-### A.6.3:6 - Consequences
+### A.6.3:6.1 - Bias-Annotation
 
-* **Clear separation of viewing vs retargeting.**
-  `U.EpistemicViewing` and `U.EpistemicRetargeting` (A.6.4) now **cleanly separate**:
+A.6.3 deliberately biases the reader toward EntityOfConcern preservation before publication convenience. The common drift is to call every useful rendering, query, dashboard, or stakeholder-facing artifact a view; this pattern keeps the view relation as an episteme-to-episteme morphism and leaves publication forms to E.17, retargeting to A.6.4, and performed work to A.15.
 
-  * “view of the same EntityOfConcern” vs “description of a different entity under a bridge”, and
-  * vertical morphisms (`α` fixed) vs retargeting morphisms (α changes under KindBridge).
-
-* **Stable backbone for multi‑view patterns.**
-  Multi‑view description (E.17.0), viewpoint bundle libraries (E.17.1/E.17.2), and MVPK publication now share a **single notion of view morphism**, aligned with C.2.1 slots and the EntityOfConcern and Description-episteme boundary and specification use/refinement discipline.
-
-* **SlotKind-specific discipline for tools.**
-  Tools implementing views (queries, projections, report generators, LLM‑based summarisation) must declare:
-
-  * which SlotKinds they read,
-  * which SlotKinds they may write,
-  * and that `EntityOfConcernSlot` is preserved.
-    This removes ambiguity around subject/EntityOfConcern changes and enables robust static checking.
-
-* **Alignment with modern view/query practices.**
-  The pattern aligns with:
-  * ISO 42010:2011/2022 and its focus on **viewpoints**, **views**, and **correspondences** over an entity of concern;
-  * SysML v2 “views‑as‑queries” paradigm, where views are queries over a stable model, not new models;
-  * post‑2015 work on **optics** and **displayed categories**, treating views as structured projections over a fibred category of epistemes.
-
-### A.6.3:7 - Rationale & SoTA‑echoing  *(informative)*
-
-* **Optics and displayed categories.**
-  In categorical terms, epistemes form a category `Ep` fibred over a category of EntityOfConcern references `Ref` via `α : Ep → Ref`. EpistemicViewing corresponds to **vertical morphisms** that preserve α. Their behaviour closely tracks **profunctor optics**: the EntityOfConcernSlot plays the role of the “focus index”, while ClaimGraphs and representation schemes act as the data being transformed. Recent work on optics (2018‑onwards) provides compositional invariants that FPF leverages without committing to a specific optic calculus.
-
-* **Multi‑view modelling and viewpoint libraries.**
-  ISO 42010 and its successors, as well as MBSE practice from ~2015 onwards, have refined the separation between **viewpoints** (families of concerns, stakeholders, and notations) and **views** (instances under those viewpoints). `U.EpistemicViewing` gives FPF a substrate‑agnostic notion of “view” that can be instantiated for architecture descriptions, safety cases, or even research epistemes/publications, while TEVB and E.17.0 specialise it to engineering holons.
-
-* **Bidirectional transformations and consistency management.**
-  Modern BX research treats views and consistency restoration as structured transformations between models, with consistency relations acting as correspondences. `U.CorrespondenceEpistemicViewing` echoes this practice but insists that:
-  * viewing is **non-creative** for EntityOfConcern commitments,
-  * any strengthening or change of EntityOfConcern is explicitly modelled as retargeting or EntityOfConcern-claim change.
-
-* **Hybrid symbolic/latent representations.**
-  Contemporary work on LLMs and neurosymbolic systems often toggles between:
-  * symbolic specifications (logical, tabular, diagrammatic), and
-  * distributed or latent representations used for computation.
-    By treating `U.RepresentationScheme` and `U.RepresentationOperation` as first‑class episteme components, FPF allows EpistemicViewing to range over:
-  * purely symbolic projections,
-  * latent‑space projections,
-  * or hybrids that invoke external mechanisms before applying a pure view, without changing the core invariants.
-
-### A.6.3:8 - Conformance checklist (normative)
+### A.6.3:8 - Conformance Checklist (normative)
 
 **CC‑A.6.3‑1 - EFEM species and EntityOfConcernChangeMode.**
 Any pattern that claims to define `U.EpistemicViewing` **SHALL**:
@@ -445,7 +412,67 @@ For each species, the definition SHALL provide:
 
 **CC‑A.6.3‑6 - Separation from Retargeting and Mechanisms.**
 * Any species that may change `entityOfConcernRef` is **not** a conformant EpistemicViewing; it MUST be treated as `U.EpistemicRetargeting` (A.6.4) or as a different pattern.
-* Any species that performs measurements, actuation, or other side‑effects MUST be declared as `U.Mechanism`/`U.WorkEnactment` and cannot be an EpistemicViewing.
+* Any species that performs measurements, actuation, or other side‑effects MUST be declared as `U.Mechanism`, performed `U.Work`, or another directly governed work/effect value and cannot be an EpistemicViewing.
+
+### A.6.3:6.2 - Common Anti-Patterns and How to Avoid Them
+
+| Anti-pattern | Why it fails | Correct action |
+|---|---|---|
+| View as retargeting | The output episteme is about a different system, function, scale, or concern object. | Use A.6.4 or a KindBridge retargeting relation when `EntityOfConcernRef` changes. |
+| View as publication face | A document, GUI, export, or dashboard is treated as the viewing morphism. | Use E.17 for publication forms and A.6.3 for the episteme relation behind the face. |
+| View as mechanism or work | Query execution, measurement, or LLM generation is treated as effect-free viewing. | Use A.6.1/A.15 for the performed operation and A.6.3 only for the resulting episteme relation when it is pure and conservative. |
+| View as new commitment | The view adds claims about the same EntityOfConcern without entailment or witness. | State the conservativity witness or move the strengthening claim to its governing pattern. |
+
+### A.6.3:6 - Consequences
+
+* **Clear separation of viewing vs retargeting.**
+  `U.EpistemicViewing` and `U.EpistemicRetargeting` (A.6.4) now **cleanly separate**:
+
+  * “view of the same EntityOfConcern” vs “description of a different entity under a bridge”, and
+  * vertical morphisms (`α` fixed) vs retargeting morphisms (α changes under KindBridge).
+
+* **Stable backbone for multi‑view patterns.**
+  Multi‑view description (E.17.0), viewpoint bundle libraries (E.17.1/E.17.2), and MVPK publication now share a **single notion of view morphism**, aligned with C.2.1 slots and the EntityOfConcern and Description-episteme boundary and specification use/refinement discipline.
+
+* **SlotKind-specific discipline for tools.**
+  Tools implementing views (queries, projections, report generators, LLM‑based summarisation) must declare:
+
+  * which SlotKinds they read,
+  * which SlotKinds they may write,
+  * and that `EntityOfConcernSlot` is preserved.
+    This removes ambiguity around subject/EntityOfConcern changes and enables robust static checking.
+
+* **Alignment with modern view/query practices.**
+  The pattern aligns with:
+  * ISO 42010:2011/2022 and its focus on **viewpoints**, **views**, and **correspondences** over an entity of concern;
+  * SysML v2 “views‑as‑queries” paradigm, where views are queries over a stable model, not new models;
+  * post‑2015 work on **optics** and **displayed categories**, treating views as structured projections over a fibred category of epistemes.
+
+### A.6.3:7 - Rationale
+
+A.6.3 exists because useful view-like outputs are common, but only some of them are episteme-to-episteme morphisms that preserve the same EntityOfConcern. The pattern keeps viewing narrow: same EntityOfConcern, declared slot reads/writes, conservativity witness, and no performed work or publication authority.
+
+### A.6.3:7.1 - SoTA-Echoing
+
+* **Optics and displayed categories.**
+  In categorical terms, epistemes form a category `Ep` fibred over a category of EntityOfConcern references `Ref` via `α : Ep → Ref`. EpistemicViewing corresponds to **vertical morphisms** that preserve α. Their behaviour closely tracks **profunctor optics**: the EntityOfConcernSlot plays the role of the “focus index”, while ClaimGraphs and representation schemes act as the data being transformed. Recent work on optics (2018‑onwards) provides compositional invariants that FPF leverages without committing to a specific optic calculus.
+
+* **Multi‑view modelling and viewpoint libraries.**
+  ISO 42010 and its successors, as well as MBSE practice from ~2015 onwards, have refined the separation between **viewpoints** (families of concerns, stakeholders, and notations) and **views** (instances under those viewpoints). `U.EpistemicViewing` gives FPF a substrate‑agnostic notion of “view” that can be instantiated for architecture descriptions, safety cases, or even research epistemes/publications, while TEVB and E.17.0 specialise it to engineering holons.
+
+* **Bidirectional transformations and consistency management.**
+  Modern BX research treats views and consistency restoration as structured transformations between models, with consistency relations acting as correspondences. `U.CorrespondenceEpistemicViewing` echoes this practice but insists that:
+  * viewing is **non-creative** for EntityOfConcern commitments,
+  * any strengthening or change of EntityOfConcern is explicitly modelled as retargeting or EntityOfConcern-claim change.
+
+* **Hybrid symbolic/latent representations.**
+  Contemporary work on LLMs and neurosymbolic systems often toggles between:
+  * symbolic specifications (logical, tabular, diagrammatic), and
+  * distributed or latent representations used for computation.
+    By treating `U.RepresentationScheme` and `U.RepresentationOperation` as first‑class episteme components, FPF allows EpistemicViewing to range over:
+  * purely symbolic projections,
+  * latent‑space projections,
+  * or hybrids that invoke external mechanisms before applying a pure view, without changing the core invariants.
 
 ### A.6.3:9 - Mini-checklist (for defining a view)
 
@@ -469,5 +496,17 @@ When you introduce a new “view” in FPF, check:
    * and the viewpoint bundle (if any) you operate under?
 
 If all answers are crisp and the invariants EV-0...EV-6 are satisfied, the pattern is a good candidate for `U.EpistemicViewing`.
+
+### A.6.3:10 - Relations
+
+| Pattern | Relation |
+|---|---|
+| `A.6.2` | Supplies EFEM law, purity, conservativity, and composition discipline. |
+| `A.6.4` | Governs retargeting when `EntityOfConcernRef` changes. |
+| `C.2.1` | Supplies the episteme slot relation and EntityOfConcernSlot discipline. |
+| `A.6.5` | Supplies SlotKind, ValueKind, and RefKind wording for view read/write declarations. |
+| `E.17` and `E.17.0` | Govern publication forms, MVPK faces, and multi-view publication use that may render or carry a viewing result. |
+| `C.29` | Governs mathematical-lens adequacy when optics, category, graph, matrix, embedding, or latent representation is under evaluation. |
+| `A.15` and `A.6.1` | Govern performed work and mechanisms that may produce input epistemes or viewing outputs but are not themselves effect-free viewing. |
 
 ### A.6.3:End

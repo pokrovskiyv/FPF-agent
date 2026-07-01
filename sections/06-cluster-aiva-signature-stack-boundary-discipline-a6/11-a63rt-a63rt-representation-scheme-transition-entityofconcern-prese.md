@@ -138,7 +138,7 @@ That ordinary field set is the default. It is admissible for inspection, source-
 
 | Field | Required interpretation in this pattern |
 | --- | --- |
-| `sourceEpistemeOrPublication` | The source `U.Episteme`, `U.EpistemePublication`, episteme-lane `U.View`, or exact source publication being re-rendered or cited. |
+| `sourceEpistemeOrPublication` | The source `U.Episteme`, `U.EpistemePublication`, episteme-side `U.View`, or exact source publication being re-rendered or cited. |
 | `receivingEpistemeOrPublication` | The receiving episteme, publication, view, diagram, table, functional description, explanation, decoded rendering, or transformation-flow publication rendering. |
 | `preservedEntityOfConcernRef` | The one C.2.1 `entityOfConcernRef` preserved across the representation shift. |
 | `receivingRepresentationOrRendering` | The receiving representation, diagram, table, functional description, decoded rendering, or publication rendering over that same `entityOfConcernRef`; if `entityOfConcernRef` changes, apply `A.6.4`. |
@@ -229,7 +229,8 @@ A decode-mediated case, latent-representation case, or distributed-representatio
 - admissible-use value;
 - remaining user action.
 
-Readable decoded output is useful only inside that entry set. If the entry set is missing, keep the use report-only, exploratory, source-bearing reopen, or blocked transfer; if another claim is being made, state the governing pattern for that claim.
+Readable decoded output is useful only inside that entry set. The source expression, latent region, distributed activation pattern, embedding, probe result, or decoded rendering may point to the representation-transition case as a whole or to one relation position inside it; recover the same `entityOfConcernRef`, source claim or publication, decoding or access relation, recoverability evidence, admissible use, and remaining user action separately. If the entry set is missing, keep the use report-only, exploratory, source-bearing reopen, or blocked transfer; if another claim is being made, state the governing pattern for that claim.
+
 
 ##### A.6.3.RT:4.5.d. Composition and reopen rule
 Repeated same-regime normalization may be idempotent, but heterogeneous regime shifts are generally order-sensitive. Multi-publication chains are checked pairwise, but the final use must preserve accumulated loss rather than restarting as if each pair erased earlier losses.
@@ -252,7 +253,8 @@ Use this table after the positive field spine. It is not a second catalogue of e
 | --- | --- |
 | `entityOfConcernRef`, EntityOfConcern kind, ontology frame, admissible predicate set, or invariant-bearing receiving rendering changes | Apply `A.6.4` or the ontology-facing governing pattern. |
 | The receiving rendering is only a textual rewrite | Apply `ConservativeRetextualization`. |
-| The primary job is teaching, narration, or explanation-facing rendering | Apply `ExplanationFaithfulnessProfile` unless EntityOfConcern or ontology-frame change makes `A.6.4` primary. |
+| The primary job is explanation-use adequacy for an existing source on an MVPK face | Apply `ExplanationFaithfulnessProfile` unless EntityOfConcern or ontology-frame change makes `A.6.4` primary. |
+| Selected source structures are ordered into a sequential narrative for a declared reader or listener use | Apply `A.6.3.NAR`; keep RT only for the representation-scheme shift that remains after the narrative ordering, source loss, and source return are declared. |
 | The work is rendering, export, upload, serialization, OCR-style extraction, parsing-style extraction, or other carrier work | Keep carrier work outside RT; start with the pattern governing carrier or extraction use, such as `A.7` when source extraction is the current question. |
 | Geometry, notation, embedding space, feature clustering, decoded output, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is being used as ontology, continuity proof, gate, work, evidence, assurance, or transformation-flow currentness claim | Keep RT only for the representation shift and apply the governing pattern for the stronger claim. |
 | Problem formulation, temporal claim, dynamics claim, control claim, or transformation-flow claim becomes primary | Apply `B.5.2`, `C.27`, `A.3.3`, `E.18`, or the governing pattern for that claim. |
@@ -332,6 +334,14 @@ This also stays outside `RepresentationSchemeTransition`. The representation sch
 **Published dashboard tile.** `Service S: current dashboard view foregrounds cache-failover evidence; alternative branches and confidence bands remain in the incident worksheet.`
 
 This does **not** remain ordinary RepresentationSchemeTransition if the tile is treated as more than a narrow report view. The tile foregrounds one causal branch and suppresses uncertainty and alternative branches, so it stays honest only with source-bearing return to the source-bearing worksheet and a non-admissible downstream-use line. It is not a causal proof, service status verdict, or action cue. Once that narrower-use card becomes primary, ordinary entityOfConcernRef-preserving representation-scheme transition no longer governs; apply A.6.3.CSC Controlled Semantic Coarsening rather than treating it as a normal scheme shift.
+
+#### A.6.3.RT:5.4.d - Boundary to structure-to-narrative rendering
+
+**Source structure slice.** `Architecture candidate C-2 has module split M, data-custody constraint D, placement constraint P, and unresolved latency versus maintainability trade-off T.`
+
+**Published narrative slice.** `The team first tried to preserve module split M, then discovered that data custody D forced placement P, so candidate C-2 accepts latency residual T to keep maintainability within the selected range.`
+
+This does not stay ordinary `RepresentationSchemeTransition` merely because prose is one representation of architecture. The receiving rendering orders selected source structures into a narrative path for a reader. Apply `A.6.3.NAR` for ordering rationale, preserved and lost structure, admissible use, and source return. Use RT only for any remaining representation-scheme shift that does not depend on narrative ordering.
 
 #### A.6.3.RT:5.5 - Boundary to decode-mediated latent cases
 A user or decoding relation tries to restate a latent region or distributed feature cluster as explicit entity content or relation content. This stays outside the admissible entityOfConcernRef-preserving case under `A.6.3.RT` unless the pinned source claim or publication, decoding relation or access relation, recoverability evidence, admissible-use value, and remaining user action are already present. Readable decoded output alone is not enough.
@@ -425,9 +435,9 @@ This pattern is worth splitting out because representation changes are already h
 ### A.6.3.RT:12 - Relations
 
 - **Builds on:** `A.6.3`, `A.6.2`, `A.7`, `E.10.D2`, `C.2.7`, `E.17.0`, `E.17`, `F.9`, `F.18`
-- **Coordinates with:** `ConservativeRetextualization`, `A.6.3.CSC Controlled Semantic Coarsening`, `ExplanationFaithfulnessProfile`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `F.9`, `F.9.1`, `E.18`, `A.15`, `A.10`, `B.3`, `B.5.2`, `A.20`, `A.21`, `C.27`, `A.3.3`, explicit decoding-access review
+- **Coordinates with:** `ConservativeRetextualization`, `A.6.3.NAR Structure-to-Narrative Rendering`, `A.6.3.CSC Controlled Semantic Coarsening`, `ExplanationFaithfulnessProfile`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `F.9`, `F.9.1`, `E.18`, `A.15`, `A.10`, `B.3`, `B.5.2`, `A.20`, `A.21`, `C.27`, `A.3.3`, explicit decoding-access review
 - **Impact radius:** primary touch `A.6.3`; selected edit companion `A.6.4`; secondary review relation `C.2.7`, `E.17.0`, `E.17`, `F.9`, decode-mediated recoverability review, transformation-flow interpretation under `E.18`, and project-side governing patterns for claims not governed by this pattern
-- **Boundary notes:** textual same-regime rewrites stay with `ConservativeRetextualization`; explanation-facing renderings stay with `ExplanationFaithfulnessProfile`; bounded comparative review cases apply `E.17.ID.CR ComparativeReviewUnit`; EntityOfConcern changes apply `A.6.4`; coarsened source renderings apply `A.6.3.CSC`; bridge, work, evidence, assurance, gate, abductive, temporal, dynamics, and transformation-flow consequences remain bounded by explicit evidence and by the downstream governing pattern for the claim being made.
+- **Boundary notes:** textual same-regime rewrites stay with `ConservativeRetextualization`; source-structure-to-sequence narrative renderings apply `A.6.3.NAR`; explanation-facing renderings stay with `ExplanationFaithfulnessProfile`; bounded comparative review cases apply `E.17.ID.CR ComparativeReviewUnit`; EntityOfConcern changes apply `A.6.4`; coarsened source renderings apply `A.6.3.CSC`; bridge, work, evidence, assurance, gate, abductive, temporal, dynamics, and transformation-flow consequences remain bounded by explicit evidence and by the downstream governing pattern for the claim being made.
 
 ### A.6.3.RT:12a - Boundary with quantum-like state-representation shortcuts
 
@@ -452,7 +462,7 @@ For ordinary use, start with the standard shortcut mini-form:
 | Shortcut | Which cheaper, typed, quantized, symbolic, lower-detail, or otherwise changed representation is used? |
 | Loss | Which precision, expressivity, compatibility, recoverability, or evidence relation is not carried? |
 | Admissible use | Which decision, explanation, triage, comparison, or action-selection move remains admissible for the shortcut? |
-| Reopen | Which dispute, decision change, demand for use with a higher evidence requirement, evidence gap, or recoverability failure sends the user back to the source representation or fuller model? |
+| Reopen | Which dispute, decision change, demand for use with a higher evidence requirement, evidence gap, or recoverability failure requires source-representation return or a fuller model? |
 
 Use a fuller C.26 coarsening record only when the shortcut becomes reusable, formal, empirical, high-stakes, or tied to comparative performance or tractability claims. In that fuller record, add the mechanism, baseline relation, non-admissible use, and QL cue needed for the additional-admissibility claim.
 

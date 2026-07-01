@@ -88,7 +88,7 @@ Full EDSE record:
 | Reprobe cost | What does it cost in time, risk, disruption, attention, coordination, privacy, or evidence quality to check again? |
 | Rival explanation not ruled out | Which ordinary explanation remains possible? |
 | Minimal supported claim | What may be said without exceeding the evidence, carrier set, time window, or export limit? |
-| Supported action or use | Which planning, communication, incident, routing, bridge, evidence, or decision move may now be taken without exceeding the claim? |
+| Supported action or use | Which planning action, communication action, incident action, routing action, bridge use, evidence use, or decision use may now be taken without exceeding the claim? |
 
 #### C.26.2:4.1 - Minimal claim principle
 
@@ -149,7 +149,7 @@ When the distributed-state reading is load-bearing, state the decomposition expl
 | Factorable part | Which part of the behavior is explained by policy, routine, shared stimulus, incentive, dashboard following, or copied artifact? |
 | Coordination residue | What remains as a minimal distributed-state reading after the ordinary rival explanations are named? |
 | Minimal supported claim | What evidence-bound claim survives for the declared time window and carrier set? |
-| Supported action or use | Which planning, communication, incident, routing, bridge, evidence, or decision move may now be taken without exceeding that minimal claim? |
+| Supported action or use | Which planning action, communication action, incident action, routing action, bridge use, evidence use, or decision use may now be taken without exceeding that minimal claim? |
 
 #### C.26.2:4.6 - Evidence-bound state reading and claim floor
 
@@ -169,7 +169,7 @@ This pattern is useful because many real work states are enacted before they are
 
 #### C.26.2:4.7 - Operational evidence sequence
 
-Action path:
+Operational evidence sequence:
 
 1. Name the collective bearer as a declared `U.System` boundary, not a bare social label.
 2. Name the coordinated work, behavior, or trace pattern being read through `A.15`: actions, routines, commitments, role-work, service behavior, market participant traces, artifacts, or timing.

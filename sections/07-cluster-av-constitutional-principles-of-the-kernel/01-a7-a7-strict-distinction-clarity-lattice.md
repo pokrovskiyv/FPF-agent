@@ -1,4 +1,5 @@
 ## A.7 - Strict Distinction (Clarity Lattice)
+> **Status:** Stable
 
 ### A.7:1 - Intent
 
@@ -7,16 +8,16 @@ Provide a **single, didactically clear lattice of distinctions** that keeps mode
 1. **Role vs Function** (mask vs behaviour),
 2. **MethodDescription vs Method vs Capability vs Work** (description vs abstract way-of-doing vs system ability/envelope vs performed occurrence),
 3. **Holon vs System vs Episteme** (what can act and what cannot),
-4. **EntityOfConcern vs Description episteme, View, and Publication** (the item under concern vs epistemes and publication lanes that make claims about it; specification is a gated use or refinement of a Description episteme, not a third peer member of this distinction).
+4. **EntityOfConcern vs Description episteme, View, and Publication** (the item under concern vs epistemes and publication relation positions that make it available; specification is a gated use or refinement of a Description episteme, not a third peer member of this distinction).
 
-It harmonizes A.12 (External Transformer), A.13 (Agential Role & Agency Spectrum), A.14 (Advanced Mereology), A.15 (Role-Method-Work Alignment), C.2.1 (`U.EpistemeSlotRelation`), E.17 (publication and view discipline), and F.9, F.17, and F.18 bridge and naming discipline.
+It harmonizes A.2 and A.2.1 (role values and role-assignment relations), A.3.4 (transformation), A.10 (evidence-provenance and carrier/source-currentness relations), A.14 (Advanced Mereology), A.15 (Role-Method-Work Alignment), C.2.1 (`U.EpistemeSlotRelation`), E.17 (publication and view discipline), and F.9, F.17, and F.18 bridge and naming discipline.
 
 ### A.7:2 - Problem frame
 
-* **Holons (A.1) and systems.** All holons are part-whole units; **only systems** can enact behaviour.
-* **Externalization (A.12).** Every change is performed by a **system bearing TransformerRole** across a boundary; there is no “self‑magic”.
-* **Quartet backbone (A.3, A.15).** We separate **MethodDescription** (description), **Method** (abstract way-of-doing), **Capability** (a system's ability or envelope to enact a Method under conditions), and **Work** (run‑time occurrence), with the **system bearing TransformerRole** as the acting side.
-* **Evidence (A.10).** Knowledge claims cite **Symbol-Carrier Register (SCR)** carriers; epistemes never “act”; systems inspect, revise, publish, store, or rely on the carriers, publication forms, and project records that make an episteme available.
+* **Holons (A.1) and systems.** All holons are part-whole units; **systems or acting holons** enact behaviour through work-facing role assignments in a bounded context.
+* **Transformation (A.3.4) and role assignment (A.2/A.2.1).** Every claimed change names the transformation or work occurrence, the affected entity, and any current `U.RoleAssignment` for the acting system or holon; there is no “self-magic”.
+* **Method/work backbone (A.3.1, A.3.2, A.15).** We separate **MethodDescription** (description), **Method** (abstract way-of-doing), **Capability** (a system's ability or envelope to enact a Method under conditions), **WorkPlan** (intent window), and **Work** (run-time occurrence), with the acting side expressed through `U.RoleAssignment` when a work-facing role is current.
+* **Evidence (A.10).** Knowledge claims cite evidence-provenance and carrier/source-currentness relations; epistemes never “act”; systems inspect, revise, publish, store, or rely on the carriers, publication forms, and project records that make an episteme available.
 
 Practitioner check: if a sentence could be read as “the document decided” or “the process executed itself”, it violates A.7.
 
@@ -46,26 +47,27 @@ When documents blur the above lines, three classes of defects appear:
 • **EntityOfConcern and Description-episteme boundary** — the item under concern is separated from Description epistemes (E.10.D2, C.2.1). Specification use is a gated use or refinement of a Description episteme; the exact gate must name checkability, formality plus checkable constraint, harness, acceptance condition, C.16 measurement criterion, verification use, or another specification-granting neighbouring pattern. Specification is not a third member of the strict distinction.
 • **DesignRunTag** — the design vs run DesignRunTag. It is not a temporal “plane”, generic layer, or stance.
 • **Publication face, form, unit, carrier, and rendering boundary** — Description epistemes, including Description epistemes admitted for specification use, may be made available through publication units, publication forms, faces, renderings, and carriers. These publication values are not the `EntityOfConcern` value, not the Description episteme itself, not the specification-use gate or refinement, and not evidence, gate passage, work, assurance, or decision force by readable form. The ordinary didactic faces for architectural patterns in FPF are:
-  {**PlainView** (explanatory prose), **TechCard** (typed cards and IDs), **NormsCard** (TechCard profile for checklists), **AssuranceLane** (evidence bindings and lanes)}. Publication faces and forms are orthogonal to the `EntityOfConcern` and Description-episteme boundary, to specification-use gates and refinements, and to DesignRunTag.
-• **Typed describing morphism and specification-use exit** — `Describe_EoC_DescEp : EntityOfConcern -> DescriptionEpisteme` describes an `EntityOfConcern` value into a Description episteme under a declared construction/reference trace; it is **not** a mechanism and does not execute work. A later refinement, formalisation, or specification-use claim over that Description episteme is governed by the neighboring pattern governing the claim whose force is live: A.6.2 for effect-free episteme refinement, C.2.3 for formality and checkability, A.21 or the relevant gate/acceptance pattern for harness and acceptance force, C.16 for measurement criteria, E.17 for publication expression, and E.10 for suffix discipline. A.7 keeps those exits visible but does not turn them into a second strict-distinction member.
+  {**PlainView** (explanatory prose), **TechCard** (typed cards and IDs), **NormsCard** (TechCard profile for checklists), **AssuranceLane** (evidence bindings)}. Publication faces and forms are orthogonal to the `EntityOfConcern` and Description-episteme boundary, to specification-use gates and refinements, and to DesignRunTag.
+• **Typed describing morphism and specification-use boundary** — `Describe_EoC_DescEp : EntityOfConcern -> DescriptionEpisteme` describes an `EntityOfConcern` value into a Description episteme under a declared construction/reference trace; it is **not** a mechanism and does not execute work. A later refinement, formalisation, or specification-use claim over that Description episteme is governed by the neighboring pattern governing the claim whose force is live: A.6.2 for effect-free episteme refinement, C.2.3 for formality and checkability, A.21 or the relevant gate/acceptance pattern for harness and acceptance force, C.16 for measurement criteria, E.17 for publication expression, and E.10 for suffix discipline. A.7 keeps those boundaries visible but does not turn them into a second strict-distinction member.
   **Laws (normative for A.7):** (DESC-1) *Non-extensibility of content* and (DESC-2) *identity and meaning-preserving composition*. Specification-use/refinement laws are enforced by the neighboring pattern governing the claim that selects the gate and value set.
 
-• **EntityOfConcern / episteme / publication boundary** — `EntityOfConcern` wording names the item under concern under the declared construction/reference trace; it does not name a document, publication face, carrier, or unspecified referent. `Describe_EoC_DescEp` yields a Description-side `U.Episteme` about that `EntityOfConcern` value. A Description episteme may later be used as a specification only when a bounded use declares formality plus checkable constraint, harness, acceptance condition, C.16 measurement criterion, verification use, or another specification-granting gate. Publication faces, cards, views, lanes, records, and carriers remain orthogonal lanes: they can make Description epistemes available, but they do not become the EntityOfConcern value, the Description episteme, specification-use gate/refinement, evidence, gate passage, work, assurance, or decision force by appearing in a publication form.
+• **EntityOfConcern / episteme / publication boundary** — `EntityOfConcern` wording names the item under concern under the declared construction/reference trace; it does not name a document, publication face, carrier, or unspecified referent. `Describe_EoC_DescEp` yields a Description-side `U.Episteme` about that `EntityOfConcern` value. A Description episteme may later be used as a specification only when a bounded use declares formality plus checkable constraint, harness, acceptance condition, C.16 measurement criterion, verification use, or another specification-granting gate. Publication faces, cards, views, publication relation positions, records, and carriers remain orthogonal relation positions: they can make Description epistemes available, but they do not become the EntityOfConcern value, the Description episteme, specification-use gate/refinement, evidence, gate passage, work, assurance, or decision force by appearing in a publication form.
 
 A.7 establishes the following **pairs and triplets**. Use their **names** and **scope** exactly as below.
 
-#### A.7:5.2 - Role vs Function (behaviour)
+#### A.7:5.2 - Role vs function-like wording, functional behaviour, capability, method, and work
 
-* **Role (role‑object, mask).** A contextual **position** a holon can bear (A.2, A.15). A role is **not behaviour**; it is the **mask** under which behaviour may be enacted. Example: **Cooling‑CirculatorRole** in a thermal loop.
-* **Function = behaviour = Method under a role.** What a **system** is described as doing **when bearing a role**. In Transformer context, this behaviour is a **Method** (abstract way-of-doing) that a system may have the **Capability** to enact under conditions and that can be performed as **Work** (run‑time).
+* **Role (role value).** A context-bound work-facing role value assigned through `U.RoleAssignment` (A.2, A.2.1, A.15). A role value is **not behaviour**; it names the assigned work-facing position under which an acting system or holon may enact behaviour. Example: **CoolingCirculatorRole@Context** in a thermal loop.
+* **Function-like wording.** A source phrase such as "function", "behaviour", "service", or "does X" may name a required transformation or effect (A.3.4), functional behaviour (A.6.F), a capability envelope, a method, performed work, a quality, or a structure. Recover the governed claim before choosing the FPF term.
+* **Under role assignment.** A system or acting holon under a current `U.RoleAssignment` may have a **Capability** to enact a **Method** under conditions and may perform **Work** that produces, maintains, prevents, or checks a transformation/effect. The role is not the behaviour, Method is not identical to transformation/effect, and Capability is not the Method.
 
-  * Safe rewrite for earlier “Holonic Duality (Substance ⧧ Function)”: **Holonic Duality (Substance ⧧ Role).** A `U.System` keeps its identity (substance) while **switching roles**; each role may entail a **Method** (abstract way-of-doing), a **Capability** envelope to enact that Method under conditions, and possible **Work** (performed occurrence).
+Safe rewrite for earlier "Holonic Duality (Substance vs Function)": **Holonic Duality (Substance vs Role).** A `U.System` keeps its identity while changing assigned role values; each assigned role value may require a Method, a Capability envelope to enact that Method under conditions, and possible Work occurrences.
 
-**Normative guard:** Use “**Role**” for the mask; use “**Method**” for the abstract way-of-doing, “**Capability**” for a system ability/envelope to enact a Method under conditions, and “**Work**” for the performed occurrence. Do **not** call the role itself a function, and do not define Method as Capability.
+**Normative guard:** Use **Role** for the role value, `U.RoleAssignment` for the assignment relation, **functional behaviour** when A.6.F governs the behaviour claim, **Method** for the abstract way-of-doing, **Capability** for a system ability/envelope to enact a Method under conditions, **Work** for the performed occurrence, and **Transformation** or effect wording when A.3.4 governs the change claim. Do **not** call the role itself a function, and do not define Method as Capability or as the transformation/effect itself.
 
 #### A.7:5.3 - MethodDescription vs Method vs Capability vs Work (description vs way-of-doing vs ability envelope vs occurrence)
 
-* **MethodDescription** — the **description** (algorithm / SOP / recipe / script) at design-time. Its publication cites **SCR** carriers when the carrier is used as evidence or source.
+* **MethodDescription** — the **description** (algorithm / SOP / recipe / script) at design-time. Its publication cites A.10 carrier/source-currentness refs when the carrier is used as evidence or source.
 * **Method** — the **abstract order-sensitive way-of-doing** composed with **Γ\_method** (B.1.5). A Method is not an occurrence and not the system ability itself; **concrete values** are **bound at `U.Work` creation**. Outside executions we **refer to it via MethodDescription** (see A.3.1 CC‑A3.1‑5/‑9; A.15 §2.2, §4.1).
 * **Capability** — the **system ability/envelope** to enact a Method under stated roles, conditions, resources, and constraints. A Capability belongs to a system-in-context; it is not the MethodDescription and not the performed Work.
 * **Work** — the **dated run‑time occurrence** (what actually happened), with resource spend (Γ\_work) and temporal coverage (Γ\_time).
@@ -74,16 +76,16 @@ A.7 establishes the following **pairs and triplets**. Use their **names** and **
 
 #### A.7:5.4 - Holon vs System vs Episteme (who can act)
 
-* **System** — the only holon kind that can **bear behavioural roles** and enact **Method and Work**.
-* **Episteme** — **cannot act**; it is **changed via its carriers** by a system. Epistemes **may bear non‑behavioural roles** (e.g., **ReferenceRole**, **ConstraintSourceRole**).
-* **Holon** — umbrella term; **do not** use it where only **system** is meaningful (e.g., “holon bearing TransformerRole” is **invalid**; write “**system bearing TransformerRole**”).
+* **System or acting holon** — the entity that can enact behaviour when it is the holder of a current work-facing `U.RoleAssignment`.
+* **Episteme** — **cannot act** and does **not** hold work-facing roles; it is changed via carriers, publications, and work on those carriers by systems or acting holons. Reference, constraint-source, evidence, status, source, requirement, publication, and assurance uses are direct relation/use cases, not episteme roles.
+* **Holon** — umbrella term; **do not** use it where the current claim requires a system as role-assignment holder. Write the exact holder and `U.RoleAssignment(holderRef, roleRef, boundedContextRef)` when a work-facing role such as `TransformerRole@Context` is current.
 
-**Normative guard:** Behavioural roles (including TransformerRole) have **domain = system**. Epistemes may bear purely **classificatory** roles only.
+**Normative guard:** Work-facing roles, including `TransformerRole@Context` when used, are role values in `U.RoleAssignment` and have a system or acting holon as holder in a bounded context. Epistemes do not hold roles merely because they are used as references, evidence, constraints, sources, requirements, publications, or assurance inputs.
 
-#### A.7:5.5 - Episteme vs Symbol Carrier (SCR/RSCR)
+#### A.7:5.5 - Episteme vs publication carrier and source-currentness record
 
 * **Episteme** — the knowledge content (claim, model, requirement set).
-* **Symbol Carrier** — the physical or digital carrier for an episteme publication or stored representation (file, volume, dataset item), tracked in **SCR**; remote sets in **RSCR**.
+* **Publication carrier or source-currentness record** — the physical or digital carrier for an episteme publication or stored representation (file, volume, dataset item), tracked through A.10 carrier/source-currentness relations when evidence, source, or reliance use is current.
 * **Use:** Evidence, provenance, and reproducibility address **carriers**; arguments and validity address **epistemes**.
 
 **Normative guard:** When you say “we updated the spec”, detail **which carriers** changed (A.10).
@@ -98,7 +100,7 @@ A.7 establishes the following **pairs and triplets**. Use their **names** and **
   * **ConstituentOf** — logical/content part in epistemes.
   * **PortionOf** — quantitative portion with conserved extensives.
   * **PhaseOf** — temporal part/state across a continuous identity.
-  * **RoleBearerOf** — a **system** is the **bearer** of a **Role**.
+  * **RoleAssignment** — a **system or acting holon** is the holder in a current `U.RoleAssignment`.
 
 **Normative guard:** If the grouping is expected to **act**, model a **collective system** (not a set) and provide its role, Method, and Work.
 
@@ -113,9 +115,9 @@ A.7 establishes the following **pairs and triplets**. Use their **names** and **
 
 #### A.7:5.8 - EntityOfConcern and Description-episteme boundary vs publication face, form, unit, and carrier boundary (orthogonal, normative)
 * **A.7 and E.10.D2 govern the EntityOfConcern-to-description boundary.** What the `EntityOfConcern` value is and how it is described are distinct questions. Description is a `U.Episteme` use with `DescriptionContext`. Specification is a gated use or refinement of a Description episteme, selected by checkability, formality plus checkable constraint, harness, acceptance, C.16 measurement criterion, verification use, or other neighboring pattern governing the claim force; it is not a peer class beside `EntityOfConcern` and Description.
-* **Publication governs availability.** Publication units, publication forms, faces, renderings, and carriers make Description epistemes available to readers or tools, including Description epistemes admitted for specification use. They do not become the `EntityOfConcern` value, the Description episteme, the specification-use gate/refinement, or a symbol carrier by the same relation; physical and digital carriers stay in **SCR/RSCR** (A.10).
+* **Publication governs availability.** Publication units, publication forms, faces, renderings, and carriers make Description epistemes available to readers or tools, including Description epistemes admitted for specification use. They do not become the `EntityOfConcern` value, the Description episteme, the specification-use gate/refinement, or an evidence/source carrier by the same relation; physical and digital carriers stay in A.10 carrier/source-currentness relations when evidence, source, or reliance use is current.
 * **Publication-face field pins.** When Description epistemes or Description epistemes admitted for specification use are shown on **TechCard**, the minimal **CHR-Pins** are {**UnitType**, **ScaleKind**, **ReferencePlane**, **EditionId**}.
-* **Bridge routing.** Cross-context or cross-reference-plane reuse cites **Bridge id + CL**; **Phi(CL)** and **Phi_plane** penalties route to **R (trust)** only; **F and G invariant**.
+* **Bridge policy.** Cross-context or cross-reference-plane reuse cites **Bridge id + CL**; **Phi(CL)** and **Phi_plane** penalties apply to **R (trust)** only; **F and G invariant**.
 
 #### A.7:5.8a - Same or near-same EntityOfConcern across descriptions and views
 
@@ -125,7 +127,7 @@ Use this split when the text needs to say whether two descriptions or views are 
 
 | Case | A.7 relation case | Admissible move |
 | --- | --- | --- |
-| same referent by value | the localized `EntityOfConcern` or relation named by value/claim/reference case and the resolved `entityOfConcernRef`, where live, refer to the same item by declared reference discipline | same-entity work inside the declared use |
+| same referent by value | the localized `EntityOfConcern` or relation named by value, carried by the current claim, or selected by a reference case and the resolved `entityOfConcernRef`, where live, refer to the same item by declared reference discipline | same-entity work inside the declared use |
 | preserved by viewing | A.6.3 viewing preserves `entityOfConcernRef` while changing content, representation, viewpoint, or other episteme slots | same-`EntityOfConcern` Description, Specification, or view transformation |
 | publication-unit primary only | a bounded publication unit states what it is mainly about, plus its carried move and outside-work boundary, without establishing a claim-bearing episteme trace by itself | publication-unit stability only |
 | bridge-conditional near identity | F.9, F.17, or F.18 admits bounded near-identity or substitution under bridge kind, CL, direction, loss, and bridge-admissible use | bridge-scoped reuse only |
@@ -133,9 +135,15 @@ Use this split when the text needs to say whether two descriptions or views are 
 | unresolved candidate | construction/reference/bridge/witness trace is insufficient | candidate tracking, question framing, or non-use |
 | different entity | no admissible sameness or near-sameness path exists for the intended use | keep entities distinct |
 
-If the same or near-same relation needs mathematical or postulate-theory justification, A.7 exits rather than pretending to prove it: use C.29 for the mathematical lens, E.18 and E.18.1 where transformation-flow, carry-through, and postulate-theory work supply the required justification, E.18 where a gate crossing is the live relation, or the relevant architecture pattern where the comparison is about structure, graph, flow, or architecture description.
+If the same or near-same relation needs mathematical or postulate-theory justification, A.7 stops at the strict-distinction boundary instead of pretending to prove it: use C.29 for the mathematical lens, E.18 and E.18.1 where transformation-flow, carry-through, and postulate-theory work supply the required justification, E.18 where a gate crossing is the live relation, or the relevant architecture pattern where the comparison is about structure, graph, flow, or architecture description.
 
-#### A.7:5.9 - Typed describing morphism and specification-use exit (normative)
+#### A.7:5.8b - Compact relation-position recovery aid
+
+When one visible source object, such as a diagram, dashboard, card, model output, `PublicationUnit`, carrier, or generated artifact, can be read as several FPF values at once, use A.7 only to recover the current relation position. Name the current `EntityOfConcern`, Description episteme, view, publication face, publication form, `PublicationUnit`, carrier, rendering, mathematical-lens use, evidence relation, gate decision, work occurrence, authority-reference relation, source-currentness relation, or source-use claim, then apply the direct governing pattern for that position.
+
+This aid is not a reusable object, local record, table, or master checklist. If the direct governed claim is already clear, do not add an A.7 recovery note; cite the direct pattern.
+
+#### A.7:5.9 - Typed describing morphism and specification-use boundary (normative)
 
 **What `Describe_EoC_DescEp` means in A.7.** For any `EntityOfConcern` value `X`, *describing X* is the morphism application `Describe_EoC_DescEp(X) : DescriptionEpisteme`. A.7 does not define a second strict-distinction arrow from Description to Specification. When a Description episteme is formalised, constrained, test-harnessed, accepted, or used as a specification, that is an episteme-refinement or specification-use question handled by A.6.2, C.2.3, A.21, C.16, E.17, E.10, or another neighboring pattern governing the claim according to the live force.
 
@@ -145,7 +153,7 @@ If the same or near-same relation needs mathematical or postulate-theory justifi
 1. **Episteme-source preservation (DESC-1E).** When the `EntityOfConcern` value `X` is itself a `U.Episteme`, a claim graph, a claim-bearing view, or another claim-bearing source, `Describe_EoC_DescEp(X)` MUST NOT silently add epistemic commitments. Added structure is only declared representation, indexing, cross-reference, or refinement/loss under the neighboring pattern governing the claim that grants it.
 2. **Non-episteme describing trace (DESC-1N).** When `X` is a system, structure, work occurrence, role assignment, method, physical object, characteristic, relation, or other non-episteme value, claims are not "inside X" waiting to be copied. A Description episteme may add claims about `X` only through a declared construction, reference, measurement, observation, model, postulate-theory, or witness trace, with admissibility conditions visible for the intended use.
 3. **Identity and meaning preservation (DESC-2).** If `f : X -> Y` is a meaning-preserving, bridge-admitted, or construction-preserving map for the selected EntityOfConcern values, then `Describe_EoC_DescEp(f)` is defined only for the declared scope and preserves the identity, near-identity, bridge, loss, or retargeting relation that the governing pattern admits. Where meaningful composition exists, `Describe_EoC_DescEp(f o g) = Describe_EoC_DescEp(f) o Describe_EoC_DescEp(g)` only under that declared relation.
-4. **Specification-use exit.** If a Description episteme is refined into specification use, the refinement must name the neighboring pattern governing the claim and gate that grants that use. A.7 only requires that the refinement remains separate from the `EntityOfConcern`, from publication expression, and from Work.
+4. **Specification-use refinement case.** If a Description episteme is refined into specification use, the refinement must name the neighboring pattern governing the claim and gate that grants that use. A.7 only requires that the refinement remains separate from the `EntityOfConcern`, from publication expression, and from Work.
 5. **Separation from Gamma.** `Describe_EoC_DescEp` and any neighbouring specification-use refinement do **not** compose with **Gamma_method**, **Gamma_time**, or **Gamma_work**; describing, formalising, or specifying is not execution and accrues no resource or time semantics.
 6. **Ontology preservation.** Describing any `EntityOfConcern` value, such as a Calculus, Signature, Mechanism, Structure, Work occurrence, or Episteme, via `Describe_EoC_DescEp` does **not** change its ontology; it yields a Description episteme under A.7 rules. Publication through faces, forms, units, and carriers is handled separately in E.17 (MVPK).
 
@@ -234,11 +242,12 @@ unitOfDelivery := {
 ```
 
 (Where `E‑(…)` denotes an Episteme/predicate defined in the relevant Context; this appendix does not introduce an expression language.)
+
 ### A.7:6 - Archetypal Grounding (Tell-Show-Show; System and Episteme)
 
 #### A.7:6.1 - System and Episteme example
 **System archetype — “Digital‑twin vs asset”.**
-*Claim:* *The twin (episteme) does not “act”; the **system** bearing TransformerRole enacts Work on the asset; evidence binds to carriers.*
+*Claim:* *The twin (episteme) does not “act”; the system or acting holon under a current `U.RoleAssignment` enacts Work on the asset; evidence binds through A.10 carrier/source-currentness and evidence-provenance relations.*
 *Show:* A maintenance **MethodDescription** (tech card) lives at design‑time; a **Work** record (assurance face) lists Γ_time, Γ_work, PathId and **carrier** ids for telemetry. The twin’s update is **Work on the carrier**, not the asset; CL^plane penalties are disclosed when twin–asset crossings are analysed.
 
 **Episteme archetype — “Peer‑review vs manuscript”.**
@@ -251,7 +260,7 @@ unitOfDelivery := {
 
 * **Substance (system):** Centrifugal pump P‑12.
 * **Role:** **Cooling‑CirculatorRole**.
-* **MethodDescription:** “Loop Circulation v3” (**TechCard**, cited through SCR carriers).
+* **MethodDescription:** “Loop Circulation v3” (**TechCard**, cited through A.10 carrier/source-currentness refs when evidence or source use is current).
 * **Method:** ordered way-of-doing: start → ramp → hold → stop (Γ\_method).
 * **Capability:** P-12 control-unit ability/envelope to enact that Method under stated roles, conditions, resources, and constraints.
 * **Work:** run on 2025‑08‑09 10:00–10:45; energy ledger via Γ\_work; log via Γ\_time.
@@ -261,9 +270,9 @@ unitOfDelivery := {
 **Example 2 — Standard document cited in a design**
 
 * **Episteme:** “Safety Standard S‑174”.
-* **Carriers:** PDF (SCR id: scr://std/S‑174/2025‑07), printed volume (scr://print/S‑174/2e).
-* **Role:** **ReferenceRole** in the valve selection activity.
-* **System bearing TransformerRole:** design team’s selection service.
+* **Carriers:** PDF and printed volume with A.10 carrier/source-currentness refs when the standard is used as source or evidence.
+* **Use relation:** reference-use or constraint-source-use relation for the valve selection activity, named by its direct governing pattern.
+* **Role assignment for work:** `U.RoleAssignment(holderRef=DesignTeamSelectionSystem, roleRef=TransformerRole@ValveSelectionContext, boundedContextRef=ValveSelectionContext)` when the selection work needs a work-facing transformer role value.
 * **MethodDescription:** “Valve Selection SOP v5”.
 * **Method:** abstract valve-selection way-of-doing described by that SOP.
 * **Capability:** design team's selection-service ability/envelope to enact the Method under the project conditions.
@@ -272,45 +281,45 @@ unitOfDelivery := {
 **Example 3 — Set vs team**
 
 * **Set (MemberOf):** {Alice, Bob, 3.14} — a collection; **no behaviour** implied.
-* **Collective system (team):** boundary, coordination **Method**, supervision **Work**; can bear **AgentialRole** (A.13).
-* **Safe phrasing:** *“Team T plays **Cooling‑MaintenanceRole** and executed Work W…”*
+* **Collective system (team):** boundary, coordination **Method**, supervision **Work**; can hold a current `U.RoleAssignment` for a work-facing role value such as `CoolingMaintenanceRole@Context`.
+* **Safe phrasing:** *“`U.RoleAssignment(holderRef=TeamT, roleRef=CoolingMaintenanceRole@Context, boundedContextRef=ContextT)` is current for Work W…”*
 
 ### A.7:7 - Conformance Checklist (normative)
 
 | ID                                       | Requirement                                                                                                                                                                                                                                                                                    | Practical test                                                                                                                            |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **CC‑A7.1 (Role/Behaviour split)**       | A **Role** must be modelled as a contextual **mask** borne by a holon; **behaviour** must be expressed as **Method** (abstract way-of-doing), with **Capability** as the system ability/envelope to enact that Method under conditions and **Work** as the run-time occurrence.                                                                                                              | In any sentence, if “role” is used as if it *does* something, rewrite: the **system bearing TransformerRole** does it by enacting a **Method** through a **Capability** in **Work**. |
-| **CC‑A7.2 (Transformer domain)**         | **TransformerRole SHALL be borne only by a system.**                                                                                                                                                                                                                                           | Type‑check: bearer ∈ `U.System`. “holon bearing TransformerRole” is invalid.                                                              |
-| **CC‑A7.3 (Episteme non‑agency)**        | An **episteme SHALL NOT** be described as acting. All changes to epistemes must be routed to their **symbol carriers** (A.10) by a **system bearing TransformerRole**.                                                                                                                         | Text contains the acting system + carriers (SCR ids).                                                                                     |
+| **CC‑A7.1 (Role/Behaviour split)**       | A **Role** is a context-bound work-facing role value assigned through `U.RoleAssignment`; **behaviour** must be expressed as **Method** (abstract way-of-doing), with **Capability** as the system ability/envelope to enact that Method under conditions and **Work** as the run-time occurrence. | In any sentence, if “role” is used as if it *does* something, rewrite: the acting system or holon under a current role assignment does the Work by enacting a Method through a Capability. |
+| **CC‑A7.2 (Transformer-role assignment domain)** | `TransformerRole@Context` may be used only as a work-facing role value in `U.RoleAssignment` whose holder is a system or acting holon in the bounded context. | Type-check: holder is a system or acting holon; the role value itself is not the acting entity and not an old external-transformer shortcut. |
+| **CC‑A7.3 (Episteme non‑agency)**        | An **episteme SHALL NOT** be described as acting or holding work-facing roles. Changes to epistemes are governed through publication, carrier, work, evidence-provenance, and source-currentness relations: work on carriers, publication updates, evidence-provenance relations, and source-currentness records governed by A.10/E.17/A.15. | Text contains the acting system or holon, Work occurrence, and carrier/publication/evidence relation when change or evidence is claimed. |
 | **CC‑A7.4 (MethodDescription ≠ Method ≠ Capability ≠ Work)** | **MethodDescription** (description episteme), **Method** (abstract way-of-doing), **Capability** (system ability/envelope to enact a Method under conditions), and **Work** (performed occurrence) **SHALL** be kept distinct in wording and modelling.                                                                                                                                                          | Ask: is there a MethodDescription or design-time publication, a Method, a Capability claim about a system, or a dated occurrence? Each live MethodDescription, Method, Capability claim, and dated Work occurrence must be named separately.                                         |
 | **CC‑A7.5 (Operator fit)**               | Use **Γ\_method** only for composing **Method**; **Γ\_time** only for **Work** histories; **Γ\_work** only for resource spend/yields; **Γ\_sys** for systemic properties of systems.                                                                                                           | No sentence should use a single generic “process operator” for all three.                                                                 |
-| **CC-A7.6 (SCR carrier reference)**      | Any knowledge claim that references documents or data **SHALL** cite **carriers** via **SCR/RSCR** on first mention in the subsection.                                                                                                                                                          | First mention expands as “Symbol-Carrier Register (SCR)”; references list carrier ids.                                                    |
+| **CC-A7.6 (Carrier/source-currentness reference)** | Any knowledge claim that references documents or data **SHALL** cite publication carriers or A.10 carrier/source-currentness refs when evidence, source, or reliance use is current. | First mention names the carrier or source-currentness reference and the evidence/source relation made recoverable by that reference. |
 | **CC‑A7.7 (Collective vs set)**          | If a grouping is expected to **act**, it **MUST** be modelled as a **collective system** (boundary + coordination Method + Work), not as a **MemberOf** set.                                                                                                                                   | Presence of boundary, Method, Work for the group.                                                                                         |
 | **CC‑A7.8 (Diagram legend)**             | When domain idioms use **“process”**, diagrams or text **MUST** map them to FPF terms on first occurrence: *process (domain) ≡ Method at design time or Work at run time.*                                                                                                                           | Legend or parenthetical present at first use.                                                                                             |
-| **CC‑A7.9 (Substance ⧧ Role wording)**   | The safe formula is **“System (substance) plays Role; under that Role it has Method; its execution is Work.”**                                                                                                                                                                                 | Sentences follow this order; “function” used only as synonym for **behaviour**, never for the **role**.                                   |
-| **CC‑A7.10 (Quartet clarity)**           | Any “triad” picture **MAY** be used only as a **design‑time stand‑in** (Transformer + MethodDescription + Method) and **MUST** be accompanied by an explicit **Work** lane elsewhere in the same section. “quartet of quartets” headings **SHALL** be avoided; use **“Quartet backbone”** instead. | Diagram has a visible **Work** lane/timeline or separate box within the same section. |
-| **CC‑A7.11 (Terminology hygiene)**       | Ban **“actor”** in core text. Use **“system bearing TransformerRole”**; bind local shorthand **“Transformer”** only per A.12 rules.                                                                                                                                                            | Plain text scan: no “actor”; shorthand is locally bound.                                                                                  |
-| **CC‑A7.12 (Role domain guards)**        | Behavioural roles’ domain = **system**. Epistemes may bear **non‑behavioural** roles (e.g., ReferenceRole, ConstraintSourceRole) only.                                                                                                                                                         | Role declarations name their domain.                                                                                                      |
+| **CC‑A7.9 (Substance ⧧ Role wording)**   | The safe formula is **“System or acting holon is holder in `U.RoleAssignment`; under that assigned role value it has Method/Capability; its execution is Work.”** | Sentences follow this order; “function” used only as synonym for **behaviour**, never for the **role**. |
+| **CC-A7.10 (Quartet clarity)**           | Any “triad” picture **MAY** be used only as a **design-time stand-in** (role-assignment holder + MethodDescription + Method) and **MUST** be accompanied by explicit **Capability** and **Work** positions elsewhere in the same section. “quartet of quartets” headings **SHALL** be avoided; use **“work-facing chain”** instead. | Diagram has visible **Capability** and **Work** positions/timeline or separate boxes within the same section. |
+| **CC‑A7.11 (Terminology hygiene)**       | Avoid **“actor”** as a bare core term. Use the exact acting system or holon plus `U.RoleAssignment(holderRef, roleRef, boundedContextRef)` when a work-facing role is current. | Plain text scan: no bare “actor” in normative core claims; any local role shorthand is bound through A.2/A.2.1. |
+| **CC‑A7.12 (Role domain guards)**        | Work-facing role assignments have systems or acting holons as holders. Epistemes may be used through reference-use, constraint-source-use, evidence-use, status-use, source-use, publication-use, requirement-use, definition-use, explanation-use, assurance-use, or gate-use relations, but those uses are not roles. | Role declarations name holder, role value, bounded context, and window when current; episteme uses name the direct relation. |
 | **CC-A7.13 (EntityOfConcern-to-Description visibility)**          | Conforming `EntityOfConcern` and Description-episteme use makes `Describe_EoC_DescEp` recoverable and does not conflate it with MVPK, transformation-flow structure, specification use or refinement, or Work steps. If a flow shows only publication faces and forms, the underlying `EntityOfConcern` and Description episteme are recoverable.       | EntityOfConcern and Description episteme are visible in text and diagrams; audit shows the describing operation and its construction/reference trace.                                                             |
 | **CC-A7.14 (Describe_EoC_DescEp laws)** | Any implementation of `Describe_EoC_DescEp` MUST enforce the split DESC-1E/DESC-1N/DESC-2 law family. Episteme EoCs preserve or refine source claims under declared loss; non-episteme EoCs receive claims only through declared construction/reference/measurement/model/witness traces. Specification-use refinement is checked by the neighboring pattern governing the claim that grants the gate, not by A.7 as a third strict-distinction member. | Audit shows whether the EoC is episteme-like or non-episteme, which trace introduces claims, and which relation preserves identity, near-identity, bridge, loss, or retargeting. |
-| **CC-A7.15 (Specification-use exit)**         | If text claims that a Description episteme is a specification, formal specification, requirement, acceptance item, harnessed invariant, or measurement-criterion object, it names the exact gate: C.2.3 formality plus checkable constraint, A.21/gate or acceptance discipline, C.16 measurement-criterion discipline, A.6.2 episteme refinement, E.17 publication expression of an already admitted specification use/refinement, E.10 suffix discipline, or another neighboring pattern governing the claim. Formal notation alone is insufficient.                                     | The text shows the specification-granting gate and does not make specification a peer ontology class beside EntityOfConcern and Description.                                                     |
+| **CC-A7.15 (Specification-use boundary)**         | If text claims that a Description episteme is a specification, formal specification, requirement, acceptance item, harnessed invariant, or measurement-criterion object, it names the exact gate: C.2.3 formality plus checkable constraint, A.21/gate or acceptance discipline, C.16 measurement-criterion discipline, A.6.2 episteme refinement, E.17 publication expression of an already admitted specification use/refinement, E.10 suffix discipline, or another neighboring pattern governing the claim. Formal notation alone is insufficient.                                     | The text shows the specification-granting gate and does not make specification a peer ontology class beside EntityOfConcern and Description.                                                     |
 | **CC-A7.16 (Γ-separation)**              | describing morphisms (`Describe_EoC_DescEp`), specification-use refinements, and publication-face or publication-form projections (MVPK) carry no cost/time semantics; **Γ\_method**, Γ\_time and Γ\_work belong to **Method, Work, or System**, not to description, specification-use refinement, or publication. Any aggregate on a card cites the Γ operator and policy.   | No ledger/time fields attached to `Describe_EoC_DescEp`, specification-use refinement, or MVPK publication steps; any “publication cost” is Work in a separate publication service.             |
 | **CC‑A7.17 (Publication face and form discipline)**     | Publication names use the current publication face, form, unit, carrier, and rendering vocabulary. `PlainView`, `TechCard`, `InteropCard`, and `AssuranceLane` are faces over epistemes or views; new `...PublicationFace` or `...PublicationForm` heads are not introduced as A.7 kinds in this ontology.                                                 | Token scan shows no ad‑hoc `...PublicationFace` or `...PublicationForm` kinds.                                                       |
-| **CC‑A7.18 (Bridge+CL on crossings)**    | Any cross‑Context or cross‑plane content on a face **MUST** cite **Bridge id + CL** and **Φ policy‑ids**; penalties route to **R** only.                                                                         | Presence of Bridge ids and **Φ(CL)** and **Φ_plane** on TechCard or AssuranceLane.                        |
-| **CC-A7.19 (UTS row reference)**         | Public names shown on faces **SHALL** point to **UTS rows** with twin labels (Tech/Plain), edition pins, and SCR carrier ids.                                                                                    | Face carries UTS row ids + edition pins.                                                          |
+| **CC‑A7.18 (Bridge+CL on crossings)**    | Any cross‑Context or cross‑plane content on a face **MUST** cite **Bridge id + CL** and **Φ policy‑ids**; penalties apply to **R** only.                                                                         | Presence of Bridge ids and **Φ(CL)** and **Φ_plane** on TechCard or AssuranceLane.                        |
+| **CC-A7.19 (UTS row reference)**         | Public names shown on faces **SHALL** point to **UTS rows** with twin labels (Tech/Plain), edition pins, and carrier/source-currentness refs when source or evidence use is current. | Face carries UTS row ids + edition pins plus the current source/evidence refs where needed. |
 
 ### A.7:8 - Canonical rewrites (didactic library)
 
 | Instead of (ambiguous)                           | Write (canonical)                                                                                                                               | Why                                                       |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| “The process enforced the rule.”                 | “The **system bearing TransformerRole** enforced the rule by executing the **Method**; the **Work** cites evidence carriers ⟨ids⟩.”             | Processes don’t act; systems do. Evidence via Work + SCR. |
-| “The specification decided to tighten limits.”   | “The **design‑control service (system bearing TransformerRole)** updated the **carriers** of the spec (SCR ids), producing **Work** at ⟨time⟩.” | Epistemes are changed via carriers by systems.            |
-| “Our role is pump; the role circulates coolant.” | “The **system** plays **Cooling‑CirculatorRole**; under this role its **Method** circulates coolant; **Work** was executed ⟨when⟩.”             | Role = mask; behaviour = Method and Work.                     |
+| “The process enforced the rule.”                 | “The acting system under `U.RoleAssignment(..., roleRef=TransformerRole@Context, ...)` executed the **Method**; the **Work** cites evidence carriers ⟨ids⟩.” | Processes don’t act; systems or acting holons do. Evidence uses Work plus A.10 carrier/source-currentness relations. |
+| “The specification decided to tighten limits.”   | “The design-control system under a current role assignment updated the **carriers** of the spec, producing **Work** at ⟨time⟩ and recording the A.10/E.17 carrier and publication relations.” | Epistemes are changed via carriers by systems or acting holons. |
+| “Our role is pump; the role circulates coolant.” | “`U.RoleAssignment(holderRef=<system>, roleRef=CoolingCirculatorRole@Context, boundedContextRef=<context>)` is current; under this assignment the system has **Method** and **Capability** for coolant circulation; **Work** was executed ⟨when⟩.” | Role value is not behaviour; behaviour is Method/Capability and Work. |
 | “We followed the blueprint, so it’s done.”       | “We have a **MethodDescription** and a **Method**; if ability is claimed, name the system **Capability** separately; completion is evidenced by **Work** with ⟨timestamps, outcomes⟩.”                                   | Description, Method, and Capability are not the occurrence.                      |
 | “Team = set of members; it performed repair.”    | “The **team** is a **collective system** (boundary + coordination **Method**); it executed **Work** ⟨…⟩.”                                       | Acting groups must be systems, not sets.                  |
 | “Process cost is tracked by Γ\_method.”          | “**Work** cost is tracked by **Γ\_work**; **Γ\_method** composes the **Method** (order/branching).”                                             | Operator alignment.                                       |
-| “Holon bearing TransformerRole.”                 | “**System bearing TransformerRole**.”                                                                                                           | Only systems can bear behavioural roles.                  |
-| “Publication is a special mechanism.”            | “Publication = availability of existing Description epistemes, including Description epistemes admitted for specification use, through publication units, forms, and faces (MVPK); **describing** is `Describe_EoC_DescEp`, specification use or refinement exits to the neighboring pattern governing the claiming gate, and any execution around them is separate **Work** by a **system** on **carriers**.” | Publication is not behaviour; it is a Description-episteme-to-publication availability relation in the model. |
+| “Holon has TransformerRole.”                 | “`U.RoleAssignment(holderRef=<system-or-acting-holon>, roleRef=TransformerRole@Context, boundedContextRef=<context>)`.” | The holder, role value, and bounded context must be explicit. |
+| “Publication is a special mechanism.”            | “Publication = availability of existing Description epistemes, including Description epistemes admitted for specification use, through publication units, forms, and faces (MVPK); **describing** is `Describe_EoC_DescEp`, specification use or refinement is governed by the neighboring pattern governing the claiming gate, and any execution around them is separate **Work** by a **system** on **carriers**.” | Publication is not behaviour; it is a Description-episteme-to-publication availability relation in the model. |
 
 ### A.7:9 - Anti‑patterns (with fixes)
 
@@ -318,10 +327,10 @@ unitOfDelivery := {
    **Fix:** Name the **role**, **Method**, and **Work** explicitly.
 
 2. **Episteme‑as‑system** — “the model routed traffic”.
-   **Fix:** Name the **system** (or Transformer as a system bearing AgentialRole) that used the model; list **carriers** touched.
+   **Fix:** Name the **system or acting holon**, its `U.RoleAssignment` when a work-facing role is current, the Work that used the model, and the carriers touched.
 
 3. **Triad everywhere** — omitting **Work** entirely.
-   **Fix:** Add the Work lane: timestamps, outcomes, Γ\_time coverage.
+   **Fix:** Add the Work position: timestamps, outcomes, Γ_time coverage.
 
 4. **Operator blur** — using one “process operator” for everything.
    **Fix:** Choose among **Γ\_method**, **Γ\_time**, **Γ\_work**, **Γ\_sys**.
@@ -330,7 +339,7 @@ unitOfDelivery := {
    **Fix:** Model a **collective system** with coordination Method.
 
 6. **Evidence without carrier references** — citing ideas without carriers.
-   **Fix:** Add **SCR/RSCR** ids; tie claims to carriers.
+   **Fix:** Add A.10 carrier/source-currentness refs and tie claims to evidence or source relations.
 
 7. **Holon/system drift** — “holon maintains temperature”.
    **Fix:** Say **system**; reserve “holon” for neutral mereology.
@@ -351,8 +360,8 @@ unitOfDelivery := {
 
 | Benefit                      | Why it matters                                    | Trade‑off / Mitigation                             |
 | ---------------------------- | ------------------------------------------------- | -------------------------------------------------- |
-| **Category safety at scale** | Prevents silent logic bugs across holarchies.     | Slight verbosity → use local shorthand per A.12.   |
-| **Trustworthy evidence**     | Work plus SCR carrier references make claims auditable. | Requires discipline → provide checklists.          |
+| **Category safety at scale** | Prevents silent logic bugs across holarchies.     | Slight verbosity → use local shorthand only after the holder, role value, bounded context, and governing pattern remain recoverable. |
+| **Trustworthy evidence**     | Work plus A.10 carrier/source-currentness references make claims auditable. | Requires discipline → provide checklists.          |
 | **Operator determinism**     | Correct Γ‑flavour selection preserves invariants. | A bit more modelling → reusable templates.         |
 | **On‑ramp for managers**     | Canonical rewrites give immediate phrasing fixes. | Team training → this pattern is the training page. |
 
@@ -361,7 +370,7 @@ unitOfDelivery := {
 | Benefits | Trade‑offs / Mitigations |
 |---------|---------------------------|
 | **Category-error firewall.** Clear separation of System and Episteme, `EntityOfConcern` and Description-episteme boundary, specification use or refinement, and publication availability removes recurring modeling defects. | Authors must name publication face, form, unit, carrier, and rendering uses explicitly; mitigated by E.8 publication-face guidance. |
-| **Audit and pedagogy align.** SCR/RSCR point to carriers; Normative face houses checklists; Plain face teaches; Tech face types. | Slight increase in pattern length; offset by predictable navigation and machine‑checkable CC. |
+| **Audit and pedagogy align.** A.10 carrier/source-currentness refs point to carriers; Normative face houses checklists; Plain face teaches; Tech face types. | Slight increase in pattern length; offset by predictable navigation and machine-checkable CC. |
 | **Cross-Context safety.** Bridge+CL discipline is visible on publication faces and forms when they carry cross-context material. | Authors must cite CL policy-ids; tooling can assist (GateCrossing visibility harness), but text remains notation-independent. |
 
 ### A.7:11 - SoTA‑Echoing (post‑2015 practice alignment)
@@ -371,40 +380,40 @@ unitOfDelivery := {
 * **Active Inference (2017→2024):** separates a **generative model** (episteme) from **actions** by the agent (system), with explicit perception–action cycles — mirroring A.7’s “who can act” and stance separation. **Adopt**
 * **Constructor Theory (2016→):** frames knowledge and work as **possible transformations** enacted by constructors (systems), not by informational states — reinforcing “episteme ≠ actor”. **Adopt**
 * **Quality‑Diversity (MAP‑Elites family, 2015-2024):** archives are **sets on typed spaces** (descriptions) whose **occurrences** are runs; selection returns **sets** under admissible orders, consonant with A.7 and A.15’s set-returning discipline. **Adopt and adapt**.
-* **Refinement‑typed specs (2016→):** modern stacks (e.g., Liquid Haskell, Dafny’s post‑2017 refinements, Rust’s `uom` type‑level units) treat formalization as **monotonic refinement with pinned units and scales**. A.7 uses them only to motivate the specification-use exit; the refinement laws belong to the neighboring pattern governing the claiming specification, formality, measurement-criterion, and publication patterns. **Adapt** (terminology; pinning discipline).
+* **Refinement-typed specs (2016->):** modern refinement-typed specification toolchains (e.g., Liquid Haskell, Dafny's post-2017 refinements, Rust's `uom` type-level units) treat formalization as **monotonic refinement with pinned units and scales**. A.7 uses them only to motivate the specification-use boundary; the refinement laws belong to the neighboring pattern governing the claiming specification, formality, measurement-criterion, and publication patterns. **Adapt** (terminology; pinning discipline).
 
 ### A.7:12 - Rationale (informal)
 
 * **Engineering cognition:** Large programmes fail less from equations than from category slips (“process vs procedure vs execution”). A.7 eliminates these slips by a small, repeatable grammar.
 * **Compatible with ISO/BORO practice:** Distinguishing specifications as descriptions, procedures as capabilities, and operations as occurrences mirrors established systems-engineering discipline while keeping FPF’s holonic rigor.
-* **Didactic primacy:** Practitioners can approve sentences by spotting the quartet in context: **system bearing TransformerRole**, **Role**, **MethodDescription**, **Method**, **Capability**, **Work**, and **SCR** where evidence is claimed.
+* **Didactic primacy:** Practitioners can approve sentences by spotting the work-facing chain in context: acting system or holon, `U.RoleAssignment`, **MethodDescription**, **Method**, **Capability**, **WorkPlan**, **Work**, and A.10 evidence-provenance or carrier/source-currentness relation where evidence is claimed.
 * **Why name publication faces and forms in A.7?** Strict Distinction already guards the `EntityOfConcern` value from the Description episteme that makes claims about it. In practice, misreadings happen at the publication face: cards and tables are mistaken for EntityOfConcern values; governance words leak where physics or logic should stand. Naming publication face, form, unit, carrier, and rendering uses as orthogonal closes that gap without entangling semantics with any tool or notation. Specification use or refinement is also named only to keep it orthogonal to `EntityOfConcern`, Description, and publication expression. This preserves **C-1 universality** and **P-1 Cognitive Elegance**, while giving E.8 a crisp governing source for multi-face presentation rules.
 
 ### A.7:13 - Relations
 
- **Builds on:** A.1 (Holon), A.2 (Roles), A.3 (Transformer Quartet), A.10 (Evidence & SCR), A.12 (External Transformer), A.14 (Advanced Mereology), A.15 (Role–Method–Work Alignment).
+ **Builds on:** A.1 (Holon), A.2 and A.2.1 (role values and role-assignment relations), A.3.1/A.3.2/A.3.4 (Method, MethodDescription, Transformation), A.10 (evidence-provenance and carrier/source-currentness relations), A.14 (Advanced Mereology), A.15/A.15.1/A.15.2 (Role-Method-Work, Work, and WorkPlan Alignment).
 * **Constrains:** A.13 (Agency sits on systems only; epistemes non‑behavioural), Part B operators (**Γ_method**/**Γ_time**/**Γ_work**/**Γ_sys**) and their choice points; **publication is not a Γ‑operator**.
-* **Extends:** E.8 (Authoring conventions), E.10 (lexical and precision restoration), **Part F and Part G (UTS and CG-Spec or CHR pinning)**, B.3 (Assurance routing), C-cluster (selection and archives) by enforcing `EntityOfConcern` and Description-episteme boundary, specification-use exit, publication availability orthogonality, System and Episteme separation, same or near-same EoC discipline across views, and typed EntityOfConcern-to-Description describing discipline (**publication = Description-episteme-to-publication face, form, unit, carrier, and rendering availability in E.17**).
+* **Extends:** E.8 (Authoring conventions), E.10 (lexical and precision restoration), **Part F and Part G (UTS and CG-Spec or CHR pinning)**, B.3 (assurance-use discipline), C-cluster (selection and archives) by enforcing `EntityOfConcern` and Description-episteme boundary, specification-use boundary, publication availability orthogonality, System and Episteme separation, same or near-same EoC discipline across views, and typed EntityOfConcern-to-Description describing discipline (**publication = Description-episteme-to-publication face, form, unit, carrier, and rendering availability in E.17**).
 * **Coordinates with:** **E.18 (gate crossing and OperationalGate(profile))** for crossing visibility and publication gating, **A.21** for gate checks, **F.9, F.17, E.17, and E.18** for Bridge+UTS pinning discipline, **E.10** for lexical SD checks, and **Part F (Bridges and CL)** for explicit cross-Context identity, without embedding any notation dependence.
 
 ### A.7:14 - Practitioner one-page review (copy-paste)
 
 **Approval sentence template**
 
-> “The **system bearing TransformerRole** ⟨name⟩ plays ⟨Role⟩; it has **Capability** ⟨C⟩ to enact **Method** ⟨M⟩ (from **MethodDescription** ⟨S⟩) and executed **Work** ⟨W⟩ on ⟨time⟩, citing ⟨SCR ids⟩ as evidence carriers; resources accounted via **Γ\_work**.”
+> “`U.RoleAssignment(holderRef=⟨system-or-acting-holon⟩, roleRef=⟨Role@Context⟩, boundedContextRef=⟨Context⟩)` is current for the work; the holder has **Capability** ⟨C⟩ to enact **Method** ⟨M⟩ (from **MethodDescription** ⟨S⟩), executed **Work** ⟨W⟩ on ⟨time⟩, and cites A.10 evidence-provenance or carrier/source-currentness refs ⟨ids⟩; resources are accounted through the governing work-cost relation.”
 
 **Five binary checks**
 
-1. **Actor ban:** No “actor” token; canonical phrasing present.
+1. **Bare acting-subject check:** No bare “actor” token in normative core claims; canonical `U.RoleAssignment` phrasing is present when a work-facing role is current.
 2. **Clear quartet:** MethodDescription, Method, Capability, and Work are all named (as applicable) and not conflated.
 3. **Right Γ:** Γ\_method composes Method; Capability states a system ability/envelope under conditions; Γ\_time covers occurrences; Γ\_work accounts resources; Γ\_sys covers system properties.
-4. **Episteme handled:** Epistemes do not act; carriers listed (SCR).
+4. **Episteme handled:** Epistemes do not act; carriers or source-currentness refs are listed when evidence or source use is current.
 5. **Group clarity:** Acting group is a **collective system**, not a MemberOf set.
 
 **Diagram legend stub**
 
 * “process (domain)” ⇒ Method (design‑time) / Work (run‑time).
-* Role column lists masks (e.g., Cooling‑CirculatorRole).
+* Role column lists role values and assignment references (e.g., `CoolingCirculatorRole@Context`).
 * Behaviour column shows Method and Work, not the role itself.
 
 ### A.7:End

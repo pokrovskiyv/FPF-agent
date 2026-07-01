@@ -11,7 +11,7 @@
 
 **Intent.** Establish a **finite set of U.BoundedContext** (“**context of meaning**”), each tied to an authoritative source or canon within a **domain family**, so that all later moves (term harvesting, clustering, role naming, cross‑context bridges) operate on **local meanings** rather than on drifting, globalised words.
 
-**Applicability.** Use **at the start** of any unification effort for **any FPF pattern** (Enactment (`U.RoleAssignment` + `U.RoleEnactment`), Sys-CAL, KD-CAL, Kind-CAL, LCA-CAL…) and **whenever** a discipline canon materially changes (new edition, re-framing, seminal result).
+**Applicability.** Use **at the start** of any unification effort for **any FPF pattern** (role assignment and performed-work attribution, Sys-CAL, KD-CAL, Kind-CAL, LCA-CAL…) and **whenever** a discipline canon materially changes (new edition, re-framing, seminal result).
 
 **Non‑goals.** No tooling, workflow, or editorial roles. No global ontology. No cross‑context equations. This pattern describes **how to think**, not how to store.
 
@@ -23,7 +23,7 @@ Without explicit context of meaning:
 2. **Scope mirages.** One influential standard is mistaken for *the* domain.
 3. **Retro‑lock.** Old editions become the implicit truth simply because they were “there first”.
 4. **Category bleed.** Behavioural roles, epistemic statuses, deontic permissions mix because their contexts were never fixed.
-5. **Name inflation.** New U.Types appear just to “stabilise” unstable words.
+5. **Name inflation.** Convenience root kind labels or global names appear just to "stabilise" unstable words.
 
 ### F.1:3 - Forces
 
@@ -123,7 +123,7 @@ Declare **DomainDistance** policy (cosine or transport) and δ_family threshold;
 
 ### F.1:10 - Micro‑examples (illustrative only)
 
-*One unification line: Enactment (`U.RoleAssignment` + `U.RoleEnactment`) with sensing and execution.*
+*One unification line: role assignment and performed-work attribution with sensing and execution.*
 
 * **BPMN 2.0 (2011)** — *workflow family*.
   *Scope gist:* flow nodes, sequence flows, participants (design‑time).
@@ -166,7 +166,7 @@ Declare **DomainDistance** policy (cosine or transport) and δ_family threshold;
 
 > Each example shows **the cut** (the Contexts you keep in view) and the **thinking pay‑off** you get *before* any harvesting, clustering, or bridging.
 
-#### F.1:12.1 Enactment (`U.RoleAssignment` + `U.RoleEnactment`) with sensing & execution (service acceptance)
+#### F.1:12.1 Role assignment and performed-work attribution with sensing and execution (service acceptance)
 
 **Unification line.** Enactment + KD‑CAL (sensing) + Sys‑CAL (execution).
 
@@ -187,7 +187,7 @@ Declare **DomainDistance** policy (cosine or transport) and δ_family threshold;
 
 #### F.1:12.2 Method quartet with types & measurement (model state graph)
 
-**Unification line.** Method‑CAL + Kind-CAL + KD‑CAL.
+**Unification line.** Method/work stack (A.3/A.15/B.1.5) + Kind-CAL + KD‑CAL.
 
 **Contexts (five Cards).**
 
@@ -200,7 +200,7 @@ Declare **DomainDistance** policy (cosine or transport) and δ_family threshold;
 **Thinking pay‑off.**
 
 * You keep **Method** (abstract how‑to) separate from **MethodDescription** (epistemic recipe) and **Execution** (run) because the Contexts already split design vs run.
-* You avoid treating **FCA “concept”** as a **U.Type**; later F.9 can bridge OWL classes to FCA concepts with cautions.
+* You avoid treating **FCA "concept"** as a root kind; later F.9 can bridge OWL classes to FCA concepts with cautions.
 
 #### F.1:12.3 Control & actuation with services (operational SLOs in plants)
 
@@ -284,7 +284,7 @@ A.11 **Ontological Parsimony** — motivates the small cut.
 **F.9** (Alignment & Bridge): only F.9 may relate Contexts; never F.1–F.4.
 
 **Used by.**
-Extention patterns in Part C (Sys‑CAL, KD‑CAL, Kind-CAL, Method‑CAL, LCA‑CAL) as the *lexical starting grid* for their examples and definitions.
+Extension patterns in Part C (Sys‑CAL, KD‑CAL, Kind-CAL, LCA‑CAL) plus the method/work stack (A.3/A.15/B.1.5) as the *lexical starting grid* for their examples and definitions.
 
 ### F.1:16 - Migration notes (conceptual)
 

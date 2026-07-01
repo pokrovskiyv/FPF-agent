@@ -1,10 +1,16 @@
 ## C.2.5 - `U.LanguageStateClosureDegree`
 
 > **Type:** Definitional (D)
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 **Plain-name.** Language-state closure degree.
+
+**Use this pattern when.** Use C.2.5 when a governed `U.Episteme` publication must say how fixed its candidate space, route space, or frame space has become before endpoint use, reopening, or retreat.
+
+**What goes wrong if missed.** A confident tone is mistaken for closure, closure is mistaken for truth or gate authority, or a closure drop leaves endpoint expectations and route commitments silently hanging.
+
+**What this buys.** A separate ordinal characteristic for closure degree, so teams can distinguish exploration, stabilization, selected route, guarded fixation, and admissible retreat without collapsing closure into formality, articulation, warrant, or obligation.
 
 ### C.2.5:1 - Problem frame
 A governed `U.Episteme` may already be explicit enough for publication while its declared position claim remains intentionally open to rival routes or frames. The declared language-state chart over `U.CharacteristicSpace` therefore needs a separate basis-slot governing pattern for how fixed or closed the current candidate space has become.
@@ -21,6 +27,10 @@ Closure is often hidden inside vague words such as "ready", "settled", or "open"
 
 ### C.2.5:4 - Solution
 `U.LanguageStateClosureDegree` is an ordinal characteristic over how fixed the current candidate set, framing, and admissible next moves are in a published position claim in the declared language-state chart over `U.CharacteristicSpace`.
+
+#### C.2.5:4.0a - Kind and characteristic boundary
+
+`U.LanguageStateClosureDegree` is a dependent durable characteristic value under the declared `U.LanguageStateSpace` / `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the closure-degree basis slot and ordinal scale discipline for governed episteme publication positions. Local route commitments, gate claims, or authority states remain neighboring claims unless their governing patterns make them current.
 
 #### C.2.5:4.1 - Characteristic specification
 - **Kind:** CHR characteristic.
@@ -70,7 +80,7 @@ The pattern makes closure explicit, which resists hidden overconfidence but may 
 
 ### C.2.5:8 - Common Anti-Patterns and How to Avoid Them
 - **Closure by mood.** A sentence sounds decisive, so teams assume high closure. Publish `CD` explicitly.
-- **Irreversible drift.** Closure rises informally but no reopen path exists. Use `A.16.2`.
+- **Irreversible drift.** Closure rises informally but no reopening condition exists. Use `A.16.2`.
 - **Authority smuggling.** High closure is treated as if it were automatically a gate or obligation. Route those consequences through the proper governing patterns.
 
 ### C.2.5:9 - Consequences
@@ -86,7 +96,6 @@ The facet aligns with iterative design, open-world reasoning, and exploratory se
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
 - Coordinates with: `C.2.4`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`.
 - Constrains: reopen, backoff, and endpoint docking guards.
-
 ### C.2.5:13 - Worked Examples and Retreat Cases
 
 #### C.2.5:13.1 - Explicit but still open
@@ -109,7 +118,7 @@ To assign `CD`, ask:
 - what would count as an admissible reopen trigger?
 
 #### C.2.5:14.2 - Review prompt
-A reviewer should ask whether closure is being inferred from tone, from hierarchy, or from social pressure rather than from an explicit narrowing of route or frame space.
+An assurance reader should ask whether closure is being inferred from tone, from hierarchy, or from social force rather than from an explicit narrowing of route or frame space.
 
 #### C.2.5:14.3 - Governance note
 Whenever `CD` substantively affects gates, commitments, or late endpoint authority, the supporting guard, `governingPatternRef`, or `authoritySourceRef` should be visible.
@@ -123,8 +132,7 @@ Contexts may refine the starter closure anchors, but shall keep the ordinal prog
 Words such as "settled", "closed", "final", or "open" should be treated as migration prompts into explicit `CD` claims and, where needed, into named `A.16.2` moves.
 
 #### C.2.5:15.3 - Boundary reminder
-`CD` is not warrant strength and not a gate decision. It speaks only about the local fixity of the current episteme/publication path and its candidate space.
-
+`CD` is not warrant strength and not a gate decision. It speaks only about the local fixity of the current episteme or publication position and its candidate space.
 ### C.2.5:16 - Closure Publication Package Discipline
 
 #### C.2.5:16.1 - Minimal closure package
@@ -143,10 +151,10 @@ Closure may rise because evidence eliminates rivals, governance temporarily bind
 #### C.2.5:16.3 - Partial-closure rule
 Closure may be local rather than global. A note can be closed enough for one route while remaining open about broader explanation or classification; a prompt may be fixed enough to hold one question steady while still open enough that rival answers remain live. Publish that locality explicitly.
 
-### C.2.5:17 - Retained and Withdrawn Authority Handling
+### C.2.5:17 - Continuing and Withdrawn Authority Handling
 
 #### C.2.5:17.1 - Authority retention rule
-If higher `CD` carried endpoint expectations, guard pressure, or route commitments, a later closure drop must say which consequences remain and which are withdrawn.
+If higher `CD` carried endpoint expectations, guard claims, or route commitments, a closure drop must say which consequences remain and which are withdrawn.
 
 #### C.2.5:17.2 - Admissible retreat record
 An admissible retreat through `reopen`, `sketchBackoff`, or `respecify` should retain:
@@ -164,7 +172,7 @@ High `CD` may coexist with obligations, but `CD` is not itself an obligation-bea
 ### C.2.5:18 - Review Matrix and Reopen Tests
 
 #### C.2.5:18.1 - Review matrix
-A reviewer should ask:
+An assurance reader should ask:
 
 - what was narrowed;
 - by what `governingPatternRef`, `authoritySourceRef`, or guard it was narrowed;
@@ -173,7 +181,7 @@ A reviewer should ask:
 - whether the publication distinguishes local closure from whole-context finality.
 
 #### C.2.5:18.2 - False-finality test
-Words such as "final", "settled", or "decided" should be challenged unless the route/guard package is explicit. Final-sounding rhetoric often overstates actual closure.
+Words such as "final", "settled", or "decided" should be challenged unless the route-governance and guard package is explicit. Final-sounding rhetoric often overstates actual closure.
 
 #### C.2.5:18.3 - Cross-facet reminder
 Low `CD` does not imply low articulation, low anchoring, or poor representation. Reviewers should not treat openness as low seriousness.

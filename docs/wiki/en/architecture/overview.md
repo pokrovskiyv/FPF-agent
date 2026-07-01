@@ -5,7 +5,7 @@ sources:
   - .claude-plugin/plugin.json
   - CLAUDE.md
   - Readme.md
-last_updated: 2026-06-16T07:21:51Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - architecture
   - overview
@@ -16,7 +16,7 @@ tags:
 
 ## What this repository is
 
-The **First Principles Framework (FPF)** specification (~61 000 lines) plus a **skill** that applies FPF patterns to user coordination problems — while keeping all FPF terminology invisible.
+The **First Principles Framework (FPF)** specification (~94 000 lines) plus a **skill** that applies FPF patterns to user coordination problems — while keeping all FPF terminology invisible.
 
 The project is **dual-packaged**: the same repository is a plugin for **Claude Code** (via `.claude-plugin/`) and for **Codex CLI** (via `.codex-plugin/` + a home-local marketplace). Current version: **0.6.3** (kept in lockstep across both manifests).
 
@@ -25,7 +25,7 @@ The moving parts on disk:
 | Layer | Location | What it holds |
 |-------|----------|---------------|
 | **Spec monolith** | `FPF-Spec.md` | Upstream source of truth; never edited directly |
-| **Decomposed sections** | `sections/` | ~240 generated files + metadata.json + routes + xrefs + FAISS index |
+| **Decomposed sections** | `sections/` | ~307 generated files + metadata.json + routes + xrefs + FAISS index |
 | **Skill entry (Claude Code)** | `skills/fpf/SKILL.md` | Burden-based routing logic read by Claude Code |
 | **Skill entry (Codex CLI)** | `.agents/skills/fpf/SKILL.md` | Same skill, surfaced to Codex |
 | **Agent team** | `agents/fpf-*.md` | Five agents: classifier, retriever, reasoner, reviewer, sync |

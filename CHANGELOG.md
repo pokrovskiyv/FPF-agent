@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-07-01
+
+### What's New
+- The skill now covers a significantly larger slice of the FPF specification — the upstream spec grew to ~94,000 lines (up from ~86,000), bringing new patterns and refinements across all analysis areas; all 307 sections are indexed and searchable.
+- Every section topic now has a plain-language one-sentence description, so the retriever can explain what it's loading without jargon, and you can browse the topic index without reading spec pages.
+- All 50 glossary terms now carry plain-language definitions (max 80 characters) so you can quickly check what any key concept helps with, without reading a spec section.
+
+### All Changes
+- **chore**: sync upstream FPF-Spec (94 162 lines, 7 new patterns) + full rebuild
+- **chore**: AI-enhance all section _index.md with plain-language summaries
+- **chore**: AI-enhance glossary-quick.md with plain-language definitions
+- **docs**: refresh wiki — updated route chains, architecture overview (94k lines, 307 sections)
+
 ## 2026-06-16
 
 ### What's New

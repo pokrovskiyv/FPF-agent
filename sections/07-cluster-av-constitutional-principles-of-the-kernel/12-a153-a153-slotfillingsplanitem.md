@@ -1,450 +1,401 @@
 ## A.15.3 - SlotFillingsPlanItem
 
 > **Tech-name:** `SlotFillingsPlanItem`
-> **Plain-name:** planned slot-fillings baseline item (planned baseline)
-> **Type:** Architectural (A)
+> **Plain-name:** planned slot-fillings baseline item
+> **Short code:** `SFPI`
+> **Type:** Definitional WorkPlanning pattern
 > **Status:** Stable
-> **Normativity:** Normative (unless explicitly marked informative)
-> **Placement:** Part A → A.15 (Work & WorkPlanning)
-> **Builds on:** `U.WorkPlan` (A.15.2), performed-work occurrence discipline (A.15.1 and E.18), Context discipline (E.10.D1), `MechSuiteDescription` (A.6.7), and publication/view discipline (E.17; views are projections, not places of meaning)
-> **Used by:** planned-baseline requirements from suites or kits; P2W (selection -> WorkPlanning -> WorkEnactment); Part G universalization
-> **Purpose (one line):** provide a universal, context-explicit **planned baseline** that maps a slot-bearing description's `SlotKind`s to **planned fillers**, to be consumed by Work enactment where launch values are finalized.
+> **Normativity:** Normative unless explicitly marked informative
+> **Placement:** Part A -> A.15 work family
+> **Builds on:** `A.15.2 U.WorkPlan`, `A.15.1 U.Work`, `A.6.5 U.RelationSlotDiscipline`, `E.10.D2`, `E.17`, `E.18.1`, `E.20`, and `E.24`
+> **Used by:** P2W work-planning slices, suite or kit planned baselines, work-entry readiness checks, Part G planned-baseline references, and performed-work variance records
+> **One-line purpose:** name one planned baseline item that states which planned fillers are intended for which SlotKinds of one slot-bearing description before performed work occurs.
 
-**At a glance.** Use `SlotFillingsPlanItem` when a `U.WorkPlan` needs a planned baseline saying which planned fillers will occupy which `SlotKind`s of one slot-bearing description before work is enacted.
+**At a glance.** Use `SlotFillingsPlanItem` when a `U.WorkPlan` needs more than a date, budget, or intended method: it needs a reproducible planned baseline saying which planned fillers are intended for one slot-bearing description's SlotKinds.
 
-**Use this when.** Use this pattern when planned references, policies, spec pins, method-description references, evidence pin refs, or crossing-policy pins must be fixed for a P2W work-planning slice, and the plan must stay distinct from launch values, gate decisions, evidence, and performed work.
+**Use this when.** Use this pattern when a P2W, work-planning, or work-entry-readiness slice needs planned references, policy pins, method-description refs, edition pins, evidence-reference pins, guard-preparation refs, or crossing-policy refs to stay fixed before performed `U.Work`.
 
-**First output.** One `SlotFillingsPlanItem` with exactly one `target_slot_bearing_description_ref`, explicit `bounded_context_ref`, EntityOfConcern ref, time selector or time rule, authoritative planned-filling rows, and any expected guard, evidence, edition, or crossing pins needed before work enactment.
+**First output.** One `SlotFillingsPlanItem` naming exactly one `target_slot_bearing_description_ref`, one `bounded_context_ref`, the EntityOfConcern under planning, a time selector or time rule, authoritative planned-filling rows, and any guard-preparation, evidence-reference, readiness-preparation, edition, or crossing-policy refs needed before performed work.
 
-**Working action path.**
-1. Name the slot-bearing description whose `SlotKind` set is being filled.
-2. Name the EntityOfConcern and grounding holon or reference plane when needed.
-3. Name context, time selector or time rule, and any P2W slice or publication scope needed for reproducibility.
-4. Fill the authoritative rows by `SlotKind`, using ByValue or ByRef with concrete RefKinds and edition pins when needed.
-5. Keep derived indices, views, guard pins, evidence pins, and crossing pins as projections or expectations; do not turn them into execution, gate, evidence, or launch-value claims.
+**Working use order.**
 
-**Ordinary use.** For a minimal baseline, context, time selector, target slot-bearing description, EntityOfConcern ref, and planned-filling rows are enough.
+1. Confirm that the current claim is a planned baseline inside a `U.WorkPlan`, not the slot-bearing description itself and not performed work.
+2. Name the target slot-bearing description and use its SlotSpecs from the governing description pattern, with A.6.5 slot discipline.
+3. Name the EntityOfConcern under planning and the bounded context; add a grounding holon only when the current claim needs one.
+4. Write planned-filling rows from SlotKind to planned filler, with ByValue or concrete RefKind mode and edition pins when reproducibility depends on them.
+5. Keep projections, views, evidence-reference pins, guard-preparation refs, and crossing-policy refs as secondary references. They do not add rows, create evidence, pass a gate, or finalize launch values.
 
-**Reliance-bearing use.** Use the fuller record when reproducibility, launch guard preparation, crossing expectations, suite or kit reuse, Part G universalization, or P2W carry-through depends on the baseline.
+**Ordinary use.** For a minimal baseline, use context, time selector, target slot-bearing description, EntityOfConcern ref, and planned-filling rows.
 
-**Stop condition.** Stop once planned fillers are explicit enough for the intended WorkPlanning move, or lower the claim to a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap without claiming a conforming planned baseline.
+**Reliance-bearing use.** Use the fuller record when reproducibility, launch-guard preparation, crossing expectations, suite or kit reuse, Part G universalization, publication-view projection, or P2W carry-through depends on the baseline.
 
-**Not this pattern when.** Not this pattern when the live object is the slot-bearing description itself, a mechanism definition, a performed-work occurrence, a gate decision, a launch-value witness, evidence, assurance, or a publication view. Use the corresponding governing pattern and return here only for the planned slot-filling baseline.
+**Stop condition.** Stop once the planned rows are explicit enough for the work-planning use, or lower the claim to a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap without claiming a conforming planned baseline.
 
-**Name and reference discipline (informative)**
-* **Kind reuse:** This pattern uses the kind name `SlotFillingsPlanItem`. It reuses existing Core terms and disciplines (e.g., `U.WorkPlan.PlanItem`, SlotKind, ValueKind, RefKind, and refMode discipline, edition pinning, `U.BoundedContext`, and the P2W split between WorkPlanning and WorkEnactment).
-* **`SlotFillingsPlanItem` (kind name):** keep the suffix `PlanItem` to preserve the WorkPlanning placement. Do not mint aliases like *SlotBinding…* (conflicts with the A.6.5 binding discipline) or *SlotValue…* (ambiguous slot-bearing description or context).
-* **Anchor names:** if a §4.2 anchor is materialized as a formal field name, keep `…_ref` only for fields whose values are concrete RefKind handles, and keep `…_id` only for identifiers. Avoid introducing generic placeholders such as `SpecRef`, `PolicyRef`, or `GateRef` inside this pattern; use existing concrete ref kinds. When no concrete ref kind exists, the planned-baseline claim is blocked until a governing FPF pattern defines the kind.
-* **Row vocabulary:** treat `SlotFillingRow` and `PlannedFiller` as internal names of this pattern. Do not treat them as shared tokens outside this pattern unless a governing FPF pattern defines them.
+**What goes wrong if missed.** Teams hide planned choices in mechanism prose, suite descriptions, generated cards, "latest" references, local checklists, or execution logs. Later nobody can tell what was planned, what was performed, which edition changed, or which variance belongs to performed work.
 
-### A.15.3:1 - Problem frame
+**What this buys.** A small planned-baseline record that lets later performed work cite the intended slot fillings and record variance without rewriting the plan after the fact.
 
-FPF frequently needs to make **reproducible, reviewable choices** about *what fills which conceptual slot* (specification references, policy references, mechanism-instance references, time selectors, evidence hooks, etc.) **before** any Work is enacted. These choices must be visible as a planned baseline for a concrete P2W slice (CG-frame, path slice, or publication scope), and must remain distinct from run-time “actuals” and gate decisions.
+**Not this pattern when.** Not this pattern when the current claim is the slot-bearing description itself (`A.6.5` plus the governing description pattern), a mechanism definition (`A.6.1` or `E.20`), a performed work occurrence (`A.15.1`), an ordinary work plan without slot-filling rows (`A.15.2`), work-entry readiness or full-kit condition (`A.15.5`), evidence or assurance (`A.10` or `B.3`), a gate or constraint decision (`A.20` or `A.21`), publication-use behavior (`E.17`), or a declarative representation overread as work control (`C.2.P.DR`).
 
-However, absent a universal WorkPlanning plan item for architecture-by-planned-slot-filling, practitioners tend to hide these choices inside mechanism prose, CG-Spec and CN-Spec descriptions, local cards, or informal checklists—making Part G patterns difficult to universalize and making Work audit trails ambiguous.
+### A.15.3:1 - Context
 
-`SlotFillingsPlanItem` addresses this by defining a **WorkPlan PlanItem kind** whose job is to state, in one place and with explicit context, a mapping:
+`A.15.2` can already say that work is planned. Some plans also need to freeze a more specific relation: "for this planned work, this slot-bearing description will use these planned fillers in these SlotKinds under this bounded context and time rule."
 
-> *(Target slot-bearing description, slot kind) → planned filler (ByValue | ByRef(<concrete RefKind>), with edition pins when needed)*
+That extra relation is not the target description, not the mechanism, not a publication view, and not the later performed work. It is a plan item inside work planning. `SlotFillingsPlanItem` gives that relation a stable place.
 
-and to do so in a form that can be cited by Work enactment and by suite or kit spec pins, without collapsing into “execution” or “decision logging”.
+Typical situations:
 
-### A.15.3:2 - Problem (what breaks without it)
+- a CHR or CG-frame plan chooses comparator specs, normalization methods, indicator policies, or guard refs before work;
+- a mechanism-suite plan chooses which suite description, method-description edition, or policy ref will be used later;
+- a QD or archive plan fixes descriptor and distance-definition editions before selection work;
+- a refresh or parity plan cites planned refs so later performed work can record variance rather than silently changing the plan.
 
-Without an explicit `SlotFillingsPlanItem` baseline, at least six failure modes recur:
+### A.15.3:2 - Problem
 
-1. **Hidden slot-bearing-description reference and meaning drift:** a planned filler is stated without making explicit *whose* slot set is being filled, allowing silent reinterpretation of `SlotKind`s across kits or suites.
+Without an explicit `SlotFillingsPlanItem`, six failures recur:
 
-2. **Planning and enactment collapse:** plan documents get “backfilled” with run-time values, so there is no stable planned baseline and no clean variance trail. WorkPlan explicitly warns against this.
+1. **Plan and performed-work blur.** Planned fillers get treated as launch values or run-time actuals.
+2. **Slot drift.** A SlotKind's meaning changes because the target description edition changed, but the plan still reads as if it meant the old description.
+3. **Implicit latest.** Source text says "use latest" or "current best" without a time selector or pinned edition.
+4. **View becomes authority.** A card, dashboard, or generated view becomes the de facto place where planned rows live.
+5. **Mechanism prose hides planning.** Suite or mechanism text quietly carries chosen fillers even though those choices vary by plan instance.
+6. **Variance disappears.** After work happens, the plan is edited to match the performed work, erasing the gap that audit or improvement needs.
 
-3. **Implicit time (“latest”) and implicit recency:** planned claims about comparability or launch readiness omit an explicit `Γ_time`, which violates the time discipline (“no implicit recency”).
+### A.15.3:3 - Forces
 
-4. **Edition ambiguity:** references to method, policy, and specification references are not edition-pinned where reproducibility requires it, or the plan mutates the edition vector instead of citing pinned editions (edition changes are crossings, not “plan edits”).
-   A particularly harmful subtype is **edition-key backfill**: retroactively editing a previously used baseline so that an edition-key change looks like an innocent PlanItem edit (hiding the required GateCrossing witness and breaking audit traceability).
-
-5. **Crossing invisibility:** cross-context or cross-plane expectations (Bridge + policy ids) are not stated at plan time, so downstream gate crossings appear as “magic” rather than traceable expected constraints.
-
-6. **G-pattern fragmentation:** each Part G pattern invents its own place to stash planned refs (method pick, comparator pick, QD archive config, etc.), blocking a clean “G.Core” universal layer and making modular reuse brittle.
-
-### A.15.3:3 - Forces (what we must balance)
-
-* **Strict distinction:** planned baseline is not a run-time witness; launch values are finalized only in Work enactment.
-* **Context must be explicit:** every normative claim or rule is context-bound; the PlanItem must carry its context rather than relying on file location or prose.
-* **Time must be explicit:** no implicit “latest”; any plan that will be cited by comparability or launch-readiness checks needs an explicit `Γ_time` selector or rule.
-* **SlotKind meaning is stable:** the plan may choose fillers, but must not reinterpret SlotKinds or smuggle new semantics into indices.
-* **Derived indices must not become “places of meaning”:** projections like “planned spec refs” are useful, but must remain derivable from the authoritative rows.
-* **Conceptual, not procedural:** no solver steps, no lints, no “data governance”; this is an epistemic object used by humans in review.
-* **Supports universalization:** one PlanItem pattern must be usable across the whole of Part G, not just G.5.
-* **Integrates with suites or kits:** suites may require a planned-baseline ref and may act as slot-bearing descriptions.
-
-| Force | Tension |
+| Force | Demand |
 | --- | --- |
-| Planning and enactment split | Plan must be citeable without containing run-time values. |
-| Slot meaning stability | SlotKinds must not drift by implicit slot-bearing-description changes. |
-| Edition honesty | Baselines must pin editions where meaning changes; avoid “latest”. |
-| Suite and kit modularity | Suite descriptions define slot interfaces and obligations; baselines choose fillers for a plan instance. |
-| Auditability | A practitioner or auditor must reconstruct “what was planned” without chasing hidden defaults. |
-| Extensibility | Allow suite-specialized variants without breaking universal core. |
+| WorkPlanning vs performed work | The baseline should be citeable before work without containing actuals, launch values, or gate outcomes. |
+| Slot meaning stability | The plan can choose fillers; it cannot redefine the SlotKinds of the target description. |
+| Edition and time honesty | References that matter for reproducibility need edition and time pins. |
+| Suite and kit modularity | Suite descriptions can require planned baselines, but each plan instance still chooses its fillers separately. |
+| Publication affordability | Cards and views help people read the baseline, but they cannot become a second canonical row source. |
+| Audit and improvement | Later work needs a stable planned baseline so variance can be attributed and improved. |
 
 ### A.15.3:4 - Solution
 
-#### A.15.3:4.1 Definition
+#### A.15.3:4.0 - Planned slot-filling ontic
 
-A `SlotFillingsPlanItem` is a **kind of `U.WorkPlan.PlanItem`** whose content is a **planned slot-fillings ledger** for a *single* slot-bearing description, within an explicit P2W context.
+`A.15.3` governs the planned slot-filling ontic: a bounded planning relation in which one `U.WorkPlan.PlanItem` states which planned fillers are intended for which SlotKinds of one slot-bearing description before performed work occurs.
 
-It is a **WorkPlanning baseline**, intended to be:
+Keep three levels distinct:
 
-* produced and accepted in WorkPlanning,
-* **cited** by downstream Work enactment (as planned baseline),
-* compared against actual fillings (variance recorded in Work, not by rewriting the plan).
+- the planned slot-filling ontic: the E.24 ontic-level SlotRelation architecture for planned fillers of SlotKinds before performed work;
+- `SlotFillingsPlanItem`: one filled `U.WorkPlan.PlanItem` value over that ontic for one bounded planning use;
+- a card, table, view, schema, checklist, or document that publishes or projects a `SlotFillingsPlanItem` value.
 
-**Normative note (EntityOfConcern, Description episteme, specification use, and views):** A `SlotFillingsPlanItem` is a Description episteme for planning (a PlanItem). It MAY be projected into `U.View` (e.g., `TechCard(SlotFillingsPlanItemRef)`), but any view is strictly a projection and MUST NOT introduce additional claims or “shadow defaults”.
+By E.24 and E.24.UK, this is not an ontic without a kind settlement. The selected settlement reuses the root `U.WorkPlan` U-kind and admits `SlotFillingsPlanItem` as a dependent durable plan-item U-kind within `U.WorkPlan`; its filled instances are values inside a `U.WorkPlan`. The planned slot-filling ontic is the ontic-level SlotRelation that gives that dependent U-kind its identity and filler discipline. It does not introduce an independent root U-kind, a C.3 subkind claim, or a publication form. The stable identity is the planned-baseline relation among one work plan, one target slot-bearing description edition, one EntityOfConcern, one bounded context, one time selector or time rule when required, and one planned-filling row set. Changing the planned baseline before work creates a new PlanItem edition or a new PlanItem; performed-work variance does not rewrite the cited baseline.
 
-#### A.15.3:4.2 Core conceptual descriptors (not a data schema)
+The ontic keeps these objects distinct:
 
-A conformant `SlotFillingsPlanItem` SHALL provide the following description (names are indicative; the semantics are normative):
+- `SlotFillingsPlanItem`: the dependent plan-item U-kind in this settlement; a filled value lives inside a `U.WorkPlan`, and the dependent U-kind does not introduce an independent root U-kind, the ontic-level SlotRelation itself, or a second slot ontology.
+- `target_slot_bearing_description_ref`: the Description episteme whose SlotSpecs supply the SlotKinds being planned.
+- `planned_fillings[]`: the row set that connects each selected SlotKind to a planned filler, filler mode, and edition pin when current.
+- preparation refs: guard, evidence-reference, crossing-policy, time, context, or source-currentness refs that prepare later work without becoming evidence, a gate decision, or performed work.
+- performed-work variance relation: the later `U.Work`, gate, evidence, result, archive, or variance relation that states what happened against the cited baseline.
 
-1. **PlanItem core (from A.15.2)**
-   The PlanItem MUST remain a WorkPlanning plan item: it may include assumptions, dependencies, constraints, expected publications or records, and notes; it MUST NOT contain run-time logs or actual fillings.
+Ontic-level `onticSlotRelation`:
+
+| Slot group | Required or optional-in-use | Filler discipline |
+| --- | --- | --- |
+| Plan identity | Required | `plan_item_id`, `kind = SlotFillingsPlanItem`, `work_plan_ref`, and optional `plan_item_edition`; governed by `A.15.2` and this pattern. |
+| Target slot-bearing description | Required | One Description episteme that exposes SlotSpecs; governed by the target description pattern and `A.6.5`. |
+| EntityOfConcern, context, and time | Required for a conforming baseline | `entity_of_concern_ref`, `bounded_context_ref`, and `time_selector_ref` or `time_rule_ref` when reproducibility, currentness, or comparison depends on time. |
+| Planned-filling rows | Required | Each row names a SlotKind from the target description, planned filler, ByValue or concrete RefKind mode, and edition pin when current; filler values keep their own governing patterns. |
+| Preparation refs | Optional-in-use | Guard, readiness-preparation, evidence-reference, crossing-policy, source-currentness, bridge, or refresh refs; they prepare later relations but do not become `WorkEntryReadiness@Context`, gate decisions, evidence sufficiency, crossings, or performed work. |
+| Derived projections | Optional-in-use | Cards, records, tables, views, indices, or summaries are E.17 publication or view-use projections; they are not the ontic and not row authority. |
+| Variance policy | Required for reliance-bearing use | Names how later `U.Work`, gate, evidence, result, archive, or variance relations cite the baseline and record substitutions, missing fillers, extra fillers, launch values, or edition changes. |
+
+A conforming instance fills only the slots that are current to the planning claim. Optional refs stay absent when the project does not rely on them. The open-world assumption is preserved: not writing an optional planned filler does not say that no such project value exists; it only says the current planned-baseline claim does not rely on it.
+
+Use this ontic whenever a suite, kit, comparison, selector, archive, refresh, work-entry-readiness check, or P2W carry-through needs project-specific editions, policy ids, evidence-reference pins, bridge ids, method-description refs, or other planned fillers. Use the neighboring governing pattern when the current object is mechanism meaning, comparison result, selection result, work-entry readiness, performed work, evidence, gate passage, publication-use, source-currentness, or refresh.
+
+This ontic is selected because dependent patterns need a shared settlement. Without it, suite, comparison, selector, archive, refresh, and P2W patterns would each invent a local baseline field, a local planned-pin phrase, or a local warning that planned values are not performed values. With this ontic, they cite `A.15.3` and keep their own EoC thin.
+
+#### A.15.3:4.1 - Definition
+
+`SlotFillingsPlanItem` is a kind of `U.WorkPlan.PlanItem` whose content is one planned slot-filling baseline for one slot-bearing description in one bounded context.
+
+It is:
+
+- produced inside work planning;
+- tied to one target description episteme that supplies SlotSpecs;
+- pinned enough to replay what was planned;
+- cited later by performed `U.Work` when variance, substitutions, launch values, telemetry, or result records are written.
+
+It is not:
+
+- the target slot-bearing description;
+- a `MechanismDefinitionRef`;
+- a gate decision, evidence item, assurance result, publication truth, or performed-work occurrence;
+- a second slot ontology beside A.6.5.
+
+#### A.15.3:4.2 - Core fields
+
+A conforming `SlotFillingsPlanItem` states these fields when the corresponding claim is current:
+
+1. **Plan identity**
+   - `plan_item_id`
+   - `kind = SlotFillingsPlanItem`
+   - `work_plan_ref`
+   - optional `plan_item_edition`
 
 2. **Target slot-bearing description**
+   - `target_slot_bearing_description_ref`
+   - The target is a Description episteme that declares SlotSpecs, such as a suite description, kit description, method-description family, or other description governed by its own pattern.
+   - Do not target `MechanismDefinitionRef` directly. If a mechanism-level baseline is needed, introduce or cite a description that exposes the slots being planned.
+   - When the target description's SlotSpecs are edition-sensitive, the target ref is edition-pinned.
 
-   * `target_slot_bearing_description_ref : <concrete …DescriptionRef>` (required)
-     Identifies the **Description episteme whose SlotKind set is being filled** (e.g., a kit description or a suite description).
-     The slot-bearing description MUST be referenced as an **edition-addressable Description episteme** (a concrete `…DescriptionRef` such as `MechSuiteDescriptionRef`, `…KitDescriptionRef`, etc.),
-     and MUST NOT target a `MechanismDefinitionRef`. If a standalone mechanism baseline is needed, introduce an explicit Description-scoped slot-bearing description wrapper, such as a mech kit or suite-of-one, and target that.
-     A `MechSuiteDescription` MAY serve as a slot-bearing description for this purpose.
-     If the slot-bearing description’s SlotKind interface is edition-sensitive (or expected to evolve), the reference MUST be edition-pinned (e.g., `target_slot_bearing_description_ref.edition`) whenever the PlanItem is used as a reproducibility baseline.
+3. **EntityOfConcern and context**
+   - `entity_of_concern_ref`
+   - `bounded_context_ref`
+   - optional `grounding_holon_ref` when the EntityOfConcern is not itself a holon and the current comparison or reference-plane claim needs grounding;
+   - optional `reference_plane_ref` only when the governing measurement, CHR, or comparison pattern defines that field.
 
-3. **EntityOfConcern and grounding (for the measurement or selected filler under planning)**
+4. **Time selector or time rule**
+   - `time_selector_ref` or `time_rule_ref`
+   - Use this when "current", "latest", reproducibility, comparability, launch preparation, or source-currentness matters.
+   - When time is required, use exactly one of the two forms; both-present and both-absent baselines are nonconforming.
 
-   * `described_entity_ref : <concrete RefKind>` (required)
-     The referent is the *EntityOfConcern* (C.2.3 role): the thing the planned baseline is **about**.
-     It MUST NOT be silently conflated with a holon. (Example: a baseline can be about a width measurement while the grounding holon is a stool with that width.)
-     Use a concrete RefKind of the EntityOfConcern (e.g., `U.HolonRef`, `U.MeasureRef`, …). Do **not** mint a new generic `EntityRef` token inside this pattern.
-   * `grounding_holon_ref? : U.HolonRef` (optional; required when the EntityOfConcern is not itself a holon and a grounding holon is needed for reference-plane anchoring)
-   * `reference_plane? : ReferencePlane` (optional; required when not unambiguously derivable from cited context publications or records such as CG-frame and specification pins)
+5. **Planning scope refs**
+   - optional `cg_frame_ref`, `p2w_carry_through_ref`, `publication_scope_ref`, `suite_ref`, or `kit_ref` when those relations are current;
+   - these refs locate the planned baseline, but they do not add planned rows by themselves.
 
-4. **Explicit planning context** (no hidden context)
+6. **Guard-preparation refs**
+   - optional expected guard or policy refs, such as compare-guard or launch-guard preparation refs;
+   - these refs name what later work or gate checks should be prepared to use;
+   - the PlanItem records preparation, not the guard result.
 
-   * `bounded_context_ref : U.BoundedContextRef` (required)
-   * `cg_frame_ref? : CGFrameRef` (recommended when the fillings feed CG legality and selection)
-   * `path_slice_id? : PathSliceId` (recommended for P2W reproducibility)
-   * `publication_scope_id? : PublicationScopeId` (recommended if the plan will be surfaced in publication-facing views)
-     These anchors exist because FPF claim discipline requires explicit context for claims or rules.
+7. **Evidence-reference pins**
+   - optional concrete pin refs naming where evidence is expected to be placed or cited later;
+   - a pin ref is not evidence and does not create evidence sufficiency.
 
-5. **Explicit time selector** (no implicit recency)
+8. **Crossing-preparation refs**
+   - optional refs for expected cross-context or cross-plane bridge or crossing relations, such as BridgeCard refs, policy-id refs, reference-plane refs, or already-published CrossingBundle baseline refs;
+   - these refs state expected bridge or crossing relations only;
+   - they are not crossing witnesses, do not embed CL/Phi/Psi tables, and do not claim that a crossing occurred.
 
-   * exactly one of:
+9. **Authoritative planned-filling rows**
+   - `planned_fillings[]`, each row with:
+     - `row_id`;
+     - `slot_kind`, taken from the target description's SlotSpecs;
+     - `planned_filler`, written ByValue or ByRef with a concrete RefKind;
+     - optional `edition_pin`;
+     - optional `planning_note`.
+   - If the target SlotSpec is single-valued, there is at most one row for that SlotKind.
+   - If both a row and its referenced filler carry edition pins, they agree or the baseline is nonconforming.
 
-     * `Γ_time_selector : Γ_timeSelector` (ByValue), or
-     * `Γ_time_rule_ref : Γ_timeRuleRef` (RefKind)
-       This MUST be present whenever the plan is intended to serve comparability or launch-readiness downstream checks.
+10. **Derived projections**
+   - optional cards, views, indices, or summaries;
+   - each projection is derivable from `planned_fillings`;
+   - any projection that adds rows, defaults, or semantics is a publication-use or view-use error under E.17.
 
-6. **Expected guard pins** (references and expectations only; no gate decisions)
+11. **Variance policy**
+   - how later performed `U.Work` cites this baseline;
+   - how substitutions, missing fillers, extra fillers, launch values, or edition changes are recorded in the performed-work or gate relation.
 
-   * `expected_usm_guard_pins : [USM.CompareGuard | USM.LaunchGuard]` (ByValue; subset of `{USM.CompareGuard, USM.LaunchGuard}`)
-     These lexemes are reserved for `USM.Guards` **pins** (gate-level surfaces), not for mechanism operator names.
-     If `USM.LaunchGuard` is expected, the plan MUST include enough pins and references to make that guard executable downstream (explicit `Γ_time_selector` or `Γ_time_rule_ref`, pinned editions where needed, and evidence pin anchors).
-     The PlanItem MUST NOT include outcomes for these guards and MUST NOT emulate gate decisions; it only records *expectations* and *required anchors*.
+#### A.15.3:4.3 - Compact record form
 
-   * `guard_owner_gate_ref? : <concrete OperationalGateRefKind>` (refs only; required when `expected_usm_guard_pins` is non-empty unless unambiguously derivable)
-     Identifies the gate that aggregates `GuardFail` outcomes (via the `GuardOwnerGateSlot` discipline). This remains an expectation pin, not a decision log.
-     (Use the concrete RefKind that addresses `OperationalGate(profile)` in A.21. If such a RefKind does not exist, do not claim a conforming guard-owner gate reference.)
-
-7. **Planned evidence anchors (pin refs only)**
-
-   * `planned_evidence_pin_refs? : [<concrete …PinRef>…]`
-     These are anchors to *where* evidence will be placed or cited (typically SCR pins or RSCR pins; optionally other pin kinds explicitly allowed by the downstream guard regime),
-     not the evidence itself.
-
-8. **The planned slot-fillings ledger (authoritative rows)**
-
-   * `planned_fillings : [SlotFillingRow+]` where:
-
-     `SlotFillingRow := ⟨ slot_kind, planned_filler, edition_pin? ⟩`
-
-     * `slot_kind : SlotKind`
-       A SlotKind provided by the `target_slot_bearing_description_ref` (the PlanItem MUST NOT reinterpret SlotKind meaning).
-       Unless the slot-bearing description explicitly declares the slot as multi-valued, each `slot_kind` SHALL appear **at most once** in `planned_fillings`.
-     * `planned_filler : PlannedFiller` where:
-       `PlannedFiller := ByValue(value) | ByRef(ref : <concrete RefKind>)`
-       In `ByRef(…)`, the `ref` MUST be of a **concrete RefKind** (e.g., `…SpecRef`, `…PolicyRef`, `…MethodDescriptionRef`);
-       the PlanItem MUST NOT use an untyped generic `Ref` or `RefKind` placeholder.
-       The chosen filler MUST conform to the SlotSpec discipline of the slot-bearing description (A.6.5-style: `refMode ∈ {ByValue | <concrete RefKind>}`).
-       Changes to planned fillers are described using the A.6.5 verb discipline: ByValue content change uses `fill`, `assign`, or `update`; ref retargeting uses `retarget`; ref resolution uses `resolve`; never describe the change by “renaming the slot”.
-     * `edition_pin? : EditionId`
-       Required only when reproducibility depends on an edition **and** the planned filler cannot carry an edition pin directly (preferred: `…DescriptionRef.edition` on the ref itself).
-       If both the planned filler ref and the row provide edition pinning, they MUST agree (mismatch ⇒ nonconformant).
-       ByValue rows SHOULD NOT carry edition pins unless the pinned edition is explicitly tied to a cited external publication or record (e.g., a referenced rule, policy, or method description).
-
-9. **Derived indices (optional; never a second canonical source)**
-
-   * `planned_spec_ref_index? : [<concrete …SpecRef>…]`
-   * `planned_policy_ref_index? : [<concrete …PolicyRef>…]`
-   * `planned_mechanism_instance_ref_index? : [<concrete …MechanismInstanceRef>…]`
-     If any of these are present, they MUST be **derivable projections** of `planned_fillings`; any mismatch is nonconformant.
-     (These are *categories* of refs extracted from the authoritative rows, not an invitation to introduce new generic `SpecRef` or `PolicyRef` token-kinds.)
-
-10. **Expected crossing policy pins (refs only; no crossing witnesses)**
-
-   * `expected_crossing_policy_refs? : [⟨bridge_card_ref, phi_policy_id, psi_policy_id?, phi_plane_policy_id?, reference_plane(src,tgt)⟩ …]`
-     These communicate what the plan expects will be needed for crossings, without claiming that a crossing has occurred.
-     `bridge_card_ref` is expected to pin a Bridge identity and channel (BridgeId + channel) and to be auditable via downstream CrossingBundle and UTS rows.
-     This section states **Bridge-only** expectations; it MUST NOT introduce non-Bridge crossing mechanisms, and it MUST NOT embed CL, Φ, Ψ, or Φ_plane tables (references, policy identifiers, and pins only).
-
-   * `expected_crossing_bundle_refs? : [CrossingBundleRef…]` (optional)
-     Permitted only when the plan is explicitly citing already-published CrossingBundle baselines (e.g., “fixed context constants”); otherwise, the PlanItem SHALL state only expected policy pins and allow the crossing witness to appear at the gate-level or work-level.
-
-11. **Notes (didactic, non-normative)**
-
-* `planned_filling_notes?`
-  Helpful narrative for practitioners or auditors; must not embed new claims that contradict the rows.
-
-#### A.15.3:4.2.1 Canonical skeleton (Show)
-
-The following compact pseudo-record illustrates the intended *canonical minimum*: explicit context + explicit time + a few authoritative rows.
-
-```
-SlotFillingsPlanItem := ⟨
-  kind = SlotFillingsPlanItem,
-  target_slot_bearing_description_ref = CHRMechanismSuiteDescriptionRef@edition(E_suite),
-  described_entity_ref = U.HolonRef(H:EntityOfConcern), // or another concrete RefKind per C.2.3
-  grounding_holon_ref = U.HolonRef(H:grounding-holon)?,  // when the EntityOfConcern is not itself a holon
-  bounded_context_ref = U.BoundedContextRef(BC:context),
-  cg_frame_ref = CGFrameRef(CG:frame),              // optional but typical for G.* legality and selection
-  path_slice_id = PathSliceId(P2W:slice),           // optional but typical for reproducibility
-  Γ_time_selector = point(t0),                      // no implicit “latest”
-  expected_usm_guard_pins = {USM.CompareGuard, USM.LaunchGuard},
-  planned_evidence_pin_refs = [RSCR.PinRef(RSCR:evidence-anchor)],
-  planned_fillings = [
-    ⟨ slot_kind = CNSpecSlot, planned_filler = ByRef(CNSpecRef(CN:…@edition(E_cn))) ⟩,
-    ⟨ slot_kind = CGSpecSlot, planned_filler = ByRef(CGSpecRef(CG:…@edition(E_cg))) ⟩,
-    ⟨ slot_kind = ScoringMethodDescriptionSlot,
-      planned_filler = ByRef(ScoringMethodDescriptionRef(M:…@edition(E_m))) ⟩
-  ]
-⟩
+```text
+SlotFillingsPlanItem:
+  plan_item_id:
+  kind: SlotFillingsPlanItem
+  work_plan_ref:
+  target_slot_bearing_description_ref:
+  entity_of_concern_ref:
+  bounded_context_ref:
+  time_selector_ref or time_rule_ref:
+  planning_scope_refs:
+  guard_preparation_refs:
+  evidence_reference_pins:
+  crossing_preparation_refs:
+  planned_fillings:
+    - row_id:
+      slot_kind:
+      planned_filler:
+      filler_mode: ByValue | ByRef(<ConcreteRefKind>)
+      edition_pin:
+      planning_note:
+  derived_projection_refs:
+  variance_policy:
 ```
 
-#### A.15.3:4.3 Relation to Work enactment (planned baseline vs actuals)
+#### A.15.3:4.4 - Relation to performed work
 
-* A `SlotFillingsPlanItem` is **not** a witness of `FinalizeLaunchValues`.
-  Launch values (actuals) occur only in Work enactment, and their witness belongs in Work and audit surfaces, not in this PlanItem.
+A `SlotFillingsPlanItem` is not a launch-value finalization witness and not a record that work occurred.
 
-* Deviation at execution time is allowed, but it must be recorded as **variance in Work**, and the plan must not be rewritten to match the execution.
-  When a Work enactment claims to follow a planned baseline, the Work MUST cite the `SlotFillingsPlanItem` in its Audit as the planned baseline reference, and MUST record any variance against it (rather than “backfilling” the plan).
-  The baseline citation SHOULD be edition-addressable (i.e., the Work cites a stable PlanItem edition), so that subsequent PlanItem revisions cannot erase what was actually planned.
-  If the baseline needs to change (including any edition-pinned ref changes), create a **new PlanItem edition** (or a new PlanItem) and treat the difference as a planning change—not as a retroactive edit of the previously cited baseline.
+When a performed `U.Work` occurrence uses the baseline, the work record cites the PlanItem edition and records launch values, performed values, substitutions, missing planned fillers, extra fillers, telemetry, outcomes, and variance under A.15.1 or the governing gate, evidence, result, or archive pattern.
 
-#### A.15.3:4.4 Relation to suites or kits
+Do not backfill the plan to match what happened. If the plan changed before the work, create a new PlanItem edition or new PlanItem as appropriate. If the work differed from the plan, record variance in the performed-work relation.
 
-* Any suite or kit that requires a “planned baseline” may require and cite a reference to a `SlotFillingsPlanItem` via its spec pins; `MechSuiteDescription` explicitly provides a place for such a requirement.
+#### A.15.3:4.5 - Relation to suites, kits, and mechanism introduction
 
-#### A.15.3:4.5 - Variants
+A suite, kit, or mechanism-introduction pattern may require a planned-baseline ref. That requirement does not make the suite or mechanism text the baseline.
 
-1. **Suite-specialized PlanItem (Refinement)**
-   A suite may define `XSuiteSlotFillingsPlanItem ⊑ SlotFillingsPlanItem` with:
+Use:
 
-   * fixed `target_slot_bearing_description_ref = XSuiteDescriptionRef`,
-   * additional required rows (e.g., mandatory pinned `CGSpecRef`, `CNSpecRef`, suite-required mechanism instance refs),
-   * additional required expected pins (guards, crossing policies).
+- the suite or kit pattern for the meaning of the suite or kit;
+- A.6.5 for SlotSpec discipline inside the target description;
+- A.15.3 for the plan instance that chooses planned fillers;
+- A.15.1 for performed work and variance;
+- `A.20` and `A.21`, `A.10` and `B.3`, or `E.17` when gate, evidence, assurance, or publication-use claims become current.
 
-2. **Minimal vs crossing-aware variants**
+#### A.15.3:4.6 - Variants
 
-   * *Minimal:* includes only context + planned rows + time selector.
-   * *Crossing-aware:* adds `expected_crossing_policy_ref[]` and explicit `reference_plane`.
+Specialized PlanItem kinds are allowed only when the target governing pattern needs extra planned fields.
 
-3. **Evidence-gated variant**
-   For workflows where `USM.LaunchGuard` is expected, require `planned_evidence_pin_refs[]` and explicitly pin the relevant edition set needed for the downstream guard.
+Example:
 
-#### A.15.3:4.6 - Local boundaries
+```text
+CHRMechanismSuiteSlotFillingsPlanItem <: SlotFillingsPlanItem
+  target_slot_bearing_description_ref = CHRMechanismSuiteDescriptionRef
+  required_slots = {NormalizationMethodSlot, IndicatorPolicySlot, ComparatorSpecSlot}
+```
 
-`SlotFillingsPlanItem` is a planned-baseline item. It records planned fillers for one slot-bearing description before work enactment. Keep these nearby boundaries local:
+The specialization may add fields needed by that suite, but it still inherits the WorkPlanning-only boundary: no performed-work actuals, no launch-value witnesses, no gate decisions, and no publication-view semantics.
 
-| Source pressure | Local boundary |
-|---|---|
-| mechanism or operator wording | Do not use this item as a mechanism or operator signature; cite the mechanism or signature pattern when that relation is live. |
-| spec, suite, kit, or acceptance-harness wording | The item may cite a slot-bearing description, but it does not replace CN-Spec, CG-Spec, suite description, kit description, policy, or acceptance record. |
-| threshold-like or eligibility wording | Pin the acceptance, policy, comparator, or guard relation explicitly; do not hide it as an anonymous ByValue filler. |
-| gate, decision, or crossing wording | The item may state expected policy refs; it does not contain `GateDecision`, `DecisionLog`, or a claim that a crossing occurred. |
-| actuals or launch values | The item is not a run-time witness and does not contain `FinalizeLaunchValues` actuals. |
-| publication view | A view may project the item, but the view introduces no new planned rows, defaults, or semantics beyond the item. |
+#### A.15.3:4.7 - Local boundaries
 
-#### A.15.3:4.7 - When to use
+| Source wording | A.15.3 recovery |
+| --- | --- |
+| "Use the latest spec" | Lower to a plan cue until time selector and edition-pinned target or filler refs are named. |
+| "The mechanism uses this comparator" | Use the mechanism or suite pattern for mechanism meaning; use A.15.3 only if this is a planned filler for a plan instance. |
+| "The card says the planned refs" | Use E.17 for the publication-use or view-use relation; the card is only a projection unless the PlanItem rows are present. |
+| "The gate passed" | Use `A.20` and `A.21` or the gate pattern. The PlanItem can prepare refs for later gate use but does not pass the gate. |
+| "Evidence pin" | Use A.15.3 only for the planned pin ref. Evidence-use and sufficiency are governed by `A.10`, `B.3`, `G.6`, or another governing evidence pattern. |
+| "The work used different fillers" | Use A.15.1 for performed work and variance; do not rewrite the cited plan to erase the difference. |
 
-Use `SlotFillingsPlanItem` whenever:
+### A.15.3:5 - Archetypal Grounding
 
-* a P2W-selected work-planning slice needs a **planned baseline** for what fills a suite or kit slot set before work is enacted;
-* you must pin edition and time policies explicitly (e.g., legality gates, comparator sets, transport registries);
-* you are using or revising Part G patterns and want a uniform place to record selected references, policies, and mechanism instances;
-* you expect a LaunchGate or any guard-based eligibility check to be meaningful and traceable.
+#### A.15.3:5.1 - CHR suite planned baseline
 
-#### A.15.3:4.8 - Implementation notes
+**Tell.** A team plans characterization work over a CG-frame using a CHR mechanism suite. The suite description declares SlotKinds for normalization method, indicator policy, comparator spec, and selector policy.
 
-**Informative use guidance (conceptual):**
+**Show without A.15.3.** The plan says "use the latest CG-Spec and current best comparator." Later the comparator set changes. Later audit readers cannot tell whether the work used the intended comparator or a later one.
 
-1. Choose one `target_slot_bearing_description_ref` per PlanItem. If multiple slot-bearing descriptions are involved, create multiple `SlotFillingsPlanItem`s (one per slot-bearing description) to keep slot meaning unambiguous.
-2. Fill rows by SlotKind, not by positional arguments or “index numbers”.
-3. If any downstream reasoning may hinge on “now vs then”, supply `Γ_time_selector` or `Γ_time_rule_ref` explicitly.
-4. Prefer edition-pinned references when the downstream step is intended to be reproducible across review cycles.
-5. Use derived indices only as projections for practitioner navigation; never maintain them independently.
-6. If a PlanItem has been cited as a baseline by a Work, do not “edit it in place” to match reality. Create a new PlanItem edition and let Work record variance and, when needed, the required crossing witnesses.
+**Show with A.15.3.** The `SlotFillingsPlanItem` targets the CHR suite description edition, names the bounded context and time selector, and writes rows:
 
-### A.15.3:5 - Archetypal Grounding (Tell–Show–Show; System / Episteme)
+```text
+planned_fillings:
+  - slot_kind: NormalizationMethodSlot
+    planned_filler: ByRef(UNMDescriptionRef:2026-06)
+    edition_pin: 2026-06
+  - slot_kind: ComparatorSpecSlot
+    planned_filler: ByRef(ComparatorSpecRef:CG42-v3)
+    edition_pin: v3
+  - slot_kind: SelectorPolicySlot
+    planned_filler: ByValue(SetReturningSelectionPolicy)
+```
 
-#### A.15.3:5.1 - Archetype 1: CHR suite planned baseline for lawful characterization
+If the later work uses `ComparatorSpecRef:CG42-v4`, the work record states variance or crossing witness. The PlanItem remains the planned baseline.
 
-**Tell.** A team plans a characterization workflow over a CG-frame that uses a CHR mechanism suite. The suite requires an explicit planned baseline reference.
+#### A.15.3:5.2 - Archive and QD selection
 
-**Show (failure without `SlotFillingsPlanItem`).** The “plan” is implicit: it says “use the latest CG-Spec and the current best comparator; compute scores and launch” without an explicit `Γ_time`, without edition pins, and without a stable mapping from SlotKinds to chosen fillers. Subsequent review cannot distinguish: (i) what was planned, (ii) what was executed, and (iii) what changed via a crossing or edition-key shift.
+**Tell.** A project plans to return an archive rather than one winner. Descriptor definitions and distance functions are edition-sensitive.
 
-**Show (repair with `SlotFillingsPlanItem`).** A conformant `SlotFillingsPlanItem`:
-* targets `CHRMechanismSuiteDescriptionRef` as the slot-bearing description (and pins its edition if used as a reproducibility baseline),
-* pins `CNSpecRef` and `CGSpecRef` (editions pinned where reproducibility requires),
-* pins a `ScoringMethodDescriptionRef.edition` (e.g., a monotone scoring family) and, when needed, a set-valued method family (e.g., conformal-style set predictions),
-* declares `Γ_time_selector = point(t0)` (no implicit “latest”),
-* declares `expected_usm_guard_pins = {USM.CompareGuard, USM.LaunchGuard}`,
-* includes evidence pin refs that will be populated or used in Work enactment.
+**Show without A.15.3.** The published archive card lists descriptors and distances, but the original planned descriptor edition is gone. The card becomes a mutable publication face rather than a planned-baseline relation.
 
-The resulting Work enactment cites this PlanItem as the planned baseline; any substitution (e.g., retargeting a method description ref) appears as Work variance (and, when relevant, as a crossing witness), not as a retroactive plan rewrite.
+**Show with A.15.3.** The PlanItem rows pin descriptor description refs, distance-definition refs, and time rule. The published card is a projection of those rows. If the archive generation later changes descriptors, performed work and result records cite the baseline and state the variance.
 
-#### A.15.3:5.2 - Archetype 2: Archive and QD selection with edition-sensitive descriptors
+#### A.15.3:5.3 - Hardware acceptance fixture
 
-**Tell.** A workflow plans to return an **archive** (quality-diversity style) rather than a single winner. The selection pipeline depends on descriptor maps and distance definitions that are edition-sensitive.
+**Tell.** A hardware team plans acceptance work for a fixture. The slot-bearing description is an acceptance-method description with slots for reference plane, measurement method, calibration source, and acceptance threshold.
 
-**Show (failure without `SlotFillingsPlanItem`).** Descriptor-map and distance-definition drift is discovered only after the fact: an "archive" is produced, but practitioners or auditors cannot reconstruct which descriptor edition and distance definition were assumed at planning time, and the published view or card becomes the de facto mutable canonical source.
+**Show with A.15.3.** The planned baseline pins the reference-plane description, calibration source ref, and threshold edition. The performed acceptance work later records actual measurements and substitutions. The PlanItem does not become the measurement evidence.
 
-**Show (repair with `SlotFillingsPlanItem`).** A conformant `SlotFillingsPlanItem`:
-* targets an archive-selection kit or suite as `target_slot_bearing_description_ref`,
-* pins `DescriptorMapDescriptionRef.edition` and `DistanceDefDescriptionRef.edition` (or their kit equivalents),
-* states `expected_usm_guard_pins = {USM.CompareGuard}` (if no LaunchGate is expected yet),
-* records expected crossing policy pins if descriptors are reused cross-context.
+### A.15.3:6 - Scope Declaration and Rationale
 
-This prevents “silent” descriptor drift across iterations and makes Part G’s archive-related extensions composable rather than embedded in selector prose.
+`SlotFillingsPlanItem` has a deliberate explicitness bias. It asks for target description, context, time, and planned rows because those are the smallest fields that keep planned slot filling separate from performed work and publication views.
 
-### A.15.3:6 - Bias-Annotation
+The pattern does not try to make every work plan heavy. Ordinary plans stay in A.15.2. A.15.3 opens only when slot-filling choices themselves are the planned baseline that later work, gates, evidence, or publication projections will rely on.
 
-Lenses tested: **Gov**, **Arch**, **Ontology and episteme**, **Prag**, **Did**. Scope: **Universal**.
-
-| Lens | Bias / limitation introduced by the pattern | Mitigation |
-| --- | --- | --- |
-| Gov | Baseline immutability and variance recording can be misread as bureaucracy rather than epistemic hygiene. | Keep the baseline minimal; use suite-specialized refinements only when a suite description truly requires them. |
-| Arch | Enforces a clean P2W seam and discourages “configuration hidden in mechanisms”. This can expose underspecified slot-maintenance assignments earlier. | Treat that friction as an architectural signal; refine the slot-maintenance interface rather than hiding choices in prose. |
-| Ontology and episteme | Biases toward explicit context, time, and edition pinning; exploratory reasoning may feel constrained. | Use minimal variants (context + rows + time selector) for exploration; graduate to pinned editions only when reproducibility is required. |
-| Prag | Increases upfront explicit-writing cost (explicit context, time, edition pins). | Use derived indices as projections for practitioner navigation; avoid duplicating content on views or cards. |
-| Did | Biases against “one true card” habits by treating views as projections; may clash with existing documentation culture. | Provide a TechCard and PlainView projection explicitly, but keep the PlanItem as the governing work-plan record. |
+The anti-bias guard is locality: if the current issue is mechanism meaning, work-entry readiness, evidence sufficiency, gate passage, source restoration, publication use, or performed work, use that governing pattern and bring only the returned planned-baseline relation back here.
 
 ### A.15.3:7 - Conformance Checklist
 
-| ID          | Check (normative)                                                                                                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CC-A15.3-01 | The object is a `U.WorkPlan.PlanItem` with `kind = SlotFillingsPlanItem`, and obeys WorkPlan guardrails (no logs or actual fillings, no step logic).                                                                           |
-| CC-A15.3-02 | `target_slot_bearing_description_ref` is present and identifies a real slot-bearing description (kit or suite); SlotKinds in rows are interpreted only within that slot-bearing description.                                                                      |
-| CC-A15.3-02a | If the PlanItem is used as a reproducibility baseline and the slot-bearing description is edition-addressable, `target_slot_bearing_description_ref` is edition-pinned (e.g., `…DescriptionRef.edition`).                                      |
-| CC-A15.3-02b | `target_slot_bearing_description_ref` is a **Description-scoped** ref (e.g., `MechSuiteDescriptionRef`, `…KitDescriptionRef`) and MUST NOT target `MechanismDefinitionRef`. |
-| CC‑A15.3‑02c (single slot-bearing description) | A `SlotFillingsPlanItem` targets exactly one slot-bearing description via `target_slot_bearing_description_ref`. If multiple slot-bearing descriptions are involved, they MUST be represented by multiple PlanItems (one per slot-bearing description). |
-| CC-A15.3-03 | `described_entity_ref` is present. If `grounding_holon_ref` or `reference_plane` is omitted, the omission must be unambiguously derivable from cited context publications or records (e.g., the pinned CG-frame and specification context). |
-| CC-A15.3-03a | `described_entity_ref` is a concrete RefKind (no generic “EntityRef” placeholder is introduced by this pattern). |
-| CC-A15.3-04 | Context anchors are explicit at least to `bounded_context_ref`; if the fillings serve legality or selection, then CG-frame and path-slice anchors are present.                                                           |
-| CC-A15.3-05 | Time is explicit: the item includes `Γ_time_selector` or `Γ_time_rule_ref`; “latest” or “current” without explicit `Γ_time` is nonconformant.                                                                             |
-| CC-A15.3-05a | Exactly one of `Γ_time_selector` and `Γ_time_rule_ref` is present (XOR); both-present or both-absent is nonconformant. |
-| CC-A15.3-06 | `planned_fillings` is the authoritative source: each row is `⟨slot_kind, planned_filler, edition_pin?⟩`; each planned filler is explicit `ByValue` vs `ByRef(ref-of-concrete-RefKind)` and conforms to the slot-bearing description’s SlotSpec discipline (no silent slot-meaning changes). |
-| CC-A15.3-06a | Unless the slot-bearing description declares a slot as multi-valued, `planned_fillings` contains **no duplicate** `slot_kind` rows (duplicate keys ⇒ nonconformant). |
-| CC-A15.3-06b | If both a row and its `ByRef(…)` filler carry edition pinning, they MUST agree; mismatch ⇒ nonconformant. |
-| CC-A15.3-07 | Any present “indices” (`planned_*_ref_index`) are derivable projections of `planned_fillings` and are not independently maintained; mismatch ⇒ nonconformant.                                                         |
-| CC-A15.3-08 | The PlanItem contains no `GateDecision` or `DecisionLog`, and makes no claim that a crossing occurred; only expected policy pins may be stated.                                                                      |
-| CC-A15.3-09 | The PlanItem contains no `FinalizeLaunchValues` witness and no launch-time actuals; launch values are finalized only in Work enactment.                                                                             |
-| CC-A15.3-10 | If `expected_usm_guard_pins` includes `USM.LaunchGuard`, the PlanItem contains sufficient pins and references (explicit `Γ_time_selector` or `Γ_time_rule_ref`, pinned editions, evidence pin anchors, and `guard_owner_gate_ref` or an unambiguous derivation) to make downstream guard execution possible.     |
-| CC-A15.3-10a | In this pattern, “evidence anchors” are expressed as pin refs (e.g., SCR pins or RSCR pins). Do not introduce a generic `EvidenceHookRef` token here; use concrete pin refs. |
-| CC-A15.3-11 | The PlanItem does not claim to set or mutate the edition vector (`editions{…}` or `edition_key`). It may pin editions and may state *expected* edition-sensitive crossings, but edition changes themselves are crossings (gate-level or work-level witnesses). |
-| CC-A15.3-12 | When used as a baseline for enactment, execution-time deviations are recorded as Work variance and the baseline PlanItem is not rewritten (“no backfill”); the Work Audit cites the PlanItem (preferably by edition-addressable ref) as the planned baseline reference.  |
-| CC-A15.3-12a | Any change to edition-pinned refs that would alter the effective edition-key for legality or selection MUST NOT be retroactively applied to the already-cited baseline PlanItem. Treat it as (i) a new PlanItem edition for subsequent enactments and (ii) variance or required crossing witnesses for the enactment that deviated. |
-| CC-A15.3-13 | If `expected_crossing_policy_refs` is present, it contains references and policy identifiers only (BridgeCardRef + policy-id refs + plane ids); it MUST NOT embed CL, Φ, Ψ, or Φ_plane tables or introduce non-Bridge transport edges. |
-| CC‑A15.3‑13a (crossing bundles are not witnesses) | `expected_crossing_bundle_refs` (if present) is used only to cite already‑published, context‑constant CrossingBundle baselines; it MUST NOT be used to claim that a crossing occurred for this enactment, nor to substitute for gate-level or work-level crossing witnesses. |
-| CC‑A15.3‑14 (view projection discipline) | Any `U.View` projection of a `SlotFillingsPlanItem` (e.g., `TechCard(PlanItemRef)`, `PlainView(PlanItemRef)`) MUST be an explicit projection that introduces no additional claims, defaults, or rows beyond the PlanItem; any additional semantics on the view is nonconformant. |
-| CC-A15.3-15 | Lower, repair, and refresh conditions are explicit: missing target description, SlotKind interface, EntityOfConcern, context, time, concrete RefKind, edition pin, guard pin, evidence pin, crossing policy, or cited-baseline variance lowers or reopens the planned-baseline claim rather than widening it. |
+| ID | A conforming `SlotFillingsPlanItem`... | Check |
+| --- | --- | --- |
+| CC-A15.3-01 | is a `U.WorkPlan.PlanItem` with `kind = SlotFillingsPlanItem`. | It contains planned rows, not logs, actuals, or step logic. |
+| CC-A15.3-02 | targets exactly one slot-bearing description. | `target_slot_bearing_description_ref` names a Description episteme with SlotSpecs; multiple targets use multiple PlanItems. |
+| CC-A15.3-03 | keeps mechanism identity outside the PlanItem. | `MechanismDefinitionRef` is not the target unless a governing description wrapper exposes the planned slots. |
+| CC-A15.3-04 | names EntityOfConcern and bounded context. | The baseline says what it is about and where the planned use is bounded. |
+| CC-A15.3-05 | names a time selector or time rule when currentness, latest, reproducibility, or launch preparation matters. | No implicit "latest" controls a reliance-bearing baseline. |
+| CC-A15.3-05a | uses exactly one time selector form when time is required. | Both-present and both-absent time baselines are nonconforming for reliance-bearing use. |
+| CC-A15.3-06 | uses planned-filling rows as the authoritative row source. | Views, cards, and indices are derivable projections only. |
+| CC-A15.3-07 | uses concrete RefKinds for ByRef fillers. | No generic `Ref`, generic `SpecRef`, or untyped placeholder carries the planned filler. |
+| CC-A15.3-08 | preserves target SlotKind meaning. | The PlanItem chooses fillers; it does not redefine SlotKinds. |
+| CC-A15.3-09 | keeps guard-preparation refs separate from gate results. | Later gate passage is recorded under the gate pattern. |
+| CC-A15.3-10 | keeps evidence-reference pins separate from evidence-use. | Later evidence and assurance are governed by A.10, B.3, G.6, or the current evidence pattern. |
+| CC-A15.3-11 | keeps crossing-preparation refs separate from crossing witnesses. | Crossing refs cite expected Bridge, policy, reference-plane, or published-baseline references only; they do not embed `CL`, `Phi`, or `Psi` tables or claim that a crossing occurred. |
+| CC-A15.3-12 | keeps launch values and actuals out of the plan. | Performed work records launch values, substitutions, and variance. |
+| CC-A15.3-13 | preserves cited baselines after work. | A changed plan becomes a new edition or new PlanItem; performed work records variance against the cited baseline. |
+| CC-A15.3-14 | gives lowering and refresh conditions. | Missing target description, exposed SlotKind set, context, time, RefKind, edition pin, guard ref, evidence pin, crossing-policy ref, or variance relation lowers or reopens the claim. |
+| CC-A15.3-15 | may be cited by `A.15.5` but does not decide readiness. | Readiness-preparation refs and planned fillers can be cited by `WorkEntryReadiness@Context`; the readiness relation is governed by `A.15.5`. |
 
-### A.15.3:8 - Common Anti‑Patterns and How to Avoid Them
+### A.15.3:8 - Common Anti-Patterns and How to Avoid Them
 
-#### A.15.3:8.1 - Plan-as-execution
-
-A plan document says: “Use the latest CG-Spec and the current best comparator; compute scores and launch.”
-This is nonconformant because it omits explicit `Γ_time`, omits edition pins, collapses planning into execution, and provides no stable baseline for variance and audit.
-
-#### A.15.3:8.2 - Anti-example: Edition-key change disguised as a plan edit (backfill)
-
-A team executes Work while actually using `CGSpecRef@edition(E2)` (or `ComparatorSetRef@edition(E2)`), but the previously approved baseline PlanItem had pinned `@edition(E1)`.
-Later, instead of recording variance and the required GateCrossing witness for the **edition-key change**, someone edits the baseline PlanItem “in place” to replace `E1 → E2`,
-and then claims “no variance; we followed the plan”.
-
-This is nonconformant because it:
-* collapses planning into execution (retroactive baseline editing),
-* hides an edition-key change that is crossing-relevant,
-* destroys reproducibility and breaks Work and audit traceability.
-
-Correct handling: keep the old baseline intact; record variance in Work and, where applicable, require the gate-level or work-level crossing witness (UTS and CrossingBundle with policy-id pins),
-or produce a new PlanItem edition as the new planned baseline for subsequent enactments.
+| Anti-pattern | Failure | Repair |
+| --- | --- | --- |
+| Plan-as-execution | The plan contains launch values, witnesses, decision logs, or actual fillers. | Record actuals under performed `U.Work`, gate, evidence, or result records; leave planned rows in A.15.3. |
+| Latest-as-baseline | "Latest" is used where replay needs a pinned edition or time rule. | Add time selector and edition pins, or lower to a plan cue. |
+| View-as-baseline | A card, dashboard, or generated page becomes the row source. | Make the PlanItem rows authoritative and treat the view as E.17 projection. |
+| Mechanism-prose baseline | Suite or mechanism prose hides plan-instance choices. | Put suite meaning in the suite pattern and planned fillers in A.15.3. |
+| Generic ref placeholder | `SpecRef`, `PolicyRef`, or `GateRef` is used without concrete RefKind. | Use the concrete RefKind defined by the governing pattern, or block until one exists. |
+| Backfilled plan | Performed work edits the plan after the fact so variance disappears. | Preserve the cited PlanItem; record variance, substitution, or crossing witness in performed work or the governing gate, evidence, result, or variance relation. |
 
 ### A.15.3:9 - Consequences
 
-| Benefit | Trade-off and cost | Notes and mitigation |
-| --- | --- | --- |
-| Improved modularity | Requires an explicit baseline plan item | Keep baselines minimal; specialise only when a suite truly needs it. |
-| Audit clarity | More up-front specification work | The explicit-writing workload is intentional: it buys attributable variance and prevents “mystery defaults”. |
-| Edition honesty | Forces practitioners to declare editions and time | Use editioned refs and time selectors by ref; keep actual `Γ_time` in Work evidence. |
-| Controlled specialisation | Multiple PlanItem kinds may exist (core + suite‑specialised) | Create a suite-specific refinement only when the suite description requires it; keep the universal core stable. |
+| Benefit | Cost and control |
+| --- | --- |
+| Planned choices become replayable. | More explicit planning fields; use the minimal record when reliance is low. |
+| Performed-work variance becomes attributable. | Teams preserve cited baselines rather than editing history. |
+| Suite and kit reuse becomes cleaner. | Specialized PlanItems may be needed, but only under the suite or kit governing pattern. |
+| Publication views remain affordable. | Views can be generated, but they are projections, not the planned rows themselves. |
+| P2W carry-through and work-entry readiness get a stable planned-baseline relation. | P2W and `A.15.5` still do not prescribe a project method, work plan, or performed work from the baseline alone; they only cite a recovered planned-baseline relation when current. |
 
 ### A.15.3:10 - Rationale
 
-This pattern exists to give WorkPlanning an explicit, citeable place to commit to “which planned values or references will fill which slots” without collapsing into run-time state.
+The pattern exists because planned slot fillings are neither generic plan text nor performed work. They are relation-bearing plan items: one target description supplies SlotKinds, the plan chooses fillers, and later work records what happened.
 
-Keeping the baseline bound to exactly one slot-bearing description makes SlotKind semantics checkable and prevents accidental cross-slot-bearing-description drift.
+A.6.5 prevents a common type explosion. `slot_kind`, `planned_filler`, and RefKind fields are not new U-kinds. They are positions and fillers inside one relation-bearing PlanItem. E.17 prevents a second row source by keeping views and cards as projections. A.15.1 prevents plan backfilling by keeping performed-work actuals and variance outside the plan.
 
-Treating indices as derived projections preserves the canonical row source while still enabling human-friendly navigation or tooling acceleration.
+This split is especially useful in P2W and Part G work because many downstream records need the same planned baseline without copying suite semantics, mechanism definitions, gate decisions, evidence claims, or publication views into the plan.
 
-Finally, by disallowing run-time witnesses (launch values, observed values, concrete `Γ_time`) the pattern enforces the planning and enactment split and keeps audit variance attributable to an explicit baseline rather than to shifting defaults.
+### A.15.3:11 - SoTA-Echoing
 
-### A.15.3:11 - SoTA‑Echoing (informative)
-
-This pattern aligns with post‑2015 practice in multiple traditions while deliberately staying notationally and tool independent.
-
-* **ISO/IEC/IEEE 12207:2017** — **Adopt** the separation between planning documents, execution records, and baseline and change-control concepts; **Adapt** them into a lightweight, citeable PlanItem kind; **Reject** treating one process-tooling arrangement as normative inside FPF.
-* **ISO 26262:2018** — **Adopt** the emphasis on traceability, change impact visibility, and preventing retroactive “paper compliance”; **Adapt** it into baseline immutability + variance reporting; **Reject** treating safety certification structure as a required envelope for all contexts.
-* **NIST SP 800-128 Rev.1 (2020)** — **Adopt** baseline management and deviation recording as an audit primitive; **Adapt** by expressing baselines as epistemic, context-bound references rather than machine configuration states; **Reject** security-tooling prescriptions as a dependency of the conceptual model.
-* **Forsgren, Humble, Kim (2018), _Accelerate_** — **Adopt** the empirical lesson that explicit change tracking and small, attributable deltas improve reliability; **Adapt** by making the baseline the anchor for fulfilment and variance; **Reject** any “one true pipeline” or vendor-specific operational recipe.
-* **Morris (2021), _Infrastructure as Code_ (2nd ed.)** — **Adopt** the desired-state vs observed-state distinction and the discipline of explicit declarations; **Adapt** by keeping declarations as plan-level epistemes rather than deployment manifests; **Reject** binding the model to any specific IaC syntax or platform.
+| Current practice line | Adoption in A.15.3 | Rejected shortcut |
+| --- | --- | --- |
+| ISO/IEC/IEEE 12207:2017 and ISO/IEC/IEEE 15288:2023 keep life-cycle processes adaptable and distinguish process descriptions, planning, execution, and information items without prescribing one method or documentation form. | Adopt the process-information separation: A.15.3 is one planned-baseline information item inside work planning, not the work and not one universal process model. | Treating a process-tooling layout, stage model, or checklist as the FPF baseline ontology. |
+| SLSA v1.2 provenance and in-toto Statement v1 separate build definition, run details, subjects, predicates, and resolved dependencies for software-supply-chain replay. | Use this only as an analogy for reproducibility and provenance separation: planned fillers and refs are recorded before work, while performed work, provenance, evidence, subject claims, and output claims remain separate FPF relations. | Importing supply-chain ontology as FPF ontology, or treating provenance, evidence, or an attestation record as the planned baseline itself. |
+| Nix flakes and `flake.lock` practice show current dependency pinning: unlocked inputs are resolved to locked revisions and content hashes for reproducibility. | Adopt explicit pinning discipline for planned fillers, edition pins, and time rules when replay depends on them. | Saying "latest" or relying on a generated view when a bounded plan needs pinned planned rows. |
+| Contemporary reproducible-build and supply-chain practice favors small attributable deltas and stable refs over mutable hidden defaults. | A.15.3 keeps planned rows stable, then lets performed work record variance, substitution, and crossing witnesses. | Editing the plan after execution so that no variance remains. |
 
 ### A.15.3:12 - Relations
 
-* **Builds on and is governed by:**
-  * **A.15.2 `U.WorkPlan`** — container + PlanItem discipline; baseline citeability.
-  * **A.6.5 slot discipline** — SlotKind and RefKind hygiene and binding-time separation.
-  * **E.10.D1 Context discipline** — explicit context and edition; no implicit “latest”.
-  * **E.18 and E.18.1** — keeps `FinalizeLaunchValues` strictly in WorkEnactment; pin and guard discipline.
-* **E.17 publication discipline** — views are projections; no new semantics on cards.
-* **Interacts with and complements:**
-  * **A.6.7 `MechSuiteDescription`** — suites may require the presence of a planned-baseline reference or pin without embedding planned fillers or launch values.
-  * **A.15.1 Work and WorkEnactment discipline** — fulfilment and variance are recorded downstream against this baseline.
-  * **C3.2-S-02 Time discipline** — time selection policy may be pinned by ref; run-time `Γ_time` stays in Work evidence.
+- **Builds upon:** `A.15.2` for `U.WorkPlan` and PlanItem discipline; `A.15.1` for performed `U.Work`; `A.6.5` for SlotKind, ValueKind, RefKind, and SlotSpec discipline; `E.24` for ontic introduction and slot-relation discipline; `E.10.D2` for EntityOfConcern vs Description episteme vs specification-use; `E.17` for publication-use and view-use projection; `E.18.1` for P2W carry-through; `E.20` for mechanism-introduction boundaries.
+- **Coordinates with:** `A.15.5` for work-entry readiness and full-kit preparation; `A.20` and `A.21` for gates and constraint decisions; `A.10`, `B.3`, and `G.6` for evidence, assurance, and provenance; `C.27.TA` and `G.11` for currentness and refresh; Part G patterns when planned baselines are used by kits, packs, or refresh plans.
+- **Does not replace:** target description patterns, mechanism definitions, suite definitions, gate records, evidence relations, publication views, performed work, or source restoration.
 
-### A.15.3:12a - P2W Planned-Baseline Use Relation
+### A.15.3:12a - P2W planned-baseline use relation
 
-When `E.18.1` reaches a planned-baseline question, `SlotFillingsPlanItem` records the planned mapping from a slot-bearing description and `SlotKind`s to planned fillers. It may include evidence-reference hooks, edition pins, assumptions, dependencies, and freshness requests needed before work is enacted.
+When `E.18.1` reaches a planned-baseline question, `SlotFillingsPlanItem` records the planned relation between one slot-bearing description's SlotKinds and the fillers intended for a future work-planning or work-entry-readiness use.
 
-If the same phrase also carries launch-value, run-time actual, evidence, gate, or result meaning, the carry-through record names that separate relation before the PlanItem is used downstream.
+When `A.15.5` checks full-kit condition, it may cite `SlotFillingsPlanItem` for planned fillers, target description edition, required refs, and time selector. That citation does not make the planned baseline a readiness verdict; `A.15.5` states the readiness relation and any missing-input or degraded-use condition.
 
-### A.15.3:12b - Planned-Baseline To Performed-Work Boundary
+If the same source phrase also carries launch-value, performed-work, evidence, gate, result, measurement, publication-use, source-restoration, or refresh meaning, name that separate current relation before using the PlanItem downstream.
 
-A performed `U.Work` occurrence may cite a `SlotFillingsPlanItem` as the planned baseline for slot fillers. The performed-work record states variance, substitution, and launch-value finalization under the current gate relation and work-governing patterns.
+### A.15.3:12b - Planned-baseline to performed-work boundary
 
-This preserves the P2W split: WorkPlanning places the baseline, while performed work records what happened.
+A performed `U.Work` occurrence may cite a `SlotFillingsPlanItem` as the planned baseline for slot fillers. The performed-work record states launch values, actual fillers, substitutions, variance, telemetry, and result-related records under A.15.1 and the current gate or evidence relation.
 
-### A.15.3:12c - Lowering, Repair, and Refresh Conditions
+The work-planning record preserves what was intended. The performed-work record preserves what happened.
 
-Lower a `SlotFillingsPlanItem` claim when the item cannot name exactly one Description-scoped slot-bearing description, concrete `SlotKind`s from that description, `described_entity_ref`, `bounded_context_ref`, time selector or time rule, authoritative planned-filling rows, concrete RefKinds for ByRef fillers, or required edition pins. Do not repair the missing detail by widening the planned-baseline claim; lower it to a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap.
+### A.15.3:12c - Lowering, repair, and refresh conditions
 
-Repair the PlanItem when a source-currentness change alters the slot-bearing description edition, SlotKind interface, planned filler, concrete RefKind, edition pin, context anchor, time rule, evidence pin, guard pin, crossing-policy reference, or expected gate relation. If a performed `U.Work` occurrence already cited the PlanItem as a baseline, preserve the cited baseline and record variance or crossing witnesses in the work-governed relation rather than rewriting the cited baseline to match what happened.
+Lower a `SlotFillingsPlanItem` claim when the item cannot name exactly one target slot-bearing description, concrete SlotKinds from that description, EntityOfConcern, bounded context, time selector or time rule, authoritative planned-filling rows, concrete RefKinds for ByRef fillers, or required edition pins. The lowered result is a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap.
 
-Refresh before the PlanItem is used for work enactment, launch guard preparation, cross-context comparison, suite or kit reuse, Part G universalization, publication-view projection, evidence-reference use, or P2W carry-through. Stop the refresh at the smallest changed object: the plan item, its target slot-bearing description, a concrete RefKind, the cited source edition, the performed-work variance record, or the related gate, evidence, bridge, or publication relation.
+Repair the PlanItem when a source-currentness change alters the target description edition, exposed SlotKind set, planned filler, concrete RefKind, edition pin, context, time rule, evidence-reference pin, guard-preparation ref, crossing-policy ref, or expected gate relation. If performed `U.Work` already cited the PlanItem as a baseline, preserve the cited baseline and record variance or crossing witness in the work-governed relation.
+
+Refresh before the PlanItem is used for performed-work preparation, work-entry readiness, launch-guard preparation, cross-context comparison, suite or kit reuse, Part G universalization, publication-view projection, evidence-reference use, or P2W carry-through. Stop the refresh at the smallest changed relation: the PlanItem, target slot-bearing description, concrete RefKind, cited source edition, readiness relation, performed-work variance record, or related gate, evidence, bridge, or publication relation.
 
 ### A.15.3:End

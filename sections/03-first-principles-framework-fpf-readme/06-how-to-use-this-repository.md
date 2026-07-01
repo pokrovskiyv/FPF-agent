@@ -19,7 +19,8 @@ architecture, rules and methods, API or interface wording, permission or complia
 problem shaping, quality improvement, evidence and assurance,
 temporal claims, causal or model-output use, publication or view use,
 naming, technical-text precision, mathematical modeling,
-or current options and state of the art.
+current options and state of the art,
+or a domain/local FPF-grounded framework.
 For the selected entry, give:
 1. the main project thing or claim at stake,
 2. the first useful written result,

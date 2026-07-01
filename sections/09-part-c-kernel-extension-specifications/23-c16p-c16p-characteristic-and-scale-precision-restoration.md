@@ -103,7 +103,7 @@ CharacteristicScaleRepairNote:
   repairedWordingOrDemotion:
   admissibleUse:
   nonAdmissibleUse:
-  remainingReaderMove:
+  remainingReaderUse:
   disposition:
 ```
 
@@ -112,12 +112,12 @@ Use the full note only when the repair must remain inspectable. Use a local rewr
 #### C.16.P:4.1 - Recovery sequence
 
 1. **Capture the trigger.** Copy the exact word or phrase and the sentence that uses it.
-2. **Recover the bearer.** Name what is being characterized: holon, pattern, DRR, architecture description, structure, model, method, work result, publication, candidate, relation, decision option, evidence path, or another FPF kind named by value.
+2. **Recover the bearer.** Name what is being characterized: holon, pattern, design-rationale record, architecture description, structure, model, method, work result, publication, candidate, relation, decision option, evidence relation, or another FPF kind named by value.
 3. **Recover the construction.** Decide whether the trigger means `Characteristic`, `Scale`, coordinate, value, score, unit, scoring method, indicator, threshold, comparison reference or comparator set, proxy, Q-bundle, mathematical lens, gate, evidence, decision, or ordinary prose.
 4. **Select direct governing pattern when possible.** If `C.16`, `A.17`, `A.18`, `A.19`, `C.25`, `C.29`, `E.21`, or another governing pattern is already recoverable, use it directly.
 5. **Repair hidden characteristic and scale construction.** When construction is hidden, recover the minimal needed set: characteristic, scale, value set, score, unit, scoring method, indicator role, comparison reference or comparator set, threshold rule or reference, admissible use, and non-admissible use.
-6. **Exit adjacent claims.** Evidence, assurance, gate, work, decision, causal-use, release, benchmark, publication, or authority claims go to governing patterns.
-7. **State remaining reader move.** Say what the reader can now compare, measure, score, block, or assign to a neighboring pattern. If the result is type-correct but gives no action or recognition reason, the repair is incomplete.
+6. **Separate adjacent claims.** Evidence, assurance, gate, work, decision, causal-use, release, benchmark, publication, or authority claims are governed by their direct patterns.
+7. **State remaining reader use.** Say what the reader can now compare, measure, score, block, or assign to a neighboring pattern. If the result is type-correct but gives no action or recognition reason, the repair is incomplete.
 
 ### C.16.P:5 - Trigger split
 
@@ -131,12 +131,12 @@ Use the full note only when the repair must remain inspectable. Use a local rewr
 | `robust` | Robust to what perturbation, under which scale, comparison, loss, or preserved-structure and lost-structure? | Robust as general praise. |
 | `level` | Level on which declared scale or abstraction, not a free hierarchy. | Level as undefined scale or maturity status. |
 | `indicator` | Indicator of what characteristic or claim, with what proxy relation and distortion risk? | Indicator as the indicated property. |
-| `threshold` | Threshold on which scale, with what comparison reference or comparator set, gate relation, and non-use boundary? | Threshold as decision by itself. |
+| `threshold` | Predicate over which characteristic space coordinates, with what comparison operator, cut value, band, region, dominance condition, scalarization policy if any, comparison reference or comparator set, gate or acceptance relation, and non-use boundary? | Threshold as characteristic, measure, scalar score, decision, or proof by itself. |
 | `benchmark` | Benchmark for which characteristic, comparison set, front, archive, or harness? | Benchmark result as proof or release. |
 
-### C.16.P:6 - Governing-Pattern Exits Named by Value
+### C.16.P:6 - Adjacent Claim Governance Named by Value
 
-| Recovered construction, claim kind, or admissible-use boundary | Exit |
+| Recovered construction, claim kind, or admissible-use boundary | Governing pattern |
 | --- | --- |
 | `Characteristic` | `A.17` |
 | `Scale`, value set, value, coordinate, unit, scoring method, measurement use | `A.18`, `C.16` |
@@ -160,50 +160,44 @@ Use the full note only when the repair must remain inspectable. Use a local rewr
 Reopen or narrow `C.16.P` when current pattern-language ecology changes the first characteristic and scale entry:
 
 - a new characteristic named by value, scale, evaluation, benchmark, proxy or indicator, gate or decision, mathematical-lens, quality, OEE, NQD, or publication pattern can receive one row directly;
-- current best-known practice changes comparability, proxy-risk, threshold, measurement, scoring-method, or benchmark-harness discipline adopted in `C.16.P:8`;
+- current best-known practice changes comparability, proxy-risk, threshold, measurement, scoring-method, or benchmark-harness discipline adopted in the SoTA-Echoing section;
 - README, ToC, `E.11`, retrieval, or local Problem-frame entry cues change the first practical entry for hidden characteristic and scale wording;
 - a governing pattern starts copying first-stage `metric`, `score`, `axis`, `strong`, or `indicator` trigger lists that belong here;
 - `C.16.P` begins to act as a metrics catalog, maturity scheme, or CHR super-pattern rather than a wording-use repair pattern for hidden construction.
 
-The refresh action is to remove, narrow, or redirect the first-stage row. It is not to preserve old exits as history.
+The refresh action is to remove, narrow, or reassign the first-stage row. It is not to preserve stale routing language as history.
 
-### C.16.P:7 - Worked cases
+### C.16.P:7 - Archetypal Grounding - Worked cases
 
 | Wording | Repair |
 | --- | --- |
 | "This pattern is stronger." | Recover the characteristic and scale. If the sentence means pattern-quality evaluation, use `E.21`; if it means relation strength, use `A.6.P`; if no scale exists, demote to ordinary prose or rewrite with the exact gain. |
 | "Architecture score improved." | Recover whether this is a score on a declared scale, pattern-quality coordinate, grounded architecture adequacy value, selected-structure characteristic value, Q-bundle value, benchmark result, gate threshold, or ordinary comparison. Use `C.16.P` before using the score. |
-| "The metric supports launch." | Recover measure, characteristic, scale, scoring method, threshold rule or reference, and gate or decision pattern. The metric alone is not launch evidence, gate passage, decision authority, or launch justification. |
+| "The metric supports launch." | Recover measure, characteristic, scale, scoring method, threshold predicate or reference, and gate or decision pattern. The metric alone is not launch evidence, gate passage, decision authority, or launch justification. |
 | "The model has robust quality." | Recover robustness perturbation and scale, quality-term or evaluative characterization under `C.16.Q`, Q-bundle under `C.25`, or mathematical-lens use under `C.29`. |
 | "Latent axis explains behavior." | Recover whether `axis` is a latent coordinate, factor, mathematical lens, characteristic, or ordinary source-local word. Use `C.29` when a mathematical-lens use is being claimed. |
 | "The benchmark proves the method is better." | Recover benchmark harness, characteristic space, comparison set, scale, statistical or evidential claim, and decision use. Use evidence named by value, decision, and work patterns as needed. |
 
-### C.16.P:8 - Reduced SoTA row
+### C.16.P:8 - Bias-Annotation
 
-Current measurement, quality, proxy-risk, and comparison practice distinguishes characteristics, scales, measures, scores, indicators, thresholds, comparability, proxy status, and decision use. FPF adopts this line only where it changes examples, non-comparability boundaries, indicator and proxy boundaries, scale and scoring method fields, gate and comparison exits, or conformance checks.
+| Bias | Symptom | Correction |
+| --- | --- | --- |
+| Scalar verdict bias | `strong`, `weak`, `robust`, or `high` is used as a verdict without characteristic, scale, and comparison reference. | Recover the characteristic-scale construction or demote the adjective to ordinary prose. |
+| Proxy promotion bias | An indicator, metric, score, or benchmark result is treated as the thing indicated. | Name the proxy relation, distortion risk, admissible use, and governing pattern for any wider claim. |
+| Gate-by-number bias | A threshold or score is treated as release, readiness, proof, or decision authority. | Recover the threshold rule and cite the gate, assurance, decision, or release pattern that actually governs the use. |
 
-| Practice source | Source-use relation and currentness | What `C.16.P` adopts or adapts | FPF import boundary |
-| --- | --- | --- | --- |
-| ISO/IEC/IEEE 15939:2017 systems and software measurement process. | Current-standard reference for measurement-process discipline. | Disciplines `CharacteristicScaleRepairNote` fields for measure, scale, indicator, measurement use, and information need; informs `CC-C16P-1` and direct exits to `C.16`, `A.17`, and `A.18`. | Does not make "metric" a recovered kind, evidence path, gate, or decision by itself. |
-| ISO/IEC 25010:2023 product quality model. | Current-standard reference for quality-characteristic families. | Disciplines quality and scalar-quality cases: a quality word needs characteristic and scale construction or quality-pattern use named by value before comparison, score, or gate use. | Does not import ISO quality characteristics as the FPF quality ontology; quality-term or evaluative characterization still exits to `C.16.Q`, `C.25`, or `E.21` when live. |
-| ISO/IEC 80000 quantities and units practice and VIM-style metrology vocabulary. | Current reference for quantities, units, and measurement vocabulary. | Disciplines unit, value, scale, and scoring-method fields; blocks number-without-scale and unitless comparison overreads. | Does not impose physical-quantity metrology on qualitative, ordinal, or pattern-quality characteristic spaces. |
-| NIST AI RMF 1.0 metric and risk-management practice, including measurement, monitoring, validity, and risk-tolerance framing. | Current practice reference for proxy and indicator risk. | Disciplines `indicatorRole`, `proxyDistortionRisk`, threshold rule or reference, and non-admissible use; informs the indicator and proxy and score-as-gate anti-patterns. | Does not let a risk metric, dashboard, or benchmark become assurance, release permission, or decision authority. |
-| Current FPF internal characterization stack: `A.17`, `A.18`, `C.16`, `A.19`, `C.25`, `C.29`, and `E.21`. | Current FPF governing-source relation; primary authority for FPF characteristic and scale recovery. | Selects the governing pattern after repair and prevents `C.16.P` from becoming a CHR super-pattern. | Does not copy local trigger lists into governing patterns or replace characteristic named by value-space, quality, mathematical-lens, benchmark, gate, or decision patterns. |
-
-This row blocks scalar verdicts without declared scale and admissible use. It does not import metric lists, maturity-status schemes, or external scoring traditions as FPF ontology.
-
-### C.16.P:9 - Conformance checklist
+### C.16.P:10 - Conformance Checklist
 
 | Check | Requirement |
 | --- | --- |
-| `CC-C16P-1` | The repair names trigger span, bearer, recovered characteristic or scale construction, governing pattern, admissible use, non-admissible use, and remaining reader move. |
+| `CC-C16P-1` | The repair names trigger span, bearer, recovered characteristic or scale construction, governing pattern, admissible use, non-admissible use, and remaining reader use. |
 | `CC-C16P-2` | `metric`, `score`, `axis`, `dimension`, `feature`, `property`, `indicator`, `strong`, `weak`, `robust`, `level`, `coordinate`, `threshold`, and `benchmark` are trigger words, not recovered kinds by themselves. |
 | `CC-C16P-3` | Direct `C.16`, `A.17`, `A.18`, `A.19`, `C.25`, `C.29`, `E.21`, or governing-pattern use applies the governing pattern directly when construction is already recoverable. |
-| `CC-C16P-4` | Evidence, assurance, gate, work, decision, causal-use, release, publication, benchmark, and authority claims exit to governing patterns. |
+| `CC-C16P-4` | Evidence, assurance, gate, work, decision, causal-use, release, publication, benchmark, and authority claims are governed by their direct patterns. |
 | `CC-C16P-5` | The repair does not create a metrics-only restoration pattern, CHR super-pattern, scalar verdict, undefined maturity-status scheme, or release decision. |
-| `CC-C16P-6` | The repaired wording preserves one useful admissible reader move; type-correct but inert characterization wording is not recovered by value. |
+| `CC-C16P-6` | The repaired wording preserves one useful admissible reader use; type-correct but inert characterization wording is not recovered by value. |
 
-### C.16.P:10 - Common anti-patterns
+### C.16.P:11 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
@@ -214,7 +208,33 @@ This row blocks scalar verdicts without declared scale and admissible use. It do
 | Indicator-as-indicated-characteristic | Indicator wording hides the indicated characteristic or proxy relation. | Name indicator role, indicated characteristic or claim, and proxy-distortion risk. |
 | Characterization repair copied everywhere | Receiving patterns keep their own `metric`, `score`, or `strong` trigger lists. | Keep one thin cue and send hidden construction to `C.16.P`. |
 
-### C.16.P:11 - Related patterns
+### C.16.P:12 - Consequences
+
+**Benefits.** C.16.P gives a first-stage repair point for overloaded characterization words, so receiving patterns do not need to copy long trigger lists. It makes the next governing pattern visible before a number, adjective, level, score, metric, or benchmark result is treated as actionable.
+
+**Trade-offs.** Some compact phrases become longer because the bearer, characteristic, scale, threshold, proxy, or governing pattern must be named. The gain is that measurement, quality, mathematical-lens, evidence, assurance, gate, decision, and causal-use claims do not hide inside one scalar word.
+
+**Stop condition.** Stop using C.16.P once the characteristic-scale construction and the governing pattern are recoverable. The repaired claim then belongs to `C.16`, `A.17`, `A.18`, `A.19`, `C.25`, `C.29`, `E.21`, or the neighboring pattern named by value.
+
+### C.16.P:12.1 - Rationale
+
+The rationale for C.16.P is narrow: compact characterization wording is useful, but FPF cannot let compact words decide the kind of claim. The pattern restores the bearer, characteristic, scale, value or score construction, proxy relation, threshold rule, admissible use, and governing pattern before the text is allowed to support measurement, comparison, assurance, gate, decision, causal-use, benchmark, or mathematical-lens work.
+
+### C.16.P:12.2 - SoTA-Echoing
+
+Current measurement, quality, proxy-risk, and comparison practice distinguishes characteristics, scales, measures, scores, indicators, thresholds, comparability, proxy status, and decision use. FPF adopts this line only where it changes examples, non-comparability boundaries, indicator and proxy boundaries, scale and scoring method fields, gate and comparison exits, or conformance checks.
+
+| Practice source | Source-use relation and currentness | What `C.16.P` adopts or adapts | FPF import boundary |
+| --- | --- | --- | --- |
+| ISO/IEC/IEEE 15939:2017 systems and software measurement process. | Current-standard reference for measurement-process discipline. | Disciplines `CharacteristicScaleRepairNote` fields for measure, scale, indicator, measurement use, and information need; informs `CC-C16P-1` and direct exits to `C.16`, `A.17`, and `A.18`. | Does not make "metric" a recovered kind, evidence relation, gate, or decision by itself. |
+| ISO/IEC 25010:2023 product quality model. | Current-standard reference for quality-characteristic families. | Disciplines quality and scalar-quality cases: a quality word needs characteristic and scale construction or quality-pattern use named by value before comparison, score, or gate use. | Does not import ISO quality characteristics as the FPF quality ontology; quality-term or evaluative characterization still exits to `C.16.Q`, `C.25`, or `E.21` when live. |
+| ISO/IEC 80000 quantities and units practice and VIM-style metrology vocabulary. | Current reference for quantities, units, and measurement vocabulary. | Disciplines unit, value, scale, and scoring-method fields; blocks number-without-scale and unitless comparison overreads. | Does not impose physical-quantity metrology on qualitative, ordinal, or pattern-quality characteristic spaces. |
+| NIST AI RMF 1.0 metric and risk-management practice, including measurement, monitoring, validity, and risk-tolerance framing. | Current practice reference for proxy and indicator risk. | Disciplines `indicatorRole`, `proxyDistortionRisk`, threshold rule or reference, and non-admissible use; informs the indicator and proxy and score-as-gate anti-patterns. | Does not let a risk metric, dashboard, or benchmark become assurance, release permission, or decision authority. |
+| Current FPF internal characterization stack: `A.17`, `A.18`, `C.16`, `A.19`, `C.25`, `C.29`, and `E.21`. | Current FPF governing-source relation; primary authority for FPF characteristic and scale recovery. | Selects the governing pattern after repair and prevents `C.16.P` from becoming a CHR super-pattern. | Does not copy local trigger lists into governing patterns or replace characteristic named by value-space, quality, mathematical-lens, benchmark, gate, or decision patterns. |
+
+This row blocks scalar verdicts without declared scale and admissible use. It does not import metric lists, maturity-status schemes, or external scoring traditions as FPF ontology.
+
+### C.16.P:13 - Relations
 
 - `E.10` catches hidden characteristic and scale wording and selects this pattern only when construction is hidden.
 - `E.10.ARCH` defines the shared wording-use recovery order and applicability row.

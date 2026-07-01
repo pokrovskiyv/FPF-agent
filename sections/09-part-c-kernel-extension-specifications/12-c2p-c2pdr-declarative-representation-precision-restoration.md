@@ -22,7 +22,7 @@ Use this pattern especially when:
 
 **What goes wrong if missed.** The representation appears to do work it cannot do. A path "routes" a decision, a query "calls" a pattern, a dashboard "authorizes" release, a checklist predicate "runs" a process, an evidence path "permits" action, or a program-looking text becomes "the method" without recovering method semantics, method description, formal substrate, mechanism, work plan, work, evidence, or source-use relation.
 
-**What this buys.** The working reader keeps the representation useful without making it magical. Graph paths remain graph paths, evidence paths remain evidence paths or provenance paths, queries remain representations, pattern relations remain declarative relations, and method-like wording is assigned to the slot, use-position, or governing pattern named by value before it guides work, evidence, gate, release, assurance, or method claims.
+**What this buys.** The working reader keeps the representation useful without making it magical. Graph paths remain graph paths, evidence paths remain evidence paths or provenance paths, queries remain representations, pattern relations remain declarative relations, and method-like wording is assigned to the current ontic slot, relation position, use relation, claim kind, or governing pattern named by value before it guides work, evidence, gate, release, assurance, or method claims.
 
 **Not this pattern when.**
 
@@ -59,8 +59,8 @@ Without this repair:
 | --- | --- |
 | Representation usefulness and action overread | Graphs, queries, predicates, and dashboards are useful precisely because they expose structure; their shape does not supply hidden work, permission, or release. |
 | Legitimate path words and metaphor repair | `A.10 evidence path`, `E.18` graph path, and carrier file paths may be legitimate; `path` becomes a defect only when it carries a stronger action or authority claim by metaphor. |
-| Method generality and slot discipline | Algorithms, programs, solver models, proofs, SOPs, and process models can all be useful, but the current slot or use-position is recovered before `method`, `method description`, `mechanism`, or `work` is selected. |
-| Declarative and imperative labels are too crude | Current programming and process practice includes effects, handlers, constraint models, object-centric events, e-graphs, and process theories; the repair recovers FPF kind and slot or use-position rather than choosing one programming-paradigm slogan. |
+| Method generality and slot discipline | Algorithms, programs, solver models, proofs, SOPs, and process models can all be useful, but the current ontic slot, relation position, use relation, or claim kind is recovered before `method`, `method description`, `mechanism`, or `work` is selected. |
+| Declarative and imperative labels are too crude | Current programming and process practice includes effects, handlers, constraint models, object-centric events, e-graphs, and process theories; the repair recovers FPF kind, current ontic slot, relation position, use relation, or claim kind rather than choosing one programming-paradigm slogan. |
 | Direct governing pattern and local repair | When `E.18`, `A.10`, `A.3.1`, `A.3.2`, `A.6.1`, `A.15.2`, `A.15.1`, `E.17`, or another pattern already governs the current claim, this pattern names only the overread and leaves the next claim to that pattern rather than duplicating it. |
 
 ### C.2.P.DR:4 - Solution
@@ -119,7 +119,7 @@ The note records the local repair long enough to make the next governing pattern
 
 `path` is not banned.
 
-`A.10 evidence path for <claim, effect, or use>` is legitimate when the evidence relation or provenance relation for the named claim, effect, or reliance use is current. `E.18` graph path and `PathSlice` are legitimate when the graph object, path, slice, crossing, or flow valuation is current. Carrier file paths, URLs, mathematical paths, and quoted source paths are legitimate when their notation or source role is current.
+`A.10 evidence path for <claim, effect, or use>` is legitimate when the evidence relation or provenance relation for the named claim, effect, or reliance use is current. `E.18` graph path and `PathSlice` are legitimate when the graph object, path, slice, crossing, or flow valuation is current. Carrier file paths, URLs, mathematical paths, and quoted source paths are legitimate when their notation, source-use function, or use relation is current.
 
 The defect is not the word. The defect is hidden ontology: the sentence treats a representation as if something literally ran, flowed, executed, authorized, released, proved, selected, or prescribed action without the governing kind named by value.
 
@@ -127,7 +127,7 @@ The defect is not the word. The defect is hidden ontology: the sentence treats a
 
 Do not repair `algorithm`, `program`, `solver`, `proof`, `recipe`, `method`, `workflow`, `process`, `procedure`, `access path`, `query plan`, or `control strategy` by choosing one fashionable replacement.
 
-Recover the current slot or use-position:
+Recover the current ontic slot, relation position, use relation, or claim kind:
 
 | Current claim | Governing pattern |
 | --- | --- |
@@ -204,7 +204,7 @@ Repair: if the current relation is "use `A.10` when an evidence relation or prov
 
 Wording: "The solver algorithm is the mechanism."
 
-Repair: recover the current slot or use-position. The solver configuration may be `U.MethodDescription`; the accepted semantic way of solving may be `U.Method`; the MILP formulation may expose formal substrate and mathematical-lens use; a reusable operation algebra with laws and admissibility predicates may be `U.Mechanism`; a solver run may be `U.Work`; a run result may be evidence for another claim. Select `A.6.1` and `E.20` only when mechanism fields are present in the current claim.
+Repair: recover the current ontic slot, relation position, use relation, or claim kind. The solver configuration may be `U.MethodDescription`; the accepted semantic way of solving may be `U.Method`; the MILP formulation may expose formal substrate and mathematical-lens use; a reusable operation algebra with laws and admissibility predicates may be `U.Mechanism`; a solver run may be `U.Work`; a run result may be evidence for another claim. Select `A.6.1` and `E.20` only when mechanism fields are present in the current claim.
 
 #### C.2.P.DR:5.7 - Reactor-cooling flow graph
 
@@ -253,7 +253,7 @@ DeclarativeRepresentationRepair:
 | `CC-C2PDR-3` | The tempting imperative overread is explicit: route, call, dispatch, invoke, run, flow, send, receive, authorize, release, prove, prescribe, execute, select, pass a gate, or record work. |
 | `CC-C2PDR-4` | The recovered governing pattern is named by value, or the case is demoted to quote-only, ordinary prose, reduced-use cue, blocked use, or incomplete rewrite. |
 | `CC-C2PDR-5` | Legitimate `A.10 evidence path`, `E.18` graph path, `PathSlice`, carrier file path, URL, or mathematical path use is preserved when that kind is current. |
-| `CC-C2PDR-6` | Method-like and algorithm-like wording recovers the current slot or use-position before replacement: `A.3.1`, `A.3.2`, `A.6.0`, `C.29`, `A.6.1`, `E.20`, `A.15.2`, `A.15.1`, `A.10`, direct governing pattern, or quote-only source wording. |
+| `CC-C2PDR-6` | Method-like and algorithm-like wording recovers the current ontic slot, relation position, use relation, or claim kind before replacement: `A.3.1`, `A.3.2`, `A.6.0`, `C.29`, `A.6.1`, `E.20`, `A.15.2`, `A.15.1`, `A.10`, direct governing pattern, or quote-only source wording. |
 | `CC-C2PDR-7` | An `E.10.ARCH:3.1` project-concern recovery may connect method, mechanism, formal-substrate, work values, evidence relations, source relations, gate relations, or result relations, but each connected value keeps its own governing pattern and typed claim. |
 | `CC-C2PDR-8` | The repair leaves one retained use and one blocked overread; type-correct but inert wording is incomplete. |
 | `CC-C2PDR-9` | The pattern does not become a general representation theory, API pattern, schema pattern, legal framework, workflow framework, or generic admissibility pattern. |
@@ -289,11 +289,11 @@ DeclarativeRepresentationRepair:
 
 This pattern uses external sources only for the representation-overread repair question. They do not replace FPF ontology, and older famous sources are lineage or contrast unless a current source below supplies the contemporary payload.
 
-| Source or practice line | Source-use role | What it changes here |
+| Source or practice line | Source-use function or relation | What it changes here |
 | --- | --- | --- |
 | `E.10`, `E.10.ARCH`, and `C.2.P` | Current FPF precision-restoration architecture. | This pattern is a bounded child realization under `C.2.P`, not a new umbrella pattern. |
 | `A.10` and `E.18` | Local FPF direct governing patterns for evidence paths, provenance paths, transformation-flow graph paths, and path slices. | Path wording is legitimate when those kinds are current; the defect is stronger overread. |
-| `A.3.1`, `A.3.2`, `A.6.0`, `C.29`, `A.6.1`, `E.20`, `A.15.2`, and `A.15.1` | Local FPF slot chain for method-like and algorithm-like wording. | The repair recovers slot or use-position before choosing method, method description, formal substrate, mechanism, work plan, or work occurrence. |
+| `A.3.1`, `A.3.2`, `A.6.0`, `C.29`, `A.6.1`, `E.20`, `A.15.2`, and `A.15.1` | Local FPF method-like and algorithm-like wording discipline. | The repair recovers current ontic slot, relation position, use relation, or claim kind before choosing method, method description, formal substrate, mechanism, work plan, or work occurrence. |
 | Stefano Gogioso, Vincent Wang-Mascianica, Muhammad Hamza Waseem, Carlo Maria Scandolo, and Bob Coecke, "Constructor Theory as Process Theory", arXiv:2401.05364, EPTCS 397, 2023; David Deutsch and Chiara Marletto, "Constructor theory of time", arXiv:2505.08692v3, revised 2026-06-05. | Current SoTA decision payload for transformation-theory and process-theory repair of computation, method, and dynamics wording. | Computation, information, dynamics, and procedure wording is interpreted through possible or impossible transformation and compositional-process claims when that claim is current, not through software notation or ordered instruction prose first. |
 | Roger Bosman, Birthe van den Berg, Wenhao Tang, and Tom Schrijvers, "A Calculus for Scoped Effects & Handlers", Logical Methods in Computer Science 20(4), 2024, arXiv:2304.09697; Cristina Matache, Sam Lindley, Sean Moss, Sam Staton, Nicolas Wu, and Zhixuan Yang, "Scoped Effects as Parameterized Algebraic Theories", ESOP 2024 extended version, arXiv:2402.03103. | Current SoTA decision payload for effectful computation and programming-model wording. | Operation syntax, semantic handling, scope, resources, equations, and effect information remain separable; pure-function slogans and imperative-declarative slogans are not enough. |
 | Francesco Chiariello, Valeria Fionda, Antonio Ielo, and Francesco Ricca, "Direct Encoding of Declare Constraints in ASP", Theory and Practice of Logic Programming 25, 2025, arXiv:2412.10152; Alessandro Berti et al., "OCEL (Object-Centric Event Log) 2.0 Specification", arXiv:2403.01975; Lien Bosmans et al., "Dynamic and Scalable Data Preparation for Object-Centric Process Mining", arXiv:2410.00596. | Current SoTA decision payload for process-model, trace, workflow, and event-record wording. | Constraint, event, object, relation, data model, ingestion, transformation, storage, and analysis claims are recovered separately before a method, work plan, work occurrence, evidence, or gate claim is accepted. |

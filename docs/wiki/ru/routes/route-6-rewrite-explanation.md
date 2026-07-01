@@ -3,7 +3,7 @@ title: "Маршрут 6: Пересказ для аудитории"
 sources:
   - sections/routes/route-6-rewrite-explanation.md
   - scripts/build_routes.py
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,9 +21,9 @@ tags:
 ## Ключевые решения
 
 - **Длина цепочки:** 5 секций при полной загрузке (самый короткий маршрут Tier 1), 3 из них core.
-- **Core-секции:** `A.6.3.CR` (conservative retextualization), `A.6.3.RT` (representation-scheme transition с сохранением EntityOfConcern), `E.17.EFP` (ExplanationFaithfulnessProfile — дисциплина использования объяснений поверх существующих граней MVPK).
-- **Полная цепочка добавляет:** `E.17.ID.CR` (ComparativeReviewUnit — ограниченное сравнение по единицам сравнительного обзора) и `E.17.AUD.LHR` (дисциплина стабильности PublicationUnit и Local Head Restoration).
-- **У `A.6.3.CR` нет записи в метаданных:** этот паттерн стоит первым в цепочке (и помечен как core), но отсутствует в `sections/metadata.json`, поэтому `build_routes.py` выводит его заголовок как `(not found)` с пустым путём файла. Остальные четыре паттерна разрешаются в реальные файлы секций.
+- **Core-секции:** `A.6.3.CR` (conservative retextualization — с сохранением объекта-предмета), `A.6.3.RT` (representation-scheme transition с сохранением EntityOfConcern), `E.17.EFP` (ExplanationFaithfulnessProfile — дисциплина использования объяснений).
+- **Полная цепочка добавляет:** `E.17.ID.CR` (ComparativeReviewUnit — ограниченное сравнение по единицам сравнительного обзора) и `E.17.AUD.LHR` (PublicationUnit Stability Discipline and Local Head Restoration).
+- **Резолвинг `A.6.3.CR`:** стоит первым в цепочке (и является core), резолвится в `sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md`.
 
 ## Статус
 
@@ -33,7 +33,7 @@ tags:
 
 - **Минимальная загрузка** (простой запрос): первые 3 core-секции.
 - **Полная загрузка** (сложный запрос): все 5 секций цепочки.
-- **При застревании:** проверить соответствующий `_xref.md` на перекрёстные ссылки.
+- **При застое:** проверить соответствующий `_xref.md` на перекрёстные ссылки.
 
 ## Связанные статьи
 

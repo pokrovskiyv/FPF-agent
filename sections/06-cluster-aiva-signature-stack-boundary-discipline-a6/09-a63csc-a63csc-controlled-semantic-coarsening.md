@@ -14,13 +14,13 @@
 
 **EntityOfConcern preservation discipline.** Controlled coarsening stays under entityOfConcernRef-preserving viewing only when the C.2.1 `entityOfConcernRef` remains stable. When the source-bearing side is a declared source set, its membership, loss account, and reopen condition must also be bounded; that source-set discipline does not substitute for same-EntityOfConcern preservation. Any `entityOfConcernRef` shift leaves this pattern for `A.6.4`.
 
-**Use this when.** A summary, briefing, redaction, dashboard tile, lookup handle, didactic compression, or other readable coarsened rendering coarsens one source-bearing side by dropping or narrowing distinctions, recoverability, reliability transport, or admissible-use value, or when review discovers that the readable item can be retained only as a coarsened rendering.
+**Use this when.** A summary, briefing, redaction, dashboard tile, lookup handle, didactic compression, architecture description, architecture view, framework readme, preface, pattern-language carrier, or other readable coarsened rendering coarsens one source-bearing side by dropping or narrowing distinctions, recoverability, reliability transport, structural content, or admissible-use value, or when review discovers that the readable item can be retained only as a coarsened rendering. The source-bearing side may be a text, but it may also be wider source structure, architecture as selected structures in context, a model, a graph, a source pack, or a pattern set.
 
 **Plain recognition line.** A short version is useful only while the reader can still see what it came from, what it leaves out, and when to go back.
 
 `Controlled Semantic Coarsening` governs one coarsened rendering that remains useful only because the source-bearing side stays identifiable, the admissible use is narrower, downstream use is non-admissible from the coarsened rendering alone, and escalation reopens that source-bearing side. It is the FPF governing pattern for that source-to-rendering relation. It is not a tag, token, `U.*` kind, publication face, carrier, bridge card, stance overlay, work plan, approval, or gate.
 
-**Start here when.** Your first honest publication unit is a small controlled-coarsening card: source-bearing side, coarsened rendering, narrower admissible use, declared source-loss mode, non-admissible downstream use, and reopen trigger. Read `orientation use`, `reliance use`, `operative claim`, `non-admissible downstream use`, and `reopen trigger` through the shared `E.17:5.1c` terms; use `E.17:5.1d` when the primary question under repair may be ordinary rewrite, representation change, explanation, comparison, bridge or substitution, work or reliance, gate, evidence, assurance, retargeting, or carrier or front-end work instead of coarsening.
+**Start here when.** Your first honest publication unit is a small controlled-coarsening card: source-bearing side, coarsened rendering, narrower admissible use, declared source-loss mode, non-admissible downstream use, and reopen trigger. Read `orientation use`, `reliance use`, `operative claim`, `non-admissible downstream use`, and `reopen trigger` through the shared `E.17:5.1c` terms; use `E.17:5.1d` when the primary question may be ordinary rewrite, representation change, explanation, comparison, bridge or substitution, work or reliance, gate, evidence, assurance, retargeting, or carrier or front-end work instead of coarsening.
 
 **Neighboring project records and governing patterns.** Ordinary same-entity wording belongs under `A.6.3.CR`; representation-scheme change belongs under `A.6.3.RT`; explanation-facing class discipline belongs under `E.17.EFP`; bounded comparison belongs under `E.17.ID.CR`; bridge or substitution use belongs under `F.9` or `F.9.1`; changed EntityOfConcern belongs under `A.6.4`; work authority requires `A.15`-governed selected method, `U.WorkPlan`, performed `U.Work`, work-result record, or result-measurement record; gate or adjudication authority requires `A.20` or `A.21`-governed project records.
 
@@ -173,12 +173,13 @@ A coarsening chain may not silently reset provenance. If one coarsened rendering
 
 Aggregation or quotient-like coarsening remains inside this pattern only while the coarsened rendering keeps one bounded selected set, slice, case bundle, or alternative bundle explicit as the EntityOfConcern or selected set. If several entities, alternatives, or slices become one new class-level EntityOfConcern or proxy EntityOfConcern, apply `A.6.4`.
 
-#### A.6.3.CSC:4.6 - Neighbor exits
+#### A.6.3.CSC:4.6 - Neighboring-pattern boundaries
 
 | If the primary question is now... | Use this governing FPF pattern or `authoritySourceRef` destination |
 | --- | --- |
 | Same-entity textual rewording without a separate narrower-use card | `A.6.3.CR` |
 | Representation scheme or reasoning-medium shift | `A.6.3.RT` |
+| Source structure is ordered into a sequential narrative path and the ordering rationale is primary | `A.6.3.NAR` for the narrative rendering relation; keep CSC only for the coarsened narrower-use card when source distinctions are dropped or narrowed |
 | Explanation-facing class over existing source `U.Episteme` or `U.EpistemePublication` | `E.17.EFP` |
 | Bounded comparison over already pinned source epistemes or source publications | `E.17.ID.CR` |
 | Equivalence, substitution, interop row, or bridge or substitution use | `F.9` |
@@ -214,6 +215,8 @@ Neighboring governing patterns may point here when a coarsened rendering relatio
 
 **Redacted functional-description publication.** The source-bearing side is a functional architecture note that names flow relations, method-selection limits, work-plan prerequisites, result-measurement requirements, and two exception cases. The coarsened rendering is a partner-facing table that keeps the main flow relation and removes the exception cases and result-measurement details. Its narrower admissible use is bounded orientation for coordination. Work planning, gate passage, evidence, engineering justification, control-architecture use, and release permission reopen the source-bearing side or apply `A.15`, `A.10`, `B.3`, `A.20`, `A.21`, or `B.2.5` as the claim being made requires.
 
+**Coarsened narrative briefing.** The source-bearing side is an architecture candidate set with three candidates, two quality-characteristic trade-offs, and one unresolved placement constraint. The narrative briefing tells the useful story of why candidate C-2 is attractive and leaves the other candidates as source-return items. `A.6.3.NAR` governs the structure-to-sequence rendering relation. CSC governs the narrower admissible use: orientation for discussion only, not candidate selection, project decision, implementation authorization, or evidence of selected architecture.
+
 **Exceptional interop-facing simplification.** The source-bearing side is two pinned context notes plus their bridge or comparison source material. The coarsened rendering is: `For this exchange only, Field A is treated as broader than Field B; see source notes for exceptions.` The rendering may orient the exchange, but any equivalence, substitution, projection, bridge-row, or approval use applies `F.9` or `F.9.1` or reopens the source-bearing side source material.
 
 **Bad fit: hidden work authority.** `Deployment may proceed; see summary S-3.` This is not an admissible controlled coarsening card. The sentence tries to convert a coarsened summary into execution or gate authority. Use `A.15`, `A.20`, or `A.21`, and reopen the source-bearing side before any work or approval claim proceeds.
@@ -236,7 +239,7 @@ A conformance check is retained only if it changes the next admissible use of th
 | **CC-CSC-2 (Rendering explicit).** | A conforming card SHALL identify the coarsened rendering and keep it distinct from the source-bearing side. | Prevents citation laundering and source-to-rendering collapse. |
 | **CC-CSC-3 (Admissible use).** | A conforming card SHALL state the narrower admissible use. | Keeps ordinary convenience from becoming broad authority. |
 | **CC-CSC-4 (Non-admissible downstream use).** | A conforming card SHALL state the non-admissible downstream use. | Makes over-read and misuse visible early. |
-| **CC-CSC-5 (Reopen or handoff).** | A conforming card SHALL state the source-bearing reopen trigger or governing-pattern handoff condition. | Gives readers an admissible next move under dispute, citation, reliance, policy, bridge, work, gate, privacy, assurance, release, or adjudication use. |
+| **CC-CSC-5 (Reopen or handoff).** | A conforming card SHALL state the source-bearing reopen trigger or governing-pattern handoff condition. | Gives readers an admissible next use under dispute, citation, reliance, policy, bridge, work, gate, privacy, assurance, release, or adjudication use. |
 | **CC-CSC-6 (Ordinary economy).** | Authors SHOULD keep ordinary cases to the mini-card unless dispute, citation, external reliance, policy, bridge, work, gate, privacy, or assurance use is live. | Preserves usability and avoids daily-process inflation. |
 
 #### A.6.3.CSC:7.2 - CSC-Conditional
@@ -247,9 +250,9 @@ A conformance check is retained only if it changes the next admissible use of th
 | **CC-CSC-8 (Branch and use split).** | Load-bearing or disputed cases SHALL keep `coarseningBranch` and `admissibleUseValue` separate. | Prevents the coarsening branch from implying source-loss mode or authority. |
 | **CC-CSC-9 (Source-loss mode and recoverability).** | Cases affecting claim admissibility, accountability, admissible-use value, or later citation SHALL state source-loss mode and recoverability class. | Prevents recoverability from being mistaken for admissible use. |
 | **CC-CSC-10 (Coarsening-chain continuity).** | A coarsening chain SHALL satisfy `CSC-WF-3` or reopen the source-bearing side. | Prevents provenance reset by repeated summarization. |
-| **CC-CSC-11 (Governing-pattern exits).** | Bridge, stance, work, gate, adjudication, and changed-entity claims SHALL be handled by their governing patterns or publications with named authority-reference relations. | Prevents CSC from stealing neighboring pattern duties. |
+| **CC-CSC-11 (Governing-pattern boundaries).** | Bridge, stance, work, gate, adjudication, and changed-entity claims SHALL be handled by their governing patterns or publications with named authority-reference relations. | Prevents CSC from stealing neighboring pattern duties. |
 | **CC-CSC-12 (No authority by repetition).** | A conforming card SHALL satisfy `CSC-WF-2`. | Blocks authority laundering through fluency or citation. |
-| **CC-CSC-13 (Source, rendering, and publication separation).** | Claim-bearing cases SHALL separate source-bearing side, coarsened rendering, `PublicationUnit`, publication face, E.17 publication-face kind value `publication face/form`, E.17 publication-face kind value `interop publication form`, and carrier when those could be confused. | Keeps `PublicationUnit`, publication face, and carrier roles distinct. |
+| **CC-CSC-13 (Source, rendering, and publication separation).** | Claim-bearing cases SHALL separate source-bearing side, coarsened rendering, `PublicationUnit`, publication face, E.17 publication-face kind value `publication face/form`, E.17 publication-face kind value `interop publication form`, and carrier when those could be confused. | Keeps `PublicationUnit`, publication face, and carrier positions distinct. |
 | **CC-CSC-14 (Privacy and redaction).** | Privacy or redaction cases SHALL name the sharing boundary, withheld distinctions, risk rationale, non-admissible accountability or gate uses, and source-bearing review path. | Prevents redaction from becoming closure. |
 | **CC-CSC-15 (Interop simplification).** | Exceptional interop-facing simplifications SHALL name the operative relation kind and hand bridge or equivalence pressure to `F.9` or `F.9.1`. | Prevents simplified relation language from carrying bridge or substitution use. |
 | **CC-CSC-16 (Source relation class).** | Claim-bearing source-relation cases SHALL use the `E.17:5.1b` vocabulary where needed: source pointer, source availability, source retrieval, source use, source faithfulness, claim admissibility, contradiction, plausibility-only, omission, declared source-loss mode, added commitment, added linkage, independent verification, admissible use, non-admissible downstream use, and reopen trigger. | Keeps helpful renderings from passing as evidence. |
@@ -272,7 +275,7 @@ A conformance check is retained only if it changes the next admissible use of th
 | Benefits | Trade-offs and mitigations |
 | --- | --- |
 | Cheap coarsened renderings stay admissible because the source, admissible use, loss, non-admissible use, and reopen path remain visible. | Authors must add a small card where they might otherwise write only a friendly summary. The mitigation is that ordinary cases need only the mini-card. |
-| Neighboring patterns can hand coarsening boundary to one common governing pattern instead of repeating partial local doctrine. | Readers must still keep the primary question with the governing FPF pattern or `authoritySourceRef` destination that carries it. The neighbor-exit table and bad-fit examples keep that disposition inspectable. |
+| Neighboring patterns can point to one common coarsening-boundary pattern instead of repeating partial local doctrine. | Readers must still keep the primary question with the governing FPF pattern or `authoritySourceRef` destination that carries it. The neighboring-boundary table and bad-fit examples keep that disposition inspectable. |
 | Load-bearing coarsening becomes reviewable without making every summary a full assurance object. | In high-risk cases the assurance record can grow. The use-specific field rule keeps growth tied to real risk. |
 
 ### A.6.3.CSC:10 - Rationale
@@ -283,7 +286,7 @@ This pattern is narrower than a general simplification pattern. It applies only 
 
 The core memory aid is simple: a coarsened rendering may help interpretation, but it must not become the source-bearing side it was derived from. It may expose or cite the source-bearing side or the project-side FPF kind and reference named by value that carries the requested admissibility; that exposed source or value remains the admissibility source, not the coarsened rendering's readable face. If admissibility is missing, a repair request, source-gap note, or reopen note may guide only future repair or return to source; it does not backdate the coarsened rendering into source relation.
 
-### A.6.3.CSC:11 - SoTA Alignment: Adopted Or Adapted Invariants And Rejected Shortcuts
+### A.6.3.CSC:11 - SoTA-Echoing: Adopted Or Adapted Invariants And Rejected Shortcuts
 
 **SoTA alignment rule.** Read each row here as source idea -> local FPF invariant -> practical local test -> popular shortcut rejected. A source citation governs nothing by reputation; it counts only when the cited idea is translated into the Solution, conformance checks, boundary rules, worked slices, and Relations of this pattern.
 
@@ -295,7 +298,7 @@ The core memory aid is simple: a coarsened rendering may help interpretation, bu
 | --- | --- | --- | --- | --- |
 | Fluent summaries and generated renderings can be useful without carrying source relation. | Summarization and factuality work separates fluency from faithfulness, attribution, and fine-grained source relation. | Maynez et al. (2020), *On Faithfulness and Factuality in Abstractive Summarization*; Min et al. (2023), *FActScore*; Es et al. (2023), *RAGAS*; source maturity = research papers and evaluation practice used for evaluation use. | `A.6.3.CSC` adopts the `E.17:5.1b` source-relation distinction by separating source pointer, source availability, or source retrieval, source use, source faithfulness, claim admissibility, contradiction, plausibility-only, omission, declared source-loss mode, added commitment, added linkage, independent verification, admissible use, non-admissible downstream use, and reopen trigger. | **Adopt or adapt.** Adopt the warning against fluent unsupported output; adapt it into a lightweight FPF card so ordinary summaries are not forced into full evaluation studies. |
 | Redaction and de-identification reduce exposure without deleting accountability or audit questions. | Privacy-risk and de-identification guidance treats disclosure boundary, residual risk, and governance context as part of safe release. | NIST SP 800-188, *De-Identifying Government Datasets* (2023); source maturity = current government guidance. | The privacy and redaction branch requires sharing boundary, withheld distinctions, source-bearing review path, and non-admissible accountability or gate uses. | **Adapt.** Use privacy governance as a safeguard for bounded disclosure while rejecting redaction-as-closure. |
-| Views, representations, and relation kinds remain claim-bearing even when a publication face or rendering is made easier to read. | Architecture-description and model-based practice make viewpoint, view, model kind, and traceable relation explicit rather than treating a clearer view as neutral formatting. | ISO/IEC/IEEE 42010:2022; OMG SysML v2.0 Language Specification (2025); source maturity = mature standard plus current technical specification. | The pattern keeps coarsening distinct from representation-scheme transition, explanation profiling, comparative review, bridge cards, bridge-stance overlays, and work and gate authority. | **Adopt or adapt.** Adopt explicit view and relation discipline; adapt it to same-lineage coarsened renderings and neighbor exits. |
+| Views, representations, and relation kinds remain claim-bearing even when a publication face or rendering is made easier to read. | Architecture-description and model-based practice make viewpoint, view, model kind, and traceable relation explicit rather than treating a clearer view as neutral formatting. | ISO/IEC/IEEE 42010:2022; OMG SysML v2.0 Language Specification (2025); source maturity = mature standard plus current technical specification. | The pattern keeps coarsening distinct from representation-scheme transition, explanation profiling, comparative review, bridge cards, bridge-stance overlays, and work and gate authority. | **Adopt or adapt.** Adopt explicit view and relation discipline; adapt it to same-lineage coarsened renderings and neighboring-pattern boundaries. |
 | Data and interoperability publication practice distinguishes discoverability, metadata, validation, and exchange from authority to substitute one object for another. | Web-data and semantic-web standards separate catalog metadata, provenance, structural metadata, and validation conditions from the data or relation itself. | W3C Data on the Web Best Practices (2017); W3C SHACL (2017); W3C DCAT v3 (2024); source maturity = mature web standards and recommendations for metadata, validation, and catalog interoperability. | Exceptional interop simplification must name its relation kind and apply `E.17.ID.CR`, `F.9`, or `F.9.1` when the case carries equivalence, substitution, projection, or bridge claims. | **Adapt or reject.** Adapt explicit metadata and validation discipline; reject using a simplified relation gloss as bridge or substitution admissibility. |
 | Explanation usefulness depends on the user and can be over-read as authority it does not carry. | Explainable-AI practice treats explanation as audience-facing explanation with limits, not as a universal guarantee. | NIST IR 8312, *Four Principles of Explainable Artificial Intelligence* (2021); source maturity = current government guidance. | `audienceOverReadRisk` and source reopen keep helpful prose subordinate to the source-bearing side when stakes rise. | **Adopt or adapt.** Adopt user-sensitive explanation limits; adapt them to FPF coarsening cases where a rendering is useful but not authoritative for downstream use. |
 
@@ -306,8 +309,8 @@ The practical implication is the same across these traditions: coarsened readabl
 ### A.6.3.CSC:12 - Relations
 
 - **Specializes:** `A.6.3 U.EpistemicViewing` for declared source-loss mode in a same-lineage source-to-rendering relation.
-- **Coordinates with:** `A.6.3.CR`, `A.6.3.RT`, `E.17.EFP`, `E.17.ID.CR`, `F.9`, `F.9.1`, `A.15`, `A.6.4`, `A.20`, and `A.21`.
-- **Does not replace:** conservative retextualization, representation-scheme transition, explanation profiling, bounded comparative review, bridge-card discipline, stance overlay, changed-EntityOfConcern discipline, work authority, gate authority, or adjudication authority.
+- **Coordinates with:** `A.6.3.CR`, `A.6.3.RT`, `A.6.3.NAR`, `E.17.EFP`, `E.17.ID.CR`, `F.9`, `F.9.1`, `A.15`, `A.6.4`, `A.20`, and `A.21`.
+- **Does not replace:** conservative retextualization, representation-scheme transition, structure-to-narrative rendering, explanation profiling, bounded comparative review, bridge-card discipline, stance overlay, changed-EntityOfConcern discipline, work authority, gate authority, or adjudication authority.
 - **Entry relation:** neighboring patterns may hand off here when a coarsened rendering's narrower-use, non-admissible-use, and reopen card becomes the primary question.
 - **Governing-pattern relation wording:** this pattern is a `specialization under A.6.3`, not a bundle, suite, profile, overlay, or review pack. Its governing role is limited to the controlled-coarsening relation itself.
 
@@ -315,7 +318,7 @@ The practical implication is the same across these traditions: coarsened readabl
 
 Use CSC first when one source-bearing side, model, state representation, or evidence set is made less detailed for a narrower use, or when review discovers that a coarsened rendering already in circulation can be retained only under a narrower-use card: summary, dashboard row, orientation note, partner-safe version, simplified diagram, or coarse working description. Ordinary controlled simplification remains CSC even when it is lossy.
 
-Action path:
+Application sequence:
 
 1. Name the source-bearing side and the coarsened version.
 2. State the use scope of the coarsened version before stating what it means.
@@ -334,7 +337,7 @@ For ordinary use, start with the standard shortcut mini-form:
 | Shortcut | Which less detailed rendering or working shortcut is used instead? |
 | Loss | Which distinction, evidence path, comparability, uncertainty, state dimension, or alternative is not carried? |
 | Admissible use | Which triage, orientation, explanation, or local decision use remains admissible? |
-| Reopen | Which dispute, decision change, admissible-use shift, threshold crossing, or non-admissible-use demand sends the reader back to the source-bearing side? |
+| Reopen | Which dispute, decision change, admissible-use shift, threshold crossing, or non-admissible-use demand requires return to the source-bearing side? |
 
 Use a fuller CSC and `C.26` coarsening boundary record only when the coarsened state representation will be reused, formalized, empirically compared, used in a high-stakes decision, or tied to a comparative performance claim:
 

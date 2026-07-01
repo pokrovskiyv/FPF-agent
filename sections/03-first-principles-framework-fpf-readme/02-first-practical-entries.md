@@ -6,13 +6,13 @@ The entries below are not a required sequence. They are common places where FPF 
 
 ### 1. Develop or review architecture
 
-Use this when you need to design, explain, review, or improve the architecture of a product, organization, technical system, document system, AI-agent setup, research program, or other thing with important internal structure.
+Use this when you need to design, explain, review, or improve the architecture of a product, organization, technical system, document system, AI-agent setup, research program, local practice, or other thing with important internal structure.
 
-FPF helps you ask what is being architected, which structures matter, what property of the architecture is being changed or judged, and which description, diagram, view, promise, decision, evidence, or implementation task is a different matter. It gives you language for selected structures, structural views, architecture characteristics, modularity, interfaces, scale, interlevel tensions, and architecture-changing moves.
+FPF helps you start from the thing being changed or described, not from the drawing. It asks which structures are unknown, candidate, selected, expected, or actual; which architecture characteristics are under pressure; which alternatives must remain alive; which decision is now binding; which method or work will realize the selected structures; and what operation, measurement, or feedback can reopen the architecture.
 
-Typical first result: a short architecture question note that says what is being architected, which structures matter, which architecture characteristic is at stake, what description or view is needed, and what decision or implementation work is still not settled by the architecture statement.
+Typical first result: a short P2S flow card or architecture question note that names the described holon, bounded context, problem pressure, unknown or selected structures, architecture characteristics, candidate or decision owner, work or feedback owner, and what real selected structure is still not settled by the current architecture statement.
 
-First inspect: `C.30`, `A.22`, `C.30.ASV`, `C.30.AD`, `C.31`, `A.6.M`, and the relevant architecture precision-restoration patterns when wording hides the kind of structure being discussed.
+First inspect: `C.32.P2S`, `C.30`, `A.22`, `C.32`, `C.32.PAD`, `C.32.ADR`, `C.33`, `C.34`, `C.35`, `C.30.ASV`, `C.30.AD`, `C.31`, `C.32.CONWAY`, and `B.2` or `B.2.P` when the work may reidentify the whole being discussed.
 
 ### 2. Write rules, methods, and work-process documents
 
@@ -133,3 +133,15 @@ FPF helps you harvest alternatives, keep novelty and diversity visible, define c
 Typical first result: a SoTA pack, option portfolio, candidate set, archive, or selector-ready publication with declared scope, comparison characteristics, and refresh condition.
 
 First inspect: `G.0`, `G.1`, `G.2`, `G.5`, `G.10`, `G.11`, `C.18`, `C.19`, `A.19`, and `A.19.ECS`.
+
+### 14. Build a domain or local FPF-grounded framework
+
+Use this when a team needs its own FPF-grounded guide for a domain, organization, role context, or local practice, such as a hydroponic-cucumber framework, neural-network architecture framework, enterprise architecture-review framework, or Codex-process framework.
+
+FPF helps you keep the FPF Core, domain principle framework, local practice framework, source pack, selected pattern set, relation records, edition dependencies, publication/access carriers, quality loop, and refresh route from collapsing into one all-in-one carrier, one callable route, or one useful checklist. This is the normal adoption path when a group wants FPF for its own field without turning local policy into a Core rule.
+
+Typical first result: a family-and-structure map or principle-framework architecture decision that names the framework edition, bounded context, FPF Core dependency, selected first patterns, relation and publication carriers, source pack, quality route, and refresh route.
+
+In the first hour, write the context note, source-pack stub, first PFAD question, provisional name route, one to three pattern candidates, relation rows, first-entry carrier, quality route, and refresh trigger. Then open `E.4.DPF` for the full authoring spine.
+
+First inspect: `E.4`, `E.4.FPF` when the form of FPF itself is live, `E.4.PFAD`, `E.4.DPF`, `E.4.DPF.DA`, `E.4.PFR`, `G.2`, `E.8`, `E.11`, `E.17`, `F.18`, and `G.11`.

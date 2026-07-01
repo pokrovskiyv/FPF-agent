@@ -1,12 +1,16 @@
 ## C.26.3 - Viability-Envelope Boundary Regulation
 
-> Type: Architectural pattern
-> Status: Stable
-> Normativity: Normative unless explicitly marked informative
+> **Type:** Architectural pattern
+> **Status:** Stable
+> **Normativity:** Normative unless explicitly marked informative
 
 ### C.26.3:1 - Problem frame
 
 Use this pattern when architecture work is maintaining, recovering, or changing viable operating ranges across boundaries. The working problem is not "optimize one metric"; it is "keep a bundle of characteristics inside a viable region while disturbances, probes, actuators, boundary conditions, and operating regimes change."
+
+**What goes wrong if missed.** The team treats one dashboard value, stability slogan, or local metric as viability, while another envelope variable, actuator cost, boundary condition, or failure mode is already breaking the protected promise or function.
+
+**What this buys.** The viability claim becomes an inspectable envelope-regulation decision: bearer, protected promise or function, variables, disturbances, sensors or probes, actuators, boundary condition, adaptation cost, and failure mode are all named before acting.
 
 Most envelope work covered by this pattern is ordinary control, quality, SRE, causal, or work discipline, not QL. FEP, allostasis, and active inference are source analogies for envelope discipline, sensor and action coupling, and partial observability; ordinary control, SRE, quality-bundle, causal, and work patterns remain primary unless probe, order, export, or coarsening cue remains load-bearing after ordinary viability, quality, dynamics, measurement, boundary, and work patterns have carried their part.
 
@@ -24,7 +28,7 @@ Plain glosses:
 - `service situation`: an `A.6.8` facet-binding lens that identifies access point, delivery system, provider principal, promise content, commitment, delivery work, and evidence; it is not itself a new root bearer unless the relevant system facet is declared.
 - `viability envelope`: the region where the bearer can still keep the relevant promise or function, across several dimensions.
 - `envelope variable`: one characteristic that must stay within bounds, such as latency, reliability, support load, compliance exposure, safety margin, energy, or operator attention.
-- `actuator`: a work move that can change the situation, such as cache policy, throttle, staffing, routing, bridge rewrite, protocol, access, escalation, or measurement design.
+- `actuator`: a work action that can change the situation, such as cache policy, throttle, staffing, routing, bridge rewrite, protocol, access, escalation, or measurement design.
 - `allostasis`: preserving function by changing settings, environment, boundary condition, actuation, or operating regime when circumstances change.
 
 ### C.26.3:2 - Problem
@@ -105,7 +109,7 @@ Treat sensors, probes, dashboards, alerts, and metrics as possible participants 
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
 | Metric-as-envelope | A proxy is treated as the whole envelope. | Recover bearer, protected promise, full envelope, unmeasured dimensions, and admissible use. |
-| Goodharted viability | Actors optimize measured slots while damaging unmeasured survivor relations or future adaptability. | Route probe-caused behavior through `C.26.1`; add evidence for unmeasured envelope dimensions. |
+| Goodharted viability | Actors optimize measured slots while damaging unmeasured survivor relations or future adaptability. | Treat probe-caused behavior with `C.26.1`; add evidence for unmeasured envelope dimensions. |
 | Actuator overfit | An action preserves one parameter while pushing another cost, latency, boundary relation, or promise outside bounds. | Add trade-off condition, actuator authority, latency, adaptation cost, and failure mode. |
 
 #### C.26.3:4.4 - Conditional dynamics detail
@@ -127,7 +131,7 @@ The primary EntityOfConcern is a viability-envelope claim or plan. It is not a g
 
 The first useful move is to turn a one-scalar stability story into an inspectable envelope-regulation decision.
 
-Action path:
+Envelope-regulation sequence:
 
 1. Name the viability bearer and the promise or function being preserved; if service or market language is used, declare whether the bearer is a collective `U.System`, delivery system, trace population, evidence set, or relevant `A.6.8` facet-binding before treating the situation as a bearer.
 2. Name the envelope variables and the viable range or qualitative boundary for each.
@@ -163,7 +167,7 @@ failure mode: ...
 re-probe or destabilization condition: ...
 ```
 
-The record is not `U.ViabilityEnvelopeRegulation`, not a new kernel kind, and not a universal architecture constructor. It is a pattern-local normal form for writing envelope work clearly.
+The record is not `U.ViabilityEnvelopeRegulation`, not a new U-kind, and not a universal architecture constructor. It is a pattern-local normal form for writing envelope work clearly.
 
 Well-formedness constraints:
 
@@ -226,7 +230,7 @@ Allostasis, active inference, FEP, Markov blankets, and computational-boundary s
 | Homeostasis | Keep one parameter or bundle inside viable bounds. |
 | Allostasis | Preserve function by changing settings, environment, boundary condition, actuation, or operating regime. |
 | Active inference / perception as action | Measurement, sensor placement, and action have cost and can change later state estimates. |
-| Markov blanket / computational boundary | Boundary as a statistical or functional separation for measure/model/act; not a new substance. |
+| Markov blanket or computational boundary | Statistical or probabilistic boundary-lens cue only after recovery. Accepted local Markov dynamics stay with `A.3.3`; lens use stays with `C.29`, and C.26 or C.26.3 stays current only when quantum-like, probe, frame, viability, or measure-model-act claims remain. Physical boundary, interface module, component, functional element, boundary description or publication, and agency threshold require their direct owners; Markov wording does not admit them by itself. |
 | Criticality / metastability | Stability may be regime-bounded and fluctuation-bearing, not one final fixed point. |
 | Expected free energy / precision control | Information gathering, action, and confidence have cost; use only when those costs change the architecture decision. |
 
@@ -264,7 +268,7 @@ The pattern may feel too broad if it is applied to every quality concern. It is 
 | CC-C26.3.10 | The QL cue / formal cue is named if QL wording is retained. |
 | CC-C26.3.11 | QL wording appears only when probe, order, export, coarsening, or incompatible frame interaction remains load-bearing. |
 | CC-C26.3.12 | Rate/inertia/damping/effort and second-order dynamics variables appear only when load-bearing. |
-| CC-C26.3.13 | Homeostasis, allostasis, active inference, and Markov-boundary wording are translated into FPF-facing architecture terms before they carry the claim. |
+| CC-C26.3.13 | Homeostasis, allostasis, active inference, and Markov-boundary wording are restored into direct FPF owners before they carry the claim; Markov-blanket wording does not by itself create boundary, interface, component, agency, or viability authority. |
 | CC-C26.3.14 | The pattern does not mint `ViabilityParameter`, `HomeostasisOntology`, or a new control ontology. |
 
 ### C.26.3:8 - Common Anti-Patterns and How to Avoid Them
@@ -276,6 +280,7 @@ The pattern may feel too broad if it is applied to every quality concern. It is 
 | Passive sensor assumption | A dashboard is treated as neutral even after it changes behavior. | Use `C.26.1` and evidence patterns. |
 | Actuator without authority | The text recommends a change no one can enact in time. | State actuator authority and latency. |
 | Biological proof jump | Homeostasis or FEP language is used as proof for software or organizations. | Treat it as modeling discipline and apply existing FPF patterns to claims. |
+| Markov-blanket collapse | A statistical separation, physical interface, interface module, functional element, component, boundary description, and agency threshold are all called the Markov blanket. | Split the source phrase through `A.6.RSIR`: use `C.29` or `C.26` for lens use; use `A.1` plus the direct relation owner for holon delimitation or boundary crossing; use `A.6.P`, `A.6.0`, and `A.6.5` for relation, signature, or slot claims; use `A.6.M` for module-interface claims; use `A.6.F` for functional claims; use `A.14`, `C.13`, or `B.3.5` for component claims; use `C.30.AD` or `E.17` for descriptions; use `A.13`, `A.19`, or `C.16` for agency-threshold claims. |
 
 ### C.26.3:9 - Consequences
 
@@ -296,7 +301,7 @@ The QL lens is secondary. It matters when the way viability is probed, exported,
 | Viability maintenance is not fixed-value homeostasis only; stability can be relational, variational, dynamic, allostatic, metastable, and resilient. | [Conceptual foundations of physiological regulation incorporating the free energy principle and self-organized criticality](https://www.sciencedirect.com/science/article/pii/S0149763423004281). | Use viability envelopes and stability-through-change; reject one-scalar optimization and "all architecture is homeostasis." | Adapt as architecture-facing envelope discipline. |
 | Action and perception are coupled under partial observability and cost. | [Active inference as a theory of sentient behavior](https://www.sciencedirect.com/science/article/pii/S0301051123002612). | Treat sensors, probes, dashboards, and actuators as part of the envelope relation when they change behavior or viability. | Adapt for measurement-as-action and planning cost. |
 | Active-inference engineering already appears in energy/building control under privacy, partial observability, evolving conditions, and abrupt changes. | [Active Inference for Energy Control and Planning in Smart Buildings and Communities](https://arxiv.org/abs/2503.18161). | Use engineering examples cautiously: they show the kind of control problem, not settled FPF doctrine. | Use as emerging engineering anchor. |
-| Boundaries can be statistical/computational descriptions of what a system can measure, model, and affect. | [The Computational Boundary of a Self](https://philpapers.org/rec/LEVTCB-3) and [The Markov blankets of life](https://philarchive.org/rec/KIRTMB). | Name boundary conditions and information constraints without reifying a boundary substance. | Adapt with map-territory caution. |
+| Boundaries can be statistical or computational descriptions of what a system can measure, model, and affect. | [The Computational Boundary of a Self](https://philpapers.org/rec/LEVTCB-3) and [The Markov blankets of life](https://philarchive.org/rec/KIRTMB). | Name boundary conditions and information constraints without reifying a boundary substance. | Adapt with map-territory caution. |
 | Excess Bayesian / active-embodied inference shows the cost of moving sensor, body, instrument, or access point to obtain a discriminating observation. | [Connecting the free energy principle with quantum cognition](https://www.frontiersin.org/articles/10.3389/fnbot.2022.910161/full). | Treat probe placement, access placement, and observation cost as part of viability-envelope work when they change the decision. | Adapt for probe/action cost, not as a replacement for ordinary Bayesian or active-inference routes. |
 | Platform and software engineering already treats many quality concerns as trade-off bundles. | Reliability, incident, platform, compliance, energy, support, operator-load practice, and [Google SRE SLO / error-budget practice](https://sre.google/workbook/implementing-slos/), coordinated with `C.25`. | Make the quality bundle explicit and state actuator authority, latency, adaptation cost, and failure mode. | Adopt through FPF quality-bundle routes. |
 

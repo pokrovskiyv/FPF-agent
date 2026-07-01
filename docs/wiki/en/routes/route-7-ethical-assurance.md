@@ -3,7 +3,7 @@ title: "Route 7: Ethical Assurance"
 sources:
   - sections/routes/route-7-ethical-assurance.md
   - scripts/build_routes.py
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,8 +21,8 @@ Triggered by questions about hidden bias, ethical assumptions, or value conflict
 ## Key Decisions
 
 - **Chain length:** 5 sections in the full load, 3 of them marked core.
-- **Core sections** (minimum load for a simple query): `D.2` Multi-Scale Ethics Framework, `D.3` Holonic Conflict Topology, `D.5` Bias-Audit & Ethical Assurance.
-- **Full chain** (complex query) adds: `D.1` Axiological Neutrality Principle and `D.4` Trust-Aware Mediation Calculus.
+- **Core sections** (minimum load for a simple query): `D.2` (Multilevel Ethics For System Work), `D.3` (Interlevel Ethical Conflict Structure), `D.5` (Bias Audit and Ethical Assurance).
+- **Full chain** (complex query) adds: `D.1` (Ethical Value Plurality and Boundary) and `D.4` (Ethical Mediation and Decision Use).
 - **Loading order** is fixed by the chain sequence; if the Retriever detects stagnation it falls back to `_xref.md` cross-references.
 
 ## Section Chain
@@ -31,11 +31,11 @@ The chain is loaded in order. Core sections are loaded for simple queries; the f
 
 | # | Pattern | Title | Core? |
 |---|---------|-------|-------|
-| 1 | D.1 | Axiological Neutrality Principle | |
-| 2 | D.2 | Multi-Scale Ethics Framework | YES |
-| 3 | D.3 | Holonic Conflict Topology | YES |
-| 4 | D.4 | Trust-Aware Mediation Calculus | |
-| 5 | D.5 | Bias-Audit & Ethical Assurance | YES |
+| 1 | D.1 | Ethical Value Plurality and FPF Boundary | |
+| 2 | D.2 | Multilevel Ethics For System-Holon Work | YES |
+| 3 | D.3 | Interlevel Ethical Conflict Structure | YES |
+| 4 | D.4 | Ethical Mediation and Decision Use | |
+| 5 | D.5 | Bias Audit and Ethical Assurance | YES |
 
 Pattern-to-file mapping is resolved against `sections/metadata.json` at build time; sections whose file path is not yet present in metadata render with an empty file column until the spec is re-split.
 

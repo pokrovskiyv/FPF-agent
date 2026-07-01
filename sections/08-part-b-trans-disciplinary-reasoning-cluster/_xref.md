@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (82 refs).
+Patterns in other Parts that reference patterns in this directory (107 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -20,21 +20,25 @@ Patterns in other Parts that reference patterns in this directory (82 refs).
 |--------|----------|--------|
 | A.6 | coordinates_with | B.3 |
 | A.6.3 | used_by | B.5.3 |
+| A.6.3.CR | coordinates_with | B.5.2 |
 | A.6.A | builds_on | B.4.1 |
 | A.6.A | coordinates_with | B.5.2.0 |
 | A.6.B | coordinates_with | B.3 |
 | A.6.H | coordinates_with | B.1.1 |
 | A.6.H | coordinates_with | B.1.4 |
+| A.6.M | coordinates_with | B.3 |
 
 ## From 07-cluster-av-constitutional-principles-of-the-kernel
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.10 | coordinates_with | B.3 |
-| A.12 | prerequisite_for | B.2.5 |
+| A.12 | coordinates_with | B.2 |
 | A.14 | prerequisite_for | B.1.1 |
 | A.15.1 | used_by | B.1.6 |
 | A.15.4 | coordinates_with | B.3 |
+| A.15.5 | builds_on | B.1.6 |
+| A.15.5 | coordinates_with | B.3 |
 | A.16 | coordinates_with | B.4.1 |
 | A.16.0 | used_by | B.4.1 |
 | A.16.0 | used_by | B.5.2.0 |
@@ -50,6 +54,7 @@ Patterns in other Parts that reference patterns in this directory (82 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.1 | coordinates_with | B.1.6 |
 | C.16 | coordinates_with | B.3 |
 | C.16.Q | coordinates_with | B.4.1 |
 | C.16.Q | coordinates_with | B.5.2.0 |
@@ -83,18 +88,38 @@ Patterns in other Parts that reference patterns in this directory (82 refs).
 | C.29 | builds_on | B.3 |
 | C.30 | coordinates_with | B.3 |
 | C.30.AD | coordinates_with | B.3 |
+| C.30.AD.BA | coordinates_with | B.3 |
 | C.30.ILC | coordinates_with | B.3 |
 | C.30.LCA | builds_on | B.2.5 |
 | C.30.LCA | coordinates_with | B.3 |
+| C.30.P | coordinates_with | B.3 |
 | C.30.STRAT | coordinates_with | B.3 |
 | C.30.TFS-REL | coordinates_with | B.3 |
+| C.31 | coordinates_with | B.3 |
 | C.31.ASAP | coordinates_with | B.3 |
+| C.31.RSA | coordinates_with | B.3 |
+| C.32 | coordinates_with | B.3 |
+| C.32.ACE | coordinates_with | B.3 |
+| C.32.ACS | coordinates_with | B.3 |
+| C.32.ADA | coordinates_with | B.3 |
+| C.32.ADR | coordinates_with | B.3 |
+| C.32.CONWAY | coordinates_with | B.3 |
+| C.32.FAIL | coordinates_with | B.3 |
+| C.32.MLAO | coordinates_with | B.3 |
+| C.32.PAD | coordinates_with | B.3 |
+| C.32.PAD | coordinates_with | B.2 |
+| C.32.PAD | coordinates_with | B.2.P |
+| C.36 | coordinates_with | B.3 |
 
-## From 10-part-d-multi-scale-ethics-conflict-optimisation
+## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| D.5.2 | builds_on | B.3 |
+| D.1 | coordinates_with | B.3 |
+| D.2 | builds_on | B.1 |
+| D.3 | coordinates_with | B.3 |
+| D.4 | coordinates_with | B.3 |
+| D.5 | coordinates_with | B.3 |
 
 ## From 11-part-e-the-fpf-constitution-and-authoring-guides
 

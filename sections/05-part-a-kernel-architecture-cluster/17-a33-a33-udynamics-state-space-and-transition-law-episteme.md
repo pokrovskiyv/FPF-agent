@@ -18,6 +18,8 @@ Use it when the working question is:
 
 **Primary EntityOfConcern.** The `EntityOfConcern` is `U.Dynamics`: an `U.Episteme` that specifies a state space and a state-transition law for one or more EntitiesOfConcern in a bounded context.
 
+**E.24.UK settlement.** `U.Dynamics` is retained as a dependent durable U-kind under the `U.Episteme` settlement. Its durable value is the reusable state-space and transition-law episteme for changing state in a bounded context. It is not a root change kind, not the changed EntityOfConcern, not a work occurrence, and not a flow structure; components such as `stateSpace`, `transitionLaw`, `observationRelation`, and `calibrationOrParameterSource` remain slots or claim graphs inside the dynamics episteme unless another governing pattern makes one of them separately addressable.
+
 **First useful move.** Name the changing EntityOfConcern, the bounded context, the state-space characteristics, the transition law, the observation relation, and the applicability window. If these cannot be named, the current claim is not yet ready for prediction, conformance, or gate use.
 
 **What goes wrong if missed.** Procedure text becomes "the dynamics", telemetry becomes a law, one observed run becomes a prediction, a dashboard becomes a state space, or a simulation becomes permission to act.

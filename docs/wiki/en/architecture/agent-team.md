@@ -7,7 +7,7 @@ sources:
   - agents/fpf-reviewer.md
   - agents/fpf-sync.md
   - skills/fpf/SKILL.md
-last_updated: 2026-06-16T07:21:51Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - architecture
   - agents

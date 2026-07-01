@@ -1,6 +1,6 @@
 # Cross-References into 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
 
-Patterns in other Parts that reference patterns in this directory (114 refs).
+Patterns in other Parts that reference patterns in this directory (146 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -10,6 +10,8 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 | A.1.1 | coordinates_with | F.0.1 |
 | A.1.1 | coordinates_with | F.9 |
 | A.1.1 | coordinates_with | F.18 |
+| A.11 | builds_on | F.8 |
+| A.11 | builds_on | F.18 |
 | A.2.3 | prerequisite_for | F.12 |
 | A.21 | coordinates_with | F.9 |
 | A.21 | coordinates_with | F.17 |
@@ -22,6 +24,8 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 |--------|----------|--------|
 | A.6 | builds_on | F.18 |
 | A.6 | coordinates_with | F.9 |
+| A.6.3.CR | builds_on | F.9 |
+| A.6.3.CR | builds_on | F.18 |
 | A.6.3.CSC | builds_on | F.18 |
 | A.6.3.CSC | coordinates_with | F.9 |
 | A.6.3.CSC | coordinates_with | F.9.1 |
@@ -43,6 +47,9 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 | A.6.P | builds_on | F.18 |
 | A.6.P | coordinates_with | F.9 |
 | A.6.P | coordinates_with | F.17 |
+| A.6.RSIR | builds_on | F.18 |
+| A.6.RSIR | builds_on | F.19 |
+| A.6.RSIR | coordinates_with | F.10 |
 
 ## From 07-cluster-av-constitutional-principles-of-the-kernel
 
@@ -60,12 +67,19 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 | A.19.USCM | coordinates_with | F.18 |
 | A.20 | coordinates_with | F.9 |
 | A.20 | coordinates_with | F.17 |
+| A.8 | builds_on | F.8 |
+| A.8 | builds_on | F.18 |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | B.3 | coordinates_with | F.9 |
+| B.5.3 | builds_on | F.1 |
+| B.5.3 | builds_on | F.2 |
+| B.5.3 | builds_on | F.3 |
+| B.5.3 | builds_on | F.5 |
+| B.5.3 | builds_on | F.8 |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -89,6 +103,16 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 | C.30 | builds_on | F.18 |
 | C.30.AD | coordinates_with | F.18 |
 | C.30.STRAT | builds_on | F.18 |
+| C.33 | coordinates_with | F.9 |
+| C.33 | coordinates_with | F.15 |
+| C.34 | builds_on | F.9 |
+| C.34 | coordinates_with | F.15 |
+| C.36 | builds_on | F.9 |
+| C.36 | builds_on | F.17 |
+| C.36 | builds_on | F.18 |
+| C.36.P | builds_on | F.17 |
+| C.36.P | builds_on | F.18 |
+| C.36.P | builds_on | F.9 |
 
 ## From 11-part-e-the-fpf-constitution-and-authoring-guides
 
@@ -126,6 +150,14 @@ Patterns in other Parts that reference patterns in this directory (114 refs).
 | E.24.CD | builds_on | F.19 |
 | E.24.CD | coordinates_with | F.18 |
 | E.24.PUB | builds_on | F.19 |
+| E.24.UK | builds_on | F.5 |
+| E.24.UK | builds_on | F.8 |
+| E.24.UK | builds_on | F.18 |
+| E.4 | coordinates_with | F.18 |
+| E.4.DPF | builds_on | F.18 |
+| E.4.FPF | coordinates_with | F.18 |
+| E.4.PFAD | coordinates_with | F.18 |
+| E.4.PFR | coordinates_with | F.18 |
 | E.8.ECSPF | coordinates_with | F.18 |
 | E.8.ECSPF | coordinates_with | F.19 |
 | E.9.DA | coordinates_with | F.19 |

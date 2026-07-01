@@ -14,7 +14,7 @@ This is the main everyday entry into the QL cluster. It is useful because many t
 | --- | --- |
 | Primary reader | Architect, platform lead, domain modeler, or manager judging a boundary read, workshop, dashboard, metric, API read, or bridge result. |
 | Boundary interaction under concern | A boundary interaction being used as evidence, export, comparison, or decision input. |
-| Boundary-interaction decision move | Replace false passive-read wording or unjustified lossless boundary-to-decision inference with a probe-coupled boundary decision and reroute where needed. |
+| Boundary-interaction decision use | Replace false passive-read wording or unjustified lossless boundary-to-decision inference with a probe-coupled boundary decision and reroute where needed. |
 | Outside work | Ordinary message passing, ordinary causal intervention, ordinary API semantics, bridge loss alone, and generic relation-token minting. |
 | What changes in practice | The team records what the probe changed before using its output as architecture evidence. |
 
@@ -123,7 +123,7 @@ The boundary interaction under concern is a boundary interaction used as evidenc
 
 The pattern governs one move: convert an apparently passive boundary read into a typed probe-coupled boundary decision. That decision says what the interaction read, what it changed, what the output can support, what it cannot support, and which neighboring FPF pattern takes over if the question is really bridge, measurement, evidence, work, decision, or viability.
 
-Action path:
+Operational sequence:
 
 1. Name the boundary or relation being crossed.
 2. Name the probe lane, including the concrete artifact or work act that produced the output.
@@ -219,7 +219,7 @@ Tell: A team runs a service-boundary workshop after a series of incidents. The f
 
 Show, System side: the teams, services, dashboards, event stream, workshop format, and escalation routine are part of the boundary situation. The workshop is not only a carrier of information; it changes alignment and future work.
 
-Show, Episteme side: the minimal evidence-bound claim is not "the workshop discovered the true topology." It is "the workshop work functioned as a probe lane that changed the represented boundary state and exposed export loss across Checkout and Payment." The next admissible move is a boundary or probe decision plus `F.9` bridge notes.
+Show, Episteme side: the minimal evidence-bound claim is not "the workshop discovered the true topology." It is "the workshop work functioned as a probe lane that changed the represented boundary state and exposed export loss across Checkout and Payment." The next admissible use is a boundary or probe decision plus `F.9` bridge notes.
 
 ### C.26.1:6 - Bias-Annotation
 

@@ -169,7 +169,7 @@ Temptation: “Let’s rename *process* to *activity*.”
 * **Move:** **No rename.** Keep labels; later add **Bridge** “`execution (IEC)` *produces* signals that realise `actuation (control)`” with CL stating partial coverage.
 * **Pay‑off:** Plant narratives stop calling programs “actuators”; runtime vs control semantics stay crisp.
 
-#### F.13:11.3 - Kind-CAL × Method‑CAL — false merge avoided
+#### F.13:11.3 - Kind-CAL × method/work stack — false merge avoided
 
 * **Contexts:** *OWL 2 (types, design)*; *SPEM 2.0 (methods, design)*.
 * **Issue:** A row labeled **“Class”** tried to absorb **“WorkProductKind”** by a `renames`.

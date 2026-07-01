@@ -7,11 +7,3 @@ The Reasoner agent must enforce these internally; output uses plain language.
 
 | DO NOT use | Use instead | Notes |
 |------------|-------------|-------|
-
-## Scope Terms — Deprecated (MUST NOT use in normative text)
-
-- ~~applicability~~ → use `U.ClaimScope` (G), `U.WorkScope`, or `U.Scope`
-- ~~envelope~~ → use `U.ClaimScope` (G), `U.WorkScope`, or `U.Scope`
-- ~~generality~~ → use `U.ClaimScope` (G), `U.WorkScope`, or `U.Scope`
-- ~~capability envelope~~ → use `U.ClaimScope` (G), `U.WorkScope`, or `U.Scope`
-- ~~validity~~ → use `U.ClaimScope` (G), `U.WorkScope`, or `U.Scope`

@@ -36,7 +36,7 @@ F.2 prevents these by **localising** meaning and **naming** strictly **inside** 
 ### F.2:4 - Core idea (didactic)
 
 **Harvest *inside* each Context; name *in that Context’s idiom*; do not cross Contexts.**
-For every Context (a **U.BoundedContext** from F.1), you gather **attested phrases** as *thought‑cues*, choose a **Local Normal Form (LNF)** that matches the Context’s idiom, attach a **two‑register label** (Tech/Plain), and write a **one‑sentence gloss**. That’s all. You do **not** claim sameness with any other Context; you do **not** embed behaviour or deontics; you do **not** mint U.Types here. These *local lexical units* will become **Local‑Senses** in F.3 and later addressable **SenseCells** (Context × Local‑Sense).
+For every Context (a **U.BoundedContext** from F.1), you gather **attested phrases** as *thought-cues*, choose a **Local Normal Form (LNF)** that matches the Context's idiom, attach a **two-register label** (Tech/Plain), and write a **one-sentence gloss**. That's all. These *local lexical units* become **Local-Senses** in F.3 and later addressable **SenseCells** (Context x Local-Sense). Cross-context sameness, behavioural claims, deontics, and durable kindhood are handled by F.9, A.15, E/E-LOG, or admission under E.24.UK and C.3 when those claims are being made.
 
 ### F.2:5 - Minimal vocabulary (this pattern only)
 
@@ -184,7 +184,7 @@ For every Context (a **U.BoundedContext** from F.1), you gather **attested phras
 
 *Thinking pay‑off:* avoids calling a plant fault an “incident” unless you **cross Contexts later** with an explicit bridge.
 
-#### F.2:11.3 Kind-CAL + Method‑CAL + KD‑CAL
+#### F.2:11.3 Kind-CAL + method/work stack + KD‑CAL
 
 * **Context:** *OWL 2 (profiles)* — **LNF:** `subclass‑of`
   **Tech:** `subclass‑of` - **Plain:** `is‑a (type hierarchy)`
@@ -202,7 +202,7 @@ For every Context (a **U.BoundedContext** from F.1), you gather **attested phras
   **Tech:** `procedure` - **Plain:** `measurement recipe`
   **Gloss:** “Specification guiding how an observation is produced.”
 
-*Thinking pay‑off:* discourages treating an FCA “concept” as a `U.Type`, or a **procedure** as a **method** without later proof.
+*Thinking pay-off:* discourages treating an FCA "concept" as a root kind, or a **procedure** as a **method** without later proof.
 
 ### F.2:12 - Reasoning primitives (judgement schemas, notation‑free)
 

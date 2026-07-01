@@ -7,7 +7,7 @@ sources:
   - scripts/build_routes.py
   - scripts/build_embeddings.py
   - scripts/semantic_search.py
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-07-01T07:00:00Z
 tags:
   - architecture
   - retrieval

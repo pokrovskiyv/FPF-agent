@@ -112,7 +112,7 @@ When a method description is used to prepare or enact work, keep the chain expli
 
 #### A.3.2:4.5 - Method, mechanism, and formal-substrate boundary
 
-Do not decide method, mechanism, or formal substrate by the surface word. When a source expression or project concern appears to name changing, producing, selecting, deriving, controlling, or maintaining an `EntityOfConcern`, use `E.10.ARCH:3.1` to recover the project concern first and then assign separately governed typed FPF values.
+Do not decide method, mechanism, or formal substrate by the source word alone. When a source expression or project concern appears to name changing, producing, selecting, deriving, controlling, or maintaining an `EntityOfConcern`, use `E.10.ARCH:3.1` to recover the project concern first and then assign separately governed typed FPF values.
 
 For this host, keep the local question thin: is the current claim an episteme that describes a method? If the same source expression or project concern also raises method, mechanism, formal-substrate, work-plan, dated-work, evidence, source, gate, result, publication, or temporal claims, keep those values linked only by explicit relation positions and apply their own governing patterns.
 
@@ -120,7 +120,7 @@ The local position checks are:
 * In **method-description position**, the claim is that a representation describes a method.
 * In **method position**, the claim is the context-defined semantic way of doing.
 * In **formal-substrate position**, the claim is the selected formal object, structure, invariant, or mathematical declaration used for reasoning.
-* In **mechanism position**, the claim is the law-governed operation algebra, law set, admissibility predicates, applicability, transport, audit surface, or realization relation.
+* In **mechanism position**, the claim is the law-governed operation algebra, law set, admissibility predicates, applicability, transport, audit relation set, or realization relation.
 * In **work position**, the claim is a dated occurrence with witnesses and outputs.
 
 Those links remain typed relation-position links to separately governed claims. Do not assign the same typed value as both `U.Method` and `U.Mechanism` unless a governing pattern explicitly admits such dual typing; a slot-position label names the relation position, not a new ontology.
@@ -129,7 +129,7 @@ Example: a MILP file can describe a scheduling method; the mathematical formulat
 
 #### A.3.2:4.6 - Constructor and process-theory note
 
-In the constructor-theory and process-theory interpretation used by this campaign, both informational and physical procedures are understood through possible or impossible transformations. That motivates a broad method-description kind without making software code privileged:
+In the constructor-theory and process-theory interpretation used here, both informational and physical procedures are understood through possible or impossible transformations. That motivates a broad method-description kind without making software code privileged:
 
 * a program, proof script, or solver model may describe a method for information transformation;
 * an SOP, lab protocol, or control recipe may describe a method for material, energetic, organizational, or mixed transformation;
@@ -142,7 +142,21 @@ This note is not a license to call every algorithm-looking expression a method d
 
 Some method descriptions use declarative representations: constraint sets, graph patterns, state predicates, SQL-like queries, policy rules, e-graphs, monoidal diagrams, or process constraints. Do not translate such representations into an imperative route unless the method claim actually states an ordered action structure.
 
-If the source turns a graph path, evidence path, query plan, predicate, checklist, publication face, or pattern relation into a route, dispatch, call sequence, receiver path, or work workflow by metaphor, apply `C.2.P.DR` before assigning the direct governing pattern.
+If the source turns a graph path, evidence path, query plan, predicate, checklist, publication face, or pattern relation into a route, dispatch, call sequence, work-control sequence, or work workflow by metaphor, apply `C.2.P.DR` before assigning the direct governing pattern.
+
+#### A.3.2:4.8 - Method-relation descriptions and algebra lenses
+
+A method description may describe not only one `U.Method`, but also a selected `MethodRelationStructure@BoundedContext`: the relation structure by which methods or method families compose, refine, substitute, iterate, dispatch, or fall back in one bounded context.
+
+Keep the positions separate:
+
+- the method relation structure is the selected structure among method-side values;
+- the method description is the episteme that describes that structure;
+- algebraic, graph, categorical, process-calculus, effect-calculus, matrix, embedding, distributed, or neural notation is a mathematical or representation lens when it is used to analyze or express the structure;
+- a work plan or dated work occurrence is governed by `A.15.2` or `A.15.1`;
+- a method-family registry or selector outcome is governed by `G.5` when that registry or selector result is current.
+
+Do not treat "method algebra", "workflow graph", "pipeline", or "selector calculus" as a method, work plan, performed work, or method-family registry merely by word choice. Recover which value the representation describes and name the governing pattern before using the label.
 
 ### A.3.2:5 - Archetypal Grounding
 
@@ -227,7 +241,7 @@ The repair is to recover what the representation describes, then keep neighborin
 
 **CC-A3.2-13 (Context bridge).** Cross-context reuse requires an explicit bridge or alignment relation for terms, units, roles, assumptions, and acceptance criteria. Name identity alone is insufficient.
 
-**CC-A3.2-14 (Declarative representation).** If a method description contains declarative representations, do not overread them as ordered work-control claims. Use `C.2.P.DR` when route, path, call, dispatch, receiver, workflow, or lifecycle language hides the represented object or direct governing pattern.
+**CC-A3.2-14 (Declarative representation).** If a method description contains declarative representations, do not overread them as ordered work-control claims. Use `C.2.P.DR` when route, path, call, dispatch, work-control sequence, workflow, or lifecycle language hides the represented object or direct governing pattern.
 
 **CC-A3.2-15 (Causal-use boundary).** A method description may describe intervention assignment, target-trial emulation, realized-counterfactual sampling, simulation, or causal-evidence collection. It does not by itself establish causal use. If causal effect, intervention success, counterfactual comparison, causal fairness, or policy effect is claimed, use `C.28`.
 

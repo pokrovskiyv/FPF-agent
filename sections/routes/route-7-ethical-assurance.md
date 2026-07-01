@@ -8,11 +8,11 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | D.1 | Axiological Neutrality Principle | sections/11-part-e-the-fpf-constitution-and-authoring-guides/20-e10d-e10d1-lexical-discipline-for-context-dctx.md |  |
-| 2 | D.2 | Multi-Scale Ethics Framework | sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e10d-e10d2-entityofconcern-description-episteme-and-specification.md | YES |
-| 3 | D.3 | Holonic Conflict Topology |  | YES |
-| 4 | D.4 | Trust-Aware Mediation Calculus |  |  |
-| 5 | D.5 | Bias-Audit & Ethical Assurance | sections/10-part-d-multi-scale-ethics-conflict-optimisation/01-d5-d5-bias-audit-ethical-assurance.md | YES |
+| 1 | D.1 | Ethical Value Plurality and FPF Boundary | sections/10-part-d-multi-scale-ethics-and-conflict-optimization/01-d1-d1-ethical-value-plurality-and-fpf-boundary.md |  |
+| 2 | D.2 | Multilevel Ethics For System-Holon Work | sections/10-part-d-multi-scale-ethics-and-conflict-optimization/02-d2-d2-multilevel-ethics-for-holon-work.md | YES |
+| 3 | D.3 | Interlevel Ethical Conflict Structure | sections/10-part-d-multi-scale-ethics-and-conflict-optimization/03-d3-d3-interlevel-ethical-conflict-structure.md | YES |
+| 4 | D.4 | Ethical Mediation and Decision Use | sections/10-part-d-multi-scale-ethics-and-conflict-optimization/04-d4-d4-ethical-mediation-and-decision-use.md |  |
+| 5 | D.5 | Bias Audit and Ethical Assurance | sections/10-part-d-multi-scale-ethics-and-conflict-optimization/05-d5-d5-bias-audit-and-ethical-assurance.md | YES |
 
 ## Loading Strategy
 

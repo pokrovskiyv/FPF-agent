@@ -1,208 +1,324 @@
 ## A.2 - Role Taxonomy
+
 > **Type:** Architectural (A)
 > **Status:** Stable
-> **Normativity:** Normative
+> **Normativity:** Normative unless marked informative
 
-*A holon’s essence tells us **what it is**; its roles tell us **what it is being, here and now**.*
+### A.2:0 - Use This When
 
-### A.2:1 - Problem frame
+**Plain name.** Work-facing role value.
 
-Pattern A.1 established the **substantial** characteristic of the core (`Entity → Holon → {System, Episteme, …}`), cleanly separating identity from structure and aggregation. The present pattern introduces the **functional** characteristic: how a holon participates in purposes **within a bounded context** and for some interval. This extends the early sketch of A.2 and tightens its alignment with A.7 (Strict Distinction): roles are *not* parts and *not* behaviours; they are contextual **masks** that a holon wears while behaviours are handled by **Method**/**Work**.
+Use this pattern when a project needs to say what a system, organization, person, team, tool, agent, machine, or other acting holon is being in a bounded context before method, plan, work, evidence, responsibility, or naming claims can be made safely.
+
+Typical moments:
+
+- a project sentence says "engineer", "reviewer", "operator", "supplier", "model verifier", "agent", "service provider", or another role-like name, and it is unclear what holder, context, and work claim are current;
+- a team treats a role name as if it created capability, commitment, obligation, permission, method, work, or evidence;
+- a standard, report, dataset, model card, publication, requirement, or definition is described as having a "role" in evidence, status, assurance, source use, or publication use;
+- a method, plan, work occurrence, or result is attributed to a role without naming the holder and role assignment under which the work is performed;
+- role names must be kept reusable across contexts without making each context-local role into a new system kind.
+
+**Primary EntityOfConcern.** The EntityOfConcern is `U.Role`: a context-bound role value in the role `ontologicalNeighborhood`. A role value names what an acting system or acting holon is being for a bounded context. It is not the holder, not the assignment relation, not a capability, not a method, not a work occurrence, not a commitment, not an obligation, not a permission, not a description, and not a slot kind.
+
+**Primary working reader.** The first reader is an engineer-manager, analyst, or FPF author who must separate role value, holder, role assignment, method, plan, work, evidence, and source-use claims before acting or writing a pattern. The downstream reader is the project participant who needs role language to answer who held what role, in which context, for which claim.
+
+**First useful move.** Name the role value, the bounded context, and whether the current claim is about role identity, a role assignment, role description, role state, role relation structure, capability requirement, method requirement, planned work, performed work, or an episteme used as evidence, source, standard, requirement, definition, explanation, status bearer, or publication.
+
+**What goes wrong if missed.** Role words become an ontology shortcut. A document becomes a "verifier role"; a capability becomes a role; a role name is treated as evidence that work happened; a method is treated as a role's hidden behavior; a publication is treated as if it acted. FPF then grows a second role ontology for epistemes, status labels, access labels, relation arguments, and source labels.
+
+**What this buys.** A small role vocabulary can serve many projects without type explosion. The same system can hold different roles in different contexts; work remains performed by a holder under a role assignment; epistemes remain used through their own evidence, status, source, publication, requirement, definition, explanation, and assurance relations.
+
+**Not this pattern when.**
+
+- If the current claim is the assignment relation linking holder, role, context, and window, use `A.2.1`.
+- If the current claim is capability, use `A.2.2`.
+- If the current claim is role state, use `A.2.5`.
+- If the current claim is role-requirement substitution, incompatibility, qualification, or bundles, use `A.2.7`.
+- If the current claim is method, method description, work plan, or performed work alignment, use `A.15`.
+- If the current claim is an episteme used as evidence, source, standard, definition, requirement, explanation, status bearer, publication, or assurance input, use the direct evidence-use, status-use, source-use, publication-use, requirement-use, definition-use, explanation-use, or assurance pattern. Do not force it through `U.Role`.
+- If the current issue is only a confusing role-like word, first use `A.6.RSIR` to recover the governed object or claim kind.
+
+### A.2:1 - Problem Frame
+
+FPF needs role language because the same holon can be used, treated, expected, or named differently in different bounded contexts. A pump can be a cooling circulator in one plant context and a test article in another. A person can be verifier in one work package and author in another. A service can be supplier in one agreement-like relation and consumer in another. Without a role value, these contextual uses either become new system subtypes or remain vague source language.
+
+At the same time, role language is dangerous. Everyday phrases such as "the role of this standard", "the role of this dataset", "the role of this theorem", "the role of this dashboard", or "the role of this interface" can hide several different FPF claims. They may be evidence-use, source-use, publication-use, status-use, requirement-use, explanation-use, interface, signature, capability, method, or work claims. They are not automatically `U.Role` claims.
+
+A.2 therefore keeps `U.Role` real, but narrow. A role is a work-facing context-bound role value. It becomes operational through neighboring relations, especially `U.RoleAssignment` in `A.2.1` and role-method-work alignment in `A.15`. It does not absorb every relation in which a value participates.
 
 ### A.2:2 - Problem
 
-Without an explicit role calculus:
+Without this pattern:
 
-1. **Type explosion & conflation.** Each new purpose breeds a new “subtype” (`PumpAsCoolingLoop`, `PumpAsFuelLoop`, …), violating parsimony and fusing substance with function.
-2. **Agency opacity.** It becomes unclear whether *any* system may act as a transformer/agent, or only pre-declared special kinds.
-3. **Epistemic blindness.** Epistemes such as papers or proofs cannot be given roles, blocking modelling of citation, evidence, or design-time justification.
+1. **Type explosion returns.** Each contextual use becomes a new system kind such as `PumpAsCoolingCirculator` or `ReviewerReportSystem`.
+2. **Role and assignment collapse.** The role value, the holder, the context, and the time window are treated as one vague label.
+3. **Role and capability collapse.** A role name is treated as if it created ability.
+4. **Role and method collapse.** A role name is treated as if it contained the method by which work is done.
+5. **Role and evidence collapse.** A document, dataset, standard, proof, or model card is treated as a role holder because it is used as evidence or source material.
+6. **Role and work collapse.** A role label is treated as evidence that work was performed.
+7. **Argument-position drift appears.** "Role" is used for relation argument positions or slot positions, competing with `A.6.5` SlotSpec discipline.
 
 ### A.2:3 - Forces
 
-| Force                                | Tension                                                              |   |
-| ------------------------------------ | -------------------------------------------------------------------- | - |
-| **Identity vs Function**             | A holon’s make‑up ↔ its transient, contextual purpose.               |   |
-| **Static vs Dynamic classification** | Fixed type lattice ↔ late‑binding of new roles.                      |   |
-| **Universality vs Familiarity**      | One mechanism for pumps **and** papers ↔ domain‑specific role names. |   |
-| **Simplicity vs Expressiveness**     | Minimal primitives ↔ multi‑role, multi‑holder scenarios.             |   |
+| Force | Tension |
+| --- | --- |
+| Context reuse vs type explosion | One role value can be reused inside a bounded context; making every contextual use a system subtype loses reuse. |
+| Role identity vs assignment relation | `U.Role` must stay a role value, while `U.RoleAssignment` links holder, role, context, and window. |
+| Ordinary speech vs FPF kind discipline | "Role of X" is common language, but FPF must recover whether X is a holder, source, evidence, status bearer, method, work, relation argument, or publication. |
+| Work-facing roles vs episteme use | Systems and acting holons perform work; epistemes are used, cited, asserted, published, evaluated, refreshed, or relied on through direct relations. |
+| Minimal kernel vs practical traceability | A small role kernel is useful only if it can still connect to role descriptions, role states, role relation structure, capability requirements, method requirements, work, and evidence about performed work. |
 
 ### A.2:4 - Solution
 
-We elevate **Role** to a first‑class semantic construct: a context‑bound *mask* (capability/obligation schema) worn by a holon. **Behaviour** and **resource deltas** live in **Method**/**Work**, not in the role itself.
+Use `U.Role` as a context-bound role value, not as a generic contextual classifier.
 
-#### A.2:4.1 - S‑level definitions (normative)
+`U.Role` answers the question: **what is this acting system or acting holon being, in this bounded context, for the current work-facing claim?**
 
-* **`U.Role`** — a **context-bound** capability/obligation schema that a holon **may bear (play)** for a time interval. A role has **no structural parts** (it does not participate in A.14 `partOf`) and **no resource deltas** of its own. Role refinement/bundling is expressed via in‑Context relations (`≤`, `⊥`, `⊗`) rather than mereology. *(A7 guard)*
-* **`U.RoleAssignment`** — a first-class assignment record recording that a holon **bears (plays)** a role **in** a bounded context over an optional **Window**. Keep the signature aligned with **A.2.1 Role Assignment Standard**; governance metadata (authority/justification/provenance) is captured via `U.RoleAssigning` and the evidence graph (A.10).
+It does not answer by itself:
 
+- who holds the role;
+- whether the holder can do the work;
+- which method is selected;
+- which work was planned or performed;
+- which evidence justifies a claim;
+- which publication or description expresses the role;
+- which status applies to a document, method, result, or claim;
+- which relation argument position or SlotKind is current.
+
+Those claims belong to neighboring patterns.
+
+#### A.2:4.1 - Core Definitions
+
+**`U.Role`.** A `U.Role` is a context-bound role value: a reusable value that names what an acting system or acting holon is being in a bounded context. It is work-facing because its primary practical use is to govern or explain role assignment, method requirements, work attribution, role-state checks, role naming, and role-related evidence about work.
+
+Plain gloss: a role is a contextual functional mask. The gloss is helpful only if the normative object stays clear: the role value is not the holder and not the work.
+
+**`U.RoleAssignment`.** A `U.RoleAssignment` is a typed assignment relation value governed by `A.2.1`. It links a holder, a `U.Role`, a bounded context, and any current assignment window. A.2 names why this relation is needed; A.2.1 governs its SlotSpecs.
+
+**Role holder.** A holder of a `U.RoleAssignment` is a `U.System` or acting holon admitted by the governing work or method pattern as a system-like performer for the bounded context. An episteme is not admitted as holder merely because it is used as evidence, source, standard, requirement, definition, explanation, status bearer, publication, or assurance input.
+
+**Role description.** A role description is an episteme that describes, constrains, teaches, publishes, or stores a role value or role assignment. The description is not the role value by default.
+
+**Role relation-neighborhood.** A role value is surrounded by relations that are not parts of the role:
+
+| Relation family | Governing pattern | What it preserves |
+| --- | --- | --- |
+| Role identity and role description | `A.2`, Part F role-description and naming patterns | The role value and the descriptions that make it recognizable. |
+| Role assignment | `A.2.1`, `A.6.5` | Holder, role value, bounded context, window, and assignment-specific work-role qualifiers. |
+| Capability requirements | `A.2.2` | Ability constraints of a holder; a role name does not create ability. |
+| Role characterization and role state | `A.2`, `A.2.5`, `A.19` when current | Characteristic scales and state predicates used to accept or reject role use. |
+| Role relation structure | `A.2.7` | Context-local role-requirement substitution, incompatibility, qualification, and role bundles. |
+| Method requirements | `A.15`, `A.3.1`, `A.3.2` | Method or method-description requirements and exclusions linked to a role or assignment. |
+| Work attribution | `A.15`, `A.15.1` | Work is performed by the holder under a role assignment. |
+| Evidence and status about role claims | `A.10`, `B.3`, `F.10`, `C.2.1`, direct evidence-use and status-use patterns | Epistemes used as evidence or status bearers stay outside `U.RoleAssignment`. |
+
+Do not turn every relation in this neighborhood into a slot of `U.Role`. Use SlotSpec discipline only when the governing pattern declares a slot-bearing relation.
+
+#### A.2:4.2 - Work-Facing Role Assignment Boundary
+
+Use the short readable notation only as a notation for a typed assignment relation:
+
+```text
+Holder#Role:Context@Window
 ```
-U.RoleAssignment {
-  holder        : U.Holon,
-  role          : U.Role,
-  context       : U.BoundedContext,
-  window? : U.Window
-  justification?: U.Episteme,  // why (standard, SOP, evidence)
-  provenance?   : U.Method     // how assignment/verification was done (NOT the role's bound method set)
-}
+
+The normative assignment relation is governed by `A.2.1`, not by the notation. Its core slots are:
+
+```text
+RoleAssignmentCoreSlotSpec:
+  HolderSlot:
+  RoleValueSlot:
+  BoundedContextSlot:
+  AssignmentWindowSlot:
 ```
 
-Short form (readable): `Holder#Role:Context@Window`.
+`HolderSlot` is filled by a `U.System` or acting holon admitted as system-like performer for the current work or method claim.
 
-> **Why a first-class assignment record?** It keeps identity (holon), function (role), context (semantics), and time (run-window) separate yet linked, preventing the substance/function conflation identified above. The early `playsRoleOf(Holon, Role, span)` relation in the draft is subsumed by `U.RoleAssignment` and extended with **Context** (and optional governance fields).
+`RoleValueSlot` is filled by `U.Role`.
 
-#### A.2:4.2 - Temporal & behavioural alignment
+`BoundedContextSlot` is filled by the context that gives the role value its local meaning.
 
-* **Method (intension) vs Work (occurrence).** A `U.Method` is a **design‑time, order‑sensitive capability**: what can be enacted, under which preconditions/invariants, with what admissibility/acceptance gates. A `U.Work` is the **dated, spatiotemporally bounded enactment** of such behaviour by a system bearing a role (A.15.1).
-* **MethodDescription is representation (viewpoint), not “the method itself”.** `U.MethodDescription` is an `U.Episteme` that represents a method under an explicit **viewpoint**. Step‑graphs/scripts/workflows are one common viewpoint, but not universal. Other valid viewpoints include state‑machines, dynamical/solver/controller models, lab protocols, and quantum circuits/channels. A method itself **need not** admit a step decomposition; only a given description might.
-* **Executable chain (who / what / how / when).** A **behavioural Role** is eligible/authorized for one or more Methods (design‑time, Context‑local). A Work is `isExecutionOf` a **specific MethodDescription version** (run‑time) and cites `performedBy = U.RoleAssignment`. Together, these anchors answer “what happened, by which method, under which role” without collapsing design‑time into run‑time.
-* **Resource accounting lives in Work.** Only `U.Work` carries resource deltas (feeds Γ\_work); Roles/Methods/MethodDescriptions do not.
+`AssignmentWindowSlot` is filled when assignment currentness, work attribution, role-state admission, or source freshness depends on a window. An open-world missing slot means unknown, not asserted, not recovered, or not current for this claim; it does not mean no such value exists.
 
-> **Lexical note (A.6.P trigger).** In the Role–Method–Work cluster, `bindsMethod` is a **technical token** meaning “Context‑local eligibility/authorization of a Role for a Method”. Do not use plain “bind/rebind” as umbrella prose for editing relationships; when describing edits, prefer explicit change classes (declare/withdraw/retarget/revise/rescope/retime/refreshWitnesses).
+Direct work-role patterns may add work-role qualifier slots. Evidence-use and status-use slots are not work-role qualifier slots and do not belong in assignment provenance.
 
-#### A.2:4.3 - Admissibility constraints (concept-level; non-deontic).
+#### A.2:4.3 - What Does Not Become `U.Role`
 
-1. **Locality.** `role ∈ Roles(context)`. Outside its context, a role’s meaning is undefined.
-2. **Structural‑mereology firewall.** No Role (nor Method or MethodDescription) may appear as a node in any A.14 `partOf` chain; holarchies are for substantial holons only. Role refinement/bundling (`≤`, `⊗`) and method relations (refinement, factorization, step/phase views) are **not** `partOf` and MUST NOT be rewritten into structural parthood.
-3. **Multiplicity.** A holder may **bear** multiple roles concurrently; a role may be **borne** by many holders—subject to each context’s compatibility rules.
-4. **Time anchoring.** `window` (if present) is non-empty and finite for run‑time claims; open‑ended assignments are allowed but must be traceably open‑ended from an assignment time (A.2.1). Design‑time bindings are timeless but **descriptions are versioned** via `U.MethodDescription` identity.
-5. **Behavioural coherence.** For any `U.Work` window, the performer’s cited RoleAssignment and the executed MethodDescription must align in the **same Context**: `work.performedBy = RA`, `work.isExecutionOf = MD`, and `RA.role` is eligible/authorized for the Method represented by `MD`. *(No hidden role swaps; no implicit method drift.)*
+The following are not role values merely because source language says "role":
 
-#### A.2:4.4 - Taxonomic frame (within a context)
+| Source phrase or temptation | Recover as |
+| --- | --- |
+| "the role of this standard" | standard-use, requirement-use, source-use, or publication-use relation around an episteme. |
+| "the role of this dataset" | evidence-use, source-use, freshness, provenance, or measurement relation. |
+| "the role of this theorem" | claim-use, proof-use, formal-substrate, or evidence-use relation. |
+| "the role of this status badge" | status assertion, status-use relation, gate result, or assurance-use relation. |
+| "the role of this parameter" | SlotKind, ValueKind, RefKind, method parameter, model parameter, or source label according to the governing pattern. |
+| "the role of this interface" | module-interface claim, port, signature, API, protocol, service-access package, publication face, or boundary claim. |
+| "the role of this capability" | capability requirement, holder capability, method requirement, or role description claim. |
+| "the role of this relation argument" | SlotKind or relation position under `A.6.5`, not `U.Role`. |
 
-Within each `U.BoundedContext`, role names are organised as a **partial order** (refinements) plus an **incompatibility** relation (mutually exclusive roles). Typical **substrate‑neutral** anchors:
+If the direct kind is not yet clear, use `A.6.RSIR`.
 
-| Kernel Role       | Intent                                | System archetype              | Episteme archetype                       |   |
-| ----------------- | ------------------------------------- | ----------------------------- | ---------------------------------------- | - |
-| `TransformerRole` | Changes other holons via Method/Work. | Robot arm assembling casings. | Prover constructing a new lemma.         |   |
-| `ObserverRole`    | Collects evidence and metrics.          | Sensor array on a test‑rig.   | Reviewer annotating an article.          |   |
-| `SupervisorRole`  | Governs subordinate holons.           | PLC orchestrating a line.     | Meta‑analysis curator combining studies. |   |
+#### A.2:4.4 - Role Taxonomy Inside a Bounded Context
 
-> Domains refine these anchors: e.g., `CoolingCirculatorRole`, `CitationSourceRole`, `LemmaRole`.
+Inside one bounded context, roles may be organized by:
 
-### A.2:5 - Archetypal Grounding (Tell–Show–Show: System / Episteme)
+- role-requirement substitution;
+- role incompatibility;
+- role bundles;
+- role-state predicates;
+- holder eligibility constraints;
+- capability requirements;
+- method requirements or exclusions;
+- naming and description conventions.
 
-**Tell.** A single holon can be the *same bearer* across time while taking on different, context‑bound roles. A role is a *mask* (capability/obligation schema) that explains *what it is being* in a given `U.BoundedContext`; behavioural facts and resource deltas remain in `U.Method` / `U.Work`.
+`A.2.7` governs role relation structure. It is context-local role architecture in life, not mereology, not class subsumption for systems, not generic concern algebra, not `MethodRelationStructure@BoundedContext`, and not method algebra. Algebraic, graph, matrix, embedding, or neural descriptions are only lenses over selected role relation structure when a project explicitly uses them.
 
-**Show.**
+Typical work-facing role families include:
 
-**System case — Cooling loop**
-`PumpUnit#3#HydraulicPump:Plant‑A@2025‑08‑08..open`
-`HydraulicPumpRole ↦bindsMethod↦ CentrifugalPumpingMethod` (design‑time, Context‑local eligibility)
-`CentrifugalPumpingMethod ↦isDescribedBy↦ centrifugal_pump_curve.ld@v7` (MethodDescription viewpoint; step‑graph OR dynamics, as appropriate)
-`run‑2025‑08‑08 isExecutionOf centrifugal_pump_curve.ld@v7; performedBy PumpUnit#3#HydraulicPump:Plant‑A@2025‑08‑08..2025‑08‑08` (run‑time Work)
-*(Behavioural/resource facts live in Work; method semantics are governed by the referenced MethodDescription viewpoint.)*
+| Role family | Ordinary use | Boundary |
+| --- | --- | --- |
+| `TransformerRole` | A system or acting holon changes, produces, maintains, selects, derives, or controls an EntityOfConcern by work under a method. | The role does not change anything by itself; the holder performs work. |
+| `ObserverRole` | A system or acting holon measures, samples, inspects, monitors, or records. | The measurement record is an episteme; the observing work remains work by the holder. |
+| `VerifierRole` | A system or acting holon checks a claim, result, method, or work product. | The report or proof produced by verification is evidence or publication, not the verifying role holder. |
+| `CoordinatorRole` | A system or acting holon coordinates other role assignments, plans, or work occurrences. | Coordination work is still dated work under method and plan claims. |
 
-**Episteme case — Standard in design**
-`RFC‑9110.pdf#ProtocolStandard:WorldWideWeb` justifies `MethodDescription` selection; the **system** bearing `TransformerRole` is the design service that executed the selection work. The episteme did **not** act.
+Domains may define roles such as `CoolingCirculatorRole`, `BridgeInspectorRole`, `ClinicalTrialCoordinatorRole`, `ModelCardReviewerRole`, or `ShipyardOperatorRole`. Define them in their bounded context and connect them to role assignment, capability, method, work, and evidence only when those claims are current.
 
-**Collective vs set (safety pitfall)**
-A **set** `{Alice, Bob, 3.14}` has no behaviour; a **team** is a **system** with boundary, coordination **Method**, and supervision **Work**; only the latter can bear agentic roles.
+#### A.2:4.5 - Reduced Use and Reopen Conditions
 
-### A.2:6 - Bias-Annotation
+A role-like word may stay in reduced use when it only helps people recognize a local conversation and no claim depends on holder, assignment, context, time, capability, method, work, evidence, status, source, publication, or gate use.
 
-Lenses tested: **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal** (A‑cluster).
+Use the fuller role pattern when a claim based on the role-like word would change what can be done, claimed, checked, relied on, or attributed:
 
-* **Architecture bias (Arch):** treating roles as structural parts can smuggle function into mereology and break holarchies.
-  *Mitigation:* keep `partOf` chains role‑free; roles are not constituents (see CC‑A2.1).
-* **Onto/Epist bias (Onto/Epist):** anthropomorphising epistemes collapses evidence into agency.
-  *Mitigation:* epistemes can justify/authorize; only systems perform methods and work (CC‑A2.2).
-* **Pragmatic bias (Prag):** over‑contextualising can fragment reuse and create naming drift.
-  *Mitigation:* require explicit `:Context` binding and explicit bridges instead of silent equivalence (CC‑A2.4).
-* **Didactic bias (Did):** metaphors (“mask”) may be misread as informal.
-  *Mitigation:* bind obligations to CC items; avoid imperative prose outside CC.
+- use `A.2` when the role value itself, bounded context, role taxonomy, or role relation-neighborhood is current;
+- use `A.2.1` when holder, role value, context, window, assignment source, or work-role qualifier is current;
+- use `A.2.2` when ability or capability is current;
+- use `A.2.5` when role-state admission, currentness, or role-state gate is current;
+- use `A.2.7` when role-requirement substitution, incompatibility, qualification, or role bundles are current;
+- use `A.15` when method, method description, work plan, or performed work is current;
+- use direct episteme-use patterns when evidence, status, source, publication, requirement, definition, explanation, assurance, or gate use of an episteme is current;
+- use `A.6.5` when the word "role" is only a relation position or SlotKind.
 
-### A.2:7 - Authoring guidance (for engineers and leads)
+If a reduced-use role label is later used for a stronger claim, do not treat the earlier reduced use as evidence. Recover the needed role value, assignment relation, neighboring value, or direct episteme-use relation before the stronger claim is made.
 
-* **Name roles for intent, not mechanics.** Prefer `CoolingCirculatorRole` over `ChannelFluidWithCentrifugalProfile`.
-* **Pin the context early.** If two teams disagree, split contexts and (optionally) define an alignment bridge; do not over‑generalise the role.
-* **Document the enactment chain.** For any operational claim, be ready to point to: `RoleAssigning → RoleAssignment → (Role ↦bindsMethod↦ Method) ↔ MethodDescription → Work`. (Readers’ dictionary: *workflow/script/state‑machine/dynamical model/quantum circuit → MethodDescription; run/job/operation → Work.*)
+### A.2:5 - Archetypal Grounding
 
-### A.2:8 - Conformance Checklist (CC‑A2.\*)
 
-|                      ID | Requirement                                                                                                                                                                                                                                                                          | Practical test (manager‑oriented)                                                                                                                                                             |
-| ----------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|             **CC‑A2.1** | A **Role** SHALL NOT be a mereological part of any holon; roles are never constituents of holarchies.                                                                                                                                                                                | If a diagram shows `Role →(part‑of)→ Holon`, the model **fails**. Replace the edge with `playsRoleOf(Holon, Role, span)` (A.14 governs parts).                                                |
-|             **CC‑A2.2** | Only a **System** can bear **behavioural** roles (e.g., `TransformerRole`, `AgentialRole`) and thus bind **Method**/**Work**; an **Episteme** MAY bear **non‑behavioural** roles (e.g., `ReferenceRole`, `ConstraintSourceRole`) only.                                               | Lint the model: any `U.Episteme` that `bindsMethod` or is a `performedBy` target **fails**; move behaviour to a system bearing the role and act on episteme **carriers** (A.7, A.12, A.15).   |
-|             **CC‑A2.3** | Every **behavioural Role** that is used for Work SHALL `bindsMethod ≥ 1`; behavioural roles with no bound method are **abstract** placeholders and non‑executable.                                                                                                                     | If a behavioural role participates in `Work` without some `Method ⟷ MethodDescription` chain, flag “unbound role” and add a binding (A.15).                                                   |
-|             **CC‑A2.4** | Every **role reference** in normative text SHALL be **context‑indexed** by a declared **Bounded Context** (local to the pattern or glossary). Local shorthand **“Transformer”** is permitted only if the pattern’s Glossary **re‑binds** it to “**System bearing TransformerRole**”. | If prose says “Transformer updates the spec”, the pattern MUST define the local alias and its target; otherwise rewrite to the canonical long form (E.10, A.7).                               |
-|             **CC‑A2.5** | Each `U.RoleAssignment` SHALL carry an explicit `window` **or** be traceably open‑ended from an assignment time (e.g., via `U.RoleAssigning`). Open intervals are allowed but must be explicit. | Search for RoleAssignments with neither `window` nor a traceable assignment time; add `@t₀..t₁` (or open bound) and/or an issuing RoleAssigning Work. |
-|             **CC‑A2.6** | If two roles are declared **incompatible inside the same context**, a bearer SHALL NOT hold them over **overlapping** spans.                                                                                                                                                         | Check the context’s role‑compatibility grid; if overlaps exist, either split the Work by `PhaseOf` or change staffing (A.14; B.1.4/Γ\_time).                                                  |
-|             **CC‑A2.7** | For any **Work** item, `performedBy` MUST reference the **concrete RoleAssignment** of the performer, and its window MUST cover the Work’s window. | Assert `performedBy(Work) = RA` and `RA.window ⊇ window(Work)`; split Work or update assignments if the performer changes mid‑window (A.2.1, A.15). |
-|             **CC‑A2.8** | Every **Method** bound to a role SHALL be `isDescribedBy ≥ 1` **MethodDescription** (`U.Episteme`) and every **Work** SHALL be `isExecutionOf` exactly one **MethodDescription** version.                                                                                                          | If a Work lacks `isExecutionOf`, or a Method lacks `MethodDescription`, the audit fails (A.15; A.10 evidencing hook).                                                                                |
-|            **CC‑A2.8b** | When a claim relies on **step/phase/serial/parallel** semantics, the referenced **MethodDescription** SHALL declare an appropriate viewpoint and its ordering/coordination rules; do not infer “steps” from `U.Method` by default.                                                    | If prose says “step 3”, “submethod”, or “phase”, but the cited MethodDescription is not a workflow/script/step‑graph viewpoint (or lacks ordering rules), flag it; rewrite in the declared viewpoint or mint an additional view. |
-|             **CC‑A2.9** | **Evidence** for claims about roles and execution MUST anchor to **symbol carriers** (SCR/RSCR); self‑evidence is forbidden.                                                                                                                                                         | A role effectiveness claim without SCR/RSCR or with cyclic provenance fails (A.10).                                                                                                           |
-|            **CC‑A2.10** | When a Role assignment implies **order** or **temporal** structure, the pattern SHALL use **Γ\_ctx**/**Γ\_time** rather than overloading role edges.                                                                                                                               | If argument order matters, use Γ\_ctx folds and record OrderSpec; version/evolution goes via Γ\_time (B.1.3 §4.5).                                                                            |
-|            **CC‑A2.11** | Use of legacy nouns “creator/actor/agent” in Core text is prohibited unless they are explicitly typed as **roles** with bearers; the term **“Transformer”** is a local alias, **not** a type.                                                                                        | Scan for bare nouns; replace with “system bearing TransformerRole” or define an alias in the Glossary (A.7 canonical rewrites; E.10 registers).                                               |
-| **CC‑A2.12 (advisory)** | A reified **RoleAssigning** object SHOULD capture `context`, `window`, optional `authority`, `justification (U.Episteme)`, and `provenance (U.Method)`. | Recommended for governance‑heavy domains; it improves explainability without changing Core semantics. |
+#### A.2:5.1 - Pump in a Cooling Loop
 
-> **Note.** CC‑A2.2 aligns with **A.7 Role‑domain guards** (“behavioural roles’ domain = system; epistemes bear non‑behavioural roles only”).
+```text
+PumpUnit-3#CoolingCirculatorRole:Plant-A@2026-06-01..open
+```
 
-### A.2:9 - Common Anti-Patterns and How to Avoid Them
+The holder is `PumpUnit-3`, a system. The role value is `CoolingCirculatorRole`. The context is `Plant-A`. The assignment window is open from a named date.
 
-1. **“Transformer as system subtype.”**
-   ✗ *“`U.TransformerSystem` builds pumps.”*
-   ✓ *“`RobotArm R‑45#Transformer:Plant‑A` executed Work W.”* (Role is a mask; behaviour is Method/Work.)
+This does not say the pump has the capability to circulate under every condition. Capability claims stay under `A.2.2`. It does not say which method is used or which work occurred. Method, method description, work plan, and work claims stay under `A.15`.
 
-2. **“Role as part.”**
-   ✗ *“The pump’s role is one of its components.”*
-   ✓ Roles are **never** parts; components are substantial. Keep all `partOf` chains role‑free.
+#### A.2:5.2 - Standard Used in Design Work
 
-3. **“Episteme acts by itself.”**
-   ✗ *“The PDF enforced the SOP.”*
-   ✓ An **episteme** can hold roles like `ProtocolStandard` **in context**, but only a **system** performs the Method/Work that uses it.
+"RFC-9110 has the protocol-standard role in this design" is source-side wording that must be repaired.
 
-4. **“Context leakage.”**
-   ✗ *“Pluto is Planet and DwarfPlanet.”* (in one tacit space)
-   ✓ *“`Pluto#Planet:Early20thCenturyAstronomy`; `Pluto#DwarfPlanet:IAU_2006_Definition`.”* No contradiction—different bounded contexts. (Illustrative of `U.RoleAssignment` semantics carried forward from the A.2.1.)
+Current FPF expression:
 
-5. **“Method = workflow (step list) by default.”**
-   ✗ *“The method is the ordered list of steps 1..n.”*
-   ✓ A **Method** is a design‑time capability; “steps” (or their absence) are a property of a **MethodDescription viewpoint**. A Work executes a specific MethodDescription; use a workflow/script view when step semantics matter, and use other views (dynamics/solver/circuit/channel) when steps are not meaningful.
+- the RFC publication is an episteme or publication used as source, standard, requirement, or method-description source;
+- the design service, engineer, or team is the system or acting holon holding any work-facing role;
+- the design work is performed by that holder under a role assignment;
+- the RFC does not perform the work and does not hold `U.Role`.
+
+#### A.2:5.3 - Reviewer and Review Report
+
+A person, team, or agent service can hold `ReviewerRole` for a review context. The review report produced by that work is an episteme. Later, another project may use the report as evidence or status input. That use is an evidence-use or status-use relation around the report, not a role assignment to the report.
+
+#### A.2:5.4 - Relation Argument Named "Role"
+
+In a relation signature, "role" may mean an argument position. If the claim is about a relation position, use `A.6.5` SlotSpec discipline. Do not create a `U.Role` merely because the source says "argument role".
+
+### A.2:6 - Bias Annotation
+
+| Bias risk | Failure | Mitigation |
+| --- | --- | --- |
+| Semio-bias | The pattern starts talking mainly about descriptions of roles, cards, records, and publications. | Keep `U.Role` as the EntityOfConcern. Descriptions and publications are neighboring epistemes. |
+| Episteme-as-agent drift | A document, proof, standard, dataset, or model card is treated as if it acted. | Use evidence-use, source-use, status-use, publication-use, requirement-use, definition-use, explanation-use, or assurance-use relations. |
+| Slot-role drift | Role is used as a generic slot position. | Use `A.6.5` for SlotKind and relation positions; keep `U.Role` for work-facing role values. |
+| Capability-role drift | A role name is treated as ability. | Use `A.2.2` for capability; role assignment may cite capability requirements but does not create ability. |
+| Method-role drift | A role name is treated as the method itself. | Use `A.15`, `A.3.1`, and `A.3.2` for method and method-description claims. |
+
+### A.2:7 - Working Guidance
+
+1. Start with the source phrase and recover the current project concern.
+2. If the phrase names what an acting system or acting holon is being in a bounded context, recover a `U.Role` value.
+3. If the phrase names the holder-role-context-window relation, recover `U.RoleAssignment` under `A.2.1`.
+4. If the phrase names ability, recover capability under `A.2.2`.
+5. If the phrase names performed work, intended work, or governing method, use `A.15` and its neighboring method and work patterns.
+6. If the phrase names evidence, source, standard, requirement, definition, explanation, publication, status, assurance, or gate use of an episteme, use the direct episteme-use relation pattern.
+7. If the phrase only names a relation position, field, parameter, or argument, use `A.6.5`.
+
+### A.2:8 - Conformance Checklist
+
+| ID | Check |
+| --- | --- |
+| CC-A2.1 | A `U.Role` is a role value, not a system subtype, part, capability, method, work occurrence, commitment, obligation, permission, description, publication, or SlotKind. |
+| CC-A2.2 | A `U.RoleAssignment` holder is a `U.System` or acting holon admitted as system-like performer by the governing work or method pattern. |
+| CC-A2.3 | An episteme used as evidence, source, standard, definition, requirement, explanation, status bearer, publication, or assurance input is not a `U.RoleAssignment` holder. |
+| CC-A2.4 | Role claims name or recover the bounded context that gives the role value its local meaning. |
+| CC-A2.5 | Work claims cite the holder under `U.RoleAssignment`; the role value itself does not act. |
+| CC-A2.6 | Capability requirements are governed by `A.2.2`, not hidden inside the role value. |
+| CC-A2.7 | Method and method-description requirements are governed by `A.15`, `A.3.1`, and `A.3.2`, not hidden inside the role value. |
+| CC-A2.8 | Role-requirement substitution, incompatibility, qualification, and bundles are context-local role relation structure under `A.2.7`, not mereology and not system-kind subsumption. |
+| CC-A2.9 | Relation argument positions and SlotKinds are governed by `A.6.5`; they do not become `U.Role`. |
+| CC-A2.10 | Role descriptions, role cards, registers, and publications describe, cite, or store role values or assignments; they are not the role value by default. |
+
+### A.2:9 - Common Anti-Patterns
+
+| Anti-pattern | Why it fails | Repair |
+| --- | --- | --- |
+| `TransformerSystem` as a system subtype | It fuses system identity with a contextual role. | Use `U.RoleAssignment(holderRef=<system-or-acting-holon>, roleRef=TransformerRole@Context, boundedContextRef=<context>)` when a holder role assignment is current. |
+| "The PDF enforced the rule" | The episteme did not perform work. | Name the system or acting holon that performed enforcement work, and name the PDF's source, requirement, or evidence use separately. |
+| "The report has EvidenceRole" | It treats evidence use as a role held by an episteme. | Use an evidence-use relation around the report, target claim, grounding holon when current, claim scope, polarity, relevance window, and provenance constraints. |
+| "The role grants capability" | A role name does not create ability. | Name capability under `A.2.2` and link it as a requirement or checked value when current. |
+| "The role contains the method" | A role value is not a method. | Name method and method description through `A.15`, `A.3.1`, and `A.3.2`. |
+| "Argument role equals U.Role" | A relation position is not a work-facing role value. | Use `A.6.5` SlotKind and relation signature discipline. |
 
 ### A.2:10 - Consequences
 
-| Benefit                     | Why it matters                                                                                                       | Trade‑off / Mitigation                                                                       |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Category‑error immunity** | Clear firewall between **identity** (holarchies) and **function** (roles) prevents mixing “parts” with “masks”.      | Slight modelling overhead; templates provide checklists (A.7, A.14).                         |
-| **Operational clarity**     | Who did what, when, under which mask, and **by which MethodDescription** becomes audit‑ready (RoleAssignment + `performedBy` + `isExecutionOf` + method‑binding). | Requires spans on Role assignments; mitigated by default “open‑ended” spans in drafts.       |
-| **Epistemic hygiene**       | Knowledge holons contribute as **evidence** or **constraints**, never as doers.                                      | Authors must rewrite anthropomorphic prose; canonical rewrites help.                         |
-| **Cross-context pluralism** | Same bearer can hold different roles across contexts without contradiction; differences are explicit in the assignment. | Requires declaring the **bounded context**; E.10 eases the ceremony with registers/aliases.  |
-| **Γ‑coherence**             | Order/time/aggregation stay in Γ‑operators, not overloaded into “role" edges.                                        | Authors learn when to apply Γ\_ctx/Γ\_time; the Part B on‑ramp is short.                      |
+| Gain | Cost or tradeoff |
+| --- | --- |
+| Role names remain reusable without creating system subtypes. | Authors must name bounded context instead of relying on global role meanings. |
+| Work attribution becomes inspectable through holder, role assignment, method, plan, and work. | Simple sentences may need a small role-assignment note when claims become reliance-bearing. |
+| Episteme use remains precise: evidence, status, source, standard, requirement, definition, explanation, publication, and assurance uses stay in direct relation patterns. | Everyday "role of this document" wording must be repaired before it becomes FPF vocabulary. |
+| Slot discipline and role discipline stop competing. | Authors must distinguish role value from SlotKind when reading relation signatures. |
+| Role relation structure remains context-local and bounded. | Cross-context reuse requires explicit alignment rather than silent synonymy. |
 
-### A.2:11 - Rationale (post‑2015 cross‑domain corroboration)
+### A.2:11 - Rationale
 
-*Why insist on roles as contextual masks and externalised transformers?*
+Roles are needed because holons participate in different contexts without changing their substantial identity. A role value gives this context-local participation a name. The pump remains the same pump while being a cooling circulator in one context and test article in another. The engineer remains the same person while holding verifier or author roles in different work packages.
 
-1. **Constructor Theory (2015–2022).** Post‑2015 work by Deutsch & Marletto re‑centres physics on **possible tasks and constructors** rather than objects, mirroring FPF’s **TransformerRole**: behaviour is attached to “who can realise a task,” not to substance per se. Our separation of **SubstantialHolon** vs **Role** and the insistence on **external** transformers directly echo this shift. *(Conceptual alignment noted in A.2 Solution and A.12 intent.)*
-2. **Layered Control Architectures (Matni–Ames–Doyle, 2024).** The modern control stack cleanly **externalises** regulators and planners relative to plants. FPF’s obligatory “system bearing TransformerRole” (A.7, A.12) is isomorphic to that separation, keeping supervision and actuation **outside** the controlled holon.
-3. **Active‑Inference / Agency spectrum (2017–2023).** Contemporary models treat agency as **graded** and **contextual** (percept‑act loops tuned by free‑energy bounds). A.13 adopts exactly this: **AgentialRole** is a role worn by a holon, with graded measurements via **Agency‑CHR**, not a static type.
-4. **Basal Cognition & multi‑scale organisation (2019–2024).** Fields & Levin argue for **cross‑scale** control and information flows; FPF encodes this via Γ‑flavours and the **Meta‑Holon Transition** triggers, ensuring Role assignments compose across scales without collapsing identity into function.
-5. **Knowledge ecosystems & safety cases (2018–2025).** Modern assurance relies on **traceable evidence** and conservative integration (no “truth averaging”): our A.10 anchors (SCR/RSCR) and Γ\_epist’s **weakest‑link** fold implement that discipline and forbid self‑evidence.
+The selected ontology keeps three levels separate:
 
-> Summing up: post‑2015 science and engineering converge on **roles as contextual capabilities**, **externalised control**, and **traceable evidence**. A.2 codifies these insights in a substrate‑neutral way, keeping the Core small yet powerful.
+1. `U.Role`: the context-bound role value.
+2. `U.RoleAssignment`: the typed relation value linking holder, role, context, and window.
+3. Neighboring values: capability, method, method description, work plan, work occurrence, evidence-use relation, status-use relation, source-use relation, publication-use relation, and role description.
 
-### A.2:12 - SoTA-Echoing (post‑2015 alignment, informative)
+This is a compact architecture. It avoids type explosion, but it also avoids the opposite error of making role a generic slot word for anything that participates in anything else. A role is a real role value when an acting system or acting holon is being something in a bounded context. Other participation claims use their own relation patterns.
 
-| Claim (A.2 need) | SoTA practice (post‑2015) | Primary source (post‑2015) | Alignment with A.2 | Adoption status |
-| --- | --- | --- | --- | --- |
-| Roles are context‑dependent, anti‑rigid descriptors rather than structural parts. | Conceptual modeling distinguishes substantial types from role types; roles depend on context/relational situations. | Guizzardi (2019), *Ontological Foundations for Conceptual Modeling*; recent OntoUML/UFO literature. | Maps to `U.Role` as context‑bound schema; keeps `partOf` free of roles. | **Adopt.** |
-| Meaning boundaries must be explicit; reuse across boundaries must be declared, not assumed. | Modern DDD and socio‑technical architecture emphasise explicit bounded contexts and explicit translation/alignment. | Vernon (2016), *Domain‑Driven Design Distilled*; Newman (2021), *Building Microservices*. | Matches `role ∈ Roles(context)` and CC‑A2.4 context binding + explicit bridge discipline. | **Adopt/Adapt.** Adopt boundaries; adapt reuse via FPF Bridges + CL. |
-| Agency should not be attributed to epistemes or carriers; treat evidence/provenance as first-class. | Safety/assurance and governance treat documents as evidence and constraints; provenance is required for claims. | ISO 26262:2018; NIST SP 800-53 Rev. 5 (2020). | Supports “episteme as justification” and CC-A2.2/CC-A2.9 evidence binding. | **Adopt.** |
-| “Agency” is graded and mediated by active systems + policies. | Cognitive/agentic modeling treats agency as spectrum, mediated by control loops and policies. | Friston et al. (2017), Active Inference; basal cognition surveys (2018+). | Supports separating role labels from behavioural work; aligns with A.13/A.15. | **Adopt (with scope).** Keep obligations in CC. |
+### A.2:12 - SoTA-Echoing
 
-> **Note.** Prefer citing a maintained SoTA synthesis pack for roles/contexts if your Context has one.
+| Practice line | Selected source examples | What FPF adopts | User-facing implication |
+| --- | --- | --- | --- |
+| Conceptual modeling with UFO and OntoUML treats roles as context-dependent, anti-rigid, relation-dependent descriptors rather than structural parts. | Guizzardi et al., "UFO: Unified Foundational Ontology", Applied Ontology 2022; current OntoUML and UFO conceptual-modeling practice. | Keep roles distinct from system kinds, mereological parts, and relation argument positions. | A project can name `VerifierRole` or `CoolingCirculatorRole` without creating a new system subtype. |
+| Bounded-context practice in domain modeling treats role names as local to a context and unsafe across boundaries without translation. | Domain-driven design and socio-technical architecture practice around bounded contexts and explicit translation. | Require bounded context for role use and reject global role meaning. | Two teams can reuse the same role word only after context and alignment are named. |
+| Assurance and evidence practice treats documents, standards, reports, datasets, and proofs as evidence or source objects rather than agents. | Safety, assurance-case, model-card, provenance, and evidence-management practice; ISO 26262:2018 and NIST SP 800-53 Rev. 5 are ordinary engineering examples. | Keep epistemes outside work-facing role holding. | A standard, model card, theorem, report, or dashboard can be evidence or source material without becoming the doer of work. |
+| Relation and signature modeling treat argument positions as relation positions, not as social or work roles. | `A.6.5` SlotSpec discipline and ontology-design-pattern practice for typed relation positions. | Keep SlotKind and role value distinct. | "Argument role", "parameter role", and "field role" are repaired through relation-slot discipline before any role claim is made. |
 
 ### A.2:13 - Relations
 
-* **Builds on:**
-  **A.1 Holonic Foundation** (role/mereology split), **A.7 Strict Distinction** (role ≠ behaviour; episteme ≠ carrier), **A.14 Advanced Mereology** (no roles in holarchies).
-* **Specialises / Coordinates with:**
-  **A.13 Agential Role & Agency Spectrum** (behavioural roles over systems; graded agency), **A.15 Role–Method–Work Alignment** (bindsMethod / isExecutionOf discipline).
-* **Constrains / Used by B‑cluster:**
-  **B.1 Universal Algebra of Aggregation (Γ)** (keep order/time in Γ\_ctx/Γ\_time; keep provenance in Γ\_epist), **B.2 Meta‑Holon Transition** (promotion when supervision/closure appears), **B.3 Trust & Assurance** (evidence & congruence).
-* **Interlocks with E‑cluster (governance & language):**
-  **E.10 Lexical Discipline** (registers, progression-label disambiguation, local aliases like “Transformer”), **E.5.1 DevOps Lexical Firewall** (ban tooling tokens in Core patterns).
-* **Reinforces:**
-  **A.10 Evidence Graph Referring** (external transformer; SCR/RSCR), **A.12 External Transformer Principle** (agent externalisation).
+**Builds on:** `A.1` for holon and system grounding; `A.6.5` for SlotSpec discipline; `E.24` for ontic and slot-relation discipline; `A.6.RSIR` for first-level wording-use recovery.
+
+**Governs with:** `A.2.1` for role assignment; `A.2.2` for capability; `A.2.5` for role state; `A.2.7` for role relation structure and role-algebra lens boundary; `A.15` for role-method-work alignment; Part F role-description and naming patterns for durable role names.
+
+**Keeps separate from:** `A.10`, `B.3`, `C.2.1`, `C.28`, `E.17`, `F.10`, and direct evidence-use, status-use, source-use, publication-use, requirement-use, definition-use, explanation-use, assurance-use, and gate patterns for episteme use.
+
+**Precision-restoration applications:** If source wording uses "role" for interface, signature, argument, field, parameter, capability, method, function, concern, interest, status, evidence, or publication, apply `A.6.RSIR` only until the governed object or claim kind is recovered, then apply the direct governing pattern.
 
 ### A.2:End
