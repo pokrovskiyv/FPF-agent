@@ -9,6 +9,7 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | A.2.4 | informs | B.3 |
 | A.2.6 | constrains | B.3 |
 | A.22 | coordinates_with | B.3 |
+| A.3.1 | prerequisite_for | B.1.5 |
 | A.3.3 | coordinates_with | B.3 |
 | A.3.4 | coordinates_with | B.3 |
 | A.3.4.P | coordinates_with | B.3 |
@@ -129,10 +130,9 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | E.15 | builds_on | B.4 |
 | E.15 | builds_on | B.3 |
 | E.16 | builds_on | B.3 |
-| E.18.1 | coordinates_with | B.3 |
 | E.18.2 | coordinates_with | B.3 |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|

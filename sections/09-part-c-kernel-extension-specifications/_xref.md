@@ -1,6 +1,6 @@
 # Cross-References into 09-part-c-kernel-extension-specifications
 
-Patterns in other Parts that reference patterns in this directory (239 refs).
+Patterns in other Parts that reference patterns in this directory (236 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -123,6 +123,8 @@ Patterns in other Parts that reference patterns in this directory (239 refs).
 | A.19.USCM | builds_on | C.16 |
 | A.20 | coordinates_with | C.18 |
 | A.20 | coordinates_with | C.19 |
+| A.22.CGUS | coordinates_with | C.33 |
+| A.22.CGUS | coordinates_with | C.35 |
 | A.8 | builds_on | C.3 |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
@@ -211,7 +213,6 @@ Patterns in other Parts that reference patterns in this directory (239 refs).
 | E.10.MOVE | coordinates_with | C.30 |
 | E.11.PUR | coordinates_with | C.24 |
 | E.11.PUR | coordinates_with | C.30 |
-| E.11.PUR | coordinates_with | C.30.AD |
 | E.14 | builds_on | C.2.3 |
 | E.14 | coordinates_with | C.13 |
 | E.15 | builds_on | C.18 |
@@ -221,16 +222,14 @@ Patterns in other Parts that reference patterns in this directory (239 refs).
 | E.17.2 | builds_on | C.2.1 |
 | E.18 | coordinates_with | C.29 |
 | E.18.1 | builds_on | C.22.2 |
-| E.18.1 | coordinates_with | C.29 |
 | E.18.2 | builds_on | C.29 |
+| E.18.3 | coordinates_with | C.18 |
+| E.18.3 | coordinates_with | C.19 |
 | E.21 | builds_on | C.25 |
 | E.21 | builds_on | C.16 |
 | E.21 | coordinates_with | C.2.P |
 | E.22 | coordinates_with | C.25 |
 | E.22 | coordinates_with | C.17 |
-| E.23 | coordinates_with | C.19.1 |
-| E.23 | coordinates_with | C.22.1 |
-| E.23 | coordinates_with | C.24 |
 | E.23 | coordinates_with | C.17 |
 | E.24 | builds_on | C.2.1 |
 | E.24.CD | builds_on | C.2.1 |
@@ -242,8 +241,6 @@ Patterns in other Parts that reference patterns in this directory (239 refs).
 | E.4 | coordinates_with | C.34 |
 | E.4 | coordinates_with | C.35 |
 | E.4.DPF | coordinates_with | C.33 |
-| E.4.DPF | coordinates_with | C.34 |
-| E.4.DPF | coordinates_with | C.35 |
 | E.4.DPF.DA | coordinates_with | C.33 |
 | E.4.DPF.DA | coordinates_with | C.34 |
 | E.4.DPF.DA | coordinates_with | C.35 |
@@ -254,7 +251,7 @@ Patterns in other Parts that reference patterns in this directory (239 refs).
 | E.4.PFR | coordinates_with | C.35 |
 | E.8.ECSPF | coordinates_with | C.25 |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|

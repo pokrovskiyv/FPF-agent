@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-07-15
+
+### What's New
+- The skill now covers more of the FPF specification — the upstream spec grew to ~97,000 lines (from ~94,000), and the searchable index expanded to 310 topic sections. You get grounded guidance on more situations across every analysis area.
+- New help for a common trap: when someone hands you a flowchart, route, checklist, or step-by-step example, the skill can now read it as *the conditions that decide what may legitimately come next* rather than a fixed order everyone must follow — so a teaching example or process diagram isn't mistaken for authorized work or a mandatory sequence.
+- New "apply it now" guidance: take a promising approach and turn it into the smallest result you can actually use right away — with clear expectations for what you'll get and when to stop — instead of burying a simple task under paperwork.
+- Fifteen new quick-start "use cards" help you jump straight to the right first move for the question your project actually faces, instead of walking a fixed route from the beginning.
+- The plain-language topic index and glossary were refreshed for the new material, including a few new everyday terms — whether a stated ability is still up to date, smaller ways of doing that nest inside larger ones, and combining them in an order that matters.
+
+### All Changes
+- **chore**: sync upstream FPF-Spec (97 255 lines, 310 sections; new patterns for reading diagrams/flows as constraints-on-what-comes-next, applying a pattern to a first useful result, and fifteen practical-use cards) + full rebuild
+- **chore**: port and AI-enhance section _index.md summaries + glossary plain definitions for the new July material
+- **chore**: sync upstream July spec + rebuild + AI-enhanced indexes and glossary
+
 ## 2026-07-01
 
 ### What's New

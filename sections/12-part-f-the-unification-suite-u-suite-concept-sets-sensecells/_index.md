@@ -1,4 +1,4 @@
-# Part F — The Unification Suite (U‑Suite): Concept‑Sets, SenseCells & Contextual Role Assignment
+# Part F — The Unification Suite (U-Suite): Concept-Sets, SenseCells & Contextual Role Assignment
 
 - [F.0.1 - Contextual Lexicon Principles (F.0.1)](01-f01-f01-contextual-lexicon-principles.md) — Establishes the rule that every word must be pinned to a specific local context; crossing into another context requires an explicit, declared translation.
 - [F.1 - Domain‑Family Landscape Survey (F.1)](02-f1-f1-domainfamily-landscape-survey.md) — Helps teams map which authoritative sources actually define terms in a field before anyone starts naming or comparing things.

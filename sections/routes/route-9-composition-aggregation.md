@@ -13,7 +13,7 @@
 | 3 | B.1.2 | System Aggregation and Holon Delimitation | sections/08-part-b-trans-disciplinary-reasoning-cluster/03-b12-b12-system-aggregation-and-holon-delimitation.md |  |
 | 4 | B.1.3 | Γ_epist — Knowledge-Specific Aggregation | sections/08-part-b-trans-disciplinary-reasoning-cluster/04-b13-b13-_epist-knowledgespecific-aggregation.md |  |
 | 5 | B.1.4 | Contextual and Temporal Aggregation | sections/08-part-b-trans-disciplinary-reasoning-cluster/05-b14-b14-contextual-and-temporal-aggregation.md | YES |
-| 6 | B.1.5 | Γ_method — Order-Sensitive Method Composition & Work Enactme | sections/08-part-b-trans-disciplinary-reasoning-cluster/06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md |  |
+| 6 | B.1.5 | Gamma_method - Order-Sensitive Method Composition and Work E | sections/08-part-b-trans-disciplinary-reasoning-cluster/06-b15-b15-gamma_method-order-sensitive-method-composition-and-work.md |  |
 
 ## Loading Strategy
 

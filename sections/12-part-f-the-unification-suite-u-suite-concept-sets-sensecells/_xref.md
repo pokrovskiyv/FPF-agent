@@ -1,4 +1,4 @@
-# Cross-References into 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+# Cross-References into 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 Patterns in other Parts that reference patterns in this directory (146 refs).
 
@@ -67,6 +67,7 @@ Patterns in other Parts that reference patterns in this directory (146 refs).
 | A.19.USCM | coordinates_with | F.18 |
 | A.20 | coordinates_with | F.9 |
 | A.20 | coordinates_with | F.17 |
+| A.22.CGUS | coordinates_with | F.17 |
 | A.8 | builds_on | F.8 |
 | A.8 | builds_on | F.18 |
 
@@ -133,8 +134,9 @@ Patterns in other Parts that reference patterns in this directory (146 refs).
 | E.10.D2 | constrains | F.8 |
 | E.10.D2 | constrains | F.9 |
 | E.10.D2 | constrains | F.15 |
+| E.10.MOVE | coordinates_with | F.17 |
+| E.11 | builds_on | F.17 |
 | E.11 | builds_on | F.18 |
-| E.11 | coordinates_with | F.19 |
 | E.15 | builds_on | F.15 |
 | E.18 | coordinates_with | F.9 |
 | E.18 | coordinates_with | F.17 |
@@ -143,8 +145,6 @@ Patterns in other Parts that reference patterns in this directory (146 refs).
 | E.20 | coordinates_with | F.18 |
 | E.21 | builds_on | F.18 |
 | E.21 | coordinates_with | F.19 |
-| E.22 | coordinates_with | F.19 |
-| E.23 | coordinates_with | F.19 |
 | E.24 | builds_on | F.18 |
 | E.24 | builds_on | F.19 |
 | E.24.CD | builds_on | F.19 |

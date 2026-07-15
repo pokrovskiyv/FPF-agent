@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (121 refs).
+Patterns in other Parts that reference patterns in this directory (120 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -78,6 +78,7 @@ Patterns in other Parts that reference patterns in this directory (121 refs).
 | C.2.2a | used_by | A.6.A |
 | C.2.P | builds_on | A.6.P |
 | C.2.P.DR | coordinates_with | A.6.1 |
+| C.22 | builds_on | A.6.0 |
 | C.22.2 | builds_on | A.6.P |
 | C.22.2 | builds_on | A.6.3.RT |
 | C.22.2 | builds_on | A.6.4 |
@@ -132,8 +133,6 @@ Patterns in other Parts that reference patterns in this directory (121 refs).
 | E.17.0 | builds_on | A.6.4 |
 | E.17.1 | builds_on | A.6.2 |
 | E.17.2 | builds_on | A.6.2 |
-| E.18.1 | coordinates_with | A.6.0 |
-| E.18.1 | coordinates_with | A.6.1 |
 | E.18.2 | coordinates_with | A.6.0 |
 | E.20 | coordinates_with | A.6.1 |
 | E.20 | coordinates_with | A.6.7 |
@@ -141,7 +140,7 @@ Patterns in other Parts that reference patterns in this directory (121 refs).
 | E.24 | builds_on | A.6.5 |
 | E.24.UK | builds_on | A.6.5 |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|

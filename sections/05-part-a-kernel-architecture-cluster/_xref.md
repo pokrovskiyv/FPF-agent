@@ -177,12 +177,12 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | E.18 | builds_on | A.3.4 |
 | E.18 | coordinates_with | A.21 |
 | E.18 | coordinates_with | A.2.6 |
-| E.18.1 | coordinates_with | A.21 |
 | E.18.2 | builds_on | A.3.4 |
 | E.18.2 | coordinates_with | A.21 |
+| E.18.3 | builds_on | A.3.4 |
 | E.24.UK | builds_on | A.11 |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|

@@ -1,6 +1,6 @@
 # Cross-References into 13-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (136 refs).
+Patterns in other Parts that reference patterns in this directory (142 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -83,8 +83,8 @@ Patterns in other Parts that reference patterns in this directory (136 refs).
 | C.20 | builds_on | G.0 |
 | C.21 | coordinates_with | G.2 |
 | C.22 | builds_on | G.0 |
-| C.22 | builds_on | G.5 |
 | C.22 | coordinates_with | G.4 |
+| C.22 | coordinates_with | G.5 |
 | C.22.1 | coordinates_with | G.5 |
 | C.22.1 | coordinates_with | G.9 |
 | C.22.1 | coordinates_with | G.11 |
@@ -141,12 +141,18 @@ Patterns in other Parts that reference patterns in this directory (136 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| E.10.MOVE | coordinates_with | G.11 |
+| E.11 | coordinates_with | G.11 |
 | E.16 | coordinates_with | G.4 |
 | E.16 | coordinates_with | G.5 |
 | E.16 | coordinates_with | G.9 |
 | E.18 | coordinates_with | G.5 |
 | E.18 | coordinates_with | G.9 |
 | E.18 | coordinates_with | G.11 |
+| E.18.1 | coordinates_with | G.2 |
+| E.18.1 | coordinates_with | G.11 |
+| E.18.3 | coordinates_with | G.5 |
+| E.18.3 | coordinates_with | G.11 |
 | E.20 | coordinates_with | G.2 |
 | E.22 | coordinates_with | G.5 |
 | E.22 | coordinates_with | G.9 |

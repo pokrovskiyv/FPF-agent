@@ -1,6 +1,6 @@
 # Cross-References into 11-part-e-the-fpf-constitution-and-authoring-guides
 
-Patterns in other Parts that reference patterns in this directory (259 refs).
+Patterns in other Parts that reference patterns in this directory (269 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -13,6 +13,7 @@ Patterns in other Parts that reference patterns in this directory (259 refs).
 | A.1 | builds_on | E.24 |
 | A.1.1 | coordinates_with | E.24 |
 | A.11 | builds_on | E.24.UK |
+| A.2.2 | builds_on | E.24.UK |
 | A.21 | builds_on | E.18 |
 | A.21 | builds_on | E.17 |
 | A.22 | builds_on | E.17 |
@@ -102,6 +103,8 @@ Patterns in other Parts that reference patterns in this directory (259 refs).
 | A.15.3 | builds_on | E.18 |
 | A.15.3 | builds_on | E.19 |
 | A.15.4 | builds_on | E.17 |
+| A.15.4 | coordinates_with | E.10 |
+| A.15.4 | coordinates_with | E.10.MOVE |
 | A.15.5 | coordinates_with | E.18 |
 | A.16 | coordinates_with | E.18 |
 | A.16.0 | builds_on | E.17 |
@@ -136,6 +139,10 @@ Patterns in other Parts that reference patterns in this directory (259 refs).
 | A.19.USCM | coordinates_with | E.20 |
 | A.20 | builds_on | E.18 |
 | A.20 | coordinates_with | E.17 |
+| A.22.CGUS | coordinates_with | E.18.3 |
+| A.22.CGUS | coordinates_with | E.18.1 |
+| A.22.CGUS | coordinates_with | E.23 |
+| A.22.CGUS | coordinates_with | E.11 |
 | A.8 | builds_on | E.24.UK |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
@@ -238,6 +245,7 @@ Patterns in other Parts that reference patterns in this directory (259 refs).
 | C.32.HCS | builds_on | E.13 |
 | C.32.P2S | builds_on | E.17 |
 | C.32.P2S | builds_on | E.24.PUB |
+| C.32.P2S | coordinates_with | E.18.3 |
 | C.32.P2S | coordinates_with | E.23 |
 | C.32.P2S | coordinates_with | E.18 |
 | C.32.PAD | coordinates_with | E.8 |
@@ -262,10 +270,12 @@ Patterns in other Parts that reference patterns in this directory (259 refs).
 | D.5 | builds_on | E.5.4 |
 | D.5 | coordinates_with | E.13 |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.17 | coordinates_with | E.10.MOVE |
+| F.17 | coordinates_with | E.11 |
 | F.5 | builds_on | E.10 |
 | F.5 | builds_on | E.24.UK |
 | F.8 | builds_on | E.24.UK |

@@ -7,119 +7,147 @@
     "file": ""
   },
   "preface_2": {
-    "title": "What this specification is (and how to use it)",
+    "title": "What This Specification Is And How To Use It",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_3": {
-    "title": "Creativity in Open-Ended Evolution and Assurance*",
+    "title": "FPF As A Project, Not Only A Pattern List",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_4": {
-    "title": "Navigating Uncertainty: Building Closed Worlds within an Open World",
+    "title": "Why FPF Exists",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_5": {
-    "title": "FPF as an Evolutionary Architecture for Thought",
+    "title": "Creativity And Assurance Mature Together",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_6": {
-    "title": "Architectural Characteristic of Thought",
+    "title": "Local Closure Inside An Open World",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_7": {
-    "title": "Beyond Cognitive Biases: FPF as a Generative Architecture for Thought",
+    "title": "FPF As An Evolutionary Architecture For Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_8": {
-    "title": "Thinking Through Writing: The FPF Discipline of Conceptual Work",
+    "title": "Architectural Characteristics Of Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_9": {
-    "title": "Descriptive Ontologies vs. A Thinking-Oriented Architecture",
+    "title": "Beyond Bias Hunting",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_10": {
-    "title": "The \"Bitter Lesson\" trajectory — compute, data, and freedom over hand‑tuned rules (FPF stance)",
+    "title": "Thinking Through Writing",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_11": {
-    "title": "From Flat Documents to High-Dimensional Truth: The Multi-View Architecture",
+    "title": "Thinking-Oriented Architecture, Not A Descriptive Upper Ontology",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_12": {
-    "title": "Boundary Statements: Where Language Becomes a System Boundary",
+    "title": "The Bitter Lesson Stance",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_13": {
-    "title": "Raising Semantic Precision: From Triggers to Math‑Backed Ontics",
+    "title": "From Flat Documents To Multi-View Truth",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_14": {
-    "title": "The “big storylines” unique to FPF (load‑bearing commitments)",
+    "title": "Architecture As Structure Of Holons",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_15": {
-    "title": "Transdisciplinarity as a Meta‑Theory of Thinking",
+    "title": "Boundary Statements",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_16": {
-    "title": "FPF as a Culinary Architecture for Collective Thought: Why We Formalize “Obvious” Ideas",
+    "title": "Raising Semantic Precision",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_17": {
-    "title": "Intellect Stack (informative Overview)",
+    "title": "Big FPF Storylines",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_18": {
-    "title": "Purpose, Scope, and Explicit Non‑Goals",
+    "title": "Transdisciplinarity As A Meta-Theory Of Thinking",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_19": {
+    "title": "The Culinary Architecture Of Collective Thought",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_20": {
+    "title": "The Intellect Stack As A Pedagogical Map",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_21": {
+    "title": "Purpose, Scope, And Non-Goals",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_22": {
+    "title": "How To Continue After The readme",
     "status": "full text",
     "keywords": [],
     "queries": [],
@@ -273,23 +301,24 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/05-a21-a21-uroleassignment-contextual-work-role-assignment.md"
   },
   "A.2.2": {
-    "title": "U.Capability: System Ability (dispositional property)",
+    "title": "U.Capability: System Ability Envelope and Measures",
     "status": "Stable",
     "keywords": [
-      "ability",
-      "skill",
-      "performance",
-      "action",
-      "work scope",
-      "measures"
+      "holder-dependent capability instance",
+      "ability envelope",
+      "measure set",
+      "qualification window",
+      "currentness",
+      "capability-fit condition"
     ],
     "queries": [
-      "How to separate ability from permission?",
-      "What is a capability in FPF?"
+      "What is a capability in FPF?",
+      "How do I separate capability from capability statements, evidence, dashboards, and fit predicates?"
     ],
     "dependencies": {
       "builds_on": [
-        "A.2"
+        "A.2",
+        "E.24.UK"
       ],
       "informs": [
         "A.15",
@@ -554,41 +583,47 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/14-a3-a3-transformer-constitution-quartet.md"
   },
   "A.3.1": {
-    "title": "U.Method: The Abstract Way of Doing",
+    "title": "U.Method: Context-Defined Way of Doing",
     "status": "Stable",
     "keywords": [
-      "recipe",
-      "how-to",
-      "procedure",
-      "abstract process"
+      "method",
+      "way of doing",
+      "submethod",
+      "method composition",
+      "non-agentive holon",
+      "method vs method description vs work"
     ],
     "queries": [
       "What is a Method in FPF?",
-      "Difference between Method and Work."
+      "When is a step a recovered submethod rather than a work part or description node?",
+      "How is Method different from Work?"
     ],
     "dependencies": {
       "refines": [
         "A.3"
       ],
       "prerequisite_for": [
-        "A.15"
+        "A.15",
+        "B.1.5"
       ]
     },
     "file": "sections/05-part-a-kernel-architecture-cluster/15-a31-a31-umethod-context-defined-way-of-doing.md"
   },
   "A.3.2": {
-    "title": "U.MethodDescription: The Recipe for Action",
+    "title": "U.MethodDescription: Description Episteme for a Way of Doing",
     "status": "Stable",
     "keywords": [
-      "specification",
+      "method description",
       "recipe",
       "SOP",
       "code",
       "model",
-      "`U.Episteme`"
+      "source",
+      "`U.Episteme`",
+      "method vs description vs work"
     ],
     "queries": [
-      "How to document a method?",
+      "How do I document a method without treating the document as enacted work?",
       "What is a MethodDescription?"
     ],
     "dependencies": {
@@ -596,7 +631,8 @@
         "A.3"
       ],
       "informs": [
-        "A.15"
+        "A.15",
+        "A.15.1"
       ]
     },
     "file": "sections/05-part-a-kernel-architecture-cluster/16-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md"
@@ -1882,12 +1918,12 @@
       "contextual enactment",
       "coordinated-work evidence",
       "work admission display",
-      "source-restoration boundary"
+      "appearance-based reliance boundary"
     ],
     "queries": [
       "How do role, method, plan, readiness, and work stay distinct in FPF?",
       "When can coordinated work evidence a state that no one report carries?",
-      "When is authorization-looking material a source-restoration problem rather than work enactment?",
+      "When is authorization-looking material an appearance-based reliance repair problem rather than work enactment?",
       "When does something that looks like permission or prohibition to start work need the governing FPF pattern and project-side record behind it first?"
     ],
     "dependencies": {
@@ -1900,18 +1936,21 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/09-a15-a15-rolemethodwork-alignment-contextual-enactment.md"
   },
   "A.15.1": {
-    "title": "U.Work: The Record of Occurrence",
+    "title": "U.Work: Dated Performed Work Occurrence",
     "status": "Stable",
     "keywords": [
-      "execution",
-      "event",
-      "run",
+      "work occurrence",
+      "performed enactment",
       "actuals",
-      "log",
-      "occurrence"
+      "trace",
+      "`TemporalPartOf_work`",
+      "`EpisodeOf_work`",
+      "operational work part",
+      "concurrent work part"
     ],
     "queries": [
-      "What is a Work record?",
+      "What is a Work occurrence?",
+      "How do I distinguish a time slice, episode, operational part, and submethod?",
       "Where are actual resource costs stored?"
     ],
     "dependencies": {
@@ -1985,25 +2024,27 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/12-a153-a153-slotfillingsplanitem.md"
   },
   "A.15.4": {
-    "title": "Work-Relevant Source Restoration",
+    "title": "Work-Relevant Appearance-Based Reliance Repair",
     "status": "Stable",
     "keywords": [
-      "work-relevant source restoration",
+      "appearance-based reliance",
+      "reliance appearance",
+      "work or reliance use",
+      "required claim before use",
+      "required instituted effect before use",
+      "claim/effect position",
+      "project-side claim/effect reference",
+      "allowed use now",
+      "appearance overread blocked",
       "dashboard display",
       "credential view",
       "generated explanation",
-      "copied statement",
-      "provenance mark",
-      "required project-side FPF kind and reference",
-      "relation-governed current use",
-      "blocked overread",
-      "P2W load and position",
-      "approval-looking display"
+      "copied approval",
+      "publication face"
     ],
     "queries": [
-      "Which project-side FPF kind and reference is needed before a dashboard or explanation can guide work?",
-      "When is a visible item only source-finding before work support or reliance support?",
-      "How do I keep publication, display, or cue separate from work, readiness, evidence, gate passage, or engineering justification?"
+      "What must be recovered before a dashboard, copied approval, credential view, generated explanation, or source-finding display can guide work?",
+      "How do I keep cues, publications, credentials, evidence, gate passage, work readiness, and work authorization separate?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2021,10 +2062,12 @@
         "A.15.5",
         "A.20",
         "A.21",
+        "E.10",
+        "E.10.MOVE",
         "and E.17.EFP"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/13-a154-a154-work-relevant-source-restoration.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/13-a154-a154-work-relevant-appearance-based-reliance-repair.md"
   },
   "A.15.5": {
     "title": "Work-Entry Readiness and Full-Kit Preparation",
@@ -2952,6 +2995,28 @@
     },
     "file": "sections/05-part-a-kernel-architecture-cluster/06-a22-a22-ucapability-system-ability-envelope-and-measures.md"
   },
+  "A.22.CGUS": {
+    "title": "Constraint-Governed Unfolding Structure",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [
+      "When is a readable chain only a provisional demonstration?",
+      "How do I preserve branches, joins, cycles, and alternatives behind one walkthrough?"
+    ],
+    "dependencies": {
+      "coordinates_with": [
+        "E.18.3",
+        "E.18.1",
+        "E.23",
+        "C.32.P2S",
+        "E.11",
+        "F.17",
+        "C.33",
+        "C.35"
+      ]
+    },
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/37-a22cgus-a22cgus-constraint-governed-unfolding-structure.md"
+  },
   "B.1": {
     "title": "Holon Aggregation and Part-Whole Construction",
     "status": "Stable",
@@ -3057,27 +3122,38 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/05-b14-b14-contextual-and-temporal-aggregation.md"
   },
   "B.1.5": {
-    "title": "Γ_method — Order-Sensitive Method Composition & Work Enactment",
+    "title": "Gamma_method - Order-Sensitive Method Composition and Work Enactment",
     "status": "Stable",
     "keywords": [
       "method composition",
-      "workflow",
-      "sequential",
-      "concurrent",
-      "plan vs run"
+      "submethod",
+      "order-sensitive method",
+      "method relation structure",
+      "MIC",
+      "typed join",
+      "capability continuity",
+      "work enactment",
+      "method/work granularity",
+      "assurance hooks"
     ],
     "queries": [
-      "How to combine methods or workflows?",
-      "How does FPF model complex procedures?"
+      "How do I combine methods?",
+      "When is a step a submethod rather than a work part, plan item, or description node?",
+      "How do MIC, typed joins, Gamma_ctx, Gamma_work, and B.3 assurance hooks stay distinct?"
     ],
     "dependencies": {
       "builds_on": [
         "B.1",
         "B.1.4",
         "A.3.1"
+      ],
+      "coordinates_with": [
+        "A.15.1",
+        "B.1.6",
+        "B.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/06-b15-b15-_method-ordersensitive-method-composition-work-enactment.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/06-b15-b15-gamma_method-order-sensitive-method-composition-and-work.md"
   },
   "B.1.6": {
     "title": "Work-Resource Aggregation",
@@ -4665,28 +4741,20 @@
   "C.22": {
     "title": "Problem Typing & TaskSignature Assignment (Problem-CHR)",
     "status": "Stable",
-    "keywords": [
-      "Problem‑CHR",
-      "TaskSignature",
-      "TaskKind",
-      "ScopeSlice(G)",
-      "unknown handling",
-      "specialization anchor"
-    ],
-    "queries": [
-      "How does FPF bind a typed `TaskSignature` for lawful selection?",
-      "How does TaskSignature stay separate from method choice and specialization claims?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
+        "A.6.0",
         "C.16",
-        "G.0",
-        "G.5"
+        "G.0"
       ],
       "coordinates_with": [
-        "G.4",
         "C.22.1",
-        "C.23"
+        "C.22.2",
+        "C.23",
+        "G.4",
+        "G.5"
       ]
     },
     "file": "sections/09-part-c-kernel-extension-specifications/04-c22-c22-reliability-r-in-the-fgr-triad.md"
@@ -5812,21 +5880,23 @@
     "file": "sections/09-part-c-kernel-extension-specifications/15-c32-c32-kindsignature-f-extensionmemberof.md"
   },
   "C.32.P2S": {
-    "title": "Problem-to-Structure Architecturing Transformation Flow",
+    "title": "Problem-to-Structure Architecturing Unfolding",
     "status": "Stable",
     "keywords": [
-      "problem-to-structure architecturing flow",
+      "problem-to-structure architecturing unfolding",
       "ProblemToStructureArchitecturingFlowCard@Project",
+      "ArchitectureUnfoldingStructureUse@Project",
       "structural uncertainty",
+      "candidate structures",
       "selected structures",
+      "expected structures",
       "actual-structure feedback",
-      "owner-specific return",
-      "architecture work flow"
+      "governing-pattern-specific return"
     ],
     "queries": [
       "How do I carry architecture pressure from problem to realized selected structures?",
       "When does architecturing stop at C.30, C.32, C.32.PAD, C.32.ADR, A.15, C.16, C.29, E.23, G.11, or E.18?",
-      "How do descriptions, decisions, work, evals, and feedback stay with their owners?"
+      "How do descriptions, decisions, work, evals, and feedback stay with their governing patterns?"
     ],
     "dependencies": {
       "builds_on": [
@@ -5838,6 +5908,9 @@
         "C.32.HCS",
         "C.32.ACS",
         "C.32.ACE",
+        "C.33",
+        "C.34",
+        "C.35",
         "C.25",
         "C.31",
         "C.29",
@@ -5845,6 +5918,8 @@
         "E.24.PUB"
       ],
       "coordinates_with": [
+        "A.22.CGUS",
+        "E.18.3",
         "A.19.CPM",
         "A.19.SelectorMechanism",
         "C.18",
@@ -5869,10 +5944,10 @@
     "file": "sections/09-part-c-kernel-extension-specifications/15-c32-c32-kindsignature-f-extensionmemberof.md"
   },
   "C.32.HCS": {
-    "title": "Holon-Family Architecture Characteristic Starter Packs",
+    "title": "Architecture-Bearing Family Characteristic Starter Packs",
     "status": "Stable",
     "keywords": [
-      "holon-family architecture characteristic starter pack",
+      "architecture-bearing family characteristic starter pack",
       "architecture characteristic heads",
       "source catalogue narrowing",
       "first criteria questions",
@@ -5880,7 +5955,7 @@
     ],
     "queries": [
       "Which few architecture-characteristic heads should we inspect first?",
-      "How do software-quality catalogues transfer to systems, methods, roles, cultures, AI workflows, or evidence practices?",
+      "How do software-quality catalogues transfer to systems, methods, roles, cultures, AI workflows, or evidence practices without admitting those source labels as holon kinds?",
       "When does starter work hand off to ACS?"
     ],
     "dependencies": {
@@ -5901,7 +5976,7 @@
         "C.32.PAD"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/60-c32hcs-c32hcs-holon-family-architecture-characteristic-starter-pack.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/60-c32hcs-c32hcs-architecture-bearing-family-characteristic-starter-pa.md"
   },
   "C.32.ACS": {
     "title": "Architecture Characteristic Criteria Set for Improvement Cycles",
@@ -6250,21 +6325,22 @@
     "file": "sections/09-part-c-kernel-extension-specifications/68-c32ada-c32ada-architecture-decision-adequacy-scales.md"
   },
   "C.33": {
-    "title": "Structural Information Adequacy for Architecture Capture and Source Return",
+    "title": "Structural Information Adequacy for Architecture Capture and Missing-Structure Return",
     "status": "Stable",
     "keywords": [
       "structural information adequacy",
-      "captured structure",
+      "captured selected structure",
+      "missing structure",
       "lost structure",
-      "source return",
+      "missing-structure return",
       "carrier",
       "observer boundary",
       "selected structure"
     ],
     "queries": [
       "What selected structure can I safely take from this carrier?",
-      "What did the view, ADR, graph, report, or observation lose?",
-      "When must architecture work return to the stronger source?"
+      "What structure did the view, ADR, graph, report, or observation lose?",
+      "When must architecture work return to a receiving governing pattern because selected structure is missing?"
     ],
     "dependencies": {
       "builds_on": [
@@ -6768,20 +6844,16 @@
         "F.18"
       ],
       "coordinates_with": [
-        "E.4.FPF",
         "E.4.PFAD",
-        "E.4.DPF.DA",
         "E.4.PFR",
-        "C.33",
-        "C.34",
-        "C.35",
+        "E.4.DPF.DA",
         "E.11",
         "E.17",
         "E.21",
         "E.22",
         "E.23",
-        "E.19",
-        "G.11"
+        "G.11",
+        "C.33-C.35"
       ]
     },
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/08-e4dpf-e4dpf-domain-principle-framework-authoring-and-publication-o.md"
@@ -7116,23 +7188,20 @@
       "builds_on": [
         "E.10",
         "E.10.ARCH",
+        "A.3.4.P",
+        "A.22.CGUS",
         "E.11.PUR",
-        "A.15.5",
-        "A.3.4.P"
+        "E.23",
+        "A.15.5"
       ],
       "coordinates_with": [
-        "A.15",
-        "A.15.1",
-        "A.15.2",
-        "A.15.3",
-        "A.15.4",
-        "A.21",
         "E.18.1",
-        "A.16",
-        "A.16.0",
+        "A.15",
+        "A.21",
         "C.24",
         "C.30",
-        "and C.30.AD"
+        "F.17",
+        "G.11"
       ]
     },
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/23-e10move-e10move-move-and-readiness-wording-precision-restoration.md"
@@ -7257,52 +7326,67 @@
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.11": {
-    "title": "First-Practical Entry and Pattern-Use Discoverability Discipline",
+    "title": "Practical-Use Guidance and Pattern Discovery",
     "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
       "builds_on": [
         "E.8",
-        "E.19",
-        "E.21",
+        "E.17.AUD",
+        "F.17",
         "F.18"
       ],
       "coordinates_with": [
-        "I.2",
-        "E.10",
-        "E.10.ARCH",
-        "E.10.MOVE",
-        "E.11.PUR",
-        "F.19"
+        "A.22.CGUS",
+        "E.18",
+        "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e11-e11-practical-use-guidance-and-pattern-discovery.md"
   },
-  "E.11.PUR": {
-    "title": "Pattern-Use Recommendation and Pattern-Use Sequence",
+  "E.11.PUA": {
+    "title": "Pattern Use in a Working Situation and First Useful Result",
     "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
       "builds_on": [
         "E.11",
-        "E.10.MOVE",
         "E.8"
+      ],
+      "coordinates_with": [
+        "E.11.PUR",
+        "E.18",
+        "E.18.1",
+        "E.18.3",
+        "A.15",
+        "and every selected direct pattern"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e11pua-e11pua-pattern-use-in-a-working-situation-and-first-useful-r.md"
+  },
+  "E.11.PUR": {
+    "title": "Pattern-Use Applicability, Recommendation, and Coordination",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.11",
+        "E.11.PUA",
+        "E.10.MOVE"
       ],
       "coordinates_with": [
         "E.18.1",
         "A.15",
-        "A.15.5",
         "A.21",
-        "A.16",
         "C.24",
         "C.30",
-        "C.30.AD",
-        "and E.17"
+        "and direct decision patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e11pur-e11pur-pattern-use-recommendation-and-pattern-use-sequence.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e11pur-e11pur-pattern-use-applicability-recommendation-and-coordina.md"
   },
   "E.12": {
     "title": "Didactic Primacy & Cognitive Ergonomics",
@@ -7324,7 +7408,7 @@
         "E.2 (P-2)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e12-e12-didactic-primacy-cognitive-ergonomics.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e12-e12-didactic-primacy-cognitive-ergonomics.md"
   },
   "E.13": {
     "title": "Pragmatic Utility and Value Alignment",
@@ -7346,7 +7430,7 @@
         "E.2 (P-7)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e13-e13-pragmatic-utility-and-value-alignment.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e13-e13-pragmatic-utility-and-value-alignment.md"
   },
   "E.14": {
     "title": "Human-Centric Working-Model",
@@ -7374,7 +7458,7 @@
         "E.10"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e14-e14-humancentric-workingmodel.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/33-e14-e14-humancentric-workingmodel.md"
   },
   "E.15": {
     "title": "Lexical Authoring & Evolution Protocol (LEX-AUTH)",
@@ -7401,7 +7485,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/33-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e15-e15-lexical-authoring-evolution-protocol-lexauth.md"
   },
   "E.16": {
     "title": "RoC‑Autonomy Budget & Enforcement",
@@ -7431,7 +7515,7 @@
         "G.9"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e16-e16-rocautonomy-budget-enforcement.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e16-e16-rocautonomy-budget-enforcement.md"
   },
   "E.17.0": {
     "title": "U.MultiViewDescribing - Viewpoints, Views & Correspondences",
@@ -7456,7 +7540,7 @@
         "domain-specific description schemes"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.1": {
     "title": "U.ViewpointBundleLibrary — Reusable Viewpoint Bundles",
@@ -7487,7 +7571,7 @@
         "domain-specific viewpoint-bundle libraries"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e171-e171-uviewpointbundlelibrary-reusable-viewpoint-bundles.md"
   },
   "E.17.2": {
     "title": "TEVB - Typical Engineering Viewpoints Bundle",
@@ -7511,49 +7595,49 @@
         "ISO-aligned architecture-description bundles"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/38-e172-e172-tevb-typical-engineering-viewpoints-bundle.md"
   },
   "E.17": {
     "title": "Multi‑View Publication Kit",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e170-e170-umultiviewdescribing-viewpoints-views-correspondences.md"
   },
   "E.17.EFP": {
     "title": "ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/39-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
   },
   "E.17.ID.CR": {
     "title": "ComparativeReviewUnit - bounded comparison over comparative review units",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md"
   },
   "E.17.AUD": {
     "title": "PublicationUnit Stability Discipline",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.LHR": {
     "title": "PublicationUnit Stability Discipline and Local Head Restoration",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.OOTD": {
     "title": "PublicationUnit Stability Discipline and PublicationUnit Primary EntityOfConcern Discipline",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.18": {
     "title": "Transformation Flow Structure",
@@ -7594,53 +7678,29 @@
         "C.30.TFS-REL"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/44-e18-e18-transformation-flow-structure.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e18-e18-transformation-flow-structure.md"
   },
   "E.18.1": {
-    "title": "Principles-to-Work Carry-Through",
+    "title": "P2W Problem-to-Work Carry-Through",
     "status": "Stable",
-    "keywords": [
-      "P2W",
-      "principles-to-work",
-      "carry-through record",
-      "accepted ProblemCard@Context",
-      "formal substrate",
-      "mechanism realization",
-      "method-family selection",
-      "work planning",
-      "evaluation refresh"
-    ],
-    "queries": [
-      "How do accepted problem-side distinctions become a next admissible FPF use?",
-      "How do first principles carry into work without selecting a method too early?",
-      "How do I keep P2W separate from evidence, gates, decisions, work, and publication claims?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
         "E.18",
-        "C.22.2",
-        "E.10",
-        "E.19"
+        "C.22.2"
       ],
       "coordinates_with": [
+        "E.11.PUA",
         "E.11.PUR",
-        "A.15.5",
-        "C.29",
-        "A.6.0",
-        "A.6.1",
+        "E.18.3",
         "A.15",
-        "A.15.1",
-        "A.15.2",
-        "A.15.3",
-        "A.15.4",
-        "A.10",
-        "B.3",
-        "A.20",
-        "A.21",
-        "E.17"
+        "G.2",
+        "G.11",
+        "and every continuing direct pattern"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e181-e181-principles-to-work-carry-through.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e181-e181-p2w-problem-to-work-carry-through.md"
   },
   "E.18.2": {
     "title": "Transformation Flow Mathematical Description",
@@ -7674,14 +7734,39 @@
         "E.18.1"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e182-e182-transformation-flow-mathematical-description.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e182-e182-transformation-flow-mathematical-description.md"
+  },
+  "E.18.3": {
+    "title": "Constraint-Governed Transformation-Flow Unfolding Structure",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "dependencies": {
+      "builds_on": [
+        "E.18",
+        "A.22.CGUS",
+        "A.3.4"
+      ],
+      "coordinates_with": [
+        "E.18.1",
+        "C.32.P2S",
+        "C.30.TFS-REL",
+        "E.23",
+        "C.18",
+        "C.19",
+        "G.5",
+        "A.15",
+        "G.11"
+      ]
+    },
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/48-e183-e183-constraint-governed-transformation-flow-unfolding-struc.md"
   },
   "E.19": {
     "title": "Pattern Quality Gates: Review and Refresh Profiles",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/49-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md"
   },
   "E.20": {
     "title": "Mechanism Introduction Protocol (MIP)",
@@ -7733,7 +7818,7 @@
         "or citeable tokens"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/48-e20-e20-mechanism-introduction-protocol.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/50-e20-e20-mechanism-introduction-protocol.md"
   },
   "E.21": {
     "title": "FPF Pattern-Quality Evaluation CharacteristicSpace",
@@ -7763,7 +7848,7 @@
         "I.2"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/49-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
   },
   "E.22": {
     "title": "Improvement-Oriented Quality Evaluation Question Framing",
@@ -7781,7 +7866,6 @@
         "E.23",
         "E.19",
         "E.10",
-        "F.19",
         "C.25",
         "C.17-C.19",
         "G.5",
@@ -7789,7 +7873,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/50-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
   },
   "E.23": {
     "title": "Quality Improvement Loop Method",
@@ -7805,17 +7889,14 @@
         "E.21",
         "E.9.DA",
         "E.2.DA",
-        "F.19",
-        "C.19.1",
-        "C.22.1",
-        "C.24",
+        "A.22.CGUS",
         "C.17-C.19",
         "G.5",
         "G.9",
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e23-e23-quality-improvement-loop-method.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/53-e23-e23-quality-improvement-loop-method.md"
   },
   "E.24": {
     "title": "U.Ontic and Ontic Introduction Discipline",
@@ -7841,7 +7922,7 @@
         "E.2.DA"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e24-e24-uontic-and-ontic-introduction-discipline.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/54-e24-e24-uontic-and-ontic-introduction-discipline.md"
   },
   "E.24.CD": {
     "title": "Ontic Candidate Detection",
@@ -7864,7 +7945,7 @@
         "F.18"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/53-e24cd-e24cd-ontic-candidate-detection.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/55-e24cd-e24cd-ontic-candidate-detection.md"
   },
   "E.24.PUB": {
     "title": "Ontic Description and Publication Discipline",
@@ -7887,7 +7968,7 @@
         "E.9.DA"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/54-e24pub-e24pub-ontic-description-and-publication-discipline.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/56-e24pub-e24pub-ontic-description-and-publication-discipline.md"
   },
   "E.24.UK": {
     "title": "U-kind Governance and Ontic Settlement Coupling",
@@ -7910,7 +7991,7 @@
         "A.6.5"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/55-e24uk-e24uk-u-kind-governance-and-ontic-settlement-coupling.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/57-e24uk-e24uk-u-kind-governance-and-ontic-settlement-coupling.md"
   },
   "F.0.1": {
     "title": "Contextual Lexicon Principles",
@@ -7937,7 +8018,7 @@
         "All patterns in Part F"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/01-f01-f01-contextual-lexicon-principles.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/01-f01-f01-contextual-lexicon-principles.md"
   },
   "F.1": {
     "title": "Domain‑Family Landscape Survey",
@@ -7968,7 +8049,7 @@
         "F.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/02-f1-f1-domainfamily-landscape-survey.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/02-f1-f1-domainfamily-landscape-survey.md"
   },
   "F.2": {
     "title": "Term Harvesting & Normalisation",
@@ -8002,7 +8083,7 @@
         "F.3"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/03-f2-f2-term-harvesting-normalisation.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/03-f2-f2-term-harvesting-normalisation.md"
   },
   "F.3": {
     "title": "Intra‑Context Sense Clustering",
@@ -8029,7 +8110,7 @@
         "F.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/04-f3-f3-intracontext-sense-clustering.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/04-f3-f3-intracontext-sense-clustering.md"
   },
   "F.4": {
     "title": "Role Description (RCS + RoleStateGraph + Checklists)",
@@ -8056,7 +8137,7 @@
         "F.8"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/05-f4-f4-role-description-description-episteme-for-urole.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/05-f4-f4-role-description-description-episteme-for-urole.md"
   },
   "F.5": {
     "title": "Naming Discipline for U-kind Names and RoleDescription Labels",
@@ -8081,7 +8162,7 @@
         "F.18"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/06-f5-f5-naming-discipline-for-u-kind-names-and-roledescription-la.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/06-f5-f5-naming-discipline-for-u-kind-names-and-roledescription-la.md"
   },
   "F.6": {
     "title": "Role Assignment & Enactment Cycle (Six-Step)",
@@ -8104,7 +8185,7 @@
         "A.15"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/07-f6-f6-roleassignment-and-performed-work-attribution-check.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/07-f6-f6-roleassignment-and-performed-work-attribution-check.md"
   },
   "F.7": {
     "title": "Concept‑Set Table Construction",
@@ -8133,7 +8214,7 @@
         "A.6.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/08-f7-f7-conceptset-table.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/08-f7-f7-conceptset-table.md"
   },
   "F.8": {
     "title": "Mint-or-Reuse Decision",
@@ -8167,7 +8248,7 @@
         "A.11"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/09-f8-f8-mint-or-reuse-decision.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/09-f8-f8-mint-or-reuse-decision.md"
   },
   "F.9": {
     "title": "Alignment and Bridge across Contexts",
@@ -8210,7 +8291,7 @@
         "F.9.1"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/10-f9-f9-alignment-and-bridge-across-contexts.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/10-f9-f9-alignment-and-bridge-across-contexts.md"
   },
   "F.9.1": {
     "title": "Bridge Stance Overlay",
@@ -8243,7 +8324,7 @@
         "A.6.A"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/11-f91-f91-bridge-stance-overlay.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/11-f91-f91-bridge-stance-overlay.md"
   },
   "F.10": {
     "title": "Status Families Mapping (Evidence • Standard • Requirement)",
@@ -8266,7 +8347,7 @@
         "B.3"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/12-f10-f10-status-families-mapping-evidence-standard-and-requiremen.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/12-f10-f10-status-families-mapping-evidence-standard-and-requiremen.md"
   },
   "F.11": {
     "title": "Method Quartet Harmonisation",
@@ -8288,7 +8369,7 @@
         "A.15"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/13-f11-f11-method-quartet-harmonisation.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/13-f11-f11-method-quartet-harmonisation.md"
   },
   "F.12": {
     "title": "Service Acceptance Binding",
@@ -8311,7 +8392,7 @@
         "KD-CAL"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/14-f12-f12-service-acceptancework-evidence-link.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/14-f12-f12-service-acceptancework-evidence-link.md"
   },
   "F.13": {
     "title": "Lexical Continuity & Deprecation",
@@ -8332,7 +8413,7 @@
         "F.5"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/15-f13-f13-lexical-continuity-deprecation.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/15-f13-f13-lexical-continuity-deprecation.md"
   },
   "F.14": {
     "title": "Anti‑Explosion Control (Roles & Statuses)",
@@ -8354,7 +8435,7 @@
         "F.8"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/16-f14-f14-anti-explosion-control-for-role-and-status-name-families.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/16-f14-f14-anti-explosion-control-for-role-and-status-name-families.md"
   },
   "F.15": {
     "title": "Static and Regression Conformance Harness for Unification",
@@ -8375,7 +8456,7 @@
         "All of F.1-F.14"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/17-f15-f15-static-and-regression-conformance-harness-for-unificatio.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/17-f15-f15-static-and-regression-conformance-harness-for-unificatio.md"
   },
   "F.16": {
     "title": "Worked‑Example Template (Cross‑Domain)",
@@ -8395,36 +8476,33 @@
         "All of F.1-F.12"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/18-f16-f16-workedexample-template-crossdomain.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/18-f16-f16-workedexample-template-crossdomain.md"
   },
   "F.17": {
     "title": "Unified Term Sheet",
     "status": "Stable",
-    "keywords": [
-      "Unified Term Sheet",
-      "UTS",
-      "summary table",
-      "glossary",
-      "publication",
-      "human-readable output"
-    ],
-    "queries": [
-      "What is the final output of the FPF unification process?",
-      "Where can I find a summary of all unified terms?"
-    ],
+    "keywords": [],
+    "queries": [],
     "dependencies": {
       "builds_on": [
-        "F.1-F.12"
+        "F.1-F.12",
+        "F.18",
+        "F.9"
+      ],
+      "coordinates_with": [
+        "A.22.CGUS",
+        "E.10.MOVE",
+        "E.11"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/19-f17-f17-unified-term-sheet.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/19-f17-f17-unified-term-sheet.md"
   },
   "F.18": {
     "title": "Local-First Unification Naming Protocol",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/20-f18-f18-local-first-unification-naming-protocol.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/20-f18-f18-local-first-unification-naming-protocol.md"
   },
   "F.19": {
     "title": "Ontology-First Plain Technical Rewriting",
@@ -8454,7 +8532,7 @@
         "`I.2`"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c/21-f19-f19-ontology-first-plain-technical-rewriting.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/21-f19-f19-ontology-first-plain-technical-rewriting.md"
   },
   "G.Core": {
     "title": "Part G Core Invariants",

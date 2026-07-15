@@ -1,6 +1,6 @@
 # Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (314 refs).
+Patterns in other Parts that reference patterns in this directory (309 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -32,6 +32,7 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | A.3 | prerequisite_for | A.15 |
 | A.3.1 | prerequisite_for | A.15 |
 | A.3.2 | informs | A.15 |
+| A.3.2 | informs | A.15.1 |
 | A.3.3 | builds_on | A.19 |
 | A.3.3 | coordinates_with | A.15.1 |
 | A.3.3 | coordinates_with | A.15.2 |
@@ -100,6 +101,7 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | B.1.2 | coordinates_with | A.15.1 |
 | B.1.4 | builds_on | A.14 |
 | B.1.4 | coordinates_with | A.15.1 |
+| B.1.5 | coordinates_with | A.15.1 |
 | B.1.6 | builds_on | A.15.1 |
 | B.1.6 | builds_on | A.14 |
 | B.1.6 | coordinates_with | A.15.2 |
@@ -246,6 +248,7 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | C.32.FAIL | coordinates_with | A.20 |
 | C.32.HCS | coordinates_with | A.19 |
 | C.32.MLAO | coordinates_with | A.10 |
+| C.32.P2S | coordinates_with | A.22.CGUS |
 | C.32.P2S | coordinates_with | A.19.CPM |
 | C.32.P2S | coordinates_with | A.15 |
 | C.32.P2S | coordinates_with | A.15.1 |
@@ -280,17 +283,12 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | E.10.ARCH | coordinates_with | A.19 |
 | E.10.D1 | builds_on | A.7 |
 | E.10.D2 | builds_on | A.7 |
+| E.10.MOVE | builds_on | A.22.CGUS |
 | E.10.MOVE | builds_on | A.15.5 |
 | E.10.MOVE | coordinates_with | A.15 |
-| E.10.MOVE | coordinates_with | A.15.1 |
-| E.10.MOVE | coordinates_with | A.15.2 |
-| E.10.MOVE | coordinates_with | A.15.3 |
-| E.10.MOVE | coordinates_with | A.15.4 |
-| E.10.MOVE | coordinates_with | A.16 |
-| E.10.MOVE | coordinates_with | A.16.0 |
+| E.11 | coordinates_with | A.22.CGUS |
+| E.11.PUA | coordinates_with | A.15 |
 | E.11.PUR | coordinates_with | A.15 |
-| E.11.PUR | coordinates_with | A.15.5 |
-| E.11.PUR | coordinates_with | A.16 |
 | E.15 | builds_on | A.10 |
 | E.16 | builds_on | A.13 |
 | E.16 | builds_on | A.15 |
@@ -299,22 +297,18 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | E.17.2 | builds_on | A.7 |
 | E.18 | builds_on | A.7 |
 | E.18 | coordinates_with | A.20 |
-| E.18.1 | coordinates_with | A.15.5 |
 | E.18.1 | coordinates_with | A.15 |
-| E.18.1 | coordinates_with | A.15.1 |
-| E.18.1 | coordinates_with | A.15.2 |
-| E.18.1 | coordinates_with | A.15.3 |
-| E.18.1 | coordinates_with | A.15.4 |
-| E.18.1 | coordinates_with | A.10 |
-| E.18.1 | coordinates_with | A.20 |
 | E.18.2 | coordinates_with | A.10 |
 | E.18.2 | coordinates_with | A.20 |
+| E.18.3 | builds_on | A.22.CGUS |
+| E.18.3 | coordinates_with | A.15 |
 | E.2.DA | builds_on | A.19.ECS |
 | E.20 | coordinates_with | A.15.3 |
 | E.21 | builds_on | A.17 |
 | E.21 | builds_on | A.19.ECS |
 | E.22 | builds_on | A.19.ECS |
 | E.23 | builds_on | A.19.ECS |
+| E.23 | coordinates_with | A.22.CGUS |
 | E.24 | coordinates_with | A.19.ECS |
 | E.24.CD | builds_on | A.19.ECS |
 | E.24.UK | builds_on | A.8 |
@@ -323,12 +317,13 @@ Patterns in other Parts that reference patterns in this directory (314 refs).
 | E.8.ECSPF | builds_on | A.19.ECS |
 | E.9.DA | builds_on | A.19.ECS |
 
-## From 12-part-f-the-unification-suite-usuite-conceptsets-sensecells-c
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | F.1 | builds_on | A.7 |
 | F.11 | builds_on | A.15 |
+| F.17 | coordinates_with | A.22.CGUS |
 | F.6 | builds_on | A.15 |
 | F.9.1 | builds_on | A.16.0 |
 
