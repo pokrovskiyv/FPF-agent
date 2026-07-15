@@ -3,7 +3,7 @@ title: "Route 6: Rewrite Explanation"
 sources:
   - sections/routes/route-6-rewrite-explanation.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-07-15T17:17:20Z
 tags:
   - route
   - tier-1

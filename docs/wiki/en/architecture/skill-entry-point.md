@@ -4,7 +4,7 @@ sources:
   - .claude-plugin/marketplace.json
   - .claude-plugin/plugin.json
   - skills/fpf/SKILL.md
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-07-15T17:17:20Z
 tags:
   - architecture
   - skill

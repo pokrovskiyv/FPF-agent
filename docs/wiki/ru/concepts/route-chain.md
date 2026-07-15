@@ -3,7 +3,7 @@ title: Цепочка маршрута
 sources:
   - scripts/build_routes.py
   - sections/routes/route-1-project-alignment.md
-last_updated: 2026-06-15T00:00:00Z
+last_updated: 2026-07-15T17:17:20Z
 tags:
   - concept
   - retrieval

@@ -13,6 +13,7 @@
 - **chore**: sync upstream FPF-Spec (97 255 lines, 310 sections; new patterns for reading diagrams/flows as constraints-on-what-comes-next, applying a pattern to a first useful result, and fifteen practical-use cards) + full rebuild
 - **chore**: port and AI-enhance section _index.md summaries + glossary plain definitions for the new July material
 - **chore**: sync upstream July spec + rebuild + AI-enhanced indexes and glossary
+- **docs**: wiki compile — refresh overview stats (97K lines, 310 sections, v0.8.0) and bump manifest for July sync
 
 ## 2026-07-01
 

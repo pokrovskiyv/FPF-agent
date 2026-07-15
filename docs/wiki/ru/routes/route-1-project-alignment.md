@@ -3,7 +3,7 @@ title: "Маршрут 1: Зоны ответственности"
 sources:
   - sections/routes/route-1-project-alignment.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-07-15T17:17:20Z
 tags:
   - route
   - tier-1

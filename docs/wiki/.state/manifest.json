@@ -1,22 +1,22 @@
 {
     "version": 1,
-    "last_compiled": "2026-07-01T07:00:00Z",
+    "last_compiled": "2026-07-15T17:17:20Z",
     "sources": {
         ".claude-plugin/marketplace.json": {
             "hash": "a73bb8b208397bcced1df7c65ebefd5c",
             "last_compiled": "2026-06-16T07:21:51Z"
         },
         ".claude-plugin/plugin.json": {
-            "hash": "002a23fb99a72299fab068aafd70db94",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "bac51a92805b57855008f96068e10719",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "CLAUDE.md": {
-            "hash": "2e182fe41945dcc4e636a9b6cac0ee1a",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "51f0a8474303ff8913086894c93ca1b7",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "Readme.md": {
-            "hash": "976c8685e907c4c73dcd9d8da5891042",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "3c29d5dce76fd3c003a7ae06b261ba41",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "agents/fpf-classifier.md": {
             "hash": "f4033efa958b0f1dad09376b7fc9e2ca",
@@ -99,8 +99,8 @@
             "last_compiled": "2026-06-16T07:21:51Z"
         },
         "sections/routes/route-1-project-alignment.md": {
-            "hash": "13e814150c91b3ae16c3049623f3f573",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "4c23b5ffe35883808eb24ec67a65e815",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "sections/routes/route-10-evolution-learning.md": {
             "hash": "0bdcd126b6ff441efa6473a5e860047e",
@@ -123,8 +123,8 @@
             "last_compiled": "2026-07-01T07:00:00Z"
         },
         "sections/routes/route-6-rewrite-explanation.md": {
-            "hash": "6b391ac0afb6c0009d8fddd45534a808",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "4135055e93097a505971966754107caf",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "sections/routes/route-7-ethical-assurance.md": {
             "hash": "a033521b41382c0da7d7f1c611001504",
@@ -135,8 +135,8 @@
             "last_compiled": "2026-07-01T07:00:00Z"
         },
         "sections/routes/route-9-composition-aggregation.md": {
-            "hash": "94a6fd2234eb5d373d8757402eb91d14",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "fd98001a3eab78f86dafdb40ba09a5a9",
+            "last_compiled": "2026-07-15T17:17:20Z"
         },
         "skills/fpf/SKILL.md": {
             "hash": "3bb84500efa910b7f21c4c5013d61afe",
@@ -209,7 +209,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/architecture/plain-language-contract.md": {
             "sources": [
@@ -218,7 +218,7 @@
                 "agents/fpf-reviewer.md",
                 "scripts/build_lexical.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/architecture/skill-entry-point.md": {
             "sources": [
@@ -226,7 +226,7 @@
                 ".claude-plugin/plugin.json",
                 "skills/fpf/SKILL.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/architecture/sync-and-rebuild.md": {
             "sources": [
@@ -234,7 +234,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/architecture/three-tier-retrieval.md": {
             "sources": [
@@ -261,7 +261,7 @@
                 "CLAUDE.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/concepts/pipeline-depth.md": {
             "sources": [
@@ -275,7 +275,7 @@
                 "scripts/build_routes.py",
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/concepts/tier.md": {
             "sources": [
@@ -378,7 +378,7 @@
             "sources": [
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/routes/route-10-evolution-learning.md": {
             "sources": [
@@ -414,7 +414,7 @@
             "sources": [
                 "sections/routes/route-6-rewrite-explanation.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/routes/route-7-ethical-assurance.md": {
             "sources": [
@@ -432,7 +432,7 @@
             "sources": [
                 "sections/routes/route-9-composition-aggregation.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/agents/fpf-classifier.md": {
             "sources": [
@@ -495,7 +495,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/architecture/plain-language-contract.md": {
             "sources": [
@@ -504,7 +504,7 @@
                 "agents/fpf-reviewer.md",
                 "scripts/build_lexical.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/architecture/skill-entry-point.md": {
             "sources": [
@@ -512,7 +512,7 @@
                 ".claude-plugin/plugin.json",
                 "skills/fpf/SKILL.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/architecture/sync-and-rebuild.md": {
             "sources": [
@@ -520,7 +520,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/architecture/three-tier-retrieval.md": {
             "sources": [
@@ -547,7 +547,7 @@
                 "CLAUDE.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/concepts/pipeline-depth.md": {
             "sources": [
@@ -561,7 +561,7 @@
                 "scripts/build_routes.py",
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/concepts/tier.md": {
             "sources": [
@@ -664,7 +664,7 @@
             "sources": [
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/routes/route-10-evolution-learning.md": {
             "sources": [
@@ -700,7 +700,7 @@
             "sources": [
                 "sections/routes/route-6-rewrite-explanation.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "ru/routes/route-7-ethical-assurance.md": {
             "sources": [
@@ -718,7 +718,7 @@
             "sources": [
                 "sections/routes/route-9-composition-aggregation.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-07-15T17:17:20Z"
         },
         "en/modules/test_update_changelog.md": {
             "sources": [

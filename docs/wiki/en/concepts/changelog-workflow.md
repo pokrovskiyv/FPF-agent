@@ -5,7 +5,7 @@ sources:
   - CHANGELOG.md
   - CLAUDE.md
   - scripts/update_changelog.py
-last_updated: 2026-06-16T07:21:51Z
+last_updated: 2026-07-15T17:17:20Z
 tags:
   - concept
   - workflow
