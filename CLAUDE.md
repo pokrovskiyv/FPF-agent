@@ -12,6 +12,7 @@ The **First Principles Framework (FPF)** specification (~103,000 lines) plus a *
 - `agents/fpf-*.md` — agent team (Classifier → Retriever → Reasoner → Reviewer → Sync)
 - `.claude-plugin/` — Claude Code plugin manifest (plugin.json + marketplace.json)
 - `.codex-plugin/` — Codex CLI plugin manifest (installed via `scripts/install_codex_plugin.py`)
+- `.kimi-plugin/` — Kimi Code CLI plugin manifest (installable via `/plugins install`)
 - `scripts/` — Python rebuild pipeline (no external deps)
 
 ## Plain Language Contract (non-negotiable)
@@ -51,6 +52,7 @@ python3 scripts/test_smoke.py --all    # + semantic search (requires uv)
 # Codex CLI plugin
 python3 scripts/install_codex_plugin.py   # install/update FPF as a Codex CLI plugin (~/plugins/fpf)
 python3 scripts/smoke_codex.py            # smoke-test the Codex plugin packaging
+python3 scripts/smoke_kimi.py             # smoke-test the Kimi Code plugin packaging
 ```
 
 ## Navigating the Spec
