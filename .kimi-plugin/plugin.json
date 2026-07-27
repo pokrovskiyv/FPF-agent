@@ -1,0 +1,24 @@
+{
+  "name": "fpf",
+  "version": "0.8.0",
+  "description": "First Principles Framework coordination patterns for specialists, teams, and AI agents. Output stays in plain language.",
+  "author": "Vitaly Pokrovskiy",
+  "homepage": "https://github.com/pokrovskiyv/FPF-agent",
+  "license": "MIT",
+  "keywords": [
+    "fpf",
+    "coordination",
+    "systems",
+    "structured-thinking",
+    "decision-making",
+    "analysis"
+  ],
+  "skills": "./.agents/skills/",
+  "interface": {
+    "displayName": "FPF",
+    "shortDescription": "Structured coordination analysis in plain language.",
+    "longDescription": "Applies First Principles Framework coordination patterns to team alignment, terminology, contracts, decisions, assurance, and system-composition problems while keeping framework terminology out of the final answer.",
+    "developerName": "Vitaly Pokrovskiy",
+    "websiteURL": "https://github.com/pokrovskiyv/FPF-agent"
+  }
+}
