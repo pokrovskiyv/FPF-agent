@@ -1,23 +1,23 @@
 # Preface** (non-normative)
 
-- [What This Specification Is And How To Use It](01-what-this-specification-is-and-how-to-use-it.md) — Explains what kind of document this is, how to navigate it, and what each major section is for.
-- [FPF As A Project, Not Only A Pattern List](02-fpf-as-a-project-not-only-a-pattern-list.md) — Clarifies the difference between the core patterns and companion materials like tutorials, tools, and examples.
-- [Why FPF Exists](03-why-fpf-exists.md) — Describes the core problem: ideas change meaning as they travel across teams, and the framework prevents that drift.
-- [Creativity And Assurance Mature Together](04-creativity-and-assurance-mature-together.md) — Shows how the framework keeps exploration and safety evidence alive at the same time instead of forcing a choice between them.
-- [Local Closure Inside An Open World](05-local-closure-inside-an-open-world.md) — Explains how to make firm decisions on limited evidence without falsely claiming certainty about everything.
-- [FPF As An Evolutionary Architecture For Thought](06-fpf-as-an-evolutionary-architecture-for-thought.md) — Describes how the framework is designed to grow and improve over time rather than lock in one fixed set of answers.
-- [Architectural Characteristics Of Thought](07-architectural-characteristics-of-thought.md) — Lists qualities of reasoning (auditability, evolvability, falsifiability, etc.) and which patterns protect each one.
-- [Beyond Bias Hunting](08-beyond-bias-hunting.md) — Argues that building better reasoning structures is more effective than just warning people to avoid cognitive biases.
-- [Thinking Through Writing](09-thinking-through-writing.md) — Explains why written records (cards, comparison frames, term sheets) are thinking tools, not paperwork added after the fact.
-- [Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-thinking-oriented-architecture-not-a-descriptive-upper-ontol.md) — Distinguishes the framework's action-guidance purpose from an ontology that just catalogs what exists.
-- [The Bitter Lesson Stance](11-the-bitter-lesson-stance.md) — Explains how to give teams and agents freedom to search and learn while keeping safety gates and evidence requirements explicit.
-- [From Flat Documents To Multi-View Truth](12-from-flat-documents-to-multi-view-truth.md) — Shows why one file is never "the truth" and how different audiences can rely on different views of the same project work.
-- [Architecture As Structure Of Holons](13-architecture-as-structure-of-holons.md) — Establishes that architecture is the actual structure of a system, not the diagram or document that describes it.
-- [Boundary Statements](14-boundary-statements.md) — Explains how to unpack dense contract or API sentences that are trying to do several incompatible jobs at once.
-- [Raising Semantic Precision](15-raising-semantic-precision.md) — Provides a step-by-step path for upgrading vague working language into claims that can be checked and acted on responsibly.
-- [Big FPF Storylines](16-big-fpf-storylines.md) — Summarizes the twelve main commitments that make the framework a coherent whole rather than a pile of tools.
-- [Transdisciplinarity As A Meta-Theory Of Thinking](17-transdisciplinarity-as-a-meta-theory-of-thinking.md) — Explains how the framework lets specialists from different fields reason together without erasing their local meanings.
-- [The Culinary Architecture Of Collective Thought](18-the-culinary-architecture-of-collective-thought.md) — Uses the analogy of a professional kitchen to explain why shared structure matters more than any single ingredient or expert.
-- [The Intellect Stack As A Pedagogical Map](19-the-intellect-stack-as-a-pedagogical-map.md) — Offers a learning map of five capability areas to help teams notice which kind of reasoning they are currently missing.
-- [Purpose, Scope, And Non-Goals](20-purpose-scope-and-non-goals.md) — States clearly what the framework will and will not do, including what it does not replace.
-- [How To Continue After The readme](21-how-to-continue-after-the-readme.md) — Gives practical guidance on where to go next in the spec depending on whether you need an overview or a specific pattern.
+- [What This Specification Is And How To Use It](01-what-this-specification-is-and-how-to-use-it.md) — How to get useful results from this document without reading it cover to cover.
+- [FPF As A Project, Not Only A Pattern List](02-fpf-as-a-project-not-only-a-pattern-list.md) — How to keep core rules separate from tutorials, tools, and local adaptations so authority stays clear.
+- [Why FPF Exists](03-why-fpf-exists.md) — How to stop ideas from quietly turning into promises, proof, or permission as they travel through a project.
+- [Creativity And Assurance Mature Together](04-creativity-and-assurance-mature-together.md) — How to stay inventive without losing the audit trail, and careful without killing new ideas.
+- [Local Closure Inside An Open World](05-local-closure-inside-an-open-world.md) — How to make firm decisions now while staying honest that new facts may reopen them.
+- [FPF As An Evolutionary Architecture For Thought](06-fpf-as-an-evolutionary-architecture-for-thought.md) — How a team's way of thinking can grow and change without becoming ad hoc or fragile.
+- [Architectural Characteristics Of Thought](07-architectural-characteristics-of-thought.md) — How to judge and improve the quality of reasoning itself, not just its results.
+- [Beyond Bias Hunting](08-beyond-bias-hunting.md) — How to build reasoning that prevents whole classes of mistakes instead of policing them afterwards.
+- [Thinking Through Writing](09-thinking-through-writing.md) — How writing things down in the right form becomes the thinking itself, not paperwork after the fact.
+- [Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-thinking-oriented-architecture-not-a-descriptive-upper-ontol.md) — How to guide the next responsible action instead of just cataloguing everything that exists.
+- [The Bitter Lesson Stance](11-the-bitter-lesson-stance.md) — How to give people and AI freedom to search for solutions while keeping safety limits explicit.
+- [From Flat Documents To Multi-View Truth](12-from-flat-documents-to-multi-view-truth.md) — How to keep many reports on the same thing connected so no diagram or dashboard quietly becomes the truth.
+- [Architecture As Structure Of Holons](13-architecture-as-structure-of-holons.md) — How to keep a system's real structure distinct from the diagrams and documents that describe it.
+- [Boundary Statements](14-boundary-statements.md) — How to unpack a sentence doing several jobs at once — defining, promising, proving — so it can be checked.
+- [Raising Semantic Precision](15-raising-semantic-precision.md) — How to upgrade rough early wording into checkable claims once it starts to govern real work.
+- [Big FPF Storylines](16-big-fpf-storylines.md) — How the framework's main commitments connect into one whole rather than a loose list of tips.
+- [Transdisciplinarity As A Meta-Theory Of Thinking](17-transdisciplinarity-as-a-meta-theory-of-thinking.md) — How specialists from different fields can reason together without flattening their local meanings.
+- [The Culinary Architecture Of Collective Thought](18-the-culinary-architecture-of-collective-thought.md) — Why familiar ideas still need a shared kitchen: making expert judgment compound instead of evaporating.
+- [The Intellect Stack As A Pedagogical Map](19-the-intellect-stack-as-a-pedagogical-map.md) — How to spot which thinking capability your team is missing: structure, evidence, action, choice, or purpose.
+- [Purpose, Scope, And Non-Goals](20-purpose-scope-and-non-goals.md) — What the framework promises to help with and what it deliberately refuses to be.
+- [How To Continue After The readme](21-how-to-continue-after-the-readme.md) — How to pick your next reading step from your working question instead of reading linearly.

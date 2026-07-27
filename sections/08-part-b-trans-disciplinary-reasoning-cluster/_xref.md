@@ -1,18 +1,19 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (107 refs).
+Patterns in other Parts that reference patterns in this directory (119 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.1 | coordinates_with | B.3.5 |
+| A.1 | coordinates_with | B.3 |
+| A.1 | coordinates_with | B.2 |
 | A.2.4 | informs | B.3 |
-| A.2.6 | constrains | B.3 |
-| A.22 | coordinates_with | B.3 |
-| A.3.1 | prerequisite_for | B.1.5 |
+| A.3 | coordinates_with | B.1.4 |
+| A.3.1 | coordinates_with | B.1.5 |
+| A.3.2 | coordinates_with | B.1.5 |
 | A.3.3 | coordinates_with | B.3 |
-| A.3.4 | coordinates_with | B.3 |
-| A.3.4.P | coordinates_with | B.3 |
 | A.4 | prerequisite_for | B.4 |
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
@@ -22,6 +23,7 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | A.6 | coordinates_with | B.3 |
 | A.6.3 | used_by | B.5.3 |
 | A.6.3.CR | coordinates_with | B.5.2 |
+| A.6.9 | coordinates_with | B.3 |
 | A.6.A | builds_on | B.4.1 |
 | A.6.A | coordinates_with | B.5.2.0 |
 | A.6.B | coordinates_with | B.3 |
@@ -36,7 +38,10 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | A.10 | coordinates_with | B.3 |
 | A.12 | coordinates_with | B.2 |
 | A.14 | prerequisite_for | B.1.1 |
-| A.15.1 | used_by | B.1.6 |
+| A.15.1 | coordinates_with | B.1.4 |
+| A.15.1 | coordinates_with | B.1.6 |
+| A.15.2 | coordinates_with | B.1.4 |
+| A.15.2 | coordinates_with | B.1.6 |
 | A.15.4 | coordinates_with | B.3 |
 | A.15.5 | builds_on | B.1.6 |
 | A.15.5 | coordinates_with | B.3 |
@@ -67,13 +72,14 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 | C.19 | builds_on | B.3 |
 | C.19.1 | builds_on | B.3 |
 | C.2 | builds_on | B.3 |
-| C.2.1 | used_by | B.1.3 |
+| C.2.1 | coordinates_with | B.3 |
 | C.2.2 | builds_on | B.3 |
 | C.2.2 | builds_on | B.1.3 |
 | C.2.2a | used_by | B.4.1 |
 | C.2.P | coordinates_with | B.3 |
 | C.21 | builds_on | B.3 |
 | C.22.2 | coordinates_with | B.3 |
+| C.22.PFR | coordinates_with | B.3 |
 | C.23 | builds_on | B.3 |
 | C.24 | builds_on | B.3 |
 | C.25 | builds_on | B.3 |
@@ -126,17 +132,23 @@ Patterns in other Parts that reference patterns in this directory (107 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| E.10 | coordinates_with | B.3 |
 | E.14 | coordinates_with | B.3.5 |
 | E.15 | builds_on | B.4 |
 | E.15 | builds_on | B.3 |
 | E.16 | builds_on | B.3 |
 | E.18.2 | coordinates_with | B.3 |
+| E.24.CD | coordinates_with | B.1 |
+| E.24.CD | coordinates_with | B.2 |
 
 ## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | F.10 | builds_on | B.3 |
+| F.17 | coordinates_with | B.3 |
+| F.18 | coordinates_with | B.3 |
+| F.9 | coordinates_with | B.3 |
 
 ## From 13-part-g-discipline-sota-patterns-kit
 

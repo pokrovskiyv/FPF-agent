@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-07-27
+
+### What's New
+- Big upstream cleanup absorbed: over the past week the spec author reworked ~37 patterns for cleaner underlying definitions, and one long-standing concept (the standalone "bounded context" object) was dissolved into a simpler structure — answers about shared vocabularies and team-local meanings now follow the new, cleaner model.
+- The searchable index grew to 356 topic sections (from 310); every section once again has a plain-language one-sentence summary, and all 50 glossary terms carry refreshed plain definitions.
+- New PROVENANCE.md pins the exact spec edition each analysis is based on, so reports made before and after big spec refactorings can't be silently mixed up.
+- Local semantic search index (FAISS, bge-m3) was rebuilt for the new material on the maintainer machine (index itself is not shipped in the repo).
+
+### All Changes
+- **chore**: merge upstream ailev/FPF (ontological refactoring wave, U.BoundedContext removal per A.1.1; +13 095/−9 351 lines) + full rebuild (356 sections, 316 metadata entries, 10 routes)
+- **chore**: AI-enhance all section _index.md summaries and glossary plain definitions; fix markdown table breakage in glossary (unescaped pipes)
+- **feat**: PROVENANCE.md spec-edition pin + sync procedure step 6.5 to keep it fresh
+- **note**: docs/wiki NOT recompiled in this sync (the /wiki skill is unavailable on this maintainer machine); wiki reflects the 2026-07-15 state
+
 ## 2026-07-15
 
 ### What's New
