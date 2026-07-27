@@ -82,6 +82,10 @@ def search(
 
 
 def main():
+    # Windows consoles/pipes default to a legacy code page (e.g. cp1251) and
+    # crash on Unicode punctuation in section titles — emit UTF-8 regardless.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser(description="Semantic search over FPF sections")
     parser.add_argument("query", help="Search query (any language)")
     parser.add_argument("--top-k", type=int, default=5, help="Number of results (default: 5)")
