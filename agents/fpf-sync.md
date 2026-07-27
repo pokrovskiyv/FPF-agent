@@ -116,6 +116,19 @@ report it loudly — do NOT commit a "wiki refresh" that changed nothing.
 (fresh). If it still reports stale, the compile did not finish: fix it or report,
 do not proceed to a commit whose message claims a wiki refresh.
 
+### Step 6.5: Update PROVENANCE.md (fork addition)
+
+Refresh `PROVENANCE.md` in the repo root with the upstream commit hash/date and
+the `FPF-Spec.md` blob hash the rebuild was made from:
+
+```bash
+UP_HASH=$(git rev-parse upstream/main); UP_DATE=$(git log -1 --format=%cI upstream/main)
+SPEC_HASH=$(git rev-parse HEAD:FPF-Spec.md)
+```
+
+Reports produced by the skill should cite this pin — analyses made against
+different spec editions are not comparable without it.
+
 ### Step 7: Update the changelog
 
 Append a "What's New" section to `CHANGELOG.md` under today's date heading,
