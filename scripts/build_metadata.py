@@ -47,7 +47,7 @@ def find_section_file(pattern_id: str, sections_dir: Path) -> str:
             # Word-boundary check: character before match must not be a letter
             if idx > 0 and fn_norm[idx - 1].isalpha():
                 continue
-            return str(index_file.parent / filename)
+            return (index_file.parent / filename).as_posix()
 
     # Parent fallback: B.2.1 -> B.2, D.2.1 -> D.2
     parts = pid.rsplit('.', 1)
@@ -196,7 +196,7 @@ def parse_toc(spec_path: Path) -> list[dict]:
 
 def resolve_files(entries: list[dict], sections_dir: Path) -> list[dict]:
     """Add file paths to entries by matching against _index.md files."""
-    preface_index = str(sections_dir / '03-preface-non-normative' / '_index.md')
+    preface_index = (sections_dir / '03-preface-non-normative' / '_index.md').as_posix()
     preface_exists = Path(preface_index).exists()
 
     for entry in entries:

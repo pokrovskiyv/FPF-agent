@@ -4,10 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-The **First Principles Framework (FPF)** specification (~97,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
+The **First Principles Framework (FPF)** specification (~101,000 lines) plus a **Claude Code Skill** that applies FPF to users' coordination problems — without exposing FPF terminology.
 
 - `FPF-Spec.md` — upstream monolith (source of truth, do not edit directly)
-- `sections/` — decomposed spec (~310 files), generated from the monolith
+- `sections/` — decomposed spec (~320 files), generated from the monolith
 - `skills/fpf/SKILL.md` — skill entry point (burden-based routing)
 - `agents/fpf-*.md` — agent team (Classifier → Retriever → Reasoner → Reviewer → Sync)
 - `.claude-plugin/` — Claude Code plugin manifest (plugin.json + marketplace.json)
@@ -28,8 +28,8 @@ FPF is **invisible infrastructure**. When the skill is active:
 ./scripts/rebuild_all.sh
 
 # Individual scripts
-python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~310 files)
-python3 scripts/build_metadata.py      # ToC → sections/metadata.json (306 entries)
+python3 scripts/split_spec.py          # FPF-Spec.md → sections/ (~320 files)
+python3 scripts/build_metadata.py      # ToC → sections/metadata.json (316 entries)
 python3 scripts/enrich_metadata.py     # enrich metadata with user-facing queries (RU+EN)
 python3 scripts/build_glossary.py      # → sections/glossary-quick.md (50 terms)
 python3 scripts/build_lexical.py       # → sections/lexical-rules.md (Part K rules)
@@ -55,7 +55,7 @@ python3 scripts/smoke_codex.py            # smoke-test the Codex plugin packagin
 
 ## Navigating the Spec
 
-**Do not read FPF-Spec.md directly** — it's ~97K lines. Instead:
+**Do not read FPF-Spec.md directly** — it's ~101K lines. Instead:
 
 1. **By pattern ID** (e.g., A.6, E.17): look up in `sections/metadata.json` → `file` field → read that file
 2. **By burden/route**: read `sections/routes/route-{1..10}.md` → follow the section chain
