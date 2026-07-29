@@ -181,6 +181,9 @@ class TestSemanticSearchCLI(unittest.TestCase):
 
     @unittest.skipUnless(RUN_ALL, 'Skipping subprocess test (pass --all to enable)')
     def test_json_output_shape(self):
+        if not (PROJECT_ROOT / 'sections' / 'embeddings' / 'faiss.index').exists():
+            self.skipTest('embeddings index missing — build it first: '
+                          'uv run scripts/build_embeddings.py')
         result = subprocess.run(
             ['uv', 'run', 'scripts/semantic_search.py',
              'team handoff responsibility confusion',
