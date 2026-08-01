@@ -4,53 +4,53 @@ Auto-generated from metadata.json. Maps core terms to their primary pattern.
 
 | Term | Primary Pattern | Plain Definition |
 |------|----------------|-----------------|
-| edition pins | A.15.3 | Lock planned inputs so work starts from a stable, agreed baseline. |
-| provenance | A.2.4 | Track where evidence came from so claims can be checked and refreshed. |
-| evidence | A.10 | Link a claim to the source that supports it, so it can be verified. |
-| composition | A.9 | Ensure rules that hold for parts also hold when parts are combined. |
-| RSCRTriggerKindId | G.0 | Identify which rule triggered a comparison, for audit and replay. |
-| scope | A.2.6 | State exactly where a claim or capability applies, so it isn't overused. |
-| source return | A.22 | Describe what a system can produce, within declared performance limits. |
-| context | A.2 | Name the setting in which a role or claim holds, so reuse is safe. |
-| Method | A.3 | Name the abstract way something is done, separate from who does it. |
-| invariants | A.9 | Rules that must stay true at every level, preventing logic breaks on scale. |
-| selected structure | A.22 | Chosen view of what a system can do, matched to a specific need. |
-| TypedSetViews | A.0 | Publish a typed set of results instead of a single winner. |
-| promise content | A.2.3 | State what a service commits to deliver so fulfilment can be judged. |
-| measurement | A.6.P | Attach a unit and scale to a claim so it can be compared accurately. |
-| CN-Spec | A.6.7 | Describe a suite of distinct mechanisms under shared rules and obligations. |
-| CG-Spec | A.6.7 | Set design-time rules for which comparisons are lawful in a given frame. |
-| planned baseline | A.6.7 | Record intended inputs before work starts, so variance can be tracked. |
-| viability envelope | A.6.8 | Unpack "service" into the specific facet (promise, system, or act) meant. |
-| bridge | A.6.9 | Explicitly state how a concept maps across contexts and what is lost. |
-| loss notes | A.6.9 | Record what meaning is dropped when a concept crosses a boundary. |
-| mereology | A.6.H | Clarify whether "whole" means boundary, parts list, or capability. |
-| P2W seam | A.15.3 | Connect a work plan to its carried inputs so nothing is dropped on handoff. |
-| reopen | A.16 | Name the move that revisits a settled claim when new conditions arise. |
-| polarity | A.18 | State which direction a characteristic scale runs before comparing values. |
-| tri-state admissibility (`pass\|degrade\|abstain`) | A.19.UINDM | Let an indicator signal partial success rather than just pass or fail. |
-| penalties→`R_eff` only | A.19.ULSAM | Apply penalties only to reliability so aggregation stays mathematically lawful. |
-| trust | B.1.3 | Combine knowledge sources conservatively, preserving where each came from. |
-| formality | B.3 | State how rigorous a claim is so reliance on it is proportionate. |
-| grounding | B.3.5 | Link a readable structural claim to a reconstructible proof or trace. |
-| lost structure | C.29 | Declare what a mathematical model ignores so it isn't over-trusted. |
-| architecture structural view | C.30.AD | Describe a system's structure without letting the diagram become the system. |
-| Pedagogy | E.5.3 | Keep tutorials dependent on the stable core, not the other way around. |
-| ReferencePlane | G.0 | Fix a shared coordinate frame so cross-team comparisons stay comparable. |
-| DeclaredSubstrateInterpretiveView | A.0 | State which lens is used to interpret results so they can be reproduced. |
-| role | A.2 | Label what a person or system is being in a given context, not what it is. |
-| holder | A.2 | Name the actual person, team, or system currently filling a role. |
-| Standard | A.2.1 | Record who holds a role in a specific context for a specific time window. |
-| currentness | A.2.2 | Whether a stated ability is still up to date enough to rely on right now. |
-| state machine | A.2.5 | Track which role states admit or block the next step of work. |
-| applicability | A.2.6 | State where a claim or capability holds, preventing silent overreach. |
-| ClaimScope (G) | A.2.6 | Bound where a knowledge claim is valid so it isn't applied elsewhere. |
-| MethodDescription | A.3 | Write down how something is done so it can be reviewed, reused, or planned. |
-| Work | A.3 | Record that something actually happened, dated and with an acting party. |
-| submethod | A.3.1 | A smaller way of doing that sits inside a larger one as one of its parts. |
-| method composition | A.3.1 | Combining smaller ways of doing into a bigger one, where the order matters. |
-| transformation-flow structure | A.3.4 | Map a bounded change from input conditions to output conditions. |
-| evolution | A.4 | Support continuous improvement cycles without losing what was already proven. |
-| modularity | A.5 | Add domain-specific extensions without touching the stable core. |
-| boundary | A.6 | Separate what a system promises from what it does and what can be proven. |
-| signature | A.6.0 | Declare a reusable vocabulary and its laws before any implementation. |
+| provenance | A.2.4 | Where information came from and what status it currently holds |
+| evidence | B.3 | Information that lets you check whether a claim is actually true |
+| edition pins | G.0 | Version markers locking in which release of a standard you compare against |
+| composition | A.9 | How smaller parts combine to form a whole without contradicting each other |
+| RSCRTriggerKindId | G.0 | A code marking the type of change that requires resetting a comparison frame |
+| scope | A.6.6 | The exact boundary of what a statement, rule, or capability applies to |
+| invariants | A.9 | Rules that must remain true at every level when parts are joined into a whole |
+| source return | C.30.AD | The ability to trace any design claim back to its original source |
+| TypedSetViews | A.0 | Seeing a set through a typed lens without confusing the view with the thing |
+| context | A.2 | A named situation where words and roles have specific agreed-upon meanings |
+| currentness | A.2.2 | Whether a system's description still matches what it actually does today |
+| promise content | A.2.3 | The specific commitment one party makes when agreeing to deliver something |
+| CN-Spec | A.6.7 | A description of how a set of mechanisms work together as a connected whole |
+| CG-Spec | A.6.7 | A shared frame that makes analyses from different studies directly comparable |
+| mereology | A.6.H | Rules for what counts as a part and what counts as the whole it belongs to |
+| reopen | A.16 | Going back to a closed decision when enough conditions have changed |
+| characteristic | A.17 | A specific measurable aspect of something, not a vague quality or dimension |
+| polarity | A.18 | Which direction on a scale counts as better or worse for a given property |
+| tri-state admissibility (`pass\|degrade\|abstain`) | A.19.UINDM | Every score either passes, degrades gracefully, or abstains — no silent failures |
+| penalties→`R_eff` only | A.19.ULSAM | Score deductions affect only the effective result, not the raw measurement |
+| trust | B.1.3 | A reasoned judgment that a source is reliable enough to act on its information |
+| assurance | B.3 | Collected evidence that a claim will hold under the conditions it was made for |
+| formality | B.3 | How explicitly and rigorously a commitment or claim has been stated |
+| grounding | B.3.5 | The explicit link connecting a model back to checkable, observable reality |
+| lost structure | C.29 | Information from a source that disappears when a math model is applied to it |
+| Pedagogy | E.5.3 | The direction of a learning dependency: what you need to understand first |
+| ReferencePlane | G.0 | A fixed shared baseline that makes measurements from different sources comparable |
+| DeclaredSubstrateInterpretiveView | A.0 | A declared layer perspective that prevents teams from mixing system levels |
+| role | A.2 | A named function that different actors can play depending on context |
+| effective ReferenceScheme | A.2.1 | The agreed identification system that lets everyone point to the same thing |
+| state machine | A.2.5 | A model showing how something moves through stages with explicit transition rules |
+| evidence carrier | A.2.9 | A recorded artifact holding evidence of what was said, promised, or decided |
+| method-description membership | A.3.2 | Which method a description belongs to, so it isn't reused out of context |
+| calibration | A.3.3 | Checking that a model's predictions still match actual system behavior |
+| evolution | A.4 | How a system changes over time while remaining recognizably coherent |
+| modularity | A.5 | Organizing so that parts can change independently without breaking dependents |
+| publication face | A.6 | The boundary between what a module publicly declares and what it keeps internal |
+| atomic L/A/D/E claims | A.6 | Four indivisible boundary statement types: laws, admissibility, duties, effects |
+| dated Work | A.6.C | A task or deliverable tied to a specific time window for completion |
+| interface | A.6.RSIR | The defined channel through which two components are permitted to interact |
+| port | A.6.RSIR | A typed connection point where a component may interact with others |
+| work | A.6.F | The actual transformation a component performs, distinct from its label or name |
+| substitutability | A.6.M | Whether one component can replace another without breaking what depends on them |
+| anchoring | A.6.6 | Stating the kind, scope, and witness for a claim so it can be verified later |
+| suite obligations | A.6.7 | Commitments a mechanism carries to every team that depends on it |
+| planned baseline | A.6.7 | The agreed starting point against which progress or deviation is measured |
+| crossing visibility | A.6.7 | Who can observe what when an interaction crosses a system boundary |
+| exact F.17 `SchemeSenseCell` endpoints | A.6.9 | Precise identifiers that name the same concept across different team contexts |
+| different `<ReferenceScheme` projections | A.6.9 | When two groups use different ID systems for the same concept |
+| `LocalSenseClaim` projections | A.6.9 | How a concept defined in one context appears when viewed from another |

@@ -1,23 +1,23 @@
 # Preface** (non-normative)
 
-- [What This Specification Is And How To Use It](01-what-this-specification-is-and-how-to-use-it.md) — Explains what kind of document this is, how to navigate it, and what each major section is for.
-- [FPF As A Project, Not Only A Pattern List](02-fpf-as-a-project-not-only-a-pattern-list.md) — Clarifies the difference between the core patterns and companion materials like tutorials, tools, and examples.
-- [Why FPF Exists](03-why-fpf-exists.md) — Describes the core problem: ideas change meaning as they travel across teams, and the framework prevents that drift.
-- [Creativity And Assurance Mature Together](04-creativity-and-assurance-mature-together.md) — Shows how the framework keeps exploration and safety evidence alive at the same time instead of forcing a choice between them.
-- [Local Closure Inside An Open World](05-local-closure-inside-an-open-world.md) — Explains how to make firm decisions on limited evidence without falsely claiming certainty about everything.
-- [FPF As An Evolutionary Architecture For Thought](06-fpf-as-an-evolutionary-architecture-for-thought.md) — Describes how the framework is designed to grow and improve over time rather than lock in one fixed set of answers.
-- [Architectural Characteristics Of Thought](07-architectural-characteristics-of-thought.md) — Lists qualities of reasoning (auditability, evolvability, falsifiability, etc.) and which patterns protect each one.
-- [Beyond Bias Hunting](08-beyond-bias-hunting.md) — Argues that building better reasoning structures is more effective than just warning people to avoid cognitive biases.
-- [Thinking Through Writing](09-thinking-through-writing.md) — Explains why written records (cards, comparison frames, term sheets) are thinking tools, not paperwork added after the fact.
-- [Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-thinking-oriented-architecture-not-a-descriptive-upper-ontol.md) — Distinguishes the framework's action-guidance purpose from an ontology that just catalogs what exists.
-- [The Bitter Lesson Stance](11-the-bitter-lesson-stance.md) — Explains how to give teams and agents freedom to search and learn while keeping safety gates and evidence requirements explicit.
-- [From Flat Documents To Multi-View Truth](12-from-flat-documents-to-multi-view-truth.md) — Shows why one file is never "the truth" and how different audiences can rely on different views of the same project work.
-- [Architecture As Structure Of Holons](13-architecture-as-structure-of-holons.md) — Establishes that architecture is the actual structure of a system, not the diagram or document that describes it.
-- [Boundary Statements](14-boundary-statements.md) — Explains how to unpack dense contract or API sentences that are trying to do several incompatible jobs at once.
-- [Raising Semantic Precision](15-raising-semantic-precision.md) — Provides a step-by-step path for upgrading vague working language into claims that can be checked and acted on responsibly.
-- [Big FPF Storylines](16-big-fpf-storylines.md) — Summarizes the twelve main commitments that make the framework a coherent whole rather than a pile of tools.
-- [Transdisciplinarity As A Meta-Theory Of Thinking](17-transdisciplinarity-as-a-meta-theory-of-thinking.md) — Explains how the framework lets specialists from different fields reason together without erasing their local meanings.
-- [The Culinary Architecture Of Collective Thought](18-the-culinary-architecture-of-collective-thought.md) — Uses the analogy of a professional kitchen to explain why shared structure matters more than any single ingredient or expert.
-- [The Intellect Stack As A Pedagogical Map](19-the-intellect-stack-as-a-pedagogical-map.md) — Offers a learning map of five capability areas to help teams notice which kind of reasoning they are currently missing.
-- [Purpose, Scope, And Non-Goals](20-purpose-scope-and-non-goals.md) — States clearly what the framework will and will not do, including what it does not replace.
-- [How To Continue After The readme](21-how-to-continue-after-the-readme.md) — Gives practical guidance on where to go next in the spec depending on whether you need an overview or a specific pattern.
+- [What This Specification Is And How To Use It](01-what-this-specification-is-and-how-to-use-it.md) — Orients new readers to what this document is, how patterns work, and the correct way to start using it.
+- [FPF As A Project, Not Only A Pattern List](02-fpf-as-a-project-not-only-a-pattern-list.md) — Explains why the core patterns are separate from tutorials, tools, and examples, and why that boundary matters.
+- [Why FPF Exists](03-why-fpf-exists.md) — Explains why reasoning drifts as projects grow and how this framework prevents that drift from causing mistakes.
+- [Creativity And Assurance Mature Together](04-creativity-and-assurance-mature-together.md) — Shows how to keep idea generation and quality checking running in parallel instead of choosing one over the other.
+- [Local Closure Inside An Open World](05-local-closure-inside-an-open-world.md) — Explains how to act decisively on a local scope without pretending the wider world doesn't change around you.
+- [FPF As An Evolutionary Architecture For Thought](06-fpf-as-an-evolutionary-architecture-for-thought.md) — Presents the framework as a living, improvable architecture for reasoning, not a static inventory of rules.
+- [Architectural Characteristics Of Thought](07-architectural-characteristics-of-thought.md) — Maps quality characteristics like auditability and creativity onto reasoning itself, showing what the framework protects.
+- [Beyond Bias Hunting](08-beyond-bias-hunting.md) — Argues for building reasoning structures that prevent entire classes of mistakes, not just correcting individual biases.
+- [Thinking Through Writing](09-thinking-through-writing.md) — Explains why writing records is a thinking tool, not paperwork, and why it matters especially for AI-assisted work.
+- [Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-thinking-oriented-architecture-not-a-descriptive-upper-ontol.md) — Explains why the framework is action-guidance for your project, not just a catalog of what kinds of things exist.
+- [The Bitter Lesson Stance](11-the-bitter-lesson-stance.md) — Shows how to give AI agents and teams freedom to search while keeping safety and evidence requirements explicit.
+- [From Flat Documents To Multi-View Truth](12-from-flat-documents-to-multi-view-truth.md) — Shows how to manage multiple views of the same project entity without letting one diagram or document replace the others.
+- [Architecture As Structure Of Holons](13-architecture-as-structure-of-holons.md) — Explains that architecture is the real structure of a system, not the diagram about it.
+- [Boundary Statements](14-boundary-statements.md) — How to prevent one sentence in a contract or API from accidentally doing several different jobs at once.
+- [Raising Semantic Precision](15-raising-semantic-precision.md) — A step-by-step path for making vague project language precise enough to check, use, and act on responsibly.
+- [Big FPF Storylines](16-big-fpf-storylines.md) — The twelve core commitments that connect the framework's patterns into a coherent whole.
+- [Transdisciplinarity As A Meta-Theory Of Thinking](17-transdisciplinarity-as-a-meta-theory-of-thinking.md) — How teams from different disciplines can reason together without losing their local meanings or collapsing into jargon.
+- [The Culinary Architecture Of Collective Thought](18-the-culinary-architecture-of-collective-thought.md) — Explains why familiar ideas like evidence and roles need shared infrastructure to work together at scale.
+- [The Intellect Stack As A Pedagogical Map](19-the-intellect-stack-as-a-pedagogical-map.md) — A learning map showing five capability areas so teams can spot which kind of reasoning they are currently missing.
+- [Purpose, Scope, And Non-Goals](20-purpose-scope-and-non-goals.md) — States what the framework is for, what it is not for, and what it does not replace.
+- [How To Continue After The readme](21-how-to-continue-after-the-readme.md) — Guides you from the readme to the right pattern by following the working question, not the page order.

@@ -11,7 +11,7 @@
 | 1 | A.6 | Signature Stack & Boundary Discipline | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md | YES |
 | 2 | A.6.B | Boundary Norm Square (Laws / Admissibility / Deontics / Work | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md | YES |
 | 3 | A.6.C | Contract Unpacking for Boundaries | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/04-a6c-a6c-contract-unpacking-for-boundaries.md | YES |
-| 4 | A.6.P | Relational Precision Restoration (RPR) — Kind‑Explicit Quali | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/14-a6p-a6p-relational-precision-restoration-rpr-kindexplicit-qualif.md |  |
+| 4 | A.6.P | Relational Precision Restoration — Recovering Direct Relatio | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/15-a6p-a6p-relational-precision-restoration-recovering-direct-relat.md |  |
 | 5 | A.6.Q | (not found) |  |  |
 | 6 | A.6.A | Action-Invitation Precision Restoration (ACT-INV) | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/01-a6-a6-signature-stack-boundary-discipline.md |  |
 

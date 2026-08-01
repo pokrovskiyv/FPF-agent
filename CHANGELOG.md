@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-08-01
+
+### What's New
+- The searchable spec grew to 102,678 lines (325 sections, up from 310) with 33 new patterns — more situations are covered when you bring a coordination or design problem to the skill.
+- New help for identifying **which system is really doing something or changing** — when a statement says "the system did X" without naming which boundary you mean, you now have a structured way to find the answer.
+- New precision tools for **recovering exactly what relationship is being claimed** when someone says "X relates to Y" without specifying: dependency, causal link, containment, or authority? The new patterns walk you through narrowing it down.
+- Clearer guidance on **what it means to be permitted to do something** versus having done it versus not being prohibited — useful for contract and access-control analysis.
+- A new pattern connecting **organizational team structure to technical architecture** — so you can reason explicitly about how your org chart shapes what your systems can and can't do.
+- New support for typing out what **kind of problem** a messy situation is before you've fully analyzed it — a structured "problem card" for capturing a situation-in-progress.
+- New **Role–Method–Work alignment** patterns for keeping distinct: who acts, under what role, by what method, and what the method document says — particularly useful when project or process work overlaps.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes
+
 ## 2026-07-15
 
 ### What's New

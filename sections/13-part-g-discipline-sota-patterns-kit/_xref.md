@@ -1,6 +1,6 @@
 # Cross-References into 13-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (142 refs).
+Patterns in other Parts that reference patterns in this directory (155 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -8,6 +8,7 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 |--------|----------|--------|
 | A.0 | coordinates_with | G.5 |
 | A.0 | coordinates_with | G.9 |
+| A.1 | coordinates_with | G.11 |
 | A.21 | coordinates_with | G.6 |
 | A.21 | coordinates_with | G.11 |
 | A.21 | coordinates_with | G.0 |
@@ -18,6 +19,7 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.6.F | coordinates_with | G.6 |
 | A.6.M | coordinates_with | G.5 |
 | A.6.RSIR | coordinates_with | G.6 |
 
@@ -25,6 +27,9 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.10 | coordinates_with | G.11 |
+| A.10 | coordinates_with | G.4 |
+| A.15.PROD | coordinates_with | G.11 |
 | A.18 | coordinates_with | G.0 |
 | A.19 | coordinates_with | G.0 |
 | A.19.CHR | builds_on | G.0 |
@@ -59,6 +64,8 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| B.1.6 | coordinates_with | G.6 |
+| B.1.6 | coordinates_with | G.11 |
 | B.5.2.1 | coordinates_with | G.5 |
 
 ## From 09-part-c-kernel-extension-specifications
@@ -66,6 +73,9 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | C.11 | coordinates_with | G.5 |
+| C.16 | coordinates_with | G.6 |
+| C.16 | coordinates_with | G.11 |
+| C.16 | coordinates_with | G.4 |
 | C.18 | coordinates_with | G.5 |
 | C.18 | coordinates_with | G.6 |
 | C.18 | coordinates_with | G.11 |
@@ -78,6 +88,7 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 | C.19.1 | coordinates_with | G.8 |
 | C.19.1 | coordinates_with | G.9 |
 | C.19.1 | coordinates_with | G.11 |
+| C.2.1 | coordinates_with | G.11 |
 | C.2.2 | coordinates_with | G.6 |
 | C.2.2 | coordinates_with | G.7 |
 | C.20 | builds_on | G.0 |
@@ -92,6 +103,7 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 | C.22.2 | builds_on | G.9 |
 | C.22.2 | coordinates_with | G.6 |
 | C.22.2 | coordinates_with | G.11 |
+| C.22.PFR | coordinates_with | G.11 |
 | C.23 | builds_on | G.5 |
 | C.23 | builds_on | G.4 |
 | C.24 | coordinates_with | G.5 |
@@ -127,8 +139,6 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 | C.32.FAIL | coordinates_with | G.5 |
 | C.32.HCS | coordinates_with | G.5 |
 | C.32.MLAO | coordinates_with | G.5 |
-| C.32.P2S | coordinates_with | G.5 |
-| C.32.P2S | coordinates_with | G.11 |
 | C.32.PAD | builds_on | G.5 |
 | C.33 | coordinates_with | G.5 |
 | C.35 | coordinates_with | G.5 |
@@ -173,3 +183,11 @@ Patterns in other Parts that reference patterns in this directory (142 refs).
 | E.4.PFR | coordinates_with | G.5 |
 | E.4.PFR | coordinates_with | G.11 |
 | E.4.PFR | coordinates_with | G.2 |
+
+## From 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
+
+| Source | Relation | Target |
+|--------|----------|--------|
+| F.18 | coordinates_with | G.2 |
+| F.18 | coordinates_with | G.6 |
+| F.18 | coordinates_with | G.10 |
