@@ -49,31 +49,37 @@ class TestKimiManifest(unittest.TestCase):
     """The Kimi plugin manifest is well-formed and self-consistent."""
 
     def setUp(self):
+        """Load the manifest, failing loudly if it is absent or not valid JSON."""
         self.assertTrue(KIMI_MANIFEST.exists(),
                         f'Kimi plugin manifest not found at {KIMI_MANIFEST}')
         self.manifest = json.loads(KIMI_MANIFEST.read_text(encoding='utf-8'))
 
     def test_name_is_valid_plugin_id(self):
+        """Plugin id must match Kimi's pattern, otherwise install silently fails."""
         name = self.manifest.get('name', '')
         self.assertRegex(name, r'^[a-z0-9][a-z0-9_-]{0,63}$',
                          f'name must match the Kimi plugin id pattern: {name!r}')
 
     def test_required_metadata_present(self):
+        """version and description are mandatory: the TUI shows them on install."""
         for field in ('version', 'description'):
             self.assertTrue(self.manifest.get(field),
                             f'Manifest field {field!r} missing or empty')
 
     def test_top_level_fields_documented(self):
+        """Unknown top-level keys are typo risk: Kimi ignores them without error."""
         unknown = set(self.manifest) - DOCUMENTED_TOP_LEVEL
         self.assertEqual(unknown, set(),
                          f'Undocumented top-level fields (typo risk): {unknown}')
 
     def test_no_unsupported_runtime_fields(self):
+        """Fields Kimi ignores with diagnostics must not ship: they mislead readers."""
         present = set(self.manifest) & UNSUPPORTED_RUNTIME
         self.assertEqual(present, set(),
                          f'Runtime fields Kimi ignores with diagnostics: {present}')
 
     def test_interface_fields_documented(self):
+        """The interface block drives the TUI card: no unknown keys, displayName set."""
         interface = self.manifest.get('interface', {})
         unknown = set(interface) - DOCUMENTED_INTERFACE
         self.assertEqual(unknown, set(),
@@ -82,6 +88,7 @@ class TestKimiManifest(unittest.TestCase):
                         'interface.displayName missing')
 
     def test_skills_path_within_plugin_root(self):
+        """skills must resolve to a real directory inside the plugin root, no escapes."""
         skills = self.manifest.get('skills', '')
         self.assertTrue(skills.startswith('./'),
                         f'skills must be a ./ path inside the plugin root: {skills!r}')
@@ -92,6 +99,7 @@ class TestKimiManifest(unittest.TestCase):
                         f'skills path does not resolve to a directory: {skills!r}')
 
     def test_no_root_manifest_conflict(self):
+        """Only one manifest may ship: a root kimi.plugin.json would shadow ours."""
         self.assertFalse(ROOT_KIMI_MANIFEST.exists(),
                          'kimi.plugin.json at the root takes precedence over '
                          '.kimi-plugin/plugin.json — ship only one manifest')
@@ -101,17 +109,20 @@ class TestKimiSkillPackaging(unittest.TestCase):
     """The shared universal skill works when loaded through the Kimi manifest."""
 
     def setUp(self):
+        """Resolve SKILL.md through the path the manifest actually declares."""
         manifest = json.loads(KIMI_MANIFEST.read_text(encoding='utf-8'))
         skills_dir = PROJECT_ROOT / manifest['skills']
         self.skill = skills_dir / 'fpf' / 'SKILL.md'
 
     def test_skill_file_exists_under_declared_skills_dir(self):
+        """Kimi and Codex must load the same file, not two drifting copies."""
         self.assertTrue(self.skill.exists(),
                         f'SKILL.md not found at {self.skill}')
         self.assertEqual(self.skill.resolve(), CODEX_SKILL.resolve(),
                          'Kimi and Codex editions must load the same universal skill')
 
     def test_frontmatter_valid(self):
+        """Frontmatter must parse and carry a substantive description: it is the trigger."""
         text = self.skill.read_text(encoding='utf-8')
         fm, _ = split_frontmatter(text)
         self.assertTrue(fm, 'Frontmatter block missing or malformed')
@@ -132,6 +143,7 @@ class TestKimiSkillPackaging(unittest.TestCase):
                          'triggers will behave differently')
 
     def test_path_convention_covers_kimi_manifest(self):
+        """The universal skill must name the Kimi manifest as a valid root anchor."""
         text = self.skill.read_text(encoding='utf-8')
         self.assertIn('<FPF_PLUGIN_ROOT>', text)
         self.assertIn('.kimi-plugin/plugin.json', text,
@@ -139,6 +151,7 @@ class TestKimiSkillPackaging(unittest.TestCase):
                       '<FPF_PLUGIN_ROOT> anchor')
 
     def test_runtime_files_exist_at_plugin_root(self):
+        """Every file the skill loads at runtime must be present in the package."""
         required = [
             '.agents/skills/fpf/SKILL.md',
             'agents/fpf-classifier.md',
@@ -157,6 +170,7 @@ class TestKimiSkillPackaging(unittest.TestCase):
                          f'Kimi plugin is missing runtime files: {missing}')
 
     def test_skill_references_resolve_inside_plugin_root(self):
+        """Every concrete path quoted in the skill body must exist: no dead references."""
         text = self.skill.read_text(encoding='utf-8')
         _, body = split_frontmatter(text)
         patterns = [
@@ -181,6 +195,7 @@ class TestSemanticSearchCLI(unittest.TestCase):
 
     @unittest.skipUnless(RUN_ALL, 'Skipping subprocess test (pass --all to enable)')
     def test_json_output_shape(self):
+        """--json must return top-k objects with the keys the skill reads."""
         if not (PROJECT_ROOT / 'sections' / 'embeddings' / 'faiss.index').exists():
             self.skipTest('embeddings index missing — build it first: '
                           'uv run scripts/build_embeddings.py')
