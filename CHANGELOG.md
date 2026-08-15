@@ -8,6 +8,10 @@
 - Major precision upgrade across 30+ patterns: the spec now consistently distinguishes between **what kind of part something plays** (a system-role kind) versus **the act of assigning that part to a specific team or system** — sharper language throughout means fewer cases where the skill's answer is ambiguous about whether it's describing a classification or a commitment.
 - Improved pattern entry guidance (E.11 family): clearer instructions for when to use a pattern, what the first useful result looks like, how to recommend patterns to others, and when to stop — making the skill's output more actionable on the first try.
 
+### All Changes
+- **chore**: AI-enhance Part C _index.md summaries (75 sections)
+
+
 ## 2026-08-01
 
 ### What's New
