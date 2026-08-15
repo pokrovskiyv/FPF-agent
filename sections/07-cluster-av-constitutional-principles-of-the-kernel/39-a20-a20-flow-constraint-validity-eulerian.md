@@ -93,12 +93,12 @@ Under this pattern, CV is evaluated **inside** transformations. **If** a check d
 
 **Species binding (E.18 transformation-flow family).** The above classes bind to the E.18 locus baseline `{Transformation, Signature, Mechanism, WorkPlanning, Work, Check, StructuralReinterpretation}` with **`OperationalGate = Check locus`**; no additional CV classes are introduced here. Species-specific examples and broader flow specializations stay outside this CV core; `StructuralReinterpretation` semantics are received through `E.18`, `A.6.4`, and this pattern when the CV claim is present.
 
-**Out-of-scope (CV):** declaring or translating `ReferencePlane`, `Units`, or `ComparatorSet`; CSLC comparability beyond internal step preservation; Freshness; Role and Channel; Regulated-X; `DesignRunTagConsistency`. These leave CV and use `E.18`, `A.21`, or the named comparator, selector, archive, refresh, evidence, work, safety, or temporal locus when that relation is being claimed.
+**Out-of-scope (CV):** declaring or translating `ReferencePlane`, `Units`, or `ComparatorSet`; CSLC comparability beyond internal step preservation; Freshness; fit of an actual System to a local system-role kind or exact assignment; channel fit; Regulated-X; and `DesignRunTagConsistency`. These leave CV and use `E.18`, `A.21`, or the named comparator, selector, archive, refresh, evidence, Work, safety, or temporal locus when that relation is being claimed.
 
 #### A.20:4.2 - Primary EntityOfConcern and CV classes
 
 **Flow-valuation scope.** A.20 leaves step kinds abstract; CV and GateFit separation applies to any declared E.18 transformation-flow valuation instantiation.
-**Species (E.18 transformation-flow family).** E.18 loci bind to `{Transformation, Signature, Mechanism, WorkPlanning, Work, Check, StructuralReinterpretation}`; this set is a **minimum locus baseline** defined in `E.18`. The **species** space (e.g., UNM declaration and use, `SelectionAndTuning`, `WorkPlanning`, `EvaluatingAndRefreshing`, …) is **open-world** and non-exhaustive. `OperationalGate` is the `Check` locus. `StructuralReinterpretation` is **projection-preserving** (no mutation of `⟨L,P,E⃗,D⟩`) and may retarget **EntityOfConcernRef** under CC-TFS-06-EX; see `E.18` and `A.6.4`.
+**Species (E.18 transformation-flow family).** E.18 loci bind to `{Transformation, Signature, Mechanism, WorkPlanning, Work, Check, StructuralReinterpretation}`; this set is a **minimum locus baseline** defined in `E.18`. The **species** space (e.g., UNM declaration and use, `SelectionAndTuning`, `WorkPlanning`, `EvaluatingAndRefreshing`, …) is **open-world** and non-exhaustive. `OperationalGate` is the `Check` locus. `StructuralReinterpretation` is **projection-preserving** (no mutation of `⟨L,P,E⃗,D⟩`) and may retarget **EntityOfConcernRef** under CC-E18-06-EX; see `E.18` and `A.6.4`.
 
 **`AdmissibilityConditionsSatisfaction`** — **If** the declared admissibility conditions hold on the step’s inputs and context, **then** the CV explanation **applies**; **otherwise** this explanation **does not apply**.
 **`LipschitzBounds`** — **If** inputs vary within the stated domain \(X\) and perturbations or noise \(≤ ε\), **then** the step’s estimate remains within **δ** of the reference; **otherwise** this explanation **does not apply**.
@@ -129,7 +129,7 @@ Minimum pins on faces that carry CV outcomes (**Lean publication** under the sel
 #### A.20:4.4 - GateChecks (table) — CV only
 
 **Activation predicate (in `E.18` transformation-flow structures).** *Until aggregated `CV.Status=pass`, all GateFit checks return `abstain` (CV=>GF).*
-**Role and channel fit guard (GateFit scope).** GateFit checks that involve roles SHALL use **Kernel `U.Role` tokens** (domain = `U.System`) and SHALL NOT consume `TypicalEnactorRoleName` strings from alias tables.
+**System-role and channel fit guard (GateFit scope).** A GateFit check must say which claim it consumes. Classification fit names an admitted System, one local system-role kind, and the applicable C.3.2 judgment. Assignment fit names one assignment occurrence, its declared `U.SystemRoleAssignment` species, and its holder System. Channel fit is a separate claim under the rule selected for that channel relation. None may be inferred from an alias-table string such as `TypicalEnactorRoleName`, and neither a kind nor an assignment acts.
 
 | CV class | Applies when | Publication minimum |
 | --- | --- | --- |
@@ -139,7 +139,7 @@ Minimum pins on faces that carry CV outcomes (**Lean publication** under the sel
 | `MechanismUnitsCoherence` | Quantities, scales, units, or reference planes are actually used. | `CV.Status + quantity, unit, and plane refs`; CV may check coherence against already-governed unit and plane refs, but may not author, translate, bridge, or change units or planes. |
 | `LipschitzBounds` for stability claims | A perturbation, sensitivity, robustness, continuity, safety-envelope, or stability claim changes the CV use. | Bound or certificate ref under declared assumptions; no universal Lipschitz certificate demand. |
 | `ReinterpretationEquivalence` | The step is `StructuralReinterpretation`. | `CV.Status + ReinterpWitness` scoped to the addressed `PathSliceId`. |
-| `ReferencePlaneCrossing`, CSLC, Freshness, Role and Channel, Regulated-X, `DesignRunTagConsistency` | A gate, crossing, comparator, freshness, role, work, safety, or DesignRunTag relation is being claimed. | Not CV-only; use GateFit, `A.21`, or the named neighboring locus. |
+| `ReferencePlaneCrossing`, CSLC, Freshness, system-role classification or assignment fit, channel fit, Regulated-X, `DesignRunTagConsistency` | A gate, crossing, comparator, freshness, system-role, assignment, channel, Work, safety, or DesignRunTag relation is being claimed. | Not CV-only; use GateFit, `A.21`, or the named neighboring locus. |
 CV **SHALL NOT** declare or translate `Units`, `ReferencePlane`, or `ComparatorSet`. Gate-mediated crossings and gate-consumed CSLC checks use `E.18` or `A.21` with UNM declaration and bridge discipline. Comparator use, ranking, selection, set-return, archive semantics, and refresh remain with `A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, `G.11`, or `A.21` only when those claims are present.
 
 #### A.20:4.5 - SWP matrix (declaration-locus discipline)
@@ -152,7 +152,7 @@ CV **SHALL NOT** declare or translate `Units`, `ReferencePlane`, or `ComparatorS
 * **Crossings only at `OperationalGate(profile)`** (plane, unit, or context) with a **strict exception** for **`StructuralReinterpretation`**: a **projection‑only retargeting** MAY occur without a gate **iff** `⟨L,P,E⃗,D⟩` is preserved, **KindBridge (`CL^k`)** and a **SquareLaw‑retargeting witness** are present on MVPK and UTS material, and the retargeting is **PathSlice‑local** (`PathSliceId` pinned).
 * **Projection and EntityOfConcernRef retargeting loci.** For `StructuralReinterpretation`, A.20 may state the CV witness needed for the step, but it does not define a second semantics of projection, published view, EntityOfConcernRef, or retargeting. Interpret those terms through `A.6.4`, `C.2.1`, `C.2.P`, and the relevant UTS `KindBridge (CL^k)` rows under `F.9`, `F.17`, `E.17`, `E.18`, and `C.3.3` when the retargeting or bridge claim is present.
 * **Projection and EntityOfConcernRef retargeting normalization (CV use only).** In that imported interpretation, projection is a change of published view coordinates only, and `EntityOfConcernRef` is a Kind-channel change under `CL^k`. A “no unit or plane change” test SHALL verify that `ReferencePlane(src)=ReferencePlane(tgt)` and `CL^plane` is absent (or `= ⊤`), otherwise the step is a gated crossing.
-* **Assurance operations on edges.** `ConstrainTo`, `CalibrateTo`, `CiteEvidence`, and `AttributeTo` reside on `U.Transfer` and do **not** alter `⟨L,P,E⃗,D⟩`; plane or unit changes occur only at gates; Φ and `CL^plane` penalties appear in **R-lane**. EntityOfConcernRef retargeting through the kind channel is recorded as **`KindBridge (CL^k)`** on **UTS** under `F.9`, `F.17`, `E.17`, `E.18`, and `C.3.3`; under CC-TFS-06-EX this may appear without a gate only when it is projection-preserving and PathSlice-local.
+* **Assurance operations on edges.** `ConstrainTo`, `CalibrateTo`, `CiteEvidence`, and `AttributeTo` reside on `U.Transfer` and do **not** alter `⟨L,P,E⃗,D⟩`; plane or unit changes occur only at gates; Φ and `CL^plane` penalties appear in **R-lane**. EntityOfConcernRef retargeting through the kind channel is recorded as **`KindBridge (CL^k)`** on **UTS** under `F.9`, `F.17`, `E.17`, `E.18`, and `C.3.3`; under CC-E18-06-EX this may appear without a gate only when it is projection-preserving and PathSlice-local.
 
 Terminology for this crossing slice is defined in A.20:4.2, and `ReinterpWitness` shape is defined in A.20:4.7; A.20:4.6 only applies those bindings to CtxState and GateCrossing.
 
@@ -246,13 +246,13 @@ A normalization step has declared units, domain and range, and invariant refs; t
 A typed module `M` exposes `f : State_d → BuildOutput_d` under a declared `LawSet` (e.g., determinism under fixed toolchain) and `TypeDomainRange`. **CV** checks: (i) `MechanismUnitsCoherence` (toolchain and flags units coherent), (ii) `LawSetInvariants` (reproducible outputs under same `E⃗`), (iii) `Admissibility` (inputs well-typed), and (iv) optional Lipschitz or stability surrogate (bounded perturbation in sandbox). `CtxState` is preserved along raw transfers. Entering `U.Work(run)` uses `LaunchGate` with `FreshnessUpToDate` and `DesignRunTagConsistency` - **GateFit**, not CV.
 
 **Show‑2 (selection archive in QD and AutoML).**
-A mechanism emits a **set** (`Front`, `Archive`, or another declared set publication). **CV** checks only: valid descriptor ranges, declared continuity bounds over named metric spaces, and archive invariants (idempotent insert). No ranking or acceptance thresholds are introduced at CV; comparators and acceptance policies bind at gates via `A.21` plus the current comparator and set-publication loci (`A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, or `G.11`) when those claims are present. Edition-aware pins on faces carry `DescriptorMapRef.edition` only with `Bridge+UTS`.
+A mechanism emits a **set** (`Front`, `Archive`, or another declared set result). **CV** checks only valid descriptor ranges, declared continuity bounds over named metric spaces, and archive invariants such as idempotent insert. CV neither ranks the set nor supplies acceptance policy. When those claims are current, use `A.21` for gate acceptance, the applicable comparator for comparison, `A.19.SelectorMechanism` for set-returning selection, `C.18` and `C.19` for archive, front, and pool treatment, and `G.5` for selected-set result declaration. Use `G.11` only for currentness and refresh of the result or its records; it does not define their result content. Edition-aware pins on faces carry `DescriptorMapRef.edition` only with `Bridge+UTS`.
 
 **Practice references.** Algebraic effects and handlers separate signatures from handlers (Koka and Effekt, 2015+); reproducible pipelines isolate mechanism constraints from release or deployment criteria (Bazel and Nix); optics, profunctors, and open hypergraph categories motivate composition on open graphs without adding facts on faces; QD, MAP-Elites, CMA-ME, and DQD motivate **set-return and declared order relations** (2015-2022).
 
 ### A.20:6 - Bias-Annotation
 
-The pattern constrains *how* CV status and witnesses are carried; it does not encode `GateProfile`-bound thresholds or role and channel fit — those sit in GateFit. This separation keeps GateFit criteria out of mechanism semantics.
+The pattern constrains *how* CV status and witnesses are carried; it does not encode `GateProfile`-bound thresholds, system-role classification or assignment fit, or channel fit. Those questions sit in GateFit under their direct neighboring governors. This separation keeps GateFit criteria out of mechanism semantics.
 
 ### A.20:7 - Conformance Checklist - Constraint-validity checks
 
@@ -325,7 +325,7 @@ A.20 result in local-constraint and reproducible-pipeline practice: `CV.Status`,
 
 ### A.20:11 - Relations
 
-* **Governed by `E.18` transformation-flow structure.** Loci are graph-positioned positions for atomic transformations and adjacent governed values; only `U.Transfer` edges; **open-world species over a minimum locus baseline**; CV=>GF activation; MVPK faces; SquareLaw on crossings; CC-TFS-06-EX for `StructuralReinterpretation`.
+* **Governed by `E.18` transformation-flow structure.** Loci are graph-positioned positions for atomic transformations and adjacent governed values; only `U.Transfer` edges; **open-world species over a minimum locus baseline**; CV=>GF activation; MVPK faces; SquareLaw on crossings; CC-E18-06-EX for `StructuralReinterpretation`.
 * **A.21 (GateProfilization).** Sole point for GateFit checks and `GateProfile`-bound folds.
 * **E.18 (flow valuation and PathSlice currentness).** Declares the graph and valuation semantics used by this flow family.
 * **F.9, F.17, E.17, and E.18 (Bridge+UTS loci).** Boundary-publication requirement whenever faces cite editions.

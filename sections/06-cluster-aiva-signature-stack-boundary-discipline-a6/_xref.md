@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (196 refs).
+Patterns in other Parts that reference patterns in this directory (215 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -11,14 +11,21 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | A.1.1 | coordinates_with | A.6.0 |
 | A.1.1 | coordinates_with | A.6.5 |
 | A.1.SCR | coordinates_with | A.6.RCD |
+| A.2 | builds_on | A.6.REL |
+| A.2 | coordinates_with | A.6.RSIR |
 | A.2.1 | builds_on | A.6.REL |
 | A.2.1 | builds_on | A.6.5 |
 | A.2.3 | used_by | A.6.C |
 | A.2.3 | used_by | A.6.P |
+| A.2.4 | coordinates_with | A.6.RSIR |
+| A.2.5 | builds_on | A.6.REL |
+| A.2.5 | builds_on | A.6.5 |
 | A.2.6 | builds_on | A.6.0 |
 | A.2.6 | builds_on | A.6.1 |
-| A.2.8 | used_by | A.6.B |
-| A.2.8 | used_by | A.6.C |
+| A.2.7 | coordinates_with | A.6.REL |
+| A.2.8 | builds_on | A.6.RCD |
+| A.2.8 | coordinates_with | A.6.B |
+| A.2.8 | coordinates_with | A.6.C |
 | A.2.8.PER | coordinates_with | A.6 |
 | A.2.8.PER | coordinates_with | A.6.B |
 | A.2.8.PER | coordinates_with | A.6.C |
@@ -65,6 +72,7 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | A.15.PROD | builds_on | A.6.RCD |
 | A.15.PROD | coordinates_with | A.6.P |
 | A.16.2 | coordinates_with | A.6.P |
+| A.19 | builds_on | A.6.5 |
 | A.19.CHR | builds_on | A.6.7 |
 | A.19.CHR | builds_on | A.6.1 |
 | A.19.CHR | builds_on | A.6.5 |
@@ -120,6 +128,7 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | C.2.2a | used_by | A.6.A |
 | C.2.P | builds_on | A.6.P |
 | C.2.P.DR | coordinates_with | A.6.1 |
+| C.20 | builds_on | A.6.REL |
 | C.22 | builds_on | A.6.0 |
 | C.22.2 | builds_on | A.6.P |
 | C.22.2 | builds_on | A.6.3.RT |
@@ -152,6 +161,7 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | C.30.AD.BA | coordinates_with | A.6.M |
 | C.30.ASV | builds_on | A.6.3 |
 | C.30.ASV | coordinates_with | A.6.F |
+| C.30.ASV | coordinates_with | A.6.M |
 | C.30.P | builds_on | A.6.P |
 | C.30.P | builds_on | A.6.F |
 | C.30.STRAT | coordinates_with | A.6.M |
@@ -183,11 +193,19 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | E.10.ARCH | builds_on | A.6.3.CSC |
 | E.10.ARCH | builds_on | A.6.0 |
 | E.10.ARCH | builds_on | A.6.1 |
-| E.17.0 | builds_on | A.6.2 |
+| E.17 | coordinates_with | A.6.3 |
+| E.17.0 | builds_on | A.6.5 |
 | E.17.0 | builds_on | A.6.3 |
-| E.17.0 | builds_on | A.6.4 |
 | E.17.1 | builds_on | A.6.2 |
-| E.17.2 | builds_on | A.6.2 |
+| E.17.2 | builds_on | A.6.6 |
+| E.17.2 | builds_on | A.6.3 |
+| E.17.AUD.OOTD | builds_on | A.6.P |
+| E.17.AUD.OOTD | coordinates_with | A.6.3 |
+| E.17.EFP | builds_on | A.6.B |
+| E.17.EFP | coordinates_with | A.6.3.CR |
+| E.17.EFP | coordinates_with | A.6.3.RT |
+| E.17.EFP | coordinates_with | A.6.3.CSC |
+| E.17.EFP | coordinates_with | A.6.4 |
 | E.18 | coordinates_with | A.6.RCD |
 | E.18.1 | builds_on | A.6.REL |
 | E.18.1 | coordinates_with | A.6.P |
@@ -212,6 +230,8 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.12 | builds_on | A.6.1 |
+| F.12 | coordinates_with | A.6.RCD |
 | F.18 | coordinates_with | A.6.P |
 | F.18 | coordinates_with | A.6.RCD |
 | F.18 | coordinates_with | A.6.REL |
@@ -220,7 +240,6 @@ Patterns in other Parts that reference patterns in this directory (196 refs).
 | F.9 | coordinates_with | A.6.9 |
 | F.9 | coordinates_with | A.6.3.CSC |
 | F.9.1 | coordinates_with | A.6.3.CSC |
-| F.9.1 | coordinates_with | A.6.A |
 
 ## From 13-part-g-discipline-sota-patterns-kit
 

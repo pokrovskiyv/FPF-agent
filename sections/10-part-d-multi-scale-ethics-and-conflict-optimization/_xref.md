@@ -1,12 +1,6 @@
 # Cross-References into 10-part-d-multi-scale-ethics-and-conflict-optimization
 
-Patterns in other Parts that reference patterns in this directory (4 refs).
-
-## From 08-part-b-trans-disciplinary-reasoning-cluster
-
-| Source | Relation | Target |
-|--------|----------|--------|
-| B.3 | prerequisite_for | D.4 |
+Patterns in other Parts that reference patterns in this directory (3 refs).
 
 ## From 09-part-c-kernel-extension-specifications
 

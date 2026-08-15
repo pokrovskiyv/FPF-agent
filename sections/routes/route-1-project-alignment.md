@@ -9,7 +9,7 @@
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
 | 1 | A.1.1 | Bounded Model-Use Structure and DDD Bounded-Context Recovery | sections/05-part-a-kernel-architecture-cluster/03-a11-a11-bounded-model-use-structure-and-ddd-bounded-context-reco.md | YES |
-| 2 | A.15 | Role-Method-Work Alignment (Contextual Enactment) | sections/07-cluster-av-constitutional-principles-of-the-kernel/12-a15-a15-rolemethodwork-alignment.md | YES |
+| 2 | A.15 | System-Role–Method–Work Alignment | sections/07-cluster-av-constitutional-principles-of-the-kernel/12-a15-a15-system-rolemethodwork-alignment.md | YES |
 | 3 | A.15.2 | U.WorkPlan: The Schedule of Intent | sections/07-cluster-av-constitutional-principles-of-the-kernel/14-a152-a152-uworkplan.md |  |
 | 4 | A.15.3 | SlotFillingsPlanItem — Declaration-Local Planned Designation | sections/07-cluster-av-constitutional-principles-of-the-kernel/15-a153-a153-slotfillingsplanitem.md |  |
 | 5 | B.5.1 | Explore → Shape → Evidence → Operate | sections/08-part-b-trans-disciplinary-reasoning-cluster/21-b51-b51-explore-shape-evidence-operate.md | YES |

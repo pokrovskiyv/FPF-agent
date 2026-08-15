@@ -1,6 +1,6 @@
 # Cross-References into 09-part-c-kernel-extension-specifications
 
-Patterns in other Parts that reference patterns in this directory (312 refs).
+Patterns in other Parts that reference patterns in this directory (334 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -16,12 +16,19 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | A.1.1 | coordinates_with | C.2.P |
 | A.1.STM | coordinates_with | C.30 |
 | A.1.STM | coordinates_with | C.28 |
+| A.2 | builds_on | C.3 |
+| A.2 | builds_on | C.3.1 |
+| A.2 | builds_on | C.3.2 |
 | A.2.1 | builds_on | C.2.1 |
+| A.2.5 | builds_on | C.3 |
 | A.2.6 | builds_on | C.3 |
 | A.2.6 | builds_on | C.2.1 |
 | A.2.6 | coordinates_with | C.2.2 |
 | A.2.6 | coordinates_with | C.2.3 |
 | A.2.6 | coordinates_with | C.29 |
+| A.2.7 | builds_on | C.3 |
+| A.2.7 | builds_on | C.3.1 |
+| A.2.8 | builds_on | C.3 |
 | A.21 | coordinates_with | C.18 |
 | A.21 | coordinates_with | C.19 |
 | A.22 | builds_on | C.13 |
@@ -64,17 +71,13 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | A.6.2 | builds_on | C.2.1 |
 | A.6.3 | builds_on | C.2.1 |
 | A.6.3 | builds_on | C.2 |
-| A.6.3.CSC | coordinates_with | C.26 |
-| A.6.3.CSC | coordinates_with | C.26.1 |
-| A.6.3.CSC | coordinates_with | C.33 |
-| A.6.3.NAR | builds_on | C.33 |
-| A.6.3.NAR | builds_on | C.34 |
+| A.6.3.CSC | builds_on | C.2.1 |
+| A.6.3.NAR | coordinates_with | C.33 |
+| A.6.3.NAR | coordinates_with | C.34 |
 | A.6.3.NAR | coordinates_with | C.35 |
-| A.6.3.NAR | coordinates_with | C.30 |
-| A.6.3.NAR | coordinates_with | C.30.AD |
-| A.6.3.NAR | coordinates_with | C.30.ASV |
-| A.6.3.RT | builds_on | C.2.7 |
+| A.6.3.RT | builds_on | C.2.1 |
 | A.6.3.RT | coordinates_with | C.26 |
+| A.6.3.RT | coordinates_with | C.29 |
 | A.6.4 | builds_on | C.2.1 |
 | A.6.4 | builds_on | C.2 |
 | A.6.4 | builds_on | C.3 |
@@ -122,7 +125,8 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | A.10 | coordinates_with | C.11 |
 | A.12 | coordinates_with | C.13 |
 | A.12 | coordinates_with | C.2.1 |
-| A.15 | prerequisite_for | C.24 |
+| A.13 | coordinates_with | C.16 |
+| A.15 | builds_on | C.3 |
 | A.15.1 | builds_on | C.2.1 |
 | A.15.2 | builds_on | C.2.1 |
 | A.15.3 | builds_on | C.2.1 |
@@ -137,7 +141,8 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | A.16.2 | builds_on | C.2.2 |
 | A.17 | prerequisite_for | C.16 |
 | A.18 | coordinates_with | C.16 |
-| A.19 | coordinates_with | C.16 |
+| A.19 | builds_on | C.16 |
+| A.19 | coordinates_with | C.2.1 |
 | A.19.CHR | coordinates_with | C.23 |
 | A.19.CN | coordinates_with | C.16 |
 | A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | coordinates_with | C.19 |
@@ -169,7 +174,7 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 |--------|----------|--------|
 | B.1 | builds_on | C.13 |
 | B.1 | coordinates_with | C.29 |
-| B.1 | coordinates_with | C.30.ASV |
+| B.1 | coordinates_with | C.30 |
 | B.1.1 | builds_on | C.13 |
 | B.1.1 | coordinates_with | C.29 |
 | B.1.2 | builds_on | C.13 |
@@ -260,6 +265,7 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | E.10.ARCH | coordinates_with | C.27.TA |
 | E.10.ARCH | coordinates_with | C.27 |
 | E.10.ARCH | coordinates_with | C.29 |
+| E.10.D1 | coordinates_with | C.30 |
 | E.10.D2 | builds_on | C.2.1 |
 | E.10.D2 | builds_on | C.2.3 |
 | E.10.MOVE | coordinates_with | C.24 |
@@ -271,8 +277,17 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | E.15 | builds_on | C.18 |
 | E.15 | builds_on | C.19 |
 | E.16 | coordinates_with | C.24 |
+| E.17 | builds_on | C.2.1 |
+| E.17 | builds_on | C.2.P |
 | E.17.0 | builds_on | C.2.1 |
+| E.17.0 | builds_on | C.13 |
+| E.17.0 | builds_on | C.29 |
+| E.17.1 | builds_on | C.2.1 |
+| E.17.1 | builds_on | C.13 |
+| E.17.1 | builds_on | C.29 |
 | E.17.2 | builds_on | C.2.1 |
+| E.17.2 | builds_on | C.13 |
+| E.17.AUD.OOTD | builds_on | C.2.2 |
 | E.18 | coordinates_with | C.29 |
 | E.18.1 | builds_on | C.22.2 |
 | E.18.2 | builds_on | C.29 |
@@ -310,7 +325,7 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 | E.4.DPF.DA | coordinates_with | C.33 |
 | E.4.DPF.DA | coordinates_with | C.34 |
 | E.4.DPF.DA | coordinates_with | C.35 |
-| E.4.PFAD | builds_on | C.32.PAD |
+| E.4.PFAD | coordinates_with | C.32.PAD |
 | E.4.PFAD | coordinates_with | C.32.ADR |
 | E.4.PFR | coordinates_with | C.33 |
 | E.4.PFR | coordinates_with | C.34 |
@@ -321,13 +336,20 @@ Patterns in other Parts that reference patterns in this directory (312 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.1 | builds_on | C.2.1 |
+| F.12 | builds_on | C.16 |
+| F.12 | coordinates_with | C.16.P |
 | F.17 | builds_on | C.2.1 |
 | F.18 | builds_on | C.2.1 |
+| F.4 | builds_on | C.3 |
+| F.4 | builds_on | C.3.2 |
+| F.4 | builds_on | C.2.1 |
+| F.5 | builds_on | C.3 |
 | F.9 | builds_on | C.2.1 |
 | F.9 | coordinates_with | C.26.1 |
 | F.9 | coordinates_with | C.26.2 |
 | F.9 | coordinates_with | C.29 |
-| F.9.1 | builds_on | C.2.2 |
+| F.9.1 | builds_on | C.2.1 |
 | F.9.1 | coordinates_with | C.16.Q |
 
 ## From 13-part-g-discipline-sota-patterns-kit

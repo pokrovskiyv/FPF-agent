@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (119 refs).
+Patterns in other Parts that reference patterns in this directory (130 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -24,6 +24,7 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | A.6 | coordinates_with | B.3 |
 | A.6.3 | used_by | B.5.3 |
 | A.6.3.CR | coordinates_with | B.5.2 |
+| A.6.3.RT | coordinates_with | B.3 |
 | A.6.9 | coordinates_with | B.3 |
 | A.6.A | builds_on | B.4.1 |
 | A.6.A | coordinates_with | B.5.2.0 |
@@ -38,6 +39,7 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 |--------|----------|--------|
 | A.10 | coordinates_with | B.3 |
 | A.14 | prerequisite_for | B.1.1 |
+| A.15 | coordinates_with | B.3 |
 | A.15.1 | coordinates_with | B.1.4 |
 | A.15.1 | coordinates_with | B.1.6 |
 | A.15.2 | coordinates_with | B.1.4 |
@@ -68,7 +70,6 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | C.17 | coordinates_with | B.5.2.1 |
 | C.17 | coordinates_with | B.3 |
 | C.17 | coordinates_with | B.4 |
-| C.18 | coordinates_with | B.5.2.1 |
 | C.19 | builds_on | B.3 |
 | C.19.1 | builds_on | B.3 |
 | C.2 | builds_on | B.3 |
@@ -77,10 +78,13 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | C.2.2 | builds_on | B.1.3 |
 | C.2.2a | used_by | B.4.1 |
 | C.2.P | coordinates_with | B.3 |
+| C.20 | coordinates_with | B.1.5 |
+| C.20 | coordinates_with | B.2 |
 | C.21 | builds_on | B.3 |
 | C.22.2 | coordinates_with | B.3 |
 | C.22.PFR | coordinates_with | B.3 |
 | C.23 | builds_on | B.3 |
+| C.24 | builds_on | B.1.6 |
 | C.24 | builds_on | B.3 |
 | C.25 | builds_on | B.3 |
 | C.26 | builds_on | B.3 |
@@ -137,6 +141,9 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 | E.15 | builds_on | B.4 |
 | E.15 | builds_on | B.3 |
 | E.16 | builds_on | B.3 |
+| E.17 | coordinates_with | B.3 |
+| E.17.AUD.OOTD | coordinates_with | B.3 |
+| E.17.EFP | coordinates_with | B.3 |
 | E.18.2 | coordinates_with | B.3 |
 | E.24.CD | coordinates_with | B.1 |
 | E.24.CD | coordinates_with | B.2 |
@@ -145,10 +152,14 @@ Patterns in other Parts that reference patterns in this directory (119 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.1 | coordinates_with | B.3 |
 | F.10 | builds_on | B.3 |
+| F.11 | builds_on | B.1.5 |
+| F.12 | coordinates_with | B.3 |
 | F.17 | coordinates_with | B.3 |
 | F.18 | coordinates_with | B.3 |
 | F.9 | coordinates_with | B.3 |
+| F.9.1 | coordinates_with | B.3 |
 
 ## From 13-part-g-discipline-sota-patterns-kit
 

@@ -1,6 +1,6 @@
 # Cross-References into 11-part-e-the-fpf-constitution-and-authoring-guides
 
-Patterns in other Parts that reference patterns in this directory (313 refs).
+Patterns in other Parts that reference patterns in this directory (330 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -17,8 +17,11 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.1.SCR | coordinates_with | E.10 |
 | A.1.STM | coordinates_with | E.18 |
 | A.11 | builds_on | E.24.UK |
+| A.2 | coordinates_with | E.10.ROLE |
 | A.2.2 | builds_on | E.24.UK |
+| A.2.4 | coordinates_with | E.10.ROLE |
 | A.2.6 | coordinates_with | E.24.UK |
+| A.2.7 | coordinates_with | E.10.ROLE |
 | A.21 | builds_on | E.18 |
 | A.21 | builds_on | E.17 |
 | A.22 | builds_on | E.10 |
@@ -64,16 +67,15 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.6.3.CR | builds_on | E.17 |
 | A.6.3.CR | builds_on | E.10 |
 | A.6.3.CR | coordinates_with | E.17.EFP |
-| A.6.3.CSC | builds_on | E.17.EFP |
-| A.6.3.CSC | builds_on | E.8 |
-| A.6.3.CSC | builds_on | E.10 |
-| A.6.3.CSC | builds_on | E.19 |
-| A.6.3.NAR | builds_on | E.17 |
-| A.6.3.NAR | builds_on | E.10 |
-| A.6.3.NAR | coordinates_with | E.4.DPF |
-| A.6.3.RT | builds_on | E.17.0 |
-| A.6.3.RT | builds_on | E.17 |
+| A.6.3.CSC | coordinates_with | E.17.EFP |
+| A.6.3.CSC | coordinates_with | E.24.PUB |
+| A.6.3.NAR | coordinates_with | E.17.EFP |
+| A.6.3.NAR | coordinates_with | E.24.PUB |
+| A.6.3.NAR | coordinates_with | E.17.0 |
 | A.6.3.RT | coordinates_with | E.17.EFP |
+| A.6.3.RT | coordinates_with | E.17.0 |
+| A.6.3.RT | coordinates_with | E.24.PUB |
+| A.6.3.RT | coordinates_with | E.18 |
 | A.6.4 | builds_on | E.18 |
 | A.6.4 | used_by | E.18 |
 | A.6.5 | coordinates_with | E.24.UK |
@@ -94,6 +96,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.6.M | coordinates_with | E.20 |
 | A.6.P | builds_on | E.10 |
 | A.6.P | builds_on | E.10.ARCH |
+| A.6.P | coordinates_with | E.10.ROLE |
 | A.6.P | coordinates_with | E.17.0 |
 | A.6.P | coordinates_with | E.24.PUB |
 | A.6.P.WMR | coordinates_with | E.10 |
@@ -105,6 +108,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.6.REL | coordinates_with | E.24.UK |
 | A.6.RSIR | builds_on | E.10 |
 | A.6.RSIR | builds_on | E.10.ARCH |
+| A.6.RSIR | builds_on | E.10.ROLE |
 | A.6.RSIR | coordinates_with | E.17 |
 | A.6.S | builds_on | E.17 |
 | A.6.S | builds_on | E.10 |
@@ -119,7 +123,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.12 | coordinates_with | E.17 |
 | A.12 | coordinates_with | E.24.PUB |
 | A.13 | informs | E.16 |
-| A.15 | prerequisite_for | E.16 |
+| A.15 | coordinates_with | E.10.ROLE |
 | A.15.2 | coordinates_with | E.24 |
 | A.15.2 | coordinates_with | E.24.UK |
 | A.15.3 | coordinates_with | E.17 |
@@ -129,6 +133,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.15.4 | coordinates_with | E.17.EFP |
 | A.15.5 | coordinates_with | E.18 |
 | A.15.6 | coordinates_with | E.18 |
+| A.15.6 | coordinates_with | E.18.NET |
 | A.15.6 | coordinates_with | E.17 |
 | A.15.6 | coordinates_with | E.24.PUB |
 | A.15.PROD | coordinates_with | E.18.1 |
@@ -136,7 +141,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | A.16.0 | builds_on | E.17 |
 | A.16.0 | builds_on | E.18 |
 | A.16.0 | coordinates_with | E.10.MOVE |
-| A.19 | coordinates_with | E.18 |
+| A.19 | builds_on | E.24 |
 | A.19.CHR | builds_on | E.18 |
 | A.19.CHR | builds_on | E.10 |
 | A.19.CHR | builds_on | E.19 |
@@ -178,6 +183,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| B.1 | coordinates_with | E.10.ROLE |
 | B.1.2 | coordinates_with | E.17 |
 | B.1.6 | coordinates_with | E.17 |
 | B.2.3 | builds_on | E.24.UK |
@@ -188,6 +194,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | B.3 | coordinates_with | E.17.EFP |
 | B.3.5 | builds_on | E.14 |
 | B.5.3 | builds_on | E.24.UK |
+| B.5.3 | coordinates_with | E.10.ROLE |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -200,6 +207,9 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | C.16.Q | builds_on | E.10.ARCH |
 | C.16.Q | builds_on | E.21 |
 | C.16.Q | builds_on | E.8 |
+| C.18 | builds_on | E.18 |
+| C.18 | coordinates_with | E.23 |
+| C.18 | coordinates_with | E.18.1 |
 | C.19.1 | coordinates_with | E.23 |
 | C.19.2 | coordinates_with | E.23 |
 | C.2.1 | coordinates_with | E.17.0 |
@@ -221,6 +231,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | C.2.P.DR | coordinates_with | E.18.1 |
 | C.2.P.DR | coordinates_with | E.17 |
 | C.2.P.DR | coordinates_with | E.20 |
+| C.20 | builds_on | E.24.UK |
 | C.22.1 | builds_on | E.16 |
 | C.22.1 | coordinates_with | E.23 |
 | C.22.2 | builds_on | E.2 |
@@ -249,10 +260,10 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | C.30.AD | builds_on | E.10.ARCH |
 | C.30.AD | coordinates_with | E.8 |
 | C.30.AD.BA | builds_on | E.17 |
+| C.30.ASV | builds_on | E.24.PUB |
 | C.30.ASV | builds_on | E.17.0 |
 | C.30.ASV | builds_on | E.17.1 |
 | C.30.ASV | builds_on | E.17.2 |
-| C.30.ASV | builds_on | E.17 |
 | C.30.ASV | coordinates_with | E.18 |
 | C.30.P | builds_on | E.10 |
 | C.30.P | builds_on | E.10.ARCH |
@@ -287,6 +298,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | C.32.FAIL | coordinates_with | E.17 |
 | C.32.FAIL | coordinates_with | E.24.PUB |
 | C.32.HCS | builds_on | E.13 |
+| C.32.HCS | coordinates_with | E.10.ROLE |
 | C.32.P2S | builds_on | E.17 |
 | C.32.P2S | builds_on | E.24.PUB |
 | C.32.PAD | coordinates_with | E.8 |
@@ -297,6 +309,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | C.34 | coordinates_with | E.18 |
 | C.35 | coordinates_with | E.18 |
 | C.36 | builds_on | E.18.1 |
+| C.36 | coordinates_with | E.10.ROLE |
 | C.36 | coordinates_with | E.10 |
 | C.36 | coordinates_with | E.10.ARCH |
 | C.36.P | builds_on | E.10 |
@@ -307,6 +320,7 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | D.1 | builds_on | E.2 |
+| D.3 | coordinates_with | E.10.ROLE |
 | D.3 | coordinates_with | E.17 |
 | D.5 | builds_on | E.5.4 |
 | D.5 | coordinates_with | E.13 |
@@ -315,16 +329,20 @@ Patterns in other Parts that reference patterns in this directory (313 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.0.1 | builds_on | E.10 |
+| F.12 | coordinates_with | E.13 |
 | F.17 | coordinates_with | E.10.MOVE |
 | F.17 | coordinates_with | E.11 |
 | F.18 | builds_on | E.24.PUB |
 | F.18 | coordinates_with | E.10 |
 | F.18 | coordinates_with | E.10.ARCH |
+| F.4 | builds_on | E.10.ROLE |
 | F.5 | builds_on | E.10 |
-| F.5 | builds_on | E.24.UK |
-| F.6 | coordinates_with | E.10 |
+| F.5 | builds_on | E.10.ROLE |
+| F.5 | coordinates_with | E.24.UK |
+| F.6 | coordinates_with | E.10.ROLE |
 | F.8 | builds_on | E.24.UK |
-| F.9.1 | coordinates_with | E.17.1 |
+| F.9.1 | coordinates_with | E.24.PUB |
 
 ## From 13-part-g-discipline-sota-patterns-kit
 

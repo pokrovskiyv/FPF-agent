@@ -1,6 +1,6 @@
 # Cross-References into 13-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (155 refs).
+Patterns in other Parts that reference patterns in this directory (159 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -19,6 +19,8 @@ Patterns in other Parts that reference patterns in this directory (155 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| A.6.3.NAR | coordinates_with | G.2 |
+| A.6.3.NAR | coordinates_with | G.11 |
 | A.6.F | coordinates_with | G.6 |
 | A.6.M | coordinates_with | G.5 |
 | A.6.RSIR | coordinates_with | G.6 |
@@ -31,7 +33,8 @@ Patterns in other Parts that reference patterns in this directory (155 refs).
 | A.10 | coordinates_with | G.4 |
 | A.15.PROD | coordinates_with | G.11 |
 | A.18 | coordinates_with | G.0 |
-| A.19 | coordinates_with | G.0 |
+| A.19 | coordinates_with | G.4 |
+| A.19 | coordinates_with | G.11 |
 | A.19.CHR | builds_on | G.0 |
 | A.19.CHR | coordinates_with | G.5 |
 | A.19.CHR | coordinates_with | G.10 |
@@ -77,13 +80,14 @@ Patterns in other Parts that reference patterns in this directory (155 refs).
 | C.16 | coordinates_with | G.11 |
 | C.16 | coordinates_with | G.4 |
 | C.18 | coordinates_with | G.5 |
-| C.18 | coordinates_with | G.6 |
+| C.18 | coordinates_with | G.9 |
 | C.18 | coordinates_with | G.11 |
 | C.18.1 | coordinates_with | G.5 |
 | C.18.1 | coordinates_with | G.9 |
 | C.18.1 | coordinates_with | G.10 |
 | C.19 | coordinates_with | G.5 |
 | C.19 | coordinates_with | G.9 |
+| C.19 | coordinates_with | G.11 |
 | C.19.1 | coordinates_with | G.5 |
 | C.19.1 | coordinates_with | G.8 |
 | C.19.1 | coordinates_with | G.9 |
@@ -91,7 +95,7 @@ Patterns in other Parts that reference patterns in this directory (155 refs).
 | C.2.1 | coordinates_with | G.11 |
 | C.2.2 | coordinates_with | G.6 |
 | C.2.2 | coordinates_with | G.7 |
-| C.20 | builds_on | G.0 |
+| C.20 | coordinates_with | G.5 |
 | C.21 | coordinates_with | G.2 |
 | C.22 | builds_on | G.0 |
 | C.22 | coordinates_with | G.4 |

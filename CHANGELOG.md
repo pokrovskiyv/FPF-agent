@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-15
+
+### What's New
+- The searchable spec grew to ~105,000 lines (326 sections, 320 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- New pattern: **when the word "role" is ambiguous**, the skill can now guide you through recovering what it actually means in your specific claim — is it a classification, an assignment, participation in a relation, a slot in an interface, or ordinary shorthand? This prevents a common confusion where "role" shifts meaning mid-discussion without anyone noticing.
+- Major precision upgrade across 30+ patterns: the spec now consistently distinguishes between **what kind of part something plays** (a system-role kind) versus **the act of assigning that part to a specific team or system** — sharper language throughout means fewer cases where the skill's answer is ambiguous about whether it's describing a classification or a commitment.
+- Improved pattern entry guidance (E.11 family): clearer instructions for when to use a pattern, what the first useful result looks like, how to recommend patterns to others, and when to stop — making the skill's output more actionable on the first try.
+
 ## 2026-08-01
 
 ### What's New

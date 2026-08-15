@@ -1,6 +1,6 @@
 # Cross-References into 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
-Patterns in other Parts that reference patterns in this directory (157 refs).
+Patterns in other Parts that reference patterns in this directory (167 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -16,6 +16,7 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | A.2.1 | coordinates_with | F.6 |
 | A.2.3 | prerequisite_for | F.12 |
 | A.2.6 | coordinates_with | F.9 |
+| A.2.8 | coordinates_with | F.6 |
 | A.2.8.PER | coordinates_with | F.6 |
 | A.21 | coordinates_with | F.9 |
 | A.21 | coordinates_with | F.17 |
@@ -33,11 +34,9 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | A.6.1 | coordinates_with | F.9 |
 | A.6.3.CR | builds_on | F.9 |
 | A.6.3.CR | builds_on | F.18 |
-| A.6.3.CSC | builds_on | F.18 |
 | A.6.3.CSC | coordinates_with | F.9 |
 | A.6.3.CSC | coordinates_with | F.9.1 |
-| A.6.3.RT | builds_on | F.9 |
-| A.6.3.RT | builds_on | F.18 |
+| A.6.3.RT | coordinates_with | F.9 |
 | A.6.4 | builds_on | F.9 |
 | A.6.6 | coordinates_with | F.9 |
 | A.6.6 | coordinates_with | F.15 |
@@ -66,9 +65,11 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.12 | coordinates_with | F.6 |
+| A.15 | builds_on | F.6 |
 | A.15.1 | coordinates_with | F.6 |
 | A.15.2 | coordinates_with | F.9 |
 | A.15.PROD | coordinates_with | F.18 |
+| A.19 | coordinates_with | F.9 |
 | A.19.CN | coordinates_with | F.9 |
 | A.19.CPM | coordinates_with | F.18 |
 | A.19.ECS | builds_on | F.18 |
@@ -89,11 +90,14 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | B.3 | coordinates_with | F.9 |
+| B.5.3 | builds_on | F.0.1 |
 | B.5.3 | builds_on | F.1 |
 | B.5.3 | builds_on | F.2 |
 | B.5.3 | builds_on | F.3 |
 | B.5.3 | builds_on | F.5 |
 | B.5.3 | builds_on | F.8 |
+| B.5.3 | builds_on | F.17 |
+| B.5.3 | coordinates_with | F.9 |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -109,6 +113,7 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | C.2.6 | coordinates_with | F.9.1 |
 | C.2.P | builds_on | F.18 |
 | C.2.P.DR | builds_on | F.19 |
+| C.20 | coordinates_with | F.9 |
 | C.22.2 | coordinates_with | F.9 |
 | C.26 | builds_on | F.9 |
 | C.26.1 | builds_on | F.9 |
@@ -116,6 +121,7 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | C.29 | builds_on | F.9 |
 | C.3 | coordinates_with | F.9 |
 | C.3.3 | coordinates_with | F.9 |
+| C.3.4 | coordinates_with | F.9 |
 | C.30 | builds_on | F.18 |
 | C.30.AD | coordinates_with | F.18 |
 | C.30.STRAT | builds_on | F.18 |
@@ -139,20 +145,24 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | E.10 | coordinates_with | F.19 |
 | E.10.ARCH | builds_on | F.18 |
 | E.10.ARCH | builds_on | F.19 |
-| E.10.D1 | coordinates_with | F.1 |
-| E.10.D1 | coordinates_with | F.2 |
-| E.10.D1 | coordinates_with | F.3 |
-| E.10.D1 | coordinates_with | F.7 |
+| E.10.D1 | coordinates_with | F.0.1 |
+| E.10.D1 | coordinates_with | F.17 |
 | E.10.D1 | coordinates_with | F.9 |
+| E.10.D1 | coordinates_with | F.19 |
 | E.10.D2 | constrains | F.4 |
 | E.10.D2 | constrains | F.5 |
 | E.10.D2 | constrains | F.8 |
 | E.10.D2 | constrains | F.9 |
 | E.10.D2 | constrains | F.15 |
 | E.10.MOVE | coordinates_with | F.17 |
+| E.10.ROLE | coordinates_with | F.18 |
+| E.10.ROLE | coordinates_with | F.19 |
 | E.11 | builds_on | F.17 |
 | E.11 | builds_on | F.18 |
 | E.15 | builds_on | F.15 |
+| E.17.AUD.OOTD | builds_on | F.18 |
+| E.17.EFP | builds_on | F.9 |
+| E.17.EFP | builds_on | F.18 |
 | E.18 | coordinates_with | F.9 |
 | E.18 | coordinates_with | F.17 |
 | E.19 | coordinates_with | F.18 |

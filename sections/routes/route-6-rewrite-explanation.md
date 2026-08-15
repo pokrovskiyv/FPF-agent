@@ -10,9 +10,9 @@
 |---|---------|-------|------|-------|
 | 1 | A.6.3.CR | ConservativeRetextualization - entityOfConcernRef-preserving | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md | YES |
 | 2 | A.6.3.RT | Representation-Scheme Transition: EntityOfConcern-Preserving | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/12-a63rt-a63rt-representation-scheme-transition-entityofconcern-prese.md | YES |
-| 3 | E.17.EFP | ExplanationFaithfulnessProfile — explanation-use discipline  | sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
-| 4 | E.17.ID.CR | ComparativeReviewUnit - bounded comparison over comparative  | sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md |  |
-| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
+| 3 | E.17.EFP | ExplanationFaithfulnessProfile — bounded explanation-use dis | sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md | YES |
+| 4 | E.17.ID.CR | ComparativeReviewUnit - bounded comparison over comparative  | sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e17id-e17idcr-comparativereviewunit-bounded-comparison-over-compar.md |  |
+| 5 | E.17.AUD.LHR | PublicationUnit Stability Discipline and Local Head Restorat | sections/11-part-e-the-fpf-constitution-and-authoring-guides/43-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md |  |
 
 ## Loading Strategy
 
