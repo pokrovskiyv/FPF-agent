@@ -11,6 +11,7 @@
 ### All Changes
 - **chore**: AI-enhance Part C _index.md summaries (75 sections)
 - **chore**: AI-enhance Part E _index.md summaries (59 sections)
+- **chore**: AI-enhance Parts F and G _index.md summaries (36 sections)
 
 
 ## 2026-08-01

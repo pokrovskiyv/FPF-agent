@@ -1,17 +1,17 @@
 # Part G - Discipline SoTA Patterns Kit
 
-- [G.Core - Part G Core Invariants](01-gcore-part-g-core-invariants.md)
-- [G.0 - Frame Standard and Comparability Governance — CG‑Spec (G.0)](02-g0-g0-frame-standard-and-comparability-governance-cgspec.md)
-- [G.1 - CG‑Frame‑Ready Generator (G.1)](03-g1-g1-cgframeready-generator.md)
-- [G.2 - SoTA Harvester & Synthesis (G.2)](04-g2-g2-sota-harvester-synthesis.md)
-- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md)
-- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md)
-- [G.5 - Multi‑Method Dispatcher and MethodFamily Registry (G.5)](07-g5-g5-multimethod-dispatcher-and-methodfamily-registry.md)
-- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md)
-- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md)
-- [G.8 - SoS‑LOG Bundles & Maturity Ladders (G.8)](10-g8-g8-soslog-bundles-maturity-ladders.md)
-- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md)
-- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md)
-- [G.11 - Telemetry-Driven Refresh and Decay Orchestrator (G.11)](13-g11-g11-telemetry-driven-refresh-and-decay-orchestrator.md)
-- [G.12 — DHC Dashboards (Discipline‑Health time‑series; admissible telemetry; generation‑first) (G.12)](14-g12-g12-dhc-dashboards-disciplinehealth-timeseries-admissible-te.md)
-- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md)
+- [G.Core - Part G Core Invariants](01-gcore-part-g-core-invariants.md) — The shared invariants that all comparison and selection patterns cite by reference rather than restating individually.
+- [G.0 - Frame Standard and Comparability Governance — CG‑Spec (G.0)](02-g0-g0-frame-standard-and-comparability-governance-cgspec.md) — The design-time gate that fixes which comparisons are lawful in a frame, with explicit evidence rules and edition pins.
+- [G.1 - CG‑Frame‑Ready Generator (G.1)](03-g1-g1-cgframeready-generator.md) — A reusable generator scaffold that links declared scope, current practice, candidates, shortlist, and refresh wiring.
+- [G.2 - SoTA Harvester & Synthesis (G.2)](04-g2-g2-sota-harvester-synthesis.md) — How to harvest the state of the art across rival traditions and turn it into citation-ready inputs for selection.
+- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md) — How to author typed measurement primitives with explicit scales and provenance so downstream comparisons stay admissible.
+- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md) — How to define acceptance rules before evaluation so thresholds are explicit rather than buried in code or prose.
+- [G.5 - Multi‑Method Dispatcher and MethodFamily Registry (G.5)](07-g5-g5-multimethod-dispatcher-and-methodfamily-registry.md) — How to declare a set of retained candidates after a selection pass without claiming a final choice or work has occurred.
+- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md) — How to build a citable, replayable path through work and results so reviewers can recover the full provenance chain.
+- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md) — How to calibrate cross-tradition comparisons into explicit correspondence records with tests and refresh triggers.
+- [G.8 - SoS‑LOG Bundles & Maturity Ladders (G.8)](10-g8-g8-soslog-bundles-maturity-ladders.md) — A packaging kit that binds selection rules and maturity levels into one stable, citable bundle a selector can consume.
+- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md) — How to compare rival methods under one declared baseline so results are reproducible and assumptions are visible.
+- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md) — How to bundle outputs into a shipping package with stable references that supports auditing and refresh.
+- [G.11 - Telemetry-Driven Refresh and Decay Orchestrator (G.11)](13-g11-g11-telemetry-driven-refresh-and-decay-orchestrator.md) — How to plan targeted refreshes of shipped artifacts when sources, editions, or telemetry signals have changed.
+- [G.12 — DHC Dashboards (Discipline‑Health time‑series; admissible telemetry; generation‑first) (G.12)](14-g12-g12-dhc-dashboards-disciplinehealth-timeseries-admissible-te.md) — How to produce discipline-health dashboards that are admissible and reproducible, without hidden re-aggregation.
+- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md) — How to connect external research repositories to the framework without letting them quietly override its governing rules.
