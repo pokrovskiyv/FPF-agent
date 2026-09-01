@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-09-01
+
+### What's New
+- The searchable spec grew to 107,170 lines (343 sections, 348 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- New help for **deciding what to do next when work is mid-stream and conditions are changing** — instead of assuming you know the whole plan upfront, you now have a structured way to pick the next action given what's actually true right now, steer work toward a recoverable state, and adjust when a situation shifts during execution.
+- New pattern for **figuring out which system is actually implicated** when a consequence or impact is at stake — helpful when "the system" in a statement is vague and different teams might draw the boundary differently.
+- New patterns for **recovering what method is actually being used** across multiple instances of similar work — useful when you want to explain what teams are actually doing in common before writing it up as a reusable approach.
+- Expanded **trust and assurance calculus** (new B.3 pattern): structured reasoning about what evidence supports a trust claim and where the assurance chain breaks down.
+- New help for **temporal claims** — how to tell whether a stated reading is a snapshot, a trend, or an intervention-sensitive change, and what you can legitimately do with each type.
+- New pattern for **causal-use discipline**: keeping causal-looking results (correlations, model outputs) within the boundaries of what they were actually built to support — prevents misuse of analysis results.
+- New **constraint validity and gate patterns** (A.20, A.21): how to check that a constraint is valid for a transformation step, and how to gate decisions on results from independent checks rather than the same source.
+- New **representation selection** pattern (C.37): choosing between representations of the same thing only when the choice actually changes what action you take.
+- New **practice architecture synthesis** pattern: combining several independent structural views of a practice into one coherent picture.
+- Nine new quick-start **practical-use cards** cover: live work steering, method recovery, getting a bounded result from another practice, naming, system recognition, timing, causal use, measurement, and mathematical modeling — each gives you a fast first move for that type of question.
+- Expanded **pattern authoring guidance** (E.8, E.11, E.15): clearer rules for how patterns change across editions, how impact is analyzed, and how to keep pattern publications consistent across framework versions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
+
 ## 2026-08-15
 
 ### What's New

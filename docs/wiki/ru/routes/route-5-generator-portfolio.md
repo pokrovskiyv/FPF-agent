@@ -3,7 +3,7 @@ title: "Маршрут 5: Портфель подходов"
 sources:
   - sections/routes/route-5-generator-portfolio.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - route
   - tier-1

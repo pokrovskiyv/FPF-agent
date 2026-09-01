@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (130 refs).
+Patterns in other Parts that reference patterns in this directory (135 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -9,8 +9,12 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | A.1 | coordinates_with | B.3.5 |
 | A.1 | coordinates_with | B.3 |
 | A.1 | coordinates_with | B.2 |
+| A.1.CSD | builds_on | B.1 |
+| A.1.CSD | builds_on | B.1.2 |
+| A.1.CSD | coordinates_with | B.2 |
 | A.1.STM | coordinates_with | B.3 |
 | A.2.4 | informs | B.3 |
+| A.21 | coordinates_with | B.3 |
 | A.3 | coordinates_with | B.1.4 |
 | A.3.1 | coordinates_with | B.1.5 |
 | A.3.2 | coordinates_with | B.1.5 |
@@ -22,9 +26,9 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.6 | coordinates_with | B.3 |
-| A.6.3 | used_by | B.5.3 |
 | A.6.3.CR | coordinates_with | B.5.2 |
 | A.6.3.RT | coordinates_with | B.3 |
+| A.6.4 | coordinates_with | B.3 |
 | A.6.9 | coordinates_with | B.3 |
 | A.6.A | builds_on | B.4.1 |
 | A.6.A | coordinates_with | B.5.2.0 |
@@ -38,6 +42,7 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.10 | coordinates_with | B.3 |
+| A.10.1 | coordinates_with | B.3 |
 | A.14 | prerequisite_for | B.1.1 |
 | A.15 | coordinates_with | B.3 |
 | A.15.1 | coordinates_with | B.1.4 |
@@ -56,6 +61,7 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | A.19.SPR | builds_on | B.3 |
 | A.19.ULSAM | builds_on | B.3 |
 | A.19.UNM | coordinates_with | B.3 |
+| A.20 | coordinates_with | B.3 |
 | A.9 | prerequisite_for | B.1 |
 
 ## From 09-part-c-kernel-extension-specifications
@@ -63,12 +69,12 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | Source | Relation | Target |
 |--------|----------|--------|
 | C.1 | coordinates_with | B.1.6 |
+| C.11.CRC | coordinates_with | B.3 |
 | C.16 | coordinates_with | B.3 |
 | C.16.Q | coordinates_with | B.4.1 |
 | C.16.Q | coordinates_with | B.5.2.0 |
 | C.16.Q | coordinates_with | B.3 |
-| C.17 | coordinates_with | B.5.2.1 |
-| C.17 | coordinates_with | B.3 |
+| C.17 | builds_on | B.3 |
 | C.17 | coordinates_with | B.4 |
 | C.19 | builds_on | B.3 |
 | C.19.1 | builds_on | B.3 |
@@ -117,6 +123,7 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 | C.32.CONWAY | coordinates_with | B.3 |
 | C.32.FAIL | coordinates_with | B.3 |
 | C.32.MLAO | coordinates_with | B.3 |
+| C.32.MWA | builds_on | B.1.5 |
 | C.32.PAD | coordinates_with | B.3 |
 | C.32.PAD | coordinates_with | B.2 |
 | C.32.PAD | coordinates_with | B.2.P |
@@ -138,8 +145,6 @@ Patterns in other Parts that reference patterns in this directory (130 refs).
 |--------|----------|--------|
 | E.10 | coordinates_with | B.3 |
 | E.14 | coordinates_with | B.3.5 |
-| E.15 | builds_on | B.4 |
-| E.15 | builds_on | B.3 |
 | E.16 | builds_on | B.3 |
 | E.17 | coordinates_with | B.3 |
 | E.17.AUD.OOTD | coordinates_with | B.3 |

@@ -3,7 +3,7 @@ title: "Маршрут 10: Эволюция и обучение"
 sources:
   - sections/routes/route-10-evolution-learning.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - route
   - tier-1

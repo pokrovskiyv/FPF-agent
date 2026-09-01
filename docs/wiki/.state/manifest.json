@@ -1,22 +1,22 @@
 {
     "version": 1,
-    "last_compiled": "2026-07-15T17:17:20Z",
+    "last_compiled": "2026-09-01T07:27:58Z",
     "sources": {
         ".claude-plugin/marketplace.json": {
             "hash": "a73bb8b208397bcced1df7c65ebefd5c",
             "last_compiled": "2026-06-16T07:21:51Z"
         },
         ".claude-plugin/plugin.json": {
-            "hash": "bac51a92805b57855008f96068e10719",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "6eacf4ad751bda694b39f9776e2c462b",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "CLAUDE.md": {
-            "hash": "51f0a8474303ff8913086894c93ca1b7",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "b496ee2d31b503357a51e2d935b43977",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "Readme.md": {
-            "hash": "3c29d5dce76fd3c003a7ae06b261ba41",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "443919753e8e11239a1cac1dc3128dcb",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "agents/fpf-classifier.md": {
             "hash": "f4033efa958b0f1dad09376b7fc9e2ca",
@@ -51,8 +51,8 @@
             "last_compiled": "2026-06-16T07:21:51Z"
         },
         "scripts/build_metadata.py": {
-            "hash": "2e55fc3c6cd2f99596bf3264ce812938",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "b129ad47c1e96f90643129e281be8a6f",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "scripts/build_routes.py": {
             "hash": "20b9a5ca287bcde97fb84dc76d9493a0",
@@ -99,40 +99,40 @@
             "last_compiled": "2026-06-16T07:21:51Z"
         },
         "sections/routes/route-1-project-alignment.md": {
-            "hash": "4c23b5ffe35883808eb24ec67a65e815",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "7a221481cdac41aa369602b571ad2726",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-10-evolution-learning.md": {
-            "hash": "0bdcd126b6ff441efa6473a5e860047e",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "f42660e2df262b5ac590728c01750917",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-2-language-discovery.md": {
-            "hash": "886f9dcd481c571f9f68ad1eb79ea151",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "72a4240021e0585a181b0d3764b11de5",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-3-boundary-unpacking.md": {
-            "hash": "180d0ef39c11d38720a553c7ee27b137",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "7163731553e6b1ba53c648233afef64a",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-4-comparison-selection.md": {
-            "hash": "b8013f7db90acd074ba0e1f343a0965f",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "2f24d28e3e57d72ef7a9996c59fc4046",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-5-generator-portfolio.md": {
-            "hash": "40a3549f13906a6c1342c16ff943301d",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "6ac7bcdcba8b8ac95c03973d4f6fb119",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-6-rewrite-explanation.md": {
-            "hash": "4135055e93097a505971966754107caf",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "82f3f0748e82f378ec982e372b545aaf",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-7-ethical-assurance.md": {
             "hash": "a033521b41382c0da7d7f1c611001504",
             "last_compiled": "2026-07-01T07:00:00Z"
         },
         "sections/routes/route-8-trust-assurance.md": {
-            "hash": "8bf53970b091cbad561cc3c4eb29099a",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "234a8491db926b804859dd08624f8741",
+            "last_compiled": "2026-09-01T07:27:58Z"
         },
         "sections/routes/route-9-composition-aggregation.md": {
             "hash": "fd98001a3eab78f86dafdb40ba09a5a9",
@@ -200,7 +200,7 @@
                 "scripts/enrich_metadata.py",
                 "scripts/split_spec.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/architecture/overview.md": {
             "sources": [
@@ -209,7 +209,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/architecture/plain-language-contract.md": {
             "sources": [
@@ -218,7 +218,7 @@
                 "agents/fpf-reviewer.md",
                 "scripts/build_lexical.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/architecture/skill-entry-point.md": {
             "sources": [
@@ -226,7 +226,7 @@
                 ".claude-plugin/plugin.json",
                 "skills/fpf/SKILL.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/architecture/sync-and-rebuild.md": {
             "sources": [
@@ -234,7 +234,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/architecture/three-tier-retrieval.md": {
             "sources": [
@@ -261,7 +261,7 @@
                 "CLAUDE.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/concepts/pipeline-depth.md": {
             "sources": [
@@ -275,7 +275,7 @@
                 "scripts/build_routes.py",
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/concepts/tier.md": {
             "sources": [
@@ -306,7 +306,7 @@
             "sources": [
                 "scripts/build_metadata.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/modules/build_routes.md": {
             "sources": [
@@ -378,43 +378,43 @@
             "sources": [
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-10-evolution-learning.md": {
             "sources": [
                 "sections/routes/route-10-evolution-learning.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-2-language-discovery.md": {
             "sources": [
                 "sections/routes/route-2-language-discovery.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-3-boundary-unpacking.md": {
             "sources": [
                 "sections/routes/route-3-boundary-unpacking.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-4-comparison-selection.md": {
             "sources": [
                 "sections/routes/route-4-comparison-selection.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-5-generator-portfolio.md": {
             "sources": [
                 "sections/routes/route-5-generator-portfolio.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-6-rewrite-explanation.md": {
             "sources": [
                 "sections/routes/route-6-rewrite-explanation.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-7-ethical-assurance.md": {
             "sources": [
@@ -426,7 +426,7 @@
             "sources": [
                 "sections/routes/route-8-trust-assurance.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "en/routes/route-9-composition-aggregation.md": {
             "sources": [
@@ -486,7 +486,7 @@
                 "scripts/enrich_metadata.py",
                 "scripts/split_spec.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/architecture/overview.md": {
             "sources": [
@@ -495,7 +495,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/architecture/plain-language-contract.md": {
             "sources": [
@@ -504,7 +504,7 @@
                 "agents/fpf-reviewer.md",
                 "scripts/build_lexical.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/architecture/skill-entry-point.md": {
             "sources": [
@@ -512,7 +512,7 @@
                 ".claude-plugin/plugin.json",
                 "skills/fpf/SKILL.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/architecture/sync-and-rebuild.md": {
             "sources": [
@@ -520,7 +520,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/architecture/three-tier-retrieval.md": {
             "sources": [
@@ -547,7 +547,7 @@
                 "CLAUDE.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/concepts/pipeline-depth.md": {
             "sources": [
@@ -561,7 +561,7 @@
                 "scripts/build_routes.py",
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/concepts/tier.md": {
             "sources": [
@@ -592,7 +592,7 @@
             "sources": [
                 "scripts/build_metadata.py"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/modules/build_routes.md": {
             "sources": [
@@ -664,43 +664,43 @@
             "sources": [
                 "sections/routes/route-1-project-alignment.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-10-evolution-learning.md": {
             "sources": [
                 "sections/routes/route-10-evolution-learning.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-2-language-discovery.md": {
             "sources": [
                 "sections/routes/route-2-language-discovery.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-3-boundary-unpacking.md": {
             "sources": [
                 "sections/routes/route-3-boundary-unpacking.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-4-comparison-selection.md": {
             "sources": [
                 "sections/routes/route-4-comparison-selection.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-5-generator-portfolio.md": {
             "sources": [
                 "sections/routes/route-5-generator-portfolio.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-6-rewrite-explanation.md": {
             "sources": [
                 "sections/routes/route-6-rewrite-explanation.md"
             ],
-            "last_updated": "2026-07-15T17:17:20Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-7-ethical-assurance.md": {
             "sources": [
@@ -712,7 +712,7 @@
             "sources": [
                 "sections/routes/route-8-trust-assurance.md"
             ],
-            "last_updated": "2026-06-15T19:40:30Z"
+            "last_updated": "2026-09-01T07:27:58Z"
         },
         "ru/routes/route-9-composition-aggregation.md": {
             "sources": [

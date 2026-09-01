@@ -4,7 +4,7 @@ sources:
   - CLAUDE.md
   - agents/fpf-sync.md
   - scripts/update_changelog.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - architecture
   - sync
@@ -68,7 +68,7 @@ Runbook fpf-sync состоит из **восьми** шагов. Шаги 2–5
                git push
 ```
 
-Коммит на Шаге 8 дополнительно запускает PreToolUse-хук, который сам добавляет запись в changelog по Conventional Commit и бампит `.claude-plugin/plugin.json`. Текущая версия плагина — **0.6.3**.
+Коммит на Шаге 8 дополнительно запускает PreToolUse-хук, который сам добавляет запись в changelog по Conventional Commit и бампит `.claude-plugin/plugin.json`. Текущая версия плагина — **0.10.0**.
 
 ## Решения
 

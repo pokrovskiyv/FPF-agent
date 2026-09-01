@@ -3,7 +3,7 @@ title: "Route 6: Rewrite Explanation"
 sources:
   - sections/routes/route-6-rewrite-explanation.md
   - scripts/build_routes.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - route
   - tier-1
@@ -23,7 +23,7 @@ Triggered when the user says "rewrite without changing the meaning", "explain th
 - **Chain length:** 5 sections in full load (the shortest Tier 1 route), 3 of them core.
 - **Core sections:** `A.6.3.CR` (conservative retextualization — entity-of-concern-preserving), `A.6.3.RT` (representation-scheme transition, EntityOfConcern-preserving), `E.17.EFP` (ExplanationFaithfulnessProfile — explanation-use discipline).
 - **Full chain adds:** `E.17.ID.CR` (ComparativeReviewUnit — bounded comparison over comparative review units) and `E.17.AUD.LHR` (PublicationUnit Stability Discipline and Local Head Restoration).
-- **`A.6.3.CR` resolution:** it is listed first in the chain (and is core) and resolves to `sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md`.
+- **`A.6.3.CR` resolution:** it is listed first in the chain (and is core) and resolves to `sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md`.
 
 ## Status
 

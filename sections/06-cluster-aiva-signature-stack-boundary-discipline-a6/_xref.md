@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (215 refs).
+Patterns in other Parts that reference patterns in this directory (222 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -10,6 +10,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | A.1.1 | builds_on | A.6.REL |
 | A.1.1 | coordinates_with | A.6.0 |
 | A.1.1 | coordinates_with | A.6.5 |
+| A.1.CSD | coordinates_with | A.6.RCD |
 | A.1.SCR | coordinates_with | A.6.RCD |
 | A.2 | builds_on | A.6.REL |
 | A.2 | coordinates_with | A.6.RSIR |
@@ -36,6 +37,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | A.22 | builds_on | A.6.1 |
 | A.22 | builds_on | A.6.P |
 | A.22 | builds_on | A.6.3 |
+| A.3.1 | coordinates_with | A.6.RCD |
 | A.3.1 | coordinates_with | A.6.1 |
 | A.3.1 | coordinates_with | A.6.5 |
 | A.3.1 | coordinates_with | A.6.REL |
@@ -57,6 +59,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 |--------|----------|--------|
 | A.10 | builds_on | A.6.1 |
 | A.12 | coordinates_with | A.6.RCD |
+| A.14 | coordinates_with | A.6.5 |
 | A.15.1 | coordinates_with | A.6.1 |
 | A.15.2 | coordinates_with | A.6.1 |
 | A.15.2 | coordinates_with | A.6.5 |
@@ -69,6 +72,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | A.15.6 | coordinates_with | A.6.RCD |
 | A.15.6 | coordinates_with | A.6.P |
 | A.15.6 | coordinates_with | A.6.1 |
+| A.15.8 | builds_on | A.6.RCD |
 | A.15.PROD | builds_on | A.6.RCD |
 | A.15.PROD | coordinates_with | A.6.P |
 | A.16.2 | coordinates_with | A.6.P |
@@ -93,6 +97,8 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | A.19.UNM | builds_on | A.6.5 |
 | A.19.USCM | builds_on | A.6.1 |
 | A.19.USCM | builds_on | A.6.5 |
+| A.20 | builds_on | A.6.1 |
+| A.20 | builds_on | A.6.4 |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
 
@@ -106,7 +112,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | B.2.4 | coordinates_with | A.6.F |
 | B.2.4 | coordinates_with | A.6.M |
 | B.2.P | coordinates_with | A.6.F |
-| B.3 | coordinates_with | A.6 |
+| B.3 | coordinates_with | A.6.1 |
 | B.4.1 | coordinates_with | A.6.A |
 | B.5.2 | coordinates_with | A.6.P |
 | B.5.2.0 | coordinates_with | A.6.P |
@@ -177,6 +183,7 @@ Patterns in other Parts that reference patterns in this directory (215 refs).
 | C.33 | coordinates_with | A.6.M |
 | C.34 | coordinates_with | A.6.M |
 | C.35 | coordinates_with | A.6.M |
+| C.37 | coordinates_with | A.6.3.RT |
 
 ## From 11-part-e-the-fpf-constitution-and-authoring-guides
 

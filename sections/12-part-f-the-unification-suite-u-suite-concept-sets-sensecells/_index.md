@@ -1,23 +1,24 @@
 # Part F - The Unification Suite (U-Suite): Concept Sets, SenseCells, and System-Role Kinds and Assignments
 
-- [F.0.1 - Source-Local Meaning Recovery (F.0.1)](01-f01-f01-source-local-meaning-recovery.md) — How to establish what a word means in one exact source passage before comparing or reusing it elsewhere.
-- [F.1 - Question-Relative Source Selection (F.1)](02-f1-f1-question-relative-source-selection.md) — How to pick the smallest set of sources whose claims can genuinely change the answer to a stated question.
-- [F.2 — Term Harvesting & Normalisation (F.2)](03-f2-f2-term-harvesting-normalisation.md) — How to extract what a source says in its own words without adding meanings or structure the source doesn't contain.
-- [F.3 - Source-Local Sense Clustering (F.3)](04-f3-f3-source-local-sense-clustering.md) — How to merge synonymous expressions and split distinct meanings within one source, staying true to its own usage.
-- [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind (F.4)](05-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md) — How to describe a participant type so it is recognizable and teachable without importing assignment or authority claims.
-- [F.5 - Naming Discipline for U-kind Names and SystemRoleKindDescription Labels (F.5)](06-f5-f5-naming-discipline-for-u-kind-names-and-systemrolekinddesc.md) — Rules for choosing names that stay faithful to what is governed without importing authority or responsibility.
-- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check (F.6)](07-f6-f6-systemroleassignment-and-performed-work-attribution-check.md) — How to verify a work attribution actually links a dated work occurrence to the right assignment, not just a label.
-- [F.7 - Concept-Set Table (F.7)](08-f7-f7-concept-set-table.md) — A comparison grid for putting exact source-local meanings side by side so the argument is visible rather than scattered.
-- [F.8 - Mint-or-Reuse Decision (F.8)](09-f8-f8-mint-or-reuse-decision.md) — How to decide whether a candidate term needs a new formal name or can safely reuse an existing designation.
-- [F.9 - Alignment and Bridge across Contexts (F.9)](10-f9-f9-alignment-and-bridge-across-contexts.md) — How to establish whether a term from one tradition has a genuine counterpart in another, without collapsing differences.
-- [F.9.1 - Bridge Stance Note (F.9.1)](11-f91-f91-bridge-stance-note.md) — A short note that prevents readers from over-reading a cross-context correspondence as equivalence or permission.
-- [F.10 - Status Families Mapping: Evidence, Standard, and Requirement Status (F.10)](12-f10-f10-status-families-mapping-evidence-standard-and-requiremen.md) — How to stop one status word from hiding different claims about evidence, standard approval, and requirement satisfaction.
-- [F.11 - Method Quartet Harmonisation (F.11)](13-f11-f11-method-quartet-harmonisation.md) — Four questions that separate a method from its description, from actual work performed, and from any output produced.
-- [F.12 — Service Acceptance–Work Evidence Link (F.12)](14-f12-f12-service-acceptancework-evidence-link.md) — How to judge a service promise against what actually happened, with explicit evidence, time windows, and evaluation work.
-- [F.13 - Lexical Continuity & Deprecation (F.13)](15-f13-f13-lexical-continuity-deprecation.md) — How to rename, alias, split, or retire a term without erasing history or silently changing what older texts meant.
-- [F.14 - Anti-Explosion Control for System-Role and Status Name Families (F.14)](16-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md) — A control check that stops vocabulary from multiplying faster than the real distinctions it was meant to capture.
-- [F.15 - Static and Regression Conformance Harness for Unification (F.15)](17-f15-f15-static-and-regression-conformance-harness-for-unificatio.md) — A compact harness for checking whether a naming slice is locally sound now and stays sound across changes.
-- [F.16 - Worked-Example Template (Cross-Domain) (F.16)](18-f16-f16-worked-example-template-cross-domain.md) — A one-page worked-example template that shows claim, actual values, evidence, and boundaries clearly enough to replay.
-- [F.17 - Unified Term Sheet (F.17)](19-f17-f17-unified-term-sheet.md) — A reader-facing row linking a concept to its name, definition, and admitted uses so later work can cite it reliably.
-- [F.18 - Local-First Unification Naming Protocol (F.18)](20-f18-f18-local-first-unification-naming-protocol.md) — How to commit to a stable reusable name without accidentally creating new ontology through naming alone.
-- [F.19 - Ontology-First Plain Technical Rewriting (F.19)](21-f19-f19-ontology-first-plain-technical-rewriting.md) — How to strip apparatus from technical prose to reveal the actual object and action, then rewrite it plainly.
+- [F.0.1 - Source-Local Meaning Recovery (F.0.1)](01-f01-f01-source-local-meaning-recovery.md) — How to recover what a term means in its original source before comparing it across sources.
+- [F.0.2 - Conceptual Synthesis across Source Ontologies (F.0.2)](02-f02-f02-conceptual-synthesis-across-source-ontologies.md) — How to synthesize concepts from different source ontologies without collapsing their differences.
+- [F.1 - Question-Relative Source Selection (F.1)](03-f1-f1-question-relative-source-selection.md) — How to choose which sources to consult based on the question being asked.
+- [F.2 — Term Harvesting & Normalisation (F.2)](04-f2-f2-term-harvesting-normalisation.md) — How to collect and normalize terms from sources before comparison.
+- [F.3 - Source-Local Sense Clustering (F.3)](05-f3-f3-source-local-sense-clustering.md) — How to group different senses of the same term within one source.
+- [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind (F.4)](06-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md) — How to describe an exact local role kind in its own context.
+- [F.5 - Naming Discipline for U-kind Names and SystemRoleKindDescription Labels (F.5)](07-f5-f5-naming-discipline-for-u-kind-names-and-systemrolekinddesc.md) — How to name kinds and role descriptions without creating ambiguity.
+- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check (F.6)](08-f6-f6-systemroleassignment-and-performed-work-attribution-check.md) — How to check that performed work is correctly attributed to its assignment.
+- [F.7 - Concept-Set Table (F.7)](09-f7-f7-concept-set-table.md) — How to put local meanings and relations side by side for comparison without asserting identity.
+- [F.8 - Mint-or-Reuse Decision (F.8)](10-f8-f8-mint-or-reuse-decision.md) — How to decide whether to create a new concept or reuse an existing one.
+- [F.9 - Alignment and Bridge across Contexts (F.9)](11-f9-f9-alignment-and-bridge-across-contexts.md) — How to establish a governed bridge between concepts in different contexts.
+- [F.9.1 - Bridge Stance Note (F.9.1)](12-f91-f91-bridge-stance-note.md) — How to state what a bridge does and does not carry across contexts.
+- [F.10 - Status Families Mapping: Evidence, Standard, and Requirement Status (F.10)](13-f10-f10-status-families-mapping-evidence-standard-and-requiremen.md) — How to map evidence, standard, and requirement statuses across different sources.
+- [F.11 - Method Quartet Harmonisation (F.11)](14-f11-f11-method-quartet-harmonisation.md) — How to harmonize the four method objects across different frameworks.
+- [F.12 — Service Acceptance–Work Evidence Link (F.12)](15-f12-f12-service-acceptancework-evidence-link.md) — How to link service acceptance records to the work evidence behind them.
+- [F.13 - Lexical Continuity & Deprecation (F.13)](16-f13-f13-lexical-continuity-deprecation.md) — How to retire a term without breaking its downstream uses.
+- [F.14 - Anti-Explosion Control for System-Role and Status Name Families (F.14)](17-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md) — How to keep system-role and status name families from proliferating uncontrollably.
+- [F.15 - Static and Regression Conformance Harness for Unification (F.15)](18-f15-f15-static-and-regression-conformance-harness-for-unificatio.md) — How to test that a unification record still conforms to its governing patterns.
+- [F.16 - Worked-Example Template (Cross-Domain) (F.16)](19-f16-f16-worked-example-template-cross-domain.md) — A template for showing how to apply the unification suite to a cross-domain problem.
+- [F.17 - Unified Term Sheet (F.17)](20-f17-f17-unified-term-sheet.md) — How to create a reader-facing row for a term that already has a governed definition.
+- [F.18 - Local-First Unification Naming Protocol (F.18)](21-f18-f18-local-first-unification-naming-protocol.md) — How to name unified concepts starting from their local expressions.
+- [F.19 - Ontology-First Plain Technical Rewriting (F.19)](22-f19-f19-ontology-first-plain-technical-rewriting.md) — How to rewrite technical text so it recovers and exposes the underlying ontology.

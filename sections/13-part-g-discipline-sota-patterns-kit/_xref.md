@@ -1,6 +1,6 @@
 # Cross-References into 13-part-g-discipline-sota-patterns-kit
 
-Patterns in other Parts that reference patterns in this directory (159 refs).
+Patterns in other Parts that reference patterns in this directory (164 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -11,9 +11,7 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 | A.1 | coordinates_with | G.11 |
 | A.21 | coordinates_with | G.6 |
 | A.21 | coordinates_with | G.11 |
-| A.21 | coordinates_with | G.0 |
-| A.21 | coordinates_with | G.5 |
-| A.21 | coordinates_with | G.9 |
+| A.3.1 | coordinates_with | G.5 |
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -31,6 +29,9 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 |--------|----------|--------|
 | A.10 | coordinates_with | G.11 |
 | A.10 | coordinates_with | G.4 |
+| A.10.1 | coordinates_with | G.6 |
+| A.10.1 | coordinates_with | G.11 |
+| A.15.7 | coordinates_with | G.11 |
 | A.15.PROD | coordinates_with | G.11 |
 | A.18 | coordinates_with | G.0 |
 | A.19 | coordinates_with | G.4 |
@@ -59,8 +60,6 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 | A.19.UNM | coordinates_with | G.2 |
 | A.19.USCM | builds_on | G.0 |
 | A.19.USCM | coordinates_with | G.2 |
-| A.20 | coordinates_with | G.5 |
-| A.20 | coordinates_with | G.6 |
 | A.20 | coordinates_with | G.11 |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
@@ -69,6 +68,8 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 |--------|----------|--------|
 | B.1.6 | coordinates_with | G.6 |
 | B.1.6 | coordinates_with | G.11 |
+| B.3 | builds_on | G.6 |
+| B.3 | coordinates_with | G.11 |
 | B.5.2.1 | coordinates_with | G.5 |
 
 ## From 09-part-c-kernel-extension-specifications
@@ -79,6 +80,8 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 | C.16 | coordinates_with | G.6 |
 | C.16 | coordinates_with | G.11 |
 | C.16 | coordinates_with | G.4 |
+| C.17 | coordinates_with | G.5 |
+| C.17 | coordinates_with | G.11 |
 | C.18 | coordinates_with | G.5 |
 | C.18 | coordinates_with | G.9 |
 | C.18 | coordinates_with | G.11 |
@@ -157,6 +160,7 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 |--------|----------|--------|
 | E.10.MOVE | coordinates_with | G.11 |
 | E.11 | coordinates_with | G.11 |
+| E.11.DSG | coordinates_with | G.11 |
 | E.16 | coordinates_with | G.4 |
 | E.16 | coordinates_with | G.5 |
 | E.16 | coordinates_with | G.9 |
@@ -192,6 +196,7 @@ Patterns in other Parts that reference patterns in this directory (159 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| F.0.2 | coordinates_with | G.2 |
 | F.18 | coordinates_with | G.2 |
 | F.18 | coordinates_with | G.6 |
 | F.18 | coordinates_with | G.10 |

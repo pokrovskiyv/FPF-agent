@@ -3,7 +3,7 @@ title: "Маршрут 8: Доверие и обоснование"
 sources:
   - sections/routes/route-8-trust-assurance.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - spec
   - route

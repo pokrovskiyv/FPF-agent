@@ -1,0 +1,691 @@
+## E.8 - FPF Authoring Conventions & Style Guide
+
+> **Type:** Architectural (A)
+> **Status:** Stable
+> **Normativity:** Normative (unless explicitly marked informative)
+
+### E.8:0 - Use this when
+
+Use `E.8` when you are writing, revising, or reviewing one FPF pattern and need to know what shape, voice, reader-recognition function, and assurance material the pattern must carry before it can be treated as mature FPF text.
+
+Use it especially when a draft is technically correct but hard to use: the cold reader cannot tell when to apply it, what action to take, what mistake that action prevents, which related pattern defines or constrains a specific outside claim, or which assurance material is informative rather than the first user-facing guidance.
+
+**Not this pattern when.** Use `E.9` when the main work is deciding why FPF should change and how that decision is distributed across patterns. Use `E.19` when the main work is an admission or refresh review. Use the local domain pattern when the question is what FPF says inside that domain rather than how a pattern should be authored.
+
+### E.8:0.1 - What goes wrong if missed
+
+A pattern can satisfy a checklist and still be practically unreadable. It may open with package architecture instead of a recognisable working moment, bury its payoff, hide the pattern that defines or constrains a specific outside claim, or let assurance prose silently replace the reader-facing claim. The result is a formally neat text that authors can defend but practitioners cannot reliably use.
+
+### E.8:0.2 - What this buys
+
+`E.8` gives FPF authors one shared pattern shape and one shared authoring discipline: recognition text first, assurance text second, canonical sections present, terminology kept stable, SoTA used as current practice grounding rather than decoration, and practical consequences visible before a reader has to reconstruct the architecture.
+
+**First useful move.** Put the working situation, first action-guiding move, practical payoff, ordinary boundary, and nearest heavier assurance condition into the recognition text before tightening template details or conformance material.
+
+**Solution and working move.** `Solution` is the canonical section that gives the pattern's conditional answer to its `Problem frame`, `Problem`, and `Forces`. It tells the reader what to do or decide, under which conditions, what result to seek, and when to stop or return. One `Solution` may contain several such actions or judgements. A **working move** is ordinary reader-facing wording for one of those actions or judgements. It is not another section name, the whole `Solution`, a root `U.Move`, performed `U.Work`, or an actual `U.Transformation`. `E.11.PUA` governs use of one selected `Solution` to reach the first useful result. When alternatives are formally qualified under `A.22.CGUS`, call them `continuation candidates`; `E.18.3` applies only when the selected CGUS uses a qualifying transformation-flow substrate.
+
+**Move wording in pattern prose.** In ordinary prose, say **recommend this pattern use**, **coordinate these uses**, or **show their total order** when those are the actual claims. When the durable governed object itself matters, use its exact published designation: `PatternUseRecommendation@Context`, `PatternUseCoordination@Context`, or `PatternUseSequence@Context` under `E.11.PUR`; the suffix is retrieval wording, not an identity constructor. The sequence designation applies only to an admitted total order for the named receiving use. Otherwise recover the direct work, plan, gate, transformation, publication, architecture, source, or language-state relation under its exact rule. State what the cited pattern contributes and use `E.10.MOVE` when the current value remains unclear.
+
+**Cheap stop.** If the draft already gives a cold reader the working situation, first useful move, practical payoff, ordinary boundary, and nearest heavier assurance condition, do not add more authoring apparatus just to look mature. Use conformance material to verify that guidance; do not let it replace the guidance.
+
+**FPF-governed wording extension.** Add heavier assurance, conformance, SoTA grounding, relation material, or related-pattern material only when the light recognition text would leave a false claim, unstable primary `EntityOfConcern`, missing definition, constraint, test, method, or other concrete contribution for a specific claim, relation, or boundary, unbacked practical payoff, or misleading admissible use.
+
+When an authoring pass claims quality improvement rather than ordinary drafting, keep these pattern responsibilities distinct: `E.22` frames the improvement-oriented quality-evaluation question, the object-under-improvement evaluation such as `E.21` or `E.9.DA` supplies value meanings and stop meanings, `C.16.Q` repairs overloaded quality and evaluative-characterization wording, `C.25` carries engineering quality-family endpoints when those endpoints are claimed, and `E.23` governs any repeated quality-improvement method. Closing checklist rows or satisfying a review profile is not by itself quality improvement.
+
+When a pattern claims practical payoff or uses a score, coordinate value, checklist result, benchmark, projection signal, review result, or release posture as evidence of value, name the intended value and the visible proxy relation. If the visible proxy is being treated as the value itself, apply `E.13` and repair the proxy-to-value substitution before the payoff claim is admitted.
+
+
+**Quality or projection evidence placement.** Pattern-quality status, corpus projection, README, ToC, `E.11`, and `I.2` alignment, card or retrieval evidence, cold-reader evidence, monolith parity, landing evidence, developer, reviewer, and executor correspondence, and other quality-carrier facts belong in the evaluation result, review run record, projection carrier, or release or landing evidence carrier. They do not belong anywhere in the pattern itself, including notes, appendices, `Relations`, `Rationale`, `SoTA-Echoing`, examples, tables, and checklist rows, unless the pattern's own `EntityOfConcern` and intended-reader use are that evaluation or projection work. Part E patterns may govern FPF-pattern authoring, review, evaluation, entry, or publication when that is their declared EntityOfConcern; that authoring scope does not admit rules or rationale about developing that same pattern version. This is a content-use test, not a lexical test: the same word may be user-facing content in an evaluation pattern and carrier leakage when it reports quality, landing, projection, or author or reviewer turn state for this pattern.
+
+**Pattern positions across coupled flows.** In authoring guidance, speak at the pattern level. An author may use `E.21` questions provisionally while drafting and may verify one focused repair; that is development evidence, not the independent complete `E.21` result, and it closes no maturity, readiness, admission, or landing claim. When one of those conclusions is current, an independent evaluator completes `E.21`, while the admission reviewer uses `E.19` and remains a separate judgment. A practitioner may later select and use the pattern, and a later evaluator may reopen it. These positions may be connected by the applicable flow relation—for example, transfer, feedback, return, projection, landing, edition change, or repair—inside one `TransformationFlowStructure`, but their `EntityOfConcern` assignments stay distinct. Development evidence may cause a rewrite; reviewer exchange, status, projection proof, landing proof, and use-found evidence remain in their carriers rather than becoming guidance in the pattern. A publication, principle scheme, WorkPlan, or self-evolving specification may help create or constrain later Work without becoming that Work, its project evidence, gate passage, assurance, edition bump, or applied content.
+
+**Maturity rule.** Section completeness is not pattern maturity. A pattern matures when its `Problem frame`, `Solution`, worked cases, boundaries, source/SoTA use, relations, consequences, and conformance checks all point to the same usable action guidance for the declared reader and use. If the reader still needs the DRR, source notes, campaign handoff, or author memory to know what to do, the pattern is not mature for that use.
+
+**Primary EntityOfConcern in plain terms.** The primary `EntityOfConcern` of `E.8` is the authored FPF pattern: its canonical sections, reader-recognition function, wording discipline, examples, rationale, anti-patterns, SoTA-Echoing, and relations.
+
+**Primary working reader.** The first reader is an FPF author or reviewer shaping pattern prose for later practitioners and managers. The downstream practitioner is the reader the pattern must ultimately serve, so the authoring guide must model the same recognition discipline it requires.
+
+### E.8:0.3 - Pattern Kind In Plain Terms
+
+An FPF pattern supplies action- or judgement-guiding content for a recurring working situation. “Use this pattern” and “apply this pattern” are valid shorthand for a person or another capable system using that content to choose an action or judgement. The pattern episteme itself does not act, decide, perform `U.Work`, or cause a `U.Transformation`.
+
+Call the pattern content a `U.MethodDescription` only when it describes one independently admitted `U.Method` under A.3.2 and that distinction matters to the current claim. Keep the Method and its description episteme separate. A `Solution` can guide future action or help choose a Method without establishing that any dated Work has happened. The intended reader, an actual performer System, local system-role classification, assignment, capability, responsibility, authority, result, and Transformation remain separate whenever those claims are current.
+
+When a pattern or worked case does assert dated `U.Work`, first recover every actual performer's A.13 core: the admitted `U.System`, local agential kind and criterion, classification, same obtaining assignment, scope, working situation, window, and adequate core evidence; add a characteristic profile only when its own receiving use consumes it. Then independently admit the Work under A.15.1 from its performance history, enacted Method, time, and containing System. Add F.6 afterward only when the pattern also needs precise assignment-bound attribution through that same assignment. A short practitioner sentence may omit identifiers unused by its receiving claim only when every relation the claim consumes remains recoverable.
+
+`Pattern application` is metonymic shorthand for user-side use: the user or another capable system recognizes the working situation and uses the pattern content and its `Solution` to shape the next admissible action or judgement. Ordinary guidance creates no fictive performer, assignment, Work, result, or Transformation. `Problem frame`, `Problem`, `Forces`, `Solution`, `Consequences`, worked slices, and anti-patterns carry the description-side guidance. A `Conformance Checklist` checks the authored description and separately evidenced use; it must not replace the `Solution`, manufacture Work, or turn the pattern into a control form.
+
+The primary content-bearing job is constructive action or judgement guidance: the pattern description must say what the user should do or decide so the recurring error does not arise. Error prevention, auditability, and conformance checks are evidence that the guidance is usable; they are not the pattern's center. The first substantive content in the opening `Problem frame` and `Solution` must be positive subject and action guidance: the primary `EntityOfConcern` kind, the first admissible action-guiding move, the practical delta, and the few boundaries needed for that first move. The text must not replace subject content with repeated guards, distinctions, related-pattern mappings, references, mini-rules, definitions, caveats, architecture rationale, or quality or projection evidence unless the repetition adds a new local action, case, evidence value for the user, or first-reading recognition need. Copying distinctions from another pattern's defining or constraining content into this pattern as repeated "do not confuse our EoC with their EoC" prose is the same repetition problem. Boundary doctrine is pattern content like any other doctrine: if an exact distinction, non-use condition, ToC navigation cue, or cited pattern already states it, do not repeat it locally. Cite the short pattern id; identify an exact claim-bearing episteme or `ClaimGraph` only when that identity matters to the receiving use. Add local boundary prose only when it states a documented local confusion and exact stop condition that the existing content does not already state. The repair is to say clearly what this pattern's own `EntityOfConcern` is, not to enumerate the unbounded set of other things it is not.
+
+The same rule blocks pattern-use drift for any FPF object. Name the object by its FPF kind when the kind is known, and do not let “acts”, “routes”, “receives”, “decides”, or an ownership word hide a different relation. For an ordinary neighboring-pattern reference, state what the cited content contributes here—for example, defines a kind, constrains a relation, supplies a test or method, or provides a locator—and cite the pattern id. Identify an exact claim-bearing episteme, `ClaimGraph`, edition, or relation assertion only when that identity changes interpretation, migration, conflict, publication, or reuse. A genuine stop needs no receiver; a reconsideration states its condition and the candidate guidance to consult. Relations are positive claims, not catalogs of absent relations. Detailed discoverability belongs in README, ToC query cues, `E.11`, `I.2`, or retrieval or projection carriers; compact related-pattern statements belong late in `Relations` after the positive subject and action guidance. Ordinary references use ordinary reference forms: a pattern id in prose, a citation, `Builds on`, `Coordinates with`, `Relations`, ToC, README, `E.11`, `I.2`, or a retrieval or projection carrier. Do not repeat them as many conditional sentences or small variants when one compact definition, boundary, table, `Relations`, ToC, README, `E.11`, `I.2`, or retrieval or projection locus already carries the same content family.
+
+Treat precision-restoration problems in pattern prose as one profile with five layers: word, head, and use precision; phrase apparatus; repetition and distribution; actor, text, and carrier separation; and pattern application. Do not add a local row for each new symptom. Use `E.8` to keep positive subject and action guidance first, `F.19` for phrase-level apparatus, `E.10`, `E.10.ARCH`, `F.18`, or the pattern that defines or constrains the relevant kind, relation, or use for remaining word, head, and use precision, and `E.21` to measure the combined effect on pattern quality.
+
+A wording cleanup is kind-preserving by default. Before an author accepts a changed FPF-governed phrase as a repair, the pre-repair and post-repair `EntityOfConcern`, kind, relation or claim kind, current ontic slot, relation position, use relation, admissible use, and scope must be recoverable when those items are live. This is a bounded complete preservation check, not an order to formalize ordinary prose or unchanged text and not permission to choose "no edit" as the easy minimum. Leaving text unchanged closes only when the phrase is `not triggered`, ordinary prose, or already satisfied by value with loci; otherwise the finding remains open. Removing a trigger word or replacing a generic head is not a repair when it changes the ontology: for example, a graph-shaped Method cue must not be narrowed into a Work sequence unless an accepted decision explicitly changes the kind and consequences. If a relation, signature, mathematical-lens, system-role kind or assignment, Method, Work, or evidence position is live, cite the pattern that defines or constrains that position instead of restating its ontology in `E.8`. If the phrase hides several kinds, split them or assign the decision to that exact pattern or `DRR`; do not flatten them into one cleaner-looking word.
+
+Authoring repairs also have an MG-DA cold-reader closure. A phrase is not mature merely because it avoids a trigger word or uses an FPF-looking abstraction. A reader who has not read the `DRR`, campaign notes, or author memory must still be able to recover the object being named, its FPF kind or ordinary status, the relation or claim kind, the admissible use, and what any cited pattern contributes to the claim. Identify an exact claim-bearing episteme or `ClaimGraph` only when its identity changes interpretation, migration, conflict, publication, or reuse. If authoring uses `object`, `item`, `value`, `relation`, `record`, `condition`, `basis`, `material`, or another broad head, name the specific object and position or keep the phrase ordinary. If authoring uses `specialization`, state what object is specialized, what relation makes it a specialization, what inherited or changed slots or uses matter, and which pattern defines or constrains it; require an exact `ClaimGraph` only when the receiving use depends on that exact claim-bearing content. Otherwise the edit is bureaucratic abstraction, not an improvement.
+
+For boilerplate overwrap, use `F.19`. After removing or moving the apparatus, repair any remaining word, head, name, relation, or use with `E.10`, `E.10.ARCH`, `F.18`, or the specific pattern that defines, constrains, or tests the claim. Keep the intended user's action and boundary. Do not expand ordinary `use this pattern` or `apply this pattern` wording into `U.MethodDescription`, `U.Method`, performer System, assignment, `U.Work`, `U.Transformation`, or `ClaimGraph` language unless the current claim or a named later use depends on those identities. If dated `U.Work` is asserted, however, recover every precise performer's A.13 core and independently admit the Work under A.15.1. Add F.6 only when the claim also needs precise assignment-bound attribution. Only how many already established identifiers the prose exposes is proportional. Process, architecture, review, quality, projection, and release evidence stay in their own carriers unless rewritten as that user-facing action.
+
+When an action-adjacent pattern classifies wording, a name, a publication face, an explanation class, a comparison unit, or another semio-facing object, that classification is only useful if it connects back to action guidance. The pattern must say what use or action is admissible now, what related use or action is not admissible under the current pattern, and which FPF pattern defines or constrains the case when the claim is a work, evidence, gate, decision, assurance, engineering-justification, release, or reliance claim.
+
+`Semio-Echoing` is admissible only as a trigger-controlled auxiliary placement. Use it when `E.10`, `C.2.P`, or `E.10.ARCH` has exposed a wording-use overread whose EntityOfConcern, episteme/publication stack, alignment basis, and remaining admissible reader use are recoverable by value. Do not add it as a generic warning block. In non-semio patterns the primary content remains the pattern's own `EntityOfConcern` and admissible use; semio material stays as a thin cue, related-pattern relation named by value, local recovery line, or named description and publication-use boundary section unless it changes that use or blocks a documented overread. If the material mainly says that a description, view, publication, record, card, diagram, source, or file is not a permission, promise, prescription, evidence item, assurance verdict, decision, gate passage, release, work occurrence, or authority source, keep it out of the subject Solution and put it in that boundary section or in the exact description-publication pattern.
+
+### E.8:1 - Problem frame
+FPF grows through patterns written and revised by authors from many
+disciplines. Without a shared structure, practitioner-facing use order, and
+semantic writing discipline, the framework would fracture or become formally
+uniform but harder to use, violating Pillars **P‑1 Cognitive Elegance** and
+**P‑2 Didactic Primacy**.
+
+### E.8:2 - Problem
+*Structural drift*, *stylistic fragmentation*, and revision by visible proxies
+rather than working use threaten five qualities:
+
+1. **Comparability** – readers cannot align patterns lacking common
+   headings.
+2. **Narrative cohesion** – prose swings from dry jargon to informal
+   blog style.
+3. **Practitioner use across revisions** – cleanup can erase the recognizable
+   situation, first action or judgement, first useful result, ordinary boundary,
+   or affordable stop while leaving a tidier-looking text.
+4. **Semantic and relation clarity** – generic heads, false agency, imprecise
+   neighboring-pattern contributions, and drifting package or relation words can
+   change what the prose asserts or what a reader may do.
+5. **Reviewability after guidance** – missing or misplaced grounding, boundary,
+   SoTA, conformance, assurance, and publication-reference material can hide a
+   defect or replace the positive guidance it is meant to verify.
+
+### E.8:3 - Forces
+
+| Force | Tension |
+|-------|---------|
+| **Uniformity vs Expressiveness** | Consistent template ↔ freedom for diverse domains. |
+| **Rigor vs Readability** | Formal precision ↔ engaging prose. |
+| **Brevity vs Completeness** | Concise patterns ↔ mandated safety subsections. |
+
+### E.8:4 - Solution — One template, enriched by style principles
+
+#### E.8:4.1 - Canonical Pattern Template
+Within each pattern, the **canonical** section headings **SHALL** appear in the order below.
+For each **canonical content section heading (1–12)**, the `<Title>` component (after the heading separator, e.g. ` - `) **MUST** start with the canonical section title (case-insensitive match; canonical capitalisation preferred); an optional clarifier after an em dash is allowed (e.g., `Solution — …`).
+The mandatory **Footer marker** (section **13**) is the final sentinel and is governed by **H-9** rather than the standard `<FullId> - <Title>` shape.
+
+**Extensibility.**
+Authors **MAY** add additional sections. Prefer expressing them as subsections under the nearest canonical section (e.g., `4.1`, `4.1.1` under *Solution*). If an additional pattern-level section is necessary, it **MUST NOT** delete or reorder the canonical sections and its title **MUST NOT** shadow a canonical title.
+
+**Mandatory vs optional.**
+* Canonical sections **1–13** are mandatory in every pattern.
+* Canonical sections carry content. Authors must not use omission placeholders as section substitutes; when a section is intrinsically small, write the smallest content-bearing grounding, misuse, boundary, or reduced-case statement that preserves the section's function.
+* **First substantive authoring seed.** The first non-empty authored body of a pattern **SHALL** already instantiate the canonical section frame by value: title line, header block, canonical sections **1–13**, and the footer marker.
+* **Seed is not maturity.** The canonical frame is a minimum authoring seed, not a mature pattern claim. Before a pattern is used for public, teaching, enterprise, reliance-bearing, landing-input, release-input, or ordinary practitioner guidance, each canonical section must carry enough recognition, action guidance, worked material, source/SoTA use, boundary, consequence, and relation content for the declared use. A material maturity, readiness, admission, or landing claim also needs the independent complete `E.21` result selected for that conclusion; an author-side provisional pass or focused repair check does not supply it. A file with correct headings, thin bullets, scenario labels, or compressed DRR recap remains a pattern seed until that content is present or the package explicitly marks it as `seedOnly`.
+* Recognition openings and first-minute working guidance belong **inside** that canonical frame. Any retained pre-template entry material must also stay inside that same canonical frame rather than appearing as one pre-template opening memo. Authors **MUST NOT** seed one pre-template opening memo and postpone canonical sectioning, `Conformance Checklist`, or footer-marker installation to one separate `E.19`, assembly, or review-repair pass.
+
+**Template:**
+- **Title line:** Hashes + FullId + ` - ` + Pattern Title; optional `(informative)` note.
+- **Header block:** Type, Status; optional Normativity override.
+1. **Problem frame**
+2. **Problem**
+3. **Forces**
+4. **Solution**
+5. **Archetypal Grounding** (Tell-Show-Show; at least one content-bearing grounding slice, reduced grounding case, or ordinary/non-use boundary)
+6. **Bias‑Annotation**
+7. **Conformance Checklist**
+8. **Common Anti‑Patterns and How to Avoid Them** (at least one local misuse, overread, or exact boundary case; no placeholder)
+9. **Consequences**
+10. **Rationale**
+11. **SoTA-Echoing** (current-best problem answer; by-value comparison at comparable effort; explicit trade-off and adopt/adapt/reject decision whenever external or internal practice changes the Solution)
+12. **Relations**
+13. **Footer marker**
+
+**Footer marker.** End each pattern with a single visible sentinel heading line by itself: `### <PatternId>:End`. This makes truncation detectable even when HTML comments are stripped or shown by editors. The footer marker is intentionally content-free: **do not** place prose under it.
+
+*Note.* Pattern boundaries are still parseable by scanning for the next pattern heading (`## …`), but an explicit `:End` marker helps retrieval pipelines (and LLM prompts) distinguish “this chunk is the whole pattern” from “this chunk was cut mid‑pattern”.
+
+##### E.8:4.1.1 - Heading & ID discipline (human tooling + retrieval)
+FPF is often consumed through full‑text search and retrieval (RAG). A reader or an LLM may see a subsection without its parent headings, so headings must be **self‑identifying**.
+
+**H-1 (Heading shape).** Every pattern heading and every subsection heading inside a pattern **SHALL** follow:
+`<hashes> <FullId> - <Title> (optional note of non‑normativity)`
+
+*Exception.* The **Footer marker** is a sentinel heading and is governed by **H-9**, not by the standard `<FullId> - <Title>` shape.
+
+**H-2 (Heading separator).** The canonical separator between `<FullId>` and `<Title>` is ` - ` (ASCII, space-hyphen-space).
+Previously authored text may use Unicode dash variants such as ` – ` or ` — ` as separators; tooling **SHOULD** treat those variants as migration candidates, and authors **SHOULD** migrate touched headings to ` - `.
+
+**H-3 (FullId).** `FullId` is the complete address used by this heading grammar.
+For a **pattern heading** it is the PatternID (e.g., `A.2`, `E.10.D1`).
+For **headings inside a pattern**, append dot-separated ordinal section numbers after the colon (`:`) (e.g., `A.2:4.4`, `E.10.D2:3`).
+*Exception:* the Footer marker uses the reserved sentinel token `:End` as defined in **H-9**.
+The colon (`:`) is **reserved** for section paths and **MUST NOT** appear in PatternIDs.
+
+PatternID segments may be numeric or mnemonic. When the surrounding text identifies the framework, the complete PatternID identifies one pattern in that framework; the shape of its segments does not by itself state the pattern's title, meaning, Part, publication position, dependency, Method relation, or use order. A mnemonic segment may help recognition but does not define the pattern.
+
+Whether a PatternID stays with a changed pattern is an authoring decision, not a grammar decision. For a DPF, use `E.4.DPF`; use `E.11.PFP` to show current publication position separately. When the surrounding text does not already identify the framework, name the framework together with the PatternID. Add the edition when the reference must select the body published in one edition.
+
+**H-4 (Ordinals).** Ordinals in section paths **SHOULD** track the canonical template numbering (**1 = Problem frame**, …, **13 = Footer marker**) to maximise cross‑pattern comparability. During refactors or in previously authored patterns, ordinals **MAY** be local. In that case, the **canonical section title at the start of `<Title>`** is the semantic key; readers and tools **MUST NOT** infer section semantics from the ordinal alone.
+*Note:* the Footer marker itself is exempt from ordinal encoding; it uses the reserved token `:End` (see **H-9**).
+
+**H-5 (Where kind and normativity are declared).** Pattern **kind** (for example, Architectural or Definitional) **MUST** be declared in the **Header block**, not encoded into the heading text. Normativity (**normative** or **informative**) **MUST** also be declared in the Header block when it deviates from the default. If a reminder is needed for readers, authors **MAY** add a short parenthetical note at the end of the heading, for example `(informative)` or `(non‑normative)`, but headings **MUST NOT** use square‑bracket tags.
+
+**H-6 (Heading levels).** Heading levels **MUST** preserve a fixed offset between structural layers (Part or Cluster (flat) → Pattern → Pattern sections):
+* Part and Cluster headings **MUST** use `#` (level 1) across the file.
+* A Pattern heading **MUST** use `##` (level 2).
+* Inside a pattern, each nested section **MUST** add exactly one `#` per level (e.g., `## A.2 - …`, `### A.2:2 - …`, `#### A.2:2.1 - …`).
+
+**H-7 (Ellipsis discipline).** Authors **MUST NOT** use **three consecutive full stops/dots** (`...`) as punctuation in headings or narrative prose. Authors **MUST** use the Unicode ellipsis `…` (U+2026) instead. For editorial elisions in quotations, authors **SHOULD** prefer `[…]` to make the omission explicit and distinguish it from retrieval truncation.
+*Exception:* literal three‑dot sequences that are part of an external language’s syntax **MAY** appear **only inside code spans or fenced code blocks**.
+
+**H-8 (Normative keywords).** The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **MAY**, and **OPTIONAL** are to be interpreted as described in RFC 2119, as clarified by RFC 8174 (only when capitalised). Authors **SHOULD** avoid informal deontic phrasing (“need to”, “is required to”) in normative clauses.
+
+**Deontics vs admissibility.** Use RFC keywords only for **deontic obligations** (requirements on authors, reviewers, implementers/tooling, or published pattern or companion texts) — i.e., things an agent can choose to do or omit. Do **not** use RFC keywords to state **definitions**, **structural invariants**, **typing rules**, or other **admissibility conditions** of the modeled world.
+
+When you need an enforceable constraint that is *mathematical* rather than *deontic*, express it as a non‑deontic predicate using one of: `Definition:`, `Invariant:`, or `Well‑formedness constraint:` (optionally with formal quantifiers). Prefer mathematical terms like `cardinality 1..1 (total)`, `0..1 (partial)`, or `0..n` over deontic adjectives like “mandatory or optional” when the intent is cardinality, not duty.
+
+**Admissibility predicate discipline (recommended shape).**
+When expressing admissibility or validity constraints as predicates (`Definition:`, `Invariant:`, or `Well‑formedness constraint:`):
+* Authors **MUST NOT** use RFC keywords inside the predicate block.
+* Authors **SHOULD** give each predicate a stable identifier and short name (e.g., `RA‑1 (Locality)`, `RE‑3 (Method gate)`), so that Conformance Checklist items can reference it without re‑authoring the rule.
+* Authors **SHOULD** write the constraint as a declarative predicate with a truth condition (optionally quantified), for example “every selected interval lies within the declared qualification window”, rather than as “X MUST …”.
+* If the constraint needs to be checked as part of pattern conformance, authors **SHOULD** reference the predicate identifier from the Conformance Checklist, and call out validator behaviour when relevant, rather than duplicating the predicate with RFC keywords.
+
+**H-9 (Footer marker sentinel).** Footer marker **SHALL** be a single heading line whose `FullId` is the pattern ID followed by the reserved sentinel token `:End` (no ordinals, no title, no square‑bracket tags):
+`### <PatternId>:End`
+It is the only allowed heading *inside* a pattern whose section token is non‑numeric. It **MUST** be the final line of the pattern and **MUST NOT** carry any prose. Tooling and readers **MUST** treat it as a boundary sentinel, not as a semantic section.
+
+**H-10 (Publication-token classification and addressability).** Before emitting an FPF-governed token as a reference, authors **MUST** classify it under exactly one of these seven E.8-local publication-token classes and use the matching form:
+
+- `PatternRef` uses one PatternID to name a pattern that continues across editions of the framework identified by the surrounding text. In the assembled publication being checked, it resolves to one complete H2 body, one matching `:End`, and a truthful ToC status for that PatternID. A reference intended to select the body published in one edition also names that framework edition. A structural checker may verify and report publication conformance but does not establish the pattern's identity, status, or authority.
+- `PlannedCatalogEntry` names an explicit future catalogue commitment. It has no current pattern semantics, governing force, prerequisite force, or addressable body; a useful prose mention **MUST** say `planned` or `future`, and a current semantic dependency **MUST** cite existing content that supplies the needed definition, constraint, test, method, or other rule, or state the current gap.
+- `SectionRef` names one exact heading path inside one current pattern. Authors and tooling **MUST** read the complete section identifier before examining any substring.
+- `LocalDeclaredId` names an exact declaration within one pattern, such as a conformance clause, component, interface row, or predicate. Its scope is local unless an explicit stable anchor or a separate promotion decision establishes wider use.
+- `LocalAlias` names an explicitly declared compatibility alias and resolves to its declared canonical local target.
+- `PatternFamilySelector` selects a navigable pattern family using canonical spelling `<base>.*`. It requires a current base pattern and at least one current matching member and **MUST NOT** stand in for one exact governing target.
+- `NonReferenceToken` classifies a schematic example or ordinary local prose/code that neither occupies a reference-bearing position nor declares a local public ID. It explicitly denotes no reference; key-like typography or backticks alone do not change that class.
+
+Resolution and checking are declaration-first and context-sensitive. Authors and tooling **MUST NOT** split complete SectionRefs, strip a local-ID prefix, promote a local symbol by visual resemblance, or replace these classes with an ignore list. An unresolved token in a reference-bearing authoring form is an error; ordinary code or local wording is not silently upgraded to a reference.
+
+**H-11 (Assembled Part boundaries and title agreement).** In the assembled publication, every compact ToC Part label **MUST** be a bold separator with a blank line on both sides, not a duplicate structural Part heading. Its title and ASCII ` - ` separator **MUST** agree exactly with the corresponding `# Part <letter> - <title>` body heading. A reserved body Part that has no compact ToC table, including current Part H, does not require an empty compact label or table.
+
+*Unification note:* historic A‑ and D‑templates differed only by the presence/absence of **Bias‑Annotation** and **Relations**; the unified template keeps the headings everywhere and requires every heading to carry content-bearing grounding, boundary, consequence, rationale, source-use, relation, or reduced-case material rather than an omission placeholder.
+The Alexandrian pattern canon historically calls *Problem frame* “Context”. FPF uses *Problem frame* because generic `Context` and universal `U.BoundedContext` do not identify the actual value a claim needs.
+
+Route each use directly: recover source-local meaning through F.0.1 and, only when a durable address or basis relation is needed, F.17; select answer-changing sources through F.1; state `ClaimScope` through A.2.6; use A.1.1 for an admitted bounded model use; and retain a subject-specific context term only where that subject pattern defines it. Use F.9 only for an obtaining Bridge between two exact F.17 local senses. A ReferencePlane difference follows its applicable plane relation. A shared word, imported source, different context, different plane, or generic need for “more context” establishes neither relation.
+
+
+#### E.8:4.1.2 - Preserve Pattern Use Value Across Material Revisions
+
+A revision is material when the actual change can alter what a working reader recognizes, does, obtains, or must stop doing, regardless of whether the change is labelled as cleanup, clarification, terminology repair, or ontology alignment. Treat the revision as material when it can change at least one of these values:
+
+- the primary `EntityOfConcern`, governed kind, direct relation, claim kind, or scope;
+- the recurring situation or practical question that lets a reader recognize the use;
+- a Solution action, action condition, result kind, first useful result, stop, return, risk disclosure, or stronger-neighbor handoff;
+- the definition, constraint, test, method, cited-pattern contribution, split, merge, relocation, or source/SoTA stance that changes what the reader may do;
+- the asserted commonality, member set, membership rule, order, or governing premise of a list; or
+- ordinary first-use affordability.
+
+For this comparison, the **earlier edition** is the exact accepted pattern edition that this candidate is intended to replace for the declared use. A formatting correction, spelling repair, citation repair, exact mechanical rendering, or wording change is `not triggered` only when the smallest comparison of the earlier edition and proposed text shows that all these values are preserved. A clean comparison needs no additional positive ledger, evidence table, or pattern section. Physical line count, file size, section count, inventory rows, and the author's label for the change do not establish materiality.
+
+**Use one bounded material-revision loop over the actual prose.** Before treating a materially revised pattern as authored:
+
+1. Recover the useful earlier-edition use at idea level: the recognizable situation and intended reader, first admissible action or judgement, first useful result, action-changing boundary or stop, and any domain claim, example, or relation needed to perform that move. Classify a changing or disappearing earlier-edition use only as retained, a valid outcome whose defective mechanism is repaired, an explicitly authorized retirement with a corrected action or boundary, or unsupported residue.
+2. Draft the candidate's positive practitioner path in domain-recognizable language before guards: governed subject, recurring problem, action the reader can take, first useful result, and next action-changing condition or stop.
+3. Compare the earlier edition and proposed text at comparable application effort. Preserve every useful earlier-edition move or deliberately replace it with an at-least-equally-usable action, result, or boundary; admit a candidate-only use only from an exact accepted decision, source/SoTA stance, finding, or working need.
+4. Remove exactness intensifiers, negative catalogues, ambiguous role and process wrappers, formal identities, and assurance apparatus that do not change the truth, action, boundary, or reliance claim. Keep ordinary “use this pattern” or “apply this pattern” wording; open the fuller pattern-application ontology only under `E.8:0.3` when its identities matter.
+5. Check that recognition, first action, and first useful result still precede optional modeling, evidence, conformance, and assurance work. Use `F.19` or `E.10` only for a residual phrase or word/head/use problem, not as a wrapper around the whole authoring path.
+6. For every changed public or consumed interface—entry wording, input or result, field or position meaning, action order, stop, return, or reconsideration condition—repair each determinate stale ToC or README cue, example, relation, and true direct consumer in the same authoring increment. Find consumers by the meaning they teach or use; a shared word, identifier, or nearby reference is not enough.
+
+Earlier-edition and candidate-only uses remain different bases, and both may be present in one revision. Compare that exact earlier edition with the candidate edition. An earlier-edition use keeps its earlier-edition basis and one of the four classifications above; a candidate-only use keeps its exact accepted basis. Do not classify a candidate-only use as an earlier-edition use or invent history for it. Treat a selected use as required when its loss changes action or boundary, and as optional when it demonstrates breadth only. Backward compatibility alone is not improvement, and a candidate-only promise is not improvement until the text supports its executable use. Use desk replay by default and escalate to a cold reader, AI-agent, or observed-work check only when ambiguity or consequence justifies it. If later independent review needs a recoverable note, use the smallest existing authoring source; do not create a card, score, universal schema, or one written row per idea.
+
+Test first-use affordability by checking whether the positive Solution supports this short rendering:
+
+```text
+recognizable situation -> proposed action or judgement -> first useful result -> next action-changing condition or stop
+```
+
+This rendering explains the pattern; it does not claim that actual work is linear. Use an optional local mantra only when it improves recall, and show one ordinary traversal only when several rows materially improve explanation; choose the smallest form that keeps the action, result, and boundary recoverable. Explanatory rows may fade as competence or task demand permits, but an independently action-changing condition or boundary may not. If the traversal itself must be a durable governed object, use the exact published `DemonstrativeUnfoldingSlice@Context` designation only after `A.22.CGUS` admits that structure for the named pattern use. Put a subject-side check immediately before the continuation it changes, and keep authoring, review, quality, and release checks outside the subject Solution.
+
+**Resolve triggered enumerations semantically.** A list is triggered when wording or grammar asserts or implies one common kind, predicate, relation position, authority, action, or result; when its member set or membership rule changes; or when a noun sequence hides a claim or action. A locator or visual scan may find candidates but cannot close the judgment. Give every triggered list one of these resolutions:
+
+| Resolution | Required semantic result |
+| --- | --- |
+| Declared closed value set | Name the governed value kind or field, state that the set is closed, and give one membership rule that covers every member. |
+| Illustrative examples of a named kind or proposition | Put the kind or proposition first, state that the list is non-exhaustive, and keep examples subordinate. |
+| Heterogeneous neighboring kinds | Reject the false common kind; split the list, retain explicitly heterogeneous neighbors, or route each alien member to its direct governing locus. |
+| Implicit unnamed kind, relation, or structure | Recover an existing value and the pattern passage that defines or constrains it. Use `F.18` only when the recovered name must be stable, public, Core-facing, durably reusable across local uses, or durable enough for later citation; block the claim when recovery fails. |
+| Action or claim hidden in a noun list | Write the substantive proposition or action first, then retain examples only when they change recognition or use. |
+
+Treat one triggered list as a small attention series. A member is a separate unit when its membership can fail independently or require a different subject predicate. A genuinely small closed set may remain one predicate-level unit only when one explicit membership rule decides every member and none has an independent disposition. Nearby nouns that assert no common membership, and unchanged declared closed sets or named-kind example lists still covered by their exact rule, take the cheap positive-control path. A blanket claim that all lists are coherent is not evidence. `E.10` detects enumeration-as-kind and vague heads, `E.10.ARCH` requires exact predicates for recovered claims, and `F.18` settles durable names; this authoring method does not duplicate their recognition or naming architecture.
+
+#### E.8:4.1.3 - Decide Whether a Narrower Contribution Changes Practice
+
+Use this when a broader available contribution and a proposed narrower contribution both appear to answer the same recognizable working situation. State the intended reader, use, and scope. Apply both contributions at comparable effort and find the first difference in what the reader notices or decides, does, needs or checks, obtains, or uses as a stop, return, or retry. A narrower title, domain noun, paraphrase, or extra example is not enough by itself. If no action-changing difference remains, omit or merge the narrower text and point to what already answers the situation. If the two contributions address different situations, state that boundary before deciding their relation.
+
+An action-changing difference shows that the contribution is distinct; it does not show that the contribution is worth keeping. Retain or merge it only when the changed action, result, boundary, or saved source reconstruction is warranted and useful for the declared reader, use, and scope under the applicable domain, evidence, currentness, affordability, and architecture checks. Use only the checks that can change this decision. Repair or reject a distinct contribution that is wrong, stale, unsafe, unsupported, incompatible, or needlessly burdensome. Keep an explicit gap when no acceptable contribution answers the situation.
+
+Naming a dependency does not settle the comparison. Say which available result supplies the reusable part, what kind of result it is, which product and edition or current state supplies it, how the reader uses it, and which currentness or availability condition can change that use. State maintenance separately only when it changes the receiving use. Then preserve any remaining domain problem, filling, constraint, relation, evidence limit, return, or discovery need without copying the general rule.
+
+When reuse or a gap closes the reader's question, state which of these is actually true:
+
+1. **Use an available result.** Name the result, what kind of result it is, the product and edition or current state that supplies it, the receiving use, and any currentness or availability condition that can change that use. The supplying product may be an FPF, DPF, LPF, or a separate non-framework product. If maintenance changes the use, state its separately established relation and evidence.
+2. **Use a MethodDescription.** Name the public description, the Method it describes, and how the reader uses the description to select or perform that Method. State availability, currentness, or a separately established maintenance fact only when it changes that use. Do not report the expected result as already obtained.
+3. **Use a direct source as evidence.** Name the source, the claim or decision it supports, the receiving use, its limits, and a usable locator. Source availability is not result production.
+4. **State a named unavailable result.** Name what is missing, the action or decision it blocks, the missing condition, and the observable condition for retry.
+
+For example, "feed the animals" may be true for both a mouse and a tiger yet fail to tell the feeder what food to give. Grain and meat change the action, so keep or link the animal-specific guidance when that difference is warranted for the declared use.
+
+By contrast, a pump-maintenance restatement of an available evidence-use contribution adds nothing if it changes only pump nouns and one example. Omit or merge the restatement, point to the maintained result that already answers the situation, and judge any promised maintenance-framework coverage separately.
+
+A tiger-feeding proposal may instead require manager approval and a laboratory certificate before every ordinary feeding. That proposal changes the feeder's action, but if no safety rule, evidence limit, law, or observed failure warrants the burden for the declared use, reject it or repair it to the smallest warranted check. Distinctness alone does not preserve it.
+
+A result maintained outside the receiving framework may answer the reader's use without becoming part of that framework. In a package-coverage account, count that external result only when the exact result and supplying product, receiving use, practical discovery route, and any material currentness or availability condition are explicit, and say that the result remains external. Otherwise keep the promised family as a gap or omission. When the resulting stable pattern set materially changes a promised problem family, obtain a current `E.4.DPF.DA` `D12DomainProblemFamilyCoverageAdequacy` result for the resulting exact DPF or LPF edition. Reuse a matching current result when the exact edition, promised families, declared use, relied-on results, and relevant conditions did not change; do not record proof that a revisit happened.
+
+#### E.8:4.2 - Stylistic Principles (S-0 ... S-19)
+
+| # | Principle | Guideline |
+|---|-----------|-----------|
+| S-0 | Narrative Flow Seven-Step Heuristic | Authors are encouraged to structure major paragraphs or subsections using the seven-step mnemonic. |
+| S-1 | Density without Jargon | Short declarative sentences; tool names belong in Pedagogy/Tooling. |
+| S-2 | Internal Cohesion | Inline references to Pillars and related patterns. |
+| S-3 | Embedded Mini-Definitions | Gloss a new term in parentheses on first appearance. |
+| S-4 | Contextualisation | Brief historical or disciplinary lineage references. |
+| S-5 | Grounded Clarification | State the positive object and move first. Pre-empt a misreading only when the source material, observed use, or stated working situation shows that readers actually make it or are led toward it; otherwise do not invent an alternative class merely to reject it. |
+| S-6 | Quotable Closers | Finish Solution or Consequences with a memorable aphorism. |
+| S-7 | Generative over Prescriptive | Present rules as enabling constraints, not bureaucracy. |
+| S-8 | Trans-disciplinary Tie-ins | Illustrate using at least two distinct fields. |
+| S-9 | Physical Grounding Reference | Tie an abstraction to the actual system doing the work and to the holon or physical process it changes. Mention a local transformer system-role classification or an obtaining assignment only when it changes the claim; ordinary *transformer* may remain readable metonymy for that system. |
+| S-10 | Punchy Blocks | <= 5 sentences per paragraph; lists for clarity. |
+| S-11 | Narrative Flow | Ensure sections read as a continuous story, not bullet soup. |
+| S-12 | Full sentences over tags | Avoid “keyword soup”. Each list item SHOULD contain a subject and a verb; prefer 2-4 sentence micro-paragraphs to bare tag lists. |
+| S-13 | SoTA-Echo structure | Name the practice question, selected best-known line, serious alternative or default, defect overcome, exact pattern mutation, source roles and limits, and reopen condition. Assign roles from answer-changing content, not authority, prevalence, freshness, or praise: an official source may be the best-known line if its answer wins; lineage-only and identity/currentness-only material stays outside. |
+| S-14 | Didactic-content sufficiency | New and substantially revised patterns carry enough didactic content to be teachable without nearby project notes. |
+| S-15 | Worked slices over scenario labels | Transform-like families show at least one concrete source and resulting-publication slice; scenario names alone are not enough. |
+| S-16 | Ordinary vs FPF-governed wording realism | Keep ordinary use light, and make heavier review records explicit only for disputed, high-risk, or higher-impact cases. |
+| S-17 | Self-contained monolith prose | A merged pattern must explain itself inside the monolith; planning shorthand and review-context dependencies are not admissible in pattern prose. |
+| S-18 | Intended-reader discipline | Keep every pattern host or monolith section addressed to the intended FPF user; move package-development, architecture-placement rationale, developer, reviewer, and executor correspondence, and quality or projection evidence to separate companion, evaluation, review, projection, or release carriers unless the sentence has been rewritten as the user's admissible move or boundary. |
+| S-19 | Precision before relaxation | In FPF-governed prose, restore the head kind named by a generic phrase before treating any qualifier as trustworthy claim guidance; then restore the claim kind or admissible-use boundary hidden in the qualifier before allowing any later plain, didactic, or coarsened restatement. |
+
+Authors use the principles as a *scaffold*, not a straitjacket: the goal
+is coherent, engaging insight. Engagement remains subordinate to semantic discipline: hooks, quotable lines, Plain restatements, and didactic images may improve recognition, but any ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary they carry must be recoverable through the governed Tech reading or named neighboring pattern. Ordinary Plain prose without that claim kind or admissible-use boundary stays ordinary prose.
+
+**S-0 (Narrative Flow Seven-Step Heuristic) — explanation**
+Narrative flow is recommended to follow these steps: **Hook -> Frame -> Weave -> Ground -> Bridge -> Flow -> Close**.
+
+Brief explanations:
+| Step       | Purpose in a paragraph/section                             |
+| ---------- | ---------------------------------------------------------- |
+| **Hook**   | Open attention with a vivid but bounded image or paradox that maps back to the primary `EntityOfConcern` and claim. |
+| **Frame**  | State the specific question or problem space.              |
+| **Weave**  | Connect to earlier patterns or Pillars.                    |
+| **Ground** | Tie to a concrete system, episteme, or physical process.     |
+| **Bridge** | Show the implication for the upcoming claim or rule.       |
+| **Flow**   | Deliver the formal content or argument.                    |
+| **Close**  | End with a quotable line or payoff that reinforces memory. |
+
+Narrative Flow Heuristic also operationalises S-1 (Density w/o Jargon), S-2 (Internal Cohesion), S-4 (Contextualisation), and S-6 (Quotable Closers).
+
+#### E.8:4.2.1 - Recognition text and assurance text
+Every canonical pattern SHALL stabilise one primary `EntityOfConcern`, relation record, or claim record early enough that a cold reader can tell what kind of thing the pattern is actually governing. If ordinary forms vary (`note`, `sheet`, `guided UI`, `rendering`, `review aid`), the text must make explicit which of those are merely presentation forms of one primary selected EntityOfConcern, relation, or claim and which would instead name a different act, process, work-result record, or governing companion. Recognition and assurance texts may refine that selected item differently, but they must not silently swap the central kind.
+
+If a pattern uses a broad umbrella or head together with a narrower operative branch, the text must also make the stack explicit early enough for first reading: what the broad head names, what the current narrowed branch is, what primary `EntityOfConcern`, relation record, or claim record is actually in play, what exact action assertion and predicate are current, and what wider work or process remains outside the pattern. A qualifier alone does not restore that stack.
+
+Under `F.18` local-first naming, the canonical pair here is **recognition text** and **assurance text**.
+The earlier provisional `recognition shell` and `assurance shell` wording is retired.
+These names refer to two reading-order functions carried by existing sections or projections inside one pattern; they do **not** mint new `authoritySourceRef` targets, generic neighboring-pattern relations, publication-form or face kinds, `publication-face kind`s, or a second face family.
+A third didactic-content function remains optional and is justified only when the family is especially easy to misuse, easy to over-read, or hard to teach without extra scaffolding.
+
+The **recognition text** is the first-reading text.
+It is the part of the pattern that lets a cold working reader recognise the situation quickly enough to decide whether to keep reading.
+It should start from a subject-domain or practice moment before internal taxonomy whenever the pattern is meant to help real work rather than only internal canon maintenance.
+In practice it usually appears in an early `Use this when` line or equivalent opening, plus the upper parts of `Problem frame`, `Problem`, `Solution`, `Consequences`, and nearby worked slices.
+Its job is to make visible:
+- what ordinary working situation this pattern is for;
+- what goes wrong if the pattern is missed;
+- what the pattern buys the reader in practice;
+- when this is not the right pattern;
+- what primary `EntityOfConcern`, relation record, or claim record is actually being kept stable;
+- and, when technical terms must appear early, a pairwise plain gloss for each early FPF-governed technical term.
+
+The **assurance text** is the second-reading text.
+It carries the heavier FPF-governed material that makes the pattern reviewable and auditable:
+- declaration blocks and typed fields when those are part of the pattern's declared conformance or boundary claim;
+- representation ontology, EntityOfConcern discipline, or primary-EntityOfConcern discipline;
+- any minimal modeling or mathematical lens that keeps the primary `EntityOfConcern`, relation record, or claim record stable;
+- guidance or check material, invariants, admissibility, and stop or neighbouring-pattern conditions;
+- `SoTA-Echoing` when it carries explanatory work;
+- and the review hooks that let a broader or more consequential interpretation or use be checked explicitly.
+
+The assurance text may sharpen, justify, and discipline the recognition text.
+It must **not** silently replace, strengthen, or universalize the claim that the recognition text made visible.
+If the recognition text says “this pattern helps with a bounded working situation”, the assurance text must not quietly turn that into an unbacked carrier claim, unbacked guarantee, or broader universality claim.
+
+If a pattern claims **universal** or **transdisciplinary** status, that claim must already be visible in the recognition text.
+It is not enough for universality to appear only later in a guidance or check sheet, declaration block, or `SoTA-Echoing` rationale.
+A broad claim should therefore be demonstrated in the recognition text through at least **three heterogeneous reader or domain situations**.
+When a compact matrix helps, `F.16` is the preferred template for showing that breadth.
+If `SoTA-Echoing` carries an FPF-governed claim, the practical implication of those rows should be recoverable from the recognition text and case bank rather than remaining a late-only justification layer.
+
+A **third didactic-content function** means enough didactic and operational content that the pattern survives without nearby project documents. Typical indicators include:
+- at least one concrete source and resulting-publication slice in Archetypal Grounding when the pattern defines or constrains transforms or publication change;
+- at least one boundary-heavy example or anti-example when nearby or companion patterns are easy to confuse;
+- reviewer guidance that tells what to inspect first and which neighboring FPF pattern defines or constrains the failure mode and which project-side FPF kind and reference named by value carries the claim or effect;
+- local mini-definitions or glossary material for recurring terms that would otherwise be recovered only from project context.
+
+Pattern density is therefore not “more metadata” and not “longer tag lists”. It is the presence of enough recognition, assurance, and, when needed, extra didactic material that a reader can understand the pattern, apply it lightly in ordinary cases, and recognise when a heavier review profile is required.
+
+#### E.8:4.2.2 - Package-form and neighboring-pattern reference discipline
+
+FPF pattern prose is not free-form descriptive English. Package-form words and references to nearby patterns must keep stable semantic intent without inventing a generic relation in which a pattern contains the defining content for, governs, receives, or acts on content.
+
+For an ordinary neighboring-pattern reference, state the concrete contribution—for example, defines a kind, constrains a relation, supplies a test or method, or provides a useful lookup—and cite the pattern id. An id, heading, file, or locator field merely helps find content; it is not a semantic owner, authority, actor, participant, or evidence that a claim is true. Identify the exact claim-bearing episteme and its `ClaimGraph`, edition, or relation assertion only when a named later use depends on that identity, such as interpretation, comparison, migration, conflict, publication, or reuse.
+
+A local `...PatternLocator` field may remain where an existing schema already uses it as a non-semantic convenience, but ordinary prose and entry cues do not require one. It never substitutes for the cited content's concrete contribution or, when the stronger identity branch is active, for the exact claim-bearing content. Changing only a locator without changing what it resolves is a representation change; changing the defining content or exact assertion may reopen the semantic object whose receiving use depends on it.
+
+Keep the following package and relation words distinct:
+
+- **pattern reference** = an ordinary citation to content whose concrete contribution is stated in the current sentence;
+- **specialization** = an exact relation in which the child carries the required parent content plus an explicit child delta and use boundary;
+- **overlay** = a cross-cutting reading or review projection over stated source content; it adds no authority or obtaining relation by name;
+- **profile** = a declarative bounded-use or review projection from stated source content, not a replacement pattern or actor;
+- **family** = a recurring class of cases under an explicit membership rule, not a hidden common owner;
+- **bundle** = a packaged set of defaults, allowances, or coordinated members whose actual relations remain explicit;
+- **cluster** = a navigation or reading-order grouping, with no semantic relation by grouping alone;
+- **suite** = a coordinated set whose suite-level membership and coordination semantics are explicitly stated;
+- **pack** = an editorial, source, review, or delivery grouping, not semantic authority;
+- **kit** = a reusable coordinated publication or boundary-description package with exact kit-level membership and use;
+- **record** = a case, report, assertion, representation, or review record under its own identity;
+- **umbrella** = a provisional review head spanning possible subfamilies before an exact membership rule and the relevant claims and relations are settled.
+
+These words are not interchangeable and do not stand in for a missing relation. Say `specialization of ... with delta ...`, `profile projecting ... for use ...`, `overlay reading ...`, `bundle containing ... under membership rule ...`, or another exact formulation. A source-defined position name may be reused when the cited content defines that position and the current assertion uses it in that sense; otherwise recover the meaning through `E.10.ROLE` and do not improvise near-synonyms for stylistic variety. The preceding receiving-use discriminator decides whether exact claim-bearing content must also be identified.
+
+##### E.8:4.2.2.1 - Precision-restoration placement discipline
+
+When a pattern or companion text is drafted from `E.10` or `E.10.ARCH`, distinguish two authoring objects:
+
+* **`semanticArea`** is the Part-F semantic unit for a wording-use restoration row: one Concept-Set row, one UTS row, or an explicitly bounded row-set. It is declared with `semanticAreaBaseConcept` and `semanticAreaSenseFamily`.
+* **`ontologicalNeighborhood`** is the applicability neighborhood around that named `semanticArea`: nearby primary `EntityOfConcern` kinds, relation kinds, claim records, content that defines or constrains the current use, non-use boundaries, and remaining reader use that can carry the recovered meaning after the wording is repaired.
+* **`pattern nest`** is the publication and specialization placement of a pattern under a declared family or membership relation.
+
+These are not synonyms. A precision-restoration pattern is placed in the pattern nest whose primary `EntityOfConcern`, relation record, or claim record it repairs. Its `semanticArea` states the Part-F semantic unit it repairs, while its `ontologicalNeighborhood` may name several direct relations and pattern content that defines or constrains the asserted uses. For example, quality-term repair lives in the `C.16` characterization nest, even though its neighbouring relations can include relation construction, action invitation, evidence, assurance, source-use assignment, engineering quality bundles, pattern-quality evaluation, or mathematical-lens use.
+
+Affected patterns should use a thin pointer when the first-stage wording repair belongs elsewhere. The pointer names the selected restoration pattern and the condition that triggers it; it does not copy the trigger registry, the full `E.10.ARCH` recovery algorithm, or a second local architecture for the same repair. The affected pattern then keeps its own subject matter: the characteristic, structure, view, episteme, relation, evidence, assurance, gate, work, decision, or adequacy question it already governs.
+
+If a draft proposes a new precision-restoration pattern, the authoring claim must show the repeated wording failure, `semanticAreaBaseConcept`, `semanticArea`, `semanticAreaSenseFamily`, the recovered primary `EntityOfConcern` kind or relation/claim record, the intended pattern nest, the neighboring governing relations, and the admissible action left after repair. A new pattern is not justified merely because a word appears often, because a local checklist wants a bucket, or because a campaign needs a tidy grouping.
+
+#### E.8:4.2.3 - Intended-reader discipline for pattern prose
+
+A pattern is written for its intended FPF user: the person who will use the pattern to organise thought, inspect a case, publish a note, or review a result under that pattern.
+Its FPF-governed sections therefore explain what the pattern lets that user do, what it forbids, what it costs, and how it relates to neighbouring patterns in user terms. When neighbouring or companion patterns are named, the prose should answer one user question such as `which neighboring FPF pattern applies`, `which project-side FPF kind and reference named by value carries the claim`, `which nearby pattern is easy to confuse`, or `what must stay coordinated here`; it should not read as one explanatory aside about why the package architecture was split that way.
+`E.8` reader and reviewer wording is FPF pattern-authoring wording. Project-side publication readers, explanation readers, comparative review units, and participants in named project-side review relations are governed by the publication or project-side patterns that name those publication units, explanation-use relations, comparative review units, evidence paths, work records, or gate records, such as `E.17`, `E.17.ID.CR`, `E.17.EFP`, `A.10`, `A.15.4`, `A.20`, or `A.21`.
+
+Authors must keep FPF-development or package-architecture material separate from that user-facing body.
+In particular, `Problem`, `Solution`, `Consequences`, `Rationale`, worked slices, and ordinary-vs-FPF-governed wording guidance must not do the work of:
+- arguing that the material is worth isolating;
+- justifying overlay, profile, family, membership, or authority-reference choice as a package decision;
+- discussing authority-reference freeze, naming freeze, merge state, blast radius, or safest landing form;
+- or narrating future package promotion or defer decisions.
+
+If architecture-placement commentary is still helpful, the default place is a separate companion note or ADR-like architecture note.
+A pattern may include a short optional informative subsection such as `Architectural placement note (informative)` only when that placement materially helps users avoid misuse; even then, it must stay clearly separated from the user-facing solution and rationale rather than replacing them.
+
+#### E.8:4.2.4 - Human-facing fit beyond intended-reader correctness
+Human-facing fit is also subject-domain fit. A recognition text that starts from internal taxonomy, pattern-placement convenience, or package-architecture wording before the problem-domain moment is still under-authored even if its later guidance or check text is correct. When a broader umbrella name and a narrower operative branch are both used, the recognition text should also tell the reader which stack is actually active rather than leaving that reconstruction to a later declaration block or companion note.
+
+A pattern can already address the intended reader and keep its boundaries clean, yet still fail the first minute of use for a cold working reader.
+That failure usually appears when the text is admissible but does not yet make the working situation, practical payoff, primary `EntityOfConcern`, non-use boundary, or first action-guiding move visible enough.
+
+**P-2 epistemic precision check.** When the E.10 criteria call for epistemic precision restoration in pattern prose, the first admissible action-guiding move must survive as remaining admissible reader use or be replaced by a neighboring FPF rule whose content now defines or constrains that claim application. This is a direct `E.2` `P-2` and `E.12` requirement, not an optional style preference. Intentional didactic metaphors and vivid Plain recognition lines are admissible when they are ordinary recognition aids or when their claim kind or admissible-use boundary maps back to Tech under `E.10:6.2`. A precision-corrected rewrite that leaves the recognition text inert is still under-authored.
+
+For canonical patterns, the first-reading text should behave as a **recognition text** and the heavier review/check scope should remain in an **assurance text**.
+
+When a pattern claims practice guidance or is meant to be used by engineers, managers, researchers, or other working readers, authors should make the following visible before the heavier harness takes over:
+- a recognisable `Use this when` or equivalent first-minute recognition cue;
+- a concrete working situation in `Problem frame`, not only taxonomic or pattern-placement language;
+- a short statement of what goes wrong if the pattern is missed or misread;
+- a short statement of what this pattern buys the reader in practice;
+- the first admissible action-guiding move the user should take in that situation;
+- a short `Not this pattern when` boundary for ordinary nearby non-use cases;
+- one minimally viable worked case or use slice that shows what changes in practice;
+- when a typed declaration block, formal lens, or other compact modeling material is FPF-governed, a short user-facing statement of what kind of object the pattern is governing and what minimal lens keeps that object reviewable;
+- pairwise plain glosses for any FPF-governed technical terms that must appear before the heavier declaration content arrives;
+- when `SoTA-Echoing` carries explanatory work, a short working-reader implication for each row or cluster of rows and a visible link back to the case bank or worked slices that those rows discipline;
+- a visible split between the recognition text and the heavier assurance text or companion material;
+- and, if the draft implicitly serves several working-reader situations, an explicit primary working reader, primary concern, or primary viewpoint.
+
+**Problem-frame recognition signature (informative).** A canonical pattern should
+expose the working situation through its `Problem frame`, not through one
+separate navigation block. When an `E.11` pattern-entry discoverability problem
+is present, the same `Problem frame` may also carry candidate-pattern and
+tempting-wrong-pattern cues; otherwise it should stay with action guidance
+rather than becoming a local catalogue row.
+
+The local recognition signature should make recoverable:
+
+- the concrete working situation;
+- the primary `EntityOfConcern`, relation named by value, claim record, or stabilized concern;
+- what goes wrong if the pattern is missed or misread;
+- the first admissible action-guiding move and what that move buys;
+- the ordinary not-this-pattern boundary;
+- the first admissible action-guiding result; when an `E.11` discoverability
+  problem is present, the first admissible entry stop or entry-stabilizing result.
+
+`Use this pattern when`, `This pattern applies when`, or equivalent `Problem
+frame` prose may be used as the first sentence or compact cue of this
+signature.
+It is not one separate required section.
+
+**Entry-cue authoring rule.** When a pattern needs a reader-facing entry cue, begin with one ordinary question about the user's actual object and claim, before any PatternID, card, template label, or internal taxonomy. In the same compact cue, state what any cited content contributes and cite the pattern id; name the smallest result kind usable now, the stop or return condition, and one tempting overread that remains non-admissible. Add the exact claim-bearing episteme and its `ClaimGraph` or edition only when the cue's named later use depends on that identity. The cue is reading guidance, not a section schema, method, plan, work occurrence, structure, or relation; it neither constitutes the result nor makes a routed relation obtain.
+
+Resolve the current head before coarsening it. Keep an actual holon under the A.1 kind-admission rule and each direct relation under the predicate and occurrence test supplied by `A.6.REL` or the relevant relation pattern; an independently selected `U.Structure` under A.22; a boundary-description episteme, its effective `ReferenceScheme`, and any separately obtaining empirical-grounding relation under C.2.1, with the grounding holon separately admitted under A.1; a `U.View` under E.17.0; a `U.ClaimScope` under A.2.6; a `U.WorkPlan` under A.15.2; dated `U.Work` under A.15.1; architecture and architecture-description assertions under C.30 and C.30.AD; and a publication occurrence under E.24.PUB. Keep an FPF `Map` and a decision occurrence under the patterns that define or constrain those values. In an ordinary cue, state those concrete contributions and cite the ids. Identify exact predicate-definition content, a claim-bearing episteme, or a `ClaimGraph` only when its identity changes interpretation, comparison, migration, conflict, publication, or reuse. Actual, intended, selected, expected, described, viewed, mapped, grounded, published, and performed objects remain distinct. A cue, diagram, description, file, card, suffix, template label, or public coarsening creates none of them and establishes none of their relations.
+
+Compact candidate-pattern comparison belongs in `E.11`-distributed entry material; expanded entry-disambiguation cases belong in `I.2`.
+
+If the prose points to neighbouring patterns or companion content, state whether that content defines a kind, constrains a relation, supplies a test or method, provides a project-side FPF kind and reference named by value, or supplies an `E.11` entry-recognition reclassification; do not present a citation as a hidden co-authority of the current pattern.
+
+If the pattern claims broad, universal, or transdisciplinary usefulness, that breadth should already be visible in the recognition text.
+At minimum the recognition text should show at least three heterogeneous reader or domain situations rather than one narrow case family with a later broad claim attached.
+When a compact matrix helps, `F.16` is the preferred template for making that breadth legible.
+
+This is not a request to flatten the pattern into plain language only.
+It is a rule about ordering, assurance depth, and text consistency: the recognition text must help a working reader recognise the pattern early, while the assurance text continues to carry the full claim kind or admissible-use boundary.
+If the pattern uses technical lexicon, ontological distinctions, or a mathematical lens, those structures must remain recoverable, but the first-reading text should not require the reader to decode that full stack before recognising the working situation.
+The assurance text may tighten or discipline the recognition text; it must not silently shift what the recognition text claimed.
+
+**Illustrative migration example (informative).**
+
+Old pre-template top:
+
+```text
+Start here when the dominant question is API, protocol, SLA, published boundary, or compliance wording.
+First output: Claim Register.
+Neighboring pattern relations and entry-recognition reclassifications: A.6.B, A.6.C.
+```
+
+Repaired Problem-frame recognition signature:
+
+```text
+Use this pattern when boundary-facing language - API, protocol, SLO/SLA, compliance clause, or other published boundary description - mixes guidance or check clauses, admissibility gates, duties, and evidence into one sentence or published boundary description.
+
+If missed, the text becomes boundary-claim soup: runtime behavior, governance, and evidence are treated as one undifferentiated promise.
+
+Do not use this pattern merely because the text mentions an API or boundary description. If the question is still one unstable cue, preserve it through the admissible cue-preservation line first.
+
+First admissible action-guiding result: one `A.6.B`-governed atomic claim set or one Claim Register whose claim/use questions are explicit enough for the pattern content that defines or constrains the claim, or for a named project-side FPF kind and reference, to inspect.
+```
+
+#### E.8:4.2.5 - Design-time and run-time referents stay separated in pattern prose
+
+Pattern prose must keep its referent index explicit. In ordinary body sections, the default truth-makers are run-time or governed-domain objects, states, moves, boundaries, consequences, and user-facing practical effects. Normative-standard wording is still admissible when the sentence is explicitly about the standard as a normative publication, for example in marked migration navigation examples, marked informative notes, or conformance/checklist clauses.
+
+Design-time and development-state referents are different objects. The current draft, current body, current pass, author, reviewer, handoff, packet, governing companion, landing choice, or other writing-process objects must not be smuggled in as the hidden truth-condition of pattern prose. A quick test is: what makes this sentence true? If the sentence is true because the current text is arranged a certain way, because the author or reviewer must do something next, or because the current development state says so, then it is design-time residue, not pattern content.
+
+Move that material to the authored-slice carrier, handoff, `DRR`, or companion architecture note. If a sentence is kept in the pattern, rewrite it so that its truth depends on the governed run-time/domain object or on the standard's declared normative claim set rather than on the current writing pass.
+
+If a pattern or example claims **autonomy**, start with the bearer and the direct claim:
+
+1. Identify the actual admitted `U.System` whose freedom of action is being evaluated. The System is the bearer. A system-role kind is used in classification; an assignment is a relation among its declared participants; a Method is a reusable way of acting; Work is a dated occurrence; and a budget, policy, or ledger is a declaration or record. None substitutes for the System or acts in its place.
+2. Use a current `E.16` pattern only when it defines or tests the autonomy or agency characteristic or relation being claimed. Keep classification, assignment, capability, responsibility, authority, permission, Method, Work, and evidence under their own direct claims. An assignment may cover performed Work under F.6; it supplies no autonomy by itself.
+3. Add extra autonomy material—for example, an **Autonomy** subsection, budget declaration, guard policy, override protocol, gate reference, or separate ledger record—only when that current E.16 claim uses it. If dated Work is also asserted, apply the A.13-first and independent A.15.1 rule in `E.8:0.3`; add F.6 only when precise assignment-bound attribution is also current. If the current corpus cannot state the autonomy claim under E.16 or another direct pattern, return `A.6.RCD missing-governor` instead of reviving a Role, Method, or Service bundle.
+4. Add a worked depletion or override vignette only when it helps the reader use that exact autonomy claim. Apply `E.10` to wording after the claim is recovered; a lexical bundle must not choose its bearer or ontology.
+
+### E.8:5 - Archetypal Grounding (System and Episteme)
+
+| Template element | `U.System` illustration | `U.Episteme` illustration |
+|------------------|------------------------|---------------------------|
+| Section order | Pump‑assembly pattern follows sections **1–13** and ends with its required `:End` sentinel. | Meta‑analysis pattern follows the same sections and sentinel rule. |
+| S-1 Density w/o Jargon | “The pump casing seals at this face.” | “This episteme raises **F (Formality)** by making falsifiers testable.” |
+| Hook‑Weave‑Ground | Opens with field anecdote → weaves in Γ‑core → ties the claim to motor torque. | Opens with historical paradox → weaves in **A.10** evidence refs → ties the claim to peer‑review data. |
+
+*Note:* Prefer examples that reuse FPF characteristics vocabulary (e.g., **F (Formality)** rather than “F‑score”) unless you explicitly mean an external metric and name it as such.
+
+### E.8:6 - Bias-Annotation
+Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal** for the authoring conventions in this pattern.
+This guidance biases toward **Did** (readability, narrative flow) and **Arch** (template regularity) by design; the mitigation is content-bearing reduced sections and justification through the smallest grounding, misuse, boundary, or reduced-case statement, not omission placeholders.
+
+### E.8:7 - Conformance Checklist
+
+**CC style (canonical).**
+Conformance Checklist items are authoring checks: they test whether the pattern guidance has been applied and written correctly in a pattern or companion text that claims conformance. They do not replace `Solution`, do not make the pattern a control form, and do not state deontic obligations about the modeled world. A CC clause of the form “X SHALL ...” is to be read as “In a conforming pattern or companion text, X SHALL ...”.
+
+**Preferred wording for new or edited CC items:** start with an explicit conformance subject (e.g., “Authors ...”, “Reviewers ...”, “A conforming implementation ...”, “A validator ...”). If a CC item is enforcing an admissibility predicate, it **SHOULD** cite the predicate’s identifier (from a `Definition:` / `Invariant:` / `Well-formedness constraint:` block) rather than restating the predicate as “X MUST ...”. For boundary/interface/protocol/declaration patterns, prefer A.6.B-scoped claim IDs (L/A/D/E) or cite an existing Claim Register (A.6.B:7) instead of restating mixed prose.
+
+| ID | Requirement | Purpose |
+|----|-------------|---------|
+| **CC-SG.0 (Heading discipline).** | Pattern and subsection headings **SHALL** follow **H-1 ... H-9** (FullId prefix, reserved punctuation, heading levels, ellipsis discipline). The Footer marker **SHALL** follow **H-9**. | Makes chunks self-contained; reduces ambiguity between author elision and retrieval truncation. |
+| **CC-SG.1** | Every new pattern **SHALL** follow the section order defined in the Canonical Template (Title block -> ... -> Footer marker). | Guarantees structural comparability. |
+| **CC-SG.1a (Initial pattern draft shape).** | The first non-empty authored version of a pattern **SHALL** already use the canonical section frame (Title block -> Footer marker). Authors **MUST NOT** start from one pre-template opening memo and promise to backfill canonical sections later. | Prevents large late-stage structural rewrites and keeps drafting aligned with `E.8` from the first substantive pass. |
+| **CC-SG.2 (Grounding required).** | Every pattern **MUST** include an *Archetypal Grounding* section with at least one content-bearing Tell, Show, reduced grounding case, or ordinary/non-use boundary. A placeholder saying that grounding is absent is nonconforming. | Keeps patterns teachable and reduces "definition-only" ambiguity. |
+| **CC-SG.3** | The *Bias-Annotation* section **SHALL** cite the five Principle-Taxonomy lenses and declare either “Universal” or an explicit scope limitation. | Keeps cross-disciplinary neutrality explicit (ties to Guard-Rail 4). |
+| **CC-SG.4** | Deontic normative sentences **MUST** use only RFC-style keywords (see **H-8**); RFC keywords **MUST NOT** appear inside `Definition:`/`Invariant:`/`Well-formedness constraint:` blocks. When enforceable, admissibility/validity predicates **SHOULD** be referenced by id from the Conformance Checklist (rather than duplicated as “X MUST ...”). Informal deontic verbs are prohibited in normative clauses. | Prevents ambiguity between obligation language and model validity; improves auditability. |
+| **CC-SG.5** | Pattern prose **SHOULD** demonstrate adherence to Style Principles **S-0 ... S-19**; reviewers are empowered to request revision when clarity or didactic quality suffers. | Embeds common narrative voice without rigid policing. |
+| **CC-SG.6 (SoTA-Echo required).** | Every pattern **SHALL** include a **SoTA-Echoing** section. It names the practice question and either gives the smallest adequate best-known comparison or states an honest source gap. Architectural patterns **SHALL** use the full comparison contract below. A definitional pattern may use a reduced comparison, but it still names the ambiguity or terminology question, the best-known current line, the serious default it improves or rejects, and the pattern locus changed. Internal coherence, official status, or a current edition is not a substitute. | Keeps source use tied to the pattern's working problem and prevents an empty mandatory section from becoming a prestige shelf. |
+| **CC-SG.7 (Current-best, by-value SoTA).** | Every positive SoTA use **SHALL** state the `practiceQuestion`, `bestKnownLine`, `seriousAlternativeOrDefault`, `defectOvercome`, `patternMutation`, `sourceRolesAndLimits`, and `reopenCondition` in ordinary readable prose. Compare the serious answers at comparable application effort, explain why the selected line is no worse on the relevant values and better on at least one or state the chosen trade-off, and mark each material move adopt, adapt, or reject with its receiving locus. | Makes the best-known-line judgement and its practical consequence independently replayable. |
+| **CC-SG.7a (Typed source roles; no currentness laundering).** | Authors **MUST** distinguish best-known-line candidates, serious current rivals, failure or counterexample evidence, official or popular comparators, lineage-only sources, and identity/currentness-only sources. Official, popular, maintained, canonical, highly cited, recent, or academically praised status supplies no positive evidence of SoTA rank. These are roles in one comparison, not permanent source classes: an official or widely used source may be the best-known-line candidate only when its substantive answer wins independently of that status. Keep lineage-only and identity/currentness-only roles outside the pattern body; keep an official or popular default as comparator only when its named defect is necessary and changes a governed locus. If no adequate best-known comparison is available, state the gap instead of substituting a catalogue page, standard, or fresh paper. | Prevents source identity, prestige, prevalence, and freshness evidence from masquerading as the current best answer without excluding a source whose content actually wins. |
+| **CC-SG.8 (Actual cross-local or plane relation).** | When SoTA-Echoing uses an obtaining semantic Bridge, it **MUST** identify the two exact F.17 local senses, the F.9 relation, and a separate bounded-use claim; `CL` remains optional evidence shorthand. A ReferencePlane use cites its applicable plane relation. Any penalty cites a named current policy and its applicability; none follows from context, plane, Bridge, or `CL` alone. | Safe, auditable reuse without fictitious relations or automatic penalties. |
+| **CC-SG.9 (Lexical hygiene).** | The term **mapping** **SHALL NOT** appear in SoTA-Echoing except in the precise E.10 sense; use **alignment/Bridge/relation** instead. | Avoids overloading reserved vocabulary. |
+| **CC-SG.10 (No keyword soup).** | SoTA-Echoing items **MUST** be written as sentences (not bare noun phrases); bullet lists are acceptable only with complete clauses. | Improves didactic quality and comparability. |
+| **CC-SG.11 (Anti-patterns).** | Every pattern **SHALL** include a **Common Anti-Patterns and How to Avoid Them** section with at least one local misuse, overread, boundary case, or neighboring-pattern misuse relation. A placeholder saying no anti-pattern applies is nonconforming. | Makes misuse cases explicit and reduces review churn without creating omission-as-content. |
+| **CC-SG.12 (Boundary claim-set discipline).** | If a pattern’s subject is a boundary, interface, API, protocol, connector, SLA, or other published boundary description, it **MUST** either (a) provide an **A.6.B**-governed atomic claim set (`L-*`/`A-*`/`D-*`/`E-*`, with stable IDs), or (b) explicitly cite an existing **A.6.B Claim Register** / scoped claim set that it reuses. | Pulls A.6.B into the authoring contour, prevents boundary-kind soup, and makes review more explicit and repeatable. |
+| **CC-SG.13 (Didactic sufficiency).** | New patterns and substantial revisions **MUST** remain understandable without project-planning notes. When a pattern introduces a new named family, profile, or specialization, or adds a non-trivial note derived from another pattern, its Solution and Grounding **SHALL** carry enough didactic content: the relation to the pattern that defines or constrains the specific claim, ordinary-vs-FPF-governed wording guidance, at least one concrete source and resulting-publication slice where applicable, and visible related-pattern or project-side FPF kind and reference named by value cues. | Prevents skeleton-only patterns and project-context leakage. |
+| **CC-SG.14 (Controlled prose, not free shorthand).** | FPF-governed prose **SHALL NOT** rely on bare relation words or planning shorthand whose actual relation or cited-pattern contribution is left implicit (e.g., bare “species”, “branch”, “flow”, or API-like “input/output” language). When that relation matters, authors **MUST** name it explicitly—for example, `specialization of ... with delta ...`, `profile projecting ... for use ...`, or `overlay over ...`. When a neighboring pattern supplies a definition, constraint, test, method, or lookup needed by the sentence, state that concrete contribution and cite its id. | Keeps pattern prose precise and self-identifying without inventing a universal locator relation. |
+| **CC-SG.15 (Package-form and relation-word discipline).** | When a pattern names a package form or a relation within a family (`primary carrier`, `specialization`, `profile`, `overlay`, `family`, `bundle`, `cluster`, `suite`, `pack`, `kit`, `record`, `umbrella`), the chosen word **MUST** match the intended ontology and **MUST NOT** be swapped for stylistic variety or left to implication. Any cited neighboring pattern **MUST** be accompanied by its concrete contribution. | Prevents semantic blur while keeping family, membership, projection, and related-pattern relations auditable. |
+| **CC-SG.16 (Intended-reader discipline).** | Authors **MUST** keep every pattern host or monolith section user-facing. FPF-development or package-architecture reasoning about isolation, overlay or carrier choice, freeze, merge state, planned evolution, reviewer and Executor correspondence, or quality or projection state **MUST NOT** occupy any pattern text, including notes, appendices, `Relations`, `Rationale`, `SoTA-Echoing`, worked slices, tables, or checklists; if such placement reasoning is still needed, put it in a separate companion, architecture, evaluation, review, projection, release, or landing carrier. A Part E pattern may govern FPF-pattern authoring, review, evaluation, entry, or publication as its subject matter, but it still may not carry rationale or instructions for developing that same pattern version unless the sentence is rewritten as the user-facing authoring, review, or evaluation move. | Keeps pattern prose aligned with its intended reader and prevents package-governance leakage into use guidance. |
+| **CC-SG.16a (Referent-index discipline in pattern prose).** | Pattern sections **MUST** keep run-time/domain referents, normative-standard referents, and design-time/development-state referents distinct. In ordinary pattern prose, sentence truth **MUST** depend on the governed run-time/domain object or on the pattern's declared normative claim set, not on the current draft state, author action, reviewer action, or development-state status. If a sentence is true only because of the current writing/review pass or text arrangement, it is design-time residue and belongs in carriers or companion notes, not in the pattern. | Prevents Conway/process leakage, DesignRunTag drift, and late cleanup before review or landing. |
+| **CC-SG.16b (Quality or projection carrier separation).** | Pattern text **MUST NOT** present `E.21` values, `PatternQualityStatus`, corpus-projection evidence, README, ToC, `E.11`, and `I.2` alignment, card or retrieval evidence, cold-reader evidence, monolith parity, landing evidence, Developer, Reviewer, and Executor correspondence, or other quality-carrier facts as pattern content. This applies to the whole host or monolith section, including notes, appendices, `Relations`, `Rationale`, `SoTA-Echoing`, examples, tables, and checklists. Such facts belong in evaluation results, review records, projection carriers, README, ToC, `E.11`, `I.2`, cards, retrieval or projection carriers, or release or landing evidence carriers. They may remain in the pattern only when the content-use test shows that the pattern's own `EntityOfConcern` and user-facing action are that evaluation or projection Work, or when rewritten as the user-facing move or boundary that the evidence justifies. | Prevents pattern-quality and corpus-projection evidence from masquerading as practitioner guidance. |
+| **CC-SG.17 (Recognition text and assurance text).** | Admission or substantial revision runs **MUST** check that a canonical pattern exposes a recognition text early enough for the intended working reader and an assurance text that carries declaration, guidance/check, modeling, and review/check scope without silently shifting the recognition-text claim. The recognition text **MUST** expose a recognisable working situation, what goes wrong if the pattern is missed, what the pattern buys, and a clear ordinary `not this pattern when` boundary. Any FPF-governed typed declaration or modeling lens **MUST** be exposed by a short user-facing statement of the primary `EntityOfConcern`, early FPF-governed technical terms **MUST** receive nearby pairwise plain glosses, and any `SoTA-Echoing` used as explanatory grounding **MUST** state a short practitioner or manager implication plus visible linkage to the worked cases or boundary slices it disciplines. If the pattern claims universal or transdisciplinary reach, the recognition text **MUST** demonstrate that claim through at least three heterogeneous reader or domain situations, preferably using an `F.16`-style example matrix or an equally explicit alternative. | Prevents text-clean but reader-opaque patterns and keeps broad claims visible where cold readers actually enter the text. |
+| **CC-SG.17a (Problem-frame recognition signature and E.11 boundary).** | Authors **SHOULD** express a pattern's concrete working situation through the pattern's `Problem frame`, not through a separate navigation block. The `Problem frame` should make recoverable the primary `EntityOfConcern`, relation named by value, claim record, or stabilized concern, what goes wrong if the pattern is missed or misread, the ordinary not-this-pattern boundary, the first admissible action-guiding move, and the result that move buys. Only when an `E.11` pattern-entry discoverability problem is present should the same recognition text add candidate-pattern, tempting-wrong-pattern, entry-recognition reclassification, or first admissible entry-stop cues. Compact candidate-pattern comparison belongs in `E.11`-distributed entry material; expanded entry-disambiguation cases belong in `I.2`; lexical-query material belongs under the lexical/naming patterns and companion patterns that already govern it. Pattern-local `Start here when`, `First output`, neighboring-pattern lists, and `Common wrong escalations and boundary transfers` blocks **SHOULD NOT** replace the action-guiding `Problem frame` and `Solution`. | Keeps working-use recognition inside the canonical pattern frame while preventing navigation/workflow language from becoming local pattern structure. |
+| **CC-SG.17b (Epistemic precision repair preserves action guidance).** | When authors edit pattern prose under `C.2.P`, the repaired recognition text **MUST** preserve or restore the first admissible action-guiding move as remaining admissible reader use, or explicitly name the neighboring FPF pattern that now carries that claim. When both Tech and Plain registers are active in the same sentence family, any Plain or didactic wording **MUST** map back to the recovered Tech reading under `E.10:6.2` when it carries ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary. More engaging recognition wording remains admissible as ordinary Plain prose only when it does not carry such claim kind or admissible-use boundary, or as a recognition aid whose claim kind or admissible-use boundary is recoverable through the recovered Tech reading or named FPF pattern application. Type-correct but inert wording is not mature pattern prose. | Prevents epistemic precision cleanup from leaving pattern guidance inert while also preventing expressive prose from reintroducing overread. |
+| **CC-SG.18 (Precision before relaxation).** | In FPF-governed prose, authors **MUST NOT** leave a generic head noun or qualifier with FPF-governed use uninterpreted when that phrase carries semantic, boundary, or authority claim kind or admissible-use boundary. A narrowing qualifier by itself does **not** restore the head kind. Authors **MUST** restore head kind first, then qualifier claim kind or admissible-use boundary, then any comparison criterion or escalation condition before downstream claim or effect. If a later Plain, didactic, or coarsened rendering is kept, the more precise upstream reading **MUST** remain recoverable. | Prevents ambiguity from being hidden inside ordinary-looking phrases and keeps softened prose subordinate to an explicit authoritative reading. |
+| **CC-SG.18a (Semio-Echoing auxiliary placement).** | `Semio-Echoing` or comparable semio-facing material **MUST** be trigger-controlled and auxiliary. A conforming non-semio pattern keeps its own `EntityOfConcern`, first useful move, practical payoff, stop condition, and related-pattern relations primary; it adds semio material only when the EntityOfConcern, episteme/publication stack, alignment basis, and remaining admissible reader use are recoverable by value under `E.10`, `C.2.P`, or `E.10.ARCH`. Generic description/publication-use guards about descriptions, views, publications, records, cards, diagrams, sources, or files not being permissions, promises, prescriptions, evidence items, assurance verdicts, decisions, gate passages, releases, work occurrences, or authority sources belong in a named boundary section or exact description-publication pattern, not as the main subject Solution. When a semio-bias repair touches several non-semio patterns or source rows, conformance evidence is row-atomic: for each affected pattern or source row, name the primary `EntityOfConcern`, first useful move, required pattern-quality checks, guard placement, first-screen result, related-pattern relations named by value, and any source re-seeding result. | Prevents semio-bias: correct language checks must not replace the pattern's constructive method guidance. |
+| **CC-SG.18b (Positive subject content and precision-restoration profile control).** | A conforming pattern's first substantive content in `Problem frame` and `Solution` **MUST** be positive subject and action content: primary `EntityOfConcern`, first useful move, practical delta, and bounded non-use needed for that move. Precision-restoration material **MUST NOT** compete with that content. Cite an existing distinction, non-use rule, entry cue, or relation row instead of repeating it; add local boundary prose only for a documented local confusion and a stop condition. Ordinary “use this pattern” or “apply this pattern” is valid metonymy for a person or another capable system using its action- or judgement-guiding content. Require `U.MethodDescription`, `U.Method`, performer System, assignment, dated `U.Work`, result, `U.Transformation`, or exact `ClaimGraph` identity only when the host claim or a named later use depends on that distinction. When dated `U.Work` is asserted, every precise performer **MUST** have the A.13 core and the Work **MUST** be independently admitted under A.15.1; F.6 **MUST** be added afterward only when precise assignment-bound attribution is also current. Compact prose may omit identifiers unused by the receiving claim only when every consumed relation remains recoverable. State what a related pattern contributes after this pattern has stated its own positive content. Use `F.19` for phrase-level apparatus; use `E.10`, `E.10.ARCH`, `F.18`, or the specific pattern that defines, constrains, or tests the remaining claim for word, head, and use precision. A repair **MUST NOT** replace owner or governor wording with generic `subject pattern` or locator apparatus, nor expand an ordinary citation into formal identities without a named trigger. Architecture-placement and package-boundary rationale stay in `DRR`, architecture, review, or companion material. | Prevents precision-restoration debt and architecture or reference boilerplate from replacing the pattern's own subject matter. |
+| **CC-SG.18c (Kind-preserving wording repair).** | A changed FPF-governed phrase **MUST** leave the pre-repair and post-repair primary `EntityOfConcern`, kind, relation or claim kind, current ontic slot, relation position, use relation, or claim kind, admissible use, and scope recoverable when those items are live. Removing a trigger word, changing a head, or replacing a phrase is not a repair until the author can show that the kind and any live current ontic slot, relation position, use relation, or claim kind were preserved, split by accepted decision, or intentionally changed by accepted decision. When another pattern defines or constrains the kind, relation, claim, or position, state that concrete contribution and cite the pattern id; identify exact claim-bearing content only when the receiving use depends on that identity. | Prevents lexical cleanup from becoming ontology drift. |
+| **CC-SG.19 (Use-value carry-through in material revisions).** | For a materially changed candidate edition, authors **MUST** apply `E.8:4.1.2` once to the earlier edition and proposed prose: recover useful earlier-edition use at idea level; draft the positive practitioner path first; compare action, first useful result, boundary, and effort; remove non-discriminating exactness, negative-catalogue, ambiguous role and process, formal-identity, and assurance apparatus; keep assurance after the first useful result; and close every determinate discovery and true direct-consumer projection of a changed interface in the same authoring increment. Each candidate-only use **MUST** have an exact accepted basis and **MUST NOT** be classified as an earlier-edition use or be given invented history. A clean comparison requires no positive ledger, card, table, or row per idea. Authors **MUST** resolve each triggered enumeration semantically. | Makes preservation and improvement executable in the real text without turning rewrite size, labels, record production, or lexical scans into proxies for practical value. |
+| **CC-SG.19a (Distinctness is not worth).** | Under `E.8:4.1.3`, an action-changing difference **MUST NOT** by itself justify retain or merge. The changed action, result, boundary, or saved reconstruction **MUST** also be warranted and useful for the declared reader, use, and scope under the applicable domain, evidence, currentness, affordability, and architecture checks. A distinct but wrong, stale, unsafe, unsupported, incompatible, or needlessly burdensome contribution is repaired, rejected, or left as an explicit gap. | Prevents a specificity test from preserving harmful novelty while keeping ordinary comparison proportionate. |
+| **CC-SG.20 (Publication-token use discipline).** | Authors and publication tooling **MUST** apply H-10's seven-class inventory. A `PatternRef` **MUST** use a PatternID whose surrounding text identifies the framework and **MUST** resolve in the publication being checked to one complete addressable body; a reference selecting the body published in one edition **MUST** also name that edition. Authors **MUST** keep `PlannedCatalogEntry` mentions explicitly future-facing, preserve complete `SectionRef` and declared local or alias scope, use `<base>.*` for family selectors, and keep `NonReferenceToken` explicitly non-referential. A checker **MAY** verify and report these facts but **MUST NOT** decide pattern identity, status, or authority. | Lets people and deterministic tooling resolve the same token without treating identifier shape or current position as pattern meaning, inventing missing semantics, or hiding failed references. |
+| **CC-SG.20a (Part publication boundary).** | An assembled FPF publication **MUST** satisfy H-11 for every compact ToC Part label and corresponding body Part heading, including blank table/label separation and exact ASCII-separator/title agreement; it **MUST NOT** add an empty compact table merely for a reserved body Part. | Keeps Part boundaries portable across readers and Markdown/RAG parsers without duplicating the structural Part view. |
+
+### E.8:8 - Common Anti-Patterns and How to Avoid Them
+
+These failure modes recur in drafts and in downstream application. They are predictable ways the Forces in this pattern get violated.
+
+| Anti-pattern | Symptom | Why it fails | How to avoid / repair |
+|-------------|---------|------------------------------|-----------------------|
+| **Template cargo-culting** | Headings exist, but each section is a thin bullet list with no narrative. | Satisfies Uniformity but loses Readability and Didactic Primacy. | Use S-0 narrative flow per section; write 2-4 sentence micro-paragraphs before any list/table. |
+| **Un-grounded abstractions** | Problem/Solution stay abstract; no concrete System/Episteme Tell-Show-Show. | Breaks teachability and makes misuse likely. | Fill Archetypal Grounding first; then back-propagate concrete nouns into Problem/Forces/Solution. |
+| **SoTA name-dropping** | SoTA-Echoing lists sources or adopt/adapt/reject labels but never names the practice question, serious alternative, defect overcome, or changed pattern locus. | The reader cannot recover why the selected line is best for this question or what changed in practice. | Supply the complete compact comparison from CC-SG.7, or state an honest source gap. |
+| **Currentness laundering** | An official registry entry, publication date, maintained status, latest release, citation count, or widespread default is verified and then reported as evidence that the source is SoTA. | The check establishes source identity, availability, or currentness, not the best-known answer or its advantage over a serious alternative. | Classify the source as official/popular comparator or identity/currentness only. It contributes to SoTA only through an explicit comparison whose defect and pattern mutation are independently shown. |
+| **Tool-bound normativity** | A vendor tool, file format, or schema is described as required to apply the pattern. Data governance implied. | Violates Guard-Rails (lexical firewall; notation independence, data governance absence); reduces portability and conceptual clarity. | Keep normative content conceptual; move tooling and data governance into subject-specific project profiles. |
+| **Hidden trade-offs** | Solution sounds universally good; Consequences lists only benefits. | Removes decision-use value; applicability cannot be judged. | In Consequences, include at least one trade-off and a mitigation; if none exists, explain why. |
+| **Skeleton-only pattern** | The template is present, but the pattern gives only one compressed definition block and scenario labels. | Passes form while failing didactic sufficiency. | Add didactic content: local decomposition, concrete slices, reviewer cues, and neighboring-pattern or project-side FPF kind and reference named by value guidance. |
+| **PatternID read as definition or order** | A numeric or mnemonic segment is treated as the pattern's meaning, title, current position, dependency, Method relation, or semantic parent. | The address becomes a hidden claim and ordinary reordering threatens reference continuity. | Use the PatternID only as an address together with surrounding text that identifies the framework. Show title and current position separately, state relations directly, and use the applicable product-authoring rule to decide continuity across editions. |
+| **Project-context leakage** | A reader needs architecture memos or planning notes to understand the pattern. | The monolith stops being self-sufficient. | Move the essential problem framing, worked slices, and rationale into the pattern itself; keep project reviews informative only. |
+| **Repeated content, reference, and architecture boilerplate leakage** | Problem frame or Solution spends user-facing space repeating the same guard, distinction, mini-rule, reference, definition, caveat, related-pattern mapping, placement note, split rationale, or defer rationale without a new local action/case/evidence need. | The product text becomes an architecture memo or reference note instead of a pattern. Ordinary references, footnotes, README/ToC/E.11/I.2 entry cues, and `Relations` already carry cross-reference work; repeating it as prose hides the positive Solution. | Replace the boilerplate with a normal pattern id, citation, `Builds on`, `Coordinates with`, `Relations`, README/ToC/E.11/I.2 entry cue, or architecture/DRR note. Keep only a local boundary sentence when it changes the first admissible move. |
+| **Quality-carrier leakage** | Any host or monolith pattern text, including notes, appendices, `Relations`, `Rationale`, `SoTA-Echoing`, examples, tables, or checklist rows, talks about corpus projection, README, ToC, `E.11`, and `I.2` alignment, retrieval or cold-reader evidence, monolith parity, landing evidence, `PatternQualityStatus`, all-`4` or all-`5` posture, or Developer, Reviewer, and Executor correspondence as if that is pattern content. | The text is now about why the pattern can be evaluated, found, landed, or trusted, or about author or reviewer turn communication, rather than about what the intended user should do. | Move the quality or projection facts to `E.21`, `E.19`, README, ToC, `E.11`, `I.2`, projection, card, retrieval, release, or landing carriers. Keep only the user-facing action or boundary justified by that evidence. |
+| **Apparatus overwrap** | A simple pattern claim, relation, object, action, or placement is wrapped in extra ambiguous role, carrier, locus, flow, state, status, text-state, package, or process words. | The sentence may be technically correct, but the reader sees apparatus before the pattern's object and move. A poetic plain rewrite can be just as bad if it loses the FPF kind. | Apply `F.19`; the final rewrite keeps the same `EntityOfConcern`, head kind, relation or claim kind, established FPF term, concerned system-role kind or assignment when current, and exact flow position. |
+| **Generic-head underspecification** | An FPF-governed phrase uses a generic head such as `note`, `view`, `guidance`, `output`, or `artifact`, but the text never restores what kind of thing that phrase names. | The reader cannot tell what ontology the sentence is actually governing. | Restore the head kind first in pattern-local or project-local terms before any broader claim or effect or comparison is made. |
+| **Qualifier-smuggled claim kind or admissible-use boundary** | A modifier such as `comparative`, `safe`, `interactive`, `reliable`, or `faithful` is doing the semantic work while the text leaves its claim kind or admissible-use boundary implicit. | The sentence sounds precise without actually stating its comparison criterion, relation claim kind or admissible-use boundary, or downstream claim or effect boundary. | Unpack the qualifier into explicit claim kind or admissible-use boundary, criteria, named neighboring FPF pattern, or project-side FPF kind and reference rather than relying on the modifier alone. |
+| **Mixed comparison criterion** | One sentence compares or ranks publication-form, carrier, process, authority-reference, or project-record values under one declared criterion. | The sentence becomes ontologically incoherent when the compared objects do not share the criterion, even if each local noun sounds plausible. | First restore head kind, then qualifier claim kind or admissible-use boundary, then rewrite the comparison through a homogeneous claim-kind criterion, threshold, or named relation condition. |
+| **Implicit relation shorthand** | Words like “species”, “branch”, or process metaphors do the semantic work without naming the actual relation or cited-pattern contribution. | Readers infer the wrong ontology or workflow. | State the actual relation and what the cited content contributes, cite the pattern id, and remove shorthand that only makes sense inside project discussions. |
+| **Package-form and neighboring-relation drift** | Words like `bundle`, `cluster`, `profile`, `overlay`, `family`, `suite`, or `kit` are swapped as if they were stylistic variants. | Readers cannot tell whether the text is naming an `authoritySourceRef` target, a navigation grouping, a reviewer use, a packaged set of defaults, or an actual family, membership, or projection relation. | Pick one relation word by ontology, state the actual family, membership, or projection relation and any cited content's concrete contribution, and do not vary the noun unless the ontology really changes. |
+| **Intended-reader leakage** | Pattern sections start telling the reader why the pattern was isolated, what landing form is safest, or why freeze or merge is premature. | The pattern stops teaching the user and starts narrating FPF-development decisions. | Move package-development reasoning to companion notes; keep pattern sections about admissible use, costs, boundaries, the neighboring content that defines or constrains those claims, and project-side FPF kinds and references for the intended user. |
+| **Editorial/development self-instruction leak** | The pattern starts saying things like `this draft should ...`, `later authoring will ...`, or `that is the opening this draft must hold`. | The text stops addressing the working reader and starts narrating the current editorial or drafting process. | Move the sentence to the authored-slice carrier or handoff, or rewrite it as one user-facing claim about the primary `EntityOfConcern`, boundary, or practical consequence. |
+| **Intended-reader-clean but pragmatically foggy** | The pattern addresses the right reader in principle, but a cold practitioner still cannot recognise the working situation, practical payoff, primary `EntityOfConcern`, first useful move, or project-level implication of the `SoTA-Echoing` early enough. | The text passes intended-reader hygiene but still fails `E.12`, `E.13`, or `E.14` as working guidance. | Bring a manager-first or practitioner-first recognition cue higher, add one minimally viable worked case, state what changes in practice, expose the primary `EntityOfConcern` and any minimal modeling lens in plain user-facing prose, add plain glosses for early FPF-governed technical terms, and keep `SoTA-Echoing` tied to visible practitioner or manager implications plus nearby case linkage rather than lineage alone. |
+| **Hybrid audience blob** | One main narrative tries to serve engineers, managers, auditors, architects, and researchers at once with no primary working reader or concern. | The text becomes globally polite but locally blurry; no reader knows which concern governs the first passage. | Make the primary working reader, concern, and viewpoint explicit and assign other audiences to secondary companion uses, other faces, or an explicit out-of-scope note. |
+
+### E.8:9 - Consequences
+
+| Benefits | Trade‑offs / Mitigations |
+|----------|-------------------------|
+| **Predictable skeleton** – readers instantly know where to find the problem frame, forces, and criteria. | Limits author freedom in macro layout; mitigated by flexibility inside the Solution subsection. |
+| **Cohesive voice** – S‑principles give FPF a recognisable style, aiding memorability. | Reviewers must read for style, not only semantics; checklists reduce review effort. |
+| **Embedded pedagogy** – Tell‑Show‑Show and Hook → Close heuristics turn the spec into a self‑teaching text. | Slightly longer patterns; justified by better comprehension and fewer clarifying DRRs. |
+
+### E.8:10 - Rationale
+Structure and style function as FPF’s *grammar*. By unifying what were
+once separate “template” and “style guide” patterns, authors face a
+single reference point that satisfies:
+
+* **P‑1 Cognitive Elegance** – uniform, minimal surprises.
+* **P‑2 Didactic Primacy** – narrative flow, dual archetype examples.
+* Guard‑Rails 1 & 2 – no tool jargon, no notation lock‑in inside prose.
+
+A unified template also improves retrieval: a chunk containing `A.2:<n> - Bias‑Annotation` remains self‑identifying even when parent headings are missing, and the required footer marker makes truncation detectable.
+
+International and industry standards often speak in terms of *conformance criteria*. FPF uses the label **Conformance Checklist** to make adoption easier for engineers and managers.
+
+### E.8:11 - SoTA-Echoing *(normative; typed comparison to contemporary best-known practice)*
+
+**Canonical definition and contract.** This is the FPF definition of `SoTA`: the best-known currently defensible answer to one named practice question. `F.1` may prepare the question-relative source cut and `E.21` may evaluate the resulting pattern, but neither redefines SoTA. A `SoTA-Echoing` section earns its place by changing the pattern's Solution, boundary, case, check, relation, evidence requirement, stop, or reopen condition. It is not a bibliography, source-currentness register, or lineage shelf.
+
+**Source roles in plain wording.** Classify each retained source by what it can do for the question:
+
+- a **best-known-line candidate** supplies or critically synthesizes the strongest current answer being considered;
+- a **serious current rival** supplies another answer that could change the selection;
+- **failure or counterexample evidence** shows where an answer breaks or does not transfer;
+- an **official or popular comparator** exposes a default worth comparing but gains no rank from authority or adoption;
+- **lineage only** explains history without supporting the current selection; and
+- **identity/currentness only** identifies a source, edition, date, or maintenance state without supporting its truth, adequacy, or rank.
+
+Only the best-known line, serious rivals, failure evidence, and a necessary explicit comparator belong in `SoTA-Echoing`. These are comparison roles, not publisher or institution classes. An official standard, widely used practice, or university-endorsed line can be the best-known-line candidate when its substantive answer wins the comparison, but authority, freshness, prevalence, or praise contributes nothing to that win. Lineage-only and identity/currentness-only material stays in source records, notes, or evidence carriers outside the pattern body. An official or popular default stays as comparator only when its precise defect is needed to explain the selected answer and changes a governed pattern locus.
+
+**Positive comparison contract.** Every positive SoTA use states, in readable prose or one compact table:
+
+1. `practiceQuestion` — the exact working question;
+2. `bestKnownLine` — the selected answer, not merely its newest source;
+3. `seriousAlternativeOrDefault` — the rival or default that could have changed the answer;
+4. `defectOvercome` — the action-changing defect, limit, or trade-off that selection repairs;
+5. `patternMutation` — the exact Solution, boundary, case, check, relation, evidence, stop, or reopen locus changed;
+6. `sourceRolesAndLimits` — the exact source edition or stable locator, why it has this comparison role, and what it does not establish; source identity supports replay, not rank; and
+7. `reopenCondition` — the smallest new evidence, rival, failure, or use change that would require comparison again.
+
+Mark material moves `adopt`, `adapt`, or `reject`. Explain which defect of the incumbent, popular, or official answer is repaired and why the selected line is no worse at comparable application effort on the values that matter and better on at least one, or state the trade-off deliberately accepted. More sources, a later date, a wider deployment, institutional praise, or a longer review cannot replace that comparison.
+
+**Honest gap and lightest sufficient evidence.** If an adequate best-known comparison cannot be established, say which rival, counterexample, or source role is missing and return that source gap. Do not fill the section with a current standard or recent paper. Use `F.1` for the smallest question-relative cut and its SoTA-specific role branch. Use `F.0.2` only when the conclusion actually needs cross-source synthesis. Use a broader `G.2` pack only when repeated refresh or a wider claim justifies that cost.
+
+**Evidence and relation discipline.** When a `G.2` pack already exists, reuse its exact ClaimSheet, corpus-ledger, and Bridge rows and their source roles rather than forking a second narrative. When an accepted `DRR` and other accepted source materials govern the draft, inherit their non-conflicting comparison content by value; the `DRR` remains the decision and placement record rather than becoming a second SoTA definition. When a use relies on an obtaining semantic Bridge, identify the two exact `F.17` local senses, the `F.9` relation, and a separate bounded-use claim; shared words, source imports, contexts, or dates create none of those relations. Keep numeric comparison under its applicable ComparatorSet or CG-Spec without hidden scalarization.
+
+**Writing guidance.** Lead each row with the practice question and practical choice. Name the selected line and serious alternative, state the defect and pattern change, then give source roles, limits, and reopen condition. Complete sentences are preferred to tag lists. External terminology or tooling stays out unless the comparison itself needs it.
+
+#### E.8:11.1 - SoTA alignment for this pattern (E.8 self-echo)
+
+| Practice question | Best-known line | Serious alternative or default | Defect overcome and pattern mutation | Source roles and limits | Reopen condition |
+| --- | --- | --- | --- | --- | --- |
+| How should a pattern text remain teachable while retaining a stable reusable shape? | Iba's practitioner pattern-writing line is the best-known candidate here: start from a recurring problem, forces, a usable solution, illustration, and consequences, then make the sequence readable as a whole. | A form-only template that rewards headings and compressed bullets is the serious default. | The default can be structurally complete yet unusable. **Adapt:** `E.8:4.1`, Archetypal Grounding, recognition text, and `CC-SG.2/13/17` require a first action, worked material, and readable continuity rather than heading presence alone. | Takashi Iba, *How to Write Patterns: A Practical Guide for Creating a Pattern Language on Human Actions* (PLoP 2021), supplies practitioner writing guidance, not FPF ontology or evidence that one skeleton fits every pattern. E.8's extra checks and typed boundaries are FPF-local adaptations. | Reopen if a stronger current pattern-writing comparison shows a lower-effort form that preserves the same recognition, action, grounding, and consequence value. |
+| What evidence should distinguish pattern validation from a favorable review or folklore count? | Riehle, Harutyunyan, and Barcomb's 2025 handbook method is the best-known candidate for the bounded pattern-discovery and validation question because it makes claims, research methods, cases, and evidence limits explicit. | Ad hoc expert approval and the rule of three are the serious defaults. | The defaults hide what was tested and overstate a small positive history. **Adapt:** E.8 separates a canonical seed from maturity, requires worked grounding and explicit evidence use, and routes quality claims to independent `E.21` results; **reject** a universal research programme for every small pattern. | Riehle, Harutyunyan, and Barcomb, [*Pattern Discovery and Validation Using Scientific Research Methods*](https://doi.org/10.1007/978-3-662-70810-1_6) (2025), supplies a rigorous validation branch but does not validate E.8. It is neither an admission decision nor a universal minimum case count. | Reopen if stronger current validation practice changes the evidence needed for a maturity claim or demonstrates a cheaper method with equivalent limits and replayability. |
+| When does a narrower or domain-specific contribution deserve a separate pattern or framework boundary? | The best-known line for this decision combines action-changing pattern evidence with the 2022 systematic comparison of product-line scoping approaches: compare same-situation use, reusable contribution, family promise, organizational conditions, evidence, and maintenance rather than relying on a label. | Label-only specificity and a full software-product-line process are the serious alternatives. | A label can mint empty specialization, while the full process adds software-specific machinery before value is known. **Adapt:** `E.8:4.1.3` tests the same situation at comparable effort and routes a material family change to `E.4.DPF.DA`; **reject** feature ontology and action change as sufficient proof of worth. | Marchezan de Paula et al., [*Software product line scoping: A systematic literature review*](https://doi.org/10.1016/j.jss.2021.111189) (2022), is the scoping synthesis; Riehle et al. (2025) supplies actual-use pressure; Chuprina et al., [*Towards an Approach to Pattern-based Domain-Specific Requirements Engineering*](https://arxiv.org/abs/2404.17338) (2024), is bounded proof-of-concept evidence, not a universal grammar. | Reopen if current scoping or pattern-validation evidence changes the action test, the family-boundary variables, or the evidence needed for warranted retention. |
+
+### E.8:12 - Relations
+* **Coordinates with:** `E.9.DA` when an authored pattern body is drafted from a concrete `DRR` and the blocker is whether the `DRR` selected, distributed, carried source use, carried accepted decisions, or supplied a first drafting action sufficiently for that authoring use. `E.8` still governs the pattern body; `E.9.DA` is not a mandatory authoring section, review card, or substitute for writing the Solution.
+
+* **Builds on:** E.6, E.7
+* **Constrained by:** Guard‑Rails E.5.1–E.5.4 (lexical firewall, notation independence, etc.)
+* **Coordinates with:** `E.21` when one authored FPF pattern version is evaluated as a scoped pattern-quality claim. `E.8` governs authoring shape, recognition text, action guidance, worked cases, SoTA grounding, and conformance material; `E.21` governs the pattern-quality evaluation, required coordinate values, `PatternQualityStatus`, and stop condition. Do not import `E.21` as a mandatory authoring section or full review card.
+* **Coordinates with:** `E.23` when an authored FPF pattern body is being improved through repeated passes. `E.8` still governs the authored pattern body; `E.23` governs the repeated quality-improvement method; the object-under-improvement evaluation such as `E.21` or `E.9.DA` supplies value meanings and stop meanings.
+* **Coordinates with:** `E.13` when an authored pattern claims practical payoff or uses a visible quality value, metric, checklist result, review result, or release posture as if it were the intended value. `E.8` keeps the payoff in user-facing prose; `E.13` repairs proxy-to-value substitution.
+* **Coordinates with:** `E.4.DPF` for choosing a DPF reference code, PatternID plan, continuity across editions, and reader return after split, merge, replacement, or retirement; and `E.11.PFP` for current Part, position, public order, and citation display. `E.8` owns only the common identifier grammar and reference wording; identifier form and checker success decide none of those authoring or publication questions.
+* **Coordinates with:** `E.11.PUR`, which supplies the recommended-pattern-use decision for a current concern, and `E.10.MOVE`, which disambiguates whether move-like wording names pattern-use recommendation, direct work, plan, gate, transformation, publication, source, architecture, call-planning, or language-state material. These references state concrete contributions; an exact assertion, claim-bearing episteme, or `ClaimGraph` is added only when the named receiving use depends on that identity.
+
+
+* **Constrains:** All patterns; the DRR template references the same section order.
+
+### E.8:End

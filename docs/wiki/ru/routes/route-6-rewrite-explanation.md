@@ -3,7 +3,7 @@ title: "Маршрут 6: Пересказ для аудитории"
 sources:
   - sections/routes/route-6-rewrite-explanation.md
   - scripts/build_routes.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - route
   - tier-1
@@ -23,7 +23,7 @@ tags:
 - **Длина цепочки:** 5 секций при полной загрузке (самый короткий маршрут Tier 1), 3 из них core.
 - **Core-секции:** `A.6.3.CR` (conservative retextualization — с сохранением объекта-предмета), `A.6.3.RT` (representation-scheme transition с сохранением EntityOfConcern), `E.17.EFP` (ExplanationFaithfulnessProfile — дисциплина использования объяснений).
 - **Полная цепочка добавляет:** `E.17.ID.CR` (ComparativeReviewUnit — ограниченное сравнение по единицам сравнительного обзора) и `E.17.AUD.LHR` (PublicationUnit Stability Discipline and Local Head Restoration).
-- **Резолвинг `A.6.3.CR`:** стоит первым в цепочке (и является core), резолвится в `sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/10-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md`.
+- **Резолвинг `A.6.3.CR`:** стоит первым в цепочке (и является core), резолвится в `sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/11-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md`.
 
 ## Статус
 

@@ -72,7 +72,7 @@ These are separate objects and claims; the fields do not create one another:
 - a **resource Characteristic** says which quantity or property is accounted for;
 - **measurement work** and a **C.16 measurement-result episteme** supply each attributed resource value, Scale, Unit, uncertainty, model, calibration, and time stance;
 - the **aggregation policy** declares inclusion, conversion, weighting, missing-value, partition, overlap, and deduplication rules;
-- **aggregation work** is dated `U.Work` with performer, method, actual inputs through direct relations or A.6.1 bindings, resources, and temporal extent;
+- **aggregation work** has its actual performer identified through A.13 and is independently admitted as dated `U.Work` through A.15.1; if the aggregation account must also identify the assignment under which the Work was performed, F.6 checks that relation separately; Method, actual inputs through direct relations or A.6.1 bindings, resources, and temporal extent remain separate;
 - the **B.1.6 aggregation result** is the typed total, vector, interval, or bounded estimate obtained under that policy and work set;
 - a distinct **C.2.1 aggregation-result episteme** states the result, work set, policy, boundary, time window, qualifications, and uncertainty; and
 - **A.10/G.6 provenance** makes the measurement sources, transformations, aggregation work, and result episteme replayable.
@@ -83,11 +83,11 @@ A ledger, dashboard, policy, profile, clause, citation, or graph edge may repres
 
 | Current claim | Subject pattern |
 | --- | --- |
-| Resource Characteristic, Scale, Unit, measurement model/calibration, measurement work and result | `C.16` plus A.15.1/A.6.1 for work and bindings |
-| Dated aggregation work, performer, method enactment, and actual inputs | `A.15.1` and `A.6.1` |
+| Resource Characteristic, Scale, Unit, measurement model/calibration, measurement work and result | `C.16` for measurement; A.13 for each actual performer; A.15.1 for independent Work admission; F.6 when the result must also identify the assignment under which the Work was performed; and A.6.1 for actual bindings |
+| Dated aggregation Work and actual performer | A.13 identifies the actual performer, then A.15.1 independently admits the Work. Add F.6 only if the result must also identify the assignment under which the Work was performed. Method enactment and actual inputs remain separately governed, including A.6.1 bindings when used. |
 | Work temporal part, episode, operational part, partition, overlap, retry, resumption, or later occurrence | `A.15.1` and the exact Work relation pattern; use `B.1.4` only to aggregate already recovered temporal relations |
 | Proper temporal restriction of another enduring carrier | that carrier's direct identity pattern plus `A.14` `PhaseOf`; never a substitute for Work relations |
-| Overlap, shared-stock, boundary, and deduplication facts | exact stock, resource-use, boundary, work-overlap, or accounting relation pattern |
+| Overlap, shared-stock, boundary, and deduplication facts | C.27.TA for interval overlap; the exact stock, resource-use, boundary, or accounting relation pattern for the other fact |
 | Aggregation policy and typed aggregation result | `B.1.6` |
 | Measurement-result and aggregation-result epistemes | `C.2.1`; A.15.PROD only when their inception through work matters |
 | Source recovery and provenance | `A.10` and `G.6`; `E.17` for publication |
@@ -104,7 +104,7 @@ Gamma_work(workResourceAggregationRecord, resourceBasis, aggregationPolicy)
   -> aggregationResultRef, aggregationResultEpistemeRef
 ```
 
-The notation applies only after the resource Characteristics, C.16 measurement Work and result epistemes, dated Work set, exact A.15.1 Work-part, episode, and overlap relations or non-Work carrier identity and `PhaseOf` relations, accounting boundary and time window, aggregation policy, and dated aggregation Work have been named. It does not create those objects or relations, order method steps, certify a method, or declare emergence.
+The notation applies only after the resource Characteristics, C.16 measurement Work and result epistemes, dated Work set, every A.15.1 Work-part relation used by the aggregation, any C.27.TA overlap fact used by it, any separately current non-Work carrier identity and `PhaseOf` relation, accounting boundary and time window, aggregation policy, and dated aggregation Work have been named. It does not create those objects or relations, order method steps, certify a method, or declare emergence.
 
 ### B.1.6:4 - Ledger Discipline
 
@@ -113,7 +113,7 @@ The ledger is a replay surface, not the source of the aggregation claim. For eve
 - resource Characteristic, Scale, Unit, polarity when relevant, and accounting boundary;
 - exact measured or estimated subject, time window, and work occurrence to which the value applies;
 - C.16 measurement work and measurement-result episteme, including model, calibration, uncertainty, and provenance refs when current;
-- exact A.15.1 Work-temporal, episode, operational-part, partition, or overlap relations—and any separately current non-Work carrier `PhaseOf`—independently established by their subject patterns;
+- every A.15.1 Work-part relation used by the ledger, every C.27.TA overlap fact used by it, and any separately current non-Work carrier `PhaseOf`, each independently established by its subject pattern;
 - shared resource, meter, person, tool, stock, data, port, or time-window overlap and the exact deduplication rule;
 - conversions, normalizations, imputations, and their declared method/policy refs;
 - the aggregation policy edition and actual aggregation work occurrence;
@@ -122,7 +122,7 @@ The ledger is a replay surface, not the source of the aggregation claim. For eve
 
 Measured, estimated, normalized, converted, allocated, and planned values remain visibly different. A planned value does not become a measurement result or performed-work resource use. A citation to a meter or invoice does not establish the measurement work; a ledger row does not establish work parthood or overlap.
 
-Use `PortionOf` only for an exact resource portion with its A.14 measure and additivity basis. Use `PhaseOf` only for a proper temporal restriction of one unchanged non-Work carrier after its direct identity rule and interval conditions hold. For Work, use A.15.1 `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, another admitted Work-part relation, overlap, retry, resumption, or a separately identified occurrence according to its exact predicate. `MemberOf`, common timestamps, shared identifiers, a phase label, or co-listing in the ledger establishes none of those relations.
+Use `PortionOf` only for a resource portion with its A.14 measure and additivity basis. Use `PhaseOf` only for a proper temporal restriction of one unchanged non-Work carrier after its direct identity rule and interval conditions hold. For Work, use A.15.1 `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, or another admitted Work-part relation only between independently admitted Work participants after its predicate passes. Route interval overlap through C.27.TA. Use retry or resumption only through a locally declared species with the needed participant meanings, predicate, identity, cardinality, and applicability; otherwise keep separately identified occurrences. Belonging to a collection, common timestamps, shared identifiers, a phase label, or co-listing in the ledger establishes none of those relations.
 
 ### B.1.6:5 - Aggregation Rules
 
@@ -130,13 +130,13 @@ Use `PortionOf` only for an exact resource portion with its A.14 measure and add
 
 **Measurement before aggregation.** Each measured input points to exact C.16 measurement work and one measurement-result episteme. Raw meter output, indication, resource stock, attributed value, aggregation input, and later efficiency verdict remain distinct.
 
-**Exact Work set.** Name every dated Work occurrence included. Parent/child, `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, other admitted Work-part, partition, and overlap relations must already obtain under A.15.1 or their exact subject patterns. A method, plan, epoch or phase label, invoice period, or dashboard grouping does not establish the Work set.
+**Exact Work set.** Name every dated Work occurrence included. Parent–child, `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, and other admitted Work-part relations must already obtain between exact Work participants under A.15.1 or their direct subject patterns. Any overlap fact comes through its exact C.27.TA temporal declaration. A Method, plan, epoch or phase label, invoice period, or dashboard grouping does not establish the Work set.
 
 **Exact policy.** The aggregation policy states inclusion/exclusion, conversion, normalization, weighting, missing-value treatment, boundary allocation, uncertainty treatment, overlap/deduplication, and output kind. A policy declaration is not aggregation work or a result.
 
 **Overlap and shared stocks.** Addition is admissible only for disjoint partitions or after an exact policy handles overlap. Shared people, tools, meters, inventories, datasets, ports, and time windows require the direct shared-use/overlap fact and a justified allocation or deduplication rule.
 
-**Aggregation work and result.** Ground dated aggregation work with performer, method, actual bindings, resources, and time. State the B.1.6 result as a typed total, vector, interval, or bounded estimate under the named policy and work set; then state it in a distinct C.2.1 episteme.
+**Aggregation work and result.** Use A.13 to identify the actual performer and A.15.1 to admit the dated aggregation Work independently. If the aggregation account must also identify the assignment under which the Work was performed, check that relation separately through F.6. Keep the Method, actual bindings, resources, and time separate. State the B.1.6 result as a typed total, vector, interval, or bounded estimate under the named policy and Work set; then state it in a distinct C.2.1 episteme.
 
 **Uncertainty and provenance.** Propagate measurement uncertainty and model/conversion uncertainty according to the exact aggregation policy. Provenance lists do not perform uncertainty propagation. A.10/G.6 paths cite the established work, measurements, policy application, transformations, result, and sources without creating them.
 
@@ -149,16 +149,16 @@ Use `PortionOf` only for an exact resource portion with its A.14 measure and add
 | Obligation | What must be named |
 | --- | --- |
 | Resource input | Resource Characteristic, Scale/Unit, subject, C.16 measurement work/result episteme, uncertainty, time, and provenance |
-| Work set | Dated Work occurrences and exact A.15.1 temporal-part, episode, operational-part, other admitted Work-part, partition, and overlap relations; any non-Work carrier phase keeps its own identity rule and `PhaseOf` relation |
+| Work set | Dated Work occurrences, every A.15.1 Work-part relation used by this aggregation, and every C.27.TA overlap fact it uses; any non-Work carrier phase keeps its own identity rule and `PhaseOf` relation |
 | Policy | Edition, inclusion, conversions, weights, missing values, boundary allocation, uncertainty, overlap/deduplication, and output kind |
-| Aggregation execution | Dated `U.Work`, performer, method, resources, and actual direct/A.6.1 bindings |
+| Aggregation execution | Actual performer identified through A.13; dated `U.Work` independently admitted through A.15.1; a separate F.6 check when the result must also identify the assignment under which the Work was performed; separate Method, resources, and actual direct/A.6.1 bindings |
 | Aggregation result | Typed result, work set, policy, boundary, window, qualifications, and distinct C.2.1 episteme |
 | Provenance/currentness | A.10/G.6 paths and G.11 result when currentness affects use |
 | Later use | Exact receiving work and direct premise/reference/argument/decision-use relation |
 
 ### B.1.6:6 - Archetypal Grounding
 
-**Engine test programme.** C.16 measurement Work attributes fuel mass, electrical energy, operator time, and emissions values to exact subjects under their Scales, models, calibration bases, windows, and uncertainties. Each has its own result episteme. Exact test-run occurrences and A.15.1 `TemporalPartOf_work`, episode, operational-part, or overlap relations define the included Work set; a test-cell or engine phase enters only through the carrier's identity rule and proper phase relation. Shared warm-up energy is recorded as overlap. Dated aggregation Work applies `ProgrammeResourcePolicy-v3`, which allocates warm-up energy once and propagates input uncertainty. The B.1.6 result is a typed resource vector plus qualifications; a C.2.1 episteme states it. A later emissions verdict remains separate evaluation Work and result.
+**Engine test programme.** C.16 measurement Work attributes fuel mass, electrical energy, operator time, and emissions values to exact subjects under their Scales, models, calibration bases, windows, and uncertainties. Each has its own result episteme. Exact test-run occurrences and obtaining A.15.1 Work-part relations define the included Work set; independently declared C.27.TA overlap facts state shared timing. A test-cell or engine phase enters only through the carrier's identity rule and proper phase relation. Shared warm-up energy is recorded under the exact temporal and resource-use facts. Dated aggregation Work applies `ProgrammeResourcePolicy-v3`, which allocates warm-up energy once and propagates input uncertainty. The B.1.6 result is a typed resource vector plus qualifications; a C.2.1 episteme states it. A later emissions verdict remains separate evaluation Work and result.
 
 **Manufacturing cell.** Welding and painting are two dated work occurrences. Electricity, gas, consumables, and labor time are separate resource Characteristics with measurement-result epistemes. A shared extraction fan and overlapping operator time require direct shared-use facts and an allocation policy. The resource ledger represents those facts; it does not create the work, parts, overlap, measurements, aggregation, or frame transformation.
 
@@ -179,9 +179,9 @@ Use `PortionOf` only for an exact resource portion with its A.14 measure and add
 | ID | Requirement |
 | --- | --- |
 | CC-B1.6-1 | Every resource component names its Characteristic, Scale/Unit, subject, time stance, C.16 measurement work/result episteme, and uncertainty/provenance when current. |
-| CC-B1.6-2 | The included dated Work occurrences and every A.15.1 temporal-part, episode, operational-part, other admitted Work-part, partition, overlap, or shared-stock relation are independently grounded; a separately used non-Work `PhaseOf` passes that carrier's direct identity rule. |
+| CC-B1.6-2 | The included dated Work occurrences, every A.15.1 Work-part relation used by the aggregation, every C.27.TA overlap fact it uses, and every separately used shared-stock relation are independently grounded; a separately used non-Work `PhaseOf` passes that carrier's direct identity rule. |
 | CC-B1.6-3 | The aggregation policy names inclusion, conversion, weighting, missing values, boundary allocation, uncertainty, overlap/deduplication, and output kind. |
-| CC-B1.6-4 | Dated aggregation work has a performer, method, actual direct/A.6.1 bindings, resources, and temporal extent. |
+| CC-B1.6-4 | For dated aggregation Work, A.13 identifies the actual performer and A.15.1 independently admits the occurrence. F.6 is present only when the result must also identify the assignment under which that Work was performed. The Method, actual direct/A.6.1 bindings, resources, and temporal extent remain separate. |
 | CC-B1.6-5 | The B.1.6 aggregation result and the distinct C.2.1 result episteme are recoverable; neither is a ledger row or generic result field. |
 | CC-B1.6-6 | A.10/G.6 provenance and G.11 currentness remain separate from measurement and aggregation results. |
 | CC-B1.6-7 | Planned values and A.15.5 resource readiness are not presented as measured performed-work aggregation. |
@@ -225,7 +225,7 @@ Source refresh is local: replay the row's named rule, case, and checklist rows f
 
 ### B.1.6:10 - Relations
 
-- Builds on `A.15.1` and `A.6.1` for dated measurement or aggregation work, system-role assignment, declarations, and actual bindings; C.2.1 for measurement-result and aggregation-result epistemes.
+- Builds on A.13 for actual performers, A.15.1 for independently admitted dated measurement or aggregation Work, F.6 when a result must also identify the assignment under which that Work was performed, and A.6.1 for declarations and actual bindings; C.2.1 governs measurement-result and aggregation-result epistemes.
 - Coordinates with `A.3.1`, `A.3.2`, and `A.15.2` for method, method description, and work plan.
 - Coordinates with `A.15.5` for work-entry readiness, full-kit condition, and resource readiness before work entry; B.1.6 may cite those refs but does not decide readiness.
 - Coordinates with `A.15.1` for exact Work temporal parts, episodes, operational parts, overlaps, retries, resumptions, and later occurrences; with `B.1.4` only for bounded aggregation of already recovered temporal relations; and with `C.27` for temporal-claim adequacy.

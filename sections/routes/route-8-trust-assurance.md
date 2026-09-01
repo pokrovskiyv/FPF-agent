@@ -8,7 +8,7 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | B.3 | Trust & Assurance Calculus (F–G–R with Congruence) | sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b3-b3-trust-and-assurance-calculus-f-g-r-with-congruence.md | YES |
+| 1 | B.3 | Trust and Assurance Calculus | sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b3-b3-trust-and-assurance-calculus.md | YES |
 | 2 | B.3.5 | Working-Model Relations & Grounding (CT2R-LOG) | sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b35-b35-working-model-relations-grounding-ct2r-log.md | YES |
 | 3 | B.1 | Holon Aggregation and Part-Whole Construction | sections/08-part-b-trans-disciplinary-reasoning-cluster/01-b1-b1-holon-aggregation-and-part-whole-construction.md | YES |
 | 4 | B.1.1 | Dependency Structure and Relation Grounding | sections/08-part-b-trans-disciplinary-reasoning-cluster/02-b11-b11-dependency-structure-and-relation-grounding.md |  |

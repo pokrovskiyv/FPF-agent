@@ -1,4 +1,3 @@
 # Part H - Reserved
 
-Placeholder section reserved for future content; no patterns here yet.
-
+No subsections listed for this directory.

@@ -2,7 +2,7 @@
 title: build_metadata
 sources:
   - scripts/build_metadata.py
-last_updated: 2026-04-15T00:00:00Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - module
   - pipeline

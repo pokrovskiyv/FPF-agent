@@ -4,7 +4,7 @@ sources:
   - CLAUDE.md
   - agents/fpf-sync.md
   - scripts/update_changelog.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - architecture
   - sync
@@ -68,7 +68,7 @@ The fpf-sync runbook has **eight** steps. Steps 2–5 are skipped when upstream 
                git push
 ```
 
-The commit in Step 8 also triggers the PreToolUse hook, which appends a Conventional-Commit changelog entry and bumps `.claude-plugin/plugin.json` on its own. The current plugin version is **0.6.3**.
+The commit in Step 8 also triggers the PreToolUse hook, which appends a Conventional-Commit changelog entry and bumps `.claude-plugin/plugin.json` on its own. The current plugin version is **0.10.0**.
 
 ## Decisions
 

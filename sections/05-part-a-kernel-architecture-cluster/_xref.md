@@ -1,6 +1,6 @@
 # Cross-References into 05-part-a-kernel-architecture-cluster
 
-Patterns in other Parts that reference patterns in this directory (252 refs).
+Patterns in other Parts that reference patterns in this directory (274 refs).
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -10,11 +10,9 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | A.6.0 | coordinates_with | A.3.1 |
 | A.6.1 | builds_on | A.2.6 |
 | A.6.1 | coordinates_with | A.3.1 |
-| A.6.2 | builds_on | A.1 |
 | A.6.3.CSC | coordinates_with | A.21 |
 | A.6.3.RT | coordinates_with | A.21 |
-| A.6.6 | builds_on | A.2.6 |
-| A.6.6 | builds_on | A.2.4 |
+| A.6.6 | coordinates_with | A.2.4 |
 | A.6.7 | coordinates_with | A.21 |
 | A.6.9 | coordinates_with | A.2.6 |
 | A.6.9 | coordinates_with | A.22 |
@@ -40,7 +38,10 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | A.6.RSIR | builds_on | A.2 |
 | A.6.RSIR | builds_on | A.2.1 |
 | A.6.RSIR | coordinates_with | A.3.4.P |
-| A.6.S | builds_on | A.3 |
+| A.6.S | builds_on | A.3.1 |
+| A.6.S | builds_on | A.3.2 |
+| A.6.S | builds_on | A.2 |
+| A.6.S | builds_on | A.2.1 |
 
 ## From 07-cluster-av-constitutional-principles-of-the-kernel
 
@@ -48,6 +49,7 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 |--------|----------|--------|
 | A.10 | coordinates_with | A.2.4 |
 | A.10 | coordinates_with | A.21 |
+| A.10.1 | builds_on | A.11 |
 | A.12 | builds_on | A.1 |
 | A.12 | builds_on | A.2.1 |
 | A.12 | builds_on | A.2.7 |
@@ -84,6 +86,13 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | A.15.6 | coordinates_with | A.1.STM |
 | A.15.6 | coordinates_with | A.2 |
 | A.15.6 | coordinates_with | A.2.1 |
+| A.15.7 | builds_on | A.3.1 |
+| A.15.8 | builds_on | A.1 |
+| A.15.8 | coordinates_with | A.2.2 |
+| A.15.8 | coordinates_with | A.22 |
+| A.15.9 | coordinates_with | A.2.2 |
+| A.15.9 | coordinates_with | A.2.1 |
+| A.15.9 | coordinates_with | A.2.9 |
 | A.15.PROD | builds_on | A.3.1 |
 | A.15.PROD | builds_on | A.3.4 |
 | A.15.PROD | coordinates_with | A.1 |
@@ -133,7 +142,10 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | B.2.5 | coordinates_with | A.3.4 |
 | B.2.P | coordinates_with | A.2.2 |
 | B.2.P | coordinates_with | A.3.4 |
+| B.3 | builds_on | A.2.4 |
+| B.3 | builds_on | A.2.6 |
 | B.3 | coordinates_with | A.21 |
+| B.3 | coordinates_with | A.22 |
 | B.4 | builds_on | A.4 |
 | B.5.3 | builds_on | A.2 |
 
@@ -144,6 +156,9 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | C.1 | builds_on | A.1 |
 | C.1 | builds_on | A.22 |
 | C.1 | builds_on | A.3.4 |
+| C.17 | builds_on | A.1.1 |
+| C.17 | coordinates_with | A.3.1 |
+| C.17 | coordinates_with | A.3.2 |
 | C.19.1 | coordinates_with | A.0 |
 | C.2 | builds_on | A.1 |
 | C.2.1 | builds_on | A.1 |
@@ -204,6 +219,8 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | C.32.CONWAY | builds_on | A.3.4 |
 | C.32.CONWAY | builds_on | A.22 |
 | C.32.FAIL | coordinates_with | A.21 |
+| C.32.MWA | builds_on | A.3.1 |
+| C.32.MWA | builds_on | A.22 |
 | C.32.P2S | builds_on | A.1 |
 | C.32.P2S | builds_on | A.1.STM |
 | C.32.P2S | builds_on | A.22 |
@@ -216,6 +233,8 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | C.36 | builds_on | A.3.1 |
 | C.36.P | coordinates_with | A.3.1 |
 | C.36.P | coordinates_with | A.3.2 |
+| C.37 | coordinates_with | A.2.4 |
+| C.37 | coordinates_with | A.22 |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 
@@ -261,6 +280,9 @@ Patterns in other Parts that reference patterns in this directory (252 refs).
 | E.18.NET | builds_on | A.22 |
 | E.18.NET | coordinates_with | A.1.STM |
 | E.18.NET | coordinates_with | A.3.4 |
+| E.23.CAE | builds_on | A.2.2 |
+| E.23.CDI | builds_on | A.2.2 |
+| E.23.CDI | builds_on | A.3.1 |
 | E.24.CD | coordinates_with | A.1 |
 | E.24.CD | coordinates_with | A.3.4 |
 | E.24.UK | coordinates_with | A.22 |

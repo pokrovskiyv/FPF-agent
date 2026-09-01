@@ -10,7 +10,7 @@ sources:
   - scripts/build_routes.py
   - scripts/build_xrefs.py
   - scripts/build_embeddings.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - architecture
   - pipeline
@@ -25,7 +25,7 @@ tags:
 
 | Шаг | Скрипт | Что создаёт |
 |-----|--------|-------------|
-| 1 | [split_spec](../modules/split_spec.md) | `sections/**/*.md` (~307 файлов + `_index.md` в каждой директории) |
+| 1 | [split_spec](../modules/split_spec.md) | `sections/**/*.md` (~330 файлов + `_index.md` в каждой директории) |
 | 2 | [build_metadata](../modules/build_metadata.md) | `sections/metadata.json` |
 | 3 | [enrich_metadata](../modules/enrich_metadata.md) | `sections/metadata.json` (на месте) |
 | 4 | [build_glossary](../modules/build_glossary.md) | `sections/glossary-quick.md` |
@@ -43,7 +43,7 @@ FPF-Spec.md  (5.5 МБ, ~1.3 млн токенов)
 sections/**/*.md  +  sections/*/_index.md
      │
      ▼  шаг 2  python3 scripts/build_metadata.py
-sections/metadata.json           (≈299 записей, пути к файлам разрешены)
+sections/metadata.json           (≈320 записей, пути к файлам разрешены)
      │
      ▼  шаг 3  python3 scripts/enrich_metadata.py
 sections/metadata.json           (обогащён пользовательскими запросами, идемпотентно)

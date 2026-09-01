@@ -3,7 +3,7 @@ title: Route Chain
 sources:
   - scripts/build_routes.py
   - sections/routes/route-1-project-alignment.md
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - concept
   - retrieval
