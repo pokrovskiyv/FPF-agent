@@ -47,6 +47,16 @@
 ### All Changes
 - **chore**: sync upstream + rebuild + AI-enhanced indexes
 
+## 2026-07-27
+
+### What's New
+- The skill now runs in Kimi Code CLI as well: the repository root is a Kimi plugin package (`.kimi-plugin/plugin.json`) alongside the Claude Code and Codex ones, and all three runtimes load the same shared skill — same triggers, same routes, same plain-language output.
+
+### All Changes
+- **feat**: add `.kimi-plugin/plugin.json` — Kimi Code CLI plugin manifest, installable via `/plugins install <github-url>`
+- **docs**: universal skill edition — `<FPF_PLUGIN_ROOT>` now anchors on any plugin manifest (`.codex-plugin/`, `.kimi-plugin/`, `.claude-plugin/`); Readme gains Kimi Code install instructions
+- **test**: `scripts/smoke_kimi.py` — offline packaging smoke for the Kimi edition (manifest schema, shared-skill consistency, reference resolution)
+
 ## 2026-07-15
 
 ### What's New

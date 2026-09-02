@@ -1,6 +1,6 @@
 # FPF-agent
 
-Плагин для Claude Code, который учит языковую модель "мыслить" более системно.
+Плагин для Claude Code, Codex CLI и Kimi Code CLI, который учит языковую модель "мыслить" более системно.
 
 ## Зачем это нужно
 
@@ -61,6 +61,44 @@ uv run scripts/build_embeddings.py
 Маршрутные сценарии работают без индекса. Для семантического поиска требуется
 [uv](https://docs.astral.sh/uv/), который установит зависимости
 `sentence-transformers` и `faiss-cpu` при первом запуске.
+
+В Kimi Code CLI репозиторий также является корнем плагина — манифест
+`.kimi-plugin/plugin.json` лежит рядом с `.claude-plugin/` и `.codex-plugin/`,
+а навык общий (`.agents/skills/fpf/`). Установка из TUI:
+
+```
+/plugins install https://github.com/pokrovskiyv/FPF-agent
+```
+
+После установки выполните `/reload` (или начните новую сессию) — навык `fpf`
+доступен во всех проектах. Обновление: повторите установку.
+
+Вариант через клон (удобен для разработки и пересборки индекса):
+
+```bash
+git clone https://github.com/pokrovskiyv/FPF-agent
+```
+
+и добавьте в `~/.kimi-code/config.toml`:
+
+```toml
+extra_skill_dirs = ["<путь-к-клону>/FPF-agent/.agents/skills"]
+```
+
+Семантический fallback (FAISS) строится локально — индекс в репозиторий не
+входит:
+
+```bash
+uv run scripts/build_embeddings.py
+```
+
+Запускайте в корне клона; при установке через `/plugins` — в управляемой
+копии `~/.kimi-code/plugins/managed/fpf/` (повторяйте после каждого
+обновления плагина). Маршрутные сценарии работают без индекса.
+
+Пути `~/.kimi-code/...` выше — значения по умолчанию: если задана переменная
+окружения `KIMI_CODE_HOME`, конфиг (`config.toml`) и управляемые плагины
+Kimi хранит в ней.
 
 ---
 

@@ -17,7 +17,7 @@ description: >
   refactoring, syntax, or simple lookups.
 ---
 
-# FPF Thinking Amplifier (Codex edition)
+# FPF Thinking Amplifier (universal edition — Codex CLI, Kimi Code CLI)
 
 Structured coordination analysis powered by the First Principles Framework.
 FPF is invisible infrastructure — output is ALWAYS in plain language.
@@ -27,9 +27,11 @@ NEVER use FPF terminology in responses to the user.
 
 All runtime paths below are relative to the FPF plugin root, not the user's
 current project directory. Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor
-of this `SKILL.md` that contains `.codex-plugin/plugin.json`. In source
+of this `SKILL.md` that contains a plugin manifest — `.codex-plugin/plugin.json`,
+`.kimi-plugin/plugin.json`, or `.claude-plugin/plugin.json`. In source
 checkout development this is the FPF-agent repo root; in an installed plugin
-cache or home-local install, this is the installed plugin root.
+cache, managed plugin copy, or home-local install, this is the installed
+plugin root.
 
 When reading referenced files, always prefix paths with `<FPF_PLUGIN_ROOT>`.
 For example, `agents/fpf-classifier.md` means
