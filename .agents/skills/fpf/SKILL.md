@@ -1,202 +1,43 @@
 ---
 name: fpf
-description: >
-  Use this skill when a tangled coordination or analysis problem deserves a
-  rigorous structured breakdown, not a quick take — even with no framework
-  named. Use it when teams disagree on who owns what or how to hand off; when a
-  decision feels opaque or you keep circling options; when a contract/SLA/spec
-  blurs rules, conditions, obligations, evidence; when a KPI misleads or parts
-  don't sum to the whole; when hidden bias or value conflicts need an audit;
-  when a vague concept needs agreed definitions; when text needs rewriting for
-  a new audience without losing meaning; when a design has drifted from how the
-  system runs now; or when a messy multi-stakeholder situation needs
-  untangling. It yields concrete artifacts: comparison tables, responsibility
-  maps, contract breakdowns, audits, term sheets. Prefer it over a direct
-  answer when the payoff is rigor and traceability. Also triggers on explicit
-  FPF terms (holon, UTS, DRR). Do NOT use for standard coding, bug fixes,
-  refactoring, syntax, or simple lookups.
+description: Apply FPF to complex coordination, responsibility, terminology, or decision problems, and explain FPF when explicitly requested. Skip routine coding, simple rewrites, and unrelated lookups.
 ---
 
-# FPF Thinking Amplifier (Codex edition)
+# FPF Thinking Amplifier
 
-Structured coordination analysis powered by the First Principles Framework.
-FPF is invisible infrastructure — output is ALWAYS in plain language.
-NEVER use FPF terminology in responses to the user.
+## Plugin root
 
-## Path convention
+Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor of this Skill containing `.codex-plugin/plugin.json`. It is the repository root in development and the installed plugin root otherwise. Resolve runtime paths against that root, never against the user's current project.
 
-All runtime paths below are relative to the FPF plugin root, not the user's
-current project directory. Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor
-of this `SKILL.md` that contains `.codex-plugin/plugin.json`. In source
-checkout development this is the FPF-agent repo root; in an installed plugin
-cache or home-local install, this is the installed plugin root.
+## Choose the scope
 
-When reading referenced files, always prefix paths with `<FPF_PLUGIN_ROOT>`.
-For example, `agents/fpf-classifier.md` means
-`<FPF_PLUGIN_ROOT>/agents/fpf-classifier.md`, and `sections/metadata.json`
-means `<FPF_PLUGIN_ROOT>/sections/metadata.json`. Never resolve these paths
-against the user's current project.
+Use the smallest analysis that answers the user's request. Do not run a fixed sequence of roles, repeat intermediate outputs, or request permission to use a method for an already requested analysis. Ask only when missing information materially changes the result and cannot be reasonably inferred.
 
-When reading referenced agent files under `agents/`, you will encounter the
-token `${CLAUDE_PLUGIN_ROOT}/` — treat it as the resolved plugin root. A path
-like `${CLAUDE_PLUGIN_ROOT}/sections/metadata.json` means exactly
-`<FPF_PLUGIN_ROOT>/sections/metadata.json`. Never try to resolve the env var.
+## Retrieve only what is needed
 
-## Pipeline (single context, four roles sequential)
+- For an explicit FPF concept, use `sections/glossary-quick.md` or `sections/metadata.json` to locate the relevant section.
+- For a coordination problem, inspect the relevant `sections/routes/route-*.md` guide or metadata queries. Read only sections needed for the question; a route is a guide, not a mandatory reading list.
+- Use semantic search only when narrower retrieval leaves a material gap:
+  `uv run <FPF_PLUGIN_ROOT>/scripts/semantic_search.py "query" --top-k 5 --json --index-dir <FPF_PLUGIN_ROOT>/sections/embeddings`.
+  Results contain `rank`, `score`, `pattern_id`, `title` and a plugin-relative `file`. Read the relevant matches, not every result by default. Respect offline and package-install constraints; metadata and keyword lookup remain valid fallbacks.
+- Do not read or edit the monolithic specification for ordinary analysis. Do not rebuild embeddings or generated sections merely to answer a question.
 
-Unlike the Claude Code edition which dispatches isolated subagents, you run
-all four roles in this same context. To prevent drift between steps, you MUST
-quote each step's output verbatim before starting the next step. The quoted
-block is your anti-drift anchor.
+## Apply and verify
 
-### Step 1 — Classifier
+Use the retrieved ideas to answer the actual question. Choose a table, responsibility map, comparison, or prose only when it helps the reader. Preserve the user's wording, commitments and uncertainty.
 
-Read `agents/fpf-classifier.md` in full. Apply its instructions to the
-user's message. Emit a structured block with these fields:
+In ordinary applied answers, use the user's language and keep framework jargon and internal workflow out of the response. When the user explicitly asks about FPF, its terminology, specification, or agent design, use and explain the necessary terms and references. `sections/lexical-rules.md` governs specification editing, not ordinary user vocabulary.
 
-```
-SIGNAL: yes | no
-TIER: 1 | 2 | 3
-BURDEN: <burden name from the table in the classifier prompt>
-ROUTE: <route number or "semantic" or "cross_cutting">
-SEARCH_QUERY: <plain-language query for semantic fallback, or "n/a">
-CONFIDENCE: <high | low>
-```
+Check that FPF interpretations match the retrieved sections. Support project facts with project evidence and external claims with appropriate sources; distinguish inference and unknowns. The FPF specification is not evidence for unrelated real-world facts.
 
-Quote this block verbatim as your Step 1 output, then proceed.
+Review relevance, grounding and clarity before delivery. An independent reviewer is optional when complexity or risk justifies it; a self-review is not an independent or cold review. Correct concrete defects, then stop when the requested answer is complete. Repeat checks only after changes, failures, or new evidence.
 
-If `SIGNAL=no` → stop the pipeline. Respond to the user as you normally would
-(no FPF processing). If `CONFIDENCE=low` and no explicit FPF term appears in
-the user's message → ask the user "This looks like a coordination problem —
-want me to structure it?" before continuing.
+## Optional supporting guidance
 
-### Step 2 — Retriever
+Read only the relevant part of these shared prompts if the task needs deeper guidance:
+- `agents/fpf-classifier.md` — ambiguous routing.
+- `agents/fpf-retriever.md` — retrieval methods.
+- `agents/fpf-reasoner.md` — examples for a specific coordination problem.
+- `agents/fpf-reviewer.md` — deeper grounding and language review.
 
-Read `agents/fpf-retriever.md` in full. Using the Step 1 structured block:
-
-- **Tier 1 (route-based):** Open `sections/routes/route-{N}.md` where N is
-  from `ROUTE`. Follow its ordered chain — read each section file the route
-  lists. Also consult `sections/metadata.json` for any pattern ID references.
-- **Tier 2 (semantic fallback):** Run:
-  ```
-  uv run <FPF_PLUGIN_ROOT>/scripts/semantic_search.py "<SEARCH_QUERY>" --top-k 5 --json --index-dir <FPF_PLUGIN_ROOT>/sections/embeddings
-  ```
-  Parse the returned JSON array. Read each result's `file` field — those are
-  your sections. The script returns plugin-root-relative section paths. Expect
-  objects of shape:
-  `{rank, score, pattern_id, title, file, keywords}`.
-- **Tier 3 (combined):** Do Tier 1 first (primary route), then supplement
-  with Tier 2 semantic search to cover the second burden.
-
-For term lookups (explicit FPF term like "UTS" or "DRR"), skip routes and
-read `sections/glossary-quick.md` plus the pattern file referenced there.
-
-Before Step 3, quote the list of loaded section pattern IDs (e.g., "Loaded:
-A.6, A.6.P, E.17, G.3") as your Step 2 anchor.
-
-### Step 3 — Reasoner
-
-Read `agents/fpf-reasoner.md` in full. Apply FPF structure to the user's
-problem internally. Produce a draft answer that:
-
-- Is in the user's language (Russian if they wrote Russian, English if
-  English — match the input)
-- Never contains FPF terminology: no "holon", "UTS", "DRR",
-  "CharacteristicSpace", "episteme", "transformer quartet",
-  "bounded context", no pattern IDs (A.6.P, E.17, etc.), no
-  "route 1/2/3..." mentions, no mention of this pipeline
-- Uses the structural artifacts the reasoner prompt specifies for the
-  burden type (comparison table, responsibility map, term sheet, etc.)
-
-Quote the full draft as your Step 3 anchor before moving to Step 4.
-
-### Step 4 — Reviewer (mandatory for Tier 2 and Tier 3; optional for Tier 1)
-
-This is a **cold review**. Explicit framing: ignore everything you produced
-in Steps 1–3. Treat the Step 3 draft as text written by someone else. You
-have never seen the reasoning, the retrieved sections, or the classification.
-Your only job is to validate the draft against four criteria:
-
-**(a) Jargon check.** The draft must not contain any of these tokens:
-`holon`, `UTS`, `DRR`, `CharacteristicSpace`, `episteme`, `SenseCell`,
-`transformer quartet`, `bounded context`, `U.Measure`, `U.ClaimScope`,
-`U.WorkScope`, `MVPK`, pattern IDs matching regex `[A-K]\.\d+(\.[A-Z])?`.
-Also not in translation ("холон", "эпистема", "транспортёрный квартет").
-
-**(b) Concept leakage.** Even without jargon tokens, the draft must not
-paraphrase FPF structural patterns by rote. Red flags:
-- "A four-step transformation: X → Y → Z → W" (that's the transformer quartet
-  described without naming it)
-- "Divide responsibility across four quadrants: description / capability /
-  execution / plan" (that's a specific FPF pattern in disguise)
-- "Apply the four-part language maturity diagnostic" (same issue)
-
-Paraphrasing the *shape* of an FPF pattern while omitting the name is still
-terminology leakage. The user should receive analysis-as-output, not
-pattern-as-output.
-
-**(c) Grounding.** Every substantive claim in the draft should be traceable
-to a section loaded in Step 2. Check the Step 2 anchor (the pattern ID list).
-Any claim with no visible grounding → flag.
-
-**(d) Plain-language contract.** Cross-check against `sections/lexical-rules.md`
-for domain-specific rules (e.g., "axis" / "dimension" forbidden → must say
-"characteristic"; "metric" as noun forbidden → must say "measure" or "score").
-
-If any check fails → revise the draft to fix the specific problem, then
-re-review. Maximum 2 revision passes. If still failing after 2 passes,
-surface the issue plainly to the user rather than publishing broken output.
-
-## Burden Classification Reference
-
-Detect from user's natural language — no FPF terms needed.
-
-| Burden | User signals | Tier | Route file |
-|--------|-------------|------|------------|
-| project_alignment | teams confused, responsibilities unclear | 1 | `sections/routes/route-1-project-alignment.md` |
-| language_discovery | terminology disagreement, vague idea | 1 | `sections/routes/route-2-language-discovery.md` |
-| boundary_unpacking | contract/SLA/API mixes rules and obligations | 1 | `sections/routes/route-3-boundary-unpacking.md` |
-| comparison_selection | choosing between options, opaque decisions | 1 | `sections/routes/route-4-comparison-selection.md` |
-| generator_portfolio | state-of-the-art survey, reusable scaffold | 1 | `sections/routes/route-5-generator-portfolio.md` |
-| rewrite_explanation | rewrite preserving meaning, different audience | 1 | `sections/routes/route-6-rewrite-explanation.md` |
-| ethical_assurance | bias audit, ethical assumptions, value conflicts | 1 | `sections/routes/route-7-ethical-assurance.md` |
-| trust_assurance | trust metrics, overclaim, evidence aggregation | 1 | `sections/routes/route-8-trust-assurance.md` |
-| composition_aggregation | KPIs lie, aggregation mismatch, sum != whole | 1 | `sections/routes/route-9-composition-aggregation.md` |
-| evolution_learning | design drift, lessons learned, feedback loops | 1 | `sections/routes/route-10-evolution-learning.md` |
-| term_lookup | explicit FPF term question | 1 | `sections/metadata.json` → direct file load |
-| semantic | FPF signal but no route match | 2 | Keyword + FAISS → dynamic chain |
-| cross_cutting | multiple burdens match | 3 | Primary route + semantic supplement |
-
-## Key Files
-
-- `sections/metadata.json` — instant pattern lookup (~235 entries)
-- `sections/routes/route-{1..10}.md` — ordered section chains per burden
-- `sections/glossary-quick.md` — 50 core terms mapped to patterns
-- `sections/lexical-rules.md` — mandatory terminology rules (internal only, for Reviewer step)
-- `sections/embeddings/` — FAISS index for semantic search (rebuilt locally via `uv run scripts/build_embeddings.py`)
-
-## Shared Agent Prompts
-
-These files contain the full instructions for each pipeline role. They are
-shared with the Claude Code edition of this skill, so you will see the token
-`${CLAUDE_PLUGIN_ROOT}/` inside them — treat that token as `<FPF_PLUGIN_ROOT>`
-(see Path convention section above).
-
-- `agents/fpf-classifier.md` — Step 1 instructions
-- `agents/fpf-retriever.md` — Step 2 instructions
-- `agents/fpf-reasoner.md` — Step 3 instructions
-- `agents/fpf-reviewer.md` — Step 4 instructions
-
-The file `agents/fpf-sync.md` is dev-side infrastructure (scheduled upstream
-sync + rebuild pipeline) and is NOT used during skill execution.
-
-## Output
-
-One plain-language answer to the user. Never mention:
-- FPF, the framework, or any FPF term
-- Agents, pipeline, steps, tiers, routes, burdens
-- Pattern IDs or section file names
-- The classifier / retriever / reasoner / reviewer roles
-
-The user should see a direct, structured analysis of their problem — nothing
-else.
+These references do not mandate spawning agents or loading every role. For Codex, treat their `${CLAUDE_PLUGIN_ROOT}` token as `<FPF_PLUGIN_ROOT>`. `agents/fpf-sync.md` is repository maintenance, not part of answering a user.
