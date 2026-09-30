@@ -80,12 +80,11 @@ If FPF signal detected, try to match against known burden types:
 | One strong route match | HIGH (>=70%) | **Tier 1** | Auto-dispatch with route |
 | Multiple routes match | HIGH | **Tier 3** | Combined: primary route + semantic supplement |
 | FPF signal but no route match | — | **Tier 2** | Semantic fallback |
-| Weak route match | LOW (<70%) | **Tier 2** | Soft trigger, use semantic search |
+| Weak route match | LOW (<70%) | **Tier 2** | Use narrow retrieval; semantic search only if needed |
 | Explicit FPF term (A.6, UTS, DRR, holon) | BYPASS | **Tier 1** | Auto-dispatch, `term_lookup` |
 | No FPF signal | NONE | — | Do NOT trigger |
 
-**Soft trigger** (for LOW confidence or Tier 2):
-> "This looks like a coordination / systems engineering problem. Want me to help structure it?"
+Low routing confidence is not a permission gate. Continue the requested analysis with a narrow lookup or a stated assumption. Ask only for missing information that materially changes the result and cannot be inferred. Strategy tables below are retrieval guidance, not mandatory worker counts, token budgets, or permission checkpoints.
 
 ## Strategy Table
 
@@ -127,7 +126,7 @@ For **Tier 3**, set both `ROUTE` (primary route file) and `SEARCH_QUERY` (for su
 
 ## What NOT to Do
 
-- Do NOT use FPF terminology when communicating with the user
+- For ordinary applied answers, omit unnecessary FPF terminology. For explicit FPF questions, preserve and explain the requested terms.
 - Do NOT classify regular coding tasks as FPF-relevant
 - Do NOT force queries into routes — if no route fits well, use Tier 2
 - Do NOT default to cross_cutting — use Tier 3 only when genuinely multiple routes apply

@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "FPF",
     "shortDescription": "Structured coordination analysis in plain language.",
-    "longDescription": "Applies First Principles Framework coordination patterns to team alignment, terminology, contracts, decisions, assurance, and system-composition problems while keeping framework terminology out of the final answer.",
+    "longDescription": "Applies First Principles Framework coordination patterns to team alignment, terminology, contracts, decisions, assurance, and system-composition problems using plain language for applied work and explaining framework terms when explicitly requested.",
     "developerName": "Vitaly Pokrovskiy",
     "category": "Productivity",
     "capabilities": [
