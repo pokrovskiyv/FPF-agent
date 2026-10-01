@@ -3,7 +3,7 @@
 > A domain pattern language for creating, performing, transmitting, and deliberately developing music and dance practices and the environments that sustain them.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 11 September 2026
+- **Version:** 20 September 2026
 - **Status:** Eternal alpha: a published working framework, already used in analyses and worked applications, while continuing to evolve.
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 - **Publication:** [FPF repository](https://github.com/ailev/FPF)
@@ -12,7 +12,7 @@ Begin with a concrete difficulty in a performance, rehearsal, teaching encounter
 
 Use the Table of Contents below to search by a familiar term or working question and find the relevant PatternID. Use the pattern's recurring difficulty to recognize the problem in the actual performance or practice. Apply its Solution, worked cases, and checklist to the performers, material, practice, or supporting arrangement. Use another pattern when its result is needed for the present decision.
 
-The Readme offers selected practical entries and a Practical-Use Card connecting several patterns. The Preface explains the recurring distinctions. The full Table of Contents also serves questions outside the examples; pattern bodies supply the working moves, evidence limits, and stops. Their order is a reading route through the field, while creation, rehearsal, performance, observation, and development can overlap.
+The Readme shows connected uses of the language through performance, teaching, and practice-development difficulties. The Preface explains the recurring distinctions. The full Table of Contents also serves questions outside the examples; pattern bodies supply the working moves, evidence limits, and stops. Their order is a reading route through the field, while creation, rehearsal, performance, observation, and development can overlap.
 
 
 # Table of Contents
@@ -25,7 +25,7 @@ Search the Keywords & Search Queries column for the performance, teaching, pract
 
 | Unit | Reader use |
 | :--- | :--- |
-| [Music and Dance Practice Engineering Principles Framework Readme](#music-and-dance-practice-engineering-principles-framework-readme) | Start from a recognizable Music-or-Dance difficulty and choose one direct pattern or a small cooperating set. |
+| [Music and Dance Practice Engineering Principles Framework Readme](#music-and-dance-practice-engineering-principles-framework-readme) | Follow style development, preparation of a performing whole, and transfer with practice continuation. |
 | [Citation](#citation) | Cite this framework or one pattern with its author, title, release date, and publication address. |
 | [Preface](#preface) | Understand the distinctions that make the twenty-two patterns work together. |
 | [Cross-Pattern Application](#cross-pattern-application) | See a constructed example in which several patterns change one social-dance and live-music development decision. |
@@ -37,26 +37,26 @@ Search the Keywords & Search Queries column for the performance, teaching, pract
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [MDPE.8 - Characterize the Music-or-Dance Work, Methods, and Change Question](#mdpe8---characterize-the-music-or-dance-work-methods-and-change-question) |  | *Keywords:* performance, practice, Method, style, material, medium, performing whole, change question. *Queries:* "What is actually changing in this music or dance project?" "Does the difficulty concern performed Work, capability, a reproducible practice, or its supporting environment?" Characterize the subjects and simultaneous contributions well enough to choose a bounded engineering question and evidence that addresses the right result. | FPF A.15.1, A.3.2, C.32.MWA |
 | 2 | [MDPE.1 - Frame a Music-or-Dance Work, Practice, Style, or Medium Project](#mdpe1---frame-a-music-or-dance-work-practice-style-or-medium-project) |  | *Keywords:* creation brief, piece, performance project, practice development, style line, festival, school, medium. *Queries:* "What result should this music or dance project produce, for whom and at what scale?" "Are several linked briefs needed for different subjects?" Frame the bounded project, intended use, conditions, and success questions so later creation, realization, and observation concern the same undertaking. | MDPE.8; FPF A.15.6, C.11 |
-| 3 | [MDPE.21 - Design How a Music-or-Dance Style Is Produced and Reproduced](#mdpe21---design-how-a-music-or-dance-style-is-produced-and-reproduced) |  | *Keywords:* style development, production, reproduction, variant, performer, teaching, recognition, selection, cultural architecture. *Queries:* "How will later performers produce and receivers recognize the intended distinctions?" "Which different arrangements could sustain that style across performances and changed conditions?" Compare the Methods, capabilities, memories, and support relations that produce and reproduce the practice, then select a bounded architecture and first test. | MDPE.8, MDPE.1; FPF C.32.MWA, C.36 |
+| 3 | [MDPE.21 - Design How a Music-or-Dance Style Is Produced and Reproduced](#mdpe21---design-how-a-music-or-dance-style-is-produced-and-reproduced) |  | *Keywords:* style development, production, reproduction, variant, performer, teaching, recognition, selection, cultural architecture. *Queries:* "How will later performers produce and receivers recognize the intended distinctions?" "Which different arrangements could sustain that style across performances and changed conditions?" Compare the Methods, capabilities, memories, and support relations that produce and reproduce the practice, then select a bounded architecture and specify its first test. | MDPE.8, MDPE.1; FPF C.32.MWA, C.36 |
 | 4 | [MDPE.24 - Decide Whether a Music-or-Dance Practice Has Formed a New Whole](#mdpe24---decide-whether-a-music-or-dance-practice-has-formed-a-new-whole) |  | *Keywords:* new practice, style line, new whole, scene, event system, persistence, architecture, reidentification. *Queries:* "Do the observed relations warrant treating this practice as a new whole?" "Can the existing scene or arrangement still explain the result that matters?" Examine the supported identity and persistence claims before changing the project subject, its architecture, or the decisions assigned to the proposed whole. | MDPE.21, MDPE.12; FPF A.1, A.22, C.36 |
 
 **Part II - Performance Possibilities and the Performing Whole**
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 5 | [MDPE.9 - Generate and Compare Performance Candidates](#mdpe9---generate-and-compare-performance-candidates) |  | *Keywords:* performance candidates, composition, choreography, interpretation, movement, instrument, generative model, variation, comparison. *Queries:* "Which materially different candidates expose the current creative assumption?" "What observation involving a performer could change our choice?" Generate and compare possibilities with their bodily, instrumental, partner, venue, and rehearsal conditions, then retain, revise, branch, or reject candidates for the intended use. | MDPE.1; FPF C.17, C.18, C.19 |
-| 6 | [MDPE.10 - Develop and Test Performing Capability](#mdpe10---develop-and-test-performing-capability) |  | *Keywords:* performing capability, rehearsal, learning, representative task, transfer, performer, ensemble, robot, assistance. *Queries:* "Who must become capable of performing what under which conditions?" "Does the ability survive a changed partner, cue, instrument, or setting?" Develop and test the limiting contribution in representative Work, including simultaneous bodily, expressive, instrumental, and coordination demands, and return the demonstrated capability envelope. | MDPE.9; FPF A.2.2, E.23.CDI |
-| 7 | [MDPE.3 - Configure and Coordinate the Performing Whole](#mdpe3---configure-and-coordinate-the-performing-whole) |  | *Keywords:* performing whole, performer, partner, instrument, prosthesis, robot, venue, sensing, timing, coordination. *Queries:* "Which configuration lets the performers carry out the intended performance with their partners, instruments, and other support?" "Where do individually capable performers or working tools fail through latency, contact, cues, control, or recovery?" Configure the smallest useful whole and its external support relations, and test the interactions that make representative performance possible. | MDPE.9, MDPE.10; FPF A.15.1, A.22 |
+| 5 | [MDPE.9 - Generate and Compare Music-or-Dance Performance Candidates](#mdpe9---generate-and-compare-music-or-dance-performance-candidates) |  | *Keywords:* performance candidates, composition, choreography, interpretation, movement, instrument, generative model, variation, comparison. *Queries:* "Which materially different candidates expose the current creative assumption?" "What observation involving a performer could change our choice?" Generate and compare possibilities with their bodily, instrumental, partner, venue, and rehearsal conditions, then retain, revise, branch, or reject candidates for the intended use. | MDPE.1; FPF C.17, C.18, C.19 |
+| 6 | [MDPE.10 - Develop and Test Music-or-Dance Performing Capability](#mdpe10---develop-and-test-music-or-dance-performing-capability) |  | *Keywords:* performing capability, rehearsal, learning, representative task, transfer, performer, ensemble, robot, assistance. *Queries:* "Who must become capable of performing what under which conditions?" "Does the ability survive a changed partner, cue, instrument, or setting?" Develop and test the limiting contribution in representative Work, including simultaneous bodily, expressive, instrumental, and coordination demands, and return the demonstrated capability envelope. | MDPE.9; FPF A.2.2, E.23.CDI |
+| 7 | [MDPE.3 - Configure and Coordinate a Music-or-Dance Performing Whole](#mdpe3---configure-and-coordinate-a-music-or-dance-performing-whole) |  | *Keywords:* performing whole, performer, partner, instrument, prosthesis, robot, venue, sensing, timing, coordination. *Queries:* "Which configuration lets the performers carry out the intended performance with their partners, instruments, and other support?" "Where do individually capable performers or working tools fail through latency, contact, cues, control, or recovery?" Configure the smallest useful whole and its external support relations, and test the interactions that make representative performance possible. | MDPE.9, MDPE.10; FPF A.15.1, A.22 |
 
 **Part III - Performance, Observation, Recognition, and Selection**
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 8 | [MDPE.11 - Interpret or Shape Material While Performing](#mdpe11---interpret-or-shape-material-while-performing) |  | *Keywords:* interpretation, improvisation, live coding, score, choreography, material, cue, responsive performance. *Queries:* "How is prepared material interpreted or new material shaped while performing?" "Which live partner, timing, instrument, or participation constraint changes the move?" Keep the performer's contribution and the actual conditions visible as material is realized, varied, or generated, preserving only traces that a later decision needs. | MDPE.3; FPF A.15.7 |
+| 8 | [MDPE.11 - Interpret or Shape Music-or-Dance Material While Performing](#mdpe11---interpret-or-shape-music-or-dance-material-while-performing) |  | *Keywords:* interpretation, improvisation, live coding, score, choreography, material, cue, responsive performance. *Queries:* "How is prepared material interpreted or new material shaped while performing?" "Which live partner, timing, instrument, or participation constraint changes the move?" Keep the performer's contribution and the actual conditions visible as material is realized, varied, or generated, preserving only traces that a later decision needs. | MDPE.3; FPF A.15.7 |
 | 9 | [MDPE.5 - Integrate Production and Presentation for Performed Music-or-Dance Work](#mdpe5---integrate-production-and-presentation-for-performed-music-or-dance-work) |  | *Keywords:* performed Work, production, presentation, concert, social dance, event, recording, stream, intended use. *Queries:* "Do production and presentation results work together for this performed occurrence?" "What actually happened for the performers and receivers under these conditions?" Integrate the bounded music or dance Work with its production and presentation contributions, retaining the evidence needed to judge the intended use. | MDPE.3, MDPE.11; FPF A.15.1, E.24.PUB |
 | 10 | [MDPE.12 - Observe and Compare Music-or-Dance Performance and Cultural Results](#mdpe12---observe-and-compare-music-or-dance-performance-and-cultural-results) |  | *Keywords:* performance observation, partner response, listener, judge, sensor, comparison, cultural result, evidence limits. *Queries:* "Which observed difference can change this music or dance decision?" "What can sound, video, interaction, self-report, or population evidence actually show?" Compare the relevant performance and cultural claims for their specific subjects, conditions, populations, and intervals, then return the supported result and remaining uncertainty. | MDPE.5; FPF A.10, A.19.ECS |
 | 11 | [MDPE.23 - Develop and Test Music-or-Dance Recognition Capability](#mdpe23---develop-and-test-music-or-dance-recognition-capability) |  | *Keywords:* recognition capability, listening, discrimination, timing, style recognition, applicability, cue dependence, transfer. *Queries:* "Can this performer, listener, partner, teacher, or recognizer detect the intended distinction?" "Does recognition work without the training cue and in a changed situation?" Develop and test the exact recognition task, locating the remaining discrimination, retrieval, applicability, or action difficulty for the named holder. | MDPE.12; FPF A.2.2, E.23.CDI |
-| 12 | [MDPE.13 - Design How Music-or-Dance Variants Are Recognized and Selected](#mdpe13---design-how-music-or-dance-variants-are-recognized-and-selected) |  | *Keywords:* recognition, selection, judging, curation, competition, recommendation, programme, access rule, feedback. *Queries:* "Which variants does this arrangement make visible and reward?" "How do performers and teachers adapt to what is selected?" Design and test bounded recognition-and-selection arrangements, exposing their criteria, proxy effects, access consequences, feedback, and retained alternatives for the actual practice and participants. | MDPE.12, MDPE.23; FPF C.36, C.11 |
+| 12 | [MDPE.13 - Design How Music-or-Dance Variants Are Recognized and Selected](#mdpe13---design-how-music-or-dance-variants-are-recognized-and-selected) |  | *Keywords:* recognition, selection, judging, curation, competition, recommendation, programme, access rule, feedback. *Queries:* "Which variants does this arrangement make visible and reward?" "How do performers and teachers adapt to what is selected?" Compare bounded recognition-and-selection arrangements through their criteria, proxy effects, access consequences, feedback, and retained alternatives for the actual practice and participants. Return a selected design and observation plan, or grounds to retain the current arrangement. | MDPE.12, MDPE.23; FPF C.36, C.11 |
 
 **Part IV - Changed Conditions, Transmission, Memory, and Continuation**
 
@@ -73,163 +73,73 @@ Search the Keywords & Search Queries column for the performance, teaching, pract
 | :--- | :--- | :--- | :--- | :--- |
 | 17 | [MDPE.22 - Test a Support-Environment Change for a Music-or-Dance Practice](#mdpe22---test-a-support-environment-change-for-a-music-or-dance-practice) |  | *Keywords:* practice environment, venue, school, platform, tools, access, organizer, support Work, resource burden. *Queries:* "Which environmental relation must change for this practice to continue?" "After the support intervention, which surrounding relations hold and what music or dance result was observed?" Test the chosen change through actual practitioner and receiving Work, exposing missing capability, authorization, access, recurring support, or burdens shifted to others. | MDPE.1, MDPE.12; FPF A.2.2, A.22, C.28 |
 | 18 | [MDPE.14 - Choose a Response to Conflicting Music-or-Dance Results](#mdpe14---choose-a-response-to-conflicting-music-or-dance-results) |  | *Keywords:* conflicting results, local optimization, rhythm, expression, partner response, safety, participation, scale, Work overlap. *Queries:* "Which improvement damages another result that still matters?" "What part-whole, scale-order, simultaneous-Work, slower-constraint, or representation relation creates the conflict?" Recover the actual relationship and choose a bounded response that respects the relevant performer, partner, whole-performance, and practice consequences. | MDPE.12, MDPE.21; FPF C.32.MWA, C.11 |
-| 19 | [MDPE.15 - Make and Test a Local Practice Change](#mdpe15---make-and-test-a-local-practice-change) |  | *Keywords:* local practice change, intervention, trial, revised exercise, rule, tool, Method, observed result. *Queries:* "What exactly changed in this bounded intervention?" "What did the trial establish for the next practice decision?" Perform and test the already-selected local change, observe its direct result under stated conditions, and return the supported revision or next question while retaining unresolved capability and cultural claims. | MDPE.6, MDPE.14; FPF A.15.1, A.10, C.11 |
+| 19 | [MDPE.15 - Make and Test a Local Music-or-Dance Practice Change](#mdpe15---make-and-test-a-local-music-or-dance-practice-change) |  | *Keywords:* local practice change, intervention, trial, revised exercise, rule, tool, Method, observed result. *Queries:* "What exactly changed in this bounded intervention?" "What did the trial establish for the next practice decision?" Perform and test the already-selected local change, observe its direct result under stated conditions, and return the supported revision or next question while retaining unresolved capability and cultural claims. | MDPE.6, MDPE.14; FPF A.15.1, A.10, C.11 |
 | 20 | [MDPE.16 - Keep Music-or-Dance Alternatives Available for Later Use](#mdpe16---keep-music-or-dance-alternatives-available-for-later-use) |  | *Keywords:* development alternatives, diversity, minority variant, later use, branch, capability, access, archive. *Queries:* "Which materially different alternatives remain usable for a later need?" "Does a changed condition require upkeep, or does current availability still suffice?" Retain supported alternatives with their actual performers, capabilities, relationships, tools, rights and conditions. Select upkeep or trials only when needed, worthwhile and obtainable; an older evidence carrier alone does not end availability. | MDPE.9, MDPE.12; FPF C.18, C.19, B.3.4, G.11 |
-| 21 | [MDPE.20 - Forecast, Observe, and Revise How a Music-or-Dance Practice May Develop](#mdpe20---forecast-observe-and-revise-how-a-music-or-dance-practice-may-develop) |  | *Keywords:* practice development, forecast, trajectory, mechanism, cultural change, observation, competing explanation, revision. *Queries:* "How might this practice develop through different mechanisms?" "What preparation or continuation is supported now, and what would justify further observation?" Return qualified trajectories and a current development decision on the available basis. A claimed empirical update names its obtained observation and transfer limits; a sufficient current forecast requires no new trial or renewal record. | MDPE.12, MDPE.16; FPF B.5.2, A.3.3, C.28, C.11, B.3.4 |
+| 21 | [MDPE.20 - Forecast How a Music-or-Dance Practice May Develop](#mdpe20---forecast-how-a-music-or-dance-practice-may-develop) |  | *Keywords:* practice development, forecast, trajectory, mechanism, cultural change, observation, competing explanation, revision. *Queries:* "How might this practice develop through different mechanisms?" "What preparation or continuation is supported now, and what would justify further observation?" Return qualified trajectories and a current development decision on the available basis. A claimed empirical update names its obtained observation and transfer limits; a sufficient current forecast requires no new trial or renewal record. | MDPE.12, MDPE.16; FPF B.5.2, A.3.3, C.28, C.11, B.3.4 |
 | 22 | [MDPE.7 - Choose the Next Music-or-Dance Development Work](#mdpe7---choose-the-next-music-or-dance-development-work) |  | *Keywords:* next development Work, choice, probe, refusal, rehearsal, intervention, opportunity cost, current evidence. *Queries:* "Which bounded action is worth doing next in this music or dance project?" "Would a trial, a repair, or keeping a branch available help most, or does a different question need an answer?" Use the actual performance, capability, transmission, support, and development results to select the next useful Work within its conditions. | MDPE.12, MDPE.15, MDPE.20; FPF C.11, C.24 |
 
 # Music and Dance Practice Engineering Principles Framework Readme
 
 ## Practical entries
 
-Performers, teachers, choreographers, composers, producers, organizers, tool builders, engineers, and other
-Agents can use this framework to create, perform, transmit, sustain, and deliberately develop Music or Dance
-practice while its styles continue to change. The relevant Agent can be a person, an acting
-collective, a robotic Agent, an AI Agent, or a hybrid Agent when the agency, capability, access, and authority
-needed to perform the attributed Work are present.
+Bring the performance, teaching, or practice-development decision that is waiting. These selected examples show how one pattern's result changes what another method can do, where a useful branch can stop, and what changes when the conditions do. They are not a catalogue or a required sequence. If no example fits, use the [Table of Contents](#table-of-contents) to open a pattern by its working question. Use a direct specialist method when it already supplies the needed result.
 
-Begin from the costly difficulty in the present Music-or-Dance Work. Do not treat the order of this publication
-as a lifecycle. Generating material, developing capability, configuring performers and tools, performing,
-observing, recognizing, transmitting, supporting, and changing a practice can overlap. Use a later result only
-when it can change the decision now being made.
+The [Preface](#preface) explains the shared language and its Music and Dance profiles. You can ask an assisting agent: “Explain this and give me your comments in the language of my work, without framework jargon.”
 
-The entries below are selected examples, not a catalogue or coverage boundary. If none fits, use the Table of
-Contents or search the pattern titles and working questions. The pattern bodies contain the Method descriptions,
-cases, checks, source limits, and return conditions.
+### MDPE-CARD-STYLE-DEVELOPMENT — Develop a new style without mistaking one showcase for a maintained practice
 
-### MDPE-SUBJECT — Choose what the project is changing and at what scale
+- **Situation:** A collective has an exciting performance and wants to invest in a recurring practice, but other participants have not yet reproduced the relation that made the showcase work.
+- **Question:** Which change and next commitment are justified for the practice the collective wants to develop?
+- **First useful result or honest blocker:** A bounded practice-development question, a selected arrangement for the intended recurrence, and a specified first representative test; or the missing participant, capability, authority, or support that prevents it.
+- **Start with:** [MDPE.8](#mdpe8---characterize-the-music-or-dance-work-methods-and-change-question) to distinguish the subjects being changed, [MDPE.1](#mdpe1---frame-a-music-or-dance-work-practice-style-or-medium-project) to frame the project, and [MDPE.21](#mdpe21---design-how-a-music-or-dance-style-is-produced-and-reproduced) when different ways to produce and reproduce the intended practice need comparison.
+- **Stop or return:** Finish at the supported local change or next-development decision. Return when an observed performance, changed participant, or support condition defeats the selected arrangement.
 
-- **Situation:** A style name, performance, recording, choreography, class, festival, scene, or platform is used
-  as if each named the same engineering subject, so the project cannot tell what must change or what would count
-  as success.
-- **Question:** Is the project changing bounded Work, one performance or artifact, a reproducible practice, a
-  style-development arrangement, its supporting environment, or a possible new whole?
-- **First useful result or honest blocker:** A present-practice characterization, a bounded project brief, and,
-  when style reproduction is the question, a selected style-development architecture with its first test; or the
-  missing subject, relation, use, authority, or observation that prevents that result.
-- **Start with:** `MDPE.8`. Use `MDPE.1` to frame the bounded project, `MDPE.21` when materially different
-  style-production and reproduction structures must be compared, and `MDPE.24` only when observations may
-  warrant treating a new whole as the project subject.
-- **Stop or return:** Stop when the Work, engineering subject, intended use, and first decision-bearing relation
-  are clear. Return when the subject, use, relevant whole, or selected style-development architecture changes.
+The [constructed social-dance and live-music case](#a-constructed-social-dance-and-live-music-development-decision) begins with a rehearsed pair and a live coder who have made a successful showcase. The organizers want unfamiliar pairs to sustain partner-responsive timing in a monthly social event. MDPE.8 separates that recurring practice from the showcase and from a possible later style line. MDPE.1 bounds the present project to one twenty-minute block. MDPE.21 compares the showcase arrangement with a social-practice arrangement: the latter needs varied partners, readable timing, a host, usable sound and floor conditions, and another opportunity to practise. The intended social use selects the latter for a trial.
+
+[MDPE.22](#mdpe22---test-a-support-environment-change-for-a-music-or-dance-practice) addresses the missing opportunity by arranging that protected event block. Its result supplies the participants, host, floor, and permission for the trial. [MDPE.5](#mdpe5---integrate-production-and-presentation-for-performed-music-or-dance-work) brings the music, dance, sound, and event contributions together for a pair's performance. [MDPE.12](#mdpe12---observe-and-compare-music-or-dance-performance-and-cultural-results) compares what happens across eight pairs: three sustain the intended timing; five return to a memorized phrase after a dense accent change, and four on the far side report difficulty locating the pulse.
+
+That observation makes a particular conflict current for [MDPE.14](#mdpe14---choose-a-response-to-conflicting-music-or-dance-results): musical changes and the partner cue must work together during the same performance. The team treats a longer verbal explanation as insufficient for the identified sound and timing difficulty. The team compares constraining the musical changes, keeping the showcase arrangement, and maintaining separate showcase and social configurations. It selects the split. [MDPE.15](#mdpe15---make-and-test-a-local-music-or-dance-practice-change) carries that choice into a changed social configuration: the musician moves large accent changes away from the partner-cue interval, and the sound operator re-aims the monitor. In the later round, six pairs sustain the timing and two still need teacher cues. Both the sound and musical configuration changed, and the pairs had already practised, so these observations do not isolate either change's effect.
+
+[MDPE.7](#mdpe7---choose-the-next-music-or-dance-development-work) consumes the changed configuration and those limited observations when comparing the larger festival slot, another transfer trial, capability development, and stopping the social branch. In this case the team chooses an unfamiliar-partner trial and keeps the current event block for a month. The showcase branch remains useful for its own audience. [MDPE.16](#mdpe16---keep-music-or-dance-alternatives-available-for-later-use) can maintain that branch when its performers, material, equipment, and permissions remain available. Another receiving group or a season-long continuation promise would make different results necessary; the worked decision has not established either. The full case remains below, including its scope and the conditions for those returns.
 
 ### MDPE-PERFORM — Create alternatives and prepare a performing whole
 
-- **Situation:** One attractive phrase, score, choreography, interpretation, instrument setting, model output,
-  or movement is taken directly into performance although alternatives, performer capability, coordination, or
-  equipment fit have not been tested.
-- **Question:** Which candidate should be used, which performing Agent has the needed capability, and which
-  material, tools, conditions, and coordination relations must support that Agent's representative Work?
-- **First useful result or honest blocker:** Several compared candidates, demonstrated capability limits for the
-  performing Agent, and a configuration of supporting Systems and relations ready for representative Work; or the
-  unavailable Agent, capability, material, tool, coordination relation, permission, or trial condition.
-- **Start with:** `MDPE.9` for candidates, `MDPE.10` for performing capability, and `MDPE.3` for the performing
-  whole. Use `MDPE.11` when material is interpreted or shaped during Work and `MDPE.5` when production and
-  presentation results must work together for one performed Music-or-Dance Work occurrence and its intended use.
-- **Stop or return:** Stop at the first representative occurrence usable for the present artistic, social,
-  teaching, experimental, or production purpose. Return when a candidate, performer, capability, configuration,
-  material, participant, venue, medium, or use changes.
+- **Situation:** An attractive arrangement or movement candidate works in a rendering or isolated demonstration, but its live performer and coordination demands remain unsettled.
+- **Question:** Which candidate can serve the intended performance, and which relation must be repaired before relying on it?
+- **First useful result or honest blocker:** Candidate dispositions tied to a performer-involving comparison, or the unavailable performer or condition that prevents that comparison.
+- **Start with:** [MDPE.9](#mdpe9---generate-and-compare-music-or-dance-performance-candidates) with the intended use from [MDPE.1](#mdpe1---frame-a-music-or-dance-work-practice-style-or-medium-project). If the candidate is already selected, enter at the limiting capability in [MDPE.10](#mdpe10---develop-and-test-music-or-dance-performing-capability) or the uncertain interaction in [MDPE.3](#mdpe3---configure-and-coordinate-a-music-or-dance-performing-whole).
+- **Stop or return:** Stop when the present creation or performance decision has the result it needs. A changed venue, instrument, performer, or receiving use reopens the contribution that depends on that condition.
 
-### MDPE-RECOGNIZE — Observe relevant differences and shape selection
+MDPE.9's constructed music example compares three arrangements for singer, clarinet, cello, and live electronics. The intended relation is antiphonal: the participants must hear and answer one another, with room for breath and recovery from electronic failure. Dense spectral doubling, sparse instrumental answers, and generated responses pose different demands. A rendering can expose range and balance; a short rehearsal with the intended musicians can expose breath, cueing, latency, and recovery.
 
-- **Situation:** Technical detection, a listener or partner noticing a difference, a judge naming it, an
-  organizer selecting it, platform visibility, and later cultural uptake are treated as one result.
-- **Question:** Which difference matters to the decision, who or what must recognize it, can that recognition
-  transfer, and which arrangement turns recognition into a bounded selection consequence?
-- **First useful result or honest blocker:** A bounded comparison, demonstrated recognition capability, and a
-  selected recognition-and-selection arrangement with an observation plan; or the missing distinction,
-  observation, receiver, task, criterion, authority, or evidence.
-- **Start with:** `MDPE.12` for a decision-bounded comparison, `MDPE.23` when recognition capability must be
-  developed and tested, and `MDPE.13` when a recognition-and-selection arrangement changes which variants are encountered,
-  recognized, selected, or returned to later practice—for example, through a jury, partner interaction, curatorial
-  choice, school, platform, or audience-response use.
-- **Stop or return:** Stop when the receiving decision can use a qualified observation or selection result.
-  Return when the distinction, recognizing Agent, task, population, arrangement, criterion, evidence, or horizon
-  changes.
+Suppose that rehearsal shows that the dense version masks the answers, the sparse version preserves the desired space, and the generated responses arrive too late for the intended exchange. Those observations can reject the first candidate for this use, retain an acoustic branch, and return the electronic branch for revision. For a further electronic trial, the musical requirement and failed timing relation guide MDPE.3: configure the cue and signal path, identify who can detect a missed response, and provide the recovery the performers need. Test that interaction together. If a performer cannot make the required response even with an adequate cue and setup, MDPE.10 addresses that capability instead.
+
+[MDPE.11](#mdpe11---interpret-or-shape-music-or-dance-material-while-performing) concerns how musicians realize the prepared material and steer its permitted live variation. If a trial shows that dropping the electronic response and using an acoustic answer sustained the exchange, preserve that observed fallback and its conditions for the next decision. MDPE.5 asks whether production and presentation let the intended recipients encounter the same musical relation: a successful monitor mix for the performers can still leave the audience unable to hear the answers.
+
+If the next venue changes audibility or latency, use [MDPE.6](#mdpe6---choose-whether-and-how-to-use-a-music-or-dance-result-under-new-conditions) to decide whether the existing result can be used, revised, or branched for that venue. Return the affected cue, sound, or performance result for repair. A working acoustic branch can remain available while the electronic branch is revised; a stored score alone does not establish that its musicians and setup are available.
 
 ### MDPE-TRANSFER — Move a practice to new conditions and keep it reproducible
 
-- **Situation:** A copied score, video, model, class, exposure, archive item, or one successful performance is
-  called adaptation, transmission, living memory, and continuation at once, although later Agents cannot
-  reproduce the practice.
-- **Question:** What survives changed conditions? Which representative Work did a receiving Agent perform,
-  which received Method did that Work enact, and which contribution from the source is supported by evidence? What can
-  present Agents reconstruct, and which dependence permits or limits continued reproduction?
-- **First useful result or honest blocker:** A receiving-use decision, a tested received Method variant with
-  transfer limits, usable cultural-memory evidence, or a qualified continuation account or decision. A claimed tested continuation adds its actual representative Work; a blocker is the needed but missing carrier,
-  capability, receiver, source contrast, lineage evidence, support relation, or later enactment.
-- **Start with:** `MDPE.6` for changed-condition use, `MDPE.17` for receiving enactment and source contribution,
-  `MDPE.18` for usable memory and lineage evidence, and `MDPE.19` for the
-  supported continuation decision and any worthwhile targeted change or inquiry.
-- **Stop or return:** Stop at the first result needed now. Do not infer population continuation from one
-  receiver. Return when the receiving conditions, carrier, receiver, Method variant, evidence, population, or
-  continuation promise changes.
+- **Situation:** Learners can repeat a taught coordination with the teacher but cannot use it with unfamiliar partners, and a school wants to rely on the practice beyond the present class.
+- **Question:** What transferred, what still depends on the teaching situation, and which result is needed for the school's next commitment?
+- **First useful result or honest blocker:** The relations the receiving version must preserve and a judgement of whether existing evidence supports its use; or the missing capability, source content, partner, or support that prevents it.
+- **Start with:** [MDPE.6](#mdpe6---choose-whether-and-how-to-use-a-music-or-dance-result-under-new-conditions) for the changed conditions and [MDPE.17](#mdpe17---design-and-test-transmission-of-a-music-or-dance-method) for receiving performance. Use [MDPE.23](#mdpe23---develop-and-test-music-or-dance-recognition-capability) when the uncertainty concerns recognition rather than the movement that follows.
+- **Stop or return:** Keep the claim at the tested receiving use. Return a recognition problem to MDPE.23, a performance limitation to MDPE.10, or a missing support relation to MDPE.22. A broader continuation promise requires its own basis.
 
-### MDPE-DEVELOP — Change the support and trajectory without destroying useful variation
+Suppose the teaching team wants learners to use two already taught partner-coordination variants with unfamiliar partners. MDPE.6 compares the class with that receiving use. Partner timing and contact must remain readable; teacher labels and a fixed exercise order need not remain. The team can choose a receiving version of the teaching arrangement that varies those conditions while retaining the original class for learners who still need its support.
 
-- **Situation:** Organizers, teachers, curators, maintainers, platform operators, or other responsible Agents
-  expect a class, event, venue, school, tool, archive, platform, award, competition, or trend arrangement to
-  sustain a practice, while a missing support relation, a practice conflict, an unperformed selected change,
-  unavailable alternatives, and several plausible futures remain hidden.
-- **Question:** Which support relation, practice conflict, local change, alternative, trajectory, or next
-  development decision currently prevents useful Music-or-Dance development?
-- **First useful result or honest blocker:** The first needed result among a tested support-environment change
-  decision, a bounded practice-conflict decision (a selected change with a representative trial, preserved
-  tension, different variants for different uses, or the next observation before choosing), a local
-  practice-change result, checked availability of alternatives, a qualified current trajectory decision or
-  an empirical update using an obtained observation, and a bounded next-development decision; or the named
-  authority, resource, relation, affected System, trial, alternative, mechanism, or horizon that is missing.
-- **Start with:** Use `MDPE.22` for a surrounding support relation and `MDPE.14` for a conflict among simultaneous
-  Work, holon positions, a stated scale order, a slower constraint, or a representation use. Use `MDPE.15` only
-  after a change has been selected, `MDPE.16` when alternatives must remain usable, `MDPE.20` when competing
-  trajectories can change the receiving decision, and `MDPE.7` when the question is which bounded Work to do next.
-- **Stop or return:** Stop at the first decision or named blocker needed now. Return when the practice subject,
-  support arrangement, conflict relation, selected change, alternative availability, mechanism, evidence, or
-  decision horizon changes.
+MDPE.17 follows what the receiving dancers actually do, which taught method or variant their performance enacts, and how they used the demonstration or lesson material. When the performance fails, MDPE.23 can separate “did not recognize the current coordination” from “recognized it but could not perform the response”. Its constructed recognition case asks for a spoken A/B response before the movement. The learner identifies ten of twelve held-out trials with unfamiliar partners and music, but seven of twelve immediately after a rapid switch between dance contexts. This supports the tested recognition and a remaining transition-sensitive limit; it does not establish movement fluency. A correct recognition followed by a failed response returns to MDPE.10. If competent recognizers cannot maintain the distinction across the intended contexts, revise the distinction or receiving task before drilling it.
 
-### Practical-Use Cards
+These results change the receiving trial and the next teaching move. MDPE.17 uses representative dance-performance observations to judge the receiving claim. It can report that the source was used and a receiving variant was enacted while leaving the source's causal contribution undecided. Productive changes to the received variant can remain when they preserve the relations the receiving use needs.
 
-These are selected examples of extended cross-pattern use, not a catalogue or prescribed workflow. Use the
-Table of Contents or search when the current difficulty does not match the displayed card.
-
-#### MDPE-CARD-STYLE-DEVELOPMENT — Develop a new style without mistaking one showcase for a maintained practice
-
-- **Situation:** A collective has an exciting Music-or-Dance variant, a public name, and one successful event,
-  but performers, teaching, recognition, transmission, support, and later reproduction may still recreate the
-  predecessor or fragment into unrelated variants.
-- **Question:** What must be learned and changed before the collective may reasonably invest in developing this
-  variant as a reproducible practice or style line?
-- **First useful result or honest blocker:** A selected style-development architecture and its first
-  representative trial, followed only by the Music-or-Dance result needed for the next investment decision; or
-  the named missing subject, capability, receiver, recognition task, authority, resource, or later observation.
-- **Mantra:** A bounded Music-or-Dance subject and intended use make architecture comparison possible.
-  Representative capability and performing-whole trials expose constraints while alternatives remain usable.
-  Observe performed Work to distinguish occurrence, recognition, selection, transmission, memory, and continuation.
-  Use the tested support relation or practice conflict to choose one local change. Use a qualified forecast
-  for the current decision; an empirical update names its obtained observation. Only needed results enter the
-  next-Work choice. One showcase leaves formation of a maintained practice or new whole open.
-- **Start with:** `MDPE.8`, then `MDPE.1` and `MDPE.21`. Continue only to the pattern whose result is missing for
-  the present trial. Use `MDPE.24` only when observations may justify changing the project boundary.
-- **Stop or return:** Stop when the next bounded trial and its receiving decision are clear. Do not call one
-  performance, label, lesson, festival, recording, platform trace, or copied artifact a maintained practice.
-  Reopen when representative enactment, recognition, transmission, support, or later reproduction contradicts
-  the selected architecture.
-
-##### Expansion for MDPE-CARD-STYLE-DEVELOPMENT
-
-The cooperating patterns are `MDPE.8`, `MDPE.1`, `MDPE.21`, `MDPE.9`, `MDPE.10`, `MDPE.3`, `MDPE.11`,
-`MDPE.5`, `MDPE.12`, `MDPE.23`, `MDPE.13`, `MDPE.6`, `MDPE.17`, `MDPE.18`, `MDPE.19`, `MDPE.22`,
-`MDPE.14`, `MDPE.15`, `MDPE.16`, `MDPE.20`, `MDPE.7`, and conditionally `MDPE.24`. Their bodies remain
-authoritative. The mantra presents one order for teaching these distinctions. Choose the order of Work from the project;
-the teaching order establishes neither a compulsory sequence nor a Method hierarchy.
+When the school asks whether another teacher can continue the practice, [MDPE.18](#mdpe18---build-usable-music-or-dance-cultural-memory-and-lineage-evidence) identifies what the lesson descriptions, recordings, and testimony can actually help that teacher recover, including the embodied relations they omit. [MDPE.19](#mdpe19---decide-whether-a-music-or-dance-variant-can-continue-and-what-to-change) uses this evidence together with available performance and support results to assess the stated continuation promise. Existing evidence may support continuation with the current teacher while replacement remains unknown. Test a replacement only when the result is needed, obtainable, and worth the full teaching, performer, support, and observation burden. A claim that replacement performance was tested must rest on that performance; the proposal to develop another teacher is already a useful, narrower result.
 
 ## Citation
 
-If you use this framework, please cite:
+If you use this framework, cite it as below and add the version date shown above:
 
 ```text
 Levenchuk, Anatoly. Music and Dance Practice Engineering Principles Framework.
-11 September 2026.
 GitHub repository: https://github.com/ailev/FPF
 ```
 
@@ -275,8 +185,7 @@ combinations as examples of those result relations.
 
 The [constructed cross-pattern application](#cross-pattern-application) carries the third question through a
 social-dance and live-music trial. It shows why the intended receiving use changes the architecture, how an
-observation defeats the first repair idea, and why the next investment remains bounded. The five Readme entries
-give shorter starting routes; each pattern retains its own Solution, worked cases, checks, and stop.
+observation defeats the first repair idea, and why the next investment remains bounded. The Readme shows shorter worked connections; each pattern retains its own Solution, worked cases, checks, and stop.
 
 If a direct composition, choreography, teaching, engineering, or operations Method already supplies the complete
 answer, use that result. The MDPE contribution is useful where its domain integration saves the practitioner
@@ -304,6 +213,8 @@ A first–then account normally describes an unfolding or Work order. A vertical
 performance, or build-the-builder dependence does not establish a simultaneous holonic level. Use `MDPE.14`
 when a decision depends on a supported part–whole relation, stated scale order, overlap of simultaneous Work, a
 slower constraint, or a representation use whose local gain conflicts with another Music-or-Dance result.
+
+**Constituent actions in ongoing work.** A useful vertical must show what the performer can or cannot do through its constituent actions. In a stipulated dance case, strength and static axis control are adequate and the figure is remembered, but balance during rotation is not. The missing coordination lies between muscular actions and the figure. MDPE.10 develops and tests the required performing capability; MDPE.17's transmission question includes whether another performer can actually reproduce the Method. The needed teacher, practice conditions and variety of combinations must be available, with return to the complete figure after intermediate practice. Use B.1.5.EW to recover these connections. Use MDPE.14 only when an actual conflict between results remains. A remembered description can persist while the cultural practice becomes unreproducible; one successful performance, conversely, does not establish population-level retention.
 
 ## MDPE.Preface:3 - Performance, recognition, selection, and continuation are different results
 
@@ -681,6 +592,8 @@ framework boundary only when the evidence changes the recurring problem, the sha
 material result relation. [Source use and currentness](#source-use-and-currentness) gives the common refresh
 rule; each selected pattern supplies its local return.
 
+## MDPE.Preface:End
+
 
 # Part I - Engineering Subject and Style-Development Architecture
 
@@ -999,9 +912,9 @@ actually missing:
 | --- | --- |
 | Which actual or intended System is the project System-of-Interest, and when that focus must reopen | `SYSE.1 — Choose and Reopen the Project System-of-Interest` |
 | Which linked use and System concepts make the intended value and boundary testable | `SYSE.2 — Develop Linked Use and System Concepts` |
-| Which functional organization, bearers, and interfaces remain viable alternatives | `SYSE.5 — Develop Functional Organization and Bearer Alternatives` |
+| Which functional organization, bearers, and interfaces remain viable alternatives | `SYSE.5 — Develop an Engineered System's Functional Organization and Bearer Alternatives` |
 | Which architecture is selected and what evidence reopens it | `SYSE.6 — Decide and Reopen the Engineering Architecture` |
-| Which recursive realization arrangement can create, integrate, qualify, operate, and change the System | `SYSE.3 — Develop the Recursive Realization Network` |
+| Which recursive realization arrangement can create, integrate, qualify, operate, and change the System | `SYSE.3 — Plan the Next System-Realization Action (Recursive Realization Network)` |
 | Which assurance claim, evidence, uncertainty, and return must accompany the result | `SYSE.4 — Prepare Engineering Assurance and Return Evidence` |
 
 These are conditional exits, not a mandatory sequence. `MDPE.1` specializes their use by stating which
@@ -1105,8 +1018,9 @@ time and one social event to a changed partnered practice. Its brief is:
 > - **Preserve / vary:** preserve partner-readable response, safety, balance, and the intended timing distinction;
 >   vary figures, partners, music, and phrase choices.
 > - **Conflict or unresolved live choice:** a filmed showcase rewards fixed camera-legible choreography, while
->   the stated project needs unfamiliar-partner social transfer. The school cannot use one occurrence as evidence
->   for both. It selects social transfer for this commitment and leaves a showcase as a separate later project.
+>   the stated project needs unfamiliar-partner social transfer. That fixed-choreography showcase would not test
+>   transfer to unfamiliar partners in social improvisation. The school selects social transfer for this
+>   commitment and leaves a showcase as a separate later project.
 > - **Recognition boundary:** participating partners must distinguish and use the cue–response relation during
 >   social Work; teacher approval or a style label is insufficient.
 > - **Participants and decision rights:** the two teachers decide the local teaching trial; dancers consent and
@@ -1190,7 +1104,7 @@ changes project commitment.
 
 > **Pattern type:** Music-and-Dance style-development architecture pattern
 
-> **Public result:** one selected architecture for changing how a style is produced and reproduced, plus its first representative test
+> **Public result:** one selected architecture for changing how a style is produced and reproduced, with its first representative test specified
 
 ### MDPE.21:0 - Use This When
 
@@ -1316,18 +1230,21 @@ These are candidate emphases, not prescribed kinds. A useful candidate states th
 the Agents whose Work or capability is involved, the direct signal, contact, access, teaching-use, observation-use, selection, or other relations changed, the authority and
 consent needed, the expected effect, and the earliest observation that could defeat it.
 
-#### MDPE.21:2.5 - Select a bounded intervention and test it in Work
+#### MDPE.21:2.5 - Select a bounded change and specify its first test
 
 Choose the smallest architecture change that can alter the waiting decision. A project can change a class, tool, event, repertoire, recording practice, platform
 feature, recognition task, or relation among them. It cannot decide by itself that a wider population has
 recognized, selected, transmitted, or retained the result.
 
-Test the candidate in representative Music or Dance Work. A trait list, architectural description, lesson plan,
-recording, publication, or successful demonstration is not enough when later enactment is the relied-on result.
-Vary at least one condition that the style-development claim must survive: performer, partner, ensemble, teacher,
-venue, instrument, repertoire item, audience, medium, or time. Observe the intended difference and the unwanted
-side effects. Keep project choice, performed intervention, observed change, and later distributed uptake as
-separate claims.
+Specify the representative Music or Dance Work that would test the candidate. The test must vary at least one
+condition that the style-development claim must survive: performer, partner, ensemble, teacher, venue,
+instrument, repertoire item, audience, medium, or time. Name the observations of the intended difference and
+unwanted side effects, and the next decision they can change.
+
+The architecture decision can close with the chosen arrangement and this specified test. Carrying out the
+selected change and test is further Work, using `MDPE.15` or the applicable direct Method. A claim about tested
+recurrence requires observations of the relevant later Work. Keep project choice, performed intervention,
+observed change, and later distributed uptake as separate claims.
 
 ### MDPE.21:3 - First Useful Result
 
@@ -1405,7 +1322,7 @@ variants, performers, conditions, or generations is part of the intended result.
 | Architecture concerns are not stages | Generation, training, performance, recognition, and memory become a fictitious lifecycle. | Show which concerns operate together and which first–then relation belongs only to one chosen Method. |
 | Several candidates differ materially | The first institutional or technical idea becomes inevitable. | Vary the principal changed relation, not just the wording or tool. |
 | The selected change is locally actionable | The project claims it will change “culture”, “the market”, or “the algorithm”. | Name the Agent, System or Method changed; the direct signal, access, contact, participation, observation-use, teaching-use, or selection relation; and the authority to change it. |
-| Test uses representative Work | Publication or demonstration substitutes for recurrence. | Vary a condition and observe later enactment, recognition, or recovery required by the claim. |
+| The specified test addresses representative recurrence | Publication or an initial demonstration substitutes for the intended later use. | Specify the changed condition and observation of later enactment, recognition, or recovery required by the claim; a tested-result claim needs the obtained observations. |
 | Project action and cultural evolution remain separate | Local authorization or success becomes population selection. | State local Work and effect now; claim wider transmission, recognition, selection, or retention only from later evidence. |
 
 
@@ -1663,7 +1580,7 @@ selection, persistence, and project consequences that the existing-whole explana
 
 | Source or practice line | Contribution used here | Boundary |
 | --- | --- | --- |
-| [`A.1 — Holon Ontic Foundation`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a1---holon-ontic-foundation-uholon-and-admitted-holon-kinds) and [`B.2 — Whole Reidentification`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b2---meta-holon-transition---whole-reidentification) | General construction, identity, existing-whole comparison, and whole-reidentification requirements. | They do not supply the Music-and-Dance candidate relations, observations, cases, or project consequences. |
+| [`A.1 — Recognize a Whole with Parts`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a1---recognize-a-whole-with-parts-uholon-and-admitted-holon-kinds) and [`B.2 — Whole Reidentification`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b2---meta-holon-transition---whole-reidentification) | General construction, identity, existing-whole comparison, and whole-reidentification requirements. | They do not supply the Music-and-Dance candidate relations, observations, cases, or project consequences. |
 | [`C.36 — Cultural Evolution and Cultural-Evolution Engineering`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c36---cultural-evolution-and-cultural-evolution-engineering) | Separation of local intervention, cultural relations, new-whole claims, mediation, and distributed change. | A cultural-evolution case does not itself establish a new holon or authorize a project. |
 | Music-and-Dance eco-evo-devo synthesis (unpublished source note) | Candidate-level probes: states, memory, transitions, selection, temporal persistence, and downward effects; music, dance, camp, and platform cases. | The transfer from multilevel-evolution models is a working hypothesis and does not replace FPF construction or kind criteria. |
 | [Vanchurin et al., *Toward a theory of evolution as multilevel learning*](https://doi.org/10.1073/pnas.2120037119) | A mathematical and theoretical source for multiscale learning-like dynamics. | A model scale, coarse-graining, or macrovariable is not by itself a world-side holon. |
@@ -1688,7 +1605,7 @@ Reconsider the whole-reidentification decision if a domain study supplies a bett
 
 # Part II - Performance Possibilities and the Performing Whole
 
-## MDPE.9 - Generate and Compare Performance Candidates
+## MDPE.9 - Generate and Compare Music-or-Dance Performance Candidates
 
 > **Pattern type:** Music-and-Dance performance-candidate pattern
 
@@ -1944,7 +1861,7 @@ For a constraint-specification candidate, name participants, proposed relations,
 
 ### MDPE.9:End
 
-## MDPE.10 - Develop and Test Performing Capability
+## MDPE.10 - Develop and Test Music-or-Dance Performing Capability
 
 > **Pattern type:** Music-and-Dance performing-capability pattern
 
@@ -2258,7 +2175,7 @@ Reconsider the capability-development Method when a direct field Method supplies
 
 ### MDPE.10:End
 
-## MDPE.3 - Configure and Coordinate the Performing Whole
+## MDPE.3 - Configure and Coordinate a Music-or-Dance Performing Whole
 
 > **Pattern type:** Music-and-Dance performing-configuration pattern
 
@@ -2505,7 +2422,7 @@ decision. No whole-level ambiguity remains; applying `MDPE.3` would add only ano
 | Source or maintained result | Contribution used here | Boundary |
 | --- | --- | --- |
 | FPF `A.1`, `A.22`, `A.6.F`, `A.6.M`, `A.6.RSIR`, `A.2`, `A.2.1`, `A.2.2`, `A.15.1`, and `F.6` | System admission, selected structures, function, module and interface-claim recovery, assignment, capability, Work, and attribution. | They do not supply Music-or-Dance material, performer, carrier, articulation, partner, ensemble, or performance use. |
-| [SYSE.5 — Develop Functional Organization and Bearer Alternatives](SYSTEMS-ENGINEERING-PRINCIPLES-FRAMEWORK.md#syse5---develop-functional-organization-and-bearer-alternatives) | General engineered-System functional organization, bearer, allocation, interface, feasibility, and conflict alternatives. | A possible architecture is distinct from the configuration that exists; MDPE specifies the performance relations. |
+| [SYSE.5 — Develop an Engineered System's Functional Organization and Bearer Alternatives](SYSTEMS-ENGINEERING-PRINCIPLES-FRAMEWORK.md#syse5---develop-an-engineered-systems-functional-organization-and-bearer-alternatives) | General engineered-System functional organization, bearer, allocation, interface, feasibility, and conflict alternatives. | A possible architecture is distinct from the configuration that exists; MDPE specifies the performance relations. |
 | Timing examples in the [Dance profile](#mdpepreface72---dance-making-movement-usable-for-its-participants) and the local Balboa cases | Continuing carrier, discrete articulation, several event locations, pair boundary, partner feedback, and layered coordination. | Method-design input, not one historical definition, universal teaching Method, or capability result. |
 | Georgia Tech [Shimon project](https://gtcmt.gatech.edu/shimon), [2017 account](https://news.gatech.edu/news/2017/06/13/robot-uses-deep-learning-and-big-data-write-and-play-its-own-music), [actuator study](https://arxiv.org/abs/2007.14850), and [gesture study](https://doi.org/10.3389/frobt.2024.1461615) | Robotic generation, performance, actuation, gesture, timing, interaction, and performer/developer separation. | The sources do not establish one timeless configuration, robot-held development authority, or cultural retention. |
 | Georgia Tech [Barnes prosthesis account](https://news.gatech.edu/news/2014/03/06/robotic-prosthesis-turns-drummer-three-armed-cyborg), [finger-control account](https://news.gatech.edu/news/2017/12/11/force-strong-amputee-controls-individual-prosthetic-fingers), and [Drumming Arm study](https://doi.org/10.1109/ICRA48506.2021.9561943) | Equipped performer, shared control, device-to-instrument interaction, representative performance, and changing configurations. | One performer/device lineage does not define every equipped performance. |
@@ -2535,7 +2452,7 @@ Retain only views that change the configuration or its evidence. Use a direct fi
 
 # Part III - Performance, Observation, Recognition, and Selection
 
-## MDPE.11 - Interpret or Shape Material While Performing
+## MDPE.11 - Interpret or Shape Music-or-Dance Material While Performing
 
 > **Pattern type:** Music-and-Dance performance-enactment pattern
 
@@ -3265,8 +3182,10 @@ State what supports each claim and how it was obtained. These descriptions can a
 - **open hypothesis** — a useful explanation to test through observations that could count against it;
 - **unsupported claim** — a required subject, observer, Method, representation, population, or source is absent.
 
-Scientific results remain open to correction. An open hypothesis can guide a cheap, reversible probe. High-cost, irreversible, safety-critical, or population-wide action warrants
-stronger evidence and applicable authority.
+An open hypothesis can guide a cheap, reversible probe. For costly, irreversible, potentially harmful or
+population-wide action, compare what attainable further evidence could change with its cost and delay
+(`C.11.DUA`). Consider a smaller step, narrower use or stop when uncertainty makes the proposed action
+unacceptable. Applicable authority and binding conditions still govern the action.
 
 #### MDPE.12:2.8 - Return the comparison, not the later choice
 
@@ -3390,7 +3309,7 @@ result directly. `MDPE.12` adds nothing unless several result kinds or cultural 
 | Representation preserves the needed structure | Onset or geometry is treated as the rhythm itself. | Name the rhythmic carrier and event relation; choose the representation for the intended operation. |
 | Comparison is lawful | Non-equivalent criteria disappear into an average. | Keep trade-offs, vetoes, distributions, and differently scaled results visible. |
 | Availability is not use | Press, curricula, standards, attendance, or views become prevalence. | Separate discourse, access, observed Work, population, and period; state their basis, epistemic status, and uncertainty. |
-| Evidence strength fits the action | Either intuition becomes fact or all action waits for certainty. | Use a bounded judgement or estimate for cheap reversible moves and stronger evidence for costly claims. |
+| Evidence and its burden fit the decision | An estimate becomes fact, or a costly decision automatically demands more research. | Keep the claim within what the available evidence supports and respect binding conditions. Obtain further evidence only when its attainable contribution warrants its cost and delay; otherwise use a bounded judgement, narrow the action or stop (`C.11.DUA`). |
 | Observation does not make the choice | A comparison is reported as authority to act. | Pass evidence to the decision Method and preserve authority, consent, and ethics separately. |
 
 ### MDPE.12:6 - Sources and Epistemic Boundaries
@@ -3582,7 +3501,7 @@ When a learned response disappears:
 5. record recovery, interference, unintended intrusion, deliberate transfer, and delayed retention separately.
 
 Immediate return in the old context supports a retrieval or context-classification problem over simple capability
-loss. Finding no context effect supports a different explanation. Either result changes the next development Method.
+loss. Finding no context effect supports a different explanation. Use either result in the next development decision; retain the current Method when it remains adequate.
 
 #### MDPE.23:2.6 - Test transfer without the teaching answer
 
@@ -3724,7 +3643,9 @@ Compare development Methods by their expected gain, burden, protected conditions
 | [Heald, Lengyel, and Wolpert, *Contextual inference underlies the learning of sensorimotor repertoires*](https://doi.org/10.1038/s41586-021-04129-3) and [*Contextual inference in learning and memory*](https://doi.org/10.1016/j.tics.2022.10.004) | Context-sensitive creation, expression, and updating of memories; discriminating return and cue-variation probes. | The first model is sensorimotor; one identical computation for every memory and every agent remains an open hypothesis. |
 | Context-dependent recall and transfer (unpublished source note) | Multidance switching and blending cases, rival explanations, and human and ML probes. | The intake supplies hypotheses and source leads, not a general Method or an established cross-domain result. |
 | Balboa, Brushes, Pulse, and P-Center (unpublished source note) | Continuous carrier, articulation, several timing centres, partner feedback, and interleaved recognition tasks. | It does not prove one universal exercise order or transfer to all performers. |
-| `MUSIC-COMPARE`, `DANCE-OBSERVE`, `TOCA-TEACHING`, and `RECOGNITION-METHOD-ABSENCE` in the maintained source register | Direct comparison, observation, teaching, and current missing-recognition boundaries. | They do not together constitute one universal recognition-development Method or scene-recognition result. |
+| [Wood et al., *The Global Jukebox*](https://doi.org/10.1371/journal.pone.0275469); comparison methods in `MDPE.12:6` | Recordings, coding guides and coder training make selected musical distinctions available for comparison; reliability differs by characteristic. | Agreement on a coded feature does not establish its recognition or meaning for a different population. |
+| [Whitehead et al., *Capturing spontaneous interactivity*](https://doi.org/10.3389/fpsyg.2024.1465595) | Compare kinematic coordination measures with the improvising dancers' reports; their disagreement can change the recognition task or observation method. | These observations do not establish audience recognition of the proposed style distinction. |
+| [Dawou Tarraxo, TOCA Method: student book and teacher guide](https://tocamethod.com/) | A teaching approach combining touch, observation, control and awareness, with individual and partnered exercises and progressions. | This is one practice-specific teaching approach; its description alone does not demonstrate recognition or transfer by the current learners. |
 
 Use contextual inference as a working explanation only while it predicts observations better than relevant rivals.
 
@@ -4274,7 +4195,7 @@ Reopen the decision when the source result, receiving condition, intended use, o
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** an **identified receiving Method variant**, observations from representative receiving Work, transfer limits, a separately qualified source-contribution status, and the next change to the transmission arrangement. If source contribution is not supported, preserve the receiving result and say only that the source was used; do not promote resemblance or succession to transmission.
+> **Primary working result:** an **identified receiving Method variant**, observations from representative receiving Work, transfer limits, a separately qualified source-contribution status, and a decision to retain or change the transmission arrangement, or stop the proposed receiving use. If source contribution is not supported, preserve the receiving result and say only that the source was used; do not promote resemblance or succession to transmission.
 
 ### MDPE.17:0 - Use This When
 
@@ -4291,7 +4212,7 @@ The costly difficulty is easy to recognize:
 
 The engineering question is:
 
-> What source content and receiving conditions should we arrange so that a receiving Agent can perform representative Music-or-Dance Work under a receiving Method, and what observation would show what transferred, what changed, and what must change next?
+> What source content and receiving conditions should we arrange so that a receiving Agent can perform representative Music-or-Dance Work under a receiving Method, and what observation would show what transferred, what changed, and whether further change is needed?
 
 A compact teaching unfolding is:
 
@@ -4300,11 +4221,11 @@ A compact teaching unfolding is:
 3. choose direct teaching, rehearsal, reconstruction, learning, or control Methods;
 4. vary the conditions that matter to the receiving claim and observe receiving Work;
 5. distinguish source use, receiving enactment, transfer, retention, and source contribution; and
-6. retain the received variant and change the transmission relation that most limits its intended use.
+6. retain the useful received variant; keep the transmission arrangement when it suffices, or select a worthwhile change or stop.
 
 Provider Work, receiving Work, and observation Work can overlap or occur at different times. The list is a teaching unfolding, not a universal cultural process, Work plan, or architecture view.
 
-Use the direct Music, Dance, teaching, rehearsal, reconstruction, robotics, machine-learning, event-programming, or community Method without `MDPE.17` when it already returns the receiving Method variant, representative enactment, transfer limits, source-contribution boundary, and next change. Use this pattern when those results remain collapsed or missing after direct Work.
+Use the direct Music, Dance, teaching, rehearsal, reconstruction, robotics, machine-learning, event-programming, or community Method without `MDPE.17` when it already returns the receiving Method variant, representative enactment, transfer limits, source-contribution boundary, and a supported continuation decision. Use this pattern when those results remain collapsed or missing after direct Work.
 
 Do not use this pattern merely to decide whether to reuse a result before receiving Work (`MDPE.6`), to recover a candidate Method from records (`A.3.1.MR` or `MDPE.18`), to develop general human capability, or to claim population continuation (`MDPE.19`).
 
@@ -4346,7 +4267,7 @@ Useful transmission therefore requires more than delivery. Provider and receivin
 
 ### MDPE.17:3 - Solution
 
-Design transmission around representative receiving Work. Select the source content and receiving conditions, arrange direct provider and receiving Methods, make support and context variation deliberate, observe the receiving Agent performing, preserve useful transformations, and change the transmission relation that limits the intended use.
+Design transmission around representative receiving Work. Select the source content and receiving conditions, arrange direct provider and receiving Methods, make support and context variation deliberate, observe the receiving Agent performing, preserve useful transformations, and decide whether the transmission arrangement can be retained or needs a worthwhile change.
 
 #### MDPE.17:3.1 - Begin with the receiving use
 
@@ -4420,11 +4341,11 @@ Do not discard a positive receiving-enactment result merely because source contr
 
 If the observed Work does not enact an admitted Method and only a candidate explanation is available, return the observations to Method recovery rather than inventing a Method from one occurrence.
 
-#### MDPE.17:3.6 - Preserve the received variant and choose the next change
+#### MDPE.17:3.6 - Preserve the received variant and decide how to continue
 
 Name what the receiving Method variant preserves, changes, adds, omits, or leaves unknown. Keep Method, MethodDescription, material, performing configuration, and capability changes separate. A changed movement phrase is not automatically a changed teaching Method; a changed model is not automatically a changed performer Method.
 
-Choose the smallest next repair that can change the receiving use. Examples include another carrier, clearer demonstration, different exercise, reduced cueing, more representative partner or material variation, a corrected MethodDescription, changed tool or instrument configuration, added feedback, or a source-specific comparison.
+When the received variant and its supported limits suffice for the intended use, retain the arrangement. If a remaining limitation or worthwhile improvement calls for change, choose the smallest useful repair. Examples include another carrier, clearer demonstration, different exercise, reduced cueing, more representative partner or material variation, a corrected MethodDescription, changed tool or instrument configuration, added feedback, or a source-specific comparison. Select further work only when its attainable contribution warrants its cost and delay. Stop or narrow the proposed receiving use when the required conditions cannot be met.
 
 Return:
 
@@ -4437,7 +4358,8 @@ support and context variation:
 observed enactment, transfer, and retention limits:
 received Method variant — preserved, changed, added, absent, unknown:
 source contribution — supported | not supported | undecided | not needed:
-next transmission change and reopen condition:
+continuation decision — retain arrangement | selected change | narrower use | stop:
+condition that reopens the decision:
 ```
 
 Keep the report's claims within what the observed Work and evidence support.
@@ -4525,7 +4447,7 @@ The transmission test result is usable when a cold reader can answer:
 - Which context and support changes make the test representative?
 - What was observed: access, source use, receiving enactment, transfer, retention, or source contribution?
 - What receiving Method variant now exists or remains only a candidate?
-- What is the next change, and what later observation can reopen the result?
+- Does the supported result suffice, or is a change, narrower use or stop warranted? What later observation can reopen that decision?
 
 Assure only the claim the probe can support. A delivered lesson, copied artifact, one repeated example, one concert, or one model checkpoint is not sufficient for a stronger claim. Human motor studies, robot-learning experiments, practitioner sources, and project pages contribute hypotheses and probes within their own populations and tasks; none supplies universal prevalence or effectiveness.
 
@@ -4594,7 +4516,7 @@ No relation above imposes one teaching sequence or claims that provider, receivi
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** **source-traceable cultural-memory and lineage evidence for one Music-or-Dance decision**. The result states what each source supports, which lineage explanations remain possible, what embodied or present-practice information is missing, which inferences are allowed, and what new observation could change the decision. It is evidence about past and present practice, not the past Work, living Method, capability, or cultural continuation itself.
+> **Primary working result:** **source-traceable cultural-memory and lineage evidence for one Music-or-Dance decision**. The result states what each source supports, which lineage explanations remain possible, what embodied or present-practice information is missing, and which inferences the current decision may use. It is evidence about past and present practice, not the past Work, living Method, capability, or cultural continuation itself.
 
 ### MDPE.18:0 - Use This When
 
@@ -4621,7 +4543,7 @@ A compact teaching unfolding is:
 3. build one source-to-claim table with limits;
 4. compare lineage alternatives only where evidence leaves more than one live;
 5. identify embodied, performative, technical, and present-use gaps; and
-6. return the evidence that the decision may use, blocked inferences, and a focused next inquiry.
+6. return the evidence that the decision may use and the limits of that use.
 
 Source discovery, comparison, and gap testing can loop. The list is not a historical lifecycle or required research schedule.
 
@@ -4741,7 +4663,7 @@ A source need not fill every gap. Say which gap blocks the decision and which ca
 
 #### MDPE.18:3.6 - Return decision-usable evidence
 
-Return:
+Return only the information needed by the receiving decision. The following prompts can help:
 
 ```text
 decision, user, subject, population, place, period, receiving use:
@@ -4751,11 +4673,11 @@ live alternatives and why they matter:
 embodied, performative, technical, and present-use gaps:
 allowed decision uses:
 blocked inferences:
-next focused inquiry or representative Work:
+useful continuation or stop:
 source-change and evidence-change reopen conditions:
 ```
 
-The result may be small. One qualified attribution, one usable MethodDescription, and one unresolved embodied gap can be enough. The practitioner uses this evidence when choosing, authorizing, teaching, transmitting, restoring, retiring, or continuing the practice through the applicable direct Methods.
+The result may be small. One qualified attribution, one usable MethodDescription, and one unresolved embodied gap can be enough. Select further inquiry or representative Work only when its attainable contribution warrants its burden for the receiving decision. The practitioner uses this evidence when choosing, authorizing, teaching, transmitting, restoring, retiring, or continuing the practice through the applicable direct Methods.
 
 ### MDPE.18:4 - Worked Cases
 
@@ -4805,7 +4727,7 @@ The evidence is usable when a cold reader can answer:
 - Which lineage dimension matters, and does the evidence support a tree, network, mixture, convergence, or only a local attribution?
 - Which embodied, performative, technical, or present-use relations are missing from the records?
 - Does source visibility differ from evidence of actual practice prevalence?
-- Which use is allowed now, which inference is blocked, and what focused inquiry can change that boundary?
+- Which use is supported now, and which inference is blocked? If further inquiry is selected, what decision can it change?
 
 Assurance means replaying source-to-claim use, not counting citations. Check source identity, retained part, production context, permissions, corroboration, contradictory evidence, currentness for the claim, and the downstream use. When a mutable page changes, reopen only the claims and decisions that relied on it.
 
@@ -5008,7 +4930,7 @@ When a change is warranted, target the continuation-critical relation supported 
 | Material survives but tacit Method is missing | Combine source recovery with rehearsal, annotation, oral history, movement or sound analysis, and a receiving trial. |
 | Instrument, hardware, software, or calibration is the single point of failure | Maintain it, prepare a compatible replacement, preserve configuration information, or branch to a variant with declared changes. |
 | One venue, organizer, or event provides the only recurring opportunity | Develop another provider arrangement, share organizing capability, or redesign the practice for another suitable setting. |
-| Practitioners can perform representative Work that enacts the variant, but audiences or selectors cannot recognize it | Develop recognition capability or change the presentation and selection arrangement through `MDPE.13`, while preserving the variant's relevant distinctions. |
+| Practitioners can perform representative Work that enacts the variant, but audiences or selectors cannot recognize it | Develop recognition capability through `MDPE.23` or change the presentation and selection arrangement through `MDPE.13`, while preserving the variant's relevant distinctions. |
 | Literal reproduction is infeasible or undesirable | Select a branch that preserves the needed function or relations and state what changed; do not claim uninterrupted identity without evidence. |
 | Support cost or harm exceeds current value | Retire the named class, repertoire membership, service, publication, or support arrangement within authority; preserve useful memory and notify affected Agents when required. |
 
@@ -5341,8 +5263,8 @@ Compare alternatives by the Music-or-Dance result, required capability, time, re
 Use the relevant DPF result or direct domain Method:
 
 - Systems Engineering for the supporting System, interfaces, configurations, evidence, and enabling Systems;
-- Organization Change Engineering for contributions, assignments, authority, capability, and participation;
-- Operations Management for recurring event or service Work, demand, queues, capacity, quality, and reliability;
+- Organization Change Engineering when the change alters who may request, undertake or accept Work, or the authority and participation relations among those organizational roles;
+- Operations Management for recurring event or service Work, demand, queues, capacity, quality and reliability, including who is already assigned which Work and the remaining capacity under existing authority;
 - Organization Administration for access, verification, authorization, records, and service provision;
 - Human Capability Development for human teaching and transfer; and
 - direct Music, Dance, production, venue, platform, archive, safety, legal, financial, and maintenance Methods for their own Work.
@@ -5392,8 +5314,7 @@ difference an intervention *effect* only when the admitted `C.28` result support
 required for a complete failed or inconclusive result.
 
 A positive local observation establishes no culture-wide adoption, source contribution, attractor, new level, or
-new cultural whole. Use `MDPE.24` only when the project has evidence of an independently persistent whole with its
-own memory, state changes, selection, and observable relations to lower-holon Work. Use `MDPE.20` for competing
+new cultural whole. Use `MDPE.24` when treating the practice as a new whole could change the project subject, architecture, or another development decision. Use `MDPE.20` for competing
 future trajectories.
 
 A compact return can read:
@@ -6040,7 +5961,7 @@ official rule, popular style, or platform metric does not displace representativ
 
 ### MDPE.14:End
 
-## MDPE.15 - Make and Test a Local Practice Change
+## MDPE.15 - Make and Test a Local Music-or-Dance Practice Change
 
 > **Type:** DPF pattern body
 >
@@ -6073,7 +5994,7 @@ Use the direct domain Method without this pattern when it already returns that c
 - a practice conflict still needs comparison or a decision—use `MDPE.14`; return here only when it selects one feasible local change and representative trial, or a named DecisionSubject makes another bounded ChoiceResult that selects the change;
 - the present task is only planning or tool-call sequencing—use the applicable planning Method, `A.15.2`, or `C.24`;
 - the task is only to develop performer capability—use `MDPE.10` or Human Capability Development;
-- the task is to obtain receiving enactment by another carrier—use `MDPE.17`;
+- the task is to obtain receiving enactment by another Agent—use `MDPE.17`;
 - the task is to establish recognition, selection, retention, spread, or loss in a population—use `C.36` and the applicable later MDPE pattern; or
 - no Work can be performed and the current result can only be a possible-future description.
 
@@ -6211,7 +6132,7 @@ Choose trial conditions representative enough for the decision and safe enough f
 - observations, uncertainty, and missing witnesses; and
 - protected characteristics and stop conditions.
 
-Change Work and trial Work may overlap—for example, a dancer adjusts a partnering cue during a supervised trial—or occur separately, as when an arrangement is edited and later rehearsed. State overlap, succession, or independence. Do not call either one a level of the other.
+Change Work and trial Work may overlap—for example, a dancer adjusts a partnering cue during a supervised trial—or occur separately, as when an arrangement is edited and later rehearsed. State their temporal relation separately from any part–whole relation. A trial can be a constituent of larger change Work when its performance contributes to that encompassing work; explain the connection using `B.1.5.EW`. Overlap or succession alone does not establish it.
 
 #### MDPE.15:4.7 - Separate direct result, observation, and effect
 
@@ -6275,7 +6196,7 @@ Here *then* names an actual relation in this case: the revised arrangement must 
 
 `MDPE.6` contains a source-grounded constructed replay in which an automated monophonic arrangement preserves rhythm, durations, rests, bar lines, playable ranges, and rhythmic entries, while a rehearsal exposes a masked antiphonal relation. The lawful choice is *revise before use*: adjust dynamics and one voice allocation.
 
-`MDPE.15` starts after that choice. The arranger or production team is the practice-developing Agent only when it is an admitted Agent, has the stated development-role assignment, and can perform the attributed Work. A named `ChoiceResult` made by a named `DecisionSubject` under a separate authority relation selects the revision; permission and consent for the Work are checked separately. Arrangement Work under the applicable Music Method edits the identified score and produces a new arrangement artifact or version. In a later rehearsal, the intended singer and instrumentalists perform the rehearsal Work. A named observer, such as the arranger or rehearsal leader, performs observation Work and records antiphonal clarity, balance, breath, cueing, articulation, and playability under stated room and performer conditions.
+`MDPE.15` starts after that choice. The capable arranger or production team performs the selected revision. Identify a development-role assignment when the Work is attributed under it. A named `ChoiceResult` made by a named `DecisionSubject` under a separate authority relation selects the revision; permission and consent for the Work are checked separately. Arrangement Work under the applicable Music Method edits the identified score and produces a new arrangement artifact or version. In a later rehearsal, the intended singer and instrumentalists perform the rehearsal Work. A named observer, such as the arranger or rehearsal leader, performs observation Work and records antiphonal clarity, balance, breath, cueing, articulation, and playability under stated room and performer conditions.
 
 The result account can state that the arrangement artifact changed and that the bounded rehearsal supported or failed the antiphonal criterion. It cannot state that the ensemble acquired durable capability, that a concert succeeded, or that a musical practice spread. If the rehearsal never occurs, the correct result is the edited artifact plus the missing representative trial.
 
@@ -6289,7 +6210,7 @@ If the selected branch lacks permission to alter the identified source material,
 
 #### MDPE.15:5.3 - Recognition arrangement: a rule change is not recognition or selection
 
-Suppose `MDPE.13` returns a bounded decision to change how one social-dance event admits battle entries: publish a revised category description, add a practitioner panel, make an appeal procedure usable, and identify who gives feedback to whom about which decision. Its `DecisionSubject` and authority for that decision are named separately from the Agent and assignment needed to perform the change Work; permission, consent, resources, and capability are rechecked. Event-policy and implementation Work can then change the local arrangement. A later event can supply observations about actual participation, decisions, refusals, appeals, and affected Systems.
+Suppose `MDPE.13` returns a bounded decision to change how one social-dance event admits battle entries: publish a revised category description, add a practitioner panel, make an appeal procedure usable, and identify who gives feedback to whom about which decision. Its `DecisionSubject` and authority for that decision are named separately from the Agent performing the change Work. Identify an assignment when it governs that Work's attribution; recheck permission, consent, resources, and capability. Event-policy and implementation Work can then change the local arrangement. A later event can supply observations about actual participation, decisions, refusals, appeals, and affected Systems.
 
 The published rule is a direct artifact. The obtaining panel, assignments, and appeal relations are separate world-side arrangement changes. The event observations are separate again. None proves that a wider scene recognizes or retains the affected variants. If the event never runs, report the changed description and untested arrangement rather than a successful recognition change.
 
@@ -6389,7 +6310,7 @@ Mutable web-source claims are dated to 2026-08-26. Recheck only a claim that dep
 - `A.15.7` governs bounded next-action steering when current facts change a live branch under an already-admitted Method. It is neither the prior choice nor a universal improvisation Method.
 - `MDPE.15 → MDPE.7` is a conditional evidence input. The local result can change the next development choice; it does not make that choice.
 - `MDPE.15 → MDPE.14` is revision feedback only when observations change the same conflict, candidate, comparison, residual, moved burden, or representative test.
-- `MDPE.15 → MDPE.17` is a Method or repertoire input only when an actual changed Method or variant and its conditions are available for receiving enactment. A proposal, description, or failed attempt does not become transmitted content.
+- `MDPE.15 → MDPE.17` can supply an actual changed Method or repertoire variant with its conditions for receiving enactment. It can also supply a MethodDescription as source content. The description or a failed change attempt alone does not establish an actual changed Method or receiving enactment.
 - `MDPE.12` may use later observations under its own comparison question. `MDPE.10` and Human Capability Development own capability-development and transfer results.
 - `C.36`, `MDPE.17`, `MDPE.19`, and `MDPE.20` own later transmission, cultural continuation, retention or loss, and trajectory claims. One local change establishes none of them.
 
@@ -6748,7 +6669,7 @@ Reconsider the affected availability use when a source premise, configuration, p
 
 ### MDPE.16:End
 
-## MDPE.20 - Forecast, Observe, and Revise How a Music-or-Dance Practice May Develop
+## MDPE.20 - Forecast How a Music-or-Dance Practice May Develop
 
 > **Type:** DPF pattern body
 >
@@ -7192,7 +7113,7 @@ Construct a small Music-or-Dance development `OptionSet`, compare it under one e
 Identify:
 
 - the `DecisionSubject` and `DecisionSubjectGranularity`;
-- the practice-developing Agent and its obtaining local system-role assignment for later development Work, if different from the `DecisionSubject`;
+- the Agent expected to perform later development Work, when different from the `DecisionSubject`, and any assignment that changes the decision or that Work's attribution;
 - the Music-or-Dance practice subject and current configuration;
 - the current intended consequence and affected Systems;
 - the decision horizon and resource limit; and
@@ -7443,7 +7364,7 @@ Mutable web-source claims are dated to 2026-08-26. Recheck the affected choice o
 - `MDPE.12`, `MDPE.15`, `MDPE.16`, and later `MDPE.20` are common conditional inputs. The full result table in `MDPE.7:4.2` is a selection aid, not a required unfolding or Work order.
 - `MDPE.15 → MDPE.7` is evidence input only when the local changed subject, failed attempt, direct result, or bounded observations change the next decision.
 - `MDPE.16 → MDPE.7` is decision input only when live branches, stepping stones, repair needs, tests, or removal reasons change the current `OptionSet` or comparison.
-- `MDPE.7 → MDPE.15` occurs only when the `ChoiceResult` selects one feasible local change. The decision authority supporting that choice, the practice-developing Agent and its assignment, permission where applicable, capability, resources, and other Work-entry conditions remain separate; the chosen Work remains unperformed.
+- `MDPE.7 → MDPE.15` occurs only when the `ChoiceResult` selects one feasible local change. The decision authority supporting that choice, the practice-developing Agent, an assignment when Work attribution needs it, applicable permission, capability, resources, and other Work-entry conditions remain separate; the chosen Work remains unperformed.
 - `A.2.8` governs obligations and prohibitions; `A.2.8.PER` governs permission and non-prohibition. `E.10.ROLE` only recovers ambiguous role wording; `A.2.1` governs an obtaining assignment occurrence and its declared species; `F.6` governs attribution when an Agent later performs Work under that assignment. Decision authority uses its applicable direct governor or an `A.6.RCD` missing-governor result. A recommendation is not silently upgraded to a decision under authority.
 - `A.15.2` governs a WorkPlan after choice when one is needed. `C.24` governs tool or call planning. `A.15.1` governs any later Work occurrence.
 - `C.36` and `MDPE.17`–`MDPE.20` govern receiving and cultural claims. The project chooses only Work within its supported authority.
@@ -7554,33 +7475,9 @@ changes action.
 
 `MDPE.*` identifies patterns in this Music and Dance Practice Engineering Principles Framework. A PatternID is a
 stable local address for one authoritative pattern body in this product. Its number does not encode reader order,
-lifecycle stage, Method composition, level, or dependency. The five Parts and five ordinary entries group
-patterns for recognition and reading; they create no semantic parent or prescribed project sequence.
+lifecycle stage, Method composition, level, or dependency. The five Parts group patterns for reading; the practical entries connect them for selected working situations.
+Neither imposes a project sequence or a Method hierarchy.
 
-The shared Table-of-Contents form retains a Status position, but this edition leaves every pattern-status cell
-empty. No pattern-specific public lifecycle value changes selection here. PatternID continuity, edition
-admission, publication, currentness, and access are different claims and are not inferred from an empty or filled
-table position.
-
-## Practical-example declaration
-
-This table identifies the selected Readme examples in this edition. They illustrate practical entries;
-other questions can be found through the complete Table of Contents.
-
-| Example key | Selected form |
-| --- | --- |
-| `MDPE-SUBJECT` | Ordinary practical entry |
-| `MDPE-PERFORM` | Ordinary practical entry |
-| `MDPE-RECOGNIZE` | Ordinary practical entry |
-| `MDPE-TRANSFER` | Ordinary practical entry |
-| `MDPE-DEVELOP` | Ordinary practical entry |
-| `MDPE-CARD-STYLE-DEVELOPMENT` | Practical-Use Card |
-
-For the English edition, reading burden is the number of whitespace-separated words in the visible value. The
-card mantra has a maximum of 100 words; the complete compact card from its H4 heading through the final
-`Stop or return` value has a maximum of 360 words. These word limits have no minimum. Reopen the smallest
-affected entry or limit when comparison with an entry without a mantra no longer favors the card form, a
-choice-changing distinction cannot fit, or a lower word limit preserves the same use.
 
 ## Source use and currentness
 
@@ -7628,7 +7525,7 @@ dependency merely because the discovery began here.
 
 ## Edition return
 
-**5 September 2026** is the public designation of the framework episteme expressed by this Readme, the Table of
+**The version date shown above** is the public designation of the framework episteme expressed by this Readme, the Table of
 Contents, Preface, the twenty-two pattern bodies named in that table, the completed constructed cross-pattern
 application, and this boundary-and-refresh unit. The pattern bodies and these named support units are the
 claim-bearing source of the edition. The all-in-one Markdown publication is a presentation of the same selected
