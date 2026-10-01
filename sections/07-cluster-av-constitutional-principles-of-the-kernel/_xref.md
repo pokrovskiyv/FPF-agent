@@ -1,6 +1,6 @@
 # Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (435 refs).
+Patterns in other Parts that reference patterns in this directory (440 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -145,6 +145,8 @@ Patterns in other Parts that reference patterns in this directory (435 refs).
 | B.1.4 | builds_on | A.14 |
 | B.1.4 | coordinates_with | A.15.1 |
 | B.1.5 | coordinates_with | A.15.1 |
+| B.1.5.EW | builds_on | A.15.1 |
+| B.1.5.EW | coordinates_with | A.22.CGUS |
 | B.1.6 | builds_on | A.15.1 |
 | B.1.6 | coordinates_with | A.15.2 |
 | B.1.6 | coordinates_with | A.15.5 |
@@ -176,6 +178,8 @@ Patterns in other Parts that reference patterns in this directory (435 refs).
 | B.5.2.0 | builds_on | A.16 |
 | B.5.2.1 | builds_on | A.17 |
 | B.5.2.1 | builds_on | A.18 |
+| B.5.PI | coordinates_with | A.15.11 |
+| B.5.PI | coordinates_with | A.16.1 |
 | B.5.TU | coordinates_with | A.15.9 |
 
 ## From 09-part-c-kernel-extension-specifications
@@ -342,6 +346,7 @@ Patterns in other Parts that reference patterns in this directory (435 refs).
 | C.38 | builds_on | A.10 |
 | C.38 | coordinates_with | A.15.9 |
 | C.38 | coordinates_with | A.19.CPM |
+| C.39 | coordinates_with | A.22.CGUS |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 
@@ -456,7 +461,7 @@ Patterns in other Parts that reference patterns in this directory (435 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| G.0 | builds_on | A.19 |
+| G.0 | builds_on | A.19.CN |
 | G.0 | builds_on | A.10 |
 | G.0 | builds_on | A.17 |
 | G.0 | builds_on | A.18 |

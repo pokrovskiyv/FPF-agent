@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-10-01
+
+### What's New
+- The searchable spec grew to **118,719 lines** (392 sections, 395 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- **New: Checklist Principles Framework** — six patterns for designing, adapting, and using checklists in team work: which questions to include, how to format them so answers stay meaningful, how to fit them to when and where they'll actually be used, and how to reconcile partial results across a shared effort.
+- **New: Community Building Principles Framework** — sixteen patterns for starting and sustaining a community or group, from making the first useful exchanges happen to recognising contributions and handling participation changes over time.
+- **New: Corporate Governance Principles Framework** — structured guidance for corporate decisions, governing arrangements, and rights — useful for directors, company secretaries, shareholders, and advisers who need to know who may act and how decisions should be prepared.
+- **Expanded Engineering DPF Suite** — five new domain frameworks added: Defense and Transmission Modeling, Economic Reasoning and Coordination, Embodied Rhythmics (for movement and somatic practice), Marketing, and Somatic Movement Modeling. The suite now covers a wider range of professional domains.
+- **New: Foundational Thinking DPF Suite** — a new collection covering the thinking tools behind rigorous work: Computational Thinking, Mathematical Modeling Practice, Mathematical Practice, Notational Engineering, and Physical Thinking. Useful when you need to check whether a reasoning step, a model, or a notation is being used soundly.
+- All section indexes were refreshed with plain-language summaries and the quick glossary was upgraded with plain-language definitions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh (v0.13.0)
+
 ## 2026-09-15
 
 ### What's New

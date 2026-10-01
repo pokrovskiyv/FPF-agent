@@ -1,6 +1,6 @@
 # Cross-References into 11-part-e-the-fpf-constitution-and-authoring-guides
 
-Patterns in other Parts that reference patterns in this directory (357 refs).
+Patterns in other Parts that reference patterns in this directory (361 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -18,7 +18,7 @@ Patterns in other Parts that reference patterns in this directory (357 refs).
 | A.1.STM | coordinates_with | E.18 |
 | A.11 | builds_on | E.24.UK |
 | A.2 | coordinates_with | E.10.ROLE |
-| A.2.2 | builds_on | E.24.UK |
+| A.2.2 | informs | E.23.CDI |
 | A.2.4 | coordinates_with | E.10.ROLE |
 | A.2.6 | coordinates_with | E.24.UK |
 | A.2.7 | coordinates_with | E.10.ROLE |
@@ -125,6 +125,10 @@ Patterns in other Parts that reference patterns in this directory (357 refs).
 | A.13 | informs | E.16 |
 | A.14 | coordinates_with | E.17 |
 | A.15 | coordinates_with | E.10.ROLE |
+| A.15.10 | coordinates_with | E.23.CAE |
+| A.15.11 | coordinates_with | E.11 |
+| A.15.11 | coordinates_with | E.23.CAE |
+| A.15.11 | coordinates_with | E.23.CDI |
 | A.15.2 | coordinates_with | E.24 |
 | A.15.2 | coordinates_with | E.24.UK |
 | A.15.3 | coordinates_with | E.17 |
@@ -141,9 +145,8 @@ Patterns in other Parts that reference patterns in this directory (357 refs).
 | A.15.PROD | coordinates_with | E.24.PUB |
 | A.15.PROD | coordinates_with | E.18.1 |
 | A.16 | coordinates_with | E.18 |
-| A.16.0 | builds_on | E.17 |
-| A.16.0 | builds_on | E.18 |
-| A.16.0 | coordinates_with | E.10.MOVE |
+| A.16.0 | builds_on | E.24.PUB |
+| A.16.0 | coordinates_with | E.17.1 |
 | A.19 | builds_on | E.24 |
 | A.19.CHR | builds_on | E.18 |
 | A.19.CHR | builds_on | E.10 |
@@ -355,6 +358,7 @@ Patterns in other Parts that reference patterns in this directory (357 refs).
 | F.0.1 | builds_on | E.10 |
 | F.0.2 | coordinates_with | E.10.ARCH |
 | F.0.2 | coordinates_with | E.4.DPF |
+| F.0.2 | coordinates_with | E.4.CM |
 | F.12 | coordinates_with | E.13 |
 | F.17 | coordinates_with | E.10.MOVE |
 | F.17 | coordinates_with | E.11 |

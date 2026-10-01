@@ -1,8 +1,8 @@
 ## Practical entries
 
-The entries below are examples, not a catalogue or a boundary around FPF, a DPF, or an LPF. Bring the actual difficulty from your project. If no example fits, search the Table of Contents or ask an assisting agent to compare a small plausible set of direct patterns. These pattern languages can help with many more questions than a short Readme can show.
+The entries below illustrate questions that FPF can help answer; they do not exhaust its uses. Bring the actual difficulty from your project and use the search guidance in USING-FPF.md to find an individual method or a connected application. Search the Table of Contents for relevant entries, or ask an assisting agent to compare plausible candidates.
 
-The ordinary examples show difficulties that one direct pattern use can usually answer. They need no mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
+The ordinary examples start with one direct pattern and retain any conditions for a later use. They can stop at the first useful result without a mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
 
 ### LIVE-WORK-STEERING — Choose the next action while Work is changing
 
@@ -78,6 +78,62 @@ The ordinary examples show difficulties that one direct pattern use can usually 
 
 When the direct pattern is already known, open it rather than forcing the question into an example: `E.11.PFP` for framework publication, `E.11.DSG` for the DPF Suite Reference when a question spans several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation. These are locators, not more selectable examples.
 
+### METHOD-CONSTRUCTION — Construct, connect and change methods for practical use
+
+- **Situation:** Relevant methods or operations exist, but their joining, explanation or adaptation is still missing for the work you need to do.
+- **Question:** How can I obtain the result, make the way usable by another practitioner, and change it without losing independently useful parts?
+- **First useful result or blocker:** One explained candidate way or connected account, its supported conditions and selective return after change; alternatively, the precise missing operation or basis.
+- **Start with:** [C.39:4](#fpf-pattern-C.39) supplies the general construction. Use a sufficient existing Method directly and stop. No framework authorship or pattern format is required.
+- **Stop or return:** Stop when the intended use has its adequate explanation. Reopen the connection whose condition fails; retain independent uses whose conditions still hold.
+
+For example, recording preparation can meet analysis at 3 ms and viewing at 8 ms under a qualified 2.5 ms timing bound. Tightening analysis to 2 ms reopens that branch without invalidating viewing. [C.39:5.3](#fpf-pattern-C.39) develops the preparation, its independent professional premises and that return. If the result must become a framework explanation, [E.4.CM:5.4](#fpf-pattern-E.4.CM) shows the additional public-content and pattern-form decisions.
+
+### WORK-OPPORTUNITY — Find a useful continuation before proposing change
+
+- **Situation:** Work meets its present requirements, or you have useful material but no settled question about what to change.
+- **Question:** What result could matter here, and is finding or proposing another way worth the work it creates?
+- **First useful result or blocker:** A supported local possibility, a question worth resolving, an exact missing contribution, or continuation of the present work.
+- **Start with:** Use [C.40](#fpf-pattern-C.40) for material whose useful result is still open; [C.39](#fpf-pattern-C.39) when the result is known but its obtaining way is missing; [C.11.DUA](#fpf-pattern-C.11.DUA) when a proposed change needs a value-and-burden judgement. Use adequate domain reasoning directly.
+- **Stop or return:** Stop at that first result, including no worthwhile advice. Reopen only the conclusion whose conditions change; existing obligations remain in force.
+
+Start with a bounded piece of available work: for example, replay an order queue using its durations and delivery conditions, or compare how two recipients use the same result. Try a supported variation of an operation, order, contribution or use; say which consequence it could change. A different word or an unusual observation is a lead, not a diagnosis. If the needed way is absent, construct and explain a local operation or identify its exact missing basis.
+
+Before proposing that variation, distinguish the larger work performed through the action from later work that uses its result. Use [B.1.5.EW](#fpf-pattern-B.1.5.EW) to recover unclear connections between the action, its constituents and the larger work, and [B.1.5.RS](#fpf-pattern-B.1.5.RS) when replacing the action can affect another use. Follow a later result handover separately when it can change the proposal. Stop following the connections when further detail cannot change this continuation on the available basis.
+
+Compare with continuing as at present. Thinking, obtaining evidence, explaining the advice, deciding and making the change can burden different people and resources. Include already committed work and other proposed changes in the same interval: two worthwhile changes can exceed shared capacity together. DUA supplies this comparison and returns to [C.11.CRC](#fpf-pattern-C.11.CRC) when a finite comparison is missing. Offer only the result whose contribution warrants that burden; explain its decisive conditions in the recipient's working language. A useful local answer can end the inquiry without a pattern recommendation or a record of refusal.
+
+### COMMUNICATION-FOR-USE — Make communication useful, then learn from what happens
+
+- **Situation:** A report, model, message, or answer seems clear, but its intended use and evidence are unclear, including whether its producer can use it later.
+- **Question:** Who should understand or do what with it, what evidence is enough, and what should change if that use is not achieved?
+- **First useful result or blocker:** A supported decision to keep or repair it, change prerequisites or a future use, or stop, with evidence, causation, and permission limits.
+- **Start with:** Use `A.2.9` to judge the communication against what its recipient should understand or do. Distinguish the act from its wording and medium, and interpretation from response, later action, world change and causal contribution. For the repair question that arises, use `A.6.3.CR` for wording, `A.6.3.RT` for representation, or `A.6.3.NAR`/`E.17.EFP`/`E.24.PUB` for narrative, explanation or publication. Use `A.10` for evidence, `C.28` for causation and `C.11` to compare repair options only when needed. A repair may change prerequisites, medium, interaction or future use. Check authority, consent and admissibility separately.
+- **Stop or return:** Stop when the named use has enough support or a blocker is explicit. Preserve the earlier intended use when interpreting the response; revise a future use when warranted. Response or silence alone proves neither meaning, success, causation, authority, consent, nor permission.
+
+### RESULT-TO-NEXT-MOVE — Route an obtained result to the next probe or option
+
+- **Situation:** A DPF or project calls something information gain, learning progress, or novelty, or has articulated a result from an earlier cue, and wants to use it to choose the next probe or option.
+- **Question:** What result actually exists, and which downstream question, if any, is current?
+- **First useful result or blocker:** The direct result plus the first needed reliance disposition, characterization, possibility-space claim, configuration-relative comparison, `ChoiceResult`, or missing basis.
+- **Start with:** Name the obtained result and use its direct pattern. Use `E.10.LRN` when *learning* hides the result; separate ambiguous claims and return each to its direct pattern. Continue to `A.10` only for actual reliance, `C.17`/`C.18` only for characterization or space change, `C.11.CRC` only for a missing finite realizable-configuration comparison, and `C.11` only for a live choice.
+- **Stop or return:** Stop when the present question is answered and before every non-current question. Observations, objectives, and characterizations retain their identities. Route the result articulated from a cue through its direct pattern; if its `A.16.1` cue pack remains current as a source or provenance, retain it separately.
+
+### ACTUAL-TEMPORAL-STRUCTURE — Recover what actually obtains before testing coordination
+
+- **Situation:** A cycle, onset list, trace, notation, or geometry is called rhythm, but may be a prescription, representation, Method unfolding, or account rather than what obtains.
+- **Question:** Which subjects and relations support the selected structure, what grounds it, and is a coordination trial useful now?
+- **First useful result or blocker:** A.22-selected structure and grounded C.2.1 account—or missing bearer, relation, observation, or grounding. Keep future specifications and representations separate. For a selected coordination trial, add direct relations, conditions, observations, and next decision or stop.
+- **Start with:** Begin with actual changing subjects and their use. Recover changes, Work parts or a continuous carrier, plus obtaining relations; use A.3.4/A.15.1 for change or Work and C.27.TA for the temporal claim. Use A.22 to select one structure and C.2.1 to ground its account. Distinguish structure, account, future specification, representation, Method unfolding and Work; periodicity, onsets, notation or geometry alone establish no structure. For coordination, name bearers and direct relations. Only when a trial can change the decision and warrants its burden, compare feasible interventions, try one within bounds, observe, then decide or stop. Open specification, representation, decision, causal, trial or domain patterns as their questions arise.
+- **Stop or return:** Stop when answered. Return when bearer, relation, constraint, grounding, intervention, or use changes; domain Methods stay in DPF.
+
+### CONSEQUENCE-BEARERS — Find omitted Systems before closing a decision
+
+- **Situation:** A consequence account for a decision or investigation may omit physical or operational wholes beyond its candidate bearer.
+- **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what next step follows for the decision or investigation?
+- **First useful result or blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
+- **Start with:** Use `A.1.CSD` for the focus and receiving decision or investigation. Trace obtaining relations separately from modal paths, challenge the boundary and recover the relevant wholes; use `A.1.SCR` only when a candidate's systemhood is load-bearing. Qualify each change and keep each bearer's changes and conditions distinct. Leave through the direct evidence, causality, comparison, domain or value pattern only when that stronger question is current. Select further inquiry by individual and combined contribution and burden.
+- **Stop or return:** Return the smallest useful account with its material limit; it may change or hold open the named decision or investigation. Reopen when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.
+
 ### Practical-Use Cards
 
 These cards offer a non-exhaustive set of optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
@@ -118,14 +174,14 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Start with:** `C.32.P2S`, then the pattern for the current question in `C.30`, `C.32`, `C.32.PAD`, or `C.30.AD`.
 - **Stop or return:** Stop when the first result makes the architecture work reviewable. The card is not a compulsory lifecycle.
 
-#### PRACTICE-ARCHITECTURE — Develop a practice without collapsing its structures
+#### PRACTICE-ARCHITECTURE — Connect methods with their use, support and development
 
-- **Situation:** Methods, Work, capabilities, providers, descriptions, tools, and cultural change do not align one-for-one in a practice.
-- **Question:** Which relations must be reconciled for the practice to become usable or improve in representative Work?
+- **Situation:** A decision about methods depends on performed or planned Work, capabilities, providers, descriptions, tools or cultural change whose structures do not align one-for-one.
+- **Question:** Which relations change how the methods can be used or improved?
 - **First useful result or blocker:** One readable synthesis, one bounded development action, or the exact missing Work case, relation, or transfer evidence.
-- **Mantra:** Start from representative Work and its needed result. Keep Methods, Work, capabilities, providers, descriptions, tools, and cultural processes distinct; compare the structures that conflict; develop the limiting capability; test transfer in real Work; return when practice, provider, evidence, or style changes.
+- **Mantra:** Start from representative Work and its needed result, or a proposed use with a later-test condition. Keep Methods, Work, capabilities, providers, descriptions, tools and cultural processes distinct; compare the structures that conflict; develop a limiting capability when needed; test transfer in real Work; return when the method, provider, evidence or style changes.
 - **Start with:** `C.32.MWA`; use `E.23.CDI`, `E.23`, or `C.36` only for the question actually opened.
-- **Stop or return:** Stop when the synthesis or transfer result answers the decision. A practice description is not the practice or performed Work.
+- **Stop or return:** Stop when the synthesis or transfer result answers the decision. A method description is distinct from the method and from performed Work.
 
 #### WORKING-DOCUMENTS — Make a document answer one use
 
@@ -136,14 +192,6 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Start with:** `E.17.0` for one viewpoint; `E.17.1`/`E.17.2` for recurring use; `A.6.3.RT` for representation change; `C.33` for structural information; `E.17.ID.CR` for source comparison; `C.30.AD` for architecture-description use; otherwise use the direct pattern for the document result.
 - **Stop or return:** Stop when that result answers the use. One file may carry several results without merging them.
 
-#### COMMUNICATION-FOR-USE — Make communication useful, then learn from what happens
-
-- **Situation:** A report, model, message, or answer seems clear, but its intended use and evidence are unclear, including whether its producer can use it later.
-- **Question:** Who should understand or do what with it, what evidence is enough, and what should change if that use is not achieved?
-- **First useful result or blocker:** A supported decision to keep or repair it, change prerequisites or a future use, or stop, with evidence, causation, and permission limits.
-- **Mantra:** Name who should understand or do what. Judge the act of communicating against that use. Keep the act distinct from its wording and medium; separate interpretation, response, later action, world change, and causal contribution. Repair wording, representation, prerequisites, medium, interaction, or a future use—or stop. Check authority, consent, and admissibility separately. Do not rewrite the earlier use after seeing the response.
-- **Start with:** `A.2.9` for communicative Work; `A.6.3.CR` for wording; `A.6.3.RT` for representation; `A.6.3.NAR`, `E.17.EFP`, or `E.24.PUB` for narrative, explanation, or publication. `A.10` for evidence, `C.28` for causation, and `C.11` only to compare repair options.
-- **Stop or return:** Stop when the named use has enough support or a blocker is explicit. Response or silence alone proves neither meaning, success, causation, authority, consent, nor permission.
 
 #### OPTION-COMPARISON — Keep unlike option results distinct
 
@@ -155,23 +203,7 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Stop or return:** Stop at the present question's result. Option descriptions establish neither choice nor capability, authority, Work, provision, delivery, acceptance or use.
 
 
-#### RESULT-TO-NEXT-MOVE — Route an obtained result to the next probe or option
 
-- **Situation:** A DPF or project calls something information gain, learning progress, or novelty, or has articulated a result from an earlier cue, and wants to use it to choose the next probe or option.
-- **Question:** What result actually exists, and which downstream question, if any, is current?
-- **First useful result or blocker:** The direct result plus the first needed reliance disposition, characterization, possibility-space claim, configuration-relative comparison, `ChoiceResult`, or missing basis.
-- **Mantra:** Name the result; split ambiguous learning claims; keep each with its direct pattern. Move only to the current question: relied-on evidence, characterization or possibility space, realizable configuration comparison, or live choice. Stop when the present question is answered.
-- **Start with:** Use `E.10.LRN` only to recover a result hidden by *learning*; otherwise its direct pattern. Then use `A.10` only for actual reliance, `C.17`/`C.18` only for characterization/space change, `C.11.CRC` only for a missing finite configuration comparison, and `C.11` only for a live choice.
-- **Stop or return:** Stop before every non-current question. Observations, objectives, and characterizations retain their identities. Route the result articulated from a cue through its direct pattern; if its `A.16.1` cue pack remains current as a source or provenance, retain it separately.
-
-#### ACTUAL-TEMPORAL-STRUCTURE — Recover what actually obtains before testing coordination
-
-- **Situation:** A cycle, onset list, trace, notation, or geometry is called rhythm, but may be a prescription, representation, Method unfolding, or account rather than what obtains.
-- **Question:** Which subjects and relations support the selected structure, what grounds it, and is a coordination trial useful now?
-- **First useful result or blocker:** A.22-selected structure and grounded C.2.1 account—or missing bearer, relation, observation, or grounding. Keep future specifications and representations separate. For a selected coordination trial, add direct relations, conditions, observations, and next decision or stop.
-- **Mantra:** Start with actual changing subjects and use. Recover changes, Work parts or continuous carrier, plus obtaining relations. Select one structure; ground a supported account. Keep structure, account, future specification, representation, Method unfolding and Work distinct. For coordination, name bearers and direct relations. If a trial can change the decision and is worth its burden, compare feasible interventions, try one in bounds, observe, then decide or stop. Never infer structure from periodicity, onsets, notation or geometry.
-- **Start with:** A.3.4/A.15.1 for change/Work, C.27.TA/A.22 for claim/structure, C.2.1 for account; add specification, representation, decision, causal, trial, or domain patterns only when current.
-- **Stop or return:** Stop when answered. Return when bearer, relation, constraint, grounding, intervention, or use changes; domain Methods stay in DPF.
 
 #### PROBLEM-SHAPING — Stop at the earliest honest problem-side result
 
@@ -205,9 +237,9 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Situation:** A project needs the modern field of approaches rather than one popular answer and may later need maintained domain guidance.
 - **Question:** What plural view is adequate now, and does the remaining problem call for reuse, a contribution, another product, a DPF or LPF, or no maintained result?
 - **First useful result or blocker:** One source-linked SoTA view, live option set, reuse route, framework decision, or exact missing scope or maintenance basis.
-- **Mantra:** Name the practical question, scope, freshness need, and rival traditions. Build a source-linked plural view; preserve disagreement and source-use limits; compare useful approaches; try cheaper reuse or contribution first; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
+- **Mantra:** Name the practical question, scope, freshness need, and rival traditions. Build a source-linked plural view; preserve disagreement, source-use limits and constructions; compare useful approaches; try cheaper reuse or contribution first; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
 - **Start with:** `G.2`; add `C.18`, `C.19`, or `G.5` for the set and the E.4/E.9 authoring route only if a framework is selected.
-- **Stop or return:** Stop at the first adequate maintained or one-off result. A source pack or proposal is not a framework by appearance.
+- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Preface:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use. A source pack or proposal is not a framework by appearance.
 
 #### SYSTEM-DELIMITATION — Separate parts, selected boundary, and crossings
 
@@ -218,11 +250,3 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Start with:** `B.1.2`, `A.14`, and `C.13`; use `C.11`, `C.32.PAD`, the direct relation pattern, or `A.22` only when needed.
 - **Stop or return:** Stop at the smallest result answering the decision. If system recognition is unresolved, return to `A.1.SCR`.
 
-#### CONSEQUENCE-BEARERS — Find omitted Systems before closing a decision
-
-- **Situation:** A consequence account for a decision or investigation may omit physical or operational wholes beyond its candidate bearer.
-- **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what next step follows for the decision or investigation?
-- **First useful result or blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
-- **Mantra:** Name the focus and receiving decision or investigation; trace obtaining relations and modal paths separately; challenge the boundary; recover real holons; qualify each change; keep each bearer's changes and conditions distinct; return the useful answer with its limit. Select further inquiry by individual and combined contribution and burden.
-- **Start with:** `A.1.CSD`; use `A.1.SCR` only when a candidate's systemhood is load-bearing, and leave through the direct evidence, causality, comparison, domain, or value pattern only when that stronger question is current.
-- **Stop or return:** Stop at the smallest account that changes or holds open the named decision or investigation. Return when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.

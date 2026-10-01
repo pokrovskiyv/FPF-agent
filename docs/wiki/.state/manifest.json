@@ -1,150 +1,150 @@
 {
     "version": 1,
-    "last_compiled": "2026-09-01T07:27:58Z",
+    "last_compiled": "2026-10-01T07:00:00Z",
     "sources": {
         ".claude-plugin/marketplace.json": {
-            "hash": "a73bb8b208397bcced1df7c65ebefd5c",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "69ea1b4baba6a75f085fe599bec07e078be63834f90fb33e7efaae9048237fb4",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         ".claude-plugin/plugin.json": {
-            "hash": "6eacf4ad751bda694b39f9776e2c462b",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "fcfd382b8d7c96a6a6ff17bba5b394cb8afe3018cb0e894310246e91a9647972",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "CLAUDE.md": {
-            "hash": "b496ee2d31b503357a51e2d935b43977",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "d2d5d238e9d586679349862e5311d317883c1ba0e8fe0923f5218171ac6b4e67",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "Readme.md": {
-            "hash": "443919753e8e11239a1cac1dc3128dcb",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "8dfe71c21ea9f51d9572941ea3d1a0b3d32e7e9c32e57af843fd590c24d14156",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "agents/fpf-classifier.md": {
-            "hash": "f4033efa958b0f1dad09376b7fc9e2ca",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "d202ad84180014fc6ec7a42445677f44ae8bf0f03ed9a7462177cc9983896617",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "agents/fpf-reasoner.md": {
-            "hash": "469422e59144030e07a0dd988bdeb778",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "881a931e140984202c1de03b7afc4f63e9d1f45bf9f7cb021b9a0a66e70a963d",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "agents/fpf-retriever.md": {
-            "hash": "a8599d536c03d3707dbea9572eafa502",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "3c631bb77de8850a22d2546497ecc96cf58b8a8089c3ea68dd523d9f6548d423",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "agents/fpf-reviewer.md": {
-            "hash": "83f4fcef88a92e976844b06bcb6b39c0",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "9bfa81acceb00f187e023bd0a006771c8a8d28d58964f94fedbb2050c24cf8f0",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "agents/fpf-sync.md": {
-            "hash": "62afac2aa9aa40887a4bf1ef2a2f13b0",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "5362e1cf38bf12e4cf850415ab3706261dabd1c01621bf7b22564bde1a206905",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_embeddings.py": {
-            "hash": "c2a8fec54247fb28af9937a89d19687c",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "54022c4b08fce259a12ee5ec95fca686a15ff79d145523708ea226b87d1f29d4",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_glossary.py": {
-            "hash": "d85f9febce540e1b37089259581f2e4c",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "fd212a06cd152919352d9e3a9bc365fe1fccfe4814ae9aecb022d322be20343d",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_lexical.py": {
-            "hash": "ad0cbc6b91176d6aafa06128db0cdb51",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "553724c6915e46014e8a6275162a9b2faff2c842f042b5fd61d7381f74ba099e",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_metadata.py": {
-            "hash": "b129ad47c1e96f90643129e281be8a6f",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "cf351b757a520341d41dc2002f891aa2f2a3b746b740ba3563705b4d9c633fc9",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_routes.py": {
-            "hash": "20b9a5ca287bcde97fb84dc76d9493a0",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "a8c1d8ba6ed9fad6729f313415e9b156555b3f57fe12029f2d7fc4dd476f930a",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/build_xrefs.py": {
-            "hash": "859c8a285a079fee20df8e5099750687",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "b20da2d31f99bbe7efef628f9f07fe5c0e69acab220dba9e6cd679133a3c6c35",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/check_wiki_gate.py": {
-            "hash": "4a5e66728311fa2565f2b0f0ba857311",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "1f902068120c00ddb30e99f13e240be51e280df09767f102c57b041bc90b6e99",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/enrich_metadata.py": {
-            "hash": "d5ba8c0a26aa7ed5709acc0b412ea222",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "879e290d01b33889f9914bf8fc29ff0d84bb6a720a4360caa1bdc95f2147cf8f",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/install_codex_plugin.py": {
-            "hash": "9ef77e8702266c38dfa0c9e405015ed2",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "3a165b487f7a373271549c783634ef75e09a98b4e27d038a989629242005f3b3",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/semantic_search.py": {
-            "hash": "32525fecd8c8144093a41d8db1d0471c",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "5aba89d086674247eb14b2c40f799228526eb964941d1f2e6e20056ec696e5ca",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/smoke_codex.py": {
-            "hash": "31ed934702215fcbc35c3a5f1cee9b4c",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "3ce4311ce4cc2703561f0e175c96549d6552c89a5d9d208fca715bc16f096bc2",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/split_spec.py": {
-            "hash": "23a95183db1532086df23ccd38faa14b",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "aad754209d273fb7aa352645e1b06c378e98520ab605a9da3c19531046fd57ab",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/sync_doc_stats.py": {
-            "hash": "2ed68a20c00c43967b26873b5f063655",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "8e4f565b4bd41a77ce1514eb3ae74e2e32c308d895473c459050ea9e506d1f37",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/test_smoke.py": {
-            "hash": "ca0e4144925c205baa120d1cc74ad2a0",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "57d26cee931a618fd3779611766a612317298c588058e536ff4a24da4e13af84",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/update_changelog.py": {
-            "hash": "7f5b795fdad0163b3425720e1f676036",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "21a3093b6a55cbac81a507fe32af5d392669d46c1b58cb8abb04aae40e65411a",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-1-project-alignment.md": {
-            "hash": "7a221481cdac41aa369602b571ad2726",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "5fbe5c249b0a3efe7c29e5cdeb0275348b2f181e7ec7be722671fffbdf02824e",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-10-evolution-learning.md": {
-            "hash": "f42660e2df262b5ac590728c01750917",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "9911fc5ccab07640662045ce000342dd14468428ecb3b76bec5ce4f76b545944",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-2-language-discovery.md": {
-            "hash": "72a4240021e0585a181b0d3764b11de5",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "7817831b5a17d3676cc106819010e4e70e0414e21a0bf30fa4dfe1277aa5231f",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-3-boundary-unpacking.md": {
-            "hash": "7163731553e6b1ba53c648233afef64a",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "8668744e3a0f3f9bf6fe866b2809e5afc3e00ccd23539f4d00a83cbbafa7ee86",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-4-comparison-selection.md": {
-            "hash": "2f24d28e3e57d72ef7a9996c59fc4046",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "f4c02d020c4bf48b3df4d6060e4d2fd407d86abfbcfc79de34c852b266cb3ec5",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-5-generator-portfolio.md": {
-            "hash": "6ac7bcdcba8b8ac95c03973d4f6fb119",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "6780b70264ad8506c55f65b7b32902d5fb14e4211228a4190366aa299eda8df7",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-6-rewrite-explanation.md": {
-            "hash": "82f3f0748e82f378ec982e372b545aaf",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "a6f0f4e6cd899c6a6ee69ada4ade46e163ae953db6bbdbb56d84741de7005dad",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-7-ethical-assurance.md": {
-            "hash": "a033521b41382c0da7d7f1c611001504",
-            "last_compiled": "2026-07-01T07:00:00Z"
+            "hash": "724b0d307151615c000991df0f0006ca4cd154bcb4260b9fe358860196cbccec",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-8-trust-assurance.md": {
-            "hash": "234a8491db926b804859dd08624f8741",
-            "last_compiled": "2026-09-01T07:27:58Z"
+            "hash": "9575cb8061b86807676413c106463f08200f76247e776ab962e2d767c4f39be4",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "sections/routes/route-9-composition-aggregation.md": {
-            "hash": "fd98001a3eab78f86dafdb40ba09a5a9",
-            "last_compiled": "2026-07-15T17:17:20Z"
+            "hash": "b771ef1f645057acc479ba5fedaf534217e79b8121ec0b4ef0e0404a2ffcc63c",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "skills/fpf/SKILL.md": {
-            "hash": "3bb84500efa910b7f21c4c5013d61afe",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "e674f01f64a26ba966a12df958eb9da91415992b9bfaa403b8e70bc9ca617d29",
+            "last_compiled": "2026-10-01T07:00:00Z"
         },
         "scripts/test_update_changelog.py": {
-            "hash": "30087aea323cfe32315e5e2ed31daf4f",
-            "last_compiled": "2026-06-16T07:21:51Z"
+            "hash": "2905c084020ca024d00c64bf140a96c8b914e81995d864da7069f3ee040f3d44",
+            "last_compiled": "2026-10-01T07:00:00Z"
         }
     },
     "articles": {
@@ -176,7 +176,7 @@
             "sources": [
                 "agents/fpf-sync.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "en/architecture/agent-team.md": {
             "sources": [
@@ -200,7 +200,7 @@
                 "scripts/enrich_metadata.py",
                 "scripts/split_spec.py"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "en/architecture/overview.md": {
             "sources": [
@@ -209,7 +209,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "en/architecture/plain-language-contract.md": {
             "sources": [
@@ -234,7 +234,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "en/architecture/three-tier-retrieval.md": {
             "sources": [
@@ -462,7 +462,7 @@
             "sources": [
                 "agents/fpf-sync.md"
             ],
-            "last_updated": "2026-06-16T07:21:51Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "ru/architecture/agent-team.md": {
             "sources": [
@@ -486,7 +486,7 @@
                 "scripts/enrich_metadata.py",
                 "scripts/split_spec.py"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "ru/architecture/overview.md": {
             "sources": [
@@ -495,7 +495,7 @@
                 "CLAUDE.md",
                 "Readme.md"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "ru/architecture/plain-language-contract.md": {
             "sources": [
@@ -520,7 +520,7 @@
                 "agents/fpf-sync.md",
                 "scripts/update_changelog.py"
             ],
-            "last_updated": "2026-09-01T07:27:58Z"
+            "last_updated": "2026-10-01T07:00:00Z"
         },
         "ru/architecture/three-tier-retrieval.md": {
             "sources": [

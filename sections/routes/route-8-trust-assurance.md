@@ -8,8 +8,8 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | B.3 | Trust and Assurance Calculus | sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b3-b3-trust-and-assurance-calculus.md | YES |
-| 2 | B.3.5 | Working-Model Relations & Grounding (CT2R-LOG) | sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b35-b35-working-model-relations-grounding-ct2r-log.md | YES |
+| 1 | B.3 | Is This Claim Supported for This Use? — Trust and Assurance  | sections/08-part-b-trans-disciplinary-reasoning-cluster/16-b3-b3-is-this-claim-supported-for-this-use-trust-and-assurance-.md | YES |
+| 2 | B.3.5 | Assurance Grounding for Working-Model Relation Claims (CT2R- | sections/08-part-b-trans-disciplinary-reasoning-cluster/19-b35-b35-assurance-grounding-for-working-model-relation-claims-ct.md | YES |
 | 3 | B.1 | Holon Aggregation and Part-Whole Construction | sections/08-part-b-trans-disciplinary-reasoning-cluster/01-b1-b1-holon-aggregation-and-part-whole-construction.md | YES |
 | 4 | B.1.1 | Dependency Structure and Relation Grounding | sections/08-part-b-trans-disciplinary-reasoning-cluster/02-b11-b11-dependency-structure-and-relation-grounding.md |  |
 | 5 | A.6.B | Boundary Norm Square (Laws / Admissibility / Deontics / Work | sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/03-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md |  |

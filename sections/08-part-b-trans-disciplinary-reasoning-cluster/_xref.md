@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (161 refs).
+Patterns in other Parts that reference patterns in this directory (174 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -27,7 +27,7 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | A.3.3.PI | coordinates_with | B.5.MPC |
 | A.3.3.TR | coordinates_with | B.5.FM |
 | A.3.3.TR | coordinates_with | B.5.MPC |
-| A.4 | prerequisite_for | B.4 |
+| A.4 | coordinates_with | B.4 |
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -47,6 +47,7 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | A.6.H | coordinates_with | B.1.1 |
 | A.6.H | coordinates_with | B.1.4 |
 | A.6.M | coordinates_with | B.3 |
+| A.6.P.RI | coordinates_with | B.5.EA |
 
 ## From 07-cluster-av-constitutional-principles-of-the-kernel
 
@@ -58,6 +59,11 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | A.15 | coordinates_with | B.3 |
 | A.15.1 | coordinates_with | B.1.4 |
 | A.15.1 | coordinates_with | B.1.6 |
+| A.15.10 | coordinates_with | B.5.RA |
+| A.15.10 | coordinates_with | B.5.RC |
+| A.15.10 | coordinates_with | B.5.RR |
+| A.15.10 | coordinates_with | B.1.5 |
+| A.15.11 | coordinates_with | B.1.5.EW |
 | A.15.2 | coordinates_with | B.1.4 |
 | A.15.2 | coordinates_with | B.1.6 |
 | A.15.4 | coordinates_with | B.3 |
@@ -65,8 +71,8 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | A.15.5 | coordinates_with | B.3 |
 | A.15.PROD | coordinates_with | B.3 |
 | A.16 | coordinates_with | B.4.1 |
-| A.16.0 | used_by | B.4.1 |
-| A.16.0 | used_by | B.5.2.0 |
+| A.16.0 | coordinates_with | B.4.1 |
+| A.16.0 | coordinates_with | B.5.2.0 |
 | A.16.1 | coordinates_with | B.4.1 |
 | A.16.2 | coordinates_with | B.4.1 |
 | A.18 | coordinates_with | B.3 |
@@ -74,7 +80,8 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | A.19.ULSAM | builds_on | B.3 |
 | A.19.UNM | coordinates_with | B.3 |
 | A.20 | coordinates_with | B.3 |
-| A.9 | prerequisite_for | B.1 |
+| A.9 | coordinates_with | B.1 |
+| A.9 | coordinates_with | B.2 |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -120,6 +127,8 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | C.27 | coordinates_with | B.3 |
 | C.27.TA | coordinates_with | B.3 |
 | C.28 | builds_on | B.3 |
+| C.28.CM | coordinates_with | B.5.FM |
+| C.28.CM | coordinates_with | B.5.2 |
 | C.28.MR | coordinates_with | B.5.MPC |
 | C.28.MR | coordinates_with | B.5.RR |
 | C.29 | builds_on | B.3 |
@@ -152,6 +161,7 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 | C.36 | coordinates_with | B.3 |
 | C.39.RO | coordinates_with | B.5.RR |
 | C.40.CD | coordinates_with | B.5.MPC |
+| C.40.CU | coordinates_with | B.1.5.EW |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 
@@ -169,6 +179,9 @@ Patterns in other Parts that reference patterns in this directory (161 refs).
 |--------|----------|--------|
 | E.10 | coordinates_with | B.3 |
 | E.10.DEV | builds_on | B.4 |
+| E.10.P | builds_on | B.1.3 |
+| E.10.P | builds_on | B.1.4 |
+| E.10.P | coordinates_with | B.1.2 |
 | E.14 | coordinates_with | B.3.5 |
 | E.16 | builds_on | B.3 |
 | E.17 | coordinates_with | B.3 |

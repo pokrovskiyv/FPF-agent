@@ -1,6 +1,6 @@
 # Cross-References into 05-part-a-kernel-architecture-cluster
 
-Patterns in other Parts that reference patterns in this directory (288 refs).
+Patterns in other Parts that reference patterns in this directory (287 refs).
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -107,7 +107,6 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | A.7 | builds_on | A.2 |
 | A.7 | builds_on | A.3 |
 | A.8 | builds_on | A.11 |
-| A.9 | builds_on | A.1 |
 
 ## From 08-part-b-trans-disciplinary-reasoning-cluster
 
@@ -123,6 +122,7 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | B.1.4 | builds_on | A.1.1 |
 | B.1.4 | coordinates_with | A.3.4 |
 | B.1.5 | builds_on | A.3.1 |
+| B.1.5.RS | builds_on | A.3.1 |
 | B.1.6 | coordinates_with | A.3.1 |
 | B.1.6 | coordinates_with | A.3.2 |
 | B.1.6 | coordinates_with | A.1 |
@@ -244,7 +244,6 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | C.36.P | coordinates_with | A.3.2 |
 | C.37 | coordinates_with | A.2.4 |
 | C.37 | coordinates_with | A.22 |
-| C.39 | coordinates_with | A.3.1 |
 | C.39.RO | coordinates_with | A.3.1 |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
