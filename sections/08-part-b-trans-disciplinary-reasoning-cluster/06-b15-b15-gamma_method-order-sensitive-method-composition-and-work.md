@@ -194,7 +194,7 @@ The candidate Method's reusable action includes a boundary decision for each int
 
 An exposure decision contributes to Method identity whenever changing it changes the reusable action or its admissible boundary. That identity consequence does not wait for an outside party to rely on the Method. A named caller, planner, auditor, substituting-method selection use, or assurance use instead determines when the decision must be stated explicitly or published for reuse. Name the interaction, precondition, result or preserved condition, failure route, and any adapter needed for each exposed or forwarded case.
 
-#### B.1.5:4.4.1 - Composite-Method Boundary Account and Publication Form
+##### B.1.5:4.4.1 - Composite-Method Boundary Account and Publication Form
 
 When a named receiver must reuse the boundary account, first identify one exact claim-bearing `U.MethodDescription` episteme under A.3.2 and C.2.1. Its claim content concerns the exact composite Method and states the exposed, forwarded, and encapsulated interactions. Then keep the publication-side objects and designation content below separate.
 
@@ -245,7 +245,7 @@ If any side is missing, lower only that side. Do not repair a missing submethod 
 
 For an ordinary working question—what larger work is being done through this action now—use **B.1.5.EW**. It recovers the constitutive connections at the needed grain and shows how a changed encompassing condition changes the action. An ongoing whole need not be completed, and its constituents need not all act at once. When changing a constituent for use in one or several wholes, **B.1.5.RS** follows the change through their entry conditions, interactions and required results. The qualifications above still decide the corresponding Method and Work claims.
 
-#### B.1.5:4.5.1 - Planning And Performed-Work Obligations
+##### B.1.5:4.5.1 - Planning And Performed-Work Obligations
 
 B.1.5 has three common use positions, but they are positions in use, not U-kinds:
 
@@ -255,7 +255,7 @@ B.1.5 has three common use positions, but they are positions in use, not U-kinds
 
 Useful invariants remain: a single recovered submethod composed alone does not create a surprising new Method; order is deterministic only under the exact order claims and conditions at their selected A.6.RCD dispositions; any throughput or quality bound must name its characteristic, critical path, and weakest-link basis; strengthening a submethod, adapter, or typed join should not make the composite Method worse unless a stated side condition changes.
 
-#### B.1.5:4.5.2 - Stop Before Transformation Composition
+##### B.1.5:4.5.2 - Stop Before Transformation Composition
 
 Method composition and Work decomposition establish no `U.Transformation` part, composite transformation, transformation atomism, or `TransformationPartOfRelation`. Even when several method parts address the same referent and one Work enacts the whole method, identify each actual transformation independently under A.3.4. If a claim needs transformation composition and no direct transformation-composition governor supplies its participants, obtaining rule, and occurrence identity, return `missing-governor[transformation-composition]` for the proposed whole and independently identified changes. Do not infer either composition or indivisibility from the gap.
 
@@ -399,6 +399,8 @@ These rows answer the B.1.5 practice question: how to decide and expose order-se
 
 ### B.1.5:12 - Relations
 
+B.1.5.CM constructs the prospective whole, constituent contributions, joins and boundary account that this qualification consumes. C.32.MWA.PP separately compares performance and provision arrangements. Useful cooperation or a shared provider does not supply a missing Method whole.
+
 - Uses `A.1` for the general non-agentive-holon recognition boundary; A.1 does not supply Method-part or whole-forming facts.
 - Uses `A.3.1` to identify the exact candidate Method and every exact part Method before B.1.5 tests the composite-method qualification; B.1.5 directly governs only `MethodPartOfRelation` and the composite-construction test.
 - Uses `A.6.RCD` for serial, parallel, guarded, iterative, fallback, adapter, join, substitution, and other whole-forming claims. Existing direct predicates, local compound claims, and reusable predicate definitions are valid stopping results; only a named occurrence-semantics need requires `E.24 for a kind candidate` and `E.24.UK`.
@@ -421,4 +423,4 @@ These rows answer the B.1.5 practice question: how to decide and expose order-se
 
 ### B.1.5:End
 
-<a id="fpf-pattern-B.1.5.EW"></a>
+

@@ -13,8 +13,8 @@
 | 3 | G.1 | Author a Reusable CG-Frame Generator and Selector Kit | sections/13-part-g-discipline-sota-patterns-kit/03-g1-g1-author-a-reusable-cg-frame-generator-and-selector-kit.md | YES |
 | 4 | G.2 | Harvest and Synthesize SoTA for a CG-Frame | sections/13-part-g-discipline-sota-patterns-kit/04-g2-g2-harvest-and-synthesize-sota-for-a-cg-frame.md |  |
 | 5 | G.5 | Method-Family Registry, Dispatch and Selected-Set Result Dec | sections/13-part-g-discipline-sota-patterns-kit/07-g5-g5-method-family-registry-dispatch-and-selected-set-result-d.md |  |
-| 6 | B.5.2.1 | Instrument Abductive Hypothesis Generation with Novelty–Qual | sections/08-part-b-trans-disciplinary-reasoning-cluster/37-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md |  |
-| 7 | C.17 | Characterising Generative Novelty and Value | sections/09-part-c-kernel-extension-specifications/31-c17-c17-characterising-generative-novelty-and-value.md |  |
+| 6 | B.5.2.1 | Instrument Abductive Hypothesis Generation with Novelty–Qual | sections/08-part-b-trans-disciplinary-reasoning-cluster/39-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md |  |
+| 7 | C.17 | Characterising Generative Novelty and Value | sections/09-part-c-kernel-extension-specifications/33-c17-c17-characterising-generative-novelty-and-value.md |  |
 
 ## Loading Strategy
 

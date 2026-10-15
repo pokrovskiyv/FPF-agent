@@ -1,6 +1,6 @@
 # Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (440 refs).
+Patterns in other Parts that reference patterns in this directory (442 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -181,6 +181,7 @@ Patterns in other Parts that reference patterns in this directory (440 refs).
 | B.5.PI | coordinates_with | A.15.11 |
 | B.5.PI | coordinates_with | A.16.1 |
 | B.5.TU | coordinates_with | A.15.9 |
+| B.5.WN | coordinates_with | A.15.10 |
 
 ## From 09-part-c-kernel-extension-specifications
 
@@ -194,6 +195,7 @@ Patterns in other Parts that reference patterns in this directory (440 refs).
 | C.11.CRC | builds_on | A.10 |
 | C.11.CRC | builds_on | A.19 |
 | C.11.CRC | coordinates_with | A.15 |
+| C.11.DBR | coordinates_with | A.10.1 |
 | C.13 | builds_on | A.14 |
 | C.16 | builds_on | A.17 |
 | C.16 | builds_on | A.18 |

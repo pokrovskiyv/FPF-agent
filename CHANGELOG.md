@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-10-15
+
+### What's New
+- The searchable spec grew to **131,085 lines** (469 sections, 488 indexed patterns) — the library now covers significantly more domains and situations than before.
+- **New: FPF Library Reference** — a new architectural document that explains how all the frameworks in the library connect, why the boundaries between them matter, and how to navigate from a specific question to the right combination of tools. Useful when you're not sure which framework applies or want to understand how several frameworks work together.
+- **New: Implementation Facilitation framework** — seven patterns for helping teams actually adopt a method or practice, not just understand it. Covers: agreeing what support is wanted, finding what's blocking real uptake, building a support strategy with the people it's for, brokering change when influence is unequal, and developing recipients' own ability to drive future changes.
+- **New: Leadership Principles framework** — structured guidance for helping people act together, from securing a needed contribution to sustaining joint performance over time. Covers coordination, enabling useful contributions, and continuing shared work even as participants or conditions change.
+- **New: Customization and Productization Management framework** — patterns for organizations that both do custom work for clients and maintain repeatable offerings. Helps keep customer-specific results and standard products supportable at the same time without the two tracks undermining each other.
+- **New: Knowledge Corpus Access Engineering framework** — patterns for organizing and retrieving knowledge from large bodies of material, particularly when AI systems are involved in access and use.
+- **Reorganized domain framework library** — the Engineering, Management, Foundational Thinking, and Human Capability Engineering suites are now organized into distinct directories with their own reference documents. Easier to find what you need when your problem sits within one domain area.
+- All section indexes were refreshed with plain-language summaries and the quick glossary was upgraded with plain-language definitions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.14.0)
+
 ## 2026-10-01
 
 ### What's New

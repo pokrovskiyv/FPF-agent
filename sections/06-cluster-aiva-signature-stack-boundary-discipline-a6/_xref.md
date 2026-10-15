@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (231 refs).
+Patterns in other Parts that reference patterns in this directory (232 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -124,6 +124,7 @@ Patterns in other Parts that reference patterns in this directory (231 refs).
 | B.5.3 | builds_on | A.6.5 |
 | B.5.MPC | coordinates_with | A.6.3.RT |
 | B.5.RC | coordinates_with | A.6.3.RT |
+| B.5.WN | coordinates_with | A.6.3.RT |
 
 ## From 09-part-c-kernel-extension-specifications
 

@@ -1,6 +1,6 @@
 # Cross-References into 09-part-c-kernel-extension-specifications
 
-Patterns in other Parts that reference patterns in this directory (443 refs).
+Patterns in other Parts that reference patterns in this directory (444 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -317,6 +317,7 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | B.5.TC | coordinates_with | C.28 |
 | B.5.TC | coordinates_with | C.11.DUA |
 | B.5.TU | coordinates_with | C.29 |
+| B.5.WN | coordinates_with | C.2.8 |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 

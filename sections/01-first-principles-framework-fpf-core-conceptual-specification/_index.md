@@ -1,1 +1,2 @@
-# First Principles Framework — Core Conceptual Specification
+# First Principles Framework (FPF) - Core Conceptual Specification
+

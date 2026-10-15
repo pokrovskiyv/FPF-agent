@@ -98,147 +98,504 @@
     "file": ""
   },
   "preface_15": {
-    "title": "FPF.Preface:1 - What This Specification Is And How To Use It",
+    "title": "FPF.Reference:1 - What This Specification Is And How To Use It",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_16": {
-    "title": "FPF.Preface:2 - FPF As A Project, Not Only A Pattern List",
+    "title": "FPF.Reference:1.1 - Four ordinary starts before a PatternID",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_17": {
-    "title": "FPF.Preface:3 - Why FPF Exists",
+    "title": "FPF.Reference:2 - FPF As A Project, Not Only A Pattern List",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_18": {
-    "title": "FPF.Preface:4 - Creativity And Assurance Mature Together",
+    "title": "FPF.Reference:3 - Why FPF Exists",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_19": {
-    "title": "FPF.Preface:5 - Local Closure Inside An Open World",
+    "title": "FPF.Reference:4 - Creativity And Assurance Mature Together",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_20": {
-    "title": "FPF.Preface:6 - FPF As An Evolutionary Architecture For Thought",
+    "title": "FPF.Reference:5 - Local Closure Inside An Open World",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_21": {
-    "title": "FPF.Preface:7 - Architectural Characteristics Of Thought",
+    "title": "FPF.Reference:6 - FPF As An Evolutionary Architecture For Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_22": {
-    "title": "FPF.Preface:8 - Beyond Bias Hunting",
+    "title": "FPF.Reference:7 - Architectural Characteristics Of Thought",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_23": {
-    "title": "FPF.Preface:9 - Thinking Through Writing",
+    "title": "FPF.Reference:8 - Beyond Bias Hunting",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_24": {
-    "title": "FPF.Preface:10 - Thinking-Oriented Architecture, Not A Descriptive Upper Ontology",
+    "title": "FPF.Reference:9 - Thinking Through Writing",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_25": {
-    "title": "FPF.Preface:11 - When A Scale Claim Calls For Comparison",
+    "title": "FPF.Reference:10 - Thinking-Oriented Architecture, Not A Descriptive Upper Ontology",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_26": {
-    "title": "FPF.Preface:12 - From Flat Documents To Multi-View Truth",
+    "title": "FPF.Reference:11 - When A Scale Claim Calls For Comparison",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_27": {
-    "title": "FPF.Preface:13 - Architecture As Structure Of Holons",
+    "title": "FPF.Reference:12 - From Flat Documents To Multi-View Truth",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_28": {
-    "title": "FPF.Preface:14 - Boundary Statements",
+    "title": "FPF.Reference:13 - Architecture As Structure Of Holons",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_29": {
-    "title": "FPF.Preface:15 - Raising Semantic Precision",
+    "title": "FPF.Reference:14 - Boundary Statements",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_30": {
-    "title": "FPF.Preface:16 - Big FPF Storylines",
+    "title": "FPF.Reference:15 - Raising Semantic Precision",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_31": {
-    "title": "FPF.Preface:17 - Transdisciplinarity As A Meta-Theory Of Thinking",
+    "title": "FPF.Reference:16 - Big FPF Storylines",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_32": {
-    "title": "FPF.Preface:18 - The Culinary Architecture Of Collective Thought",
+    "title": "FPF.Reference:16.1 - Follow one question through several contributions",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_33": {
-    "title": "FPF.Preface:19 - The Intellect Stack As A Pedagogical Map",
+    "title": "FPF.Reference:16.2 - Architectural Rationale",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_34": {
-    "title": "FPF.Preface:20 - Purpose, Scope, And Non-Goals",
+    "title": "FPF.Reference:16.3 - Shared sources and the choices they support",
     "status": "full text",
     "keywords": [],
     "queries": [],
     "file": ""
   },
   "preface_35": {
-    "title": "FPF.Preface:21 - How To Continue After The readme",
+    "title": "FPF.Reference:16.4 - What to examine when adapting the arrangement",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_36": {
+    "title": "FPF.Reference:16.5 - Construct a usable whole with existing methods",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_37": {
+    "title": "FPF.Reference:16.5.1 - Start outside the proposed boundary",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_38": {
+    "title": "FPF.Reference:16.5.2 - Recover the construction and select the next operation",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_39": {
+    "title": "FPF.Reference:16.5.3 - Compare constructions and return to use",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_40": {
+    "title": "FPF.Reference:16.5.4 - Explanation and night coverage",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_41": {
+    "title": "FPF.Reference:16.5.4.1 - Recover the receiving result",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_42": {
+    "title": "FPF.Reference:16.5.4.2 - Compare proposed ways to meet the need",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_43": {
+    "title": "FPF.Reference:16.5.4.3 - Specify the missing procurement and operating results",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_44": {
+    "title": "FPF.Reference:16.5.4.4 - Return the result and its remaining conditions",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_45": {
+    "title": "FPF.Reference:16.5.5 - An interpretable pressure assessment",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_46": {
+    "title": "FPF.Reference:16.5.5.1 - Recover the pressure question and its inputs",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_47": {
+    "title": "FPF.Reference:16.5.5.2 - Form and interpret the pressure assessment",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_48": {
+    "title": "FPF.Reference:16.5.5.3 - Change the input and retain the applicable reasoning",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_49": {
+    "title": "FPF.Reference:16.6 - Develop a useful way from received material",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_50": {
+    "title": "FPF.Reference:16.7 - Develop and use methods with distinct claims and results",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_51": {
+    "title": "FPF.Reference:16.7.1 - Method, MethodDescription, WorkPlan, and Work remain distinct",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_52": {
+    "title": "FPF.Reference:16.7.2 - Several structures and several views can coexist",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_53": {
+    "title": "FPF.Reference:16.7.3 - Reader route and result dependencies do not prescribe Work order",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_54": {
+    "title": "FPF.Reference:16.7.4 - Status, evidence, and assurance decisions are preserved",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_55": {
+    "title": "FPF.Reference:16.7.5 - What this Method-development family foregrounds and leaves outside",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_56": {
+    "title": "FPF.Reference:16.7.6 - Why these Method-development questions stay separate",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_57": {
+    "title": "FPF.Reference:16.8 - Produce pattern-language knowledge and use it under changing conditions",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_58": {
+    "title": "FPF.Reference:16.8.1 - Situation, problem and first gain",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_59": {
+    "title": "FPF.Reference:16.8.2 - Production and situated use are different contributions",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_60": {
+    "title": "FPF.Reference:16.8.3 - Unfolding a use, including a changed situation",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_61": {
+    "title": "FPF.Reference:16.8.4 - Practical checks, recurring failures and costs",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_62": {
+    "title": "FPF.Reference:16.8.5 - Architectural Rationale and source comparison",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_63": {
+    "title": "FPF.Reference:16.8.6 - Relations and scope of the whole account",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_64": {
+    "title": "FPF.Reference:16.9 - Choose the smallest Method-development result needed for release EC-417",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_65": {
+    "title": "FPF.Reference:16.9.1 - 1. Bound the EC-417 receiving result and recover the subjects of its management accounts",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_66": {
+    "title": "FPF.Reference:16.9.2 - 2. Choose the subject before redesigning it",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_67": {
+    "title": "FPF.Reference:16.9.3 - 3. Separate observed differentiation, causal support, and today's decision",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_68": {
+    "title": "FPF.Reference:16.9.4 - 4. Recover candidate accounts only when ordinary Method recovery is insufficient",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_69": {
+    "title": "FPF.Reference:16.9.5 - 5. Build the repertoire and criteria without preselecting an architecture",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_70": {
+    "title": "FPF.Reference:16.9.6 - 6. Recover package contributions and qualify individual subjects",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_71": {
+    "title": "FPF.Reference:16.9.7 - 7. Compare A, B, B2, and R across the structures that change the decision",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_72": {
+    "title": "FPF.Reference:16.9.7.1 - Signed-delta preparation for B2",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_73": {
+    "title": "FPF.Reference:16.9.8 - 8. Return a proposed-whole account and a bounded trial",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_74": {
+    "title": "FPF.Reference:16.9.9 - 9. Configure and test the enactment-support arrangement before claiming that a Method Base works",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_75": {
+    "title": "FPF.Reference:16.9.9.1 - 9.1 Fix the same three task rows before comparing support configurations",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_76": {
+    "title": "FPF.Reference:16.9.9.2 - 9.2 Admit the two entry epistemes to the Method Base",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_77": {
+    "title": "FPF.Reference:16.9.9.3 - 9.3 Test actual use and keep the structure gap separate",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_78": {
+    "title": "FPF.Reference:16.9.9.4 - 9.4 Stop separately at the remaining Method-development questions",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_79": {
+    "title": "FPF.Reference:16.9.9.4.1 - 9.4.1 Preparation now, reopening after performed trials",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_80": {
+    "title": "FPF.Reference:16.9.10 - 10. Apply sensitivity without rewriting past Work",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_81": {
+    "title": "FPF.Reference:16.9.11 - Result and stop",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_82": {
+    "title": "FPF.Reference:17 - Transdisciplinarity As A Meta-Theory Of Thinking",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_83": {
+    "title": "FPF.Reference:18 - The Culinary Architecture Of Collective Thought",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_84": {
+    "title": "FPF.Reference:19 - The Intellect Stack As A Pedagogical Map",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_85": {
+    "title": "FPF.Reference:20 - Purpose, Scope, And Non-Goals",
+    "status": "full text",
+    "keywords": [],
+    "queries": [],
+    "file": ""
+  },
+  "preface_86": {
+    "title": "FPF.Reference:21 - How To Continue After The readme",
     "status": "full text",
     "keywords": [],
     "queries": [],
@@ -324,7 +681,7 @@
   },
   "A.1.RI": {
     "title": "Reidentifying an Object across Observations",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -548,10 +905,13 @@
       "support",
       "qualification",
       "currentness",
-      "capability fit"
+      "capability fit",
+      "Method-relative capability",
+      "usable Method structure"
     ],
     "queries": [
       "Can this System do the required work?",
+      "Which parts of this Method can the holder use with the available help?",
       "Did ability, its support or the receiving demand change?"
     ],
     "dependencies": {
@@ -950,10 +1310,59 @@
         "A.3.2",
         "A.15.6",
         "C.32.MWA",
-        "specialist ME.18"
+        "RMP.10 for a needed empirical programme and RMP.11 for historical inquiry"
       ]
     },
     "file": "sections/05-part-a-kernel-architecture-cluster/21-a31mr-a31mr-candidate-method-recovery-from-work-evidence.md"
+  },
+  "A.3.1.DR": {
+    "title": "Recover Method Contributions from Documentary Sources",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/22-a31dr-a31dr-recover-method-contributions-from-documentary-sources.md"
+  },
+  "A.3.1.QM": {
+    "title": "Qualify a Method for Its Intended Contribution",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/23-a31qm-a31qm-qualify-a-method-for-its-intended-contribution.md"
+  },
+  "A.3.1.WT": {
+    "title": "Design and Interpret a Method Work Trial",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/24-a31wt-a31wt-design-and-interpret-a-method-work-trial.md"
+  },
+  "A.3.1.CC": {
+    "title": "Check the Coherence of a Method Claim",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/25-a31cc-a31cc-check-the-coherence-of-a-method-claim.md"
+  },
+  "A.3.1.FT": {
+    "title": "Qualify Method Fit and Transfer",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/26-a31ft-a31ft-qualify-method-fit-and-transfer.md"
+  },
+  "A.3.1.MV": {
+    "title": "Construct and Maintain a Method Variant",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/27-a31mv-a31mv-construct-and-maintain-a-method-variant.md"
+  },
+  "A.3.1.MI": {
+    "title": "Introduce a Method into Practice and Decide What to Keep or Change",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/28-a31mi-a31mi-introduce-a-method-into-practice-and-decide-what-to-ke.md"
   },
   "A.3.2": {
     "title": "U.MethodDescription: Description Episteme for a Way of Doing",
@@ -990,7 +1399,14 @@
         "F.9"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/22-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/29-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md"
+  },
+  "A.3.2.DE": {
+    "title": "Describe a Method for Its Intended Use",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/05-part-a-kernel-architecture-cluster/30-a32de-a32de-describe-a-method-for-its-intended-use.md"
   },
   "A.3.3": {
     "title": "U.Dynamics: State-Space and Transition-Law Episteme",
@@ -1038,11 +1454,11 @@
         "A.21"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/23-a33-a33-udynamics-state-space-and-transition-law-episteme.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/31-a33-a33-udynamics-state-space-and-transition-law-episteme.md"
   },
   "A.3.3.CC": {
     "title": "Construct a Configuration Description under Constraints",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Which combinations are possible under these conditions?",
@@ -1062,7 +1478,7 @@
         "A.6.3.RT and B.5.MPC"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/24-a33cc-a33cc-construct-a-configuration-description-under-constraint.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/32-a33cc-a33cc-construct-a-configuration-description-under-constraint.md"
   },
   "A.3.3.TR": {
     "title": "Construct a Rule for State Change",
@@ -1086,7 +1502,7 @@
         "C.29.2 and C.11.DUA"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/25-a33tr-a33tr-construct-a-rule-for-state-change.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/33-a33tr-a33tr-construct-a-rule-for-state-change.md"
   },
   "A.3.3.PI": {
     "title": "Retain the Information Needed for Prediction",
@@ -1109,7 +1525,7 @@
         "B.5.MPC.R and C.11.DUA"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/26-a33pi-a33pi-retain-the-information-needed-for-prediction.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/34-a33pi-a33pi-retain-the-information-needed-for-prediction.md"
   },
   "A.3.4": {
     "title": "U.Transformation: Actual Bounded Change Under Conditions",
@@ -1156,7 +1572,7 @@
         "C.29"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/27-a34-a34-utransformation-actual-bounded-change-under-conditions.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/35-a34-a34-utransformation-actual-bounded-change-under-conditions.md"
   },
   "A.3.4.P": {
     "title": "Transformation Wording Repair: Recover Objects and Claims",
@@ -1205,7 +1621,7 @@
         "E.10.MOVE"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/28-a34p-a34p-transformation-wording-repair-recover-objects-and-claim.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/36-a34p-a34p-transformation-wording-repair-recover-objects-and-claim.md"
   },
   "A.4": {
     "title": "Compare a System's Intended Design with Its Operating Conditions",
@@ -1234,7 +1650,7 @@
         "B.4"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/29-a4-a4-compare-a-systems-intended-design-with-its-operating-cond.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/37-a4-a4-compare-a-systems-intended-design-with-its-operating-cond.md"
   },
   "A.5": {
     "title": "Open-Ended FPF Kernel and Extension Layering",
@@ -1257,7 +1673,7 @@
         "P-5"
       ]
     },
-    "file": "sections/05-part-a-kernel-architecture-cluster/30-a5-a5-open-ended-fpf-kernel-and-extension-layering.md"
+    "file": "sections/05-part-a-kernel-architecture-cluster/38-a5-a5-open-ended-fpf-kernel-and-extension-layering.md"
   },
   "A.6": {
     "title": "Signature Stack: Classify and Place Boundary Claims",
@@ -1620,9 +2036,10 @@
   },
   "A.6.3.RT.OE": {
     "title": "Construct an Operative Expression",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
+      "What distinction does comparing these records reveal?",
       "How can the same part connect two relations?",
       "Which grouping preserves the intended prerequisite?",
       "How do I coordinate a phrase with its temporal reference?"
@@ -1634,6 +2051,7 @@
         "B.5.RC",
         "B.5.RA",
         "B.5.RR",
+        "B.5.WN",
         "C.37",
         "C.2.8 and the subject Method"
       ]
@@ -2942,6 +3360,13 @@
     },
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/22-a158-a158-work-performance-configuration-and-recovery-testing.md"
   },
+  "A.15.8.MS": {
+    "title": "Configure Methodological Support for Work",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/23-a158ms-a158ms-configure-methodological-support-for-work.md"
+  },
   "A.15.9": {
     "title": "Use or Request a Bounded Result from Another Practice",
     "status": "Stable",
@@ -2967,7 +3392,7 @@
         "and applicable domain Methods"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/23-a159-a159-use-or-request-a-bounded-result-from-another-practice.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/24-a159-a159-use-or-request-a-bounded-result-from-another-practice.md"
   },
   "A.15.10": {
     "title": "Resume Interrupted Work",
@@ -2991,7 +3416,7 @@
         "B.1.5"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/24-a1510-a1510-resume-interrupted-work.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/25-a1510-a1510-resume-interrupted-work.md"
   },
   "A.15.11": {
     "title": "Make Applicable Methods Noticeable in Work",
@@ -3014,7 +3439,7 @@
         "E.23.CDI"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/25-a1511-a1511-make-applicable-methods-noticeable-in-work.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a1511-a1511-make-applicable-methods-noticeable-in-work.md"
   },
   "A.15.PROD": {
     "title": "Production Work, Entity-Identity Inception, and Production Completion Recovery",
@@ -3053,7 +3478,7 @@
         "and availability patterns"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a15prod-a15prod-production-work-entity-identity-inception-and-produc.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/27-a15prod-a15prod-production-work-entity-identity-inception-and-produc.md"
   },
   "A.16": {
     "title": "Language-State Moves: Choose the Next Publication and Use of a Cue or Claim",
@@ -3084,7 +3509,7 @@
         "and E.10.MOVE when move-like wording leaves the local language-state object"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/27-a16-a16-language-state-moves-choose-the-next-publication-and-use.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a16-a16-language-state-moves-choose-the-next-publication-and-use.md"
   },
   "A.16.0": {
     "title": "Keep an Episteme's Language-State and Publication History Recoverable",
@@ -3116,7 +3541,7 @@
         "E.17.1"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a160-a160-keep-an-epistemes-language-state-and-publication-histor.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/29-a160-a160-keep-an-epistemes-language-state-and-publication-histor.md"
   },
   "A.16.1": {
     "title": "PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use",
@@ -3144,7 +3569,7 @@
         "A.16.2"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/29-a161-a161-prearticulationcuepack-preserve-an-early-cue-before-cho.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/30-a161-a161-prearticulationcuepack-preserve-an-early-cue-before-cho.md"
   },
   "A.16.2": {
     "title": "Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication",
@@ -3173,7 +3598,7 @@
         "B.4.1"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/30-a162-a162-reopen-sketchbackoff-respecify-or-retire-a-language-sta.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a162-a162-reopen-sketchbackoff-respecify-or-retire-a-language-sta.md"
   },
   "A.17": {
     "title": "Canonical “Characteristic” (A.CHR-NORM): Name What Is Measured",
@@ -3203,7 +3628,7 @@
         "C.16"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a17-a17-canonical-characteristic-achr-norm-name-what-is-measured.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/32-a17-a17-canonical-characteristic-achr-norm-name-what-is-measured.md"
   },
   "A.18": {
     "title": "A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale/Level/Coordinate)",
@@ -3247,7 +3672,7 @@
         "B.3"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/32-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
   },
   "A.19": {
     "title": "CharacteristicSpace: Coordinates, State Predicates and Dynamics Hook (A.CHR‑SPACE)",
@@ -3303,7 +3728,7 @@
         "A.15"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
   },
   "A.19.ECS": {
     "title": "Evaluation CharacteristicSpace Construction: Define What Counts as Better",
@@ -3327,7 +3752,7 @@
         "F.19"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19ecs-a19ecs-evaluation-characteristicspace-construction-define-wh.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/35-a19ecs-a19ecs-evaluation-characteristicspace-construction-define-wh.md"
   },
   "A.19.SPR": {
     "title": "Repair State and Status Wording",
@@ -3367,7 +3792,7 @@
         "E.11"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/35-a19spr-a19spr-repair-state-and-status-wording.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/36-a19spr-a19spr-repair-state-and-status-wording.md"
   },
   "A.19.SOURCE-SET-SPACE-SUBSTRATE": {
     "title": "Source-Set and Search/Outcome-Space Substrate",
@@ -3405,7 +3830,7 @@
         "A.0"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
   },
   "A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW": {
     "title": "Interpretive Views of Declared Source Sets and Search/Outcome Spaces",
@@ -3444,7 +3869,7 @@
         "A.0"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
   },
   "A.19.CN": {
     "title": "CN-frame: Specify and Maintain Comparability and Normalization",
@@ -3491,7 +3916,7 @@
         "G.0 (CG-Spec admissibility gate)"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/38-a19cn-a19cn-cn-frame-specify-and-maintain-comparability-and-normal.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/39-a19cn-a19cn-cn-frame-specify-and-maintain-comparability-and-normal.md"
   },
   "A.19.CHR": {
     "title": "CHRMechanismSuite: Shared Rules for Characterization and Selection",
@@ -3543,7 +3968,7 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/39-a19chr-a19chr-chrmechanismsuite-shared-rules-for-characterization-a.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/40-a19chr-a19chr-chrmechanismsuite-shared-rules-for-characterization-a.md"
   },
   "A.19.UNM": {
     "title": "Normalize Coordinate Values under Declared Invariants (UNM)",
@@ -3596,7 +4021,7 @@
         "A.19.SelectorMechanism"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/40-a19unm-a19unm-normalize-coordinate-values-under-declared-invariants.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/41-a19unm-a19unm-normalize-coordinate-values-under-declared-invariants.md"
   },
   "A.19.UINDM": {
     "title": "Indicatorization (UINDM): Select Indicators Under a Declared Policy",
@@ -3635,7 +4060,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/41-a19uindm-a19uindm-indicatorization-uindm-select-indicators-under-a-de.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/42-a19uindm-a19uindm-indicatorization-uindm-select-indicators-under-a-de.md"
   },
   "A.19.USCM": {
     "title": "Unified Scoring Mechanism (USCM)",
@@ -3681,7 +4106,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/42-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/43-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
   },
   "A.19.ULSAM": {
     "title": "Unified Lawful Scale Aggregation Mechanism (ULSAM)",
@@ -3724,7 +4149,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/43-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/44-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
   },
   "A.19.CPM": {
     "title": "Compare Admitted Profiles under a Declared Comparator (CPM)",
@@ -3783,7 +4208,7 @@
         "A.19.CHR"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/44-a19cpm-a19cpm-compare-admitted-profiles-under-a-declared-comparator.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/45-a19cpm-a19cpm-compare-admitted-profiles-under-a-declared-comparator.md"
   },
   "A.19.SelectorMechanism": {
     "title": "Unified Selection Kernel (SelectorMechanism)",
@@ -3825,7 +4250,7 @@
         "E.18"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
   },
   "A.20": {
     "title": "Constraint Validity for Transformation Steps",
@@ -3854,7 +4279,7 @@
         "and F.9 only for a separately claimed semantic correspondence"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/46-a20-a20-constraint-validity-for-transformation-steps.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/47-a20-a20-constraint-validity-for-transformation-steps.md"
   },
   "A.21": {
     "title": "Gate Decisions from Independent Check Results",
@@ -3957,7 +4382,7 @@
         "C.35"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/49-a22cgus-a22cgus-which-continuations-are-available-constraint-governe.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/50-a22cgus-a22cgus-which-continuations-are-available-constraint-governe.md"
   },
   "B.1": {
     "title": "Holon Aggregation and Part-Whole Construction",
@@ -4151,7 +4576,7 @@
   },
   "B.1.5.RS": {
     "title": "Evaluate a Constituent Method Replacement in Its Encompassing Uses",
-    "status": "Candidate",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -4166,6 +4591,13 @@
       ]
     },
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b15rs-b15rs-evaluate-a-constituent-method-replacement-in-its-encom.md"
+  },
+  "B.1.5.CM": {
+    "title": "Construct and Qualify a Composite Method",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/09-b15cm-b15cm-construct-and-qualify-a-composite-method.md"
   },
   "B.1.6": {
     "title": "Work-Resource Aggregation",
@@ -4221,7 +4653,7 @@
         "or decision claim"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/09-b16-b16-work-resource-aggregation.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/10-b16-b16-work-resource-aggregation.md"
   },
   "B.2": {
     "title": "Meta-Holon Transition — Whole Reidentification",
@@ -4257,7 +4689,7 @@
         "and E.24.UK"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/10-b2-b2-meta-holon-transition-whole-reidentification.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/11-b2-b2-meta-holon-transition-whole-reidentification.md"
   },
   "B.2.P": {
     "title": "Clarify Emergence and Meta-Holon Transition (MHT) Claims",
@@ -4284,7 +4716,7 @@
         "C.30.ILC"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/11-b2p-b2p-clarify-emergence-and-meta-holon-transition-mht-claims.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/12-b2p-b2p-clarify-emergence-and-meta-holon-transition-mht-claims.md"
   },
   "B.2.2": {
     "title": "Meta-System Transition: Test the Proposed New Whole as a System",
@@ -4324,7 +4756,7 @@
         "and E.24.UK"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/12-b22-b22-meta-system-transition-test-the-proposed-new-whole-as-a-.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b22-b22-meta-system-transition-test-the-proposed-new-whole-as-a-.md"
   },
   "B.2.3": {
     "title": "Meta-Holon Transition With Episteme Result",
@@ -4350,7 +4782,7 @@
         "C.29"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b23-b23-meta-holon-transition-with-episteme-result.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b23-b23-meta-holon-transition-with-episteme-result.md"
   },
   "B.2.4": {
     "title": "Do Capability or Functioning Changes Require Whole Reidentification?",
@@ -4372,7 +4804,7 @@
         "C.29"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/14-b24-b24-do-capability-or-functioning-changes-require-whole-reide.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/15-b24-b24-do-capability-or-functioning-changes-require-whole-reide.md"
   },
   "B.2.5": {
     "title": "Supervisor-Subholon Feedback Relation",
@@ -4394,7 +4826,7 @@
         "B.3"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/15-b25-b25-supervisor-subholon-feedback-relation.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/16-b25-b25-supervisor-subholon-feedback-relation.md"
   },
   "B.3": {
     "title": "Is This Claim Supported for This Use? — Trust and Assurance Calculus",
@@ -4434,7 +4866,7 @@
         "and controlled-action patterns"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/16-b3-b3-is-this-claim-supported-for-this-use-trust-and-assurance-.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b3-b3-is-this-claim-supported-for-this-use-trust-and-assurance-.md"
   },
   "B.3.3": {
     "title": "Assurance Subtypes & Levels",
@@ -4462,7 +4894,7 @@
         "B.3.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/17-b33-b33-assurance-subtypes-levels.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/18-b33-b33-assurance-subtypes-levels.md"
   },
   "B.3.4": {
     "title": "Can Earlier Evidence Still Support This Use? — Evidence Decay and Epistemic Debt",
@@ -4491,7 +4923,7 @@
         "G.11"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/18-b34-b34-can-earlier-evidence-still-support-this-use-evidence-dec.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/19-b34-b34-can-earlier-evidence-still-support-this-use-evidence-dec.md"
   },
   "B.3.5": {
     "title": "Assurance Grounding for Working-Model Relation Claims (CT2R-LOG)",
@@ -4505,7 +4937,7 @@
         "C.13"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/19-b35-b35-assurance-grounding-for-working-model-relation-claims-ct.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/20-b35-b35-assurance-grounding-for-working-model-relation-claims-ct.md"
   },
   "B.4": {
     "title": "Coordinate Repeated Adaptation (Canonical Evolution Loop)",
@@ -4522,7 +4954,7 @@
         "A.12"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/20-b4-b4-coordinate-repeated-adaptation-canonical-evolution-loop.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/21-b4-b4-coordinate-repeated-adaptation-canonical-evolution-loop.md"
   },
   "B.4.1": {
     "title": "Publish Candidate Routes for a Stabilized Cue (RoutedCueSet)",
@@ -4545,11 +4977,11 @@
         "C.22.1"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/21-b41-b41-publish-candidate-routes-for-a-stabilized-cue-routedcues.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/22-b41-b41-publish-candidate-routes-for-a-stabilized-cue-routedcues.md"
   },
   "B.5": {
     "title": "Choose the Next Reasoning Contribution (Canonical Reasoning Cycle)",
-    "status": "Candidate",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -4562,7 +4994,7 @@
         "and A.10 for evidence reliance"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/22-b5-b5-choose-the-next-reasoning-contribution-canonical-reasonin.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b5-b5-choose-the-next-reasoning-contribution-canonical-reasonin.md"
   },
   "B.5.EA": {
     "title": "Articulate a Working Distinction from Experience",
@@ -4577,7 +5009,28 @@
         "C.11.DUA for worthwhile further work"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b5ea-b5ea-articulate-a-working-distinction-from-experience.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b5ea-b5ea-articulate-a-working-distinction-from-experience.md"
+  },
+  "B.5.WN": {
+    "title": "Develop Lines of Thought with Working Notes",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [
+      "How can these notes develop an argument?",
+      "What question emerges from this connection?",
+      "What should remain for a later occasion?"
+    ],
+    "dependencies": {
+      "coordinates_with": [
+        "B.5.EA",
+        "B.5.QD and B.5.RR for articulation",
+        "question development and revision",
+        "A.6.3.RT.OE for an operative expression",
+        "A.15.10/.11 for resumption and encounters",
+        "C.2.8 and C.11.DUA for usable recovery and worthwhile effort"
+      ]
+    },
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/25-b5wn-b5wn-develop-lines-of-thought-with-working-notes.md"
   },
   "B.5.MPC": {
     "title": "Connect Physical, Mathematical and Computational Reasoning",
@@ -4601,22 +5054,22 @@
         "C.39 and C.40"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/26-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md"
   },
   "B.5.MPC.R": {
     "title": "Repair a Physical-Mathematical-Computational Connection",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Why is a correct calculation unusable here?",
       "What continues during a controller pause?",
       "Can these observations distinguish the physical cases?"
     ],
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/26-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md"
   },
   "B.5.RC": {
     "title": "Recover a Construction from Its Description",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "What must be available before this operation?",
@@ -4631,29 +5084,32 @@
         "and C.39 for a missing method"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/26-b5rc-b5rc-recover-a-construction-from-its-description.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/28-b5rc-b5rc-recover-a-construction-from-its-description.md"
   },
   "B.5.RA": {
     "title": "Recover an Argument for Its Next Use",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Why does this step follow?",
       "What does this lemma contribute to the whole argument?",
+      "How can I turn this text into an argument map?",
+      "Which critical question could change this conclusion?",
       "Does this reasoning support the use I need?"
     ],
     "dependencies": {
       "coordinates_with": [
         "B.5 and B.5.RC for inquiry and construction",
+        "B.5.RR for revision",
         "B.5.MPC for joint reasoning",
         "and C.2.8/C.37 for recipient understanding and representation choice"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/27-b5ra-b5ra-recover-an-argument-for-its-next-use.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/29-b5ra-b5ra-recover-an-argument-for-its-next-use.md"
   },
   "B.5.RR": {
     "title": "Revise Reasoning After a Premise or Question Changes",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Which part needs to be worked again?",
@@ -4668,11 +5124,11 @@
         "and C.11.DUA for further effort"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/28-b5rr-b5rr-revise-reasoning-after-a-premise-or-question-changes.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/30-b5rr-b5rr-revise-reasoning-after-a-premise-or-question-changes.md"
   },
   "B.5.FM": {
     "title": "Construct a First Model for the Working Question",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Which participants or interactions must the model include?",
@@ -4689,11 +5145,11 @@
         "B.5.RR and B.5.MPC.R for revision"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/29-b5fm-b5fm-construct-a-first-model-for-the-working-question.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/31-b5fm-b5fm-construct-a-first-model-for-the-working-question.md"
   },
   "B.5.TU": {
     "title": "Construct a Working Use of an Unfamiliar Theory",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "What can this theory help me do?",
@@ -4710,7 +5166,7 @@
         "A.15.9 for bounded help"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/30-b5tu-b5tu-construct-a-working-use-of-an-unfamiliar-theory.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/32-b5tu-b5tu-construct-a-working-use-of-an-unfamiliar-theory.md"
   },
   "B.5.TC": {
     "title": "Compare Theoretical Accounts for a Working Question",
@@ -4733,11 +5189,11 @@
         "C.11.DUA for worthwhile inquiry"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/31-b5tc-b5tc-compare-theoretical-accounts-for-a-working-question.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/33-b5tc-b5tc-compare-theoretical-accounts-for-a-working-question.md"
   },
   "B.5.QD": {
     "title": "Develop a New Question from a Result or Construction",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "What useful question follows from this failure?",
@@ -4753,7 +5209,7 @@
         "E.10.INT and C.11.DUA for worthwhile inquiry"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/32-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
   },
   "B.5.QD.CF": {
     "title": "Reformulate a Problem by Examining Its Conflicting Assumptions",
@@ -4770,7 +5226,7 @@
         "C.11.DUA and B.1.5.EW"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/32-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
   },
   "B.5.1": {
     "title": "Coordinate Development States: Explore → Shape → Evidence → Operate",
@@ -4786,7 +5242,7 @@
         "B.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b51-b51-coordinate-development-states-explore-shape-evidence-ope.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/36-b51-b51-coordinate-development-states-explore-shape-evidence-ope.md"
   },
   "B.5.2": {
     "title": "Generate and Compare Candidate Explanations (Abductive Loop)",
@@ -4810,7 +5266,7 @@
         "A.6.P"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/35-b52-b52-generate-and-compare-candidate-explanations-abductive-lo.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/37-b52-b52-generate-and-compare-candidate-explanations-abductive-lo.md"
   },
   "B.5.2.0": {
     "title": "Question Form for Entering Abduction (U.AbductivePrompt)",
@@ -4836,7 +5292,7 @@
         "B.5.2"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/36-b520-b520-question-form-for-entering-abduction-uabductiveprompt.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/38-b520-b520-question-form-for-entering-abduction-uabductiveprompt.md"
   },
   "B.5.2.1": {
     "title": "Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD)",
@@ -4862,7 +5318,7 @@
         "G.5"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/37-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/39-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md"
   },
   "B.5.3": {
     "title": "Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge)",
@@ -4899,11 +5355,11 @@
         "F.9"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/38-b53-b53-interpret-domain-vocabulary-for-an-fpf-claim-domain-conc.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/40-b53-b53-interpret-domain-vocabulary-for-an-fpf-claim-domain-conc.md"
   },
   "B.5.4": {
     "title": "Recognize a Reusable Concept in a Concrete Situation",
-    "status": "Candidate",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -4913,7 +5369,7 @@
         "C.29 and A.7.1"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/39-b54-b54-recognize-a-reusable-concept-in-a-concrete-situation.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/41-b54-b54-recognize-a-reusable-concept-in-a-concrete-situation.md"
   },
   "B.5.PI": {
     "title": "Initiate Inquiry from Ongoing Work",
@@ -4933,7 +5389,14 @@
         "C.11.DUA/.CRC for worthwhile continuation"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/40-b5pi-b5pi-initiate-inquiry-from-ongoing-work.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/42-b5pi-b5pi-initiate-inquiry-from-ongoing-work.md"
+  },
+  "B.5.SD": {
+    "title": "Construct a Useful Answer through Substantive Discussion",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/43-b5sd-b5sd-construct-a-useful-answer-through-substantive-discussio.md"
   },
   "C.1": {
     "title": "Physical System State, Conservation, and Resource-Flow Calculus (Sys-CAL)",
@@ -5316,7 +5779,7 @@
   },
   "C.2.8": {
     "title": "U.ExtractableStructuralInformation — Structure This Reader Can Recover",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [
       "extractable structure",
       "reader preparation",
@@ -5342,7 +5805,8 @@
         "C.29",
         "C.33",
         "A.6.3.NAR",
-        "E.17.EFP"
+        "E.17.EFP",
+        "A.2.2 and E.23.CDI when recovered Method structure must be used or acquired"
       ]
     },
     "file": "sections/09-part-c-kernel-extension-specifications/12-c28-c28-uextractablestructuralinformation-structure-this-reader-.md"
@@ -5774,6 +6238,24 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/22-c11crc-c11crc-configuration-relative-contribution-comparison.md"
   },
+  "C.11.DBR": {
+    "title": "Reconsider a Decision When Its Relied-on Basis Changes",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [
+      "Does this outcome change our earlier decision?",
+      "What should be preserved when one premise fails?"
+    ],
+    "dependencies": {
+      "coordinates_with": [
+        "A.10.1",
+        "E.18.1",
+        "C.11",
+        "C.11.DUA and direct subject decisions"
+      ]
+    },
+    "file": "sections/09-part-c-kernel-extension-specifications/23-c11dbr-c11dbr-reconsider-a-decision-when-its-relied-on-basis-change.md"
+  },
   "C.11.DUA": {
     "title": "Make Advice and Evidence Demands Worth Their Burden",
     "status": "Stable",
@@ -5795,7 +6277,14 @@
         "E.11.PUA"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/23-c11dua-c11dua-make-advice-and-evidence-demands-worth-their-burden.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/24-c11dua-c11dua-make-advice-and-evidence-demands-worth-their-burden.md"
+  },
+  "C.11.MV": {
+    "title": "Compare the Worth of a Method Option",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/25-c11mv-c11mv-compare-the-worth-of-a-method-option.md"
   },
   "C.13": {
     "title": "Constructional Mereology (Compose‑CAL)",
@@ -5821,7 +6310,7 @@
         "C.2.1"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/24-c13-c13-constructional-mereology-composecal.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/26-c13-c13-constructional-mereology-composecal.md"
   },
   "C.14": {
     "title": "System-of-Systems and Infrastructure Calculus (M-Sys-CAL)",
@@ -5912,7 +6401,7 @@
         "including G.4 and B.1.6"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/25-c16-c16-measurement-metrics-characterization-mmchr.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/27-c16-c16-measurement-metrics-characterization-mmchr.md"
   },
   "C.16.MR": {
     "title": "Construct a Measurement Relation",
@@ -5934,7 +6423,7 @@
         "C.29.2 and C.11.DUA"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/26-c16mr-c16mr-construct-a-measurement-relation.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/28-c16mr-c16mr-construct-a-measurement-relation.md"
   },
   "C.16.IR": {
     "title": "Determine What a Measurement Indication Can Resolve",
@@ -5956,7 +6445,7 @@
         "B.5.MPC.R and C.11.DUA"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/27-c16ir-c16ir-determine-what-a-measurement-indication-can-resolve.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/29-c16ir-c16ir-determine-what-a-measurement-indication-can-resolve.md"
   },
   "C.16.RM": {
     "title": "Repair a Measurement Model or Arrangement",
@@ -5979,7 +6468,7 @@
         "C.28 and C.11.DUA"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/28-c16rm-c16rm-repair-a-measurement-model-or-arrangement.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/30-c16rm-c16rm-repair-a-measurement-model-or-arrangement.md"
   },
   "C.16.P": {
     "title": "Restore Precision to Characteristic and Scale Wording",
@@ -6012,7 +6501,7 @@
         "and publication patterns governing those claims"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/29-c16p-c16p-restore-precision-to-characteristic-and-scale-wording.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/31-c16p-c16p-restore-precision-to-characteristic-and-scale-wording.md"
   },
   "C.16.Q": {
     "title": "Quality-Term Precision Restoration",
@@ -6047,7 +6536,7 @@
         "F.9.1"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/30-c16q-c16q-quality-term-precision-restoration.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/32-c16q-c16q-quality-term-precision-restoration.md"
   },
   "C.17": {
     "title": "Characterising Generative Novelty and Value",
@@ -6097,7 +6586,7 @@
         "A.3.2"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/31-c17-c17-characterising-generative-novelty-and-value.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/33-c17-c17-characterising-generative-novelty-and-value.md"
   },
   "C.18": {
     "title": "Open-Ended Search Archive and Front Stewardship",
@@ -6137,7 +6626,7 @@
         "A.15"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/32-c18-c18-open-ended-search-archive-and-front-stewardship.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/34-c18-c18-open-ended-search-archive-and-front-stewardship.md"
   },
   "C.18.1": {
     "title": "Scaling‑Law Lens Binding (SLL)",
@@ -6172,7 +6661,7 @@
         "G.10"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/33-c181-c181-scalinglaw-lens-binding-sll.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/35-c181-c181-scalinglaw-lens-binding-sll.md"
   },
   "C.19": {
     "title": "Explore-Exploit Live-Pool Governor",
@@ -6219,7 +6708,7 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/34-c19-c19-explore-exploit-live-pool-governor.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/36-c19-c19-explore-exploit-live-pool-governor.md"
   },
   "C.19.1": {
     "title": "Bitter‑Lesson Preference (BLP)",
@@ -6241,7 +6730,7 @@
         "A.0"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/35-c191-c191-bitterlesson-preference-blp.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/37-c191-c191-bitterlesson-preference-blp.md"
   },
   "C.19.2": {
     "title": "Use-Bounded Apparatus Application",
@@ -6269,7 +6758,7 @@
         "A.15.2"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/36-c192-c192-use-bounded-apparatus-application.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/38-c192-c192-use-bounded-apparatus-application.md"
   },
   "C.20": {
     "title": "Composition of U.Discipline (Discipline-CAL)",
@@ -6312,7 +6801,7 @@
         "G.5"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/37-c20-c20-composition-of-udiscipline-discipline-cal.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/39-c20-c20-composition-of-udiscipline-discipline-cal.md"
   },
   "C.21": {
     "title": "Field Health & Structure (Discipline-CHR)",
@@ -6393,7 +6882,7 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/40-c221-c221-task-family-adaptation-signature.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/42-c221-c221-task-family-adaptation-signature.md"
   },
   "C.22.PFR": {
     "title": "Problematic-For Relation",
@@ -6422,7 +6911,7 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/41-c22pfr-c22pfr-problematic-for-relation.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/43-c22pfr-c22pfr-problematic-for-relation.md"
   },
   "C.22.2": {
     "title": "ProblemCard",
@@ -6479,7 +6968,7 @@
         "E.10.MOVE"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/42-c222-c222-problemcard.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/44-c222-c222-problemcard.md"
   },
   "C.23": {
     "title": "MethodFamily Evidence & Maturity (Method‑SoS‑LOG)",
@@ -6653,7 +7142,7 @@
         "C.26.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/47-c261-c261-probe-coupled-boundary-interaction.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/49-c261-c261-probe-coupled-boundary-interaction.md"
   },
   "C.26.2": {
     "title": "Enacted Distributed State Evidence",
@@ -6688,7 +7177,7 @@
         "C.26.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/48-c262-c262-enacted-distributed-state-evidence.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/50-c262-c262-enacted-distributed-state-evidence.md"
   },
   "C.26.3": {
     "title": "Viability-Envelope Boundary Regulation",
@@ -6729,7 +7218,7 @@
         "C.26.2"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/49-c263-c263-viability-envelope-boundary-regulation.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/51-c263-c263-viability-envelope-boundary-regulation.md"
   },
   "C.27": {
     "title": "Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Change",
@@ -6818,7 +7307,7 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/51-c27ta-c27ta-temporal-aspect-time-windows-rhythm-cadence-and-curren.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/53-c27ta-c27ta-temporal-aspect-time-windows-rhythm-cadence-and-curren.md"
   },
   "C.28": {
     "title": "CausalUse-CAL: Causal-Use Questions, Identification, and Realizability",
@@ -6896,11 +7385,11 @@
         "C.11.DUA and A.15.9"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/53-c28cm-c28cm-construct-and-challenge-a-causal-model.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/55-c28cm-c28cm-construct-and-challenge-a-causal-model.md"
   },
   "C.28.MR": {
     "title": "Derive an Intervention Consequence by Mechanism Replacement",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "What follows if this rule is replaced?",
@@ -6916,7 +7405,7 @@
         "B.5.RR and C.29.1"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/54-c28mr-c28mr-derive-an-intervention-consequence-by-mechanism-replac.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/56-c28mr-c28mr-derive-an-intervention-consequence-by-mechanism-replac.md"
   },
   "C.29": {
     "title": "Mathematical Lens Use",
@@ -6949,11 +7438,11 @@
         "C.28 and C.39"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/55-c29-c29-mathematical-lens-use.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/57-c29-c29-mathematical-lens-use.md"
   },
   "C.29.1": {
     "title": "Mathematical Result Transfer",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Does this summary preserve the operation and its permissions?",
@@ -6968,11 +7457,11 @@
         "and A.6.3.RT for expression under a scheme"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/56-c291-c291-mathematical-result-transfer.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/58-c291-c291-mathematical-result-transfer.md"
   },
   "C.29.2": {
     "title": "Computational Formulation",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "How can these relations yield the newly requested unknown?",
@@ -6988,7 +7477,7 @@
         "and C.39/C.40 for a missing construction"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/57-c292-c292-computational-formulation.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/59-c292-c292-computational-formulation.md"
   },
   "C.29.3": {
     "title": "Computational Realization",
@@ -7008,7 +7497,7 @@
         "and B.5.MPC for the joint physical question"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/58-c293-c293-computational-realization.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/60-c293-c293-computational-realization.md"
   },
   "C.29.BB": {
     "title": "Construct a Balance across a Boundary",
@@ -7028,7 +7517,7 @@
         "and C.11.DUA for further inquiry"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/59-c29bb-c29bb-construct-a-balance-across-a-boundary.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/61-c29bb-c29bb-construct-a-balance-across-a-boundary.md"
   },
   "C.30": {
     "title": "Grounded Architecture and Selected-Structure Adequacy",
@@ -7089,7 +7578,7 @@
         "A.15"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/60-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
   },
   "C.30.AD": {
     "title": "Architecture Description Adequacy",
@@ -7152,7 +7641,7 @@
         "F.18"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/61-c30ad-c30ad-architecture-description-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/63-c30ad-c30ad-architecture-description-adequacy.md"
   },
   "C.30.AD.BA": {
     "title": "Built-Asset Architecture Description and Reference Designation",
@@ -7181,7 +7670,7 @@
         "C.28"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/61-c30ad-c30ad-architecture-description-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/63-c30ad-c30ad-architecture-description-adequacy.md"
   },
   "C.30.P": {
     "title": "Clarify Architecture and Structure Wording (Precision Restoration)",
@@ -7240,7 +7729,7 @@
         "E.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/63-c30p-c30p-clarify-architecture-and-structure-wording-precision-re.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/65-c30p-c30p-clarify-architecture-and-structure-wording-precision-re.md"
   },
   "C.30.STRAT": {
     "title": "Clarify Stratification and Architecture Source Labels",
@@ -7300,11 +7789,10 @@
         "A.2",
         "G.5",
         "C.11",
-        "E.11",
-        "I.2"
+        "E.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/64-c30strat-c30strat-clarify-stratification-and-architecture-source-labe.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/66-c30strat-c30strat-clarify-stratification-and-architecture-source-labe.md"
   },
   "C.30.ASV": {
     "title": "Architecture Structural View Adequacy (ASV)",
@@ -7349,7 +7837,7 @@
         "C.35"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/65-c30asv-c30asv-architecture-structural-view-adequacy-asv.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/67-c30asv-c30asv-architecture-structural-view-adequacy-asv.md"
   },
   "C.30.LCA": {
     "title": "Control Structure View Adequacy (LCA)",
@@ -7388,7 +7876,7 @@
         "C.29"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/66-c30lca-c30lca-control-structure-view-adequacy-lca.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/68-c30lca-c30lca-control-structure-view-adequacy-lca.md"
   },
   "C.30.ILC": {
     "title": "Cross-Scope Architecture Residual Triage",
@@ -7431,7 +7919,7 @@
         "D.4"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/67-c30ilc-c30ilc-cross-scope-architecture-residual-triage.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/69-c30ilc-c30ilc-cross-scope-architecture-residual-triage.md"
   },
   "C.30.TFS-REL": {
     "title": "Use Transformation-Flow Structures and Networks in Architecture",
@@ -7476,7 +7964,7 @@
         "A.15"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/60-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
   },
   "C.31": {
     "title": "Modularity and Reusable Structure Characteristics",
@@ -7559,7 +8047,7 @@
         "C.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/70-c31rsa-c31rsa-reusable-structure-accounting.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/72-c31rsa-c31rsa-reusable-structure-accounting.md"
   },
   "C.31.ASAP": {
     "title": "Which Architecture Is Preferable Under Scale? (Scale Amenability)",
@@ -7608,7 +8096,7 @@
         "C.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/71-c31asap-c31asap-which-architecture-is-preferable-under-scale-scale-a.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/73-c31asap-c31asap-which-architecture-is-preferable-under-scale-scale-a.md"
   },
   "C.32": {
     "title": "Architecture Candidate Synthesis",
@@ -7736,7 +8224,7 @@
         "C.32.PAD"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/74-c32hcs-c32hcs-architecture-bearing-family-characteristic-starter-pa.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/76-c32hcs-c32hcs-architecture-bearing-family-characteristic-starter-pa.md"
   },
   "C.32.ACS": {
     "title": "Architecture Characteristic Criteria Set",
@@ -7775,7 +8263,7 @@
         "B.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/75-c32acs-c32acs-architecture-characteristic-criteria-set.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/77-c32acs-c32acs-architecture-characteristic-criteria-set.md"
   },
   "C.32.ACE": {
     "title": "Architecture Characteristic Eval Programs",
@@ -7815,7 +8303,7 @@
         "B.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/76-c32ace-c32ace-architecture-characteristic-eval-programs.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/78-c32ace-c32ace-architecture-characteristic-eval-programs.md"
   },
   "C.32.CONWAY": {
     "title": "Architecture-Influence and Transformed-Architecture Correspondence",
@@ -7851,7 +8339,7 @@
         "B.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/77-c32conway-c32conway-architecture-influence-and-transformed-architectur.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/79-c32conway-c32conway-architecture-influence-and-transformed-architectur.md"
   },
   "C.32.MLAO": {
     "title": "Architecture Candidates to Reduce Cross-Scope Residuals",
@@ -7892,7 +8380,7 @@
         "B.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/78-c32mlao-c32mlao-architecture-candidates-to-reduce-cross-scope-residu.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/80-c32mlao-c32mlao-architecture-candidates-to-reduce-cross-scope-residu.md"
   },
   "C.32.MWA": {
     "title": "Synthesize an Architecture Account of Methods and Their Use",
@@ -7915,7 +8403,14 @@
         "E.23.CDI"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/79-c32mwa-c32mwa-synthesize-an-architecture-account-of-methods-and-the.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/81-c32mwa-c32mwa-synthesize-an-architecture-account-of-methods-and-the.md"
+  },
+  "C.32.MWA.PP": {
+    "title": "Construct and Compare Method Performance and Provision Arrangements",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/81-c32mwa-c32mwa-synthesize-an-architecture-account-of-methods-and-the.md"
   },
   "C.32.FAIL": {
     "title": "Architecture Failure Recognition and Repair",
@@ -7963,7 +8458,7 @@
         "A.21"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/80-c32fail-c32fail-architecture-failure-recognition-and-repair.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/83-c32fail-c32fail-architecture-failure-recognition-and-repair.md"
   },
   "C.32.PAD": {
     "title": "Project Architecture Decision After Candidate Synthesis",
@@ -8018,7 +8513,7 @@
         "B.2.P"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/81-c32pad-c32pad-project-architecture-decision-after-candidate-synthes.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/84-c32pad-c32pad-project-architecture-decision-after-candidate-synthes.md"
   },
   "C.32.ADR": {
     "title": "Architecture Decision Record Projection",
@@ -8061,7 +8556,7 @@
         "C.29"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/82-c32adr-c32adr-architecture-decision-record-projection.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/85-c32adr-c32adr-architecture-decision-record-projection.md"
   },
   "C.32.ADA": {
     "title": "Architecture Decision Adequacy Scales",
@@ -8106,7 +8601,7 @@
         "A.21"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/83-c32ada-c32ada-architecture-decision-adequacy-scales.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/86-c32ada-c32ada-architecture-decision-adequacy-scales.md"
   },
   "C.33": {
     "title": "Assess Structural Information for Architecture Use",
@@ -8290,7 +8785,7 @@
         "B.3"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/87-c36-c36-cultural-evolution-and-cultural-evolution-engineering.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/90-c36-c36-cultural-evolution-and-cultural-evolution-engineering.md"
   },
   "C.37": {
     "title": "Select and Use Representations for One Action",
@@ -8329,7 +8824,21 @@
         "and the direct subject and receiving-result patterns"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/88-c37-c37-select-and-use-representations-for-one-action.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/91-c37-c37-select-and-use-representations-for-one-action.md"
+  },
+  "C.37.MP": {
+    "title": "Maintain a Method Representation Profile",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/92-c37mp-c37mp-maintain-a-method-representation-profile.md"
+  },
+  "C.37.CF": {
+    "title": "Compare Content and Form Changes",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/93-c37cf-c37cf-compare-content-and-form-changes.md"
   },
   "C.38": {
     "title": "Construct Comparable Ways to Obtain One Result",
@@ -8353,7 +8862,7 @@
         "and direct domain realization and assurance Methods"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/89-c38-c38-construct-comparable-ways-to-obtain-one-result.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/94-c38-c38-construct-comparable-ways-to-obtain-one-result.md"
   },
   "C.39": {
     "title": "Find and Develop a Way to Obtain a Result",
@@ -8369,11 +8878,11 @@
         "A.22.CGUS and A.3.1/A.3.2 govern stronger relation or Method claims. E.4.CM applies the general construction to framework authoring"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/90-c39-c39-find-and-develop-a-way-to-obtain-a-result.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/95-c39-c39-find-and-develop-a-way-to-obtain-a-result.md"
   },
   "C.39.RO": {
     "title": "Turn a Construction into a Reusable Operation",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "How can this successful case become a reusable operation?",
@@ -8388,7 +8897,35 @@
         "and C.40 for further material development"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/91-c39ro-c39ro-turn-a-construction-into-a-reusable-operation.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/96-c39ro-c39ro-turn-a-construction-into-a-reusable-operation.md"
+  },
+  "C.39.MF": {
+    "title": "Choose and Reopen a Method Development Focus",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/97-c39mf-c39mf-choose-and-reopen-a-method-development-focus.md"
+  },
+  "C.39.RP": {
+    "title": "Organize a Repertoire for Method Development",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/98-c39rp-c39rp-organize-a-repertoire-for-method-development.md"
+  },
+  "C.39.RQ": {
+    "title": "Construct Situated Method Requirements",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/99-c39rq-c39rq-construct-situated-method-requirements.md"
+  },
+  "C.39.MC": {
+    "title": "Continue Method Development from Changed Conditions",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/100-c39mc-c39mc-continue-method-development-from-changed-conditions.md"
   },
   "C.40": {
     "title": "Develop Branching Search from Reusable Material",
@@ -8404,11 +8941,11 @@
         "and C.11 for local choice"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/92-c40-c40-develop-branching-search-from-reusable-material.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/101-c40-c40-develop-branching-search-from-reusable-material.md"
   },
   "C.40.CD": {
     "title": "Develop Problems and Ways of Solving Them Together",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "What question does this failure or new construction open?",
@@ -8424,7 +8961,7 @@
         "C.11.DUA for worthwhile inquiry"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/93-c40cd-c40cd-develop-problems-and-ways-of-solving-them-together.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/102-c40cd-c40cd-develop-problems-and-ways-of-solving-them-together.md"
   },
   "C.40.CU": {
     "title": "Develop a Useful and Reproducible Use of a Construct",
@@ -8441,7 +8978,133 @@
         "B.1.5.EW/RS and C.32"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/94-c40cu-c40cu-develop-a-useful-and-reproducible-use-of-a-construct.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/103-c40cu-c40cu-develop-a-useful-and-reproducible-use-of-a-construct.md"
+  },
+  "C.40.OCN": {
+    "title": "Construct a Bounded Opportunity",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/104-c40ocn-c40ocn-construct-a-bounded-opportunity.md"
+  },
+  "C.40.OI": {
+    "title": "Bound an Opportunity Inquiry",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/105-c40oi-c40oi-bound-an-opportunity-inquiry.md"
+  },
+  "C.40.OC": {
+    "title": "Characterize a Subject for a Possible Change",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/104-c40ocn-c40ocn-construct-a-bounded-opportunity.md"
+  },
+  "C.40.NU": {
+    "title": "Search Neighboring Uses and Means",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/107-c40nu-c40nu-search-neighboring-uses-and-means.md"
+  },
+  "C.40.PC": {
+    "title": "Construct a Worthwhile Problem and Proposed Contribution",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/108-c40pc-c40pc-construct-a-worthwhile-problem-and-proposed-contributi.md"
+  },
+  "C.40.DC": {
+    "title": "Construct Directions with Support Configurations",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/109-c40dc-c40dc-construct-directions-with-support-configurations.md"
+  },
+  "C.40.JF": {
+    "title": "Qualify Dependencies and Joint Reachability",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/110-c40jf-c40jf-qualify-dependencies-and-joint-reachability.md"
+  },
+  "C.40.OP": {
+    "title": "Maintain Opportunities and Stepping Stones",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/111-c40op-c40op-maintain-opportunities-and-stepping-stones.md"
+  },
+  "C.40.RQ": {
+    "title": "Requalify Changed Opportunities",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/112-c40rq-c40rq-requalify-changed-opportunities.md"
+  },
+  "C.40.OD": {
+    "title": "Construct and Continue Open-Ended Development",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/113-c40od-c40od-construct-and-continue-open-ended-development.md"
+  },
+  "C.40.JD": {
+    "title": "Develop a Way, Its Holder and Its Provision Together",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/114-c40jd-c40jd-develop-a-way-its-holder-and-its-provision-together.md"
+  },
+  "C.40.NP": {
+    "title": "Continue from a Result to New Attainable Problems",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/115-c40np-c40np-continue-from-a-result-to-new-attainable-problems.md"
+  },
+  "C.41": {
+    "title": "Select Checklist Questions for a Work Result",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/116-c41-c41-select-checklist-questions-for-a-work-result.md"
+  },
+  "C.41.TF": {
+    "title": "Construct a Checklist Template That Preserves Its Questions",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/117-c41tf-c41tf-construct-a-checklist-template-that-preserves-its-ques.md"
+  },
+  "C.41.OF": {
+    "title": "Fit a Checklist to Its Occasion of Use",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/118-c41of-c41of-fit-a-checklist-to-its-occasion-of-use.md"
+  },
+  "C.41.UA": {
+    "title": "Use a Checklist to Answer Questions and Act on the Results",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/119-c41ua-c41ua-use-a-checklist-to-answer-questions-and-act-on-the-res.md"
+  },
+  "C.41.SR": {
+    "title": "Reconcile Checklist Results Across Shared Work",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/120-c41sr-c41sr-reconcile-checklist-results-across-shared-work.md"
+  },
+  "C.41.QC": {
+    "title": "Qualify Checklist Criteria and Checking Means",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/121-c41qc-c41qc-qualify-checklist-criteria-and-checking-means.md"
   },
   "C.36.P": {
     "title": "Clarify Cultural-Evolution Wording for a Claim or Action",
@@ -8469,18 +9132,25 @@
         "G.11"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/95-c36p-c36p-clarify-cultural-evolution-wording-for-a-claim-or-actio.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/122-c36p-c36p-clarify-cultural-evolution-wording-for-a-claim-or-actio.md"
   },
   "C.36.RP": {
     "title": "Sustain and Renew Shared Ways of Working",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Who can apply or adapt this method when the device or question changes?",
       "Which understanding must remain with its receiver?",
       "How can a discovery become usable by other agents?"
     ],
-    "file": "sections/09-part-c-kernel-extension-specifications/96-c36rp-c36rp-sustain-and-renew-shared-ways-of-working.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/123-c36rp-c36rp-sustain-and-renew-shared-ways-of-working.md"
+  },
+  "C.36.MC": {
+    "title": "Qualify and Develop a Method Culture",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/09-part-c-kernel-extension-specifications/124-c36mc-c36mc-qualify-and-develop-a-method-culture.md"
   },
   "D.1": {
     "title": "Clarify an Ethical Claim's Value Basis (Value Plurality)",
@@ -8913,7 +9583,7 @@
   },
   "E.4.PFIP": {
     "title": "Principle-Framework Publication Integration and Preservation",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -9059,6 +9729,13 @@
     "queries": [],
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/20-e8-e8-fpf-authoring-conventions-style-guide.md"
   },
+  "E.8.ML": {
+    "title": "Construct a Pattern Language for Connected Methods",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e8ml-e8ml-construct-a-pattern-language-for-connected-methods.md"
+  },
   "E.8.ECSPF": {
     "title": "Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification",
     "status": "Stable",
@@ -9080,14 +9757,14 @@
         "C.25"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/21-e8ecspf-e8ecspf-author-an-fpf-pattern-from-an-accepted-evaluation-ch.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e8ecspf-e8ecspf-author-an-fpf-pattern-from-an-accepted-evaluation-ch.md"
   },
   "E.9": {
     "title": "Design-Rationale Record (DRR) for FPF Content Decisions",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/22-e9-e9-design-rationale-record-drr-for-fpf-content-decisions.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/23-e9-e9-design-rationale-record-drr-for-fpf-content-decisions.md"
   },
   "E.9.DA": {
     "title": "Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)",
@@ -9109,7 +9786,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/23-e9da-e9da-evaluate-a-drr-for-its-declared-authoring-use-decision-.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e9da-e9da-evaluate-a-drr-for-its-declared-authoring-use-decision-.md"
   },
   "E.10": {
     "title": "Unified Lexical Rules for FPF",
@@ -9150,7 +9827,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.10.LRN": {
     "title": "Recovering What “Learning” Means in the Current Claim",
@@ -9184,11 +9861,11 @@
         "creates no generic Learning result or UTS row"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10lrn-e10lrn-recovering-what-learning-means-in-the-current-claim.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/26-e10lrn-e10lrn-recovering-what-learning-means-in-the-current-claim.md"
   },
   "E.10.INT": {
     "title": "Recovering What Interest or Curiosity Means Here",
-    "status": "Draft",
+    "status": "Stable",
     "keywords": [],
     "queries": [
       "Interesting to whom, and for what work?",
@@ -9200,7 +9877,7 @@
         "E.10 and E.10.ARCH"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/26-e10int-e10int-recovering-what-interest-or-curiosity-means-here.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/27-e10int-e10int-recovering-what-interest-or-curiosity-means-here.md"
   },
   "E.10.DEV": {
     "title": "Recovering What Development or Evolution Means in the Current Claim",
@@ -9230,7 +9907,7 @@
         "and direct holder or domain owners"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/27-e10dev-e10dev-recovering-what-development-or-evolution-means-in-the.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e10dev-e10dev-recovering-what-development-or-evolution-means-in-the.md"
   },
   "E.10.MOVE": {
     "title": "Move, Readiness and Trajectory Wording Precision Restoration",
@@ -9260,7 +9937,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e10move-e10move-move-readiness-and-trajectory-wording-precision-rest.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e10move-e10move-move-readiness-and-trajectory-wording-precision-rest.md"
   },
   "E.10.ARCH": {
     "title": "Wording-Use Ontological Precision Restoration Architecture",
@@ -9317,11 +9994,10 @@
         "A.15.2",
         "A.10",
         "E.21",
-        "E.11",
-        "I.2"
+        "E.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md"
   },
   "E.10.ROLE": {
     "title": "Recovering What “Role” Means in the Current Claim",
@@ -9352,7 +10028,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e10role-e10role-recovering-what-role-means-in-the-current-claim.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e10role-e10role-recovering-what-role-means-in-the-current-claim.md"
   },
   "E.10.P": {
     "title": "Conceptual Prefixes (policy & registry)",
@@ -9387,7 +10063,7 @@
         "E.5.2"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e10p-e10p-conceptual-prefixes-policy-registry.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/32-e10p-e10p-conceptual-prefixes-policy-registry.md"
   },
   "E.10.D1": {
     "title": "Recovering What “Context” Means in Use",
@@ -9424,7 +10100,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.10.D2": {
     "title": "EntityOfConcern, Description Episteme, and Specification-Use Discipline",
@@ -9460,7 +10136,7 @@
         "F.15"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/24-e10-e10-unified-lexical-rules-for-fpf.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.11": {
     "title": "First-Practical Entry and Pattern-Use Discoverability Discipline",
@@ -9480,7 +10156,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/34-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md"
   },
   "E.11.PUA": {
     "title": "Pattern Use in a Working Situation and First Useful Result",
@@ -9502,7 +10178,7 @@
         "and every selected direct pattern"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/35-e11pua-e11pua-pattern-use-in-a-working-situation-and-first-useful-r.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e11pua-e11pua-pattern-use-in-a-working-situation-and-first-useful-r.md"
   },
   "E.11.PUR": {
     "title": "Pattern-Use Applicability, Recommendation, and Coordination",
@@ -9524,7 +10200,7 @@
         "and direct decision patterns"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/36-e11pur-e11pur-pattern-use-applicability-recommendation-and-coordina.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e11pur-e11pur-pattern-use-applicability-recommendation-and-coordina.md"
   },
   "E.11.PFP": {
     "title": "Framework Publication Form Profile for Markdown",
@@ -9542,11 +10218,11 @@
         "E.4.DPF and bounded LPF/DPF publication-form applications"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/37-e11pfp-e11pfp-framework-publication-form-profile-for-markdown.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/38-e11pfp-e11pfp-framework-publication-form-profile-for-markdown.md"
   },
   "E.11.DSG": {
-    "title": "DPF Suite Reference",
-    "status": "Candidate",
+    "title": "Architectural Reference",
+    "status": "Stable",
     "keywords": [],
     "queries": [],
     "dependencies": {
@@ -9561,7 +10237,7 @@
         "and E.11.PUR"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/39-e11dsg-e11dsg-dpf-suite-reference.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e11dsg-e11dsg-architectural-reference.md"
   },
   "E.12": {
     "title": "Didactic Primacy & Cognitive Ergonomics",
@@ -9584,7 +10260,7 @@
         "E.2 (P-2)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/40-e12-e12-didactic-primacy-cognitive-ergonomics.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e12-e12-didactic-primacy-cognitive-ergonomics.md"
   },
   "E.13": {
     "title": "Pragmatic Utility and Proxy-to-Value Alignment",
@@ -9606,7 +10282,7 @@
         "E.2 (P-7)"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/41-e13-e13-pragmatic-utility-and-proxy-to-value-alignment.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e13-e13-pragmatic-utility-and-proxy-to-value-alignment.md"
   },
   "E.14": {
     "title": "Human-Centric Working-Model: Readable Claims and Recoverable Assurance",
@@ -9625,7 +10301,7 @@
         "E.10"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/42-e14-e14-human-centric-working-model-readable-claims-and-recovera.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/43-e14-e14-human-centric-working-model-readable-claims-and-recovera.md"
   },
   "E.15": {
     "title": "Pattern Change, Edition Continuity, and Impact Analysis",
@@ -9657,7 +10333,7 @@
         "and landing preservation"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/43-e15-e15-pattern-change-edition-continuity-and-impact-analysis.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/44-e15-e15-pattern-change-edition-continuity-and-impact-analysis.md"
   },
   "E.16": {
     "title": "RoC‑Autonomy Budget & Enforcement",
@@ -9687,7 +10363,7 @@
         "G.9"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/44-e16-e16-rocautonomy-budget-enforcement.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e16-e16-rocautonomy-budget-enforcement.md"
   },
   "E.17.0": {
     "title": "Viewpoint and View Recognition for Multi-View Describing",
@@ -9717,7 +10393,7 @@
         "and domain patterns that compare views"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md"
   },
   "E.17.1": {
     "title": "Viewpoint Bundle Library — Reusable Viewpoint Reference Bundles",
@@ -9747,7 +10423,7 @@
         "and materialized domain-local viewpoint families"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e171-e171-viewpoint-bundle-library-reusable-viewpoint-reference-b.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e171-e171-viewpoint-bundle-library-reusable-viewpoint-reference-b.md"
   },
   "E.17.2": {
     "title": "TEVB — Project-local Typical Engineering Viewpoint Bundle Template for Holons",
@@ -9770,7 +10446,7 @@
         "E.24.PUB"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/47-e172-e172-tevb-project-local-typical-engineering-viewpoint-bundle.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/48-e172-e172-tevb-project-local-typical-engineering-viewpoint-bundle.md"
   },
   "E.17": {
     "title": "Multi‑View Publication Kit",
@@ -9803,7 +10479,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/45-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/46-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md"
   },
   "E.17.EFP": {
     "title": "ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces",
@@ -9838,28 +10514,28 @@
         "A.21"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/49-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/50-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md"
   },
   "E.17.ID.CR": {
     "title": "Compare Sources Within a Shared Review Frame (ComparativeReviewUnit)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/50-e17id-e17idcr-compare-sources-within-a-shared-review-frame-compara.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e17id-e17idcr-compare-sources-within-a-shared-review-frame-compara.md"
   },
   "E.17.AUD": {
     "title": "PublicationUnit Stability Discipline",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.LHR": {
     "title": "PublicationUnit Stability Discipline and Local Head Restoration",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.17.AUD.OOTD": {
     "title": "PublicationUnit Primary-Subject Discipline",
@@ -9889,7 +10565,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
   },
   "E.18": {
     "title": "Transformation Flow Structure",
@@ -9927,7 +10603,7 @@
         "C.30.TFS-REL"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/54-e18-e18-transformation-flow-structure.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/55-e18-e18-transformation-flow-structure.md"
   },
   "E.18.1": {
     "title": "P2W Problem-to-Work Carry-Through",
@@ -9952,7 +10628,7 @@
         "and every continuing direct pattern"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/55-e181-e181-p2w-problem-to-work-carry-through.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/56-e181-e181-p2w-problem-to-work-carry-through.md"
   },
   "E.18.2": {
     "title": "Transformation Flow Mathematical Description",
@@ -9983,7 +10659,7 @@
         "E.18.3"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/56-e182-e182-transformation-flow-mathematical-description.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/57-e182-e182-transformation-flow-mathematical-description.md"
   },
   "E.18.3": {
     "title": "Constraint-Governed Transformation-Flow Unfolding Structure",
@@ -10009,7 +10685,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/57-e183-e183-constraint-governed-transformation-flow-unfolding-struc.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/58-e183-e183-constraint-governed-transformation-flow-unfolding-struc.md"
   },
   "E.18.NET": {
     "title": "Network of Transformation-Flow Structures",
@@ -10046,7 +10722,7 @@
         "C.29"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/58-e18net-e18net-network-of-transformation-flow-structures.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/59-e18net-e18net-network-of-transformation-flow-structures.md"
   },
   "E.19": {
     "title": "Pattern Quality Gates: Review and Refresh Profiles",
@@ -10071,7 +10747,7 @@
         "A.15.1"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/59-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/60-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md"
   },
   "E.20": {
     "title": "Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms (MIP)",
@@ -10121,7 +10797,7 @@
         "or citeable tokens"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/60-e20-e20-mechanism-introduction-protocol-introduce-or-revise-fpf-.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/61-e20-e20-mechanism-introduction-protocol-introduce-or-revise-fpf-.md"
   },
   "E.21": {
     "title": "FPF Pattern-Quality Evaluation CharacteristicSpace",
@@ -10147,11 +10823,10 @@
         "F.19",
         "A.6.P",
         "C.2.P",
-        "E.11",
-        "I.2"
+        "E.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/61-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/62-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md"
   },
   "E.22": {
     "title": "Improvement-Oriented Quality Evaluation Question Framing",
@@ -10176,7 +10851,7 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/62-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/63-e22-e22-improvement-oriented-quality-evaluation-question-framing.md"
   },
   "E.23": {
     "title": "Quality Improvement Loop Method",
@@ -10199,13 +10874,16 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/63-e23-e23-quality-improvement-loop-method.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/64-e23-e23-quality-improvement-loop-method.md"
   },
   "E.23.CDI": {
     "title": "Developing Capability for a Named Work Family",
-    "status": "Candidate",
+    "status": "Stable",
     "keywords": [],
-    "queries": [],
+    "queries": [
+      "How will this holder acquire or obtain the missing Method contribution?",
+      "What should change when practice improves but the work still fails?"
+    ],
     "dependencies": {
       "builds_on": [
         "E.23",
@@ -10220,7 +10898,7 @@
         "C.36"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/64-e23cdi-e23cdi-developing-capability-for-a-named-work-family.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/65-e23cdi-e23cdi-developing-capability-for-a-named-work-family.md"
   },
   "E.23.CAE": {
     "title": "Capability Access and Expression Differential Probe",
@@ -10246,7 +10924,7 @@
         "and holder-specific practices"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/65-e23cae-e23cae-capability-access-and-expression-differential-probe.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/66-e23cae-e23cae-capability-access-and-expression-differential-probe.md"
   },
   "E.24": {
     "title": "U.Ontic and Ontic Introduction Discipline",
@@ -10272,7 +10950,7 @@
         "C.29"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/66-e24-e24-uontic-and-ontic-introduction-discipline.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/67-e24-e24-uontic-and-ontic-introduction-discipline.md"
   },
   "E.24.CD": {
     "title": "Ontic Candidate Detection and First-Use Disposition",
@@ -10320,7 +10998,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/67-e24cd-e24cd-ontic-candidate-detection-and-first-use-disposition.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/68-e24cd-e24cd-ontic-candidate-detection-and-first-use-disposition.md"
   },
   "E.24.PUB": {
     "title": "Episteme Publication: Availability, Form and Carrier",
@@ -10343,7 +11021,7 @@
         "E.9.DA"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/68-e24pub-e24pub-episteme-publication-availability-form-and-carrier.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/69-e24pub-e24pub-episteme-publication-availability-form-and-carrier.md"
   },
   "E.24.UK": {
     "title": "U-kind Admission and Ontic Settlement",
@@ -10364,7 +11042,7 @@
         "E.10"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/69-e24uk-e24uk-u-kind-admission-and-ontic-settlement.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/70-e24uk-e24uk-u-kind-admission-and-ontic-settlement.md"
   },
   "F.0.1": {
     "title": "Source-Local Meaning Recovery",
@@ -10418,25 +11096,40 @@
     },
     "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/02-f02-f02-semantic-synthesis-across-source-ontologies.md"
   },
+  "F.0.2.MA": {
+    "title": "Synthesize and Allocate Method Contributions",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/03-f02ma-f02ma-synthesize-and-allocate-method-contributions.md"
+  },
+  "F.0.2.RC": {
+    "title": "Test Constructive Coverage and Refresh Dependent Explanations",
+    "status": "Stable",
+    "keywords": [],
+    "queries": [],
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/04-f02rc-f02rc-test-constructive-coverage-and-refresh-dependent-expla.md"
+  },
   "F.1": {
-    "title": "Question-Relative Source Selection",
+    "title": "Find and Select Sources for a Current Question",
     "status": "Stable",
     "keywords": [
-      "receiving question",
-      "intended use",
+      "unfamiliar terminology",
+      "inspectable candidate material",
+      "search and access limits",
       "exact source and edition",
-      "answer-changing source role",
-      "finite source cut",
+      "answer-changing role",
+      "source cut",
       "`SourceCutNote`",
-      "reopen condition",
       "domain survey",
       "field mapping",
       "landscape analysis"
     ],
     "queries": [
-      "Which sources can change this answer or its limits?",
-      "What role does each selected source play?",
-      "When is one already identified source enough?",
+      "How do I find material when I do not know its words or source?",
+      "What could this search have missed?",
+      "Which sources can change this answer?",
+      "When is one known source enough?",
       "How to map out all the disciplines relevant to my project?",
       "How do I avoid tunnel vision when different teams use different terminology?",
       "What fields should I survey before unifying concepts across teams?",
@@ -10455,10 +11148,11 @@
         "F.17",
         "F.9",
         "A.10",
-        "B.3"
+        "B.3",
+        "E.11.PUR"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/03-f1-f1-question-relative-source-selection.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/05-f1-f1-find-and-select-sources-for-a-current-question.md"
   },
   "F.2": {
     "title": "Source-Local Term Harvesting & Normalisation",
@@ -10495,7 +11189,7 @@
         "F.3"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/04-f2-f2-source-local-term-harvesting-normalisation.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/06-f2-f2-source-local-term-harvesting-normalisation.md"
   },
   "F.3": {
     "title": "Source-Local Sense Clustering",
@@ -10524,7 +11218,7 @@
         "F.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/05-f3-f3-source-local-sense-clustering.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/07-f3-f3-source-local-sense-clustering.md"
   },
   "F.4": {
     "title": "SystemRoleKindDescription — Describing an Exact System-Role Kind",
@@ -10557,7 +11251,7 @@
         "F.15"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/06-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/08-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md"
   },
   "F.5": {
     "title": "Name U-kinds, Local System-Role Kinds and SystemRoleKindDescriptions",
@@ -10591,7 +11285,7 @@
         "F.17"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/07-f5-f5-name-u-kinds-local-system-role-kinds-and-systemrolekindde.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/09-f5-f5-name-u-kinds-local-system-role-kinds-and-systemrolekindde.md"
   },
   "F.6": {
     "title": "SystemRoleAssignment and Performed-Work Attribution Check",
@@ -10631,7 +11325,7 @@
         "F.4"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/08-f6-f6-systemroleassignment-and-performed-work-attribution-check.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/10-f6-f6-systemroleassignment-and-performed-work-attribution-check.md"
   },
   "F.7": {
     "title": "Display Source-Local Comparisons in a Concept-Set Table",
@@ -10661,7 +11355,7 @@
         "A.6.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/09-f7-f7-display-source-local-comparisons-in-a-concept-set-table.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/11-f7-f7-display-source-local-comparisons-in-a-concept-set-table.md"
   },
   "F.8": {
     "title": "Mint-or-Reuse Decision for a Name",
@@ -10704,7 +11398,7 @@
         "F.5 after F.8 selects a name family"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/10-f8-f8-mint-or-reuse-decision-for-a-name.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/12-f8-f8-mint-or-reuse-decision-for-a-name.md"
   },
   "F.9": {
     "title": "Relate Local Meanings across Contexts (Alignment and Bridge)",
@@ -10752,7 +11446,7 @@
         "C.29"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/11-f9-f9-relate-local-meanings-across-contexts-alignment-and-bridg.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/13-f9-f9-relate-local-meanings-across-contexts-alignment-and-bridg.md"
   },
   "F.9.1": {
     "title": "Bridge Stance Note — Clarify a Bounded Use",
@@ -10788,7 +11482,7 @@
         "F.18"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/12-f91-f91-bridge-stance-note-clarify-a-bounded-use.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/14-f91-f91-bridge-stance-note-clarify-a-bounded-use.md"
   },
   "F.10": {
     "title": "Apply and Interpret Evidence, Standard and Requirement Statuses",
@@ -10816,7 +11510,7 @@
         "B.3"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/13-f10-f10-apply-and-interpret-evidence-standard-and-requirement-st.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/15-f10-f10-apply-and-interpret-evidence-standard-and-requirement-st.md"
   },
   "F.11": {
     "title": "Distinguish Method, MethodDescription, Work and Outputs",
@@ -10848,7 +11542,7 @@
         "F.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/14-f11-f11-distinguish-method-methoddescription-work-and-outputs.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/16-f11-f11-distinguish-method-methoddescription-work-and-outputs.md"
   },
   "F.12": {
     "title": "Evaluate Promise Fulfilment from Work Evidence (Service Acceptance)",
@@ -10889,7 +11583,7 @@
         "F.9"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/15-f12-f12-evaluate-promise-fulfilment-from-work-evidence-service-a.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/17-f12-f12-evaluate-promise-fulfilment-from-work-evidence-service-a.md"
   },
   "F.13": {
     "title": "Lexical Continuity & Deprecation",
@@ -10913,7 +11607,7 @@
         "F.5"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/16-f13-f13-lexical-continuity-deprecation.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/18-f13-f13-lexical-continuity-deprecation.md"
   },
   "F.14": {
     "title": "Anti-Explosion Control for System-Role and Status Name Families",
@@ -10951,7 +11645,7 @@
         "F.18"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/17-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/19-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md"
   },
   "F.15": {
     "title": "Static and Regression Conformance Harness for Naming and Semantic Unification",
@@ -10987,7 +11681,7 @@
         "C.2.1"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/18-f15-f15-static-and-regression-conformance-harness-for-naming-and.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/20-f15-f15-static-and-regression-conformance-harness-for-naming-and.md"
   },
   "F.16": {
     "title": "Worked-Example Template (Cross-Domain)",
@@ -11020,7 +11714,7 @@
         "F.17 and direct subject patterns"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/19-f16-f16-worked-example-template-cross-domain.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/21-f16-f16-worked-example-template-cross-domain.md"
   },
   "F.17": {
     "title": "Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet)",
@@ -11048,7 +11742,7 @@
         "and E.24.PUB for separate publication and availability"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/20-f17-f17-make-a-settled-naming-decision-recoverable-for-reuse-uni.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/22-f17-f17-make-a-settled-naming-decision-recoverable-for-reuse-uni.md"
   },
   "F.18": {
     "title": "Local-First Unification Naming Protocol",
@@ -11086,7 +11780,7 @@
         "G.10"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/21-f18-f18-local-first-unification-naming-protocol.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/23-f18-f18-local-first-unification-naming-protocol.md"
   },
   "F.19": {
     "title": "Ontology-First Plain Technical Rewriting",
@@ -11112,11 +11806,10 @@
         "`C.2.P`",
         "`C.16.P`",
         "`C.30.P`",
-        "`E.11`",
-        "`I.2`"
+        "`E.11`"
       ]
     },
-    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/22-f19-f19-ontology-first-plain-technical-rewriting.md"
+    "file": "sections/12-part-f-the-unification-suite-u-suite-concept-sets-sensecells/24-f19-f19-ontology-first-plain-technical-rewriting.md"
   },
   "G.Core": {
     "title": "Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)",
@@ -11752,29 +12445,5 @@
       ]
     },
     "file": "sections/13-part-g-discipline-sota-patterns-kit/15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md"
-  },
-  "I.2": {
-    "title": "Choose a First Pattern: Expanded Entry Disambiguation Cases",
-    "status": "Stable",
-    "keywords": [
-      "first entry",
-      "disambiguation",
-      "compact index",
-      "expanded comparison"
-    ],
-    "queries": [
-      "Which first pattern fits when the compact index is not enough?",
-      "When may I stop at the compact index?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "E.11"
-      ],
-      "coordinates_with": [
-        "E.10",
-        "F.17"
-      ]
-    },
-    "file": "sections/15-part-i-annexes-extended-tutorials/01-i2-i2-choose-a-first-pattern-expanded-entry-disambiguation-case.md"
   }
 }

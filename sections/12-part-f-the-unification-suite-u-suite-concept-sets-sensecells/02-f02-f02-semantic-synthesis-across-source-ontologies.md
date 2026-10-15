@@ -222,6 +222,8 @@ Jaakkola's question and source-role discipline, Okoli's extraction and iterative
 
 ### F.0.2:12 - Relations
 
+F.0.2.MA uses a synthesis, contrast or unresolved-inquiry result to allocate Method contributions without erasing useful differences. F.0.2.RC tests whether the receiving explanation preserves the source's constructive contribution and follows changed premises to affected uses. These operations can stop on an already adequate synthesis and do not impose corpus-wide extraction on a bounded question.
+
 - **Builds on:** `F.0.1` for source-local meaning and `F.1` for a relevance-based source cut.
 - **Uses when current:** `F.9` for an asserted relation between exact cross-context SenseCells; `C.2.1` for every recorded result claim; `A.2.4` and the applicable direct relation pattern for a later evidence or decision use.
 - **Coordinates with:** `F.2`-`F.8`, `F.14`, `F.17`, and `F.18` when the next authoring question requires harvesting, clustering, Concept-Set, naming, or UTS work.
@@ -230,6 +232,6 @@ Jaakkola's question and source-role discipline, Okoli's extraction and iterative
 - **Coordinates with:** C.39 for general Method construction, connected explanation and change, and E.4.CM for their application to framework authoring. Their methodological results and this semantic comparison remain distinct and can revise each other.
 - **Boundary:** Domain claims produced through this method remain in the subject FPF pattern or named DPF selected by the later content decision.
 
-[fpf-c28-4-4-ref]: C.28-CausalUse-CAL-Causal-Use-Questions-Causality-Ladder-Rungs-Identification-and-Realizability.md#c2844---identification-result
+[fpf-c28-4-4-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c2844---identification-result
 
 ### F.0.2:End

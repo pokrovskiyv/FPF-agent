@@ -1,6 +1,6 @@
 # Cross-References into 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
-Patterns in other Parts that reference patterns in this directory (189 refs).
+Patterns in other Parts that reference patterns in this directory (188 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -224,9 +224,3 @@ Patterns in other Parts that reference patterns in this directory (189 refs).
 | G.8 | coordinates_with | F.8 |
 | G.8 | coordinates_with | F.9 |
 | G.9 | builds_on | F.15 |
-
-## From 15-part-i-annexes-extended-tutorials
-
-| Source | Relation | Target |
-|--------|----------|--------|
-| I.2 | coordinates_with | F.17 |

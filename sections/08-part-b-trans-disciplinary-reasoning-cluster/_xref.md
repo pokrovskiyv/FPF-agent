@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (174 refs).
+Patterns in other Parts that reference patterns in this directory (175 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -39,6 +39,7 @@ Patterns in other Parts that reference patterns in this directory (174 refs).
 | A.6.3.RT.OE | coordinates_with | B.5.RC |
 | A.6.3.RT.OE | coordinates_with | B.5.RA |
 | A.6.3.RT.OE | coordinates_with | B.5.RR |
+| A.6.3.RT.OE | coordinates_with | B.5.WN |
 | A.6.4 | coordinates_with | B.3 |
 | A.6.9 | coordinates_with | B.3 |
 | A.6.A | builds_on | B.4.1 |

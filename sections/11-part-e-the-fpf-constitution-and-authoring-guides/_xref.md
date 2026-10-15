@@ -208,6 +208,7 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.11.DBR | coordinates_with | E.18.1 |
 | C.11.DUA | used_by | E.19 |
 | C.11.DUA | used_by | E.11.PUA |
 | C.16.P | builds_on | E.10 |
@@ -359,6 +360,7 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 | F.0.2 | coordinates_with | E.10.ARCH |
 | F.0.2 | coordinates_with | E.4.DPF |
 | F.0.2 | coordinates_with | E.4.CM |
+| F.1 | coordinates_with | E.11.PUR |
 | F.12 | coordinates_with | E.13 |
 | F.17 | coordinates_with | E.10.MOVE |
 | F.17 | coordinates_with | E.11 |
@@ -400,10 +402,3 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 | G.8 | coordinates_with | E.10 |
 | G.8 | coordinates_with | E.5.2 |
 | G.Core | builds_on | E.8 |
-
-## From 15-part-i-annexes-extended-tutorials
-
-| Source | Relation | Target |
-|--------|----------|--------|
-| I.2 | builds_on | E.11 |
-| I.2 | coordinates_with | E.10 |

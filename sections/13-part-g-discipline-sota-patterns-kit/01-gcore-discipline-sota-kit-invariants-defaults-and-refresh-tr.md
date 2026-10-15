@@ -1,5 +1,7 @@
 ## G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)
 
+> **Status:** Stable
+
 
 **Tag.** Architectural pattern (Part‑G core invariants hub; refactoring/deduplication)
 **Stage.** *design‑time* (authoring discipline + ID‑stable citation discipline; no run‑time mechanism)
@@ -211,7 +213,7 @@ Use these canonical kinds to classify refresh causes and to interpret the deprec
 * `RSCRTriggerKindId.BaselineBindingEdit`
 * `RSCRTriggerKindId.DefaultGoverningDefinitionChange`
 
-##### G.Core:4.3.4.1 - Canonical kind definitions (normative, minimal)
+###### G.Core:4.3.4.1 - Canonical kind definitions (normative, minimal)
 
 Each `RSCRTriggerKindId` SHALL have a short, stable definition in `G.Core` (single-writer) to prevent semantic drift.
 
@@ -231,7 +233,7 @@ Each `RSCRTriggerKindId` SHALL have a short, stable definition in `G.Core` (sing
 | `RSCRTriggerKindId.BaselineBindingEdit` | Selected baseline references or applicable typed fillings changed, opening the affected P2W-use question. | Exact WorkPlan and baseline locator; declared-position row designators only when typed filling applies; changed pins and relevant variance |
 | `RSCRTriggerKindId.DefaultGoverningDefinitionChange` | The governing definition of a `DefaultId` (as recorded in `G.Core.DefaultGoverningDefinitionIndex`) changed, or a default row was added/deprecated. | affected `DefaultId.*`, old governing definition ref, new governing definition ref |
 
-##### G.Core:4.3.4.2 - Canonical trigger sets (compression primitive)
+###### G.Core:4.3.4.2 - Canonical trigger sets (compression primitive)
 
 `GCoreTriggerSetId` identifies a named set of `RSCRTriggerKindId` values. A `G.x` MAY cite trigger sets in `RSCRTriggerSetIds` instead of repeating long `RSCRTriggerKindIds` lists.
 
