@@ -5,18 +5,18 @@
 > A pattern language for designing expressions that people and computational agents can interpret, manipulate, translate and use together.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 20 September 2026
+- **Version:** 24 October 2026
 - **Status:** Eternal alpha: a repertoire open to correction and extension.
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Cited sources retain their own terms.
-- **Publication:** [FPF ecosystem repository](https://github.com/ailev/FPF)
+- **Publication:** [FPF Library repository](https://github.com/ailev/FPF)
 
 Begin with something a reader needs to do: distinguish two cases, trace a dependency, change a rule, translate a diagram or follow a score. Use the Table of Contents to find the relevant method, then open its Problem frame, Solution, worked cases and checklist. The Readme follows worked connections between methods; the Architectural Reference explains how the methods connect and why they are organized this way.
 
 The reference code **NOT** names this DPF. Its numbers are stable pattern addresses; § shows position within a Part. Expressions can use written symbols, spatial arrangement, sound, gesture or a combination. Each method states what its reader must already know or be able to obtain.
 
-This publication belongs to the [Foundational Thinking DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/README.md). Its [Reference (Foundational)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/FOUNDATIONAL-THINKING-DPF-SUITE-REFERENCE.md) explains the mathematical, physical, computational and methodological connections. References such as A.6.3.RT.OE and C.2.8 name patterns in [FPF Core](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). Open a supplier when its contribution is needed, and revisit a dependent conclusion when that contribution changes.
+This publication belongs to the [Foundational Thinking DPF Suite](https://github.com/ailev/FPF/tree/main/DPFs/Foundational%20Thinking%20DPF%20Suite). Its [Reference (Foundational)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/FOUNDATIONAL-THINKING-DPF-SUITE-REFERENCE.md) explains the mathematical, physical, computational and methodological connections. References such as A.6.3.RT.OE and C.2.8 name patterns in [FPF Core](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). Open a supplier when its contribution is needed, and revisit a dependent conclusion when that contribution changes.
 
-To cite this edition: Anatoly Levenchuk, *Notational Engineering DPF*, [FPF ecosystem repository](https://github.com/ailev/FPF). Include the version date shown above.
+To cite this edition: Anatoly Levenchuk, *Notational Engineering DPF*, [FPF Library repository](https://github.com/ailev/FPF). Include the version date shown above.
 
 # Table of Contents
 
@@ -40,7 +40,7 @@ To cite this edition: Anatoly Levenchuk, *Notational Engineering DPF*, [FPF ecos
 | NOT.Reference:5 | [Conditions of use, checks and recurring failures](#notreference5---conditions-of-use-checks-and-recurring-failures) |  |
 | NOT.Reference:6 | [Consequences and Architectural Rationale](#notreference6---consequences-and-architectural-rationale) |  |
 | NOT.Reference:7 | [Shared sources, alternatives and refresh](#notreference7---shared-sources-alternatives-and-refresh) |  |
-| NOT.Reference:8 | [Relations to the rest of the Suite](#notreference8---relations-to-the-rest-of-the-suite) |  |
+| NOT.Reference:8 | [Relations to other frameworks](#notreference8---relations-to-other-frameworks) |  |
 
 ## Part A - Design what can be expressed and done
 
@@ -70,7 +70,7 @@ You can ask an assisting agent: “Explain this and give me your comments in the
 
 ## Practical entries
 
-These selected connections show how results pass between methods. They are examples, not a catalogue or a prescribed sequence. Enter where the difficulty occurs and stop when the needed result is available. The Table of Contents and each pattern's `Use this when` provide direct access for other questions. The [Architectural Reference](#notational-engineering-dpf-architectural-reference) explains the repertoire and develops the first connection in greater detail.
+These selected connections show how results pass between methods. Enter where the difficulty occurs and stop when the needed result is available. The Table of Contents and each pattern's `Use this when` provide direct access for other questions. The [Architectural Reference](#notational-engineering-dpf-architectural-reference) explains the repertoire and develops the first connection in greater detail.
 
 ### NT-CHANGE-TOGETHER - Carry a changed request through several representations
 
@@ -116,7 +116,7 @@ The result can be the new expressions, a sufficient table, an exposed conflict o
 
 5. **Pass the right result to a performer.** A program receiving the ordered account still needs CMP.12's input representation and effective interpretation. Physical enactment additionally needs an applicable motion method, physical meaning for a grid unit, timing choices and control. A prepared person may already possess the required movement method. FPF B.5.MPC connects the mathematical, physical and computational contributions when the work needs all three; interpreted observation is needed to establish what movement occurred. The decoded endpoint is already a useful answer to the reading question.
 
-This connection applies whenever changing medium or reader can remove references needed for later operations. A rhythm, laboratory signal or interaction trace needs its own relevant time references and subject rules. The movement case shows how the methods work together; it does not supply those other interpretations.
+This connection applies whenever changing medium or reader can remove references needed for later operations. A rhythm, laboratory signal or interaction trace needs its own relevant time references and subject rules.
 
 ## Continue with the contribution the work needs
 
@@ -169,7 +169,7 @@ There is no compulsory eight-stage process. Enter where the difficulty occurs. A
 
 Defining an operator's binding rule can be part of constructing an expression grammar while a notation for working calculations is being designed. If users must transform an expression without changing its meaning, visually convenient grouping is insufficient: the interpretation of the transformed expression must remain recoverable. Symbol recognition and subject knowledge can both be present while the intermediate ability to follow binding and transformation rules is absent. The notation design must provide those rules and support their use; a successful reading of one expression does not establish the whole notation's suitability.
 
-FPF B.1.5.EW helps recover these constituent–whole connections; B.1.5.RS examines a proposed replacement. Use the parts of the vertical that can change the present result. A Method described here can require additional capability, available support and compatible resources at other grains.
+FPF B.1.5.EW helps recover these constituent–whole connections; B.1.5.RS examines a proposed replacement. Examine the constituent–whole connections that can change the present result. Carrying out a Method described here can require additional capability, available support and compatible resources for its constituent operations or for the larger work it contributes to.
 
 ## NOT.Reference:4 - Worked connection - A formula, graph and table must change together
 
@@ -201,7 +201,7 @@ An independent measurement record is different again. If its row says that an ob
 
 Suppose a later description replaces each occurrence of q with a fresh sensor read. This changes the operation assumed in :4.1. If consecutive reads return 4 and 5 while b=1, `read() + read() + b` returns 10; `2*read() + b` using the first reading returns 9. The former rewrite is still correct for a single supplied q, but it cannot be transferred to this new interpretation merely by replacing the printed name.
 
-NOT.3 restores what an occurrence now does; NOT.4 reopens the transformation's condition. If the intended operation is to take one sample and reuse it, explicitly bind that sample once. If two observations are required, retain them. CMP.12 provides the algorithmic interpretation when implementing those instructions. The physical measurement method supplies what each read obtains and under which conditions. These are connected contributions, and each has a result that another performer can consume.
+NOT.3 restores what an occurrence now does; NOT.4 reopens the transformation's condition. If the intended operation is to take one sample and reuse it, explicitly bind that sample once. If two observations are required, retain them. CMP.12 provides the algorithmic interpretation when implementing those instructions. The physical measurement method supplies what each read obtains and under which conditions.
 
 Finally, NOT.7 can compare the group’s editing arrangements. A single named b avoids separately editing every derived row, while a table remains useful for direct lookup. Keeping both requires the correspondence already constructed in NOT.6. The comparison is about the actual operations, not a declaration that formulas or tables are universally better.
 
@@ -246,13 +246,13 @@ The bodies preserve their adopted contributions and limits. Several source lines
 
 Current rewriting and binding research can improve how expressions are transformed; bidirectional methods can change which updates are recoverable; empirical studies can revise the assumed burden for particular readers and media. Reopen the affected method when such a contribution changes its construction or supported use. A newer source or more familiar convention alone does not establish a better choice.
 
-## NOT.Reference:8 - Relations to the rest of the Suite
+## NOT.Reference:8 - Relations to other frameworks
 
 [Mathematical Thinking (MATH)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/MATHEMATICAL-PRACTICE-DPF.md) supplies objects, compositions, arguments and interpretations used when the represented construction is mathematical. [Computational Thinking (CMP)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/COMPUTATIONAL-THINKING-DPF.md) supplies effective procedures, including interpreters and translations. NOT designs the expression conventions those methods can consume; it does not substitute a mathematical meaning for an algorithm that obtains its consequence.
 
 [Mathematical Modeling (MMP)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/MATHEMATICAL-MODELING-PRACTICE-DPF.md), [Physical Thinking (PHY)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/PHYSICAL-THINKING-DPF.md) and FPF C.29 connect a subject with mathematical constructions and interpreted observations. B.5.MPC coordinates mathematical, physical and computational contributions when they are jointly needed. NOT.5–.6 help express those correspondences while keeping the related objects and claims distinguishable.
 
-Within [Engineering DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Engineering%20DPF%20Suite/README.md), Method Engineering's C.37.MP relates the claims needed when different uses of a working method require complementary descriptions; EXD develops explanations; HCD develops and assesses capabilities. They remain external contributions, used when the work needs that result. A notation repair can help any of them, while an operation missing from the method or from the reader's preparation needs the corresponding method or learning contribution.
+In FPF Core, C.37.MP relates the claims needed when different uses of a working method require complementary descriptions. Explanation Design (EXD) develops explanations; Human Capability Development (HCD), in the Human Capability Engineering Suite, develops and assesses human capabilities. They remain external contributions, used when the work needs that result. A notation repair can help any of them, while an operation missing from the method or from the reader's preparation needs the corresponding method or learning contribution.
 
 The [Suite Reference (Foundational)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/FOUNDATIONAL-THINKING-DPF-SUITE-REFERENCE.md) locates the publications and their shared architecture. Use the cited body's operative rules when its question arises. If an available edition changes those rules or no longer supplies the result your use needs, revisit that dependency rather than assuming that the shared PatternID guarantees compatibility.
 
@@ -667,10 +667,10 @@ Revisit the retained choice when a needed expression cannot recover its referenc
 | A.6.3.RT and A.6.3.RT.OE | Supply representation-scheme distinctions and expression construction when rules already exist. |
 | NOT.3 | Develops the interpretation and reader operations that use the constructed expressions. |
 | NOT.4 | Develops transformations with the necessary preservation, binding and side conditions. |
-| MATH.17/.18 | Supplies operations on operations and interpretations for formal accounts of composition and binding. |
+| MATH.17 and MATH.18 | Supply operations on operations and interpretations for formal accounts of composition and binding. |
 | CMP.12 | Constructs effective evaluation and translation of an admitted expression structure. |
-| NOT.5/.6 | Develops translations or complementary expressions while retaining needed references. |
-| NOT.7/.8 | Develops redesign for difficult reader operations and notation carried through time or embodied action. |
+| NOT.5 and NOT.6 | Develop translations or complementary expressions while retaining needed references. |
+| NOT.7 and NOT.8 | Develop redesign for difficult reader operations and notation carried through time or embodied action. |
 | C.2.8 | Characterizes what the prepared reader can recover under the actual access and effort conditions. |
 
 ### NOT.2:End
@@ -725,7 +725,7 @@ Specify the reader's available operations. It may be reasonable to presuppose ar
 
 For the parts used by the question, specify what they denote or instruct and how their combination is interpreted. Include grouping and reference rules from NOT.2. An arrow may supply an input to an operation, express a precedence condition or prescribe a movement; choose its role in this scheme before deriving a consequence.
 
-Give the interpretation of a compound expression in terms that permit its use. For a compositional mathematical scheme, interpret the parts and then apply the corresponding operation to their interpretations. MATH.5/.18 develops that construction and its preservation questions. When context contributes to interpretation, include the relevant context among the inputs rather than assigning a context-free meaning that the notation does not support.
+Give the interpretation of a compound expression in terms that permit its use. For a compositional mathematical scheme, interpret the parts and then apply the corresponding operation to their interpretations. MATH.5 and MATH.18 develop that construction and its preservation questions. When context contributes to interpretation, include the relevant context among the inputs rather than assigning a context-free meaning that the notation does not support.
 
 If the expression admits alternatives or has an unresolved part, specify what can still be concluded. A reader may be able to obtain a common consequence across the alternatives. Another question may have to wait for the missing information. Preserve that distinction instead of silently completing the expression.
 
@@ -735,7 +735,7 @@ Show how the intended reader moves from the expression and available inputs to t
 
 For a formula, this can mean resolving a parameter, evaluating selected subexpressions and combining their values. For a diagram, it can mean identifying a boundary, following the admitted connections and applying the corresponding inference. For a performed notation, it can mean recognizing a cue and executing a learned action. Choose operations that the reader can actually perform under the stated conditions.
 
-Keep the reasoning behind a manipulation available at the level required by the work. A rule may be applied fluently after training, while changing the rule requires understanding what it preserves. NOT.4 develops expression transformations; B.5.RC/RA helps recover an unfamiliar construction or argument when that is the missing contribution.
+Keep the reasoning behind a manipulation available at the level required by the work. A rule may be applied fluently after training, while changing the rule requires understanding what it preserves. NOT.4 develops expression transformations; B.5.RC and B.5.RA help recover an unfamiliar construction or argument when that is the missing contribution.
 
 If a mathematical interpretation leaves the required obtaining procedure unavailable, name that remaining problem. CMP.12 constructs effective evaluation when the expression's operations admit it; other CMP methods can help construct the needed algorithm. Denotation alone does not establish computability or affordability. A human reading or trained perceptual operation also needs its actual capability and access conditions.
 
@@ -853,11 +853,11 @@ Several useful readings may expose the same structure differently. Choosing amon
 | --- | --- |
 | NOT.1/.2 | Supply the required operations and the formation, reference and connection rules. |
 | A.6.3.RT.OE | Constructs an operative expression when the scheme and reading operations are already available. |
-| MATH.5/.18 | Constructs and compares mathematical interpretations, including consequences preserved through composition. |
+| MATH.5 and MATH.18 | Construct and compare mathematical interpretations, including consequences preserved through composition. |
 | CMP.12 | Constructs an effective interpreter or meaning-preserving translation when the obtaining problem is algorithmic. |
-| B.5.RC/RA | Recovers the construction or argument needed when a reading contains an unfamiliar step. |
-| NOT.4/.5 | Develops use-preserving transformations and translations once the relevant interpretation is available. |
-| NOT.7/.8 | Develops an easier reading or a temporal/embodied notation where the available route remains difficult. |
+| B.5.RC and B.5.RA | Recover the construction or argument needed when a reading contains an unfamiliar step. |
+| NOT.4 and NOT.5 | Develop use-preserving transformations and translations once the relevant interpretation is available. |
+| NOT.7 and NOT.8 | Develop an easier reading or a temporal or embodied notation where the available route remains difficult. |
 | C.2.8 | Characterizes recoverable structure under the reader's preparation, access and effort conditions. |
 | C.29 and B.5.MPC | Connect an interpreted mathematical consequence with its physical subject and the work needed to use it. |
 
@@ -1035,7 +1035,7 @@ Constructing the rule costs interpretation and sometimes a mathematical argument
 
 Transformation rules are operations on expressions with an interpretation. Their useful content includes both the replacement and the conditions under which it preserves the relevant consequence. This is why a copied shape or a familiar equality alone is insufficient.
 
-Mathematical construction and computational realization supply different contributions. MATH.17/.18 establishes laws for the transformed operations and interpretations; CMP.12 makes a translation or evaluator effective. The present method constructs a notation-level manipulation for an intended reading or edit. It can be used manually, in an editor or in an automated transformation without identifying those implementations with one another.
+Mathematical construction and computational realization supply different contributions. MATH.17 and MATH.18 establish laws for the transformed operations and interpretations; CMP.12 makes a translation or evaluator effective. The present method constructs a notation-level manipulation for an intended reading or edit. It can be used manually, in an editor or in an automated transformation without identifying those implementations with one another.
 
 The retained observation determines the strength of the rule. Identifying expressions by the same value can discard a derivation, evaluation order or history that another use needs. Selecting that equivalence and respecting it in surrounding constructions makes the limitation explicit. A richer needed result calls for a richer interpretation or another retained form.
 
@@ -1187,7 +1187,7 @@ A list of node names alone fails. The second drawing with A→B and A→C would 
 
 Now suppose horizontal position additionally records a planned start time. The earlier translation still answers the direct-input question, but it cannot reconstruct that timing. Add a start-time value for each node if timing is now needed. That extension follows a changed interpretation or question; it is not evidence that the original drawing already specified times.
 
-#### NOT.5:5.2 - Keep a useful count without pretending it preserves a rhythm
+#### NOT.5:5.2 - Keep cue counts and recover order when needed
 
 A toy score is a sequence of four equally spaced cue positions. D and T name two distinct sounds; there are no rests. Translate a score into the counts of D and T. Both `D T D D` and `D D T D` become `D:3, T:1`.
 
@@ -1430,7 +1430,7 @@ When the combination needs checking, ask the questions that can change its use.
 
 ### NOT.6:9 - Consequences
 
-Different representations can contribute to one answer without pretending that they contain the same information or that their referred things are identical. Readers can move between their useful operations and find where a changed assumption affects the combination.
+Different representations can contribute to one answer while retaining differences in their information and referents. Readers can move between their useful operations and find where a changed assumption affects the combination.
 
 The connections cost interpretation and upkeep. More automatic propagation can reduce repetitive work but makes the update policy consequential. Some disagreements locate a genuine subject decision; notation design cannot settle that decision by synchronizing appearances.
 
@@ -1570,6 +1570,8 @@ Use the existing contribution and choice methods in C.11.CRC/C.11 when cost or c
 
 Leave the needed convention, reference or operation available with the retained expression. A repair that works only while its author explains it has not supplied a self-sufficient notation for that reading condition.
 
+When other participants need to use the changed notation, apply C.36.RP to arrange learning, tools or capable help and keep the variants their work needs.
+
 Stop when the present use is adequately supported and further comparison would not change the choice. Reopen when the operation, preparation, access, scale of use or meaning changes, or an actual response contradicts the claimed benefit.
 
 ### NOT.7:5 - Archetypal Grounding
@@ -1591,7 +1593,7 @@ Construct the reverse index: `A → {B, C}`, `B → {D}`, `C → {D}`, `D → {}
 
 The repair changes the lookup arrangement and supplies a reading procedure. It does not add a new dependency. It makes the required direction directly available, but finding the immediate inputs of D is now less direct. Keep the original table as a complementary view if that operation remains frequent, using NOT.6 to maintain the connection.
 
-Now remove C from D's input list. Remove the arrow from C to D as well. A still reaches D through B. A reader who merely drops D from the downstream set has confused removal of one path with removal of every path. The changed case tests the reading operation, not the prettiness of the index.
+Now remove C from D's input list. Remove the arrow from C to D as well. A still reaches D through B. A reader who merely drops D from the downstream set has confused removal of one path with removal of every path.
 
 This construction demonstrates the dependencies and operations preserved. It supplies no measured claim that every reader finds the index faster; the local display and reading conditions can change that comparison.
 
@@ -1691,7 +1693,7 @@ The result is a temporal or embodied expression with a usable interpretation and
 
 This is notational engineering. Rhythm, movement, laboratory signals and interaction traces supply different subjects; their subject methods determine which timing or motion relations matter. The notation designer needs that subject meaning and the relevant capabilities of the intended reader. NOT.1–.3 supply the general design, formation and interpretation methods.
 
-Reuse a familiar adequate convention when it already supports the operation. An ordinary static expression may suffice when no temporal or embodied distinction matters. Knowing the notation is not by itself a claim that a person can perform a movement or a machine can realize it; obtain the missing performance or control method when the work requires enactment.
+Reuse a familiar adequate convention when it already supports the operation. An ordinary static expression may suffice when no temporal or embodied distinction matters.
 
 ### NOT.8:2 - Problem
 
@@ -1753,7 +1755,7 @@ State how the reader establishes the reference, identifies the current part, com
 
 For a transient carrier, choose how earlier parts remain usable: replay, a persistent companion record, a repeated reference, trained retention or another available means. Use only what the receiving conditions permit. NOT.6 connects a score, sound and event table when several forms remain necessary.
 
-If the task is performance, connect the decoded instruction to the performer's available method. A person may already know how to realize a gesture or syllable. A machine may need a parser, state representation, control algorithm and physical realization. CMP.12 constructs an effective interpreter; B.5.MPC connects the abstract construction to preparation, execution and interpreted observation. Notation alone does not supply those methods.
+If the task is performance, connect the decoded instruction to the performer's available method. A person may already know how to realize a gesture or syllable. A machine may need a parser, state representation, control algorithm and physical realization. CMP.12 constructs an effective interpreter; B.5.MPC connects the abstract construction to preparation, execution and interpreted observation.
 
 A demonstration can be part of the supplied interpretation. Identify what it teaches and keep it available if the text relies on it. If another prepared reader can use the expression without that demonstration, the reading condition is different; assess the contribution at the condition actually offered.
 
@@ -1801,7 +1803,7 @@ A tabletop movement score uses two signs. `R` means move one grid unit to the pe
 
 A performer initially facing north reads `R; F(2)` as an eastward unit displacement followed by two northward units. The endpoint is (1, 2). The reading procedure first recovers the starting orientation, translates each body-relative direction into the grid frame, updates the position and continues from there.
 
-Now the performer starts facing east. The same score yields one unit south and two units east, ending at (2, -1). Treating R as page-right would give a different route. If the intended task is to preserve the original grid-space path regardless of orientation, choose a grid-relative notation or construct the appropriate body-relative instructions; keeping the marks unchanged does not meet that new task.
+Now the performer starts facing east. The same score yields one unit south and two units east, ending at (2, -1). Treating R as page-right would give a different route. If the intended task is to preserve the original ordered displacements in the grid frame regardless of orientation, choose a grid-relative notation or construct the appropriate body-relative instructions; keeping the marks unchanged does not meet that new task.
 
 The score leaves the speed and path within each displacement unspecified. It can guide a prepared person moving a token. Making a physical robot perform it additionally requires an applicable motion method and an account of its realization. Reading the endpoint establishes neither that method nor a performed movement.
 
@@ -1815,7 +1817,7 @@ A familiar carrier can also invite the wrong relation. Spoken order can be mista
 
 When the expression needs checking, ask the questions that can change its use.
 
-- Is the represented relation and intended reading or performance operation recoverable?
+- Are the represented relation and intended reading or performance operation recoverable?
 - Are the needed origin, unit, cycle, participant and frame available?
 - Can the reader segment occurrences and distinguish the relevant order, overlap or duration?
 - Is a specified absence distinguishable from missing information where it matters?
@@ -1859,7 +1861,7 @@ Reading and enactment are connected methods. Their separation makes the connecti
 
 **Choosing a form for the same operation.** In :5.1 the reader must locate and shift two onsets within a beat. Compare a static position grid with a sounded score, for a reader who knows the syllables and can count the four positions. The grid already answers the question and remains available for inspection. Keep it when that is the whole task; adding voiced practice would cost effort without improving this answer. A familiar convention also needs no extra account when its references and reading operations are already available to the reader.
 
-For following the onsets during a performance, both a retained grid and a sounded score still need a way to keep place in the beat. Here we adapt Nelson's recurring reference and Takadimi's positional reading into :4.2 and :4.4: maintain the reference, locate each occurrence and retain or replay the parts needed for the next operation. This repairs the case in which a sign legend identifies syllables but leaves their positions unavailable. It does not require a new symbol vocabulary. A prepared reader may maintain the reference while reading the grid; a sounded or embodied form is preferable only when its coordination benefit warrants the added perception or practice. Those costs are the accepted trade-off, not a demonstrated general learning advantage.
+For following the onsets during a performance, both a retained grid and a sounded score still need a way to keep place in the beat. Here we adapt Nelson's recurring reference and Takadimi's positional reading into :4.2 and :4.4: maintain the reference, locate each occurrence and retain or replay the parts needed for the next operation. This repairs the case in which a sign legend identifies syllables but leaves their positions unavailable. It does not require a new symbol vocabulary. A prepared reader may maintain the reference while reading the grid; a sounded or embodied form is preferable only when its coordination benefit warrants the added perception or practice.
 
 The beat calculation in :5.1 shows the information gained from the reference; it does not compare human performance speeds. The source table supplies the limits of transferring this reasoning to movement and audible interfaces: a recovered instruction still needs its performer method, and preferred sounds need not improve interpretation. Reopen this choice if a simpler available convention supports the same operation and timing with less burden, or if the chosen reference or reading procedure fails under the receiving conditions.
 

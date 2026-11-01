@@ -5,12 +5,12 @@
 > A pattern language for connecting different plans and knowledge with scarce means through calculation, exchange, commitments and economic arrangements.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** 22 September 2026
+- **Version:** 24 October 2026
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party material retains its own terms.
 
 Begin with the contribution your work cannot yet obtain. The Table of Contents locates individual methods; the Readme demonstrates connected uses; the Architectural Reference explains the language, prerequisites and limits. **ECO** is the reference code. Pattern numbers identify methods, while Parts organize reading.
 
-This framework belongs to the [Engineering DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Engineering%20DPF%20Suite/README.md). Cite the author, title, version shown here and the relevant PatternID or Architectural Reference section.
+This framework has its own publication in the [FPF Library DPF catalogue](https://github.com/ailev/FPF/tree/main/DPFs). Cite the author, title, version shown here and the relevant PatternID or Architectural Reference section.
 
 # Table of Contents
 
@@ -121,7 +121,7 @@ If the purpose is a resource cap, keep the aggregate limit in the operating plan
 
 Begin at the unresolved contribution and keep already adequate work. A return to an earlier pattern follows a changed premise, not a compulsory cycle. The Architectural Reference explains the economic architecture, Method verticals, sources and limits; each pattern provides its own instructions and examples.
 
-The [Engineering DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Engineering%20DPF%20Suite/README.md) contains the financial, operating, organizational, explanation and development methods used at these boundaries. The [Foundational Thinking DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/README.md) supplies mathematical, physical and computational methods where those contributions are missing.
+Management supplies financial, operating and organizational methods; Explanation Design (EXD) supplies explanation methods; Human Capability Engineering supplies methods for changing human capabilities. Core supplies the general methods of development. The [Foundational Thinking DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/README.md) supplies mathematical, physical and computational methods where those contributions are missing.
 
 # Economic Reasoning and Coordination Principles Framework Architectural Reference
 
@@ -154,7 +154,7 @@ The ten methods form four connected groups. These groups organize explanation; t
 | Shared and extended coordination: ECO.7–.9 | Connect use and renewal, relate direct cooperation to wider orders, and change rules through their practices. | Physical bounds, affected interests and obtainable capabilities constrain what arrangement can work. |
 | Efficiency and demand: ECO.10 | Follow a unit saving through changes in feasible use and demand. | Return conditional total effects to the purpose and existing comparison or portfolio methods. |
 
-The operation and its description remain different. Applying guidance can produce a proposal, a calculation, an agreement or a performed contribution, depending on what the practitioner actually does and what conditions hold. A possible arrangement is not an existing one. The cases below and in the patterns are constructed demonstrations of reasoning; they do not assert observed field effectiveness.
+The operation and its description remain different. Applying guidance can produce a proposal, a calculation, an agreement or a performed contribution, depending on what the practitioner actually does and what conditions hold. Describing a possible arrangement does not establish that it exists. The cases below and in the patterns are constructed demonstrations of reasoning; they do not assert observed field effectiveness.
 
 ### ECO.Reference:3.1 - Calculation rests on economic relationships
 
@@ -237,7 +237,7 @@ Revisit an affected method when new evidence changes its mechanism, the institut
 
 This DPF relies on the general meanings and selected methods in [FPF Core](https://github.com/ailev/FPF/blob/main/FPF-Spec.md), including B.1.5 for constituent and encompassing methods, C.11 for proportionate inquiry and C.36 for cultural continuation. The dependence is from ECO to Core.
 
-The [Engineering DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Engineering%20DPF%20Suite/README.md) provides the external financial, accounting, operating, asset, organizational, corporate, explanation and capability-development method descriptions cited in the patterns. Their actual results must be obtained where the working case requires them. A conditional reference does not make every method a prerequisite for every ECO use.
+The Management Suite supplies the financial, accounting, operating, asset, organizational and corporate methods cited in the patterns. Explanation Design (EXD) supplies explanation methods, and Human Capability Development (HCD), in the Human Capability Engineering Suite, supplies human learning methods. Their actual results must be obtained where the working case requires them. A conditional reference does not make every method a prerequisite for every ECO use.
 
 The [Foundational Thinking DPF Suite](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/README.md) provides external methods for constructing and using mathematical, physical and computational models. Those methods are needed when the relevant model or interpretation is missing, not merely because the question is economic.
 
@@ -780,7 +780,7 @@ Compare suitable contractual and relational arrangements: reciprocal commitments
 
 Consider common ownership or a changed organization when decision rights, incentives and adaptation costs make that a serious alternative. Include the costs of organizing and directing work after the change. OCE and CGOV supply the actual organization or corporate construction; an economic preference does not itself establish it.
 
-#### ECO.6:4.3 - Choose the smallest sufficient arrangement
+#### ECO.6:4.3 - Choose an arrangement for the required adaptations
 
 Compare like intended service and disturbance conditions, including investment exposure, operating performance, delay, enforcement and exit. Use conditional comparisons when a future disturbance cannot be assigned a defensible probability.
 
@@ -1077,7 +1077,7 @@ A constructed cooperative shop has a working practice: trusted customers can pay
 
 The useful old contribution is short-term access supported by local knowledge, not the paper notebook itself. The cooperative compares universal prepayment with limited credit accounts. Its authorized manager can offer a two-week trial to ten consenting customers, including newcomers, with a €20 balance limit each. The cooperative has €200 available above its other commitments; a trained worker has two hours each week for these accounts. The manager also has two contingency hours available to complete the trial's scheduled account work if needed. That worker checks the agreed payment date against the customer's expected receipts and unpaid purchases, using the same conditions for newcomers and existing users.
 
-The manager chooses this trial because it can preserve later payment while testing whether the proposed account work is affordable. Existing obligations and the terms of customers outside the trial remain unchanged. At each weekly settlement, the existing account records show overdue balances; the worker can also report time spent and any refused purchase. Extend the trial or start routine service only if the weekly account work fits the continuing two-hour capacity, overdue balances stay within the trial's €20 allowance and customers retain the intended access. Complete the already agreed trial service using the available contingency capacity when needed. If account work takes three hours in the first week, the manager uses one contingency hour, stops new enrolment and reserves the other hour for the final settlement. Expansion is deferred until continuing capacity or a less demanding procedure is available; the trial customers retain the agreed service. This is a feasible trial plan under constructed assumptions, not a report that the trial has occurred.
+The manager chooses this trial because it can preserve later payment while testing whether the proposed account work is affordable. Existing obligations and the terms of customers outside the trial remain unchanged. At each weekly settlement, the existing account records show overdue balances; the worker can also report time spent and any refused purchase. Extend the trial or start routine service only if the weekly account work fits the continuing two-hour capacity, the trial customers' combined overdue balance does not exceed €20 and customers retain the intended access. Complete the already agreed trial service using the available contingency capacity when needed. If account work takes three hours in the first week, the manager uses one contingency hour, stops new enrolment and reserves the other hour for the final settlement. Expansion is deferred until continuing capacity or a less demanding procedure is available; the trial customers retain the agreed service. This is a feasible trial plan under constructed assumptions, not a report that the trial has occurred.
 
 If the old arrangement also favours the shopkeeper's friends and excludes similarly situated newcomers, preserving it unchanged does not satisfy the access purpose. The revised arrangement needs an attainable way to assess new entrants. If nobody can perform that work, the proposal remains incomplete.
 

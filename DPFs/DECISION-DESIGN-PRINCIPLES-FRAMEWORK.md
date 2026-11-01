@@ -4,7 +4,7 @@
 
 A domain pattern language for constructing problem formulations, decision alternatives and models, and qualifying their interpretation and use in bounded inquiry, including professional participation and advice.
 
-Anatoly Levenchuk, with AI-assisted development. [Working edition, 12 October 2026](#psdasources2---citation-and-limits). Original and adapted framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party sources retain their own terms.
+Anatoly Levenchuk, with AI-assisted development. [Working edition, 24 October 2026](#psdasources2---citation-and-limits). Original and adapted framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party sources retain their own terms.
 
 Bring the missing result: a useful formulation, model, alternative, comparison, participation arrangement or qualified return. Use an adequate current answer directly. The Readme gives independent entries; the Architectural Reference explains their connections and limits. Complete patterns carry the operations, cases and source comparisons. One inquiry need not use the whole repertoire.
 
@@ -71,12 +71,15 @@ Bring the missing result: a useful formulation, model, alternative, comparison, 
 | 16 | [PSDA.17 - Reconcile Simultaneous Problem-Structuring and Decision-Support Work](#psda17---reconcile-simultaneous-problem-structuring-and-decision-support-work) | Stable | simultaneous inquiry, coupling, interference, facilitation. Which arrangement preserves a threatened result at acceptable burden? | PSDA.3, PSDA.4, PSDA.13 where their contributions interact; FPF C.32.MWA for needed several-structure synthesis. |
 | 17 | [PSDA.18 - Deliberately Continue and Change Problem-Structuring and Decision-Support Culture](#psda18---deliberately-continue-and-change-problem-structuring-and-decision-support-culture) | Stable | cultural continuation, interpretation, retention, mediation. What changes across practitioners beyond publication or local performance? | PSDA.16 and PSDA.17 when current; FPF C.20 and C.36 for their direct cultural claims. |
 | 18 | [PSDA.19 - Bound the Development-Direction Advising Engagement](#psda19---bound-the-development-direction-advising-engagement) | Stable | development advice, recipient, service scope, holder premises, refusal. What can responsibly be recommended for this recipient? | PSDA.11, PSDA.14; qualified PSDA results; actual subject practice and professional service conditions. |
+| 19 | [PSDA.20 - Explore a Situation through Goals and Dependencies](#psda20---explore-a-situation-through-goals-and-dependencies) | Stable | goals, dependencies, provision, model inquiry. What does this proposal require from others, and which question does that reveal? | Relevant participant accounts and domain knowledge; PSDA.8:4.2.1 for qualitative analysis; PSDA.3, PSDA.5 and PSDA.12 when their contributions are needed. |
 
 # Readme
 
 ## Start with the missing result
 
 Two people can use the same word for different problems; two models can answer different questions despite displaying the same measure. PSDA.1 and PSDA.2 make the formulation and boundary examinable. PSDA.3 constructs complementary model claims. A clear question with adequate models needs none of that work again: it can enter directly at an alternative, value, uncertainty or comparison result.
+
+When a promising change leaves other participants' work unexplained, use [PSDA.20](#psda20---explore-a-situation-through-goals-and-dependencies). Start from the actual episode and trace one needed provision through its recipient, purpose and provider. The inquiry can return an omitted condition or a new question before a comparison is ready; its car-park case follows the return from a favorable model result to conflicting assignments.
 
 When familiar proposals cannot obtain a desired consequence, start with [PSDA.5](#psda5---generate-decision-alternatives). Its constructive return through PSDA.6 and PSDA.8 helps build a different combination of means and test it under the same conditions.
 
@@ -98,7 +101,7 @@ Now suppose deployment is unavailable in the required window. The mobile branch 
 
 ## Practical entries
 
-Bring the question that is blocking useful work. The examples below show how professional support uses intellectual inquiry and returns a qualified answer, and how a changed premise can send that use back. They are not a catalogue or a required sequence. Use the pattern index or search when another question is live; an adequate direct result can finish the task. The [Architectural Reference](#decision-design-principles-framework-architectural-reference) and its [Architectural Rationale](#psdareference5---why-retain-this-connected-language) explain how the contributions fit together. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+Bring the question that is blocking useful work. The examples below show how professional support uses intellectual inquiry and returns a qualified answer, and how a changed premise can send that use back. Use the pattern index or search when another question is live; an adequate direct result can finish the task. The [Architectural Reference](#decision-design-principles-framework-architectural-reference) and its [Architectural Rationale](#psdareference5---why-retain-this-connected-language) explain how the contributions fit together. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
 
 If the useful future contribution itself is still unclear, use the general [C.40.OCN opportunity construction (FPF C.40.OCN:1)](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c40ocn1---problem-frame) directly. You can construct an opportunity and stop at its next question without appointing an adviser. When a distinct performer must recommend a development direction to a recipient, use the [advising profile](#development-direction-advising) or the second example below.
 
@@ -185,7 +188,9 @@ PSDA.5 constructs a live alternative set. PSDA.6 represents values without infer
 
 B.5.SD makes the connection between supplied claims and the receiving answer itself a working object. This Core Method can use the relevant formulation, model, analytical or professional contribution when it is missing. A source-supported explanation, a proposed experiment and a recommendation have different completion conditions. Construct and examine the inference using the relevant subject Methods and grounds.
 
-These are result dependencies and conditional uses, not eighteen compulsory phases. Pattern numbers identify full Methods. The same occasion may enact several Methods, but a claim that they form one composite Method needs explicit whole action, parts, joins and permitted variation under PSDA.4 and FPF B.1.5.
+[PSDA.20](#psda20---explore-a-situation-through-goals-and-dependencies) supplies one separately usable inquiry through participants' goals and dependencies. It connects the working question, required provision, model views, analysis assumptions and the interpreted answer; an unexpected result can reveal a different problem. PSDA.3 and PSDA.8 remain independently usable model and consequence Methods. Use this whole inquiry only when those connections are part of the missing result.
+
+These are result dependencies and conditional uses, not nineteen compulsory phases. Pattern numbers identify full Methods. The same occasion may enact several Methods, but a claim that they form one composite Method needs explicit whole action, parts, joins and permitted variation under PSDA.4 and FPF B.1.5.
 
 In a professional engagement, formulation and model construction can change which question is worth answering, whose consequences are considered, what counts as the problem and which interventions become plausible. Decision support uses suitably qualified formulations, alternatives, value accounts and evidence to help a receiving decision. A problem formulation can be a complete useful return before a recommendation is possible; a well-formed question can also enter comparison directly.
 
@@ -305,7 +310,7 @@ Reconsider the affected arrangement when a simpler Method supplies the same usef
 
 ### PSDA.Reference:5.3 - Decision theory, model construction and engineering trade studies
 
-A chooser may already have adequate options, a consequence model and an evaluative basis. FPF C.11 supplies the choice-theory construction for that situation, including a partial comparison, rejection of the available set or a worthwhile probe. PSDA addresses work that those premises can still need: constructing formulations and alternatives, eliciting and representing preferences, retaining uncertainty at its supported kind, building consequence accounts, and composing a return for its actual use. Apply a sufficient C.11 result directly when the premises are already adequate. The mathematical choice rule is not developed again in this framework.
+A chooser may already have adequate options, a consequence model and an evaluative basis. FPF C.11 supplies the choice-theory construction for that situation, including a partial comparison, rejection of the available set or a worthwhile probe. PSDA addresses work that those premises can still need: constructing formulations and alternatives, eliciting and representing preferences, retaining uncertainty at its supported kind, building consequence accounts, and composing a return for its actual use. Apply a sufficient C.11 result directly when the premises are already adequate. PSDA.6 develops the preference input where it is missing, including a finite lottery-based construction in :4.5.6; PSDA.8 connects it to the subject's consequence model. C.11 retains the general choice question. For a probabilistic information question, MMP.16 develops the comparison of actions before and after the actual observation, and PSDA.9 applies that result to the engagement.
 
 The general construction suppliers also retain their own questions. C.38 constructs comparable ways to obtain one result; PSDA.5 can construct alternatives that pursue different results or answer different formulations. C.39 develops a missing obtaining operation or connection. C.40 develops branching search from reusable material, while C.40.OCN connects opportunity inquiry, problems, directions and conditional reachability. A PSDA inquiry supplies the actual formulation, elicitation, modelling and professional operations. A general supplier does not supply a missing subject result merely because its scope includes that question.
 
@@ -331,19 +336,15 @@ This subject is narrower than either a comprehensive science of decisions or the
 
 Separate problem-structuring and model-construction frameworks could make independent source communities and change boundaries more visible. Here their connected inquiry account remains in one language, while direct entries and source-specific revision conditions preserve useful independence. A broader Suite account becomes useful when a supported disciplinary whole explains additional model/intervention connections that the current user needs, or when separately maintained languages provide a material advantage. The useful formulation, model and professional contributions remain available without first settling that wider arrangement.
 
-The present language can supply qualified formulations, value and uncertainty accounts, comparisons and bounded advice to a wider inquiry. Engineering, management, policy and personal decision work can use those results. Such use establishes the supplying and receiving questions, not membership of the entire field in Engineering or Management. Domain architecture, scientific inference, implementation and the authorized choice retain their own Methods. An adequate specialist result is an available direct entry, not a reason to repeat all eighteen Methods.
+The present language can supply qualified formulations, value and uncertainty accounts, comparisons and bounded advice to a wider inquiry. Engineering, management, policy and personal decision work can use those results. Such use establishes the supplying and receiving questions, not membership of the entire field in Engineering or Management. Domain architecture, scientific inference, implementation and the authorized choice retain their own Methods. An adequate specialist result is an available direct entry, not a reason to repeat all nineteen Methods.
 
 ## PSDA.Reference:6 - Continue and change the practice
 
-A changed source or receiving condition reopens only the dependent claims until evidence warrants a wider revision. Preserve useful earlier results within their actual scope. A professional organization can use PSDA.16, PSDA.17, PSDA.18 for repertoire, simultaneous service work and cultural continuation; an independent intellectual inquiry can use the general Method-development and cultural-reproduction guidance directly. Neither path is a compulsory tail to one calculation.
+A changed source or receiving condition reopens the claims that depend on it; preserve useful earlier results within their actual scope. A corrected concern, altered access condition or new model configuration can require the responsible practitioner to reconsider the answer. Obtain and interpret the relevant observation before choosing a response: a notice that a configuration changed does not establish that it is safe or effective.
 
-The useful change in practice is the ability to reconstruct a consequential distinction, obtain the right model or comparison, and tell what conclusion it actually supports. Successful communication, accepted advice and realized outcomes remain separate results. The next inquiry starts from the changed knowledge and its actual question, not from an obligation to repeat every pattern.
+Use [PSDA.16](#psda16---decide-whether-and-how-to-change-problem-structuring-and-decision-support-methods) when a professional repertoire needs a justified change, [PSDA.17](#psda17---reconcile-simultaneous-problem-structuring-and-decision-support-work) when simultaneous inquiry activities interfere, and [PSDA.18](#psda18---deliberately-continue-and-change-problem-structuring-and-decision-support-culture) when a practice must be continued or changed across practitioners. An independent intellectual inquiry can use the general Method-development and cultural-reproduction guidance directly. These uses are conditional; a sufficient calculation or recommendation can finish without them.
 
-A corrected concern, altered access condition or new model configuration can change the current result. Identify the claims that depend on the change and ask the responsible practitioner to reconsider them. Obtain and interpret the relevant observation before choosing a response; the mere arrival of a notice is not evidence that the new configuration is safe or effective.
-
-A different problem concerns how inquiry itself is conducted. Use [PSDA.16](#psda16---decide-whether-and-how-to-change-problem-structuring-and-decision-support-methods) when the professional repertoire needs a justified change, [PSDA.17](#psda17---reconcile-simultaneous-problem-structuring-and-decision-support-work) when simultaneous inquiry activities interfere, and [PSDA.18](#psda18---deliberately-continue-and-change-problem-structuring-and-decision-support-culture) when a practice must be continued or changed across practitioners. These are conditional uses, not a required tail on every recommendation.
-
-Contemporary source comparisons belong with the pattern claims they support. Earlier traditions remain valuable where their limits are understood. Neither a fashionable school nor an old success is enough to establish the present Method's fit. What changes in practice is the reader's ability to return a useful answer with visible limits—and to change that answer, or the way of obtaining it, when the actual basis changes.
+The useful gain is the ability to reconstruct a consequential distinction, obtain the model or comparison the question needs, and state the conclusion it supports. Successful communication, accepted advice and realized outcomes remain separate results. Continue from the changed knowledge and the actual question. Compare contemporary sources with the claims they support, and retain earlier traditions where their limits are understood: neither a fashionable school nor an old success establishes a Method's present fit.
 
 ## PSDA.Reference:7 - Whose conditions and evidence shape the answer
 
@@ -384,7 +385,7 @@ A real application must qualify the relied-on content for the stated subject, co
 
 ## PSDA.Reference:10 - What this framework covers
 
-Decision Design serves practitioners and assisting agents constructing and using problem formulations and decision models, including professional help for another's inquiry or decision. Its complete Methods cover formulations, boundaries, complementary models, Method selection and combination, alternatives, values, uncertainty, consequences and robustness, together with engagement, participation and representation, protected facilitation, qualified recommendation, follow-up, repertoire, simultaneous inquiry, cultural continuation and development-direction advice. A recommendation, request, narrowed answer or reasoned abstention can complete that work without taking the recipient's later choice.
+Decision Design serves practitioners and assisting agents constructing and using problem formulations and decision models, including professional help for another's inquiry or decision. Its complete Methods cover formulations, boundaries, complementary models, inquiry through goals and dependencies, Method selection and combination, alternatives, values, uncertainty, consequences and robustness, together with engagement, participation and representation, protected facilitation, qualified recommendation, follow-up, repertoire, simultaneous inquiry, cultural continuation and development-direction advice. A recommendation, request, narrowed answer or reasoned abstention can complete that work without taking the recipient's later choice.
 
 Core C.11 supplies the decision-theory construction, C.40.OCN supplies general opportunity construction, and B.5.SD supplies joint substantive answer construction. The practitioner obtains their results when those questions are live and qualifies the joined use. Their availability does not require repeating them as additional PSDA Methods.
 
@@ -819,7 +820,7 @@ A later board asks whether the same result establishes readiness for the flood s
 
 ### PSDA.2:7 - Conformance Checklist
 
-- [ ] The boundary is tied to one receiving use, subject, horizon, and authority boundary.
+- [ ] The boundary is tied to one receiving use, subject and horizon, with the authority boundary stated where that use has one.
 - [ ] Current formulations and material participation or affected-System inputs are recoverable.
 - [ ] Included bearers, concerns, relations, conditions, evidence, horizons, and intervention families are stated only at the needed grain.
 - [ ] Material exclusions and unknowns retain reasons, consequences of error, and reopen observations.
@@ -926,7 +927,7 @@ Select the smallest set that covers the material questions. A qualitative model 
 
 A concern map can already complete the task of making participants' concerns discussable. When another material question asks what causes an outcome or what an intervention would change, use an adequate causal model directly. If the causal relations still need to be constructed or compared, `C.28.CM` helps turn the relevant subject knowledge and mechanism accounts into explicit models for that question. Return their assumptions, conditional consequences and unresolved alternatives to the combined account. Keep each existing model for the question it can answer; the constructed causal model still needs the claim-specific assurance in :4.5.
 
-When the question concerns participants' intentions, their dependence on one another and possible alternatives, the Reference's [goals-and-dependencies walkthrough (Engineering.Reference:20)](Engineering%20DPF%20Suite/ENGINEERING-DPF-SUITE-REFERENCE.md#engineeringreference20---explore-a-situation-through-goals-and-dependencies) develops an actors-and-goals model from a service difficulty. It explains how to select what a view reveals, turn a question into analysis assumptions, interpret the answer and return to an omitted assignment when the result exposes a conflict. Use that connected account when these joins need explanation; a sufficient existing model can be used directly.
+When the question concerns participants' intentions, their dependence on one another and possible alternatives, [PSDA.20](#psda20---explore-a-situation-through-goals-and-dependencies) develops the whole inquiry from a working difficulty. It explains how to construct the actors-and-goals model, select what a view reveals, turn a question into analysis assumptions, interpret the answer and return to an omitted assignment when the result exposes a conflict. Use that Method when these joins are missing; a sufficient existing model can be used directly in the present multi-model account.
 
 #### PSDA.3:4.3 - Make each model's use intelligible
 
@@ -1106,7 +1107,7 @@ A source is useful only for its named subject, condition, and evidence window. I
 
 For each serious candidate, describe the action in plain language: what participants do, with what accepted inputs, to produce which result under which conditions. When the proposed reusable way is already recoverable, use `A.3.1` to identify it.
 
-Use `A.3.1.MR` only when several grounded occurrences or direct sources create a candidate-recovery question about what reusable way the material may show, and no Method has yet been established. It returns provisional source-traceable candidate accounts, a distinguishing question, or an honest lower result; Method identification remains a separate `A.3.1` question.
+Use `A.3.1.MR` only when observations or evidence about performances leave a reusable way to recover and no Method has yet been established. It returns provisional source-traceable candidate accounts, a distinguishing question when useful, or an honest lower result; Method identification remains a separate `A.3.1` question. For a proposed way in documentary guidance, use `A.3.1.DR` when its source meaning or status needs recovery.
 
 If the way is known and only its wording is unclear, clarify the statement; use `E.10` only if an FPF kind or relation question remains. If a prospective recipe lacks a decision about its intended action or applicability, return that missing design question to the person designing the inquiry Method. A missing design choice is not by itself a reason to reconstruct past practice.
 
@@ -1168,7 +1169,7 @@ Supply this result to facilitated inquiry or the reconciliation of simultaneous 
 
 #### PSDA.4:4.7 - What changes in practice
 
-The practitioner can explain why this way of working fits, which simpler alternative was considered, and where the arrangement would fail. Adaptation becomes a reasoned change of action and conditions instead of an unexamined mixture of workshop exercises.
+The practitioner can explain why this way of working fits, how it compares with the alternatives considered, and where the arrangement would fail. Adaptation becomes a reasoned change of action and conditions instead of an unexamined mixture of workshop exercises.
 
 ### PSDA.4:5 - Archetypal Grounding
 
@@ -1206,14 +1207,14 @@ An operations team has an agreed question, a current qualified calculation Metho
 
 **Scope:** selection and bounded composition of Methods for problem structuring and decision analysis. **Lenses:** **Prag** tests fitness and effort; **Onto/Epist** separates Method, description, plan, enactment, and evidence; **Arch** exposes real joins; **Gov** preserves participation and authority conditions; **Did** makes the reusable action explicit.
 
-Facilitator-familiarity bias favors the method the team can already run. Brand bias mistakes a school name for an identified way of doing. Integration bias treats more techniques as broader competence. Time-pressure bias hides omitted contributions. Counter these with one serious simpler alternative, a result-based contribution comparison, and the exact fragile premise that could reverse selection.
+Facilitator-familiarity bias favors the method the team can already run. Brand bias mistakes a school name for an identified way of doing. Integration bias treats more techniques as broader competence. Time-pressure bias hides omitted contributions. Counter these with a serious alternative, retaining any sufficient simpler route, a result-based contribution comparison, and the fragile premise that could reverse selection.
 
 ### PSDA.4:7 - Conformance Checklist
 
 - [ ] The selection names the missing result and current subject, scope, conditions, and receiving use.
 - [ ] Needed model, participation, expertise, and authority premises are qualified or explicitly missing.
 - [ ] Candidate Methods are recoverable reusable ways, not merely titles, descriptions, plans, or reported workshops.
-- [ ] A serious simpler alternative and the selected trade-off are explicit.
+- [ ] A serious alternative, any sufficient simpler route, and the selected trade-off are explicit.
 - [ ] Each additional Method supplies a distinct material contribution.
 - [ ] Passed results preserve meaning, scope, and limits; conversions requiring new evidence are not hidden.
 - [ ] Real dependence and possible overlap are distinguished from document and calendar order.
@@ -1251,7 +1252,7 @@ Method fit is relational: it depends on what the inquiry needs and what its cond
 
 - `PSDA.2` supplies the scope/result frame for the same subject and decision. `PSDA.3` supplies model contributions only where they discriminate Method alternatives. Either needed input can be replaced only by a qualified direct result or returned as an exact gap.
 - `PSDA.13` and `PSDA.17` may consume the selected Method and limits for the named situation and qualification window. Availability establishes neither fit nor enactment or cultural uptake.
-- `A.3.1.MR` supplies provisional accounts only when several grounded occurrences or direct sources create a reusable-way recovery question and no Method is yet established; `A.3.1` identifies a recoverable proposed way without making that recovery compulsory. `A.3.2` governs a description of one identified Method; `B.1.5` governs the composite qualification when needed.
+- `A.3.1.MR` recovers provisional candidate accounts from performance evidence; `A.3.1.DR` recovers the source meaning and status of documentary contributions when needed. `A.3.1` identifies a ready candidate way without making either recovery compulsory. `A.3.2` governs a description of one identified Method; `B.1.5` governs the composite qualification when needed.
 - `A.15.2` governs intended Work and `A.15.1` actual Work and its enactment relation. Direct competence, participation, authority, evidence, and safety practices govern their own premises.
 - This selection can request a missing domain result; it cannot manufacture that result by choosing a better workshop format.
 
@@ -1387,7 +1388,7 @@ Incumbency, sponsor anchoring, technology availability, and novelty bias can eac
 
 ### PSDA.5:7 - Conformance Checklist
 
-- [ ] The recipient question, holder or subject, current arrangement, horizon, and separate choice boundary are recoverable.
+- [ ] The receiving question, holder or subject, current arrangement and horizon are recoverable; the recipient and separate choice boundary are stated where that use requires them.
 - [ ] Formulations, models, and inquiry claims contribute only where they change the candidates.
 - [ ] Alternatives differ in decision-changing contents, not merely names.
 - [ ] The no-change case includes its actual continuing obligations and consequences.
@@ -1513,7 +1514,7 @@ Some thresholds are preference choices rather than prohibitions: an aspiration l
 
 Ask the value holder to compare concrete consequence profiles, with the same people, horizon and conditions in view. Record whether one profile is **no worse**, **strictly better**, or **indifferent** to another, or whether the holder leaves the comparison open. Retain the profiles and the reason given. An open comparison imposes no equality. Use actual alternatives or understandable hypothetical profiles within the declared ranges; a fictitious combination is useful only if the holder can judge its meaning.
 
-The numerical construction below concerns preferences over known consequences. Preferences over uncertain outcomes also need a suitable account of risk and uncertainty; the deterministic trade-off alone does not supply it. Start with §4.5.1 to choose the form, then use the branch whose conditions the value account supports.
+Sections 4.5.1–4.5.5 construct preferences over known consequences. Section 4.5.6 develops a finite expected-utility branch when the receiving comparison concerns uncertain outcomes: it obtains lottery judgements, retains all compatible utility functions and connects them to the consequence probabilities. Choose the form from the holder's comparisons and the distinctions the receiving work needs; deterministic trade-offs alone do not determine preferences over uncertain outcomes.
 
 ##### PSDA.6:4.5.1 - Choose and challenge the representation
 
@@ -1570,6 +1571,32 @@ If the question asks for a best alternative, keep the quantifiers together. A ne
 A further judgement by the same holder on the same profiles adds a constraint to the existing family. Intersect, check nonemptiness again, and recalculate the dependent comparisons. A correction replaces its old row and every restriction derived from it; retaining the superseded row could manufacture a conflict. Preserve consequence measurements, protected conditions and comparisons whose grounds remain valid.
 
 A changed holder, horizon, range, consequence meaning or compensation rule can invalidate the representation itself. Reconsider that premise before intersecting parameters in the old form. State which results depend on it and which remain usable. Stop when the receiving comparison is settled to the needed strength or the missing judgement, form or authority is clear enough to obtain.
+
+##### PSDA.6:4.5.6 - Construct preferences over finite uncertain outcomes
+
+Use this branch when the comparison needs a preference between uncertain consequences and the holder accepts an expected-utility representation for the stated use. A *lottery* here is a probability distribution over described consequences; eliciting it means asking about those distributions, not exposing anyone to an actual gamble. Start with the consequence meanings, the holder and the receiving decision. An outcome can be a complete profile of cost, delay and service, rather than one numerical score.
+
+**Choose the representation before estimating it.** Expected utility evaluates a lottery `P` by `sum_x P(x) u(x)`. Its utility values describe the holder's comparisons of lotteries. A function that merely orders certain outcomes need not do that: any increasing transformation preserves a certain-outcome ordering, but generally changes the ordering of expected values.
+
+Ask whether mixing each of two compared lotteries with the same third lottery, in the same proportions, should preserve the comparison. For example, if L is preferred to M, would the holder retain that preference between a half chance of L plus a half chance of H and a half chance of M plus a half chance of H? Challenge this premise with material cases, including a move from certainty to a chance of failure. Ask whether small changes in probabilities should permit small changes in the comparison, or whether a strict priority or threshold must prevail. These questions make the representation's commitments discussable; finitely many answers cannot validate it for every lottery. If a common-mixture reversal, a noncompensatory rule or a material dependence on how the uncertainty is presented defeats the proposed form, retain the expressed comparisons and obtain a representation that preserves that feature. A probability-weighting or other non-expected-utility model needs its own construction; changing utility numbers alone cannot repair every failed form.
+
+**Build one joint family.** For an accepted finite use, enumerate the complete consequence profiles appearing in the alternatives and elicitation questions. Obtain two intelligible reference consequences, w and b, that the holder treats as worst and best over this set and strictly distinguishes. Normalize `u(w) = 0` and `u(b) = 1`; require `0 <= u(x) <= 1` for the other represented profiles. This chooses an origin and unit, not the utility of an intermediate consequence. If common anchors are not supported, do not manufacture them: retain the direct comparisons or obtain a different representation. If every consequence is indifferent, return that simpler relation.
+
+For each profile x, compare receiving x for certain with a lottery giving b with probability p and w otherwise. Stated indifference gives `u(x) = p`. If x is no worse than the lottery at p, add `u(x) >= p`; if the lottery at q is no worse than x, add `u(x) <= q`. Thus the holder can bound a comparison without identifying one exact probability of indifference. The probabilities in these questions describe the hypothetical lottery. They are not estimates of the real intervention's chance of success.
+
+Retain all answers on the same utility variables. A comparison of two finite lotteries L and M adds `sum_x L(x) u(x) >= sum_x M(x) u(x)` when L is no worse, equality for indifference, or a strict inequality for strict preference. A comparison left open adds no equality. Certain-outcome comparisons are the special case with probability one on one consequence. These are linear constraints in the unknown utilities; use the feasibility and strictness treatment in §4.5.3 and the conflicting-subset diagnosis in §4.5.4. An inconsistent family calls for correcting the question or its interpretation, revisiting a judgement with its holder, or changing the form. It does not justify silently dropping a judgement.
+
+This construction assigns utilities to complete profiles and requires no additive decomposition across their attributes. An additive multiattribute utility can reduce elicitation effort when its additional assumptions fit; the deterministic value model in §4.5.3 alone does not establish those assumptions for lotteries. Keep different holders' families separate unless the receiving work supplies a justified collective rule.
+
+**Connect preference to the consequence model.** For each alternative a, obtain the distribution `P_a(x)` over these same profiles from the subject's probability model. Preserve shared causes, decision-dependent outcomes and the evidence limits described in PSDA.7 and PSDA.8. With one probability model and one utility function, compute `EU(a) = sum_x P_a(x) u(x)`. Comparing expected utility is generally different from applying utility to an average physical consequence.
+
+When probabilities or utilities remain imprecise, retain the set K of compatible complete accounts `(P,u)`. Here P supplies a distribution for every alternative, and u is one utility function used across them. Use all combinations of the probability and utility families only when no joint restriction excludes them. If the meaning of a consequence, a model parameter or an elicited judgement links the two families, carry that restriction in K. Do not mix one alternative's favorable model with another's unfavorable model.
+
+For each pair a and b, compare `D(P,u) = EU(a) - EU(b)` over K. Alternative a is necessarily no worse when every compatible account gives `D >= 0`; it is possibly no worse when at least one does. A contrary account defeats necessity; a feasible witness establishes possibility. The common-witness rule for possible best in §4.5.4 still applies. If K is empty, repair the failed basis before drawing a preference conclusion. No probability distribution over K follows from having retained it.
+
+For fixed probabilities, D is linear in the utilities, so the finite constraint method can find a bound or witness. If both probabilities and utilities vary, their products generally make the problem bilinear; separate interval bounds or one linear-programming call are not automatically an exact solution. Use direct algebra, a complete finite enumeration or an appropriate bounding method under MMP.10 and MATH.20. Report a computed bound only over the domain it actually covers. With strict constraints, distinguish an attained witness from an unattained limiting value.
+
+Return the supported preference, conditional alternatives or unresolved pair, with the consequence meanings, elicited comparisons and form assumptions that determine it. A new probability estimate updates the consequence side; a new or corrected lottery comparison updates the utility family. Recompute the affected relations while retaining the other supported contributions. Stop when the receiving decision has the preference information it needs. If an open preference can change that decision, ask the distinguishing question; further factual measurement cannot supply the holder's answer.
 
 #### PSDA.6:4.6 - Return the account and its exact incompleteness
 
@@ -1662,6 +1689,22 @@ Ask whether the equal-increment assumption still expresses the manager's values.
 
 If the manager withdraws constant time increments but retains addition, §4.5.3 constructs the whole compatible monotone family at the relevant levels. If the manager instead states the noncompensatory two-hour rule in §4.5.1, that different value account prefers A to B and C directly. Either change needs its stated basis; neither is a convenient parameter adjustment inside the old affine model. If no clarification is available, retain the attributed comparisons, D's independently established exclusion and the exact failed form. Return the numerical ranking as unresolved.
 
+#### PSDA.6:5.7 - Separate an uncertain result from its value
+
+A team compares two ways to obtain optional machine time in a ten-hour window. Existing provision covers required service; this comparison concerns additional usable hours, with other material consequences held equal. S supplies four hours for certain. R supplies ten hours if a trial succeeds and zero otherwise. The team prefers more usable hours, but that ordering does not yet compare S with R.
+
+For a success probability of one half, utility `u(x) = x/10` gives `EU(S) = 0.4` and `EU(R) = 0.5`; R is preferred. Utility `u(x) = sqrt(x/10)` preserves the same ordering of certain hours but gives `EU(S) = sqrt(0.4)`, approximately 0.632, and `EU(R) = 0.5`; S is preferred. These two constructed functions show why the certain-outcome ordering is insufficient. Neither is an elicited preference.
+
+The team accepts the expected-utility form for this bounded comparison and uses zero and ten hours as its reference consequences. Let `q = u(4)`, with `u(0) = 0` and `u(10) = 1`. Asked about hypothetical chances, the team says that four certain hours are no worse than a 40 percent chance of ten hours, but a 70 percent chance of ten hours is no worse than four certain hours. Each lottery otherwise gives zero hours. These answers yield `0.4 <= q <= 0.7`; they supply no point estimate.
+
+Separately, engineering evidence bounds R's success probability by `0.45 <= p <= 0.55`. In this constructed case the probability estimate and preference restrictions impose no additional joint constraint. Thus `EU(R) - EU(S) = p - q` ranges from `-0.25` to `0.15`. Neither alternative is necessarily no worse. The accounts `(p,q) = (0.55,0.4)` and `(0.45,0.7)` witness opposite preferences. The unresolved comparison is useful: a more precise success estimate alone need not settle what the team values.
+
+The team can answer one further preference question: four certain hours are no worse than a 60 percent chance of ten hours, otherwise zero. Intersecting that answer with the previous family gives `0.6 <= q <= 0.7`. The difference now ranges from `-0.25` to `-0.05`, so S is strictly preferred throughout the joint family. No midpoint utility or invented probability over utility functions was needed.
+
+A changed engineering result can reverse that conclusion without changing the preference account. If a genuinely different trial design raises the supported success range to `0.8 <= p <= 0.9`, while the consequence meanings and other consequences stay the same, the difference ranges from `0.1` to `0.3`: R is now strictly preferred. If the redesign also changes cost, timing or the meaning of usable hours, those omitted consequences must first enter the profiles; the old one-attribute calculation would no longer answer the whole comparison.
+
+The construction concerns one attributed preference account. It neither aggregates conflicting team members' views nor establishes that the trial has the assumed success probability. Those are separate inputs whose absence would leave a different question open.
+
 ### PSDA.6:6 - Bias-Annotation
 
 **Scope:** value representation for one bounded comparison. **Lenses:** **Onto/Epist** separates concern, measure, preference, and obligation; **Prag** preserves decision relevance; **Gov** exposes representation and authority; **Did** makes trade-offs concrete.
@@ -1678,6 +1721,7 @@ Template bias imports irrelevant criteria. Proxy bias rewards what is easy to co
 - [ ] Value transformations and weights have declared ranges and an elicitation basis; the chosen form is justified separately from fitting its parameters.
 - [ ] The numerical family preserves the joint judgements, has a checked feasibility result, and distinguishes incomplete information from contradictory judgements or a failed form.
 - [ ] Necessary and possible comparisons retain their quantifiers, ties and dependence on the same compatible model. A changed judgement reopens only dependent results unless it changes the form itself.
+- [ ] For a finite expected-utility comparison, lottery judgements and the chosen representation justify the utility account; probability estimates come from the consequence model. Joint variation uses one compatible account across alternatives, and an unresolved preference is not filled by averaging unknown utilities.
 - [ ] Interactions and refusals to compensate are preserved.
 - [ ] Any collective aggregation has an explicit basis; incompatible accounts remain visible otherwise.
 - [ ] The return states partiality, dissent, direct-source gaps, and exact reopen conditions.
@@ -1708,6 +1752,7 @@ Value representation makes consequences decision-relevant without confusing desc
 | --- | --- | --- | --- | --- | --- |
 | How can objectives be concise without omitting what matters? | Inspect means–ends structure, relevance, overlaps, and sensitivity to simplification. | Retain an exhaustive descriptive hierarchy, or delete criteria by correlation alone. | **Adapt:** :4.2–:4.3 keep a small consequence-led account and test any lost distinction. More analyst attention is accepted where it prevents double counting; small clear cases remain short. | Marttunen et al.'s [2019 objectives-hierarchy study](https://doi.org/10.1016/j.ejor.2019.02.039) supplies the comparative methods and retrospective environmental cases. It supports disciplined simplification, not one optimal hierarchy or a statistical license to discard values. | Reopen when a removed distinction can reverse the comparison or a lighter structure preserves the same concerns. |
 | Must incomplete preferences become one weighted score? | Construct the preference model from consequence comparisons and use all compatible instances. | Fit one additive score, average weights, or retain a noncompensatory rule when that better expresses the judgement. | **Adapt:** :4.5.1–:4.5.5 develop form selection, joint constraints, feasibility, necessary/possible comparison and local revision; :5.5–:5.6 show a complete use and failure of the affine form. The trade-off is a potentially less decisive answer for less invented precision. | Greco, Słowiński and Wallenius's [2025 MCDA review](https://doi.org/10.1016/j.ejor.2024.07.038), especially §3.1.2 and §7.1 ([accessible author-hosted PDF](https://www.iris.unict.it/retrieve/cb6fc63a-f16d-4c14-a163-46b863c27dc9/1-s2.0-S0377221724005988-main.pdf)), supplies preference assessment and robust ordinal regression. Its rules and non-additive families remain serious alternatives. The two-criterion derivation and service cases here are bounded applications, not its empirical findings or a universal additive-representation theorem. | Reopen when new judgement changes the compatible set, an interaction defeats the form, or the holder, range or governing condition changes. |
+| How can incomplete risk preferences become a usable comparison? | Elicit finite lottery comparisons, construct the compatible utility family and compare expected utilities over compatible probability and utility accounts. | Assume risk neutrality from a certain-outcome score, fit one curve despite open judgements, or retain a different explicit preference rule. | **Adapt:** :4.5.6 supplies the general construction and :5.7 shows elicitation, an open result and a changed comparison. More elicitation or computation is warranted only when it can change the receiving decision. | [Sahlin, Troffaes and Edsman (2021), §§3.3–3.5 and Appendix B](https://arxiv.org/html/2103.04721v1) demonstrate imprecise lottery-based elicitation with imprecise consequence probabilities. Their additive environmental model is not assumed here. [McCarthy, Mikkola and Thomas (2021)](https://arxiv.org/abs/2102.06898) develop the representation question for incomplete mixture preferences; retaining a family does not remove independence and continuity premises. [Breig and Feldman (2026, online 2025)](https://doi.org/10.1007/s11238-025-10089-1) test expected-utility consistency in a specific elicitation design, supporting scrutiny of the form rather than universal use. The finite profile construction and machine-time calculation here are explicit adaptations, not empirical findings from those studies. | Reopen when lottery judgements conflict with the form, a consequence is omitted, the probability model or holder changes, or an unresolved joint restriction changes the comparison. |
 | Can common coordinates perform the value judgement? | Declare meanings and scales separately from preference, comparison, and selection. | Treat a dashboard or normalized vector as the decision model. | **Adopt:** :4.3 uses A.19 only for the declared space or predicate and leaves value elicitation here. The distinction adds little effort to an existing table and prevents a false consumer result. | Current `A.19`, `C.16`, and the direct comparison patterns supply the relevant typing and operation boundaries. They do not elicit the engagement's values or authorize a trade-off. | Reopen when the scale, predicate, consequence range, or receiving use changes. |
 
 ### PSDA.6:12 - Relations
@@ -1986,7 +2031,7 @@ Use this branch when the important consequences are understandable in ordinary t
 
 Use ordinary prose categories appropriate to the subject. If a named language or solver is used, declare its version, propagation rules, treatment of unknown and conflicting evidence, and structural restrictions. A solver's satisfying assignment is a model result, not a commitment by participants or evidence that the arrangement will work.
 
-For an inquiry that also needs to construct and question the underlying actors-and-goals model, the Reference's [goals-and-dependencies walkthrough (Engineering.Reference:20)](Engineering%20DPF%20Suite/ENGINEERING-DPF-SUITE-REFERENCE.md#engineeringreference20---explore-a-situation-through-goals-and-dependencies) connects this branch to the inquiry's purpose, model views, explicit initial assumptions and a return from unexpected results to new source questions. It follows a staffing conflict through a revised allocation and its limited use. The present branch supplies the consequence analysis within that larger inquiry.
+For an inquiry that also needs to construct and question the underlying actors-and-goals model, [PSDA.20](#psda20---explore-a-situation-through-goals-and-dependencies) connects this branch to the inquiry's purpose, model views, explicit initial assumptions and a return from unexpected results to new source questions. Its car-park case follows a staffing conflict through a revised allocation and its limited use. The present branch supplies the consequence analysis within that larger inquiry.
 
 #### PSDA.8:4.3 - Construct a consequence account before aggregating
 
@@ -2015,6 +2060,8 @@ Use the current value account for any compensatory score, priority rule, thresho
 Use `A.19.CPM` when its profile, comparator, admissibility, and evidence conditions obtain. Its set-valued comparison outcome remains distinct from the application and evidence account, a result episteme, selection, or permission. Use the appropriate direct comparison Method otherwise; a table alone does not assert a CPM application.
 
 Distinguish three important outcomes. Two alternatives can be tied under a rule, incomparable because of supported conflicting consequences, or not yet comparable because a necessary input is missing. Preserve the difference. If no candidate meets a protected condition, return that failure rather than ranking the least nonconforming candidate as acceptable.
+
+For finite probabilistic consequences, PSDA.6:4.5.6 constructs the missing utility input from comparisons of lotteries and shows how to compare expected utilities over a compatible family. Supply this pattern's common consequence meanings and probability model to that construction. Use the scenario or noncompensatory comparison directly when it already answers the question; the probabilistic branch is not compulsory.
 
 #### PSDA.8:4.6 - Return the relation and what would change it
 
@@ -2246,7 +2293,7 @@ The result may be a robust retained set, a conditional preference, several non-d
 
 Ask what feasible observation, experiment, calculation, or interpretation could move the comparison across a material boundary. Distinguish “this factor changes the output a lot” from “this attainable result could change the decision”.
 
-Where a qualified probabilistic and value model permits information-value analysis, include the possible decisions after the information, the informativeness of the actual probe, and its cost and delay. Perfect-information value can be an upper bound; it is not the value of an imperfect test. Information values from several sources are not automatically additive.
+When the consequence probabilities and preferences support an expected-utility comparison, use MMP.16:4.2–4.5 to construct the value of the actual observation: model the records it can produce, determine the available action after each record, and average those resulting values before the record is known. Include the probe's cost, delay and changed opportunities in the consequences of the compared continuations before applying the utility account. Subtract a cost directly from expected utility only when its additive value on the same scale is justified and has not already been included in those consequences. PSDA.6:4.5.6 supplies a finite utility construction when that preference input is missing. For several compatible probability and utility accounts, carry out the information comparison within each account and retain the supported range or conditional choice; averaging those accounts requires a separate basis. Perfect-information value can be an upper bound under the same available actions and other conditions; it is not the value of an imperfect test. MMP.16 also distinguishes learning from an observation that changes the system. Information values from several sources are not automatically additive.
 
 Where probabilities are not defensible, state the discriminating conditions and what a probe could resolve without inventing expected value. Some uncertainty will remain; a broad research programme is not the default response.
 
@@ -2602,7 +2649,7 @@ Generic FPF patterns already govern outside-practice results, evidence, permissi
 
 | Practice question | Best-known line | Serious alternative or default | Defect overcome and pattern mutation | Source roles and limits | Reopen condition |
 | --- | --- | --- | --- | --- | --- |
-| How should a practitioner open an ill-structured or contested decision-support situation? | The best-known line is to bind inquiry to a named receiving use while keeping framing plural, contextual, and revisable before committing to one PSM, model, or formulation. | A fixed sponsor brief or Method-first workshop is the serious default; an unbounded “include everything” inquiry is the opposite default. | Both defaults hide the decision-support return: one naturalizes the first frame, the other cannot stop. **Adapt:** `PSDA.11:4.1`–`4.4`, the flood-pump case, and the first seven checklist rows require a receiving use, provisional boundary, plural-formulation return, and local reopen before Method choice. | Smith and Shaw's [2019 PSM review](https://doi.org/10.1016/j.ejor.2018.05.003) is a best-known-line candidate for the continuing PSM branch and its differing characteristics; Kogetsidis's [2025 review](https://doi.org/10.1108/IJOA-08-2024-4746) is an application comparator. Kelly and Gero's [2022 framing review](https://doi.org/10.1017/dsj.2022.25), Litster, Cardoso, and Hurst's [2024 systems-mapping study](https://doi.org/10.1017/S089006042400012X), and Nickel, Hurst, and Duimering's [2024 contextual trade-off study](https://doi.org/10.1017/dsj.2024.34) support explicit candidate framing, contextual comparison, and revision. The reviews are non-exhaustive; the studies establish neither one framing ontology, universal Method, shared frame, prevalence, nor superiority. | Reopen if comparative practice shows a lower-effort opening that preserves the same receiving-use, plurality, authority, stop, and revision value, or if a source changes the conditions under which framing must be reopened. |
+| How should a practitioner open an ill-structured or contested decision-support situation? | The best-known line is to bind inquiry to a named receiving use while keeping framing plural, contextual, and revisable before committing to one PSM, model, or formulation. | A fixed sponsor brief or Method-first workshop is the serious default; an unbounded “include everything” inquiry is the opposite default. | Both defaults hide the decision-support return: one naturalizes the first frame, the other cannot stop. **Adapt:** `PSDA.11:4.1`–`4.4`, the flood-pump case, and the first seven checklist rows require a receiving use and provisional boundary, with plural-formulation and local reopening branches where they can change Method choice. | Smith and Shaw's [2019 PSM review](https://doi.org/10.1016/j.ejor.2018.05.003) is a best-known-line candidate for the continuing PSM branch and its differing characteristics; Kogetsidis's [2025 review](https://doi.org/10.1108/IJOA-08-2024-4746) is an application comparator. Kelly and Gero's [2022 framing review](https://doi.org/10.1017/dsj.2022.25), Litster, Cardoso, and Hurst's [2024 systems-mapping study](https://doi.org/10.1017/S089006042400012X), and Nickel, Hurst, and Duimering's [2024 contextual trade-off study](https://doi.org/10.1017/dsj.2024.34) support explicit candidate framing, contextual comparison, and revision. The reviews are non-exhaustive; the studies establish neither one framing ontology, universal Method, shared frame, prevalence, nor superiority. | Reopen if comparative practice shows a lower-effort opening that preserves the same receiving-use, plurality, authority, stop, and revision value, or if a source changes the conditions under which framing must be reopened. |
 | How should decision-support advice remain useful without becoming the later choice? | The best-known current FPF line is result-first and authority-bounded: name the receiving decision, reuse or request only the outside-practice result it needs, return the recommendation as a premise, and let the authorized chooser produce the separate `ChoiceResult`. | Expert-report, approval, score, or model-output language treated as the decision is the serious default. | The default transfers authority by format and hides blockers. **Adopt:** `PSDA.11:4.1`, `4.2`, `4.5`, the development-direction case, and the authority checks keep performer, recipient, holder, outside-result owner, and choice owner distinct. | Current `A.15.9` supplies the smallest bounded-result return and supplier/receiver authority split; current `C.11` supplies choice over an already-available option set. Neither pattern bounds a professional problem-structuring and decision-support engagement or selects its next field-specific branch. | Reopen if direct choice or outside-result guidance gains the complete engagement-boundary move at equal or lower effort, or if practitioner use shows that the current separation prevents rather than improves a necessary authorized combined role. |
 
 ### PSDA.11:12 - Relations
@@ -3427,8 +3474,8 @@ Outcome bias can rewrite the earlier advice as obviously correct or wrong after 
 | --- | --- |
 | Distinct results | Recommendation, later authorized decision, intended work, implementation and observation are separately established or explicitly unknown. |
 | Material observation | Each selected observation can change a named premise, claim, alternative, condition or boundary; any threshold has a qualified meaning. |
-| Design choice | Feasible arrangements were compared by coverage, delay, burden and receiving use; a PSDA.17 constraint did not preselect the answer. |
-| Viability | Observation, interpretation and return have the necessary performers, access, resources, timing, protection and failure route. |
+| Design choice | When a follow-up arrangement needs to be designed, feasible alternatives were compared by coverage, delay, burden and receiving use; a PSDA.17 constraint did not preselect the answer. |
+| Viability | Any observation, interpretation and return relied on here have the necessary performers, access, resources, timing, protection and failure route. |
 | Current evidence | The actual evidence fits its subject, configuration, interval and intended use; absence or silence is not favourable evidence. |
 | Local consequence | Unchanged, narrowed, blocked, reopened-contributor and later-recommendation conclusions name their exact affected scopes and gaps. |
 | Authority and closure | Operational change and recipient choice retain their direct authority; the follow-up return has a bounded continuation or end condition. |
@@ -3542,7 +3589,7 @@ Use C.39.RP when the offered repertoire and its missing contributions need const
 
 State each serious candidate as a way of doing: its entry conditions, participant meanings, actions, input/result commitments, required joins, allowed variation, and stop. Use `A.3.1` for Method identification. Keep an unresolved proposal as a candidate account; an attractive name, complete document or parent Method does not admit it.
 
-When several grounded occurrences or direct sources leave the reusable way genuinely unclear, `A.3.1.MR` can help recover candidate accounts. It is not the route for filling a missing design choice in a prospective recipe. Ask the designer to state the proposed action and its conditions.
+When observations or evidence about performances leave the reusable way unclear, `A.3.1.MR` can help recover candidate accounts. Use `A.3.1.DR` when a proposed way in documentary guidance needs its source meaning or status recovered. If a prospective recipe lacks a design choice, ask the designer to state the proposed action and its conditions; reconstructing past practice does not make that choice.
 
 Decompose a heavyweight school or package only far enough to compare contributions. The following contrasts are useful starting questions, not an exhaustive taxonomy or automatic assignment rule.
 
@@ -3764,7 +3811,7 @@ The practice question is **how to develop a usable professional repertoire under
 - `PSDA.15` supplies bounded follow-up evidence only when it can change the repertoire decision under the same relevant conditions and horizon. A local observation neither entails nor authorizes the repertoire result.
 - `PSDA.4` chooses and combines Methods for an engagement; this pattern develops and maintains the reusable offerings and their limits. It does not require a new repertoire cycle before every selection.
 - `PSDA.13`, `PSDA.5`, `PSDA.6`, `PSDA.7`, `PSDA.8`, `PSDA.9`, `PSDA.14`, `PSDA.15` and `PSDA.17` expose participation, alternative, comparison, recommendation, follow-up and arrangement requirements that a Method offering may need to preserve. Their available descriptions are not evidence of this particular Method's enactment or effectiveness.
-- `A.3.1` governs Method identification; `A.3.1.MR` supplies candidate recovery only under its actual source/occurrence conditions; `A.3.2` governs a MethodDescription rather than admitting every multi-Method package.
+- `A.3.1` governs Method identification; `A.3.1.DR` recovers documentary contributions when their source meaning or status is unclear; `A.3.1.MR` recovers candidate ways from performance evidence. `A.3.2` governs a MethodDescription rather than admitting every multi-Method package.
 - `A.3.1.MV` can supply qualified generic variant, derivation and non-variant maintenance guidance. Resemblance or shared repertoire vocabulary does not by itself establish a formal Method-specialization relation.
 - `A.10` and `A.15.9` qualify and obtain exact source or specialist results. `A.10.1` and `G.11` apply to their respective affected-use and currentness questions, not as substitutes for the field repertoire decision.
 - `G.5` declares a selector-facing result when that claim is live over identified members and grounds; it supplies neither a universal Method-family classification nor professional fit.
@@ -4089,7 +4136,7 @@ The following questions help keep different claims apart. Open only those that c
 | Retention or loss | Evidence over the stated interval and relevant opportunities that a contribution continued, changed or ceased to be usable or enacted. | Silence, a missing publication or no opportunity to use the Method does not by itself establish loss. |
 | Mediation | The actual tool, platform, community or publication arrangement and the visibility, interpretation, recognition or selection relation it changes. | A prominent display, recommender output or high access count does not establish value, control or cultural success. |
 
-Keep claim scope smaller than or equal to the observed population and period. A workshop account may show one useful adaptation. A review of published applications may reveal cases to inspect. Neither establishes how every practitioner in a country works.
+State observations for the population and period actually covered. A wider transfer, population or forecast claim needs its own stated basis and uncertainty. A workshop account may show one useful adaptation. A review of published applications may reveal cases to inspect. Neither establishes how every practitioner in a country works.
 
 The `PSDA.16` repertoire supplies a variant, lineage or bounded evidence only when it changes this cultural decision. Its offering status is not evidence of transmission. The `PSDA.17` arrangement result can similarly supply a local change or observation; resolution of one interference is not evidence that another team learned it. If either input is absent, stale, out of scope or incompatible, obtain a compatible result that supports the particular cultural link being claimed, or leave that link unproved.
 
@@ -4512,7 +4559,7 @@ Check whose question is being answered, which disclosure is actually permitted, 
 3. **MUST** bound the offered service, actual competence, applicable professional conditions, exclusions, and referral or closure requirements.
 4. **MUST** establish the relevant participation and information-use basis without inferring consent, capacity, or disclosure permission from a title, payment, or form alone.
 5. **MUST** address material conflicts before relying on the requested advice; disclosure must not substitute for the treatment actually required.
-6. **MUST** distinguish AI assisting the adviser from AI as the developing subject and preserve the respective professional and technical qualification.
+6. When AI is involved, **MUST** distinguish AI assisting the adviser from AI as the developing subject and preserve the respective professional and technical qualification.
 7. **MUST** use qualified external results for specialist premises and state the precise scope blocked when a result is missing.
 8. **MUST** distinguish an admissible engagement question from a warranted recommendation and each later authorized choice or realization.
 9. **MUST** preserve actual professional duties after delivery without inventing an indefinite follow-up service.
@@ -4568,6 +4615,239 @@ Separating the two questions makes a useful partial return possible: the service
 - **Uses PSDA.15:** a genuinely needed follow-up arrangement and affected recommendation return.
 
 ### PSDA.19:End
+
+## PSDA.20 - Explore a Situation through Goals and Dependencies
+
+> **Type:** Method pattern body
+> **Status:** Stable
+>
+> **Primary working result:** a usable answer about a proposed change, an explained new difficulty, or a precise next inquiry question, with the participants' reasons, required provision, analysis assumptions and remaining limits connected.
+
+### PSDA.20:1 - Problem frame
+
+**Use this when** a proposed change looks useful from one participant's position, but you cannot explain what it would require or change for the others. It develops an early inquiry using participants' intentions, provision and alternatives. The result may be a comparison, a newly discovered difficulty or a precise question for investigation. A diagram is useful when it makes those relationships easier to inspect; a list of goals alone supplies no analysis.
+
+Start with one actual episode or proposal. Ask who needs an answer and which difference would change what they do; then trace one provision on which the proposed improvement depends. The first useful result may be an omitted contributor or an unsupported condition, before a complete model or comparison is available.
+
+Use an already adequate model or qualified answer directly. **Do not use this pattern** for a lone technical calculation whose subject and conditions are settled, or merely to draw a more elaborate picture. If only the consequence comparison is missing, use PSDA.8; if several adequate models need their contributions reconciled, use PSDA.3. A settled choice or the actual allocation of work belongs to its responsible decision or performing practice.
+
+An analyst, practitioner or assisting agent can conduct this inquiry for their own work or with others. Access to the relevant accounts and enough preparation to interpret the selected relationships are needed. A separate adviser, a workshop, a formal notation and a solver are not prerequisites. When another person's intention or a specialist relationship cannot be established, retain that limit rather than supply it on their behalf.
+
+### PSDA.20:2 - Problem
+
+A proposal can improve one visible result while relying on work that nobody has provided. A replacement sensor may improve a count without settling who keeps the service operating during installation. A diagram can make the dependency visible yet still conceal its purpose, timing or competing assignment. Evaluating the diagram as if those conditions already held produces an answer to a different question.
+
+The reverse difficulty also matters. An unexpected model result can reveal that the original problem was incomplete. Continuing to rank the initial proposals then misses a useful change in question: perhaps the immediate obstacle is a joint staffing arrangement rather than the proposed technology. The practitioner needs a way to move between the working situation, the model question and the interpreted answer while preserving what earlier reasoning still establishes.
+
+### PSDA.20:3 - Forces
+
+| Force | Tension |
+| --- | --- |
+| Local reasons and joint work | A change can help one participant while its provision or burden prevents another necessary contribution. |
+| Useful simplification and omitted conditions | A small model can expose the next question, but hiding a provider or assignment can make an unavailable arrangement look adequate. |
+| Exploration and reliance | Conditional analysis can be useful before every input is known; a stronger claim needs the corresponding evidence and actual conditions. |
+| Required results and freedom of means | Naming the needed provision leaves room for another method; prescribing a task can narrow that freedom deliberately or accidentally. |
+| Revision and continuity | A discovered conflict can change the problem, while independent relationships and earlier conditional answers remain usable. |
+
+### PSDA.20:4 - Solution
+
+Connect the receiving question to participants' reasons and required provision, use the model to answer a stated conditional question, and interpret that answer back in the working situation. If the answer exposes an omitted condition, revise the affected model and question. Stop with the result that the receiving work can use.
+
+The connected contributions are [PSDA.12](#psda12---recover-participants-concerns-and-affected-systems-for-a-decision-support-inquiry) for whose concerns enter, [PSDA.3](#psda3---construct-complementary-situation-and-option-models) for what the model can answer, [PSDA.5](#psda5---generate-decision-alternatives) for alternatives, and [PSDA.8:4.2.1](#psda8421---construct-and-question-a-qualitative-consequence-network) for qualitative analysis. Enter at the unresolved question and retain usable answers. If a current direct calculation or an already qualified comparison settles it, use that result.
+
+The sections below develop one complete car-park inquiry alongside the general moves. They are not compulsory stages. A current model can supply the needed relationships; an already precise question can enter analysis; an unexpected result can return directly to the missing provider or condition. Preserve those adequate inputs rather than rebuilding them to follow the exposition. The other case in :5 starts from a different kind of constraint.
+
+#### PSDA.20:4.1 - Let the question determine what to model
+
+Begin with an episode, proposal or unexplained result. Ask who needs an answer, what they could do with it and which difference would change that action. Obtain relevant participants' accounts where possible; otherwise use attributable interviews, documents and observations, retaining unanswered questions for those who know the work. Participation in constructing the model can help correct it, but attendance does not establish agreement with a proposal.
+
+Consider a car park whose unreliable sensors sometimes send drivers towards occupied floors. Attendants walk the floors and correct the displayed counts. Management proposes replacing the entire system, since the sensors cannot simply be exchanged in the current design. The initial inquiry is: **does replacement address the service difficulty better than continuing manual correction?** This is an adaptation of the parking exercise in the [iStar tutorial, slide 57](https://zenodo.org/records/10637477/files/iStar-tutorial-online.pdf?download=1). The following participants, conditions and judgements are constructed for this walkthrough.
+
+Include drivers because the guidance affects finding a place; attendants because correction requires their work; the operations manager because staffing and service arrangements are theirs to decide; and the technical supplier because replacement feasibility and installation depend on its contribution. Management cares about operating cost and reputation. Drivers care about usable guidance and protection of their cars. An attendant's account of an assignment is evidence about that work, not a statement of every driver's preferences.
+
+Keep the questions distinct. What would make the displayed count trustworthy? Can the work supply it when needed? How would the alternatives affect cost and the concerns behind reputation? A model of intentions can expose these questions before it has the technical estimates needed to answer all of them.
+
+#### PSDA.20:4.2 - Connect provision to the reasons on both sides
+
+Separate a desired state, an action, a required entity and a quality. “Current guidance is available” states a desired result. “Walk each floor and enter a corrected count” prescribes work. The count is information used in producing the display. Accuracy concerns whether that information represents the occupied and available spaces well enough for the intended guidance. A completed round does not by itself establish that accuracy.
+
+For each important provision, connect five positions: the receiving participant, why that participant needs it, what must be provided, the provider, and how the provider proposes to obtain it. For example:
+
+> The operations manager needs a checked floor count from the attendant so that the service can issue current guidance; the attendant obtains the count by inspecting the floor and entering the result before the next update.
+
+Keep the attendant's checking task, the supplied count and the manager's need as distinct parts of this statement. If the checking method or update deadline is unknown, leave that question visible. Describing a dependency does not establish that the provider has accepted the work or can perform it.
+
+Requiring a count with stated fitness conditions leaves room to choose its production method. Requiring a specified inspection task restricts that choice. State which relationship the work needs. Similarly, two recipients needing information called “the floor count” may need different intervals or accuracy; matching names do not establish interchangeable provision.
+
+Now recover the internal relationships that explain the alternatives. Current guidance needs a suitable count and a working way to publish it. A count might come from supported automatic sensing or from a sufficiently recent manual inspection. These are candidate means; neither is adequate merely because it appears under an “or”. Manual correction also needs staff time and access. Replacing the system needs a qualified design, installation and an operating arrangement. A technical supplier's future delivery is an external dependency, not a task the attendant can perform.
+
+For each arrow, state whether it means a necessary condition, a sufficient alternative, a favorable or adverse contribution, or a quality of something. Accuracy can help reputation without guaranteeing it: the manager also relates reputation to protection of parked cars. An arrow saying that protection matters does not establish that it is provided.
+
+#### PSDA.20:4.3 - Show the part of the model needed for the current question
+
+
+
+A view showing only participants and external provision helps locate a missing supplier. Opening the manager's and attendant's internal reasons exposes why the count is needed and what work supports it. Opening the supplier's proposed arrangement becomes useful when installation or later maintenance can change the answer.
+
+In iStar these are the strategic dependency view, strategic rationale view and selective combinations of them. They show different amounts of one model. They are not required stages, and a hidden detail is not an absent condition. Preserve the same identified dependency when changing views; otherwise a convenient simplification can silently replace the thing being examined.
+
+For this car park, an overview can show “attendant supplies count”. To examine availability during a shift, open the checking task and its staffing conditions. To compare whole cost, obtain the relevant cost account; opening more circles does not calculate it. The [iStar 2.0 Guide, §§2–8](https://arxiv.org/html/1605.07767v3) supplies the notation, distinctions and integrity rules when an actual iStar model is wanted. This prose walkthrough uses those distinctions without claiming to be a solver-ready model.
+
+#### PSDA.20:4.4 - Turn a working question into an analysis, then recover its meaning
+
+
+
+Define one alternative precisely enough to tell which work and assumptions change. Alternative A retains the existing displays and uses manual correction. Alternative B installs the proposed replacement and uses its automatic counts. For the initial comparison, suppose staffing for A is available and the supplier has described a technically plausible B, while B's installation interval and whole cost remain unknown. Do not compare A in its troublesome current state with B in an unexplained ideal state.
+
+An initial analysis value expresses an observation or an assumption in this particular question. To ask what B would change *if installed and operating as proposed*, provisionally assume that installation and specified sensing performance hold. Mark both as assumptions. Keep the unresolved installation and cost questions attached to the investment decision. A conditional service comparison can proceed without pretending those inputs have been obtained.
+
+Likewise, leaving manual rounds out of B means they are not part of that proposed arrangement. It is not evidence that attendants cannot inspect a floor. An uninvestigated element stays uninvestigated; an investigated effect may remain unknown; opposed grounds may remain in conflict. Neither omission nor uncertainty means a negative observation.
+
+Carry each alternative through the relationships using [PSDA.8:4.2.1](#psda8421---construct-and-question-a-qualitative-consequence-network). Keep the initial assumptions and intermediate judgements with its result. For A, a sufficiently recent and correctly performed round supports a corrected count; publication still needs the working display. For B, the stipulated sensing performance supports the count conditionally; it does not establish the installation date or remove all future maintenance work.
+
+Contributions require the relevant person's or specialist's judgement when the incoming grounds do not settle the answer. Here management judges that fewer misleading indications would help reputation. It cannot infer satisfactory reputation from that improvement alone while the protection concern remains unanswered. The same extra staff work that supports accurate guidance also adds operating burden. Do not cancel these effects by counting favorable and adverse arrows.
+
+Return an answer in the language of the original inquiry:
+
+| Question | A: retained system with manual correction | B: proposed replacement |
+| --- | --- | --- |
+| Can it provide useful counts? | Supported only while the stated inspection, freshness, staffing and publication conditions hold. | Supported conditionally on the proposed installation and sensing performance. |
+| What happens to work and cost? | Inspection remains a recurring demand. | Some inspection may be displaced, but acquisition, transition and operating costs remain to be established. |
+| Does it meet the concerns behind reputation? | Better count information addresses one concern; protection of cars needs its own grounds. | The same limit applies; a better sensor is not evidence of protection. |
+
+This comparison does not yet justify the investment. It identifies what the proposal can improve and which missing facts can change the choice. Obtain a bounded installation and whole-cost answer if its expected contribution warrants the work; otherwise retain the conditional comparison or defer the choice. The answer is not “B has more satisfied goals”.
+
+#### PSDA.20:4.5 - Use surprising results to discover a different problem
+
+An unexpected answer raises two questions: whether the model or its analysis needs correction, and whether the proposed work has a problem that the original question omitted. Trace the answer back to the relations and premises that produced it. Check the inference against its analysis rules and compare the material premises with the participants' accounts and operating conditions. Correct a misrepresented relationship or mistaken premise, then reconsider the affected conclusions. If this resolves the surprise, continue the original inquiry using the repaired model.
+
+When the original question omits a necessary contribution, restate the required joint result and its conditions. A question about improving one contribution can thereby become a question about obtaining several contributions together. Explain that change to the participants: it follows from a dependency of their desired result, rather than from the analyst's preference for a larger model.
+
+Work backward from the joint result to the provisions and conditions that would make it possible. Construct alternatives by changing a provider, the means of producing a provision, its timing or the support available to it. Use PSDA.5 when generating the alternatives needs further development. A proposed relaxation of the required result returns to the people whose need or obligation it changes.
+
+Then work forward through each promising arrangement, checking the contributions together under the same conditions, including competing assignments and shared resources. Revise the affected conclusions when a premise changes; retain relationships and conditional answers whose grounds still hold. The result is a changed problem with a reason for the change and a candidate answer, rejection or next inquiry that its participants can use.
+
+
+Suppose the first model gave A an unqualified favorable result because it represented the round but omitted other assignments. Ask what must be true for that result to hold. Inspecting the rota now reveals that the same attendant must be at the security desk from 10:00 to 10:15, while the modeled correction requires leaving it for a round from 10:00 to 10:10. No substitute is assigned. These stipulated facts defeat the simultaneous arrangement.
+
+The discovery changes the model and the problem. Add the required desk coverage and its relation to the attendant's available work; then revise A's count availability for this interval. The earlier claim that a completed, timely inspection can supply a count still holds. B's separate technical hypothesis also survives. What fails is the premise that A's work can coexist with the retained service obligations.
+
+The next question is now: **how can current guidance and desk coverage both be obtained in this interval?** Another discussion asking the attendant to agree with the plan supplies no missing time or replacement. The manager who controls assignments must examine a different allocation or contributor. [OCE.11](Management%20DPF%20Suite/ORGANIZATION-CHANGE-ENGINEERING-PRINCIPLES-FRAMEWORK.md#oce11---coordinate-organization-change-work-with-continuing-service) develops that coordination when change work competes with continuing service.
+
+Work backward from the joint requirement. Current guidance needs an adequate count and publication; desk coverage needs a person at the desk. One candidate is a separately allocated competent checker while the attendant remains at the desk. Test it forward: can that person obtain the count, update the display in time and do so without abandoning another necessary assignment? Naming a replacement is not that test. Until these conditions are established, the candidate is a question for the manager, not an available solution.
+
+For a bounded continuation, suppose the manager assigns a competent relief worker for this interval, verifies that no other required assignment overlaps, and provides the permitted access and existing checking procedure. In the stipulated trial the relief worker obtains and publishes a count meeting the agreed freshness and accuracy conditions, while the attendant remains at the desk. Both required contributions are supplied in this interval. The added staffing cost belongs in A's cost account. If relief is available only today, retain today's result and reopen the staffing question before promising tomorrow's service; the earlier investment question remains open.
+
+A different candidate might change the update interval or the information promised to drivers. That changes the service requirement, so return to whether the altered guidance remains useful and acceptable. Do not weaken the criterion silently to make the diagram succeed. An incompatible candidate can be rejected without proving that all possible arrangements fail; an unsupported candidate stays conditional.
+
+Keep the unsuccessful combination and the reason it failed so that the next attempt does not repeat it. In a formal backward analysis, ask which supported conditions and judgements produce the incompatibility. A solver's failure can concern its encoding, restrictions or current assumptions; it is not a proof that the real organization has no remedy.
+
+#### PSDA.20:4.6 - Stop with a usable answer and preserve the right return
+
+The manager now has a useful result: replacement is not yet justified by the conditional service comparison; the original staffing proposal cannot provide both services; and the revised allocation has supplied them in the stipulated interval. The immediate allocation question and the longer investment question have different owners and inputs. A repaired rota can settle the first without settling the second. A completed cost comparison does not itself allocate a checker.
+
+Stop when the inquiry's purpose has been met at its declared strength: an adequate comparison is available, the decision-changing incompatibility is explained, or the next useful investigation is precise. Do not enlarge the model simply to fill every possible actor boundary. Conversely, a final label is not sufficient when the recipient cannot understand which action or missing premise it implies.
+
+When a new fact arrives, identify which assumption, relation or judgement changes. Reconsider the alternatives and consequences that depend on it, including their shared conditions, while retaining independent results. If a technical question needs dynamics, accuracy bounds or failure probabilities that this model cannot establish, use an appropriate technical model and bring its qualified answer back. More qualitative arrows do not supply those quantities.
+
+When the analysis itself is difficult, try a small interpretable question whose expected result can be explained from the modeled relationships. Inspect unreached intentions and omitted providers before taking coverage for granted. The authors' later suggestions include extreme hypothetical settings and realistic alternatives as ways to question a model. Such settings are diagnostic questions, not feasible plans or a compulsory checklist. Preparation in the chosen language and help interpreting a model may be needed; neither a completed diagram nor this walkthrough establishes independent modeling capability.
+
+### PSDA.20:5 - Archetypal Grounding
+
+#### PSDA.20:5.1 - A searchable exhibition whose material cannot simply be published
+
+A community archive proposes automatic transcription for a public website so that visitors can search thirty oral-history stories in either of two languages before an exhibition opens. The access rules, source states and capacities below are stipulated for this constructed example.
+
+The curator needs visitors to find the relevant approved story. Speakers have agreed to public use of approved excerpts; the raw recordings remain restricted. The proposed service requires an approved excerpt in both languages for each of the thirty stories. Those are conditions of this proposal, not preferences that can be compensated by faster search. The question is initially: would transcribing and publishing the recordings provide the promised service?
+
+Recover the provision before choosing software. The curator needs approved bilingual excerpts from an editorial contributor. That contributor needs permitted access to source material, a usable translation and the approval required for that use. The archive custodian can supply permitted material, while the speakers supply approval under the stipulated arrangement. A transcription tool can propose text; it does not supply permission, translation competence or the speakers' approval.
+
+An overview showing “archive supplies stories” hides these differences. Open the editorial contribution only as far as the current question needs. Distinguish producing a transcript, producing a translation and obtaining approval. Connect fidelity to the speaker's account with the visitor's ability to understand the excerpt; do not treat a readable transcript as evidence that its meaning or permitted use has been preserved.
+
+Now examine two proposed arrangements. Publishing searchable raw transcripts conflicts with the stated access rule even if the transcripts are accurate. Publishing an index of approved bilingual excerpts could meet the rule, but only if the needed excerpts can be supplied. This comparison neither rejects automatic transcription as an internal aid nor silently relaxes the required public use.
+
+Suppose the first model gave the second arrangement a favorable result because it represented an editor as available. On asking what that assumption includes, the curator finds that approved bilingual excerpts exist for ten stories and the available editorial work can complete five more before opening. No supplier is yet identified for the remaining fifteen. The model had combined “some editorial help is available” with “all thirty contributions will be supplied.” The latter claim is unsupported. The ten existing excerpts and their publication permission remain usable. Completion of the next five remains conditional on the planned editorial work.
+
+The next question becomes: can the remaining approved bilingual material be obtained within the opening conditions? Work backward from that joint requirement. An existing approved translation held by a contributor is one candidate provision; a newly commissioned translation with the necessary review is another. Test any candidate forward for source fitness, access, permitted publication, capacity and timely approval. Naming a translator or obtaining a file does not establish all of these conditions. A smaller public collection would change the promised scope and needs its own authorized decision; it is not a repair made by relabelling an unknown result.
+
+For a further change, suppose a contributor supplies suitable translations for the fifteen stories that lacked a supplier, but their permission covers display inside the exhibition only. The content and translation claims need not be discarded. What changes is the proposed online publication. Return that restriction to the access arrangement and the curator's decision. An on-site search arrangement would change the proposed access route, so the curator must decide whether it would still meet the receiving need. Public web access is not established. The inquiry can stop with that precise distinction and next question without claiming that the service has been implemented.
+
+Unlike the car-park allocation in :4.5, this continuation does not stipulate a completed remedy. It demonstrates a useful bounded return when a missing provision or use condition remains unresolved. It also shows why a requirement expressed as a quality cannot be weakened merely to obtain a favorable analysis label.
+
+#### PSDA.20:5.2 - A sufficient direct answer
+
+The archive already has a current, qualified answer covering the exact approved excerpts, languages, access route and opening period. The remaining task is to apply the settled publication instruction. Use that answer and the responsible publishing practice. Reconstructing the goals model adds no missing result.
+
+### PSDA.20:6 - Bias-Annotation
+
+**Scope:** early inquiry through participants' intentions and dependencies. **Lenses:** **Onto/Epist** keeps participants, work, model content and evidence distinct; **Prag** selects the answer that changes the receiving action; **Arch** exposes necessary provision and competing assignments; **Gov** preserves actual permission and allocation; **Did** separates a readable account from demonstrated modeling capability.
+
+Proposal bias treats the suggested technology as the problem's boundary. Agreement bias mistakes participants' recognition of a diagram for acceptance or feasibility of the work. Favorable-label bias hides unknown provision or offsets a protected condition against another benefit. Ask what each relied-on relationship means and which actual condition supports it; keep a contrary account or missing premise visible.
+
+### PSDA.20:7 - Conformance Checklist
+
+- The inquiry identifies who needs an answer, what action it can inform and what would make the present result sufficient.
+- A relied-on provision distinguishes its recipient, purpose, supplied result, provider and proposed way of obtaining it. Unknown availability or acceptance is not replaced by a dependency label.
+- A view preserves the modeled relationships relevant to the question; omitted display detail is not treated as an absent condition.
+- Initial analysis assumptions remain distinguishable from observations, model relationships and unknown or conflicting grounds.
+- The analysis result is interpreted in the original working terms, with its limited use and any newly discovered problem stated.
+- A backward candidate is tested as a whole under the same requirements; an unsupported combination remains conditional and an incompatible one does not prove that all remedies fail.
+- Changed assumptions or evidence reopen their dependent answers while independent results remain available. A sufficient result permits stopping.
+- When a notation or solver is chosen, its language and analysis rules are compatible and its restrictions are preserved. Actual allocation, performance, permission and empirical effects retain their own grounds.
+
+### PSDA.20:8 - Common Anti-Patterns and How to Avoid Them
+
+| Misuse | Why it fails and what to do instead |
+| --- | --- |
+| Start by drawing every actor and goal. | A large picture can still miss the consequential question. Begin with the receiving use and add a relationship when it can change the answer. |
+| Count favorable arrows or satisfied goals. | Counts hide the meaning and strength of the grounds, necessary combinations and protected conditions. Use the qualified consequence analysis and explain the returned profile. |
+| Treat a supplier name as delivered work. | A named role can lack access, time, ability or an accepted assignment. Establish the provision needed for the proposed use. |
+| Interpret an assumption as a result. | “If installed” cannot establish an installation date. Retain the assumption with the conditional answer and return the missing investment or operating premise. |
+| Repair a failed model by weakening the recipient's criterion. | This changes the problem without the required decision. Compare another means or make the proposed requirement change explicit. |
+| Rebuild everything after one change. | Independent results can remain valid. Follow the changed relation and its downstream reliance, reopening the boundary only when the new question requires it. |
+
+### PSDA.20:9 - Consequences
+
+The inquiry can yield a useful result before a whole decision is possible: an explained incompatibility, a bounded comparison or a question that a particular source can answer. It can also reveal a different problem while preserving earlier conditional knowledge.
+
+The cost is obtaining and interpreting the relevant accounts and relationships. Large or technical questions can exceed a manual model's useful reach. Reuse a suitable domain result, obtain competent help or narrow the present claim when that is the better way to answer the question. The Method does not by itself improve service, establish participant agreement or demonstrate independent modeling capability.
+
+### PSDA.20:10 - Architectural Rationale
+
+Participants' intentions matter here because the same supplied entity can serve different purposes and require different conditions. Connecting provision to reasons on both sides explains why substituting a task, supplier or output can change the inquiry. The model is useful when those distinctions alter an answer; it need not become a complete representation of the organization.
+
+Forward analysis examines what follows from a proposed arrangement. Backward inquiry constructs possible means for a needed joint result. Neither alone settles the working question: initial assumptions and intermediate judgements must be interpreted, and a proposed combination must survive its joint conditions. Returning an unexpected answer to an omitted source question allows the problem and the candidate response to change together.
+
+PSDA.3 remains the Method for making complementary model contributions usable. PSDA.8 remains the Method for comparing consequences, including its developed qualitative branch. The present Method supplies the broader inquiry in which a question, an actors-and-goals model and an interpreted answer develop together. It can use either constituent without making all Decision Design Methods mandatory. Where a sufficient model and a settled comparison already exist, the narrower direct contribution is preferable.
+
+### PSDA.20:11 - SoTA-Echoing
+
+The iStar Guide defines a language; the [PoEM 2009 treatment](https://www.cs.toronto.edu/~jenhork/Papers/Horkoff_PoEM_2009l.pdf) develops interactive modeling and forward evaluation. The [ER 2010 procedure](https://www.cs.toronto.edu/~jenhork/Papers/ER_Horkoff.pdf) adds formal backward search with human judgements and backtracking under stated structural restrictions. The manual backward question used here is an adaptation, not an implementation of that algorithm. If a named solver is used, select compatible language and analysis versions and preserve their restrictions, rather than applying older propagation tables to iStar 2.0 without a justified mapping.
+
+The [subsequent systematic-versus-ad-hoc study](https://www.cs.toronto.edu/~jenhork/Papers/PoEM10_Horkoffetal.pdf) gives reasons to attend to interpretation, coverage and training. It does not establish that a systematic procedure uniquely produces better understanding or more useful new questions. Use the model and its analysis for the contribution they can actually supply, then establish the domain evidence and decisions needed for reliance.
+
+The comparison concerns this manual, question-led inquiry rather than unrestricted formal analysis or the empirical effectiveness of a consulting intervention.
+
+| Source contribution or alternative | Adoption and limit for this Method |
+| --- | --- |
+| iStar 2.0 language and its dependency/rationale views | Use the distinctions and integrity rules when that notation is chosen. The inquiry can also use prose; language conformance does not supply the domain facts. |
+| Interactive forward evaluation and human judgement | Adapt the connection between a working question, stated initial values, relationships and an interpreted answer. Unresolved or conflicting grounds remain possible results. |
+| Formal backward search | Retain the useful backward question and whole-candidate forward test. Do not claim an implementation or transfer old formal rules to a different language version without a justified mapping. |
+| A sufficient technical model or qualified comparison | Use it directly for the question it answers. More intentional modeling is not a substitute for missing dynamics, accuracy bounds, probabilities or actual operating evidence. |
+
+The car-park continuation and the exhibition case are constructed applications. Their stipulated allocations, capacities and permissions illustrate the reasoning; they are not new evidence that the Method improves outcomes. A stronger empirical or solver claim needs its own qualified basis.
+
+### PSDA.20:12 - Relations
+
+- [PSDA.12](#psda12---recover-participants-concerns-and-affected-systems-for-a-decision-support-inquiry) supplies participant and affected-subject recovery when those contributions are missing. [PSDA.13](#psda13---facilitate-decision-support-inquiry-and-preserve-material-dissent) supplies professional facilitation where its conditions obtain.
+- [PSDA.1](#psda1---generate-plural-problem-formulations) and [PSDA.2](#psda2---set-and-reopen-the-problem-boundary) support a changed formulation or boundary. A source-supported local question need not repeat those Methods.
+- [PSDA.3](#psda3---construct-complementary-situation-and-option-models) makes several model contributions and their limits usable. [PSDA.5](#psda5---generate-decision-alternatives) receives a newly constructed candidate without inheriting feasibility or ranking.
+- [PSDA.8:4.2.1](#psda8421---construct-and-question-a-qualitative-consequence-network) supplies the qualitative forward and backward analysis used here. The whole inquiry retains its purpose, initial assumptions, interpretation and return to the source situation.
+- FPF C.40.CD develops the general relation between a changed problem and a changed way. FPF B.5.SD supplies substantive discussion when constructing the answer with others is the missing contribution.
+- [OCE.11](Management%20DPF%20Suite/ORGANIZATION-CHANGE-ENGINEERING-PRINCIPLES-FRAMEWORK.md#oce11---coordinate-organization-change-work-with-continuing-service) supplies organizational coordination when change work competes with continuing service. An inquiry result does not itself allocate that work.
+- [PSDA.14](#psda14---prepare-and-return-a-decision-support-recommendation) can use the qualified answer for a recommendation. The actual choice, performance and any effect claim retain their direct competent owners.
+
+### PSDA.20:End
 
 # Development-direction advising
 
@@ -4904,7 +5184,7 @@ These are model values, not monetary prices, measured municipal performance or a
 
 [PSDA.6](#psda6---represent-values-and-trade-offs) keeps the declared value scheme separate from a participant's concern. [PSDA.7](#psda7---represent-decision-relevant-uncertainty-and-evidence-limits) distinguishes an assumed road-loss probability from an established one. [PSDA.8](#psda8---compare-consequences-of-decision-alternatives) can compare the stated consequences, and [PSDA.9](#psda9---test-robustness-and-sensitivity-of-decision-alternatives-and-their-comparison) exposes a possible reversal rather than hiding it.
 
-In this deliberately stated weighted-loss model, let `p` be the assumed road-loss probability and `λ` the declared cost weight. The two totals are `2 + p + 8λ` for F and `1 + 8p + 5λ` for M. F is lower only when `7p > 1 + 3λ`. With `λ = 0.5`, `p = 0.2` favors M; `p = 0.6` favors F. Neither probability nor the weight has been established for the board's decision. When the missing contribution is a trade-off from expressed consequence comparisons, use PSDA.6:4.5 and its worked construction in :5.5. That deterministic value account alone does not supply preferences over uncertain outcomes.
+In this deliberately stated weighted-loss model, let `p` be the assumed road-loss probability and `λ` the declared cost weight. The two totals are `2 + p + 8λ` for F and `1 + 8p + 5λ` for M. F is lower only when `7p > 1 + 3λ`. With `λ = 0.5`, `p = 0.2` favors M; `p = 0.6` favors F. Neither probability nor the weight has been established for the board's decision. When the missing contribution is a trade-off from expressed consequence comparisons, use PSDA.6:4.5 and its worked construction in :5.5. When an expected-utility comparison is needed, PSDA.6:4.5.6 elicits lottery comparisons and joins the resulting utility family to a probability model. The weighted-loss slice here is a declared modelling assumption, not a consequence of deterministic value elicitation.
 
 The result therefore identifies a decision-bearing uncertainty and a conditional comparison. It does not prove that a probability obtains, that assistance is reachable, that a protected condition can be traded away, or that F or M should be bought. More decimal places would not close those gaps.
 
@@ -5400,11 +5680,11 @@ When a feasible arrangement has been chosen and authorized, the teams still have
 
 ## PSDA.Sources:1 - Source arguments and refresh
 
-Each full pattern preserves its adopted contribution, serious alternatives, trade-offs and source limitations in SoTA-Echoing. Those arguments govern reuse more precisely than a publication year or an author list. The PSM and decision-analysis studies supply their examined claims and settings; professional sources qualify their own relationships; constructed examples supply transparent demonstrations, not effect estimates.
+Each pattern's SoTA-Echoing section gives the working question, adopted contribution, serious alternatives, trade-offs, source limits and the observation that would reopen its argument. Use that argument before relying on a citation. The map below locates these arguments; it neither surveys the whole field nor independently confirms the cited sources.
 
-Use a source result only for its actual subject, configuration and question. When a source or condition changes, recover which inference depended on it, preserve independent grounds and obtain the smallest further result that can change the answer. FPF A.10 qualifies a known reliance; A.10.1 revalidates affected uses when a changed source requires their discovery; G.11 governs the selected currentness question. Actual scientific, legal, engineering and professional conclusions remain with their practices.
+PSM and decision-analysis studies support the claims and settings they examined; professional sources qualify their own relationships; constructed examples demonstrate reasoning without estimating effects.
 
-Each pattern's SoTA-Echoing section owns its substantive comparison: the working question, selected move, serious rival, trade-off, source limits and observation that would reopen it. Use that argument before relying on a citation. The following map is a return aid, not a second source doctrine, a field census or independent confirmation of the sources it condenses.
+Use a source result for its subject, configuration and question. When a source or condition changes, recover the inferences that depended on it and preserve independent grounds. Obtain a further result only when its attainable contribution to the receiving answer warrants the whole acquisition burden. FPF A.10 qualifies a known reliance; A.10.1 revalidates affected uses when a changed source requires their discovery; G.11 governs the selected currentness question. Actual scientific, legal, engineering and professional conclusions remain with their practices.
 
 | Source-informed contribution | Source line used and substantive limit | Return when the answer changes |
 | --- | --- | --- |
@@ -5423,18 +5703,18 @@ Publication years identify sources; they do not by themselves identify a qualifi
 
 ## PSDA.Sources:2 - Citation and limits
 
-For this working edition, cite Anatoly Levenchuk, *Decision Design Principles Framework*, 12 October 2026, the named PatternID and the actual publication used. This working text contains eighteen complete Methods and the explanations needed to select and combine their contributions. A pattern address identifies a contribution within that publication; its Markdown fragment follows the actual heading. A changed title or source requires checking its maintained return rather than assuming a title-independent URL.
-
-Cite the title, PatternID and edition actually used, with a permanent link or stored copy when the exact wording matters:
+Cite the edition and publication actually used. For this working edition, use:
 
 ```text
 Anatoly Levenchuk, with AI-assisted development and review.
 Decision Design Principles Framework.
-Working edition, 12 October 2026.
+Working edition, 24 October 2026.
 GitHub repository: https://github.com/ailev/FPF
 ```
 
-For a particular pattern, add its PatternID and title, for example: PSDA.14 - Prepare and Return a Decision-Support Recommendation. Retain the release date, and include a permanent link or stored copy when the exact wording matters.
+For a particular contribution, add its PatternID and title—for example, PSDA.14 - Prepare and Return a Decision-Support Recommendation. Keep that edition's date and include a permanent link or stored copy when the exact wording matters.
+
+This edition contains nineteen complete Methods and the explanations needed to select and combine them. Markdown fragments follow the actual headings; when a title or source changes, check its maintained address.
 
 ## PSDA.Sources:3 - Source responsibility and references
 

@@ -1,43 +1,81 @@
 # Management DPF Suite
 
-> First Suite edition.
+**Connect direction, commitments, resources and collective work.** Use this Suite when a promising direction, an accepted promise and the available means do not yet fit together, or a changed condition calls for a different commitment.
 
-Management connects direction, commitments, provision and performance so that a collective undertaking can make and sustain promises under actual conditions. The undertaking can be a business, public service, temporary collaboration or voluntary community. A shared employer is unnecessary; the contributions, authority and resources on which others rely must have an actual basis.
+The undertaking can be a company, public service, temporary collaboration or voluntary community. A shared employer is unnecessary, but contributions, resources and authority need an actual basis. A smaller promise, sufficient existing arrangement or justified refusal can be the useful result.
 
-Use this Suite when an attractive direction, an accepted promise and available means do not yet fit together, or a changed condition calls for a different commitment. A sufficient existing arrangement, smaller promise or justified refusal can be the useful result.
+This Suite contributes methods for organizing a **shared culture of thinking and acting among people and AI agents**: connecting their direction, contributions, commitments and conditions of work. Its methods can help sustain both current performance and open-ended development. The [Library account of this culture](../../FPF-LIBRARY-REFERENCE.md#libraryreference13---a-canon-for-shared-humanai-culture) explains the common canon; actual roles and authority follow the working arrangement.
 
-When an organization or another established system is the subject of change, management can change its functioning by arranging current Work, authority, resources and commitments while retaining its organization chart. That is an engineering contribution without a separate organization-redesign project. For a voluntary community or temporary collaboration, first establish what system and whole, if any, are being changed. OCE develops the deliberate organization-change contribution, while the other management fields retain their own subjects. Management is the organizational specialization of engineering described by this Suite; the broader Engineering edition connects to it without repeating OCE in its direct roster.
+Framework and method links open readable text on fpf.tools or Markdown sources in the repository. GitHub previews can truncate large files. For fpf.tools, check the [displayed source edition](https://fpf.tools/status) when the version matters.
 
-## Read the whole and its constituents
+## How this Suite is organized and why
 
-The [Management DPF Suite Architectural Reference](MANAGEMENT-DPF-SUITE-REFERENCE.md) explains the field, the relations among its twelve constituent languages, alternatives, limits and returns to external suppliers. Its [voluntary practice network (Management.Reference:5.1)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference51---a-voluntary-practice-development-network) and [operating-business order (Management.Reference:5.2)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference52---a-new-order-in-an-operating-business) show different connected uses. These cases illustrate the architecture; they do not define the Suite's coverage.
+**[Read the Management Architectural Reference](MANAGEMENT-DPF-SUITE-REFERENCE.md).** It explains why strategy, goals, commitments, operations, resources, communities and organizational change belong in one connected management account, what each contributes, and which related disciplines remain outside this Suite. Read it for the overall design and its alternatives; use a familiar sufficient method directly when that is all your task needs.
 
-The constituent DPFs provide the full Methods, cases and source grounds:
-
-Use [CUST.1](CUSTOMIZATION-AND-PRODUCTIZATION-MANAGEMENT-PRINCIPLES-FRAMEWORK.md#cust1---manage-client-variation-and-develop-repeatable-offerings) for the connected work from client differences to a maintainable local or repeatable answer. Its constituent Methods can also be applied directly: an offering-family question, a repeated-delivery question and a transition for existing clients need not start a complete new customization programme.
+## Choose an entry
 
 
-**Patterns** counts the complete pattern bodies in each linked DPF. **Text, M characters** gives the size of its full Markdown file, including its embedded Reference and supporting sections, in millions of Unicode characters (1 M = 1,000,000), with spaces and original line breaks included and values rounded to three decimals.
+| Your question | Open |
+| --- | --- |
+| Which direction and investment are worth pursuing? | [Strategy](https://fpf.tools/STR). |
+| How do we construct, pursue and revise goals or use a complete OKR/CFR practice? | [Goals and OKR (GOALS)](GOAL-CONSTRUCTION-AND-REGULATION-PRINCIPLES-FRAMEWORK.md); [GOALS.6](GOAL-CONSTRUCTION-AND-REGULATION-PRINCIPLES-FRAMEWORK.md#goals6---make-a-professional-goal-workable-for-the-person-pursuing-it) for a human professional goal and [GOALS.7](GOAL-CONSTRUCTION-AND-REGULATION-PRINCIPLES-FRAMEWORK.md#goals7---assign-and-continue-goal-directed-ai-work) for AI work. |
+| How can production or service be arranged, and current work meet its promises? | [Operations Management](https://fpf.tools/OPS); use [Organization Administration](https://fpf.tools/ADM) for permissions, provision and obligations. |
+| How do we answer different clients without losing repeatability or scale? | [Manage client variation and develop repeatable offerings (CUST.1)](https://fpf.tools/CUST.1). Its constituent methods also work for a bounded offering, delivery or transition question. |
+| How do we connect hiring, pay, employee voice, protection and work transitions? | [Human Resource Management (HRM)](HUMAN-RESOURCE-MANAGEMENT-PRINCIPLES-FRAMEWORK.md). |
+| How do we direct personal action, establish joint direction and sustain participation? | [Leadership](https://fpf.tools/LDR) and [Community Management](https://fpf.tools/CB), according to the missing result. |
+| Do roles, authority or capability allocations need to change? | [Organization Change Engineering](https://fpf.tools/OCE). |
 
-| Constituent DPF | Patterns | Text, M characters |
-| --- | ---: | ---: |
-| [Strategy (STR)](STRATEGY-PRINCIPLES-FRAMEWORK.md) | 17 | 0.530 |
-| [Operations Management (OPS)](OPERATIONS-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | 28 | 0.903 |
-| [Organization Administration (ADM)](ORGANIZATION-ADMINISTRATION-PRINCIPLES-FRAMEWORK.md) | 15 | 0.302 |
-| [Corporate Governance (CGOV)](CORPORATE-GOVERNANCE-PRINCIPLES-FRAMEWORK.md) | 17 | 0.274 |
-| [Management Accounting (MA)](MANAGEMENT-ACCOUNTING-PRINCIPLES-FRAMEWORK.md) | 9 | 0.163 |
-| [Corporate Finance (FIN)](CORPORATE-FINANCE-PRINCIPLES-FRAMEWORK.md) | 22 | 0.584 |
-| [Marketing (MKT)](MARKETING-PRINCIPLES-FRAMEWORK.md) | 14 | 0.384 |
-| [Customization and Productization Management (CUST)](CUSTOMIZATION-AND-PRODUCTIZATION-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | 8 | 0.184 |
-| [Engineering Asset Management (EAM)](ENGINEERING-ASSET-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | 16 | 0.265 |
-| [Leadership (LDR)](LEADERSHIP-PRINCIPLES-FRAMEWORK.md) | 3 | 0.128 |
-| [Community Management (CB)](COMMUNITY-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | 16 | 0.526 |
-| [Organization Change Engineering (OCE)](ORGANIZATION-CHANGE-ENGINEERING-PRINCIPLES-FRAMEWORK.md) | 17 | 0.697 |
+For a connected case, the [Management Architectural Reference](MANAGEMENT-DPF-SUITE-REFERENCE.md) follows both a [voluntary practice network (Management.Reference:5.1)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference51---a-voluntary-practice-development-network) and [a new order in an operating business (Management.Reference:5.2)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference52---a-new-order-in-an-operating-business).
 
-OCE connects the construction of organizational relations to feasible commitments and has its complete home in this Suite. [Maintenance Engineering and Management (MNT)](../Engineering%20DPF%20Suite/MAINTENANCE-ENGINEERING-PRINCIPLES-FRAMEWORK.md) connects maintained functioning to policy, support and the service programme; its complete language is in the [Engineering DPF Suite](../Engineering%20DPF%20Suite/). A manager may apply those Methods directly when capable, or obtain a qualified result. The Reference explains [organizational construction and maintenance use (Management.Reference:3.1)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference31---organizational-construction-and-maintenance-use), including why these two complete fields have different direct homes.
+## Keep strategic decisions connected
 
-A known sufficient Method can be used directly. Corporate Governance and Corporate Finance retain their corporate conditions; other settings need their applicable governing and financial practice. Participation in this Suite does not make every constituent necessary for every undertaking. The Reference states the [coverage limits and continuity conditions (Management.Reference:7)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference7---continuity-and-coverage).
+The **[strategizing mantra (STR.18)](https://fpf.tools/STR.18)** connects **strategic question → worthwhile contribution → explained way → feasible contributions and means → justified choice and commitment → realization, use and renewed questions**. An attractive direction may lack an explained way to obtain its intended result; individually affordable initiatives can compete for the same people; a useful preparation can finish without authorizing implementation. The developed account explains how to assemble and revise these answers, including when a technological possibility comes first or an existing answer is enough.
 
-Use the [Human Capability Engineering DPF Suite](../Human%20Capability%20Engineering%20DPF%20Suite/) when a person's capability must develop. Learning, coaching and organizing a team's work can contribute to the same undertaking while addressing different subjects; a provider's professional title does not decide which result is needed.
+## Keep operating decisions connected
 
-Use [Using FPF and its DPF Suites](../../USING-FPF.md) for search and connected reading, [FPF Core](../../FPF-Spec.md) for common meanings and general Methods, and the [FPF Library Architectural Reference](../../FPF-LIBRARY-REFERENCE.md) for the relation of this Suite to the rest of the Library. Full external suppliers remain necessary when their contribution is used; a copy of this folder alone does not contain them.
+The **[operational mantra (OPS.23)](https://fpf.tools/OPS.23)** connects local work to the result the operation must deliver: **accepted result → route and readiness → limiting conditions → release and feasible order → service, money and human conditions → observed result and changed conditions**. Its developed account explains the grounds, branches and returns. Increasing a team's activity can leave delivery unchanged; a changed resource window can require revising both starts and promises. Read this account when those decisions need to be made together, rather than treating the phrase order as a work schedule.
+
+## Frameworks in this Suite
+
+| Framework | What you can work on | Patterns | Text, M characters |
+| --- | --- | ---: | ---: |
+| [Strategy (STR)](https://fpf.tools/STR) · [Markdown](STRATEGY-PRINCIPLES-FRAMEWORK.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.550 |
+| [Goal Construction and Regulation (GOALS)](GOAL-CONSTRUCTION-AND-REGULATION-PRINCIPLES-FRAMEWORK.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.150 |
+| [Operations Management (OPS)](https://fpf.tools/OPS) · [Markdown](OPERATIONS-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under actual conditions. | 29 | 0.967 |
+| [Organization Administration (ADM)](https://fpf.tools/ADM) · [Markdown](ORGANIZATION-ADMINISTRATION-PRINCIPLES-FRAMEWORK.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.302 |
+| [Corporate Governance (CGOV)](https://fpf.tools/CGOV) · [Markdown](CORPORATE-GOVERNANCE-PRINCIPLES-FRAMEWORK.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.272 |
+| [Management Accounting (MA)](https://fpf.tools/MA) · [Markdown](MANAGEMENT-ACCOUNTING-PRINCIPLES-FRAMEWORK.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.211 |
+| [Corporate Finance (FIN)](https://fpf.tools/FIN) · [Markdown](CORPORATE-FINANCE-PRINCIPLES-FRAMEWORK.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.643 |
+| [Marketing (MKT)](https://fpf.tools/MKT) · [Markdown](MARKETING-PRINCIPLES-FRAMEWORK.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.412 |
+| [Customization and Productization Management (CUST)](https://fpf.tools/CUST) · [Markdown](CUSTOMIZATION-AND-PRODUCTIZATION-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.178 |
+| [Engineering Asset Management (EAM)](https://fpf.tools/EAM) · [Markdown](ENGINEERING-ASSET-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.262 |
+| [Leadership (LDR)](https://fpf.tools/LDR) · [Markdown](LEADERSHIP-PRINCIPLES-FRAMEWORK.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.185 |
+| [Community Management (CB)](https://fpf.tools/CB) · [Markdown](COMMUNITY-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.524 |
+| [Organization Change Engineering (OCE)](https://fpf.tools/OCE) · [Markdown](ORGANIZATION-CHANGE-ENGINEERING-PRINCIPLES-FRAMEWORK.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.726 |
+| [Human Resource Management (HRM)](HUMAN-RESOURCE-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.115 |
+
+**Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators, not a required reading load.
+
+## Connect the contributions
+
+An attractive new order can require a revised offering, delivery capacity, a financial commitment and a change in who may authorize work. Each can look feasible alone while the combination exceeds shared capacity. The Suite helps connect those judgements and revise the offer, provision or commitments together. Use only the contributions needed by the undertaking; Corporate Governance and Corporate Finance retain their corporate conditions.
+
+[GOALS](GOAL-CONSTRUCTION-AND-REGULATION-PRINCIPLES-FRAMEWORK.md) keeps the desired results, achievement evidence, shared means and revisions connected within this arrangement. Its full language is part of the Suite, while a person or an AI can use a sufficient Method directly without an organization or an OKR cycle. The [goal account (Management.Reference:3.4)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference34---goals-are-part-of-the-management-arrangement) explains the membership and its limits.
+
+Management can change an organization's functioning while retaining its organization chart. OCE develops deliberate organizational construction, but does not exhaust management. The [Architectural Reference](MANAGEMENT-DPF-SUITE-REFERENCE.md) explains this organizational specialization of engineering and its [coverage limits (Management.Reference:7)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference7---continuity-and-coverage).
+
+For maintained equipment, [Maintenance Engineering and Management](https://fpf.tools/MNT) supplies its full methods from Engineering. For personnel decisions and work participation, [Human Resource Management](HUMAN-RESOURCE-MANAGEMENT-PRINCIPLES-FRAMEWORK.md) connects assessment, reward, voice and participation with the conditions of the work. When a work adjustment requires clinical judgement, HRM obtains qualified help and arranges the resulting work restrictions with those responsible for the work. People's own interests remain part of these decisions. For a person's capability, use [Human Capability Engineering](../Human%20Capability%20Engineering%20DPF%20Suite/). A manager may perform a method when capable or obtain its result from another contributor. The [organizational construction and maintenance account (Management.Reference:3.1)](MANAGEMENT-DPF-SUITE-REFERENCE.md#managementreference31---organizational-construction-and-maintenance-use) explains how organizational choices and maintenance conditions constrain one another.
+
+## Organize conditions for continuing development
+
+A development undertaking may need strategy, participation, time, funding and authority as well as learning or research. This Suite helps arrange those conditions. It does not equate everyday operations, implementing a known practice or one organizational change with open-ended development.
+
+Use [Core's connected development method (C.40.OD)](https://fpf.tools/C.40.OD) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions, not names that settle the design.
+
+## Reading, use and reuse
+
+Read [Using FPF Library](../../USING-FPF.md) before applying the methods, with or without an AI assistant. Start from the contribution your work needs; the order of files is not a project sequence. Read a selected pattern's conditions, explanation and worked cases. A checklist helps inspect a result; it does not replace the method.
+
+Anatoly Levenchuk, with AI-assisted development and review. These publications continue to evolve; check the edition when relying on a particular result. Original content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), subject to the [licensing terms](../../LICENSING.md). For a method, cite its framework, edition and complete PatternID.
+
+[All domain frameworks](../) · [FPF Library](../../)

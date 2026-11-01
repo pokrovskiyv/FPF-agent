@@ -6,7 +6,7 @@ Help a recipient recover and use a warranted connection by choosing the question
 
 Anatoly Levenchuk, with AI-assisted development and review.
 
-Release date: 20 September 2026.
+Release date: 23 October 2026.
 
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 
@@ -30,7 +30,7 @@ Use a public unit for orientation or source access. Search the complete pattern 
 | [EXD.Reference:7](#exdreference7---framework-and-subject-suppliers) | Framework and subject suppliers |
 | [EXD.Sources:1](#exdsources1---relied-on-contributions-and-their-limits) | Relied-on contributions and their limits |
 | [EXD.Profiles - Use profiles](#use-profiles) | Adapt the Methods to instructional, technical/advisory and human–AI explanation. |
-| [Explanation Design Principles Framework Sources and Edition Notes](#explanation-design-principles-framework-sources-and-edition-notes) | Recover relied-on contributions, supplying editions, limits and conditions for reconsideration. |
+| [Explanation Design Principles Framework Sources and Edition Notes](#explanation-design-principles-framework-sources-and-edition-notes) | Recover relied-on research contributions, their limits and conditions for reconsideration. |
 | [EXD.Edition - Name and citation](#name-and-citation) | Cite the framework and recover its local naming settlement. |
 
 **Patterns by working question**
@@ -114,6 +114,7 @@ A recipient who only needs an already understood fact can use it directly. Creat
 
 The **subject** is what the explanation concerns. The **question** selects the connection sought; the **purpose** explains why that question matters here. The **account** supplies the selected claims, relations and conditions. Its **expression** is the prose, formula, table, diagram, demonstration or combination through which it is available. The **recipient** interprets and may contribute under particular preparation, access, assistance and effort conditions.
 
+When an explanation teaches a Method, distinguish that reusable way, an actual or stipulated performance of it, and the material used in the performance. For example, an explainer selects unequal groups so that two averaging rules give different answers. The arithmetic is the material being explained to the recipient; selecting and working the contrast illustrates an operation of explanation design. State that correspondence where the reader needs it. A mathematically correct answer and a usable account of how to construct explanations have different criteria.
 These distinctions support concrete diagnoses:
 
 | What changes | Example | Consequence for the explanation |
@@ -124,7 +125,7 @@ These distinctions support concrete diagnoses:
 | Assistance | A hint directs attention to the unit counted by the denominator. | Preserve the help when interpreting the response. |
 | Required outcome | The task changes from following today's calculation to doing a new one next week. | Select later evidence at the required assistance and delay conditions. |
 
-[FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover) characterizes extractable structural information for an expressed account, its expressing form and an observer under selected conditions. For an explanation, state which relations the recipient should recover, what counts as a correct reconstruction, and which preparation, operations, help, access and budget matter. The question is “How much of the selected structure can this recipient recover at these conditions?” A useful local answer can identify correctly reconstructed relations and consequential omissions. A numeric comparison needs a justified scale and comparable conditions.
+[FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---extractablestructuralinformation--structure-this-reader-can-recover) characterizes extractable structural information for an expressed account, its particular expression and an observer under selected conditions. For an explanation, state which relations the recipient should recover, what counts as a correct reconstruction, and which preparation, operations, help, access and budget matter. The question is “How much of the selected structure can this recipient recover at these conditions?” A useful local answer can identify correctly reconstructed relations and consequential omissions. A numeric comparison needs a justified scale and comparable conditions.
 
 This structural characterization is relational. The same text may make a connection available to an expert and leave a novice unable to reconstruct it at the same effort. Repetition may assist access or retention while introducing no new relation into the account. A familiar relation still belongs to the recoverable structure; recoverability is not a novelty score. For human recipients, attention and memory inform the use conditions and selected outcome.
 
@@ -138,7 +139,11 @@ For the mean of a finite list, the subject basis is its sum divided by its count
 
 When a required connection lacks a warrant, state what is missing and which subject work could supply it. An unsupported causal claim needs subject inquiry. An unexplained recommendation needs its decisive premises, alternatives and conditions. A missing mathematical step needs its definition or derivation. An explanation can preserve a useful conditional answer while that input is recovered.
 
-Select a supplying practice by the actual subject. Core's Method-development patterns supply Method content and the rationale for a pattern language. Decision Design supplies recommendation grounds; Decision Design supplies the advising engagement's conditions. Human Capability Development supplies representative instructional tasks, feedback tied to their criteria and task-specific assistance. Structure-to-Narrative Rendering supplies a connective account when that form is useful. Research Method Practice supplies the research return when a scientific explanation still needs construction or criticism.
+Follow the proposed explanation from its answer back to the premises and operations needed to obtain it, then forward again. Locate the first consequential link that the material does not supply. Is the input absent, the operation unexplained, the inference unsupported, or the connection to the recipient's question missing? Use that difference to select the subject work. A clear description can reveal the gap; changing its layout cannot supply the missing operation or reason.
+
+For a Method account, A.3.2.DE:4.1 recovers what acts on which input, what result it obtains and why the action is warranted. C.39:4.2–4.5 develops a missing operation or join by working backward from the receiving result and forward through the proposed way. For a language of Methods, E.8.ML:4.1–4.4 explains how their independently useful results connect and why the architecture has those boundaries. Bring that constructed contribution back into the explanation, including the conditions that change its use; do not replace it with a pattern name.
+
+Other subjects need their own construction. RMP.2:4.4 turns a scientific question into an investigation that can distinguish proposed answers. PSDA.14:4.2–4.4 builds a recommendation from its premises, alternatives and comparison; PSDA.19 supplies the advising engagement's conditions. HCD.6, HCD.9 and HCD.10 supply representative instructional tasks, feedback and task-specific assistance. A.6.3.NAR connects supplied source relations when narrative rendering helps. Select the contribution actually missing rather than performing every listed Method.
 
 The research return can itself produce useful progress. For example, a research exercise can move from a puzzling observation to a question, two or three rival hypotheses, criticism before experiment and an initial report. Select further empirical work when it can change the answer. The RMP methods qualify a research question, choose a design or sufficient-evidence stop, and revise the affected claims. Communicating an available account does not replace these subject contributions.
 
@@ -150,7 +155,7 @@ An analyst asks why the average of two branch means, 5.5, was rejected. The bran
 
 The analyst can add and divide but asks why the branch counts matter. EXD.2 constructs the instance: count multiplied by mean recovers each branch sum; add those sums and divide by the total count. EXD.3 can place count, mean and sum together in a table or retain a sufficient prose calculation. The warranted answer is 54/8 = 6.75, with the connection between aggregation and individual weighting exposed.
 
-Now the analyst says, “I want each branch to have equal influence regardless of its size.” EXD.4 treats this as a changed question. EXD.1 revises the selected weighting, and the explanation returns “Mean of branch means, each branch weighted equally: 5.5.” It retains 6.75 for the original question. Whether equal branch influence is the appropriate management policy remains a decision question. The exchange can close with these qualified answers.
+Now the analyst says, “I want each branch to have equal influence regardless of its size.” EXD.4 treats this as a changed question. EXD.1 revises the selected weighting, and the explanation returns “Mean of branch means, each branch weighted equally: 5.5.” It retains 6.75 for the original question. Whether equal branch influence is the appropriate management policy remains a decision question. The exchange can close with both answers and their respective weighting rules.
 
 A different contribution needs a different move. If the analyst still intends equal weight per individual but divides the sum of the two branch means by two, the question has stayed fixed and the aggregation relation needs repair. If instructional use warrants a learner contribution, EXD.5 asks what the denominator counts, preserves the initial answer, supplies targeted feedback and uses a changed calculation as a retry. If dialogue is unavailable, the written explanation can state both weighting rules and the condition selecting each. An explicit choice need not be delayed by another clarification.
 
@@ -180,25 +185,25 @@ In practice the language changes where repair is directed and when work stops. I
 
 ## EXD.Reference:7 - Framework and subject suppliers
 
-FPF remains the external foundational framework. This edition uses the September 2026 current-pattern text available on **9 September 2026**, specifically the named units below; it does not redefine FPF's kinds or import those bodies as Explanation Design members. The public repository is an access and discovery route. A later file date alone does not replace a selected supplying claim.
+FPF Core and the domain frameworks below supply different results used by Explanation Design. Read the named operation when that result is missing; an already adequate result can be used directly. These are working dependencies of the present language, not additional EXD members.
 
-| Supplier and selected edition | Receiving contribution | Reopen the affected use when |
+| Supplying contribution | What it supplies here | Reconsider the affected use when |
 | --- | --- | --- |
-| [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover), September 2026, 9 September text | Structural recovery for account, expression and observer under selected conditions in the Architectural Reference and EXD.3/.6. | The characteristic or its interpretation, recipient, criterion, assistance or comparison conditions changes. |
-| [FPF C.37](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c37---select-and-use-representations-for-one-action), same selected text | Bounded representation selection and co-use in EXD.3. | The contribution of a selected form or its receiving conditions changes. |
-| [FPF A.2.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a29--uspeechact--communicative-work-and-its-intended-use), same selected text | Communicative Work remains distinct from the resulting account and its expression in EXD.1/.4. | A receiving claim depends on a changed communicative act or unsupported participant inference. |
-| [FPF A.6.3.NAR](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a63nar---structure-to-narrative-rendering), same selected text | Select and connect source relations with a recoverable source return when narrative rendering contributes. | The source relation, connective claim or narrative purpose changes. |
-| [FPF C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11crc---configuration-relative-contribution-comparison) and [FPF C.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11---decision-theory-decsn-cal), same selected text | Contribution comparison and worthwhile marginal choice in EXD.6. | The incumbent, candidate contribution, receiving value or burden changes. |
-| [Method Engineering](https://github.com/ailev/FPF/blob/f2bc67dd6f3d8525bc63965a98165abf59b48e2f/Engineering%20DPF%20Suite/METHOD-ENGINEERING-PRINCIPLES-FRAMEWORK.md), 9 September 2026 | ME.8/.23 supply Method content and language rationale; ME.22 supplies description comparison; ME.21/.12/.24 retain their distinct source-allocation, coherence and reconstruction questions in the technical case. | The supplied rationale, promised source contribution or available basis changes. |
-| [Human Capability Development (HCD)](Human%20Capability%20Engineering%20DPF%20Suite/HUMAN-CAPABILITY-DEVELOPMENT-PRINCIPLES-FRAMEWORK.md), nineteen-pattern edition, 9 September 2026 | HCD.6/.9/.10/.19 supply representative tasks, feedback/retry, assistance and material evaluation for instructional use. | The required performance, learner preparation, task, help or stronger learning claim changes. |
-| [Problem Structuring and Decision Support](https://github.com/ailev/FPF/blob/f2bc67dd6f3d8525bc63965a98165abf59b48e2f/Development%20DPF%20Suite/PROBLEM-STRUCTURING-AND-DECISION-SUPPORT-PRINCIPLES-FRAMEWORK.md), 5 September 2026 | PSD.13 supplies decisive recommendation grounds, alternatives and reconsideration. | A relied-on premise, alternative or preference changes. |
-| [Development Opportunity Construction and Development-Direction Advising](https://github.com/ailev/FPF/blob/2d78b18b3230875125616d1b59c452ea37ebdfbf/Engineering%20DPF%20Suite/DEVELOPMENT-OPPORTUNITY-CONSTRUCTION-AND-DEVELOPMENT-DIRECTION-ADVISING-PRINCIPLES-FRAMEWORK.md#doca7---bound-the-development-direction-advising-engagement), amended release 5 September 2026 | DOCA.7 supplies the advising engagement's conditions, including resources and authority. | An engagement condition or the recommendation's feasibility changes. |
-| [Research Method Practice (RMP)](RESEARCH-METHOD-PRACTICE-PRINCIPLES-FRAMEWORK.md), nine-pattern edition, 8 September 2026 | RMP.1/.2/.8 supply qualified questions, research-design or sufficient-evidence choice, and revision of the affected account. | The subject question, rival explanation, evidence or receiving reliance changes. |
-| [Narrativization and Narrative Studies (NSTD)](https://github.com/ailev/FPF/blob/main/DPFs/Narrativization-and-Narrative-Studies-Principles-Framework.md), 9 September 2026 | Its Preface and NSTD.6/.8 inform the synthesis of source, cognitive and production contributions and the bounded narrative-form choice. | A relied-on contribution or the explanation's narrative use changes. |
+| C.2.8 | A relation between expressed structure and what a particular recipient can recover under stated conditions, used in this Reference, EXD.3 and EXD.6. | The recipient, recovery criterion, assistance or comparison conditions change. |
+| C.37 and C.37.CF | Selection and comparison of representations for the same receiving action in EXD.3 and EXD.6. | A form changes the supplied content, available operations or effort. |
+| A.2.9 | The communicative act, its participants and intended use, distinct from the resulting account and expression. | A claim relies on a changed act or an inference about a participant. |
+| A.6.3.NAR | Selection and connection of source relations when narrative rendering serves the explanation. | The source relation, connective claim or narrative purpose changes. |
+| A.3.2.DE:4.1, C.39:4.2–4.5 and E.8.ML:4.1–4.4 | Recovery of a Method's actions and reasons, construction of a missing operation or join, and explanation of the relations within a pattern language. | The proposed action, missing connection or reason for keeping Methods together changes. |
+| F.0.2.MA, A.3.1.CC and F.0.2.RC | Source allocation; comparison of a maintained claim with its basis and targeted correction when needed; and testing whether a promised source contribution can be reconstructed, respectively, in the technical profile. | The source contribution cannot be recovered or no longer supports the maintained account. |
+| C.11.CRC, C.11 and C.11.DUA | Comparison of a contribution with its baseline and appraisal of the gain and burden of another explanatory move. | The candidate, receiving value, alternatives or burden changes. |
+| HCD.6:4.2–4.5, HCD.9:4.4–4.6, HCD.10:4.6–4.7 and HCD.19:4.1–4.5 | Representative learning tasks, feedback and retry, task-specific assistance, and evaluation of the promised learning route. | Required performance, preparation, assistance or the claimed learning effect changes. |
+| PSDA.14:4.2–4.4 and PSDA.19 | Recommendation grounds and alternatives, together with the conditions of the advising engagement. | A relied-on premise, preference, alternative, resource or authority condition changes. |
+| RMP.1, RMP.2:4.4 and RMP.8 | A research question, a way to distinguish proposed answers, and revision of an affected research account. | The subject question, rival explanation, observation or receiving use changes. |
+| NSTD Framework Architectural Reference, NSTD.6 and NSTD.8 | Connections among source reasoning, cognition and production craft, and the choice of a narrative form when it serves the explanation. | The needed contribution or narrative use changes. |
 
 The source choices above are use-specific. Reopen a receiving claim when its premise or evidence no longer fits, a necessary source becomes unavailable, or the proposed use asks for a stronger effect. Preserve independently supported accounts and explicit conditional answers.
 
-For source qualifications, citation and edition information, see the [Sources and Edition Notes](#explanation-design-principles-framework-sources-and-edition-notes).
+For the external research sources and their roles, see the [Sources and Edition Notes](#explanation-design-principles-framework-sources-and-edition-notes).
 
 ## EXD.Reference:End
 
@@ -334,7 +339,7 @@ At the same practical grain, “Why is 5.5 wrong?” and “Which unit receives 
 
 [EXD.4](#exd4---co-construct-and-repair-an-explanation-in-dialogue) uses and revises the question during an exchange. [The supplied-account entry](#exdreference3---obtain-and-carry-the-subject-explanation) obtains the answer's subject relations and conditions.
 
-FPF [FPF A.2.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a29--uspeechact--communicative-work-and-its-intended-use) supplies communicative-use distinctions where that analysis is needed. [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover) characterizes what a particular observer can recover from an account and form under selected conditions; it does not choose the question's purpose.
+[FPF A.2.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a29--uspeechact--communicative-work-and-its-intended-use) supplies communicative-use distinctions where that analysis is needed. [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---extractablestructuralinformation--structure-this-reader-can-recover) characterizes what a particular observer can recover from an account and its expression under selected conditions; it does not choose the question's purpose.
 
 ### EXD.1:End
 
@@ -376,11 +381,13 @@ State what the recipient must connect. In a pooled mean, each group mean multipl
 
 Use a real case when its evidence and complexity fit. A constructed case is useful when its assumptions and answer criterion can be made explicit. Identify which it is.
 
+Choose the example's role in the whole explanation as well as its local correctness. Recover the relations and grounds owed to the recipient from the subject and requested use. Derive meaningful variation from differences in objects, conditions, available grounds and receiving work. A case can help discover these distinctions; carry the discovery into the common account. Keep a sufficient direct account when an illustrative instance supplies no additional needed connection. If the account itself is missing, return to its subject source or construction rather than expanding a story in its place.
+
 #### EXD.2:4.2 - Work the correspondence, not only the answer
 
-Show the intermediate quantities, relations and conditions needed to obtain the result. Connect each significant step to the claim: which quantity instantiates which part, why this operation is legitimate, and what condition makes the inference usable.
+Show the intermediate quantities, relations and conditions needed to obtain the result. Connect each significant step to the claim: which quantity instantiates which part, why this operation is legitimate, and what condition makes the inference usable. When illustrating an explanatory Method, also show the explainer's choice and its reason. Selecting unequal counts to distinguish rules is such a choice; the subsequent multiplication is part of the mathematical account used to perform it.
 
-For a worked calculation, name the units and what each numerator or denominator counts. For a causal example, distinguish observations from an inferred mechanism. For an analogy, identify the relation that corresponds and a feature that does not transfer. A picture of two similar objects cannot supply that correspondence by itself.
+For a worked calculation, name the units and what each numerator or denominator counts. For a causal example, distinguish observations from an inferred mechanism. For an analogy, identify the corresponding relation and the conditions needed to use it. Explain a non-correspondence when it changes an inference the intended use depends on. A picture of two similar objects cannot supply that correspondence by itself.
 
 If a recipient contribution would help locate the difficulty, first invite a small unassisted mapping: “Which quantity here is the total represented by the group mean?” Retain the response. Then provide targeted component guidance, such as identifying the count and asking how to recover the sum. A recipient with little relevant preparation may instead need the worked relation first.
 
@@ -392,11 +399,19 @@ Inspect the rule as well as the number. Equal group counts allow an unweighted a
 
 Use [EXD.5](#exd5---guide-a-recipients-own-explanation) when a recipient's own account and supported correction serve a learning purpose. Use [EXD.4](#exd4---co-construct-and-repair-an-explanation-in-dialogue) when the response changes the question, premise or next explanation.
 
+Build a family of materially different examples when the explanation promises several kinds of relation, grounds or use. Retain ordinary cases as well as informative contrasts, and show what stays common across them. A mathematical derivation, a causal account supported only conditionally and a recommendation under competing preferences need different subject grounds. Their shared explanatory operations remain visible through those differences. For human learning of a family of regularities, HCD.6.1:4.2.2 supplies qualified encounters, contextual variation and focused returns; it does not require inventing one verbal rule for the family.
+
+Keep the grounds of generalization explicit. A worked instance can reveal a missing condition or suggest a wider account. Determine through the subject practice whether the wider claim follows from a definition or argument, is supported by observations, or remains a proposal. Bring that result back to the explanation with its conditions. The examples ground and discriminate the account while retaining their own evidential roles.
+
 #### EXD.2:4.4 - Bound the example and stop at its useful result
 
-State the admissible correspondence and the nearest consequential limit. A branch can be a unit in one aggregation question and contain several equally weighted people in another. The same data then support different summaries.
+State which relation the example preserves and where that correspondence stops. A branch can be a unit in one aggregation question and contain several equally weighted people in another. The same data then support different summaries.
 
-Retain the smallest example or pair that supplies the needed distinction. Add another case only when it can reveal a remaining wrong generalization or support the intended next use. An example is evidence of the particular relation it demonstrates; claims about learning from it need the recipient evidence appropriate to that claim.
+Retain the examples and comparisons needed to make the relation and its claimed variation usable. For a local distinction, one example or a pair can suffice. For a broader account, preserve the materially different cases that make its generality understandable, even when each local case is simple. Remove incidental detail when it adds no needed connection.
+
+Continue the same case across explanations when carrying its state, earlier result or known circumstances helps the next connection. At each return, identify the relation or operation being explained and the contribution the case supplies. Change or end the case when it makes an alternative, important condition or claimed kind of application disappear. The account can remain connected through its question and reasoning while its examples change. A varied number inside the same story may test a calculation without testing the wider scope of a general Method.
+
+Judge the resulting explanation by what the recipient can recover and use at the promised scope: the relation, its reason, its conditions and a consequential changed use. Recalling the story or obtaining its correct answer is a narrower result. Repair any missing content even if the illustration is clear. An example is evidence of the particular relation it demonstrates; claims about learning from it need the recipient evidence appropriate to that claim.
 
 ### EXD.2:5 - Archetypal Grounding
 
@@ -418,6 +433,18 @@ The useful outcome is a justified choice of rule, including when a convenient sh
 
 For a constructed technical example, a manual states that a batch of twelve parts costs 30 currency units. A guide promises to explain the cost per part without requiring that manual. It correctly repeats the batch price but omits the batch size. The quoted claim agrees with the source, yet the reader cannot recover the promised calculation: 30 / 12 = 2.50 per part. Supplying the batch size repairs that omission. In a second guide the calculation is fully shown as 36 / 12 = 3, but the price 36 is attributed to the same manual. The calculation can be followed; its price claim contradicts the source. These cases distinguish agreement with a source from recovery of a promised contribution. Both questions matter when both defects occur.
 
+#### EXD.2:5.1 - Keep the explanatory Method visible across different subject grounds
+
+The averaging case illustrates how an explainer selects circumstances that separate plausible rules, works their correspondence and varies a deciding condition. Its mathematical definition supplies the answer criterion. To explain that Method across a wider subject range, vary the kind of ground as well as the numbers.
+
+In a stipulated technical account, two pumps share one power supply. The recipient asks why adding the second pump does not provide pumping after loss of that supply. The explainer chooses a dependency sketch that shows both power connections, then follows the stated loss through them. A contrasting arrangement gives the second pump an independently available supply under the same stipulated loss. This contrast makes the dependency usable; checking an actual installation's independence remains engineering work. The explanation-design operation is selecting and working the decisive correspondence. The pumps and their supply relations are its subject material.
+
+In a causal account, a software revision is followed by fewer recorded failures, while traffic and logging also change. The recipient asks why the revision caused the fall. The explainer juxtaposes two accounts compatible with the stated observation: the revision prevents failures; or fewer occasions for failure and less complete recording reduce the observed count. This comparison makes the missing discrimination visible. Return the causal question to subject inquiry while preserving the observed fall. Drawing a cleaner arrow from revision to improvement would add an unsupported connection. The common Method still selects and works a revealing comparison, but the current useful result is an explicit gap in the causal basis rather than a proved cause.
+
+In the advisory case developed in the technical and advisory profile, protected time is a decisive premise for the recommended assignment. Contrast that available arrangement with withdrawal of the time, and separately with the recipient understanding the rationale but preferring the course's social setting. The first change defeats a premise; the second changes the decision through a preference. The explainer makes those different relations usable and returns the appropriate question to advising. Agreement is not the criterion of a successful explanation.
+
+These constructions retain the same explanatory choices while changing what warrants the subject answer and what result is currently attainable. The reader can recover the Method through the correspondences among the cases, rather than infer that every explanation must end in a numerical answer. They are stipulated applications, not observations of learning or effectiveness.
+
 ### EXD.2:6 - Bias-Annotation
 
 Expert familiarity can hide intermediate relations a recipient cannot yet supply. Inspect the needed mapping at the actual task grain. A familiar story may also smuggle in a causal or normative assumption absent from the subject account; retain only the correspondence the explanation can justify.
@@ -426,7 +453,7 @@ Expert familiarity can hide intermediate relations a recipient cannot yet supply
 
 Recognition asks whether a particular instance or comparison can make the needed connection usable.
 
-For assurance, inspect whether the example has a warranted basis, an explicit correspondence, a correct worked result and an action-changing boundary. Check that any recipient response retains the help available for it. A matching answer with a wrong rule remains a reason to inspect the explanation.
+For assurance, inspect the subject basis, explicit correspondence, worked result and conditions of each relied-on example. Compare the family with the material variation of the promised explanation, and recover the common Method or relation across the cases. For an explanatory-Method illustration, distinguish the explainer's choices from the domain work used as material. Check that any recipient response retains the help available for it. A matching answer with a wrong rule remains a reason to inspect the explanation.
 
 ### EXD.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -581,7 +608,7 @@ FPF C.37 and C.37.CF preserve the general selection and content/form comparison.
 
 [EXD.2](#exd2---build-and-bound-an-explanatory-example) supplies a worked correspondence and boundary. [EXD.4](#exd4---co-construct-and-repair-an-explanation-in-dialogue) can expose the local expression difficulty during use. [EXD.6](#exd6---compare-explanations-for-the-recipients-use-and-decide-whether-a-repair-is-worthwhile) compares a candidate with a sufficient incumbent.
 
-[FPF C.37](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c37---select-and-use-representations-for-one-action) governs representation selection and co-use. [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover) characterizes selected structural recovery under explicit conditions. The [instructional profile](#exdprofiles1---instructional-explanation) qualifies human learning and assistance uses.
+[FPF C.37](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c37---select-and-use-representations-for-one-action) governs representation selection and co-use. [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---extractablestructuralinformation--structure-this-reader-can-recover) characterizes selected structural recovery under explicit conditions. The [instructional profile](#exdprofiles1---instructional-explanation) qualifies human learning and assistance uses.
 
 ### EXD.3:End
 
@@ -652,7 +679,7 @@ Either participant may provide a useful repair. Check a correction against the s
 
 #### EXD.4:4.4 - Close with the result the exchange supports
 
-Name what can now be used: a distinction, a correctly qualified result, a source return or an unresolved conditional choice. Use one relevant inference or next action as a check when it can still change that conclusion.
+State what the recipient can now use and any condition that changes its use. Give a link back to the supporting source passage when the recipient needs it, or state which choice remains unresolved. Use one relevant inference or next action as a check when it can still change that conclusion.
 
 A sufficient explanation can close without agreement or recall practice. If the recipient's goal is learning, the instructional use may additionally require supported practice or a later independent case. Select that work from its purpose and available evidence.
 
@@ -680,7 +707,7 @@ In advisory use, a recipient may say, “I understand why the assignment fits my
 
 An engineer explains that a proposed service reduces response time from eight minutes to five. A colleague replies: “You keep treating my objection as resistance to speed. I need somebody available throughout the night.” The comparison of response times does not answer that staffing concern.
 
-Use the colleague's stated correction: “You need continuous coverage; the five-minute figure applies only while an operator is present.” The explanation now exposes its condition. If coverage remains the question, return it to staffing and resource work; another account of the speed calculation will not supply an operator. If the colleague instead asks why the time falls to five minutes, provide that derivation under its stated conditions. The two continuations answer different contributions. Neither establishes agreement to deploy the service.
+Use the colleague's stated correction: “You need continuous coverage; the five-minute figure applies only while an operator is present.” The explanation now exposes its condition. If coverage remains the question, return it to staffing and resource work. If the colleague instead asks why the time falls to five minutes, provide that derivation under its stated conditions. The two continuations answer different contributions.
 
 ### EXD.4:6 - Bias-Annotation
 
@@ -743,7 +770,7 @@ At the same local opportunity to respond, repeating the pooled-mean derivation a
 
 [EXD.1](#exd1---establish-and-revise-what-a-recipient-needs-explained) supplies and revises the question. [The supplied-account entry](#exdreference3---obtain-and-carry-the-subject-explanation) provides the subject basis and its return.
 
-FPF [FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover) qualifies structural recovery at an identifiable point in the exchange by the account, expression, observer and conditions. Changes after help receive their changed conditions. Human capability development supplies task-specific assistance, feedback tied to the task criterion and retry when the receiving purpose is instructional.
+[FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---extractablestructuralinformation--structure-this-reader-can-recover) qualifies structural recovery at an identifiable point in the exchange by the account, expression, observer and conditions. Changes after help receive their changed conditions. Human capability development supplies task-specific assistance, feedback tied to the task criterion and retry when the receiving purpose is instructional.
 
 ### EXD.4:End
 
@@ -919,7 +946,7 @@ Preserve the initial response before assistance. Identify what the recipient had
 
 If the same person sees both explanations, prior exposure or practice can affect the second response. Design the comparison for the conclusion sought or retain that attribution limit. A small local observation may suffice for a local repair; a general effect claim needs a design and evidence appropriate to that stronger question.
 
-If useful observation is unavailable, retain a sufficient incumbent or make a reversible design choice with its intended gain stated as an expectation. The absence of a measured human effect does not prevent a qualified explanation from being used.
+If useful observation is unavailable, retain a sufficient incumbent or make a reversible design choice with its intended gain stated as an expectation. An explanation can be used on its stated subject grounds while its effect on human readers remains unmeasured.
 
 #### EXD.6:4.4 - Choose the result and its stopping condition
 
@@ -996,7 +1023,7 @@ The serious alternative is to select the most fluent, extensive or visually attr
 
 [EXD.1](#exd1---establish-and-revise-what-a-recipient-needs-explained) establishes the receiving question. [EXD.2](#exd2---build-and-bound-an-explanatory-example), [EXD.3](#exd3---coordinate-the-expression-of-an-explanation) and [EXD.5](#exd5---guide-a-recipients-own-explanation) construct candidate repairs. [EXD.4](#exd4---co-construct-and-repair-an-explanation-in-dialogue) exposes changes during the exchange.
 
-[FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover), [FPF C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11crc---configuration-relative-contribution-comparison) and [FPF C.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11---decision-theory-decsn-cal) retain their defining questions. The [source and dependency account](#explanation-design-principles-framework-architectural-reference) names the actual Core's Method-development family and HCD receiving uses.
+[FPF C.2.8](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---extractablestructuralinformation--structure-this-reader-can-recover), [FPF C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11crc---configuration-relative-contribution-comparison) and [FPF C.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11---decision-theory-decsn-cal) retain their defining questions. The [source and dependency account](#explanation-design-principles-framework-architectural-reference) names the actual Core's Method-development family and HCD receiving uses.
 
 ### EXD.6:End
 
@@ -1032,7 +1059,7 @@ Use this profile when a practitioner or advice recipient needs to understand a r
 
 The common account and recognition/assurance distinction remain as stated in the Architectural Reference. Here subject qualification comes from the relevant technical or advising practice. Core's Method-development patterns supply Method-description content and whole-language rationale through A.3.2.DE and E.8.ML and comparison through C.37.CF. Decision Design supplies the recommendation's grounds, alternatives and reconsideration through PSDA.14. Decision Design supplies engagement, authority and feasibility conditions through PSDA.19.
 
-An engineer asks why source allocation, coherence checking and reconstruction have separate entries and proposes one review procedure. EXD.1 distinguishes wanting one check from wanting the architecture rationale. The supplied E.8.ML account relates three missing results: F.0.2.MA asks which source contributions were carried; A.3.1.CC asks whether a maintained claim agrees with its basis; F.0.2.RC asks which promised source contribution is no longer recoverable. Their different questions and source returns justify direct entries. A diagram may group the entries for navigation without establishing that their subjects are parts of one Method.
+An engineer asks why source allocation, coherence checking and reconstruction have separate entries and proposes one review procedure. EXD.1 distinguishes a request to perform one check from a request to explain the language's architecture. For that explanation, recover three different questions from the supplying Methods: which source contributions are carried and why (F.0.2.MA); whether a maintained Method claim agrees with its basis (A.3.1.CC); and whether the promised source contribution can be reconstructed for the declared use (F.0.2.RC). The reconstruction can confirm usable coverage, expose a missing contribution or leave the basis unresolved. E.8.ML explains why independently useful answers and their returns can justify separate entries without making them compulsory steps of one Method. A diagram can group those entries for navigation while preserving that distinction.
 
 If the engineer only needs to check one maintained claim against an available source, direct A.3.1.CC can suffice. If a required source disappears, return that affected reliance while retaining independently supported results. EXD.3 can change the expression of these same relations; EXD.6 keeps the current E.8.ML account unless a relevant comparison justifies a repair. A publication-authorization question has different grounds from understanding this rationale.
 
@@ -1111,9 +1138,9 @@ This local naming settlement concerns this six-pattern Domain Principle Framewor
 
 **NameCard EXD-NAME-01.** The governed value is the Explanation Design DPF specified by this edition's Architectural Reference, six EXD Methods and Use profiles. Its kind is Domain Principle Framework as constrained by E.4.DPF. Its Tech designation is **Explanation Design Principles Framework**; its Plain designation is **Explanation Design**. **EXD** is the local pattern-address prefix.
 
-The effective local reference scheme fixes the governed practice as constructing and adapting explanations for a recipient's use. It distinguishes subject, question, purpose, warranted account, expression, recipient, contribution and use conditions; supplying subject Methods and their outcomes remain external. The local sense of “Explanation Design” is this DPF for that practice, including performed interaction. The expression does not name every theory of explanation or a new FPF kind.
+The effective local reference scheme fixes the governed practice as constructing and adapting explanations for a recipient's use. It distinguishes subject, question, purpose, warranted account, expression, recipient, contribution and use conditions; supplying subject Methods and their outcomes remain external. The local sense of “Explanation Design” is this DPF for that practice, including performed interaction.
 
-“Explanation Practice” was considered because it includes performance, but underexpresses the constructive repertoire. “Explanation and Understanding” was considered because it names both sides of the relation, but suggests broader coverage than this governed practice. The selected name is made precise by the opening scope and the direct dialogue entry. Existing FPF and supplying-DPF designations suffice for their own values; no parallel name family is introduced. This is an initial naming settlement, with no predecessor rename or cross-framework equivalence asserted.
+“Explanation Practice” was considered because it includes performance, but underexpresses the constructive repertoire. “Explanation and Understanding” was considered because it names both sides of the relation, but suggests broader coverage than this governed practice. The selected name is made precise by the opening scope and the direct dialogue entry. Existing FPF and supplying-DPF designations identify their own values. This is an initial naming settlement.
 
 Reopen the name when its actual use systematically hides performed interaction, when the governed practice changes, or when an actual naming collision prevents unambiguous citation. A new source citation alone does not change this value's identity.
 
@@ -1121,24 +1148,21 @@ Reopen the name when its actual use systematically hides performed interaction, 
 
 ## EXD.Edition:3 - Public term row
 
-The [FPF F.17](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#f17---make-a-settled-naming-decision-recoverable-for-reuse-unified-term-sheet) public row below makes the single local naming settlement available for reuse. Public citation of the framework and its prefix needs this one stable designation; the six ordinary action titles do not require six additional term families. This is the bounded F.14 admission reason. The row's claim content consists of the identity, sense, basis, use and currentness claims stated here; the row and the naming settlement are distinct epistemes about the same governed framework.
+The [FPF F.17](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#f17---make-a-settled-naming-decision-recoverable-for-reuse-unified-term-sheet) public row below makes the single local naming settlement available for reuse. Public citation of the framework and its prefix needs this one stable designation; the six ordinary action titles do not require six additional term families. The row's claim content consists of the identity, sense, basis, use and currentness claims stated here; the row and the naming settlement are distinct epistemes about the same governed framework.
 
 | Row field | Value |
 | --- | --- |
 | UTSRowId; UnificationThreadId | EXD-TERM-01; EXD-NAMING-01, stable local designators. |
 | GovernedValueRef; GovernedValueKindRef | This edition's Explanation Design DPF as specified in the Architectural Reference, EXD.1–EXD.6 and Use profiles; Domain Principle Framework under E.4.DPF. |
-| SubjectPatternLocator | FPF E.4.DPF, at the supplying edition named above. |
+| SubjectPatternLocator | FPF E.4.DPF. |
 | ReferenceScheme | By value: the governed practice constructs and adapts explanations for a recipient's use; subject, question, purpose, warranted account, expression, recipient, contribution and use conditions remain distinct; subject-supplying Methods remain external. |
 | UnifiedTechName; UnifiedPlainName | Explanation Design Principles Framework; Explanation Design. |
 | NameCardRef | EXD-NAME-01 in Naming settlement, this edition. |
 | SenseCellRefs | EXD-SENSE-01: the local scheme above, the expression “Explanation Design”, and the local sense “this Domain Principle Framework for constructing and adapting explanations for recipient use, including performed interaction”. |
 | LocalSenseBasisRelation | EXD-SENSE-BASIS-01 relates this edition's account in the Architectural Reference, six Methods and Use profiles to EXD-SENSE-01: that account specifies the named practice, repertoire and boundary. This edition is the basis episteme; its section titles locate the supporting content. |
-| RowRationale | Stable public citation is useful; the selected name includes preparation and interaction through its explicit scope. No new foundational kind or equivalence with a supplier is claimed. |
+| RowRationale | Stable public citation is useful; the selected name includes preparation and interaction through its explicit scope. |
 | AdmissibleUse | Refer to this framework and its EXD pattern addresses at this edition and stated scope. |
-| BlockedUse | Infer universal coverage of all explanation or understanding, or supplier membership, from the name. |
 | RowEditionId | EXD-TERM-01@2026-09-09, an edition designator. |
 | CurrentnessCondition | The named value and local sense remain applicable to the receiving citation. Reconsider an affected use if the practice, repertoire identity or collision changes; preserve the distinction between naming, publication availability and substantive adequacy. |
-
-No F.9 Bridge occurrence is asserted: the row publishes the same local naming claim and does not establish a cross-scheme equivalence. Publication and substantive fitness are answered by their own evidence; the row makes neither claim merely by being filled.
 
 ## EXD.Edition:End
