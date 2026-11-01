@@ -1,26 +1,26 @@
 # Part F - The Unification Suite (U-Suite): Concept Sets, SenseCells, and System-Role Kinds and Assignments
 
-- [F.0.1 - Source-Local Meaning Recovery (F.0.1)](01-f01-f01-source-local-meaning-recovery.md)
-- [F.0.2 - Semantic Synthesis across Source Ontologies (F.0.2)](02-f02-f02-semantic-synthesis-across-source-ontologies.md)
-- [F.0.2.MA - Synthesize and Allocate Method Contributions (F.0.2.MA)](03-f02ma-f02ma-synthesize-and-allocate-method-contributions.md)
-- [F.0.2.RC - Test Constructive Coverage and Refresh Dependent Explanations (F.0.2.RC)](04-f02rc-f02rc-test-constructive-coverage-and-refresh-dependent-expla.md)
-- [F.1 - Find and Select Sources for a Current Question (F.1)](05-f1-f1-find-and-select-sources-for-a-current-question.md)
-- [F.2 — Source-Local Term Harvesting & Normalisation (F.2)](06-f2-f2-source-local-term-harvesting-normalisation.md)
-- [F.3 - Source-Local Sense Clustering (F.3)](07-f3-f3-source-local-sense-clustering.md)
-- [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind (F.4)](08-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md)
-- [F.5 - Name U-kinds, Local System-Role Kinds and SystemRoleKindDescriptions (F.5)](09-f5-f5-name-u-kinds-local-system-role-kinds-and-systemrolekindde.md)
-- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check (F.6)](10-f6-f6-systemroleassignment-and-performed-work-attribution-check.md)
-- [F.7 - Display Source-Local Comparisons in a Concept-Set Table (F.7)](11-f7-f7-display-source-local-comparisons-in-a-concept-set-table.md)
-- [F.8 - Mint-or-Reuse Decision for a Name (F.8)](12-f8-f8-mint-or-reuse-decision-for-a-name.md)
-- [F.9 - Relate Local Meanings across Contexts (Alignment and Bridge) (F.9)](13-f9-f9-relate-local-meanings-across-contexts-alignment-and-bridg.md)
-- [F.9.1 - Bridge Stance Note — Clarify a Bounded Use (F.9.1)](14-f91-f91-bridge-stance-note-clarify-a-bounded-use.md)
-- [F.10 - Apply and Interpret Evidence, Standard and Requirement Statuses (F.10)](15-f10-f10-apply-and-interpret-evidence-standard-and-requirement-st.md)
-- [F.11 - Distinguish Method, MethodDescription, Work and Outputs (F.11)](16-f11-f11-distinguish-method-methoddescription-work-and-outputs.md)
-- [F.12 — Evaluate Promise Fulfilment from Work Evidence (Service Acceptance) (F.12)](17-f12-f12-evaluate-promise-fulfilment-from-work-evidence-service-a.md)
-- [F.13 - Lexical Continuity & Deprecation (F.13)](18-f13-f13-lexical-continuity-deprecation.md)
-- [F.14 - Anti-Explosion Control for System-Role and Status Name Families (F.14)](19-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md)
-- [F.15 - Static and Regression Conformance Harness for Naming and Semantic Unification (F.15)](20-f15-f15-static-and-regression-conformance-harness-for-naming-and.md)
-- [F.16 - Worked-Example Template (Cross-Domain) (F.16)](21-f16-f16-worked-example-template-cross-domain.md)
-- [F.17 - Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet) (F.17)](22-f17-f17-make-a-settled-naming-decision-recoverable-for-reuse-uni.md)
-- [F.18 - Local-First Unification Naming Protocol (F.18)](23-f18-f18-local-first-unification-naming-protocol.md)
-- [F.19 - Ontology-First Plain Technical Rewriting (F.19)](24-f19-f19-ontology-first-plain-technical-rewriting.md)
+- [F.0.1 - Source-Local Meaning Recovery (F.0.1)](01-f01-f01-source-local-meaning-recovery.md) — How to recover what one word means in one exact source passage before comparing or reusing it elsewhere.
+- [F.0.2 - Semantic Synthesis across Source Ontologies (F.0.2)](02-f02-f02-semantic-synthesis-across-source-ontologies.md) — How to compare what different sources say about the same working question and turn heterogeneous claims into one reviewable result.
+- [F.0.2.MA - Synthesize and Allocate Method Contributions (F.0.2.MA)](03-f02ma-f02ma-synthesize-and-allocate-method-contributions.md) — How to decide which recovered method contributions belong together and where they should be allocated.
+- [F.0.2.RC - Test Constructive Coverage and Refresh Dependent Explanations (F.0.2.RC)](04-f02rc-f02rc-test-constructive-coverage-and-refresh-dependent-expla.md) — How to verify that a method description preserves promised source contributions and identify what breaks when a source changes.
+- [F.1 - Find and Select Sources for a Current Question (F.1)](05-f1-f1-find-and-select-sources-for-a-current-question.md) — How to find and select the smallest set of sources that can actually change the current answer or next action.
+- [F.2 — Source-Local Term Harvesting & Normalisation (F.2)](06-f2-f2-source-local-term-harvesting-normalisation.md) — How to harvest the exact terms a source uses and state what each means there, without drawing cross-source conclusions.
+- [F.3 - Source-Local Sense Clustering (F.3)](07-f3-f3-source-local-sense-clustering.md) — How to consolidate terms from one source into a small set of distinct local meanings under an explicit interpretation basis.
+- [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind (F.4)](08-f4-f4-systemrolekinddescription-describing-an-exact-system-role.md) — How to write a short, reusable description of a specific role kind so it is recognizable, teachable, and checkable.
+- [F.5 - Name U-kinds, Local System-Role Kinds and SystemRoleKindDescriptions (F.5)](09-f5-f5-name-u-kinds-local-system-role-kinds-and-systemrolekindde.md) — How to choose a durable name for a governed value by recovering its meaning first rather than assigning labels early.
+- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check (F.6)](10-f6-f6-systemroleassignment-and-performed-work-attribution-check.md) — How to verify whether a specific piece of work was performed under a particular role assignment.
+- [F.7 - Display Source-Local Comparisons in a Concept-Set Table (F.7)](11-f7-f7-display-source-local-comparisons-in-a-concept-set-table.md) — How to arrange source-local meanings and established relations side by side so a table displays rather than creates the argument.
+- [F.8 - Mint-or-Reuse Decision for a Name (F.8)](12-f8-f8-mint-or-reuse-decision-for-a-name.md) — How to decide whether to keep, reuse, or create a name for a governed value once its subject is known.
+- [F.9 - Relate Local Meanings across Contexts (Alignment and Bridge) (F.9)](13-f9-f9-relate-local-meanings-across-contexts-alignment-and-bridg.md) — How to state a tested relation between two local meanings without collapsing or equating the contexts they come from.
+- [F.9.1 - Bridge Stance Note — Clarify a Bounded Use (F.9.1)](14-f91-f91-bridge-stance-note-clarify-a-bounded-use.md) — How to add a short interpretive note clarifying how a particular correspondence is being used without changing it.
+- [F.10 - Apply and Interpret Evidence, Standard and Requirement Statuses (F.10)](15-f10-f10-apply-and-interpret-evidence-standard-and-requirement-st.md) — How to recover the exact scope, window, source, and rule behind a status word before relying on it.
+- [F.11 - Distinguish Method, MethodDescription, Work and Outputs (F.11)](16-f11-f11-distinguish-method-methoddescription-work-and-outputs.md) — How to distinguish the way of doing, its description, the work that occurred, and any outputs from that work.
+- [F.12 — Evaluate Promise Fulfilment from Work Evidence (Service Acceptance) (F.12)](17-f12-f12-evaluate-promise-fulfilment-from-work-evidence-service-a.md) — How to judge whether a promise was fulfilled based on what actually happened in a stated window with relevant evidence.
+- [F.13 - Lexical Continuity & Deprecation (F.13)](18-f13-f13-lexical-continuity-deprecation.md) — How to rename or deprecate a term while preserving its history and the original wording of earlier texts.
+- [F.14 - Anti-Explosion Control for System-Role and Status Name Families (F.14)](19-f14-f14-anti-explosion-control-for-system-role-and-status-name-f.md) — How to prevent the list of role and status names from growing beyond what the governed values require.
+- [F.15 - Static and Regression Conformance Harness for Naming and Semantic Unification (F.15)](20-f15-f15-static-and-regression-conformance-harness-for-naming-and.md) — How to check that source-local meanings and naming decisions are consistent across a set of claims before testing how they compose.
+- [F.16 - Worked-Example Template (Cross-Domain) (F.16)](21-f16-f16-worked-example-template-cross-domain.md) — How to write a cross-domain worked example that starts from a question, names actual values and relations, and states its evidence.
+- [F.17 - Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet) (F.17)](22-f17-f17-make-a-settled-naming-decision-recoverable-for-reuse-uni.md) — How to record a settled naming decision as a reusable term row so it can be cited without guessing at its basis.
+- [F.18 - Local-First Unification Naming Protocol (F.18)](23-f18-f18-local-first-unification-naming-protocol.md) — How to settle a name for a governed value so it becomes stable and reusable across sources and reference schemes.
+- [F.19 - Ontology-First Plain Technical Rewriting (F.19)](24-f19-f19-ontology-first-plain-technical-rewriting.md) — How to repair technical prose that is grammatically plausible but hides a missing relation, participant, or kind.

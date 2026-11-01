@@ -1,52 +1,52 @@
 # Cluster A.V - Constitutional Principles of the Kernel
 
-- [A.7 - Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice) (A.7)](01-a7-a7-strict-distinction-repair-conflations-of-fpf-objects-clar.md)
-- [A.7.1 - Consequence-Guided Ontological Problem Solving (A.7.1)](02-a71-a71-consequence-guided-ontological-problem-solving.md)
-- [A.7.2 - FPF Ontology-Premise Reconciliation (A.7.2)](03-a72-a72-fpf-ontology-premise-reconciliation.md)
-- [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use (A.7.CP)](04-a7cp-a7cp-constructive-premise-compact-and-reasoning-basis-use.md)
-- [A.8 - Universal Core Principle: Test a U-Kind Across Domains (A.8)](05-a8-a8-universal-core-principle-test-a-u-kind-across-domains.md)
-- [A.9 - Choose and Check an Aggregation Law for the Intended Result (A.9)](06-a9-a9-choose-and-check-an-aggregation-law-for-the-intended-resu.md)
-- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph (A.10)](07-a10-a10-evidence-graph-referring-claim-bound-evidence-and-proven.md)
-- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes (A.10.1)](08-a101-a101-revalidate-affected-uses-when-a-relied-on-source-change.md)
-- [A.11 - Ontological Parsimony (A.11)](09-a11-a11-ontological-parsimony.md)
-- [A.11.OP - Decision-Relevant Least Action and Operational Parsimony: Test a Proposed Requirement (A.11.OP)](10-a11op-a11op-decision-relevant-least-action-and-operational-parsimo.md)
-- [A.12 - Acting-Side Externalization and Reflexive Split: Identify Who Acts on What (A.12)](11-a12-a12-acting-side-externalization-and-reflexive-split-identify.md)
-- [A.13 - The Agential Role & Agency Spectrum (A.13)](12-a13-a13-the-agential-role-agency-spectrum.md)
-- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases (A.14)](13-a14-a14-advanced-mereology-components-portions-aspects-phases.md)
-- [A.15 - System-Role–Method–Work Alignment (A.15)](14-a15-a15-system-rolemethodwork-alignment.md)
-- [A.15.1 - U.Work: Dated Performed Work Occurrence (A.15.1)](15-a151-a151-uwork-dated-performed-work-occurrence.md)
-- [A.15.2 - U.WorkPlan: Plan Content for Coordinating Future Work (A.15.2)](16-a152-a152-uworkplan-plan-content-for-coordinating-future-work.md)
-- [A.15.3 - SlotFillingsPlanItem: Plan a Value for an Existing Declaration Member (A.15.3)](17-a153-a153-slotfillingsplanitem-plan-a-value-for-an-existing-decla.md)
-- [A.15.4 - Work-Relevant Appearance-Based Reliance Repair (A.15.4)](18-a154-a154-work-relevant-appearance-based-reliance-repair.md)
-- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation (A.15.5)](19-a155-a155-work-entry-readiness-and-full-kit-preparation.md)
-- [A.15.6 - Recover What Project, Process, or Case Wording Refers To (A.15.6)](20-a156-a156-recover-what-project-process-or-case-wording-refers-to.md)
-- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection (A.15.7)](21-a157-a157-situation-responsive-work-steering-and-next-action-sele.md)
-- [A.15.8 - Work-Performance Configuration and Recovery Testing (A.15.8)](22-a158-a158-work-performance-configuration-and-recovery-testing.md)
-- [A.15.8.MS - Configure Methodological Support for Work (A.15.8.MS)](23-a158ms-a158ms-configure-methodological-support-for-work.md)
-- [A.15.9 - Use or Request a Bounded Result from Another Practice (A.15.9)](24-a159-a159-use-or-request-a-bounded-result-from-another-practice.md)
-- [A.15.10 - Resume Interrupted Work (A.15.10)](25-a1510-a1510-resume-interrupted-work.md)
-- [A.15.11 - Make Applicable Methods Noticeable in Work (A.15.11)](26-a1511-a1511-make-applicable-methods-noticeable-in-work.md)
-- [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery (A.15.PROD)](27-a15prod-a15prod-production-work-entity-identity-inception-and-produc.md)
-- [A.16 - Language-State Moves: Choose the Next Publication and Use of a Cue or Claim (A.16)](28-a16-a16-language-state-moves-choose-the-next-publication-and-use.md)
-- [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable (A.16.0)](29-a160-a160-keep-an-epistemes-language-state-and-publication-histor.md)
-- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use (A.16.1)](30-a161-a161-prearticulationcuepack-preserve-an-early-cue-before-cho.md)
-- [A.16.2 - Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication (A.16.2)](31-a162-a162-reopen-sketchbackoff-respecify-or-retire-a-language-sta.md)
-- [A.17 - Canonical “Characteristic” (A.CHR-NORM): Name What Is Measured (A.17)](32-a17-a17-canonical-characteristic-achr-norm-name-what-is-measured.md)
-- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL) (A.18)](33-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md)
-- [A.19 - CharacteristicSpace: Coordinates, State Predicates and Dynamics Hook (A.CHR‑SPACE) (A.19)](34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md)
-- [A.19.ECS - Evaluation CharacteristicSpace Construction: Define What Counts as Better (A.19.ECS)](35-a19ecs-a19ecs-evaluation-characteristicspace-construction-define-wh.md)
-- [A.19.SPR - Repair State and Status Wording (A.19.SPR)](36-a19spr-a19spr-repair-state-and-status-wording.md)
-- [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate (A.19.SOURCE)](37-a19source-a19source-set-space-substrate-source-set-and-searchoutcome-s.md)
-- [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Interpretive Views of Declared Source Sets and Search/Outcome Spaces (A.19.DECLARED)](38-a19declared-a19declared-substrate-interpretive-view-interpretive-views-o.md)
-- [A.19.CN - CN-frame: Specify and Maintain Comparability and Normalization (A.19.CN)](39-a19cn-a19cn-cn-frame-specify-and-maintain-comparability-and-normal.md)
-- [A.19.CHR - CHRMechanismSuite: Shared Rules for Characterization and Selection (A.19.CHR)](40-a19chr-a19chr-chrmechanismsuite-shared-rules-for-characterization-a.md)
-- [A.19.UNM - Normalize Coordinate Values under Declared Invariants (UNM) (A.19.UNM)](41-a19unm-a19unm-normalize-coordinate-values-under-declared-invariants.md)
-- [A.19.UINDM - Indicatorization (UINDM): Select Indicators Under a Declared Policy (A.19.UINDM)](42-a19uindm-a19uindm-indicatorization-uindm-select-indicators-under-a-de.md)
-- [A.19.USCM - Unified Scoring Mechanism, USCM (A.19.USCM)](43-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md)
-- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM) (A.19.ULSAM)](44-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md)
-- [A.19.CPM - Compare Admitted Profiles under a Declared Comparator (CPM) (A.19.CPM)](45-a19cpm-a19cpm-compare-admitted-profiles-under-a-declared-comparator.md)
-- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism (A.19.S)](46-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md)
-- [A.20 - Constraint Validity for Transformation Steps (A.20)](47-a20-a20-constraint-validity-for-transformation-steps.md)
-- [A.21 - Gate Decisions from Independent Check Results (A.21)](48-a21-a21-gate-decisions-from-independent-check-results.md)
-- [A.22 - Structure and Structural Views (STRUCT-CAL) (A.22)](49-a22-a22-structure-and-structural-views-struct-cal.md)
-- [A.22.CGUS - Which Continuations Are Available? — Constraint-Governed Unfolding Structure (CGUS) (A.22.CGUS)](50-a22cgus-a22cgus-which-continuations-are-available-constraint-governe.md)
+- [A.7 - Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice) (A.7)](01-a7-a7-strict-distinction-repair-conflations-of-fpf-objects-clar.md) — How to untangle confusions when one word is being used for several different kinds of objects.
+- [A.7.1 - Consequence-Guided Ontological Problem Solving (A.7.1)](02-a71-a71-consequence-guided-ontological-problem-solving.md) — How to work through a categorization problem by following its practical consequences.
+- [A.7.2 - FPF Ontology-Premise Reconciliation (A.7.2)](03-a72-a72-fpf-ontology-premise-reconciliation.md) — How to reconcile an FPF assumption with a conflicting premise from a domain or project.
+- [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use (A.7.CP)](04-a7cp-a7cp-constructive-premise-compact-and-reasoning-basis-use.md) — How to identify shared premises reasoning depends on and use them consistently.
+- [A.8 - Universal Core Principle: Test a U-Kind Across Domains (A.8)](05-a8-a8-universal-core-principle-test-a-u-kind-across-domains.md) — How to test whether a concept is general enough to work across different domains.
+- [A.9 - Choose and Check an Aggregation Law for the Intended Result (A.9)](06-a9-a9-choose-and-check-an-aggregation-law-for-the-intended-resu.md) — How to choose a valid way to combine measurements or claims, and check it preserves what matters.
+- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph (A.10)](07-a10-a10-evidence-graph-referring-claim-bound-evidence-and-proven.md) — How to track which evidence supports which claim and where that support starts and ends.
+- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes (A.10.1)](08-a101-a101-revalidate-affected-uses-when-a-relied-on-source-change.md) — How to recheck all the claims that relied on a source when that source changes.
+- [A.11 - Ontological Parsimony (A.11)](09-a11-a11-ontological-parsimony.md) — How to avoid introducing more concepts than a task actually needs.
+- [A.11.OP - Decision-Relevant Least Action and Operational Parsimony: Test a Proposed Requirement (A.11.OP)](10-a11op-a11op-decision-relevant-least-action-and-operational-parsimo.md) — How to test whether a proposed investigation is actually worth doing before requiring it.
+- [A.12 - Acting-Side Externalization and Reflexive Split: Identify Who Acts on What (A.12)](11-a12-a12-acting-side-externalization-and-reflexive-split-identify.md) — How to distinguish who is acting from what they are acting on.
+- [A.13 - The Agential Role & Agency Spectrum (A.13)](12-a13-a13-the-agential-role-agency-spectrum.md) — How to characterize a system's capacity to act and where that capacity comes from.
+- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases (A.14)](13-a14-a14-advanced-mereology-components-portions-aspects-phases.md) — How to distinguish components, portions, aspects, and phases when describing something's parts.
+- [A.15 - System-Role–Method–Work Alignment (A.15)](14-a15-a15-system-rolemethodwork-alignment.md) — How to check that roles, methods, and work are properly aligned for a task.
+- [A.15.1 - U.Work: Dated Performed Work Occurrence (A.15.1)](15-a151-a151-uwork-dated-performed-work-occurrence.md) — How to record that specific work was actually performed, when, and by whom.
+- [A.15.2 - U.WorkPlan: Plan Content for Coordinating Future Work (A.15.2)](16-a152-a152-uworkplan-plan-content-for-coordinating-future-work.md) — How to write a plan that coordinates future work without claiming the work is done.
+- [A.15.3 - SlotFillingsPlanItem: Plan a Value for an Existing Declaration Member (A.15.3)](17-a153-a153-slotfillingsplanitem-plan-a-value-for-an-existing-decla.md) — How to plan which value to fill into an already declared slot in a future action.
+- [A.15.4 - Work-Relevant Appearance-Based Reliance Repair (A.15.4)](18-a154-a154-work-relevant-appearance-based-reliance-repair.md) — How to repair reasoning that relied on appearances rather than verified facts about work.
+- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation (A.15.5)](19-a155-a155-work-entry-readiness-and-full-kit-preparation.md) — How to check whether everything needed to start a piece of work is actually in place.
+- [A.15.6 - Recover What Project, Process, or Case Wording Refers To (A.15.6)](20-a156-a156-recover-what-project-process-or-case-wording-refers-to.md) — How to recover what a "project", "process", or "case" label actually refers to in a specific claim.
+- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection (A.15.7)](21-a157-a157-situation-responsive-work-steering-and-next-action-sele.md) — How to choose the next action when work is ongoing and conditions may change.
+- [A.15.8 - Work-Performance Configuration and Recovery Testing (A.15.8)](22-a158-a158-work-performance-configuration-and-recovery-testing.md) — How to configure what a work performance depends on and test recovery conditions.
+- [A.15.8.MS - Configure Methodological Support for Work (A.15.8.MS)](23-a158ms-a158ms-configure-methodological-support-for-work.md) — How to configure the methodological support a piece of work actually needs.
+- [A.15.9 - Use or Request a Bounded Result from Another Practice (A.15.9)](24-a159-a159-use-or-request-a-bounded-result-from-another-practice.md) — How to use a result from another practice without inheriting their decisions.
+- [A.15.10 - Resume Interrupted Work (A.15.10)](25-a1510-a1510-resume-interrupted-work.md) — How to resume interrupted work by recovering what was in progress and what is still needed.
+- [A.15.11 - Make Applicable Methods Noticeable in Work (A.15.11)](26-a1511-a1511-make-applicable-methods-noticeable-in-work.md) — How to make applicable methods visible and usable within a working context.
+- [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery (A.15.PROD)](27-a15prod-a15prod-production-work-entity-identity-inception-and-produc.md) — How to record that a specific entity was actually produced by specific work.
+- [A.16 - Language-State Moves: Choose the Next Publication and Use of a Cue or Claim (A.16)](28-a16-a16-language-state-moves-choose-the-next-publication-and-use.md) — How to choose what to publish or communicate next based on a claim's current language state.
+- [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable (A.16.0)](29-a160-a160-keep-an-epistemes-language-state-and-publication-histor.md) — How to keep a claim's language state and publication history recoverable over time.
+- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use (A.16.1)](30-a161-a161-prearticulationcuepack-preserve-an-early-cue-before-cho.md) — How to preserve an early-stage idea before deciding how to develop it further.
+- [A.16.2 - Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication (A.16.2)](31-a162-a162-reopen-sketchbackoff-respecify-or-retire-a-language-sta.md) — How to reopen, adjust, or retire a publication that no longer fits its intended use.
+- [A.17 - Canonical "Characteristic" (A.CHR-NORM): Name What Is Measured (A.17)](32-a17-a17-canonical-characteristic-achr-norm-name-what-is-measured.md) — How to name what is being measured without using measurement or axis language imprecisely.
+- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL) (A.18)](33-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md) — How to specify the minimum four elements for a valid measurement: characteristic, scale, level, coordinate.
+- [A.19 - CharacteristicSpace: Coordinates, State Predicates and Dynamics Hook (A.CHR‑SPACE) (A.19)](34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md) — How to organize a set of characteristics, scales, and coordinates for comparing or assessing something.
+- [A.19.ECS - Evaluation CharacteristicSpace Construction: Define What Counts as Better (A.19.ECS)](35-a19ecs-a19ecs-evaluation-characteristicspace-construction-define-wh.md) — How to build an evaluation space that says what "better" means before making comparisons.
+- [A.19.SPR - Repair State and Status Wording (A.19.SPR)](36-a19spr-a19spr-repair-state-and-status-wording.md) — How to repair imprecise state and status wording so it refers to one specific thing.
+- [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate (A.19.SOURCE)](37-a19source-a19source-set-space-substrate-source-set-and-searchoutcome-s.md) — How to specify the source set and space within which a search or comparison operates.
+- [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Interpretive Views of Declared Source Sets and Search/Outcome Spaces (A.19.DECLARED)](38-a19declared-a19declared-substrate-interpretive-view-interpretive-views-o.md) — How to take different interpretive views of a declared search or comparison space.
+- [A.19.CN - CN-frame: Specify and Maintain Comparability and Normalization (A.19.CN)](39-a19cn-a19cn-cn-frame-specify-and-maintain-comparability-and-normal.md) — How to declare the comparability and normalization rules before comparing scores across sources.
+- [A.19.CHR - CHRMechanismSuite: Shared Rules for Characterization and Selection (A.19.CHR)](40-a19chr-a19chr-chrmechanismsuite-shared-rules-for-characterization-a.md) — How to share characterization and selection rules across multiple evaluation uses.
+- [A.19.UNM - Normalize Coordinate Values under Declared Invariants (UNM) (A.19.UNM)](41-a19unm-a19unm-normalize-coordinate-values-under-declared-invariants.md) — How to normalize coordinate values under declared invariants so comparisons are valid.
+- [A.19.UINDM - Indicatorization (UINDM): Select Indicators Under a Declared Policy (A.19.UINDM)](42-a19uindm-a19uindm-indicatorization-uindm-select-indicators-under-a-de.md) — How to select indicators under a declared policy rather than grabbing whatever is available.
+- [A.19.USCM - Unified Scoring Mechanism, USCM (A.19.USCM)](43-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md) — How to combine characteristic scores into a unified score under declared aggregation rules.
+- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM) (A.19.ULSAM)](44-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md) — How to aggregate scale values lawfully, preserving the mathematical properties required.
+- [A.19.CPM - Compare Admitted Profiles under a Declared Comparator (CPM) (A.19.CPM)](45-a19cpm-a19cpm-compare-admitted-profiles-under-a-declared-comparator.md) — How to compare profiles under a declared comparator to produce ranked or selective results.
+- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism (A.19.S)](46-a19s-a19selectormechanism-unified-selection-kernel-selectormechan.md) — The core selection mechanism that picks from a set under declared criteria.
+- [A.20 - Constraint Validity for Transformation Steps (A.20)](47-a20-a20-constraint-validity-for-transformation-steps.md) — How to check that a proposed transformation step satisfies its constraints before allowing it.
+- [A.21 - Gate Decisions from Independent Check Results (A.21)](48-a21-a21-gate-decisions-from-independent-check-results.md) — How to make a gate decision that depends on the results of independent checks.
+- [A.22 - Structure and Structural Views (STRUCT-CAL) (A.22)](49-a22-a22-structure-and-structural-views-struct-cal.md) — How to describe and compare structural configurations of a system.
+- [A.22.CGUS - Which Continuations Are Available? — Constraint-Governed Unfolding Structure (CGUS) (A.22.CGUS)](50-a22cgus-a22cgus-which-continuations-are-available-constraint-governe.md) — How to determine which paths forward are actually available given current capabilities and resources.

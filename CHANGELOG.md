@@ -3,7 +3,7 @@
 ## 2026-11-01
 
 ### What's New
-- The searchable spec grew to **133,155 lines** (440 sections, 408 indexed patterns) — three new frameworks expand coverage of engineering, management, and goal-setting.
+- The searchable spec grew to **133,155 lines** (475 sections, 408 indexed patterns) — three new frameworks expand coverage of engineering, management, and goal-setting.
 - **New: Control Architecture Design framework** — structured guidance for engineers designing control loops: how to reconcile what a system can observe in time, what the controller must remember, how decisions are divided between layers, and which commands remain feasible given implementation constraints. Useful when you need to compare design alternatives for an engineered dynamical system.
 - **New: Goal Construction and Regulation framework** — patterns for constructing, coordinating, pursuing, and revising goals in professional work, including OKR use and AI-assisted goal management. Covers how to set goals that stay useful over time, coordinate them across a team or organization, and revise them when conditions change.
 - **New: Human Resource Management framework** — guidance for the conditions through which people participate in organizational work: assessment and selection, remuneration, voice, protection, and managing the ongoing participation relationship. Useful when your problem involves hiring decisions, compensation structures, employee rights, or the organizational side of talent management.
@@ -13,6 +13,8 @@
 - **chore**: sync upstream + rebuild + AI-enhanced glossary (v0.15.0)
 - **chore**: AI-enhance _index.md for readme section
 - **chore**: AI-enhance _index.md for sections 04-05
+- **chore**: AI-enhance _index.md for sections 06-13 + version bump to 0.16.0
+- **chore**: AI-enhance _index.md for sections 06-13 + bump to v0.16.0
 
 ## 2026-10-15
 

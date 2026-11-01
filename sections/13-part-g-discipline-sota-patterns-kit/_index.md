@@ -1,17 +1,17 @@
 # Part G - Discipline SoTA Patterns Kit
 
-- [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-gcore-discipline-sota-kit-invariants-defaults-and-refresh-tr.md)
-- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec) (G.0)](02-g0-g0-define-admissible-comparison-and-aggregation-for-a-frame-.md)
-- [G.1 - Author a Reusable CG-Frame Generator and Selector Kit (G.1)](03-g1-g1-author-a-reusable-cg-frame-generator-and-selector-kit.md)
-- [G.2 - Harvest and Synthesize SoTA for a CG-Frame (G.2)](04-g2-g2-harvest-and-synthesize-sota-for-a-cg-frame.md)
-- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md)
-- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md)
-- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration (G.5)](07-g5-g5-method-family-registry-dispatch-and-selected-set-result-d.md)
-- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md)
-- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md)
-- [G.8 - Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG) (G.8)](10-g8-g8-package-method-family-admissibility-rules-and-maturity-la.md)
-- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md)
-- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md)
-- [G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay) (G.11)](13-g11-g11-decide-whether-and-how-to-refresh-sota-packs-and-related.md)
-- [G.12 — DHC Dashboards (Discipline-Health Time Series and Views) (G.12)](14-g12-g12-dhc-dashboards-discipline-health-time-series-and-views.md)
-- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md)
+- [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-gcore-discipline-sota-kit-invariants-defaults-and-refresh-tr.md) — The shared invariants, defaults, and refresh triggers that all Part G patterns must respect.
+- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec) (G.0)](02-g0-g0-define-admissible-comparison-and-aggregation-for-a-frame-.md) — How to define what comparisons and aggregations are legally admissible for a given evaluation frame.
+- [G.1 - Author a Reusable CG-Frame Generator and Selector Kit (G.1)](03-g1-g1-author-a-reusable-cg-frame-generator-and-selector-kit.md) — How to author a reusable kit that generates comparable and selectable sets for one evaluation frame.
+- [G.2 - Harvest and Synthesize SoTA for a CG-Frame (G.2)](04-g2-g2-harvest-and-synthesize-sota-for-a-cg-frame.md) — How to harvest and synthesize current knowledge from competing traditions for a given evaluation frame.
+- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md) — How to author the characteristics, scales, levels, and coordinates a frame needs for lawful measurement.
+- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md) — How to define reusable operators and acceptance clauses so thresholds and failure behavior are explicit before evaluation runs.
+- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration (G.5)](07-g5-g5-method-family-registry-dispatch-and-selected-set-result-d.md) — How to declare a selector-facing result that either retains alternatives for later choice or includes members jointly for one use.
+- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md) — How to give a chain of facts a stable address so it can be cited, replayed, or audited later.
+- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md) — How to calibrate and record correspondences between constructs from different traditions so cross-context reuse is bounded.
+- [G.8 - Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG) (G.8)](10-g8-g8-package-method-family-admissibility-rules-and-maturity-la.md) — How to package admissibility rules and a maturity ladder for a method family so a selector can cite them reliably.
+- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md) — How to produce a reproducible parity report comparing rival methods under one declared baseline and freshness window.
+- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md) — How to package completed evaluation outputs into one citable, editioned shipment for a selector or auditor.
+- [G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay) (G.11)](13-g11-g11-decide-whether-and-how-to-refresh-sota-packs-and-related.md) — How to decide whether and how to refresh stale packs and related results based on trigger signals and decay estimates.
+- [G.12 — DHC Dashboards (Discipline-Health Time Series and Views) (G.12)](14-g12-g12-dhc-dashboards-discipline-health-time-series-and-views.md) — How to arrange recorded evaluation coordinates across time windows and expose them as a discipline-health dashboard view.
+- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md) — How to record repeatable mappings from an external scholarly source into framework inputs so the snapshot and transformation are recoverable.

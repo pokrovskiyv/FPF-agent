@@ -1,31 +1,31 @@
 # Cluster A.IV.A - Signature Stack & Boundary Discipline (A.6.\*)
 
-- [A.6 - Signature Stack: Classify and Place Boundary Claims (A.6)](01-a6-a6-signature-stack-classify-and-place-boundary-claims.md)
-- [A.6.RSIG - Recognition Signatures: Find the Defining Episteme for a Description (A.6.RSIG)](02-a6rsig-a6rsig-recognition-signatures-find-the-defining-episteme-for.md)
-- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects) (A.6.B)](03-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md)
-- [A.6.C — Contract Unpacking for Boundaries (A.6.C)](04-a6c-a6c-contract-unpacking-for-boundaries.md)
-- [A.6.REL - Relation Obtaining and Individuation: Distinguish Occurrences When Needed (A.6.REL)](05-a6rel-a6rel-relation-obtaining-and-individuation-distinguish-occur.md)
-- [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme (A.6.0)](06-a60-a60-usignature-reusable-law-governed-declaration-episteme.md)
-- [A.6.1 - U.Mechanism - Reusable Law-Governed Operation Declaration (A.6.1)](07-a61-a61-umechanism-reusable-law-governed-operation-declaration.md)
-- [A.6.2 - Effect-Free Episteme Morphing: Laws for Mathematical Relations Between Epistemes (A.6.2)](08-a62-a62-effect-free-episteme-morphing-laws-for-mathematical-rela.md)
-- [A.6.3 - Episteme viewing - EntityOfConcern-preserving episteme construction (A.6.3)](09-a63-a63-episteme-viewing-entityofconcern-preserving-episteme-con.md)
-- [A.6.3.CSC - Controlled Semantic Coarsening: Shorten an Account for a Bounded Use (A.6.3.CSC)](10-a63csc-a63csc-controlled-semantic-coarsening-shorten-an-account-for.md)
-- [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression (A.6.3.CR)](11-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md)
-- [A.6.3.RT - Representation-Scheme Transition: Change Representation of the Same EntityOfConcern (A.6.3.RT)](12-a63rt-a63rt-representation-scheme-transition-change-representation.md)
-- [A.6.3.RT.OE - Construct an Operative Expression (A.6.3.RT)](13-a63rt-a63rtoe-construct-an-operative-expression.md)
-- [A.6.3.NAR - Structure-to-Narrative Rendering (A.6.3.NAR)](14-a63nar-a63nar-structure-to-narrative-rendering.md)
-- [A.6.4 - EntityOfConcern Retargeting: Judge a Bounded Use Across Different Entities (A.6.4)](15-a64-a64-entityofconcern-retargeting-judge-a-bounded-use-across-d.md)
-- [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims (A.6.P)](16-a6p-a6p-relational-precision-restoration-recovering-direct-relat.md)
-- [A.6.P.RI - Recover Agent-Relative References for Action (A.6.P)](17-a6p-a6pri-recover-agent-relative-references-for-action.md)
-- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims (A.6.P)](18-a6p-a6pwmr-exact-relation-recovery-for-method-and-work-claims.md)
-- [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission (A.6.RCD)](19-a6rcd-a6rcd-needed-relation-claim-derivation-and-relation-kind-adm.md)
-- [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration (A.6.RSIR)](20-a6rsir-a6rsir-relation-signature-interface-role-and-slot-precision-.md)
-- [A.6.A - Affordance and Action-Invitation Precision Restoration (ACT-INV) (A.6.A)](21-a6a-a6a-affordance-and-action-invitation-precision-restoration-a.md)
-- [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION) (A.6.F)](22-a6f-a6f-function-and-functional-precision-restoration-rpr-functi.md)
-- [A.6.M - Module and Interface Claim Repair (A.6.M)](23-a6m-a6m-module-and-interface-claim-repair.md)
-- [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline (A.6.5)](24-a65-a65-relation-declaration-slot-discipline-slotkind-valuekind-.md)
-- [A.6.6 - Base Declaration Discipline: Say Exactly What Something Depends On (A.6.6)](25-a66-a66-base-declaration-discipline-say-exactly-what-something-d.md)
-- [A.6.7 - MechSuiteDescription — Shared Conditions for Joint Use of Distinct Mechanisms (A.6.7)](26-a67-a67-mechsuitedescription-shared-conditions-for-joint-use-of-.md)
-- [A.6.9 - Cross-Context Sameness Disambiguation - Restoring the concrete claim behind "same", "equivalent", and "align" (RPR-XCTX) (A.6.9)](27-a69-a69-cross-context-sameness-disambiguation-restoring-the-conc.md)
-- [A.6.S - TargetSignature and optional ConstructorSignature - demand-driven signature engineering (A.6.S)](28-a6s-a6s-targetsignature-and-optional-constructorsignature-demand.md)
-- [A.6.H - Wholeness Language Unpacking — RPR-WHOLE (A.6.H)](29-a6h-a6h-wholeness-language-unpacking-rpr-whole.md)
+- [A.6 - Signature Stack: Classify and Place Boundary Claims (A.6)](01-a6-a6-signature-stack-classify-and-place-boundary-claims.md) — How to separate the different types of claims in a boundary package (API, contract, SLA) by their kind.
+- [A.6.RSIG - Recognition Signatures: Find the Defining Episteme for a Description (A.6.RSIG)](02-a6rsig-a6rsig-recognition-signatures-find-the-defining-episteme-for.md) — How to identify what kind of claim a description is making based on its defining features.
+- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects) (A.6.B)](03-a6b-a6b-boundary-norm-square-laws-admissibility-deontics-workeff.md) — The four categories of boundary claims (rules, conditions, duties, work effects) and how they depend on each other.
+- [A.6.C — Contract Unpacking for Boundaries (A.6.C)](04-a6c-a6c-contract-unpacking-for-boundaries.md) — How to unpack contract or SLA language into its separate promise, duty, evidence, and condition parts.
+- [A.6.REL - Relation Obtaining and Individuation: Distinguish Occurrences When Needed (A.6.REL)](05-a6rel-a6rel-relation-obtaining-and-individuation-distinguish-occur.md) — How to distinguish different occurrences of a relationship when that distinction changes the claim.
+- [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme (A.6.0)](06-a60-a60-usignature-reusable-law-governed-declaration-episteme.md) — How to declare a reusable rule-governed structure that others can depend on.
+- [A.6.1 - U.Mechanism - Reusable Law-Governed Operation Declaration (A.6.1)](07-a61-a61-umechanism-reusable-law-governed-operation-declaration.md) — How to declare a reusable operation governed by a law, with explicit preconditions and effects.
+- [A.6.2 - Effect-Free Episteme Morphing: Laws for Mathematical Relations Between Epistemes (A.6.2)](08-a62-a62-effect-free-episteme-morphing-laws-for-mathematical-rela.md) — How to compute a mathematically equivalent description without changing what is being described.
+- [A.6.3 - Episteme viewing - EntityOfConcern-preserving episteme construction (A.6.3)](09-a63-a63-episteme-viewing-entityofconcern-preserving-episteme-con.md) — How to rewrite a description while preserving what the reader needs to understand about the subject.
+- [A.6.3.CSC - Controlled Semantic Coarsening: Shorten an Account for a Bounded Use (A.6.3.CSC)](10-a63csc-a63csc-controlled-semantic-coarsening-shorten-an-account-for.md) — How to shorten an account for a limited use without losing what that use requires.
+- [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression (A.6.3.CR)](11-a63cr-a63cr-conservativeretextualization-entityofconcern-preservin.md) — How to reword something while preserving its essential claims about the same subject.
+- [A.6.3.RT - Representation-Scheme Transition: Change Representation of the Same EntityOfConcern (A.6.3.RT)](12-a63rt-a63rt-representation-scheme-transition-change-representation.md) — How to switch representation formats while keeping the same meaning for the same subject.
+- [A.6.3.RT.OE - Construct an Operative Expression (A.6.3.RT)](13-a63rt-a63rtoe-construct-an-operative-expression.md) — How to construct a usable expression in a formal or operational representation scheme.
+- [A.6.3.NAR - Structure-to-Narrative Rendering (A.6.3.NAR)](14-a63nar-a63nar-structure-to-narrative-rendering.md) — How to convert a structured description into a readable narrative for a specific audience.
+- [A.6.4 - EntityOfConcern Retargeting: Judge a Bounded Use Across Different Entities (A.6.4)](15-a64-a64-entityofconcern-retargeting-judge-a-bounded-use-across-d.md) — How to apply a judgment formed in one context to a different but related subject.
+- [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims (A.6.P)](16-a6p-a6p-relational-precision-restoration-recovering-direct-relat.md) — How to recover what specific relation a vague relational claim is actually making.
+- [A.6.P.RI - Recover Agent-Relative References for Action (A.6.P)](17-a6p-a6pri-recover-agent-relative-references-for-action.md) — How to recover what an agent-relative reference actually points to in an action context.
+- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims (A.6.P)](18-a6p-a6pwmr-exact-relation-recovery-for-method-and-work-claims.md) — How to recover the exact relations in method and work claims that use imprecise wording.
+- [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission (A.6.RCD)](19-a6rcd-a6rcd-needed-relation-claim-derivation-and-relation-kind-adm.md) — How to derive a needed relation claim and decide what relation kinds should be admitted.
+- [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration (A.6.RSIR)](20-a6rsir-a6rsir-relation-signature-interface-role-and-slot-precision-.md) — How to restore precision to relation, signature, interface, role, and slot claims.
+- [A.6.A - Affordance and Action-Invitation Precision Restoration (ACT-INV) (A.6.A)](21-a6a-a6a-affordance-and-action-invitation-precision-restoration-a.md) — How to repair vague language about what actions a system invites or affords.
+- [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION) (A.6.F)](22-a6f-a6f-function-and-functional-precision-restoration-rpr-functi.md) — How to repair imprecise function language so it names what is actually delivered.
+- [A.6.M - Module and Interface Claim Repair (A.6.M)](23-a6m-a6m-module-and-interface-claim-repair.md) — How to repair claims about modules and interfaces so they say what depends on what.
+- [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline (A.6.5)](24-a65-a65-relation-declaration-slot-discipline-slotkind-valuekind-.md) — How to specify slots in a declaration with the right kinds and references.
+- [A.6.6 - Base Declaration Discipline: Say Exactly What Something Depends On (A.6.6)](25-a66-a66-base-declaration-discipline-say-exactly-what-something-d.md) — How to state exactly what something depends on — no more, no less.
+- [A.6.7 - MechSuiteDescription — Shared Conditions for Joint Use of Distinct Mechanisms (A.6.7)](26-a67-a67-mechsuitedescription-shared-conditions-for-joint-use-of-.md) — How to specify the conditions that must hold for several mechanisms to be used together.
+- [A.6.9 - Cross-Context Sameness Disambiguation - Restoring the concrete claim behind "same", "equivalent", and "align" (RPR-XCTX) (A.6.9)](27-a69-a69-cross-context-sameness-disambiguation-restoring-the-conc.md) — How to recover the actual sameness claim behind vague terms like "same", "equivalent", or "aligned".
+- [A.6.S - TargetSignature and optional ConstructorSignature - demand-driven signature engineering (A.6.S)](28-a6s-a6s-targetsignature-and-optional-constructorsignature-demand.md) — How to specify what a needed interface must provide and optionally how to construct one.
+- [A.6.H - Wholeness Language Unpacking — RPR-WHOLE (A.6.H)](29-a6h-a6h-wholeness-language-unpacking-rpr-whole.md) — How to unpack "wholeness" language to recover what property or relation is actually being claimed.
