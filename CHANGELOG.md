@@ -11,6 +11,7 @@
 
 ### All Changes
 - **chore**: sync upstream + rebuild + AI-enhanced glossary (v0.15.0)
+- **chore**: AI-enhance _index.md for readme section
 
 ## 2026-10-15
 
