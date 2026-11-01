@@ -1,24 +1,24 @@
 # First Principles Framework Architectural Reference (non-normative)
 
-- [FPF.Reference:1 - What This Specification Is And How To Use It](01-fpfreference1-what-this-specification-is-and-how-to-use-it.md)
-- [FPF.Reference:2 - FPF As A Project, Not Only A Pattern List](02-fpfreference2-fpf-as-a-project-not-only-a-pattern-list.md)
-- [FPF.Reference:3 - Why FPF Exists](03-fpfreference3-why-fpf-exists.md)
-- [FPF.Reference:4 - Creativity And Assurance Mature Together](04-fpfreference4-creativity-and-assurance-mature-together.md)
-- [FPF.Reference:5 - Local Closure Inside An Open World](05-fpfreference5-local-closure-inside-an-open-world.md)
-- [FPF.Reference:6 - FPF As An Evolutionary Architecture For Thought](06-fpfreference6-fpf-as-an-evolutionary-architecture-for-though.md)
-- [FPF.Reference:7 - Architectural Characteristics Of Thought](07-fpfreference7-architectural-characteristics-of-thought.md)
-- [FPF.Reference:8 - Beyond Bias Hunting](08-fpfreference8-beyond-bias-hunting.md)
-- [FPF.Reference:9 - Thinking Through Writing](09-fpfreference9-thinking-through-writing.md)
-- [FPF.Reference:10 - Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-fpfreference10-thinking-oriented-architecture-not-a-descript.md)
-- [FPF.Reference:11 - When A Scale Claim Calls For Comparison](11-fpfreference11-when-a-scale-claim-calls-for-comparison.md)
-- [FPF.Reference:12 - Descriptions, Views And Publication Forms](12-fpfreference12-descriptions-views-and-publication-forms.md)
-- [FPF.Reference:13 - Architecture As Structure Of Holons](13-fpfreference13-architecture-as-structure-of-holons.md)
-- [FPF.Reference:14 - Boundary Statements](14-fpfreference14-boundary-statements.md)
-- [FPF.Reference:15 - Raising Semantic Precision](15-fpfreference15-raising-semantic-precision.md)
-- [FPF.Reference:16 - Big FPF Storylines](16-fpfreference16-big-fpf-storylines.md)
-- [FPF.Reference:17 - Transdisciplinarity As A Meta-Theory Of Thinking](17-fpfreference17-transdisciplinarity-as-a-meta-theory-of-think.md)
-- [FPF.Reference:18 - The Culinary Architecture Of Collective Thought](18-fpfreference18-the-culinary-architecture-of-collective-thoug.md)
-- [FPF.Reference:19 - The Intellect Stack As A Pedagogical Map](19-fpfreference19-the-intellect-stack-as-a-pedagogical-map.md)
-- [FPF.Reference:20 - Purpose, Scope, And Non-Goals](20-fpfreference20-purpose-scope-and-non-goals.md)
-- [FPF.Reference:21 - How To Continue After The readme](21-fpfreference21-how-to-continue-after-the-readme.md)
-- [FPF.Reference:End](22-fpfreferenceend.md)
+- [FPF.Reference:1 - What This Specification Is And How To Use It](01-fpfreference1-what-this-specification-is-and-how-to-use-it.md) — How to navigate this specification: find a pattern from your working question, not by reading linearly.
+- [FPF.Reference:2 - FPF As A Project, Not Only A Pattern List](02-fpfreference2-fpf-as-a-project-not-only-a-pattern-list.md) — How FPF, domain frameworks, companions, and tools relate as a living project, not a single document.
+- [FPF.Reference:3 - Why FPF Exists](03-fpfreference3-why-fpf-exists.md) — Why project reasoning drifts when language loses precision, and how FPF keeps it recoverable.
+- [FPF.Reference:4 - Creativity And Assurance Mature Together](04-fpfreference4-creativity-and-assurance-mature-together.md) — How exploring creative options and building evidence stay connected throughout a project.
+- [FPF.Reference:5 - Local Closure Inside An Open World](05-fpfreference5-local-closure-inside-an-open-world.md) — How to draw definite local conclusions for action while staying open to new information globally.
+- [FPF.Reference:6 - FPF As An Evolutionary Architecture For Thought](06-fpfreference6-fpf-as-an-evolutionary-architecture-for-though.md) — How reasoning arrangements can improve over time without losing what they were about.
+- [FPF.Reference:7 - Architectural Characteristics Of Thought](07-fpfreference7-architectural-characteristics-of-thought.md) — A table of reasoning qualities (auditability, evolvability, composability) and the FPF patterns that improve them.
+- [FPF.Reference:8 - Beyond Bias Hunting](08-fpfreference8-beyond-bias-hunting.md) — Moving from naming cognitive biases to building reasoning arrangements that prevent them.
+- [FPF.Reference:9 - Thinking Through Writing](09-fpfreference9-thinking-through-writing.md) — How writing helps you think more clearly, not just communicate what you already know.
+- [FPF.Reference:10 - Thinking-Oriented Architecture, Not A Descriptive Upper Ontology](10-fpfreference10-thinking-oriented-architecture-not-a-descript.md) — Why FPF uses distinctions to guide reasoning rather than classifying everything upfront.
+- [FPF.Reference:11 - When A Scale Claim Calls For Comparison](11-fpfreference11-when-a-scale-claim-calls-for-comparison.md) — How to make "more scale will solve this" claims honest by comparing actual performance curves.
+- [FPF.Reference:12 - Descriptions, Views And Publication Forms](12-fpfreference12-descriptions-views-and-publication-forms.md) — Why a diagram is not the architecture, a dashboard is not evidence, and how to keep them straight.
+- [FPF.Reference:13 - Architecture As Structure Of Holons](13-fpfreference13-architecture-as-structure-of-holons.md) — Architecture as the actual structure of a system, not the diagram or document describing it.
+- [FPF.Reference:14 - Boundary Statements](14-fpfreference14-boundary-statements.md) — How to make API, contract, and SLA language explicit enough for the uses that depend on it.
+- [FPF.Reference:15 - Raising Semantic Precision](15-fpfreference15-raising-semantic-precision.md) — A six-step method for repairing compressed or metaphorical technical wording.
+- [FPF.Reference:16 - Big FPF Storylines](16-fpfreference16-big-fpf-storylines.md) — Worked storylines showing how multiple patterns connect to answer a real project question end to end.
+- [FPF.Reference:17 - Transdisciplinarity As A Meta-Theory Of Thinking](17-fpfreference17-transdisciplinarity-as-a-meta-theory-of-think.md) — How FPF connects disciplines by stabilizing term meanings without erasing local differences.
+- [FPF.Reference:18 - The Culinary Architecture Of Collective Thought](18-fpfreference18-the-culinary-architecture-of-collective-thoug.md) — An analogy: how FPF patterns work together like kitchen stations with distinct roles and timing.
+- [FPF.Reference:19 - The Intellect Stack As A Pedagogical Map](19-fpfreference19-the-intellect-stack-as-a-pedagogical-map.md) — A learning map of five capability areas (structure, knowledge, action, strategy, governance).
+- [FPF.Reference:20 - Purpose, Scope, And Non-Goals](20-fpfreference20-purpose-scope-and-non-goals.md) — FPF's purpose: tool-agnostic, not prescribing process; use only the guidance your question needs.
+- [FPF.Reference:21 - How To Continue After The readme](21-fpfreference21-how-to-continue-after-the-readme.md) — Navigation path from readme to architectural reference to Table of Contents to pattern body.
+- [FPF.Reference:End](22-fpfreferenceend.md) — End marker.
