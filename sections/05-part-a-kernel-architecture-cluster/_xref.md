@@ -1,6 +1,6 @@
 # Cross-References into 05-part-a-kernel-architecture-cluster
 
-Patterns in other Parts that reference patterns in this directory (288 refs).
+Patterns in other Parts that reference patterns in this directory (293 refs).
 
 ## From 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
@@ -10,6 +10,7 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | A.6.0 | coordinates_with | A.3.1 |
 | A.6.1 | builds_on | A.2.6 |
 | A.6.1 | coordinates_with | A.3.1 |
+| A.6.1 | coordinates_with | A.1.1 |
 | A.6.3.CSC | coordinates_with | A.21 |
 | A.6.3.RT | coordinates_with | A.21 |
 | A.6.6 | coordinates_with | A.2.4 |
@@ -167,6 +168,7 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | C.2 | builds_on | A.1 |
 | C.2.1 | builds_on | A.1 |
 | C.2.2 | builds_on | A.2.6 |
+| C.2.6 | builds_on | A.2.4 |
 | C.2.8 | coordinates_with | A.2.2 |
 | C.2.P | coordinates_with | A.21 |
 | C.2.P.DR | builds_on | A.3.1 |
@@ -229,9 +231,11 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | C.32.CONWAY | builds_on | A.3.4 |
 | C.32.CONWAY | builds_on | A.22 |
 | C.32.FAIL | coordinates_with | A.21 |
+| C.32.LCA | builds_on | A.3.3.PI |
 | C.32.MWA | builds_on | A.3.1 |
 | C.32.MWA | builds_on | A.22 |
 | C.32.P2S | builds_on | A.1 |
+| C.32.P2S | builds_on | A.1.SCR |
 | C.32.P2S | builds_on | A.1.STM |
 | C.32.P2S | builds_on | A.22 |
 | C.32.PAD | coordinates_with | A.21 |
@@ -245,6 +249,7 @@ Patterns in other Parts that reference patterns in this directory (288 refs).
 | C.36.P | coordinates_with | A.3.2 |
 | C.37 | coordinates_with | A.2.4 |
 | C.37 | coordinates_with | A.22 |
+| C.39 | coordinates_with | A.3.1 |
 | C.39.RO | coordinates_with | A.3.1 |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization

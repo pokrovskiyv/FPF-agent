@@ -37,13 +37,13 @@ F.2 prevents these mistakes by tying each expression and local-sense claim to th
 
 ### F.2:4 - Core idea (didactic)
 
-For each needed use, name the **exact source and edition**, the relevant passage, and the **effective `U.ReferenceScheme`** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, add Tech and Plain labels, and state the **LocalSenseClaim** in one sentence.
+For each needed use, name the **exact source and edition**, the relevant passage, and the **effective reference scheme** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, add Tech and Plain labels, and state the **LocalSenseClaim** in one sentence.
 
 That is the ordinary F.2 result. If later work needs a durable address, F.17 may represent it as `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>` and record the basis relation. The cell is optional and does not replace the source, passage, or claim. F.2 establishes no relation to another source-local meaning.
 
 ### F.2:5 - Minimal vocabulary (this pattern only)
 
-* **Exact source basis** — the selected source, edition or version, relevant passage, and effective `U.ReferenceScheme` needed to recover this use.
+* **Exact source basis** — the selected source, edition or version, relevant passage, and effective reference scheme needed to recover this use.
 * **Attested phrase** — a short verbatim cue showing how the expression is used in that source.
 * **LocalExpression** — the exact expression whose source-local meaning is being recovered.
 * **Local Normal Form (LNF)** — the minimally edited surface used to cite that expression while preserving the source’s spelling, hyphenation, and casing.
@@ -65,13 +65,13 @@ Name the source and edition, locate the passage, and recover the effective refer
 
 Ask: **“How does this source itself say it?”**
 
-Choose the LNF with minimal editing. Keep an idiomatic Tech label, add a genuinely explanatory Plain label, and write one LocalSenseClaim. Prefer the source’s head noun and meaningful modifiers. Put behavioural equations, obligations, measurements, and kind criteria under their direct patterns rather than inside the lexical note.
+Choose the LNF with minimal editing. Keep an idiomatic Tech label, add an explanatory Plain label, and write one LocalSenseClaim. Prefer the source’s head noun and meaningful modifiers. Put behavioural equations, obligations, measurements, and kind criteria under their direct patterns rather than inside the lexical note.
 
 #### F.2:6.3 - Move C — Fence the result
 
 Ask: **“What has this source use not established?”**
 
-Refuse to infer sameness, substitution, hierarchy, or transfer across sources; refuse to merge a materially different edition or language use by spelling alone; and refuse to treat the expression as the value that the substantive claim is about. Record an itch to compare for F.9, but do not settle it in F.2.
+Refuse to infer sameness, substitution, hierarchy, or transfer across sources; refuse to merge a materially different edition or language use by spelling alone; and refuse to treat the expression as the value that the substantive claim is about. Take a needed cross-source relation question to F.9.
 
 ### F.2:7 - Guard-rails (normative, lightweight)
 
@@ -81,7 +81,7 @@ Refuse to infer sameness, substitution, hierarchy, or transfer across sources; r
 4. **Minimal generality.** The LocalSenseClaim **MUST** say no more than the source use and receiving question require.
 5. **Category hygiene.** A lexical note **MUST NOT** stand in for behaviour, obligation, measurement, kind, assignment, Work, or evidence.
 6. **No cross-source claim.** F.2 **MUST NOT** assert equivalence, subsumption, similarity, permission, or transfer between local meanings.
-7. **Edition and language honesty.** When edition or language changes meaning, recover a distinct source-local claim and interpretation basis; do not manufacture a universal “new Context” rule.
+7. **Edition and language honesty.** When edition or language changes meaning, recover a distinct source-local claim and interpretation basis.
 8. **Parsimony.** Keep the head expressions that affect F.3, F.4, F.8, or a real F.9 question; omit an unused tail.
 
 ### F.2:8 - Micro-examples
@@ -136,7 +136,7 @@ Use the completed PROV-O note as one source-backed input. The BPMN, SOSA/SSN and
 * **IEC 61131-3, cited runtime passage and scheme** — `task`; Plain **scheduled program execution**; claim as above.
 * **ITIL 4 (2020), incident-management use** — `incident`; Plain **reported service disruption**; claim: “An unplanned interruption or reduction in service quality.”
 
-This prevents a plant fault from becoming an ITIL incident merely because a writer wants one word for both.
+Use the source's service-disruption criteria to decide whether a reported plant fault also qualifies as an ITIL incident.
 
 #### F.2:11.3 - Kind, method, and knowledge sources
 
@@ -152,7 +152,7 @@ The notes do not turn an FCA concept into a root kind or a procedure description
 1. **Localise.** Hear the expression only in the exact source use now under examination.
 2. **Recover.** Identify the edition, passage, effective scheme, and source-local claim.
 3. **Normalise minimally.** Choose an LNF that preserves the source’s idiom.
-4. **Explain twice.** Keep an idiomatic Tech label and a genuinely helpful Plain label.
+4. **Explain twice.** Keep an idiomatic Tech label and a helpful Plain label.
 5. **Check scope.** Tighten any sentence that says more than the passage supports.
 6. **Signal homonymy.** Note repeated spelling without claiming a relation.
 7. **Stop.** When the local note is clear enough for the receiving question, do not add a cell or comparison merely for completeness.

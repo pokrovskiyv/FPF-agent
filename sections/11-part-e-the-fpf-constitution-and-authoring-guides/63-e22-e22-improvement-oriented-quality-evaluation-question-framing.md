@@ -54,7 +54,7 @@ Stop framing when the question and expected answer are sufficiently determined f
 
 #### E.22:4.1 - Local names and kind settlement
 
-`E.22` frames the question. It does not evaluate the object. `evaluationPatternLocator` identifies the FPF pattern description containing the evaluation predicate or constraint; an optional `semanticEvaluationMethodRef` names the separately identified `U.Method` used for that evaluation. A characteristic-space specification, Q-Bundle description, rubric description, review-profile description, evidence-basis description, and result-form description constrain or describe that evaluation. None of those specifications performs the evaluation or substitutes for the subject assertion or semantic Method. For example, `E.21`, `E.9.DA`, or `E.2.DA` may supply the predicate for evaluating one FPF object, while `A.19.ECS` and `C.25` supply supporting quality-model descriptions. `E.19` instead defines an admission or refresh review-gate and findings profile. Use `E.19` as `evaluationPatternLocator` only when its review result is itself the object under evaluation; otherwise its later gate check remains distinct from the quality evaluation.
+`E.22` frames the question. It does not evaluate the object. `evaluationPatternLocator` identifies the FPF pattern description containing the evaluation predicate or constraint; an optional `semanticEvaluationMethodRef` names the separately identified `U.Method` used for that evaluation. A characteristic-space specification, Q-Bundle description, rubric description, review-profile description, evidence-basis description, and result-form description constrain or describe that evaluation. None of those specifications performs the evaluation or substitutes for the subject assertion or semantic Method. For example, `E.21`, `E.9.DA`, or `E.2.DA` may supply the predicate for evaluating one FPF object, while `A.19.ECS` and `C.25` supply supporting quality-model descriptions. `E.19` supplies admission or refresh review questions and findings. Apply it directly when that review is the requested result. When its findings support a quality evaluation, `evaluationPatternLocator` still names the pattern that defines that evaluation, and the quality result cites the relied-on review findings as evidence.
 
 A below-floor value, finding, improvement aim, or need for evaluation is not by itself an actual Problem. If the consuming use relies on an actual Problem, cite one current C.22.PFR `ProblematicForRelation` occurrence with its direct participants and temporal identity; the frame, evaluation, result, and evidence may support a claim about it but neither create nor split it.
 
@@ -76,22 +76,24 @@ The remaining local support names ending in `@Context` are compatibility and ret
 | `DeclaredQualityFloor` | Minimum acceptable coordinate or status floor when the frame declares a floor claim. |
 | `DesiredImprovementAim` | Requested substantive change beyond the floor when improvement beyond the floor is requested. |
 | `ExpectedEvaluationEvidenceBasis@Context` | `U.Episteme` whose EntityOfConcern is the exact object version under evaluation. It describes expected evidence-use positions and the missingness rule for the exact method, space, criterion, scope, and qualification window. It can be identified before a use declaration cites it and is not the evidence values later found. |
-| `TradeoffProtectionSet@Context` | A local `U.Set` value whose members are exact characteristic or coordinate references paired with their kinds. Its identity is extensional for the exact question-frame edition, not for a context label. |
+| `TradeoffProtectionSet@Context` | A mathematical set with a declaration-local element range: exact characteristic or coordinate references paired with their kinds, naming the qualities protected in this evaluation question. The question-frame edition determines which pairs are admissible for this use; the set itself is identified extensionally by its members. |
 | `EvaluationQualificationWindow` | Edition, source-currentness, comparison-set, time, or declared-use window in which the requested result is intended to be current. The actual evaluation application later binds its exact point or interval. |
 | `ExpectedQualityEvaluationResultFormDescription` | `U.Episteme` describing the result-row form declared by the governing evaluation pattern. It is not an actual result. |
 | `QualityReviewFindingRow` | Actionable evaluation finding that identifies the observed issue, affected evaluation property, correction direction, and closure test. |
 | `CandidateImprovementProposalRow@Context` | E.22 proposal episteme with an exact correction target, expected substantive evaluation effect, trade-offs, kind-restoration disposition, outside-claim return when needed, and closure test. |
 | `CandidateImprovementOutsideClaimReference@Context` | Bounded local ClaimGraph node form inside one proposal row. It identifies the outside governed value, relation signature, or boundary description and the exact FPF pattern identity that governs the return. It is not an episteme, relation, or independently referenceable entity. |
 | `KindRestorationCheck` | Conditionally present check when a changed FPF-governed expression can alter the object, kind, relation, slot or use position, claim kind, admissible use, or scope. |
-| `CandidateImprovementProposalPortfolio@Context` | A local `U.Set` value whose members are `CandidateImprovementProposalRow@Context` epistemes for one question frame. Membership, not a document serialization, determines the portfolio. |
+| `CandidateImprovementProposalPortfolio@Context` | A mathematical set whose local element range consists of `CandidateImprovementProposalRow@Context` epistemes addressing one question frame. Resolve each proposal under C.2.1 and the proposal conditions in 4.4. The frame qualifies admissible membership and use; extensional membership identifies the set. |
 | `ImprovementFollowUpHypothesis@Context` | `U.Episteme` whose EntityOfConcern is the exact object version expected to change. It claims that one named next operation or method application is expected to address one finding and produce a stated evaluation effect under a stated test condition. A stop disposition, return, selected plan, performed Work, or actual Transformation is not such a hypothesis. |
+
+In each filled episteme form below, `claimGraph` carries its complete interpreted claims and semantic relations by value, in the C.2.1:4.1.2 range `NonemptyClaimContent`. `referenceScheme` carries the effective rule collection by value in `EpistemeInterpretationScheme`; those rules must interpret the form's designations, predicates and qualifications. The fields that follow state that episteme's claims. Range membership alone establishes neither their truth nor a completed evaluation.
 
 ```text
 QualityEvaluationUseDeclaration <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the exact object version under evaluation
   entityOfConcernKindRef: U.KindRef, referencing the exact kind of that object version
-  claimGraph: U.ClaimGraph by value
-  referenceScheme: U.ReferenceScheme by value
+  claimGraph: NonemptyClaimContent by value
+  referenceScheme: EpistemeInterpretationScheme by value
   editionId
   evaluatorConditionRef?: U.EpistemeRef, referencing an eligibility, independence, capability, or planned condition only when it changes the evaluation question or admissibility of the result
   intendedEvaluatorSystemRef?: U.EntityRef, referencing one admitted U.System only when that exact identity is itself part of the declared question; it asserts neither assignment nor performance
@@ -112,8 +114,8 @@ QualityEvaluationUseDeclaration <: U.Episteme:
 ExpectedEvaluationEvidenceBasis@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the exact object version whose evaluation needs the expected evidence
   entityOfConcernKindRef: U.KindRef, referencing the exact kind of that object version
-  claimGraph: U.ClaimGraph by value
-  referenceScheme: U.ReferenceScheme by value
+  claimGraph: NonemptyClaimContent by value
+  referenceScheme: EpistemeInterpretationScheme by value
   editionId
   evaluationPatternLocator: U.EntityRef, locating the same exact FPF evaluation pattern description
   selectedEvaluationCharacteristicSpaceRef: U.EntityRef, referencing the same exact U.CharacteristicSpace
@@ -134,7 +136,7 @@ At least one of `selectedEvaluationPredicate` and `selectedComparatorSpecRef` is
 
 None of these declaration fields is dated evaluation Work or an evaluation result. A pre-evaluation frame contains no actual-Work identifiers. An ordinary result that asserts no actual Work needs none. If a compact projection does assert dated evaluation Work, recover every exact actual performer through A.13 and follow A.15.1 for independent Work admission; performer, Method, time, containing System, Work identity, and the result relation remain recoverable. Add assignment and F.6 refs only when the projection or receiving use expressly represents precise assignment-bound attribution; missing or failed F.6 leaves the Work intact. Keep any durable result episteme, evidence use, provenance, currentness, viewpoint, grounding, and Work-to-result or decision-use relation under their own patterns. A frame, declaration, description, assignment, dashboard, or carrier establishes none of them.
 
-Two carriers may publish the same edition of either episteme. A `QualityEvaluationUseDeclaration` changes edition when its object version, claim graph, reference scheme, question-changing evaluator condition or intended-evaluator identity, evaluation pattern, semantic Method, selected characteristic space, predicate and comparator, ClaimScope, qualification window, quality-model descriptions, expected evidence-basis edition, or result-form description changes. Replacing one qualified actual evaluator with another does not change the declaration unless the declared condition or claim changes. An `ExpectedEvaluationEvidenceBasis@Context` changes edition when its object version, claim graph, reference scheme, evaluation pattern, selected space, predicate and comparator, ClaimScope, expected evidence positions or relation kinds, missingness rule, or qualification window changes. Carrier, context label, viewpoint, grounding record, or support serialization alone changes neither episteme. `TradeoffProtectionSet@Context` and `CandidateImprovementProposalPortfolio@Context` are set values, not records; an episteme may describe or publish either set without becoming the set.
+Two carriers may publish the same edition of either episteme. A `QualityEvaluationUseDeclaration` changes edition when its object version, claim graph, reference scheme, question-changing evaluator condition or intended-evaluator identity, evaluation pattern, semantic Method, selected characteristic space, predicate and comparator, ClaimScope, qualification window, quality-model descriptions, expected evidence-basis edition, or result-form description changes. Replacing one qualified actual evaluator with another does not change the declaration unless the declared condition or claim changes. An `ExpectedEvaluationEvidenceBasis@Context` changes edition when its object version, claim graph, reference scheme, evaluation pattern, selected space, predicate and comparator, ClaimScope, expected evidence positions or relation kinds, missingness rule, or qualification window changes. Carrier, context label, viewpoint, grounding record, or support serialization alone changes neither episteme. The two local set names above require only their declared element ranges and ordinary extensional equality. Permuting a list or repeating an entry leaves its represented set unchanged. A changed question-frame edition changes the admissibility or use question, not the set identity when its members remain the same. A changed proposal episteme contributes a different member under C.2.1, even if its short label is retained. An episteme may describe or publish a set; its record and carrier remain separately identified. These set-valued uses require no additional public set kind.
 
 #### E.22:4.2 - Quality evaluation purposes
 
@@ -160,8 +162,8 @@ An improvement aim is not a command to make every coordinate exceptional. A `5` 
 QualityEvaluationQuestionFrame <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the exact object version under evaluation
   entityOfConcernKindRef: U.KindRef, referencing the exact kind of that object version
-  claimGraph: U.ClaimGraph by value
-  referenceScheme: U.ReferenceScheme by value
+  claimGraph: NonemptyClaimContent by value
+  referenceScheme: EpistemeInterpretationScheme by value
   editionId
   qualityEvaluationUseDeclarationRef: U.EpistemeRef, referencing one QualityEvaluationUseDeclaration about the same object version
   selectedEvaluationCharacteristicSpaceRef: U.EntityRef, referencing the same exact U.CharacteristicSpace
@@ -203,8 +205,8 @@ An actionable finding first identifies where an issue was observed, which exact 
 CandidateImprovementProposalRow@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the exact object version under improvement
   entityOfConcernKindRef: U.KindRef, referencing the exact kind of that object version
-  claimGraph: U.ClaimGraph by value
-  referenceScheme: U.ReferenceScheme by value
+  claimGraph: NonemptyClaimContent by value
+  referenceScheme: EpistemeInterpretationScheme by value
   editionId
   qualityEvaluationQuestionFrameRef: U.EpistemeRef, referencing one QualityEvaluationQuestionFrame about the same object version
   evaluationClaimScopeRef: U.EntityRef, referencing that frame's exact U.ClaimScope
@@ -227,7 +229,7 @@ CandidateImprovementOutsideClaimReference@Context in CandidateImprovementProposa
   outsideClaimOrBoundaryDescriptionRef: U.EpistemeRef, referencing one description of the outside claim or boundary
   outsideValueRef?: U.EntityRef, referencing the exact outside governed value
   outsideValueKindRef?: U.KindRef, referencing the exact kind of that outside value
-  outsideRelationSignatureRef?: U.EntityRef, referencing the exact U.Signature of the outside relation
+  outsideRelationSignatureRef?: U.EntityRef, referencing the exact RelationSignature declaration episteme when its reusable declaration is used
   subjectPatternLocator: U.EntityRef, locating the exact FPF subject-pattern description; the evaluation claim separately cites the defining ClaimGraph
   reconsiderationConditionDescriptionRef: U.EpistemeRef, referencing one description of the condition that activates renewed use of that subject pattern
 ```
@@ -236,8 +238,8 @@ CandidateImprovementOutsideClaimReference@Context in CandidateImprovementProposa
 ImprovementFollowUpHypothesis@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the exact object version expected to change
   entityOfConcernKindRef: U.KindRef, referencing the exact kind of that object version
-  claimGraph: U.ClaimGraph by value
-  referenceScheme: U.ReferenceScheme by value
+  claimGraph: NonemptyClaimContent by value
+  referenceScheme: EpistemeInterpretationScheme by value
   editionId
   qualityEvaluationQuestionFrameRef: U.EpistemeRef, referencing one QualityEvaluationQuestionFrame about the same object version
   evaluationClaimScopeRef: U.EntityRef, referencing that frame's exact U.ClaimScope
@@ -252,7 +254,7 @@ Exactly one of `proposedNextOperationDescriptionRef` and `proposedNextMethodRef`
 
 `ProposalEvaluationEffectValue` is the closed local value set `repairFloor | raiseTowardExceptional | preventProtectedQualityLoss | classifyOutsideEvaluation | preserveCurrentValue`. It identifies the coarse substantive evaluation effect expected from this proposal. It does not duplicate the coordinate-qualified prediction later carried by E.23 `ExpectedEvaluationResultChange@Context` and does not assert an actual changed result.
 
-`ProposalKindRestorationCheckDispositionValue` is `triggered | notTriggered | ordinaryProse | alreadySatisfied | blocker`. The `triggered` and `blocker` states include `kindRestorationCheckRef`; the other values leave it absent. Current affected-evaluation result ref and kind are both present or both absent; when present, the exact result resolves through the direct evaluation pattern's typed result relation or A.6.1 application binding, and any durable result episteme remains separately governed. The proposal row neither produces nor reidentifies that result. The exact kind recovers whether the named evaluation returned a scale value, status, or another admitted result for that characteristic or coordinate. Outside value ref and kind are paired, and `outsideRelationSignatureRef` is present when the outside value is a relation. `CandidateImprovementOutsideClaimReference@Context` is a bounded local ClaimGraph node form, not a U-kind, episteme, relation, or relation-reference episteme. It is constructed inside one proposal row without a back-reference to that row; its node identity is determined by the containing proposal edition and ClaimGraph position.
+`ProposalKindRestorationCheckDispositionValue` is `triggered | notTriggered | ordinaryProse | alreadySatisfied | blocker`. The `triggered` and `blocker` states include `kindRestorationCheckRef`; the other values leave it absent. Current affected-evaluation result ref and kind are both present or both absent; when present, the exact result resolves through the direct evaluation pattern's typed result relation or A.6.1 application binding, and any durable result episteme remains separately governed. The proposal row neither produces nor reidentifies that result. The exact kind recovers whether the named evaluation returned a scale value, status, or another admitted result for that characteristic or coordinate. Outside value ref and kind are paired. When the outside value is a relation, recover its direct predicate, participants and applicability from the subject pattern. Add `outsideRelationSignatureRef` only when the proposal uses that reusable declaration; relation occurrence and declaration remain distinct under A.6.REL. `CandidateImprovementOutsideClaimReference@Context` is a bounded local ClaimGraph node form, not a U-kind, episteme, relation, or relation-reference episteme. It is constructed inside one proposal row without a back-reference to that row; its node identity is determined by the containing proposal edition and ClaimGraph position.
 
 `reviewLocationDescriptionRef` describes where the issue was observed in the reviewed object. `correctionTargetRef` identifies the exact entity that would change. They are not interchangeable positions. The row is a faithful typed proposal form of `QualityReviewFindingRow` and one possible member of a `CandidateImprovementProposalPortfolio@Context` set. It remains a proposal episteme, not a selected repair, plan, work occurrence, actual Transformation, result binding, or proof of improvement.
 
@@ -293,9 +295,9 @@ Suppose the evaluator observes that M1 explains the justified interval [40,45] m
 Tightening the analysis requirement to 2 ms changes the preparation's applicability: no constant correction can meet it for the given 5 ms offset span. The pattern's instruction to return that dependent use for development remains useful, and the unchanged 8 ms viewing use remains qualified. A request to assess an actually edited recording would instead need that recording version and evidence about it. Where the receiving question is already the limited calculation under the supplied interval, evaluate that calculation directly; a full E.21 pattern evaluation and a newly written frame add no needed answer.
 
 
-**A method recovered from a source.** A recipient needs a usable way to examine a proposal and decide how to continue. A draft faithfully summarizes a source's discussion of criticism and correctly names proposal, evidence and action, but never explains how the critique changes the next choice. A text-quality result can support the summary's fidelity; it cannot establish the missing obtaining explanation. The frame asks whether the candidate gives the intended reader that connection under the stated preparation and available grounds. C.39:5.4 develops this use.
+**A method recovered from a source.** A recipient needs a usable way to examine a proposal and decide how to continue. A draft faithfully summarizes a source's discussion of criticism and correctly names proposal, evidence and action, but never explains how the critique changes the next choice. A text-quality result can support the summary's fidelity; it cannot establish the missing explanation of how to obtain the result. The frame asks whether the candidate gives the intended reader that connection under the stated preparation and available grounds. C.39:5.4 develops this use.
 
-A difficult adequate answer can instead return a proposal worth testing, with the exact condition that prevents immediate enactment and a justified attainable next inquiry. Whether that is sufficient depends on the recipient's requested result: it can answer which inquiry to undertake, while leaving a request for completed enactment open. The evaluation must not reject every conditional answer as defective or silently lower the receiving requirement.
+An adequate answer may instead return a proposal worth testing, with the exact condition that prevents immediate enactment and a justified attainable next inquiry. Whether that is sufficient depends on the recipient's requested result: it can answer which inquiry to undertake, while leaving a request for completed enactment open. The evaluation must not reject every conditional answer as defective or silently lower the receiving requirement.
 
 Deleting the source's whole proposal because one inference lacks support is a potentially harmful repair: it can remove the useful propose–criticize–revise construction. Ask the evaluation to inspect both the repaired connection and the contribution it must preserve. When the ground for one later application changes, retain the source-fidelity judgement and any unaffected use, and reopen the dependent application claim. If a proposed change to the evaluation itself was developed on these cases, use A.19.ECS:4.5 to compare it with adequate execution of the incumbent evaluation and examine an independently grounded new case before claiming broader improvement.
 
@@ -303,9 +305,9 @@ Deleting the source's whole proposal because one inference lacks support is a po
 
 **Absorption.** External review returns many suggestions. The frame asks for `absorptionEvaluation`. The result says which changes improved coordinates, which were already satisfied, which introduced trade-offs, and which belong outside the evaluation.
 
-**Proposal portfolio.** A candidate improvement campaign needs alternatives before editing. The frame asks for `candidateImprovementProposalEvaluation`. The result returns bounded proposal rows; selection or generation stays with the pattern that defines or constrains that claim and is not decided by the evaluation frame.
+**Proposal portfolio.** A candidate improvement campaign needs alternatives before editing. The frame asks for `candidateImprovementProposalEvaluation`. The result returns bounded proposal rows. For example, a proposal to reduce latency and a proposal to reduce energy consumption remain two alternatives with their own trade-offs; listing the first twice or swapping their display order leaves the proposal set unchanged. A separate protection set can keep both latency and energy coordinates visible. Selection or generation uses its own governing pattern; the evaluation frame and proposal set perform neither action.
 
-**Physical-system proposal.** A vibration evaluation of `PumpAssembly@Prototype-3` selects the vibration `CharacteristicSpace`, RMS-vibration predicate and any comparator, one evaluation ClaimScope over the declared operating-point slices, and the design decision that will consume the result. Here the account includes dated test-bench evaluation Work, so the account first recovers the exact evaluator through A.13 and A.15.1 independently identifies the Work, Method, time, and containing System. If this test-bench account also needs the exact assignment under which the evaluator acted, add F.6 through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work and result route intact. An exact application of the declared vibration-evaluation operation returns the finding of excessive RMS vibration at one operating point under its result declaration. The result binding connects that application to the finding. The frame, subject-pattern reference, assignment, expected evidence basis, and result-form description remain separate. The proposal's `reviewLocationDescriptionRef` points to that evaluation row. Its `correctionTargetRef` points to `ImpellerBladeGeometryDescription@v3`, the design episteme that would change; the measurement row is not the correction target. The affected coordinate is RMS vibration. The coarse proposal effect is `raiseTowardExceptional`, `kindRestorationCheckDisposition=notTriggered`, and the trade-off set includes efficiency and manufacturability. If the proposal is selected for a repeated loop, E.23 adds a scale-qualified `ExpectedEvaluationResultChange@Context`. Manufacturing a new impeller remains dated Work under A.15.1 rather than an E.22 result.
+**Physical-system proposal.** A vibration evaluation of `PumpAssembly@Prototype-3` selects the vibration `CharacteristicSpace`, RMS-vibration predicate and any comparator, one evaluation ClaimScope over the declared operating-point slices, and the design decision that will consume the result. Here the account includes dated test-bench evaluation Work, so the account first recovers the exact evaluator through A.13 and A.15.1 independently identifies the Work, Method, time, and containing System. If this test-bench account also needs the exact assignment under which the evaluator acted, add F.6 through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work and result route intact. An exact application of the declared vibration-evaluation operation returns the finding of excessive RMS vibration at one operating point under its result declaration. The result binding connects that application to the finding. The frame, subject-pattern reference, assignment, expected evidence basis, and result-form description remain separate. The proposal's `reviewLocationDescriptionRef` points to that evaluation row. Its `correctionTargetRef` points to `ImpellerBladeGeometryDescription@v3`, the design episteme that would change; the measurement row is not the correction target. The affected coordinate is RMS vibration. The coarse proposal effect is `repairFloor` because the proposal addresses excessive vibration. `kindRestorationCheckDisposition=notTriggered`; the protected trade-offs are efficiency and manufacturability. If the proposal is selected for a repeated loop, E.23 adds a scale-qualified `ExpectedEvaluationResultChange@Context`. Manufacturing a new impeller remains dated Work under A.15.1 rather than an E.22 result.
 
 ### E.22:6 - Bias annotation
 
@@ -397,10 +399,10 @@ The following contributions address additional conditions: actionable feedback, 
 
 | Pattern | Relation |
 |---|---|
-| `E.21` | Supplies pattern-quality values and the complete pattern-quality coordinate set. |
-| `E.9.DA` | Supplies DRR decision-adequacy values and the complete decision-adequacy coordinate set. |
-| `E.2.DA` | Supplies FPF Pillar-adequacy values. |
-| `E.19` | Supplies admission or refresh review profiles when that is the evaluation. |
+| `E.21` | Declares the complete pattern-quality coordinate set and evaluation whose application produces the values. |
+| `E.9.DA` | Declares the complete DRR decision-adequacy coordinate set and evaluation whose application produces the values. |
+| `E.2.DA` | Declares the evaluation used to judge FPF Pillar adequacy. |
+| `E.19` | Supplies admission or refresh review profiles and findings; a quality evaluation of a result still uses its own evaluation specification. |
 | `E.23` | Governs repeated improvement after framed evaluations return findings or proposal rows. |
 | `E.13` | Governs pragmatic utility and proxy-to-value alignment when framed values, visible measures, proposal counts, or all-`5` posture are being used as the intended improvement value. |
 | `A.19`, `A.19.ECS`, `A.19.CPM`, `A.2.6` | Govern the selected `CharacteristicSpace`, its construction description, predicate/comparator semantics and actual comparison application, and exact `U.ClaimScope`; E.22 binds their values for one question but does not redefine them. |

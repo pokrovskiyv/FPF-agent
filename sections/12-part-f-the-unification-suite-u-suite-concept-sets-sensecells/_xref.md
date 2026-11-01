@@ -118,7 +118,7 @@ Patterns in other Parts that reference patterns in this directory (188 refs).
 | C.17 | coordinates_with | F.6 |
 | C.2.2 | builds_on | F.9 |
 | C.2.2a | builds_on | F.18 |
-| C.2.6 | coordinates_with | F.9.1 |
+| C.2.6 | coordinates_with | F.9 |
 | C.2.P | builds_on | F.18 |
 | C.2.P.DR | builds_on | F.19 |
 | C.20 | coordinates_with | F.9 |

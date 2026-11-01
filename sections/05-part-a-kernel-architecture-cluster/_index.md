@@ -1,40 +1,40 @@
 # Part A - Kernel Architecture Cluster
 
-- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG) (A.0)](01-a0-a0-generative-search-onboarding-glossary-nqd-eelog.md) — Plain-language starter glossary for teams running generative search or portfolio generation loops from day one.
-- [A.1 - Recognize a Whole with Parts (U.Holon and Admitted Holon Kinds) (A.1)](02-a1-a1-recognize-a-whole-with-parts-uholon-and-admitted-holon-ki.md) — How to keep teams from calling everything a "system" when it's really a document, model, or other object type.
-- [A.1.RI - Reidentifying an Object across Observations (A.1.RI)](03-a1ri-a1ri-reidentifying-an-object-across-observations.md) — How to tell whether two observations concern the same continuing object or two different ones.
-- [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context) (A.1.1)](04-a11-a11-bounded-model-use-structure-applicability-use-and-expres.md) — How to decide which changes to a model must be reviewed together with its active uses and expressed code.
-- [A.1.SCR - Finding the Acting or Changed System (A.1.SCR)](05-a1scr-a1scr-finding-the-acting-or-changed-system.md) — How to pinpoint exactly which system is the one that acts or is intended to change in a given decision.
-- [A.1.CSD - Discovering Systems That May Bear Consequences (A.1.CSD)](06-a1csd-a1csd-discovering-systems-that-may-bear-consequences.md) — How to find other systems that a proposed change might affect before those consequences are overlooked.
-- [A.1.STM - Find the First Unsupported Project Dependency (System-Thinking Long Mantra) (A.1.STM)](07-a1stm-a1stm-find-the-first-unsupported-project-dependency-system-t.md) — How to trace back from a desired outside result to the first missing supporting fact in your project.
-- [A.2 - System-Role Kinds and Assignments (A.2)](08-a2-a2-system-role-kinds-and-assignments.md) — How to classify a system by the work-facing role it holds without losing track of its stable identity.
-- [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment (A.2.1)](09-a21-a21-usystemroleassignment-contextual-system-role-assignment.md) — How to record exactly which system holds a role assignment when other claims need to rely on that fact.
-- [A.2.2 - System Capability: Conditions, Measures and Fit (A.2.2)](10-a22-a22-system-capability-conditions-measures-and-fit.md) — How to state and compare what a team, machine, or person can actually do under stated conditions.
-- [A.2.3 - U.PromiseContent — Promised Outcomes and Acceptance Criteria (A.2.3)](11-a23-a23-upromisecontent-promised-outcomes-and-acceptance-criteri.md) — How to write what a service actually promises a consumer, separate from who must deliver it or how.
-- [A.2.4 - Episteme Evidence-Use and Status-Use Relations (A.2.4)](12-a24-a24-episteme-evidence-use-and-status-use-relations.md) — How to identify whether a report or dataset is being used as evidence, a status bearer, or an assurance input.
-- [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition for Work Admission (A.2.5)](13-a25-a25-systemroleassignmentstaterelation-assignment-state-recog.md) — How to check whether a role assignment is in the right state before allowing work to start.
-- [A.2.6 - Unified Scope Mechanism (USM): Test Scope Membership and Combine Scopes (A.2.6)](14-a26-a26-unified-scope-mechanism-usm-test-scope-membership-and-co.md) — How to test whether a claim or capability covers a specific combination of contexts, platforms, or conditions.
-- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds (A.2.7)](15-a27-a27-systemrolekindrelationstructure-relations-among-system-r.md) — How to map compatibility, substitutability, and required combinations among role types in a work setting.
-- [A.2.8 - U.Commitment — Individual Duties to Act or Refrain (A.2.8)](16-a28-a28-ucommitment-individual-duties-to-act-or-refrain.md) — How to identify whether an actual party has a concrete duty to act or refrain, and what rule creates that duty.
-- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition (A.2.8.PER)](17-a28per-a28per-granted-permission-exercise-and-non-prohibition.md) — How to distinguish a prohibition finding, a valid permit, an act that uses a permit, and a conflict between them.
-- [A.2.9 — U.SpeechAct — Communicative Work and Its Intended Use (A.2.9)](18-a29-a29-uspeechact-communicative-work-and-its-intended-use.md) — How to identify an actual act of communication as performed work, separate from the document that records it.
-- [A.3 - Transformer Quartet: Distinguish Work, Performer, Method and Method Description (A.3)](19-a3-a3-transformer-quartet-distinguish-work-performer-method-and.md) — How to keep the doer, the method, its description, and the actual work occurrence from collapsing into one term.
-- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability (A.3.1)](20-a31-a31-umethod-reusable-way-of-doing-with-explicit-applicabilit.md) — How to identify a reusable way of doing something, separate from any particular run, code, or diagram of it.
-- [A.3.1.MR - Candidate-Method Recovery from Work Evidence (A.3.1.MR)](21-a31mr-a31mr-candidate-method-recovery-from-work-evidence.md) — How to reconstruct candidate reusable approaches from observations of several past performances.
-- [A.3.1.DR - Recover Method Contributions from Documentary Sources (A.3.1.DR)](22-a31dr-a31dr-recover-method-contributions-from-documentary-sources.md) — How to extract method contributions from standards and reference models without conflating them with tools or systems.
-- [A.3.1.QM - Qualify a Method for Its Intended Contribution (A.3.1.QM)](23-a31qm-a31qm-qualify-a-method-for-its-intended-contribution.md) — How to decide whether a method is individually usable for a bounded purpose before comparing whole architectures.
-- [A.3.1.WT - Design and Interpret a Method Work Trial (A.3.1.WT)](24-a31wt-a31wt-design-and-interpret-a-method-work-trial.md) — How to design and observe a real-work trial to get evidence for later coherence, fit, or worth decisions.
-- [A.3.1.CC - Check the Coherence of a Method Claim (A.3.1.CC)](25-a31cc-a31cc-check-the-coherence-of-a-method-claim.md) — How to find the specific claim that no longer agrees across a method's description, trials, and construction.
-- [A.3.1.FT - Qualify Method Fit and Transfer (A.3.1.FT)](26-a31ft-a31ft-qualify-method-fit-and-transfer.md) — How to judge whether a method fits a new situation or whether results from one context transfer to another.
-- [A.3.1.MV - Construct and Maintain a Method Variant (A.3.1.MV)](27-a31mv-a31mv-construct-and-maintain-a-method-variant.md) — How to track adapted or branched methods so future users know whether they face the same method or a different one.
-- [A.3.1.MI - Introduce a Method into Practice and Decide What to Keep or Change (A.3.1.MI)](28-a31mi-a31mi-introduce-a-method-into-practice-and-decide-what-to-ke.md) — How to learn from introducing a method into real practice and decide what to keep, revise, or stop.
-- [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing (A.3.2)](29-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md) — How to decide whether a document or procedure actually qualifies as a description of a specific identified method.
-- [A.3.2.DE - Describe a Method for Its Intended Use (A.3.2.DE)](30-a32de-a32de-describe-a-method-for-its-intended-use.md) — How to write just the method claims a particular use needs, without expanding into a complete documentation project.
-- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme (A.3.3)](31-a33-a33-udynamics-state-space-and-transition-law-episteme.md) — How to build a reusable account of how a subject's state can change and what information is needed to predict it.
-- [A.3.3.CC - Construct a Configuration Description under Constraints (A.3.3.CC)](32-a33cc-a33cc-construct-a-configuration-description-under-constraint.md) — How to describe valid arrangements of participants when their values cannot be chosen independently of each other.
-- [A.3.3.TR - Construct a Rule for State Change (A.3.3.TR)](33-a33tr-a33tr-construct-a-rule-for-state-change.md) — How to construct a rule for how a situation changes, showing which values are read, which change, and what stays fixed.
-- [A.3.3.PI - Retain the Information Needed for Prediction (A.3.3.PI)](34-a33pi-a33pi-retain-the-information-needed-for-prediction.md) — How to identify which information a description must retain in order to support a specific prediction.
-- [A.3.4 - U.Transformation: Actual Bounded Change Under Conditions (A.3.4)](35-a34-a34-utransformation-actual-bounded-change-under-conditions.md) — How to identify one actual bounded change: the continuing subject, what differed before and after, and when it occurred.
-- [A.3.4.P - Transformation Wording Repair: Recover Objects and Claims (A.3.4.P)](36-a34p-a34p-transformation-wording-repair-recover-objects-and-claim.md) — How to recover the exact object and claim hidden behind vague change-words like "process", "flow", or "pipeline".
-- [A.4 - Compare a System's Intended Design with Its Operating Conditions (A.4)](37-a4-a4-compare-a-systems-intended-design-with-its-operating-cond.md) — How to compare what a system was designed to do with how it actually operates, and state any discrepancy clearly.
-- [A.5 - Open-Ended FPF Kernel and Extension Layering (A.5)](38-a5-a5-open-ended-fpf-kernel-and-extension-layering.md) — How the framework stays stable as new disciplines are added, by keeping a minimal kernel separate from domain extensions.
+- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG) (A.0)](01-a0-a0-generative-search-onboarding-glossary-nqd-eelog.md)
+- [A.1 - Recognize a Whole with Parts (U.Holon and Admitted Holon Kinds) (A.1)](02-a1-a1-recognize-a-whole-with-parts-uholon-and-admitted-holon-ki.md)
+- [A.1.RI - Reidentifying an Object across Observations (A.1.RI)](03-a1ri-a1ri-reidentifying-an-object-across-observations.md)
+- [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context) (A.1.1)](04-a11-a11-bounded-model-use-structure-applicability-use-and-expres.md)
+- [A.1.SCR - Finding the Acting or Changed System (A.1.SCR)](05-a1scr-a1scr-finding-the-acting-or-changed-system.md)
+- [A.1.CSD - Discovering Systems That May Bear Consequences (A.1.CSD)](06-a1csd-a1csd-discovering-systems-that-may-bear-consequences.md)
+- [A.1.STM - Connect Project Reasoning (System-Thinking Long Mantra) (A.1.STM)](07-a1stm-a1stm-connect-project-reasoning-system-thinking-long-mantra.md)
+- [A.2 - System-Role Kinds and Assignments (A.2)](08-a2-a2-system-role-kinds-and-assignments.md)
+- [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment (A.2.1)](09-a21-a21-usystemroleassignment-contextual-system-role-assignment.md)
+- [A.2.2 - System Capability: Conditions, Measures and Fit (A.2.2)](10-a22-a22-system-capability-conditions-measures-and-fit.md)
+- [A.2.3 - U.PromiseContent — Promised Outcomes and Acceptance Criteria (A.2.3)](11-a23-a23-upromisecontent-promised-outcomes-and-acceptance-criteri.md)
+- [A.2.4 - Episteme Evidence-Use and Status-Use Relations (A.2.4)](12-a24-a24-episteme-evidence-use-and-status-use-relations.md)
+- [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition for Work Admission (A.2.5)](13-a25-a25-systemroleassignmentstaterelation-assignment-state-recog.md)
+- [A.2.6 - Unified Scope Mechanism (USM): Test Scope Membership and Combine Scopes (A.2.6)](14-a26-a26-unified-scope-mechanism-usm-test-scope-membership-and-co.md)
+- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds (A.2.7)](15-a27-a27-systemrolekindrelationstructure-relations-among-system-r.md)
+- [A.2.8 - U.Commitment — Individual Duties to Act or Refrain (A.2.8)](16-a28-a28-ucommitment-individual-duties-to-act-or-refrain.md)
+- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition (A.2.8.PER)](17-a28per-a28per-granted-permission-exercise-and-non-prohibition.md)
+- [A.2.9 — U.SpeechAct — Communicative Work and Its Intended Use (A.2.9)](18-a29-a29-uspeechact-communicative-work-and-its-intended-use.md)
+- [A.3 - Transformer Quartet: Distinguish Work, Performer, Method and Method Description (A.3)](19-a3-a3-transformer-quartet-distinguish-work-performer-method-and.md)
+- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability (A.3.1)](20-a31-a31-umethod-reusable-way-of-doing-with-explicit-applicabilit.md)
+- [A.3.1.MR - Candidate-Method Recovery from Work Evidence (A.3.1.MR)](21-a31mr-a31mr-candidate-method-recovery-from-work-evidence.md)
+- [A.3.1.DR - Recover Method Contributions from Documentary Sources (A.3.1.DR)](22-a31dr-a31dr-recover-method-contributions-from-documentary-sources.md)
+- [A.3.1.QM - Qualify a Method for Its Intended Contribution (A.3.1.QM)](23-a31qm-a31qm-qualify-a-method-for-its-intended-contribution.md)
+- [A.3.1.WT - Design and Interpret a Method Work Trial (A.3.1.WT)](24-a31wt-a31wt-design-and-interpret-a-method-work-trial.md)
+- [A.3.1.CC - Check the Coherence of a Method Claim (A.3.1.CC)](25-a31cc-a31cc-check-the-coherence-of-a-method-claim.md)
+- [A.3.1.FT - Qualify Method Fit and Transfer (A.3.1.FT)](26-a31ft-a31ft-qualify-method-fit-and-transfer.md)
+- [A.3.1.MV - Construct and Maintain a Method Variant (A.3.1.MV)](27-a31mv-a31mv-construct-and-maintain-a-method-variant.md)
+- [A.3.1.MI - Introduce a Method into Practice and Decide What to Keep or Change (A.3.1.MI)](28-a31mi-a31mi-introduce-a-method-into-practice-and-decide-what-to-ke.md)
+- [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing (A.3.2)](29-a32-a32-umethoddescription-description-episteme-for-a-way-of-doi.md)
+- [A.3.2.DE - Describe a Method for Its Intended Use (A.3.2.DE)](30-a32de-a32de-describe-a-method-for-its-intended-use.md)
+- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme (A.3.3)](31-a33-a33-udynamics-state-space-and-transition-law-episteme.md)
+- [A.3.3.CC - Construct a Configuration Description under Constraints (A.3.3.CC)](32-a33cc-a33cc-construct-a-configuration-description-under-constraint.md)
+- [A.3.3.TR - Construct a Rule for State Change (A.3.3.TR)](33-a33tr-a33tr-construct-a-rule-for-state-change.md)
+- [A.3.3.PI - Retain the Information Needed for Prediction (A.3.3.PI)](34-a33pi-a33pi-retain-the-information-needed-for-prediction.md)
+- [A.3.4 - U.Transformation: Actual Bounded Change Under Conditions (A.3.4)](35-a34-a34-utransformation-actual-bounded-change-under-conditions.md)
+- [A.3.4.P - Transformation Wording Repair: Recover Objects and Claims (A.3.4.P)](36-a34p-a34p-transformation-wording-repair-recover-objects-and-claim.md)
+- [A.4 - Compare a System's Intended Design with Its Operating Conditions (A.4)](37-a4-a4-compare-a-systems-intended-design-with-its-operating-cond.md)
+- [A.5 - Open-Ended FPF Kernel and Extension Layering (A.5)](38-a5-a5-open-ended-fpf-kernel-and-extension-layering.md)

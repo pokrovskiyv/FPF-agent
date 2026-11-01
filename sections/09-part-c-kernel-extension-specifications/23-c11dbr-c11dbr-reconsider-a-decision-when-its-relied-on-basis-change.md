@@ -13,6 +13,8 @@ The reader needs access to the earlier basis, the later result and the subject k
 
 **Use the direct way when it already suffices.** A subject Method that already compares the earlier basis, later outcome, affected uses and current alternatives needs no additional C.11.DBR pass. Use C.11 directly when the current chooser, options and comparison basis are ready. Use A.15.7 for a next action during ongoing Work when no earlier-basis reconstruction is needed. Begin with A.10.1 when a source changed and its actual receiving uses are still unknown.
 
+Within ongoing control, return the affected and preserved uses to **C.43**. A changed observation may require another immediate action; a changed model, goal or means can require rebuilding a different contribution. This Method establishes which relied-on basis changed and where that matters. The receiving control account connects that result to an available intervention and its execution. An adequate subject feedback Method can already supply this comparison without a separate reconstruction.
+
 ### C.11.DBR:2 - Problem
 
 Feedback can miss its receiving decision in two opposite ways. A later result stays in a report while the team continues relying on a defeated premise. Or one changed condition reopens every related decision, including commitments and completed work whose grounds remain sound.
@@ -84,7 +86,7 @@ The receiving Method makes its own decision and returns that result directly to 
 
 Explain what remains usable, what current result has been obtained and which next contribution is still missing. If the current choice calls for intended work or a revised plan, A.15.2 separately supplies that WorkPlan. Permission, an available performer and actual performance still require their own grounds. Updating a reconsideration account performs none of that work.
 
-Stop when the included uses have a supported preservation answer, an obtained current decision, or a precise unresolved contribution. Stop earlier when a narrower answer completes the receiving question. Preserve a reason and a condition for another return only where later reliance needs them. A new observation, changed use or newly discovered dependency reopens the affected comparison, not every preserved result.
+Stop when the included uses have a supported preservation answer, an obtained current decision, or a precise unresolved contribution. Stop earlier when a narrower answer completes the receiving question. Preserve a reason and a condition for another return only where later reliance needs them. A new observation, changed use or newly discovered dependency can reopen the comparison it could materially change; independently preserved results remain usable.
 
 ### C.11.DBR:5 - Archetypal Grounding
 
@@ -94,11 +96,11 @@ A team chose arrangement A for one recurring report. Its recorded comparison exp
 
 Recovering the basis separates the expected saving from the Friday obligation and from the completed rollout. Inspecting the dashboard then reveals that it combines two reports; the earlier comparison concerned one. Six is not yet a comparable observation. The useful answer is the precise scope mismatch, with the delivery obligation and rollout history preserved. No causal or reversal conclusion follows.
 
-**Change the evidence.** A corrected, qualified observation now establishes five hours for the same content and volume. The current decision rule requires at least two hours of saving to justify retaining A's support burden; all other relevant conditions are stipulated unchanged. The actual one-hour saving fails that condition. This challenges continued reliance on the expected saving, but does not establish why the shortfall occurred.
+**Change the evidence.** A corrected, qualified observation now establishes five hours for the same content and volume. The current decision rule requires at least two hours of total effort saving relative to B, including A's support burden; all other relevant conditions are stipulated unchanged. A now requires six hours in total and supplies no saving, so it fails that condition. This challenges continued reliance on the expected saving, but does not establish why the shortfall occurred.
 
 The reconsideration statement names that difference, preserves Friday delivery and the rollout history, and supplies the responsible manager with the available alternatives. Suppose a supported adjustment C is available at three preparation hours plus one support hour, and satisfies the unchanged delivery and quality constraints. Its total is four hours; A and B now each require six. Under the stipulated preference for lower total effort, C.11 can choose C without another study of A's cause. The manager's actual choice, any necessary plan revision and the later performance of C are separate results. If the manager has not decided, the analyst returns the comparison and recommendation, not an implemented change.
 
-**Change the observation instead.** Had the qualified observation been three hours for A with its other conditions unchanged, A would still provide the required saving. Preserve the earlier choice for this use; the fact that three differs from the original estimate of two does not require a new choice. If C was already a serious available improvement, comparing it would be a separate live opportunity, not proof that the original basis had failed.
+**Change the observation instead.** Had the qualified observation been three preparation hours for A with its other conditions unchanged, its four total hours would provide the required two-hour saving. Preserve the earlier choice for this use; the fact that three differs from the original estimate of two does not require a new choice. If C was already a serious available improvement, comparing it would be a separate live opportunity, not proof that the original basis had failed.
 
 #### C.11.DBR:5.2 - A model remains valid for one use
 

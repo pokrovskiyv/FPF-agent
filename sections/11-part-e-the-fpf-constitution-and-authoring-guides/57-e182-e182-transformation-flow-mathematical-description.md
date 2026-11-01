@@ -7,13 +7,13 @@
 > **Normativity:** Normative unless explicitly marked informative
 > **Placement:** Part E -> E.18 child pattern
 > **Builds on:** `E.18` Transformation Flow Structure, `E.18.NET` Network of Transformation-Flow Structures, `C.29` Mathematical Lens Use, `C.2.1` `U.Episteme`, `E.17` publication machinery, `A.3.4` `U.Transformation`, `A.6.0` `U.Signature`, `A.6.5` slot discipline, `A.15` work family, `A.20`, `A.21`, and `C.30` architecture family.
-> **Purpose:** record how a graph, algebraic, categorical, tuple, path, slice, morphism, quotient, fold, refinement, factorization, wiring, or related mathematical expression describes exactly one selected `TransformationFlowStructure` or `TransformationFlowStructureNetwork@Context`: what it represents, what it preserves, what it loses, which declared use it serves, and which exact relation and test carry any stronger project claim.
+> **Purpose:** record how a mathematical expression describes exactly one selected `TransformationFlowStructure` or `TransformationFlowStructureNetwork@Context`: what it represents, what it preserves, what it loses, which declared use it serves, and which exact relation and test carry any stronger project claim.
 
 ### E.18.2:1 - Problem frame
 
-Use this pattern when the current EntityOfConcern is a mathematical description of exactly one selected transformation-flow structure, one selected network of such structures, or one independently identified part of that subject. The description may be a graph, hypergraph, category-theory object, algebra, tuple, matrix, network expression, wiring diagram, morphism family, quotient, fold, refinement, factorization, path relation, slice relation, or another formal expression.
+Use this pattern when the current EntityOfConcern is a mathematical description of exactly one selected transformation-flow structure, one selected network of such structures, or one independently identified part of that subject. Section 4.2 distinguishes expression families by the structure and use they expose.
 
-The primary EntityOfConcern is `TransformationFlowMathematicalDescription@Context`: a `C.2.1 U.Episteme` specialization whose described ontic subject is exactly one selected `TransformationFlowStructure` under E.18 or one selected `TransformationFlowStructureNetwork@Context` under E.18.NET. E.18.2 does not invent a second local description format. The one-TFS and network reference branches are mutually exclusive; `CandidateMathObject`, `ExpressionKind`, `MappingMode`, `PreservedStructure`, `LostStructure`, and `DeclaredUse` are fields of the description record, while `PublicationFaceRef?` references a separate E.17 publication face. E.18.2 keeps five values distinct:
+The primary EntityOfConcern is `TransformationFlowMathematicalDescription@Context`: a `C.2.1 U.Episteme` specialization whose described ontic subject is exactly one selected `TransformationFlowStructure` under E.18 or one selected `TransformationFlowStructureNetwork@Context` under E.18.NET. The one-TFS and network reference branches are mutually exclusive; `CandidateMathObject`, `ExpressionKind`, `MappingMode`, `PreservedStructure`, `LostStructure`, and `DeclaredUse` are fields of the description record, while `PublicationFaceRef?` references a separate E.17 publication face. E.18.2 keeps five values distinct:
 
 | Value under concern | Pattern contribution used | Boundary |
 |---|---|---|
@@ -27,7 +27,7 @@ When the described selected structure is one A.22-selected CGUS qualified under 
 
 #### E.18.2:1.1 - Use this when
 
-- one selected `TransformationFlowStructure`, one selected `TransformationFlowStructureNetwork@Context`, or an independently identified part of that subject needs a graph, algebra, category, tuple, morphism, quotient, fold, refinement, factorization, wiring, matrix, or network expression;
+- one selected `TransformationFlowStructure`, one selected `TransformationFlowStructureNetwork@Context`, or an independently identified part of that subject needs a mathematical description;
 - a diagram or equation set helps compare composition, decomposition, coarser/finer partitioning, internal transfer, crossing, or refresh inside one TFS, or exact cross-member relations in one selected network, but the mathematical expression itself must not authorize work;
 - a source says "graph", "network", "path", "morphism", "algebra", "category", "workflow", "pipeline", "dataflow", or "functional diagram" and the claim being made is the mathematical description of one already selected TFS or TFS network;
 - a reader needs to decide whether the visible object is one E.18 TFS, one E.18.NET network, an E.18.2 mathematical description, a C.29 lens-use claim, or only an E.17 publication face.
@@ -93,13 +93,19 @@ TransformationFlowMathematicalDescription@Context:
   PublicationFaceRef?:
 ```
 
-Exactly one of `DescribedTransformationFlowStructureRef?` and `DescribedTransformationFlowStructureNetworkRef?` is present. The first points to one E.18 TFS; the second points to one already selected E.18.NET network. `DescribedSliceOrLocusRef?` may cite an existing path, slice, `FlowPositionRef`, `ExposedFlowPositionRef`, member path, E.18.NET `NetworkCrossFlowRelationRowRef`, or other independently identified part without copying the fields that define that object. `CandidateMathObject` and `ExpressionKind` name the graph, algebra, category, tuple, morphism, quotient, fold, refinement, factorization, wiring, matrix, network expression, or related mathematical object. `PreservedStructure`, `LostStructure`, `DeclaredUse`, and `BoundaryStop` follow the C.29 discipline when the expression is claim-bearing. `PublicationFaceRef?` points to a separate E.17 publication face. The compact record has no generic neighboring-object reference. When a neighboring claim is materially needed, cite its exact C.2.1 claim-bearing episteme in the subject-specific account; identify an ontic subject or relation occurrence only through a separately named, correctly typed reference supplied by the pattern for that claim.
+Exactly one of `DescribedTransformationFlowStructureRef?` and `DescribedTransformationFlowStructureNetworkRef?` is present. The first points to one E.18 TFS; the second points to one already selected E.18.NET network. `DescribedSliceOrLocusRef?` may cite an existing path, slice, `FlowPositionRef`, `ExposedFlowPositionRef`, member path, E.18.NET `NetworkCrossFlowRelationRowRef`, or other independently identified part without copying the fields that define that object. `CandidateMathObject` identifies the mathematical object; `ExpressionKind` names its expression family. `MappingMode` states how its relevant elements and operations correspond to the described subject, the direction of inference, and the assumptions on which that correspondence relies. Distinguish analogy, fitted representation, simulation and an exact structure-preserving map as C.29 requires. `PreservedStructure`, `LostStructure`, `DeclaredUse`, and `BoundaryStop` follow the C.29 discipline when the expression is claim-bearing. `PublicationFaceRef?` points to a separate E.17 publication face. The compact record has no generic neighboring-object reference. When a neighboring claim is materially needed, cite its exact C.2.1 claim-bearing episteme in the subject-specific account; identify an ontic subject or relation occurrence only through a separately named, correctly typed reference supplied by the pattern for that claim.
+
+For a one-TFS description, recover the E.18 selection S and the mappings that its expression uses: beta resolves participant positions to constituents; rho resolves each connection q to one selected relation occurrence r. Retain the full incidences, participant meanings, order and multiplicity needed by the declared inference. If r also participates as a constituent, the expression must preserve its identity across the participant and relation representations when an inference follows that connection.
+
+A valuation claim uses E.18:5.2’s tagged connection/cut domain, declared channels and regime. A value on a drawn binary edge is not automatically a value on r or on a cut. Name the cut’s path family, boundary and crossing incidences, and declare any aggregation rule. A coarse drawing may omit detail, but an inference that needs an omitted n-ary argument, multiplicity or boundary must return to the complete representation. Record that loss and stop the unsupported inference.
+
+Empty-path identity and associative concatenation belong to the mathematical description. Check E.18’s complete-path admissibility separately, including required side inputs, editions, modes and budgets. Those laws establish neither actual execution nor a prescribed Work order.
 
 #### E.18.2:4.2 - Expression families
 
 | Expression family | Use when it describes | Required boundary |
 |---|---|---|
-| graph, hypergraph, network expression, DSM, DMM, MDM, or matrix | dependency, internal transfer, exact cross-member relation, adjacency, interface placement, clustering, or change propagation inside one selected TFS or across one selected TFS network | not the selected TFS or network: apply E.18's one-TFS identity and selection constraints or E.18.NET's membership, boundary, and cross-member relation rules to select that ontic subject; E.18.2 defines only this description; not work occurrence, gate passage, or evidence |
+| graph, hypergraph, network expression, DSM, DMM, MDM, or matrix | dependency, selected internal relation, exact cross-member relation, adjacency, interface placement, clustering, or change propagation inside one selected TFS or across one selected TFS network | not the selected TFS or network: apply E.18's one-TFS identity and selection constraints or E.18.NET's membership, boundary, and cross-member relation rules to select that ontic subject; E.18.2 defines only this description; not work occurrence, gate passage, or evidence |
 | mathematical path or path slice | reachability, carried relation, currentness slice, refresh locality, or crossing-local replay | not a project procedure or performed sequence |
 | tuple, record, slot relation, or typed relation expression | slot positions, relation arity, locus typing, and value placement | not a new U-kind and not a replacement for A.6.5 slot discipline |
 | morphism, composition, category, operad, optic, or wiring expression | composition, interface, substitution, transfer law, or decomposition of selected transformations | not proof that the represented work can be performed or that interfaces are semantically compatible |
@@ -126,7 +132,7 @@ The same visible source may require several records, but each E.18.2 description
 
 #### E.18.2:4.4 - Related claims
 
-E.18.2 defines only the mathematical-description relation. For any neighboring claim, use the row below that names the exact contribution needed now:
+E.18.2 defines the mathematical description of the selected TFS or network. For any neighboring claim, use the row below that names the exact contribution needed now:
 
 | Current claim | Use |
 |---|---|
@@ -149,7 +155,7 @@ E.18.2 defines only the mathematical-description relation. For any neighboring c
 | local choice | `C.11` returns the `ChoiceResult` |
 | architecture | `C.30` carries the architecture claim |
 | architecture structural view | `C.30.ASV` returns the structural-view adequacy result |
-| functional structure | `A.6.F` supplies the exact function/bearer claim |
+| functional structure or unsettled function-like wording | Use `C.30.ASV` for the functional structural view; use `A.6.F` to recover the object or claim from unsettled function-like wording, then apply its subject pattern. |
 | module interface | `A.6.M` supplies the module-interface relation |
 | reusable-structure characteristics | `C.31` carries the reusable-structure claim |
 | publication face or explanation-faithfulness use | `E.17` supplies the publication face; `E.17.EFP` returns the explanation-faithfulness result |
@@ -226,13 +232,13 @@ The pattern is intentionally narrower than C.29. C.29 answers the general questi
 
 ### E.18.2:10 - Relations
 
-- Apply E.18's one-TFS identity, allowed-locus, selection-constraint, and local-value rules to select one `TransformationFlowStructure` and identify the flow valuation, path, slice, crossing, transfer annotations, and refresh locality used by the claim.
+- Apply E.18's one-TFS identity, position-resolution, selection-constraint, and local-value rules to select one `TransformationFlowStructure` and identify the flow valuation, path, slice, crossing, resolved connection annotations, and actual dependent refresh used by the claim.
 - Apply E.18.NET's membership, boundary, and cross-member relation requirements to select one network of independently identified TFS or nested-network members and identify its obtaining cross-member relation occurrences.
 - Apply A.3.4 to identify an actual bounded `U.Transformation`, its changed referent, boundary, facts, and continuity or reidentification rule.
 - Apply C.29 to evaluate mathematical-lens use and retain its returned adequacy, preserved/lost structure, payoff, obstruction, or stop result when that claim is current.
 - Use C.2.1 for description-episteme identity and E.17 for publication faces and their publication boundary.
 - Use A.6.0 for formal-substrate signatures, A.6.1 for mechanisms and applications, A.6.5 for slot discipline, and E.20 for mechanism-method placement.
 - Apply A.15.1 to identify performed Work, A.15.2 to identify work plans, A.20 to obtain internal-step validity, A.21 to obtain gate results, A.10 to state evidence relations, B.3 to obtain assurance, and C.11 to obtain local choices.
-- Apply C.30 to state architecture claims, C.30.AD to identify architecture descriptions, C.30.ASV to evaluate structural views, A.6.F to state function/bearer claims, A.6.M to state module-interface relations, and C.31 to state reusable-structure characteristics.
+- Apply C.30 to state architecture claims, C.30.AD to identify architecture descriptions, C.30.ASV to evaluate structural views, A.6.F to recover unsettled function-like claims and their subject patterns, A.6.M to state module-interface relations, and C.31 to state reusable-structure characteristics.
 
 ### E.18.2:End

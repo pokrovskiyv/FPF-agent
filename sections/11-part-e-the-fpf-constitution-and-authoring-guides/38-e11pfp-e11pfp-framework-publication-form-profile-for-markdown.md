@@ -31,12 +31,12 @@ The opposite repair is also harmful. A rigid carrier template can put authorship
 | Whole and direct use | Readers need the language's shared problem, organization, reasons, and limits, while a direct question may be answered by one pattern. |
 | Product boundary | Support units may belong to one framework product; independently useful adjacent products need a truthful boundary and public return. |
 | Deterministic checking | Syntax checks should be reproducible, but they must not infer table purpose, product truth, or reader value from prose. |
-| Form and carrier separation | One form may be borne by several carriers, and one outer carrier may expose several products, without merging their identities. |
+| Form and carrier separation | Expressions following one reusable form may be borne by several carriers, and one outer carrier may expose several products, without merging their identities. |
 | Accessibility and translation | Predictable headings and navigation aid many readers and tools, while one English label set cannot silently stand in for every language or access need. |
 
 ### E.11.PFP:4 - Solution
 
-Apply one common reader-facing publication form to one FPF, DPF, or LPF edition. The profile is the reusable rule for that form. It is not the form itself, the presentation carrier that bears the form, the edition expressed by it, or the publication occurrence that makes the edition available.
+Apply common reader-facing publication-form rules to construct or inspect a particular expression of one FPF, DPF, or LPF edition. This profile states requirements for the selected reusable rules and their realization in the expression. Keep the expression, its reusable form, the independently identified presentation carrier whose actual state yields it, the expressed edition, and the publication occurrence distinct under E.24.PUB.
 
 #### E.11.PFP:4.1 - Preserve the compact product opening
 
@@ -67,7 +67,7 @@ Place the one authoritative logical pattern index after those public-unit entrie
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 ```
 
-Across all segments, every pattern body has exactly one row, every row resolves to exactly one body, and no PatternID appears twice. A Part label groups rows for navigation; it is not a pattern row, a semantic parent, or another index.
+Across all segments, every published pattern body has exactly one row, every current `PatternRef` row resolves to exactly one complete body, and no PatternID or reserved locator appears twice. Explicit `PlannedCatalogEntry` rows reserve future locators under E.8 H-10; they are outside the current-pattern row/body bijection and supply no available pattern or current dependency. A Part label groups rows for navigation; it is not a pattern row, a semantic parent, or another index.
 
 PatternID, title, Part, and `§` position remain separate even when one row displays them together. PatternID supplies the stable public address within the named framework; the title explains the pattern; Part and `§` show where the current edition places it. Within each Part, the ToC rows and pattern bodies follow the same order. That order need not ascend by PatternID, and moving or retitling a pattern does not by itself change its PatternID.
 
@@ -89,7 +89,7 @@ Ordinary relation, source-return, maintenance, and reference tables may cite Pat
 
 Start the Readme body with `## Practical entries`. The product maintains one declaration for every selectable example and assigns each key exactly one public form: ordinary practical entry or Practical-Use Card. Each declared key occurs once, at H3 for an ordinary entry or at H4 for a card. A compact locator may precede or follow these examples, but it is a finding aid rather than another editable entry set.
 
-The Readme says plainly that its entries are selected examples, not a catalogue or coverage boundary. It tells the reader to bring the actual question and to use the product's index, direct patterns, or another finding aid when no example fits. Tell readers that they can ask an assisting agent for explanations and comments in ordinary language, without the framework's specialist vocabulary. For example: “Explain this and give me your comments in ordinary language, without framework jargon.” Clear wording is the default under `F.19`; the request helps the assistant adapt its wording to the reader.
+The Readme explains what its selected examples help the reader do. Use F.19:4.4 to decide whether a catalogue or coverage-boundary reading also needs an explicit correction. It tells the reader to bring the actual question and to use the product's index, direct patterns, or another finding aid when no example fits. Tell readers that they can ask an assisting agent for explanations and comments in ordinary language, without the framework's specialist vocabulary. For example: “Explain this and give me your comments in ordinary language, without framework jargon.” Clear wording is the default under `F.19`; the request helps the assistant adapt its wording to the reader.
 
 The selected examples should make two uses visible without implying that every question belongs to either displayed case:
 
@@ -115,7 +115,7 @@ When the product selects at least one card, place all selected cards under one g
 ```text
 ### Practical-Use Cards
 
-<plain statement that these are selected examples of extended cross-pattern use, not a catalogue or prescribed workflow>
+<brief introduction to the selected cross-pattern examples and the questions they help answer>
 
 #### <card key> — <plain title>
 
@@ -165,8 +165,8 @@ The deterministic part of the form check handles recoverable syntax and projecti
 - the required H1 sequence plus the product-declared body and reference tail;
 - product-declared Readme and architectural-reference entries in the established ToC grammar, before the logical pattern index, with no generic rival mini-menu;
 - one correctly addressed, content-free architectural-reference end heading at the boundary of that unit;
-- authoritative index segments, aggregate row/body bijection, duplicates, and reserved support-index grammar;
-- the Readme's one practical-entry set; its explicit examples-not-coverage statement; the product's declaration of example keys and forms; exactly one H3 ordinary entry or H4 card per declared key; five ordered ordinary-entry fields; a non-empty card-group explanation; six ordered card fields; the shared reading-burden measure and mantra/card limits; and zero or one same-key H5 expansion with the declared boundary; and
+- authoritative index segments, aggregate current-pattern row/body bijection, distinct future-facing `PlannedCatalogEntry` rows, duplicates, and reserved support-index grammar;
+- the Readme's one practical-entry set; the product's declaration of example keys and forms; exactly one H3 ordinary entry or H4 card per declared key; five ordered ordinary-entry fields; a non-empty card-group explanation; six ordered card fields; the shared reading-burden measure and mantra/card limits; and zero or one same-key H5 expansion with the declared boundary; and
 - equality and source agreement of every optional public cue that is actually projected.
 
 Check Markdown grouping with a focused source-hazard scan and a parser-backed render of the same candidate. Inspect the rendered heading outline and the block, list, table, code and link structure together. Reuse matching unchanged results. A clean mechanical result supports but does not replace the reader-visible judgement.
@@ -186,7 +186,7 @@ Develop the practical way and its explanation for the receiving use through C.39
 
 Use all twelve substantive E.8 functions as authoring questions for the whole framework and each substantive profile selected by its architecture. Answer them at the scope the publication promises. A framework may describe one composite Method through many patterns, several related Methods, or a repertoire used in different combinations. Where an exact MethodDescription claim matters, use `A.3.1` to identify the admitted Method and `A.3.2` to test the description episteme's MethodDescription membership. The number of patterns, mantras, files, or description media does not settle that identity.
 
-The whole account connects the answers that individual pattern bodies supply. Write the shared answer once and give exact returns to inherited content. At a narrower scope, state what changes in the situation, contribution, combination, evidence, result, or boundary. When an answer is missing, say which question remains open, which promised use it limits, and what remains usable.
+The whole account connects the answers that individual pattern bodies supply. Write the shared answer once and give exact returns to inherited content. Determine those answers from the language's promised work before committing to an illustrative route. E.8:4.2.1.3 governs the choice and continuation of examples: a connected account need not follow one project, and a successful route through one case does not establish the account's completeness. Keep explanations of significant alternatives and limits even when they require leaving that case. At a narrower scope, state what changes in the situation, contribution, combination, evidence, result, or boundary. When an answer is missing, say which question remains open, which promised use it limits, and what remains usable.
 
 Develop a missing instruction in the underlying account through E.8:4.2.1.1 before choosing how to present it. Then follow the promised use through the resulting publication, including any return to a supplying explanation. The reader must still obtain the input meanings, necessary operation, intermediate result and action-changing conditions that make the continuation possible. A short entry may rely on its reachable developed destination; it must keep any condition needed before taking its first action. A full explanation elsewhere does not close a gap if the reader cannot find or use it under the declared access conditions. Restore missing content at its source or repair its presentation and return, then revalidate the affected connected reading under F.19. A sound file structure or resolved link alone does not establish that the instruction survived.
 
@@ -196,7 +196,7 @@ Develop a missing instruction in the underlying account through E.8:4.2.1.1 befo
 | Problem | Which inquiry, intended transformation, opportunity, or recurring difficulty needs an answer? What remains unresolved with the available approach? |
 | Forces | Which competing requirements, resource limits, evidence conditions, or values shape the choice of Methods? |
 | Solution | Which Methods and pattern contributions answer the problem? How do their results connect, which choices change the route, and where can the reader enter directly? |
-| Archetypal Grounding | What actual or minimally viable worked case shows the language or profile producing a useful result, including a consequential branch or limit? |
+| Archetypal Grounding | Which actual or minimally viable worked cases make the needed connections and a consequential branch or limit inspectable? What does each contribute to the declared scope? |
 | Bias-Annotation | Which assumptions, perspectives, exclusions, or access conditions affect whose work the language serves and where its claims travel? |
 | Conformance Checklist | Which substantive questions establish correct use at this scope? Which answers can be inherited, and which changed conditions need their own judgement? |
 | Common Anti-Patterns and How to Avoid Them | Which documented failures, text-invited misreadings, or consequential neighbouring cases need a practical correction? Apply the grounded-guard rule in E.8 and F.19. |

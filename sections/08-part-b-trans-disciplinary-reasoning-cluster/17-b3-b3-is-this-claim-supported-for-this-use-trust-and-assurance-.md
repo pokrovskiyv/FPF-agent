@@ -5,7 +5,7 @@
 > **Normativity:** Normative when an FPF use makes an assurance claim about one exact target claim.
 
 > **Plain-English headline.**
-> B.3 helps a practitioner state what an assurance claim is about, which argument and results support it, what use they support, what remains unsupported, and what would reopen the conclusion. It does not turn a badge, evidence item, calculation, record, publication, status, or decision into assurance by appearance.
+> B.3 helps a practitioner state what an assurance claim is about, which argument and results support it, what use they support, what remains unsupported, and what would reopen the conclusion. A visible label or artifact contributes only through the claim and basis the argument uses.
 
 **Use this when.** Use B.3 when an actual named assurance claim is current: for example, a claim that an exact model claim is credible for one decision, or that an exact safety claim is adequately supported for one release use.
 
@@ -91,11 +91,17 @@ AssuranceResult:
 
 `targetClaimRef` identifies the exact C.2.1 episteme or one exact C.2.1 `ClaimAddress` when the use concerns one addressed claim inside a larger episteme. `basisRefs` cite the direct results, evidence-use relations, provenance paths, argument claims, or domain rules actually used. A compact result is complete when these fields decide the named use and another person can see why the stronger use is not carried.
 
+Keep the assurance argument readable beside its result or through references that let the recipient inspect it. Explain why the cited basis supports the target claim for this use, including applicable assumptions, limitations and relevant contrary results. This written account is an **assurance case**. Develop it while reasoning: start with the claim and use, state the proposed support, and revise the argument when a premise or inference proves inadequate. A short coherent paragraph can suffice; add detail when review, transfer or later reconsideration needs it.
+
+Use C.2.1 to identify the epistemes whose claims make up the case. A claim about a system retains that system as its subject. For an assurance-result episteme, the EntityOfConcern is the target claim content or episteme whose support is being judged; `targetClaimRef` locates that subject. A case can bring several such epistemes together, preserving their identities and argument relations. The text or diagram expresses their claims; E.24.PUB governs the expression and its carrier.
+
+An unfinished argument remains useful working material: identify the missing support and return the appropriate unresolved disposition. A positive assurance result requires an argument sufficient for the named use under the applicable domain rules.
+
 Add a claim scope, condition set, interpretation scheme, audience, or time window only when changing it could change the conclusion. Keep design and run conclusions separate whenever their inputs or conditions differ.
 
 Add assessment Work, performer, Method, application bindings, witnesses, or a reusable record only when the receiving use depends on competence, conflict of interest, timing, reproducibility, contest, redress, or later replay. These identities are never mandatory merely because B.3 is used.
 
-An optional assurance note may cite the result and its basis. B.3 does not define a reusable `RelianceSafetyCase`, a safety authority, or a general contest-and-redress profile. If such a reusable object is needed, it requires its own problem, ontology, sources, minimum output, and direct domain boundaries.
+An optional assurance note may cite the result and its basis. Safety authority, contest, and redress remain governed by their direct domain rules, as described in §4.7.
 
 #### B.3:4.3 - Name each characteristic by its bearer and scale
 
@@ -113,7 +119,7 @@ AssuranceCharacteristicResult:
 
 One characteristic name must not silently change meaning between subjects. System reliability, replication quality, evidential support, proof inspectability, and relation congruence are different characteristics even when a local source labels several of them `R` or `CL`.
 
-The legacy letters `F`, `G`, `R`, and `CL` may appear inside a declared local scheme, but B.3 assigns them no universal cross-domain meaning:
+The letters `F`, `G`, `R`, and `CL` may appear inside a declared local scheme, but B.3 assigns them no universal cross-domain meaning:
 
 - **Formality or inspectability.** Formal structure can make assumptions and inference steps easier to check. It raises assurance only when the named argument explains which uncertainty or verification need it closes. Making a wrong model proof-grade does not improve truth or empirical adequacy.
 - **Claim scope.** `U.ClaimScope` stays an A.2.6 value. It is not a quality coordinate. Widening or narrowing scope changes the claim and its applicable use under the declared scope rules.
@@ -149,7 +155,7 @@ Do not select the replay path merely because the use is important. Importance ma
 
 #### B.3:4.6 - Keep visible authority outside the result
 
-A badge, score, dashboard tile, credential display, provenance mark, model card, datasheet, data card, assurance document, attestation, generated confidence phrase, or publication form can be a cue, source, evidence item, or representation. It contributes to assurance only through an exact claim and basis relation used by the argument.
+A visible artifact, such as an attestation or dashboard tile, contributes to assurance only through a claim and basis relation used by the argument. Establish whether the artifact supplies a cue, source, evidence item, or representation for that use.
 
 If the visible item only reports a status, gate decision, permission, warning, or source location, use its direct pattern and produce no B.3 result. If an assurance claim is current, cite the item only for the property it actually establishes. A valid signature or provenance chain can establish origin and integrity without establishing safety, truth, compliance, or readiness.
 
@@ -227,6 +233,8 @@ Target claim: “Model edition M predicts response Y within the declared operati
 
 The engineer cites the exact model claim, its empirical-validation result, A.2.4 first-use classification and the direct support relation actually used, the A.10 provenance path, the operating region, and the expiry condition. No combination of unlike characteristics is needed. The compact disposition is `supported-for-use`, limited to the reversible comparison; release, safety, and operation are expressly not carried. No dated assessment Work or reusable record is added because the use does not depend on who performed the already cited validation.
 
+The engineer makes the supporting inference explicit: “The validation compared M's predictions with observations over the region needed for this comparison, and its stated error bounds meet the comparison's tolerance. Those predictions are therefore supported as one input to the reversible comparison within that region and the stated validity window.” These are premises of this worked case. If the validation does not establish that coverage or tolerance, narrow the use or return an unresolved disposition. Keep the argument beside the compact result or accessible through `basisRefs`. A later correction to the validation reopens the conclusions that depended on the corrected result.
+
 #### B.3:6.4 - Order-sensitive Method case
 
 An assurance argument relies on a manufacturing sequence whose result changes when two steps are reversed. Recover the B.1.5 composition, order and join conditions and any actual A.15.1 Work the argument consumes. Those direct results may answer the assurance question. Use A.22 only if a separately selected organization contributes another needed premise; then identify its constituents, obtaining relations, applied constraints and use frame. The assurance result cites only the results and structure it actually relies on.
@@ -276,8 +284,8 @@ An assurance argument relies on a manufacturing sequence whose result changes wh
 **Benefits**
 
 - Assurance remains explicit without forcing one cross-domain score.
-- A small local claim can stop after six fields.
-- Calculations become more trustworthy because assumptions and dependency structure are visible.
+- A small local claim can stop with the compact result and its recoverable argument.
+- Visible assumptions and dependency structure let the practitioner check whether a calculation applies.
 - Domain safety, access, responsibility, status, and decision rules retain their own meaning.
 - Visible artifacts can contribute useful provenance or evidence without becoming authority.
 
@@ -293,14 +301,12 @@ Assurance-case practice supports explicit claims, arguments, evidence, and maint
 
 ### B.3:10.1 - Decision-bearing SoTA account
 
-| Practical question | Exact current source | Adopt, adapt, or reject in B.3 | Reopen condition |
+| Practical question | Source | Contribution to B.3 | Applicability condition |
 | --- | --- | --- | --- |
-| What makes an assurance case inspectable? | [ISO/IEC/IEEE 15026-2:2022, edition 2](https://www.iso.org/standard/80625.html) specifies assurance-case structure and maintenance. The [GSN Community Standard v3](https://scsc.uk/gsn-standard) gives current engineering-argument notation and guidance. | **Adopt** explicit claim, argument, evidence, context, defeater, and maintenance structure. **Adapt** it to the compact and replay paths. **Reject** document or diagram appearance as assurance, approval, or permission. This decision shapes 4.1, 4.2, 5, and the dashboard case. | A successor changes the required claim-argument-evidence relation or validated use shows that a compact field is missing or redundant. |
-| How may reliability-like inputs be combined? | NASA's [Fault Tree Handbook with Aerospace Applications, v1.1](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/Fault%20Tree%20Handbook_NASA.pdf), chapter 6, derives AND-event probability from conditional probability and uses a product only under independence. | **Adopt** dependency- and assumption-specific calculation. **Reject** universal `min` and any claim that it is always conservative. This decision shapes 4.4 and worked case 6.1. | A direct domain model with different validated dependence semantics applies to the current claim. |
-| Can one trustworthiness tuple compare unlike AI or system properties? | [NIST AI Risk Management Framework 1.0](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=936225) treats trustworthiness characteristics as context- and use-dependent and recognizes trade-offs and domain metrics. | **Adopt** named characteristics and use-specific thresholds. **Reject** same-letter cross-domain comparability and monotone formality. This decision shapes 4.3. | A validated common measurement model supplies shared bearers, scales, units, and interpretation for the exact properties being compared. |
-| What can provenance and attestation establish? | [C2PA Technical Specification 2.4](https://spec.c2pa.org/specifications/specifications/2.4/index.html) distinguishes provenance validity from value judgments. [in-toto Attestation Framework 1.2](https://github.com/in-toto/attestation/releases/tag/v1.2.0) defines authenticated metadata about software artifacts. | **Adopt** exact subject, source, binding, and verification claims. **Reject** a valid credential, manifest, attestation, or display as automatic truth, safety, compliance, readiness, or release. This decision shapes 4.6 and case 6.2. | A successor specification changes the property warranted by the artifact or a direct domain rule makes that property sufficient for the named use. |
-
-Older assurance-case editions and generic weakest-link slogans are lineage, not decision authority. Popularity, formal appearance, and publication recency do not establish the selected architecture.
+| What makes an assurance case inspectable? | [ISO/IEC/IEEE 15026-2:2022, edition 2](https://www.iso.org/standard/80625.html) specifies assurance-case structure and maintenance. The [GSN Community Standard v3](https://scsc.uk/gsn-standard) gives engineering-argument notation and guidance. | **Adopt** explicit claim, argument, evidence, context, defeater, and maintenance structure. **Adapt** it to the compact and replay paths. **Reject** document or diagram appearance as assurance, approval, or permission. Sections 4.1–4.2 apply this structure to the smallest result sufficient for the use. | Use the governing assurance-case edition and check that the compact result states the claim, argument, and evidence needed for the receiving use. |
+| How may reliability-like inputs be combined? | NASA's [Fault Tree Handbook with Aerospace Applications, v1.1](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/Fault%20Tree%20Handbook_NASA.pdf), chapter 6, derives AND-event probability from conditional probability and uses a product only under independence. | **Adopt** dependency- and assumption-specific calculation. **Reject** universal `min` and any claim that it is always conservative. Section 4.4 and case 6.1 apply the dependency model before selecting arithmetic. | Use a dependence model warranted for the current claim. A different validated domain model changes which calculation applies. |
+| Can one trustworthiness tuple compare unlike AI or system properties? | [NIST AI Risk Management Framework 1.0](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=936225) treats trustworthiness characteristics as context- and use-dependent and recognizes trade-offs and domain metrics. | **Adopt** named characteristics and use-specific thresholds. **Reject** same-letter cross-domain comparability and monotone formality. Section 4.3 keeps the bearer and scale explicit. | Keep numerical assessments of unlike properties separate unless a validated common measurement model supplies the bearers, scales, units, and interpretation needed for their comparison. |
+| What can provenance and attestation establish? | [C2PA Technical Specification 2.4](https://spec.c2pa.org/specifications/specifications/2.4/index.html) distinguishes provenance validity from value judgments. [in-toto Attestation Framework 1.2](https://github.com/in-toto/attestation/releases/tag/v1.2.0) defines authenticated metadata about software artifacts. | **Adopt** exact subject, source, binding, and verification claims. **Reject** a valid credential, manifest, attestation, or display as automatic truth, safety, compliance, readiness, or release. Section 4.6 and case 6.2 distinguish the verified property from the later decision. | Check the property warranted by the applicable specification and whether the direct domain rule makes it sufficient for the named use. |
 
 ### B.3:11 - Relations
 

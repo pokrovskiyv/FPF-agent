@@ -48,8 +48,8 @@ When recurring viewpoint families lack a stable catalogue:
    A family called `functional`, `capability`, or `operational` may differ only lexically, or may differ semantically, but there is no disciplined place to tell which is which.
 3. **`MultiViewDescribing` cannot reuse a family cleanly.**
    Each describing use that needs the family must restate it locally instead of importing an existing bundle.
-4. **Reusable viewpoint-library practice remains external.**
-   FPF lacks a native place where reusable viewpoint families can be expressed as reviewable catalogue content without importing a standard's ontology.
+4. **No reusable local declaration.**
+   Available viewpoints are known through external terminology or project lists, but no catalogue supplies the exact local references needed for repeated import.
 5. **Reader-facing labels leak into semantics.**
    Authors reuse the same name for viewpoints, views, publication faces, or folders, and the boundary between EntityOfConcern and Description episteme becomes unclear.
 
@@ -83,9 +83,11 @@ This lets `MultiViewDescribing` import a finite viewpoint family from a stable c
 
 Open the complete constitution below for the affected catalogue edition when authoring or admitting a new L, when L or edition identity or reference resolution is disputed, or when a named later use needs the catalogue's ClaimGraph, subject, or scheme as inspectable premises. Reuse an existing check while that edition, its effective scheme, and the relied-on premises stay unchanged:
 
-- `G_L` is the exact `U.ClaimGraph` that states the catalogue scope, the local family declarations, the referenced viewpoint editions, their target-kind compatibility conditions, and the edition-change rule;
+- `G_L : NonemptyClaimContent` is the catalogue's complete interpreted claim content (`ClaimGraph`), stating its scope, local family declarations, referenced viewpoint editions, target-kind compatibility conditions, and edition-change rule;
 - `K_L` is the exact catalogue subject: the independently identified finite C.13 collection of already admitted viewpoint episteme editions whose recurring reuse groupings L describes. Its collection identity, exact members, obtaining membership relations, and identity rule are established before L; neither the catalogue nor a declaration creates them; and
-- `R_L : U.ReferenceScheme` is the exact effective scheme under which the catalogue's ordinary library, edition, and family designators resolve; each `U.ViewpointRef` resolves to exact P; target-kind criteria and compatibility claims are interpreted; and reference, omission, provenance, and edition-change rules are read.
+- `R_L : EpistemeInterpretationScheme` is the exact effective rule collection under which the catalogue's ordinary library, edition, and family designators resolve; each `U.ViewpointRef` resolves to exact P; target-kind criteria and compatibility claims are interpreted; and reference, omission, provenance, and edition-change rules are read. C.2.1:4.1.2 supplies both ranges; the catalogue requires the full content and rule coverage stated here.
+
+An eligible replacement for `R_L` must also resolve the actual catalogue designators and interpret its criteria; range membership alone supplies none of those results. A missing rule leaves the affected retrieval or compatibility judgement unresolved. Each referenced P retains its own effective scheme and E.17.0 membership; resolving its reference under `R_L` does not transfer the catalogue's scheme to P.
 
 `EpistemeConstitutionRelation(G_L, K_L, R_L)` must obtain. The participant-determined triple `<G_L, K_L, R_L>` identifies exact catalogue episteme L. If a proposed catalogue has only a file, label, list, or card but no truthful exact `K_L` or effective `R_L`, stop: L has not yet been constituted.
 
@@ -153,20 +155,23 @@ Construction, identity viewing, transformation, declaration membership, selectio
 
 A published library is the same selected C.2.1 episteme edition participating in exact E.24.PUB relations:
 
-- `PublicationFormExpressionRelation` relates that selected edition, one exact publication form, and one exact bounded-use declaration;
-- `PublicationFormBearingRelation` relates one exact `U.PresentationCarrier` and that form; and
-- `EpistemePublicationRelation` relates the selected edition, audience declaration, bounded-use declaration, form, and carrier for one maximal continuous availability interval.
+- `PublicationExpressionRelation` relates that selected edition, one independently identified expression, and one exact bounded-use declaration;
+- `PublicationExpressionBearingRelation` relates one independently identified physical or digital carrier to that expression;
+- `PublicationFormConformanceRelation` relates the expression to any selected reusable publication form whose rules it satisfies; and
+- `EpistemePublicationRelation` relates the selected edition, audience declaration, bounded-use declaration, expression, and carrier for one maximal continuous availability interval.
 
-Changing a participant or restoring availability after a gap yields another publication occurrence under E.24.PUB; it does not reidentify unchanged L or any member viewpoint. Rendering, printing, or uploading is separate system-performed `U.Work`. C.29 applies when a diagram or catalogue rendering represents independently recovered declarations or viewpoint epistemes. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
+When form-mediated expression and bearing are claimed, retain E.24.PUB's corresponding relations with the same expression as witness. A change of exact publication need not interrupt broader availability of the library through its permitted expressions and carriers.
+
+Changing a participant or restoring availability after a gap yields another publication occurrence under E.24.PUB; it does not reidentify unchanged L or any member viewpoint. Rendering, printing, or uploading is separate system-performed `U.Work`. For a diagram or catalogue rendering, recover the correspondence between its elements and independently identified declarations or viewpoint epistemes. Use A.6.3.RT/A.6.3.RT.OE when constructing an expression or changing its representation scheme. Add C.29 when choosing or using a mathematical representation raises an inference or transfer question. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
 
 ### E.17.1:5 - Archetypal Grounding
 
 
-**Tell.** A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces used later.
+A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces used later.
 
-**Show (System; hypothetical template instance).** E.17.2 can guide one project to bind local references `r_functional`, `r_procedural`, `r_allocation`, and `r_module` to exact project P editions inside one constituted catalogue L. Until those bindings and their resolution under exact `R_L` exist, these names are variables and no reusable TEVB family value is present.
+**System description: hypothetical template instance.** E.17.2 can guide one project to bind local references `r_functional`, `r_procedural`, `r_allocation`, and `r_module` to exact project P editions inside one constituted catalogue L. Until those bindings and their resolution under exact `R_L` exist, these names are variables and no reusable TEVB family value is present.
 
-**Show (Episteme; hypothetical family shape).** A project could bind local references for risk, control, compliance, and operations viewpoints in one exact catalogue declaration. The labels alone are not references or exact P editions; this example becomes reusable only after that project supplies complete `<G_L, K_L, R_L>`, exact bindings, and one ordinary family designator.
+**Governance account: hypothetical family shape.** A project could bind local references for risk, control, compliance, and operations viewpoints in one exact catalogue declaration. The labels alone are not references or exact P editions; this example becomes reusable only after that project supplies complete `<G_L, K_L, R_L>`, exact bindings, and one ordinary family designator.
 
 ### E.17.1:6 - Bias-Annotation
 
@@ -182,7 +187,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 - `CC-VBL-5` A family designator is not used as an id kind, publication-face/form kind, carrier kind, viewpoint reference, or substitute for an exact member.
 - `CC-VBL-6` Changes to member references, targets, family meaning, or compatibility constraints create another catalogue edition carrying the revised or new family declaration; publication or annex-only change does not reidentify unchanged P.
 - `CC-VBL-7` Multi-bundle imports preserve exact catalogue provenance and collisions only. Same-scheme comparison names its exact predicate and participants and applies the pattern that defines that predicate. Cross-context comparison resolves exact F.17 cells, obtaining F.9 Bridge, separate `<u,d,r,t>` claim, and required A.10 or B.3 reliance; otherwise it stops at lexical or structural contrast.
-- `CC-VBL-8` E.24.PUB expression, bearing, publication, recurrence, rendering work, and C.29 representation remain distinct, grant no viewpoint or view membership, and make no represented world-side relation obtain.
+- `CC-VBL-8` E.24.PUB expression, bearing, publication, recurrence, rendering work, and mathematical representation under C.29 remain distinct, grant no viewpoint or view membership, and make no represented world-side relation obtain.
 - `CC-VBL-9` A bundle intended for non-expert reuse should provide references that resolve under their applicable schemes to exact archetypal-grounding examples or sections for its member viewpoints; grounding aids recognition but grants no membership.
 
 ### E.17.1:8 - Common Anti-Patterns and How to Avoid Them
@@ -205,7 +210,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 
 ### E.17.1:10 - Rationale
 
-`MultiViewDescribing` supports viewpoint plurality. `E.17.1` supplies packaging and provenance discipline for that plurality, including cases where viewpoints are used to re-express positions in `U.LanguageStateSpace` or language-state history accounts through the `LanguageStateMoveTrajectory` form under `A.16.0`. It makes member provenance explicit across repeated uses. Semantic correspondence is a separate result: same-scheme comparison states its exact predicate and participants, while cross-context comparison uses F.9 and a bounded-use reliance path.
+`MultiViewDescribing` supports viewpoint plurality. `E.17.1` supplies packaging and provenance discipline for that plurality, including cases where viewpoints are used to re-express positions in a language-state chart declared under C.2.2a or language-state history accounts through the `LanguageStateMoveTrajectory` form under `A.16.0`. It makes member provenance explicit across repeated uses. Semantic correspondence is a separate result: same-scheme comparison states its exact predicate and participants, while cross-context comparison uses F.9 and a bounded-use reliance path.
 
 ### E.17.1:11 - Source status, local rationale, and reopen condition
 
@@ -213,16 +218,14 @@ ISO 42010 is retained only as historical vocabulary lineage for the words *view*
 
 The present architecture is therefore an explicit local FPF rationale. The concrete problem is repeated use of the same exact E.17.0 viewpoint episteme editions: users need to resolve exact references, preserve source catalogue and omission provenance, and avoid reidentifying P or turning a family label into membership. One C.2.1 catalogue ClaimGraph with local declaration claim blocks is the least additional object that answers those actions while reusing C.2.1 identity, E.17.0 membership, C.13 collection, F.9 comparison, and E.24.PUB publication boundaries.
 
-SysML v2 is deliberately absent from the positive source basis and is not treated as lineage for this question. Official status, search prominence, systems-oriented naming, and prospective scope are not evidence that it solves the exact reusable-catalogue and practitioner-use problem here. This exclusion imports no contrary SysML ontology claim; it only prevents popularity or status from standing in for demonstrated contribution.
-
 Reopen the local architecture if an exact current source or exercised project catalogue demonstrates a simpler way to preserve reference resolution, exact P identity, subsets, omissions, provenance, and cross-context comparison without losing any of those practitioner actions; or if project replay shows that one catalogue ClaimGraph with local declarations adds apparatus without changing a practitioner action. Until then, describe this as provisional local design, not source-established SoTA.
 
 ### E.17.1:12 - Relations
 
-- **Builds on:** `C.2.1` for library and member-episteme identity; `E.17.0` for exact P membership, reference resolution, singular use selection, and sole E/P view-membership rule; `C.13` for explicit imported collections; `A.22` for any separately selected organization; `A.6.2-A.6.4` for optional episteme-construction histories; `A.7`, `E.7`, and `E.10` for carrier, authoring, and naming discipline; `E.24.PUB` for publication; and `C.29` for representation.
+- **Builds on:** `C.2.1` for library and member-episteme identity; `E.17.0` for exact P membership, reference resolution, singular use selection, and sole E/P view-membership rule; `C.13` for explicit imported collections; `A.22` for any separately selected organization; `A.6.2-A.6.4` for optional episteme-construction histories; `A.7`, `E.7`, and `E.10` for carrier, authoring, and naming discipline; `E.24.PUB` for publication; `A.6.3.RT`/`A.6.3.RT.OE` for expression construction and representation-scheme transition; and `C.29` for mathematical-lens use.
 - **Constrains:** E.17.0 consumers whenever they import a reusable family; an import narrows eligible references but neither selects one P for a use nor proves conformance.
 - **Coordinates with:** `C.2.2a`, `A.16.0`, `E.17`, `E.17.2`, `E.18:5.12`, `F.9`, `F.9.1`, and domain-specific families requiring stable reuse.
-- **Protects:** exact separation among catalogue triple `<G_L, K_L, R_L>`, catalogue episteme L, local declaration claim block, ordinary family designator, `U.ViewpointRef`, P designator, P, candidate/View E, any A.22 structure, form, carrier, publication occurrence, and C.29 representation.
+- **Protects:** exact separation among catalogue triple `<G_L, K_L, R_L>`, catalogue episteme L, local declaration claim block, ordinary family designator, `U.ViewpointRef`, P designator, P, candidate/View E, any A.22 structure, form, carrier, publication occurrence, and their representations.
 
 #### E.17.1:12.1 - Resolvable annex references for thin bundles
 
@@ -289,8 +292,6 @@ A practical rule is:
 - if the local project selects a subset or adds only didactic/publication material, keep exact catalogue edition L and its declaration unchanged and declare the local subset or annex; do not treat the overlay as declaration content;
 - if the local project changes viewpoint membership or meaning, publish a new local catalogue edition carrying the revised or new family declaration.
 
-This is how bundle reuse remains trustworthy across organizations.
-
 #### E.17.1:14.3 - Multi-bundle coordination: provenance first, comparison separately
 
 Many real description families need more than one bundle, for example:
@@ -339,7 +340,7 @@ A project may likewise consider local variables `r_theory`, `r_experiment`, `r_i
 
 #### E.17.1:15.4 - Cross-family description relation positions
 
-A serious project may use one materialized local TEVB instance for its design family, another exact local governance family for program oversight, and another exact local publication-oriented family for publication faces and forms. `E.17.1` keeps these relation positions reviewable by preserving which exact catalogue and declaration each viewpoint came from and by preventing a final publication face or form from masquerading as the catalogue itself.
+A project may use one materialized local TEVB instance for its design family, another exact local governance family for program oversight, and another exact local publication-oriented family for publication faces and forms. `E.17.1` keeps these relation positions reviewable by preserving which exact catalogue and declaration each viewpoint came from and by preventing a final publication face or form from masquerading as the catalogue itself.
 
 ### E.17.1:16 - Authoring and Review Guidance
 

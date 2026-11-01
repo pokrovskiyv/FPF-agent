@@ -1,6 +1,6 @@
 # Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (442 refs).
+Patterns in other Parts that reference patterns in this directory (443 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -18,7 +18,6 @@ Patterns in other Parts that reference patterns in this directory (442 refs).
 | A.1.SCR | coordinates_with | A.15.6 |
 | A.1.STM | builds_on | A.15.6 |
 | A.1.STM | coordinates_with | A.10 |
-| A.1.STM | coordinates_with | A.22.CGUS |
 | A.11 | builds_on | A.8 |
 | A.2.1 | coordinates_with | A.15.1 |
 | A.2.2 | informs | A.15 |
@@ -230,6 +229,8 @@ Patterns in other Parts that reference patterns in this directory (442 refs).
 | C.2.2a | used_by | A.16 |
 | C.2.4 | coordinates_with | A.16 |
 | C.2.5 | coordinates_with | A.16 |
+| C.2.6 | builds_on | A.10 |
+| C.2.6 | coordinates_with | A.16 |
 | C.2.8 | builds_on | A.17 |
 | C.2.8 | builds_on | A.18 |
 | C.2.LS | coordinates_with | A.16 |

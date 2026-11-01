@@ -1,6 +1,6 @@
 # Cross-References into 08-part-b-trans-disciplinary-reasoning-cluster
 
-Patterns in other Parts that reference patterns in this directory (175 refs).
+Patterns in other Parts that reference patterns in this directory (179 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -154,15 +154,19 @@ Patterns in other Parts that reference patterns in this directory (175 refs).
 | C.32.ADR | coordinates_with | B.3 |
 | C.32.CONWAY | coordinates_with | B.3 |
 | C.32.FAIL | coordinates_with | B.3 |
+| C.32.LCA | builds_on | B.2.5 |
 | C.32.MLAO | coordinates_with | B.3 |
 | C.32.MWA | builds_on | B.1.5 |
 | C.32.PAD | coordinates_with | B.3 |
 | C.32.PAD | coordinates_with | B.2 |
 | C.32.PAD | coordinates_with | B.2.P |
 | C.36 | coordinates_with | B.3 |
+| C.39 | coordinates_with | B.1.5.EW |
+| C.39 | coordinates_with | B.1.5.RS |
 | C.39.RO | coordinates_with | B.5.RR |
 | C.40.CD | coordinates_with | B.5.MPC |
 | C.40.CU | coordinates_with | B.1.5.EW |
+| C.40.CU | coordinates_with | B.1.5.RS |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
 

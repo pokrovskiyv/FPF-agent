@@ -27,7 +27,6 @@ Patterns in other Parts that reference patterns in this directory (444 refs).
 | A.1.RI | coordinates_with | C.16.MR |
 | A.1.RI | coordinates_with | C.16.IR |
 | A.1.RI | coordinates_with | C.11.DUA |
-| A.1.STM | coordinates_with | C.30 |
 | A.1.STM | coordinates_with | C.28 |
 | A.11 | builds_on | C.3 |
 | A.2 | builds_on | C.3 |
@@ -311,6 +310,7 @@ Patterns in other Parts that reference patterns in this directory (444 refs).
 | B.5.QD | coordinates_with | C.39 |
 | B.5.QD.CF | coordinates_with | C.40.CD |
 | B.5.QD.CF | coordinates_with | C.11.DUA |
+| B.5.RA | coordinates_with | C.2.8 |
 | B.5.RC | coordinates_with | C.29.1 |
 | B.5.TC | coordinates_with | C.29.1 |
 | B.5.TC | coordinates_with | C.29.2 |

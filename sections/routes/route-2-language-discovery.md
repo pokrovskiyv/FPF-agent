@@ -8,8 +8,8 @@
 
 | # | Pattern | Title | File | Core? |
 |---|---------|-------|------|-------|
-| 1 | C.2.2a | U.LanguageStateSpace - Language-state chart over U.Character | sections/09-part-c-kernel-extension-specifications/05-c22-c22a-ulanguagestatespace-language-state-chart-over-ucharacte.md | YES |
-| 2 | C.2.LS | U.LanguageStateFacetProfile - Thin profile bundle for langua | sections/09-part-c-kernel-extension-specifications/07-c2ls-c2ls-ulanguagestatefacetprofile-thin-profile-bundle-for-lang.md |  |
+| 1 | C.2.2a | Language-State Chart over U.CharacteristicSpace | sections/09-part-c-kernel-extension-specifications/05-c22-c22a-language-state-chart-over-ucharacteristicspace.md | YES |
+| 2 | C.2.LS | Language-State Facet Profile: Publish Readings and Use Condi | sections/09-part-c-kernel-extension-specifications/07-c2ls-c2ls-language-state-facet-profile-publish-readings-and-use-c.md |  |
 | 3 | A.16 | Language-State Moves: Choose the Next Publication and Use of | sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a16-a16-language-state-moves-choose-the-next-publication-and-use.md | YES |
 | 4 | A.16.1 | PreArticulationCuePack: Preserve an Early Cue Before Choosin | sections/07-cluster-av-constitutional-principles-of-the-kernel/30-a161-a161-prearticulationcuepack-preserve-an-early-cue-before-cho.md | YES |
 | 5 | A.16.2 | Reopen, SketchBackoff, Respecify, or Retire a Language-State | sections/07-cluster-av-constitutional-principles-of-the-kernel/31-a162-a162-reopen-sketchbackoff-respecify-or-retire-a-language-sta.md |  |

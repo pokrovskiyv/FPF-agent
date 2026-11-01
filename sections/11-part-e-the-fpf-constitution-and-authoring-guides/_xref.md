@@ -1,6 +1,6 @@
 # Cross-References into 11-part-e-the-fpf-constitution-and-authoring-guides
 
-Patterns in other Parts that reference patterns in this directory (361 refs).
+Patterns in other Parts that reference patterns in this directory (360 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -16,6 +16,7 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 | A.1.1 | coordinates_with | E.24.PUB |
 | A.1.SCR | coordinates_with | E.10 |
 | A.1.STM | coordinates_with | E.18 |
+| A.1.STM | coordinates_with | E.18.NET |
 | A.11 | builds_on | E.24.UK |
 | A.2 | coordinates_with | E.10.ROLE |
 | A.2.2 | informs | E.23.CDI |
@@ -140,7 +141,6 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 | A.15.6 | coordinates_with | E.18 |
 | A.15.6 | coordinates_with | E.18.NET |
 | A.15.6 | coordinates_with | E.17 |
-| A.15.6 | coordinates_with | E.24.PUB |
 | A.15.9 | coordinates_with | E.18.1 |
 | A.15.PROD | coordinates_with | E.24.PUB |
 | A.15.PROD | coordinates_with | E.18.1 |
@@ -321,7 +321,6 @@ Patterns in other Parts that reference patterns in this directory (361 refs).
 | C.32.MWA | used_by | E.4.PFAD |
 | C.32.MWA | used_by | E.23.CDI |
 | C.32.P2S | builds_on | E.17 |
-| C.32.P2S | builds_on | E.24.PUB |
 | C.32.PAD | coordinates_with | E.8 |
 | C.32.PAD | coordinates_with | E.11.PUR |
 | C.32.PAD | coordinates_with | E.17 |

@@ -28,7 +28,7 @@ If the framework's design prioritizes theoretical purity or formal completeness 
 
 ### E.12:4 - **Solution**
 
-FPF elevates **Didactic Primacy (Pillar P-2)** to a normative architectural principle, operationalized through two conceptual mechanisms designed to act as a permanent counterbalance to excessive formalism.
+FPF makes **Didactic Primacy (Pillar P-2)** an architectural principle. The Rationale Mandate connects formal assurance to its cognitive benefit; the Human-Factor Loop investigates a concrete obstruction or doubtful demand.
 
 #### E.12:4.1 - The Principle of Didactic Primacy (Expanded Definition)
 
@@ -36,7 +36,7 @@ The primary purpose of the FPF is to enhance the cognitive capabilities (qualifi
 
 #### E.12:4.2 - Mechanism 1: The Rationale Mandate
 
-Every key assurance episteme or publication (such as a `U.AssuranceCase` or `Proof`) **MUST** contain a mandatory, human-readable **`rationale`** component.
+Every key assurance episteme or publication, such as an assurance case or proof publication, **MUST** contain a human-readable **`rationale`** component. Use B.3:4.2 to develop and inspect the assurance case's argument for the stated use; the rationale explains its practical and cognitive benefit.
 
 *   **Nature:** The `rationale` is a narrative explanation of the cognitive benefit.
 *   **Content:** It **MUST** answer the question: *"How does achieving this level of formal assurance tangibly help the agent better understand the problem or make a more reliable decision?"*
@@ -66,7 +66,7 @@ An expert walkthrough can recover all four comparison duties from the actual pas
 
 ### E.12:5 - **Conformance Checklist**
 
-*   **CC-E12.1 (Rationale Mandate):** Every key assurance episteme or publication, including a `U.AssuranceCase` or proof publication, **MUST** contain a non-empty, human-readable `rationale` that satisfies the "So What?" test. Any `AssuranceLevel` claim separately cites its applicable `B.3.3` profile and shows that the target meets that profile's criteria.
+*   **CC-E12.1 (Rationale Mandate):** Every key assurance episteme or publication, including an assurance case or proof publication, **MUST** contain a non-empty, human-readable `rationale` that satisfies the "So What?" test. Any `AssuranceLevel` claim separately cites its applicable `B.3.3` profile and shows that the target meets that profile's criteria.
 *   **CC-E12.2 (Bounded inquiry trigger):** A significant workflow **SHOULD** make consequential reader obstructions or doubtful work demands recognizable. An inquiry names the task, passage/action, prerequisites and relevant assurance boundary; a conceptual workload threshold alone is insufficient.
 *   **CC-E12.3 (Inquiry and stop):** For a live trigger, apply §4.3 at a burden warranted by C.11.DUA. An actual reading inquiry preserves the initial unassisted attempt before explanation and compares any proposed alternative at unchanged task/prerequisites/assurance. Return a supported repair, no change or the exact evidence limit; qualify assistance and leave amendment authority separate.
 *   **CC-E12.4 (Didactic Primacy in DRRs):** Any DRR proposing a change to a normative pattern **MUST** include a section analyzing its impact on cognitive ergonomics and didactic clarity.
@@ -90,7 +90,7 @@ An expert walkthrough can recover all four comparison duties from the actual pas
 
 ### E.12:8 - **Rationale**
 
-This pattern operationalizes **Didactic Primacy (P-2)**, transforming it from a philosophical statement into an enforceable architectural Standard. The `Rationale Mandate` requires a clear explanation of the cognitive purpose of each key assurance episteme or publication. The bounded Human-Factor inquiry examines an actual reader obstruction or work demand while retaining the method's prerequisites and assurance. It does not require a speculative threshold or a refinement proposal when none is supported.
+The `Rationale Mandate` requires a clear explanation of the cognitive purpose of each key assurance episteme or publication. The bounded Human-Factor inquiry examines an actual reader obstruction or work demand while retaining the method's prerequisites and assurance. It does not require a speculative threshold or a refinement proposal when none is supported.
 
 A purely conceptual workload warning would leave the reader without a next action; a stronger psychometric or causal method would require separately justified observations and design. The bounded inquiry supplies an attainable examination and honest stop. It complements formal rigor with the Rationale Mandate and preserves independently justified controls. Together they connect formal assurance with what practitioners need to understand or decide for their work.
 

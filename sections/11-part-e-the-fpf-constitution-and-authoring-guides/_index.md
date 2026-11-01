@@ -1,72 +1,72 @@
 # Part E - The FPF Constitution and Authoring Guides
 
-- [E.1 - Vision & Mission (E.1)](01-e1-e1-vision-mission.md) — Charter that defines the framework's purpose; check proposed rules against it to ensure they serve the framework
-- [E.2 - FPF's Eleven Pillars and Bitter-Lesson Preference (BLP) (E.2)](02-e2-e2-fpfs-eleven-pillars-and-bitter-lesson-preference-blp.md) — Eleven constitutional pillars every artifact must honor, including a preference for generality over specialization
-- [E.2.DA - Evaluate How FPF Realizes Its Pillars (Pillar-Adequacy CharacteristicSpace) (E.2.DA)](03-e2da-e2da-evaluate-how-fpf-realizes-its-pillars-pillar-adequacy-c.md) — Evaluate whether a whole corpus object adequately realizes the eleven pillars for a declared use
-- [E.3 - Principle Taxonomy, Precedence and Agent Autonomy Profiles (ABL) (E.3)](04-e3-e3-principle-taxonomy-precedence-and-agent-autonomy-profiles.md) — Taxonomy and precedence order for principles so conflicting pillars get a deterministic resolution
-- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites (E.4)](05-e4-e4-fpf-ecosystem-architecture-framework-families-products-an.md) — Distinguish framework families, products, and dependencies so architecture questions get clear answers
-- [E.4.CM - Develop Connected Methods as Framework Contributions (E.4.CM)](06-e4cm-e4cm-develop-connected-methods-as-framework-contributions.md) — Develop and publish connected methods when practitioners need to combine them in recurring situations
-- [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes (E.4.FPF)](07-e4fpf-e4fpf-fpf-edition-assembly-publication-forms-carriers-and-ac.md) — Assemble an edition with its publication units, forms, carriers, and access routes
-- [E.4.PFAD - Principle-Framework Architecture Decision (E.4.PFAD)](08-e4pfad-e4pfad-principle-framework-architecture-decision.md) — Record the architecture decision when choosing between creating a new framework or contributing to an existing one
-- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish (E.4.DPF)](09-e4dpf-e4dpf-domain-and-local-principle-frameworks-whether-and-how-.md) — Author or revise a domain or local principle framework grounded in the core framework
-- [E.4.DPF.DA - Evaluate a DPF or LPF Package for Its Declared Use (Package-Adequacy CharacteristicSpace) (E.4.DPF)](10-e4dpf-e4dpfda-evaluate-a-dpf-or-lpf-package-for-its-declared-use-p.md) — Evaluate whether a domain framework package is adequate for its declared domain use
-- [E.4.PFR - Pattern-Framework Relation and Edition Discipline (E.4.PFR)](11-e4pfr-e4pfr-pattern-framework-relation-and-edition-discipline.md) — Record a specific relation or edition claim between framework objects for maintenance and comparison
-- [E.4.PFIP - Principle-Framework Publication Integration and Preservation (E.4.PFIP)](12-e4pfip-e4pfip-principle-framework-publication-integration-and-prese.md) — Verify that accepted changes were incorporated and earlier content was preserved during publication
-- [E.5 - Four Guard‑Rails of FPF (E.5)](13-e5-e5-four-guardrails-of-fpf.md) — Four non-negotiable guard-rails preventing the framework from acquiring tool jargon, notation lock-in, or disciplinary bias
-- [E.5.1 - DevOps Lexical Firewall (E.5.1)](14-e51-e51-devops-lexical-firewall.md) — Keep core definitions free of tool references so they remain valid across technology generations
-- [E.5.2 - Notational Independence (E.5.2)](15-e52-e52-notational-independence.md) — Express concepts so their meaning can be recovered in any notation, not just one diagram style
-- [E.5.3 - Unidirectional Dependency between FPF Families (E.5.3)](16-e53-e53-unidirectional-dependency-between-fpf-families.md) — Enforce one-way dependency between layers so volatile tooling cannot drag the stable core into revision
-- [E.5.4 - Cross‑Disciplinary Bias Audit (E.5.4)](17-e54-e54-crossdisciplinary-bias-audit.md) — Audit patterns for hidden disciplinary bias through five structured lenses matching principle classes
-- [E.6 - Didactic Architecture of the FPF Specification (E.6)](18-e6-e6-didactic-architecture-of-the-fpf-specification.md) — Order the specification from low to high formality so different readers can enter at the right level
-- [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases (E.7)](19-e7-e7-archetypal-grounding-explain-rules-of-fpf-architectural-p.md) — Ground every architectural pattern in two concrete cases so abstract rules become recognizable to practitioners
-- [E.8 - FPF Authoring Conventions & Style Guide (E.8)](20-e8-e8-fpf-authoring-conventions-style-guide.md) — Shape and voice conventions for writing a single pattern so practitioners can recognize and apply it
-- [E.8.ML - Construct a Pattern Language for Connected Methods (E.8.ML)](21-e8ml-e8ml-construct-a-pattern-language-for-connected-methods.md) — Design a pattern language for connected methods when practitioners need to use them together
-- [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification (E.8.ECSPF)](22-e8ecspf-e8ecspf-author-an-fpf-pattern-from-an-accepted-evaluation-ch.md) — Turn an accepted evaluation specification into a practitioner-facing pattern with proper recognition text
-- [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions (E.9)](23-e9-e9-design-rationale-record-drr-for-fpf-content-decisions.md) — Record the rationale for a bounded content decision before rewriting core text
-- [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace) (E.9.DA)](24-e9da-e9da-evaluate-a-drr-for-its-declared-authoring-use-decision-.md) — Check whether a decision record is detailed enough to actually guide pattern drafting
-- [E.10 - Unified Lexical Rules for FPF (E.10)](25-e10-e10-unified-lexical-rules-for-fpf.md) — Locate the correct rule for a word that still hides its kind or relation after reading the sentence
-- [E.10.LRN - Recovering What "Learning" Means in the Current Claim (E.10.LRN)](26-e10lrn-e10lrn-recovering-what-learning-means-in-the-current-claim.md) — Recover exactly which participant, change, or result the word 'learning' refers to in the current claim
-- [E.10.INT - Recovering What Interest or Curiosity Means Here (E.10.INT)](27-e10int-e10int-recovering-what-interest-or-curiosity-means-here.md) — Clarify whether 'interesting' means informative, motivating, or promising to guide the next action
-- [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim (E.10.DEV)](28-e10dev-e10dev-recovering-what-development-or-evolution-means-in-the.md) — Name the actual subject and continuity rule when 'development' or 'evolution' still hides them
-- [E.10.MOVE - Move, Readiness and Trajectory Wording Precision Restoration (E.10.MOVE)](29-e10move-e10move-move-readiness-and-trajectory-wording-precision-rest.md) — Recover the exact governed claim hidden by move, readiness, route, path, or trajectory wording
-- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture (E.10.ARCH)](30-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md) — Distribute wording-precision work so subject patterns stay focused on their governed objects
-- [E.10.ROLE - Recovering What "Role" Means in the Current Claim (E.10.ROLE)](31-e10role-e10role-recovering-what-role-means-in-the-current-claim.md) — Recover what 'role' actually denotes — a kind, an assignment, a position, or ordinary wording
-- [E.10.P - Conceptual Prefixes policy & registry (E.10.P)](32-e10p-e10p-conceptual-prefixes-policy-registry.md) — Registry and minting rules for short conceptual prefixes used across the core
-- [E.10.D1 - Recovering What "Context" Means in Use (E.10.D)](33-e10d-e10d1-recovering-what-context-means-in-use.md) — Recover which boundary or situation 'context' refers to so the right pattern can be applied
-- [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline (E.10.D)](34-e10d-e10d2-entityofconcern-description-episteme-and-specification.md) — Recover the exact entity being described and distinguish it from the description or carrier around it
-- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline (E.11)](35-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md) — Help a practitioner find the right pattern from a real project question, not from pattern topology
-- [E.11.PUA - Pattern Use in a Working Situation and First Useful Result (E.11.PUA)](36-e11pua-e11pua-pattern-use-in-a-working-situation-and-first-useful-r.md) — Follow one selected pattern's solution to the smallest useful result or an honest stop
-- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination (E.11.PUR)](37-e11pur-e11pur-pattern-use-applicability-recommendation-and-coordina.md) — Decide which of several candidate pattern uses fits and how they should be ordered or combined
-- [E.11.PFP - Framework Publication Form Profile for Markdown (E.11.PFP)](38-e11pfp-e11pfp-framework-publication-form-profile-for-markdown.md) — Define the required Markdown publication form for a framework edition so cold readers can orient
-- [<FrameworkCode>.Reference:<n> - <Title>](39-frameworkcodereferencen-title.md) — Template for the section-addressing scheme in a framework's architectural reference unit
-- [E.11.DSG - Architectural Reference (E.11.DSG)](40-e11dsg-e11dsg-architectural-reference.md) — Write the architectural reference account for a method language so users understand its structure
-- [E.12 - Didactic Primacy & Cognitive Ergonomics (E.12)](41-e12-e12-didactic-primacy-cognitive-ergonomics.md) — Ensure formal assurance machinery always serves human understanding rather than replacing it
-- [E.13 - Pragmatic Utility and Proxy-to-Value Alignment (E.13)](42-e13-e13-pragmatic-utility-and-proxy-to-value-alignment.md) — Prevent a visible measure or score from being treated as the actual value it was meant to track
-- [E.14 - Human-Centric Working-Model: Readable Claims and Recoverable Assurance (E.14)](43-e14-e14-human-centric-working-model-readable-claims-and-recovera.md) — Keep the practitioner-facing working model readable while keeping formal assurance support underneath
-- [E.15 - Pattern Change, Edition Continuity, and Impact Analysis (E.15)](44-e15-e15-pattern-change-edition-continuity-and-impact-analysis.md) — Describe what actually changed between two pattern editions and which uses may be affected
-- [E.16 - RoC‑Autonomy Budget & Enforcement (E.16)](45-e16-e16-rocautonomy-budget-enforcement.md) — Make an autonomy claim testable by publishing a budget, enforcement rules, and an override path
-- [E.17.0 - Viewpoint and View Recognition for Multi-View Describing (E.17.0)](46-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md) — Test whether a specific document or model slice genuinely conforms to a defined viewpoint
-- [E.17.1 - Viewpoint Bundle Library - Reusable Viewpoint Reference Bundles (E.17.1)](47-e171-e171-viewpoint-bundle-library-reusable-viewpoint-reference-b.md) — Maintain a catalogue of reusable viewpoint families so teams can import exact references without restating them
-- [E.17.2 - TEVB - Project-local Typical Engineering Viewpoint Bundle Template for Holons (E.17.2)](48-e172-e172-tevb-project-local-typical-engineering-viewpoint-bundle.md) — Template for authoring a project-local family of four engineering viewpoints for system descriptions
-- [E.17 - Multi‑View Publication Kit (E.17)](49-e17-e17-multiview-publication-kit.md) — Publish one accepted engineering account in reader-specific faces without changing its claims
-- [E.17.EFP - ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces (E.17.EFP)](50-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md) — Classify how a published explanation faithfully expresses a source and what it cannot substitute for
-- [E.17.ID.CR - Compare Sources Within a Shared Review Frame (ComparativeReviewUnit) (E.17.ID)](51-e17id-e17idcr-compare-sources-within-a-shared-review-frame-compara.md) — Compare two or more source documents within a shared review frame without implying a decision
-- [E.17.AUD - PublicationUnit Stability Discipline - keep one publication unit stable enough to read honestly (E.17.AUD)](52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md) — Keep a publication unit focused on one primary subject when it quietly drifts to another concern
-- [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it (E.17.AUD)](53-e17aud-e17audlhr-publicationunit-stability-discipline-and-local-hea.md) — Repair one overloaded word in a publication unit before ambiguity propagates to the whole unit
-- [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary-Subject Discipline - publication-unit stability over one primary subject (E.17.AUD)](54-e17aud-e17audootd-publicationunit-stability-discipline-and-publicat.md) — Keep a bounded publication unit explicit about what it is mainly about and what stays outside
-- [E.18 - Transformation Flow Structure (E.18)](55-e18-e18-transformation-flow-structure.md) — Describe a compound structure of transformations and their relations without asserting the work occurred
-- [E.18.1 - P2W Problem-to-Work Carry-Through (E.18.1)](56-e181-e181-p2w-problem-to-work-carry-through.md) — Carry accepted problem-side distinctions through method selection, planning, and work without losing them
-- [E.18.2 - Transformation Flow Mathematical Description (E.18.2)](57-e182-e182-transformation-flow-mathematical-description.md) — Record how a mathematical expression describes a transformation structure and what it preserves or loses
-- [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure (E.18.3)](58-e183-e183-constraint-governed-transformation-flow-unfolding-struc.md) — Use a constraint-governed flow card when branches and guards determine what can follow a transformation step
-- [E.18.NET - Network of Transformation-Flow Structures (E.18.NET)](59-e18net-e18net-network-of-transformation-flow-structures.md) — Describe two or more independent transformation flows and the exact relations connecting them
-- [E.19 - Pattern Quality Gates: Review and Refresh Profiles (E.19)](60-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md) — Apply a review profile to a pattern edition to decide whether it is ready for admission or needs repair
-- [E.20 - Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms (E.20)](61-e20-e20-mechanism-introduction-protocol-introduce-or-revise-fpf-.md) — Assign each changed mechanism meaning to exactly one governing definition before rewriting pattern text
-- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace (E.21)](62-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md) — Evaluate a pattern edition on a fixed set of quality coordinates to produce a scoped quality claim
-- [E.22 - Improvement-Oriented Quality Evaluation Question Framing (E.22)](63-e22-e22-improvement-oriented-quality-evaluation-question-framing.md) — Frame a quality evaluation question so requester and evaluator agree on what to check and return
-- [E.23 - Quality Improvement Loop Method (E.23)](64-e23-e23-quality-improvement-loop-method.md) — Improve an object through repeated evaluation passes with a declared stop condition
-- [E.23.CDI - Developing Capability for a Named Work Family (E.23.CDI)](65-e23cdi-e23cdi-developing-capability-for-a-named-work-family.md) — Develop a system's capability for a named work family and verify that the change transfers to real work
-- [E.23.CAE - Capability Access and Expression Differential Probe (E.23.CAE)](66-e23cae-e23cae-capability-access-and-expression-differential-probe.md) — Test whether a capability failure is due to scope, access, or actual change before choosing an intervention
-- [E.24 - U.Ontic and Ontic Introduction Discipline (E.24)](67-e24-e24-uontic-and-ontic-introduction-discipline.md) — Decide whether a candidate concept needs a new durable ontology unit or can rely on existing rules
-- [E.24.CD - Ontic Candidate Detection and First-Use Disposition (E.24.CD)](68-e24cd-e24cd-ontic-candidate-detection-and-first-use-disposition.md) — Detect whether a recurring word or schema points to a genuinely new subject or just a compressed expression
-- [E.24.PUB - Episteme Publication: Availability, Form and Carrier (E.24.PUB)](69-e24pub-e24pub-episteme-publication-availability-form-and-carrier.md) — Distinguish the claim-bearing description from the form, carrier, and publication occurrence that expose it
-- [E.24.UK - U-kind Admission and Ontic Settlement (E.24.UK)](70-e24uk-e24uk-u-kind-admission-and-ontic-settlement.md) — Decide whether a proposed public name should be admitted as a durable kind or handled by existing rules
+- [E.1 - Vision & Mission (E.1)](01-e1-e1-vision-mission.md)
+- [E.2 - FPF's Eleven Pillars and Bitter-Lesson Preference (BLP) (E.2)](02-e2-e2-fpfs-eleven-pillars-and-bitter-lesson-preference-blp.md)
+- [E.2.DA - Evaluate How FPF Realizes Its Pillars (Pillar-Adequacy CharacteristicSpace) (E.2.DA)](03-e2da-e2da-evaluate-how-fpf-realizes-its-pillars-pillar-adequacy-c.md)
+- [E.3 - Principle Taxonomy, Precedence and Agent Autonomy Profiles (ABL) (E.3)](04-e3-e3-principle-taxonomy-precedence-and-agent-autonomy-profiles.md)
+- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites (E.4)](05-e4-e4-fpf-ecosystem-architecture-framework-families-products-an.md)
+- [E.4.CM - Develop Connected Methods as Framework Contributions (E.4.CM)](06-e4cm-e4cm-develop-connected-methods-as-framework-contributions.md)
+- [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes (E.4.FPF)](07-e4fpf-e4fpf-fpf-edition-assembly-publication-forms-carriers-and-ac.md)
+- [E.4.PFAD - Principle-Framework Architecture Decision (E.4.PFAD)](08-e4pfad-e4pfad-principle-framework-architecture-decision.md)
+- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish (E.4.DPF)](09-e4dpf-e4dpf-domain-and-local-principle-frameworks-whether-and-how-.md)
+- [E.4.DPF.DA - Evaluate a DPF or LPF Package for Its Declared Use (Package-Adequacy CharacteristicSpace) (E.4.DPF)](10-e4dpf-e4dpfda-evaluate-a-dpf-or-lpf-package-for-its-declared-use-p.md)
+- [E.4.PFR - Pattern-Framework Relation and Edition Discipline (E.4.PFR)](11-e4pfr-e4pfr-pattern-framework-relation-and-edition-discipline.md)
+- [E.4.PFIP - Principle-Framework Publication Integration and Preservation (E.4.PFIP)](12-e4pfip-e4pfip-principle-framework-publication-integration-and-prese.md)
+- [E.5 - Four Guard‑Rails of FPF (E.5)](13-e5-e5-four-guardrails-of-fpf.md)
+- [E.5.1 - DevOps Lexical Firewall (E.5.1)](14-e51-e51-devops-lexical-firewall.md)
+- [E.5.2 - Notational Independence (E.5.2)](15-e52-e52-notational-independence.md)
+- [E.5.3 - Unidirectional Dependency between FPF Families (E.5.3)](16-e53-e53-unidirectional-dependency-between-fpf-families.md)
+- [E.5.4 - Cross‑Disciplinary Bias Audit (E.5.4)](17-e54-e54-crossdisciplinary-bias-audit.md)
+- [E.6 - Didactic Architecture of the FPF Specification (E.6)](18-e6-e6-didactic-architecture-of-the-fpf-specification.md)
+- [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases (E.7)](19-e7-e7-archetypal-grounding-explain-rules-of-fpf-architectural-p.md)
+- [E.8 - FPF Authoring Conventions & Style Guide (E.8)](20-e8-e8-fpf-authoring-conventions-style-guide.md)
+- [E.8.ML - Construct a Pattern Language for Connected Methods (E.8.ML)](21-e8ml-e8ml-construct-a-pattern-language-for-connected-methods.md)
+- [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification (E.8.ECSPF)](22-e8ecspf-e8ecspf-author-an-fpf-pattern-from-an-accepted-evaluation-ch.md)
+- [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions (E.9)](23-e9-e9-design-rationale-record-drr-for-fpf-content-decisions.md)
+- [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace) (E.9.DA)](24-e9da-e9da-evaluate-a-drr-for-its-declared-authoring-use-decision-.md)
+- [E.10 - Unified Lexical Rules for FPF (E.10)](25-e10-e10-unified-lexical-rules-for-fpf.md)
+- [E.10.LRN - Recovering What “Learning” Means in the Current Claim (E.10.LRN)](26-e10lrn-e10lrn-recovering-what-learning-means-in-the-current-claim.md)
+- [E.10.INT - Recovering What Interest or Curiosity Means Here (E.10.INT)](27-e10int-e10int-recovering-what-interest-or-curiosity-means-here.md)
+- [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim (E.10.DEV)](28-e10dev-e10dev-recovering-what-development-or-evolution-means-in-the.md)
+- [E.10.MOVE - Move, Readiness and Trajectory Wording Precision Restoration (E.10.MOVE)](29-e10move-e10move-move-readiness-and-trajectory-wording-precision-rest.md)
+- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture (E.10.ARCH)](30-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md)
+- [E.10.ROLE - Recovering What “Role” Means in the Current Claim (E.10.ROLE)](31-e10role-e10role-recovering-what-role-means-in-the-current-claim.md)
+- [E.10.P - Conceptual Prefixes policy & registry (E.10.P)](32-e10p-e10p-conceptual-prefixes-policy-registry.md)
+- [E.10.D1 - Recovering What “Context” Means in Use (E.10.D)](33-e10d-e10d1-recovering-what-context-means-in-use.md)
+- [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline (E.10.D)](34-e10d-e10d2-entityofconcern-description-episteme-and-specification.md)
+- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline (E.11)](35-e11-e11-first-practical-entry-and-pattern-use-discoverability-di.md)
+- [E.11.PUA - Pattern Use in a Working Situation and First Useful Result (E.11.PUA)](36-e11pua-e11pua-pattern-use-in-a-working-situation-and-first-useful-r.md)
+- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination (E.11.PUR)](37-e11pur-e11pur-pattern-use-applicability-recommendation-and-coordina.md)
+- [E.11.PFP - Framework Publication Form Profile for Markdown (E.11.PFP)](38-e11pfp-e11pfp-framework-publication-form-profile-for-markdown.md)
+- [<FrameworkCode>.Reference:<n> - <Title>](39-frameworkcodereferencen-title.md)
+- [E.11.DSG - Architectural Reference (E.11.DSG)](40-e11dsg-e11dsg-architectural-reference.md)
+- [E.12 - Didactic Primacy & Cognitive Ergonomics (E.12)](41-e12-e12-didactic-primacy-cognitive-ergonomics.md)
+- [E.13 - Pragmatic Utility and Proxy-to-Value Alignment (E.13)](42-e13-e13-pragmatic-utility-and-proxy-to-value-alignment.md)
+- [E.14 - Human-Centric Working-Model: Readable Claims and Recoverable Assurance (E.14)](43-e14-e14-human-centric-working-model-readable-claims-and-recovera.md)
+- [E.15 - Pattern Change, Edition Continuity, and Impact Analysis (E.15)](44-e15-e15-pattern-change-edition-continuity-and-impact-analysis.md)
+- [E.16 - RoC‑Autonomy Budget & Enforcement (E.16)](45-e16-e16-rocautonomy-budget-enforcement.md)
+- [E.17.0 - Viewpoint and View Recognition for Multi-View Describing (E.17.0)](46-e170-e170-viewpoint-and-view-recognition-for-multi-view-describin.md)
+- [E.17.1 - Viewpoint Bundle Library - Reusable Viewpoint Reference Bundles (E.17.1)](47-e171-e171-viewpoint-bundle-library-reusable-viewpoint-reference-b.md)
+- [E.17.2 - TEVB - Project-local Typical Engineering Viewpoint Bundle Template for Holons (E.17.2)](48-e172-e172-tevb-project-local-typical-engineering-viewpoint-bundle.md)
+- [E.17 - Multi‑View Publication Kit (E.17)](49-e17-e17-multiview-publication-kit.md)
+- [E.17.EFP - ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces (E.17.EFP)](50-e17efp-e17efp-explanationfaithfulnessprofile-explanation-use-discip.md)
+- [E.17.ID.CR - Compare Sources Within a Shared Review Frame (ComparativeReviewUnit) (E.17.ID)](51-e17id-e17idcr-compare-sources-within-a-shared-review-frame-compara.md)
+- [E.17.AUD - PublicationUnit Stability Discipline - keep one publication unit stable enough to read honestly (E.17.AUD)](52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md)
+- [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it (E.17.AUD)](53-e17aud-e17audlhr-publicationunit-stability-discipline-and-local-hea.md)
+- [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary-Subject Discipline - publication-unit stability over one primary subject (E.17.AUD)](54-e17aud-e17audootd-publicationunit-stability-discipline-and-publicat.md)
+- [E.18 - Transformation Flow Structure (E.18)](55-e18-e18-transformation-flow-structure.md)
+- [E.18.1 - P2W Problem-to-Work Carry-Through (E.18.1)](56-e181-e181-p2w-problem-to-work-carry-through.md)
+- [E.18.2 - Transformation Flow Mathematical Description (E.18.2)](57-e182-e182-transformation-flow-mathematical-description.md)
+- [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure (E.18.3)](58-e183-e183-constraint-governed-transformation-flow-unfolding-struc.md)
+- [E.18.NET - Network of Transformation-Flow Structures (E.18.NET)](59-e18net-e18net-network-of-transformation-flow-structures.md)
+- [E.19 - Pattern Quality Gates: Review and Refresh Profiles (E.19)](60-e19-e19-pattern-quality-gates-review-and-refresh-profiles.md)
+- [E.20 - Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms (E.20)](61-e20-e20-mechanism-introduction-protocol-introduce-or-revise-fpf-.md)
+- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace (E.21)](62-e21-e21-fpf-pattern-quality-evaluation-characteristicspace.md)
+- [E.22 - Improvement-Oriented Quality Evaluation Question Framing (E.22)](63-e22-e22-improvement-oriented-quality-evaluation-question-framing.md)
+- [E.23 - Quality Improvement Loop Method (E.23)](64-e23-e23-quality-improvement-loop-method.md)
+- [E.23.CDI - Developing Capability for a Named Work Family (E.23.CDI)](65-e23cdi-e23cdi-developing-capability-for-a-named-work-family.md)
+- [E.23.CAE - Capability Access and Expression Differential Probe (E.23.CAE)](66-e23cae-e23cae-capability-access-and-expression-differential-probe.md)
+- [E.24 - U.Ontic and Ontic Introduction Discipline (E.24)](67-e24-e24-uontic-and-ontic-introduction-discipline.md)
+- [E.24.CD - Ontic Candidate Detection and First-Use Disposition (E.24.CD)](68-e24cd-e24cd-ontic-candidate-detection-and-first-use-disposition.md)
+- [E.24.PUB - Episteme Publication: Availability, Form and Carrier (E.24.PUB)](69-e24pub-e24pub-episteme-publication-availability-form-and-carrier.md)
+- [E.24.UK - U-kind Admission and Ontic Settlement (E.24.UK)](70-e24uk-e24uk-u-kind-admission-and-ontic-settlement.md)

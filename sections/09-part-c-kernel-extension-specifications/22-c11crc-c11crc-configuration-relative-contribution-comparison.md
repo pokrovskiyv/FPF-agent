@@ -8,15 +8,15 @@
 >
 > **Status:** Stable
 >
-> **Placement:** a narrow companion used before `C.11` when its comparison basis is not yet available
+> **Use:** construct a finite contribution comparison for a named choice, design or control question
 
 ### C.11.CRC:0 - Use This When
 
-Use this pattern when a bounded addition, replacement, removal, intervention, experiment, information/computation acquisition, capability-development element, project, or component is being justified by “what it adds,” but the current configuration, interactions, resources, horizon, uncertainty, and receiving decision are not yet part of the comparison.
+Use this pattern when a proposed finite change is being justified by “what it adds,” but its contribution has not been compared with the current configuration under the conditions that matter to the receiving decision. The change may add, replace or remove something; it may also acquire information before a later commitment.
 
-**First useful result.** Return one ordinary `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the `C.11` decision that can consume the claim. The comparison does not choose the option.
+**First useful result.** Return one ordinary `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the named receiving question that can consume the claim. It can supply local choice under `C.11`, construction of a continuation under `C.43`, or a subject Method that compares proposed changes. The comparison does not choose the option.
 
-**Cheap exit.** If a current `A.19`/`C.11` account already states the same finite baseline, change, horizon, result and resource coordinates, interactions, uncertainty, and reopen condition, use that account directly.
+**Cheap exit.** If an existing domain calculation or `A.19`/`C.11` account already states the same finite baseline and change with the material comparison conditions and reopen condition, use it directly.
 
 **Not this pattern when.** Do not use it for a source-only comparison with no realizable configuration change; for a purely causal question under `C.28`; for a mathematical-lens question already answered by `C.29` and a field Method; for an archive/front relation under `C.18`; or as a substitute for field-specific finance, optimization, operations, engineering, experimental-design, or capability-development calculation.
 
@@ -51,9 +51,9 @@ Without an explicit configuration-relative comparison, practitioners make at lea
 
 ### C.11.CRC:4 - Solution
 
-Construct the smallest finite counterfactual comparison that can change one named decision.
+Construct the smallest finite counterfactual comparison that can change the answer to one named choice or construction question.
 
-1. **Name the receiving decision.** State the deciding System, current `DecisionSubject`, decision deadline, current `OptionSet` or the option-set question that this comparison will inform, and which result could change the decision.
+1. **Name the receiving question.** State who needs the comparison, the choice or construction it informs, when the result must be available, and which consequence could change that work. For a local `C.11` choice, identify its deciding System, `DecisionSubject` and current `OptionSet` or option-set question. For ongoing control, policy design or development, identify the continuation, rule, direction or means being compared and its receiving Method; a local option set need not already exist.
 2. **Freeze the current configuration.** Name the actual or currently relied-on configuration `S0`, system boundary, affected Systems, the holder or beneficiary and what it holds or benefits from, relevant environment, and what is held fixed only for this comparison. If the affected-System coordinate is missing and could change the comparison, use `A.1.CSD` first; bring back only consequence claims compatible with this `S0`/`Δ`/`S1`, horizon, evidence window, and receiving decision. A historical, empty, or ideal configuration is not the default baseline.
 3. **Name the finite change.** State the addition, replacement, removal, intervention, or probe `Δ`, the realizable candidate configuration `S1`, admissibility conditions, implementation capability, planned transition work, reversibility, and excluded variants.
 4. **Fix horizon and scenarios.** State the interval, relevant states or scenarios, timing assumptions, and any decision or evidence window. Do not combine results from incompatible horizons without an explicit mapping.
@@ -64,14 +64,14 @@ Construct the smallest finite counterfactual comparison that can change one name
 9. **Qualify evidence and uncertainty.** Identify source claims, currentness, uncertainty, sensitivity/robustness results, transfer limits, rival explanations, and `A.10` reliance dispositions where an evidence-bearing claim is used.
 10. **Write the comparison claim.** State what `S1` contributes relative to `S0` only under the declared coordinates, horizon, scenarios, constraints, interactions, and evidence. Use dominated, non-dominated, beneficial, harmful, or indeterminate wording only when the stated relation supports it; do not force one scalar winner.
 11. **Route mathematical near-misses.** Apply the distinction in `C.11.CRC:4.2`; the finite comparison may consume a derivative, sensitivity, shadow price, variational, or inference result without becoming identical to it.
-12. **Return to `C.11`.** Use `C.11` to combine this claim with preferences, belief state, outcome model, probe worth, and other premises and emit one `ChoiceResult`. State the smallest configuration, horizon, evidence, resource, constraint, or option-set change that reopens this comparison.
+12. **Return to the receiving work.** Supply the comparison to the named question from step 1. Use `C.11` when a local chooser and options are ready: it combines the claim with preferences, belief state, outcome model, probe worth and other premises to obtain a `ChoiceResult`. Use `C.43` when the consequence must first be connected to conditional future action, realization or revision; a subject design or development Method can consume the comparison directly. State the smallest configuration, horizon, evidence, resource, constraint or alternative change that reopens this comparison.
 
 #### C.11.CRC:4.1 - Lightweight comparison form
 
 `ConfigurationRelativeContributionComparison@Context` is a form name for one ordinary comparison episteme. It is not a root U-kind, universal delta value, selector result, or decision.
 
 ```text
-receivingDecisionRef:
+receivingQuestionRef:
 currentConfigurationRef: S0
 candidateFiniteChangeRef: Δ
 candidateConfigurationRef: S1
@@ -87,10 +87,10 @@ evidenceAndUncertaintyRefs:
 comparisonClaim:
 unsupportedOverreads:
 reopenCondition:
-nextGoverningPattern: C.11
+nextGoverningPattern: named receiving Method; C.11 when the result supplies its local choice
 ```
 
-Omit a field only when it cannot change this comparison and that omission is apparent from the bounded case. A polished record cannot compensate for a missing current configuration or decision.
+An ordinary comparison sentence or existing calculation can carry this result when the material premises are recoverable. Omit a field when it cannot change the comparison and that omission is apparent from the bounded case. The current configuration and receiving question remain necessary.
 
 #### C.11.CRC:4.2 - Mathematical and model-routing distinction
 
@@ -104,7 +104,7 @@ Omit a field only when it cannot change this comparison and that omission is app
 | Variational inference | Which member of an approximation family best approximates a target probability distribution under a declared divergence or bound? | The result is an approximate distribution and uncertainty account, not an extremal physical trajectory, capability acquisition, or general marginal value. |
 | Evolutionary variation | How are retained variants generated and selected in an evolutionary or cultural process? | The shared word *variation* does not identify the mathematical object or Method above; route to `C.18`, `C.36`, or the field practice. |
 
-This is why calculus of variations matters without becoming the default interpretation of marginality. When the candidate is a whole trajectory, field, function, control, or shape, pointwise finite-coordinate reasoning can miss the coupled admissible deformation. `C.29` governs the mapping from the world or domain model to that mathematical object, what structure is preserved or lost, and when the lens must stop. Specialist practice governs derivation, discretization, solver choice, optimality and sufficiency checks, and validation.
+This is why calculus of variations matters without becoming the default interpretation of marginality. When the candidate is a whole trajectory, field, function, control, or shape, pointwise finite-coordinate reasoning can miss the coupled admissible deformation. Use `C.29` when the mapping from the world or domain model to that mathematical object, its preservation/loss or its transfer limits remain at issue. An adequate domain formulation can be used directly. Specialist practice governs derivation, discretization, solver choice, optimality and sufficiency checks, and validation.
 
 #### C.11.CRC:4.3 - Recognition and assurance split
 
@@ -128,7 +128,7 @@ A positive shadow price for one bottleneck supports a local statement about rela
 
 #### C.11.CRC:5.4 - Capital allocation
 
-A project is compared with the current portfolio and financing/operating configuration. The comparison includes cannibalization, shared resources, risk concentration, financing constraints, irreversibility, staging, information gained before later commitments, and displaced options. NPV, real-options, scenario, and portfolio Methods remain Corporate Finance practice; this pattern supplies only the finite comparison grammar returned to `C.11`.
+A project is compared with the current portfolio and financing/operating configuration. The comparison includes cannibalization, shared resources, risk concentration, financing constraints, irreversibility, staging, information gained before later commitments, and displaced options. NPV, real-options, scenario, and portfolio Methods remain Corporate Finance practice; this pattern supplies the finite comparison returned to that practice or to `C.11` when a local choice is the receiving question.
 
 ### C.11.CRC:6 - Bias Annotation
 
@@ -141,7 +141,7 @@ A project is compared with the current portfolio and financing/operating configu
 
 ### C.11.CRC:7 - Conformance Checklist
 
-1. Is one receiving decision named?
+1. Is the receiving choice or construction question named, including who needs the comparison and what it can change?
 2. Are `S0`, finite `Δ`, and realizable `S1` explicit?
 3. Are system boundary, affected Systems, horizon, scenarios, and evidence window compatible—and, when a missing bearer could change the comparison, was `A.1.CSD` used before freezing this coordinate?
 4. Are result and resource coordinates explicit, with protected coordinates not silently scalarized?
@@ -150,7 +150,7 @@ A project is compared with the current portfolio and financing/operating configu
 7. Are future option effects distinguished from realized results?
 8. Are evidence, uncertainty, sensitivity/robustness, transfer limits, and unsupported overreads visible?
 9. Is each derivative, sensitivity, shadow-price, functional-variation, variational-inference, or evolutionary-variation result used only for its exact question?
-10. Does the output remain a comparison claim, with `C.11` retaining the `ChoiceResult`?
+10. Does the output remain a comparison claim returned to its named use, with `C.11` retaining any `ChoiceResult` sought under that calculus?
 11. Is the smallest reopen condition stated?
 
 ### C.11.CRC:8 - Common Anti-Patterns and Repairs
@@ -158,7 +158,7 @@ A project is compared with the current portfolio and financing/operating configu
 | Anti-pattern | Repair |
 | --- | --- |
 | Candidate value is constant across configurations | Name `S0`, interactions, horizon, and affected Systems. |
-| Average benefit chooses the next element | Preserve result/resource vectors and return the comparison to `C.11`. |
+| Average benefit chooses the next element | Preserve result and resource coordinates and return the comparison to the governing choice Method. |
 | Derivative times step equals finite contribution | State smoothness region and remainder or perform the finite comparison. |
 | Shadow price equals asset value | Keep the local active-constraint result and model the finite intervention separately. |
 | Functional stationarity proves physical optimality | Use `C.29`, physical/domain evidence, sufficiency checks, and validation. |
@@ -167,35 +167,29 @@ A project is compared with the current portfolio and financing/operating configu
 
 ### C.11.CRC:9 - Consequences and Reopen Condition
 
-**Benefits.** Finite additions, removals, replacements, probes, and investments become comparable without requiring additivity, smoothness, or a universal scalar. Domain calculations can be reused while their validity regions remain visible. The result gives `C.11` a stable comparison input and keeps choice authority there.
+**Benefits.** Finite additions, removals, replacements, probes, and investments become comparable without requiring additivity, smoothness, or a universal scalar. Domain calculations can be reused while their validity regions remain visible. The result supplies a stable comparison input to local choice, design or control while leaving the receiving judgement and its authority to their governing practice.
 
 **Costs.** Practitioners must name a baseline, vectors, interactions, and uncertainty that an isolated score could hide. Some cases remain indeterminate until field evidence or implementation capability is available.
 
-Reopen this pattern when repeated cases cannot express their finite comparison with this spine; when a current `A.19`/`C.11` composition fully absorbs the same practitioner entry, action, first result, and stop; or when a mathematical branch requires a different transdisciplinary action rather than a field-specific Method.
+Revisit the comparison when changed conditions could alter its claim. A newly available substitute, tighter resource constraint, changed horizon or loss of relied-on evidence can require a new assessment; retain unaffected premises and claims.
 
 ### C.11.CRC:10 - Rationale
 
-The pattern is narrow because its result is neither a new value ontology nor a decision. The reusable action is to construct a finite configuration-relative claim before local choice. `A.19` remains the comparison-mechanism owner, `C.29` the mathematical-lens owner, and `C.11` the choice owner.
-
-The selected name follows `F.18`. *Marginal contribution decision* conflates finite difference, derivative, economic terminology, and the later decision; *marginal value* encourages one scalar; *sensitivity analysis* names a different question. `Configuration-Relative Contribution Comparison` names the reference configuration and comparison while leaving domain quantities and choice outside.
+The pattern is narrow because its result is neither a new value ontology nor a decision. The reusable action is to construct a finite configuration-relative claim for a receiving choice or construction. The claim can remain useful while alternatives or a conditional policy are still being developed. `A.19` remains the comparison-mechanism owner, `C.29` the mathematical-lens owner, and `C.11` the choice owner.
 
 ### C.11.CRC:11 - SoTA Echoing
 
 | Source line | Adopted move | Limit retained here |
 | --- | --- | --- |
-| Current `C.11`, `A.19`, and `C.29` | Keep choice, comparison mechanisms, and mathematical-lens use with their current owners. | Internal architecture is not evidence for domain quantities. |
 | Ortega and Braun, [information-processing costs in decision making](https://arxiv.org/abs/1204.6481), 2013 | Keep the resource costs of information acquisition and computation explicit in the decision. | Statistical-physics form is a model under assumptions, not proof of literal physical free-energy minimization. |
 | Blei, Kucukelbir, and McAuliffe, [*Variational Inference: A Review for Statisticians*](https://www.cs.columbia.edu/~blei/papers/BleiKucukelbirMcAuliffe2017.pdf), 2017 | Keep target distribution, approximation family, optimization, speed/scale, and uncertainty trade-offs visible. | Historical field anchor; it does not define calculus-of-variations design or general contribution. |
 | MIT OpenCourseWare, [*Matrix Calculus for Machine Learning and Beyond*](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/pages/lecture-notes-and-readings/), 2023 calculus-of-variations material | Treat a function, trajectory, or field as the varied object under admissible variation and boundary structure. | Course material supplies a mathematical distinction, not FPF ontology or physical evidence. |
 | Huan, Jagalur, and Marzouk, [optimal experimental design review](https://arxiv.org/abs/2407.16212), 2024/2026 | Keep design variables, utility, model assumptions, computational cost, robustness, and myopic/non-myopic boundaries explicit. | Specialist experiment design remains outside this finite comparison pattern. |
-| Current systems, operations, finance, and human-capability cases named in the receiving DPF programme | Stress-test finite baseline, interactions, constraints, uncertainty, and option effects across unlike fields. | Cross-field recurrence establishes the comparison spine, not transferable formulas, thresholds, or authority. |
-
-Refresh only the affected source-use row when a newer result changes one Solution distinction or shows that a field-independent method can replace it. Older mathematical anchors remain historical where current work has repaired their limits.
 
 ### C.11.CRC:12 - Relations
 
 - **Builds on:** `C.2.1`, `A.10`, `A.19`, `C.16`, `C.27`, `C.28`, and `C.29`.
-- **Supplies:** one finite comparison claim to `C.11`; it can also supply an input to a field-specific portfolio, programme, intervention, architecture, or experiment decision.
+- **Supplies:** a finite comparison claim to `C.11` for local choice, to `C.43` for a connected control continuation, or directly to a field-specific portfolio, programme, intervention, architecture or experiment Method. The receiving use determines which connection is needed; these are not mandatory successive stages.
 - **Coordinates with:** `A.1.CSD` when affected-System consequence coordinates are missing; `C.18` when the candidate changes the possibility space; `C.19` for pool governance; `B.3` for assurance; `A.15` for the distinction between transition plans (`A.15.2`) and performed transition Work (`A.15.1`); and the direct field practice for calculation and validation.
 - **Keeps outside:** universal marginal value, a new delta kind, domain formulas and thresholds, causal proof, assurance, permission, selected-set declaration, and `ChoiceResult`.
 

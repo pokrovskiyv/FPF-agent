@@ -1,17 +1,17 @@
 # Part G - Discipline SoTA Patterns Kit
 
-- [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-gcore-discipline-sota-kit-invariants-defaults-and-refresh-tr.md) — Central hub of invariants for Part G; prevents semantic drift when comparison patterns evolve
-- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec) (G.0)](02-g0-g0-define-admissible-comparison-and-aggregation-for-a-frame-.md) — Define legal rules for comparing and aggregating data in a frame before any analysis begins
-- [G.1 - Author a Reusable CG-Frame Generator and Selector Kit (G.1)](03-g1-g1-author-a-reusable-cg-frame-generator-and-selector-kit.md) — Author a reusable six-card scaffold for a repeatable comparison or selection framework
-- [G.2 - Harvest and Synthesize SoTA for a CG-Frame (G.2)](04-g2-g2-harvest-and-synthesize-sota-for-a-cg-frame.md) — Harvest and synthesize state-of-the-art literature, keeping rival traditions separate and citable
-- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md) — Define measurable characteristics with proper scales and legality rules to prevent illicit arithmetic
-- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md) — Define reusable operators and acceptance rules before any candidate is actually evaluated
-- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration (G.5)](07-g5-g5-method-family-registry-dispatch-and-selected-set-result-d.md) — Declare which candidates a selector should return, including shortlists and joint-use sets
-- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md) — Record a citable path through evidence and provenance so downstream work can replay or audit it
-- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md) — Calibrate how terms from different traditions correspond before allowing cross-tradition reuse
-- [G.8 - Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG) (G.8)](10-g8-g8-package-method-family-admissibility-rules-and-maturity-la.md) — Package method-family admission rules and maturity ladders so a selector can consume them
-- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md) — Run a parity comparison under one explicit plan so benchmark results stay reproducible
-- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md) — Ship analysis outputs as a defined pack with audit trails and refresh hooks attached
-- [G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay) (G.11)](13-g11-g11-decide-whether-and-how-to-refresh-sota-packs-and-related.md) — Decide whether and how to refresh stale analysis packs when sources or editions change
-- [G.12 — DHC Dashboards (Discipline-Health Time Series and Views) (G.12)](14-g12-g12-dhc-dashboards-discipline-health-time-series-and-views.md) — Build a discipline-health time series and dashboard view from measurement results
-- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md) — Wire external scholarly indexes into the analysis pipeline without leaking their semantics
+- [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-gcore-discipline-sota-kit-invariants-defaults-and-refresh-tr.md)
+- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec) (G.0)](02-g0-g0-define-admissible-comparison-and-aggregation-for-a-frame-.md)
+- [G.1 - Author a Reusable CG-Frame Generator and Selector Kit (G.1)](03-g1-g1-author-a-reusable-cg-frame-generator-and-selector-kit.md)
+- [G.2 - Harvest and Synthesize SoTA for a CG-Frame (G.2)](04-g2-g2-harvest-and-synthesize-sota-for-a-cg-frame.md)
+- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates (G.3)](05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md)
+- [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring (G.4)](06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md)
+- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration (G.5)](07-g5-g5-method-family-registry-dispatch-and-selected-set-result-d.md)
+- [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths (G.6)](08-g6-g6-evidence-graph-and-provenance-ledger-citable-evidence-pro.md)
+- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels) (G.7)](09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md)
+- [G.8 - Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG) (G.8)](10-g8-g8-package-method-family-admissibility-rules-and-maturity-la.md)
+- [G.9 — Parity and Benchmark Harness (G.9)](11-g9-g9-parity-and-benchmark-harness.md)
+- [G.10 - SoTA Pack Shipping (G.10)](12-g10-g10-sota-pack-shipping.md)
+- [G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay) (G.11)](13-g11-g11-decide-whether-and-how-to-refresh-sota-packs-and-related.md)
+- [G.12 — DHC Dashboards (Discipline-Health Time Series and Views) (G.12)](14-g12-g12-dhc-dashboards-discipline-health-time-series-and-views.md)
+- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual) (G.13)](15-g13-g13-external-interop-hooks-for-sota-discipline-packs-concept.md)

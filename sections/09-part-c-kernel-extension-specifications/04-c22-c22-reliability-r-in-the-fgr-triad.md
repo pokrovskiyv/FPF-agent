@@ -7,19 +7,20 @@
 
 ### C.2.2:1 - Problem frame
 
-KD‑CAL asks a simple operational question: *“Where can I safely use this claim?”*
-FPF answers with a minimal “epistemic location” built from three coordinates. Any relations traversed by a justification path are named separately:
+KD‑CAL asks: *“What does the available support warrant for this claim and use?”*
+FPF separates expression, applicability and warrant in the F–G–R assessment. Relations traversed by a justification path are named separately:
 
 * **F** (Formality) describes *how the claim is expressed* and how strongly it supports verification workflows (C.2.3).
 * **G** (Claim scope) describes *where the claim is asserted to apply* as a set-like object (A.2.6).
 * **R** (Reliability) describes *how strongly the claim is warranted* by linked evidence under that scope.
 * **CL / CL^k / CL^plane** (Congruence Levels) describe fit or loss for the relation families that define them—for example, a semantic relation, kind relation, or reference-plane relation (B.3, C.3, F.9).
   A CL value belongs to the declared relation or traversal used by the path, not to the claim as a fourth coordinate. Shared wording about a "context" creates no relation and no loss value.
+
 In practice, the triad is frequently used before it is made explicit:
 
 * Authors implicitly “average” disparate evidence and report a single confidence.
 * Teams treat higher formality (F) as if it automatically implies higher warrant (R).
-* Scope growth is smuggled in through phrasing instead of explicit scope operators (A.2.6).
+* The claim's scope grows implicitly through phrasing instead of explicit scope operators (A.2.6).
 * A claim or its evidence is reused after a change of scope, kind, plane, notation, source-local meaning, model-use basis, or evidence basis without naming the actual relation and routing its declared loss into R.
 
 This pattern makes **R** explicit in KD‑CAL and fixes the **triad discipline** required by Kind‑CAL (C.3) and the Trust & Assurance calculus (B.3).
@@ -32,7 +33,6 @@ FPF needs a reliability coordinate that is:
 2. **Composable.** Support can be combined under its warranted meanings and dependencies without illegal scale arithmetic; where no aggregate is justified, the separate contributions remain usable.
 3. **Orthogonal.** R is not conflated with F (expression) or G (scope).
 4. **Relation-aware.** Any loss declared by an actual scope-translation, kind, plane, notation, source-local, model-use, or evidence-reuse relation is explicit and affects **R only**.
-5. **Minimal.** The solution does not introduce new core types or new face-kinds.
 
 ### C.2.2:3 - Forces
 
@@ -56,7 +56,7 @@ An epistemic location for a claim `c` is the tuple:
 
 where:
 
-* `F(c)` is Formality (C.2.3), treated as an **ordinal**.
+* `F(c)` is the assessment of the expression properties needed for this use under C.2.3. It may use a declared profile or a justified local ordered summary; it is not a universal ordinal value.
 * `G(c)` is Claim scope (A.2.6), treated as a **set-like scope object**.
 * `R_eff(c)` names the effective warrant for this claim and use. Its meaning and scale come from the B.3 receiving model, not from the letter R. A probability-like or ratio-scale value in `[0,1]` needs that model; an ordinal proxy keeps its declared ordinal meaning.
   If no common quantitative model is justified, report R as unquantified with the separate support and bounded conclusion, rather than substitute zero or invent a score. When a guard consumes a path-specific value, identify the actual PathId and its model (§4.8.A / G.6); a declared policy name alone does not warrant collapsing paths into one scalar.
@@ -83,10 +83,10 @@ In all modes, **R remains warrant**, not ontological truth; “proof ⇒ R=1 in 
 **Definition DEF‑C2.2‑2 (Reliability as warrant).**
 `R` is a conservative, evidence-bound indicator of how strongly the claim "holds as stated" under its declared `U.ClaimScope` and the separately named evidence and use conditions. It is interpreted as *warrant strength*, not as truth.
 
-**Prophylactic clarification.**
+**Interpreting the assessments.**
 
 * A higher `R` means stronger warrant only within the same declared quantity, scale, claim, and receiving model. A number from another model is not automatically comparable.
-* A higher `F` means “the claim’s form is amenable to higher-formality checking and wider reuse,” but does not itself imply the claim is warranted.
+* A change in F identifies changed expression properties or a justified change on a declared local scale. It can enable a particular check or reuse without establishing the claim's warrant or widening its scope.
 * A larger `G` means “the claim applies to more cases,” but does not itself imply the claim is warranted in those cases.
 
 #### C.2.2:4.3 - Dependence-sensitive support composition
@@ -116,7 +116,7 @@ A reused claim may traverse more than one independently governed relation. Befor
 
 A scope translation may narrow or re-express `G`; it never widens the claim silently. A change in formality is a new episteme or explicit ΔF move, not a transport penalty. A semantic Bridge changes neither kind nor scope by itself. A kind or plane relation supplies no semantic correspondence unless that separate relation also obtains. Evidence reuse changes warrant only through its own evidence-use or reliance claim.
 
-There is no implicit crossing. If a reuse depends on a changed value and its required relation or operation is absent, unresolved, or outside its applicability, the reuse is non-conformant. This keeps guard macros simple: each path records the relations it actually traverses and routes their declared losses to `R`, while every other coordinate changes only under its own rule.
+There is no implicit crossing. If a reuse depends on a changed value and its required relation or operation is absent, unresolved, or outside its applicability, the reuse is non-conformant. Each path records the relations it actually traverses and routes their declared losses to `R`, while every other coordinate changes only under its own rule.
 
 #### C.2.2:4.4.A - Worked micro-example: scope revision and evidence reuse
 
@@ -148,24 +148,24 @@ For a loss-only interpretation on an ordered scale, worsening fit cannot by itse
 
 #### C.2.2:4.5.A - Formality and scale discipline
 
-* Ordinal F, CL, and ordinal R proxies permit only operations justified for their ordered meanings, not arithmetic pretending they are ratio-scale measurements.
+* A local ordinal formality summary, CL, and ordinal R proxies permit only operations justified for their ordered meanings, not arithmetic pretending they are ratio-scale measurements. A formality profile is not one number to rescale.
 * A numerical R requires a justified receiving model even at high formality. A complete formal proof remains useful with empirical R marked N/A; a missing empirical score does not demote the theorem.
 * When support has no common numerical model, publish its separate contributions, limitations, and the bounded conclusion. Use validity windows, empirical reproducibility information, and B.3.4 decay only where the claim actually consumes them.
 
-#### C.2.2:4.6 - Evidence lanes are not new characteristics
+#### C.2.2:4.6 - Assurance lanes
 
-KD‑CAL does not add new global coordinates beyond F–G–R. Instead, it requires that reliability be *explainable* via **assurance lanes** (B.3.3):
+KD‑CAL requires that reliability be explainable through the applicable **assurance lanes** (B.3.3):
 
 * **TA** (Typing assurance): semantic/type alignment sufficient for transport and composition.
 * **VA** (Verification assurance): logical/algorithmic checking, proof, model checking, static guarantees.
 * **LA** (Validation assurance): empirical adequacy under declared conditions, tests, benchmarks, telemetry.
 
-Lane reporting is how KD-CAL supports the common research distinction between logical soundness and empirical adequacy **without introducing new global characteristics**.
+Lane reporting distinguishes logical soundness, empirical adequacy and typing or semantic alignment.
 Lanes remain **separable** in SCR/Notes; they are not averaged into a “single tradition score”.
 
 #### C.2.2:4.7 - Scope operations are kind-safe (and use the ClaimScope algebra)
 
-Reliability is meaningless if scope operations are applied to ill-typed entities.
+Establish the kinds of the claim subjects before combining their scopes.
 
 **Well-formedness constraint WFC‑C2.2‑1 (Type before scope).**
 Let `G1` and `G2` be claim scopes for claims about entities of kinds `K1` and `K2`. A scope operation that combines them—such as `G1 ∩ G2` for serial intersection or `SpanUnion({G_i})` for parallel coverage—is defined only if:
@@ -210,7 +210,7 @@ Informative; non-binding.
 
 > `c1:` “For road friction μ ∈ [0.2, 0.9] and vehicle mass m ∈ [900, 2200] kg, wheel slip stays in [0.05, 0.25] under ABS control.”
 
-* `F(c1)=F5` because the controller and constraints are expressed as a machine-checkable model plus executable test harness (C.2.3).
+* The formality assessment of `c1` identifies the declared model variables, constraint predicates and execution semantics of the test harness under C.2.3. These properties enable the specified checks and tests; their results and the model's fit to the physical plant require the separate evidence below.
 * `G(c1)` has the stated μ/m bounds, but this illustration leaves the speed domain and admissible tire set unspecified. Under A.2.6, those domains and any coupled restrictions are needed to decide membership of a slice satisfying the stated bounds; that membership remains unresolved here. A product set in `(μ, m, speed, tire)` space is justified only if its scope predicate admits every combination of the selected domains.
 * Evidence:
 
@@ -235,10 +235,10 @@ If track telemetry is used as evidence for the road claim, establish the exact A
 Informative; non-binding.
 
 
-* **Onto/Epist bias:** High formality is often mistaken for high warrant (“proof therefore true in the world”). This pattern mitigates by forcing LA/TA visibility and by routing transport loss into R rather than mutating the claim.
-* **Prag bias:** Teams may Goodhart R by narrowing scope or selecting easy tests. This pattern mitigates by requiring explicit scope declaration and by making scope changes first-class (A.2.6).
-* **Gov bias:** Overconfident reuse after a changed scope, scheme, model use, evidence basis, kind, or plane is a recurring failure. This pattern requires the actual relation and its declared loss instead of one generic crossing label.
-* **Did bias:** A single scalar is seductive; it hides what kind of warrant exists. Lane reporting keeps the scalar honest.
+* **Ontological and epistemic bias:** High formality is often mistaken for high warrant (“proof therefore true in the world”). Report the applicable assurance lanes and route declared reuse loss into R. A formal proof keeps its conclusion under its axioms; empirical adequacy needs its own support.
+* **Pragmatic bias:** Teams may Goodhart R by narrowing scope or selecting easy tests. Explicit scope and its revisions under A.2.6 expose the cases covered by the claim.
+* **Governance bias:** Overconfident reuse after a changed scope, scheme, model use, evidence basis, kind, or plane is a recurring failure. This pattern requires the actual relation and its declared loss instead of one generic crossing label.
+* **Didactic bias:** A single scalar can hide what kind of warrant exists. Separate lane reporting keeps the kinds of support visible.
 
 ### C.2.2:7 - Conformance Checklist
 
@@ -253,7 +253,7 @@ Normative.
 | **CC‑C.2.2‑5 (Loss model visibility).** | Any numerical reuse loss SHALL identify its receiving quantity, scale, assumptions, derivation or calibration, and actual functions and versions, including Π where used. | Makes the calculation reproducible and its meaning inspectable. |
 | **CC‑C.2.2‑6 (Type before scope).**           | Authors and validators **SHALL** enforce **WFC‑C2.2‑1** for scope composition operations.                                                                                                                                   | Prevents ill-typed scope algebra from creating incoherent reliability claims. |
 | **CC‑C.2.2‑7 (Evidence binding).**            | Authors **SHALL** bind any asserted `R_eff` to evidence references that enable TA/VA/LA inspection, consistent with the assurance lane discipline (B.3.3) and evidence decay discipline (B.3.4).                            | Keeps R grounded and updateable.                                              |
-| **CC‑C.2.2‑8 (No ordinal arithmetic).** | Validators SHALL reject arithmetic that treats ordinal F, CL, or an ordinal R proxy as ratio-scale values. A receiving conversion model must establish meaning, scale, conversion, and assumptions; a penalty table or rescaling alone is insufficient. Formal validity never supplies empirical reliability by itself. | Preserves scale legality and useful formal conclusions. |
+| **CC‑C.2.2‑8 (No ordinal arithmetic).** | Validators SHALL reject arithmetic that treats a local ordinal formality summary, CL, or an ordinal R proxy as ratio-scale values. A receiving conversion model must establish meaning, scale, conversion, and assumptions; a penalty table or rescaling alone is insufficient. Formal validity never supplies empirical reliability by itself. | Preserves scale legality and useful formal conclusions. |
 | **CC‑C.2.2‑9 (Interpretation conditions declared).** | Authors **SHALL** distinguish design- and run-time assurance and declare `ReferencePlane`, effective scheme, model-use basis, working situation, and `validationMode` where each changes the claim or use.                               | Makes interpretation auditable without a generic Context identity field.     |
 | **CC‑C.2.2‑10 (Dependence and scope).** | Authors SHALL expose actual shared premises, data, assumptions, and biases. Any assumed independence must be justified for the model and use; different path labels do not suffice. Keep distinct scope slices and counterevidence visible; do not fall back to minimum for entangled support. | Prevents double-counting without erasing complementary evidence. |
 
@@ -266,9 +266,9 @@ Informative; non-binding.
 | **Unsupported assurance fold** | A mean, minimum, maximum, or weighted sum is reported as confidence without its model | Boundedness and monotonicity do not warrant the input scale or dependency interpretation | Identify support roles and a justified receiving model; otherwise return separate support and a bounded synthesis. |
 | **Truth-by-score**         | `R=0.9` is treated as “the claim is true.”                                                    | R is warrant strength, not ontological truth.                    | Require explicit evidence links and scope; treat R as decision warrant only.                             |
 | **Scope laundering**       | The claim’s applicability grows by wording changes while `G` is unchanged.                    | It silently widens scope, making comparisons meaningless.        | Use A.2.6 operators and treat scope changes as explicit revisions.                                       |
-| **Relation laundering**    | A claim or its evidence is reused after a changed scope, kind, plane, notation, local meaning, model use, or evidence basis, while `R` is carried over unchanged. | It hides the actual change and its relation-specific loss. | Name the direct relation or scope operation and recompute `R_eff` from its declared loss; stop if that relation is missing. |
+| **Relation laundering** | A claim or its evidence is reused after a change, and its old warrant is carried forward without establishing its applicability to the receiving use. | It hides the changed value and any relation-specific loss. | Name the actual relation or scope operation and apply its warranted loss, if any. Calculate `R_eff` only under a justified model; otherwise retain separate support and a qualified conclusion. Stop the reuse if a required relation is missing. |
 | **DesignRunTag chimera**     | Design-time proofs and run-time telemetry are mixed as if they were the same evidence object. | Evidence belongs to different stances and decays differently.    | Separate lanes and validity windows; treat crossings explicitly.                                         |
-| **Ordinal arithmetic** | F or CL ranks become a probability or loss merely by tagging, tabulating, or rescaling them | Ordered categories are not calibrated ratio quantities | Retain the ordinal meaning; any receiving conversion needs its actual model, meaning, scale, and assumptions. |
+| **Ordinal arithmetic** | Local formality or CL ranks become a probability or loss merely by tagging, tabulating, or rescaling them | Ordered categories are not calibrated ratio quantities | Retain the ordinal meaning; any receiving conversion needs its actual model, meaning, scale, and assumptions. |
 | **Counting support labels** | More reports are treated as independent confirmation, or one weak additional study automatically defeats the whole | Duplicates, shared bias, complementary information, and counterevidence contribute differently | Recover their actual dependencies and effects on the claim; use neither study count nor a universal min/max fallback. |
 
 ### C.2.2:9 - Consequences
@@ -283,13 +283,13 @@ Informative; non-binding.
 
 ### C.2.2:10 - Rationale
 
-A triad only works if each coordinate has a single job.
+The triad separates expression, applicability and warrant so that improving one is not mistaken for improving the others.
 
 * **G states applicability.** It states where the claim is asserted to apply. If G is implicit, teams argue about “what was meant” instead of updating scope.
-* **F carries checkability.** It states how much the claim’s form supports mechanised scrutiny and reuse. If F is conflated with R, formalisation becomes a rhetorical weapon.
+* **F describes expression properties.** It identifies what the claim's terms, semantics and inferential relations make available for interpretation, scrutiny and reuse. If these properties are conflated with R, formalisation becomes a rhetorical substitute for support.
 * **R carries warrant.** It describes support for this exact claim and use under a named meaning and scale. Its inputs must not erase the distinction between a necessary premise, complementary evidence, and a credible contrary result.
 
-Routing a traversed relation's declared congruence loss into **R only** prevents a subtle failure: a change of scope, kind, plane, notation, source-local meaning, model-use basis, or evidence basis cannot silently rewrite the claim or carry its old warrant forward.
+Each changed value has its own rule. Route a traversed relation's declared congruence loss into **R**; change the claim's expression or scope only through the applicable expression or scope operation. Re-establish warrant for the receiving use instead of carrying it forward without a basis.
 
 No universal fold is conservative for every support model. Minimum can overstate a conjunctive probability and can also suppress useful complementary evidence. The small common rule is to establish input meanings and dependencies, calculate only what they warrant, and otherwise preserve a useful bounded synthesis.
 
@@ -297,13 +297,13 @@ No universal fold is conservative for every support model. Minimum can overstate
 
 Normative.
 
-**SoTA pack binding note.** If a G.2 SoTA Synthesis Pack has sources that bear on reliability under the exact changed claim scope, kind, reference plane, notation, source-local meaning, model use, or evidence basis in this case, cite the relevant ClaimSheet IDs and CorpusLedger entries. Cite a `BridgeMatrix` row only when the current path actually uses an F.9 cross-local semantic Bridge represented by that row. Where no such pack supplies a relied-on result, retain the directly identified sources and support as applicable; no empty pack record is required. Neither a generic Context nor a generic transport package is required.
+**SoTA pack binding note.** If a G.2 SoTA Synthesis Pack has sources that bear on reliability under the exact changed claim scope, kind, reference plane, notation, source-local meaning, model use, or evidence basis in this case, cite the relevant ClaimSheet IDs and CorpusLedger entries. Cite a `BridgeMatrix` row only when the current path actually uses an F.9 cross-local semantic Bridge represented by that row. Where no such pack supplies a relied-on result, retain the directly identified sources and support as applicable; no empty pack record is required.
 
-| Practice claim                                                                                                      | Post‑2015 source anchor                                                                   | Alignment to this pattern                                                                                                                                                           | Adoption status                                                                                                      |
+| Practice claim                                                                                                      | Source anchor                                                                   | Alignment to this pattern                                                                                                                                                           | Adoption status                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | Verification and validation should be distinguished and tied to evidence quality, not rhetoric. | ASME V&V 40-2018 (model credibility assessment; historical anchor). | Keep VA and LA separate and attach warrant to evidence, claim, and use. | **Adapt** this distinction; this source is not a justification for a universal KD-CAL minimum. |
 | Trustworthiness depends on intended use, affected risks, operating conditions, and explicit limits.              | NIST AI Risk Management Framework 1.0 (2023).                                             | This pattern makes claim limits explicit through `G` and applies CL penalties only through the actual relation used by a reuse path.                                               | **Adapt**, because FPF treats declared relation loss as an epistemic penalty, not only as an organisational risk statement. |
-| Safety arguments should make claims, evidence, and assumptions explicit and reviewable. | UL 4600 (2020) and related assurance-case practice in autonomous systems. | This pattern treats `R` as an auditable warrant signal whose inputs are explicit evidence items; any reuse names the exact relation traversed and its declared loss. | **Adopt**, while remaining notation-independent and avoiding tool mandates. |
+| Safety arguments should make claims, evidence, and assumptions explicit and reviewable. | UL 4600 (2020) and related assurance-case practice in autonomous systems. | This pattern treats `R` as an auditable warrant signal whose inputs are explicit evidence items; any reuse names the exact relation traversed and its declared loss. | **Adopt** the claim–evidence–assumption discipline. |
 | Empirical results should be accompanied by structured provenance and usage conditions to enable reuse and critique. | “Datasheets for Datasets” (Gebru et al., 2018) and “Model Cards” (Mitchell et al., 2019). | Scope discipline and lane reporting make empirical warrant reusable only when the exact evidence, claim, use, conditions, and any evidence-reuse or dataset relation are explicit; that relation's declared loss routes to `R_eff` only. | **Adopt**, with relation-specific congruence penalties as the reuse control mechanism. |
 | Reproducibility requires packaging evidence and making it re-checkable by others. | ACM Artifact Review and Badging (updated practices post-2015) and The Turing Way (2019). | This pattern treats evidence as inspectable across TA/VA/LA lanes and lets reliability decay when evidence becomes stale or non-replayable. | **Adapt**, because FPF treats freshness and relation-specific reuse losses as first-class calculus inputs. |
 | Strong inference needs evidence that discriminates against live rival explanations. | Mayo (2018) on severity in statistical inference (historical anchor). | Keep the limitation or rival explanation that a test actually addresses visible. | **Adapt** the methodological concern, not an asserted derivation of minimum or any universal R formula. |
@@ -311,7 +311,7 @@ Normative.
 The current methodological comparison is [Gutierrez, Glymour and Davey Smith, *Evidence triangulation in health research* (2025)](https://link.springer.com/article/10.1007/s10654-024-01194-6): compare target questions, design assumptions and possible shared biases; use qualitative synthesis where quantitative combination is unwarranted. **Adapt** those distinctions for heterogeneous support. The paper supplies neither a universal R scale nor a requirement to commission another study for every useful conclusion.
 
 ### C.2.2:12 - Relations
-**Builds on:** C.2 (KD-CAL overview), A.2.6 (claim scope and scope revision), C.2.3 (Formality F), B.3 and B.3.3/B.3.4 (assurance, evidence lanes, and refresh), B.1.3 (Γ-fold patterns), C.3.3 (cross-kind use), G.6 (EvidenceGraph PathId discipline), C.29/A.6.3.RT (notation and representation relations), A.1.1 (selected model-use structure), and A.10/B.3 for exact evidence-use and reliance relations. F.9 is used only when an obtaining relation between distinct local meanings, reference schemes, or reference planes is part of the path.
+**Builds on:** C.2 (KD-CAL overview), A.2.6 (claim scope and scope revision), C.2.3 (Formality F), B.3 and B.3.3/B.3.4 (assurance, evidence lanes, and refresh), B.1.3 (Γ-fold patterns), C.3.3 (cross-kind use), G.6 (EvidenceGraph PathId discipline), C.29/A.6.3.RT (notation and representation relations), A.1.1 (selected model-use structure), and A.10/B.3 for exact evidence-use and reliance relations. F.9 is used only for an actual semantic correspondence between distinct local meanings. Reference-scheme or reference-plane changes keep their own rules.
 **Coordinates with:** C.16 for measurement claims, E.14 for working-model assertions, F.17 for optional local-meaning addresses, and E.18/E.17/A.21 when their own transfer, publication, or gate objects are current. G.2 supplies relevant source-pack entries; G.7 remains the conditional calibration path for its declared cross-Tradition/F.9 Bridge use, not a universal calibration owner.
 **Used by:** C.3.3 for cross-kind reuse discipline, guard macro bundles in C.3.A and C.21, and acceptance or gating logic that consumes `R_eff` while preserving `F` and `G`.
 **Clarifies:** the KD-CAL meaning of reliability implicit in C.2:4.1 and the relation-specific reuse claims referenced across B.3 and C.3; it does not create a universal transport relation.
