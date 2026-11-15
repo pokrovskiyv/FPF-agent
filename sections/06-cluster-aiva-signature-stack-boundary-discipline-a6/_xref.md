@@ -1,6 +1,6 @@
 # Cross-References into 06-cluster-aiva-signature-stack-boundary-discipline-a6
 
-Patterns in other Parts that reference patterns in this directory (234 refs).
+Patterns in other Parts that reference patterns in this directory (222 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -80,27 +80,15 @@ Patterns in other Parts that reference patterns in this directory (234 refs).
 | A.15.PROD | coordinates_with | A.6.1 |
 | A.15.PROD | coordinates_with | A.6.P |
 | A.16.2 | coordinates_with | A.6.P |
-| A.19 | builds_on | A.6.5 |
 | A.19.CHR | builds_on | A.6.7 |
 | A.19.CHR | builds_on | A.6.1 |
-| A.19.CHR | builds_on | A.6.5 |
 | A.19.CN | coordinates_with | A.6.1 |
-| A.19.CPM | builds_on | A.6.1 |
-| A.19.CPM | builds_on | A.6.5 |
 | A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | builds_on | A.6.3 |
 | A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | coordinates_with | A.6.P |
 | A.19.SOURCE-SET-SPACE-SUBSTRATE | coordinates_with | A.6.P |
 | A.19.SPR | coordinates_with | A.6.P |
+| A.19.SelectorMechanism | builds_on | A.6.0 |
 | A.19.SelectorMechanism | builds_on | A.6.1 |
-| A.19.SelectorMechanism | builds_on | A.6.5 |
-| A.19.UINDM | builds_on | A.6.1 |
-| A.19.UINDM | builds_on | A.6.5 |
-| A.19.ULSAM | builds_on | A.6.1 |
-| A.19.ULSAM | builds_on | A.6.5 |
-| A.19.UNM | builds_on | A.6.1 |
-| A.19.UNM | builds_on | A.6.5 |
-| A.19.USCM | builds_on | A.6.1 |
-| A.19.USCM | builds_on | A.6.5 |
 | A.20 | builds_on | A.6.1 |
 | A.20 | builds_on | A.6.4 |
 
@@ -111,7 +99,7 @@ Patterns in other Parts that reference patterns in this directory (234 refs).
 | B.1.2 | coordinates_with | A.6.F |
 | B.1.2 | coordinates_with | A.6.M |
 | B.1.5 | builds_on | A.6.RCD |
-| B.1.6 | builds_on | A.6.1 |
+| B.1.6 | coordinates_with | A.6.1 |
 | B.2.2 | coordinates_with | A.6.F |
 | B.2.4 | coordinates_with | A.6.F |
 | B.2.4 | coordinates_with | A.6.M |
@@ -168,7 +156,6 @@ Patterns in other Parts that reference patterns in this directory (234 refs).
 | C.29.2 | coordinates_with | A.6.3.RT |
 | C.29.3 | coordinates_with | A.6.1 |
 | C.3.1 | builds_on | A.6.REL |
-| C.3.2 | builds_on | A.6.0 |
 | C.3.3 | coordinates_with | A.6.REL |
 | C.30 | builds_on | A.6.3 |
 | C.30 | coordinates_with | A.6.F |
@@ -238,6 +225,7 @@ Patterns in other Parts that reference patterns in this directory (234 refs).
 | E.24 | builds_on | A.6.REL |
 | E.24 | builds_on | A.6.0 |
 | E.24 | builds_on | A.6.5 |
+| E.24.CD | builds_on | A.6.3.RT |
 | E.24.CD | builds_on | A.6.5 |
 | E.24.CD | builds_on | A.6.RSIR |
 | E.24.CD | builds_on | A.6.F |

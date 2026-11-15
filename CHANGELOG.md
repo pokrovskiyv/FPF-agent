@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-11-15
+
+### What's New
+- The searchable spec grew to **141,383 lines** (440 sections, 400 indexed patterns) — up from ~133,000 lines, the largest growth in several cycles.
+- **Sharper plain-language core patterns** — the foundational patterns for scope testing (A.2.6) and method identification (A.3.1) were rewritten to use clearer, everyday language. The Solution section for methods now reads as a practical instruction rather than a technical definition.
+- **Method selection guidance** — new guidance for picking the right method from a family of related methods: how to identify the required effect, rule out candidates that don't fit the conditions, and state which one you selected and why. Useful when a domain practice offers several approaches and you need to justify a choice.
+- **Concrete scope-testing example** — a worked example (workshop report + gauge inspection) now shows step-by-step how to test whether a document's coverage actually applies to a specific job, so the distinction between "this document exists" and "this document covers my situation" is easier to apply.
+- **Domain frameworks substantially updated** — all Management, Engineering, Foundational Thinking, and Human Capability suite frameworks received major rewrites, including Operations Management, Strategy, Research Method Practice, Narrativization, Marketing, and Organization Change. Each now covers more situations and has sharper pattern definitions.
+- **Source references now in English** — bibliographic source references throughout the spec that were previously in Russian are now given in English, making the provenance of patterns more accessible to non-Russian readers.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.17.0)
+
 ## 2026-11-01
 
 ### What's New

@@ -1,6 +1,6 @@
 # Cross-References into 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
-Patterns in other Parts that reference patterns in this directory (188 refs).
+Patterns in other Parts that reference patterns in this directory (181 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -77,14 +77,9 @@ Patterns in other Parts that reference patterns in this directory (188 refs).
 | A.15.PROD | coordinates_with | F.18 |
 | A.19 | coordinates_with | F.9 |
 | A.19.CN | coordinates_with | F.9 |
-| A.19.CPM | coordinates_with | F.18 |
 | A.19.ECS | builds_on | F.18 |
 | A.19.ECS | coordinates_with | F.19 |
 | A.19.SPR | builds_on | F.18 |
-| A.19.UINDM | coordinates_with | F.18 |
-| A.19.ULSAM | coordinates_with | F.18 |
-| A.19.UNM | builds_on | F.18 |
-| A.19.USCM | coordinates_with | F.18 |
 | A.22.CGUS | coordinates_with | F.17 |
 | A.8 | builds_on | F.8 |
 | A.8 | builds_on | F.18 |
@@ -221,6 +216,4 @@ Patterns in other Parts that reference patterns in this directory (188 refs).
 | G.7 | builds_on | F.9 |
 | G.7 | builds_on | F.3 |
 | G.7 | builds_on | F.7 |
-| G.8 | coordinates_with | F.8 |
-| G.8 | coordinates_with | F.9 |
 | G.9 | builds_on | F.15 |

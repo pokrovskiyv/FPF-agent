@@ -68,7 +68,7 @@ The fpf-sync runbook has **eight** steps. Steps 2–5 are skipped when upstream 
                git push
 ```
 
-The commit in Step 8 also triggers the PreToolUse hook, which appends a Conventional-Commit changelog entry and bumps `.claude-plugin/plugin.json` on its own. The current plugin version is **0.13.0**.
+The commit in Step 8 also triggers the PreToolUse hook, which appends a Conventional-Commit changelog entry and bumps `.claude-plugin/plugin.json` on its own. The current plugin version is **0.16.0**.
 
 ## Decisions
 

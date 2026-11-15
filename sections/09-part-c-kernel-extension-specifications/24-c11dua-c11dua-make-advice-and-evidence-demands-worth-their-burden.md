@@ -16,7 +16,7 @@ An engineer reports that a discharge criterion was below the incoming background
 
 The broad activity is decision support through advice. This pattern addresses the branch in which advice turns uncertainty or a requirement into consequential work for its recipient. Its subject is the **advice statement or requirement being composed or examined**, including the action or inquiry it demands. An empirical claim, recommendation, method instruction and binding requirement retain their different meanings and force. The method recovers the demand, appraises it and returns a usable continuation.
 
-**First useful result.** Give the supported answer or repaired advice, the continuation available to the recipient, and any limitation that changes its use. The result can be an explanation, recommendation, bounded inquiry, proposed requirement revision or an honest impasse. Ordinary prose is sufficient.
+**First useful result.** Give the supported answer or repaired advice, the continuation available to the recipient, and any limitation that changes its use. The result can be an explanation, recommendation, bounded inquiry, proposed requirement revision or an impasse. Ordinary prose is sufficient.
 
 **Ordinary non-use boundary.** If the question, support and feasible answer are already clear, answer directly. Use `A.10` directly for a source-reliance question, `C.11` for an already adequate local choice, or `C.19.2` for economical application under an undisputed declaration. This composition adds value when somebody otherwise has to reconstruct the connection between those questions. Domain inference, experimental design, permission and enactment remain with their own methods and authorities.
 
@@ -45,7 +45,7 @@ Start from what the recipient is trying to settle. Recover the work hidden in th
 
 #### C.11.DUA:4.1 - Recover the receiving question and demanded work
 
-Identify the question the recipient needs answered and the horizon at which an improvement matters. Read an existing instruction as something somebody would actually have to perform: what would they believe, do, stop doing, postpone or spend if they followed it?
+Identify the question the recipient needs answered and the horizon at which an improvement matters. Read an existing instruction as something somebody would have to perform: what would they believe, do, stop doing, postpone or spend if they followed it?
 
 Recover a missing performer, resource, access, time condition or authority when it can change feasibility or the recommendation. An unavailable data set or a study that finishes after the decision window is a different option from an available timely check. Do not turn a simple answer into a universal plan form.
 
@@ -59,9 +59,11 @@ Keep three answers distinct:
 | What can the recipient reasonably do with that basis? | A feasible continuation, narrower use, reversible action, deferral or stop. | `C.11` for a local choice; `C.11.CRC` when the finite contribution comparison is missing. |
 | What further inquiry could improve that use? | A worthwhile attainable check, or continuation with the present basis. | `C.11` for information or computation value; the direct subject method for the inquiry. |
 
-These are questions to resolve where live, not three mandatory output fields. A source limitation qualifies the attempted claim. It does not by itself choose evidence acquisition.
+Resolve these questions when relevant to the receiving use; they are not three mandatory output fields. A source limitation qualifies the attempted claim. It does not by itself choose evidence acquisition.
 
 #### C.11.DUA:4.2 - Compare attainable inquiry with its receiving value
+
+If the relevant distinction or possible result is not yet expressible, use B.5:4.1.2 to develop grounds from an accessible episode, source or attempt. The immediate comparison can concern a bounded exploration likely to improve the description or reveal a dependency. It need not promise a particular discovery. Return with the basis obtained before demanding a specific action-changing answer. Appraising an already formulated inquiry and constructing its missing basis are different contributions.
 
 When an inquiry is proposed or a consequential uncertainty, anomaly or applicable requirement makes one live, identify a plausible result that would change the conclusion, choice or warranted use. Compare obtaining that result with the feasible alternatives. These may include using present knowledge, a smaller reversible step, a different source, a narrower claim, deferral or stopping.
 
@@ -75,7 +77,7 @@ For exploratory research, name the explanatory, model-building, hypothesis-discr
 
 ##### C.11.DUA:4.2.1 - Compare a proposed change with continuing the work
 
-For optional advice to change a way of working, include continuing without that change among the serious alternatives. A useful new contribution can be considered while the present work succeeds and its constraints remain unchanged. Recover what the recipient could gain, on which horizon, and what following the advice would require.
+For optional advice to change a way of working, include continuing without that change in the comparison. A useful new contribution can be considered while the present work succeeds and its constraints remain unchanged. Recover what the recipient could gain, on which horizon, and what following the advice would require.
 
 When the gain depends on a constituent action, use B.1.5.EW to recover the encompassing work performed through it, the contributions needed below it and the conditions that change its use. Use B.1.5.RS for a proposed replacement in those wholes. Include a second receiving whole or an intermediate connection while it can reverse the advice. Use an already adequate account directly.
 
@@ -83,7 +85,9 @@ Compare the full continuation: understanding and discussing the advice, obtainin
 
 Keep deciding to think further, presenting advice, deciding to change and performing the change separate. Cheap computation can justify frequent consideration while interruption and transition costs justify infrequent advice or intervention. Consider timing and a smaller change when those alternatives matter. A change in performer capability or adaptation cost can justify reconsidering the encompassing way of working.
 
-Use the available basis before asking the recipient for more work. Unclear benefit alone gives the recipient no obligation to prove an optional suggestion useless or fund an expensive evaluation. Obtain more information only when a plausible attainable answer can change a worthwhile continuation. If presenting the advice has no proportionate basis, continue without presenting it; no rejection record is required merely to finish. Preserve a reason or reconsideration condition only for a receiving use that needs it.
+Use the available basis before asking the recipient for more work. Unclear benefit alone gives the recipient no obligation to prove an optional suggestion useless or fund an expensive evaluation. Obtain more information only when a plausible attainable answer can change a worthwhile continuation.
+
+If presenting the advice has no proportionate basis, continue without presenting it; no rejection record is required merely to finish. Preserve a reason or reconsideration condition only for a receiving use that needs it.
 
 An existing obligation still constrains the available continuations. Examine its merits and possible revision through section 4.3 when that question is live.
 
@@ -95,7 +99,7 @@ Compare retaining, tightening, relaxing or replacing the requirement only where 
 
 A limit below background calls first for distinguishing the incoming background, the activity's attributable increment and the total resulting level. A total-exposure objective can justify reducing background too. Neither “below background” nor “required for safety” settles the merits without that contribution comparison.
 
-Keep the merits judgement separate from the currently available action set. A binding requirement continues to govern until the relevant authority or agreement changes it. Advice can recommend a lawful exception, a revised criterion or another activity and identify the feasible route to that change. A hoped-for revision is not already available. If the current requirement makes the proposed action unavailable and no acceptable alternative or timely revision is feasible, state that impasse.
+Keep the merits judgement separate from the currently available action set. A binding requirement continues to govern until the relevant authority or agreement changes it. Advice can recommend a lawful exception, a revised criterion or another activity and identify the feasible route to that change. If the current requirement makes the proposed action unavailable and no acceptable alternative or timely revision is feasible, state that impasse.
 
 When applying apparatus under `C.19.2`, compare eligible applications under the current result, guarantee and constraints. A cheaper method that drops a required guarantee is a different proposal. Resume under a revised declaration only when that revision is available through its governing authority or agreement.
 
@@ -107,7 +111,7 @@ For an external-text review, return a concrete repair: identify the demanded wor
 
 Follow the selected method through its completion requirements. Keep the recommendation or decision and its useful basis. An inactive inquiry creates no empty field, no waiver and no requirement to explain why checking was omitted. If a later recipient would otherwise overgeneralize the result, infer fresh evidence or miss a material limitation, retain the minimum explanation in that result. A short useful explanation alone need not instantiate a complete probe account.
 
-Apply the same appraisal to any prescribed record. If it has binding force, distinguish its usefulness from what the current procedure requires and use the available revision route. This pattern does not manufacture permission to disregard it.
+Apply the same appraisal to any prescribed record. If it has binding force, distinguish its usefulness from what the current procedure requires and use the available revision route. This appraisal does not grant permission to disregard it.
 
 Finish when the recipient has the warranted answer and continuation for the present question, including a justified stop when necessary. Reopen when the receiving use, possible consequence, feasible means, source basis or information opportunity changes materially.
 
@@ -125,13 +129,13 @@ These illustrative situations state their conditions for the comparison. Reporte
 
 **Present use.** An engineer reports a criterion below incoming background. The recipient wants to understand whether that is necessarily a design mistake. An archive search would take weeks. Its plausible results could change the historical account but would not change the requested distinction.
 
-**Completed answer.** “On your account, the threshold was below the incoming background. That alone does not establish a mistake. A criterion for the operation's added contribution and a criterion for total exposure govern different quantities; the latter can require reducing background too. Compare the protection gained with the feasible treatment burden before judging the threshold.”
+**Completed answer.** “On your account, the threshold was below the incoming background. A criterion for the operation's added contribution and a criterion for total exposure govern different quantities; the latter can require reducing background too. Compare the protection gained with the feasible treatment burden before judging the threshold.”
 
-That answer supplies the requested distinction and keeps its attribution. It makes no independently verified historical claim. The answer itself completes this use; a second account of why archives were not searched adds nothing.
+That answer supplies the requested distinction and identifies the engineer as the source of the threshold report. The answer itself completes this use; a second account of why archives were not searched adds nothing.
 
 **Changed use.** The recipient now plans to attribute responsibility in a report. Suppose an accessible contemporary record can identify who set the criterion and what it governed. A one-hour record check is feasible and could settle the attribution.
 
-**Completed advice.** “Check the contemporary criterion record before attributing its authorship or meaning. The participant account supports the attributed report of experience; it does not establish that attribution. If the record cannot settle it, describe the account without assigning responsibility.” This finishes the advice, including the next feasible check and the limit on its use. It does not claim the check has occurred.
+**Completed advice.** “Before assigning responsibility in the report, check the contemporary record for who set the criterion and what it governed. If that remains unresolved, present the engineer's account as their reported experience and leave responsibility unassigned.” The recipient has a feasible next check and a way to finish the report if the record leaves the attribution unresolved.
 
 #### C.11.DUA:5.2 - A completed choice with conditional inquiry content
 
@@ -157,7 +161,7 @@ A completion form demanding unused probe budget, cost and information/computatio
 
 **Completed first choice.** Retain T1 and: “Probe again with the one-day calibration. Choosing B now has expected loss 3; choosing A after s1 or B after s2 has expected loss 1.5. The available day and technician make the probe feasible, and the team accepts the delay for that reduction.” This is a completed `C.11` probe-again result. The measurement remains to be performed. An actual s1 result would then select A; s2 would select B.
 
-**Transfer requiring a reason.** Return to T0, now sent to a colleague considering B for another calibration range. Retain: “B was selected under the two states in T0; distinguishing those states would not alter that choice. This decision establishes no fresh calibration and must be reconsidered for another range.” The explanation changes the colleague's use: reopen the comparison instead of treating B as generally preferred. It belongs in the same decision result and needs no empty probe block.
+**Transfer requiring a reason.** Return to T0, now sent to a colleague considering B for another calibration range. Retain: “B was selected using the existing model T0 and its two calibration states; distinguishing those states would not alter that choice. For another calibration range, reopen the comparison using evidence applicable to that range.” The explanation changes the colleague's use: reopen the comparison instead of treating B as generally preferred. It belongs in the same decision result and needs no empty probe block.
 
 #### C.11.DUA:5.3 - Repair a study demand in an external report
 
@@ -169,9 +173,9 @@ Use the team's stipulated planning estimates: the current exercise requires nine
 
 A successful rehearsal makes the revised materials available and saves four hours across the sessions; a failed rehearsal leaves the current exercise selected. With equal weights, the expected preparation saving is two hours before the rehearsal's half-hour cost, or ninety minutes net. Retaining the current exercise uses no rehearsal time but forgoes that opportunity. These estimates warrant this rehearsal; its small size and reversibility alone would not.
 
-**Completed advice.** “The present synthesis does not establish a causal learning benefit. Run the half-hour setup rehearsal to settle compatibility with this room's tools. If the revised materials work, use them for the four sessions; otherwise retain the current exercise. Under our stated estimates, that information saves an expected ninety minutes of instructor time after its cost. Keep the learning-effect claim open.”
+**Completed advice.** “Run the half-hour setup rehearsal to settle compatibility with this room's tools. If the revised materials work, use them for the four sessions; otherwise retain the current exercise. Under our stated estimates, that information saves an expected ninety minutes of instructor time after its cost. Keep the learning-effect claim open.”
 
-This completes the advice and the decision to probe; it does not report a performed rehearsal. Its result will determine the subsequent material choice. Compatibility feedback supports readiness in the stated room, not a causal learning-effect estimate or transfer to other conditions. If domain review finds unacceptable participant risk or a binding evidence prerequisite, the proposed use must satisfy that condition before it enters the available set.
+The team next performs the rehearsal and uses its result to select materials for these sessions. The rehearsal tests compatibility with the stated room and tools. If domain review finds unacceptable participant risk or a binding evidence prerequisite, the proposed use must satisfy that condition before it enters the available set.
 
 **Opposed cost condition.** Suppose the same discriminating rehearsal now requires three hours of instructor time, still within the available preparation window. Its expected gross preparation saving remains two hours. The completed advice changes: “Retain the current exercise for these four sessions. The proposed rehearsal would cost an expected hour more than it saves. The current materials meet the course requirements; the comparative learning-effect claim remains unresolved.” A longer study remains a separate research proposal whose attainable contribution and burden must be justified for its own receiving use.
 
@@ -184,7 +188,7 @@ The receiving use is model discrimination within the year's research program. Co
 
 **Completed advice.** “Run the four-week discriminating measurement. Under the stated model predictions, its result will eliminate or revise one explanation and inform the next instrument design. The broader survey does not presently distinguish those predictions and consumes the remaining allocation. Reconsider the measurement if instrument sensitivity cannot separate them.”
 
-The useful result sought is explanatory progress and a better basis for later research. No immediate operational intervention is needed to justify that contribution. If the sensitivity condition fails, naming it does not turn the proposed measurement into a useful experiment; revise the design or retain the unresolved models.
+The useful result sought is explanatory progress and a better basis for later research. No immediate operational intervention is needed to justify that contribution. If the sensitivity condition fails, the proposed measurement cannot distinguish the model predictions; revise the design or retain the unresolved models.
 
 ### C.11.DUA:6 - Bias-Annotation
 
@@ -194,7 +198,7 @@ An operational vocabulary can undervalue explanation and future options. State t
 
 ### C.11.DUA:7 - Conformance Checklist
 
-The following conditions concern the advice actually given. They require no separately completed checklist.
+The following conditions concern the advice being composed or examined. They require no separately completed checklist.
 
 | ID | Condition |
 | --- | --- |
@@ -204,7 +208,7 @@ The following conditions concern the advice actually given. They require no sepa
 | CC-C11DUA.4 | When a requirement's merits are disputed, the appraisal addresses its governed quantity or activity, purpose, contribution and burden while keeping present force separate. |
 | CC-C11DUA.5 | The result reaches the first useful completion for this recipient. Its decision and useful basis remain; inactive inquiry adds no placeholder, waiver or omission account. |
 | CC-C11DUA.6 | Any reason or limitation needed by the decision or a later recipient remains in the same result. Changed use can make previously unnecessary inquiry worthwhile. |
-| CC-C11DUA.7 | The stated continuation is feasible under obtaining conditions, or the answer identifies the actual impasse. Future authorization or evidence is not treated as obtained. |
+| CC-C11DUA.7 | The stated continuation is feasible under the current conditions, or the answer identifies the impasse. Future authorization or evidence is not treated as obtained. |
 | CC-C11DUA.8 | Domain inference, choice, ethical and assurance claims retain their direct methods. Explanatory and future-option gains are judged at their receiving horizon. |
 
 ### C.11.DUA:8 - Common Anti-Patterns and How to Avoid Them
@@ -235,7 +239,7 @@ The smaller route is direct use of the existing patterns or a short composing en
 
 ### C.11.DUA:11 - SoTA-Echoing
 
-Value of information already supplies a strong answer to whether uncertainty is worth reducing. The additional work here is recovering the question hidden in advice and carrying the answer through completion. The following comparisons adopt source contributions at the effort the receiving problem needs.
+Value of information already supplies an answer to whether uncertainty is worth reducing. The additional work here is recovering the question hidden in advice and carrying the answer through completion. The following comparisons adopt source contributions at the effort the receiving problem needs.
 
 | Practice question and source | Contribution and limit | Use here |
 | --- | --- | --- |
@@ -244,7 +248,7 @@ Value of information already supplies a strong answer to whether uncertainty is 
 | Imperfect evidence: Gutierrez, Glymour and Davey Smith, [Evidence triangulation in health research](https://link.springer.com/article/10.1007/s10654-024-01194-6), 2025. | Differently biased lines can strengthen inference through triangulation. The relevant biases and inference rules depend on the domain. | **Adapt:** compare a feasible complementary source with the ideal-study demand. Triangulation itself must earn the work; it is not a universal preliminary condition. |
 | Protection requirements: IAEA, [GSR Part 3, general principles of protection and safety](https://nucleus.iaea.org/sites/nss-oui/Published%20Collections/m_3761d926-c16f-4477-a63b-741a9db1c16c/m_3761d926-c16f-4477-a63b-741a9db1c16c__50_0.Html), §§1.13–1.15 and 1.22. | Justification and optimization provide an established protection practice that considers social and economic factors. This source neither establishes the reported episode in 5.1 nor decides a local requirement's validity. | **Adapt:** compare protective contribution and burden, including the governing quantity and present force. Use the applicable domain standard and authority for an actual operating decision. |
 
-Compared with demanding the ideal evidence package first, this method can reach a warranted explanation or bounded continuation with less work. Compared with immediate action without inquiry, it retains a feasible check that changes a choice or admissible claim. Those are conditional gains: the quality of domain models, available observations and the recipient's actual use remains decisive.
+Compared with demanding the ideal evidence package first, this method can reach a warranted explanation or bounded continuation with less work. Compared with immediate action without inquiry, it retains a feasible check that changes a choice or admissible claim. Those are conditional gains: the quality of the domain models, the available observations and the recipient's use remain decisive.
 
 ### C.11.DUA:12 - Relations
 

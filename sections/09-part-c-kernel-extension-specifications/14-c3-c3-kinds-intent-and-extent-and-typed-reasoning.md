@@ -12,7 +12,7 @@ Use this pattern when a claim needs a reusable kind, a subkind comparison, a jud
 
 **What this buys.** A practitioner can classify an admissible candidate under a known kind without confusing the kind, its declaration and the judgment. A represented set of current members remains available when a query needs it; the conditions being classified retain their own rules.
 
-**Primary EntityOfConcern.** One typed-reasoning question: the exact `U.Kind` individual, its intended candidate domain and membership distinction, any `U.SubkindOf` comparison needed by the claim, and the C.3.2 candidate question the use actually asks. The exact `KindSignature` edition makes its effective designation and interpretation rules recoverable; the scheme and practice/source provenance are not stored on the kind.
+**Primary EntityOfConcern.** One typed-reasoning question: the exact `U.Kind` individual, its intended candidate domain and membership distinction, any `U.SubkindOf` comparison needed by the claim, and the C.3.2 candidate question the use asks. The exact `KindSignature` edition makes its effective designation and interpretation rules recoverable; the scheme and practice/source provenance are not stored on the kind.
 
 **First useful move.** Write the ordinary conclusion first. For example: `Pump #14 counts as a cooling pump in this plant slice because it satisfies the declared cooling-pump condition.` Add a reusable declaration, admissibility detail, explicit judgment, support reference, or extension representation only when a named receiving use needs it.
 
@@ -22,7 +22,11 @@ Use this pattern when a claim needs a reusable kind, a subkind comparison, a jud
 
 `U.Kind` is the admitted meta-kind whose individuals are reusable intensional classification distinctions. One kind individual is recovered by its declared candidate domain, the membership condition that distinguishes intended members from non-members, and the continuity rule for a material declaration change. A `KindSignature` states that content for repeated use but is not the kind itself. A current extension can change while the kind continues, and two different intensional kinds can happen to classify the same current candidates.
 
-A practice, source, team, or locality tells a reviewer where meaning may have changed. It does not decide kind identity. When a typed use moves, compare the exact membership distinctions. Reuse the same kind when the candidate domain and operative distinction continue. If they differ, identify two kinds; only then can C.3.3 ask whether an exact directional `KindBridge` obtains. When local wording or interpretation also differs, F.9 may relate the corresponding F.17 cells, but it neither creates the kinds nor maps a reference scheme as a whole. A change to the declaration's effective reference scheme identifies another episteme under C.2.1. Judge its `U.Signature` membership under A.6.0 and its `KindSignature` qualification under C.3.2 separately; call it another edition only when the C.2.1 `EpistemeEditionRelation` obtains. C.3.1 separately decides kind continuity. A changed `U.ContextSlice` alone creates neither a kind nor a bridge.
+A practice, source, team, or locality tells a reviewer where meaning may have changed. It does not decide kind identity. When a typed use moves, compare the exact membership distinctions. Reuse the same kind when the candidate domain and operative distinction continue. If they differ, identify two kinds; only then can C.3.3 ask whether an exact directional `KindBridge` obtains.
+
+When local wording or interpretation also differs, F.9 may relate the corresponding F.17 cells, but it neither creates the kinds nor maps a reference scheme as a whole.
+
+A change to the declaration's effective reference scheme identifies another episteme under C.2.1. Judge its `U.Signature` membership under A.6.0 and its `KindSignature` qualification under C.3.2 separately; call it another edition only when the C.2.1 `EpistemeEditionRelation` obtains. C.3.1 separately decides kind continuity. A changed `U.ContextSlice` alone creates neither a kind nor a bridge.
 
 ### C.3:2 - Problem
 
@@ -54,21 +58,23 @@ Keep these four objects separately recoverable:
 
 Before the judgment, C.3.2 returns `admissible` or `not-applicable`. Candidate mismatch with the declared `ValueKind`, or a slice outside declared applicability, is `not-applicable` and no three-valued judgment is formed. Missing support or an unavailable dependency for an admissible candidate instead yields `unknown`.
 
-Scope is not a fifth part of the kind. A `KindSignature` episteme may carry its own `U.ClaimScope`, and a separate classification assertion carries the scope of that assertion. The `U.ContextSlice` is an evaluation input.
+The kind does not carry scope. A `KindSignature` episteme may carry its own `U.ClaimScope`, and a separate classification assertion carries the scope of that assertion. The `U.ContextSlice` is an evaluation input.
 
 ### C.3:5 - Solution
 
 Use the lightest object that answers the current typed-reasoning question.
 
+First identify what the sentence lets the recipient do. “Repair this stool” designates an item. “Which seats count as stools in this catalogue?” calls for a membership criterion. “Count the stools in the May delivery” also requires identification of the delivery and the units present. A furniture specification can concern a design used for many units. A product family groups models on a stated basis. A membership claim about a kind, identification of an individual and inclusion in such a family require their own grounds. A catalogue row or plural noun can help locate the question. Neither supplies those grounds by itself. F.19:4.3.1 explains how to retain the distinction in working prose.
+
 1. **Recover the kind.** Name the candidate domain and the operative membership distinction: what an intended member must satisfy and what separates a relevant non-member. Record the continuity rule used when that distinction changes. Keep practice/source provenance as a cue to compare definitions, not as an automatic identity key. Do not store the current use, ClaimScope, context slice, or reference scheme on the kind.
 2. **Use C.3.1 for subkind and continuity.** A `U.SubkindOf` fact obtains through exact criterion entailment under an aligned interpretation or through exhaustive evaluation over a deliberately closed finite domain. The facts form a preorder. Opposite facts between distinct kinds may express classification equivalence for that applicability; a consumer may order the resulting equivalence groups without identifying the kinds.
 3. **Use C.3.2 for declaration and admissible judgment.** A repeated condition may justify a `KindSignature`. First check candidate `ValueKind` and applicability. Only an admissible application returns `true`, `false`, or `unknown`.
-4. **Let the governed criterion condition decide.** A direct quality, relation, construction, episteme, registration, certification, publication occurrence, legal status, or other governed condition makes the criterion hold when the criterion actually names it. An observation, record, or source used merely as evidence does not constitute an independently governed condition. Use each condition's direct pattern.
+4. **Let the governed criterion condition decide.** A direct quality, relation, construction, episteme, registration, certification, publication occurrence, legal status, or other governed condition makes the criterion hold when the criterion names it. An observation, record, or source used merely as evidence does not constitute an independently governed condition. Use each condition's direct pattern.
 5. **Keep four outcomes distinct.** `not-applicable` means the judgment should not be formed. For an admissible candidate, a satisfied criterion gives `true`, a known failed criterion gives `false`, and missing support or an unavailable required dependency gives `unknown`. A guard may decline use without rewriting any of these results.
 6. **Materialize an extension only for use.** A query, quantification, comparison, or review may need `KindExtension(k, slice)`. It represents admissible candidates judged `true`; notation, rows, or set membership do not create an ontic collection or classification relation.
 7. **Keep scope, formality, Work, and publication separate.** Formality characterizes the declaration episteme. Scope belongs to claims or capabilities. `U.Work` is a kind and `W : U.Work` is one independently grounded dated work occurrence. Plans, logs, cards, field bundles, carriers, and rows remain their own objects.
 
-Typed reasoning composes with F-G-R and USM in this order: recover kind compatibility; check classification admissibility and, when admissible, the exact judgment; separately check claim-scope coverage; then apply support, assurance, freshness, and any justified bridge consequence required by the receiver.
+Typed reasoning composes with F-G-R and USM in this order: recover kind compatibility; check claim-scope coverage; when the receiving use is candidate-bearing, check classification admissibility and, when admissible, the exact judgment; then apply support, assurance, freshness, and any justified bridge consequence required by the receiver.
 
 ### C.3:6 - Decision Split
 
@@ -86,9 +92,11 @@ Typed reasoning composes with F-G-R and USM in this order: recover kind compatib
 | Is this kind proposed as another durable public FPF `U.*` kind? | `E.24.UK`, followed by applicable naming patterns |
 | Is a candidate, quality, relation, construction, episteme, status, publication occurrence, or Work being identified? | Its direct subject pattern; C.3 consumes that result and does not create it by classification notation |
 
-When a constructive trace or working model and a target kind or logical representation must be inspected together, use the `StructuralCT2RTypingGroundingUnfoldingStructureBlock` from `B.3.5:4.1` or cite an equivalent A.22.CGUS specialization. C.3 supplies the kind, admissibility, judgment, subkind and kind-correspondence content actually needed. The block describes use of an independently selected A.22 structure; any A.22.CGUS qualification is tested separately. A local name or completed record establishes neither that qualification nor the classification result. For general diagnostic recovery of a subject construction from an inadequate account, use `A.7.1`.
+When a constructive trace or working model and a target kind or logical representation must be inspected together, explain their correspondence.
 
-The account identifies the source and typed or logical target, what the passage preserves or loses, and the supported reuse with its substitution limits. Name an F.9 Bridge or C.3.3 kind correspondence when the use actually claims or consumes one. Supply `CL` or `CL^k` when the consumed assurance or calibration account requires it. Evidence and proof retain their own subject patterns; a changed slice or notation alone supplies no Bridge.
+The account identifies the source and typed or logical target, what the passage preserves or loses, and the supported reuse with its substitution limits. Name an F.9 Bridge or C.3.3 kind correspondence when the use claims or consumes one. Supply `CL` or `CL^k` when the consumed assurance or calibration account requires it. Evidence and proof retain their own subject patterns; a changed slice or notation alone supplies no Bridge.
+
+`B.3.5:4.1` provides an optional block for recording that account. C.3 supplies the kind, admissibility, judgment, subkind and kind-correspondence content needed. Use A.22 when the receiving question needs a selected structure, and A.22.CGUS for a remaining question about potential continuations and their conditions; test any required formal qualification under that pattern. For general diagnostic recovery of a subject construction from an inadequate account, use `A.7.1`.
 
 ### C.3:7 - Archetypal Grounding
 
@@ -97,7 +105,7 @@ The account identifies the source and typed or logical target, what the passage 
 | Pump #14 is evaluated as a cooling pump. | Use one local kind, one declared criterion, one exact plant slice, and one `true`/`false`/`unknown` judgment. | The pump and its cooling, flow, and measured-state facts remain under direct physical and measurement governors. |
 | A maintenance episteme is classified by its instruction content while PDF and HTML forms circulate. | Judge the exact episteme against the local kind criterion. | Changing only publication form or carrier leaves this content-based judgment unchanged. |
 | A temperature value is classified into an interval. | Keep the value under its unit and measurement interpretation and judge the value directly. | Do not fabricate a value-shaped entity merely to classify it. |
-| A schema labels a row `Customer`. | Treat the label as a cue to recover the actual candidate and criterion. | Schema spelling alone yields neither `true` nor a public U-kind. |
+| A schema labels a row `Customer`. | Treat the label as a cue to recover the candidate and criterion. | Schema spelling alone yields neither `true` nor a public U-kind. |
 | A measurement required by a criterion is unavailable. | Return `unknown`; let a safety guard decline the use separately. | Do not coerce missing information to `false`. |
 | A log row is labelled `inspection work`. | First identify any exact dated `W : U.Work` under `A.15.1`; only then can W be a candidate for a local kind. | The row, plan, or label is not W, and `U.Work` never occupies W's individual position. |
 
@@ -109,7 +117,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 
 | Check | Requirement |
 | --- | --- |
-| `CC-C3-1` | `U.Kind` and `U.SubkindOf` rely on exact accepted E.24.UK results; another public kind name still requires its own admission. |
+| `CC-C3-1` | `U.Kind` and `U.SubkindOf` rely on exact accepted E.24.UK results; another public kind name requires its own admission. |
 | `CC-C3-2` | Kind, `KindSignature`, admissibility result, admissible three-valued judgment, and optional extension remain distinct; scheme and locality are not stored on the kind. |
 | `CC-C3-3` | Kind identity is tested through candidate domain, membership distinction, intended member/non-member boundary, and continuity rule. A practice/source change is a comparison cue, not proof. |
 | `CC-C3-4` | Candidate and slice applicability is checked before judgment; `not-applicable` is distinct from admissible `unknown`. |
@@ -117,7 +125,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 | `CC-C3-6` | Subkind facts follow C.3.1's criterion-entailment or exhaustive closed-domain branch and form a preorder; classification equivalence does not merge kind identities. |
 | `CC-C3-7` | Kind scope is absent; declaration and assertion scopes remain on their epistemes, and the slice remains an evaluation input. |
 | `CC-C3-8` | An extension is a representation of admissible true candidates, not `U.EntitySet`, a world-side collection-belonging claim, a collection holon, or a direct relation occurrence. |
-| `CC-C3-9` | C.3.3 is used only after distinct kinds and a proposed correspondence are independently established; same-kind reuse still gets a fresh receiving judgment. |
+| `CC-C3-9` | C.3.3 is used only after distinct kinds and a proposed correspondence are independently established; same-kind reuse requires a fresh receiving judgment when the receiving use is candidate-bearing. |
 | `CC-C3-10` | `U.Work`, exact `W : U.Work`, and any episteme about W remain distinct. |
 
 ### C.3:10 - Common Anti-Patterns and How to Avoid Them
@@ -143,7 +151,7 @@ The kind, its declaration, pre-judgment admissibility, one classification judgme
 
 ### C.3:13 - SoTA-Echoing
 
-Model theory, type systems, ontology engineering, and schema practice distinguish intensional declarations, candidate evaluation, extensions, and assertion scope. C.3 adapts that separation to FPF's object discipline: declaration epistemes follow `A.6.0` and `C.2.1`, context slices and claim scope follow `A.2.6`, mathematical representations follow `C.29`, and durable kind admission follows `E.24.UK`.
+For one supported classification, the ordinary conclusion in `C.3:0` can be sufficient. Creating a reusable declaration and an extension for every such answer adds products that the receiver may not consume. Keep the criterion, admissibility and needed support recoverable in the lighter answer. Add the corresponding declaration or extension when repeated interpretation or a set-consuming question needs it.
 
 ### C.3:14 - Detail Map
 C.3 is the head pattern for typed reasoning. It leaves each detailed mechanism at its direct neighboring pattern while preserving a discoverable route to that mechanism.
@@ -152,17 +160,17 @@ C.3 is the head pattern for typed reasoning. It leaves each detailed mechanism a
 | --- | --- | --- |
 | Kind identity, subkind relation, and continuity | `C.3.1` | admitted `U.Kind` and `U.SubkindOf`, criterion-entailment or exhaustive closed-domain obtaining, preorder and classification equivalence, participant-determined relation identity, and operational before/after continuity. |
 | Declaration, candidate judgment, and extension | `C.3.2` | `KindSignature`, exact four-key judgment, `true`/`false`/`unknown`, optional `KindExtension`, and scope/formality/evidence boundaries. |
-| Cross-local kind use | `C.3.3` | identity comparison first; same-kind reuse without a bridge; for distinct kinds, an obtaining directional `KindBridge`, its separate assertion, preservation/loss, and a fresh admissible receiving judgment. |
+| Cross-local kind use | `C.3.3` | identity comparison first; same-kind reuse without a bridge; for distinct kinds, an obtaining directional `KindBridge`, its separate assertion, preservation/loss, and a fresh admissible receiving judgment when the receiving use is candidate-bearing. |
 | Local adaptation without cloning a kind | `C.3.4` | A `KindUseAdaptationDeclaration` for one named local use of an exact base kind, its pinned base-kind judgment and additional candidate-feature constraints, the exact three-valued `KindUseAdaptationJudgment`, and any separately declared `KindUseAdaptationCorrespondenceDeclaration` between two exact adaptation declarations. |
 | Abstraction facet | `C.3.5` | `KindAT` as an editorial planning facet on one exact local kind, with no effect on the kind, declaration, judgment, extension, bridge assessment, guard, or F–G–R. |
 | Typed guards and applied examples | `C.3.A` | Declaration-level kind compatibility and exact candidate-use judgments kept separate across regulatory, assurance, ESG, and Method–Work uses, including the independently grounded actual `W : U.Work` boundary. |
 
-Do not treat this compact head pattern as the whole C.3 discipline when a case needs declaration, classification, extension, Bridge, kind-use adaptation, abstraction, or applied-guard detail. Use the neighboring C.3 pattern that defines or constrains the live detail.
+When a case needs detail on declaration, classification, extension, Bridge, kind-use adaptation, abstraction, or applied guards, use the neighboring C.3 pattern that defines or constrains that detail.
 
 ### C.3:15 - Relations
 
 - **Builds on:** `A.2.6` context-slice and scope discipline, `A.6.0` reusable declaration discipline, `C.2.1` episteme identity, F-G-R, and direct subject patterns for candidate features.
-- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `C.29`, `E.24.UK`, `A.8`, `A.11`, `F.8` and `F.18`. Use `B.3.5:4.1` when constructional and typed or logical content must be inspected together; A.22 selects the structure and A.22.CGUS tests any required qualification separately. Use `A.7.1` for a general diagnostic return to the subject construction.
+- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `C.29`, `E.24.UK`, `A.8`, `A.11`, `F.8` and `F.18`. `B.3.5:4.1` provides an optional record when constructional and typed or logical content must be inspected together; use A.22 for a needed structure selection and A.22.CGUS for a remaining continuation question or required qualification. Use `A.7.1` for a general diagnostic return to the subject construction.
 - **Does not replace:** direct candidate-feature ontology, A.14 collection membership, `A.2.6` scope, `C.29` representation use, ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
 
 ### C.3:End

@@ -1,6 +1,6 @@
 # Cross-References into 11-part-e-the-fpf-constitution-and-authoring-guides
 
-Patterns in other Parts that reference patterns in this directory (360 refs).
+Patterns in other Parts that reference patterns in this directory (350 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -151,7 +151,6 @@ Patterns in other Parts that reference patterns in this directory (360 refs).
 | A.19.CHR | builds_on | E.18 |
 | A.19.CHR | builds_on | E.10 |
 | A.19.CHR | builds_on | E.19 |
-| A.19.CPM | coordinates_with | E.20 |
 | A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | builds_on | E.17.0 |
 | A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW | builds_on | E.17 |
 | A.19.ECS | coordinates_with | E.22 |
@@ -169,11 +168,6 @@ Patterns in other Parts that reference patterns in this directory (360 refs).
 | A.19.SPR | coordinates_with | E.19 |
 | A.19.SPR | coordinates_with | E.11 |
 | A.19.SelectorMechanism | used_by | E.18 |
-| A.19.UINDM | coordinates_with | E.20 |
-| A.19.ULSAM | coordinates_with | E.20 |
-| A.19.UNM | builds_on | E.18 |
-| A.19.UNM | builds_on | E.20 |
-| A.19.USCM | coordinates_with | E.20 |
 | A.20 | builds_on | E.18 |
 | A.20 | coordinates_with | E.17 |
 | A.22.CGUS | coordinates_with | E.18.NET |
@@ -267,7 +261,6 @@ Patterns in other Parts that reference patterns in this directory (360 refs).
 | C.29.BB | coordinates_with | E.18.2 |
 | C.3 | builds_on | E.24.UK |
 | C.3.1 | builds_on | E.24.UK |
-| C.3.2 | coordinates_with | E.24.UK |
 | C.30 | builds_on | E.17.0 |
 | C.30 | builds_on | E.17 |
 | C.30.AD | builds_on | E.17.0 |
@@ -397,7 +390,4 @@ Patterns in other Parts that reference patterns in this directory (360 refs).
 | G.6 | coordinates_with | E.17 |
 | G.7 | builds_on | E.18 |
 | G.7 | builds_on | E.10 |
-| G.8 | coordinates_with | E.18 |
-| G.8 | coordinates_with | E.10 |
-| G.8 | coordinates_with | E.5.2 |
 | G.Core | builds_on | E.8 |

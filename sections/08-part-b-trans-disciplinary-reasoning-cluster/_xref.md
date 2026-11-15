@@ -15,6 +15,7 @@ Patterns in other Parts that reference patterns in this directory (179 refs).
 | A.1.RI | coordinates_with | B.5.TU |
 | A.1.RI | coordinates_with | B.5.TC |
 | A.1.RI | coordinates_with | B.5.RR |
+| A.1.STM | coordinates_with | B.5.PI |
 | A.1.STM | coordinates_with | B.3 |
 | A.2.4 | informs | B.3 |
 | A.21 | coordinates_with | B.3 |
@@ -78,8 +79,6 @@ Patterns in other Parts that reference patterns in this directory (179 refs).
 | A.16.2 | coordinates_with | B.4.1 |
 | A.18 | coordinates_with | B.3 |
 | A.19.SPR | builds_on | B.3 |
-| A.19.ULSAM | builds_on | B.3 |
-| A.19.UNM | coordinates_with | B.3 |
 | A.20 | coordinates_with | B.3 |
 | A.9 | coordinates_with | B.1 |
 | A.9 | coordinates_with | B.2 |
@@ -191,6 +190,7 @@ Patterns in other Parts that reference patterns in this directory (179 refs).
 | E.16 | builds_on | B.3 |
 | E.17 | coordinates_with | B.3 |
 | E.17.AUD.OOTD | coordinates_with | B.3 |
+| E.17.EFP | coordinates_with | B.5.2 |
 | E.17.EFP | coordinates_with | B.3 |
 | E.18.2 | coordinates_with | B.3 |
 | E.24.CD | coordinates_with | B.1 |

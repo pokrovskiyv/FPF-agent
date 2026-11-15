@@ -3,7 +3,7 @@ title: "Route 2: Language Discovery"
 sources:
   - sections/routes/route-2-language-discovery.md
   - scripts/build_routes.py
-last_updated: 2026-09-01T00:00:00Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1
@@ -23,8 +23,8 @@ This is a Tier 1 route: the section chain acts as a cache, so the Retriever can 
 ## Key Decisions
 
 - **Chain length:** 7 sections in full load, 3 marked core. Defined in `scripts/build_routes.py` (`ROUTES`, entry `id: 2`, `slug: "language-discovery"`).
-- **Core sections:** `C.2.2a` (U.LanguageStateSpace — language-state chart over U.Character), `A.16` (Language-State Move Coordination), `A.16.1` (U.PreArticulationCuePack).
-- **Full chain adds:** `C.2.LS` (U.LanguageStateFacetProfile — thin profile bundle for language state), `A.16.2` (Reopen / SketchBackoff / Respecify), `B.4.1` (Observe → Notice → Stabilize → Route), `B.5.2.0` (U.AbductivePrompt).
+- **Core sections:** `C.2.2a` (Language-State Chart over CharacteristicSpace — where a term sits on a spectrum from vague to defined), `A.16` (Language-State Moves: how to advance a term toward a stable definition), `A.16.1` (PreArticulationCuePack: preserving early intuitions before committing to a definition).
+- **Full chain adds:** `C.2.LS` (Language-State Facet Profile: publish readings and use conditions), `A.16.2` (Reopen, SketchBackoff, Respecify, or Retire a language state), `B.4.1` (Publish Candidate Routes for a Stabilized Cue), `B.5.2.0` (Question Form for Entering Abduction).
 - **Loading strategy:** minimum load uses the first 3 core sections for simple queries; full load uses all 7 for complex queries. If stagnation is detected, the Retriever consults `_xref.md` for cross-references.
 
 The route file is generated mechanically by `build_route_file()` from `scripts/build_routes.py`: pattern IDs are resolved against `sections/metadata.json` to fill in each section's title and file path, and titles are truncated to 60 characters. Regenerating the route is part of `scripts/rebuild_all.sh` — never hand-edit `sections/routes/route-2-language-discovery.md`.
@@ -33,13 +33,13 @@ The route file is generated mechanically by `build_route_file()` from `scripts/b
 
 | # | Pattern | Title | Core? |
 |---|---------|-------|-------|
-| 1 | C.2.2a | U.LanguageStateSpace — language-state chart over U.Character | YES |
-| 2 | C.2.LS | U.LanguageStateFacetProfile — thin profile bundle for language state | |
-| 3 | A.16 | Language-State Move Coordination | YES |
-| 4 | A.16.1 | U.PreArticulationCuePack | YES |
-| 5 | A.16.2 | Reopen / SketchBackoff / Respecify | |
-| 6 | B.4.1 | Observe → Notice → Stabilize → Route | |
-| 7 | B.5.2.0 | U.AbductivePrompt | |
+| 1 | C.2.2a | Language-State Chart over CharacteristicSpace | YES |
+| 2 | C.2.LS | Language-State Facet Profile: Publish Readings and Use Conditions | |
+| 3 | A.16 | Language-State Moves: Choose the Next Publication and Use of a Term | YES |
+| 4 | A.16.1 | PreArticulationCuePack: Preserve an Early Cue Before Choosing a Route | YES |
+| 5 | A.16.2 | Reopen, SketchBackoff, Respecify, or Retire a Language-State | |
+| 6 | B.4.1 | Publish Candidate Routes for a Stabilized Cue (RoutedCueSet) | |
+| 7 | B.5.2.0 | Question Form for Entering Abduction | |
 
 ## Status
 

@@ -2,7 +2,7 @@
 
 > **Type:** Architectural (A)
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 **Plain name.** Gate decision.
 
@@ -56,7 +56,7 @@ How can one gate decision remain reproducible without:
 | One usable decision | The practitioner needs one action, while every contributing result must remain recoverable. |
 | Order independence | Evaluation order should not change the decision, but early failure may justify deferring expensive work. |
 | Policy flexibility | Different profiles may react differently, but no implicit default or path boundary may supply policy authority. |
-| Plain entry | “Worst result wins” is easy to use, while exact result and rule identities are needed for replay. |
+| Plain entry | “Worst result wins” is easy to use, while result and rule identities are needed for replay. |
 | Conditional assurance | Crossing, publication, regulation, safety, and reuse can need more evidence, but ordinary local use should stop earlier. |
 
 ### A.21:4 - Solution
@@ -87,13 +87,13 @@ GateDecisionResult:
 
 `decisionSubjectRef` names the proposal, transition, crossing, or prospective work-entry claim being decided. `boundedActionRef` names what the practitioner may do or must hold. Neither identifies a later Work occurrence.
 
-One result is identified by the tuple containing the gate, decision subject, bounded action, profile application, canonical required and optional check-application identity sets, the exact consumed check-application result refs, scope, and qualification window. A changed rule edition, checked subject, criterion, case, result, scope, or window requires another result. The decision value and rationale are the content derived for that fixed tuple; a contradictory value for the same tuple is an error, not another result to merge.
+One result is identified by the tuple containing the gate, decision subject, bounded action, profile application, canonical required and optional check-application identity sets, the consumed check-application result refs, scope, and qualification window. A changed rule edition, checked subject, criterion, case, result, scope, or window requires another result. The decision value and rationale are the content derived for that fixed tuple; a contradictory value for the same tuple is an error, not another result to merge.
 
 The rationale links every check-application result to its mapping rule and then to the aggregate and action consequence. A `GateDecisionExplanation` may restate the rationale and decision value in ordinary language. It is optional and creates no additional decision; the identified result remains the basis for its explanation.
 
 #### A.21:4.2 - One check application
 
-A `GateCheckApplicationResult` is a C.2.1 result episteme that keeps the gate-facing use of one source result recoverable:
+A `GateCheckApplicationResult` is a C.2.1 result episteme that identifies one check application, its evaluation state, and any available source result for the gate-facing use:
 
 ```text
 GateCheckApplicationResult:
@@ -169,7 +169,7 @@ An optional application affects the aggregate only when the cited profile rule s
 
 #### A.21:4.6 - Scope, composition, and change
 
-Compose check sets only through the exact profile applications that cover the decision subject and scope. A more specific application may add, replace, or remove a check only when its policy rule and applicability fact say so. Preserve parameterized identities such as regulator X and its rule edition.
+Compose check sets only through the profile applications that cover the decision subject and scope. A more specific application may add, replace, or remove a check only when its policy rule and applicability fact say so. Preserve parameterized identities such as regulator X and its rule edition.
 
 `lane`, `locus`, `subflow`, and `profile` may be used as scope values only when the selected structure or policy defines the corresponding boundary for this application. A scope label alone neither selects a profile nor merges check applications.
 Recompute the result when the decision subject, bounded action, profile application, required set, check application identity or result, scope, or window changes. A refresh, edition bump, expired evidence window, changed crossing, or changed path slice matters only when it changes one of those inputs under its own pattern.
@@ -178,13 +178,13 @@ Recompute the result when the decision subject, bounded action, profile applicat
 
 Use `LaunchGate` only when an A.21 gate decision is needed for one prospective `workEntryClaimRef`, WorkPlan or PlanItem entry question, and bounded attempted action. The gate refers to that prospective claim; it never targets a not-yet-existing Work individual.
 
-`A.15.5` remains the ordinary route for full-kit and work-entry readiness. Add a LaunchGate only when the selected transformation-flow structure actually contains that gate use. Freshness, design-run-tag consistency, A.20 ingress validity, structural crossing, and SquareLaw are checks only when their exact claims, rules, and defining patterns are current. No one of them is mandatory merely because the word “launch” appears.
+`A.15.5` remains the ordinary route for full-kit and work-entry readiness. Add a LaunchGate only when the selected transformation-flow structure contains that gate use. Freshness, design-run-tag consistency, A.20 ingress validity, structural crossing, and SquareLaw are checks only when their claims, rules, and defining patterns are current. No one of them is mandatory merely because the word “launch” appears.
 
 If a required ingress A.20 summary is not `satisfied` and the applied profile defines a pre-run barrier, the aggregate is `block`. Other available results remain visible; deferred checks remain `notRun`.
 
 #### A.21:4.8 - Crossing and semantic-Bridge boundary
 
-For a structural crossing, receive the exact changed-binding and crossing facts from E.18. Add a crossing check only when its criterion applies. SquareLaw is required only when the E.18 crossing rule for that case requires it.
+For a structural crossing, receive the changed-binding and crossing facts from E.18. Add a crossing check only when its criterion applies. SquareLaw is required only when the E.18 crossing rule for that case requires it.
 
 A structural crossing does not imply an F.9 semantic Bridge. Add an F.9 Bridge, bounded-use claim, reliance, optional Bridge Card, or optional `CL` only when the separate semantic-correspondence relation and downstream use obtain. A gate whose decision does not rely on semantic correspondence carries none of this apparatus. Do not encode absent Bridge material as mandatory fields with `none` values.
 
@@ -192,11 +192,11 @@ A structural crossing does not imply an F.9 semantic Bridge. Add an F.9 Bridge, 
 
 A guard event is not automatically a GateCheck. When a selected structure assigns a guard failure to a gate, the current profile may consume that identified event through a declared check application and mapping rule.
 
-The following names are recognition aids, not a universal catalogue: freshness, design-run-tag consistency, reference-plane crossing, comparator constraints, evidence completeness, safety envelope, regulator conformance, system-role fit, channel fit, equivalence preservation, outflow audit, and snapshot consistency. Each application names its checked subject, criterion, rule edition, case, and source result.
+The following names are recognition aids, not a universal catalogue: freshness, design-run-tag consistency, reference-plane crossing, comparator constraints, evidence completeness, safety envelope, regulator conformance, system-role fit, channel fit, equivalence preservation, outflow audit, and snapshot consistency. Each application names its checked subject, criterion, rule edition, case, evaluation state, and any available source result.
 
-Use A.10 for claim-bound evidence reliance and B.3 when an actual named assurance claim is current. Use A.2 and C.3.2 for system-role classification, A.2.1 for exact assignments, and F.6 only for an expressly consumed assignment-bound Work attribution. A.2.6 answers whether a claim covers the selected slice; channel criteria remain with their domain pattern. Use E.18 for crossing claims within its applicable structure and the applicable comparison pattern for comparator claims.
+Use A.10 for claim-bound evidence reliance and B.3 when a named assurance claim is current. Use A.2 and C.3.2 for system-role classification, A.2.1 for assignments, and F.6 only for a consumed assignment-bound Work attribution. A.2.6 answers whether a claim covers the selected slice; channel criteria remain with their domain pattern. Use E.18 for crossing claims within its applicable structure and the applicable comparison pattern for comparator claims.
 
-If later Work is asserted, first establish its A.13 core: the performing System, exact local agential-role kind and membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits that performance; F.6 applies afterward only for precise assignment-bound attribution.
+If later Work is asserted, first establish its A.13 core: the performing System, local agential-role kind and membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits that performance; F.6 applies afterward only for assignment-bound attribution.
 
 #### A.21:4.10 - Publication, rationale, and reuse
 
@@ -235,7 +235,7 @@ If inspection was not performed after the block was already known, record that c
 
 1. **Decision.** Name the gate, the action or transition being decided, its scope, and its time window.
 2. **Applicable rule.** Point to the profile rule and edition that apply to this gate and subject. Recover its required checks, mappings, consequences, scope and window, and any authority the rule itself requires.
-3. **Checks.** For each check, name its subject, criterion and edition, case, requirement, evaluation state, source result, and mapping rule.
+3. **Checks.** For each check, name its subject, criterion and edition, case, requirement, evaluation state, any available source result, and mapping rule.
 4. **Nothing missing.** Keep every required check visible, including `notRun`, `unknown`, error, and failure.
 5. **Worst result wins.** Aggregate only after the rule has mapped every required result. A missing or unrun required result cannot support `pass`.
 6. **Next action.** State what `pass`, `degrade`, `block`, or `abstain` means for this action, retain every applicable restriction under §4.5, and state when to decide again.
@@ -243,13 +243,13 @@ If inspection was not performed after the block was already known, record that c
 
 #### A.21:7.1 - Triggered additions
 
-| Current use | Add | Direct pattern |
+| Current use | Add | Pattern |
 | --- | --- | --- |
 | Launch decision | Prospective work-entry claim and only the checks selected by the applicable profile | `A.15.5`, `E.18`, and the pattern defining each check |
 | Structural crossing | Changed-binding and crossing facts; SquareLaw only when its crossing rule applies | `E.18` |
 | Semantic correspondence | Separate Bridge and bounded-use claim; optional evidence or publication apparatus only when used | `F.9`, `F.17`; `E.17` for a source-backed reader face, `E.24.PUB` for publication occurrence, form, carrier, and availability |
 | Publication | Form, carrier, publication occurrence, and the minimum decision refs | `E.24.PUB`; `E.17` when a source-backed reader face is needed |
-| Evidence, safety, regulation, or assurance | Exact source result and its evidence or assurance relation | `A.10`, `B.3`, or the applicable domain pattern |
+| Evidence, safety, regulation, or assurance | Source result and its evidence or assurance relation | `A.10`, `B.3`, or the applicable domain pattern |
 | Reuse or replay | Equivalence witness when claiming reuse, cache, or stability over an interval; optional decision log for audit, history, or replay | §4.10; `G.6` when a citable provenance path is needed, `G.11` when currentness or refresh is at issue, and `E.24.PUB` when published |
 
 ### A.21:8 - Common mistakes
@@ -274,20 +274,20 @@ The cost is explicit identity. A practitioner must name the decision subject, pr
 
 Constraint truth, evidence about that truth, policy application, and bounded action are different claims. The source patterns define the claims and tests; their evaluations establish the check results. A.21 applies one current profile and records the consequence. Keeping those claims separate makes the decision independent of evaluation order and keeps failures useful for repair.
 
-The join lattice gives a compact, deterministic aggregation after every source result has been identified and mapped. It does not supply applicability, evidence, permission, authority, or a missing result.
+The join lattice gives a compact, deterministic aggregation after the complete effective check set has been identified and mapped under the profile. It does not supply applicability, evidence, permission, authority, or a missing result.
 
 ### A.21:11 - SoTA echo
 
-| Practice line already used by A.21 | Adopted move | Limit |
+| Basis or practice comparison | Move used in A.21 | Limit |
 | --- | --- | --- |
-| Join-semilattice aggregation in distributed-systems practice | Use an associative, commutative, idempotent worst-result join after explicit mapping. | Algebra does not make unknown or unrun input neutral. |
-| Policy evaluation and safety decision tables | Identify the applicable rule, subject, inputs, outcome mapping, and action consequence. | A profile label or default-looking branch is not policy application or authority. |
-| Attestation and provenance practice, including in-toto and SLSA lineage | Keep references and rationale available for the declared audit, transfer or reuse; publish them when that use requires publication. | An attestation, log, or dashboard does not create the gate decision or source truth. |
-| Compositional crossing checks | Apply crossing equations to an exact structural crossing when its rule requires them. | A structural crossing does not imply a semantic Bridge; each applies only when its own relation and use are current. |
+| The join-semilattice defined in §4.5 | Use the associative, commutative, idempotent worst-result join after explicit profile mapping. | Algebra does not make unknown or unrun input neutral. |
+| [Open Policy Agent: Rego policy evaluation](https://www.openpolicyagent.org/docs/policy-language), including undefined results and explicitly declared defaults | Keep the applicable policy, its inputs and evaluated result recoverable; A.21 separately specifies the mapping to a bounded action. | Rego values and undefined results do not themselves define A.21 decision values or authority. |
+| [in-toto Statement v1](https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md) and [SLSA v1.2 provenance](https://slsa.dev/spec/v1.2/provenance) bind typed attestations and production information to identified artifacts | Retain the subject and claim references needed by the declared audit, transfer or reuse. Publication follows the receiving use. | Attestation or provenance information supplies neither the gate decision nor the truth of every source claim; A.21 keeps those judgements separate. |
+| Structural-crossing rules supplied by `E.18` | Apply crossing equations to the identified crossing when its rule requires them. | A structural crossing does not imply a semantic Bridge; each applies only when its own relation and use are current. |
 
 ### A.21:12 - Relations
 
-- `A.20` supplies exact internal-constraint results or a complete required-set summary without gate policy.
+- `A.20` supplies internal-constraint results or a complete required-set summary without gate policy.
 - `E.18` supplies selected-structure positions, paths, slices, and structural crossing facts; it does not make every work-entry question a gate or crossing.
 - `A.15.5` defines full-kit and work-entry readiness and remains the ordinary route when no gate decision is current.
 - Source claims remain under the applicable subject patterns named in §4.9; safety and regulatory criteria remain with their domain patterns.

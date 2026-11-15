@@ -1,6 +1,6 @@
 # Cross-References into 07-cluster-av-constitutional-principles-of-the-kernel
 
-Patterns in other Parts that reference patterns in this directory (443 refs).
+Patterns in other Parts that reference patterns in this directory (431 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -218,7 +218,6 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.17 | coordinates_with | A.15.1 |
 | C.18 | builds_on | A.19 |
 | C.18 | coordinates_with | A.15 |
-| C.19 | builds_on | A.19.CPM |
 | C.19 | coordinates_with | A.10 |
 | C.19.2 | coordinates_with | A.15.1 |
 | C.19.2 | coordinates_with | A.15.2 |
@@ -246,7 +245,6 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.20 | builds_on | A.17 |
 | C.20 | builds_on | A.18 |
 | C.20 | coordinates_with | A.15.1 |
-| C.20 | coordinates_with | A.19.CPM |
 | C.22.1 | builds_on | A.15 |
 | C.22.2 | builds_on | A.19 |
 | C.22.2 | coordinates_with | A.15 |
@@ -279,16 +277,13 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.29 | builds_on | A.19 |
 | C.29 | builds_on | A.10 |
 | C.29 | builds_on | A.15 |
-| C.3.2 | coordinates_with | A.14 |
 | C.3.A | builds_on | A.15 |
 | C.3.A | builds_on | A.15.1 |
 | C.30 | builds_on | A.7 |
-| C.30 | coordinates_with | A.19.CPM |
 | C.30 | coordinates_with | A.10 |
 | C.30 | coordinates_with | A.20 |
 | C.30 | coordinates_with | A.15 |
 | C.30.AD | builds_on | A.7 |
-| C.30.AD | coordinates_with | A.19.CPM |
 | C.30.AD | coordinates_with | A.10 |
 | C.30.AD | coordinates_with | A.20 |
 | C.30.AD | coordinates_with | A.15 |
@@ -297,7 +292,6 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.30.ILC | coordinates_with | A.10 |
 | C.30.LCA | coordinates_with | A.10 |
 | C.30.LCA | coordinates_with | A.20 |
-| C.30.P | coordinates_with | A.19.CPM |
 | C.30.P | coordinates_with | A.10 |
 | C.30.P | coordinates_with | A.20 |
 | C.30.P | coordinates_with | A.15 |
@@ -318,11 +312,8 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.31.ASAP | coordinates_with | A.10 |
 | C.31.RSA | builds_on | A.19 |
 | C.31.RSA | coordinates_with | A.10 |
-| C.32 | coordinates_with | A.19.CPM |
 | C.32 | coordinates_with | A.10 |
-| C.32.ACE | coordinates_with | A.19.CPM |
 | C.32.ACE | coordinates_with | A.10 |
-| C.32.ACS | coordinates_with | A.19.CPM |
 | C.32.ACS | coordinates_with | A.10 |
 | C.32.ADA | coordinates_with | A.15 |
 | C.32.ADA | coordinates_with | A.10 |
@@ -330,16 +321,13 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.32.ADR | coordinates_with | A.10 |
 | C.32.CONWAY | builds_on | A.12 |
 | C.32.CONWAY | builds_on | A.15.1 |
-| C.32.CONWAY | coordinates_with | A.19.CPM |
 | C.32.CONWAY | coordinates_with | A.10 |
-| C.32.FAIL | coordinates_with | A.19.CPM |
 | C.32.FAIL | coordinates_with | A.10 |
 | C.32.FAIL | coordinates_with | A.20 |
 | C.32.HCS | coordinates_with | A.19 |
 | C.32.MLAO | coordinates_with | A.10 |
 | C.32.MWA | builds_on | A.15.1 |
 | C.32.P2S | builds_on | A.15.6 |
-| C.32.PAD | builds_on | A.19.CPM |
 | C.32.PAD | coordinates_with | A.15 |
 | C.32.PAD | coordinates_with | A.10 |
 | C.36 | builds_on | A.15 |
@@ -348,7 +336,6 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | C.37 | coordinates_with | A.10 |
 | C.38 | builds_on | A.10 |
 | C.38 | coordinates_with | A.15.9 |
-| C.38 | coordinates_with | A.19.CPM |
 | C.39 | coordinates_with | A.22.CGUS |
 
 ## From 10-part-d-multi-scale-ethics-and-conflict-optimization
@@ -478,6 +465,7 @@ Patterns in other Parts that reference patterns in this directory (443 refs).
 | G.3 | builds_on | A.18 |
 | G.3 | builds_on | A.19.CHR |
 | G.3 | builds_on | A.15.3 |
+| G.3 | builds_on | A.10 |
 | G.6 | builds_on | A.10 |
 | G.6 | coordinates_with | A.15.1 |
 | G.6 | coordinates_with | A.15.PROD |

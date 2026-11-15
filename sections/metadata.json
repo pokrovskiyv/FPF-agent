@@ -17,7 +17,7 @@
       "BLP"
     ],
     "queries": [
-      "What terms must I publish when generating, selecting, or shipping a set result?",
+      "Which glossary values and policies does this search or set-result use require, and when must they be published?",
       "How do I explain search-side vs outcome-side spaces and interpretive views on first use?",
       "How does FPF avoid single-winner bias in creative search?"
     ],
@@ -107,7 +107,7 @@
     "queries": [
       "Which exact applicability, actual-use, and fixed-content coherence facts matter here?",
       "Do their governed occurrences form one decision-relevant structure?",
-      "Which context object and crossing relation, if any, are actually grounded?"
+      "Which context object and crossing relation, if any, are grounded?"
     ],
     "dependencies": {
       "builds_on": [
@@ -202,8 +202,8 @@
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "Are participants working toward the same target?",
-      "How does our component, model or builder contribute to it?",
+      "Which product uses constrain this decision?",
+      "What capability and finite result must this creator provide?",
       "Which premise or dependency needs work next?"
     ],
     "dependencies": {
@@ -213,6 +213,8 @@
         "A.15.6"
       ],
       "coordinates_with": [
+        "B.5.PI",
+        "C.22.2",
         "C.32.P2S",
         "the C.30 family",
         "A.2",
@@ -241,7 +243,7 @@
     ],
     "queries": [
       "Which local system-role kind classifies this System?",
-      "Does an assignment actually obtain, or is this only classification?",
+      "Does an assignment obtain, or is this only classification?",
       "Does role wording instead name participation, a slot, responsibility, capability, Work, or ordinary language?"
     ],
     "dependencies": {
@@ -413,7 +415,7 @@
       "task readiness"
     ],
     "queries": [
-      "Does this exact assignment satisfy this state condition throughout the relevant window?",
+      "Does this assignment satisfy this state condition throughout the relevant window?",
       "Is the displayed status evidence about the relation, or the relation itself?",
       "How to track whether someone is ready and authorized to perform a task?",
       "How to define when a role is active, suspended, or expired?",
@@ -447,9 +449,9 @@
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "Does this exact slice belong to this exact scope?",
+      "Does this slice belong to this scope?",
       "What follows from true, false, or unknown?",
-      "When does local-sense translation require an exact F.9 Bridge occurrence?"
+      "When does local-sense translation require an F.9 Bridge occurrence?"
     ],
     "dependencies": {
       "builds_on": [
@@ -937,7 +939,7 @@
       "transformation composition"
     ],
     "queries": [
-      "What actual change occurred?",
+      "What change occurred?",
       "Which referent, boundary, and subject facts identify it?",
       "When may several transformations compose, and when must the claim stop at a missing-governor or missing-substrate blocker?"
     ],
@@ -1143,7 +1145,7 @@
     "queries": [
       "What exact claim does this boundary sentence make?",
       "Is authority-looking wording a norm or grant, a gate, actual exercise, evaluation, conflict, or source claim?",
-      "How do I keep description from creating the world-side object it describes?"
+      "What makes the claimed relation obtain, and what supports the claim?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1183,7 +1185,7 @@
     ],
     "queries": [
       "What was promised? What was said, published, or instituted? Which governance claim exists? What happened, what followed, and what supports reliance?",
-      "Which exact direct object and owner belongs to each atomic claim?",
+      "Which object does each atomic claim concern, and which source governs that claim?",
       "Does a system act under an assignment, or is a document being mistaken for the actor or institutional fact?"
     ],
     "dependencies": {
@@ -1309,7 +1311,7 @@
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "How was Y constructed from X about the same thing?",
+      "How are Y's claims licensed by X and any additional sources or admitted facts under the viewing rule?",
       "What was kept or omitted?",
       "Does Y add any unsupported claim?"
     ],
@@ -1489,10 +1491,10 @@
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "Do the endpoint epistemes concern different exact entities?",
+      "Do the endpoint epistemes concern different entities?",
       "What identifies `r`?",
       "What invariant, loss, use, conditions, and polarity does `q` state?",
-      "Which exact facts determine the judgement?"
+      "Which case facts determine the judgement?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1530,7 +1532,7 @@
       "What exact referent or relation does this phrase assert?",
       "Which E.10.ROLE branch does bare role wording select?",
       "Did service wording name Work, a Method, promise content, a bearer, an arrangement, status, or another direct claim?",
-      "Does the repaired bearer claim really require A.1 evaluation?"
+      "Does the repaired bearer claim require A.1 evaluation?"
     ],
     "dependencies": {
       "builds_on": [
@@ -1579,7 +1581,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/16-a6p-a6p-relational-precision-restoration-recovering-direct-relat.md"
   },
   "A.6.P.WMR": {
-    "title": "Exact Relation Recovery for Method and Work Claims",
+    "title": "Relation Recovery for Method and Work Claims",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -1602,7 +1604,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/16-a6p-a6p-relational-precision-restoration-recovering-direct-relat.md"
   },
   "A.6.RCD": {
-    "title": "Needed Relation Claim Derivation and Relation-Kind Admission",
+    "title": "Relation Claim Derivation and Relation-Kind Admission",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -1621,7 +1623,7 @@
         "F.18"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/19-a6rcd-a6rcd-needed-relation-claim-derivation-and-relation-kind-adm.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/19-a6rcd-a6rcd-relation-claim-derivation-and-relation-kind-admission.md"
   },
   "A.6.RSIR": {
     "title": "Relation, Signature, Interface, Role, and Slot Precision Restoration",
@@ -1835,7 +1837,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/24-a65-a65-relation-declaration-slot-discipline-slotkind-valuekind-.md"
   },
   "A.6.6": {
-    "title": "Base Declaration Discipline: Say Exactly What Something Depends On",
+    "title": "Base Declaration Discipline: Say What Something Depends On",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -1860,7 +1862,7 @@
         "feeds E.10 and F.18 wording governance"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/25-a66-a66-base-declaration-discipline-say-exactly-what-something-d.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/25-a66-a66-base-declaration-discipline-say-what-something-depends-o.md"
   },
   "A.6.7": {
     "title": "MechSuiteDescription — Shared Conditions for Joint Use of Distinct Mechanisms",
@@ -1901,7 +1903,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/26-a67-a67-mechsuitedescription-shared-conditions-for-joint-use-of-.md"
   },
   "A.6.9": {
-    "title": "Cross-Context Sameness Disambiguation - Restoring the concrete claim behind \"same / equivalent / align\" (RPR-XCTX)",
+    "title": "Cross-Context Sameness Disambiguation - Restoring the claim behind \"same / equivalent / align\" (RPR-XCTX)",
     "status": "Stable",
     "keywords": [
       "ambiguous sameness",
@@ -1947,7 +1949,7 @@
         "A.15.1"
       ]
     },
-    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/27-a69-a69-cross-context-sameness-disambiguation-restoring-the-conc.md"
+    "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/27-a69-a69-cross-context-sameness-disambiguation-restoring-the-clai.md"
   },
   "A.6.S": {
     "title": "TargetSignature and optional ConstructorSignature - demand-driven signature engineering",
@@ -2020,7 +2022,7 @@
     "file": "sections/06-cluster-aiva-signature-stack-boundary-discipline-a6/29-a6h-a6h-wholeness-language-unpacking-rpr-whole.md"
   },
   "A.7": {
-    "title": "Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice)",
+    "title": "Distinction: Repair Conflations of FPF Objects (Clarity Lattice)",
     "status": "Stable",
     "keywords": [
       "category error",
@@ -2042,7 +2044,7 @@
         "all patterns"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/01-a7-a7-strict-distinction-repair-conflations-of-fpf-objects-clar.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/01-a7-a7-distinction-repair-conflations-of-fpf-objects-clarity-lat.md"
   },
   "A.7.1": {
     "title": "Consequence-Guided Ontological Problem Solving",
@@ -2057,7 +2059,7 @@
     ],
     "queries": [
       "Which ontological distinction must change to repair this engineering consequence?",
-      "Can one already selected apparatus reach the result affordably, or is generation or choice genuinely current?"
+      "Can one already selected apparatus reach the result affordably, or does the question now call for generation or choice?"
     ],
     "dependencies": {
       "coordinates_with": [
@@ -2341,7 +2343,7 @@
     "queries": [
       "Which local agential kind and criterion are relevant to this precise agency claim?",
       "Does that System satisfy the criterion and belong to the local agential kind while the assignment obtains for this scope, situation, and window?",
-      "Does a Grade, autonomy, criterion-dependent characteristic, profile, or assurance use actually require the characteristic profile?"
+      "Does a Grade, autonomy, criterion-dependent characteristic, profile, or assurance use require the characteristic profile?"
     ],
     "dependencies": {
       "builds_on": [
@@ -2366,7 +2368,7 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/12-a13-a13-the-agential-role-agency-spectrum.md"
   },
   "A.14": {
-    "title": "Advanced Mereology: Components, Portions, Aspects & Phases",
+    "title": "Mereology: Components, Portions, Aspects & Phases",
     "status": "Stable",
     "keywords": [
       "part",
@@ -2404,7 +2406,7 @@
         "C.27.TA"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/13-a14-a14-advanced-mereology-components-portions-aspects-phases.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/13-a14-a14-mereology-components-portions-aspects-phases.md"
   },
   "A.15": {
     "title": "System-Role–Method–Work Alignment",
@@ -2588,7 +2590,8 @@
     "keywords": [
       "appearance-based reliance",
       "exact attempted use",
-      "independent required-position rows",
+      "prerequisites",
+      "optional comparison rows",
       "governing pattern and direct object",
       "project-side reference",
       "allowed or blocked use",
@@ -2600,7 +2603,7 @@
       "publication face"
     ],
     "queries": [
-      "Which exact positions are missing before this appearance may guide work or reliance?",
+      "Which prerequisite is missing, and what can I do safely with the available basis?",
       "What can be used now, and what remains blocked?",
       "How do I keep a cue, register row, grant, conflict finding, gate, Work, evidence, and institutional effect separate?"
     ],
@@ -2646,7 +2649,7 @@
     ],
     "queries": [
       "Is this intended work ready to start?",
-      "What is missing before commitment to work entry is honest?",
+      "What is missing before commitment to work entry?",
       "How do I keep readiness separate from permission, performed work, work plans, gates, resources, and evidence?"
     ],
     "dependencies": {
@@ -2752,6 +2755,7 @@
         "A.2.2",
         "A.22",
         "C.30",
+        "A.2.4",
         "A.10",
         "and direct domain Methods"
       ]
@@ -2793,7 +2797,7 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/24-a159-a159-use-or-request-a-bounded-result-from-another-practice.md"
   },
   "A.15.10": {
-    "title": "Resume Interrupted Work",
+    "title": "Resume Work",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -2814,10 +2818,10 @@
         "B.1.5"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/25-a1510-a1510-resume-interrupted-work.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/25-a1510-a1510-resume-work.md"
   },
   "A.15.11": {
-    "title": "Make Applicable Methods Noticeable in Work",
+    "title": "Make Methods Noticeable in Work",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -2837,7 +2841,7 @@
         "E.23.CDI"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a1511-a1511-make-applicable-methods-noticeable-in-work.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/26-a1511-a1511-make-methods-noticeable-in-work.md"
   },
   "A.15.PROD": {
     "title": "Production Work, Entity-Identity Inception, and Production Completion Recovery",
@@ -2904,7 +2908,7 @@
         "A.16.0-A.16.2",
         "B.4.1",
         "E.18",
-        "and E.10.MOVE when move-like wording leaves the local language-state object"
+        "and E.10.MOVE for unresolved move-like wording"
       ]
     },
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/28-a16-a16-language-state-moves-choose-the-next-publication-and-use.md"
@@ -3029,7 +3033,7 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/32-a17-a17-canonical-characteristic-achr-norm-name-what-is-measured.md"
   },
   "A.18": {
-    "title": "A.CSLC-KERNEL — Minimal CSLC in Kernel (Characteristic/Scale/Level/Coordinate)",
+    "title": "A.CSLC-KERNEL — CSLC in Kernel (Characteristic/Scale/Level/Coordinate)",
     "status": "Stable",
     "keywords": [
       "CSLC",
@@ -3070,7 +3074,7 @@
         "B.3"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a18-a18-minimal-cslc-in-kernel-characteristic-scale-level-coordi.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/33-a18-a18-cslc-in-kernel-characteristic-scale-level-coordinate-acs.md"
   },
   "A.19": {
     "title": "CharacteristicSpace: Coordinates, State Predicates and Dynamics Hook (A.CHR‑SPACE)",
@@ -3105,7 +3109,6 @@
     "dependencies": {
       "builds_on": [
         "E.24",
-        "A.6.5",
         "A.17",
         "A.18",
         "A.2.6",
@@ -3129,7 +3132,7 @@
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/34-a19-a19-characteristicspace-coordinates-state-predicates-and-dyn.md"
   },
   "A.19.ECS": {
-    "title": "Evaluation CharacteristicSpace Construction: Define What Counts as Better",
+    "title": "CharacteristicSpace Construction: Define What Counts as Better",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -3150,7 +3153,7 @@
         "F.19"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/35-a19ecs-a19ecs-evaluation-characteristicspace-construction-define-wh.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/35-a19ecs-a19ecs-characteristicspace-construction-define-what-counts-a.md"
   },
   "A.19.SPR": {
     "title": "Repair State and Status Wording",
@@ -3280,9 +3283,11 @@
       "normalization refs",
       "indicator policy refs",
       "Γ-fold governance",
-      "registry",
-      "bridges",
-      "CL/loss notes",
+      "maintained editions",
+      "semantic relations",
+      "separate use claims",
+      "loss evidence",
+      "optional CL",
       "WLNK discipline",
       "conformance checklist",
       "SCR/RSCR harness",
@@ -3294,7 +3299,7 @@
     "queries": [
       "What is a CN-frame in FPF?",
       "How does CN-Spec govern comparability and normalization by reference?",
-      "How do CN-frames use bridges and CL for cross-context reuse?",
+      "Which correspondence and reliance grounds does this cross-local reuse need?",
       "What are the conformance and regression checks for CN-frames?",
       "How to make sure different teams measure things the same way?",
       "How to govern metrics so dashboards across departments are comparable?",
@@ -3308,29 +3313,29 @@
         "A.19"
       ],
       "coordinates_with": [
-        "A.6.1 (mechanism intension cards)",
+        "A.6.1 (mechanism operation contracts)",
         "C.16 (evidence/backing)",
-        "F.9 (Bridges & CL)",
-        "G.0 (CG-Spec admissibility gate)"
+        "F.9 (semantic relations and bounded-use claims)",
+        "G.0 (CG-Spec admission conditions)"
       ]
     },
     "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/39-a19cn-a19cn-cn-frame-specify-and-maintain-comparability-and-normal.md"
   },
   "A.19.CHR": {
-    "title": "CHRMechanismSuite: Shared Rules for Characterization and Selection",
+    "title": "Shared Rules for Characterization and Selection",
     "status": "Stable",
     "keywords": [
       "CHR suite",
       "characterization core",
       "CN-Spec",
       "CG-Spec",
-      "admissibility gate",
+      "admissibility conditions",
       "suite obligations",
       "set-return selection",
       "tri-state guard decision",
       "crossing visibility",
-      "Bridge-only transport",
-      "penalties→R_eff",
+      "applicable correspondence and crossing conditions",
+      "model-bound assurance penalties",
       "planned baseline",
       "`SlotFillingsPlanItem`",
       "P2W seam",
@@ -3340,15 +3345,15 @@
     "queries": [
       "What is CHRMechanismSuite in FPF?",
       "How do CHR mechanisms cite CN-Spec/CG-Spec?",
-      "How to enforce planned slot filling in WorkPlanning only?",
+      "How do I record the planned baseline, and when is typed filling needed?",
       "How to keep UNM/UINDM/ULSAM explicit (no hidden tails)?"
     ],
     "dependencies": {
       "builds_on": [
         "A.6.7",
+        "A.15.2",
         "A.15.3",
         "A.6.1",
-        "A.6.5",
         "A.19",
         "G.0",
         "E.18",
@@ -3366,250 +3371,10 @@
         "CHR mechanism stacks"
       ]
     },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/40-a19chr-a19chr-chrmechanismsuite-shared-rules-for-characterization-a.md"
-  },
-  "A.19.UNM": {
-    "title": "Normalize Coordinate Values under Declared Invariants (UNM)",
-    "status": "Stable",
-    "keywords": [
-      "normalization",
-      "`CV→NCV`",
-      "`≡_UNM`",
-      "`NormalizationMethodId`",
-      "`NormalizationMethodInstanceId`",
-      "`NormalizationInvariant[*]`",
-      "`NormalizationFixSpec`",
-      "validity window (no implicit “latest”)",
-      "fail-closed tri-state guard (`pass|degrade|abstain`)",
-      "`CN-Spec.normalization`",
-      "`CN-Spec.comparability.mode`",
-      "declared bearer",
-      "comparison basis",
-      "scope/window",
-      "independently obtaining semantic or plane relation",
-      "separate receiving use"
-    ],
-    "queries": [
-      "What is UNM in FPF?",
-      "How does FPF normalize coordinate values (CV→NCV)?",
-      "What is ≡_UNM and why quotients/fix matter?",
-      "How does CN-Spec.comparability.mode route normalization-based comparability?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.19.CN",
-        "A.6.1",
-        "A.6.5",
-        "A.19.CHR",
-        "A.17–A.18",
-        "C.16",
-        "G.0",
-        "E.18",
-        "E.20",
-        "F.18"
-      ],
-      "coordinates_with": [
-        "G.2",
-        "B.3"
-      ],
-      "used_by": [
-        "A.19.CHR",
-        "A.19.USCM",
-        "A.19.CPM",
-        "A.19.SelectorMechanism"
-      ]
-    },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/41-a19unm-a19unm-normalize-coordinate-values-under-declared-invariants.md"
-  },
-  "A.19.UINDM": {
-    "title": "Indicatorization (UINDM): Select Indicators Under a Declared Policy",
-    "status": "Stable",
-    "keywords": [
-      "indicatorization",
-      "indicator set",
-      "`IndicatorChoicePolicy`",
-      "`CN-Spec.indicator_policy`",
-      "CHR suite stage `indicatorize`",
-      "tri-state admissibility (`pass|degrade|abstain`)",
-      "evidence-gated indicator choice",
-      "Bridge+CL transport visibility",
-      "“no NCV⇒indicator”"
-    ],
-    "queries": [
-      "What is UINDM in FPF?",
-      "How does FPF choose indicators?",
-      "Difference between measurable characteristic and indicator",
-      "How to make indicator choice auditable?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.19.CN",
-        "A.6.1",
-        "A.6.5",
-        "A.19.CHR"
-      ],
-      "coordinates_with": [
-        "G.0",
-        "G.2",
-        "E.20",
-        "F.18"
-      ],
-      "used_by": [
-        "A.19.CHR"
-      ]
-    },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/42-a19uindm-a19uindm-indicatorization-uindm-select-indicators-under-a-de.md"
-  },
-  "A.19.USCM": {
-    "title": "Unified Scoring Mechanism (USCM)",
-    "status": "Stable",
-    "keywords": [
-      "scoring",
-      "score profile",
-      "`ScoringMethodDescription`",
-      "ScaleComplianceProfile (SCP)",
-      "CSLC-lawful transforms",
-      "`CG-Spec.MinimalEvidence`",
-      "tri-state admissibility (`pass|degrade|abstain`)",
-      "“no implicit UNM”",
-      "vector scores by default",
-      "CHR suite stage `score`"
-    ],
-    "queries": [
-      "What is USCM in FPF?",
-      "How does FPF do lawful scoring (SCP-first)?",
-      "How are scoring methods pinned and audited in CHR?",
-      "How does USCM handle unknowns and evidence?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.19.CN",
-        "A.6.1",
-        "A.6.5",
-        "A.19.CHR",
-        "G.0",
-        "A.18",
-        "C.16"
-      ],
-      "coordinates_with": [
-        "A.19.UNM",
-        "A.19.ULSAM",
-        "A.19.CPM",
-        "A.19.SelectorMechanism",
-        "G.2",
-        "E.20",
-        "F.18"
-      ],
-      "used_by": [
-        "A.19.CHR"
-      ]
-    },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/43-a19uscm-a19uscm-unified-scoring-mechanism-uscm.md"
-  },
-  "A.19.ULSAM": {
-    "title": "Unified Lawful Scale Aggregation Mechanism (ULSAM)",
-    "status": "Stable",
-    "keywords": [
-      "lawful aggregation",
-      "scale-lawful fold",
-      "`fold_Γ?`",
-      "`ΓFoldRef`",
-      "`CG-Spec.Γ_fold`",
-      "`CG-Spec.SCP`",
-      "`MinimalEvidence`",
-      "tri-state guard (`pass|degrade|abstain`)",
-      "contributor set",
-      "no hidden aggregation",
-      "penalties→`R_eff` only"
-    ],
-    "queries": [
-      "What is ULSAM in FPF?",
-      "How does FPF do lawful aggregation / Γ-fold?",
-      "Why is fold_Γ a separate CHR stage?",
-      "How to avoid ordinal averaging in FPF?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.19.CN",
-        "G.0",
-        "A.18",
-        "A.6.1",
-        "A.6.5",
-        "A.19.CHR",
-        "B.3"
-      ],
-      "coordinates_with": [
-        "G.2",
-        "E.20",
-        "F.18"
-      ],
-      "used_by": [
-        "A.19.CHR"
-      ]
-    },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/44-a19ulsam-a19ulsam-unified-lawful-scale-aggregation-mechanism-ulsam.md"
-  },
-  "A.19.CPM": {
-    "title": "Compare Admitted Profiles under a Declared Comparator (CPM)",
-    "status": "Stable",
-    "keywords": [
-      "comparison",
-      "comparator",
-      "`ComparatorSpecRef`",
-      "`ComparatorSet`",
-      "set-valued comparison outcome",
-      "partial order",
-      "tri-state admissibility (`pass|degrade|abstain`)",
-      "`MinimalEvidence`",
-      "“no hidden scalarization/totalization”",
-      "obtaining F.9 Bridge and separate bounded-use claim when needed",
-      "applicable ReferencePlane relation",
-      "assurance only for a named assurance claim",
-      "choose between alternatives",
-      "evaluate options",
-      "framework selection",
-      "decision making"
-    ],
-    "queries": [
-      "What is CPM in FPF?",
-      "How do I compare two admitted profiles under a declared comparator?",
-      "Why comparison outputs are set-valued?",
-      "How does CPM handle unknown evidence?",
-      "How to compare two or more approaches fairly?",
-      "How to choose between competing alternatives for a project?",
-      "How to evaluate frameworks or tools against each other?",
-      "Как честно сравнить два или более подхода?",
-      "Как выбрать между конкурирующими вариантами для проекта?",
-      "Как оценить фреймворки или инструменты относительно друг друга?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "A.19.CN",
-        "A.6.1",
-        "A.6.5",
-        "A.19.CHR",
-        "G.0",
-        "A.18"
-      ],
-      "coordinates_with": [
-        "A.19.UNM",
-        "A.19.USCM",
-        "A.19.ULSAM",
-        "A.19.SelectorMechanism",
-        "G.2",
-        "G.5",
-        "G.9",
-        "E.20",
-        "F.18"
-      ],
-      "used_by": [
-        "A.19.CHR"
-      ]
-    },
-    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/45-a19cpm-a19cpm-compare-admitted-profiles-under-a-declared-comparator.md"
+    "file": "sections/07-cluster-av-constitutional-principles-of-the-kernel/40-a19chr-a19chr-shared-rules-for-characterization-and-selection.md"
   },
   "A.19.SelectorMechanism": {
-    "title": "Unified Selection Kernel (SelectorMechanism)",
+    "title": "Selection Kernel",
     "status": "Stable",
     "keywords": [
       "selection kernel",
@@ -3629,8 +3394,8 @@
     ],
     "dependencies": {
       "builds_on": [
+        "A.6.0",
         "A.6.1",
-        "A.6.5",
         "A.19.CHR",
         "A.19.CN",
         "G.0",
@@ -3714,7 +3479,7 @@
     "file": "sections/05-part-a-kernel-architecture-cluster/09-a21-a21-usystemroleassignment-contextual-system-role-assignment.md"
   },
   "A.22": {
-    "title": "Structure and Structural Views (STRUCT-CAL)",
+    "title": "Structure and Structural Views",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -3869,7 +3634,7 @@
         "C.30",
         "E.17",
         "the exact crossing-relation owners",
-        "and B.2 when whole reidentification is needed"
+        "and B.2 when changed facts leave a consequential question about whether the existing whole still carries the claim or a new whole is required"
       ]
     },
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/03-b12-b12-coordinate-decisions-about-system-aggregation-and-delimi.md"
@@ -3973,7 +3738,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/07-b15ew-b15ew-recover-how-constituent-actions-enact-encompassing-wor.md"
   },
   "B.1.5.RS": {
-    "title": "Evaluate a Constituent Method Replacement in Its Encompassing Uses",
+    "title": "Evaluate a Method Replacement in Its Encompassing Uses",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -3988,7 +3753,7 @@
         "C.29"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b15rs-b15rs-evaluate-a-constituent-method-replacement-in-its-encom.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/08-b15rs-b15rs-evaluate-a-method-replacement-in-its-encompassing-uses.md"
   },
   "B.1.5.CM": {
     "title": "Construct and Qualify a Composite Method",
@@ -4000,34 +3765,20 @@
   "B.1.6": {
     "title": "Work-Resource Aggregation",
     "status": "Stable",
-    "keywords": [
-      "work-resource aggregation",
-      "resource Characteristic",
-      "C.16 measurement work/result episteme",
-      "typed input",
-      "Scale/Unit",
-      "dated work set",
-      "work parthood/phase/overlap",
-      "edition-pinned aggregation policy",
-      "allocation/deduplication",
-      "aggregation work",
-      "typed aggregation result",
-      "uncertainty",
-      "provenance"
-    ],
+    "keywords": [],
     "queries": [
-      "How do I aggregate measured resource use over an exact dated work set without double counting shared stocks, people, meters, tools, data, or time?",
-      "Which measurement results, work/overlap relations, policy edition, actual aggregation work, typed result, result episteme, and provenance must remain separately recoverable?",
-      "What supports the aggregation claim when only a planning or display artifact is presented?"
+      "Which resource values and subjects support this total?",
+      "Does the account count one contribution twice?",
+      "Which additional occurrence, policy-edition or provenance grounds does this use need?"
     ],
     "dependencies": {
       "builds_on": [
         "A.15.1",
-        "A.6.1",
         "C.2.1",
         "C.16"
       ],
       "coordinates_with": [
+        "A.6.1",
         "A.3.1",
         "A.3.2",
         "A.15.2",
@@ -4047,8 +3798,7 @@
         "and the pattern that defines the current comparison",
         "assurance",
         "transformation",
-        "reidentification",
-        "or decision claim"
+        "reidentification or decision claim"
       ]
     },
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/10-b16-b16-work-resource-aggregation.md"
@@ -4117,7 +3867,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/12-b2p-b2p-clarify-emergence-and-meta-holon-transition-mht-claims.md"
   },
   "B.2.2": {
-    "title": "Meta-System Transition: Test the Proposed New Whole as a System",
+    "title": "Test the Proposed New Whole as a System",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4154,7 +3904,7 @@
         "and E.24.UK"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b22-b22-meta-system-transition-test-the-proposed-new-whole-as-a-.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/13-b22-b22-test-the-proposed-new-whole-as-a-system.md"
   },
   "B.2.3": {
     "title": "Meta-Holon Transition With Episteme Result",
@@ -4278,7 +4028,7 @@
       "assurance profile"
     ],
     "queries": [
-      "Does this evidence support the claim and use we actually rely on?",
+      "Does this evidence support the claim and use we rely on?",
       "What does this assurance level establish, and under which profile?"
     ],
     "dependencies": {
@@ -4395,7 +4145,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/23-b5-b5-choose-the-next-reasoning-contribution-canonical-reasonin.md"
   },
   "B.5.EA": {
-    "title": "Articulate a Working Distinction from Experience",
+    "title": "Articulate a Distinction from Experience",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -4407,10 +4157,10 @@
         "C.11.DUA for worthwhile further work"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b5ea-b5ea-articulate-a-working-distinction-from-experience.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/24-b5ea-b5ea-articulate-a-distinction-from-experience.md"
   },
   "B.5.WN": {
-    "title": "Develop Lines of Thought with Working Notes",
+    "title": "Develop Lines of Thought with Notes",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4428,7 +4178,7 @@
         "C.2.8 and C.11.DUA for usable recovery and worthwhile effort"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/25-b5wn-b5wn-develop-lines-of-thought-with-working-notes.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/25-b5wn-b5wn-develop-lines-of-thought-with-notes.md"
   },
   "B.5.MPC": {
     "title": "Connect Physical, Mathematical and Computational Reasoning",
@@ -4485,7 +4235,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/28-b5rc-b5rc-recover-a-construction-from-its-description.md"
   },
   "B.5.RA": {
-    "title": "Recover an Argument for Its Next Use",
+    "title": "Recover an Argument for Use",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4503,7 +4253,7 @@
         "C.2.8 and C.37 for recipient understanding and representation choice"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/29-b5ra-b5ra-recover-an-argument-for-its-next-use.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/29-b5ra-b5ra-recover-an-argument-for-use.md"
   },
   "B.5.RR": {
     "title": "Revise Reasoning After a Premise or Question Changes",
@@ -4525,7 +4275,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/30-b5rr-b5rr-revise-reasoning-after-a-premise-or-question-changes.md"
   },
   "B.5.FM": {
-    "title": "Construct a First Model for the Working Question",
+    "title": "Construct a Model for the Question",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4543,10 +4293,10 @@
         "B.5.RR and B.5.MPC.R for revision"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/31-b5fm-b5fm-construct-a-first-model-for-the-working-question.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/31-b5fm-b5fm-construct-a-model-for-the-question.md"
   },
   "B.5.TU": {
-    "title": "Construct a Working Use of an Unfamiliar Theory",
+    "title": "Construct a Use of an Unfamiliar Theory",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4564,10 +4314,10 @@
         "A.15.9 for bounded help"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/32-b5tu-b5tu-construct-a-working-use-of-an-unfamiliar-theory.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/32-b5tu-b5tu-construct-a-use-of-an-unfamiliar-theory.md"
   },
   "B.5.TC": {
-    "title": "Compare Theoretical Accounts for a Working Question",
+    "title": "Compare Theoretical Accounts for a Question",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4587,10 +4337,10 @@
         "C.11.DUA for worthwhile inquiry"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/33-b5tc-b5tc-compare-theoretical-accounts-for-a-working-question.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/33-b5tc-b5tc-compare-theoretical-accounts-for-a-question.md"
   },
   "B.5.QD": {
-    "title": "Develop a New Question from a Result or Construction",
+    "title": "Develop a Question from a Result or Construction",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4607,7 +4357,7 @@
         "E.10.INT and C.11.DUA for worthwhile inquiry"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-question-from-a-result-or-construction.md"
   },
   "B.5.QD.CF": {
     "title": "Reformulate a Problem by Examining Its Conflicting Assumptions",
@@ -4624,7 +4374,7 @@
         "C.11.DUA and B.1.5.EW"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-new-question-from-a-result-or-construction.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/34-b5qd-b5qd-develop-a-question-from-a-result-or-construction.md"
   },
   "B.5.1": {
     "title": "Coordinate Development States: Explore → Shape → Evidence → Operate",
@@ -4756,7 +4506,7 @@
     "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/40-b53-b53-interpret-domain-vocabulary-for-an-fpf-claim-domain-conc.md"
   },
   "B.5.4": {
-    "title": "Recognize a Reusable Concept in a Concrete Situation",
+    "title": "Recognize a Concept in a Situation",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -4767,10 +4517,10 @@
         "C.29 and A.7.1"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/41-b54-b54-recognize-a-reusable-concept-in-a-concrete-situation.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/41-b54-b54-recognize-a-concept-in-a-situation.md"
   },
   "B.5.PI": {
-    "title": "Initiate Inquiry from Ongoing Work",
+    "title": "Initiate Inquiry from Work",
     "status": "Stable",
     "keywords": [],
     "queries": [
@@ -4781,20 +4531,21 @@
     "dependencies": {
       "coordinates_with": [
         "A.15.11 for method encounters",
+        "A.1.STM and B.5.MPC for suitable mantras",
         "B.5.EA for articulation",
         "A.16.1 for cue preservation",
         "B.5.QD and B.5 for inquiry",
         "C.11.DUA and C.11.CRC for worthwhile continuation"
       ]
     },
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/42-b5pi-b5pi-initiate-inquiry-from-ongoing-work.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/42-b5pi-b5pi-initiate-inquiry-from-work.md"
   },
   "B.5.SD": {
-    "title": "Construct a Useful Answer through Substantive Discussion",
+    "title": "Construct an Answer through Substantive Discussion",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/43-b5sd-b5sd-construct-a-useful-answer-through-substantive-discussio.md"
+    "file": "sections/08-part-b-trans-disciplinary-reasoning-cluster/43-b5sd-b5sd-construct-an-answer-through-substantive-discussion.md"
   },
   "C.1": {
     "title": "Physical System State, Conservation, and Resource-Flow Calculus (Sys-CAL)",
@@ -4933,7 +4684,7 @@
       "F–G–R",
       "ClaimScope (G)",
       "support dependencies",
-      "non-aggregate synthesis",
+      "qualitative synthesis",
       "direct relation",
       "Congruence Level (CL / CL^k / CL^plane)",
       "weakest-link limits",
@@ -4993,7 +4744,7 @@
     ],
     "queries": [
       "Which separate facet readings lie behind 'early', 'ready', or 'settled'?",
-      "What position and local threshold does the next action use?",
+      "Does the next action need a chart position, and which conditions does it use?",
       "What is the language-state space in FPF?"
     ],
     "dependencies": {
@@ -5315,39 +5066,12 @@
     },
     "file": "sections/09-part-c-kernel-extension-specifications/15-c31-c31-kind-identity-and-subkind-relations-ukind-and-usubkindof.md"
   },
-  "C.3.2": {
-    "title": "Kind Intent, Membership Judgment, and Extension",
-    "status": "Stable",
-    "keywords": [],
-    "queries": [
-      "May this candidate be judged here?",
-      "What directly makes it count?",
-      "How do I keep support, judgment, guard, and extension separate?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "C.3",
-        "C.3.1",
-        "A.6.0",
-        "C.2.1",
-        "A.2.6"
-      ],
-      "coordinates_with": [
-        "C.3.3",
-        "C.3.4",
-        "C.29",
-        "A.14",
-        "E.24.UK"
-      ]
-    },
-    "file": "sections/09-part-c-kernel-extension-specifications/16-c32-c32-kind-intent-membership-judgment-and-extension.md"
-  },
   "C.3.3": {
     "title": "KindBridge and CL^k — Correspondence between Distinct Kinds",
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "Are these actually two kinds?",
+      "Are these two distinct kinds?",
       "What exact correspondence obtains?",
       "Was receiving classification evaluated afresh?"
     ],
@@ -6924,7 +6648,7 @@
     "file": "sections/09-part-c-kernel-extension-specifications/61-c29bb-c29bb-construct-a-balance-across-a-boundary.md"
   },
   "C.30": {
-    "title": "Grounded Architecture and Selected-Structure Adequacy",
+    "title": "Architecture and Selected-Structure Adequacy",
     "status": "Stable",
     "keywords": [
       "grounded architecture",
@@ -6982,7 +6706,7 @@
         "A.15"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-architecture-and-selected-structure-adequacy.md"
   },
   "C.30.AD": {
     "title": "Architecture Description Adequacy",
@@ -7157,7 +6881,7 @@
     "queries": [
       "What technical claim does this source label support?",
       "Is this a subject level or a grouping in the description?",
-      "When can the clear local wording simply remain?"
+      "When can the clear local wording remain?"
     ],
     "dependencies": {
       "builds_on": [
@@ -7368,7 +7092,7 @@
         "A.15"
       ]
     },
-    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-grounded-architecture-and-selected-structure-adequacy.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/62-c30-c30-architecture-and-selected-structure-adequacy.md"
   },
   "C.31": {
     "title": "Modularity and Reusable Structure Characteristics",
@@ -7578,7 +7302,7 @@
     "keywords": [],
     "queries": [
       "What outside change and use justify this architecture?",
-      "How does this component or builder contribute to the common target?",
+      "How does this component or builder contribute to the project system-of-interest?",
       "What functioning hypothesis must be understood before choosing internal structure?"
     ],
     "dependencies": {
@@ -8134,7 +7858,7 @@
     ],
     "queries": [
       "Can this generated or discovered result be used for architecture work?",
-      "What already obtains and what is only proposed?",
+      "What does this result establish about the organization, and what remains unresolved or proposed?",
       "Which condition must be met before the next architecture use?"
     ],
     "dependencies": {
@@ -8552,11 +8276,11 @@
     "file": "sections/09-part-c-kernel-extension-specifications/125-c41qc-c41qc-qualify-checklist-criteria-and-checking-means.md"
   },
   "C.42": {
-    "title": "Reduce Avoidable Work While Preserving the Needed Result",
+    "title": "Reduce Work While Preserving the Needed Result",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/09-part-c-kernel-extension-specifications/126-c42-c42-reduce-avoidable-work-while-preserving-the-needed-result.md"
+    "file": "sections/09-part-c-kernel-extension-specifications/126-c42-c42-reduce-work-while-preserving-the-needed-result.md"
   },
   "C.43": {
     "title": "Connect Observation, Choice and Action in Control",
@@ -9289,7 +9013,7 @@
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/25-e10-e10-unified-lexical-rules-for-fpf.md"
   },
   "E.10.LRN": {
-    "title": "Recovering What “Learning” Means in the Current Claim",
+    "title": "Recover What “Learning” Means in This Claim",
     "status": "Stable",
     "keywords": [
       "learn",
@@ -9320,7 +9044,7 @@
         "creates no generic Learning result or UTS row"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/26-e10lrn-e10lrn-recovering-what-learning-means-in-the-current-claim.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/26-e10lrn-e10lrn-recover-what-learning-means-in-this-claim.md"
   },
   "E.10.INT": {
     "title": "Recovering What Interest or Curiosity Means Here",
@@ -9369,7 +9093,7 @@
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/28-e10dev-e10dev-recovering-what-development-or-evolution-means-in-the.md"
   },
   "E.10.MOVE": {
-    "title": "Move, Readiness and Trajectory Wording Precision Restoration",
+    "title": "Clarify Wording About Moves, Readiness and Trajectories",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -9396,10 +9120,10 @@
         "G.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e10move-e10move-move-readiness-and-trajectory-wording-precision-rest.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/29-e10move-e10move-clarify-wording-about-moves-readiness-and-trajectori.md"
   },
   "E.10.ARCH": {
-    "title": "Wording-Use Ontological Precision Restoration Architecture",
+    "title": "Architecture for Recovering Ontological Meaning in Wording",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -9456,10 +9180,10 @@
         "E.11"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e10arch-e10arch-wording-use-ontological-precision-restoration-archit.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/30-e10arch-e10arch-architecture-for-recovering-ontological-meaning-in-w.md"
   },
   "E.10.ROLE": {
-    "title": "Recovering What “Role” Means in the Current Claim",
+    "title": "Recover What “Role” Means in This Claim",
     "status": "Stable",
     "keywords": [
       "ambiguous role wording",
@@ -9473,7 +9197,7 @@
       "ordinary wording"
     ],
     "queries": [
-      "What does role mean in this exact claim?",
+      "What does role mean in this claim?",
       "Is this a system classification, assignment, participation, slot or position, another direct relation, or ordinary language?",
       "Which direct pattern should receive the recovered claim?"
     ],
@@ -9487,7 +9211,7 @@
         "F.19"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e10role-e10role-recovering-what-role-means-in-the-current-claim.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/31-e10role-e10role-recover-what-role-means-in-this-claim.md"
   },
   "E.10.P": {
     "title": "Conceptual Prefixes (policy & registry)",
@@ -9574,7 +9298,7 @@
     "queries": [
       "Which entity does this description concern?",
       "When can I rely on it as a specification?",
-      "Which additional viewpoint, evidence or publication relation does this use actually need?"
+      "Which additional viewpoint, evidence or publication relation does this use need?"
     ],
     "dependencies": {
       "builds_on": [
@@ -9763,7 +9487,7 @@
     "status": "Stable",
     "keywords": [],
     "queries": [
-      "What actually changed between these pattern editions?",
+      "What changed between these pattern editions?",
       "Which uses must be reopened?",
       "Is a wider alternative search worth its cost?"
     ],
@@ -9910,7 +9634,7 @@
     "queries": [
       "Which reader needs which publication face?",
       "What is preserved or omitted, and how does the reader return to source?",
-      "Which stronger relation is actually required for reliance?"
+      "Which stronger relation is required for reliance?"
     ],
     "dependencies": {
       "builds_on": [
@@ -9959,6 +9683,8 @@
         "A.6.3.CR",
         "A.6.3.RT",
         "A.6.3.CSC",
+        "C.28",
+        "B.5.2",
         "E.17.ID.CR",
         "A.6.4",
         "A.10",
@@ -9979,21 +9705,21 @@
     "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/51-e17id-e17idcr-compare-sources-within-a-shared-review-frame-compara.md"
   },
   "E.17.AUD": {
-    "title": "PublicationUnit Stability Discipline",
+    "title": "Keep a Publication Unit Stable (PublicationUnit Stability Discipline)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-keep-a-publication-unit-stable-publicationunit-stabil.md"
   },
   "E.17.AUD.LHR": {
-    "title": "PublicationUnit Stability Discipline and Local Head Restoration",
+    "title": "Restore the Local Meaning of an Overloaded Word or Phrase (Local Head Restoration)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-keep-a-publication-unit-stable-publicationunit-stabil.md"
   },
   "E.17.AUD.OOTD": {
-    "title": "PublicationUnit Primary-Subject Discipline",
+    "title": "Clarify the Primary Subject of a Publication Unit (PublicationUnit Primary-Subject Discipline)",
     "status": "Stable",
     "keywords": [],
     "queries": [],
@@ -10020,7 +9746,7 @@
         "A.21"
       ]
     },
-    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-publicationunit-stability-discipline-keep-one-publica.md"
+    "file": "sections/11-part-e-the-fpf-constitution-and-authoring-guides/52-e17aud-e17aud-keep-a-publication-unit-stable-publicationunit-stabil.md"
   },
   "E.18": {
     "title": "Transformation Flow Structure",
@@ -10421,6 +10147,7 @@
         "C.3.1",
         "C.3.2",
         "E.24.PUB",
+        "A.6.3.RT",
         "C.29",
         "C.2.P.DR",
         "A.6.5",
@@ -10981,7 +10708,7 @@
     ],
     "queries": [
       "Which way, description, Work occurrence, or output does this sentence concern?",
-      "Which direct relation actually connects them?",
+      "Which direct relation connects them?",
       "What evidence supports the Work or outcome claim?"
     ],
     "dependencies": {
@@ -11017,7 +10744,8 @@
     "queries": [
       "Which exact promise and delivery Work are judged?",
       "Do the observations measure the promised characteristic directly, or is a separately defined indicator relation needed?",
-      "Which evaluation Work and application returned the result on which declared scale?",
+      "Which inputs and acceptance rule support the result on its declared scale?",
+      "When does the receiving use need the evaluation-Work or exact-application account?",
       "Which evidence use and status rule justify the report?"
     ],
     "dependencies": {
@@ -11315,7 +11043,7 @@
     ],
     "queries": [
       "Which comparisons and aggregations may this frame use, and what evidence do they require?",
-      "How does CG-Spec constrain lawful comparison and aggregation?",
+      "How do I obtain comparison criteria and evidence requirements from the receiving question and available material?",
       "What must be pinned for CG-Spec reproducibility?"
     ],
     "dependencies": {
@@ -11329,9 +11057,6 @@
         "Part F (Bridges/UTS)",
         "E.10",
         "E.5.2"
-      ],
-      "prerequisite_for": [
-        "G.1–G.6"
       ]
     },
     "file": "sections/13-part-g-discipline-sota-patterns-kit/02-g0-g0-define-admissible-comparison-and-aggregation-for-a-frame-.md"
@@ -11394,7 +11119,8 @@
     "queries": [
       "How does FPF harvest and synthesize SoTA for a CG-Frame?",
       "When is TraditionAtlasView lawful and when is palette-first or thinner interpretation enough?",
-      "How do competing Traditions stay plural while bridgeable and refreshable?"
+      "How do competing Traditions stay plural while bridgeable and refreshable?",
+      "What can I return when the available corpus fails a coverage criterion?"
     ],
     "dependencies": {
       "builds_on": [
@@ -11453,8 +11179,9 @@
         "C.16 (MM-CHR)",
         "A.19.CHR",
         "A.15.3",
-        "G.6",
-        "F.17"
+        "A.10",
+        "F.17",
+        "G.6 when shared path citation is used or required"
       ],
       "prerequisite_for": [
         "G.4"
@@ -11467,43 +11194,6 @@
       ]
     },
     "file": "sections/13-part-g-discipline-sota-patterns-kit/05-g3-g3-chr-authoring-for-a-cgframe-characteristics-scales-levels.md"
-  },
-  "G.4": {
-    "title": "CAL Authoring: Calculi - Acceptance - Evidence",
-    "status": "Stable",
-    "keywords": [
-      "CAL Pack@CG-Frame",
-      "Context charter",
-      "typed operator card",
-      "acceptance clause",
-      "legal flow",
-      "`pass \\| fail \\| unknown`",
-      "evidence/currentness profile",
-      "proof-or-gap row",
-      "TaskMap",
-      "declaration/runtime boundary",
-      "dated `EvaluationWork`",
-      "actual A.6.1 bindings",
-      "verdict episteme"
-    ],
-    "queries": [
-      "How do I author a reusable CAL pack for the current task before any candidate is evaluated?",
-      "How do I keep a stored operator, clause, flow, manifest, proof row, or evidence ref separate from dated evaluation work and its verdict?",
-      "Which optional extension governor, entry condition, and stop condition are required before extra method wiring enters?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "G.Core and E.8"
-      ],
-      "used_by": [
-        "G.5",
-        "G.8",
-        "G.9",
-        "G.10",
-        "G.11"
-      ]
-    },
-    "file": "sections/13-part-g-discipline-sota-patterns-kit/06-g4-g4-cal-authoring-for-a-cg-frame-operators-acceptance-clauses.md"
   },
   "G.5": {
     "title": "Method-Family Registry, Dispatch and Selected-Set Result Declaration",
@@ -11526,7 +11216,7 @@
     ],
     "queries": [
       "How does FPF dispatch among rival method families without hidden scalarization?",
-      "How do I state a Shortlist or RankedShortlist honestly?",
+      "How do I state a Shortlist or RankedShortlist?",
       "How do I declare already selected framework editions for joint use without treating them as Methods?",
       "When does G.5 begin after C.11 choice, C.19 pool policy, or C.24 planning?"
     ],
@@ -11659,48 +11349,6 @@
     },
     "file": "sections/13-part-g-discipline-sota-patterns-kit/09-g7-g7-crosstradition-bridge-calibration-kit-bridgematrix-bridge.md"
   },
-  "G.8": {
-    "title": "Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG)",
-    "status": "Stable",
-    "keywords": [
-      "SoS-LOG",
-      "rule ids",
-      "admissibility ledger",
-      "tri-state `{pass|degrade|abstain}`",
-      "maturity ladder (poset/ordinal)",
-      "selector-facing bundle",
-      "evidence path pins (`PathId/PathSliceId`)",
-      "Bridge/CL/Φ policy pins",
-      "set-result/archive telemetry",
-      "RSCRTriggerKindId"
-    ],
-    "queries": [
-      "How to package SoS-LOG rules for the selector?",
-      "How to publish a maturity ladder as a citable card?",
-      "How to keep thresholds out of LOG and pin evidence paths?"
-    ],
-    "dependencies": {
-      "builds_on": [
-        "G.Core",
-        "C.23",
-        "G.4",
-        "G.6",
-        "G.5",
-        "C.22"
-      ],
-      "coordinates_with": [
-        "G.7",
-        "G.10",
-        "G.11",
-        "F.8",
-        "F.9",
-        "E.18",
-        "E.10",
-        "E.5.2"
-      ]
-    },
-    "file": "sections/13-part-g-discipline-sota-patterns-kit/10-g8-g8-package-method-family-admissibility-rules-and-maturity-la.md"
-  },
   "G.9": {
     "title": "Parity / Benchmark Harness",
     "status": "Stable",
@@ -11757,7 +11405,7 @@
       "no semantic respecification"
     ],
     "queries": [
-      "How does FPF ship a SoTA pack without smuggling semantics?",
+      "How can I publish a SoTA pack while keeping the source definitions and their governing patterns traceable?",
       "What is SoTA-Pack(Core) as a pack rather than a kit or suite?",
       "How do AuditPins, MOOManifest, path citations, and crossing bundles support replay and refresh?"
     ],
@@ -11881,7 +11529,7 @@
     ],
     "queries": [
       "How does FPF integrate external scholarly indexes into Part G?",
-      "What is an ExternalIndexCard / ClaimMapperCard / InteropSurface in FPF?",
+      "How do I derive a needed claim or feature from external fields and source definitions, or identify the exact missing transformation?",
       "How to make interop refreshable with RSCR trigger kinds and edition pins?"
     ],
     "dependencies": {

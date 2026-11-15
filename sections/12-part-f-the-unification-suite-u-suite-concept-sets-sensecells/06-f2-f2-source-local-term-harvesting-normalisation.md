@@ -4,15 +4,15 @@
 **Type:** Architectural pattern.
 
 > **Status:** Stable
-**Depends on.** F.1 **Question-Relative Source Selection**; F.0.1 **Source-Local Meaning Recovery**; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
+**Depends on.** F.1 for question-relative source selection; F.0.1 **Source-Local Meaning Recovery**; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
 **Coordinates with.** F.3 **Source-Local Sense Clustering**; F.17 for an optional durable cell and basis relation; F.4 **SystemRoleKindDescription** when the recovered subject is a local system-role kind; F.9 only for an actual relation between distinct local meanings.
 **Aliases (informative).** *source-local harvesting*; *local normalisation*.
 
 ### F.2:1 - Intent & applicability
 
-**Intent.** Turn usage in an exact source and edition into a small, auditable set of source-local expressions and one-sentence meaning claims. Keep the source’s idiom, help a cold reader, and withhold every cross-source conclusion.
+**Intent.** Turn usage in an exact source and edition into a small, auditable set of source-local expressions and meaning claims. Keep the source's idiom and the explanation the intended reader needs, while leaving cross-source conclusions to their own comparison.
 
-**Use this when.** F.1 has selected a source because it can change the receiving answer, and the reader needs the actual words that carry its contribution. Re-enter when the selected edition, passage, language, or interpretation basis changes enough to change meaning.
+**Use this when.** F.1 has selected a source because it can change the receiving answer, and the reader needs the source wording that carries its contribution. Re-enter when the selected edition, passage, language, or interpretation basis changes enough to change meaning.
 
 **Do not use this when.** The words are already recovered precisely enough for the receiving question, or the current task is to relate two local meanings; use F.9 for that relation. F.2 creates no global term, kind, assignment, behaviour, obligation, or storage scheme.
 
@@ -22,7 +22,7 @@ Three mistakes recur even after the right sources are selected:
 
 1. **Word-centrism.** A string such as *process*, *role*, or *service* is treated as though it carried one meaning everywhere.
 2. **Over-normalisation.** Spelling or morphology is forced into a house style and source-specific cues disappear.
-3. **Premature structure.** A short lexical note quietly acquires behavioural, deontic, measurement, or kind claims that the source passage does not establish.
+3. **Premature structure.** A short lexical note acquires behavioural, deontic, measurement, or kind claims that the source passage does not establish.
 
 F.2 prevents these mistakes by tying each expression and local-sense claim to the exact source basis that supports it.
 
@@ -37,9 +37,9 @@ F.2 prevents these mistakes by tying each expression and local-sense claim to th
 
 ### F.2:4 - Core idea (didactic)
 
-For each needed use, name the **exact source and edition**, the relevant passage, and the **effective reference scheme** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, add Tech and Plain labels, and state the **LocalSenseClaim** in one sentence.
+For each needed use, name the **exact source and edition**, the relevant passage, and the **effective reference scheme** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, and explain its **LocalSenseClaim** at the detail needed by the receiving question. Add a separate label when a naming or didactic use needs it.
 
-That is the ordinary F.2 result. If later work needs a durable address, F.17 may represent it as `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>` and record the basis relation. The cell is optional and does not replace the source, passage, or claim. F.2 establishes no relation to another source-local meaning.
+The ordinary result is a source-local lexical note. When later work needs a durable address for the meaning, F.17 can supply a `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>`. State a basis relation when its support is established and that relation matters to the use. Keep the source, edition, passage, claim and any needed labels recoverable with the note. A relation to a meaning in another source is a separate F.9 question.
 
 ### F.2:5 - Minimal vocabulary (this pattern only)
 
@@ -47,9 +47,9 @@ That is the ordinary F.2 result. If later work needs a durable address, F.17 may
 * **Attested phrase** — a short verbatim cue showing how the expression is used in that source.
 * **LocalExpression** — the exact expression whose source-local meaning is being recovered.
 * **Local Normal Form (LNF)** — the minimally edited surface used to cite that expression while preserving the source’s spelling, hyphenation, and casing.
-* **Tech and Plain labels** — an engineer-facing label faithful to the source and a newcomer-facing label that does not add scope.
-* **LocalSenseClaim** — one sentence saying what the expression means in this source use, at the least generality needed by the receiving question.
-* **Source-local lexical note** — the exact source basis, expression and LNF, labels, claim, and one or two attested cues. This is F.2’s ordinary outcome.
+* **Additional labels, when needed** — a source-faithful Tech designation and, for a stated didactic use, a Plain designation for the same local meaning.
+* **LocalSenseClaim** — the claim saying what the expression means in this source use, at the least generality and sufficient detail needed by the receiving question.
+* **Source-local lexical note** — the exact source basis, expression and LNF, meaning claim, supporting passages, and any labels needed by the receiving use. This is F.2's ordinary outcome.
 * **Homonymy signal** — notice that the same string supports different local claims; this notice is not a relation between those claims.
 * **SchemeSenseCell** — F.17’s optional three-part address, used only when durable reuse needs it.
 
@@ -59,30 +59,30 @@ That is the ordinary F.2 result. If later work needs a durable address, F.17 may
 
 Ask: **“Which exact source use am I reading, and under which interpretation rules?”**
 
-Name the source and edition, locate the passage, and recover the effective reference scheme with F.0.1. Take one or two representative phrases. If you cannot identify that basis, do not harvest the word yet.
+Name the source and edition, locate the passages that support the meaning, and recover the effective reference scheme with F.0.1. Quote representative wording when it helps the reader recover that meaning. If the basis cannot be identified, leave the interpretation unresolved.
 
 #### F.2:6.2 - Move B — Name the local meaning faithfully
 
-Ask: **“How does this source itself say it?”**
+Ask: **“How does this source express the meaning?”**
 
-Choose the LNF with minimal editing. Keep an idiomatic Tech label, add an explanatory Plain label, and write one LocalSenseClaim. Prefer the source’s head noun and meaningful modifiers. Put behavioural equations, obligations, measurements, and kind criteria under their direct patterns rather than inside the lexical note.
+Choose the LNF with minimal editing and explain the LocalSenseClaim. When the receiving use needs an additional label, keep the Tech designation in the source's idiom; add a Plain designation when it helps the intended reader recover the same meaning. Preserve meaningful head nouns and modifiers. Include a source-grounded equation, obligation or kind criterion when it is part of that meaning. Establishing a factual instance, performance, obligation or classification remains a separate claim under its direct pattern.
 
 #### F.2:6.3 - Move C — Fence the result
 
 Ask: **“What has this source use not established?”**
 
-Refuse to infer sameness, substitution, hierarchy, or transfer across sources; refuse to merge a materially different edition or language use by spelling alone; and refuse to treat the expression as the value that the substantive claim is about. Take a needed cross-source relation question to F.9.
+Do not infer sameness, substitution, hierarchy or transfer across sources. Matching spelling alone cannot justify merging materially different uses across editions or languages. Keep the expression distinct from the value that the substantive claim concerns. Take a needed cross-source relation question to F.9.
 
-### F.2:7 - Guard-rails (normative, lightweight)
+### F.2:7 - Normative guard-rails
 
 1. **Basis visible.** Every harvested expression **MUST** name the exact source and edition and the effective reference scheme needed to recover its meaning.
 2. **Idiomatic normalisation.** LNF **MUST** preserve meaningful source spelling, hyphenation, casing, and modifiers with minimal edits.
-3. **Two registers.** Each note **SHOULD** carry Tech and Plain labels; the Plain label must explain rather than broaden.
+3. **Registers when used.** A Tech designation remains source-faithful. A Plain designation is added for a stated didactic use and must explain the same meaning without broadening it.
 4. **Minimal generality.** The LocalSenseClaim **MUST** say no more than the source use and receiving question require.
 5. **Category hygiene.** A lexical note **MUST NOT** stand in for behaviour, obligation, measurement, kind, assignment, Work, or evidence.
 6. **No cross-source claim.** F.2 **MUST NOT** assert equivalence, subsumption, similarity, permission, or transfer between local meanings.
 7. **Edition and language honesty.** When edition or language changes meaning, recover a distinct source-local claim and interpretation basis.
-8. **Parsimony.** Keep the head expressions that affect F.3, F.4, F.8, or a real F.9 question; omit an unused tail.
+8. **Parsimony.** Keep the head expressions that affect F.3, F.4, F.8, or a relation to be tested under F.9; omit an unused tail.
 
 ### F.2:8 - Micro-examples
 
@@ -101,7 +101,7 @@ Refuse to infer sameness, substitution, hierarchy, or transfer across sources; r
 * Prefer the source’s head noun and meaningful modifier: do not shorten *service-level objective* to *objective*.
 * Preserve spelling or case when it carries source signal.
 * Compress from attested use, not from a neighbouring theory.
-* When *role*, *function*, *process*, or another trigger word appears, recover the actual subject before choosing a label.
+* When *role*, *function*, *process*, or another trigger word appears, identify what the source passage is about before choosing a label.
 
 ### F.2:10 - Anti-patterns & remedies
 
@@ -111,13 +111,13 @@ Refuse to infer sameness, substitution, hierarchy, or transfer across sources; r
 | **A2** | String = meaning | Identical spelling is treated as one concept. | Homonyms such as *role* and *process* collapse. | State source, scheme, and LocalSenseClaim before comparison. |
 | **A3** | Over-normalisation | Case, hyphens, or modifiers are removed for consistency. | Source cues and citations become unreliable. | Make only minimal edits. |
 | **A4** | Headless multiword | *Service-level objective* becomes *objective*. | Scope disappears. | Preserve the meaningful compound. |
-| **A5** | Premature structure | A gloss contains equations, duties, or kind axioms. | A lexical note is asked to establish a substantive fact about another value. | Route the substantive claim to its direct pattern. |
+| **A5** | Meaning used as factual warrant | A gloss is used to establish that a substantive condition holds in an instance. | Explaining an equation, duty or kind criterion does not establish its application to an instance. | Preserve defining content in the explanation; test the substantive claim under its direct pattern. |
 | **A6** | Cross-source folding | “BPMN process ≈ PROV activity” appears in F.2. | A relation and its losses are hidden. | Leave the comparison to F.9. |
 | **A7** | Edition blur | A source name has no edition although usage changed. | The claim cannot be replayed. | Name the exact edition and recover the changed meaning afresh. |
 | **A8** | Dialect elevation | A tool keyword list is treated as the whole domain. | One source use displaces other evidence. | Keep it as one exact source basis. |
 | **A9** | Tail chasing | Hundreds of unused terms are harvested. | Signal and working memory are diluted. | Keep terms that change the receiving answer. |
 | **A10** | Fake Plain label | Tech and Plain repeat the same jargon. | The cold reader gains nothing. | Explain the use without widening it. |
-| **A11** | Design-time and run-time blur | A design expression is glossed as an occurrence, or conversely. | MethodDescription and Work collapse. | State the actual source-local claim and route the distinction through F.11, A.3, and A.15. |
+| **A11** | Design-time and run-time blur | A design expression is glossed as an occurrence, or conversely. | MethodDescription and Work collapse. | State the claim supported by the source passage and route the distinction through F.11, A.3, and A.15. |
 | **A12** | Cross-language collapse | Bilingual expressions are merged because a dictionary aligns them. | Normative and idiomatic differences vanish. | Recover each source use; assert a relation only when one obtains. |
 | **A13** | Alias inflation | A new technical term is invented “for clarity”. | It competes with the source and hides provenance. | Keep inventions, if needed, only as bounded Plain labels. |
 | **A14** | Role–status conflation | RBAC *role* is glossed as an acting system role. | Permission and agency claims mix. | Say **access role (RBAC)** and use E.10.ROLE and F.4 for any system-role claim. |
@@ -128,7 +128,7 @@ The entries in this section are possible readings to inspect, not completed lexi
 
 #### F.2:11.1 - Enactment and sensing
 
-Use the completed PROV-O note as one source-backed input. The BPMN, SOSA/SSN and ITIL cues still need their exact source bases before they can be used as lexical notes. After that recovery, a writer can ask how an SOSA observation result relates to an ITIL service target; the list itself establishes no sameness between BPMN *process* and PROV *activity*.
+Use the completed PROV-O note as one source-backed input. The BPMN, SOSA/SSN and ITIL cues still need their exact source bases before they can be used as lexical notes. After that recovery, a writer can ask how an SOSA observation result relates to an ITIL service target; listing the expressions together does not establish sameness between BPMN *process* and PROV *activity*.
 
 #### F.2:11.2 - Control and services
 
@@ -145,24 +145,24 @@ Use the source's service-disruption criteria to decide whether a reported plant 
 * **SPEM 2.0 and ISO 24744 sources** — `method`; Plain **way of doing**; claim recovered from the cited method passage.
 * **SOSA/SSN (2017)** — `procedure`; Plain **observation recipe**; claim: “A description of how an observation may be carried out.”
 
-The notes do not turn an FCA concept into a root kind or a procedure description into a Method. Those are separate claims under their direct patterns.
+Classifying an FCA concept as a root kind or identifying a Method from a procedure description requires a separate claim under the relevant pattern. Once recovered, the source meanings can inform those judgements.
 
-### F.2:12 - Safe reasoning moves
+### F.2:12 - Reasoning from a source-local meaning
 
 1. **Localise.** Hear the expression only in the exact source use now under examination.
 2. **Recover.** Identify the edition, passage, effective scheme, and source-local claim.
 3. **Normalise minimally.** Choose an LNF that preserves the source’s idiom.
-4. **Explain twice.** Keep an idiomatic Tech label and a helpful Plain label.
+4. **Label when needed.** Keep the source-faithful designation; add a Plain label when the receiving reader needs it.
 5. **Check scope.** Tighten any sentence that says more than the passage supports.
 6. **Signal homonymy.** Note repeated spelling without claiming a relation.
-7. **Stop.** When the local note is clear enough for the receiving question, do not add a cell or comparison merely for completeness.
+7. **Stop.** When the local note is clear enough for the receiving question, stop without adding a cell or comparison for the sake of completeness.
 8. **Address only when needed.** Use F.17’s three-part cell when later reuse requires stable addressability.
 
 ### F.2:13 - Relations
 
 **Builds on:**
 
-- Use **F.1 Question-Relative Source Selection** to recover the exact sources, editions, answer-changing contributions, and receiving question.
+- Use the selected sources and editions, the receiving question and each source’s contribution to answering it. If the source cut still needs justification, use **F.1** for that comparison.
 - Use **F.0.1 Source-Local Meaning Recovery** to recover the exact source-local claim.
 - Use **E.10.D1** when vague *context* wording hides source, scheme, scope, situation, or use.
 - Use **F.17** for a durable `SchemeSenseCell` and basis relation only when later reuse needs that address.
@@ -190,7 +190,7 @@ The notes do not turn an FCA concept into a root kind or a procedure description
 
 * **SCR-F2-S01 (basis).** Every note names the exact source and edition and the effective scheme required to recover the claim.
 * **SCR-F2-S02 (idiomatic LNF).** Each LNF preserves meaningful spelling, hyphenation, casing, and modifiers.
-* **SCR-F2-S03 (two registers).** Tech is faithful and Plain is explanatory without added scope.
+* **SCR-F2-S03 (registers when used).** Tech is faithful; an added Plain designation is explanatory without added scope.
 * **SCR-F2-S04 (lexical boundary).** No note substitutes for behaviour, obligation, measurement, kind, assignment, Work, or evidence.
 * **SCR-F2-S05 (no cross-source claim).** F.2 asserts no equivalence, hierarchy, transfer, or permission between local meanings.
 * **SCR-F2-S06 (minimal generality).** Each LocalSenseClaim is no broader than its source use and receiving question.
@@ -201,10 +201,10 @@ The notes do not turn an FCA concept into a root kind or a procedure description
 * **RSCR-F2-E02 (normaliser stability).** LNF edits do not silently widen or narrow the claim.
 * **RSCR-F2-E03 (language honesty).** Translation does not create unproved sameness.
 * **RSCR-F2-E04 (no stealth relation).** New notes still contain no cross-source identity or use claim.
-* **RSCR-F2-E05 (head-term focus).** The working set remains small and tied to actual downstream questions.
+* **RSCR-F2-E05 (head-term focus).** The working set remains small and tied to the downstream questions it must answer.
 
 ### F.2:16 - Didactic distillation
 
-> “Name the exact source and edition, find the passage, and say under which reference scheme you are reading it. Keep the source’s own expression, add a faithful Tech label and a helpful Plain label, and state its local meaning in one sentence. Stop there. The same spelling elsewhere proves nothing. Use F.17 only if you need a stable address, and use F.9 only if a real relation between two local meanings must be tested.”
+> “Name the exact source and edition, find the relevant passages, and say under which reference scheme you are reading them. Keep the source's own expression and explain its local meaning. Add a separate label when the receiving use needs it, preserving the same meaning. Stop when that answers the question. Use F.17 when a stable address is needed, and F.9 when a relation between two local meanings must be tested.”
 
 ### F.2:End

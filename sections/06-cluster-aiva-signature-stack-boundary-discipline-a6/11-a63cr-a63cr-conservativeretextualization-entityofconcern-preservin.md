@@ -14,7 +14,7 @@ Use this pattern when available source claims about the same EntityOfConcern nee
 
 **What goes wrong if missed.** A summary, translation, or manager-readable rewrite is treated as harmless editing after it has started hiding explanation work, bridge work, changed authority relation, or a narrower admissible use.
 
-**What this buys.** One honest same-entity textual rewrite with visible source-relation tether, visible omission or loss notes, and a clear repair or next-pattern route when conservativity fails.
+**What this buys.** A same-entity textual rewrite with visible source-relation tether and omission or loss notes, and a repair or next-pattern route when conservativity fails.
 
 **Ordinary use.** A short source-to-result statement can suffice when the source relation, material omissions and intended use remain recoverable.
 
@@ -34,10 +34,10 @@ Without a dedicated pattern for conservative textual re-expression:
 ### A.6.3.CR:3 - Forces
 
 - **Same entity, different wording.** Readers need different textual forms without reopening the EntityOfConcern.
-- **Compression vs loss visibility.** Shorter or plainer forms are often useful, but omissions and source-loss modes must stay explicit.
+- **Compression vs loss visibility.** Shorter or plainer forms are often useful, but omissions and source-loss modes that affect interpretation or intended use must stay visible.
 - **Direct vs correspondence-mediated rewrites.** Some rewrites use one source episteme; others depend on claims about relations among sources.
 - **Restatement vs another construction.** Explanation, a material representation change and retargeting need their own conditions even when their outputs include text.
-- **Publication discipline.** Admissible MVPK faces and publication renderings still matter even when the transform looks like "just a rewrite."
+- **Publication discipline.** Admissible MVPK faces and publication renderings matter for textual rewrites.
 
 ### A.6.3.CR:4 - Solution — entityOfConcernRef-preserving textual re-expression under `A.6.3`
 
@@ -45,9 +45,9 @@ Without a dedicated pattern for conservative textual re-expression:
 
 > `ConservativeRetextualization` specializes A.6.3 viewing for textual re-expression about the same EntityOfConcern.
 >
-> It preserves the exact EntityOfConcern resolved by each side's `entityOfConcernRef` under that side's effective ReferenceScheme, keeps the transform effect-free, and allows only claim-preserving or explicitly loss-declared rewriting of already available content.
+> It preserves the EntityOfConcern resolved by each side's `entityOfConcernRef` under that side's effective ReferenceScheme, keeps the transform effect-free, and allows only claim-preserving or explicitly loss-declared rewriting of already available content.
 >
-> It may change register, ordering, textual density, language, emphasis or local wording. Its receiving assertions remain subject to A.6.3 conservativity. Separately asserted Bridge, reliance, authorization, Work, evidence or decision claims need their own grounds; fluent rewriting supplies none by itself.
+> It may change register, ordering, textual density, language, emphasis or local wording. Its receiving assertions remain subject to A.6.3 conservativity. Separately asserted Bridge, reliance, authorization, Work, evidence or decision claims need their own grounds.
 
 Here, **entityOfConcernRef-preserving** means that resolved-entity equality, not identical reference spelling. Keep a material reference or scheme change explicit under `A.6.3:4.3`.
 
@@ -59,9 +59,11 @@ Use these local terms when distinguishing the source and rendering:
 - **Ordinary case** = a reviewable same-entity rewrite where a short account keeps the source tether, omission notes, and neighboring-pattern conditions readable.
 - **Case needing fuller review** = a case whose material preservation, correspondence or intended-use question requires more support than the short account supplies.
 
-`sourceSlice` and `publishedSlice` are local review labels for the source textual slice and resulting textual rendering in one rewrite case. A `publishedSlice` remains a rendering label. When one exact selected `U.Episteme` is made available, E.24.PUB identifies its audience and bounded-use declarations, the particular expression and carrier, and the obtaining `EpistemePublicationRelation`. When a reusable publication form is selected, establish that expression's conformance to its rules. Form-mediated expression and bearing claims use the same expression as witness. The slice label establishes neither a publication kind nor another episteme identity.
+`sourceSlice` and `publishedSlice` are local review labels for the source textual slice and resulting textual rendering in one rewrite case. A `publishedSlice` remains a rendering label.
 
-For example, a short restatement shared in a text file can identify the receiving episteme, audience, use, actual text and file without choosing a reusable form. If the receiving use requires a specified report form, the text must also satisfy that form's rules. The source tether, omission notes and conservative-rewrite conditions apply in both cases.
+When one selected `U.Episteme` is made available, E.24.PUB identifies its audience and bounded-use declarations, the expression and carrier, and the obtaining `EpistemePublicationRelation`. When a reusable publication form is selected, establish that expression's conformance to its rules. Form-mediated expression and bearing claims use the same expression as witness. The slice label establishes neither a publication kind nor another episteme identity.
+
+For example, a short restatement shared in a text file can identify the receiving episteme, audience, use, text and file without choosing a reusable form. If the receiving use requires a specified report form, the text must also satisfy that form's rules. The source tether, omission notes and conservative-rewrite conditions apply in both cases.
 
 These local review labels follow the `E.17:5.1e` local-field rule.
 
@@ -95,24 +97,26 @@ Start with the preservation question:
 3. Can the reader see what was omitted, softened, or foregrounded?
 4. If several sources or correspondence claims contribute, can each receiving claim be traced to those sources and the rule that licenses it?
 5. Is the source merely pointed at, was it actually used, are the rewritten claims recoverable from it, and is the result admissible for the intended use?
-6. If any answer is doubtful, is the problem a missing source or condition, a repairable preservation defect, or an actual changed claim needing another pattern?
+6. If any answer is doubtful, is the problem a missing source or condition, a repairable preservation defect, or a changed claim needing another pattern?
 
 If omissions, softening, or filtering are admissible only because the published result is coarsened, tied to narrower admissible use, non-admissible for downstream use, and tied to source-bearing return, the case has crossed out of ordinary conservative retextualization even if the prose still looks like a summary. Use `A.6.3.CSC Controlled Semantic Coarsening` for that source-to-rendering relation.
 
-Here, **source-bearing return** means returning to the source-bearing content. First identify any missing source or condition and repair and recheck a preservation defect within CR when the intended restatement can be restored. A **changed-claim exit** applies when the attempted claim really becomes explanation, representation shift, retargeting, gate, evidence, Work, assurance, or Bridge use: name that claim and use the pattern that defines, constrains, or tests it. Resolve the exact predicate or defining `ClaimGraph` only when the current claim or a named later use depends on that rule edition. A coarsened textual slice may need both source-bearing return and a changed-claim exit.
+Here, **source-bearing return** means returning to the source-bearing content. First identify any missing source or condition and repair and recheck a preservation defect within CR when the intended restatement can be restored.
+
+A **changed-claim exit** applies when the attempted claim becomes explanation, representation shift, retargeting, gate, evidence, Work, assurance, or Bridge use: name that claim and use the pattern that defines, constrains, or tests it. Resolve the predicate or defining `ClaimGraph` only when the current claim or a named later use depends on that rule edition. A coarsened textual slice may need both source-bearing return and a changed-claim exit.
 
 Only after these questions are answered does a fuller review record usually become worth writing.
 
 #### A.6.3.CR:4.3 - Working-model first; explicit review record only when the case needs fuller review
 
-Follow **E.14’s working-model-first discipline**: an ordinary report, summary, or translation states what stayed the same, what was omitted, when the rewrite stops being conservative, and which pattern to use next. Put only the support needed for the current review or reliance question beneath that account.
+Follow **E.14’s working-model-first discipline**: an ordinary report, summary, or translation keeps the source claims, preserved meaning and material omissions recoverable. When a changed claim needs another pattern, name that claim and its route. Put only the support needed for the current review or reliance question beneath that account.
 
 **Ordinary case (default).** For everyday entityOfConcernRef-preserving rewrites, it is usually enough that the text or its surrounding publication keeps explicit:
 - which source `U.Episteme` claims are being re-expressed;
 - that the EntityOfConcern resolved by each side's `entityOfConcernRef` remains the same;
 - whether the case is direct or correspondence-mediated when that is not obvious;
 - what omissions or source-loss modes matter for the reader;
-- any changed claim needing another pattern, when that question actually arises.
+- any changed claim needing another pattern, when that question arises.
 
 **Explicit review record (when fuller review is needed).** Include or inherit the fields needed to inspect the material preservation, correspondence, source-use or downstream-use question. Assurance, policy and cross-context cases often make such questions consequential. The record may inherit pattern ids and pinned metadata instead of restating them inline. Select only the applicable groups:
 - transform relation (`patternSpecializationRef = A.6.3 specialization`, `relationFunctionClaimRef`, `sourcePublicationOrRecordForm`, `targetPublicationOrRecordForm`, `changeTargetRef`);
@@ -144,13 +148,13 @@ Default admissibility for ordinary entityOfConcernRef-preserving textual cases:
 - identify those relations and the supporting claims; when a reference to their describing episteme is needed, local `CorrespondenceModelRef` designates that episteme under A.6.3:4.5, without introducing a U-kind;
 - every receiving assertion remains supported by the named sources and admitted correspondence claims, with the same EntityOfConcern and declared material loss.
 
-Cross-language translation is not automatically direct. If the translation depends on declared correspondence, reference-scheme mediation, or bounded equivalence notes, it must be treated as correspondence-mediated rather than disguised direct rewriting.
+Cross-language translation is not automatically direct. If the translation depends on declared correspondence, reference-scheme mediation, or bounded equivalence notes, it must be treated as correspondence-mediated.
 
 #### A.6.3.CR:4.4.a - Recurring same-entity textual moves
 
 Examples of textual moves that can preserve the same EntityOfConcern include:
 - **Register shift** — a technical statement is rewritten into plainer engineer-manager prose without changing what is being said about the same entity.
-- **Summary or filtered restatement** — a source note is shortened or focused on one declared slice, with omissions stated rather than hidden.
+- **Summary or filtered restatement** — a source note is shortened or focused on one declared slice, with omissions stated.
 - **Cross-language restatement** — the same source claim is restated in another natural language while the same source tether and same-entity line remain explicit.
 - **Correspondence-mediated textual synthesis** — one text combines supported claims through identified relations among the sources; any separate Bridge or substitution claim keeps its own conditions.
 
@@ -160,7 +164,7 @@ Each example remains under A.6.3 only while the same-entity and conservativity l
 
 ##### A.6.3.CR:4.5.a. - Preservation rule
 
-A case under `ConservativeRetextualization` preserves the same resolved EntityOfConcern, the declared bounded context, and the already available claim-bearing source while changing wording, register, language, ordering, or density. It states what remains preserved about claim scope, publication scope, pins, provenance, grounding, and ontic scaffold, and it says whether the case is `Direct` or `Correspondence`.
+A case under `ConservativeRetextualization` preserves the same resolved EntityOfConcern, the declared bounded context and support from the identified available source claims while changing wording, register, language, ordering, or density. Keep conditions on claim scope, publication scope, pins, provenance, grounding and ontic scaffold recoverable where they affect interpretation or intended use. State whether the case is `Direct` or `Correspondence` when that distinction is not already obvious.
 
 ##### A.6.3.CR:4.5.b. - Loss and reliability rule
 
@@ -168,11 +172,15 @@ State omissions, foregrounding and source-loss modes that affect interpretation 
 
 ##### A.6.3.CR:4.5.c. - Authority and changed-claim boundary
 
-A case reviewed under this pattern stays about the same entity and remains an episteme-to-episteme textual rewrite. It does not establish explanation faithfulness, an F.9 Bridge or bounded-use suitability, retargeting, current reliance, authorization, or actual receiving use. If the rewrite becomes explanatory, Bridge-bearing, gate-bearing, or world-facing, state the attempted claim and use the pattern that defines, constrains, or tests it. Use F.9 for a semantic Bridge between two exact F.17 local senses or a proposed bounded use of that Bridge. Take a current reliance question to triggered A.10 or B.3 and authorization to the pattern that directly constrains the receiving act. For an asserted occurrence, first recover the actual object or occurrence under its direct obtaining or admission rule, then cite the evidence on which the assertion relies. A precise dated Work claim needs A.13 and independent A.15.1 admission; add F.6 only for precise assignment-bound attribution. Do not create those records when their branches are not live.
+A case reviewed under this pattern stays about the same entity and remains an episteme-to-episteme textual rewrite. It does not establish explanation faithfulness, an F.9 Bridge or bounded-use suitability, retargeting, current reliance, authorization, or actual receiving use. If the rewrite becomes explanatory, Bridge-bearing, gate-bearing, or world-facing, state the attempted claim and use the pattern that defines, constrains, or tests it.
+
+Use F.9 for a semantic Bridge between two F.17 local senses or a proposed bounded use of that Bridge. Take a current reliance question to triggered A.10 or B.3 and authorization to the pattern that directly constrains the receiving act.
+
+For an asserted occurrence, first recover the object or occurrence under its direct obtaining or admission rule, then cite the evidence on which the assertion relies. A dated Work claim needs A.13 and independent A.15.1 admission; add F.6 only for precise assignment-bound attribution. Do not create those records when their branches are not live.
 
 ##### A.6.3.CR:4.5.d. - Composition and reopen rule
 
-A repeat claim follows A.6.3:4.7: identify the first and next rewrite arrows, establish the same resulting episteme and the required composite equivalence, and supply a fixture or proof. Different rewrite orders may yield different results. Reopen the affected claims when a needed source, correspondence witness, provenance, publication-form condition or preservation basis is no longer recoverable. Revalidate them when such a dependency changes materially, even if it remains explicit; unaffected claims retain their grounds. E.17:5.1b–c supplies the applicable reopen conditions.
+For deterministic replay or composition, use A.6.3:4.7. To claim that a further normalization leaves the result unchanged, identify the first and next rewrite arrows, establish the same resulting episteme and the required composite equivalence, and supply a fixture or proof. Different rewrite orders may yield different results. Reopen the affected claims when a needed source, correspondence witness, provenance, publication-form condition or preservation basis is no longer recoverable. Revalidate them when such a dependency changes materially, even if it remains explicit; unaffected claims retain their grounds. E.17:5.1b–c supplies the applicable reopen conditions.
 
 ##### A.6.3.CR:4.5.e. - Correspondence and its receiving use
 
@@ -180,11 +188,11 @@ A correspondence claim used by the rewrite and a claim that the result suits a r
 
 ##### A.6.3.CR:4.5.f. - Local conservativity witness for borderline textual cases
 
-For borderline textual rewrites, the user treats the case as conservative only while each point below remains visibly preserved or its loss is declared and admissible for the stated use. A missing basis or repairable defect follows the repair route in §4.2.b; an actual changed claim or use follows the pattern that defines, constrains, or tests it.
+For borderline textual rewrites, the user treats the case as conservative only while each point below remains visibly preserved or its loss is declared and admissible for the stated use. A missing basis or repairable defect follows the repair route in §4.2.b; a changed claim or use follows the pattern that defines, constrains, or tests it.
 - **Modality and force.** A rewrite may not silently turn possibility, uncertainty, permission, obligation, recommendation, decision status, bounded scope, temporal window, or hypothesis language into a wider commitment.
 - **Caveats and qualifications.** A rewrite may not quietly remove conditions, exception notes, uncertainty markers, or temporal qualifiers that still matter for interpreting the same source.
 - **Reliability assessment.** Cleaner prose, better ordering, or manager-facing polish may not silently raise confidence, warrant claim, or readiness for action.
-- **Bridge and receiving-use boundary.** Same-entity textual fluency may not establish a semantic Bridge between local senses, bounded-use suitability, current reliance, authorization, or a comparative-review occurrence. Open only the F.9, A.10 or B.3, authorization, or occurrence branch that the actual later use needs; recover an asserted occurrence under its direct obtaining or admission rule.
+- **Bridge and receiving-use boundary.** Same-entity textual fluency may not establish a semantic Bridge between local senses, bounded-use suitability, current reliance, authorization, or a comparative-review occurrence. Open only the F.9, A.10 or B.3, authorization, or occurrence branch that the later use needs; recover an asserted occurrence under its direct obtaining or admission rule.
 - **Alternative preservation.** A rewrite may not collapse open alternatives, rival hypotheses, or declared plurality into one apparently settled interpretation unless the loss is stated and still admissible under this pattern.
 
 This witness is local to `ConservativeRetextualization`. It does not replace the broader conservativity invariants of `A.6.3`; it makes them inspectable for textual rewrites where fluent prose can otherwise hide strengthening.
@@ -196,7 +204,7 @@ This witness is local to `ConservativeRetextualization`. It does not replace the
 
 **Published report slice.** `Evening-batch latency for Service S exceeded the threshold. Source pins: Trace T-44, Dashboard D-17. Low-confidence hypotheses are omitted here and remain in the pinned source note.`
 
-This is an admissible direct `ConservativeRetextualization` because the EntityOfConcern stays fixed, the report remains textual, and the omission is stated rather than hidden. In ordinary internal use, this often needs only source pins plus visible omission notes rather than a full explicit review record.
+This is an admissible direct `ConservativeRetextualization` because the EntityOfConcern stays fixed, the report remains textual, and the omission is stated. In ordinary internal use, this often needs only source pins plus visible omission notes rather than a full explicit review record.
 
 #### A.6.3.CR:5.1.a - Ordinary inherited-pin summary
 **Pinned source cluster.** `In this example, N-14 is the source note in §5.1; N-14, trace T-44, and dashboard card D-17 are already published together under one incident review bundle.`
@@ -218,7 +226,11 @@ This stays ordinary `ConservativeRetextualization` because the omission is decla
 
 **Published summary slice.** `For small-batch mixing, choose method family MF-2 when material X remains below T. Selected method M-2 still requires work plan WP-17 and result measurement RM-4.`
 
-This remains `ConservativeRetextualization` because it is a textual restatement of the same source-episteme claims and it keeps the work-planning and result-measurement requirements visible. It is admissible for interpretation and source-finding. It does not by itself provide performed `U.Work`, evidence, gate passage, engineering justification, or control architecture. If the summary drops WP-17 or RM-4, or makes the selected method look executable by summary alone, restore those requirements before presenting it as a faithful summary or executable guidance. A deliberately coarsened version needs `A.6.3.CSC Controlled Semantic Coarsening` with narrower admissible use, forbidden stronger use, and source-bearing return. For stronger use, apply the exact governing requirement to the current facts; the CSC label or a reference alone does not satisfy it.
+This remains `ConservativeRetextualization` because it restates the source's selection rule and preserves its planning and measurement requirements. The summary supports interpretation and source-finding. Keep WP-17 and RM-4 recoverable whenever they affect the stated interpretation, decision or performance; actual use must satisfy the applicable requirements.
+
+A shorter summary used only to select a method family may omit requirements for performing the selected method when that omission does not mislead the reader about the summary's scope or make M-2 appear ready for execution.
+
+If material loss is admissible only with a narrower use and return to the source, use `A.6.3.CSC Controlled Semantic Coarsening` with that narrower admissible use, forbidden stronger use, and source-bearing return. For stronger use, apply the governing requirement to the current facts; the CSC label or a reference alone does not satisfy it.
 
 #### A.6.3.CR:5.1.d - Generated-summary source-relation variant
 
@@ -227,7 +239,7 @@ A generated summary follows the same source, EntityOfConcern and conservativity 
 | Source-relation question | CR-local meaning |
 | --- | --- |
 | source pointer present | The summary points to the source slice or source bundle it claims to restate. |
-| source actually used | The inspectable source relation shows that the generation or rewrite actually used the named source, not merely a similar topic or remembered background. If that relation is unavailable, source use remains unresolved; retain only the justified source-pointer or orientation use until the relation is recovered. |
+| source actually used | The inspectable source relation shows that the generation or rewrite actually used the named source, not merely a similar topic or remembered background. If that historical relation is unavailable, leave it unresolved and block only claims or uses that require it. Retain independently established claim support and uses whose own requirements are satisfied. |
 | claim recoverable from source | Each summary assertion can be recovered from the source claims or admitted correspondence witness under the declared rule. |
 | claim merely plausible | A sentence sounds likely but is not recoverable from the source. Do not present it as source-backed: retain only a justified source-finding or orientation pointer, or explicitly separate the unsupported proposition and repair it or handle it under the pattern for the new claim. |
 | omission or loss | Relevant omitted qualifiers, alternatives, caveats, uncertainty, or conditions are visible enough for the admissible use. |
@@ -238,7 +250,7 @@ When the generated-summary case needs shared vocabulary, use only the `E.17:5.1b
 
 The summary may expose or cite the source slice it restates. It does not become that source slice by fluency, brevity, translation, layout, generated form, or reuse. If the needed source content, governing requirement, or case relation is missing, a repair request or source-gap note is only prospective: it neither establishes earlier source use nor supplies the missing claim support or use condition.
 
-If the generated summary is source-pointer-only, merely plausible, claim-widened, or carrying added linkage, do not treat it as a conservative source-equivalent summary. For source-finding or orientation, retain only the justified pointer and separate any unsupported or new proposition from the source-backed account. Repair the claim against the source, or apply A.6.3.CSC, ExplanationFaithfulnessProfile, RepresentationSchemeTransition, E.17.ID.CR, A.15, A.10, or another pattern that defines, constrains, or tests the actual claim. An orientation or coarsening label alone does not make an unsupported claim source-faithful.
+If the generated summary is source-pointer-only, merely plausible, claim-widened, or carrying added linkage, do not treat it as a conservative source-equivalent summary. For source-finding or orientation, retain only the justified pointer and separate any unsupported or new proposition from the source-backed account. Repair the claim against the source, or apply A.6.3.CSC, ExplanationFaithfulnessProfile, RepresentationSchemeTransition, E.17.ID.CR, A.15, A.10, or another pattern that defines, constrains, or tests the claim. An orientation or coarsening label alone does not make an unsupported claim source-faithful.
 
 #### A.6.3.CR:5.2 - Same-EntityOfConcern rewrite via declared correspondence
 
@@ -257,7 +269,7 @@ The synthesis remains in this pattern only while its source relation is explicit
 
 **English reader gloss (comprehension aid only).** `The backup controller remains in passive observation mode until the primary loop fails two consecutive heartbeat checks.`
 
-The gloss helps an English-only reader follow the example and find the claim being re-expressed. It is a comprehension aid, not a second source or verification of the Russian translation. A conservativity claim still requires suitable language competence or other evidence for the same-claim, same-EntityOfConcern, and hidden-bridge tests.
+Russian *пока … не* uses a negative particle where English *until the primary loop fails* has none. In both versions the backup continues to watch until the primary has failed two checks in a row. Omitting the second failure or reversing the condition changes the event up to which passive watching is required. The gloss helps an English-only reader follow this difference. It is a comprehension aid, not a second source or verification of the Russian translation. A conservativity claim still requires suitable language competence or other evidence for the same-claim, same-EntityOfConcern, and hidden-bridge tests.
 
 This remains in `ConservativeRetextualization` only if the translation is tethered to the same source claim, preserves the same EntityOfConcern, and adds no claim beyond the source. Apply F.9 only when a semantic Bridge between local senses or a proposed bounded use of that Bridge is claimed.
 
@@ -266,7 +278,7 @@ This remains in `ConservativeRetextualization` only if the translation is tether
 
 **Published coarsened slice.** `Pressure drift above 2.5% is a warning condition in the bulletin. Check the pinned bulletin and annex before treating the note as rollback guidance.`
 
-This does **not** remain ordinary `ConservativeRetextualization`. The coarsened slice drops equipment-specific exceptions and remains only an orientation warning: it is not an executable rollback command. It can stay honest only through narrower admissible use, non-admissible downstream use, and source-bearing return to the source-bearing bulletin. Once that narrower-use boundary becomes primary, the case leaves ordinary same-entity rewrite and must use `A.6.3.CSC Controlled Semantic Coarsening` rather than being treated as a harmless summary.
+This does **not** remain ordinary `ConservativeRetextualization`. The coarsened slice drops equipment-specific exceptions and remains only an orientation warning: it is not an executable rollback command. It is admissible only through narrower admissible use, non-admissible downstream use, and source-bearing return to the bulletin. Once that narrower-use boundary becomes primary, the case leaves ordinary same-entity rewrite and must use `A.6.3.CSC Controlled Semantic Coarsening`.
 
 #### A.6.3.CR:5.3 - Boundary to explanation-facing renderings
 
@@ -277,7 +289,7 @@ A prose note is rewritten as a table, matrix, diagram, latent representation, or
 
 ### A.6.3.CR:6 - Bias-Annotation
 
-This pattern intentionally biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is to repair a preservation defect within CR when possible and apply `ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, or the pattern that defines, constrains, or tests the actual changed claim or use when it requires leaving same-entity textual restatement.
+This pattern biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is to repair a preservation defect within CR when possible and apply `ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, or the pattern that defines, constrains, or tests the changed claim or use when it requires leaving same-entity textual restatement.
 
 ### A.6.3.CR:7 - Conformance Checklist
 
@@ -285,16 +297,16 @@ This pattern intentionally biases toward same-entity conservativity and away fro
    The EntityOfConcern values independently resolved by the source and receiving `entityOfConcernRef` values are equal.
 2. **CC-CR-2 — Textual re-expression remains the right family.**
    Textual restatement remains primary; explanation or a material representation-scheme change is not the primary move.
-3. **CC-CR-3 — Loss, provenance, pinning, and reliability are explicit or inherited by pinned reference.**
-   The case states these explicitly or inherits them through already-pinned content that remains visible to review.
-4. **CC-CR-4 — Direct vs correspondence split is explicit.**
-   The direct-vs-correspondence split is explicit and justified.
+3. **CC-CR-3 — Material loss, provenance, pinning, and reliability conditions remain recoverable.**
+   The case makes conditions that affect interpretation or intended use recoverable from the text, its surrounding publication, or the source references on which that use depends.
+4. **CC-CR-4 — Direct or correspondence-mediated construction is identifiable.**
+   The source relations make the profile recoverable; state and justify the distinction explicitly when it is not obvious.
 5. **CC-CR-5 — Correspondence witness is named where needed.**
    If correspondence-mediated, identify the relations and supporting claims; use `CorrespondenceModelRef` when their describing episteme must be cited.
 6. **CC-CR-6 — Local conservativity witness remains satisfied.**
    The reviewed case does not silently widen modality, remove caveats, raise reliability assessment, add an F.9 Bridge or bounded-use suitability claim, establish current reliance or authorization, claim that receiving use occurred, or collapse declared alternatives beyond stated loss notes.
 7. **CC-CR-7 — A missing condition, preservation defect, or changed claim is explicit on failure.**
-   If the case fails a check, name the missing source or condition, the repairable preservation defect, or the actual changed claim. Repair and recheck within CR when the intended restatement can be restored. For an actual different claim or use, name the pattern to use next (`ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, `B.5.2`, or another applicable pattern).
+   If the case fails a check, name the missing source or condition, the repairable preservation defect, or the changed claim. Repair and recheck within CR when the intended restatement can be restored. For a different claim or use, name the pattern to use next (`ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, `B.5.2`, or another applicable pattern).
 8. **CC-CR-8 — Working-model first remains intact.**
    Ordinary same-entity rewrites stay lightweight; fuller explicit review records carry the fields needed for cases requiring fuller review.
 
@@ -302,7 +314,7 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 
 | Anti-pattern | Why it is wrong | How to avoid it |
 |---|---|---|
-| Treating every summary as automatically conservative | summary demand hides omission and claim shift | publish loss and provenance discipline explicitly |
+| Treating every summary as automatically conservative | summary demand hides omission and claim shift | compare receiving claims with the sources and the declared rule; expose material loss and provenance conditions |
 | Hiding correspondence in plain paraphrase | the relations and claims needed to support the rewrite disappear into prose | identify those relations and claims, and cite their describing episteme when needed |
 | Letting a rewrite become explanation | explanation work quietly becomes a textual "rewrite" | apply explanation governance once didactic or explanatory work dominates |
 | Letting the EntityOfConcern shift by topic similarity | same topic is not the same EntityOfConcern | independently resolve the source and receiving `entityOfConcernRef` values; apply `A.6.4` if the resolved entities differ |
@@ -311,7 +323,7 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 
 - Readers can inspect the connection between the source claims and the rewritten text.
 - Direct and correspondence-mediated variants stay visibly separated.
-- Loss, provenance, and reliability transport become explicit instead of implicit editorial judgement.
+- Loss, provenance, and reliability conditions that affect interpretation or intended use remain recoverable.
 - Ordinary working-model use stays lightweight, while cases needing fuller review get the additional record content their risk and use warrant.
 - The pattern remains bounded by `A.6.3`, `A.6.4`, explanation-facing work, and representation-shift work.
 
@@ -336,7 +348,7 @@ For source recoverability, independent-verification claims and reopening, use th
 
 - **Builds on:** `A.6.3`, `A.6.2`, `A.7`, `E.10.D2`, `E.17.0`, `E.17`, `F.9`, `F.18`, `E.10`
 - **Coordinates with:** `ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `B.5.2`, `A.15`
-- **Failed conservativity:** name the missing source or condition, repair and recheck a preservation defect within CR when possible, or apply the pattern for the actual changed claim or use. Retargeting uses `A.6.4`, abductive work uses `B.5.2`, and action or work claims use the applicable `A.15` pattern; explanation, representation change, and other live claims keep their own routes.
+- **Failed conservativity:** name the missing source or condition, repair and recheck a preservation defect within CR when possible, or apply the pattern for the changed claim or use. Retargeting uses `A.6.4`, abductive work uses `B.5.2`, and action or work claims use the applicable `A.15` pattern; explanation, representation change, and other live claims keep their own routes.
 - **Boundary notes:** explanation-facing cases apply `ExplanationFaithfulnessProfile`; representation-regime shifts apply `RepresentationSchemeTransition`; bounded comparative review cases apply `E.17.ID.CR ComparativeReviewUnit`; EntityOfConcern changes apply `A.6.4`.
 
 ### A.6.3.CR:End

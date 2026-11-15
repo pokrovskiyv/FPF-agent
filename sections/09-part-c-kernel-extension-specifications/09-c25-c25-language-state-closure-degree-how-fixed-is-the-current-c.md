@@ -6,14 +6,14 @@
 
 **Plain-name.** Language-state closure degree.
 
-**Use this pattern when.** Use C.2.5 when a governed `U.Episteme` publication must say how fixed its candidate space, route space, or frame space has become before endpoint use, reopening, or retreat.
+**Use this pattern when.** Use C.2.5 when a `U.Episteme` publication must say how fixed its candidate space, route space, or frame space has become before endpoint use, reopening, or retreat.
 
 **What goes wrong if missed.** A confident tone is mistaken for closure, closure is mistaken for truth or gate authority, or a closure drop leaves readers unable to tell which endpoint uses and route commitments remain supported.
 
 **What this buys.** A separate ordinal characteristic for closure degree, so teams can distinguish exploration, stabilization, selected route, guarded fixation, and admissible retreat without collapsing closure into formality, articulation, warrant, or obligation.
 
 ### C.2.5:1 - Problem frame
-A governed `U.Episteme` may already be explicit enough for publication while its declared position claim remains intentionally open to rival routes or frames. The declared language-state chart over `U.CharacteristicSpace` therefore needs a separate pattern defining the closure-degree basis slot: how fixed or closed the current candidate space has become.
+A `U.Episteme` may already be explicit enough for publication while its declared position claim remains intentionally open to rival routes or frames. The declared language-state chart over `U.CharacteristicSpace` therefore needs a separate pattern defining the closure-degree basis slot: how fixed or closed the current candidate space has become.
 
 ### C.2.5:2 - Problem
 Closure is often hidden inside vague words such as "ready", "settled", or "open". When closure is not explicit, teams cannot reason cleanly about reopen, sketch-backoff, or the admissibility of endpoint docking.
@@ -32,15 +32,17 @@ Language-state closure degree (`CD`) characterizes how firmly a specified candid
 
 Closure degree is the Characteristic; `CD0`–`CD5` name values on its ordinal Scale. A reading attributes a supported value, or a set of remaining possible values, to an identified episteme edition within a stated assessment scope and receiving use. A language-state chart binds the Characteristic and Scale in a slot under A.19. The Characteristic, its Scale values, a reading and the chart slot remain distinct under A.18/A.19.
 
-A closure assessment states the actual fixity and its grounds. Claims about a binding route commitment, gate or authority relation follow their own rules and case facts. A note or C.2.LS profile can express the closure assessment; its reusable form and the filled assessment remain distinct.
+A closure assessment states the fixity and its grounds. Claims about a binding route commitment, gate or authority relation follow their own rules and case facts. A note or C.2.LS profile can express the closure assessment; its reusable form and the filled assessment remain distinct.
 
 #### C.2.5:4.5 - Recover the choice before assigning a level
 
 Name the question or choice whose candidate space matters. Recover the live alternatives, any selected route or frame, and the reason that limits further choice. State the scope of that fixation and what would justify reopening it. The different sources of narrowing in :16.2 determine what must be reconsidered when conditions change.
 
-Use that ordinary account directly when it supplies the receiving decision's condition. Assign a `CD` reading when the work needs comparison on this Scale, a chart position or a test against a declared threshold. Match the actual narrowing and reopening conditions to :4.2; retain an unresolved reading when the available grounds do not establish them. A level does not replace the surviving alternatives or the reason for their treatment.
+Use that ordinary account directly when it supplies the receiving decision's condition. Assign a `CD` reading when the work needs comparison on this Scale, a chart position or a test against a declared threshold. Match the narrowing and reopening conditions to :4.2; retain an unresolved reading when the available grounds do not establish them. A level does not replace the surviving alternatives or the reason for their treatment.
 
-The Scale's order describes greater fixity, not a universal improvement. Inquiry may need several alternatives kept live; a particular operational use may need one route fixed under a separately justified rule. C.2.4 assesses how explicit this content is. Writing out the alternatives and the decision rule can improve articulation without changing closure. New evidence or a changed use can instead reopen one choice while other commitments remain fixed. Preserve the supported observations and surviving choices, then revise only the conclusions affected by the change, using A.16.2 when a publication move is needed.
+The Scale's order describes greater fixity, not a universal improvement. Inquiry may need several alternatives kept live; a particular operational use may need one route fixed under a separately justified rule.
+
+C.2.4 assesses how explicit this content is. Writing out the alternatives and the decision rule can improve articulation without changing closure. New evidence or a changed use can instead reopen one choice while other commitments remain fixed. Preserve the supported observations and surviving choices, then revise only the conclusions affected by the change, using A.16.2 when a publication move is needed.
 
 #### C.2.5:4.1 - Characteristic specification
 - **Assessed subject:** the identified episteme edition, with the candidate space, assessment scope and receiving use stated.
@@ -56,7 +58,7 @@ The Scale's order describes greater fixity, not a universal improvement. Inquiry
 | `CD2` | narrowed candidate space | explicit rivals remain, but the field is meaningfully reduced |
 | `CD3` | selected route or framing | one route is chosen, though reopening remains routine |
 | `CD4` | publication- or operation-fixed under guard | changes require named justification |
-| `CD5` | strongly fixed | relaxation requires an explicit `A.16.2` move and governance note |
+| `CD5` | strongly fixed under an explicit retreat rule | the applicable rule requires an explicit `A.16.2` move to relax the fixation; make its governance basis, reason and changed commitments recoverable, adding a note only when the existing publication content is insufficient |
 
 #### C.2.5:4.3 - Non-collapse rules
 `LanguageStateClosureDegree` is not:
@@ -70,7 +72,7 @@ The Scale's order describes greater fixity, not a universal improvement. Inquiry
 A text may be highly explicit but low-closure, or low-explicitness but already high-closure by policy. Those states shall not be collapsed.
 
 #### C.2.5:4.4 - Change discipline
-Increasing `CD` requires narrowing candidate space, route space, or frame space explicitly. Lowering `CD` is admissible only through a named move such as `reopen`, `sketchBackoff`, or `respecify`, with a retained-witness and discarded-assumption note.
+Increasing `CD` requires narrowing candidate space, route space, or frame space explicitly. When closure decreases, make the prior fixation, reason for reopening and still-binding remainder recoverable. Use `A.16.2` when a published framing, route or use claim must be revised or the applicable fixation rule requires that move; add a note only when the existing material is insufficient.
 
 An ordinary PatternID in `governingPatternRef` locates the FPF rule relevant to the closure claim. Use a separate `relationFunctionClaimRef` for its exact defining or constraining `ClaimGraph` only when admissible interpretation, comparison, migration, publication, or reuse depends on that exact rule identity (`E.10`, `E.4.PFR`). Use `authoritySourceRef` when a non-pattern source carries the relevant authority.
 
@@ -87,22 +89,22 @@ Explicit closure takes description work; it makes the remaining rivals and groun
 ### C.2.5:7 - Conformance Checklist
 - `CC-C.2.5-1` Closure **SHALL** be declared independently from `F` and `AE` when it matters for routing, docking, or reopening.
 - `CC-C.2.5-2` Reopen/backoff moves **SHALL** cite the prior closure state they are relaxing.
-- `CC-C.2.5-3` Strong-closure states **SHOULD** name the guard, `governingPatternRef`, or `authoritySourceRef` that makes the closure binding.
+- `CC-C.2.5-3` A claim that strong closure is binding **SHOULD** name the applicable guard, `governingPatternRef`, or `authoritySourceRef` that establishes that binding force.
 - `CC-C.2.5-4` A closure drop **SHALL NOT** silently preserve an endpoint-use claim when the supporting route or publication form no longer supports it.
 
 ### C.2.5:8 - Common Anti-Patterns and How to Avoid Them
-- **Closure by mood.** A sentence sounds decisive, so teams assume high closure. State the actual fixation and its grounds; add a `CD` reading when the receiving use needs that scale.
-- **Irreversible drift.** Closure rises informally but no reopening condition exists. Use `A.16.2`.
+- **Closure by mood.** A sentence sounds decisive, so teams assume high closure. State the fixation and its grounds; add a `CD` reading when the receiving use needs that scale.
+- **Irreversible drift.** Closure rises informally but no reopening condition exists. State what would justify reopening; use `A.16.2` when a published framing, route or use claim must be revised.
 - **Authority smuggling.** High closure is treated as if it were automatically a gate or obligation. Check the applicable gate condition for a gate claim; use `A.2.8` to check whether the claimed obligation obtains.
 
 ### C.2.5:9 - Consequences
-The benefit is admissible handling of stabilization, commitment, and reopening. The trade-off is more explicit state declaration and more explicit retreat records.
+The benefit is admissible handling of stabilization, commitment, and reopening. The trade-off is making the narrowing and any consequential retreat recoverable.
 
 ### C.2.5:10 - Rationale
 Closure describes how fixed the candidate space is; articulation describes how explicit its meaning is. `A.16.0` and its related patterns can use both when each affects the move condition.
 
 ### C.2.5:11 - SoTA-Echoing
-The facet aligns with iterative design, open-world reasoning, and exploratory search practices where closure is a governance choice rather than a hidden by-product.
+The comparison in :13.1 distinguishes making a diagnostic question explicit from excluding an alternative with a reference-gauge reading. Only the latter narrows that candidate space. In :13.2 a policy instead fixes the route for a horizon; reopening then depends on that policy as well as changed observations. These cases support identifying the source of narrowing and retaining separate `AE` and `CD` judgements when both are used.
 
 ### C.2.5:12 - Relations
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
@@ -119,7 +121,7 @@ A practitioner choosing the next diagnostic question can use the stated alternat
 An operator rule may be only moderate in `AE` but high in `CD` because policy already fixes the next step under the current horizon. This shows why closure is governance-facing, not merely stylistic.
 
 #### C.2.5:13.3 - Reopen case
-A route may move from `CD4` back to `CD2` when counter-evidence appears. Record the counter-evidence and the retreat as an admissible `A.16.2` move.
+A route may move from `CD4` back to `CD2` when counter-evidence appears. Make the counter-evidence and changed scope of closure recoverable; use `A.16.2` when the publication must be revised.
 
 ### C.2.5:14 - Authoring and Review Guidance
 
@@ -127,12 +129,12 @@ A route may move from `CD4` back to `CD2` when counter-evidence appears. Record 
 To assign `CD`, ask:
 
 - how many rivals remain live?
-- is one route merely preferred, or actually fixed?
+- is one route merely preferred, or fixed?
 - if the closure is binding, what applicable guard, `governingPatternRef`, or `authoritySourceRef` makes it so?
 - what would count as an admissible reopen trigger?
 
 #### C.2.5:14.2 - Review prompt
-An assurance reader should identify the actual narrowing and its source under :16.2, including a policy or protocol when it fixes the route. Confident tone or an appeal to hierarchy alone does not establish that fixity.
+An assurance reader should identify the narrowing and its source under :16.2, including a policy or protocol when it fixes the route. Confident tone or an appeal to hierarchy alone does not establish that fixity.
 
 #### C.2.5:14.3 - Governance note
 Whenever a claim about a gate, commitment, or endpoint use depends on `CD`, the supporting guard, `governingPatternRef`, or `authoritySourceRef` should be visible.
@@ -143,7 +145,7 @@ Whenever a claim about a gate, commitment, or endpoint use depends on `CD`, the 
 Contexts may refine the starter closure anchors, but shall keep the ordinal progression and the explicit link to reopen/backoff discipline.
 
 #### C.2.5:15.2 - Migration from readiness language
-When routing, endpoint use or reopening depends on words such as "settled", "closed", "final", or "open", recover the claimed fixity and its grounds. Use an explicit `CD` reading when that scale is needed and a named `A.16.2` move when the closure changes. Sufficient ordinary wording needs no separate level solely to repeat it.
+When routing, endpoint use or reopening depends on words such as "settled", "closed", "final", or "open", recover the claimed fixity and its grounds. Use an explicit `CD` reading when that scale is needed and `A.16.2` when a publication move is needed. Sufficient ordinary wording needs no separate level solely to repeat it.
 
 #### C.2.5:15.3 - Boundary reminder
 `CD` is not warrant strength and not a gate decision. It speaks only about the local fixity of the current episteme or publication position and its candidate space.
@@ -168,7 +170,7 @@ Closure may be local rather than global. A note can be closed enough for one rou
 ### C.2.5:17 - Continuing and Withdrawn Authority Handling
 
 #### C.2.5:17.1 - Authority retention rule
-If higher `CD` carried endpoint expectations, guard claims, or route commitments, a closure drop must say which consequences remain and which are withdrawn. Treat any actual authority-relation change separately under its direct pattern, as required by `A.16.2`.
+If higher `CD` carried endpoint expectations, guard claims, or route commitments, a closure drop must say which consequences remain and which are withdrawn. Treat any authority-relation change separately under the pattern that governs that authority relation, as required by `A.16.2`.
 
 #### C.2.5:17.2 - Admissible retreat record
 An admissible retreat through `reopen`, `sketchBackoff`, or `respecify` should retain:
@@ -195,7 +197,7 @@ An assurance reader should ask:
 - whether the publication distinguishes local closure from whole-case finality.
 
 #### C.2.5:18.2 - False-finality test
-When a receiving action relies on "final", "settled", or "decided", check the actual scope and source of fixation and any applicable guard. A final-sounding word alone does not establish those conditions.
+When a receiving action relies on "final", "settled", or "decided", check the scope and source of fixation and any applicable guard. A final-sounding word alone does not establish those conditions.
 
 #### C.2.5:18.3 - Cross-facet reminder
 Assess articulation under C.2.4 and representation under C.2.7 independently of closure. Source, evidence, access and action conditions retain their separate claims under C.2.6.
