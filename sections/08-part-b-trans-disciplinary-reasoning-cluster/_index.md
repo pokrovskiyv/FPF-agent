@@ -1,45 +1,45 @@
 # Part B - Trans-disciplinary Reasoning Cluster
 
-- [B.1 - Holon Aggregation and Part-Whole Construction (B.1)](01-b1-b1-holon-aggregation-and-part-whole-construction.md)
-- [B.1.1 - Dependency Structure and Relation Grounding (B.1.1)](02-b11-b11-dependency-structure-and-relation-grounding.md)
-- [B.1.2 - Coordinate Decisions About System Aggregation and Delimitation (B.1.2)](03-b12-b12-coordinate-decisions-about-system-aggregation-and-delimi.md)
-- [B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation (B.1.3)](04-b13-b13-knowledge-aggregation-_epist-synthesis-and-target-scheme.md)
-- [B.1.4 - Specify Order-Sensitive or Temporal Aggregation (Γ_ctx, Γ_time) (B.1.4)](05-b14-b14-specify-order-sensitive-or-temporal-aggregation-_ctx-_ti.md)
-- [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment (B.1.5)](06-b15-b15-gamma_method-order-sensitive-method-composition-and-work.md)
-- [B.1.5.EW - Recover How Constituent Actions Enact Encompassing Work (B.1.5.EW)](07-b15ew-b15ew-recover-how-constituent-actions-enact-encompassing-wor.md)
-- [B.1.5.RS - Evaluate a Method Replacement in Its Encompassing Uses (B.1.5.RS)](08-b15rs-b15rs-evaluate-a-method-replacement-in-its-encompassing-uses.md)
-- [B.1.5.CM - Construct and Qualify a Composite Method (B.1.5.CM)](09-b15cm-b15cm-construct-and-qualify-a-composite-method.md)
-- [B.1.6 - Work-Resource Aggregation (B.1.6)](10-b16-b16-work-resource-aggregation.md)
-- [B.2 - Meta-Holon Transition - Whole Reidentification (B.2)](11-b2-b2-meta-holon-transition-whole-reidentification.md)
-- [B.2.P - Clarify Emergence and Meta-Holon Transition (MHT) Claims (B.2.P)](12-b2p-b2p-clarify-emergence-and-meta-holon-transition-mht-claims.md)
-- [B.2.2 - Test the Proposed New Whole as a System (B.2.2)](13-b22-b22-test-the-proposed-new-whole-as-a-system.md)
-- [B.2.3 - Meta-Holon Transition With Episteme Result (B.2.3)](14-b23-b23-meta-holon-transition-with-episteme-result.md)
-- [B.2.4 - Do Capability or Functioning Changes Require Whole Reidentification? (B.2.4)](15-b24-b24-do-capability-or-functioning-changes-require-whole-reide.md)
-- [B.2.5 - Supervisor-Subholon Feedback Relation (B.2.5)](16-b25-b25-supervisor-subholon-feedback-relation.md)
-- [B.3 - Is This Claim Supported for This Use? — Trust and Assurance Calculus (B.3)](17-b3-b3-is-this-claim-supported-for-this-use-trust-and-assurance-.md)
-- [B.3.3 — Assurance Subtypes & Levels (B.3.3)](18-b33-b33-assurance-subtypes-levels.md)
-- [B.3.4 - Can Earlier Evidence Still Support This Use? — Evidence Decay and Epistemic Debt (B.3.4)](19-b34-b34-can-earlier-evidence-still-support-this-use-evidence-dec.md)
-- [B.3.5 - Assurance Grounding for Working-Model Relation Claims (CT2R-LOG) (B.3.5)](20-b35-b35-assurance-grounding-for-working-model-relation-claims-ct.md)
-- [B.4 - Coordinate Repeated Adaptation (Canonical Evolution Loop) (B.4)](21-b4-b4-coordinate-repeated-adaptation-canonical-evolution-loop.md)
-- [B.4.1 - Publish Candidate Routes for a Stabilized Cue (RoutedCueSet) (B.4.1)](22-b41-b41-publish-candidate-routes-for-a-stabilized-cue-routedcues.md)
-- [B.5 - Choose the Next Reasoning Contribution (Canonical Reasoning Cycle) (B.5)](23-b5-b5-choose-the-next-reasoning-contribution-canonical-reasonin.md)
-- [B.5.EA - Articulate a Distinction from Experience (B.5.EA)](24-b5ea-b5ea-articulate-a-distinction-from-experience.md)
-- [B.5.WN - Develop Lines of Thought with Notes (B.5.WN)](25-b5wn-b5wn-develop-lines-of-thought-with-notes.md)
-- [B.5.MPC - Connect Physical, Mathematical and Computational Reasoning (B.5.MPC)](26-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md)
-- [B.5.MPC.R - Repair a Physical-Mathematical-Computational Connection (B.5.MPC)](27-b5mpc-b5mpcr-repair-a-physical-mathematical-computational-connecti.md)
-- [B.5.RC - Recover a Construction from Its Description (B.5.RC)](28-b5rc-b5rc-recover-a-construction-from-its-description.md)
-- [B.5.RA - Recover an Argument for Use (B.5.RA)](29-b5ra-b5ra-recover-an-argument-for-use.md)
-- [B.5.RR - Revise Reasoning After a Premise or Question Changes (B.5.RR)](30-b5rr-b5rr-revise-reasoning-after-a-premise-or-question-changes.md)
-- [B.5.FM - Construct a Model for the Question (B.5.FM)](31-b5fm-b5fm-construct-a-model-for-the-question.md)
-- [B.5.TU - Construct a Use of an Unfamiliar Theory (B.5.TU)](32-b5tu-b5tu-construct-a-use-of-an-unfamiliar-theory.md)
-- [B.5.TC - Compare Theoretical Accounts for a Question (B.5.TC)](33-b5tc-b5tc-compare-theoretical-accounts-for-a-question.md)
-- [B.5.QD - Develop a Question from a Result or Construction (B.5.QD)](34-b5qd-b5qd-develop-a-question-from-a-result-or-construction.md)
-- [B.5.QD.CF - Reformulate a Problem by Examining Its Conflicting Assumptions (B.5.QD)](35-b5qd-b5qdcf-reformulate-a-problem-by-examining-its-conflicting-as.md)
-- [B.5.1 - Coordinate Development States: Explore → Shape → Evidence → Operate (B.5.1)](36-b51-b51-coordinate-development-states-explore-shape-evidence-ope.md)
-- [B.5.2 - Generate and Compare Candidate Explanations (Abductive Loop) (B.5.2)](37-b52-b52-generate-and-compare-candidate-explanations-abductive-lo.md)
-- [B.5.2.0 - Question Form for Entering Abduction (U.AbductivePrompt) (B.5.2.0)](38-b520-b520-question-form-for-entering-abduction-uabductiveprompt.md)
-- [B.5.2.1 - Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD) (B.5.2.1)](39-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md)
-- [B.5.3 - Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge) (B.5.3)](40-b53-b53-interpret-domain-vocabulary-for-an-fpf-claim-domain-conc.md)
-- [B.5.4 - Recognize a Concept in a Situation (B.5.4)](41-b54-b54-recognize-a-concept-in-a-situation.md)
-- [B.5.PI - Initiate Inquiry from Work (B.5.PI)](42-b5pi-b5pi-initiate-inquiry-from-work.md)
-- [B.5.SD - Construct an Answer through Substantive Discussion (B.5.SD)](43-b5sd-b5sd-construct-an-answer-through-substantive-discussion.md)
+- [B.1 - Holon Aggregation and Part-Whole Construction (B.1)](01-b1-b1-holon-aggregation-and-part-whole-construction.md) — How to combine parts into a whole while keeping track of what combining rule is being used
+- [B.1.1 - Dependency Structure and Relation Grounding (B.1.1)](02-b11-b11-dependency-structure-and-relation-grounding.md) — How to map out what depends on what and ensure each dependency claim has adequate grounding
+- [B.1.2 - Coordinate Decisions About System Aggregation and Delimitation (B.1.2)](03-b12-b12-coordinate-decisions-about-system-aggregation-and-delimi.md) — How to agree as a team on which parts belong together and where the system boundary should be
+- [B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation (B.1.3)](04-b13-b13-knowledge-aggregation-_epist-synthesis-and-target-scheme.md) — How to combine knowledge from multiple sources into a single coherent account
+- [B.1.4 - Specify Order-Sensitive or Temporal Aggregation (Γ_ctx, Γ_time) (B.1.4)](05-b14-b14-specify-order-sensitive-or-temporal-aggregation-_ctx-_ti.md) — How to aggregate information when sequence or timing matters and changing the order would change the result
+- [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment (B.1.5)](06-b15-b15-gamma_method-order-sensitive-method-composition-and-work.md) — How to compose multiple approaches in the right sequence to produce the needed result
+- [B.1.5.EW - Recover How Constituent Actions Enact Encompassing Work (B.1.5.EW)](07-b15ew-b15ew-recover-how-constituent-actions-enact-encompassing-wor.md) — How to explain how smaller actions add up to accomplish larger work, and what connects them
+- [B.1.5.RS - Evaluate a Method Replacement in Its Encompassing Uses (B.1.5.RS)](08-b15rs-b15rs-evaluate-a-method-replacement-in-its-encompassing-uses.md) — How to check that substituting one approach for another doesn't break the larger process it's part of
+- [B.1.5.CM - Construct and Qualify a Composite Method (B.1.5.CM)](09-b15cm-b15cm-construct-and-qualify-a-composite-method.md) — How to build a composite approach from parts and verify it actually produces the needed result
+- [B.1.6 - Work-Resource Aggregation (B.1.6)](10-b16-b16-work-resource-aggregation.md) — How to combine work and resources from multiple sources without losing track of what came from where
+- [B.2 - Meta-Holon Transition - Whole Reidentification (B.2)](11-b2-b2-meta-holon-transition-whole-reidentification.md) — How to recognize when a changed system has become genuinely different and needs to be treated as a new entity
+- [B.2.P - Clarify Emergence and Meta-Holon Transition (MHT) Claims (B.2.P)](12-b2p-b2p-clarify-emergence-and-meta-holon-transition-mht-claims.md) — How to make precise claims about when something "emerges" or a system transitions to a new kind of whole
+- [B.2.2 - Test the Proposed New Whole as a System (B.2.2)](13-b22-b22-test-the-proposed-new-whole-as-a-system.md) — How to verify that a proposed new combined entity qualifies as a system in its own right
+- [B.2.3 - Meta-Holon Transition With Episteme Result (B.2.3)](14-b23-b23-meta-holon-transition-with-episteme-result.md) — How to handle a whole-reidentification when the result is a new knowledge artifact rather than a physical system
+- [B.2.4 - Do Capability or Functioning Changes Require Whole Reidentification? (B.2.4)](15-b24-b24-do-capability-or-functioning-changes-require-whole-reide.md) — How to decide whether a change to what a system can do means it's now a different system entirely
+- [B.2.5 - Supervisor-Subholon Feedback Relation (B.2.5)](16-b25-b25-supervisor-subholon-feedback-relation.md) — How to describe the feedback loop between a larger system and the smaller systems it oversees
+- [B.3 - Is This Claim Supported for This Use? — Trust and Assurance Calculus (B.3)](17-b3-b3-is-this-claim-supported-for-this-use-trust-and-assurance-.md) — How to check whether a claim has enough support for the specific use being made of it
+- [B.3.3 — Assurance Subtypes & Levels (B.3.3)](18-b33-b33-assurance-subtypes-levels.md) — The different kinds of assurance (compliance, safety, quality, etc.) and what level of confidence each requires
+- [B.3.4 - Can Earlier Evidence Still Support This Use? — Evidence Decay and Epistemic Debt (B.3.4)](19-b34-b34-can-earlier-evidence-still-support-this-use-evidence-dec.md) — How to check if old evidence is still valid for a current decision, or whether it needs refreshing
+- [B.3.5 - Assurance Grounding for Working-Model Relation Claims (CT2R-LOG) (B.3.5)](20-b35-b35-assurance-grounding-for-working-model-relation-claims-ct.md) — How to ground relational claims in a working model with enough assurance for the decision at hand
+- [B.4 - Coordinate Repeated Adaptation (Canonical Evolution Loop) (B.4)](21-b4-b4-coordinate-repeated-adaptation-canonical-evolution-loop.md) — How to structure ongoing improvement cycles so each change is connected to what it observed and why
+- [B.4.1 - Publish Candidate Routes for a Stabilized Cue (RoutedCueSet) (B.4.1)](22-b41-b41-publish-candidate-routes-for-a-stabilized-cue-routedcues.md) — How to publish possible paths forward from a stabilized observation so a team can choose among them
+- [B.5 - Choose the Next Reasoning Contribution (Canonical Reasoning Cycle) (B.5)](23-b5-b5-choose-the-next-reasoning-contribution-canonical-reasonin.md) — How to decide what kind of reasoning move is needed next: observation, hypothesis, test, or revision
+- [B.5.EA - Articulate a Distinction from Experience (B.5.EA)](24-b5ea-b5ea-articulate-a-distinction-from-experience.md) — How to turn a felt difference noticed in practice into a precise, nameable distinction
+- [B.5.WN - Develop Lines of Thought with Notes (B.5.WN)](25-b5wn-b5wn-develop-lines-of-thought-with-notes.md) — How to use structured notes to develop and track multiple threads of reasoning without losing them
+- [B.5.MPC - Connect Physical, Mathematical and Computational Reasoning (B.5.MPC)](26-b5mpc-b5mpc-connect-physical-mathematical-and-computational-reason.md) — How to bridge reasoning that involves physical reality, mathematical models, and computational implementations
+- [B.5.MPC.R - Repair a Physical-Mathematical-Computational Connection (B.5.MPC)](27-b5mpc-b5mpcr-repair-a-physical-mathematical-computational-connecti.md) — How to fix a broken link between a physical situation, its mathematical description, and its computational realization
+- [B.5.RC - Recover a Construction from Its Description (B.5.RC)](28-b5rc-b5rc-recover-a-construction-from-its-description.md) — How to reconstruct the actual thing being described when only its description is available
+- [B.5.RA - Recover an Argument for Use (B.5.RA)](29-b5ra-b5ra-recover-an-argument-for-use.md) — How to extract a usable, complete argument from a source text that presents it incompletely
+- [B.5.RR - Revise Reasoning After a Premise or Question Changes (B.5.RR)](30-b5rr-b5rr-revise-reasoning-after-a-premise-or-question-changes.md) — How to update a chain of reasoning when one of its starting assumptions has changed
+- [B.5.FM - Construct a Model for the Question (B.5.FM)](31-b5fm-b5fm-construct-a-model-for-the-question.md) — How to build a model that is fitted to the specific question being answered, not over- or under-specified
+- [B.5.TU - Construct a Use of an Unfamiliar Theory (B.5.TU)](32-b5tu-b5tu-construct-a-use-of-an-unfamiliar-theory.md) — How to apply an unfamiliar theory from another field to a current problem without misusing it
+- [B.5.TC - Compare Theoretical Accounts for a Question (B.5.TC)](33-b5tc-b5tc-compare-theoretical-accounts-for-a-question.md) — How to compare competing theoretical explanations for the same situation on specific criteria
+- [B.5.QD - Develop a Question from a Result or Construction (B.5.QD)](34-b5qd-b5qd-develop-a-question-from-a-result-or-construction.md) — How to turn a result or partial construction into a focused next question for inquiry
+- [B.5.QD.CF - Reformulate a Problem by Examining Its Conflicting Assumptions (B.5.QD)](35-b5qd-b5qdcf-reformulate-a-problem-by-examining-its-conflicting-as.md) — How to restate a problem by surfacing and resolving hidden conflicting assumptions within it
+- [B.5.1 - Coordinate Development States: Explore → Shape → Evidence → Operate (B.5.1)](36-b51-b51-coordinate-development-states-explore-shape-evidence-ope.md) — How to track which stage work is in and what moves are appropriate at each stage
+- [B.5.2 - Generate and Compare Candidate Explanations (Abductive Loop) (B.5.2)](37-b52-b52-generate-and-compare-candidate-explanations-abductive-lo.md) — How to systematically generate multiple explanations for an observation and select the best-supported one
+- [B.5.2.0 - Question Form for Entering Abduction (U.AbductivePrompt) (B.5.2.0)](38-b520-b520-question-form-for-entering-abduction-uabductiveprompt.md) — The standard question form that sets up a systematic explanation-finding exercise
+- [B.5.2.1 - Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD) (B.5.2.1)](39-b521-b521-instrument-abductive-hypothesis-generation-with-novelty.md) — How to generate hypotheses that are not just plausible but also novel, high-quality, and diverse
+- [B.5.3 - Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge) (B.5.3)](40-b53-b53-interpret-domain-vocabulary-for-an-fpf-claim-domain-conc.md) — How to bridge between a domain's own terms and the framework's shared vocabulary without losing either
+- [B.5.4 - Recognize a Concept in a Situation (B.5.4)](41-b54-b54-recognize-a-concept-in-a-situation.md) — How to identify when a situation instantiates a known concept so the right pattern can be applied
+- [B.5.PI - Initiate Inquiry from Work (B.5.PI)](42-b5pi-b5pi-initiate-inquiry-from-work.md) — How to turn a practical work situation into a focused inquiry question worth investigating
+- [B.5.SD - Construct an Answer through Substantive Discussion (B.5.SD)](43-b5sd-b5sd-construct-an-answer-through-substantive-discussion.md) — How to build a justified answer by working through the substance of a question collaboratively
