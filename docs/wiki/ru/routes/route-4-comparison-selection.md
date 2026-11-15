@@ -3,7 +3,7 @@ title: "Маршрут 4: Сравнение альтернатив"
 sources:
   - sections/routes/route-4-comparison-selection.md
   - scripts/build_routes.py
-last_updated: 2026-09-01T00:00:00Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,8 +21,8 @@ tags:
 ## Ключевые решения
 
 - **Длина цепочки:** 7 секций при полной загрузке, 3 core. Заданы в `build_routes.py` полями `chain` и `core` для маршрута `comparison-selection`.
-- **Core-секции (минимальная загрузка):** `A.19` (CharacteristicSpace & Dynamics Hook), `G.0` (Frame Standard & Comparability Governance, CG-Spec), `A.19.CPM` (Unified Comparison Mechanism).
-- **Полная цепочка (в порядке загрузки):** `A.17` (Canonical "Characteristic" & rename, A.CHR-NORM) → `A.18` (Minimal CSLC in Kernel, A.CSLC-KERNEL) → `A.19` (CharacteristicSpace) → `G.0` (Comparability Governance) → `A.19.CPM` (Unified Comparison Mechanism) → `A.19.SelectorMechanism` (Unified Selection Kernel) → `G.5` (Multi-Method Dispatcher & MethodFamily Registry).
+- **Core-секции (минимальная загрузка):** `A.19` (CharacteristicSpace: что именно измеряется и как меняются состояния), `G.0` (Comparability Governance: правила допустимого сравнения в заданной рамке), `A.19.CPM` (Unified Comparison Mechanism — примечание: не найден в текущих метаданных; возможно, переименован или объединён в последнем обновлении спецификации).
+- **Полная цепочка (в порядке загрузки):** `A.17` (Canonical "Characteristic": присвоение имени тому, что измеряем, A.CHR-NORM) → `A.18` (CSLC in Kernel: Characteristic/Scale/Level/Coordinate) → `A.19` (CharacteristicSpace) → `G.0` (Comparability Governance) → `A.19.CPM` (Unified Comparison Mechanism) → `A.19.SelectorMechanism` (Selection Kernel) → `G.5` (Method-Family Registry, Dispatch and Selected-Set Result Declaration).
 - **Стратегия загрузки:** минимальная загрузка читает первые 3 core-секции для простого запроса; полная — все 7 для сложного; при застое смотрим перекрёстные ссылки в `_xref.md`.
 
 ## Статус

@@ -3,7 +3,7 @@ title: "Маршрут 2: Язык и терминология"
 sources:
   - sections/routes/route-2-language-discovery.md
   - scripts/build_routes.py
-last_updated: 2026-09-01T00:00:00Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1
@@ -23,8 +23,8 @@ tags:
 ## Ключевые решения
 
 - **Длина цепочки:** 7 секций при полной загрузке, 3 помечены как core. Описана в `scripts/build_routes.py` (`ROUTES`, запись `id: 2`, `slug: "language-discovery"`).
-- **Core-секции:** `C.2.2a` (U.LanguageStateSpace — карта языковых состояний над U.Character), `A.16` (Language-State Move Coordination), `A.16.1` (U.PreArticulationCuePack).
-- **Полная цепочка добавляет:** `C.2.LS` (U.LanguageStateFacetProfile — компактный профиль-связка для языкового состояния), `A.16.2` (Reopen / SketchBackoff / Respecify), `B.4.1` (Observe → Notice → Stabilize → Route), `B.5.2.0` (U.AbductivePrompt).
+- **Core-секции:** `C.2.2a` (Language-State Chart over CharacteristicSpace: где находится термин на шкале от размытого до устоявшегося), `A.16` (Language-State Moves: как продвигать термин к стабильному определению), `A.16.1` (PreArticulationCuePack: сохранить раннюю интуицию, не выбирая ещё маршрут).
+- **Полная цепочка добавляет:** `C.2.LS` (Language-State Facet Profile: публикация трактовок и условий использования), `A.16.2` (Reopen, SketchBackoff, Respecify или Retire языкового состояния), `B.4.1` (Publish Candidate Routes for a Stabilized Cue), `B.5.2.0` (Question Form for Entering Abduction).
 - **Стратегия загрузки:** минимальная загрузка использует первые 3 core-секции для простых запросов; полная — все 7 для сложных. При обнаружении застоя (stagnation) Retriever сверяется с `_xref.md` на предмет перекрёстных ссылок.
 
 Файл маршрута генерируется механически функцией `build_route_file()` из `scripts/build_routes.py`: ID паттернов сопоставляются с `sections/metadata.json`, откуда подставляются заголовок и путь к файлу каждой секции, а заголовки обрезаются до 60 символов. Перегенерация маршрута входит в `scripts/rebuild_all.sh` — править `sections/routes/route-2-language-discovery.md` вручную нельзя.
@@ -33,13 +33,13 @@ tags:
 
 | # | Паттерн | Заголовок | Core? |
 |---|---------|-----------|-------|
-| 1 | C.2.2a | U.LanguageStateSpace — карта языковых состояний над U.Character | YES |
-| 2 | C.2.LS | U.LanguageStateFacetProfile — компактный профиль-связка для языкового состояния | |
-| 3 | A.16 | Language-State Move Coordination | YES |
-| 4 | A.16.1 | U.PreArticulationCuePack | YES |
-| 5 | A.16.2 | Reopen / SketchBackoff / Respecify | |
-| 6 | B.4.1 | Observe → Notice → Stabilize → Route | |
-| 7 | B.5.2.0 | U.AbductivePrompt | |
+| 1 | C.2.2a | Language-State Chart over CharacteristicSpace | YES |
+| 2 | C.2.LS | Language-State Facet Profile: Publish Readings and Use Conditions | |
+| 3 | A.16 | Language-State Moves: Choose the Next Publication and Use of a Term | YES |
+| 4 | A.16.1 | PreArticulationCuePack: Preserve an Early Cue Before Choosing a Route | YES |
+| 5 | A.16.2 | Reopen, SketchBackoff, Respecify, or Retire a Language-State | |
+| 6 | B.4.1 | Publish Candidate Routes for a Stabilized Cue (RoutedCueSet) | |
+| 7 | B.5.2.0 | Question Form for Entering Abduction | |
 
 ## Статус
 

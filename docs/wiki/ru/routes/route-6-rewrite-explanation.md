@@ -3,7 +3,7 @@ title: "Маршрут 6: Пересказ для аудитории"
 sources:
   - sections/routes/route-6-rewrite-explanation.md
   - scripts/build_routes.py
-last_updated: 2026-09-01T00:00:00Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1

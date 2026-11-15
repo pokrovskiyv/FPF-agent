@@ -12,6 +12,7 @@
 
 ### All Changes
 - **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.17.0)
+- **chore**: wiki refresh + remaining _index.md (v0.17.0)
 
 ## 2026-11-01
 
