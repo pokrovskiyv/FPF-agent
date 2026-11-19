@@ -62,43 +62,20 @@ uv run scripts/build_embeddings.py
 [uv](https://docs.astral.sh/uv/), который установит зависимости
 `sentence-transformers` и `faiss-cpu` при первом запуске.
 
-В Kimi Code CLI репозиторий также является корнем плагина — манифест
-`.kimi-plugin/plugin.json` лежит рядом с `.claude-plugin/` и `.codex-plugin/`,
-а навык общий (`.agents/skills/fpf/`). Установка из TUI:
+### Kimi Code CLI
+
+В Kimi выполните:
 
 ```
 /plugins install https://github.com/pokrovskiyv/FPF-agent
+/reload
 ```
 
-После установки выполните `/reload` (или начните новую сессию) — навык `fpf`
-доступен во всех проектах. Обновление: повторите установку.
+Вызовите `/skill:fpf:fpf` из любого проекта. Kimi загружает навык из установленной копии. Для обновления повторите установку и выполните `/reload`.
 
-Вариант через клон (удобен для разработки и пересборки индекса):
+Для разработки можно клонировать репозиторий и передать абсолютный путь к клону в `/plugins install`. После правок установите плагин из клона ещё раз.
 
-```bash
-git clone https://github.com/pokrovskiyv/FPF-agent
-```
-
-и добавьте в `~/.kimi-code/config.toml`:
-
-```toml
-extra_skill_dirs = ["<путь-к-клону>/FPF-agent/.agents/skills"]
-```
-
-Семантический fallback (FAISS) строится локально — индекс в репозиторий не
-входит:
-
-```bash
-uv run scripts/build_embeddings.py
-```
-
-Запускайте в корне клона; при установке через `/plugins` — в управляемой
-копии `~/.kimi-code/plugins/managed/fpf/` (повторяйте после каждого
-обновления плагина). Маршрутные сценарии работают без индекса.
-
-Пути `~/.kimi-code/...` выше — значения по умолчанию: если задана переменная
-окружения `KIMI_CODE_HOME`, конфиг (`config.toml`) и управляемые плагины
-Kimi хранит в ней.
+Маршруты работают сразу. Для семантического поиска выполните `uv run scripts/build_embeddings.py` в установленной копии. По умолчанию это `~/.kimi-code/plugins/managed/fpf/`. Если задана переменная `KIMI_CODE_HOME`, копия находится в `plugins/managed/fpf/` внутри этого каталога. После обновления плагина индекс нужно собрать заново.
 
 ---
 

@@ -7,7 +7,7 @@ description: Apply FPF to complex coordination, responsibility, terminology, or 
 
 ## Plugin root
 
-Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor of this Skill containing `.codex-plugin/plugin.json`, `.kimi-plugin/plugin.json`, or `.claude-plugin/plugin.json`. It is the repository root in development and the installed plugin root otherwise. Resolve runtime paths against that root, never against the user's current project. In shared role guidance, interpret `${CLAUDE_PLUGIN_ROOT}` as this resolved root; it is not a Codex environment-variable requirement.
+Resolve `<FPF_PLUGIN_ROOT>` as the nearest ancestor of this Skill containing `.codex-plugin/plugin.json`, `.kimi-plugin/plugin.json`, or `.claude-plugin/plugin.json`. It is the repository root in development and the installed plugin root otherwise. Resolve runtime paths against that root, never against the user's current project. In shared role guidance, interpret `${CLAUDE_PLUGIN_ROOT}` as this resolved root.
 
 ## Choose the scope
 
@@ -40,4 +40,4 @@ Read only the relevant part of these shared prompts if the task needs deeper gui
 - `agents/fpf-reasoner.md` — examples for a specific coordination problem.
 - `agents/fpf-reviewer.md` — deeper grounding and language review.
 
-These references do not mandate spawning agents or loading every role. For Codex, treat their `${CLAUDE_PLUGIN_ROOT}` token as `<FPF_PLUGIN_ROOT>`. `agents/fpf-sync.md` is repository maintenance, not part of answering a user.
+These references do not mandate spawning agents or loading every role. In Codex and Kimi, treat their `${CLAUDE_PLUGIN_ROOT}` token as `<FPF_PLUGIN_ROOT>`. `agents/fpf-sync.md` is repository maintenance, not part of answering a user.

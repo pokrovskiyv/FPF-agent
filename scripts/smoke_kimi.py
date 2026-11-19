@@ -34,7 +34,7 @@ RUN_ALL = '--all' in sys.argv
 # Fields documented in the Kimi Code plugin manifest reference.
 DOCUMENTED_TOP_LEVEL = {
     'name', 'version', 'description', 'keywords', 'author', 'homepage',
-    'license', 'interface', 'skills', 'sessionStart', 'skillInstructions',
+    'license', 'interface', 'skills', 'agents', 'sessionStart', 'skillInstructions',
     'mcpServers', 'hooks', 'commands',
 }
 DOCUMENTED_INTERFACE = {
@@ -57,7 +57,7 @@ class TestKimiManifest(unittest.TestCase):
     def test_name_is_valid_plugin_id(self):
         """Plugin id must match Kimi's pattern, otherwise install silently fails."""
         name = self.manifest.get('name', '')
-        self.assertRegex(name, r'^[a-z0-9][a-z0-9_-]{0,63}$',
+        self.assertRegex(name, r'^[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)*(?:@[A-Za-z0-9_-]+)?$',
                          f'name must match the Kimi plugin id pattern: {name!r}')
 
     def test_required_metadata_present(self):
@@ -98,6 +98,11 @@ class TestKimiManifest(unittest.TestCase):
         self.assertTrue(resolved.is_dir(),
                         f'skills path does not resolve to a directory: {skills!r}')
 
+    def test_only_fpf_is_exposed(self):
+        """Only the shared FPF skill is public; Kimi otherwise discovers agents/."""
+        self.assertEqual(self.manifest.get('skills'), './.agents/skills/fpf')
+        self.assertEqual(self.manifest.get('agents'), [])
+
     def test_no_root_manifest_conflict(self):
         """Only one manifest may ship: a root kimi.plugin.json would shadow ours."""
         self.assertFalse(ROOT_KIMI_MANIFEST.exists(),
@@ -112,7 +117,7 @@ class TestKimiSkillPackaging(unittest.TestCase):
         """Resolve SKILL.md through the path the manifest actually declares."""
         manifest = json.loads(KIMI_MANIFEST.read_text(encoding='utf-8'))
         skills_dir = PROJECT_ROOT / manifest['skills']
-        self.skill = skills_dir / 'fpf' / 'SKILL.md'
+        self.skill = skills_dir / 'SKILL.md'
 
     def test_skill_file_exists_under_declared_skills_dir(self):
         """Kimi and Codex must load the same file, not two drifting copies."""
