@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-19
+
+### What's New
+- Kimi Code CLI can load the FPF skill from any project. The plugin exposes only `fpf` and leaves the repository maintenance agents out of the Kimi catalog.
+
 ## 2026-11-15
 
 ### What's New
@@ -121,6 +126,16 @@
 
 ### All Changes
 - **chore**: sync upstream + rebuild + AI-enhanced indexes
+
+## 2026-07-27
+
+### What's New
+- The skill now runs in Kimi Code CLI as well: the repository root is a Kimi plugin package (`.kimi-plugin/plugin.json`) alongside the Claude Code and Codex ones, and Kimi uses the same skill file as Codex.
+
+### All Changes
+- **feat**: add `.kimi-plugin/plugin.json` — Kimi Code CLI plugin manifest, installable via `/plugins install <github-url>`
+- **docs**: universal skill edition — `<FPF_PLUGIN_ROOT>` now anchors on any plugin manifest (`.codex-plugin/`, `.kimi-plugin/`, `.claude-plugin/`); Readme gains Kimi Code install instructions
+- **test**: `scripts/smoke_kimi.py` — offline packaging smoke for the Kimi edition (manifest schema, shared-skill consistency, reference resolution)
 
 ## 2026-07-15
 
