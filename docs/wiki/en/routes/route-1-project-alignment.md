@@ -3,7 +3,7 @@ title: "Route 1: Project Alignment"
 sources:
   - sections/routes/route-1-project-alignment.md
   - scripts/build_routes.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,8 +21,8 @@ Triggered when the user says things like: "teams don't understand each other", "
 ## Key Decisions
 
 - **Chain length:** 8 sections in full load, 3 marked core for minimum load.
-- **Core sections:** `A.1.1` (U.BoundedContext semantic frame), `A.15` (role-method-work alignment / contextual enactment), `B.5.1` (explore → shape → evidence → operate).
-- **Full chain:** adds work plan and slot-filling details (`A.15.2` U.WorkPlan, `A.15.3` SlotFillingsPlanItem), method quartet harmonisation (`F.11`), alignment & bridge across contexts (`F.9`), and the Unified Term Sheet (`F.17`).
+- **Core sections:** `A.1.1` (Bounded Model-Use Structure: how to keep a team's terms and rules scoped within their context), `A.15` (System-Role–Method–Work Alignment: who does what and how work is handed off), `B.5.1` (Coordinate Development States: explore → shape → evidence → operate lifecycle).
+- **Full chain:** adds work-plan details (`A.15.2` WorkPlan, `A.15.3` SlotFillingsPlanItem), separating work from the method used to do it (`F.11`), bridging meanings across team contexts (`F.9`), and anchoring agreed terms for reuse (`F.17`).
 - **Loading strategy:** minimum load is the first 3 core sections for simple queries; full load is all 8 sections for complex queries. If stagnation is detected, the Retriever checks the section's `_xref.md` for cross-references.
 
 ## Status

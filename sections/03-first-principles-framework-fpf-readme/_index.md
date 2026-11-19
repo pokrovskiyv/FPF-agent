@@ -1,11 +1,14 @@
 # First Principles Framework (FPF) Readme
 
-- [Decide Whether FPF Fits](01-decide-whether-fpf-fits.md) — Helps you decide whether your project is complex enough to benefit from this framework.
-- [When Several Transformation Flows Form One Network](02-when-several-transformation-flows-form-one-network.md) — Shows how to connect several independent change flows without collapsing them into one giant process.
-- [Practical-Use Cards](03-practical-use-cards.md) — Sixteen quick-entry cards that match your project question to the right pattern without reading the whole spec.
-- [Recover a lost path from outside use to recursive builders](04-recover-a-lost-path-from-outside-use-to-recursive-builders.md) — A guide for reconnecting a local result to the external outcome the project is supposed to achieve.
-- [One-Minute Example](05-one-minute-example.md) — A concrete example showing how to turn a messy options discussion into an explicit, auditable decision.
-- [What FPF Is](06-what-fpf-is.md) — Describes what the framework does: keep meanings stable and reasoning transparent when work crosses teams.
-- [What FPF Is Not](07-what-fpf-is-not.md) — Clarifies what the framework is not, so you don't apply it as a mandatory checklist or substitute for expertise.
-- [How to Use This Repository](08-how-to-use-this-repository.md) — Practical guide for navigating the spec, including how to use it alongside an AI assistant.
-- [Citation](09-citation.md) — The correct citation for referencing this framework in publications or projects.
+- [Start here](01-start-here.md) — How to use the framework as a practical reference, not a textbook, starting from real work questions
+- [Practical entries](02-practical-entries.md) — Ready-made entry points for common project situations like choosing an action, recovering a method, or returning results
+- [Decide Whether FPF Fits](03-decide-whether-fpf-fits.md) — Signs that the framework adds value vs. when a quick direct answer is enough
+- [When Several Transformation Flows Form One Network](04-when-several-transformation-flows-form-one-network.md) — How to reason about multiple connected change flows without conflating them
+- [Perform several levels of work through one action](05-perform-several-levels-of-work-through-one-action.md) — How one action can simultaneously accomplish work at multiple levels and how to explain those connections
+- [Recover a lost path from outside use to recursive builders](06-recover-a-lost-path-from-outside-use-to-recursive-builders.md) — How to trace a local result back to the larger receiving use that justifies it
+- [One-Minute Example](07-one-minute-example.md) — A quick worked example showing how the framework helps untangle a real team decision
+- [What FPF Is](08-what-fpf-is.md) — A concise statement of the framework's purpose: keeping meanings stable across teams, tools, and time
+- [What FPF Is Not](09-what-fpf-is-not.md) — Clarifies that FPF is not a mandatory methodology and doesn't replace domain expertise
+- [How to Use This Repository](10-how-to-use-this-repository.md) — Navigation guide: start with examples, use the reference for cross-cutting ideas
+- [License and reuse](11-license-and-reuse.md) — CC BY 4.0 licensing terms and what they mean for sharing and adapting the content
+- [Citation](12-citation.md) — How to cite the Core specification in research or documentation

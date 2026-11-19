@@ -4,53 +4,53 @@ Auto-generated from metadata.json. Maps core terms to their primary pattern.
 
 | Term | Primary Pattern | Plain Definition |
 |------|----------------|-----------------|
-| provenance | A.2.4 | Where information came from and what status it currently holds |
-| evidence | B.3 | Information that lets you check whether a claim is actually true |
-| edition pins | G.0 | Version markers locking in which release of a standard you compare against |
-| composition | A.9 | How smaller parts combine to form a whole without contradicting each other |
-| RSCRTriggerKindId | G.0 | A code marking the type of change that requires resetting a comparison frame |
-| scope | A.6.6 | The exact boundary of what a statement, rule, or capability applies to |
-| invariants | A.9 | Rules that must remain true at every level when parts are joined into a whole |
-| source return | C.30.AD | The ability to trace any design claim back to its original source |
-| TypedSetViews | A.0 | Seeing a set through a typed lens without confusing the view with the thing |
-| context | A.2 | A named situation where words and roles have specific agreed-upon meanings |
-| currentness | A.2.2 | Whether a system's description still matches what it actually does today |
-| promise content | A.2.3 | The specific commitment one party makes when agreeing to deliver something |
-| CN-Spec | A.6.7 | A description of how a set of mechanisms work together as a connected whole |
-| CG-Spec | A.6.7 | A shared frame that makes analyses from different studies directly comparable |
-| mereology | A.6.H | Rules for what counts as a part and what counts as the whole it belongs to |
-| reopen | A.16 | Going back to a closed decision when enough conditions have changed |
-| characteristic | A.17 | A specific measurable aspect of something, not a vague quality or dimension |
-| polarity | A.18 | Which direction on a scale counts as better or worse for a given property |
-| tri-state admissibility (`pass\|degrade\|abstain`) | A.19.UINDM | Every score either passes, degrades gracefully, or abstains — no silent failures |
-| penalties→`R_eff` only | A.19.ULSAM | Score deductions affect only the effective result, not the raw measurement |
-| trust | B.1.3 | A reasoned judgment that a source is reliable enough to act on its information |
-| assurance | B.3 | Collected evidence that a claim will hold under the conditions it was made for |
-| formality | B.3 | How explicitly and rigorously a commitment or claim has been stated |
-| grounding | B.3.5 | The explicit link connecting a model back to checkable, observable reality |
-| lost structure | C.29 | Information from a source that disappears when a math model is applied to it |
-| Pedagogy | E.5.3 | The direction of a learning dependency: what you need to understand first |
-| ReferencePlane | G.0 | A fixed shared baseline that makes measurements from different sources comparable |
-| DeclaredSubstrateInterpretiveView | A.0 | A declared layer perspective that prevents teams from mixing system levels |
-| role | A.2 | A named function that different actors can play depending on context |
-| effective ReferenceScheme | A.2.1 | The agreed identification system that lets everyone point to the same thing |
-| state machine | A.2.5 | A model showing how something moves through stages with explicit transition rules |
-| evidence carrier | A.2.9 | A recorded artifact holding evidence of what was said, promised, or decided |
-| method-description membership | A.3.2 | Which method a description belongs to, so it isn't reused out of context |
-| calibration | A.3.3 | Checking that a model's predictions still match actual system behavior |
-| evolution | A.4 | How a system changes over time while remaining recognizably coherent |
-| modularity | A.5 | Organizing so that parts can change independently without breaking dependents |
-| publication face | A.6 | The boundary between what a module publicly declares and what it keeps internal |
-| atomic L/A/D/E claims | A.6 | Four indivisible boundary statement types: laws, admissibility, duties, effects |
-| dated Work | A.6.C | A task or deliverable tied to a specific time window for completion |
-| interface | A.6.RSIR | The defined channel through which two components are permitted to interact |
-| port | A.6.RSIR | A typed connection point where a component may interact with others |
-| work | A.6.F | The actual transformation a component performs, distinct from its label or name |
-| substitutability | A.6.M | Whether one component can replace another without breaking what depends on them |
-| anchoring | A.6.6 | Stating the kind, scope, and witness for a claim so it can be verified later |
-| suite obligations | A.6.7 | Commitments a mechanism carries to every team that depends on it |
-| planned baseline | A.6.7 | The agreed starting point against which progress or deviation is measured |
-| crossing visibility | A.6.7 | Who can observe what when an interaction crosses a system boundary |
-| exact F.17 `SchemeSenseCell` endpoints | A.6.9 | Precise identifiers that name the same concept across different team contexts |
-| different `<ReferenceScheme` projections | A.6.9 | When two groups use different ID systems for the same concept |
-| `LocalSenseClaim` projections | A.6.9 | How a concept defined in one context appears when viewed from another |
+| evidence | A.3.4.P | something that supports or backs up a claim |
+| system-role kind | A.2 | the category of role something plays in a system |
+| method | A.3.4.P | a specific way of doing or approaching something |
+| edition pins | G.0 | markers that lock down which version is being compared |
+| currentness | A.2.2 | whether something is still up-to-date and applicable |
+| provenance | A.2.4 | the trail showing where information or evidence came from |
+| dated Work | A.6.C | work that has a specific time stamp or version attached |
+| scope | A.13 | the boundary of what something applies to or covers |
+| source return | C.30.AD | going back to the original source to verify a claim |
+| RSCRTriggerKindId | G.0 | an identifier for what event type triggers a re-check |
+| TypedSetViews | A.0 | ways of viewing a collection where items have distinct types |
+| assignment | A.2 | the pairing of a system to a specific role in a context |
+| ambiguous role wording | A.2 | language that makes it unclear who does what |
+| `performedUnderAssignment` | A.2.1 | work done within a declared role in a specific context |
+| boundary | A.3.4.P | the line separating what is inside from what is outside |
+| work | A.3.4.P | the actual activity or effort done by a performer |
+| representation | A.3.4.P | a document or model that stands in for the real thing |
+| publication face | A.6 | the outward-facing version others interact with |
+| CN-Spec | A.6.7 | shared conditions that must hold for joint use to be valid |
+| CG-Spec | A.6.7 | the rules specifying how things can be compared in a frame |
+| planned baseline | A.6.7 | the reference state against which progress is measured |
+| direct relation | A.10 | a link between a claim and its supporting evidence |
+| working situation | A.13 | the specific context and conditions someone operates in |
+| window | A.13 | the time or scope range within which something is valid |
+| reopen | A.16 | reactivating a closed decision or term for further revision |
+| loss | A.16.0 | meaning that disappears when something is moved or reused |
+| characteristic | A.17 | a named, measurable property of something |
+| scale order | A.17 | the ordering that defines how values on a scale relate |
+| refresh | B.3.4 | updating evidence or knowledge that has become outdated |
+| source-local meaning | B.5.3 | what a term means within one source, not universally |
+| uncertainty | C.11.CRC | the degree to which an outcome or value is not yet known |
+| model | C.16 | a simplified representation used to reason about something |
+| diagram | C.30.P | a visual representation of structure or relationships |
+| exact source and edition | F.0.1 | the specific document and version something is taken from |
+| optional SchemeSenseCell | F.2 | a meaning slot that may or may not apply in a given context |
+| ReferencePlane | G.0 | the fixed frame against which comparisons are made |
+| novelty | A.0 | the degree to which something is genuinely new |
+| DeclaredSubstrateInterpretiveView | A.0 | the stated lens through which an underlying system is read |
+| BLP | A.0 | baseline lower performance; the minimum expected level |
+| holder System | A.2 | the entity that holds or is subject to a role |
+| promise content | A.2.3 | what was specifically committed to being delivered |
+| claim scope | A.2.3 | the range of situations a claim applies to |
+| time window | A.2.5 | the period within which something must be true or done |
+| selected structure | A.2.7 | the chosen arrangement of relationships among roles |
+| enacted Method | A.2.9 | a method that is actively being carried out |
+| same obtaining assignment | A.2.9 | assignments that hold under the same conditions |
+| evidence carrier | A.2.9 | the artifact or object that carries and delivers evidence |
+| method-description membership | A.3.2 | which method description a method belongs to |
+| constraints | A.3.3 | conditions or limits that must not be violated |
+| calibration | A.3.3 | adjusting measurements or comparisons to a shared reference |

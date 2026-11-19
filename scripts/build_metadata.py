@@ -126,7 +126,7 @@ def parse_toc(spec_path: Path) -> list[dict]:
 
     in_toc = False
     for i, line in enumerate(lines):
-        if line.strip() == '# Table of Content':
+        if line.strip() in ('# Table of Content', '# Table of Contents'):
             in_toc = True
             continue
 

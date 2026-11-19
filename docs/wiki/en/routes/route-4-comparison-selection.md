@@ -3,7 +3,7 @@ title: "Route 4: Comparison Selection"
 sources:
   - sections/routes/route-4-comparison-selection.md
   - scripts/build_routes.py
-last_updated: 2026-07-01T07:00:00Z
+last_updated: 2026-11-15T07:00:00Z
 tags:
   - route
   - tier-1
@@ -21,8 +21,8 @@ Triggered when the user needs to choose between alternatives — "buy vs build v
 ## Key Decisions
 
 - **Chain length:** 7 sections in full load, 3 core. Defined in `build_routes.py` as `chain` and `core` for the `comparison-selection` route.
-- **Core sections (minimum load):** `A.19` (CharacteristicSpace & Dynamics Hook), `G.0` (Frame Standard & Comparability Governance, CG-Spec), `A.19.CPM` (Unified Comparison Mechanism).
-- **Full chain (in load order):** `A.17` (Canonical "Characteristic" & rename, A.CHR-NORM) → `A.18` (Minimal CSLC in Kernel, A.CSLC-KERNEL) → `A.19` (CharacteristicSpace) → `G.0` (Comparability Governance) → `A.19.CPM` (Unified Comparison Mechanism) → `A.19.SelectorMechanism` (Unified Selection Kernel) → `G.5` (Multi-Method Dispatcher & MethodFamily Registry).
+- **Core sections (minimum load):** `A.19` (CharacteristicSpace: defining what you're measuring and how state changes), `G.0` (Comparability Governance: rules for what can and can't be compared in a given frame), `A.19.CPM` (Unified Comparison Mechanism — note: not found in current metadata; may have been merged or renamed in the latest upstream spec update).
+- **Full chain (in load order):** `A.17` (Canonical "Characteristic": naming what is measured, A.CHR-NORM) → `A.18` (CSLC in Kernel: Characteristic/Scale/Level/Coordinate) → `A.19` (CharacteristicSpace) → `G.0` (Comparability Governance) → `A.19.CPM` (Unified Comparison Mechanism) → `A.19.SelectorMechanism` (Selection Kernel) → `G.5` (Method-Family Registry, Dispatch and Selected-Set Result Declaration).
 - **Loading strategy:** minimum load reads the first 3 core sections for a simple query; full load reads all 7 for a complex query; on stagnation, consult `_xref.md` for cross-references.
 
 ## Status

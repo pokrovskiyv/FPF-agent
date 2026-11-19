@@ -1,6 +1,6 @@
 # Cross-References into 12-part-f-the-unification-suite-u-suite-concept-sets-sensecells
 
-Patterns in other Parts that reference patterns in this directory (157 refs).
+Patterns in other Parts that reference patterns in this directory (181 refs).
 
 ## From 05-part-a-kernel-architecture-cluster
 
@@ -16,9 +16,13 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | A.2.1 | coordinates_with | F.6 |
 | A.2.3 | prerequisite_for | F.12 |
 | A.2.6 | coordinates_with | F.9 |
+| A.2.8 | coordinates_with | F.6 |
 | A.2.8.PER | coordinates_with | F.6 |
+| A.2.9 | builds_on | F.6 |
+| A.21 | coordinates_with | F.6 |
 | A.21 | coordinates_with | F.9 |
 | A.21 | coordinates_with | F.17 |
+| A.3 | builds_on | F.6 |
 | A.3 | coordinates_with | F.9 |
 | A.3.1 | coordinates_with | F.9 |
 | A.3.2 | coordinates_with | F.9 |
@@ -31,17 +35,13 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | A.6 | builds_on | F.18 |
 | A.6 | coordinates_with | F.9 |
 | A.6.1 | coordinates_with | F.9 |
+| A.6.2 | builds_on | F.9 |
 | A.6.3.CR | builds_on | F.9 |
 | A.6.3.CR | builds_on | F.18 |
-| A.6.3.CSC | builds_on | F.18 |
 | A.6.3.CSC | coordinates_with | F.9 |
 | A.6.3.CSC | coordinates_with | F.9.1 |
-| A.6.3.RT | builds_on | F.9 |
-| A.6.3.RT | builds_on | F.18 |
-| A.6.4 | builds_on | F.9 |
+| A.6.3.RT | coordinates_with | F.9 |
 | A.6.6 | coordinates_with | F.9 |
-| A.6.6 | coordinates_with | F.15 |
-| A.6.6 | coordinates_with | F.18 |
 | A.6.9 | builds_on | F.17 |
 | A.6.9 | builds_on | F.18 |
 | A.6.9 | builds_on | F.9 |
@@ -60,26 +60,26 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | A.6.RSIR | coordinates_with | F.10 |
 | A.6.RSIR | coordinates_with | F.18 |
 | A.6.RSIR | coordinates_with | F.19 |
+| A.6.S | builds_on | F.6 |
 
 ## From 07-cluster-av-constitutional-principles-of-the-kernel
 
 | Source | Relation | Target |
 |--------|----------|--------|
 | A.12 | coordinates_with | F.6 |
+| A.13 | coordinates_with | F.6 |
+| A.15 | builds_on | F.6 |
 | A.15.1 | coordinates_with | F.6 |
 | A.15.2 | coordinates_with | F.9 |
+| A.15.6 | coordinates_with | F.6 |
+| A.15.8 | builds_on | F.6 |
+| A.15.9 | coordinates_with | F.6 |
 | A.15.PROD | coordinates_with | F.18 |
+| A.19 | coordinates_with | F.9 |
 | A.19.CN | coordinates_with | F.9 |
-| A.19.CPM | coordinates_with | F.18 |
 | A.19.ECS | builds_on | F.18 |
 | A.19.ECS | coordinates_with | F.19 |
 | A.19.SPR | builds_on | F.18 |
-| A.19.UINDM | coordinates_with | F.18 |
-| A.19.ULSAM | coordinates_with | F.18 |
-| A.19.UNM | builds_on | F.18 |
-| A.19.USCM | coordinates_with | F.18 |
-| A.20 | coordinates_with | F.9 |
-| A.20 | coordinates_with | F.17 |
 | A.22.CGUS | coordinates_with | F.17 |
 | A.8 | builds_on | F.8 |
 | A.8 | builds_on | F.18 |
@@ -88,34 +88,42 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 
 | Source | Relation | Target |
 |--------|----------|--------|
-| B.3 | coordinates_with | F.9 |
+| B.3 | coordinates_with | F.10 |
+| B.5.3 | builds_on | F.0.1 |
 | B.5.3 | builds_on | F.1 |
 | B.5.3 | builds_on | F.2 |
 | B.5.3 | builds_on | F.3 |
 | B.5.3 | builds_on | F.5 |
 | B.5.3 | builds_on | F.8 |
+| B.5.3 | builds_on | F.17 |
+| B.5.3 | coordinates_with | F.9 |
+| B.5.TC | coordinates_with | F.0.2 |
 
 ## From 09-part-c-kernel-extension-specifications
 
 | Source | Relation | Target |
 |--------|----------|--------|
+| C.11.DUA | used_by | F.19 |
 | C.16.P | builds_on | F.18 |
 | C.16.Q | builds_on | F.9 |
 | C.16.Q | builds_on | F.18 |
 | C.16.Q | coordinates_with | F.9.1 |
-| C.17 | coordinates_with | F.5 |
+| C.17 | coordinates_with | F.9 |
+| C.17 | coordinates_with | F.18 |
+| C.17 | coordinates_with | F.6 |
 | C.2.2 | builds_on | F.9 |
 | C.2.2a | builds_on | F.18 |
-| C.2.6 | coordinates_with | F.9.1 |
+| C.2.6 | coordinates_with | F.9 |
 | C.2.P | builds_on | F.18 |
 | C.2.P.DR | builds_on | F.19 |
+| C.20 | coordinates_with | F.9 |
 | C.22.2 | coordinates_with | F.9 |
 | C.26 | builds_on | F.9 |
 | C.26.1 | builds_on | F.9 |
 | C.26.2 | builds_on | F.9 |
-| C.29 | builds_on | F.9 |
 | C.3 | coordinates_with | F.9 |
 | C.3.3 | coordinates_with | F.9 |
+| C.3.4 | coordinates_with | F.9 |
 | C.30 | builds_on | F.18 |
 | C.30.AD | coordinates_with | F.18 |
 | C.30.STRAT | builds_on | F.18 |
@@ -139,20 +147,31 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | E.10 | coordinates_with | F.19 |
 | E.10.ARCH | builds_on | F.18 |
 | E.10.ARCH | builds_on | F.19 |
-| E.10.D1 | coordinates_with | F.1 |
-| E.10.D1 | coordinates_with | F.2 |
-| E.10.D1 | coordinates_with | F.3 |
-| E.10.D1 | coordinates_with | F.7 |
+| E.10.D1 | coordinates_with | F.0.1 |
+| E.10.D1 | coordinates_with | F.17 |
 | E.10.D1 | coordinates_with | F.9 |
+| E.10.D1 | coordinates_with | F.19 |
 | E.10.D2 | constrains | F.4 |
 | E.10.D2 | constrains | F.5 |
 | E.10.D2 | constrains | F.8 |
 | E.10.D2 | constrains | F.9 |
 | E.10.D2 | constrains | F.15 |
+| E.10.DEV | builds_on | F.19 |
+| E.10.LRN | coordinates_with | F.17 |
+| E.10.MOVE | builds_on | F.19 |
 | E.10.MOVE | coordinates_with | F.17 |
+| E.10.ROLE | coordinates_with | F.18 |
+| E.10.ROLE | coordinates_with | F.19 |
 | E.11 | builds_on | F.17 |
 | E.11 | builds_on | F.18 |
-| E.15 | builds_on | F.15 |
+| E.11.DSG | coordinates_with | F.9 |
+| E.15 | builds_on | F.0.1 |
+| E.15 | builds_on | F.1 |
+| E.15 | coordinates_with | F.15 |
+| E.15 | coordinates_with | F.9 |
+| E.17.AUD.OOTD | builds_on | F.18 |
+| E.17.EFP | builds_on | F.9 |
+| E.17.EFP | builds_on | F.18 |
 | E.18 | coordinates_with | F.9 |
 | E.18 | coordinates_with | F.17 |
 | E.19 | coordinates_with | F.18 |
@@ -164,11 +183,18 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | E.21 | coordinates_with | F.19 |
 | E.24 | coordinates_with | F.18 |
 | E.24.CD | builds_on | F.18 |
+| E.24.CD | coordinates_with | F.19 |
 | E.24.PUB | builds_on | F.19 |
 | E.4 | coordinates_with | F.18 |
+| E.4.CM | coordinates_with | F.0.2 |
+| E.4.CM | coordinates_with | F.19 |
 | E.4.DPF | builds_on | F.18 |
+| E.4.DPF | coordinates_with | F.19 |
+| E.4.DPF.DA | coordinates_with | F.19 |
 | E.4.FPF | coordinates_with | F.18 |
+| E.4.FPF | coordinates_with | F.19 |
 | E.4.PFAD | coordinates_with | F.18 |
+| E.4.PFAD | coordinates_with | F.19 |
 | E.4.PFR | coordinates_with | F.18 |
 | E.8.ECSPF | coordinates_with | F.18 |
 | E.8.ECSPF | coordinates_with | F.19 |
@@ -190,6 +216,4 @@ Patterns in other Parts that reference patterns in this directory (157 refs).
 | G.7 | builds_on | F.9 |
 | G.7 | builds_on | F.3 |
 | G.7 | builds_on | F.7 |
-| G.8 | coordinates_with | F.8 |
-| G.8 | coordinates_with | F.9 |
 | G.9 | builds_on | F.15 |

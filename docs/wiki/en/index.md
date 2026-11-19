@@ -1,17 +1,17 @@
 ---
 title: FPF-agent Wiki (English)
-last_updated: 2026-06-16T07:21:51Z
+last_updated: 2026-10-01T07:00:00Z
 tags:
   - index
 ---
 
 # FPF-agent Wiki
 
-Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.6.3).
+Auto-generated documentation for the **FPF-agent** plugin — a thinking amplifier that applies First Principles Framework patterns to user coordination problems without ever exposing FPF terminology. The plugin is dual-packaged (`.claude-plugin/` + `.codex-plugin/`) and installs into both **Claude Code** and **Codex CLI** (version 0.13.0).
 
 ## Project shape
 
-The repo is a fork of `ailev/FPF` plus a skill and five agents that turn the 8.3 MB FPF specification into something queryable by ordinary users. Four moving parts: the spec monolith, ~279 generated section files, the skill entry point, and the agent team.
+The repo is a fork of `ailev/FPF` plus a skill and five agents that turn the 15.0 MB FPF specification into something queryable by ordinary users. Four moving parts: the spec monolith, ~392 generated section files, the skill entry point, and the agent team.
 
 Key architectural reads:
 
@@ -37,8 +37,8 @@ Key architectural reads:
 
 Sixteen Python scripts orchestrating the rebuild pipeline, runtime semantic search, and the Codex plugin installer.
 
-- [split_spec](modules/split_spec.md) — decompose the 8.3 MB monolith into ~279 section files
-- [build_metadata](modules/build_metadata.md) — parse ToC into queryable `metadata.json` (292 entries)
+- [split_spec](modules/split_spec.md) — decompose the 15.0 MB monolith into ~392 section files
+- [build_metadata](modules/build_metadata.md) — parse ToC into queryable `metadata.json` (395 entries)
 - [enrich_metadata](modules/enrich_metadata.md) — add user-facing queries (EN+RU)
 - [build_glossary](modules/build_glossary.md) — extract top-50 terms for reasoner orientation
 - [build_lexical](modules/build_lexical.md) — Part K substitution rules

@@ -1,5 +1,113 @@
 # Changelog
 
+## 2026-11-15
+
+### What's New
+- The searchable spec grew to **141,383 lines** (440 sections, 400 indexed patterns) — up from ~133,000 lines, the largest growth in several cycles.
+- **Sharper plain-language core patterns** — the foundational patterns for scope testing (A.2.6) and method identification (A.3.1) were rewritten to use clearer, everyday language. The Solution section for methods now reads as a practical instruction rather than a technical definition.
+- **Method selection guidance** — new guidance for picking the right method from a family of related methods: how to identify the required effect, rule out candidates that don't fit the conditions, and state which one you selected and why. Useful when a domain practice offers several approaches and you need to justify a choice.
+- **Concrete scope-testing example** — a worked example (workshop report + gauge inspection) now shows step-by-step how to test whether a document's coverage actually applies to a specific job, so the distinction between "this document exists" and "this document covers my situation" is easier to apply.
+- **Domain frameworks substantially updated** — all Management, Engineering, Foundational Thinking, and Human Capability suite frameworks received major rewrites, including Operations Management, Strategy, Research Method Practice, Narrativization, Marketing, and Organization Change. Each now covers more situations and has sharper pattern definitions.
+- **Source references now in English** — bibliographic source references throughout the spec that were previously in Russian are now given in English, making the provenance of patterns more accessible to non-Russian readers.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.17.0)
+- **chore**: wiki refresh + remaining _index.md (v0.17.0)
+- **chore**: AI-enhance _index.md for parts B-G + upgrade glossary plain definitions
+
+## 2026-11-01
+
+### What's New
+- The searchable spec grew to **133,155 lines** (475 sections, 408 indexed patterns) — three new frameworks expand coverage of engineering, management, and goal-setting.
+- **New: Control Architecture Design framework** — structured guidance for engineers designing control loops: how to reconcile what a system can observe in time, what the controller must remember, how decisions are divided between layers, and which commands remain feasible given implementation constraints. Useful when you need to compare design alternatives for an engineered dynamical system.
+- **New: Goal Construction and Regulation framework** — patterns for constructing, coordinating, pursuing, and revising goals in professional work, including OKR use and AI-assisted goal management. Covers how to set goals that stay useful over time, coordinate them across a team or organization, and revise them when conditions change.
+- **New: Human Resource Management framework** — guidance for the conditions through which people participate in organizational work: assessment and selection, remuneration, voice, protection, and managing the ongoing participation relationship. Useful when your problem involves hiring decisions, compensation structures, employee rights, or the organizational side of talent management.
+- The quick glossary was upgraded with plain-language definitions for all 50 core terms — easier to understand what each concept is actually for.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced glossary (v0.15.0)
+- **chore**: AI-enhance _index.md for readme section
+- **chore**: AI-enhance _index.md for sections 04-05
+- **chore**: AI-enhance _index.md for sections 06-13 + version bump to 0.16.0
+- **chore**: AI-enhance _index.md for sections 06-13 + bump to v0.16.0
+
+## 2026-10-15
+
+### What's New
+- The searchable spec grew to **131,085 lines** (469 sections, 488 indexed patterns) — the library now covers significantly more domains and situations than before.
+- **New: FPF Library Reference** — a new architectural document that explains how all the frameworks in the library connect, why the boundaries between them matter, and how to navigate from a specific question to the right combination of tools. Useful when you're not sure which framework applies or want to understand how several frameworks work together.
+- **New: Implementation Facilitation framework** — seven patterns for helping teams actually adopt a method or practice, not just understand it. Covers: agreeing what support is wanted, finding what's blocking real uptake, building a support strategy with the people it's for, brokering change when influence is unequal, and developing recipients' own ability to drive future changes.
+- **New: Leadership Principles framework** — structured guidance for helping people act together, from securing a needed contribution to sustaining joint performance over time. Covers coordination, enabling useful contributions, and continuing shared work even as participants or conditions change.
+- **New: Customization and Productization Management framework** — patterns for organizations that both do custom work for clients and maintain repeatable offerings. Helps keep customer-specific results and standard products supportable at the same time without the two tracks undermining each other.
+- **New: Knowledge Corpus Access Engineering framework** — patterns for organizing and retrieving knowledge from large bodies of material, particularly when AI systems are involved in access and use.
+- **Reorganized domain framework library** — the Engineering, Management, Foundational Thinking, and Human Capability Engineering suites are now organized into distinct directories with their own reference documents. Easier to find what you need when your problem sits within one domain area.
+- All section indexes were refreshed with plain-language summaries and the quick glossary was upgraded with plain-language definitions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.14.0)
+
+## 2026-10-01
+
+### What's New
+- The searchable spec grew to **118,719 lines** (392 sections, 395 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- **New: Checklist Principles Framework** — six patterns for designing, adapting, and using checklists in team work: which questions to include, how to format them so answers stay meaningful, how to fit them to when and where they'll actually be used, and how to reconcile partial results across a shared effort.
+- **New: Community Building Principles Framework** — sixteen patterns for starting and sustaining a community or group, from making the first useful exchanges happen to recognising contributions and handling participation changes over time.
+- **New: Corporate Governance Principles Framework** — structured guidance for corporate decisions, governing arrangements, and rights — useful for directors, company secretaries, shareholders, and advisers who need to know who may act and how decisions should be prepared.
+- **Expanded Engineering DPF Suite** — five new domain frameworks added: Defense and Transmission Modeling, Economic Reasoning and Coordination, Embodied Rhythmics (for movement and somatic practice), Marketing, and Somatic Movement Modeling. The suite now covers a wider range of professional domains.
+- **New: Foundational Thinking DPF Suite** — a new collection covering the thinking tools behind rigorous work: Computational Thinking, Mathematical Modeling Practice, Mathematical Practice, Notational Engineering, and Physical Thinking. Useful when you need to check whether a reasoning step, a model, or a notation is being used soundly.
+- All section indexes were refreshed with plain-language summaries and the quick glossary was upgraded with plain-language definitions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh (v0.13.0)
+
+## 2026-09-15
+
+### What's New
+- The searchable spec grew to **115,322 lines** (379 sections, 382 indexed patterns) — its largest expansion to date, covering more specialized domains than ever before.
+- **Nineteen domain-specific principle frameworks** (the Engineering DPF Suite) are now part of the index: systems engineering, corporate finance, maintenance engineering, operations management, organization change, strategy, human capability development, management accounting, method engineering, research method practice, semantic integration engineering, and more. When you bring a problem from one of these fields, the skill can now draw on structured domain knowledge rather than general-purpose patterns alone.
+- **Mathematical modeling and practice patterns** — new guidance for how to use mathematical structures in a working project: building a first model, connecting physical intuition to formal description, transferring results across domains, and keeping the mathematical and computational views aligned.
+- **Narrativization framework** — new support for analyzing or designing how information gets turned into a story, explanation, or publication for an audience.
+- **USING-FPF guide** — a new practical onboarding document explaining how to get value from the framework without reading the whole spec first.
+- All section indexes were refreshed with plain-language summaries so it is easier to find the right pattern when you're not sure which part of the spec covers your situation.
+- The quick glossary was upgraded with plain-language definitions for all 50 key terms.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes (v0.12.0)
+- **chore**: fix duplicate changelog entry
+
+## 2026-09-01
+
+### What's New
+- The searchable spec grew to 107,170 lines (343 sections, 348 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- New help for **deciding what to do next when work is mid-stream and conditions are changing** — instead of assuming you know the whole plan upfront, you now have a structured way to pick the next action given what's actually true right now, steer work toward a recoverable state, and adjust when a situation shifts during execution.
+- New pattern for **figuring out which system is actually implicated** when a consequence or impact is at stake — helpful when "the system" in a statement is vague and different teams might draw the boundary differently.
+- New patterns for **recovering what method is actually being used** across multiple instances of similar work — useful when you want to explain what teams are actually doing in common before writing it up as a reusable approach.
+- Expanded **trust and assurance calculus** (new B.3 pattern): structured reasoning about what evidence supports a trust claim and where the assurance chain breaks down.
+- New help for **temporal claims** — how to tell whether a stated reading is a snapshot, a trend, or an intervention-sensitive change, and what you can legitimately do with each type.
+- New pattern for **causal-use discipline**: keeping causal-looking results (correlations, model outputs) within the boundaries of what they were actually built to support — prevents misuse of analysis results.
+- New **constraint validity and gate patterns** (A.20, A.21): how to check that a constraint is valid for a transformation step, and how to gate decisions on results from independent checks rather than the same source.
+- New **representation selection** pattern (C.37): choosing between representations of the same thing only when the choice actually changes what action you take.
+- New **practice architecture synthesis** pattern: combining several independent structural views of a practice into one coherent picture.
+- Nine new quick-start **practical-use cards** cover: live work steering, method recovery, getting a bounded result from another practice, naming, system recognition, timing, causal use, measurement, and mathematical modeling — each gives you a fast first move for that type of question.
+- Expanded **pattern authoring guidance** (E.8, E.11, E.15): clearer rules for how patterns change across editions, how impact is analyzed, and how to keep pattern publications consistent across framework versions.
+
+### All Changes
+- **chore**: sync upstream + rebuild + AI-enhanced indexes + wiki refresh
+
+## 2026-08-15
+
+### What's New
+- The searchable spec grew to ~105,000 lines (326 sections, 320 indexed patterns) — more situations are covered when you bring a coordination or design problem to the skill.
+- New pattern: **when the word "role" is ambiguous**, the skill can now guide you through recovering what it actually means in your specific claim — is it a classification, an assignment, participation in a relation, a slot in an interface, or ordinary shorthand? This prevents a common confusion where "role" shifts meaning mid-discussion without anyone noticing.
+- Major precision upgrade across 30+ patterns: the spec now consistently distinguishes between **what kind of part something plays** (a system-role kind) versus **the act of assigning that part to a specific team or system** — sharper language throughout means fewer cases where the skill's answer is ambiguous about whether it's describing a classification or a commitment.
+- Improved pattern entry guidance (E.11 family): clearer instructions for when to use a pattern, what the first useful result looks like, how to recommend patterns to others, and when to stop — making the skill's output more actionable on the first try.
+
+### All Changes
+- **chore**: AI-enhance Part C _index.md summaries (75 sections)
+- **chore**: AI-enhance Part E _index.md summaries (59 sections)
+- **chore**: AI-enhance Parts F and G _index.md summaries (36 sections)
+
+
 ## 2026-08-01
 
 ### What's New

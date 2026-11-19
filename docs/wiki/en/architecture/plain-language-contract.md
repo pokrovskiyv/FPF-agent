@@ -5,7 +5,7 @@ sources:
   - agents/fpf-reasoner.md
   - agents/fpf-reviewer.md
   - scripts/build_lexical.py
-last_updated: 2026-07-15T17:17:20Z
+last_updated: 2026-09-01T00:00:00Z
 tags:
   - architecture
   - plain-language
